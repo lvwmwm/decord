@@ -1,10 +1,10 @@
-// Module ID: 3752
-// Function ID: 28616
+// Module ID: 3786
+// Function ID: 28718
 // Name: isRestrictedFromShowingGuildPurchaseEntryPoints
-// Dependencies: [3753, 1838, 3754, 653, 2]
+// Dependencies: [3787, 1838, 3788, 653, 2]
 // Exports: isRestrictedFromMonetizationReapplication, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 3752 (isRestrictedFromShowingGuildPurchaseEntryPoints)
+// Module 3786 (isRestrictedFromShowingGuildPurchaseEntryPoints)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

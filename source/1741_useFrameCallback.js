@@ -1,5 +1,5 @@
 // Module ID: 1741
-// Function ID: 19513
+// Function ID: 19517
 // Name: useFrameCallback
 // Dependencies: [31, 1742]
 // Exports: useFrameCallback

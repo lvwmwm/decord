@@ -1,10 +1,10 @@
-// Module ID: 7583
-// Function ID: 60728
+// Module ID: 7619
+// Function ID: 60817
 // Name: FormHint
-// Dependencies: [31, 27, 33, 4131, 689, 5163, 4127, 1273, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5197, 4161, 1273, 2]
 // Exports: default
 
-// Module 7583 (FormHint)
+// Module 7619 (FormHint)
 import result from "result";
 import { Platform } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function FormHint(inset) {
   }
   ({ style, children } = inset);
   const tmp = _createForOfIteratorHelperLoose();
-  if (React.useContext(require(5163) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
     let obj = { variant: "text-sm/medium", color: "text-muted" };
     let redesignHorizontalPadding = !flag;
     if (redesignHorizontalPadding) {
@@ -37,7 +37,7 @@ export default function FormHint(inset) {
     const items = [redesignHorizontalPadding, style];
     obj.style = items;
     obj.children = children;
-    let tmp2Result = tmp2(tmp3(4127).Text, obj);
+    let tmp2Result = tmp2(tmp3(4161).Text, obj);
   } else {
     obj = {};
     const items1 = [tmp.formHintText, , ];

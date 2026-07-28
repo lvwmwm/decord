@@ -1,10 +1,10 @@
-// Module ID: 5501
-// Function ID: 46922
+// Module ID: 5536
+// Function ID: 47049
 // Name: TableRowGroupTitle
-// Dependencies: [31, 27, 33, 4131, 689, 1324, 4127, 3835, 5125, 5165, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1324, 4161, 3869, 5159, 5199, 2]
 // Exports: TableRowGroup
 
-// Module 5501 (TableRowGroupTitle)
+// Module 5536 (TableRowGroupTitle)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -69,7 +69,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   }
   let importDefault;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   importDefault = false;
   const Children = React.Children;
   const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_GROUP_HELPER_TEXT_STYLE);
@@ -97,7 +97,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   let tmp10 = null != description;
   if (tmp10) {
     const obj2 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.description, children: description };
-    tmp10 = callback(require(4127) /* Text */.Text, obj2);
+    tmp10 = callback(require(4161) /* Text */.Text, obj2);
   }
   items[1] = tmp10;
   const obj3 = {};
@@ -115,10 +115,10 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   let tmp17 = null != helperText;
   if (tmp17) {
     const obj4 = { variant: token, color: "text-muted", style: tmp.helperText, children: helperText };
-    tmp17 = callback(require(4127) /* Text */.Text, obj4);
+    tmp17 = callback(require(4161) /* Text */.Text, obj4);
   }
   items[3] = tmp17;
   obj.children = items;
   obj.children = closure_7(View, obj);
-  return callback(require(5165) /* context */.TableRowGroupContext.Provider, obj);
+  return callback(require(5199) /* context */.TableRowGroupContext.Provider, obj);
 };

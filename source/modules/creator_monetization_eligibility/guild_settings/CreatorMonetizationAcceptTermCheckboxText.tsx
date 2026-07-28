@@ -1,10 +1,10 @@
-// Module ID: 16479
-// Function ID: 128461
+// Module ID: 16519
+// Function ID: 128622
 // Name: getCreatorMonetizationAcceptTermsCheckboxText
 // Dependencies: [653, 1212, 1921, 2]
 // Exports: getCreatorMonetizationAcceptTermsCheckboxText
 
-// Module 16479 (getCreatorMonetizationAcceptTermsCheckboxText)
+// Module 16519 (getCreatorMonetizationAcceptTermsCheckboxText)
 import { HelpdeskArticles } from "ME";
 
 const result = require("wrapURL").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/CreatorMonetizationAcceptTermCheckboxText.tsx");

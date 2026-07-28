@@ -1,10 +1,10 @@
-// Module ID: 12110
-// Function ID: 94894
+// Module ID: 12153
+// Function ID: 95064
 // Name: useProfileTabIndices
-// Dependencies: [57, 31, 8043, 2]
+// Dependencies: [57, 31, 8081, 2]
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
-// Module 12110 (useProfileTabIndices)
+// Module 12153 (useProfileTabIndices)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";

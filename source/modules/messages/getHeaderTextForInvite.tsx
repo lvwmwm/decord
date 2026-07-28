@@ -1,10 +1,10 @@
-// Module ID: 12289
-// Function ID: 95822
+// Module ID: 12332
+// Function ID: 95992
 // Name: getHeaderTextForInvite
 // Dependencies: [1212, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 12289 (getHeaderTextForInvite)
+// Module 12332 (getHeaderTextForInvite)
 const result = require("set").fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");
 
 export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {

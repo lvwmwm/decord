@@ -1,10 +1,10 @@
-// Module ID: 11586
-// Function ID: 90043
+// Module ID: 11625
+// Function ID: 90194
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [31, 4018, 566, 11522, 1327, 2]
+// Dependencies: [31, 4052, 566, 11561, 1327, 2]
 // Exports: default
 
-// Module 11586 (useGetExpiringGuildPowerups)
+// Module 11625 (useGetExpiringGuildPowerups)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

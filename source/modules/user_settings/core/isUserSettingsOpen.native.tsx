@@ -1,10 +1,10 @@
-// Module ID: 12748
-// Function ID: 99337
+// Module ID: 12791
+// Function ID: 99507
 // Name: isSettingsRoutePresent
-// Dependencies: [57, 31, 3983, 2]
+// Dependencies: [57, 31, 4017, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 12748 (isSettingsRoutePresent)
+// Module 12791 (isSettingsRoutePresent)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -28,7 +28,7 @@ function isSettingsRoutePresent(rootState) {
   return someResult;
 }
 function isUserSettingsOpen() {
-  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {

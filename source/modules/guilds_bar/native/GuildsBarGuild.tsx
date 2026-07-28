@@ -1,8 +1,8 @@
-// Module ID: 14902
-// Function ID: 113688
-// Dependencies: [31, 3760, 1391, 4470, 5868, 1838, 3948, 4971, 14871, 14872, 653, 33, 3992, 4131, 689, 1324, 3835, 14882, 3988, 14865, 14903, 566, 5513, 14917, 14918, 4471, 1212, 675, 6635, 14897, 4529, 14873, 9232, 14925, 14926, 4543, 5085, 14928, 2]
+// Module ID: 14946
+// Function ID: 113861
+// Dependencies: [31, 3794, 1391, 4504, 5902, 1838, 3982, 5005, 14915, 14916, 653, 33, 4026, 4165, 689, 1324, 3869, 14926, 4022, 14909, 14947, 566, 5548, 14961, 14962, 4505, 1212, 675, 6671, 14941, 4563, 14917, 9276, 14969, 14970, 4577, 5119, 14972, 2]
 
-// Module 14902
+// Module 14946
 import importAllResult from "getGuildsBarGuildMenuItems";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import isGuildOwner from "isGuildOwner";
@@ -15,9 +15,9 @@ import { useItemDragState } from "withEqualityFn";
 import { TRANSITION_PHYSICS } from "GUILD_ITEM_SIZE";
 import { AnalyticEvents } from "ME";
 import jsxProd from "usePreloadedGuildAsset";
-import module_3992 from "module_3992";
-import module_3992 from "module_3992";
-import module_3992 from "module_3992";
+import module_4026 from "module_4026";
+import module_4026 from "module_4026";
+import module_4026 from "module_4026";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_15;
@@ -30,7 +30,7 @@ const require = arg1;
 ({ Fragment: closure_15, jsxs: closure_16, jsx: closure_17 } = jsxProd);
 let obj = {};
 obj.pan = require("module_4294967295");
-obj.itemMeasurements = module_3992.makeMutable([]);
+obj.itemMeasurements = module_4026.makeMutable([]);
 obj.activeIndex = require("module_4294967295");
 obj = { guildIcon: { width: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE } };
 let closure_19 = _createForOfIteratorHelperLoose.createStyles(obj);
@@ -312,9 +312,9 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
         tmp9 = c2;
         num = 35;
         obj3 = guildId(c2[35]);
-        tmp10 = f113700;
+        tmp10 = f113873;
         str = "animate-always";
-        targetOriginY = obj3.withSpring(guildId.targetOriginY, f113700, "animate-always");
+        targetOriginY = obj3.withSpring(guildId.targetOriginY, f113873, "animate-always");
       } else {
         targetOriginY = guildId.targetOriginY;
       }
@@ -324,9 +324,9 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
         tmp12 = c2;
         num2 = 35;
         obj4 = guildId(c2[35]);
-        tmp13 = f113700;
+        tmp13 = f113873;
         str2 = "animate-always";
-        targetHeight = obj4.withSpring(guildId.targetHeight, f113700, "animate-always");
+        targetHeight = obj4.withSpring(guildId.targetHeight, f113873, "animate-always");
       } else {
         targetHeight = guildId.targetHeight;
       }

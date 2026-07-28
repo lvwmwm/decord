@@ -1,10 +1,10 @@
-// Module ID: 14644
-// Function ID: 111625
+// Module ID: 14688
+// Function ID: 111798
 // Name: SettingSearchBar
-// Dependencies: [31, 27, 13615, 33, 4131, 689, 1820, 6451, 9171, 2]
+// Dependencies: [31, 27, 13659, 33, 4165, 689, 1820, 6487, 9215, 2]
 // Exports: default
 
-// Module 14644 (SettingSearchBar)
+// Module 14688 (SettingSearchBar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";
@@ -36,6 +36,6 @@ export default function SettingSearchBar() {
     outer1_4.setState({ query });
   }, []);
   obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 };
-  obj.children = jsx(require(9171) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 });
+  obj.children = jsx(require(9215) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 });
   return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={field.getField("query")} onChange={callback3} />;
 };

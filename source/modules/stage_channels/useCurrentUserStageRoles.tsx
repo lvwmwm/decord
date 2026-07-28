@@ -1,10 +1,10 @@
-// Module ID: 10619
-// Function ID: 82762
+// Module ID: 10657
+// Function ID: 82883
 // Name: useCurrentUserStageRoles
-// Dependencies: [1194, 4955, 566, 2]
+// Dependencies: [1194, 4989, 566, 2]
 // Exports: default
 
-// Module 10619 (useCurrentUserStageRoles)
+// Module 10657 (useCurrentUserStageRoles)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

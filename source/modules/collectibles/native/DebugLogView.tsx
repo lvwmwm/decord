@@ -1,10 +1,10 @@
-// Module ID: 14570
-// Function ID: 111216
+// Module ID: 14614
+// Function ID: 111389
 // Name: DebugLogView
-// Dependencies: [31, 27, 4130, 5785, 33, 4131, 689, 566, 4127, 2]
+// Dependencies: [31, 27, 4164, 5795, 33, 4165, 689, 566, 4161, 2]
 // Exports: default
 
-// Module 14570 (DebugLogView)
+// Module 14614 (DebugLogView)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,7 +57,7 @@ export default function DebugLogView() {
       obj1.style = obj2;
       const items2 = ["Debug Log (", arr.length, " entries)"];
       obj1.children = items2;
-      const items3 = [callback2(arr(4127).Text, obj1), ];
+      const items3 = [callback2(arr(4161).Text, obj1), ];
       const obj3 = {
         onPress() {
               dependencyMap();
@@ -65,11 +65,11 @@ export default function DebugLogView() {
         style: tmp.clearButton
       };
       const obj4 = { variant: "text-xs/bold", style: tmp.clearButtonText, children: "Clear" };
-      obj3.children = callback3(arr(4127).Text, obj4);
+      obj3.children = callback3(arr(4161).Text, obj4);
       items3[1] = callback3(closure_5, obj3);
       obj.children = items3;
       const items4 = [callback2(stateFromStores, obj), ];
-      const obj5 = { children: substr.map((children) => outer1_10(arr(4127).Text, { variant: "text-xs/normal", style: tmp.debugLogText, children }, arg1)) };
+      const obj5 = { children: substr.map((children) => outer1_10(arr(4161).Text, { variant: "text-xs/normal", style: tmp.debugLogText, children }, arg1)) };
       items4[1] = callback3(closure_4, obj5);
       obj.children = items4;
       return callback2(stateFromStores, obj);

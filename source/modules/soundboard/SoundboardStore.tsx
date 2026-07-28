@@ -1,9 +1,9 @@
-// Module ID: 4579
-// Function ID: 40139
+// Module ID: 4613
+// Function ID: 40254
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1316, 1850, 4580, 653, 662, 4215, 3713, 22, 675, 4581, 3804, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1316, 1850, 4614, 653, 662, 4249, 3747, 22, 675, 4615, 3838, 21, 566, 686, 2]
 
-// Module 4579 (_isNativeReflectConstruct)
+// Module 4613 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import perceptualToAmplitude from "perceptualToAmplitude";
@@ -136,7 +136,7 @@ function handleSoundCreateOrUpdate(sound) {
   }
 }
 function syncIsSoundboardVolumeMutedFromUserSettings() {
-  const SoundboardSettings = require(3804) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(3838) /* explicitContentFromProto */.SoundboardSettings;
   const setting = SoundboardSettings.getSetting();
   let volume;
   if (null != setting) {
@@ -215,7 +215,7 @@ obj = {
       }
       return num2;
     }
-    obj = importDefault(3713)();
+    obj = importDefault(3747)();
   },
   lookupKey(arg0) {
     return arg0;
@@ -230,9 +230,9 @@ let c25 = false;
 let c26 = false;
 let closure_27 = require("apply").debounce((volume, location_stack) => {
   let obj = importDefault(675);
-  obj = { volume: Math.round(require(4581) /* perceptualToAmplitude */.amplitudeToPerceptual(volume)), location_stack };
+  obj = { volume: Math.round(require(4615) /* perceptualToAmplitude */.amplitudeToPerceptual(volume)), location_stack };
   obj.track(AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, obj);
-  const SoundboardSettings = require(3804) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(3838) /* explicitContentFromProto */.SoundboardSettings;
   obj = { volume };
   SoundboardSettings.updateSetting(obj);
 }, 1000);

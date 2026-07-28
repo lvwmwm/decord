@@ -1,10 +1,10 @@
-// Module ID: 5696
-// Function ID: 49223
+// Module ID: 5706
+// Function ID: 49079
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1194, 4203, 21, 5697, 675, 5698, 2]
+// Dependencies: [57, 1194, 4237, 21, 5707, 675, 5708, 2]
 // Exports: trackClickstream
 
-// Module 5696 (_createForOfIteratorHelperLoose)
+// Module 5706 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -100,8 +100,8 @@ function isClickstreamEnabled(flag) {
       c7 = extractTimestampResult;
     }
     const obj = importDefault(21);
-    let closure_8 = require(5697) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
-    const obj2 = require(5697) /* clickstreamExperimentEnabled */;
+    let closure_8 = require(5707) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
+    const obj2 = require(5707) /* clickstreamExperimentEnabled */;
   }
   return closure_8;
 }
@@ -122,7 +122,7 @@ function drainClickstream(flag) {
         let tmp10 = dependencyMap;
         let obj = importDefault(675);
         let tmp11 = require;
-        let obj2 = require(5698) /* getClickstreamDrainEvent */;
+        let obj2 = require(5708) /* getClickstreamDrainEvent */;
         let trackResult = obj.track(first, obj2.getClickstreamDrainEvent(first, tmp7[1]));
         let iter2 = tmp5();
         iter = iter2;

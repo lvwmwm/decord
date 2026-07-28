@@ -1,10 +1,10 @@
-// Module ID: 16598
-// Function ID: 129490
+// Module ID: 16638
+// Function ID: 129651
 // Name: getCommonErrorContext
-// Dependencies: [4178, 4203, 1907, 4217, 4228, 4195, 2]
+// Dependencies: [4212, 4237, 1907, 4251, 4262, 4229, 2]
 // Exports: getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 16598 (getCommonErrorContext)
+// Module 16638 (getCommonErrorContext)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -53,14 +53,14 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
   }
   obj.mediaSessionId = tmp4;
   obj.rtcConnectionId = store2.getRTCConnectionId();
-  obj.mediaContext = require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
+  obj.mediaContext = require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
   const merged = Object.assign(getCommonErrorContext());
   return obj;
 };
 export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
   let channelId;
   let ownerId;
-  let obj = require(4195) /* isStreamKey */;
+  let obj = require(4229) /* isStreamKey */;
   ({ channelId, ownerId } = obj.decodeStreamKey(streamKey));
   rTCConnection = rTCConnection.getRTCConnection(streamKey);
   obj = { channelId };
@@ -78,7 +78,7 @@ export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
     rTCConnectionId = rTCConnection.getRTCConnectionId();
   }
   obj.rtcConnectionId = rTCConnectionId;
-  obj.mediaContext = require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM;
+  obj.mediaContext = require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM;
   obj.streamKey = streamKey;
   obj.userId = ownerId;
   const merged = Object.assign(getCommonErrorContext());

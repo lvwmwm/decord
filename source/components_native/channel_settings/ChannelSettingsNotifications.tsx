@@ -1,14 +1,14 @@
-// Module ID: 10243
-// Function ID: 79243
+// Module ID: 10283
+// Function ID: 79372
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 4052, 3768, 4326, 1850, 653, 33, 1212, 4131, 689, 5079, 4099, 10244, 1935, 5074, 4325, 4321, 5501, 5164, 10248, 5502, 7596, 7595, 4127, 7575, 4542, 3843, 566, 10249, 10250, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 4086, 3802, 4360, 1850, 653, 33, 1212, 4165, 689, 5113, 4133, 10284, 1935, 5108, 4359, 4355, 5536, 5198, 10288, 5537, 7632, 7631, 4161, 7611, 4576, 3877, 566, 10289, 10290, 2]
 // Exports: default
 
-// Module 10243 (_isNativeReflectConstruct)
+// Module 10283 (_isNativeReflectConstruct)
 import closure_3 from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
-import module_5079 from "module_5079";
+import module_5113 from "module_5113";
 import showActionSheet from "showActionSheet";
 import importAllResult from "Form";
 import _callSuper from "_callSuper";
@@ -483,7 +483,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
   let obj = _require(566);
   const items = [closure_11];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getChannel(channelId.channelId));
-  _require(10249);
+  _require(10289);
   if (null == stateFromStores) {
     return null;
   } else {
@@ -494,7 +494,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
     }
     obj = { channel: stateFromStores };
     merged1 = Object.assign(merged1);
-    tmp11 = callback3(importDefault(10250), obj);
-    const tmp15 = importDefault(10250);
+    tmp11 = callback3(importDefault(10290), obj);
+    const tmp15 = importDefault(10290);
   }
 };

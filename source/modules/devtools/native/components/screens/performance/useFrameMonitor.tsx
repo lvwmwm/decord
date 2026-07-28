@@ -1,10 +1,10 @@
-// Module ID: 14761
-// Function ID: 112554
+// Module ID: 14805
+// Function ID: 112727
 // Name: useFrameMonitor
-// Dependencies: [57, 31, 14759, 2]
+// Dependencies: [57, 31, 14803, 2]
 // Exports: default
 
-// Module 14761 (useFrameMonitor)
+// Module 14805 (useFrameMonitor)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -26,7 +26,7 @@ export default function useFrameMonitor(arg0) {
     if (null != current) {
       current.stop();
     }
-    ref.current = callback(14759).startFrameMonitor();
+    ref.current = callback(14803).startFrameMonitor();
     dependencyMap(true);
   }, []);
   const stop = React.useCallback(() => {

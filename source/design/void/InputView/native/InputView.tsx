@@ -1,9 +1,9 @@
-// Module ID: 13167
-// Function ID: 101464
+// Module ID: 13211
+// Function ID: 101637
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 653, 33, 4131, 689, 4974, 1273, 4127, 1212, 6679, 3977, 11288, 477, 3843, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 653, 33, 4165, 689, 5008, 1273, 4161, 1212, 6715, 4011, 11326, 477, 3877, 2]
 
-// Module 13167 (_isNativeReflectConstruct)
+// Module 13211 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import getActivityIndicator from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 15138
-// Function ID: 115222
+// Module ID: 15178
+// Function ID: 115381
 // Name: IAPUpsellActionSheet
-// Dependencies: [31, 653, 1355, 1345, 33, 15139, 15140, 1212, 1198, 2]
+// Dependencies: [31, 653, 1355, 1345, 33, 15179, 15180, 1212, 1198, 2]
 // Exports: default
 
-// Module 15138 (IAPUpsellActionSheet)
+// Module 15178 (IAPUpsellActionSheet)
 import "result";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
@@ -18,7 +18,7 @@ export default function IAPUpsellActionSheet(arg0) {
   let markAsDismissed;
   let require;
   ({ guildId: require, markAsDismissed } = arg0);
-  const obj = { imageSource: markAsDismissed(15140) };
+  const obj = { imageSource: markAsDismissed(15180) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.header = intl.string(require(1212) /* getSystemLocale */.t.rBw4cE);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -30,5 +30,5 @@ export default function IAPUpsellActionSheet(arg0) {
     markAsDismissed(outer1_5.UNKNOWN);
   };
   obj.markAsDismissed = markAsDismissed;
-  return jsx(markAsDismissed(15139), { imageSource: markAsDismissed(15140) });
+  return jsx(markAsDismissed(15179), { imageSource: markAsDismissed(15180) });
 };

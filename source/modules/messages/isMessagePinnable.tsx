@@ -1,10 +1,10 @@
-// Module ID: 9496
-// Function ID: 74082
+// Module ID: 9536
+// Function ID: 74211
 // Name: isMessagePinnable
-// Dependencies: [3759, 653, 5870, 5996, 2]
+// Dependencies: [3793, 653, 5904, 6030, 2]
 // Exports: default
 
-// Module 9496 (isMessagePinnable)
+// Module 9536 (isMessagePinnable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -17,7 +17,7 @@ const result = require("isSystemMessage").fileFinishedImporting("modules/message
 export default function isMessagePinnable(arg0, isSystemDM) {
   let isActiveChannelOrUnarchivableThread = !isSystemDM.isSystemDM();
   if (isActiveChannelOrUnarchivableThread) {
-    isActiveChannelOrUnarchivableThread = !importDefault(5870)(arg0);
+    isActiveChannelOrUnarchivableThread = !importDefault(5904)(arg0);
   }
   let canResult = _isNativeReflectConstruct.can(constants2.PIN_MESSAGES, isSystemDM);
   if (canResult) {
@@ -30,8 +30,8 @@ export default function isMessagePinnable(arg0, isSystemDM) {
     isActiveChannelOrUnarchivableThread = canResult;
   }
   if (isActiveChannelOrUnarchivableThread) {
-    isActiveChannelOrUnarchivableThread = require(5996) /* useCanStartPublicThread */.getIsActiveChannelOrUnarchivableThread(isSystemDM);
-    const obj = require(5996) /* useCanStartPublicThread */;
+    isActiveChannelOrUnarchivableThread = require(6030) /* useCanStartPublicThread */.getIsActiveChannelOrUnarchivableThread(isSystemDM);
+    const obj = require(6030) /* useCanStartPublicThread */;
   }
   if (isActiveChannelOrUnarchivableThread) {
     isActiveChannelOrUnarchivableThread = isSystemDM.type !== constants.GUILD_VOICE;

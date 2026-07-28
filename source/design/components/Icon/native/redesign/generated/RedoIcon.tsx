@@ -1,10 +1,10 @@
-// Module ID: 14070
-// Function ID: 107694
+// Module ID: 14114
+// Function ID: 107867
 // Name: RedoIcon
-// Dependencies: [31, 33, 689, 3834, 14071, 2]
+// Dependencies: [31, 33, 689, 3868, 14115, 2]
 // Exports: RedoIcon
 
-// Module 14070 (RedoIcon)
+// Module 14114 (RedoIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const RedoIcon = function RedoIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14071) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14115) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(14071) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(14115) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

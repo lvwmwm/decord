@@ -1,9 +1,9 @@
-// Module ID: 9155
-// Function ID: 71846
+// Module ID: 9199
+// Function ID: 71997
 // Name: NUXGuildTemplatesAnalytics
 // Dependencies: [2]
 
-// Module 9155 (NUXGuildTemplatesAnalytics)
+// Module 9199 (NUXGuildTemplatesAnalytics)
 const result = require("set").fileFinishedImporting("modules/create_guild/native/CreateGuildConstants.tsx");
 
 export const NUXGuildTemplatesAnalytics = { FLOW_TYPE: "Mobile NUX Post Reg", STEP_REGISTRATION: "Registration", STEP_GUILD_CREATE: "Guild Create", STEP_GUILD_JOIN: "Guild Join", STEP_GUILD_TEMPLATE: "Guild Template", STEP_FRIEND_LIST: "Friend List", STEP_CREATION_INTENT: "Server Intent Discovery", STEP_INTENT_LANDING: "Intent Landing", STEP_FRIEND_ADD: "Friend Add" };

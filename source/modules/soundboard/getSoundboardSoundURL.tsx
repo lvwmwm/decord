@@ -1,10 +1,10 @@
-// Module ID: 13527
-// Function ID: 104070
+// Module ID: 13571
+// Function ID: 104243
 // Name: getSoundboardSoundURL
 // Dependencies: [653, 2]
 // Exports: default
 
-// Module 13527 (getSoundboardSoundURL)
+// Module 13571 (getSoundboardSoundURL)
 import { Endpoints } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/soundboard/getSoundboardSoundURL.tsx");

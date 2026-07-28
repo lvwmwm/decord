@@ -1,10 +1,10 @@
-// Module ID: 15238
-// Function ID: 115988
+// Module ID: 15278
+// Function ID: 116147
 // Name: renderChannelWrapper
-// Dependencies: [31, 27, 33, 10224, 2]
+// Dependencies: [31, 27, 33, 10264, 2]
 // Exports: renderChannelWrapper
 
-// Module 15238 (renderChannelWrapper)
+// Module 15278 (renderChannelWrapper)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  let obj = require(10224) /* getLayoutStyles */;
+  let obj = require(10264) /* getLayoutStyles */;
   let isThreadResult;
   if (null != channel) {
     isThreadResult = channel.isThread();
@@ -30,7 +30,7 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
     isThreadResult = !launchpad;
   }
   const scaledChannelRowHeight = obj.getScaledChannelRowHeight(fontScale.fontScale, layout, isThreadResult);
-  const layoutStyles = require(10224) /* getLayoutStyles */.getLayoutStyles(layout, launchpad);
+  const layoutStyles = require(10264) /* getLayoutStyles */.getLayoutStyles(layout, launchpad);
   obj = {};
   const items = [{ flex: 1, flexDirection: "row", alignItems: "center", position: "relative" }, , ];
   obj = {};

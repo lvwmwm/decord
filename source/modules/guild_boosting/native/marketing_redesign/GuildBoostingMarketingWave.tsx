@@ -1,10 +1,10 @@
-// Module ID: 12578
-// Function ID: 97376
+// Module ID: 12621
+// Function ID: 97546
 // Name: GuildBoostingMarketingWave
-// Dependencies: [31, 33, 3835, 689, 8463, 2]
+// Dependencies: [31, 33, 3869, 689, 8507, 2]
 // Exports: default
 
-// Module 12578 (GuildBoostingMarketingWave)
+// Module 12621 (GuildBoostingMarketingWave)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("map").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx");
 
 export default function GuildBoostingMarketingWave(arg0) {
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOW);
   let tmp2;
   if (null != token) {
@@ -21,6 +21,6 @@ export default function GuildBoostingMarketingWave(arg0) {
   obj = { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" };
   const merged = Object.assign(arg0);
   obj = { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: tmp2 };
-  obj["children"] = jsx(require(8463) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: tmp2 });
-  return jsx(importDefault(8463), { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: tmp2 });
+  obj["children"] = jsx(require(8507) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: tmp2 });
+  return jsx(importDefault(8507), { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: tmp2 });
 };

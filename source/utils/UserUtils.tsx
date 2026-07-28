@@ -1,10 +1,10 @@
-// Module ID: 3970
-// Function ID: 32853
+// Module ID: 4004
+// Function ID: 32955
 // Name: conceal
-// Dependencies: [3971, 1850, 653, 566, 1212, 2]
+// Dependencies: [4005, 1850, 653, 566, 1212, 2]
 // Exports: ageEligibleForPremiumUpsell, getFormattedName, getName, getUserIsStaff, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 3970 (conceal)
+// Module 4004 (conceal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import ME from "ME";

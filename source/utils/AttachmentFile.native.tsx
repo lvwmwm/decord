@@ -1,10 +1,10 @@
-// Module ID: 4674
-// Function ID: 40647
+// Module ID: 4708
+// Function ID: 40762
 // Name: _getAttachmentFile
-// Dependencies: [5, 3, 44, 4666, 4675, 4667, 2]
+// Dependencies: [5, 3, 44, 4700, 4709, 4701, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 4674 (_getAttachmentFile)
+// Module 4708 (_getAttachmentFile)
 import items from "items";
 import importDefaultResult from "_isNativeReflectConstruct";
 
@@ -49,11 +49,11 @@ export const cancelGetAttachmentFile = function cancelGetAttachmentFile(found) {
 };
 export const fileIsInAppDir = function fileIsInAppDir(uri) {
   const replaced = uri.replace(/^file:\/\//, "");
-  const tmp = "" !== require(4675) /* openImagePickerUnhandled */.getAppDir();
+  const tmp = "" !== require(4709) /* openImagePickerUnhandled */.getAppDir();
   let startsWithResult = tmp;
   if (tmp) {
-    startsWithResult = replaced.startsWith(require(4675) /* openImagePickerUnhandled */.getAppDir());
-    const obj3 = require(4675) /* openImagePickerUnhandled */;
+    startsWithResult = replaced.startsWith(require(4709) /* openImagePickerUnhandled */.getAppDir());
+    const obj3 = require(4709) /* openImagePickerUnhandled */;
   }
   return startsWithResult;
 };

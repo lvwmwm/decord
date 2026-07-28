@@ -1,10 +1,10 @@
-// Module ID: 3947
-// Function ID: 32562
+// Module ID: 3981
+// Function ID: 32664
 // Name: UNSAFE_isDismissibleContentDismissed
-// Dependencies: [5, 1316, 3948, 664, 3969, 1335, 1336, 21, 1333, 566, 1331, 2]
+// Dependencies: [5, 1316, 3982, 664, 4003, 1335, 1336, 21, 1333, 566, 1331, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 3947 (UNSAFE_isDismissibleContentDismissed)
+// Module 3981 (UNSAFE_isDismissibleContentDismissed)
 import isTimeRecurringDismissibleContent from "isTimeRecurringDismissibleContent";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

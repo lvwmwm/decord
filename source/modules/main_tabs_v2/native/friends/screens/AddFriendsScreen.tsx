@@ -1,13 +1,13 @@
-// Module ID: 15525
-// Function ID: 119404
+// Module ID: 15564
+// Function ID: 119560
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 31, 27, 5891, 3768, 1850, 11726, 653, 11705, 33, 4131, 689, 11703, 6636, 3831, 1212, 5992, 11707, 477, 5462, 5482, 4560, 675, 8297, 624, 22, 3970, 14972, 5468, 4663, 12169, 5584, 8752, 5164, 3833, 4648, 15526, 15527, 15529, 15530, 2]
+// Dependencies: [57, 5, 31, 27, 5925, 3802, 1850, 11765, 653, 11744, 33, 4165, 689, 11742, 6672, 3865, 1212, 6026, 11746, 477, 5497, 5517, 4594, 675, 8335, 624, 22, 4004, 15016, 5503, 4697, 12212, 5619, 8796, 5198, 3867, 4682, 15565, 15566, 15568, 15569, 2]
 // Exports: default
 
-// Module 15525 (_createForOfIteratorHelperLoose)
+// Module 15564 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_12169 from "module_12169";
+import module_12212 from "module_12212";
 import get_ActivityIndicator from "conceal";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
@@ -107,7 +107,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function handleFindFriends() {
-  require(11703) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
+  require(11742) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
 }
 function handleShare() {
   return _handleShare(...arguments);
@@ -149,7 +149,7 @@ let result = require("result").fileFinishedImporting("modules/main_tabs_v2/nativ
 export default function AddFriendsScreen(navigation) {
   let closure_17;
   let closure_18;
-  let module_12169;
+  let module_12212;
   let closure_6;
   let friendSuggestions;
   navigation = navigation.navigation;
@@ -164,7 +164,7 @@ export default function AddFriendsScreen(navigation) {
   callback = tmp3[0];
   let _isNativeReflectConstruct = tmp3[1];
   let tmp2 = sourcePage(analyticsLocations[20]);
-  [module_12169, closure_6] = callback(React.useState([]), 2);
+  [module_12212, closure_6] = callback(React.useState([]), 2);
   let tmp5 = callback(React.useState([]), 2);
   const first = tmp5[0];
   let closure_8 = tmp5[1];
@@ -246,7 +246,7 @@ export default function AddFriendsScreen(navigation) {
       } while (!iter3.done);
     }
     const items1 = [];
-    const item = module_12169.forEach((arg0) => {
+    const item = module_12212.forEach((arg0) => {
       user = user.getUser(arg0);
       if (null != user) {
         items1.push(user);
@@ -561,7 +561,7 @@ export default function AddFriendsScreen(navigation) {
             };
             return obj4;
           } else if (friendSuggestions.CONTACT_SUGGESTIONS === arg0) {
-            let module_12169 = tmp4;
+            let module_12212 = tmp4;
             obj = { type: "custom" };
             let mutualFriendsCount;
             if (null != friendSuggestions[arg1]) {
@@ -582,8 +582,8 @@ export default function AddFriendsScreen(navigation) {
             obj.key = friendSuggestions[arg1].user.id;
             obj.component = function component() {
               const obj = {
-                added: outer1_17.includes(module_12169),
-                suggestedFriend: module_12169,
+                added: outer1_17.includes(module_12212),
+                suggestedFriend: module_12212,
                 start: closure_0,
                 end: closure_1,
                 onPress: outer1_14,

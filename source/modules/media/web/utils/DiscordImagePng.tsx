@@ -1,9 +1,9 @@
-// Module ID: 4743
-// Function ID: 41186
+// Module ID: 4777
+// Function ID: 41301
 // Name: DiscordImagePng
-// Dependencies: [5, 6, 7, 1880, 4744, 2]
+// Dependencies: [5, 6, 7, 1880, 4778, 2]
 
-// Module 4743 (DiscordImagePng)
+// Module 4777 (DiscordImagePng)
 import set from "set";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";

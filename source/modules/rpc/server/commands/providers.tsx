@@ -1,9 +1,9 @@
-// Module ID: 13480
-// Function ID: 103620
+// Module ID: 13524
+// Function ID: 103793
 // Name: AM_HARMONY_PRD_APPLICATION_ID
-// Dependencies: [5, 4813, 4034, 653, 4156, 482, 10557, 10559, 4815, 10554, 686, 1207, 8897, 4939, 2]
+// Dependencies: [5, 4847, 4068, 653, 4190, 482, 10595, 10597, 4849, 10592, 686, 1207, 8941, 4973, 2]
 
-// Module 13480 (AM_HARMONY_PRD_APPLICATION_ID)
+// Module 13524 (AM_HARMONY_PRD_APPLICATION_ID)
 import importDefaultResult from "sum";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
@@ -32,7 +32,7 @@ obj = { [RPCCommands.GET_PROVIDER_ACCESS_TOKEN]: obj };
 obj = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items1 },
   validation(string) {
-    let obj = importDefault(10557)(string);
+    let obj = importDefault(10595)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.provider = string.string().required();
@@ -45,21 +45,21 @@ obj = {
     ({ socket, args } = arg0);
     const provider = args.provider;
     const connection_redirect = args.connection_redirect;
-    let obj = provider(10559);
+    let obj = provider(10597);
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = provider(10559);
+    let obj1 = provider(10597);
     const validateApplicationResult = obj1.validateApplication(socket.application);
-    const value = connection_redirect(4815).get(provider);
+    const value = connection_redirect(4849).get(provider);
     const dependencyMap = value;
     if (null == value) {
-      let tmp29 = connection_redirect(10554);
+      let tmp29 = connection_redirect(10592);
       obj = { errorCode: constants2.INVALID_PROVIDER };
       const _HermesInternal = HermesInternal;
       const prototype4 = tmp29.prototype;
       tmp29 = new tmp29(obj, "Platform not found for provider \"" + provider + "\"");
       throw tmp29;
     } else if (provider !== constants.AMAZON_MUSIC) {
-      let tmp20 = connection_redirect(10554);
+      let tmp20 = connection_redirect(10592);
       obj = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
       const prototype3 = tmp20.prototype;
       tmp20 = new tmp20(obj, "Command not available for this application");
@@ -74,20 +74,20 @@ obj = {
       })());
       return promise;
     } else {
-      let tmp6 = connection_redirect(10554);
+      let tmp6 = connection_redirect(10592);
       obj1 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
       const prototype = tmp6.prototype;
       tmp6 = new tmp6(obj1, "Command not available for this application");
       throw tmp6;
     }
-    const obj3 = connection_redirect(4815);
+    const obj3 = connection_redirect(4849);
   }
 };
 items1 = [RPC_AUTHENTICATED_SCOPE];
 obj = { scope: { [RPC_SCOPE_CONFIG.ANY]: items2 }, validation };
 items2 = [RPC_AUTHENTICATED_SCOPE];
 validation = function validation(string) {
-  let obj = importDefault(10557)(string);
+  let obj = importDefault(10595)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.provider = string.string().required();

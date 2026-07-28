@@ -1,10 +1,10 @@
-// Module ID: 11725
-// Function ID: 91024
+// Module ID: 11764
+// Function ID: 91175
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [57, 31, 27, 653, 11726, 33, 4131, 689, 5084, 4550, 4127, 3970, 1392, 9024, 1273, 1212, 3835, 3975, 21, 7575, 6619, 4555, 668, 4544, 675, 2]
+// Dependencies: [57, 31, 27, 653, 11765, 33, 4165, 689, 5118, 4584, 4161, 4004, 1392, 9068, 1273, 1212, 3869, 4009, 21, 7611, 6655, 4589, 668, 4578, 675, 2]
 // Exports: default
 
-// Module 11725 (SuggestedFriendsSectionHeader)
+// Module 11764 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function SuggestedFriendsSectionHeader(label) {
-  obj = { style: _createForOfIteratorHelperLoose().sectionHeader, children: callback(require(4127) /* Text */.Text, obj) };
+  obj = { style: _createForOfIteratorHelperLoose().sectionHeader, children: callback(require(4161) /* Text */.Text, obj) };
   obj = { color: "text-muted", variant: "text-sm/semibold", children: label.label };
   return callback(View, obj);
 }
@@ -34,7 +34,7 @@ function SuggestionRow(suggestion) {
   if (null != first) {
     name = first.name;
   }
-  let obj = suggestion(3970);
+  let obj = suggestion(4004);
   const userTag = obj.getUserTag(suggestion.suggested_user);
   let tmp4 = userTag;
   if (null != name) {
@@ -52,14 +52,14 @@ function SuggestionRow(suggestion) {
   obj.label = tmp4;
   obj1 = {};
   const obj2 = { variant: "text-xs/medium", color: "text-muted", children: userTag };
-  const items = [callback(suggestion(4127).Text, obj2), ];
+  const items = [callback(suggestion(4161).Text, obj2), ];
   let tmp9 = null != suggestion.mutual_friends_count;
   if (tmp9) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted" };
     const intl = suggestion(1212).intl;
     const obj4 = { count: suggestion.mutual_friends_count };
     obj3.children = intl.format(suggestion(1212).t.z7y34b, obj4);
-    tmp9 = callback(suggestion(4127).Text, obj3);
+    tmp9 = callback(suggestion(4161).Text, obj3);
   }
   items[1] = tmp9;
   obj1.children = items;
@@ -67,7 +67,7 @@ function SuggestionRow(suggestion) {
   obj.onPress = function onPress() {
     return onSelect(suggestion.suggested_user.id);
   };
-  return callback(suggestion(9024).TableCheckboxRow, obj);
+  return callback(suggestion(9068).TableCheckboxRow, obj);
 }
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -98,16 +98,16 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     arg0[suggested_user.suggested_user.id] = true;
     return arg0;
   }, {});
-  let obj = friendSuggestions(3835);
+  let obj = friendSuggestions(3869);
   const token = obj.useToken(onSubmit(689).colors.BACKGROUND_BASE_LOW);
-  let obj1 = friendSuggestions(3975);
+  let obj1 = friendSuggestions(4009);
   let items = [obj1.hexOpacityToRgba(token, 0), ];
-  let obj2 = friendSuggestions(3975);
+  let obj2 = friendSuggestions(4009);
   items[1] = obj2.hexOpacityToRgba(token, 100);
   const tmp4 = first(React.useState(reduced), 2);
   first = tmp4[0];
   React = tmp4[1];
-  let obj3 = friendSuggestions(4550);
+  let obj3 = friendSuggestions(4584);
   const fontScale = obj3.useFontScale();
   const sum = onSubmit(689).space.PX_16 + onSubmit(689).space.PX_32 + 40;
   let items1 = [first];
@@ -178,14 +178,14 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj.contentContainerStyle = obj1;
   obj.data = memo;
   obj.renderItem = callback1;
-  const items5 = [callback(friendSuggestions(6619).FlashList, obj), , ];
+  const items5 = [callback(friendSuggestions(6655).FlashList, obj), , ];
   obj2 = { style: tmp.linearGradient };
   const someResult = keys.some((arg0) => first[arg0]);
   obj2.start = friendSuggestions(668).VerticalGradient.START;
   obj2.end = friendSuggestions(668).VerticalGradient.END;
   obj2.pointerEvents = "none";
   obj2.colors = items;
-  items5[1] = callback(onSubmit(4555), obj2);
+  items5[1] = callback(onSubmit(4589), obj2);
   obj3 = { style: tmp.redesignButton };
   obj4 = { variant: "primary", size: "lg" };
   let intl = friendSuggestions(1212).intl;
@@ -201,7 +201,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     });
   };
   obj4.disabled = !someResult;
-  obj3.children = callback(friendSuggestions(4544).Button, obj4);
+  obj3.children = callback(friendSuggestions(4578).Button, obj4);
   items5[2] = callback(callback, obj3);
   obj.children = items5;
   return callback2(callback, obj);

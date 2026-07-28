@@ -1,10 +1,10 @@
-// Module ID: 10064
-// Function ID: 78031
+// Module ID: 10104
+// Function ID: 78160
 // Name: ButtonBadge
-// Dependencies: [31, 33, 4131, 689, 477, 1273, 1324, 4550, 4661, 4127, 9056, 2]
+// Dependencies: [31, 33, 4165, 689, 477, 1273, 1324, 4584, 4695, 4161, 9100, 2]
 // Exports: default
 
-// Module 10064 (ButtonBadge)
+// Module 10104 (ButtonBadge)
 import importAllResult from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,7 +18,7 @@ class ButtonBadge {
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78033(false);
+    tmp = f78162(false);
     tmp2 = jsx;
     obj = {};
     tmp3 = require("DEFAULT_BADGE_SIZE");
@@ -116,7 +116,7 @@ export default function IconActionButton(variant) {
   ({ noMargin, hitSlop, disabled, onPress, onLongPress } = variant);
   const tmp = importDefault(1324)("IconActionButton");
   const tmp2 = callback2(tmp);
-  require(4550) /* getFontScale */;
+  require(4584) /* getFontScale */;
   let tmp5 = null != buttonText;
   if (tmp5) {
     tmp5 = tmp4 <= 1.2;
@@ -138,7 +138,7 @@ export default function IconActionButton(variant) {
   const items1 = [callback(closure_7, { IconComponent, color, source, isRefreshEnabled: tmp }), , , ];
   if (tmp5) {
     obj = { variant: "text-sm/bold", style: tmp2.actionText, children: buttonText };
-    tmp5 = callback(require(4127) /* Text */.Text, obj);
+    tmp5 = callback(require(4161) /* Text */.Text, obj);
   }
   items1[1] = tmp5;
   let tmp12 = null;
@@ -153,7 +153,7 @@ export default function IconActionButton(variant) {
   }
   items1[3] = badge;
   obj.children = items1;
-  return closure_5(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return closure_5(require(4695) /* PressableBase */.PressableOpacity, obj);
 };
 export const ICON_ACTION_BUTTON_SIZE = 32;
 export { ButtonBadge };

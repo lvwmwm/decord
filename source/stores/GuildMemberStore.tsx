@@ -1,7 +1,7 @@
 // Module ID: 1918
-// Function ID: 21616
+// Function ID: 21620
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1919, 1910, 1194, 1348, 1911, 1838, 3747, 3, 3748, 1913, 1360, 21, 1828, 1829, 1861, 1327, 1881, 22, 3749, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1919, 1910, 1194, 1348, 1911, 1838, 3781, 3, 3782, 1913, 1360, 21, 1828, 1829, 1861, 1327, 1881, 22, 3783, 566, 686, 2]
 // Exports: getUserCommunicationDisabledVersion
 
 // Module 1918 (_isNativeReflectConstruct)
@@ -114,15 +114,15 @@ function trackCommunicationDisabled(guildId, tmp4Result) {
       const tmp2 = getCommunicationDisabledUserKey(guildId, tmp4Result.userId);
       let result = dependencyMap2[tmp2] !== tmp4Result.communicationDisabledUntil;
       if (result) {
-        result = require(3748) /* isCommunicationDisabled */.isMemberCommunicationDisabled(tmp4Result);
-        const obj = require(3748) /* isCommunicationDisabled */;
+        result = require(3782) /* isCommunicationDisabled */.isMemberCommunicationDisabled(tmp4Result);
+        const obj = require(3782) /* isCommunicationDisabled */;
       }
       if (result) {
         dependencyMap2[tmp2] = tmp4Result.communicationDisabledUntil;
         incrementCommunicationDisabledVersion(tmp2);
       }
     }
-    obj2 = require(3748) /* isCommunicationDisabled */;
+    obj2 = require(3782) /* isCommunicationDisabled */;
   }
   removeCommunicationDisabled(guildId, tmp4Result.userId);
 }
@@ -1407,7 +1407,7 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3749) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const embeddedActivityLocationGuildId = require(3783) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
     let tmp2 = null != embeddedActivityLocationGuildId;
     if (tmp2) {
       tmp2 = buildMembersFromActivityParticipants(embeddedActivityLocationGuildId, instance.participants);

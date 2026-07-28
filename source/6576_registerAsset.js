@@ -1,11 +1,11 @@
 // Module ID: 6576
-// Function ID: 58391
+// Function ID: 58418
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6576 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "220c71f96225f35f4c52e38db6b8734b", name: "SoundboardIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/SunsetIcon", width: 60, height: 60, scales: [2, 3], hash: "9f9f6665c181624b81b98f40c0532d57", name: "SunsetIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

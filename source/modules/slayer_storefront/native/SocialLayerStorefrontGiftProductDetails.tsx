@@ -1,10 +1,10 @@
-// Module ID: 9705
-// Function ID: 75614
+// Module ID: 9745
+// Function ID: 75743
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [31, 27, 653, 33, 4131, 689, 5468, 9696, 1392, 7991, 4127, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 5503, 9736, 1392, 8029, 4161, 2]
 // Exports: default
 
-// Module 9705 (SocialLayerStorefrontGiftProductDetails)
+// Module 9745 (SocialLayerStorefrontGiftProductDetails)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
@@ -33,9 +33,9 @@ const result = require("ME").fileFinishedImporting("modules/slayer_storefront/na
 export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = getOrFetchApplication(5468);
+  let obj = getOrFetchApplication(5503);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(9696);
+  let obj1 = getOrFetchApplication(9736);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
@@ -51,7 +51,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     return applicationIconURL;
   }, items);
   obj = { style: tmp.container };
-  const items1 = [callback(importDefault(7991), { sku, size: 55 }), , ];
+  const items1 = [callback(importDefault(8029), { sku, size: 55 }), , ];
   obj1 = { style: tmp.text };
   let tmp7Result = null != getOrFetchApplication;
   if (tmp7Result) {
@@ -66,19 +66,19 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     }
     const items2 = [tmp9, ];
     const obj5 = { variant: "text-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = callback(getOrFetchApplication(4127).Text, obj5);
+    items2[1] = callback(getOrFetchApplication(4161).Text, obj5);
     obj2.children = items2;
     tmp7Result = closure_8(closure_5, obj2);
     const tmp7 = closure_8;
     const tmp8 = closure_5;
   }
-  const items3 = [tmp7Result, callback(getOrFetchApplication(4127).Text, { variant: "text-md/semibold", children: sku.name })];
+  const items3 = [tmp7Result, callback(getOrFetchApplication(4161).Text, { variant: "text-md/semibold", children: sku.name })];
   obj1.children = items3;
   items1[1] = closure_8(closure_5, obj1);
   let tmp15 = null != userPrice;
   if (tmp15) {
     const obj7 = { variant: "text-md/semibold", children: userPrice };
-    tmp15 = callback(getOrFetchApplication(4127).Text, obj7);
+    tmp15 = callback(getOrFetchApplication(4161).Text, obj7);
   }
   items1[2] = tmp15;
   obj.children = items1;

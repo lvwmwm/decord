@@ -1,15 +1,15 @@
-// Module ID: 11409
-// Function ID: 88696
+// Module ID: 11447
+// Function ID: 88815
 // Name: useCanSeeEventsInChannelList
-// Dependencies: [8258, 8259, 11410, 2]
+// Dependencies: [8296, 8297, 11448, 2]
 // Exports: default
 
-// Module 11409 (useCanSeeEventsInChannelList)
+// Module 11447 (useCanSeeEventsInChannelList)
 const result = require("useIsHubForGuild").fileFinishedImporting("modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx");
 
 export default function useCanSeeEventsInChannelList(arg0) {
-  let tmp = importDefault(8258)(arg0);
-  let tmp2 = !importDefault(11410)(arg0);
+  let tmp = importDefault(8296)(arg0);
+  let tmp2 = !importDefault(11448)(arg0);
   if (tmp2) {
     if (!tmp) {
       tmp = arr.length > 0;

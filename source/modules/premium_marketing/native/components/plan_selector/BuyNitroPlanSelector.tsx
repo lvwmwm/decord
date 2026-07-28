@@ -1,10 +1,10 @@
-// Module ID: 12367
-// Function ID: 96154
+// Module ID: 12410
+// Function ID: 96324
 // Name: BuyNitroPlanSelector
-// Dependencies: [31, 27, 5619, 4114, 482, 33, 4131, 689, 4974, 566, 6511, 12368, 12369, 6616, 1212, 12370, 7596, 7595, 12371, 5616, 477, 2]
+// Dependencies: [31, 27, 5654, 4148, 482, 33, 4165, 689, 5008, 566, 6547, 12411, 12412, 6652, 1212, 12413, 7632, 7631, 12414, 5651, 477, 2]
 // Exports: default
 
-// Module 12367 (BuyNitroPlanSelector)
+// Module 12410 (BuyNitroPlanSelector)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,20 +41,20 @@ export default function BuyNitroPlanSelector(planSelection) {
     }
     return product;
   });
-  let obj1 = planSelection(6511);
+  let obj1 = planSelection(6547);
   const isBuyNitroPurchaseBlocked = obj1.useIsBuyNitroPurchaseBlocked();
-  let obj2 = planSelection(12368);
+  let obj2 = planSelection(12411);
   _isNativeReflectConstruct = obj2.useBuyNitroPlanLabelRenderer();
-  let obj3 = planSelection(12369);
+  let obj3 = planSelection(12412);
   let closure_5 = obj3.useBuyNitroPlanSubLabelRenderer();
   obj = {};
   obj = { style: tmp.header };
   obj1 = {};
   const intl = planSelection(1212).intl;
   obj1.title = intl.string(planSelection(1212).t.u95Dt4);
-  const items1 = [callback(selection(6616), obj1), ];
+  const items1 = [callback(selection(6652), obj1), ];
   obj2 = { selectedTier: selection.tier, setSelectedTier: selection.setTier, disabled: isBuyNitroPurchaseBlocked };
-  items1[1] = callback(selection(12370), obj2);
+  items1[1] = callback(selection(12413), obj2);
   obj.children = items1;
   const items2 = [callback2(isBuyNitroPurchaseBlocked, obj), , ];
   let tmp7 = null != selection.productId;
@@ -66,7 +66,7 @@ export default function BuyNitroPlanSelector(planSelection) {
       const obj = { value: productId.productId, label: product(planSelection, productId), subLabel: callback(planSelection, productId), disabled: isBuyNitroPurchaseBlocked };
       return outer1_7(planSelection(outer1_2[17]).TableRadioRow, obj, productId.productId);
     });
-    tmp7 = callback(planSelection(7596).TableRadioGroup, obj3);
+    tmp7 = callback(planSelection(7632).TableRadioGroup, obj3);
   }
   items2[1] = tmp7;
   let tmp11 = null != stateFromStores;
@@ -82,10 +82,10 @@ export default function BuyNitroPlanSelector(planSelection) {
     const obj5 = {};
     const intl2 = planSelection(1212).intl;
     const obj6 = {};
-    const tmp17 = selection(12371);
+    const tmp17 = selection(12414);
     const obj7 = {};
     const result = stateFromStores.price * closure_5;
-    const obj13 = planSelection(5616);
+    const obj13 = planSelection(5651);
     obj7.convertToMajorUnits = planSelection(477).isAndroid();
     obj6.kunaPriceWithCurrency = obj13.formatPrice(result, CurrencyCodes.HRK, obj7);
     obj5.message = intl2.formatToPlainString(planSelection(1212).t["9hnZoK"], obj6);

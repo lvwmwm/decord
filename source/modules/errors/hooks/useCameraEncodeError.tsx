@@ -1,10 +1,10 @@
-// Module ID: 15889
-// Function ID: 122732
+// Module ID: 15928
+// Function ID: 122888
 // Name: useCameraEncodeError
-// Dependencies: [1194, 10484, 566, 8784, 2]
+// Dependencies: [1194, 10522, 566, 8828, 2]
 // Exports: default
 
-// Module 15889 (useCameraEncodeError)
+// Module 15928 (useCameraEncodeError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

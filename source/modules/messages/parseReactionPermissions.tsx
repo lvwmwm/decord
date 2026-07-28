@@ -1,10 +1,10 @@
-// Module ID: 10314
-// Function ID: 79727
+// Module ID: 10354
+// Function ID: 79856
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 10314 (parseReactionPermissions)
+// Module 10354 (parseReactionPermissions)
 const result = require("set").fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
 
 export default function parseReactionPermissions(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 5656
-// Function ID: 48332
+// Module ID: 7960
+// Function ID: 63168
 // Name: _fetchProfile
-// Dependencies: [5, 1858, 1850, 653, 654, 3, 507, 686, 4943, 640, 44, 4030, 2]
+// Dependencies: [5, 1858, 1850, 653, 654, 3, 507, 686, 4977, 640, 44, 4064, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 5656 (_fetchProfile)
+// Module 7960 (_fetchProfile)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -125,7 +125,7 @@ export const acceptAgreements = function acceptAgreements() {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let obj = importDefault(4943);
+  let obj = importDefault(4977);
   obj = { url: Endpoints.USER_AGREEMENTS };
   obj = { event: require(640) /* ImpressionNames */.NetworkActionNames.USER_ACCEPT_AGREEMENTS };
   obj.trackedActionData = obj;

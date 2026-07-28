@@ -1,10 +1,10 @@
-// Module ID: 5032
-// Function ID: 43339
+// Module ID: 5066
+// Function ID: 43454
 // Name: compareVersions
-// Dependencies: [31, 1838, 653, 477, 5033, 624, 2]
+// Dependencies: [31, 1838, 653, 477, 5067, 624, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5032 (compareVersions)
+// Module 5066 (compareVersions)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -46,7 +46,7 @@ const result = require("ME").fileFinishedImporting("modules/guild_role_subscript
 
 export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
   if (obj.isIOS()) {
-    const systemVersion = guild(5033).getSystemVersion();
+    const systemVersion = guild(5067).getSystemVersion();
     if (null != systemVersion) {
       if (-1 !== compareVersions(systemVersion, "13.2")) {
         guild = guild.getGuild(guildId);

@@ -1,9 +1,9 @@
-// Module ID: 4347
-// Function ID: 38420
+// Module ID: 4381
+// Function ID: 38534
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 587, 4346, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 587, 4380, 566, 686, 2]
 
-// Module 4347 (_isNativeReflectConstruct)
+// Module 4381 (_isNativeReflectConstruct)
 import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

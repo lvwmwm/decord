@@ -1,10 +1,10 @@
-// Module ID: 11851
-// Function ID: 91845
+// Module ID: 11894
+// Function ID: 92015
 // Name: usePremiumGroupExperiment
 // Dependencies: [1428, 2]
 // Exports: default
 
-// Module 11851 (usePremiumGroupExperiment)
+// Module 11894 (usePremiumGroupExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

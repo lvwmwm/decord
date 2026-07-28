@@ -1,10 +1,10 @@
-// Module ID: 16124
-// Function ID: 124949
+// Module ID: 16163
+// Function ID: 125105
 // Name: getName
-// Dependencies: [16125, 16126, 1212, 2133, 16127, 2]
+// Dependencies: [16164, 16165, 1212, 2133, 16166, 2]
 // Exports: getSeatName
 
-// Module 16124 (getName)
+// Module 16163 (getName)
 const require = arg1;
 let obj = {};
 obj = {
@@ -69,7 +69,7 @@ export const getSeatName = function getSeatName(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
   let name;
-  const seats = obj[_require(undefined, 16125).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = obj[_require(undefined, 16164).GuildRoomBackgrounds.DEFAULT].seats;
   const found = seats.find((position) => {
     let tmp = position.position.x === closure_0;
     if (tmp) {

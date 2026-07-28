@@ -1,10 +1,10 @@
-// Module ID: 11879
-// Function ID: 91970
+// Module ID: 11922
+// Function ID: 92140
 // Name: StyleSheet
-// Dependencies: [31, 27, 33, 4131, 689, 3992, 4132, 1392, 8174, 4127, 8450, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4026, 4166, 1392, 8212, 4161, 8494, 2]
 // Exports: default
 
-// Module 11879 (StyleSheet)
+// Module 11922 (StyleSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp2;
-  let obj = game(3992);
+  let obj = game(4026);
   let num = 0;
   if (null != headerRight) {
     num = 1;
@@ -55,7 +55,7 @@ export default function GameProfileNavigationHeader(game) {
     }
     const result = sharedValue.set(game(tmp2[6]).withTiming(num, { duration: 200 }));
   }, items);
-  let obj1 = game(3992);
+  let obj1 = game(4026);
   const fn = function x() {
     return { opacity: sharedValue.get() };
   };
@@ -63,7 +63,7 @@ export default function GameProfileNavigationHeader(game) {
   fn.__workletHash = 16001524280109;
   fn.__initData = closure_10;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  let obj2 = game(3992);
+  let obj2 = game(4026);
   const fn2 = function b() {
     return { opacity: 1 - sharedValue.get() };
   };
@@ -112,7 +112,7 @@ export default function GameProfileNavigationHeader(game) {
   let tmp11Result = null;
   if (null != name) {
     obj = { style: tmp.headerContainer };
-    const items2 = [callback(game(8174).BackgroundBlurFill, {}), ];
+    const items2 = [callback(game(8212).BackgroundBlurFill, {}), ];
     obj = { style: tmp.headerRow };
     let tmp16 = null != memo;
     if (tmp16) {
@@ -125,7 +125,7 @@ export default function GameProfileNavigationHeader(game) {
     const items3 = [tmp16, , ];
     const obj3 = { style: tmp.titleContainer };
     const obj4 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    const items4 = [callback(game(4127).Heading, obj4), ];
+    const items4 = [callback(game(4161).Heading, obj4), ];
     let l30Rank;
     if (null != game) {
       l30Rank = game.l30Rank;
@@ -134,13 +134,13 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp25) {
       const obj5 = { style: tmp.rankPillContainer };
       const obj6 = { rank: game.l30Rank, compact: true };
-      const items5 = [callback(application(8450), obj6), ];
+      const items5 = [callback(application(8494), obj6), ];
       const obj7 = {};
       const items6 = [StyleSheet.absoluteFill, animatedStyle1];
       obj7.style = items6;
       const obj8 = { rank: game.l30Rank };
-      obj7.children = callback(application(8450), obj8);
-      items5[1] = callback(application(3992).View, obj7);
+      obj7.children = callback(application(8494), obj8);
+      items5[1] = callback(application(4026).View, obj7);
       obj5.children = items5;
       tmp25 = callback2(closure_5, obj5);
     }
@@ -153,7 +153,7 @@ export default function GameProfileNavigationHeader(game) {
       const items7 = [tmp.headerRight, animatedStyle];
       obj9.style = items7;
       obj9.children = headerRight();
-      tmp32 = callback(application(3992).View, obj9);
+      tmp32 = callback(application(4026).View, obj9);
     }
     items3[2] = tmp32;
     obj.children = items3;

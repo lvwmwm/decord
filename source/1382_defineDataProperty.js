@@ -1,5 +1,5 @@
 // Module ID: 1382
-// Function ID: 16542
+// Function ID: 16546
 // Name: defineDataProperty
 // Dependencies: [518, 519, 541, 539]
 

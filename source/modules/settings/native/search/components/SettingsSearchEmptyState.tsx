@@ -1,8 +1,8 @@
-// Module ID: 14643
-// Function ID: 111622
-// Dependencies: [31, 27, 33, 4131, 3844, 1212, 8234, 4542, 4127, 2]
+// Module ID: 14687
+// Function ID: 111795
+// Dependencies: [31, 27, 33, 4165, 3878, 1212, 8272, 4576, 4161, 2]
 
-// Module 14643
+// Module 14687
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,18 +21,18 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
     AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_1[5]).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container };
-  const items = [callback(require(8234) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(require(8272) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center" };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.zihbmv);
-  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-xs/medium", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.XclvsB);
-  items1[1] = callback(require(4127) /* Text */.Text, obj1);
+  items1[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items1;
-  items[1] = callback2(require(4542) /* Stack */.Stack, obj);
+  items[1] = callback2(require(4576) /* Stack */.Stack, obj);
   obj.children = items;
   return callback2(View, obj);
 });

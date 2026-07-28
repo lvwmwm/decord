@@ -1,5 +1,5 @@
 // Module ID: 1877
-// Function ID: 20906
+// Function ID: 20910
 // Name: CollectiblesItemType
 // Dependencies: [2]
 

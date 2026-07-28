@@ -1,10 +1,10 @@
-// Module ID: 14008
-// Function ID: 107188
+// Module ID: 14052
+// Function ID: 107361
 // Name: BountiesScrollRecapFooter
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 477, 1212, 4127, 8637, 566, 3843, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 689, 477, 1212, 4161, 8681, 566, 3877, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 14008 (BountiesScrollRecapFooter)
+// Module 14052 (BountiesScrollRecapFooter)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,11 +41,11 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   const stringResult = intl.string(require(1212) /* getSystemLocale */.t.d6Rrn6);
   let obj = { style: tmp.container, pointerEvents: "none", accessible: true, accessibilityRole: "text", accessibilityLabel: "" + stringResult + ", +" + orbAmount };
   obj = { variant: "text-xs/bold", color: "text-brand", style: tmp.headerLabel, accessible: false, children: stringResult };
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   obj = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants" };
-  const items1 = [callback(require(8637) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
+  const items1 = [callback(require(8681) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
   const obj1 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp.orbAmount, children: "+" + orbAmount };
-  items1[1] = callback(require(4127) /* Text */.Text, obj1);
+  items1[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items1;
   items[1] = callback2(View, obj);
   obj.children = items;
@@ -62,6 +62,6 @@ export const BountiesScrollRecapFooterGradient = function BountiesScrollRecapFoo
     str = "halt";
   }
   obj.withReducedMotion = str;
-  obj.children = closure_5(require(3843) /* ManaContext */.BountiesScrollGradientRive, obj);
+  obj.children = closure_5(require(3877) /* ManaContext */.BountiesScrollGradientRive, obj);
   return closure_5(View, obj);
 };

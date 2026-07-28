@@ -1,9 +1,9 @@
-// Module ID: 11497
-// Function ID: 89454
+// Module ID: 11535
+// Function ID: 89578
 // Name: sortChannelsByLastMessageId
-// Dependencies: [31, 1352, 1348, 1908, 3759, 4143, 3768, 1850, 11093, 653, 33, 11379, 566, 1327, 1212, 4321, 4325, 1198, 21, 11478, 2]
+// Dependencies: [31, 1352, 1348, 1908, 3793, 4177, 3802, 1850, 11131, 653, 33, 11417, 566, 1327, 1212, 4355, 4359, 1198, 21, 11516, 2]
 
-// Module 11497 (sortChannelsByLastMessageId)
+// Module 11535 (sortChannelsByLastMessageId)
 import { isTextChannel } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -184,7 +184,7 @@ const memoResult = require("result").memo(function ChatInputGuardReadonly(guildI
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.actionLabel = intl.string(require(1212) /* getSystemLocale */.t["9cs5LM"]);
   obj.message = text;
-  return jsx(importDefault(11478), { type: "simple-action", actionOnPress: handlePress });
+  return jsx(importDefault(11516), { type: "simple-action", actionOnPress: handlePress });
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReadonly.tsx");
 

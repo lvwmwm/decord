@@ -1,9 +1,9 @@
-// Module ID: 16620
-// Function ID: 129592
+// Module ID: 16660
+// Function ID: 129753
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [7, 6, 15, 17, 18, 4150, 1194, 1348, 4052, 4224, 1907, 4217, 1850, 4196, 653, 22, 4310, 664, 4195, 4016, 686, 8784, 16598, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 4184, 1194, 1348, 4086, 4258, 1907, 4251, 1850, 4230, 653, 22, 4344, 664, 4229, 4050, 686, 8828, 16638, 5112, 2]
 
-// Module 16620 (_createForOfIteratorHelperLoose)
+// Module 16660 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "apply";
@@ -154,7 +154,7 @@ function maybeAutowatchStream(channelId) {
         if (null == streamForUser) {
           return false;
         } else {
-          let obj = require(4195) /* isStreamKey */;
+          let obj = require(4229) /* isStreamKey */;
           const encodeStreamKeyResult = obj.encodeStreamKey(streamForUser);
           let tmp6 = encodeStreamKeyResult !== c22;
           if (tmp6) {
@@ -162,9 +162,9 @@ function maybeAutowatchStream(channelId) {
             if (flag2) {
               c22 = encodeStreamKeyResult;
               obj = { noFocus: true };
-              require(4310) /* isVoiceChannelFull */.watchStream(streamForUser, obj);
+              require(4344) /* isVoiceChannelFull */.watchStream(streamForUser, obj);
               flag2 = true;
-              const obj2 = require(4310) /* isVoiceChannelFull */;
+              const obj2 = require(4344) /* isVoiceChannelFull */;
             }
             tmp6 = flag2;
           }
@@ -183,8 +183,8 @@ function updateRegion(closure_0, preferredRegion) {
     tmp3 = preferredRegion !== store.getRegion(store2.getHostname(closure_0));
   }
   if (tmp3) {
-    require(4310) /* isVoiceChannelFull */.changeStreamRegion(closure_0, preferredRegion);
-    const obj = require(4310) /* isVoiceChannelFull */;
+    require(4344) /* isVoiceChannelFull */.changeStreamRegion(closure_0, preferredRegion);
+    const obj = require(4344) /* isVoiceChannelFull */;
   }
 }
 function maybeStartConnectTimeout(arg0, arg1) {
@@ -193,7 +193,7 @@ function maybeStartConnectTimeout(arg0, arg1) {
   if (!allActiveStreamKeys.includes(arg0)) {
     let timeout = dependencyMap[arg0];
     if (null == timeout) {
-      const Timeout = _require(4016).Timeout;
+      const Timeout = _require(4050).Timeout;
       const prototype = Timeout.prototype;
       timeout = new Timeout();
     }

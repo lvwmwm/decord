@@ -1,10 +1,10 @@
-// Module ID: 4360
-// Function ID: 38686
+// Module ID: 4394
+// Function ID: 38800
 // Name: ActionComponentState
 // Dependencies: [2]
 // Exports: asComponentId
 
-// Module 4360 (ActionComponentState)
+// Module 4394 (ActionComponentState)
 const result = require("set").fileFinishedImporting("modules/interaction_components/InteractionComponentTypes.tsx");
 
 export const ActionComponentState = { NORMAL: 0, [0]: "NORMAL", LOADING: 1, [1]: "LOADING", DISABLED: 2, [2]: "DISABLED" };

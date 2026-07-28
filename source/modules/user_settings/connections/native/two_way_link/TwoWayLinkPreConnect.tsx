@@ -1,10 +1,10 @@
-// Module ID: 8874
-// Function ID: 70193
+// Module ID: 8918
+// Function ID: 70344
 // Name: _authorizeLink
-// Dependencies: [57, 5, 31, 27, 653, 33, 3, 4131, 4939, 8875, 3828, 477, 8870, 4940, 44, 686, 4127, 1212, 5121, 4544, 2]
+// Dependencies: [57, 5, 31, 27, 653, 33, 3, 4165, 4973, 8919, 3862, 477, 8914, 4974, 44, 686, 4161, 1212, 5155, 4578, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 8874 (_authorizeLink)
+// Module 8918 (_authorizeLink)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import result from "result";

@@ -1,10 +1,10 @@
-// Module ID: 11690
-// Function ID: 90692
+// Module ID: 11729
+// Function ID: 90843
 // Name: getClass
 // Dependencies: [1832, 2]
 // Exports: getClass
 
-// Module 11690 (getClass)
+// Module 11729 (getClass)
 const result = require("set").fileFinishedImporting("utils/StylesheetUtils.tsx");
 
 export const getClass = function getClass(button, button, size, arg3) {

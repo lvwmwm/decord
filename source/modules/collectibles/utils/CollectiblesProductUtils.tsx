@@ -1,10 +1,10 @@
-// Module ID: 5781
-// Function ID: 50809
+// Module ID: 5791
+// Function ID: 50665
 // Name: getProductOrbPrice
-// Dependencies: [57, 5776, 653, 1877, 2]
+// Dependencies: [57, 5786, 653, 1877, 2]
 // Exports: getProductSkuIds, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 5781 (getProductOrbPrice)
+// Module 5791 (getProductOrbPrice)
 import _slicedToArray from "_slicedToArray";
 import { isProfileEffectRecord } from "_isNativeReflectConstruct";
 import ME from "ME";

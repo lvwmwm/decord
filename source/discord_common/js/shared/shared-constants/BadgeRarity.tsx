@@ -1,5 +1,5 @@
 // Module ID: 1854
-// Function ID: 20450
+// Function ID: 20454
 // Name: BadgeRarity
 // Dependencies: [2]
 

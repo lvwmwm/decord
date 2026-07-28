@@ -1,10 +1,10 @@
-// Module ID: 13923
-// Function ID: 106552
+// Module ID: 13967
+// Function ID: 106725
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [653, 4816, 33, 4131, 1273, 4067, 1557, 5731, 5468, 5187, 5186, 1212, 5189, 5164, 4099, 8897, 1392, 3977, 5465, 5462, 5482, 2]
+// Dependencies: [653, 4850, 33, 4165, 1273, 4101, 1557, 5741, 5503, 5221, 5220, 1212, 5223, 5198, 4133, 8941, 1392, 4011, 5500, 5497, 5517, 2]
 // Exports: default
 
-// Module 13923 (AddApplicationIdentityTableRow)
+// Module 13967 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
 import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
 import jsxProd from "jsxProd";
@@ -18,10 +18,10 @@ function AddApplicationIdentityTableRow(application) {
   let start;
   application = application.application;
   ({ start, end } = application);
-  const tmp = analyticsLocations(5465)(application);
+  const tmp = analyticsLocations(5500)(application);
   const startAuthorization = tmp.startAuthorization;
-  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).ACTION_SHEET).analyticsLocations;
-  const tmp2 = analyticsLocations(5462);
+  analyticsLocations = analyticsLocations(5497)(analyticsLocations(5517).ACTION_SHEET).analyticsLocations;
+  const tmp2 = analyticsLocations(5497);
   let obj = startAuthorization(1273);
   const iconSource = application.getIconSource(obj.getIconSize(startAuthorization(1273).IconSizes.LARGE));
   obj = {
@@ -41,9 +41,9 @@ function AddApplicationIdentityTableRow(application) {
     tmp6 = callback2(startAuthorization(1273).Icon, obj);
   }
   obj.icon = tmp6;
-  obj.trailing = callback2(startAuthorization(5164).TableRow.Arrow, {});
+  obj.trailing = callback2(startAuthorization(5198).TableRow.Arrow, {});
   obj.disabled = !tmp.canStartAuthorization;
-  return callback2(startAuthorization(5164).TableRow, obj, application.id);
+  return callback2(startAuthorization(5198).TableRow, obj, application.id);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = { list: { paddingHorizontal: 16 } };

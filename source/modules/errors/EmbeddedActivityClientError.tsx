@@ -1,9 +1,9 @@
-// Module ID: 10578
-// Function ID: 82460
+// Module ID: 10616
+// Function ID: 82581
 // Name: EmbeddedActivityClientError
 // Dependencies: [7, 6, 2]
 
-// Module 10578 (EmbeddedActivityClientError)
+// Module 10616 (EmbeddedActivityClientError)
 import _classCallCheck from "_classCallCheck";
 import importDefaultResult from "_defineProperties";
 

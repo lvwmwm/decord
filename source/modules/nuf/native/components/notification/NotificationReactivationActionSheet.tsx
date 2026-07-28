@@ -1,10 +1,10 @@
-// Module ID: 16208
-// Function ID: 125674
+// Module ID: 16247
+// Function ID: 125830
 // Name: NotificationReactivationActionSheet
-// Dependencies: [31, 27, 11443, 653, 33, 4131, 689, 675, 11444, 4099, 5187, 16209, 4127, 1212, 4966, 4544, 2]
+// Dependencies: [31, 27, 11481, 653, 33, 4165, 689, 675, 11482, 4133, 5221, 16248, 4161, 1212, 5000, 4578, 2]
 // Exports: default
 
-// Module 16208 (NotificationReactivationActionSheet)
+// Module 16247 (NotificationReactivationActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { EventActionType } from "EventActionType";
@@ -50,31 +50,31 @@ export default function NotificationReactivationActionSheet(location) {
   }, items1);
   let obj = {};
   obj = { style: tmp.container };
-  obj = { style: tmp.image, source: importDefault(16209), resizeMode: "contain" };
+  obj = { style: tmp.image, source: importDefault(16248), resizeMode: "contain" };
   const items2 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header" };
   const intl = _location(1212).intl;
   obj1.children = intl.string(_location(1212).t.a4bgO0);
-  items2[1] = callback(_location(4127).Text, obj1);
+  items2[1] = callback(_location(4161).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default" };
   const intl2 = _location(1212).intl;
   obj2.children = intl2.string(_location(1212).t["rW5gw/"]);
-  items2[2] = callback(_location(4127).Text, obj2);
+  items2[2] = callback(_location(4161).Text, obj2);
   const obj3 = { style: tmp.buttons };
   const obj4 = {};
   const intl3 = _location(1212).intl;
   obj4.text = intl3.string(_location(1212).t.a4bgO0);
   obj4.onPress = callback;
-  const items3 = [callback(_location(4544).Button, obj4), ];
+  const items3 = [callback(_location(4578).Button, obj4), ];
   const obj5 = {};
   const intl4 = _location(1212).intl;
   obj5.text = intl4.string(_location(1212).t["/L3kom"]);
   obj5.onPress = callback1;
   obj5.variant = "secondary";
-  items3[1] = callback(_location(4544).Button, obj5);
+  items3[1] = callback(_location(4578).Button, obj5);
   obj3.children = items3;
-  items2[3] = callback2(_location(4966).ButtonGroup, obj3);
+  items2[3] = callback2(_location(5000).ButtonGroup, obj3);
   obj.children = items2;
   obj.children = callback2(closure_4, obj);
-  return callback(_location(5187).BottomSheet, obj);
+  return callback(_location(5221).BottomSheet, obj);
 };

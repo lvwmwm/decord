@@ -1,9 +1,9 @@
-// Module ID: 16682
-// Function ID: 130059
+// Module ID: 16722
+// Function ID: 130220
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 4130, 4994, 5037, 11979, 1194, 1911, 1838, 653, 3, 1844, 1842, 675, 686, 6271, 1184, 2]
+// Dependencies: [6, 7, 4164, 5028, 5071, 12022, 1194, 1911, 1838, 653, 3, 1844, 1842, 675, 686, 6307, 1184, 2]
 
-// Module 16682 (_createForOfIteratorHelperLoose)
+// Module 16722 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -341,7 +341,7 @@ let tmp9 = (() => {
           }, DispatcherBridge(outer1_2[14]).DispatchBand.Database);
           num2 = 15;
           _default = DispatcherBridge(outer1_2[15]).default;
-          f130082 = _default;
+          f130243 = _default;
           addChangeListenerResult = _default.addChangeListener(() => {
             if ("active" !== _default.getState()) {
               let _Date = Date;

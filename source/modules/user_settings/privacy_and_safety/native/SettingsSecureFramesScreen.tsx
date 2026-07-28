@@ -1,10 +1,10 @@
-// Module ID: 14578
-// Function ID: 111250
+// Module ID: 14622
+// Function ID: 111423
 // Name: UserListItem
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 14579, 3970, 5656, 5462, 8297, 5164, 1273, 1212, 5171, 3835, 1456, 14577, 4127, 6619, 8824, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4165, 689, 566, 14623, 4004, 7960, 5497, 8335, 5198, 1273, 1212, 5205, 3869, 1456, 14621, 4161, 6655, 8868, 2]
 // Exports: default
 
-// Module 14578 (UserListItem)
+// Module 14622 (UserListItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -127,12 +127,12 @@ export default function SettingsSecureFramesScreen() {
   obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["9Q/PQv"]);
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-sm/normal", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj2 = { helpArticle: require(8824) /* _createForOfIteratorHelperLoose */.getSecureFramesHelpdeskArticle() };
+  const obj2 = { helpArticle: require(8868) /* _createForOfIteratorHelperLoose */.getSecureFramesHelpdeskArticle() };
   obj1.children = intl2.format(require(1212) /* getSystemLocale */.t["8IwQfG"], obj2);
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [callback2(View, obj), callback(SettingsSecureFramesFooter, {})];
   obj.children = items1;

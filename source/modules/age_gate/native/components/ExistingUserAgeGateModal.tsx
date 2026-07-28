@@ -1,10 +1,10 @@
-// Module ID: 16050
-// Function ID: 124089
+// Module ID: 16089
+// Function ID: 124245
 // Name: onClose
-// Dependencies: [31, 3948, 1197, 16051, 653, 33, 477, 3832, 16052, 1212, 5587, 5049, 4338, 675, 480, 5087, 16053, 16055, 16056, 14830, 9291, 4346, 4348, 5517, 2]
+// Dependencies: [31, 3982, 1197, 16090, 653, 33, 477, 3866, 16091, 1212, 5622, 5083, 4372, 675, 480, 5121, 16092, 16094, 16095, 14874, 9335, 4380, 4382, 5552, 2]
 // Exports: default
 
-// Module 16050 (onClose)
+// Module 16089 (onClose)
 import closure_3 from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
@@ -16,7 +16,7 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function onClose() {
-  require(5587) /* openAgeGateModal */.closeAgeGateModal();
+  require(5622) /* openAgeGateModal */.closeAgeGateModal();
 }
 function renderHeaderTitle() {
   return null;
@@ -82,7 +82,7 @@ function getScreens(arg0) {
     fullscreen: true,
     impressionName: _require(480).ImpressionNames.USER_AGE_GATE,
     impressionProperties: { existing_user: true },
-    headerLeft: _require(5087).getHeaderBackButton(fn),
+    headerLeft: _require(5121).getHeaderBackButton(fn),
     headerTitle: renderHeaderTitle,
     render(arg0, arg1) {
       const tmp = (function generateOnSuccess(closure_0, arg1) {
@@ -151,8 +151,8 @@ function getScreens(arg0) {
     }
   };
   obj = { fullscreen: true };
-  const obj3 = _require(5087);
-  obj.headerLeft = _require(5087).getHeaderBackButton(fn);
+  const obj3 = _require(5121);
+  obj.headerLeft = _require(5121).getHeaderBackButton(fn);
   obj.impressionName = _require(480).ImpressionNames.USER_AGE_GATE_VERIFY;
   obj.headerTitle = renderHeaderTitle;
   obj.render = function render() {
@@ -169,8 +169,8 @@ function getScreens(arg0) {
     }
   };
   const obj1 = { headerTitle: renderHeaderTitle };
-  const obj5 = _require(5087);
-  obj1.headerLeft = _require(5087).getHeaderBackButton(fn);
+  const obj5 = _require(5121);
+  obj1.headerLeft = _require(5121).getHeaderBackButton(fn);
   obj1.render = function render() {
     return outer1_9(outer1_1(outer1_2[20]), { onClose: outer1_10 });
   };
@@ -182,11 +182,11 @@ result = require("result").fileFinishedImporting("modules/age_gate/native/compon
 
 export default function ExistingUserAgeGateModal(source) {
   source = source.source;
-  let obj = source(4346);
+  let obj = source(4380);
   const shouldAgeVerifyForAgeGate = obj.useShouldAgeVerifyForAgeGate();
   let closure_1 = React.useRef(shouldAgeVerifyForAgeGate);
   const items = [source];
-  const watchAgeVerificationStatusChange = source(4348).useWatchAgeVerificationStatusChange(React.useCallback(() => {
+  const watchAgeVerificationStatusChange = source(4382).useWatchAgeVerificationStatusChange(React.useCallback(() => {
     if (ref.current) {
       source(outer1_2[10]).closeAgeGateModal(source);
       const obj = source(outer1_2[10]);
@@ -198,5 +198,5 @@ export default function ExistingUserAgeGateModal(source) {
   obj.initialRouteName = shouldAgeVerifyForAgeGate ? closure_7.Pawtect : closure_7.AgeGate;
   const intl = source(1212).intl;
   obj.headerBackTitle = intl.string(source(1212).t["13/7kX"]);
-  return jsx(source(5517).Navigator, {});
+  return jsx(source(5552).Navigator, {});
 };

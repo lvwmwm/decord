@@ -1,10 +1,10 @@
-// Module ID: 7394
-// Function ID: 60327
+// Module ID: 7430
+// Function ID: 60416
 // Name: ServerIconBoomBGoneExample
-// Dependencies: [33, 5085, 7395, 2]
+// Dependencies: [33, 5119, 7431, 2]
 // Exports: ServerIconBoomBGoneExample
 
-// Module 7394 (ServerIconBoomBGoneExample)
+// Module 7430 (ServerIconBoomBGoneExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconBoomBGoneExample.native.tsx");
@@ -27,7 +27,7 @@ export const ServerIconBoomBGoneExample = function ServerIconBoomBGoneExample(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7395) };
+  obj = { uri: importDefault(7431) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerIconBoomBGoneExample = function ServerIconBoomBGoneExample(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

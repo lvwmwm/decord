@@ -1,8 +1,8 @@
-// Module ID: 14421
-// Function ID: 110255
-// Dependencies: [5, 31, 27, 1850, 653, 6526, 33, 4131, 566, 6525, 1873, 5462, 6527, 6137, 7575, 14422, 8365, 9253, 9254, 1212, 2]
+// Module ID: 14465
+// Function ID: 110428
+// Dependencies: [5, 31, 27, 1850, 653, 6562, 33, 4165, 566, 6561, 1873, 5497, 6563, 6171, 7611, 14466, 8403, 9297, 9298, 1212, 2]
 
-// Module 14421
+// Module 14465
 import getDefaultIcon from "getDefaultIcon";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,25 +30,25 @@ const memoResult = require("result").memo(() => {
   let obj = stateFromStores(566);
   const items = [_onSelect];
   stateFromStores = obj.useStateFromStores(items, () => _onSelect.getCurrentUser());
-  let obj1 = stateFromStores(6525);
+  let obj1 = stateFromStores(6561);
   const importDefault = obj1.useCurrentAppIcon();
   let obj2 = stateFromStores(1873);
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const dependencyMap = isPremiumResult;
-  const analyticsLocations = importDefault(5462)().analyticsLocations;
+  const analyticsLocations = importDefault(5497)().analyticsLocations;
   obj = { page: constants.APP_ICONS };
   obj = {};
   obj1 = {};
   obj2 = {
     accessibilityRole: "radiogroup",
-    children: callback(importDefault(14422), {
+    children: callback(importDefault(14466), {
       onSelect(arg0) {
         return _onSelect(...arguments);
       }
     })
   };
   obj1.children = callback(obj, obj2);
-  const items1 = [callback(stateFromStores(7575).Form, obj1), ];
+  const items1 = [callback(stateFromStores(7611).Form, obj1), ];
   let tmp6 = !isPremiumResult;
   if (tmp6) {
     const obj4 = { style: tmp.upsellButtonContainer };
@@ -60,9 +60,9 @@ const memoResult = require("result").memo(() => {
     };
     const intl = stateFromStores(1212).intl;
     obj5.text = intl.string(stateFromStores(1212).t.M0rDSO);
-    obj4.children = callback(importDefault(8365), obj5);
+    obj4.children = callback(importDefault(8403), obj5);
     tmp6 = callback(obj, obj4);
-    const tmp11 = importDefault(8365);
+    const tmp11 = importDefault(8403);
   }
   items1[1] = tmp6;
   obj.children = items1;

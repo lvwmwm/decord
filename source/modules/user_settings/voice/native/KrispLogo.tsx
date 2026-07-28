@@ -1,10 +1,10 @@
-// Module ID: 10729
-// Function ID: 83400
+// Module ID: 10767
+// Function ID: 83521
 // Name: handleKrispLinkPressed
-// Dependencies: [31, 27, 1278, 653, 33, 1921, 675, 1212, 3828, 566, 3977, 10730, 10731, 4127, 2]
+// Dependencies: [31, 27, 1278, 653, 33, 1921, 675, 1212, 3862, 566, 4011, 10768, 10769, 4161, 2]
 // Exports: default
 
-// Module 10729 (handleKrispLinkPressed)
+// Module 10767 (handleKrispLinkPressed)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ function handleKrispLinkPressed() {
   obj.location = obj;
   importDefault(675).track(constants.NOISE_CANCELLATION_LINK_CLICKED, obj);
   const obj2 = importDefault(675);
-  importDefault(3828).openURL(articleURL);
+  importDefault(3862).openURL(articleURL);
 }
 ({ Image: closure_3, View: closure_4, Pressable: closure_5 } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9, HelpdeskArticles: closure_10 } = ME);
@@ -44,11 +44,11 @@ export default function KrispLogo() {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.theme);
-  let obj1 = require(3977) /* AccessibilityAnnouncer */;
+  let obj1 = require(4011) /* AccessibilityAnnouncer */;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp2Result = tmp2(10730);
+    let tmp2Result = tmp2(10768);
   } else {
-    tmp2Result = tmp2(10731);
+    tmp2Result = tmp2(10769);
   }
   obj = { style: closure_13.detailsView };
   obj = { style: closure_13.logo, source: tmp2Result };
@@ -62,7 +62,7 @@ export default function KrispLogo() {
   const obj2 = { variant: "text-sm/medium", color: "text-link" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl3.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.children = callback(require(4127) /* Text */.Text, obj2);
+  obj1.children = callback(require(4161) /* Text */.Text, obj2);
   items1[1] = callback(closure_5, obj1);
   obj.children = items1;
   return callback2(closure_4, obj);

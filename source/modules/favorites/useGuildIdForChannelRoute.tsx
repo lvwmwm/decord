@@ -1,10 +1,10 @@
-// Module ID: 4140
-// Function ID: 34412
+// Module ID: 4174
+// Function ID: 34514
 // Name: useGuildIdForChannelRoute
-// Dependencies: [3948, 1351, 653, 566, 1841, 2]
+// Dependencies: [3982, 1351, 653, 566, 1841, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4140 (useGuildIdForChannelRoute)
+// Module 4174 (useGuildIdForChannelRoute)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { FAVORITES } from "ME";

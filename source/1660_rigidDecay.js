@@ -1,5 +1,5 @@
 // Module ID: 1660
-// Function ID: 18426
+// Function ID: 18430
 // Name: rigidDecay
 // Dependencies: [1658]
 

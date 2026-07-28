@@ -1,10 +1,10 @@
-// Module ID: 10272
-// Function ID: 79397
+// Module ID: 10312
+// Function ID: 79526
 // Name: VideoBadge
-// Dependencies: [31, 27, 4123, 10201, 33, 4131, 689, 8065, 4127, 3835, 477, 4534, 4640, 8665, 624, 5834, 9826, 10234, 7845, 8055, 1449, 5085, 5849, 5852, 8080, 9573, 1273, 7909, 3992, 2]
+// Dependencies: [31, 27, 4157, 10241, 33, 4165, 689, 8103, 4161, 3869, 477, 4568, 4674, 8709, 624, 5844, 9866, 10274, 7881, 8093, 1449, 5119, 5859, 5862, 8118, 9613, 1273, 7945, 4026, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 10272 (VideoBadge)
+// Module 10312 (VideoBadge)
 import result from "result";
 import get_ActivityIndicator from "SolidCutout";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,12 +23,12 @@ let closure_9;
 const require = arg1;
 function VideoBadge() {
   const tmp = _createForOfIteratorHelperLoose();
-  obj = { style: tmp.badge, children: callback(require(8065) /* PlayIcon */.PlayIcon, obj) };
+  obj = { style: tmp.badge, children: callback(require(8103) /* PlayIcon */.PlayIcon, obj) };
   obj = { style: tmp.icon, size: "custom", color: "white" };
   return callback(View, obj);
 }
 function CountBadge(total) {
-  obj = { style: callback3().badge, children: callback(require(4127) /* Text */.Text, obj) };
+  obj = { style: callback3().badge, children: callback(require(4161) /* Text */.Text, obj) };
   obj = { variant: "text-xs/semibold", color: "text-default", children: total.total };
   return callback(View, obj);
 }
@@ -37,7 +37,7 @@ function ObscuredMediaOverlay(isSpoiler) {
   let isObscured;
   ({ isObscured, children } = isSpoiler);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const token = obj.useToken(importDefault(689).colors.SPOILER_HIDDEN_BACKGROUND);
   if (!isObscured) {
     if (!isSpoiler.isSpoiler) {
@@ -60,14 +60,14 @@ function ObscuredMediaOverlay(isSpoiler) {
   let tmp8 = !isObscured;
   if (tmp8) {
     obj1 = { blurTheme: str, android_fallbackColor: token, style: StyleSheet.absoluteFill };
-    tmp8 = callback(importDefault(4534), obj1);
+    tmp8 = callback(importDefault(4568), obj1);
   }
   items[2] = tmp8;
   const obj2 = { style: tmp.spoilerIconContainer };
   if (isObscured) {
-    let tmp15Result = tmp15(require(4640) /* ImageWarningIcon */.ImageWarningIcon, { size: "sm", color: "white" });
+    let tmp15Result = tmp15(require(4674) /* ImageWarningIcon */.ImageWarningIcon, { size: "sm", color: "white" });
   } else {
-    const obj3 = { style: tmp.spoilerPill, children: callback(require(8665) /* EyeIcon */.EyeIcon, { size: "sm", color: "white" }) };
+    const obj3 = { style: tmp.spoilerPill, children: callback(require(8709) /* EyeIcon */.EyeIcon, { size: "sm", color: "white" }) };
     tmp15Result = tmp15(View, obj3);
   }
   obj2.children = tmp15Result;
@@ -90,22 +90,22 @@ function SinglePreviewableMedia(arg0) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.useReducedMotion);
   ({ type, media, icon } = previewableMedia);
-  let obj1 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
+  let obj1 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
   const shouldAgeVerifyForExplicitMedia = obj1.useShouldAgeVerifyForExplicitMedia();
-  let obj2 = require(9826) /* useEnabledHarmTypesBitmaskForChannelAndAuthorId */;
+  let obj2 = require(9866) /* useEnabledHarmTypesBitmaskForChannelAndAuthorId */;
   const enabledHarmTypesBitmaskForMessage = obj2.useEnabledHarmTypesBitmaskForMessage(message);
-  if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VOICE_MESSAGE === type) {
+  if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VOICE_MESSAGE === type) {
     obj = {};
     obj = { width: size, height: size };
     obj.style = obj;
     obj.children = icon;
     return callback(View, obj);
   } else {
-    if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.AUDIO !== type) {
-      if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.FILE !== type) {
-        if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.IMAGE !== type) {
-          if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO !== type) {
-            if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.GIF === type) {
+    if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.AUDIO !== type) {
+      if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.FILE !== type) {
+        if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.IMAGE !== type) {
+          if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO !== type) {
+            if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.GIF === type) {
               const video = media.video;
               if (null != video) {
                 const url = video.url;
@@ -119,11 +119,11 @@ function SinglePreviewableMedia(arg0) {
                 if (null != author) {
                   id = author.id;
                 }
-                const enabledHarmTypesForChannelAndAuthorId = require(5849) /* _createForOfIteratorHelperLoose */.getEnabledHarmTypesForChannelAndAuthorId(message.channel_id, id);
-                const obj24 = require(5849) /* _createForOfIteratorHelperLoose */;
+                const enabledHarmTypesForChannelAndAuthorId = require(5859) /* _createForOfIteratorHelperLoose */.getEnabledHarmTypesForChannelAndAuthorId(message.channel_id, id);
+                const obj24 = require(5859) /* _createForOfIteratorHelperLoose */;
                 obj1 = {};
-                const getMediaObscuredReasonFromBitmask = require(5849) /* _createForOfIteratorHelperLoose */.getMediaObscuredReasonFromBitmask;
-                obj1.type = require(5852) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed;
+                const getMediaObscuredReasonFromBitmask = require(5859) /* _createForOfIteratorHelperLoose */.getMediaObscuredReasonFromBitmask;
+                obj1.type = require(5862) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed;
                 obj1.media = media;
                 if (null != thumbnail.proxyURL) {
                   if ("" !== thumbnail.proxyURL) {
@@ -143,7 +143,7 @@ function SinglePreviewableMedia(arg0) {
                         obj5.src = obj6;
                         obj5.poster = url2;
                         obj5.postponeRender = false;
-                        let tmp25 = callback(importDefault(8080), obj5);
+                        let tmp25 = callback(importDefault(8118), obj5);
                       }
                       obj4.children = tmp25;
                       obj2.children = tmp20(tmp21, obj4);
@@ -155,19 +155,19 @@ function SinglePreviewableMedia(arg0) {
                   obj7.source = obj8;
                   obj7.style = tmp.mediaThumbnail;
                   obj7.resizeMode = "cover";
-                  tmp25 = callback(importDefault(5085), obj7);
+                  tmp25 = callback(importDefault(5119), obj7);
                 }
                 url2 = thumbnail.url;
-                const tmp16 = require(5849) /* _createForOfIteratorHelperLoose */;
+                const tmp16 = require(5859) /* _createForOfIteratorHelperLoose */;
               }
-            } else if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.STICKER === type) {
+            } else if (require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.STICKER === type) {
               const obj9 = {};
               const items2 = [tmp.mediaThumbnailContainer, ];
               const obj10 = { width: size, height: size };
               items2[1] = obj10;
               obj9.style = items2;
               const obj11 = { sticker: media, size, animated: !stateFromStores };
-              obj9.children = callback(importDefault(9573), obj11);
+              obj9.children = callback(importDefault(9613), obj11);
               return callback(View, obj9);
             } else {
               return null;
@@ -180,13 +180,13 @@ function SinglePreviewableMedia(arg0) {
             if (null != height) {
               if (height > 0) {
                 const obj12 = { attachment: media, shouldObscureSpoiler: true, enabledContentHarmTypeFlags: enabledHarmTypesBitmaskForMessage, shouldAgeVerify: shouldAgeVerifyForExplicitMedia };
-                const attachmentObscurityProps = require(7845) /* getContentScanVersionFromMedia */.getAttachmentObscurityProps(obj12);
-                const obj25 = require(7845) /* getContentScanVersionFromMedia */;
-                const attachmentUrl = require(8055) /* _createForOfIteratorHelperLoose */.getAttachmentUrl(media);
-                const obj27 = require(8055) /* _createForOfIteratorHelperLoose */;
+                const attachmentObscurityProps = require(7881) /* getContentScanVersionFromMedia */.getAttachmentObscurityProps(obj12);
+                const obj25 = require(7881) /* getContentScanVersionFromMedia */;
+                const attachmentUrl = require(8093) /* _createForOfIteratorHelperLoose */.getAttachmentUrl(media);
+                const obj27 = require(8093) /* _createForOfIteratorHelperLoose */;
                 const obj13 = { src: attachmentUrl, sourceWidth: width, sourceHeight: height, targetWidth: 2 * size, targetHeight: 2 * size, animated: false };
                 let str5;
-                if (type === require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
+                if (type === require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
                   str5 = "png";
                 }
                 obj13.format = str5;
@@ -203,9 +203,9 @@ function SinglePreviewableMedia(arg0) {
                 obj17.source = obj18;
                 obj17.style = tmp.mediaThumbnail;
                 obj17.resizeMode = "cover";
-                const items4 = [callback(importDefault(5085), obj17), ];
+                const items4 = [callback(importDefault(5119), obj17), ];
                 let tmp39 = null;
-                if (type === require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
+                if (type === require(10274) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
                   tmp39 = callback(VideoBadge, {});
                 }
                 items4[1] = tmp39;
@@ -245,7 +245,7 @@ function MultiplePreviewableMedia(arg0) {
   items = [memo];
   const tmp = callback4();
   obj.children = callback(SinglePreviewableMedia, { previewableMedia, size: 56, message });
-  const items1 = [callback(importDefault(7909), obj), callback(CountBadge, { total: totalMediaCount })];
+  const items1 = [callback(importDefault(7945), obj), callback(CountBadge, { total: totalMediaCount })];
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -269,7 +269,7 @@ function ExpandableMediaPreview(accessoryExitProgressSV) {
   let totalMediaCount;
   accessoryExitProgressSV = accessoryExitProgressSV.accessoryExitProgressSV;
   ({ message, totalMediaCount, previewableMedia } = accessoryExitProgressSV);
-  let obj = accessoryExitProgressSV(3992);
+  let obj = accessoryExitProgressSV(4026);
   const fn = function l() {
     const value = accessoryExitProgressSV.get();
     let obj = { opacity: 1 - value, transform: items };
@@ -284,7 +284,7 @@ function ExpandableMediaPreview(accessoryExitProgressSV) {
   obj = { style: items };
   items = [callback5().rightAccessoryAbsolute, animatedStyle];
   obj.children = callback(MediaPreviewRightAccessoryContent, { previewableMedia, totalMediaCount, message });
-  return callback(importDefault(3992).View, obj);
+  return callback(importDefault(4026).View, obj);
 }
 function SimpleMediaPreview(arg0) {
   let message;
@@ -334,7 +334,7 @@ export const MediaPreviewRightAccessory = function MediaPreviewRightAccessory(ar
   let accessoryExitProgressSV;
   let message;
   ({ message, accessoryExitProgressSV } = arg0);
-  let obj = require(10234) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10274) /* _createForOfIteratorHelperLoose */;
   const previewableMedia = obj.usePreviewableMedia(message);
   if (0 === previewableMedia.length) {
     return null;

@@ -1,10 +1,10 @@
-// Module ID: 8705
-// Function ID: 69056
+// Module ID: 8749
+// Function ID: 69207
 // Name: UnifiedGiftModal
-// Dependencies: [57, 31, 33, 4338, 5517, 8706, 1212, 5087, 8707, 8744, 5462, 2]
+// Dependencies: [57, 31, 33, 4372, 5552, 8750, 1212, 5121, 8751, 8788, 5497, 2]
 // Exports: default
 
-// Module 8705 (UnifiedGiftModal)
+// Module 8749 (UnifiedGiftModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/checkout/native
 export default function UnifiedGiftModal(skuId) {
   let obj = { skuId: skuId.skuId, applicationId: skuId.applicationId, lockedRecipientUser: skuId.lockedRecipientUser, onGiftModalDismiss: skuId.onGiftModalDismiss, validateRecipient: skuId.validateRecipient, renderProductDetails: skuId.renderProductDetails, renderPurchaseSection: skuId.renderPurchaseSection };
   obj = { value: skuId.analyticsLocations };
-  obj = { initialRouteName: require(8706) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL };
+  obj = { initialRouteName: require(8750) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL };
   obj.screens = (function useScreens(skuId) {
     skuId = skuId.skuId;
     const applicationId = skuId.applicationId;
@@ -58,6 +58,6 @@ export default function UnifiedGiftModal(skuId) {
       return obj;
     }, items1);
   })(obj);
-  obj.children = jsx(require(5517) /* NavigationStack */.Navigator, { initialRouteName: require(8706) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL });
-  return jsx(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { initialRouteName: require(8706) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL });
+  obj.children = jsx(require(5552) /* NavigationStack */.Navigator, { initialRouteName: require(8750) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL });
+  return jsx(require(5497) /* mergeLocations */.AnalyticsLocationProvider, { initialRouteName: require(8750) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL });
 };

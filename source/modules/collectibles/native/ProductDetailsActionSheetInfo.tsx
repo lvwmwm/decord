@@ -1,10 +1,10 @@
-// Module ID: 8689
-// Function ID: 68974
+// Module ID: 8733
+// Function ID: 69125
 // Name: ProductNameAndDescription
-// Dependencies: [27, 33, 4131, 689, 8690, 4127, 5782, 8642, 1212, 8691, 8012, 1877, 2]
+// Dependencies: [27, 33, 4165, 689, 8734, 4161, 5792, 8686, 1212, 8735, 8050, 1877, 2]
 // Exports: default
 
-// Module 8689 (ProductNameAndDescription)
+// Module 8733 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -14,38 +14,38 @@ let closure_5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(8690) /* _createForOfIteratorHelperLoose */;
+  let obj = require(8734) /* _createForOfIteratorHelperLoose */;
   obj = { style: tmp.description };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-md/medium", color: "text-default", children: productDescription };
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   return callback2(View, obj);
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(5782) /* getPriceForCollectiblesProduct */;
+  let obj = require(5792) /* getPriceForCollectiblesProduct */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(8642) /* getProductPurchaseState */;
+  let obj1 = require(8686) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   obj = {};
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.children = intl2.string(require(1212) /* getSystemLocale */.t["6cfuDj"]);
-    let tmp6 = callback(require(4127) /* Text */.Text, obj);
+    let tmp6 = callback(require(4161) /* Text */.Text, obj);
   } else if (tmp3) {
     obj1 = { variant: "text-md/semibold", color: "interactive-text-active" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.BEjTij);
-    tmp6 = callback(require(4127) /* Text */.Text, obj1);
+    tmp6 = callback(require(4161) /* Text */.Text, obj1);
   } else {
     tmp6 = !result;
     if (tmp6) {
       const obj2 = { product, onTrackPress: product.onTrackPress };
-      tmp6 = callback(importDefault(8691), obj2);
+      tmp6 = callback(importDefault(8735), obj2);
     }
   }
   obj.children = tmp6;
@@ -54,7 +54,7 @@ function ProductPurchaseStatus(product) {
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(8012) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8050) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
   obj = {};
   const items = [tmp.body, ];

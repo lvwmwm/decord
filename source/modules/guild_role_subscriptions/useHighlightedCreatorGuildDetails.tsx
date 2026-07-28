@@ -1,10 +1,10 @@
-// Module ID: 16473
-// Function ID: 128426
+// Module ID: 16513
+// Function ID: 128587
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [31, 653, 16474, 1392, 2]
+// Dependencies: [31, 653, 16514, 1392, 2]
 // Exports: default
 
-// Module 16473 (useHighlightedCreatorGuildDetails)
+// Module 16513 (useHighlightedCreatorGuildDetails)
 import result from "result";
 import { MarketingURLs } from "ME";
 

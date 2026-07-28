@@ -1,10 +1,10 @@
-// Module ID: 9880
-// Function ID: 76548
+// Module ID: 9920
+// Function ID: 76677
 // Name: _savedMessageJumpToMessage
-// Dependencies: [5, 31, 1352, 1348, 653, 1212, 3713, 566, 4141, 5626, 2]
+// Dependencies: [5, 31, 1352, 1348, 653, 1212, 3747, 566, 4175, 5661, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 9880 (_savedMessageJumpToMessage)
+// Module 9920 (_savedMessageJumpToMessage)
 import getSystemLocale from "getSystemLocale";
 import result from "result";
 import { UnknownChannelRecord } from "_callSuper";
@@ -49,8 +49,8 @@ export const useDueInString = function useDueInString(arg0) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj = {};
     const time = dueAt.getTime();
-    const obj3 = importDefault(3713);
-    obj.duration = importDefault(3713).duration(time - now.getTime(), "millisecond").humanize();
+    const obj3 = importDefault(3747);
+    obj.duration = importDefault(3747).duration(time - now.getTime(), "millisecond").humanize();
     obj.dueInText = intl.formatToPlainString(H4gnX9, obj);
     obj.isOverdue = now > dueAt;
     return obj;

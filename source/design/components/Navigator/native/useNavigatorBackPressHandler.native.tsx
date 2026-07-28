@@ -1,10 +1,10 @@
-// Module ID: 5093
-// Function ID: 44349
+// Module ID: 5127
+// Function ID: 44464
 // Name: useNavigatorBackPressHandler
 // Dependencies: [31, 27, 1457, 477, 2]
 // Exports: useNavigatorBackPressHandler
 
-// Module 5093 (useNavigatorBackPressHandler)
+// Module 5127 (useNavigatorBackPressHandler)
 import result from "result";
 
 const require = arg1;

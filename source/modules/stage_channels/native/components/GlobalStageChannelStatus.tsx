@@ -1,10 +1,10 @@
-// Module ID: 10631
-// Function ID: 82825
+// Module ID: 10669
+// Function ID: 82946
 // Name: getText
-// Dependencies: [5, 57, 31, 27, 3824, 1353, 653, 33, 1212, 4131, 689, 4321, 566, 4560, 10632, 7618, 10622, 4956, 6690, 6692, 6658, 6654, 1273, 4127, 4545, 4544, 10624, 10330, 4067, 3841, 6622, 4594, 2]
+// Dependencies: [5, 57, 31, 27, 3858, 1353, 653, 33, 1212, 4165, 689, 4355, 566, 4594, 10670, 7654, 10660, 4990, 6726, 6728, 6694, 6690, 1273, 4161, 4579, 4578, 10662, 10370, 4101, 3875, 6658, 4628, 2]
 // Exports: default
 
-// Module 10631 (getText)
+// Module 10669 (getText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import getThreadChannelIcon from "getThreadChannelIcon";
@@ -41,7 +41,7 @@ class StageChannelRaiseHandAck {
   constructor(arg0) {
     channel = global.channel;
     c1 = undefined;
-    f82831 = undefined;
+    f82952 = undefined;
     c3 = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
       // CreateGeneratorClosureLongIndex (0x67)
@@ -64,9 +64,9 @@ class StageChannelRaiseHandAck {
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => outer1_9.getStageInstanceByChannel(channel.id), items1);
-    f82831 = stateFromStores;
+    f82952 = stateFromStores;
     tmp6 = require("useMountLayoutEffect")(() => {
-      let obj = _undefined(10632);
+      let obj = _undefined(10670);
       obj = {};
       const intl = channel(1212).intl;
       obj = { channelName: _undefined };
@@ -159,8 +159,8 @@ class StageChannelRaiseHandAck {
       obj8 = { variant: "secondary", onPress: null, pillStyle: null, size: "sm", text: null, grow: true };
       obj8.onPress = function handleDeclineInvite() {
         if (null != channel) {
-          const result = channel(6658).audienceAckRequestToSpeak(channel, true);
-          const obj = channel(6658);
+          const result = channel(6694).audienceAckRequestToSpeak(channel, true);
+          const obj = channel(6694);
         }
       };
       obj8.pillStyle = tmp.declineButtonPill;
@@ -232,13 +232,13 @@ export default function GlobalStageChannelStatus(arg0) {
   if (null != channel) {
     id = channel.id;
   }
-  let stringResult = importDefault(4321)(channel);
+  let stringResult = importDefault(4355)(channel);
   if (null == stringResult) {
     const intl = id(1212).intl;
     stringResult = intl.string(id(1212).t["/YzI63"]);
   }
-  const tmp6 = importDefault(10624)();
-  let invitedHeaderText = importDefault(10330)(id);
+  const tmp6 = importDefault(10662)();
+  let invitedHeaderText = importDefault(10370)(id);
   let obj = id(566);
   const items = [closure_9];
   const items1 = [id];
@@ -250,7 +250,7 @@ export default function GlobalStageChannelStatus(arg0) {
   }
   if (!invitedHeaderText) {
     if (!tmp6) {
-      let obj1 = id(3841);
+      let obj1 = id(3875);
       let str = "dark-content";
     }
     if (null != channel) {
@@ -272,9 +272,9 @@ export default function GlobalStageChannelStatus(arg0) {
         } else {
           obj = { style: tmp.noticeContainer };
           obj1 = { animated: true, barStyle: str };
-          const items2 = [callback2(importDefault(6622), obj1), , ];
+          const items2 = [callback2(importDefault(6658), obj1), , ];
           const obj2 = { style: activeSpeakerIcon, size: id(1273).Icon.Sizes.REFRESH_SMALL_16 };
-          let obj5 = id(4594);
+          let obj5 = id(4628);
           obj2.source = obj5.getChannelIconWithGuild(channel, guild);
           items2[1] = callback2(id(1273).Icon, obj2);
           const obj3 = { numberOfLines: 1 };

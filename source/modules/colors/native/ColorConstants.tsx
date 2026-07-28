@@ -1,10 +1,10 @@
-// Module ID: 6173
-// Function ID: 55499
+// Module ID: 6207
+// Function ID: 55618
 // Name: items
 // Dependencies: [1852, 689, 2]
 // Exports: getPremiumGradientColor
 
-// Module 6173 (items)
+// Module 6207 (items)
 import { PremiumTypes } from "GuildFeatures";
 
 const obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 14838
-// Function ID: 113190
+// Module ID: 14882
+// Function ID: 113363
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [14791, 653, 668, 9137, 14789, 14798, 2]
+// Dependencies: [14835, 653, 668, 9181, 14833, 14842, 2]
 // Exports: default
 
-// Module 14838 (_createForOfIteratorHelperLoose)
+// Module 14882 (_createForOfIteratorHelperLoose)
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 import { AbortCodes } from "ME";
 
@@ -112,10 +112,10 @@ let closure_7 = { [require(668).AuthStates.REGISTER_IDENTITY]: ["email", "phoneT
 const result = require("keys").fileFinishedImporting("modules/auth/native/components/utils/handleRegisterErrorRedirection.tsx");
 
 export default function handleRegisterErrorRedirection(navigate, arg1, code, step) {
-  if (null == importDefault(9137)("date_of_birth", code)) {
+  if (null == importDefault(9181)("date_of_birth", code)) {
     const _Number = Number;
     if (Number(code.code) !== AbortCodes.UNDER_MINIMUM_AGE) {
-      const tmp32 = _createForOfIteratorHelperLoose(require(14789) /* getRegistrationSteps */.getRegistrationSteps());
+      const tmp32 = _createForOfIteratorHelperLoose(require(14833) /* getRegistrationSteps */.getRegistrationSteps());
       const iter6 = tmp32();
       let iter5 = iter6;
       if (!iter6.done) {
@@ -135,7 +135,7 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code, ste
               let value = iter2.value;
               let tmp6 = importDefault;
               let tmp7 = dependencyMap;
-              let tmp8 = importDefault(9137)(value, code);
+              let tmp8 = importDefault(9181)(value, code);
               if (null != tmp8) {
                 let tmp9 = getRedirectStepForErrorKey;
                 let tmp10 = getRedirectStepForErrorKey(value);
@@ -160,7 +160,7 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code, ste
             let tmp15 = require;
             let tmp16 = dependencyMap;
             let num = 5;
-            let obj2 = require(14798) /* trackRegTransition */;
+            let obj2 = require(14842) /* trackRegTransition */;
             items1[1] = obj2.getCommonErrorDetails(code.error_code);
             obj.details = items1;
             let tmp17 = arg1(obj);
@@ -172,10 +172,10 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code, ste
       }
       if (tmp19) {
         obj = { step, actionType: constants2.RESPONSE_ERROR };
-        const items2 = [require(14798) /* trackRegTransition */.getCommonErrorDetails(code.error_code)];
+        const items2 = [require(14842) /* trackRegTransition */.getCommonErrorDetails(code.error_code)];
         obj.details = items2;
         arg1(obj);
-        const obj4 = require(14798) /* trackRegTransition */;
+        const obj4 = require(14842) /* trackRegTransition */;
       }
     }
   }

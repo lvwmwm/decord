@@ -1,10 +1,10 @@
-// Module ID: 8075
-// Function ID: 64285
+// Module ID: 8113
+// Function ID: 64395
 // Name: MediaViewerDimensionsProvider
 // Dependencies: [31, 33, 1450, 44, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8075 (MediaViewerDimensionsProvider)
+// Module 8113 (MediaViewerDimensionsProvider)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 

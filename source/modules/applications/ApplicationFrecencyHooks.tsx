@@ -1,10 +1,10 @@
-// Module ID: 11232
-// Function ID: 87383
+// Module ID: 11270
+// Function ID: 87502
 // Name: useSortApplicationsViaFrecency
-// Dependencies: [31, 5670, 662, 1331, 566, 21, 5674, 2]
+// Dependencies: [31, 5680, 662, 1331, 566, 21, 5684, 2]
 // Exports: useSortApplicationsViaFrecency
 
-// Module 11232 (useSortApplicationsViaFrecency)
+// Module 11270 (useSortApplicationsViaFrecency)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserSettingsTypes } from "MAX_FAVORITES";

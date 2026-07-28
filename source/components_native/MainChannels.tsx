@@ -1,9 +1,9 @@
-// Module ID: 14859
-// Function ID: 113337
+// Module ID: 14903
+// Function ID: 113510
 // Name: DM_WIDTH
-// Dependencies: [57, 31, 27, 653, 33, 14860, 5122, 4131, 689, 3985, 14861, 14866, 14867, 14868, 3992, 14951, 14952, 15021, 10834, 2]
+// Dependencies: [57, 31, 27, 653, 33, 14904, 5156, 4165, 689, 4019, 14905, 14910, 14911, 14912, 4026, 14995, 14996, 15065, 10872, 2]
 
-// Module 14859 (DM_WIDTH)
+// Module 14903 (DM_WIDTH)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -58,7 +58,7 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     obj.selectedChannelId = tmp[1];
     return obj;
   })());
-  isChatBesideChannelList = isChatBesideChannelList(3985)().isChatBesideChannelList;
+  isChatBesideChannelList = isChatBesideChannelList(4019)().isChatBesideChannelList;
   let items = [tmp, isChatBesideChannelList];
   const memo = importAllResult.useMemo(() => {
     const items = [tmp.side, ];
@@ -69,10 +69,10 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     items[1] = sideTablet;
     return items;
   }, items);
-  let obj = require(14861) /* HOME_DRAWER_FLING_PHYSICS */;
+  let obj = require(14905) /* HOME_DRAWER_FLING_PHYSICS */;
   const homeGesture = obj.useHomeGesture();
   ({ gesture, panelStyles, homeDrawerState } = homeGesture);
-  const sum = DM_WIDTH + isChatBesideChannelList(14866)();
+  const sum = DM_WIDTH + isChatBesideChannelList(14910)();
   obj = { value: homeDrawerState };
   obj = { gesture };
   const obj1 = {};
@@ -85,7 +85,7 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   obj2.width = tmp9;
   items1[1] = obj2;
   obj1.style = items1;
-  const items2 = [callback(require(14868) /* HomePanelContent */.HomePanelContent, {}), ];
+  const items2 = [callback(require(14912) /* HomePanelContent */.HomePanelContent, {}), ];
   const obj3 = { style: null, pointerEvents: "box-none", nativeID: "messages-parent-view" };
   const items3 = [panelStyles, tmp.sideContainer];
   obj3.style = items3;
@@ -95,19 +95,19 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     num = 1;
   }
   obj4.activeIndex = num;
-  const items4 = [callback(isChatBesideChannelList(14952), { style: memo }), callback(isChatBesideChannelList(15021), { style: memo, selectedGuildId, selectedChannelId })];
+  const items4 = [callback(isChatBesideChannelList(14996), { style: memo }), callback(isChatBesideChannelList(15065), { style: memo, selectedGuildId, selectedChannelId })];
   obj4.children = items4;
-  obj3.children = closure_10(require(14951) /* NativeFreezeScreens */.NativeFreezeScreens, obj4);
-  items2[1] = callback(isChatBesideChannelList(3992).View, obj3);
+  obj3.children = closure_10(require(14995) /* NativeFreezeScreens */.NativeFreezeScreens, obj4);
+  items2[1] = callback(isChatBesideChannelList(4026).View, obj3);
   obj1.children = items2;
   obj.children = closure_10(closure_5, obj1);
-  obj.children = callback(require(14867) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
-  return callback(require(14861) /* HOME_DRAWER_FLING_PHYSICS */.HomeDrawerStateContext.Provider, obj);
+  obj.children = callback(require(14911) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
+  return callback(require(14905) /* HOME_DRAWER_FLING_PHYSICS */.HomeDrawerStateContext.Provider, obj);
 });
 let obj2 = { borderTopRightRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const memoResult = importAllResult.memo(function MainChannelsRedesignInner() {
-  const obj = { profile: require(10834) /* setLevels */.Profiles.LeftPanel, children: callback(closure_12, {}) };
-  return callback(importDefault(10834), obj);
+  const obj = { profile: require(10872) /* setLevels */.Profiles.LeftPanel, children: callback(closure_12, {}) };
+  return callback(importDefault(10872), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/MainChannels.tsx");
 

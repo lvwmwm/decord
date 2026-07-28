@@ -1,10 +1,10 @@
-// Module ID: 14293
-// Function ID: 109787
+// Module ID: 14337
+// Function ID: 109960
 // Name: EffectTile
-// Dependencies: [57, 31, 27, 1862, 33, 4131, 689, 7892, 14288, 14289, 4100, 4099, 5187, 5186, 1212, 2557, 4544, 4542, 8323, 8318, 8319, 4127, 2]
+// Dependencies: [57, 31, 27, 1862, 33, 4165, 689, 7928, 14332, 14333, 4134, 4133, 5221, 5220, 1212, 2557, 4578, 4576, 8361, 8356, 8357, 4161, 2]
 // Exports: default
 
-// Module 14293 (EffectTile)
+// Module 14337 (EffectTile)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -27,12 +27,12 @@ function EffectTile(arg0) {
   ({ userId, onClick } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   const intl = require(1212) /* getSystemLocale */.intl;
-  let OpWJ3f = require(8323) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+  let OpWJ3f = require(8361) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (null == OpWJ3f) {
     OpWJ3f = importDefault(2557).OpWJ3f;
   }
   const stringResult = intl.string(OpWJ3f);
-  let obj = require(8323) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(8361) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effectId);
   let hasItem = FLYWHEEL_EFFECTS.includes(effectId);
   obj = { onPress: onClick, accessibilityRole: "button" };
@@ -52,8 +52,8 @@ function EffectTile(arg0) {
   }
   items[1] = selected;
   obj1.style = items;
-  const obj2 = { userId, userName: stringResult, effectDisplayType: require(8319) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
-  const items1 = [callback2(importDefault(8318), obj2), , ];
+  const obj2 = { userId, userName: stringResult, effectDisplayType: require(8357) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
+  const items1 = [callback2(importDefault(8356), obj2), , ];
   if (showNewDot) {
     const obj3 = { style: tmp.tileNewDot, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     showNewDot = callback2(closure_5, obj3);
@@ -63,7 +63,7 @@ function EffectTile(arg0) {
     const obj4 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.betaCaption };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj4.children = intl3.string(require(1212) /* getSystemLocale */.t.oW0eUd);
-    hasItem = callback2(require(4127) /* Text */.Text, obj4);
+    hasItem = callback2(require(4161) /* Text */.Text, obj4);
   }
   items1[2] = hasItem;
   obj1.children = items1;
@@ -96,10 +96,10 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   userId = userId.userId;
   ({ selectedEffectId, onSelectEffect } = userId);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = userId(7892);
-  let obj1 = userId(14288);
+  let obj = userId(7928);
+  let obj1 = userId(14332);
   const visibleEffectOrder = obj1.useVisibleEffectOrder();
-  let obj2 = userId(14289);
+  let obj2 = userId(14333);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: dependencyMap, dismissEffectDot: _slicedToArray } = displayNameStylesNewEffects);
   const tmp3 = callback(first.useState(selectedEffectId), 2);
@@ -125,9 +125,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
     obj3.onPress = tmp6;
     obj3.variant = "primary";
     obj3.size = "sm";
-    obj2.children = callback2(userId(4544).Button, obj3);
+    obj2.children = callback2(userId(4578).Button, obj3);
     obj1.trailing = callback2(closure_5, obj2);
-    obj.children = callback2(userId(5186).BottomSheetTitleHeader, obj1);
+    obj.children = callback2(userId(5220).BottomSheetTitleHeader, obj1);
     obj.header = callback2(closure_5, obj);
     const obj4 = { style: tmp.container };
     const obj5 = { style: tmp.contentContainer };
@@ -151,10 +151,10 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
           }, effectId);
         })
     };
-    obj5.children = callback2(userId(4542).Stack, obj6);
+    obj5.children = callback2(userId(4576).Stack, obj6);
     obj4.children = callback2(closure_5, obj5);
     obj.children = callback2(closure_5, obj4);
-    tmp7 = callback2(userId(5187).BottomSheet, obj);
+    tmp7 = callback2(userId(5221).BottomSheet, obj);
   }
   return tmp7;
 };

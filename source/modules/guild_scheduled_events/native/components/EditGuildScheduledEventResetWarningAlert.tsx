@@ -1,10 +1,10 @@
-// Module ID: 8256
-// Function ID: 66310
+// Module ID: 8294
+// Function ID: 66420
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [31, 33, 4562, 1212, 2]
+// Dependencies: [31, 33, 4596, 1212, 2]
 // Exports: default
 
-// Module 8256 (EditGuildScheduledEventResetWarningAlert)
+// Module 8294 (EditGuildScheduledEventResetWarningAlert)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -22,8 +22,8 @@ export default function EditGuildScheduledEventResetWarningAlert(arg0) {
   obj.body = intl2.format(require(1212) /* getSystemLocale */.t.RWBa5X, {});
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-  obj.confirmColor = importDefault(4562).Colors.GREEN;
+  obj.confirmColor = importDefault(4596).Colors.GREEN;
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  return jsx(importDefault(4562), { onClose, onConfirm });
+  return jsx(importDefault(4596), { onClose, onConfirm });
 };

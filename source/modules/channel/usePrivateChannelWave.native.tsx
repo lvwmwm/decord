@@ -1,10 +1,10 @@
-// Module ID: 14964
-// Function ID: 114091
+// Module ID: 15008
+// Function ID: 114264
 // Name: usePrivateChannelWave
-// Dependencies: [5, 57, 31, 653, 4124, 11363, 1198, 5685, 3832, 1212, 11362, 14965, 2]
+// Dependencies: [5, 57, 31, 653, 4158, 11401, 1198, 5695, 3866, 1212, 11400, 15009, 2]
 // Exports: default
 
-// Module 14964 (usePrivateChannelWave)
+// Module 15008 (usePrivateChannelWave)
 import getDmHasMessageHistory from "getDmHasMessageHistory";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -26,7 +26,7 @@ export default function usePrivateChannelWave(id) {
   const items = [id.id, first];
   const obj = {};
   callback = React.useCallback(callback(tmp), items);
-  obj.waveShouldShow = _require(14965).usePrivateChannelWaveEligible(id, arg1);
+  obj.waveShouldShow = _require(15009).usePrivateChannelWaveEligible(id, arg1);
   obj.wavePressed = callback;
   return obj;
 };

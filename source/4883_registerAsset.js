@@ -1,11 +1,11 @@
 // Module ID: 4883
-// Function ID: 42245
+// Function ID: 42326
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4883 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "576340e1ed4deb81baadbae498cf3ba0", name: "img_account_sync_github_white", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "98be8451aca35f74c79e6384bee97580", name: "img_account_sync_steam_light", type: "svg" };
 
 export default registerAsset.registerAsset(obj);

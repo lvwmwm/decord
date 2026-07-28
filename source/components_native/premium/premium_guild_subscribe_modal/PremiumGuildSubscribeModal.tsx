@@ -1,10 +1,10 @@
-// Module ID: 4968
-// Function ID: 42696
+// Module ID: 5002
+// Function ID: 42811
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [57, 31, 1278, 4969, 653, 33, 4970, 5087, 4967, 6695, 3977, 12569, 12570, 8943, 1212, 6449, 6554, 1273, 12571, 12604, 5450, 4541, 5517, 2]
+// Dependencies: [57, 31, 1278, 5003, 653, 33, 5004, 5121, 5001, 6731, 4011, 12612, 12613, 8987, 1212, 6485, 6590, 1273, 12614, 12647, 5485, 4575, 5552, 2]
 // Exports: default
 
-// Module 4968 (PremiumGuildSubscribeModal)
+// Module 5002 (PremiumGuildSubscribeModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
   let importDefault;
   let require;
   ({ guildId: require, guildBoostSlots: importDefault, intent: dependencyMap, onResult: _slicedToArray } = arg0);
-  let tmp = importDefault(5450)(() => {
+  let tmp = importDefault(5485)(() => {
     const items = [];
     if (null != closure_0) {
       if (null != length) {
@@ -120,7 +120,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
   first = tmp2[0];
   let _isNativeReflectConstruct = tmp2[1];
   let items = [first];
-  importDefault(4541)(first.useCallback(() => {
+  importDefault(4575)(first.useCallback(() => {
     let flag = first === outer1_6.GUILD_SELECT;
     if (flag) {
       outer1_0(outer1_2[8]).closeApplyBoostModal();
@@ -141,5 +141,5 @@ export default function PremiumGuildSubscribeModal(arg0) {
       callback(tmp.name);
     }
   };
-  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: tmp.screens, initialRouteStack: initialStack });
+  return jsx(require(5552) /* NavigationStack */.Navigator, { screens: tmp.screens, initialRouteStack: initialStack });
 };

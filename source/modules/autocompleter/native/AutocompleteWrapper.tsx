@@ -1,9 +1,9 @@
-// Module ID: 11422
-// Function ID: 88773
+// Module ID: 11460
+// Function ID: 88892
 // Name: isSlashAutocompleteType
-// Dependencies: [57, 31, 27, 6039, 4992, 4809, 5036, 653, 4567, 9515, 4568, 9598, 1853, 33, 4131, 477, 689, 11423, 1450, 5159, 5084, 566, 3835, 9849, 11426, 3804, 5163, 9597, 9599, 11427, 9269, 5674, 1882, 9514, 11107, 1555, 4325, 11428, 1324, 4529, 11429, 6137, 11329, 1273, 3992, 11430, 5676, 11437, 4127, 1212, 7582, 11438, 11439, 2]
+// Dependencies: [57, 31, 27, 6073, 5026, 4843, 5070, 653, 4601, 9555, 4602, 9638, 1853, 33, 4165, 477, 689, 11461, 1450, 5193, 5118, 566, 3869, 9889, 11464, 3838, 5197, 9637, 9639, 11465, 9313, 5684, 1882, 9554, 11145, 1555, 4359, 11466, 1324, 4563, 11467, 6171, 11367, 1273, 4026, 11468, 5686, 11475, 4161, 1212, 7618, 11476, 11477, 2]
 
-// Module 11422 (isSlashAutocompleteType)
+// Module 11460 (isSlashAutocompleteType)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "_createForOfIteratorHelperLoose";
 import get_ActivityIndicator from "toGameResults";
@@ -53,10 +53,10 @@ function getAutocompletesHeight(arg0, arg1, arg2, arg3) {
   return num;
 }
 function getStickersItemLayout(arg0, index) {
-  const obj = { length: require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE };
-  const result = index * (require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE + require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN);
+  const obj = { length: require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE };
+  const result = index * (require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE + require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN);
   const diff = index - 1;
-  obj.offset = result + diff * require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN;
+  obj.offset = result + diff * require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN;
   obj.index = index;
   return obj;
 }
@@ -87,8 +87,8 @@ let closure_28 = _createForOfIteratorHelperLoose.createStyles((borderRadius, bor
   obj.sectionDivider = obj2;
   const obj3 = { backgroundColor: importDefault(689).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingLeft: 12, marginVertical: 12, justifyContent: "center" };
   obj.sectionTitle = obj3;
-  obj.stickersAutocompleteList = { paddingLeft: 12 - require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
-  const obj4 = { paddingLeft: 12 - require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11423) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  obj.stickersAutocompleteList = { paddingLeft: 12 - require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  const obj4 = { paddingLeft: 12 - require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11461) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
   obj.newTag = { backgroundColor: importDefault(689).colors.BADGE_BACKGROUND_BRAND };
   return obj;
 });
@@ -727,31 +727,38 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     if (type.type !== scaledTextLineHeight.EMOJI_PREMIUM_UPSELL) {
       if (type.type === scaledTextLineHeight.GLOBAL) {
         if ("gameMentionInput" === type.inlineAutocompleteType) {
-          const current5 = chatInputRef.current;
-          current5.insertText(memo, arg1, false);
+          const current4 = chatInputRef.current;
+          current4.insertText(memo, arg1, false);
           beginSearch(arg1);
         }
       }
       const autocompleteResultText = analyticsLocations(canMentionEveryone[33]).getAutocompleteResultText(type, channel);
+      const current = chatInputRef.current;
+      const applicationCommandManager = current.getApplicationCommandManager();
       if (type.type === scaledTextLineHeight.GAME_MENTION) {
-        const current = chatInputRef.current;
-        const applicationCommandManager = current.getApplicationCommandManager();
         if (null != applicationCommandManager) {
           applicationCommandManager.addGameMention(type.game);
         }
+        let gameMentionNode;
+        if (null != applicationCommandManager) {
+          gameMentionNode = applicationCommandManager.buildGameMentionNode(type.game);
+        }
+        let tmp17;
+        if (null != gameMentionNode) {
+          const items = [gameMentionNode];
+          tmp17 = items;
+        }
       }
-      const current2 = chatInputRef.current;
-      const applicationCommandManager1 = current2.getApplicationCommandManager();
       let result;
-      if (null != applicationCommandManager1) {
-        result = applicationCommandManager1.setAutoCompleteResult(channel.id, autocompleteResultText, arg2, type);
+      if (null != applicationCommandManager) {
+        result = applicationCommandManager.setAutoCompleteResult(channel.id, autocompleteResultText, arg2, type);
       }
       if (!result) {
-        const current3 = chatInputRef.current;
-        current3.insertText(autocompleteResultText, arg1, type.type !== scaledTextLineHeight.STICKER);
+        const current2 = chatInputRef.current;
+        current2.insertText(autocompleteResultText, arg1, type.type !== scaledTextLineHeight.STICKER, tmp13);
         if (type.type === scaledTextLineHeight.STICKER) {
-          const current4 = chatInputRef.current;
-          current4.handleSelectSticker(type.sticker, arg1);
+          const current3 = chatInputRef.current;
+          current3.handleSelectSticker(type.sticker, arg1);
         }
       }
       const obj3 = analyticsLocations(canMentionEveryone[33]);

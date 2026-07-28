@@ -1,9 +1,9 @@
-// Module ID: 9067
-// Function ID: 71310
+// Module ID: 9111
+// Function ID: 71461
 // Name: withErrorHandling
-// Dependencies: [5, 653, 4471, 1212, 686, 507, 6024, 9068, 9069, 9070, 6026, 2]
+// Dependencies: [5, 653, 4505, 1212, 686, 507, 6058, 9112, 9113, 9114, 6060, 2]
 
-// Module 9067 (withErrorHandling)
+// Module 9111 (withErrorHandling)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -80,19 +80,19 @@ export default {
     obj.dispatch(obj);
   },
   markPostAsSeen(parent_id, feedItemId, timestampMillis) {
-    const obj = require(9068) /* markAnalyticsFeedItemSeen */;
-    const result = obj.markAnalyticsFeedItemSeen(require(9069) /* _isNativeReflectConstruct */.getForumPostSeenManagerId(parent_id), feedItemId, timestampMillis);
+    const obj = require(9112) /* markAnalyticsFeedItemSeen */;
+    const result = obj.markAnalyticsFeedItemSeen(require(9113) /* _isNativeReflectConstruct */.getForumPostSeenManagerId(parent_id), feedItemId, timestampMillis);
   },
   markPostAsUnseen(parent_id, feedItemId, timestampMillis) {
-    const obj = require(9068) /* markAnalyticsFeedItemSeen */;
-    const result = obj.markAnalyticsFeedItemUnseen(require(9069) /* _isNativeReflectConstruct */.getForumPostSeenManagerId(parent_id), feedItemId, timestampMillis);
+    const obj = require(9112) /* markAnalyticsFeedItemSeen */;
+    const result = obj.markAnalyticsFeedItemUnseen(require(9113) /* _isNativeReflectConstruct */.getForumPostSeenManagerId(parent_id), feedItemId, timestampMillis);
   },
   flushSeenItems(parent_id, IMMEDIATE_WITH_COOLDOWN) {
     if (IMMEDIATE_WITH_COOLDOWN === undefined) {
-      IMMEDIATE_WITH_COOLDOWN = require(9070) /* _createForOfIteratorHelperLoose */.ForceFlushType.IMMEDIATE_WITH_COOLDOWN;
+      IMMEDIATE_WITH_COOLDOWN = require(9114) /* _createForOfIteratorHelperLoose */.ForceFlushType.IMMEDIATE_WITH_COOLDOWN;
     }
-    const obj = require(9068) /* markAnalyticsFeedItemSeen */;
-    const result = obj.flushAnalyticsFeedItems(require(9069) /* _isNativeReflectConstruct */.getForumPostSeenManagerId(parent_id), IMMEDIATE_WITH_COOLDOWN);
+    const obj = require(9112) /* markAnalyticsFeedItemSeen */;
+    const result = obj.flushAnalyticsFeedItems(require(9113) /* _isNativeReflectConstruct */.getForumPostSeenManagerId(parent_id), IMMEDIATE_WITH_COOLDOWN);
   },
   searchForumPosts(guild_id, id, arg2, arg3, arg4) {
     let closure_0 = guild_id;

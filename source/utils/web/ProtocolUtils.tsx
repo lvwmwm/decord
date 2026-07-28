@@ -1,9 +1,9 @@
-// Module ID: 12364
-// Function ID: 96132
+// Module ID: 12407
+// Function ID: 96302
 // Name: launchChrome
-// Dependencies: [4451, 2]
+// Dependencies: [4485, 2]
 
-// Module 12364 (launchChrome)
+// Module 12407 (launchChrome)
 import { os } from "capitalize";
 
 function launchChrome(href) {

@@ -1,10 +1,10 @@
-// Module ID: 6442
-// Function ID: 57829
+// Module ID: 6478
+// Function ID: 57918
 // Name: _fetchSKU
-// Dependencies: [5, 6443, 4176, 653, 686, 4370, 507, 3800, 6444, 5819, 4030, 3799, 3792, 4452, 4461, 1327, 2]
+// Dependencies: [5, 6479, 4210, 653, 686, 4404, 507, 3834, 6480, 5829, 4064, 3833, 3826, 4486, 4495, 1327, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 6442 (_fetchSKU)
+// Module 6478 (_fetchSKU)
 import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

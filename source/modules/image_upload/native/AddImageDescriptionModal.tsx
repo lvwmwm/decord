@@ -1,10 +1,10 @@
-// Module ID: 9785
-// Function ID: 76024
+// Module ID: 9825
+// Function ID: 76153
 // Name: AddDescription
-// Dependencies: [57, 31, 27, 4469, 4468, 33, 4131, 689, 566, 1450, 1456, 5159, 9786, 9050, 1212, 6134, 9784, 7585, 9040, 2]
+// Dependencies: [57, 31, 27, 4503, 4502, 33, 4165, 689, 566, 1450, 1456, 5193, 9826, 9094, 1212, 6168, 9824, 7621, 9084, 2]
 // Exports: default
 
-// Module 9785 (AddDescription)
+// Module 9825 (AddDescription)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -138,5 +138,5 @@ export default function AddImageDescriptionModal(arg0) {
   obj.render = function render() {
     return outer1_10(outer1_13, { source: closure_0, channelId: closure_1, id: closure_2 });
   };
-  return callback(importDefault(9040), obj);
+  return callback(importDefault(9084), obj);
 };

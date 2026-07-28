@@ -1,10 +1,10 @@
-// Module ID: 16548
-// Function ID: 128928
+// Module ID: 16588
+// Function ID: 129089
 // Name: ContentHeader
-// Dependencies: [31, 27, 653, 33, 4131, 689, 4127, 4099, 16549, 1935, 16553, 1273, 16552, 1212, 5452, 1456, 14178, 16554, 675, 4325, 14184, 16550, 9361, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 4161, 4133, 16589, 1935, 16593, 1273, 16592, 1212, 5487, 1456, 14222, 16594, 675, 4359, 14228, 16590, 9405, 2]
 // Exports: default
 
-// Module 16548 (ContentHeader)
+// Module 16588 (ContentHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -25,9 +25,9 @@ function ContentHeader(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { variant: "text-xs/bold", color: "text-muted", style: tmp.contentHeader };
   obj = { variant: "text-xs/bold", color: "text-default", style: tmp.contentHeader, children: count };
-  const items = [callback(require(4127) /* Text */.Text, obj), " ", title];
+  const items = [callback(require(4161) /* Text */.Text, obj), " ", title];
   obj.children = items;
-  return callback2(require(4127) /* Text */.Text, obj);
+  return callback2(require(4161) /* Text */.Text, obj);
 }
 function Separator() {
   return callback(closure_6, { style: _createForOfIteratorHelperLoose().separator });
@@ -38,11 +38,11 @@ function BenefitShowCase(title) {
   let tmp3 = title;
   if ("string" === typeof title) {
     obj = { variant: "text-md/semibold", color: "text-default", children: title };
-    tmp3 = callback(require(4127) /* Text */.Text, obj);
+    tmp3 = callback(require(4161) /* Text */.Text, obj);
   }
   const items = [tmp3, callback(require(1273) /* Button */.Spacer, { size: 2 }), ];
   obj = { variant: "text-sm/medium", color: "interactive-text-default", children: title.description };
-  items[2] = callback(require(4127) /* Text */.Text, obj);
+  items[2] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return closure_10(closure_6, obj);
 }
@@ -51,11 +51,11 @@ function ChannelBenefitShowCase(channel) {
   let name;
   let type;
   ({ description, type, name } = channel.channel);
-  let obj = require(16552) /* getPrivateChannelIconComponent */;
+  let obj = require(16592) /* getPrivateChannelIconComponent */;
   obj = { style: { flexDirection: "row", alignItems: "center" } };
   const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1273) /* Button */.Spacer, { size: 4 }), ];
   obj = { variant: "text-md/semibold", color: "text-default", children: name };
-  items[2] = callback(require(4127) /* Text */.Text, obj);
+  items[2] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback(BenefitShowCase, { title: callback2(closure_6, obj), description });
 }
@@ -66,11 +66,11 @@ function ViewEntireTemplateFooter() {
   obj = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 } };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.kejaOD);
-  const items = [callback(require(4127) /* Text */.Text, obj), callback(require(1273) /* Button */.Spacer, { size: 3 }), callback(closure_6, { style: tmp.viewEntireTemplateFooterUnderline })];
+  const items = [callback(require(4161) /* Text */.Text, obj), callback(require(1273) /* Button */.Spacer, { size: 3 }), callback(closure_6, { style: tmp.viewEntireTemplateFooterUnderline })];
   obj.children = items;
   const items1 = [callback2(closure_6, obj), ];
   const obj2 = {};
-  const obj3 = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(5452) };
+  const obj3 = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(5487) };
   const items2 = [{ rotate: "180deg" }];
   obj3.style = { transform: items2 };
   obj2.children = callback(require(1273) /* Button */.Icon, obj3);

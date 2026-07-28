@@ -1,8 +1,8 @@
-// Module ID: 15103
-// Function ID: 115013
-// Dependencies: [31, 1348, 1908, 10223, 4327, 33, 4131, 689, 624, 1198, 9029, 15027, 8254, 2]
+// Module ID: 15143
+// Function ID: 115171
+// Dependencies: [31, 1348, 1908, 10263, 4361, 33, 4165, 689, 624, 1198, 9073, 15071, 8292, 2]
 
-// Module 15103
+// Module 15143
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -45,14 +45,14 @@ const memoResult = importAllResult.memo((guildId) => {
   if (null != stateFromStores) {
     obj = { onPress: callback, onLongPress: tmp5, style: tmp.container, accessible: true, accessibilityRole: "button" };
     obj = { channel: stateFromStores };
-    obj.accessibilityLabel = id(8254)(obj);
+    obj.accessibilityLabel = id(8292)(obj);
     const obj1 = { selected };
     obj.accessibilityState = obj1;
     obj.channel = stateFromStores;
     obj.selected = selected;
     obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp6 = jsx(id(15027), { channel: stateFromStores });
-    const tmp10 = id(15027);
+    tmp6 = jsx(id(15071), { channel: stateFromStores });
+    const tmp10 = id(15071);
   }
   return tmp6;
 });

@@ -1,10 +1,10 @@
-// Module ID: 7931
-// Function ID: 63133
+// Module ID: 7968
+// Function ID: 63242
 // Name: createUploaderAttachments
-// Dependencies: [7655, 4318, 7845, 1212, 4665, 2]
+// Dependencies: [7691, 4352, 7881, 1212, 4699, 2]
 // Exports: default
 
-// Module 7931 (createUploaderAttachments)
+// Module 7968 (createUploaderAttachments)
 import { AttachmentType } from "Changeset";
 
 const result = require("getContentScanVersionFromMedia").fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");

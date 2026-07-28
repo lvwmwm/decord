@@ -1,10 +1,10 @@
-// Module ID: 9713
-// Function ID: 75702
+// Module ID: 9753
+// Function ID: 75831
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [31, 4168, 9711, 33, 4131, 689, 566, 7991, 5085, 8602, 2]
+// Dependencies: [31, 4202, 9751, 33, 4165, 689, 566, 8029, 5119, 8646, 2]
 // Exports: default
 
-// Module 9713 (SocialLayerStorefrontWishlistItemCard)
+// Module 9753 (SocialLayerStorefrontWishlistItemCard)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

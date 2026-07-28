@@ -1,9 +1,9 @@
-// Module ID: 7846
-// Function ID: 62598
+// Module ID: 7882
+// Function ID: 62688
 // Name: MediaGalleryItemType
 // Dependencies: [2]
 
-// Module 7846 (MediaGalleryItemType)
+// Module 7882 (MediaGalleryItemType)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RowGeneratorTypes.tsx");
 
 export const MediaGalleryItemType = { IMAGE: 1, [1]: "IMAGE", VIDEO: 2, [2]: "VIDEO", VISUAL_PLACEHOLDER: 3, [3]: "VISUAL_PLACEHOLDER" };

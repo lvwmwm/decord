@@ -1,10 +1,10 @@
-// Module ID: 10596
-// Function ID: 82594
+// Module ID: 10634
+// Function ID: 82715
 // Name: doesOrientationMatchLockState
-// Dependencies: [4156, 2]
+// Dependencies: [4190, 2]
 // Exports: default
 
-// Module 10596 (doesOrientationMatchLockState)
+// Module 10634 (doesOrientationMatchLockState)
 import { OrientationLockState } from "items3";
 
 const result = require("set").fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");

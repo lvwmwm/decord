@@ -1,8 +1,8 @@
-// Module ID: 13043
-// Function ID: 100932
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 7892, 5187, 5189, 477, 13038, 13044, 12981, 13045, 13048, 5446, 2]
+// Module ID: 13087
+// Function ID: 101105
+// Dependencies: [31, 27, 33, 4165, 689, 1557, 7928, 5221, 5223, 477, 13082, 13088, 13025, 13089, 13092, 5481, 2]
 
-// Module 13043
+// Module 13087
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -27,7 +27,7 @@ const memoResult = require("result").memo(function GuildActionSheet(arg0) {
     expanded = false;
   }
   const tmp = callback3();
-  let obj = require(7892) /* useBottomSheetRef */;
+  let obj = require(7928) /* useBottomSheetRef */;
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = { ref: bottomSheetRef, handleDisabled: true, showGradient: true, scrollable: true, startExpanded: expanded };
@@ -39,15 +39,15 @@ const memoResult = require("result").memo(function GuildActionSheet(arg0) {
   }
   obj1.paddingBottom = importDefault(1557)().bottom + num;
   obj.contentContainerStyle = obj1;
-  const items = [callback(importDefault(13038), { guild }), callback(importDefault(13044), { guild }), , ];
+  const items = [callback(importDefault(13082), { guild }), callback(importDefault(13088), { guild }), , ];
   const obj2 = { style: tmp.actions };
-  const items1 = [callback(require(12981) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), callback(importDefault(13045), { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), callback(importDefault(13048), { guildId: guild.id })];
+  const items1 = [callback(require(13025) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), callback(importDefault(13089), { guild }), callback(require(13025) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), callback(require(13025) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), callback(require(13025) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), callback(importDefault(13092), { guildId: guild.id })];
   obj2.children = items1;
   items[2] = callback2(View, obj2);
-  items[3] = callback(require(5446) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
+  items[3] = callback(require(5481) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
   obj.children = items;
-  obj.children = callback2(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  obj.children = callback2(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheet.tsx");
 

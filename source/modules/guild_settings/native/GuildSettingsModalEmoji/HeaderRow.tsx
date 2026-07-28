@@ -1,10 +1,10 @@
-// Module ID: 16328
-// Function ID: 127135
+// Module ID: 16367
+// Function ID: 127291
 // Name: HeaderRow
-// Dependencies: [5, 57, 31, 27, 16322, 653, 1853, 33, 4131, 689, 8204, 9347, 675, 1212, 491, 4675, 4544, 4127, 566, 2]
+// Dependencies: [5, 57, 31, 27, 16361, 653, 1853, 33, 4165, 689, 8242, 9391, 675, 1212, 491, 4709, 4578, 4161, 566, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 16328 (HeaderRow)
+// Module 16367 (HeaderRow)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -61,7 +61,7 @@ function HeaderRow(guild) {
   [tmp5, c5] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
   [c6, c7] = callback(React.useState(""), 2);
-  let obj = guild(8204);
+  let obj = guild(8242);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   const intl = guild(1212).intl;
   let items = [createUploadInstructionsListItem(intl.string(guild(1212).t.N2qTQ3), 1), , , ];
@@ -86,19 +86,19 @@ function HeaderRow(guild) {
     const intl5 = guild(1212).intl;
     obj2.text = intl5.string(guild(1212).t["DU0dy/"]);
     obj2.disabled = uploadDisabled;
-    canCreateExpressions = callback3(guild(4544).Button, obj2);
+    canCreateExpressions = callback3(guild(4578).Button, obj2);
     const tmp11 = callback3;
   }
   const items1 = [canCreateExpressions, , ];
   let tmp16 = null != tmp5;
   if (tmp16) {
     const obj3 = { style: tmp.errorText, variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
-    tmp16 = callback3(guild(4127).Text, obj3);
+    tmp16 = callback3(guild(4161).Text, obj3);
   }
   items1[1] = tmp16;
   const obj4 = { style: tmp.uploadInstructionsContainer };
   const obj5 = { variant: "text-sm/medium", color: "text-muted", children: description };
-  const items2 = [callback3(guild(4127).Text, obj5), , ];
+  const items2 = [callback3(guild(4161).Text, obj5), , ];
   const obj6 = { variant: "text-xs/bold", color: "text-muted", style: tmp.uploadInstructionsHeading };
   const intl6 = guild(1212).intl;
   const tmp10 = c6;
@@ -107,7 +107,7 @@ function HeaderRow(guild) {
   const tmp8 = closure_15;
   const tmp9 = callback2;
   obj6.children = intl6.string(guild(1212).t.jrXfyw).toUpperCase();
-  items2[1] = callback3(guild(4127).Text, obj6);
+  items2[1] = callback3(guild(4161).Text, obj6);
   items2[2] = callback3(c7, {
     style: tmp.uploadInstructionsList,
     data: items,

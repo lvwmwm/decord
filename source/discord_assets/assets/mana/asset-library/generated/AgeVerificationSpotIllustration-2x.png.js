@@ -1,9 +1,9 @@
-// Module ID: 6773
-// Function ID: 59396
+// Module ID: 6809
+// Function ID: 59485
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6773 (metadata)
+// Module 6809 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AgeVerificationSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/98374a6e6c84208f7367ebe6e441c07d85c02bf16b7681b829d68f3f3ab82b90.png";

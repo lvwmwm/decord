@@ -1,11 +1,11 @@
 // Module ID: 15259
-// Function ID: 116139
+// Function ID: 116074
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15259 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/icymi/native/images", width: 24.5, height: 24, scales: [2, 3], hash: "17237a5c49ea745b655cbec7c093406d", name: "emoji-positive", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "ca5ed05660659bd429f0c8e3c3fa0755", name: "ic_trash_24px", type: "png" };
 
 export default registerAsset.registerAsset(obj);

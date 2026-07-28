@@ -1,11 +1,11 @@
 // Module ID: 9366
-// Function ID: 73106
+// Function ID: 73042
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9366 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "aa86e9bedf9e29074b68adcd3222cf32", name: "NatureIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/nitro_icons", width: 16, height: 16, scales: [2, 3], hash: "e31ee2ef368806b54cff2e8c81e8cd97", name: "img_nitro_icon_filled", type: "png" };
 
 export default registerAsset.registerAsset(obj);

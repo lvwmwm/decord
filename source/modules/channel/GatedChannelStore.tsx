@@ -1,7 +1,7 @@
 // Module ID: 1909
-// Function ID: 21487
+// Function ID: 21491
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1910, 1352, 1912, 1348, 1918, 1911, 1838, 1850, 653, 3750, 3751, 3752, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1910, 1352, 1912, 1348, 1918, 1911, 1838, 1850, 653, 3784, 3785, 3786, 566, 686, 2]
 
 // Module 1909 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
@@ -116,7 +116,7 @@ function isSubscriptionGated(role) {
   let isPreviewingRoles;
   role = role.role;
   ({ guildId, isPreviewingRoles } = role);
-  const tmp = !require(3750) /* isSubscriptionRole */.isSubscriptionRole(role);
+  const tmp = !require(3784) /* isSubscriptionRole */.isSubscriptionRole(role);
   let tmp2 = !tmp;
   if (!tmp) {
     let tmp4 = !tmp3;
@@ -125,7 +125,7 @@ function isSubscriptionGated(role) {
       if (null != role) {
         tmp8 = role;
       }
-      const tmp9 = !require(3750) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(tmp8);
+      const tmp9 = !require(3784) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(tmp8);
       let tmp10 = !tmp9;
       if (tmp9) {
         let flag = false;
@@ -145,7 +145,7 @@ function isSubscriptionGated(role) {
         tmp10 = flag;
       }
       tmp4 = tmp10;
-      const obj2 = require(3750) /* isSubscriptionRole */;
+      const obj2 = require(3784) /* isSubscriptionRole */;
     }
     tmp2 = tmp4;
   }
@@ -171,7 +171,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
       if (isSubscriptionGated(obj)) {
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj2 = require(3751) /* isChannelAccessDeniedBy */;
+        let obj2 = require(3785) /* isChannelAccessDeniedBy */;
         if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp3])) {
           break;
         }
@@ -193,7 +193,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
           if (isSubscriptionGated(obj)) {
             let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj5 = require(3751) /* isChannelAccessDeniedBy */;
+            let obj5 = require(3785) /* isChannelAccessDeniedBy */;
             if (obj5.hasViewChannelPermission(value)) {
               break;
             }

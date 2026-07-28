@@ -1,10 +1,10 @@
-// Module ID: 6673
-// Function ID: 58971
+// Module ID: 6709
+// Function ID: 59060
 // Name: CircleErrorIcon
-// Dependencies: [31, 27, 33, 689, 3834, 6674, 6675, 2]
+// Dependencies: [31, 27, 33, 689, 3868, 6710, 6711, 2]
 // Exports: CircleErrorIcon
 
-// Module 6673 (CircleErrorIcon)
+// Module 6709 (CircleErrorIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,15 +30,15 @@ export const CircleErrorIcon = function CircleErrorIcon(color) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
-  obj = { source: require(6674) /* registerAsset */, color: secondaryColor, style };
+  obj = { source: require(6710) /* registerAsset */, color: secondaryColor, style };
   const merged1 = Object.assign(merged);
-  const items = [callback(require(3834) /* BaseIconImage */.BaseIconImage, obj), ];
-  const obj1 = { source: require(6675) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
+  const items = [callback(require(3868) /* BaseIconImage */.BaseIconImage, obj), ];
+  const obj1 = { source: require(6711) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
   const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(3834) /* BaseIconImage */.BaseIconImage, obj1);
+  items[1] = callback(require(3868) /* BaseIconImage */.BaseIconImage, obj1);
   obj.children = items;
   return callback2(View, obj);
 };

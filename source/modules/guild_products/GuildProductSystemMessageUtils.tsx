@@ -1,10 +1,10 @@
-// Module ID: 7717
-// Function ID: 61625
+// Module ID: 7753
+// Function ID: 61715
 // Name: getGuildProductPurchaseSystemMessageContentMobile
 // Dependencies: [653, 1212, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 7717 (getGuildProductPurchaseSystemMessageContentMobile)
+// Module 7753 (getGuildProductPurchaseSystemMessageContentMobile)
 import { NOOP } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductSystemMessageUtils.tsx");

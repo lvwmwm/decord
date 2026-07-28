@@ -1,10 +1,10 @@
-// Module ID: 12671
-// Function ID: 98322
+// Module ID: 12714
+// Function ID: 98492
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1883, 5882, 5886, 1903, 5887, 1899, 22, 44, 2]
+// Dependencies: [1352, 1883, 5916, 5920, 1903, 5921, 1899, 22, 44, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12671 (_createForOfIteratorHelperLoose)
+// Module 12714 (_createForOfIteratorHelperLoose)
 import { createChannelRecordFromServer as closure_3 } from "_callSuper";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -418,12 +418,12 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
   const databaseResult = importDefault(1883).database();
   const obj = importDefault(1883);
   if (obj2.isCacheEnabled()) {
-    let committedVersions = importDefault(5886).getCommittedVersions();
-    const obj3 = importDefault(5886);
+    let committedVersions = importDefault(5920).getCommittedVersions();
+    const obj3 = importDefault(5920);
   } else {
     committedVersions = Promise.resolve({});
   }
-  obj2 = require(5882) /* isCacheEnabled */;
+  obj2 = require(5916) /* isCacheEnabled */;
   if (obj4.isCacheEnabled()) {
     let guildIds = importDefault(1903).getGuildIds();
     const obj5 = importDefault(1903);
@@ -433,13 +433,13 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = importDefault(5887).okAsync(databaseResult);
-    const obj6 = importDefault(5887);
+    let okAsyncResult = importDefault(5921).okAsync(databaseResult);
+    const obj6 = importDefault(5921);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
   const items = [committedVersions, guildIds, okAsyncResult];
-  obj4 = require(5882) /* isCacheEnabled */;
+  obj4 = require(5916) /* isCacheEnabled */;
   return Promise.all(items).then((arg0) => {
     let tmp;
     let tmp2;

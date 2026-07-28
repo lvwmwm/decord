@@ -1,10 +1,10 @@
-// Module ID: 12096
-// Function ID: 94746
+// Module ID: 12139
+// Function ID: 94916
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [57, 31, 12097, 12098, 1922, 12099, 566, 12100, 12003, 1327, 12103, 2]
+// Dependencies: [57, 31, 12140, 12141, 1922, 12142, 566, 12143, 12046, 1327, 12146, 2]
 // Exports: default
 
-// Module 12096 (useApplicationWidgetLayoutRendererProps)
+// Module 12139 (useApplicationWidgetLayoutRendererProps)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 10970
-// Function ID: 85318
+// Module ID: 11008
+// Function ID: 85441
 // Name: items
-// Dependencies: [5, 57, 31, 27, 1920, 653, 33, 1212, 4131, 689, 5159, 9786, 4560, 675, 10971, 3832, 4320, 10295, 4127, 7596, 7595, 7585, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 1920, 653, 33, 1212, 4165, 689, 5193, 9826, 4594, 675, 11009, 3866, 4354, 10335, 4161, 7632, 7631, 7621, 4578, 2]
 
-// Module 10970 (items)
+// Module 11008 (items)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -96,10 +96,10 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   importAllResult = importAllResult.useRef("");
   const ref = importAllResult.useRef(null);
   const ref1 = importAllResult.useRef(null);
-  const insets = importDefault(5159)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toBottom" } }];
-  importDefault(9786)({ insets, inputs: items, scrollViewRef: ref });
-  importDefault(4560)(() => {
+  importDefault(9826)({ insets, inputs: items, scrollViewRef: ref });
+  importDefault(4594)(() => {
     let obj = outer1_1(outer1_2[13]);
     obj = { type: outer1_9, guild_id: closure_1, other_user_id: id.id };
     obj.track(outer1_10.OPEN_MODAL, obj);
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   obj1.variant = "heading-md/semibold";
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.Ns83GT, { helpdeskArticle: closure_8 });
-  const items1 = [callback2(require(4127) /* Text */.Text, obj1), , , ];
+  const items1 = [callback2(require(4161) /* Text */.Text, obj1), , , ];
   const obj4 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.title = intl2.string(require(1212) /* getSystemLocale */.t["9XsExm"]);
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
     const obj = { value, label: getLabel.getLabel() };
     return outer1_11(outer1_0(outer1_2[20]).TableRadioRow, obj, value);
   });
-  items1[1] = callback2(require(7596) /* context */.TableRadioGroup, obj4);
+  items1[1] = callback2(require(7632) /* context */.TableRadioGroup, obj4);
   const obj5 = { ref: ref1, containerStyle: tmp.reasonTextArea };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj5.placeholder = intl3.string(require(1212) /* getSystemLocale */.t.GakiH1);
@@ -137,7 +137,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   obj5.onChange = function onChange(current) {
     closure_5.current = current;
   };
-  items1[2] = callback2(require(7585) /* TextArea */.TextArea, obj5);
+  items1[2] = callback2(require(7621) /* TextArea */.TextArea, obj5);
   const obj6 = { style: tmp.buttonContainer };
   const obj7 = { variant: "primary" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   obj7.onPress = function handleSubmitButtonPressed() {
     return _handleSubmitButtonPressed(...arguments);
   };
-  obj6.children = callback2(require(4544) /* Button */.Button, obj7);
+  obj6.children = callback2(require(4578) /* Button */.Button, obj7);
   items1[3] = callback2(_handleSubmitButtonPressed, obj6);
   obj.children = items1;
   obj.children = callback3(closure_12, obj);

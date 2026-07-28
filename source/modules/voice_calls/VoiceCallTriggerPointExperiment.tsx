@@ -1,9 +1,9 @@
-// Module ID: 16082
-// Function ID: 124427
+// Module ID: 16121
+// Function ID: 124583
 // Name: items
-// Dependencies: [4046, 4043, 2]
+// Dependencies: [4080, 4077, 2]
 
-// Module 16082 (items)
+// Module 16121 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-04_voice_call_trigger_point", label: "Voice Call Trigger Point Experiment", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };

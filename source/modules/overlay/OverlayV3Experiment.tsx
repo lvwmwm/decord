@@ -1,10 +1,10 @@
-// Module ID: 3972
-// Function ID: 32898
+// Module ID: 4006
+// Function ID: 33000
 // Name: getOverlayChatConfig
 // Dependencies: [1428, 2]
 // Exports: getOverlayDefaultKeybind, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 3972 (getOverlayChatConfig)
+// Module 4006 (getOverlayChatConfig)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";

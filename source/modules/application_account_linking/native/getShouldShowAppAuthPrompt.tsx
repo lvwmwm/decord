@@ -1,10 +1,10 @@
-// Module ID: 10893
-// Function ID: 84577
+// Module ID: 10931
+// Function ID: 84698
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [5067, 5467, 5470, 2]
+// Dependencies: [5101, 5502, 5505, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 10893 (getShouldShowAppAuthPrompt)
+// Module 10931 (getShouldShowAppAuthPrompt)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
 
@@ -15,7 +15,7 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
   if (null == applicationFromMessage) {
     return false;
   } else {
-    const authorizationApp = require(5467) /* getAuthorizationApp */.getAuthorizationApp(applicationFromMessage);
+    const authorizationApp = require(5502) /* getAuthorizationApp */.getAuthorizationApp(applicationFromMessage);
     if (null == authorizationApp) {
       return false;
     } else {
@@ -39,9 +39,9 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
           return tmp4;
         } else if (authStore.getFetchStateForApplication(parentId) === FetchState.NOT_FETCHED) {
           const items = [parentId];
-          const response = importDefault(5470).fetch(items);
+          const response = importDefault(5505).fetch(items);
           let flag2 = false;
-          const obj = importDefault(5470);
+          const obj = importDefault(5505);
         } else {
           let tmp9 = authStore.getFetchStateForApplication(parentId) === FetchState.FETCHED;
           if (tmp9) {
@@ -53,6 +53,6 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
         return false;
       }
     }
-    const obj2 = require(5467) /* getAuthorizationApp */;
+    const obj2 = require(5502) /* getAuthorizationApp */;
   }
 };

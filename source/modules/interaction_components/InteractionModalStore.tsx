@@ -1,9 +1,9 @@
-// Module ID: 13395
-// Function ID: 102774
+// Module ID: 13439
+// Function ID: 102947
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1882, 44, 7837, 664, 5685, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1882, 44, 7873, 664, 5695, 566, 686, 2]
 
-// Module 13395 (_isNativeReflectConstruct)
+// Module 13439 (_isNativeReflectConstruct)
 import invariant from "invariant";
 import _fetchMessageInteractionData from "_fetchMessageInteractionData";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -69,21 +69,21 @@ obj = {
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     if (nonce.nonce === c12) {
-      importDefault(5685).deleteMessage(c11, c10, true);
+      importDefault(5695).deleteMessage(c11, c10, true);
       c10 = null;
       c11 = null;
       c12 = null;
-      const obj = importDefault(5685);
+      const obj = importDefault(5695);
     }
     return false;
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
     if (nonce.nonce === c12) {
-      importDefault(5685).deleteMessage(c11, c10, true);
+      importDefault(5695).deleteMessage(c11, c10, true);
       c10 = null;
       c11 = null;
       c12 = null;
-      const obj = importDefault(5685);
+      const obj = importDefault(5695);
     }
     return false;
   },

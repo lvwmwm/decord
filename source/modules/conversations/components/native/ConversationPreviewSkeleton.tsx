@@ -1,10 +1,10 @@
-// Module ID: 9220
-// Function ID: 72292
+// Module ID: 9264
+// Function ID: 72443
 // Name: ConversationPreviewSkeleton
-// Dependencies: [31, 27, 5832, 33, 4131, 689, 3992, 4132, 2]
+// Dependencies: [31, 27, 5842, 33, 4165, 689, 4026, 4166, 2]
 // Exports: default
 
-// Module 9220 (ConversationPreviewSkeleton)
+// Module 9264 (ConversationPreviewSkeleton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS";
@@ -34,7 +34,7 @@ let result = require("CONVERSATION_COLORS").fileFinishedImporting("modules/conve
 
 export default function ConversationPreviewSkeleton() {
   const _require = _createForOfIteratorHelperLoose();
-  let obj = _require(3992);
+  let obj = _require(4026);
   const sharedValue = obj.useSharedValue(0.4);
   let items = [sharedValue];
   const effect = React.useEffect(() => {
@@ -47,7 +47,7 @@ export default function ConversationPreviewSkeleton() {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 11432452203963;
   fn.__initData = closure_9;
-  const animatedStyle = _require(3992).useAnimatedStyle(fn);
+  const animatedStyle = _require(4026).useAnimatedStyle(fn);
   obj = { style: animatedStyle, "aria-hidden": true };
   obj = { length: closure_5 };
   obj.children = Array.from(obj, (arg0, arg1) => {
@@ -68,5 +68,5 @@ export default function ConversationPreviewSkeleton() {
     obj.children = items1;
     return outer1_7(outer1_4, obj, arg1);
   });
-  return callback(sharedValue(3992).View, obj);
+  return callback(sharedValue(4026).View, obj);
 };

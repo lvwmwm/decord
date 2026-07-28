@@ -1,10 +1,10 @@
-// Module ID: 12918
-// Function ID: 100320
+// Module ID: 12962
+// Function ID: 100493
 // Name: MarkupGameMention
-// Dependencies: [31, 33, 4131, 689, 1212, 4122, 11425, 5085, 8412, 8418, 4127, 2]
+// Dependencies: [31, 33, 4165, 689, 1212, 4156, 11463, 5119, 8456, 8462, 4161, 2]
 // Exports: default
 
-// Module 12918 (MarkupGameMention)
+// Module 12962 (MarkupGameMention)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -48,12 +48,12 @@ export default function MarkupGameMention(arg0) {
     if (tmp13) {
       tmp13 = "" !== icon;
     }
-    let tmp14 = callback(state(11425).UnknownGameIcon, obj);
+    let tmp14 = callback(state(11463).UnknownGameIcon, obj);
     if (tmp13) {
       obj = { style: tmp.icon };
       const obj1 = { uri: icon };
       obj.source = obj1;
-      tmp14 = callback(importDefault(5085), obj);
+      tmp14 = callback(importDefault(5119), obj);
     }
     const obj2 = {};
     let str4 = "button";
@@ -79,9 +79,9 @@ export default function MarkupGameMention(arg0) {
     obj2.onPress = fn;
     const items = [tmp14, ];
     const obj3 = { variant: "text-sm/medium", style: tmp.chipText, children: tmp4 };
-    items[1] = callback(state(4127).Text, obj3);
+    items[1] = callback(state(4161).Text, obj3);
     obj2.children = items;
-    return closure_3(state(4122).MarkupText, obj2, state.key);
+    return closure_3(state(4156).MarkupText, obj2, state.key);
   } else {
     obj = {};
     let textColor1;
@@ -91,6 +91,6 @@ export default function MarkupGameMention(arg0) {
     obj.color = textColor1;
     const items1 = ["@", stringResult];
     obj.children = items1;
-    return closure_3(state(4122).MarkupText, obj, state.key);
+    return closure_3(state(4156).MarkupText, obj, state.key);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 14527
-// Function ID: 110965
+// Module ID: 14571
+// Function ID: 111138
 // Name: Radio
-// Dependencies: [57, 31, 27, 653, 33, 4131, 4127, 7596, 7595, 5501, 5502, 8950, 9024, 5164, 13154, 10711, 4659, 4542, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 4161, 7632, 7631, 5536, 5537, 8994, 9068, 5198, 13198, 10749, 4693, 4576, 2]
 // Exports: default
 
-// Module 14527 (Radio)
+// Module 14571 (Radio)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -18,11 +18,11 @@ let closure_8;
 const require = arg1;
 function Radio() {
   let obj = {};
-  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: "Radio" }), callback2(require(4127) /* Text */.Text, { variant: "text-md/normal", children: "Select a single option from a short list of multiple options" }), ];
+  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Radio" }), callback2(require(4161) /* Text */.Text, { variant: "text-md/normal", children: "Select a single option from a short list of multiple options" }), ];
   obj = { title: "Role Colors", hasIcons: false, defaultValue: "color-in-names", onChange: NOOP };
-  const items1 = [callback2(require(7595) /* TableRadioRow */.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), callback2(require(7595) /* TableRadioRow */.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), callback2(require(7595) /* TableRadioRow */.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), callback2(require(7595) /* TableRadioRow */.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
+  const items1 = [callback2(require(7631) /* TableRadioRow */.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), callback2(require(7631) /* TableRadioRow */.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), callback2(require(7631) /* TableRadioRow */.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), callback2(require(7631) /* TableRadioRow */.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
   obj.children = items1;
-  items[2] = callback3(require(7596) /* context */.TableRadioGroup, obj);
+  items[2] = callback3(require(7632) /* context */.TableRadioGroup, obj);
   obj.children = items;
   return callback3(closure_8, obj);
 }
@@ -46,23 +46,23 @@ function Switch() {
   const tmp2 = useSwitchState(false);
   const tmp3 = useSwitchState();
   let obj = {};
-  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: "Switch" }), callback2(require(4127) /* Text */.Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" }), , ];
+  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Switch" }), callback2(require(4161) /* Text */.Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" }), , ];
   obj = { title: "Emoji", hasIcons: false };
   obj = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
   const merged = Object.assign(tmp);
-  obj.children = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
-  items[2] = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj.children = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
+  items[2] = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
   const obj1 = { title: "Display images, videos, and lolcats", hasIcons: false };
   const merged1 = Object.assign(tmp2);
-  const items1 = [callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, { label: "When posted as links to chat" }), , , ];
+  const items1 = [callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, { label: "When posted as links to chat" }), , , ];
   const merged2 = Object.assign(tmp3);
-  items1[1] = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, { label: "When uploaded directly to Discord" });
+  items1[1] = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, { label: "When uploaded directly to Discord" });
   const merged3 = Object.assign(useSwitchState(false));
-  items1[2] = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, { label: "With image descriptions" });
+  items1[2] = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, { label: "With image descriptions" });
   const obj5 = { label: "Disabled switch item", subLabel: "This should not be switchable", disabled: true, value: false, onValueChange: NOOP };
-  items1[3] = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj5);
+  items1[3] = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj5);
   obj1.children = items1;
-  items[3] = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj1);
+  items[3] = callback3(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj1);
   obj.children = items;
   return callback3(closure_8, obj);
 }
@@ -91,36 +91,36 @@ function InlineCheckbox(startChecked) {
       }, [])
     };
   })(flag));
-  return callback2(require(8950) /* Checkbox */.Checkbox, { label, description, required, checked, onToggle });
+  return callback2(require(8994) /* Checkbox */.Checkbox, { label, description, required, checked, onToggle });
 }
 function InlineCheckboxDemo() {
   const obj = {};
-  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), callback2(InlineCheckbox, { label: "Checkbox label", description: "This is a description", startChecked: true }), callback2(InlineCheckbox, { label: "Trust google.com links from now on" }), callback2(InlineCheckbox, { label: "I agree to the Terms of Service", required: true })];
+  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), callback2(InlineCheckbox, { label: "Checkbox label", description: "This is a description", startChecked: true }), callback2(InlineCheckbox, { label: "Trust google.com links from now on" }), callback2(InlineCheckbox, { label: "I agree to the Terms of Service", required: true })];
   obj.children = items;
   return callback3(closure_8, obj);
 }
 function CheckboxRowDemo() {
   let obj = {};
-  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: "Checkbox" }), callback2(require(4127) /* Text */.Text, { variant: "text-md/normal", children: "Select one or more options from a short list of options" }), ];
+  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Checkbox" }), callback2(require(4161) /* Text */.Text, { variant: "text-md/normal", children: "Select one or more options from a short list of options" }), ];
   obj = { title: "Who can send you a friend request?", hasIcons: false };
   obj = { label: "Everyone", subLabel: "Anyone can send you a friend request", checked: false, onPress: NOOP };
-  const items1 = [callback2(require(9024) /* TableCheckboxRow */.TableCheckboxRow, obj), , ];
+  const items1 = [callback2(require(9068) /* TableCheckboxRow */.TableCheckboxRow, obj), , ];
   const obj1 = { label: "Friends of Friends", subLabel: "Anyone who is friends with your friends can send you a friend request", checked: true, onPress: NOOP };
-  items1[1] = callback2(require(9024) /* TableCheckboxRow */.TableCheckboxRow, obj1);
+  items1[1] = callback2(require(9068) /* TableCheckboxRow */.TableCheckboxRow, obj1);
   const obj2 = { label: "Server Members", subLabel: "Anyone who is in a server with you can send you a friend request", checked: true, onPress: NOOP };
-  items1[2] = callback2(require(9024) /* TableCheckboxRow */.TableCheckboxRow, obj2);
+  items1[2] = callback2(require(9068) /* TableCheckboxRow */.TableCheckboxRow, obj2);
   obj.children = items1;
-  items[2] = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items[2] = callback3(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj.children = items;
   return callback3(closure_8, obj);
 }
 function SliderDemo() {
   let obj = {};
-  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: "Slider" }), ];
+  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Slider" }), ];
   obj = { start: true, end: true, label: "Volume" };
-  obj = { startIcon: callback2(require(10711) /* VoiceXIcon */.VoiceXIcon, {}), endIcon: callback2(require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, {}), onValueChange: NOOP };
-  obj.subLabel = callback2(require(13154) /* Slider */.Slider, obj);
-  items[1] = callback2(require(5164) /* TableRowInner */.TableRow, obj);
+  obj = { startIcon: callback2(require(10749) /* VoiceXIcon */.VoiceXIcon, {}), endIcon: callback2(require(4693) /* VoiceNormalIcon */.VoiceNormalIcon, {}), onValueChange: NOOP };
+  obj.subLabel = callback2(require(13198) /* Slider */.Slider, obj);
+  items[1] = callback2(require(5198) /* TableRowInner */.TableRow, obj);
   obj.children = items;
   return callback3(closure_8, obj);
 }
@@ -133,6 +133,6 @@ export default function UserSettingsDesignSystemFormPrimitives() {
   obj = { spacing: 24, style: callback4().container };
   const items = [callback2(Radio, {}), callback2(Switch, {}), callback2(CheckboxRowDemo, {}), callback2(InlineCheckboxDemo, {}), callback2(SliderDemo, {})];
   obj.children = items;
-  obj.children = callback3(require(4542) /* Stack */.Stack, obj);
+  obj.children = callback3(require(4576) /* Stack */.Stack, obj);
   return callback2(ScrollView, obj);
 };

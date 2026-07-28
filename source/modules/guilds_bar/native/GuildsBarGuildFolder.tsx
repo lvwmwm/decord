@@ -1,9 +1,9 @@
-// Module ID: 14881
-// Function ID: 113560
+// Module ID: 14925
+// Function ID: 113733
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 5868, 1838, 3948, 4971, 14871, 14877, 14872, 33, 4131, 689, 3835, 566, 5513, 1324, 4543, 3975, 665, 7620, 3992, 4477, 4597, 7844, 5085, 14882, 14884, 11649, 14892, 4100, 5049, 5515, 14874, 14893, 2]
+// Dependencies: [31, 5902, 1838, 3982, 5005, 14915, 14921, 14916, 33, 4165, 689, 3869, 566, 5548, 1324, 4577, 4009, 665, 7656, 4026, 4511, 4631, 7880, 5119, 14926, 14928, 11688, 14936, 4134, 5083, 5550, 14918, 14937, 2]
 
-// Module 14881 (_createForOfIteratorHelperLoose)
+// Module 14925 (_createForOfIteratorHelperLoose)
 import importAllResult from "getGuildFolderMenuItems";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -107,7 +107,7 @@ function MiniGuildIcon(arg0) {
   let require;
   let selected;
   ({ guildId: require, position, selected } = arg0);
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const tmp3 = callback3(false, obj.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE));
   const items = [closure_5];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.getGuild(closure_0));
@@ -133,9 +133,9 @@ function MiniGuildIcon(arg0) {
   items1[2] = guildPreview3;
   obj.style = items1;
   obj.guild = stateFromStores;
-  obj.size = require(5513) /* makeSizeStyle */.GuildIconSizes.XXSMALL;
+  obj.size = require(5548) /* makeSizeStyle */.GuildIconSizes.XXSMALL;
   obj.selected = selected;
-  return tmp5(importDefault(5513), obj, "" + selected);
+  return tmp5(importDefault(5548), obj, "" + selected);
 }
 function TransitionWrapper(children) {
   let flag = children.fromTop;
@@ -218,7 +218,7 @@ function GuildFolderIcon(item) {
   let tmp4 = null;
   if ("icon" === item.type) {
     const obj = { source: tmp3, style: item.tintStyle };
-    tmp4 = callback2(importDefault(5085), obj);
+    tmp4 = callback2(importDefault(5119), obj);
   }
   return tmp4;
 }

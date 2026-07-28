@@ -1,9 +1,9 @@
-// Module ID: 7877
-// Function ID: 62778
+// Module ID: 7913
+// Function ID: 62868
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 1386, 7878, 654, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 1386, 7914, 654, 566, 686, 2]
 
-// Module 7877 (_isNativeReflectConstruct)
+// Module 7913 (_isNativeReflectConstruct)
 import date from "date";
 import ANALYTICS_NAME from "ANALYTICS_NAME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 8830
-// Function ID: 69960
+// Module ID: 8874
+// Function ID: 70111
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [5, 57, 31, 1194, 4178, 4203, 8826, 4192, 566, 44, 206, 8809, 2]
+// Dependencies: [5, 57, 31, 1194, 4212, 4237, 8870, 4226, 566, 44, 206, 8853, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 8830 (useSecureFramesPairwiseFingerprint)
+// Module 8874 (useSecureFramesPairwiseFingerprint)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

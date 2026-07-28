@@ -1,10 +1,10 @@
-// Module ID: 8300
-// Function ID: 66711
+// Module ID: 8338
+// Function ID: 66821
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [31, 8043, 2]
+// Dependencies: [31, 8081, 2]
 // Exports: default
 
-// Module 8300 (useUserProfileAnalyticsProperties)
+// Module 8338 (useUserProfileAnalyticsProperties)
 import result from "result";
 import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY";
 

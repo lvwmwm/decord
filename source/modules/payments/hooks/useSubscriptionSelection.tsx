@@ -1,10 +1,10 @@
-// Module ID: 8697
-// Function ID: 69015
+// Module ID: 8741
+// Function ID: 69166
 // Name: useSubscriptionSelection
 // Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 8697 (useSubscriptionSelection)
+// Module 8741 (useSubscriptionSelection)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

@@ -1,10 +1,10 @@
-// Module ID: 15102
-// Function ID: 115008
+// Module ID: 15142
+// Function ID: 115166
 // Name: GuildRolesAndChannelsRow
-// Dependencies: [31, 27, 5757, 4143, 10223, 5056, 4327, 33, 4131, 689, 9931, 3947, 1334, 624, 5753, 4338, 9930, 1935, 11416, 11382, 1212, 12916, 2]
+// Dependencies: [31, 27, 5767, 4177, 10263, 5090, 4361, 33, 4165, 689, 9971, 3981, 1334, 624, 5763, 4372, 9970, 1935, 11454, 11420, 1212, 12960, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 15102 (GuildRolesAndChannelsRow)
+// Module 15142 (GuildRolesAndChannelsRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,9 +26,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   guild = guild.guild;
   const selected = guild.selected;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = id(9931)(guild);
+  const tmp2 = id(9971)(guild);
   id = guild.id;
-  let obj = guild(3947);
+  let obj = guild(3981);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1334).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   let obj1 = guild(624);
   const items = [closure_6];
@@ -42,14 +42,14 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
     obj = { guildId: id };
     obj.pushLazy(guild(outer1_2[17])(outer1_2[16], outer1_2.paths), obj, outer1_7);
   }, items2);
-  let SELECTED = guild(11416).ChannelModes.DEFAULT;
+  let SELECTED = guild(11454).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = guild(11416).ChannelModes.SELECTED;
+    SELECTED = guild(11454).ChannelModes.SELECTED;
   }
   let tmp10 = null;
   if (tmp9) {
-    obj = { style: tmp.channelInfoContainer, children: jsx(guild(11382).NewBadge, {}) };
-    tmp10 = <View style={tmp.channelInfoContainer}>{jsx(guild(11382).NewBadge, {})}</View>;
+    obj = { style: tmp.channelInfoContainer, children: jsx(guild(11420).NewBadge, {}) };
+    tmp10 = <View style={tmp.channelInfoContainer}>{jsx(guild(11420).NewBadge, {})}</View>;
   }
   obj = { onPress: callback, style: tmp.container, accessible: true };
   const intl = guild(1212).intl;
@@ -74,9 +74,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   }
   obj1.name = string2Result;
   obj1.mode = SELECTED;
-  obj.name = jsx(guild(11416).BaseChannelName, {});
-  obj2 = { mode: SELECTED, IconComponent: guild(12916).ChannelListMagnifyingGlassIcon };
-  obj.icon = jsx(guild(11416).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(12916).ChannelListMagnifyingGlassIcon });
+  obj.name = jsx(guild(11454).BaseChannelName, {});
+  obj2 = { mode: SELECTED, IconComponent: guild(12960).ChannelListMagnifyingGlassIcon };
+  obj.icon = jsx(guild(11454).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(12960).ChannelListMagnifyingGlassIcon });
   obj.channelInfo = tmp10;
-  return jsx(id(11416), { onPress: callback, style: tmp.container, accessible: true });
+  return jsx(id(11454), { onPress: callback, style: tmp.container, accessible: true });
 };

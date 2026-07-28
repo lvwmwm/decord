@@ -1,10 +1,10 @@
-// Module ID: 12149
-// Function ID: 95170
+// Module ID: 12192
+// Function ID: 95340
 // Name: UserProfileMutuals
-// Dependencies: [31, 27, 8043, 5510, 33, 4131, 8045, 11633, 11918, 4099, 11640, 1935, 8297, 6633, 4661, 11953, 1273, 4127, 11641, 11648, 5513, 11635, 2]
+// Dependencies: [31, 27, 8081, 5545, 33, 4165, 8083, 11672, 11961, 4133, 11679, 1935, 8335, 6669, 4695, 11996, 1273, 4161, 11680, 11687, 5548, 11674, 2]
 // Exports: default
 
-// Module 12149 (UserProfileMutuals)
+// Module 12192 (UserProfileMutuals)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -40,28 +40,28 @@ export default function UserProfileMutuals(user) {
         const obj = {};
         const merged = Object.assign(outer1_3);
         obj["userId"] = arg0;
-        guildId(8297)(obj);
+        guildId(8335)(obj);
       },
       onPressMutualGuild(arg0) {
         outer1_4({ action: "PRESS_MUTUAL_GUILD" });
-        user(6633).transitionToGuild(arg0);
-        const obj = user(6633);
-        guildId(4099).hideActionSheet();
-        const obj2 = guildId(4099);
-        guildId(4099).hideActionSheet();
+        user(6669).transitionToGuild(arg0);
+        const obj = user(6669);
+        guildId(4133).hideActionSheet();
+        const obj2 = guildId(4133);
+        guildId(4133).hideActionSheet();
       }
     };
     guildId(tmp[9]).openLazy(user(tmp[11])(tmp[10], tmp.paths), "UserProfileMutualsActionSheet", obj, "stack");
   }
   let tmp = callback();
   const dependencyMap = tmp;
-  let obj = user(8045);
+  let obj = user(8083);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c3, trackUserProfileAction: c4 } = userProfileAnalyticsContext);
-  const tmp3 = guildId(11633)(user);
+  const tmp3 = guildId(11672)(user);
   const mutualFriends = tmp3.mutualFriends;
   const mutualGuilds = tmp3.mutualGuilds;
-  if (guildId(11918)(user)) {
+  if (guildId(11961)(user)) {
     let tmp4 = null != mutualFriends;
     if (tmp4) {
       tmp4 = mutualFriends.length > 0;
@@ -116,7 +116,7 @@ export default function UserProfileMutuals(user) {
     }
     if (tmp4) {
       obj = { variant: "text-sm/medium", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: mutualFriends };
-      tmp4 = mutualGuilds(user(4127).Text, obj);
+      tmp4 = mutualGuilds(user(4161).Text, obj);
     }
     items[1] = tmp4;
     items[2] = (() => {
@@ -137,8 +137,8 @@ export default function UserProfileMutuals(user) {
             totalCount: mapped.length,
             names: mapped.map((name) => name.name),
             children: mapped.map((guild) => {
-                  const obj = { guild, size: user(5513).GuildIconSizes.XXSMALL };
-                  return mutualGuilds(guildId(5513), obj, guild.id);
+                  const obj = { guild, size: user(5548).GuildIconSizes.XXSMALL };
+                  return mutualGuilds(guildId(5548), obj, guild.id);
                 })
           };
           tmp8 = mutualGuilds(user(tmp[19]).GuildIconPile, obj);

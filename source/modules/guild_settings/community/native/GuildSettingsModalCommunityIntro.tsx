@@ -1,10 +1,10 @@
-// Module ID: 16421
-// Function ID: 128194
+// Module ID: 16461
+// Function ID: 128355
 // Name: FeatureCard
-// Dependencies: [31, 27, 1838, 3759, 8243, 653, 33, 4131, 689, 9554, 1212, 4127, 15217, 4087, 1456, 566, 686, 8242, 16422, 1921, 4544, 16426, 3831, 5448, 2]
+// Dependencies: [31, 27, 1838, 3793, 8281, 653, 33, 4165, 689, 9594, 1212, 4161, 15257, 4121, 1456, 566, 686, 8280, 16462, 1921, 4578, 16466, 3865, 5483, 2]
 // Exports: default
 
-// Module 16421 (FeatureCard)
+// Module 16461 (FeatureCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_7 from "_createForOfIteratorHelperLoose";
@@ -36,9 +36,9 @@ function FeatureCard(arg0) {
   const items = [callback(closure_4, obj), ];
   obj = { style: tmp.featureDescription };
   const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header };
-  const items1 = [callback(require(4127) /* Text */.Heading, obj1), ];
+  const items1 = [callback(require(4161) /* Text */.Heading, obj1), ];
   const obj2 = { variant: "text-sm/medium", color: "text-default", children: body };
-  items1[1] = callback(require(4127) /* Text */.Text, obj2);
+  items1[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items1;
   items[1] = callback2(closure_4, obj);
   obj.children = items;

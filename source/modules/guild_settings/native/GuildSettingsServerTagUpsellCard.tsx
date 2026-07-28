@@ -1,10 +1,10 @@
-// Module ID: 16346
-// Function ID: 127242
+// Module ID: 16385
+// Function ID: 127398
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [31, 27, 4018, 33, 4131, 689, 566, 4022, 11549, 11517, 8463, 4555, 4542, 11552, 4127, 1212, 4544, 15111, 2]
+// Dependencies: [31, 27, 4052, 33, 4165, 689, 566, 4056, 11588, 11556, 4589, 4576, 11591, 4161, 1212, 4578, 15151, 2]
 // Exports: default
 
-// Module 16346 (GuildSettingsServerTagUpsellCard)
+// Module 16385 (GuildSettingsServerTagUpsellCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     }
     return tmp2;
   }, items1);
-  const tmp3 = importDefault(11549)(stateFromStores, true);
+  const tmp3 = importDefault(11588)(stateFromStores, true);
   const items2 = [guildId];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guildId)) {
@@ -55,46 +55,40 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     }
   }, items2);
   obj = { style: tmp.card };
-  obj = { style: tmp.backgroundLayer, preserveAspectRatio: "none", viewBox: "0 0 100 100", pointerEvents: "none" };
-  const obj1 = {};
-  const obj2 = { id: "serverTagUpsellVignette", cx: "50%", cy: "100%", rx: "140.02%", ry: "100%", fx: "50%", fy: "100%" };
-  const items3 = [callback(guildId(8463).Stop, { offset: "60%", stopColor: "#29292D", stopOpacity: 1 }), callback(guildId(8463).Stop, { offset: "100%", stopColor: "#29292D", stopOpacity: 0 })];
-  obj2.children = items3;
-  obj1.children = callback2(guildId(8463).RadialGradient, obj2);
-  const items4 = [callback(guildId(8463).Defs, obj1), callback(guildId(8463).Rect, { x: "0", y: "0", width: "100", height: "100", fill: "url(#serverTagUpsellVignette)" })];
-  obj.children = items4;
-  const items5 = [callback2(importDefault(8463), obj), callback(importDefault(4555), { style: tmp.backgroundLayer, colors: closure_10, start: closure_8, end: closure_9, pointerEvents: "none" }), callback(importDefault(4555), { style: tmp.backgroundLayer, colors: closure_11, start: closure_8, end: closure_9, pointerEvents: "none" }), ];
-  const obj5 = { spacing: importDefault(689).space.PX_16 };
-  const obj6 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  let tmp9 = null != tmp3;
-  if (tmp9) {
-    const obj7 = { imageUrl: tmp3, style: tmp.powerupImage };
-    tmp9 = callback(importDefault(11552), obj7);
+  obj = { style: tmp.backgroundLayer, colors: items3, locations: [0, 0.7], start: { x: 0.5, y: 0 }, end: { x: 0.5, y: 1 }, pointerEvents: "none" };
+  items3 = ["rgba(41, 41, 45, 0)", "#29292D"];
+  const items4 = [callback(importDefault(4589), obj), callback(importDefault(4589), { style: tmp.backgroundLayer, colors: closure_10, start: closure_8, end: closure_9, pointerEvents: "none" }), callback(importDefault(4589), { style: tmp.backgroundLayer, colors: closure_11, start: closure_8, end: closure_9, pointerEvents: "none" }), ];
+  const obj3 = { spacing: importDefault(689).space.PX_16 };
+  const obj4 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+  let tmp8 = null != tmp3;
+  if (tmp8) {
+    const obj5 = { imageUrl: tmp3, style: tmp.powerupImage };
+    tmp8 = callback(importDefault(11591), obj5);
   }
-  obj6.children = tmp9;
-  const items6 = [callback(View, obj6), , ];
-  const obj8 = { spacing: importDefault(689).space.PX_8, style: tmp.textBlock };
-  const obj9 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText };
+  obj4.children = tmp8;
+  const items5 = [callback(View, obj4), , ];
+  const obj6 = { spacing: importDefault(689).space.PX_8, style: tmp.textBlock };
+  const obj7 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText };
   const intl = guildId(1212).intl;
-  obj9.children = intl.string(guildId(1212).t["2QmKZ2"]);
-  const items7 = [callback(guildId(4127).Text, obj9), ];
-  const obj10 = { variant: "text-sm/medium", color: "text-subtle" };
-  const items8 = [, ];
-  ({ centerText: arr9[0], body: arr9[1] } = tmp);
-  obj10.style = items8;
+  obj7.children = intl.string(guildId(1212).t["2QmKZ2"]);
+  const items6 = [callback(guildId(4161).Text, obj7), ];
+  const obj8 = { variant: "text-sm/medium", color: "text-subtle" };
+  const items7 = [, ];
+  ({ centerText: arr8[0], body: arr8[1] } = tmp);
+  obj8.style = items7;
   const intl2 = guildId(1212).intl;
-  obj10.children = intl2.string(guildId(1212).t.Tg0fDm);
-  items7[1] = callback(guildId(4127).Text, obj10);
-  obj8.children = items7;
-  items6[1] = callback2(guildId(4542).Stack, obj8);
-  const obj11 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start" };
+  obj8.children = intl2.string(guildId(1212).t.Tg0fDm);
+  items6[1] = callback(guildId(4161).Text, obj8);
+  obj6.children = items6;
+  items5[1] = callback2(guildId(4576).Stack, obj6);
+  const obj9 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start" };
   const intl3 = guildId(1212).intl;
-  obj11.text = intl3.string(guildId(1212).t.kMRDWs);
-  obj11.icon = callback(guildId(15111).BoostTier2Icon, { color: "white" });
-  obj11.onPress = guildId.onUnlockPress;
-  items6[2] = callback(guildId(4544).Button, obj11);
-  obj5.children = items6;
-  items5[3] = callback2(guildId(4542).Stack, obj5);
-  obj.children = items5;
+  obj9.text = intl3.string(guildId(1212).t.kMRDWs);
+  obj9.icon = callback(guildId(15151).BoostTier2Icon, { color: "white" });
+  obj9.onPress = guildId.onUnlockPress;
+  items5[2] = callback(guildId(4578).Button, obj9);
+  obj3.children = items5;
+  items4[3] = callback2(guildId(4576).Stack, obj3);
+  obj.children = items4;
   return callback2(View, obj);
 };

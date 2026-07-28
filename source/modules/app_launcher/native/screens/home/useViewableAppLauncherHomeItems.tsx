@@ -1,15 +1,15 @@
-// Module ID: 11198
-// Function ID: 87199
+// Module ID: 11236
+// Function ID: 87318
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [31, 7954, 3992, 11199, 8364, 480, 2]
+// Dependencies: [31, 7991, 4026, 11237, 8402, 480, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 11198 (useViewableAppLauncherHomeItems)
+// Module 11236 (useViewableAppLauncherHomeItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
-let result = require("module_3992").fileFinishedImporting("modules/app_launcher/native/screens/home/useViewableAppLauncherHomeItems.tsx");
+let result = require("module_4026").fileFinishedImporting("modules/app_launcher/native/screens/home/useViewableAppLauncherHomeItems.tsx");
 
 export const useViewableAppLauncherHomeItems = function useViewableAppLauncherHomeItems() {
   let obj = sharedValue(sharedValue1[2]);

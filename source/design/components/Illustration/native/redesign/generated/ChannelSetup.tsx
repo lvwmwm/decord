@@ -1,17 +1,17 @@
-// Module ID: 16434
-// Function ID: 128263
+// Module ID: 16474
+// Function ID: 128424
 // Name: getChannelSetupSource
-// Dependencies: [31, 27, 33, 6481, 16435, 16436, 16437, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 16475, 16476, 16477, 4011, 2]
 // Exports: ChannelSetup
 
-// Module 16434 (getChannelSetupSource)
+// Module 16474 (getChannelSetupSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getChannelSetupSource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getChannelSetupSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useChannelSetupSource() {
-  return getChannelSetupSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getChannelSetupSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/ChannelSetup.tsx");
 

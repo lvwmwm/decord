@@ -1,5 +1,5 @@
 // Module ID: 658
-// Function ID: 8026
+// Function ID: 8030
 // Name: CollectibleSearchSortType
 // Dependencies: [2]
 

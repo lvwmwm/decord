@@ -1,10 +1,10 @@
-// Module ID: 7883
-// Function ID: 62872
+// Module ID: 7919
+// Function ID: 62962
 // Name: trackTryOutFeature
-// Dependencies: [5, 1850, 653, 1852, 1207, 3977, 1212, 675, 7884, 5914, 686, 7885, 507, 7888, 4030, 2]
-// Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
+// Dependencies: [5, 1850, 653, 1852, 1207, 4011, 1212, 675, 7920, 5948, 686, 7921, 507, 7924, 4064, 2]
+// Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 7883 (trackTryOutFeature)
+// Module 7919 (trackTryOutFeature)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -71,7 +71,7 @@ export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUser
   ComponentDispatch.dispatch(constants.SHAKE_PROFILE_MODAL);
   const ComponentDispatch2 = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
   ComponentDispatch2.dispatch(constants.EMPHASIZE_NOTICE);
-  const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(4011) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1212) /* getSystemLocale */.intl;
   const intl2 = require(1212) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce("" + intl.string(require(1212) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1212) /* getSystemLocale */.t.gKoO1D));
@@ -96,6 +96,9 @@ export const resetPendingProfileChanges = function resetPendingProfileChanges() 
 };
 export const resetAllPendingChanges = function resetAllPendingChanges() {
   importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
+};
+export const resetAllTryItOutChanges = function resetAllTryItOutChanges() {
+  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES" });
 };
 export const setTryItOutAvatar = function setTryItOutAvatar(pendingImage) {
   let obj = importDefault(686);

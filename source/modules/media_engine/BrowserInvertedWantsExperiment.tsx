@@ -1,10 +1,10 @@
-// Module ID: 12798
-// Function ID: 99609
+// Module ID: 12841
+// Function ID: 99779
 // Name: getBrowserInvertedWantsConfig
 // Dependencies: [1428, 478, 2]
 // Exports: getBrowserInvertedWantsConfig
 
-// Module 12798 (getBrowserInvertedWantsConfig)
+// Module 12841 (getBrowserInvertedWantsConfig)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { kind: "user", name: "2026-03-browser-inverted-wants", defaultConfig: { invertWants: false }, variations: { [1]: { invertWants: true } } };

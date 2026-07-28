@@ -1,10 +1,10 @@
-// Module ID: 12983
-// Function ID: 100732
+// Module ID: 13027
+// Function ID: 100905
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [31, 27, 8219, 33, 4131, 689, 8220, 8221, 12984, 4099, 4127, 1212, 4544, 5583, 5498, 5186, 2]
+// Dependencies: [31, 27, 8257, 33, 4165, 689, 8258, 8259, 13028, 4133, 4161, 1212, 4578, 5618, 5533, 5220, 2]
 // Exports: default
 
-// Module 12983 (ServerTagPreviewActionSheet)
+// Module 13027 (ServerTagPreviewActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(8220);
+  let obj = guildId(8258);
   let guildProfile = obj.useGuildProfile(guildId);
   guildProfile = guildProfile.guildProfile;
   const items = [guildId];
@@ -38,30 +38,30 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj.onAdopted = function onAdopted(arg0) {
       return outer1_1(outer1_2[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(12984), obj);
+    let tmp7 = callback(importDefault(13028), obj);
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: tmp.error };
     const obj1 = { variant: "text-md/medium", color: "text-muted" };
     const intl = guildId(1212).intl;
     obj1.children = intl.string(guildId(1212).t.tmGHjc);
-    const items1 = [callback(guildId(4127).Text, obj1), ];
+    const items1 = [callback(guildId(4161).Text, obj1), ];
     const obj2 = { variant: "secondary" };
     const intl2 = guildId(1212).intl;
     obj2.text = intl2.string(guildId(1212).t["5911Lb"]);
     obj2.onPress = function onPress() {
       return guildId(outer1_2[7]).getGuildProfile(guildId, true);
     };
-    items1[1] = callback(guildId(4544).Button, obj2);
+    items1[1] = callback(guildId(4578).Button, obj2);
     obj.children = items1;
     tmp7 = callback2(View, obj);
   } else {
-    tmp7 = callback(guildId(5583).SceneLoadingIndicator, {});
+    tmp7 = callback(guildId(5618).SceneLoadingIndicator, {});
   }
   const obj3 = {};
   const obj4 = {};
   const intl3 = guildId(1212).intl;
   obj4.title = intl3.string(guildId(1212).t["2QmKZ2"]);
-  const items2 = [callback(guildId(5186).BottomSheetTitleHeader, obj4), tmp7];
+  const items2 = [callback(guildId(5220).BottomSheetTitleHeader, obj4), tmp7];
   obj3.children = items2;
-  return callback2(guildId(5498).ActionSheet, obj3);
+  return callback2(guildId(5533).ActionSheet, obj3);
 };

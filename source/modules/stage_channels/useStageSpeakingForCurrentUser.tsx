@@ -1,10 +1,10 @@
-// Module ID: 4956
-// Function ID: 42578
+// Module ID: 4990
+// Function ID: 42693
 // Name: useIsStageSpeakingDisabledForCurrentUser
-// Dependencies: [1348, 3759, 1907, 482, 4348, 3810, 4957, 566, 2]
+// Dependencies: [1348, 3793, 1907, 482, 4382, 3844, 4991, 566, 2]
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover
 
-// Module 4956 (useIsStageSpeakingDisabledForCurrentUser)
+// Module 4990 (useIsStageSpeakingDisabledForCurrentUser)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -14,20 +14,20 @@ const require = arg1;
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useStageSpeakingForCurrentUser.tsx");
 
 export const useIsStageSpeakingDisabledForCurrentUser = function useIsStageSpeakingDisabledForCurrentUser() {
-  const isVerifiedTeen = require(4348) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
-  const obj = require(4348) /* isReactiveCheckEnabled */;
-  const obj2 = require(3810) /* isFeatureAgeGated */;
-  return require(3810) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeen;
+  const isVerifiedTeen = require(4382) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
+  const obj = require(4382) /* isReactiveCheckEnabled */;
+  const obj2 = require(3844) /* isFeatureAgeGated */;
+  return require(3844) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeen;
 };
 export const isStageSpeakingDisabledForCurrentUser = function isStageSpeakingDisabledForCurrentUser() {
-  const obj = require(4348) /* isReactiveCheckEnabled */;
-  const isVerifiedTeenResult = require(4348) /* isReactiveCheckEnabled */.isVerifiedTeen();
-  const obj2 = require(3810) /* isFeatureAgeGated */;
-  return require(3810) /* isFeatureAgeGated */.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeenResult;
+  const obj = require(4382) /* isReactiveCheckEnabled */;
+  const isVerifiedTeenResult = require(4382) /* isReactiveCheckEnabled */.isVerifiedTeen();
+  const obj2 = require(3844) /* isFeatureAgeGated */;
+  return require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeenResult;
 };
 export const shouldAgeVerifyToSpeakForCurrentUser = function shouldAgeVerifyToSpeakForCurrentUser(id) {
   let channelId = id;
-  const obj = require(4348) /* isReactiveCheckEnabled */;
+  const obj = require(4382) /* isReactiveCheckEnabled */;
   if (null == id) {
     channelId = store.getChannelId();
   }
@@ -39,9 +39,9 @@ export const shouldAgeVerifyToSpeakForCurrentUser = function shouldAgeVerifyToSp
   if (canResult) {
     canResult = closure_3.can(Permissions.REQUEST_TO_SPEAK, channel);
   }
-  const isVerifiedAdultResult = require(4348) /* isReactiveCheckEnabled */.isVerifiedAdult();
-  const obj2 = require(3810) /* isFeatureAgeGated */;
-  return require(3810) /* isFeatureAgeGated */.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdultResult && canResult;
+  const isVerifiedAdultResult = require(4382) /* isReactiveCheckEnabled */.isVerifiedAdult();
+  const obj2 = require(3844) /* isFeatureAgeGated */;
+  return require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdultResult && canResult;
 };
 export const useShouldAgeVerifyToSpeakForCurrentUser = function useShouldAgeVerifyToSpeakForCurrentUser(id) {
   let channelId = id;
@@ -62,10 +62,10 @@ export const useShouldAgeVerifyToSpeakForCurrentUser = function useShouldAgeVeri
     return canResult;
   }, items1);
   const obj = channelId(566);
-  const isVerifiedAdult = channelId(4348).useIsVerifiedAdult();
-  const obj2 = channelId(4348);
-  const obj3 = channelId(3810);
-  return channelId(3810).useIsFeatureAgeGated(channelId(4957).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  const isVerifiedAdult = channelId(4382).useIsVerifiedAdult();
+  const obj2 = channelId(4382);
+  const obj3 = channelId(3844);
+  return channelId(3844).useIsFeatureAgeGated(channelId(4991).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
 };
 export const useShouldShowAgeVerificationPopover = function useShouldShowAgeVerificationPopover(id) {
   let channelId = id;
@@ -86,14 +86,14 @@ export const useShouldShowAgeVerificationPopover = function useShouldShowAgeVeri
     return canResult;
   }, items1);
   const obj = channelId(566);
-  const isAgeVerified = channelId(4348).useIsAgeVerified();
-  const obj2 = channelId(4348);
-  const obj3 = channelId(3810);
-  return channelId(3810).useIsFeatureAgeGated(channelId(4957).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  const isAgeVerified = channelId(4382).useIsAgeVerified();
+  const obj2 = channelId(4382);
+  const obj3 = channelId(3844);
+  return channelId(3844).useIsFeatureAgeGated(channelId(4991).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
 };
 export const useShouldShowAgeVerificationForEvent = function useShouldShowAgeVerificationForEvent() {
-  const isVerifiedAdult = require(4348) /* isReactiveCheckEnabled */.useIsVerifiedAdult();
-  const obj = require(4348) /* isReactiveCheckEnabled */;
-  const obj2 = require(3810) /* isFeatureAgeGated */;
-  return require(3810) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
+  const isVerifiedAdult = require(4382) /* isReactiveCheckEnabled */.useIsVerifiedAdult();
+  const obj = require(4382) /* isReactiveCheckEnabled */;
+  const obj2 = require(3844) /* isFeatureAgeGated */;
+  return require(3844) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
 };

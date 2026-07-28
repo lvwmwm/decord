@@ -1,11 +1,11 @@
 // Module ID: 6175
-// Function ID: 55502
+// Function ID: 55188
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6175 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 343, height: 112, scales: [2, 3], hash: "a236f8cc27bca615087c819a6d4db4e6", name: "img_clouds_header_tier_2", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 120, height: 80, scales: [2, 3], hash: "17353b23aadfbe0d3f7b9982ef6491bf", name: "img_nitro_file_upload", type: "png" };
 
 export default registerAsset.registerAsset(obj);

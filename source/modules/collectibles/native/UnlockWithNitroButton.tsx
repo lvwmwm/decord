@@ -1,10 +1,10 @@
-// Module ID: 11847
-// Function ID: 91829
+// Module ID: 11890
+// Function ID: 91999
 // Name: UnlockWithNitroButton
-// Dependencies: [31, 5619, 5786, 655, 33, 566, 5622, 8692, 1212, 4545, 4127, 6570, 2]
+// Dependencies: [31, 5654, 5796, 655, 33, 566, 5657, 8736, 1212, 4579, 4161, 6606, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 11847 (UnlockWithNitroButton)
+// Module 11890 (UnlockWithNitroButton)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     }
     return isPurchasingProductResult;
   });
-  importDefault = importDefault(8692)();
+  importDefault = importDefault(8736)();
   if (null == text) {
     const intl = require(1212) /* getSystemLocale */.intl;
     text = intl.string(require(1212) /* getSystemLocale */.t.sEAnVH);
@@ -41,7 +41,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   let tmp5;
   if (flag) {
     obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text };
-    tmp5 = jsx(require(4127) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text });
+    tmp5 = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text });
   }
   obj.textElement = tmp5;
   let tmp9;
@@ -57,7 +57,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   }
   obj.size = str;
   obj.grow = true;
-  obj.icon = jsx(require(6570) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
+  obj.icon = jsx(require(6606) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
   obj.onPress = function onPress() {
     if (null != callback) {
       callback(outer1_5.UNLOCK_WITH_NITRO);
@@ -65,5 +65,5 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     callback2();
   };
   obj.disabled = stateFromStores;
-  return jsx(require(4545) /* CollapsingText */.BaseTextButton, {});
+  return jsx(require(4579) /* CollapsingText */.BaseTextButton, {});
 };

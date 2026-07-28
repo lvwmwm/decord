@@ -1,11 +1,11 @@
-// Module ID: 6295
-// Function ID: 56681
+// Module ID: 6331
+// Function ID: 56770
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 6, 7, 27, 3812, 5617, 6276, 2]
+// Dependencies: [5, 6, 7, 27, 3846, 5652, 6312, 2]
 
-// Module 6295 (productSK2ToIAPProduct)
+// Module 6331 (productSK2ToIAPProduct)
 import CurrencyCodes from "CurrencyCodes";
-import module_6276 from "module_6276";
+import module_6312 from "module_6312";
 import set from "set";
 import { convertToAlpha2 } from "getCountryCodeByCountryName";
 
@@ -20,7 +20,7 @@ function productSK2ToIAPProduct(description) {
     items.push(promoOfferToDiscount(description.subscription.introductoryOffer));
   }
   const price = description.price;
-  const NumberResult = Number(price.toFixed(require(5617) /* CurrencyCodes */.CurrencyExponents[description.currency.toLowerCase(description.currency)]));
+  const NumberResult = Number(price.toFixed(require(5652) /* CurrencyCodes */.CurrencyExponents[description.currency.toLowerCase(description.currency)]));
   const obj = { identifier: String(description.id), price: NumberResult, currencySymbol: str2.split(/[0-9]/)[0], currencyCode: str3.toLowerCase(), priceString: String(NumberResult), countryCode: "", downloadable: false, description: description.description, title: description.displayName, discounts: items };
   return obj;
 }

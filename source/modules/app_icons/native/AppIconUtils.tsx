@@ -1,10 +1,10 @@
-// Module ID: 6525
-// Function ID: 58282
+// Module ID: 6561
+// Function ID: 58371
 // Name: fetchCurrentAppIcon
-// Dependencies: [57, 5, 31, 27, 6526, 653, 1852, 3, 477, 6553, 6527, 4560, 686, 675, 3832, 1212, 6554, 1553, 2]
+// Dependencies: [57, 5, 31, 27, 6562, 653, 1852, 3, 477, 6589, 6563, 4594, 686, 675, 3866, 1212, 6590, 1553, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons
 
-// Module 6525 (fetchCurrentAppIcon)
+// Module 6561 (fetchCurrentAppIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "ME";
 import result from "result";
@@ -31,12 +31,12 @@ async function _fetchCurrentAppIcon() {
   return yield currentIcon.id;
 }
 function useCurrentAppIcon() {
-  const tmp = callback(React.useState(_require(6527).FreemiumAppIconIds.DEFAULT), 2);
+  const tmp = callback(React.useState(_require(6563).FreemiumAppIconIds.DEFAULT), 2);
   _require = tmp[1];
   const importDefault = React.useCallback(callback2(async () => {
     outer1_0(yield outer2_14());
   }), []);
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     callback();
     const subscription = callback(outer1_2[12]).subscribe("APP_ICON_UPDATED", callback);
     return () => {
@@ -94,7 +94,7 @@ export const useAppIcons = function useAppIcons() {
     const items = [outer2_6(), ...found];
     outer1_0(items);
   }), []);
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     dependencyMap();
     const subscription = callback(686).subscribe("APP_ICON_UPDATED", dependencyMap);
     return () => {
@@ -104,7 +104,7 @@ export const useAppIcons = function useAppIcons() {
   return { officialAppIcons: officialAppIcons[0], limitedTimeAppIcons: limitedTimeAppIcons[0], currentAppIcon };
 };
 export const navigateToAppIconSettings = function navigateToAppIconSettings() {
-  let obj = require(6554) /* openUserSettings */;
+  let obj = require(6590) /* openUserSettings */;
   obj = { screen: constants.APP_ICONS };
   obj.openUserSettings(obj);
 };

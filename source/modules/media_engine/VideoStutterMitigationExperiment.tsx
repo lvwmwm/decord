@@ -1,9 +1,9 @@
-// Module ID: 16584
-// Function ID: 129386
+// Module ID: 16624
+// Function ID: 129547
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 16584 (apexExperiment)
+// Module 16624 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-video-stutter-mitigation", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

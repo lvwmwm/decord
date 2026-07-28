@@ -1,9 +1,9 @@
-// Module ID: 11521
-// Function ID: 89758
+// Module ID: 11560
+// Function ID: 89909
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 4039, 4018, 11522, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 4073, 4052, 11561, 566, 686, 2]
 
-// Module 11521 (_isNativeReflectConstruct)
+// Module 11560 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -102,7 +102,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
     const stateForGuild = stateForGuild2.getStateForGuild(guildId);
     const stateForGuild1 = stateForGuild.getStateForGuild(guildId);
-    let obj = require(11522) /* getExpiringGuildEntitlements */;
+    let obj = require(11561) /* getExpiringGuildEntitlements */;
     let unlockedPowerups;
     if (null != stateForGuild) {
       unlockedPowerups = stateForGuild.unlockedPowerups;

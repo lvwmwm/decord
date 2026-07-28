@@ -1,10 +1,10 @@
-// Module ID: 7594
-// Function ID: 60775
+// Module ID: 7630
+// Function ID: 60864
 // Name: FormRadioRow
-// Dependencies: [31, 33, 5163, 3849, 7595, 5157, 5180, 2]
+// Dependencies: [31, 33, 5197, 3883, 7631, 5191, 5214, 2]
 // Exports: default
 
-// Module 7594 (FormRadioRow)
+// Module 7630 (FormRadioRow)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -27,13 +27,13 @@ export default function FormRadioRow(arg0) {
   ({ value, style } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  const context = React.useContext(require(5163) /* context */.RedesignCompatContext);
-  let obj1 = require(3849) /* useCheckboxA11yNative */;
+  const context = React.useContext(require(5197) /* context */.RedesignCompatContext);
+  let obj1 = require(3883) /* useCheckboxA11yNative */;
   const radioA11yNative = obj1.useRadioA11yNative({ selected });
   if (context) {
     obj = { icon: leading, value, legacyCompat_selected: selected, legacyCompat_onPress: onPress };
     const merged1 = Object.assign(merged);
-    let tmp7Result = tmp7(require(7595) /* TableRadioRow */.TableRadioRow, obj);
+    let tmp7Result = tmp7(require(7631) /* TableRadioRow */.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);
@@ -44,17 +44,17 @@ export default function FormRadioRow(arg0) {
     let tmp14 = null;
     if ("right" === align) {
       obj1 = { selected };
-      tmp14 = jsx(importDefault(5180), { selected });
+      tmp14 = jsx(importDefault(5214), { selected });
     }
     obj["trailing"] = tmp14;
     let tmp18 = leading;
     if ("left" === align) {
       const obj2 = { selected };
-      tmp18 = jsx(importDefault(5180), { selected });
+      tmp18 = jsx(importDefault(5214), { selected });
     }
     obj["leading"] = tmp18;
-    tmp7Result = tmp7(importDefault(5157), obj);
-    const tmp10 = importDefault(5157);
+    tmp7Result = tmp7(importDefault(5191), obj);
+    const tmp10 = importDefault(5191);
   }
   return tmp7Result;
 };

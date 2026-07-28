@@ -1,9 +1,9 @@
-// Module ID: 16575
-// Function ID: 129258
+// Module ID: 16615
+// Function ID: 129419
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5, 4809, 4813, 4944, 12907, 11068, 8109, 8131, 653, 664, 22, 16576, 686, 12681, 16577, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 5, 4843, 4847, 4978, 12951, 11106, 8147, 8169, 653, 664, 22, 16616, 686, 12724, 16617, 5112, 2]
 
-// Module 16575 (_isNativeReflectConstruct)
+// Module 16615 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "apply";
@@ -74,7 +74,7 @@ function canFetch(GLOBAL_FEED) {
       } else {
         return false;
       }
-      obj = require(12681) /* apexExperiment */;
+      obj = require(12724) /* apexExperiment */;
     }
     return true;
   }
@@ -196,7 +196,7 @@ function handleSpotifyNewTrack(connectionId) {
   }
 }
 function handleFetchGameProfileFeed() {
-  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16577) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
+  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16617) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
 }
 let closure_16 = 2 * require("set").Millis.MINUTE;
 const GLOBAL_FEED = ContentInventoryFeedKey.GLOBAL_FEED;

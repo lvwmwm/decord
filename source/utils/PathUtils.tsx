@@ -1,10 +1,10 @@
-// Module ID: 4187
-// Function ID: 36049
+// Module ID: 4221
+// Function ID: 36153
 // Name: pathBasename
 // Dependencies: [477, 2]
 // Exports: pathFilenameWithoutExt, pathJoin
 
-// Module 4187 (pathBasename)
+// Module 4221 (pathBasename)
 function pathBasename(str) {
   let arr = str;
   const parts = str.split(/[/\\]/);

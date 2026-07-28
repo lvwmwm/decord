@@ -1,10 +1,10 @@
-// Module ID: 3849
-// Function ID: 32063
+// Module ID: 3883
+// Function ID: 32165
 // Name: useCheckboxA11yNative
 // Dependencies: [27, 2]
 // Exports: useCheckboxA11yNative, useRadioA11yNative
 
-// Module 3849 (useCheckboxA11yNative)
+// Module 3883 (useCheckboxA11yNative)
 import { Platform } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/hooks/useA11yRolesNative.tsx");

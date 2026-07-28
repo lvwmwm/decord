@@ -1,10 +1,10 @@
-// Module ID: 14777
-// Function ID: 112650
+// Module ID: 14821
+// Function ID: 112823
 // Name: _getLatestVideo
-// Dependencies: [5, 27, 14776, 4471, 14778, 14779, 4099, 14780, 1935, 10286, 4666, 8024, 10285, 1450, 2]
+// Dependencies: [5, 27, 14820, 4505, 14822, 14823, 4133, 14824, 1935, 10326, 4700, 8062, 10325, 1450, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 14777 (_getLatestVideo)
+// Module 14821 (_getLatestVideo)
 import SURVEY_CONFIGS from "SURVEY_CONFIGS";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";

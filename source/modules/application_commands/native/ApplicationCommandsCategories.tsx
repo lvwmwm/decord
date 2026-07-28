@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 88902
+// Module ID: 11472
+// Function ID: 89021
 // Name: ApplicationCommandsCategories
-// Dependencies: [31, 27, 1278, 1918, 11431, 33, 4131, 689, 566, 11329, 5085, 4661, 1212, 1324, 4100, 4101, 4534, 3977, 2]
+// Dependencies: [31, 27, 1278, 1918, 11469, 33, 4165, 689, 566, 11367, 5119, 4695, 1212, 1324, 4134, 4135, 4568, 4011, 2]
 // Exports: default
 
-// Module 11434 (ApplicationCommandsCategories)
+// Module 11472 (ApplicationCommandsCategories)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -61,7 +61,7 @@ let closure_13 = importAllResult.memo((section) => {
   let tmp4 = null != memo;
   if (tmp4) {
     obj = { style: tmp.categoryImage, source: memo };
-    tmp4 = callback(importDefault(5085), obj);
+    tmp4 = callback(importDefault(5119), obj);
   }
   obj = {
     onPress() {
@@ -84,7 +84,7 @@ let closure_13 = importAllResult.memo((section) => {
   items2 = [tmp.item, active ? tmp.activeItem : tmp.fadedItem];
   obj3.children = tmp4;
   obj.children = callback(stateFromStores, obj3);
-  return callback(section(4661).PressableOpacity, obj, section.name);
+  return callback(section(4695).PressableOpacity, obj, section.name);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_commands/native/ApplicationCommandsCategories.tsx");
 

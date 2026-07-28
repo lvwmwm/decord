@@ -1,10 +1,10 @@
-// Module ID: 6713
-// Function ID: 59255
+// Module ID: 6749
+// Function ID: 59344
 // Name: useIsExpressiveModalV2Enabled
 // Dependencies: [1428, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 6713 (useIsExpressiveModalV2Enabled)
+// Module 6749 (useIsExpressiveModalV2Enabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-07-expressive-modal-v2", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

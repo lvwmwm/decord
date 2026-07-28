@@ -1,8 +1,8 @@
-// Module ID: 13483
-// Function ID: 103651
-// Dependencies: [4156, 482, 10557, 686, 10554, 2]
+// Module ID: 13527
+// Function ID: 103824
+// Dependencies: [4190, 482, 10595, 686, 10592, 2]
 
-// Module 13483
+// Module 13527
 import { OrientationLockState } from "items3";
 import sum from "sum";
 
@@ -12,7 +12,7 @@ const result = require("createRpcJoiSchemaObject").fileFinishedImporting("module
 export default {
   [sum.RPCCommands.SET_ORIENTATION_LOCK_STATE]: {
     validation(number) {
-      let obj = importDefault(10557)(number);
+      let obj = importDefault(10595)(number);
       obj = {};
       const requiredResult = obj.required();
       let validResult = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
@@ -33,7 +33,7 @@ export default {
       ({ lock_state, picture_in_picture_lock_state } = args.args);
       const id = args.socket.application.id;
       if (null == id) {
-        let tmp8 = importDefault(10554);
+        let tmp8 = importDefault(10592);
         let obj = { errorCode: RPCErrors.INVALID_COMMAND };
         const prototype = tmp8.prototype;
         tmp8 = new tmp8(obj, "No application.");

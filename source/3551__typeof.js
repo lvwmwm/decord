@@ -1,7 +1,7 @@
 // Module ID: 3551
-// Function ID: 27636
+// Function ID: 27152
 // Name: _typeof
-// Dependencies: [3518, 3516]
+// Dependencies: [3552, 3550]
 
 // Module 3551 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const TimestampSecondsParser = ((Parser) => {
-  class TimestampSecondsParser {
+export const YearParser = ((Parser) => {
+  class YearParser {
     constructor() {
-      if (this instanceof TimestampSecondsParser) {
+      if (this instanceof YearParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -158,12 +158,11 @@ export const TimestampSecondsParser = ((Parser) => {
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 40;
-        tmp17 = outer1_8(applyResult, "priority", 40);
+        num2 = 130;
+        tmp17 = outer1_8(applyResult, "priority", 130);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        str4 = "*";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", "*");
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "u", "w", "I", "i", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -178,9 +177,9 @@ export const TimestampSecondsParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class TimestampSecondsParser {
+    class YearParser {
       constructor() {
-        if (this instanceof TimestampSecondsParser) {
+        if (this instanceof YearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -202,12 +201,11 @@ export const TimestampSecondsParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 40;
-          tmp17 = outer1_8(applyResult, "priority", 40);
+          num2 = 130;
+          tmp17 = outer1_8(applyResult, "priority", 130);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          str4 = "*";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", "*");
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "u", "w", "I", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -226,12 +224,12 @@ export const TimestampSecondsParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: TimestampSecondsParser, writable: true, configurable: true };
-  TimestampSecondsParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: YearParser, writable: true, configurable: true };
+  YearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class TimestampSecondsParser {
+    class YearParser {
       constructor() {
-        if (this instanceof TimestampSecondsParser) {
+        if (this instanceof YearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -253,12 +251,11 @@ export const TimestampSecondsParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 40;
-          tmp17 = outer1_8(applyResult, "priority", 40);
+          num2 = 130;
+          tmp17 = outer1_8(applyResult, "priority", 130);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          str4 = "*";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", "*");
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "u", "w", "I", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -272,24 +269,58 @@ export const TimestampSecondsParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(TimestampSecondsParser, Parser);
+    _setPrototypeOf(YearParser, Parser);
   }
-  let closure_0 = _createSuper(TimestampSecondsParser);
+  let closure_0 = _createSuper(YearParser);
   obj = {
     key: "parse",
-    value: function parse(arg0) {
-      return callback(TimestampSecondsParser[0]).parseAnyDigitsSigned(arg0);
+    value: function parse(arg0, arg1, ordinalNumber) {
+      const callback = arg1;
+      function valueCallback(year) {
+        return { year, isTwoDigitYear: "yy" === closure_0 };
+      }
+      if ("y" === arg1) {
+        return callback(YearParser[0]).mapValue(callback(YearParser[0]).parseNDigits(4, arg0), valueCallback);
+      } else if ("yo" === arg1) {
+        const obj = { unit: "year" };
+        return callback(YearParser[0]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
+      } else {
+        return callback(YearParser[0]).mapValue(callback(YearParser[0]).parseNDigits(arg1.length, arg0), valueCallback);
+      }
     }
   };
-  let items = [obj, ];
+  let items = [obj, , ];
   obj = {
-    key: "set",
-    value: function set(arg0, arg1, arg2) {
-      const items = [new Date(1000 * arg2), { timestampIsSet: true }];
-      return items;
+    key: "validate",
+    value: function validate(arg0, isTwoDigitYear) {
+      isTwoDigitYear = isTwoDigitYear.isTwoDigitYear;
+      if (!isTwoDigitYear) {
+        isTwoDigitYear = isTwoDigitYear.year > 0;
+      }
+      return isTwoDigitYear;
     }
   };
   items[1] = obj;
-  _defineProperties(TimestampSecondsParser.prototype, items);
-  return TimestampSecondsParser;
+  items[2] = {
+    key: "set",
+    value: function set(setUTCFullYear, era, isTwoDigitYear) {
+      if (isTwoDigitYear.isTwoDigitYear) {
+        setUTCFullYear.setUTCFullYear(callback(YearParser[0]).normalizeTwoDigitYear(isTwoDigitYear.year, tmp), 0, 1);
+        setUTCFullYear.setUTCHours(0, 0, 0, 0);
+        return setUTCFullYear;
+      } else {
+        if ("era" in era) {
+          if (1 !== era.era) {
+            let year = 1 - isTwoDigitYear.year;
+          }
+          setUTCFullYear.setUTCFullYear(year, 0, 1);
+          setUTCFullYear.setUTCHours(0, 0, 0, 0);
+          return setUTCFullYear;
+        }
+        year = isTwoDigitYear.year;
+      }
+    }
+  };
+  _defineProperties(YearParser.prototype, items);
+  return YearParser;
 })(require("_defineProperties").Parser);

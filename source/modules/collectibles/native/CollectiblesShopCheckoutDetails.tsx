@@ -1,10 +1,10 @@
-// Module ID: 11817
-// Function ID: 91688
+// Module ID: 11860
+// Function ID: 91858
 // Name: ProfileEffectAssetPreview
-// Dependencies: [31, 27, 655, 7977, 33, 4131, 689, 8004, 5085, 11818, 8020, 8626, 7984, 8012, 7994, 1874, 8008, 1877, 656, 8646, 8645, 8005, 1212, 4127, 5781, 8648, 11819, 8596, 3777, 8658, 2]
+// Dependencies: [31, 27, 655, 8015, 33, 4165, 689, 8042, 5119, 11861, 8058, 8670, 8022, 8050, 8032, 1874, 8046, 1877, 656, 8690, 8689, 8043, 1212, 4161, 5791, 8692, 11862, 8640, 3811, 8702, 2]
 // Exports: default
 
-// Module 11817 (ProfileEffectAssetPreview)
+// Module 11860 (ProfileEffectAssetPreview)
 import result from "result";
 import { View } from "useCurrentUser";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -20,26 +20,26 @@ let closure_8;
 let require = arg1;
 function ProfileEffectAssetPreview(item) {
   const tmp = callback4();
-  const tmp2 = importDefault(8004)(item.item.skuId);
+  const tmp2 = importDefault(8042)(item.item.skuId);
   let tmp3 = null;
   if (null != tmp2) {
     let obj = { style: tmp.profileEffectContainer };
     obj = {};
-    obj = { uri: importDefault(11818) };
+    obj = { uri: importDefault(11861) };
     obj.source = obj;
     obj.alt = tmp2.accessibilityLabel;
     obj.style = tmp.profileEffect;
     obj.resizeMode = "cover";
-    const items = [callback(importDefault(5085), obj), ];
+    const items = [callback(importDefault(5119), obj), ];
     const obj1 = { style: tmp.profileEffect };
     const obj2 = { uri: tmp2.thumbnailPreviewSrc };
     obj1.source = obj2;
     obj1.alt = tmp2.title;
     obj1.resizeMode = "cover";
-    items[1] = callback(importDefault(5085), obj1);
+    items[1] = callback(importDefault(5119), obj1);
     obj.children = items;
     tmp3 = callback2(View, obj);
-    const tmp9 = importDefault(5085);
+    const tmp9 = importDefault(5119);
   }
   return tmp3;
 }
@@ -48,12 +48,12 @@ function ProfileFrameAssetPreview(arg0) {
   let item;
   let width;
   ({ item, width, height } = arg0);
-  const tmp = importDefault(8020)(item.skuId, "CollectiblesShopCheckoutDetails");
+  const tmp = importDefault(8058)(item.skuId, "CollectiblesShopCheckoutDetails");
   let tmp2 = null;
   if (null != tmp) {
     const obj = { profileFrame: tmp, previewWidth: width, previewHeight: height, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    tmp2 = callback(importDefault(8626), obj);
-    const tmp6 = importDefault(8626);
+    tmp2 = callback(importDefault(8670), obj);
+    const tmp6 = importDefault(8670);
   }
   return tmp2;
 }
@@ -69,10 +69,10 @@ function BundleAssetPreview(height) {
   let c5;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = width(7984);
+  let obj = width(8022);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  let obj1 = width(8012);
+  let obj1 = width(8050);
   const bundleWidth = BUNDLE_PREVIEW_CONFIG.small.bundleWidth;
   rounded = bundleWidth;
   if (!obj1.useCollectiblesMobileFlexibleBundlesExperiment("CollectiblesShopCheckoutDetails").enabled) {
@@ -100,7 +100,7 @@ function BundleAssetPreview(height) {
   obj = { style: memo1 };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
   obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2, exposureLocation: "CollectiblesShopCheckoutDetails" };
-  obj.children = callback(height(7994), obj1);
+  obj.children = callback(height(8032), obj1);
   obj.children = callback(rounded, obj);
   return callback(rounded, obj);
 }
@@ -108,7 +108,7 @@ function NameplateAssetPreview(item) {
   let obj = require(1874) /* getNameplateData */;
   const nameplateData = obj.getNameplateData(item.item);
   obj = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true, style: _createForOfIteratorHelperLoose().nameplate };
-  return callback(importDefault(8008), obj);
+  return callback(importDefault(8046), obj);
 }
 function CollectibleProductPreview(arg0) {
   let product;
@@ -137,19 +137,19 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   ({ product, width, height } = userAvatarSource);
   const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
-    let obj = { skuId: product.skuId, width: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    return callback(require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
+    let obj = { skuId: product.skuId, width: require(8690) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8690) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
+    return callback(require(8690) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = {};
-    const obj1 = { uri: importDefault(8645) };
+    const obj1 = { uri: importDefault(8689) };
     obj.source = obj1;
     obj.style = tmp.externalProductImage;
-    return callback(importDefault(5085), obj);
+    return callback(importDefault(5119), obj);
   } else {
     const type = product.type;
     if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj2 = { item: product.items[0], size: width, avatarSource: userAvatarSource.userAvatarSource, animate: false };
-      return callback(importDefault(8005), obj2);
+      return callback(importDefault(8043), obj2);
     } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { item: product.items[0] };
       return callback(ProfileEffectAssetPreview, obj3);
@@ -207,7 +207,7 @@ function ProductDetails(product) {
   if (null == memo) {
     let obj = { style: tmp.productDetails };
     obj = { variant: "text-md/semibold", children: product.name };
-    obj.children = callback(require(4127) /* Text */.Text, obj);
+    obj.children = callback(require(4161) /* Text */.Text, obj);
     let tmp8 = callback(View, obj);
   } else {
     obj = { style: tmp.productDetails };
@@ -215,9 +215,9 @@ function ProductDetails(product) {
     const items1 = [callback(CollectibleProductPreview, obj1), ];
     const obj2 = { style: tmp.productDetailsTextContainer };
     const obj3 = { variant: "text-md/semibold", children: product.name };
-    const items2 = [callback(require(4127) /* Text */.Text, obj3), ];
+    const items2 = [callback(require(4161) /* Text */.Text, obj3), ];
     const obj4 = { variant: "text-sm/medium", children: memo };
-    items2[1] = callback(require(4127) /* Text */.Text, obj4);
+    items2[1] = callback(require(4161) /* Text */.Text, obj4);
     obj2.children = items2;
     items1[1] = callback2(View, obj2);
     obj.children = items1;
@@ -316,9 +316,9 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
   }
   let dependencyMap;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8596) /* useCurrentUser */;
+  let obj = require(8640) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = flag2(3777);
+  let obj1 = flag2(3811);
   const canUseShopDiscountsResult = obj1.canUseShopDiscounts(currentUser);
   dependencyMap = canUseShopDiscountsResult;
   const items = [product, flag2, canUseShopDiscountsResult];
@@ -373,7 +373,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
     const obj3 = { variant: "text-xs/semibold", color: "text-feedback-critical" };
     let intl = require(1212) /* getSystemLocale */.intl;
     obj3.children = intl.string(require(1212) /* getSystemLocale */.t["3YfczA"]);
-    obj2.children = callback(require(4127) /* Text */.Text, obj3);
+    obj2.children = callback(require(4161) /* Text */.Text, obj3);
     flag3 = callback(View, obj2);
   }
   items3[1] = flag3;

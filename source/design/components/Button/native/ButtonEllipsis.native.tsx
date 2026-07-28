@@ -1,13 +1,13 @@
-// Module ID: 4559
-// Function ID: 39951
+// Module ID: 4593
+// Function ID: 40065
 // Name: EllipsisCircle
-// Dependencies: [31, 33, 3992, 4131, 689, 4132, 4549, 4560, 2]
+// Dependencies: [31, 33, 4026, 4165, 689, 4166, 4583, 4594, 2]
 // Exports: Ellipsis
 
-// Module 4559 (EllipsisCircle)
+// Module 4593 (EllipsisCircle)
 import "result";
 import jsxProd from "jsxProd";
-import { Easing } from "module_3992";
+import { Easing } from "module_4026";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_3;
@@ -50,7 +50,7 @@ function EllipsisCircle(offset) {
 }
 ({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
 let obj = { duration: 500 };
-obj.easing = Easing.inOut(require("module_3992").Easing.quad);
+obj.easing = Easing.inOut(require("module_4026").Easing.quad);
 let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, backgroundColor) => {
   if ("lg" === arg0) {
     let num2 = 8;
@@ -87,14 +87,14 @@ let closure_8 = (() => {
     const obj2 = outer1_0(outer1_2[2]);
     return obj.withDelay(result, obj2.withRepeat(outer1_0(outer1_2[5]).withTiming(value, outer1_5, "animate-always"), -1, true));
   }
-  obj = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: require(3992).withDelay, withRepeat: require(3992).withRepeat, withTiming: require(4132) /* withTiming */.withTiming, ELLIPSIS_APPEAR_TIMING: obj };
+  obj = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: require(4026).withDelay, withRepeat: require(4026).withRepeat, withTiming: require(4166) /* withTiming */.withTiming, ELLIPSIS_APPEAR_TIMING: obj };
   withEllipsisAnimation.__closure = obj;
   withEllipsisAnimation.__workletHash = 2181731162311;
   withEllipsisAnimation.__initData = closure_7;
   return withEllipsisAnimation;
 })();
 let closure_9 = { code: "function ButtonEllipsisNativeTsx2(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
-let result = require("module_3992").fileFinishedImporting("design/components/Button/native/ButtonEllipsis.native.tsx");
+let result = require("module_4026").fileFinishedImporting("design/components/Button/native/ButtonEllipsis.native.tsx");
 
 export const Ellipsis = function Ellipsis(arg0) {
   let obj = { style: { flexDirection: "row" } };
@@ -107,5 +107,5 @@ export const Ellipsis = function Ellipsis(arg0) {
   const merged2 = Object.assign(arg0);
   items[2] = callback(EllipsisCircle, { offset: 2 });
   obj.children = items;
-  return callback2(importDefault(3992).View, obj);
+  return callback2(importDefault(4026).View, obj);
 };

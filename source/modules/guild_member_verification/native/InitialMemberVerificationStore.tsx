@@ -1,10 +1,10 @@
-// Module ID: 9078
-// Function ID: 71420
+// Module ID: 9122
+// Function ID: 71571
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 // Exports: setInitialVerification
 
-// Module 9078 (_isNativeReflectConstruct)
+// Module 9122 (_isNativeReflectConstruct)
 import dispatcher from "dispatcher";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

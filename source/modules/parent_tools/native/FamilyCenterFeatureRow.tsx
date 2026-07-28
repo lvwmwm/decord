@@ -1,10 +1,10 @@
-// Module ID: 13851
-// Function ID: 106142
+// Module ID: 13895
+// Function ID: 106315
 // Name: FamilyCenterFeatureRows
-// Dependencies: [31, 27, 33, 4131, 689, 11051, 1212, 2199, 13852, 13853, 11413, 8665, 12172, 13848, 4542, 4127, 5501, 5164, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 11089, 1212, 2199, 13896, 13897, 11451, 8709, 12215, 13892, 4576, 4161, 5536, 5198, 2]
 // Exports: default
 
-// Module 13851 (FamilyCenterFeatureRows)
+// Module 13895 (FamilyCenterFeatureRows)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,34 +21,34 @@ _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterFeatureRow.tsx");
 
 export default function FamilyCenterFeatureRows() {
-  let obj = require(11051) /* useAgeSpecificText */;
+  let obj = require(11089) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   const tmp = _createForOfIteratorHelperLoose();
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2199).qITXhY), intl2.string(importDefault(2199).bmhCnL));
-  let obj1 = require(11051) /* useAgeSpecificText */;
+  let obj1 = require(11089) /* useAgeSpecificText */;
   const intl3 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2199).qITXhY);
   const intl4 = require(1212) /* getSystemLocale */.intl;
   const ageSpecificText1 = obj1.useAgeSpecificText(intl3.string(importDefault(2199).t7SkFy), intl4.string(importDefault(2199)["68zfxD"]));
-  let obj2 = require(11051) /* useAgeSpecificText */;
+  let obj2 = require(11089) /* useAgeSpecificText */;
   const intl5 = require(1212) /* getSystemLocale */.intl;
   const stringResult1 = intl3.string(importDefault(2199).t7SkFy);
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj = {};
   const ageSpecificText2 = obj2.useAgeSpecificText(intl5.string(importDefault(2199)["+pi4Yt"]), intl6.string(importDefault(2199)["1xPTwE"]));
-  obj.icon = importDefault(13852);
-  obj.IconComponent = require(13853) /* ChatCheckIcon */.ChatCheckIcon;
+  obj.icon = importDefault(13896);
+  obj.IconComponent = require(13897) /* ChatCheckIcon */.ChatCheckIcon;
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj.header = intl7.string(importDefault(2199)["001l3m"]);
   obj.description = ageSpecificText;
   const items = [obj, , ];
-  obj = { icon: importDefault(11413), IconComponent: require(8665) /* EyeIcon */.EyeIcon };
+  obj = { icon: importDefault(11451), IconComponent: require(8709) /* EyeIcon */.EyeIcon };
   const intl8 = require(1212) /* getSystemLocale */.intl;
   obj.header = intl8.string(importDefault(2199).yipAeP);
   obj.description = ageSpecificText1;
   items[1] = obj;
-  obj1 = { icon: importDefault(12172), IconComponent: require(13848) /* QrCodeIcon */.QrCodeIcon };
+  obj1 = { icon: importDefault(12215), IconComponent: require(13892) /* QrCodeIcon */.QrCodeIcon };
   const intl9 = require(1212) /* getSystemLocale */.intl;
   obj1.header = intl9.string(importDefault(2199).hhOuMe);
   obj1.description = ageSpecificText2;
@@ -58,7 +58,7 @@ export default function FamilyCenterFeatureRows() {
   const obj4 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted" };
   const intl10 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl10.string(importDefault(2199)["6JkHSg"]);
-  const items1 = [callback(require(4127) /* Text */.Text, obj4), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj4), ];
   const obj5 = {
     hasIcons: true,
     children: items.map((header) => {
@@ -71,8 +71,8 @@ export default function FamilyCenterFeatureRows() {
       return outer1_4(outer1_0(outer1_2[17]).TableRow, obj, header);
     })
   };
-  items1[1] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj5);
+  items1[1] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj5);
   obj3.children = items1;
-  obj2.children = callback2(require(4542) /* Stack */.Stack, obj3);
+  obj2.children = callback2(require(4576) /* Stack */.Stack, obj3);
   return callback(View, obj2);
 };

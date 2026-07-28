@@ -1,9 +1,9 @@
-// Module ID: 5141
-// Function ID: 44609
+// Module ID: 5175
+// Function ID: 44724
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 653, 44, 4063, 477, 587, 5142, 4165, 4, 5143, 5144, 1443, 507, 4193, 2]
+// Dependencies: [57, 5, 653, 44, 4097, 477, 587, 5176, 4199, 4, 5177, 5178, 1443, 507, 4227, 2]
 
-// Module 5141 (_createForOfIteratorHelperLoose)
+// Module 5175 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import { NativeFeatures } from "ME";
@@ -156,7 +156,7 @@ function normalizeRunningGame(id) {
   obj.windowHandle = tmp3;
   let UNKNOWN = id.fullscreenType;
   if (null == UNKNOWN) {
-    UNKNOWN = require(4063) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
+    UNKNOWN = require(4097) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   obj.fullscreenType = UNKNOWN;
   const isLauncher = id.isLauncher;
@@ -287,7 +287,7 @@ obj.beforeUnload = function beforeUnload() {
       let Storage = require(587) /* Storage */.Storage;
       let num2 = 7;
       let flag = true;
-      tmp15 = true !== Storage.get(require(5142) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
+      tmp15 = true !== Storage.get(require(5176) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
     }
     let supportsFeatureResult = tmp15;
     if (tmp15) {
@@ -463,7 +463,7 @@ obj.setObserverDebugCallback = function setObserverDebugCallback(arg0, NONE, arg
 };
 obj.clearObserverDebugCallback = function clearObserverDebugCallback() {
   const discordUtils = this.getDiscordUtils();
-  const result = discordUtils.setObserverDebugCallback(null, require(4165) /* _isNativeReflectConstruct */.GameDetectionDebugLevel.NONE, 0);
+  const result = discordUtils.setObserverDebugCallback(null, require(4199) /* _isNativeReflectConstruct */.GameDetectionDebugLevel.NONE, 0);
 };
 obj.shouldDisplayNotifications = function shouldDisplayNotifications() {
   const discordUtils = this.getDiscordUtils();
@@ -543,7 +543,7 @@ obj.setBadge = function setBadge(arg0) {
     dock.setBadge(str2);
   } else {
     if ("win32" === obj3.getPlatformName()) {
-      self.sendIPC(require(5143) /* IPCEvents */.IPCEvents.APP_BADGE_SET, arg0);
+      self.sendIPC(require(5177) /* IPCEvents */.IPCEvents.APP_BADGE_SET, arg0);
     } else {
       if ("linux" === obj2.getPlatformName()) {
         const app = DiscordNative.app;
@@ -561,7 +561,7 @@ obj.setBadge = function setBadge(arg0) {
 obj.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
   const self = this;
   if (require(477) /* set */.isPlatformEmbedded) {
-    self.sendIPC(require(5143) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
+    self.sendIPC(require(5177) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
   }
 };
 obj.setThumbarButtons = function setThumbarButtons(arg0, self) {
@@ -590,7 +590,7 @@ obj.bounceDock = function bounceDock(arg0) {
 obj.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
   const self = this;
   if (require(477) /* set */.isPlatformEmbedded) {
-    self.sendIPC(require(5143) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
+    self.sendIPC(require(5177) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
   }
 };
 Object.defineProperty(obj, "architecture", {
@@ -668,7 +668,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj.canSaveImage = function canSaveImage(outer1_0, outer1_1) {
   if (null != outer1_0) {
     if (require(477) /* set */.isPlatformEmbedded) {
-      const decideFileExtensionResult = require(5144) /* decideFileExtension */.decideFileExtension(outer1_0, outer1_1);
+      const decideFileExtensionResult = require(5178) /* decideFileExtension */.decideFileExtension(outer1_0, outer1_1);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set1.has(decideFileExtensionResult);
@@ -706,7 +706,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
         }
         const str9 = str4.replace(outer2_21, "");
       } else if (!str2.includes(".")) {
-        let decideFileExtensionResult = callback(5144).decideFileExtension(outer1_0, outer1_1);
+        let decideFileExtensionResult = callback(5178).decideFileExtension(outer1_0, outer1_1);
         if (null == decideFileExtensionResult) {
           decideFileExtensionResult = outer1_2;
         }
@@ -716,7 +716,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
         }
         const _HermesInternal = HermesInternal;
         str2 = "" + str2 + "." + str6;
-        const obj2 = callback(5144);
+        const obj2 = callback(5178);
       }
       const _Buffer = Buffer;
       const fromResult = Buffer.from(yield outer2_30(outer1_0));
@@ -903,13 +903,13 @@ obj.canCopyImage = function canCopyImage(outer1_0) {
       return false;
     } else {
       if (null != tmp) {
-        const decideFileExtensionResult = require(5144) /* decideFileExtension */.decideFileExtension(tmp, undefined);
+        const decideFileExtensionResult = require(5178) /* decideFileExtension */.decideFileExtension(tmp, undefined);
         if (null != decideFileExtensionResult) {
           if (!set.has(decideFileExtensionResult)) {
             return false;
           }
         }
-        const obj = require(5144) /* decideFileExtension */;
+        const obj = require(5178) /* decideFileExtension */;
       }
       return true;
     }
@@ -1089,7 +1089,7 @@ obj.close = function close(arg0) {
   _window.close(arg0);
 };
 obj.clearNavigationHistory = function clearNavigationHistory() {
-  backwardCompatSend(require(5143) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
+  backwardCompatSend(require(5177) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
 };
 obj.setAlwaysOnTop = function setAlwaysOnTop(arg0, arg1) {
   if ("function" === typeof DiscordNative.window.setAlwaysOnTop) {
@@ -1138,7 +1138,7 @@ obj.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
   const self = this;
   if (require(477) /* set */.isPlatformEmbedded) {
     if ("darwin" === obj.getPlatformName()) {
-      self.sendIPC(require(5143) /* IPCEvents */.IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+      self.sendIPC(require(5177) /* IPCEvents */.IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
     }
     obj = require(477) /* set */;
   }
@@ -1668,7 +1668,7 @@ obj.crash = function crash(arg0) {
   return flag;
 };
 obj.setApplicationBackgroundColor = function setApplicationBackgroundColor(arg0) {
-  this.sendIPC(require(5143) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
+  this.sendIPC(require(5177) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
 };
 obj.initializeExitHook = function initializeExitHook() {
   const initializeExitHook = this.getDiscordUtils().initializeExitHook;
@@ -1733,7 +1733,7 @@ obj.GetWindowFullscreenTypeByPid = function GetWindowFullscreenTypeByPid(arg0, a
     UNKNOWN = windowFullscreenTypeByPid;
   }
   if (null == UNKNOWN) {
-    UNKNOWN = require(4063) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
+    UNKNOWN = require(4097) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   return UNKNOWN;
 };
@@ -1745,7 +1745,7 @@ obj.GetWindowFullscreenTypeExtraByPid = function GetWindowFullscreenTypeExtraByP
     }
     return windowFullscreenTypeExtraByPid;
   }
-  windowFullscreenTypeExtraByPid = { quns: require(4063) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
+  windowFullscreenTypeExtraByPid = { quns: require(4097) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
 };
 obj.SetGPUBoostEnabledByPid = function SetGPUBoostEnabledByPid(arg0, arg1) {
   const setGPUBoostEnabledByPid = this.getDiscordUtils().setGPUBoostEnabledByPid;
@@ -1954,7 +1954,7 @@ obj.appViewed = function appViewed() {
   if (obj.isDesktop()) {
     const _performance = performance;
     performance.mark("app_viewed");
-    self.sendIPC(require(5143) /* IPCEvents */.IPCEvents.APP_VIEWED);
+    self.sendIPC(require(5177) /* IPCEvents */.IPCEvents.APP_VIEWED);
   }
 };
 obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(arg0) {
@@ -1962,14 +1962,14 @@ obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(a
   if (obj.isDesktop()) {
     const _performance = performance;
     performance.mark("app_first_render_after_ready_payload");
-    self.sendIPC(require(5143) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
+    self.sendIPC(require(5177) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
   }
 };
 obj.appLoaded = function appLoaded() {
-  backwardCompatSend(require(5143) /* IPCEvents */.IPCEvents.APP_LOADED);
+  backwardCompatSend(require(5177) /* IPCEvents */.IPCEvents.APP_LOADED);
 };
 obj.indexLoadedAsync = function indexLoadedAsync() {
-  backwardCompatSend(require(5143) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
+  backwardCompatSend(require(5177) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
 };
 obj.setUseRequireModuleCache = function setUseRequireModuleCache(arg0) {
   let closure_13 = arg0;

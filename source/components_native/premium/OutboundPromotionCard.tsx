@@ -1,10 +1,10 @@
-// Module ID: 12522
-// Function ID: 96955
+// Module ID: 12565
+// Function ID: 97125
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 4974, 5187, 5186, 1212, 4127, 4121, 4067, 6509, 12523, 4472, 12524, 1935, 6507, 4544, 4099, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 5008, 5221, 5220, 1212, 4161, 4155, 4101, 6545, 12566, 4506, 12567, 1935, 6543, 4578, 4133, 2]
 // Exports: default
 
-// Module 12522 (TermsAndConditionsActionSheet)
+// Module 12565 (TermsAndConditionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -21,12 +21,12 @@ function TermsAndConditionsActionSheet(termsAndConditions) {
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.PdKWVT);
-  obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback2(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { style: _createForOfIteratorHelperLoose().termsAndConditionsText, variant: "text-sm/medium" };
   const tmp = _createForOfIteratorHelperLoose();
-  obj.children = importDefault(4121).parse(termsAndConditions.termsAndConditions, false, { allowLinks: true });
-  obj.children = callback2(require(4127) /* Text */.Text, obj);
-  return callback2(require(5187) /* Background */.BottomSheet, obj);
+  obj.children = importDefault(4155).parse(termsAndConditions.termsAndConditions, false, { allowLinks: true });
+  obj.children = callback2(require(4161) /* Text */.Text, obj);
+  return callback2(require(5221) /* Background */.BottomSheet, obj);
 }
 ({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

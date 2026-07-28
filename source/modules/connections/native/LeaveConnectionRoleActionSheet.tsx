@@ -1,10 +1,10 @@
-// Module ID: 9954
-// Function ID: 77082
+// Module ID: 9994
+// Function ID: 77211
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [31, 27, 33, 4131, 5187, 4127, 1212, 4544, 2]
+// Dependencies: [31, 27, 33, 4165, 5221, 4161, 1212, 4578, 2]
 // Exports: default
 
-// Module 9954 (LeaveConnectionRoleActionSheet)
+// Module 9994 (LeaveConnectionRoleActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,19 +24,19 @@ export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   obj = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.vytvJF);
-  const items = [callback(require(4127) /* Text */.Text, obj), , ];
+  const items = [callback(require(4161) /* Text */.Text, obj), , ];
   const obj1 = { style: tmp.marginTop, variant: "text-md/normal", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.caJwb5);
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.button };
   const obj3 = { variant: "destructive", onPress: onLeaveRolePressed.onLeaveRolePressed };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["+Oi4XF"]);
   obj3.grow = true;
-  obj2.children = callback(require(4544) /* Button */.Button, obj3);
+  obj2.children = callback(require(4578) /* Button */.Button, obj3);
   items[2] = callback(View, obj2);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15207
-// Function ID: 115753
+// Module ID: 15247
+// Function ID: 115912
 // Name: NotificationCenterBannerImpl
-// Dependencies: [57, 31, 27, 653, 1345, 11443, 33, 4131, 689, 675, 10166, 4127, 1212, 4544, 11444, 4661, 5119, 14375, 8379, 1334, 2]
+// Dependencies: [57, 31, 27, 653, 1345, 11481, 33, 4165, 689, 675, 10206, 4161, 1212, 4578, 11482, 4695, 5153, 14419, 8417, 1334, 2]
 // Exports: default
 
-// Module 15207 (NotificationCenterBannerImpl)
+// Module 15247 (NotificationCenterBannerImpl)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,19 +36,19 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container };
   obj = { style: tmp.iconContainer };
   obj = { size: "md", color: importDefault(689).colors.ICON_STRONG };
-  obj.children = callback4(onDismiss(10166).BellSlashIcon, obj);
+  obj.children = callback4(onDismiss(10206).BellSlashIcon, obj);
   const items = [callback4(View, obj), , ];
   const obj1 = { style: tmp.contentContainer };
   const obj2 = { variant: "text-md/semibold", color: "text-default" };
   const intl = onDismiss(1212).intl;
   obj2.children = intl.string(onDismiss(1212).t.G6YBna);
-  const items1 = [callback4(onDismiss(4127).Text, obj2), , ];
+  const items1 = [callback4(onDismiss(4161).Text, obj2), , ];
   const obj3 = { variant: "text-md/medium", color: "text-muted" };
   const obj4 = { marginTop: importDefault(689).space.PX_4 };
   obj3.style = obj4;
   const intl2 = onDismiss(1212).intl;
   obj3.children = intl2.string(onDismiss(1212).t["9CoPDE"]);
-  items1[1] = callback4(onDismiss(4127).Text, obj3);
+  items1[1] = callback4(onDismiss(4161).Text, obj3);
   const obj5 = { style: tmp.ctaButton };
   const obj6 = { variant: "primary", size: "md" };
   const intl3 = onDismiss(1212).intl;
@@ -59,7 +59,7 @@ function NotificationCenterBannerImpl(onDismiss) {
     obj = { action: outer1_12.ACCEPT, prompt_type: outer1_13.NOTIFICATION_CENTER_BANNER };
     outer1_1(outer1_2[9]).track(outer1_7.CONTEXTUAL_REMINDER_ACTION, obj);
   };
-  obj5.children = callback4(onDismiss(4544).Button, obj6);
+  obj5.children = callback4(onDismiss(4578).Button, obj6);
   items1[2] = callback4(View, obj5);
   obj1.children = items1;
   items[1] = callback5(View, obj1);
@@ -75,8 +75,8 @@ function NotificationCenterBannerImpl(onDismiss) {
   };
   const intl4 = onDismiss(1212).intl;
   obj7.accessibilityLabel = intl4.string(onDismiss(1212).t.WAI6xu);
-  obj7.children = callback4(onDismiss(5119).XSmallIcon, { size: "sm", color: "icon-strong" });
-  items[2] = callback4(onDismiss(4661).PressableHighlight, obj7);
+  obj7.children = callback4(onDismiss(5153).XSmallIcon, { size: "sm", color: "icon-strong" });
+  items[2] = callback4(onDismiss(4695).PressableHighlight, obj7);
   obj.children = items;
   return callback5(View, obj);
 }
@@ -96,9 +96,9 @@ let obj2 = { alignSelf: "flex-start", marginTop: require("_createForOfIteratorHe
 result = require("get ActivityIndicator").fileFinishedImporting("modules/notification_center/native/NotificationCenterPermissionNudge.tsx");
 
 export default function NotificationCenterPermissionNudge() {
-  let obj = importDefault(14375);
-  const canSeePushNotificationNudge = require(11444) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
-  const obj2 = require(11444) /* _requestPushNotificationPermission */;
+  let obj = importDefault(14419);
+  const canSeePushNotificationNudge = require(11482) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
+  const obj2 = require(11482) /* _requestPushNotificationPermission */;
   let prop = null;
   if (!obj.useConfig({ location: "NotificationCenterPermissionNudge" }).inHoldout) {
     prop = null;
@@ -106,10 +106,10 @@ export default function NotificationCenterPermissionNudge() {
       prop = require(1334) /* DismissibleContent */.DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
     }
   }
-  const tmp5 = callback(require(8379) /* useSelectedDismissibleContent */.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 604800000 }), 2);
+  const tmp5 = callback(require(8417) /* useSelectedDismissibleContent */.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 604800000 }), 2);
   require = tmp6;
   const items = [tmp5[1]];
-  const obj3 = require(8379) /* useSelectedDismissibleContent */;
+  const obj3 = require(8417) /* useSelectedDismissibleContent */;
   let tmp8 = null;
   if (tmp5[0] === require(1334) /* DismissibleContent */.DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER) {
     obj = { onDismiss: tmp7 };

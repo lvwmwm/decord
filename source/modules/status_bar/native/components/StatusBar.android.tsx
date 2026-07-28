@@ -1,9 +1,9 @@
-// Module ID: 6622
-// Function ID: 58573
+// Module ID: 6658
+// Function ID: 58662
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 6623, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 6659, 2]
 
-// Module 6622 (_isNativeReflectConstruct)
+// Module 6658 (_isNativeReflectConstruct)
 import StatusBarManager from "StatusBarManager";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

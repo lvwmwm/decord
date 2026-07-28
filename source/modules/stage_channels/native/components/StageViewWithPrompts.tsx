@@ -1,10 +1,10 @@
-// Module ID: 10621
-// Function ID: 82768
+// Module ID: 10659
+// Function ID: 82889
 // Name: styles
-// Dependencies: [31, 27, 482, 33, 10622, 4131, 1557, 10623, 6667, 4127, 2]
+// Dependencies: [31, 27, 482, 33, 10660, 4165, 1557, 10661, 6703, 4161, 2]
 // Exports: default
 
-// Module 10621 (styles)
+// Module 10659 (styles)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ThemeTypes } from "sum";
@@ -32,17 +32,17 @@ export default function StageViewWithPrompts(arg0) {
   const tmp = styles();
   let obj = { style: tmp.scrollView };
   const items = [tmp.container, ];
-  obj = { paddingTop: top + require(10623) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
+  obj = { paddingTop: top + require(10661) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
   ({ top, bottom } = importDefault(1557)());
   items[1] = obj;
   obj.contentContainerStyle = items;
   obj.alwaysBounceVertical = false;
   obj = { style: tmp.sparkle, theme: ThemeTypes.DARK };
-  const items1 = [callback(importDefault(6667), obj), , , ];
+  const items1 = [callback(importDefault(6703), obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
-  items1[1] = callback(require(4127) /* Text */.Text, obj1);
+  items1[1] = callback(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
-  items1[2] = callback(require(4127) /* Text */.Text, obj2);
+  items1[2] = callback(require(4161) /* Text */.Text, obj2);
   items1[3] = callback(closure_4, { style: tmp.prompts, children });
   obj.children = items1;
   return callback2(closure_3, obj);

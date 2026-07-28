@@ -1,8 +1,8 @@
-// Module ID: 15555
-// Function ID: 119704
-// Dependencies: [57, 31, 6158, 12378, 1345, 33, 7778, 566, 8379, 1334, 15550, 15552, 6570, 1212, 2]
+// Module ID: 15594
+// Function ID: 119860
+// Dependencies: [57, 31, 6192, 12421, 1345, 33, 7814, 566, 8417, 1334, 15589, 15591, 6606, 1212, 2]
 
-// Module 15555
+// Module 15594
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   showReferralNotificationDot = undefined;
   let dependencyMap;
   let callback;
-  let obj = onPress(7778);
+  let obj = onPress(7814);
   if (showReferralNotificationDot) {
     showReferralNotificationDot = obj.useIsEligibleSenderForReferralProgram(!showReferralNotificationDot);
   }
@@ -36,8 +36,8 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
       }
     }
   }
-  obj = { cooldownDurationMs: onPress(15550).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
-  const tmp5 = callback(onPress(8379).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  obj = { cooldownDurationMs: onPress(15589).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  const tmp5 = callback(onPress(8417).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   dependencyMap = tmp6;
   const tmp7 = tmp5[0] === onPress(1334).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
   callback = tmp7;
@@ -51,13 +51,13 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
     onPress();
   }, items2);
   obj = {};
-  const obj3 = onPress(8379);
-  obj.IconComponent = onPress(6570).NitroWheelIcon;
+  const obj3 = onPress(8417);
+  obj.IconComponent = onPress(6606).NitroWheelIcon;
   const intl = onPress(1212).intl;
   obj.accessibilityLabel = intl.string(onPress(1212).t.Ipxkog);
   obj.onPress = callback;
   obj.showRedDot = tmp7;
-  return jsx(showReferralNotificationDot(15552), {});
+  return jsx(showReferralNotificationDot(15591), {});
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
 

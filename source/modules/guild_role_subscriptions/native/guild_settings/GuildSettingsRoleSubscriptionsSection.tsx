@@ -1,10 +1,10 @@
-// Module ID: 16285
-// Function ID: 126464
+// Module ID: 16324
+// Function ID: 126620
 // Name: HasCreatedListingsSection
-// Dependencies: [31, 1391, 1850, 653, 33, 566, 5501, 1212, 5164, 16286, 16287, 16288, 16289, 12557, 2]
+// Dependencies: [31, 1391, 1850, 653, 33, 566, 5536, 1212, 5198, 16325, 16326, 16327, 16328, 12600, 2]
 // Exports: default
 
-// Module 16285 (HasCreatedListingsSection)
+// Module 16324 (HasCreatedListingsSection)
 import "result";
 import { isGuildOwner } from "isGuildOwner";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,47 +31,47 @@ function HasCreatedListingsSection(arg0) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl2.string(require(1212) /* getSystemLocale */.t["/CfKoD"]);
   obj.arrow = true;
-  const obj1 = { source: importDefault(16286) };
-  obj.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj1);
+  const obj1 = { source: importDefault(16325) };
+  obj.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj1);
   obj.onPress = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_BASIC);
   };
-  const items1 = [callback(require(5164) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
+  const items1 = [callback(require(5198) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
   const obj2 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.pXbGYc);
   obj2.arrow = true;
-  const obj3 = { source: importDefault(16287) };
-  obj2.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj3);
+  const obj3 = { source: importDefault(16326) };
+  obj2.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj3);
   obj2.onPress = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_TIERS);
   };
-  items1[1] = callback(require(5164) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
+  items1[1] = callback(require(5198) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
   if (stateFromStores) {
     const obj4 = {};
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj4.label = intl4.string(require(1212) /* getSystemLocale */.t.p2Rsdl);
     obj4.arrow = true;
-    const obj5 = { source: importDefault(16288) };
-    obj4.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj5);
+    const obj5 = { source: importDefault(16327) };
+    obj4.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj5);
     obj4.onPress = function onPress() {
       return callback(outer1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = callback(require(5164) /* TableRowInner */.TableRow, obj4, "guild-role-subscriptions-payments");
+    stateFromStores = callback(require(5198) /* TableRowInner */.TableRow, obj4, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
   const obj6 = {};
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj6.label = intl5.string(require(1212) /* getSystemLocale */.t.C5Dbwn);
   obj6.arrow = true;
-  const obj7 = { source: importDefault(16289) };
-  obj6.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj7);
+  const obj7 = { source: importDefault(16328) };
+  obj6.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj7);
   obj6.onPress = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_EMOJIS);
   };
-  items1[3] = callback(require(5164) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
+  items1[3] = callback(require(5198) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
   obj.children = items1;
-  return closure_8(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return closure_8(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ GuildFeatures: closure_5, GuildSettingsSections: closure_6 } = ME);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -79,7 +79,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default function GuildSettingsRoleSubscriptionsSection(guild) {
   guild = guild.guild;
-  let obj = require(12557) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  let obj = require(12600) /* canSeeGuildRoleSubscriptionSettingsContent */;
   let tmp = null;
   if (obj.useCanSeeGuildRoleSubscriptionSettings(guild)) {
     const features = guild.features;

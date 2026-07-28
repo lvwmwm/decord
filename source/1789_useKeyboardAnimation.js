@@ -1,5 +1,5 @@
 // Module ID: 1789
-// Function ID: 19833
+// Function ID: 19837
 // Name: useKeyboardAnimation
 // Dependencies: [31, 27, 1775, 1582, 1776]
 // Exports: useKeyboardAnimation, useTranslateAnimation

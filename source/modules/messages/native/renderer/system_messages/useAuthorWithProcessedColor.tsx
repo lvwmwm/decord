@@ -1,10 +1,10 @@
-// Module ID: 7684
-// Function ID: 61479
+// Module ID: 7720
+// Function ID: 61569
 // Name: getMessageAuthorWithProcessedColor
-// Dependencies: [27, 4361, 7685, 2]
+// Dependencies: [27, 4395, 7721, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7684 (getMessageAuthorWithProcessedColor)
+// Module 7720 (getMessageAuthorWithProcessedColor)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("processColorStringsInternal").fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
@@ -12,7 +12,7 @@ const result = require("processColorStringsInternal").fileFinishedImporting("mod
 export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithProcessedColor(message) {
   let colorStrings;
   let guildId;
-  let obj = require(4361) /* useNullableMessageAuthor */;
+  let obj = require(4395) /* useNullableMessageAuthor */;
   const messageAuthor = obj.getMessageAuthor(message);
   const colorString = messageAuthor.colorString;
   obj = { nick: messageAuthor.nick };
@@ -22,14 +22,14 @@ export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithP
     tmp2 = processColor(colorString);
   }
   obj.colorString = tmp2;
-  obj.colorStrings = require(7685) /* processColorStringsInternal */.processColorStrings(colorStrings);
+  obj.colorStrings = require(7721) /* processColorStringsInternal */.processColorStrings(colorStrings);
   obj.guildId = guildId;
   return obj;
 };
 export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcessedColor(user, channel) {
   let colorStrings;
   let guildId;
-  let obj = require(4361) /* useNullableMessageAuthor */;
+  let obj = require(4395) /* useNullableMessageAuthor */;
   const userAuthor = obj.getUserAuthor(user, channel);
   const colorString = userAuthor.colorString;
   obj = { nick: userAuthor.nick };
@@ -39,7 +39,7 @@ export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcess
     tmp2 = processColor(colorString);
   }
   obj.colorString = tmp2;
-  obj.colorStrings = require(7685) /* processColorStringsInternal */.processColorStrings(colorStrings);
+  obj.colorStrings = require(7721) /* processColorStringsInternal */.processColorStrings(colorStrings);
   obj.guildId = guildId;
   return obj;
 };

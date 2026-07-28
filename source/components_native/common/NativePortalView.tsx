@@ -1,10 +1,10 @@
-// Module ID: 8058
-// Function ID: 64136
+// Module ID: 8096
+// Function ID: 64246
 // Name: MediaPlayerManager
-// Dependencies: [31, 27, 33, 4131, 477, 8059, 8060, 2]
+// Dependencies: [31, 27, 33, 4165, 477, 8097, 8098, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8058 (MediaPlayerManager)
+// Module 8096 (MediaPlayerManager)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

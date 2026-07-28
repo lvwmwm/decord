@@ -1,10 +1,10 @@
-// Module ID: 9790
-// Function ID: 76062
+// Module ID: 9830
+// Function ID: 76191
 // Name: PencilSparkleIcon
-// Dependencies: [31, 33, 689, 3834, 9791, 2]
+// Dependencies: [31, 33, 689, 3868, 9831, 2]
 // Exports: PencilSparkleIcon
 
-// Module 9790 (PencilSparkleIcon)
+// Module 9830 (PencilSparkleIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PencilSparkleIcon = function PencilSparkleIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9791) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9831) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9791) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9831) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

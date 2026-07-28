@@ -1,10 +1,10 @@
-// Module ID: 11275
-// Function ID: 87691
+// Module ID: 11313
+// Function ID: 87810
 // Name: set
-// Dependencies: [31, 27, 4123, 33, 1882, 4131, 689, 566, 3992, 11276, 11277, 4127, 11278, 1273, 9589, 2]
+// Dependencies: [31, 27, 4157, 33, 1882, 4165, 689, 566, 4026, 11314, 11315, 4161, 11316, 1273, 9629, 2]
 // Exports: default
 
-// Module 11275 (set)
+// Module 11313 (set)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -50,17 +50,17 @@ export default function CommandOptionView(option) {
   let obj = option(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
-  const ReduceMotion = option(3992).ReduceMotion;
+  const ReduceMotion = option(4026).ReduceMotion;
   const tmp3 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  let obj1 = option(11276);
+  let obj1 = option(11314);
   const optionEnteringAnimation = obj1.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   if (set.has(option.type)) {
     if (option.required || isPreSelectedOption) {
       fn = (arg0) => arg0();
     }
-    const FadeOut = option(3992).FadeOut;
-    const FadeInUp = option(3992).FadeInUp;
+    const FadeOut = option(4026).FadeOut;
+    const FadeInUp = option(4026).FadeInUp;
     obj = {};
     obj = { translateY: -10 };
     const items1 = [obj];
@@ -81,8 +81,8 @@ export default function CommandOptionView(option) {
     const obj3 = {
       collapsable: false,
       entering: optionEnteringAnimation.EnteringAnimation,
-      exiting: option(11276).ExitingAnimation,
-      layout: option(11276).LayoutAnimation,
+      exiting: option(11314).ExitingAnimation,
+      layout: option(11314).LayoutAnimation,
       onLayout(arg0) {
           callback(arg0, option);
         }
@@ -91,7 +91,7 @@ export default function CommandOptionView(option) {
     let tmp23 = hasItem1;
     if (hasItem1) {
       const obj5 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
-      tmp23 = callback(option(4127).Text, obj5);
+      tmp23 = callback(option(4161).Text, obj5);
     }
     const items2 = [tmp23, , , ];
     const obj6 = {
@@ -115,24 +115,24 @@ export default function CommandOptionView(option) {
       optionValues,
       hasError: hasItem
     };
-    items2[1] = callback(importDefault(11278), obj6);
+    items2[1] = callback(importDefault(11316), obj6);
     const obj7 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = callback(option(4127).Text, obj7);
+    items2[2] = callback(option(4161).Text, obj7);
     if (hasItem) {
       const obj8 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer };
-      const obj9 = { style: tmp.optionErrorIcon, source: importDefault(9589), size: option(1273).IconSizes.REFRESH_SMALL_16 };
+      const obj9 = { style: tmp.optionErrorIcon, source: importDefault(9629), size: option(1273).IconSizes.REFRESH_SMALL_16 };
       const items3 = [callback(option(1273).Icon, obj9), ];
       const obj10 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = callback(option(4127).Text, obj10);
+      items3[1] = callback(option(4161).Text, obj10);
       obj8.children = items3;
-      hasItem = callback2(importDefault(3992).View, obj8);
+      hasItem = callback2(importDefault(4026).View, obj8);
     }
     items2[3] = hasItem;
     obj4.children = items2;
     obj3.children = callback2(View, obj4);
-    obj2.children = callback(importDefault(3992).View, obj3);
-    obj1.children = callback(option(11277).AwaitAnimationContext, obj2);
-    return callback(option(3992).LayoutAnimationConfig, obj1);
+    obj2.children = callback(importDefault(4026).View, obj3);
+    obj1.children = callback(option(11315).AwaitAnimationContext, obj2);
+    return callback(option(4026).LayoutAnimationConfig, obj1);
   } else {
     return null;
   }

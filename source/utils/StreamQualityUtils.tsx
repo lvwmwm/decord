@@ -1,10 +1,10 @@
-// Module ID: 8783
-// Function ID: 69584
+// Module ID: 8827
+// Function ID: 69735
 // Name: isPremiumRequirement
-// Dependencies: [31, 4221, 1194, 1838, 4203, 1850, 653, 4186, 1852, 4192, 1212, 566, 675, 2]
+// Dependencies: [31, 4255, 1194, 1838, 4237, 1850, 653, 4220, 1852, 4226, 1212, 566, 675, 2]
 // Exports: getFPSText, getResolutionText, isPremiumFPS, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 8783 (isPremiumRequirement)
+// Module 8827 (isPremiumRequirement)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

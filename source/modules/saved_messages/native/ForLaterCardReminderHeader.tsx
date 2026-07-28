@@ -1,10 +1,10 @@
-// Module ID: 9888
-// Function ID: 76603
+// Module ID: 9928
+// Function ID: 76732
 // Name: ForLaterCardReminderHeader
-// Dependencies: [27, 33, 4131, 689, 9880, 4095, 4127, 2]
+// Dependencies: [27, 33, 4165, 689, 9920, 4129, 4161, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 9888 (ForLaterCardReminderHeader)
+// Module 9928 (ForLaterCardReminderHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -27,7 +27,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   const tmp = callback3();
-  let obj = require(9880) /* _savedMessageJumpToMessage */;
+  let obj = require(9920) /* _savedMessageJumpToMessage */;
   obj = {};
   let dueAt;
   if (null != savedMessage) {
@@ -35,7 +35,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   }
   obj.dueAt = dueAt;
   obj.now = throttledNow;
-  obj.type = require(9880) /* _savedMessageJumpToMessage */.DueInStringTypes.SHORT;
+  obj.type = require(9920) /* _savedMessageJumpToMessage */.DueInStringTypes.SHORT;
   const dueInString = obj.useDueInString(obj);
   const isOverdue = dueInString.isOverdue;
   if (null == savedMessage.saveData.dueAt) {
@@ -49,10 +49,10 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
     obj = { style: tmp.container };
     const obj1 = { style: tmp.icon };
     const obj2 = { size: "xxs", color: isOverdue ? colors.TEXT_FEEDBACK_CRITICAL : colors.INTERACTIVE_TEXT_DEFAULT };
-    obj1.children = callback(require(4095) /* ClockIcon */.ClockIcon, obj2);
+    obj1.children = callback(require(4129) /* ClockIcon */.ClockIcon, obj2);
     const items = [callback(View, obj1), , ];
     const obj3 = { variant: "text-md/semibold", color: str, children: tmp4 };
-    items[1] = callback(require(4127) /* Text */.Text, obj3);
+    items[1] = callback(require(4161) /* Text */.Text, obj3);
     const obj4 = { style: tmp.actionsContainer, children: actions };
     items[2] = callback(View, obj4);
     obj.children = items;

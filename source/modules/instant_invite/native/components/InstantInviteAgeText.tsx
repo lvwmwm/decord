@@ -1,10 +1,10 @@
-// Module ID: 11746
-// Function ID: 91225
+// Module ID: 11785
+// Function ID: 91376
 // Name: InstantInviteAgeText
-// Dependencies: [31, 27, 8287, 33, 4131, 566, 4127, 8288, 4661, 8286, 1212, 2]
+// Dependencies: [31, 27, 8325, 33, 4165, 566, 4161, 8326, 4695, 8324, 1212, 2]
 // Exports: default
 
-// Module 11746 (InstantInviteAgeText)
+// Module 11785 (InstantInviteAgeText)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,9 +38,9 @@ export default function InstantInviteAgeText(style) {
     const items1 = [tmp.inviteAgeContainer, style.style];
     obj.style = items1;
     obj = { variant: "text-xs/normal" };
-    const items2 = [require(8288) /* _createForOfIteratorHelperLoose */.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [require(8326) /* _createForOfIteratorHelperLoose */.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj.children = items2;
-    const items3 = [callback(require(4127) /* Text */.Text, obj), ];
+    const items3 = [callback(require(4161) /* Text */.Text, obj), ];
     if (canEditInvite) {
       const obj1 = {
         onPress() {
@@ -57,13 +57,13 @@ export default function InstantInviteAgeText(style) {
       const obj2 = { variant: "text-xs/normal", color: "text-link" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["VNe8P/"]);
-      obj1.children = callback2(require(4127) /* Text */.Text, obj2);
-      canEditInvite = callback2(require(4661) /* PressableBase */.PressableOpacity, obj1);
+      obj1.children = callback2(require(4161) /* Text */.Text, obj2);
+      canEditInvite = callback2(require(4695) /* PressableBase */.PressableOpacity, obj1);
     }
     items3[1] = canEditInvite;
     obj.children = items3;
     tmp4Result = callback(View, obj);
-    const obj4 = require(8288) /* _createForOfIteratorHelperLoose */;
+    const obj4 = require(8326) /* _createForOfIteratorHelperLoose */;
     const tmp4 = callback;
     const tmp5 = View;
   }

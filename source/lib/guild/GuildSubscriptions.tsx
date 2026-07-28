@@ -1,9 +1,9 @@
-// Module ID: 6004
-// Function ID: 53531
+// Module ID: 6038
+// Function ID: 53650
 // Name: validateGuildId
-// Dependencies: [6, 7, 653, 1841, 6005, 6006, 6007, 4016, 22, 2]
+// Dependencies: [6, 7, 653, 1841, 6039, 6040, 6041, 4050, 22, 2]
 
-// Module 6004 (validateGuildId)
+// Module 6038 (validateGuildId)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import { ME } from "ME";

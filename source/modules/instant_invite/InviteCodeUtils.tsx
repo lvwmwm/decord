@@ -1,10 +1,10 @@
-// Module ID: 4117
-// Function ID: 34097
+// Module ID: 4151
+// Function ID: 34199
 // Name: readSnowflake
-// Dependencies: [57, 21, 1440, 4118, 2]
+// Dependencies: [57, 21, 1440, 4152, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey
 
-// Module 4117 (readSnowflake)
+// Module 4151 (readSnowflake)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -61,14 +61,14 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
     }
     let obj = importDefault(1440);
     const parsed = obj.parse(substr);
-    const firstQueryStringValue = require(4118) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
-    const obj2 = require(4118) /* getFirstQueryStringValue */;
-    const tmp13 = readSnowflake(require(4118) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
+    const firstQueryStringValue = require(4152) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
+    const obj2 = require(4152) /* getFirstQueryStringValue */;
+    const tmp13 = readSnowflake(require(4152) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
     obj = { baseCode: inviteHostRemainingPath, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp13 };
     let tmp16;
     if (null != tmp13) {
-      tmp16 = readSnowflake(require(4118) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[message]));
-      const obj5 = require(4118) /* getFirstQueryStringValue */;
+      tmp16 = readSnowflake(require(4152) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[message]));
+      const obj5 = require(4152) /* getFirstQueryStringValue */;
     }
     obj.targetMessageId = tmp16;
     return generateInviteKeyFromExtraData(obj);
@@ -84,13 +84,13 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
   } else {
     const parsed = importDefault(1440).parse(tmp3);
     const obj3 = importDefault(1440);
-    const firstQueryStringValue = require(4118) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
-    const obj4 = require(4118) /* getFirstQueryStringValue */;
-    const tmp17 = readSnowflake(require(4118) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
+    const firstQueryStringValue = require(4152) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
+    const obj4 = require(4152) /* getFirstQueryStringValue */;
+    const tmp17 = readSnowflake(require(4152) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
     obj = { baseCode: first, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp17 };
     let tmp8;
     if (null != tmp17) {
-      obj = require(4118) /* getFirstQueryStringValue */;
+      obj = require(4152) /* getFirstQueryStringValue */;
       tmp8 = readSnowflake(obj.getFirstQueryStringValue(parsed[message]));
     }
     obj.targetMessageId = tmp8;

@@ -1,9 +1,9 @@
-// Module ID: 5687
-// Function ID: 49098
+// Module ID: 5697
+// Function ID: 48954
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 5688, 5689, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5698, 5699, 566, 686, 2]
 
-// Module 5687 (_createForOfIteratorHelperLoose)
+// Module 5697 (_createForOfIteratorHelperLoose)
 import createResolvedGuildTemplate from "createResolvedGuildTemplate";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

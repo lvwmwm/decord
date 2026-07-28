@@ -1,10 +1,10 @@
-// Module ID: 3940
-// Function ID: 32471
+// Module ID: 3974
+// Function ID: 32573
 // Name: toRGBAString
 // Dependencies: [57, 666, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 3940 (toRGBAString)
+// Module 3974 (toRGBAString)
 import _slicedToArray from "_slicedToArray";
 
 function toRGBAString(rgba) {

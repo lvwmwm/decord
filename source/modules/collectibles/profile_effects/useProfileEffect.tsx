@@ -1,10 +1,10 @@
-// Module ID: 8004
-// Function ID: 63785
+// Module ID: 8042
+// Function ID: 63895
 // Name: useProfileEffect
-// Dependencies: [31, 5770, 5786, 5776, 566, 5769, 2]
+// Dependencies: [31, 5780, 5796, 5786, 566, 5779, 2]
 // Exports: default
 
-// Module 8004 (useProfileEffect)
+// Module 8042 (useProfileEffect)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

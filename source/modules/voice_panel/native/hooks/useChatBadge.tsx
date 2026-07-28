@@ -1,10 +1,10 @@
-// Module ID: 15882
-// Function ID: 122582
+// Module ID: 15921
+// Function ID: 122738
 // Name: useChatBadge
-// Dependencies: [4143, 566, 2]
+// Dependencies: [4177, 566, 2]
 // Exports: default
 
-// Module 15882 (useChatBadge)
+// Module 15921 (useChatBadge)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

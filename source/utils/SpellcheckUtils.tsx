@@ -1,17 +1,17 @@
-// Module ID: 5136
-// Function ID: 44531
+// Module ID: 5170
+// Function ID: 44646
 // Name: isElectronBuiltInSpellcheckerSupported
-// Dependencies: [5, 3742, 477, 5137, 2]
+// Dependencies: [5, 3776, 477, 5171, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5136 (isElectronBuiltInSpellcheckerSupported)
+// Module 5170 (isElectronBuiltInSpellcheckerSupported)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
 function isElectronBuiltInSpellcheckerSupported() {
   let spellCheck;
-  if (null != importDefault(3742)) {
-    spellCheck = importDefault(3742).spellCheck;
+  if (null != importDefault(3776)) {
+    spellCheck = importDefault(3776).spellCheck;
   }
   return null != spellCheck;
 }
@@ -139,7 +139,7 @@ export const setAppLocale = function setAppLocale() {
 };
 export const addResultListener = function addResultListener(arg0) {
   if (isElectronBuiltInSpellcheckerSupported()) {
-    const spellCheck = importDefault(3742).spellCheck;
+    const spellCheck = importDefault(3776).spellCheck;
     let fn = spellCheck.on("spellcheck-result", arg0);
     if (null == fn) {
       fn = () => {

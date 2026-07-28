@@ -1,9 +1,9 @@
-// Module ID: 15201
-// Function ID: 115722
+// Module ID: 15241
+// Function ID: 115881
 // Name: BadgedIcon
-// Dependencies: [31, 27, 9489, 33, 7909, 15202, 4131, 689, 4067, 3835, 4549, 9490, 4095, 9893, 566, 9493, 6145, 6147, 9874, 6625, 1212, 2]
+// Dependencies: [31, 27, 9529, 33, 7945, 15242, 4165, 689, 4101, 3869, 4583, 9530, 4129, 9933, 566, 9533, 6179, 6181, 9914, 6661, 1212, 2]
 
-// Module 15201 (BadgedIcon)
+// Module 15241 (BadgedIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,15 +17,15 @@ function BadgedIcon(arg0) {
   let showRedDot;
   let type;
   ({ type, showRedDot } = arg0);
-  let obj = require(3835) /* map */;
-  const token = obj.useToken(importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4067)());
+  let obj = require(3869) /* map */;
+  const token = obj.useToken(importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4101)());
   const tmp3 = callback3();
-  let obj1 = require(4549) /* useProfileThemedButtonStyles */;
+  let obj1 = require(4583) /* useProfileThemedButtonStyles */;
   const iconSizeStyles = obj1.useIconSizeStyles("sm", true, 2);
-  if (type === require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = require(4095) /* ClockIcon */.ClockIcon;
+  if (type === require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
+    let BookmarkIcon = require(4129) /* ClockIcon */.ClockIcon;
   } else {
-    BookmarkIcon = require(9893) /* BookmarkIcon */.BookmarkIcon;
+    BookmarkIcon = require(9933) /* BookmarkIcon */.BookmarkIcon;
   }
   obj = { style: items };
   items = [tmp3.container, iconSizeStyles];
@@ -36,12 +36,12 @@ function BadgedIcon(arg0) {
     obj1.cutouts = items1;
     const obj2 = { size: "sm", color: token };
     obj1.children = callback(BookmarkIcon, obj2);
-    const items2 = [callback(importDefault(7909), obj1), ];
+    const items2 = [callback(importDefault(7945), obj1), ];
     const obj3 = { style: tmp3.dot };
     items2[1] = callback(View, obj3);
     obj.children = items2;
     let tmp12 = callback2(View, obj);
-    const tmp18 = importDefault(7909);
+    const tmp18 = importDefault(7945);
   } else {
     const obj4 = { size: "sm", color: token };
     tmp12 = callback(BookmarkIcon, obj4);

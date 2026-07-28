@@ -1,10 +1,10 @@
-// Module ID: 12956
-// Function ID: 100531
+// Module ID: 13000
+// Function ID: 100704
 // Name: ActivateDeviceSuccess
-// Dependencies: [31, 27, 33, 4131, 1212, 8882, 5085, 1392, 12955, 4127, 4544, 2]
+// Dependencies: [31, 27, 33, 4165, 1212, 8926, 5119, 1392, 12999, 4161, 4578, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 12956 (ActivateDeviceSuccess)
+// Module 13000 (ActivateDeviceSuccess)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,19 +41,19 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
     obj.source = obj2.makeSource(successImage);
     obj.style = tmp.image;
     obj.resizeMode = "contain";
-    tmp9 = callback(importDefault(5085), obj);
-    const tmp13 = importDefault(5085);
+    tmp9 = callback(importDefault(5119), obj);
+    const tmp13 = importDefault(5119);
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(12955).innerContent };
-  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12955).centerText };
+  obj = { style: importDefault(12999).innerContent };
+  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12999).centerText };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.qDtJmD);
-  const items1 = [callback(require(4127) /* Text */.Text, obj1), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
   let tmp17 = null;
   if (null != stringResult) {
-    obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12955).centerText, children: stringResult };
-    tmp17 = callback(require(4127) /* Text */.Text, obj2);
+    obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12999).centerText, children: stringResult };
+    tmp17 = callback(require(4161) /* Text */.Text, obj2);
   }
   items1[1] = tmp17;
   obj.children = items1;
@@ -63,7 +63,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   obj3.text = intl4.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj3.onPress = onComplete.onComplete;
   obj3.grow = true;
-  items[2] = callback(require(4544) /* Button */.Button, obj3);
+  items[2] = callback(require(4578) /* Button */.Button, obj3);
   obj.children = items;
   return closure_5(closure_6, obj);
 };

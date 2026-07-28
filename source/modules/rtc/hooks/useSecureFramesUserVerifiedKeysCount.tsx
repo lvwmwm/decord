@@ -1,10 +1,10 @@
-// Module ID: 8837
-// Function ID: 70013
+// Module ID: 8881
+// Function ID: 70164
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [31, 8808, 8809, 566, 2]
+// Dependencies: [31, 8852, 8853, 566, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 8837 (useSecureFramesUserVerifiedKeysCount)
+// Module 8881 (useSecureFramesUserVerifiedKeysCount)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

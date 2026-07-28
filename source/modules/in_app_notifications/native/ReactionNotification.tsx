@@ -1,12 +1,12 @@
-// Module ID: 10300
-// Function ID: 79635
+// Module ID: 10340
+// Function ID: 79764
 // Name: ReactionNotificationBody
-// Dependencies: [31, 27, 4123, 10201, 653, 33, 4131, 478, 689, 3804, 10234, 4127, 1392, 10301, 5150, 1212, 5856, 10200, 10219, 10220, 10240, 9026, 1273, 5513, 22, 4361, 566, 4338, 4139, 10199, 10242, 1935, 10273, 10272, 2]
+// Dependencies: [31, 27, 4157, 10241, 653, 33, 4165, 478, 689, 3838, 10274, 4161, 1392, 10341, 5184, 1212, 5866, 10240, 10259, 10260, 10280, 9070, 1273, 5548, 22, 4395, 566, 4372, 4173, 10239, 10282, 1935, 10313, 10312, 2]
 // Exports: default
 
-// Module 10300 (ReactionNotificationBody)
+// Module 10340 (ReactionNotificationBody)
 import maybeLoadBundle from "maybeLoadBundle";
-import { View } from "module_4338";
+import { View } from "module_4372";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
 import ME from "ME";
@@ -33,17 +33,17 @@ function ReactionNotificationBody(arg0) {
   let text;
   ({ secondaryText, messagePreview } = arg0);
   ({ text, hasMessageContent } = arg0);
-  let obj = require(10200) /* hasMedia */;
+  let obj = require(10240) /* hasMedia */;
   const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
   const tmp = _createForOfIteratorHelperLoose();
   obj = {};
-  ({ gradientColors, gradientStyles } = importDefault(10219)());
+  ({ gradientColors, gradientStyles } = importDefault(10259)());
   obj = { variant: messagePreviewTextVariant, color: "text-default", style: tmp.italic, children: text };
-  const items = [callback(require(4127) /* Text */.Text, obj), , ];
+  const items = [callback(require(4161) /* Text */.Text, obj), , ];
   let tmp6 = null;
   if (null != secondaryText) {
     const obj1 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: closure_7, children: secondaryText };
-    tmp6 = callback(require(4127) /* Text */.Text, obj1);
+    tmp6 = callback(require(4161) /* Text */.Text, obj1);
   }
   items[1] = tmp6;
   let tmp11 = null;
@@ -51,7 +51,7 @@ function ReactionNotificationBody(arg0) {
     tmp11 = null;
     if (null != messagePreview) {
       const obj2 = { message: messagePreview, lineClamp: 1, maxHeight: closure_6, textColor: "text-subtle", gradientStyles, gradientColors };
-      tmp11 = callback(require(10220) /* PreviewIcon */.NativeChannelRowPreview, obj2);
+      tmp11 = callback(require(10260) /* PreviewIcon */.NativeChannelRowPreview, obj2);
     }
   }
   items[2] = tmp11;
@@ -240,9 +240,9 @@ function ReactionNotificationBodyWrapper(arg0) {
     }, items1);
   })(obj);
   const secondaryText = tmp4.secondaryText;
-  let obj1 = require(10200) /* hasMedia */;
+  let obj1 = require(10240) /* hasMedia */;
   const hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
-  let obj2 = require(10240) /* useGetInitialMessagePreview */;
+  let obj2 = require(10280) /* useGetInitialMessagePreview */;
   obj = { message };
   if (hasPreviewableMedia) {
     message = obj2.useGetInitialMessagePreview(obj);
@@ -279,8 +279,8 @@ function ReactorNotificationIcon(notification) {
   if (notification.isMilestone) {
     if (channel.isGroupDM()) {
       let obj = { channel, size: require(1273) /* Button */.AvatarSizes.NORMAL };
-      let tmp8Result = callback(importDefault(9026), obj);
-      const tmp17 = importDefault(9026);
+      let tmp8Result = callback(importDefault(9070), obj);
+      const tmp17 = importDefault(9070);
     }
     return tmp8Result;
   }
@@ -295,9 +295,9 @@ function ReactorNotificationIcon(notification) {
     tmp8Result = callback(require(1273) /* Button */.Avatar, obj);
     const tmp8 = callback;
   } else {
-    obj = { guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.NORMAL, style: tmp.guildIcon };
-    tmp8Result = callback(importDefault(5513), obj);
-    const tmp5 = importDefault(5513);
+    obj = { guild, size: require(5548) /* makeSizeStyle */.GuildIconSizes.NORMAL, style: tmp.guildIcon };
+    tmp8Result = callback(importDefault(5548), obj);
+    const tmp5 = importDefault(5548);
   }
 }
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: closure_6, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_7 } = set);

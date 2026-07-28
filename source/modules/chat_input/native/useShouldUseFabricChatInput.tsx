@@ -1,10 +1,10 @@
-// Module ID: 11103
-// Function ID: 86331
+// Module ID: 11141
+// Function ID: 86454
 // Name: resolveShouldUseFabric
-// Dependencies: [477, 3995, 11104, 2]
+// Dependencies: [477, 4029, 11142, 2]
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
-// Module 11103 (resolveShouldUseFabric)
+// Module 11141 (resolveShouldUseFabric)
 function resolveShouldUseFabric(enabled) {
   if (null != closure_3) {
     let tmp4 = closure_3;
@@ -12,9 +12,9 @@ function resolveShouldUseFabric(enabled) {
     const tmp3 = !require(477) /* set */.isAndroid();
     tmp4 = !tmp3;
     if (tmp3) {
-      const obj2 = require(3995) /* isFabric */;
-      tmp4 = require(3995) /* isFabric */.isIosFabric() && enabled;
-      const tmp7 = require(3995) /* isFabric */.isIosFabric() && enabled;
+      const obj2 = require(4029) /* isFabric */;
+      tmp4 = require(4029) /* isFabric */.isIosFabric() && enabled;
+      const tmp7 = require(4029) /* isFabric */.isIosFabric() && enabled;
     }
     closure_3 = tmp4;
     const obj = require(477) /* set */;
@@ -24,7 +24,7 @@ function resolveShouldUseFabric(enabled) {
 const result = require("apexExperiment").fileFinishedImporting("modules/chat_input/native/useShouldUseFabricChatInput.tsx");
 
 export const useShouldUseFabricChatInput = function useShouldUseFabricChatInput() {
-  return resolveShouldUseFabric(importDefault(11104).useConfig({ location: "chat_input" }).enabled);
+  return resolveShouldUseFabric(importDefault(11142).useConfig({ location: "chat_input" }).enabled);
 };
 export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
   if (null != closure_3) {
@@ -34,8 +34,8 @@ export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
     let enabled = !obj.isAndroid();
     if (enabled) {
       obj = { location: "chat_input" };
-      enabled = importDefault(11104).getConfig(obj).enabled;
-      const obj2 = importDefault(11104);
+      enabled = importDefault(11142).getConfig(obj).enabled;
+      const obj2 = importDefault(11142);
     }
     tmpResult = resolveShouldUseFabric(enabled);
     const tmp = resolveShouldUseFabric;

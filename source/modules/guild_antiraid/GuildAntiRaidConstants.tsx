@@ -1,10 +1,10 @@
-// Module ID: 7739
-// Function ID: 61693
+// Module ID: 7775
+// Function ID: 61783
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
 // Dependencies: [482, 1212, 483, 2]
 // Exports: getTimeframes
 
-// Module 7739 (GUILD_REPORT_RAID_MOBILE_KEY)
+// Module 7775 (GUILD_REPORT_RAID_MOBILE_KEY)
 import { Permissions } from "sum";
 import importAllResult from "fromHexReverseArray";
 

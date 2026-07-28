@@ -1,9 +1,9 @@
-// Module ID: 5049
-// Function ID: 43630
+// Module ID: 5083
+// Function ID: 43745
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [29, 5, 5050, 1194, 4972, 1908, 1838, 1907, 3948, 1850, 653, 1197, 4471, 1212, 686, 5051, 507, 1198, 5054, 1935, 5587, 5595, 5600, 5626, 11467, 4943, 480, 12562, 3764, 483, 7629, 3800, 675, 12563, 4346, 7668, 2]
+// Dependencies: [29, 5, 5084, 1194, 5006, 1908, 1838, 1907, 3982, 1850, 653, 1197, 4505, 1212, 686, 5085, 507, 1198, 5088, 1935, 5622, 5630, 5635, 5661, 11505, 4977, 480, 12605, 3798, 483, 7665, 3834, 675, 12606, 4380, 7704, 2]
 
-// Module 5049 (showTooManyUserGuildsAlert)
+// Module 5083 (showTooManyUserGuildsAlert)
 import fromHexReverseArray from "fromHexReverseArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ let closure_21;
 let closure_22;
 const require = arg1;
 function showTooManyUserGuildsAlert(quantity) {
-  let obj = importDefault(4471);
+  let obj = importDefault(4505);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.cTaRxF);
@@ -188,7 +188,7 @@ export default {
     return callback(async () => {
       let channelIdForGuildTransition = outer1_2;
       if (null == outer1_2) {
-        let obj = callback(5600);
+        let obj = callback(5635);
         channelIdForGuildTransition = obj.getChannelIdForGuildTransition(tmp);
       }
       let tmp5 = outer1_1;
@@ -209,13 +209,13 @@ export default {
         obj["welcomeModalChannelId"] = tmp12;
         tmp5 = obj;
       }
-      callback2(5626)(outer2_21.CHANNEL(outer1_0, channelIdForGuildTransition, outer1_3), tmp5);
+      callback2(5661)(outer2_21.CHANNEL(outer1_0, channelIdForGuildTransition, outer1_3), tmp5);
       yield new Promise(setImmediate);
     })();
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(11467) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
+    require(11505) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(686);
@@ -267,7 +267,7 @@ export default {
     let reason;
     let userId;
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderator_report_id);
-    let obj = importDefault(4943);
+    let obj = importDefault(4977);
     obj = { url: closure_16.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderator_report_id.moderatorReportId }, oldFormErrors: true };
     obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE };
     const obj1 = { guild_id: guildId, target_user_id: userId };
@@ -330,7 +330,7 @@ export default {
     let closure_3 = arg3;
     const self = this;
     return callback(async () => {
-      let obj = callback(12562);
+      let obj = callback(12605);
       const usePubSub = obj.getConfig({ location: "startBulkBan" }).usePubSub;
       let num = 14;
       let obj1 = callback(686);
@@ -390,7 +390,7 @@ export default {
           obj.primary_color = num2;
         }
         obj.colors = obj;
-        obj.permissions = callback3(3764).NONE;
+        obj.permissions = callback3(3798).NONE;
         const HTTP = callback(507).HTTP;
         obj = { url: outer2_16.GUILD_ROLES(outer1_0), oldFormErrors: true };
         obj.body = obj;
@@ -406,7 +406,7 @@ export default {
           const obj6 = callback2(686);
         }
         const obj5 = callback3(483);
-        const result = callback2(7629).checkGuildTemplateDirty(outer1_0);
+        const result = callback2(7665).checkGuildTemplateDirty(outer1_0);
         return body;
       }
       const intl = callback(1212).intl;
@@ -603,7 +603,7 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp = importDefault(12563)(guildId);
+    const tmp = importDefault(12606)(guildId);
     if (null == tmp) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
@@ -613,9 +613,9 @@ export default {
               require(1198) /* shouldNavigate */.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
               const obj4 = require(1198) /* shouldNavigate */;
             }
-            obj3 = require(7668) /* getSpoilerGatingChannelId */;
+            obj3 = require(7704) /* getSpoilerGatingChannelId */;
           }
-          obj6 = require(4346) /* shouldAgeVerifyForAgeGate */;
+          obj6 = require(4380) /* shouldAgeVerifyForAgeGate */;
         }
         require(1198) /* shouldNavigate */.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
         const obj5 = require(1198) /* shouldNavigate */;

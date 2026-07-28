@@ -1,5 +1,5 @@
 // Module ID: 1041
-// Function ID: 11201
+// Function ID: 11205
 // Name: instrumentDOM
 // Dependencies: [794, 1015]
 

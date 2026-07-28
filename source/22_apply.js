@@ -4313,7 +4313,7 @@ let fn = () => {
         }
         return tmp.placeholder;
       }
-      function getIteratee(compressionProgress, arg1) {
+      function getIteratee(closure_1, arg1) {
         let tmp = lodash.iteratee || iteratee;
         if (tmp === iteratee) {
           tmp = baseIteratee;
@@ -4743,7 +4743,7 @@ let fn = () => {
           return tmp4;
         }
       }
-      function findIndex(items, compressionProgress) {
+      function findIndex(items, closure_1) {
         let num = 0;
         if (null != items) {
           num = items.length;
@@ -4757,12 +4757,12 @@ let fn = () => {
           if (num3 < 0) {
             tmp2 = callback5(num + num3, 0);
           }
-          return baseAssign(items, getIteratee(compressionProgress, 3), tmp2);
+          return baseAssign(items, getIteratee(closure_1, 3), tmp2);
         } else {
           return -1;
         }
       }
-      function findLastIndex(arg0, compressionProgress) {
+      function findLastIndex(arg0, closure_1) {
         let num = 0;
         if (null != arg0) {
           num = arg0.length;
@@ -4770,7 +4770,7 @@ let fn = () => {
         if (num) {
           const diff = num - 1;
           if (arg2 === undefined) {
-            return baseAssign(arg0, getIteratee(compressionProgress, 3), diff, true);
+            return baseAssign(arg0, getIteratee(closure_1, 3), diff, true);
           } else {
             let sum = toInteger(arg2);
             if (arg2 < 0) {
@@ -4873,14 +4873,14 @@ let fn = () => {
       function thru(interceptor) {
         return arg1(interceptor);
       }
-      function forEach(arg0, compressionProgress) {
-        return isArray(arg0) ? ListCache : closure_53(arg0, getIteratee(compressionProgress, 3));
+      function forEach(arg0, closure_1) {
+        return isArray(arg0) ? ListCache : closure_53(arg0, getIteratee(closure_1, 3));
       }
-      function forEachRight(arg0, compressionProgress) {
-        return isArray(arg0) ? MapCache : closure_54(arg0, getIteratee(compressionProgress, 3));
+      function forEachRight(arg0, closure_1) {
+        return isArray(arg0) ? MapCache : closure_54(arg0, getIteratee(closure_1, 3));
       }
-      function map(arg0, compressionProgress) {
-        return isArray(arg0) ? arraySampleSize : baseMap(arg0, getIteratee(compressionProgress, 3));
+      function map(arg0, closure_1) {
+        return isArray(arg0) ? arraySampleSize : baseMap(arg0, getIteratee(closure_1, 3));
       }
       function ary(length, arg1) {
         length = tmp;
@@ -5418,12 +5418,12 @@ let fn = () => {
         }
         return tmp2;
       }
-      function pickBy(arg0, compressionProgress) {
-        let closure_0 = compressionProgress;
+      function pickBy(arg0, closure_1) {
+        let closure_0 = closure_1;
         if (null == arg0) {
           return {};
         } else {
-          closure_0 = getIteratee(compressionProgress);
+          closure_0 = getIteratee(closure_1);
           return basePickBy(arg0, arraySampleSize(getAllKeysIn(arg0), (arg0) => {
             const items = [arg0];
             return items;

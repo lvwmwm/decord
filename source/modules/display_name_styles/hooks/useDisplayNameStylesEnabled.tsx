@@ -1,10 +1,10 @@
-// Module ID: 4363
-// Function ID: 38710
+// Module ID: 4397
+// Function ID: 38824
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [31, 4123, 566, 4364, 2]
+// Dependencies: [31, 4157, 566, 4398, 2]
 // Exports: useDisplayNameStylesEnabled
 
-// Module 4363 (useDisplayNameStylesEnabled)
+// Module 4397 (useDisplayNameStylesEnabled)
 import { useContext } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -14,7 +14,7 @@ export const useDisplayNameStylesEnabled = function useDisplayNameStylesEnabled(
   const items = [_isNativeReflectConstruct];
   let overrideSettings = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.displayNameStylesEnabled);
   if (!overrideSettings) {
-    overrideSettings = useContext(require(4364) /* context */.DisplayNameStylesContext).overrideSettings;
+    overrideSettings = useContext(require(4398) /* context */.DisplayNameStylesContext).overrideSettings;
   }
   return overrideSettings;
 };

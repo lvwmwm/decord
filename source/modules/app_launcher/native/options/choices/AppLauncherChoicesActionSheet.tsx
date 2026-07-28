@@ -1,10 +1,10 @@
-// Module ID: 11280
-// Function ID: 87743
+// Module ID: 11318
+// Function ID: 87862
 // Name: FlashListWrapper
-// Dependencies: [57, 31, 27, 1455, 33, 4131, 689, 6619, 1557, 477, 4975, 7575, 4099, 6504, 11281, 11282, 2]
+// Dependencies: [57, 31, 27, 1455, 33, 4165, 689, 6655, 1557, 477, 5009, 7611, 4133, 6540, 11319, 11320, 2]
 // Exports: default
 
-// Module 11280 (FlashListWrapper)
+// Module 11318 (FlashListWrapper)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ function FlashListWrapper(scrollable) {
   let obj = Object.create(null);
   obj.scrollable = 0;
   const merged = Object.assign(scrollable, obj);
-  const tmp4 = require(6619) /* useModalDismissGuardRefreshControl */;
+  const tmp4 = require(6655) /* useModalDismissGuardRefreshControl */;
   if (scrollable.scrollable) {
     obj = { preserveScrollMomentum: true };
     const merged1 = Object.assign(merged);
@@ -139,11 +139,11 @@ export default function AppLauncherChoicesActionSheet(option) {
   let tmp14 = tmp11;
   if (tmp11) {
     obj = { onChange: callback };
-    tmp14 = callback(option(11282).AppLauncherListSearchBar, obj);
+    tmp14 = callback(option(11320).AppLauncherListSearchBar, obj);
   }
   const items3 = [tmp14, ];
   if (0 === first.length) {
-    let tmp20 = callback(option(11282).AppLauncherListEmptyState, {});
+    let tmp20 = callback(option(11320).AppLauncherListEmptyState, {});
   } else {
     const obj1 = { scrollable: tmp11 };
     const obj2 = { paddingBottom: sum };
@@ -161,5 +161,5 @@ export default function AppLauncherChoicesActionSheet(option) {
   }
   items3[1] = tmp20;
   obj.children = items3;
-  return closure_8(option(11281).AppLauncherCommandOptionActionSheet, obj);
+  return closure_8(option(11319).AppLauncherCommandOptionActionSheet, obj);
 };

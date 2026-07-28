@@ -1,10 +1,10 @@
-// Module ID: 13708
-// Function ID: 105249
+// Module ID: 13752
+// Function ID: 105422
 // Name: WebAuthnSuccessStep
-// Dependencies: [31, 33, 1456, 5087, 13693, 13709, 1212, 2]
+// Dependencies: [31, 33, 1456, 5121, 13737, 13753, 1212, 2]
 // Exports: default
 
-// Module 13708 (WebAuthnSuccessStep)
+// Module 13752 (WebAuthnSuccessStep)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -27,5 +27,5 @@ export default function WebAuthnSuccessStep() {
   obj = { onGenerate: null };
   const intl = navigation(1212).intl;
   obj.headerLabel = intl.format(navigation(1212).t.iVTs6i, {});
-  return jsx(importDefault(13709), { onGenerate: null });
+  return jsx(importDefault(13753), { onGenerate: null });
 };

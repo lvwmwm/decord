@@ -1,10 +1,10 @@
-// Module ID: 12480
-// Function ID: 96762
+// Module ID: 12523
+// Function ID: 96932
 // Name: handlePress
-// Dependencies: [27, 3791, 33, 4131, 689, 4099, 12481, 1935, 1212, 2781, 4127, 2]
+// Dependencies: [27, 3825, 33, 4165, 689, 4133, 12524, 1935, 1212, 2781, 4161, 2]
 // Exports: default
 
-// Module 12480 (handlePress)
+// Module 12523 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getPremiumGroupProductName as closure_5 } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 import { jsx } from "jsxProd";
@@ -13,12 +13,12 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 let closure_3;
 let closure_4;
 function handlePress() {
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { premiumGroupProductName: callback() };
   obj.aboutText = intl.formatToPlainString(importDefault(2781)["5xN/C1"], obj);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12481, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12524, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
 let obj = {};
@@ -38,7 +38,7 @@ export default function BoostingUnavailablePill(style) {
   const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t["5nrJDO"]);
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText });
   obj.children = <closure_4 style={tmp.pgUnavailable} />;
   obj.children = <closure_4 style={tmp.pgUnavailable} />;
   return <closure_3 style={tmp.pgUnavailable} />;

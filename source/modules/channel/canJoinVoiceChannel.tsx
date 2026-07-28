@@ -1,10 +1,10 @@
-// Module ID: 4950
-// Function ID: 42452
+// Module ID: 4984
+// Function ID: 42567
 // Name: canJoinVoiceChannel
 // Dependencies: [1352, 653, 2]
 // Exports: default
 
-// Module 4950 (canJoinVoiceChannel)
+// Module 4984 (canJoinVoiceChannel)
 import { isPrivate } from "_callSuper";
 import { BasicPermissions } from "ME";
 

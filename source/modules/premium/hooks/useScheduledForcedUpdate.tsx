@@ -1,10 +1,10 @@
-// Module ID: 12435
-// Function ID: 96494
+// Module ID: 12478
+// Function ID: 96664
 // Name: useScheduledForcedUpdate
-// Dependencies: [31, 6181, 2]
+// Dependencies: [31, 6215, 2]
 // Exports: default
 
-// Module 12435 (useScheduledForcedUpdate)
+// Module 12478 (useScheduledForcedUpdate)
 import result from "result";
 
 const require = arg1;

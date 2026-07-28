@@ -1,10 +1,10 @@
-// Module ID: 7272
-// Function ID: 60144
+// Module ID: 7308
+// Function ID: 60233
 // Name: NitroRubyBadgeSmallBadge
-// Dependencies: [33, 5085, 7273, 2]
+// Dependencies: [33, 5119, 7309, 2]
 // Exports: NitroRubyBadgeSmallBadge
 
-// Module 7272 (NitroRubyBadgeSmallBadge)
+// Module 7308 (NitroRubyBadgeSmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeSmallBadge.native.tsx");
@@ -27,7 +27,7 @@ export const NitroRubyBadgeSmallBadge = function NitroRubyBadgeSmallBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7273) };
+  obj = { uri: importDefault(7309) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const NitroRubyBadgeSmallBadge = function NitroRubyBadgeSmallBadge(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

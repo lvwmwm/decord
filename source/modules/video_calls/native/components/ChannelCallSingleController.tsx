@@ -1,10 +1,10 @@
-// Module ID: 10754
-// Function ID: 83475
+// Module ID: 10792
+// Function ID: 83596
 // Name: ChannelCallSingleController
-// Dependencies: [31, 4150, 1194, 653, 4149, 33, 675, 4325, 566, 10755, 10757, 10758, 2]
+// Dependencies: [31, 4184, 1194, 653, 4183, 33, 675, 4359, 566, 10793, 10795, 10796, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10754 (ChannelCallSingleController)
+// Module 10792 (ChannelCallSingleController)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -34,9 +34,9 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     } else {
       let tmp19 = channel;
       if (selectedParticipant.user.id === tmp16) {
-        let tmp21 = 10755;
+        let tmp21 = 10793;
       } else {
-        tmp21 = 10757;
+        tmp21 = 10795;
       }
       tmp19 = tmp19(tmp21);
       let obj = { participant: selectedParticipant, channel };
@@ -45,7 +45,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     }
   } else if (ParticipantTypes.USER === type) {
     obj = { participant: selectedParticipant, channel };
-    return jsx(channel(10758), { participant: selectedParticipant, channel });
+    return jsx(channel(10796), { participant: selectedParticipant, channel });
   } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
   } else if (ParticipantTypes.ACTIVITY === type) {

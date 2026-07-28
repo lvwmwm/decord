@@ -1,10 +1,10 @@
-// Module ID: 6496
-// Function ID: 58076
+// Module ID: 6532
+// Function ID: 58165
 // Name: emitMWRCSentryErrorOnFailure
-// Dependencies: [4114, 653, 3, 6497, 6498, 1553, 668, 3828, 2]
+// Dependencies: [4148, 653, 3, 6533, 6534, 1553, 668, 3862, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 6496 (emitMWRCSentryErrorOnFailure)
+// Module 6532 (emitMWRCSentryErrorOnFailure)
 import { CustomCheckoutFlow } from "CustomCheckoutFlow";
 import { Routes } from "ME";
 import importDefaultResult from "checkForCustomCheckoutFlow";
@@ -20,7 +20,7 @@ function emitMWRCSentryErrorOnFailure(arg0, source, load_id) {
   obj = { failure_response: tmp };
   const merged = Object.assign(obj);
   obj.extra = obj;
-  const result = require(6497) /* checkForCustomCheckoutFlow */.captureMobileWebRedirectCheckoutSentryError(error, source, obj);
+  const result = require(6533) /* checkForCustomCheckoutFlow */.captureMobileWebRedirectCheckoutSentryError(error, source, obj);
 }
 importDefaultResult = new importDefaultResult("BillingStandaloneNativeUtils");
 let result = require("timestamp").fileFinishedImporting("modules/payments/native/utils/BillingStandaloneNativeUtils.tsx");
@@ -30,7 +30,7 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
   let closure_1 = arg1;
   const dependencyMap = arg2;
   const CustomCheckoutFlow = arg3;
-  let obj = _require(6498);
+  let obj = _require(6534);
   obj = {};
   const obj2 = _require(1553);
   const merged = Object.assign(arg1);
@@ -44,7 +44,7 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
   return obj.goToStandalonePremiumCheckout(tmp5, (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    lib(3828).openURLExternally(searchParams.href);
+    lib(3862).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, (arg0) => {
     const items = [...arguments];
@@ -57,7 +57,7 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
   loadId = loadId.loadId;
   const dependencyMap = onSuccessCallback;
   const CustomCheckoutFlow = onFailureCallback;
-  const obj = _require(6498);
+  const obj = _require(6534);
   if (obj2.isMetaQuest()) {
     let result = obj3.BILLING_MANAGE_SUBSCRIPTION_WITH_FLOW_TYPE(CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT, loadId);
   } else {
@@ -89,10 +89,10 @@ export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStanda
     prop1 = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
   }
   obj2 = _require(1553);
-  return _require(6498).goToBillingStandalonePageWithHandoff(Routes.BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE(arg1, prop, newAnalyticsLoadId, prop1), (body, searchParams) => {
+  return _require(6534).goToBillingStandalonePageWithHandoff(Routes.BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE(arg1, prop, newAnalyticsLoadId, prop1), (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    newAnalyticsLoadId(3828).openURLExternally(searchParams.href);
+    newAnalyticsLoadId(3862).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, (arg0) => {
     const items = [...arguments];

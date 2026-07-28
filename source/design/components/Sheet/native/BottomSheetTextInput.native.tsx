@@ -1,10 +1,10 @@
-// Module ID: 8228
-// Function ID: 66036
+// Module ID: 8266
+// Function ID: 66146
 // Name: BottomSheetTextInput
-// Dependencies: [31, 33, 6688, 6686, 8229, 2]
+// Dependencies: [31, 33, 6724, 6722, 8267, 2]
 // Exports: BottomSheetTextInput
 
-// Module 8228 (BottomSheetTextInput)
+// Module 8266 (BottomSheetTextInput)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -22,9 +22,9 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(ref, obj);
   ref = React.useRef(null);
-  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6688)({ onFocus, onBlur }));
-  const tmp4 = ref(6688)({ onFocus, onBlur });
-  const keyboardBlurring = ref(6686).useKeyboardBlurring(ref);
+  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6724)({ onFocus, onBlur }));
+  const tmp4 = ref(6724)({ onFocus, onBlur });
+  const keyboardBlurring = ref(6722).useKeyboardBlurring(ref);
   obj = {
     ref(current) {
       ref.current = current;
@@ -37,9 +37,9 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
     onFocus: onFocus2,
     onBlur: onBlur2
   };
-  const obj2 = ref(6686);
+  const obj2 = ref(6722);
   const merged1 = Object.assign(merged);
-  return jsx(ref(8229), {
+  return jsx(ref(8267), {
     ref(current) {
       ref.current = current;
       if ("function" === typeof ref) {

@@ -1,10 +1,10 @@
-// Module ID: 9937
-// Function ID: 76887
+// Module ID: 9977
+// Function ID: 77016
 // Name: hasNotSetUpChannelOptIn
-// Dependencies: [1316, 1908, 1918, 4326, 3747, 5761, 1360, 5073, 5064, 1282, 2]
+// Dependencies: [1316, 1908, 1918, 4360, 3781, 5771, 1360, 5107, 5098, 1282, 2]
 // Exports: hasClearedGuildOnboardingNotice, toggleShowAllChannels
 
-// Module 9937 (hasNotSetUpChannelOptIn)
+// Module 9977 (hasNotSetUpChannelOptIn)
 import closure_3 from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -16,7 +16,7 @@ let closure_4;
 let closure_5;
 const require = arg1;
 function hasNotSetUpChannelOptIn(guildId) {
-  const result = require(5761) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(guildId);
+  const result = require(5771) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(guildId);
   selfMember = selfMember.getSelfMember(guildId);
   let flags;
   if (null != selfMember) {
@@ -26,7 +26,7 @@ function hasNotSetUpChannelOptIn(guildId) {
   if (null != flags) {
     num = flags;
   }
-  const obj = require(5761) /* useOptInEnabledForGuild */;
+  const obj = require(5771) /* useOptInEnabledForGuild */;
   const obj2 = require(1360) /* hasFlag */;
   let tmp6 = !result;
   const hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
@@ -66,7 +66,7 @@ function optIntoAllChannelsForExistingMember(id, arg1) {
   });
   mapped = found.map((channel) => channel.channel.id);
   const item = include.forEach((arg0) => mapped.push(arg0));
-  const obj2 = mapped(5064);
+  const obj2 = mapped(5098);
   const result = obj2.onboardExistingMember(id, new Set(mapped));
 }
 ({ GUILD_SELECTABLE_CHANNELS_KEY: closure_4, GUILD_VOCAL_CHANNELS_KEY: closure_5 } = _isNativeReflectConstruct);
@@ -77,10 +77,10 @@ export const toggleShowAllChannels = function toggleShowAllChannels(id) {
   if (hasNotSetUpChannelOptIn(id)) {
     optIntoAllChannelsForExistingMember(id);
   } else {
-    const result = require(5761) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(id);
-    const obj = require(5761) /* useOptInEnabledForGuild */;
-    require(5073) /* _persistOptInChannelUpdates2 */.setGuildOptIn(id, !result);
-    const obj2 = require(5073) /* _persistOptInChannelUpdates2 */;
+    const result = require(5771) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(id);
+    const obj = require(5771) /* useOptInEnabledForGuild */;
+    require(5107) /* _persistOptInChannelUpdates2 */.setGuildOptIn(id, !result);
+    const obj2 = require(5107) /* _persistOptInChannelUpdates2 */;
   }
 };
 export { optIntoAllChannelsForExistingMember };

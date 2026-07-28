@@ -1,9 +1,9 @@
-// Module ID: 4116
-// Function ID: 34059
+// Module ID: 4150
+// Function ID: 34161
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 4117, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 4151, 566, 686, 2]
 
-// Module 4116 (_isNativeReflectConstruct)
+// Module 4150 (_isNativeReflectConstruct)
 import readSnowflake from "readSnowflake";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -26,7 +26,7 @@ function updateInvite(code, arg1) {
   if (null != code) {
     str = code;
   }
-  let obj = require(4117) /* readSnowflake */;
+  let obj = require(4151) /* readSnowflake */;
   const result = obj.parseExtraDataFromInviteKey(str);
   const value = map.get(str);
   if (null != value) {
@@ -126,7 +126,7 @@ tmp5.displayName = "InviteStore";
 tmp5 = new tmp5(require("dispatcher"), {
   INVITE_RESOLVE: function handleInviteResolve(code) {
     code = code.code;
-    let obj = require(4117) /* readSnowflake */;
+    let obj = require(4151) /* readSnowflake */;
     const result = obj.parseExtraDataFromInviteKey(code);
     map = new Map(map);
     obj = { code: result.baseCode, state: InviteStates.RESOLVING };

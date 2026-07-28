@@ -1,10 +1,10 @@
-// Module ID: 7372
-// Function ID: 60294
+// Module ID: 7408
+// Function ID: 60383
 // Name: SafetyChatSpotIllustration
-// Dependencies: [33, 5085, 7373, 2]
+// Dependencies: [33, 5119, 7409, 2]
 // Exports: SafetyChatSpotIllustration
 
-// Module 7372 (SafetyChatSpotIllustration)
+// Module 7408 (SafetyChatSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyChatSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const SafetyChatSpotIllustration = function SafetyChatSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7373) };
+  obj = { uri: importDefault(7409) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const SafetyChatSpotIllustration = function SafetyChatSpotIllustration(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

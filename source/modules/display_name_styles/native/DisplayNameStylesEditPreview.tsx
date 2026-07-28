@@ -1,10 +1,10 @@
-// Module ID: 14302
-// Function ID: 109850
+// Module ID: 14346
+// Function ID: 110023
 // Name: ChatPreview
-// Dependencies: [31, 27, 33, 4131, 689, 7882, 1874, 8014, 1212, 2557, 9761, 3801, 1273, 8318, 8319, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 7918, 1874, 8052, 1212, 2557, 9801, 3835, 1273, 8356, 8357, 4161, 2]
 // Exports: default
 
-// Module 14302 (ChatPreview)
+// Module 14346 (ChatPreview)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,16 +30,16 @@ function ChatPreview(arg0) {
   const items = [callback(require(1273) /* Button */.Avatar, obj), ];
   obj = { style: tmp.chatContent };
   const obj1 = { style: tmp.chatHeader };
-  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: require(8319) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles };
-  const items1 = [callback(importDefault(8318), obj2), ];
+  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: require(8357) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles };
+  const items1 = [callback(importDefault(8356), obj2), ];
   const obj3 = { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj1.children = items1;
   const items2 = [callback2(View, obj1), ];
   const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl.string(importDefault(2557).h5Cuej);
-  items2[1] = callback(require(4127) /* Text */.Text, obj4);
+  items2[1] = callback(require(4161) /* Text */.Text, obj4);
   obj.children = items2;
   items[1] = callback2(View, obj);
   obj.children = items;

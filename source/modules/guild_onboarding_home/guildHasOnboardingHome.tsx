@@ -1,10 +1,10 @@
-// Module ID: 4336
-// Function ID: 38299
+// Module ID: 4370
+// Function ID: 38413
 // Name: guildHasOnboardingHome
 // Dependencies: [653, 1841, 2]
 // Exports: default
 
-// Module 4336 (guildHasOnboardingHome)
+// Module 4370 (guildHasOnboardingHome)
 import ME from "ME";
 
 let closure_2;

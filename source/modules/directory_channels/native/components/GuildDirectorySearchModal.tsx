@@ -1,10 +1,10 @@
-// Module ID: 9992
-// Function ID: 77293
+// Module ID: 10032
+// Function ID: 77422
 // Name: GuildDirectorySearchModal
-// Dependencies: [31, 33, 9993, 5517, 5450, 2]
+// Dependencies: [31, 33, 10033, 5552, 5485, 2]
 // Exports: default
 
-// Module 9992 (GuildDirectorySearchModal)
+// Module 10032 (GuildDirectorySearchModal)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("DefaultState").fileFinishedImporting("modules/directory_
 export default function GuildDirectorySearchModal(arg0) {
   const _require = arg0;
   let obj = {
-    screens: importDefault(5450)(() => (function getScreens(closure_0) {
+    screens: importDefault(5485)(() => (function getScreens(closure_0) {
       const obj = {
         fullscreen: true,
         headerShown: false,
@@ -27,8 +27,8 @@ export default function GuildDirectorySearchModal(arg0) {
     })(closure_0)),
     initialRouteName: "SEARCH_SCREEN_KEY"
   };
-  return jsx(_require(5517).Navigator, {
-    screens: importDefault(5450)(() => (function getScreens(closure_0) {
+  return jsx(_require(5552).Navigator, {
+    screens: importDefault(5485)(() => (function getScreens(closure_0) {
       const obj = {
         fullscreen: true,
         headerShown: false,

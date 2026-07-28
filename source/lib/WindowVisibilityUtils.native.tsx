@@ -1,10 +1,10 @@
-// Module ID: 10498
-// Function ID: 81409
+// Module ID: 10536
+// Function ID: 81530
 // Name: isDiscordVisible
-// Dependencies: [6271, 653, 10197, 2]
+// Dependencies: [6307, 653, 10237, 2]
 // Exports: default
 
-// Module 10498 (isDiscordVisible)
+// Module 10536 (isDiscordVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AppStates } from "ME";
 

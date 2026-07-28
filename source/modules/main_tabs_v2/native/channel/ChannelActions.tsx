@@ -1,10 +1,10 @@
-// Module ID: 9059
-// Function ID: 71175
+// Module ID: 9103
+// Function ID: 71326
 // Name: JoinCallButton
-// Dependencies: [31, 27, 5041, 1352, 1348, 4147, 9060, 653, 9061, 33, 4131, 9015, 689, 9062, 9064, 9065, 9071, 566, 5996, 22, 9072, 9199, 4342, 1212, 9990, 8232, 9991, 9067, 477, 3990, 10039, 10040, 10057, 1207, 3983, 10061, 4632, 10062, 10063, 10064, 4346, 10065, 10067, 2]
+// Dependencies: [31, 27, 5075, 1352, 1348, 4181, 9104, 653, 9105, 33, 4165, 9059, 689, 9106, 9108, 9109, 9115, 566, 6030, 22, 9116, 9243, 4376, 1212, 10030, 8270, 10031, 9111, 477, 4024, 10079, 10080, 10097, 1207, 4017, 10101, 4666, 10102, 10103, 10104, 4380, 10105, 10107, 2]
 // Exports: default
 
-// Module 9059 (JoinCallButton)
+// Module 9103 (JoinCallButton)
 import "toAnalyticsSearchFilterType";
 import { View } from "withErrorHandling";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,11 +24,11 @@ let closure_9;
 const require = arg1;
 function JoinCallButton() {
   const obj = { size: "sm", color: importDefault(689).unsafe_rawColors.GREEN_360 };
-  return jsx(require(9015) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.GREEN_360 });
+  return jsx(require(9059) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.GREEN_360 });
 }
 function EndCallButton() {
   const obj = { size: "sm", color: importDefault(689).unsafe_rawColors.RED_400 };
-  return jsx(require(9062) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.RED_400 });
+  return jsx(require(9106) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.RED_400 });
 }
 function ChannelActionButtons(channel) {
   let channelHasThreads;
@@ -249,7 +249,7 @@ function WrappedChannelNavButtons(channelId) {
   let obj = channelId(566);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
-  channelId(4346);
+  channelId(4380);
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;
@@ -294,11 +294,11 @@ export default function ChannelActions(channelId) {
     return obj;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  let obj1 = channelId(9065);
+  let obj1 = channelId(9109);
   obj = { style: containerStyle };
   if (obj1.useHasForumSearchQuery(channelId)) {
     obj = { channelId };
-    let tmp6 = jsx(channelId(10065).ForumChannelCloseSearchButton, { channelId });
+    let tmp6 = jsx(channelId(10105).ForumChannelCloseSearchButton, { channelId });
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -307,7 +307,7 @@ export default function ChannelActions(channelId) {
       }
     }
     const obj2 = { channelId, screenIndex };
-    tmp6 = jsx(importDefault(10067), { channelId, screenIndex });
+    tmp6 = jsx(importDefault(10107), { channelId, screenIndex });
   }
   obj.children = tmp6;
   return <View style={containerStyle} />;

@@ -1,10 +1,10 @@
-// Module ID: 10469
-// Function ID: 81235
+// Module ID: 10507
+// Function ID: 81356
 // Name: useIsFiveButtonLayout
-// Dependencies: [1348, 1838, 566, 10178, 10470, 10472, 5997, 2]
+// Dependencies: [1348, 1838, 566, 10218, 10508, 10510, 6031, 2]
 // Exports: useIsFiveButtonLayout
 
-// Module 10469 (useIsFiveButtonLayout)
+// Module 10507 (useIsFiveButtonLayout)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -16,7 +16,7 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_3.getChannel(closure_0));
   const obj = _require(566);
-  let isConnectedToVoiceChannel = _require(10178).useIsConnectedToVoiceChannel(stateFromStores);
+  let isConnectedToVoiceChannel = _require(10218).useIsConnectedToVoiceChannel(stateFromStores);
   let guild_id;
   if (null != stateFromStores) {
     guild_id = stateFromStores.guild_id;
@@ -27,7 +27,7 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   }
   const importDefault = tmp3;
   let guild_id1;
-  const obj3 = _require(10178);
+  const obj3 = _require(10218);
   if (null != stateFromStores) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -39,8 +39,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  const tmp4 = importDefault(10470);
-  const tmp4Result = importDefault(10470)(tmp6, id);
+  const tmp4 = importDefault(10508);
+  const tmp4Result = importDefault(10508)(tmp6, id);
   const items1 = [_createForOfIteratorHelperLoose];
   const items2 = [tmp3];
   const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_4.getGuild(closure_1), items2);
@@ -57,8 +57,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (null != stateFromStores) {
     id1 = stateFromStores.id;
   }
-  const tmp12 = importDefault(10472);
-  const tmp12Result = importDefault(10472)(id1);
+  const tmp12 = importDefault(10510);
+  const tmp12Result = importDefault(10510)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp4Result;
   }

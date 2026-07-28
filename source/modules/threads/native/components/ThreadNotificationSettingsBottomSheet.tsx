@@ -1,10 +1,10 @@
-// Module ID: 10310
-// Function ID: 79711
+// Module ID: 10350
+// Function ID: 79840
 // Name: ThreadNotificationsBottomSheet
-// Dependencies: [1211, 33, 10191, 5498, 5186, 1212, 7596, 6024, 7595, 2]
+// Dependencies: [1211, 33, 10231, 5533, 5220, 1212, 7632, 6058, 7631, 2]
 // Exports: default
 
-// Module 10310 (ThreadNotificationsBottomSheet)
+// Module 10350 (ThreadNotificationsBottomSheet)
 import { getThreadNotificationOptions as closure_3 } from "AbortCodes";
 import { jsx } from "jsxProd";
 
@@ -12,13 +12,13 @@ const result = require("computeThreadNotificationSetting").fileFinishedImporting
 
 export default function ThreadNotificationsBottomSheet(channel) {
   channel = channel.channel;
-  let obj = channel(10191);
+  let obj = channel(10231);
   const threadNotificationSetting = obj.useThreadNotificationSetting(channel);
   obj = {};
   obj = {};
   const intl = channel(1212).intl;
   obj.title = intl.string(channel(1212).t.h850Ss);
-  obj.header = jsx(channel(5186).BottomSheetTitleHeader, {});
+  obj.header = jsx(channel(5220).BottomSheetTitleHeader, {});
   const obj1 = {
     hasIcons: false,
     value: threadNotificationSetting,
@@ -34,7 +34,7 @@ export default function ThreadNotificationsBottomSheet(channel) {
     const setting = label.setting;
     return outer1_4(channel(outer1_2[8]).TableRadioRow, { value: setting, label: label.label }, "" + setting);
   });
-  obj.children = jsx(channel(7596).TableRadioGroup, {
+  obj.children = jsx(channel(7632).TableRadioGroup, {
     hasIcons: false,
     value: threadNotificationSetting,
     onChange(flags) {
@@ -43,5 +43,5 @@ export default function ThreadNotificationsBottomSheet(channel) {
       return obj.setNotificationSettings(channel, obj);
     }
   });
-  return jsx(channel(5498).ActionSheet, {});
+  return jsx(channel(5533).ActionSheet, {});
 };

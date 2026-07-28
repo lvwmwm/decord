@@ -1,10 +1,10 @@
-// Module ID: 9959
-// Function ID: 77098
+// Module ID: 9999
+// Function ID: 77227
 // Name: isNearBottom
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1450, 1557, 5585, 8445, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 1450, 1557, 5620, 8489, 2]
 // Exports: default
 
-// Module 9959 (isNearBottom)
+// Module 9999 (isNearBottom)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 6156
-// Function ID: 55140
+// Module ID: 6190
+// Function ID: 55259
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [57, 31, 3783, 6157, 1852, 653, 5462, 6162, 4452, 6447, 3831, 1212, 3990, 2]
+// Dependencies: [57, 31, 3817, 6191, 1852, 653, 5497, 6196, 4486, 6483, 3865, 1212, 4024, 2]
 // Exports: default
 
-// Module 6156 (usePremiumFeatureUpsellGetNitro)
+// Module 6190 (usePremiumFeatureUpsellGetNitro)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -22,7 +22,7 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
   const dependencyMap = arg3;
   const loading = callback(analyticsLocations.useState(false), 2);
   callback = loading[1];
-  analyticsLocations = importDefault(5462)().analyticsLocations;
+  analyticsLocations = importDefault(5497)().analyticsLocations;
   let _isNativeReflectConstruct = analyticsLocations.useRef(0);
   let items = [arg2, analyticsLocations, arg1, arg0, arg3];
   const onPress = analyticsLocations.useCallback(() => {
@@ -46,7 +46,7 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           obj.analyticsLocation = obj;
           obj.analyticsLocations = analyticsLocations;
           obj.premiumType = callback ? outer1_8.TIER_0 : outer1_8.TIER_2;
-          callback2(6162)(obj, dependencyMap);
+          callback2(6196)(obj, dependencyMap);
         }
       }
     }
@@ -56,15 +56,15 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
         if (result) {
           let resolved = Promise.resolve();
         } else {
-          obj = callback(4452);
+          obj = callback(4486);
           resolved = obj.fetchSubscriptions();
         }
         const items = [resolved, ];
         if (isFetchingOfferResult) {
           let resolved1 = Promise.resolve();
         } else {
-          resolved1 = callback(6447).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
-          const obj2 = callback(6447);
+          resolved1 = callback(6483).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
+          const obj2 = callback(6483);
         }
         items[1] = resolved1;
         const allPromises = Promise.all(items);
@@ -77,19 +77,19 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           outer1_7();
         }).catch(() => {
           const intl = callback(1212).intl;
-          callback2(3831).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
+          callback2(3865).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
         }).finally(() => outer1_4(false));
         const catchPromise = Promise.all(items).then(() => {
           outer1_6.current = outer1_6.current + 1;
           outer1_7();
         }).catch(() => {
           const intl = callback(1212).intl;
-          callback2(3831).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
+          callback2(3865).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
         });
       }
     }
     callback2();
-    const bestActiveInput = callback(3990).getBestActiveInput();
+    const bestActiveInput = callback(4024).getBestActiveInput();
     if (null != bestActiveInput) {
       bestActiveInput.closeCustomKeyboard();
     }

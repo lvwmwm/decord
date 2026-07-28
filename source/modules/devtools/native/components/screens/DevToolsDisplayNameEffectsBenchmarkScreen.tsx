@@ -1,10 +1,10 @@
-// Module ID: 14756
-// Function ID: 112516
+// Module ID: 14800
+// Function ID: 112689
 // Name: makeUniqueName
-// Dependencies: [57, 31, 27, 1850, 1862, 33, 1863, 8327, 1212, 8323, 2557, 4131, 689, 4542, 4127, 4544, 8318, 8319, 566, 14757, 5501, 5164, 8950, 4364, 2]
+// Dependencies: [57, 31, 27, 1850, 1862, 33, 1863, 8365, 1212, 8361, 2557, 4165, 689, 4576, 4161, 4578, 8356, 8357, 566, 14801, 5536, 5198, 8994, 4398, 2]
 // Exports: default
 
-// Module 14756 (makeUniqueName)
+// Module 14800 (makeUniqueName)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -21,7 +21,7 @@ function makeUniqueName(closure_0) {
   const length = String(Math.max(arg2 - 1, 0)).length;
   const padStartResult = String(arg1).padStart(length, "0");
   const StringResult = String(arg1);
-  const splitGraphemesResult = require(8327) /* splitGraphemes */.splitGraphemes(closure_0);
+  const splitGraphemesResult = require(8365) /* splitGraphemes */.splitGraphemes(closure_0);
   let sum = padStartResult;
   if (splitGraphemesResult.length > length) {
     const substr = splitGraphemesResult.slice(0, splitGraphemesResult.length - length);
@@ -31,7 +31,7 @@ function makeUniqueName(closure_0) {
 }
 function effectName(arg0) {
   const intl = require(1212) /* getSystemLocale */.intl;
-  let OpWJ3f = require(8323) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
+  let OpWJ3f = require(8361) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (null == OpWJ3f) {
     OpWJ3f = importDefault(2557).OpWJ3f;
   }
@@ -44,7 +44,7 @@ function OptionButtons(caption) {
   ({ options, value: require, onChange: importDefault } = caption);
   let obj = { spacing: 8 };
   obj = { variant: "text-sm/semibold", color: "text-subtle", children: caption.caption };
-  const items = [callback2(require(4127) /* Text */.Text, obj), ];
+  const items = [callback2(require(4161) /* Text */.Text, obj), ];
   obj = {
     direction: "horizontal",
     spacing: 8,
@@ -63,9 +63,9 @@ function OptionButtons(caption) {
       return outer1_8(outer1_0(outer1_2[15]).Button, obj, String(label.value));
     })
   };
-  items[1] = callback2(require(4542) /* Stack */.Stack, obj);
+  items[1] = callback2(require(4576) /* Stack */.Stack, obj);
   obj.children = items;
-  return callback3(require(4542) /* Stack */.Stack, obj);
+  return callback3(require(4576) /* Stack */.Stack, obj);
 }
 function BenchmarkRow(arg0) {
   let effect;
@@ -73,11 +73,11 @@ function BenchmarkRow(arg0) {
   let userId;
   let userName;
   ({ userId, effect, userName, style } = arg0);
-  let obj = require(8323) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(8361) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   obj = { style };
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
-  obj = { userId, userName, effectDisplayType: require(8319) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "text-md/semibold" };
-  obj.children = callback2(importDefault(8318), obj);
+  obj = { userId, userName, effectDisplayType: require(8357) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "text-md/semibold" };
+  obj.children = callback2(importDefault(8356), obj);
   return callback2(closure_6, obj);
 }
 ({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);

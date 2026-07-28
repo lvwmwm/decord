@@ -1,5 +1,5 @@
 // Module ID: 982
-// Function ID: 10633
+// Function ID: 10637
 // Name: globalEncodeFactory
 // Dependencies: [981, 793, 983]
 

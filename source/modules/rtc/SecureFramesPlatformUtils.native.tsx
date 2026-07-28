@@ -1,8 +1,8 @@
-// Module ID: 8828
-// Function ID: 69943
-// Dependencies: [1348, 4203, 8826, 653, 4338, 8829, 1935, 4099, 8839, 1212, 4472, 1273, 5626, 8842, 2]
+// Module ID: 8872
+// Function ID: 70094
+// Dependencies: [1348, 4237, 8870, 653, 4372, 8873, 1935, 4133, 8883, 1212, 4506, 1273, 5661, 8886, 2]
 
-// Module 8828
+// Module 8872
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
@@ -20,15 +20,15 @@ const result = require("SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY").fileFinishedImp
 
 export default {
   openSecureFramesStreamVerification(stateFromStores4, channelId) {
-    let obj = importDefault(4099);
+    let obj = importDefault(4133);
     obj = { streamKey: stateFromStores4, channelId };
-    obj.openLazy(require(1935) /* maybeLoadBundle */(8839, dependencyMap.paths), closure_6, obj);
+    obj.openLazy(require(1935) /* maybeLoadBundle */(8883, dependencyMap.paths), closure_6, obj);
   },
   openSecureFramesUserVerificationModal(id, id2, arg2) {
     if (arg2()) {
-      let obj = importDefault(4338);
+      let obj = importDefault(4372);
       obj = { userId: id, channelId: id2 };
-      obj.pushLazy(require(1935) /* maybeLoadBundle */(8829, dependencyMap.paths), obj, closure_7);
+      obj.pushLazy(require(1935) /* maybeLoadBundle */(8873, dependencyMap.paths), obj, closure_7);
     }
   },
   openSecureFramesUpdateConfirmation(result) {
@@ -41,7 +41,7 @@ export default {
       confirmText = intl.string(onConfirm(1212).t["cY+Oob"]);
     }
     onConfirm = result.onConfirm;
-    let obj = importDefault(4472);
+    let obj = importDefault(4506);
     obj = { title, body: subtitle, confirmText };
     const intl2 = onConfirm(1212).intl;
     obj.cancelText = intl2.string(onConfirm(1212).t["ETE/oC"]);
@@ -67,11 +67,11 @@ export default {
     }
     if (null != channelId) {
       if (null != channel) {
-        importDefault(5626)(closure_9.CHANNEL(guildId, channelId));
-        const tmp6 = importDefault(5626);
+        importDefault(5661)(closure_9.CHANNEL(guildId, channelId));
+        const tmp6 = importDefault(5661);
         let obj = { userId, channelId, guildId, fingerprint };
-        importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(8842, dependencyMap.paths), closure_5, obj);
-        const obj4 = importDefault(4099);
+        importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(8886, dependencyMap.paths), closure_5, obj);
+        const obj4 = importDefault(4133);
       }
     }
     obj = {};
@@ -79,6 +79,6 @@ export default {
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["5ICxE6"]);
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.body = intl2.string(require(1212) /* getSystemLocale */.t["v1eXp/"]);
-    importDefault(4472).show(obj);
+    importDefault(4506).show(obj);
   }
 };

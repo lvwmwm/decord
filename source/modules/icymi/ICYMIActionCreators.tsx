@@ -1,8 +1,8 @@
-// Module ID: 8123
-// Function ID: 64788
-// Dependencies: [5, 653, 507, 686, 1184, 8122, 3804, 2]
+// Module ID: 8161
+// Function ID: 64898
+// Dependencies: [5, 653, 507, 686, 1184, 8160, 3838, 2]
 
-// Module 8123
+// Module 8161
 import generateHydrationId from "generateHydrationId";
 import { Endpoints } from "ME";
 
@@ -95,7 +95,7 @@ export default {
     })();
   },
   fetchForStatusNotification(customStatusItem) {
-    let obj = require(8122) /* generateHydrationId */;
+    let obj = require(8160) /* generateHydrationId */;
     if (obj.icymiEnabled("fetchInitialStatus")) {
       obj = { type: "LOAD_ICYMI_FROM_NOTIFICATION", customStatusItem };
       importDefault(686).dispatch(obj);
@@ -109,7 +109,7 @@ export default {
     return callback(async () => {
       let activityItems;
       let messageItems;
-      let obj = callback(8122);
+      let obj = callback(8160);
       if (obj.icymiEnabled("fetchHydrated")) {
         ({ messageItems, activityItems } = outer1_2);
         if (0 === messageItems.length) {

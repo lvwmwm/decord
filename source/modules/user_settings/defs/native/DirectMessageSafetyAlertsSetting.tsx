@@ -1,9 +1,9 @@
-// Module ID: 13800
-// Function ID: 105826
+// Module ID: 13844
+// Function ID: 105999
 // Name: toggle
-// Dependencies: [7697, 11006, 10069, 10071, 10059, 1212, 10070, 13801, 2]
+// Dependencies: [7733, 11044, 10109, 10111, 10099, 1212, 10110, 13845, 2]
 
-// Module 13800 (toggle)
+// Module 13844 (toggle)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -18,12 +18,12 @@ const toggle = createToggle.createToggle({
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    const tmp = importDefault(11006)();
-    const isEligibleForInappropriateConversationWarning = require(10069) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
-    const obj = require(10069) /* InappropriateConversationExperiment */;
+    const tmp = importDefault(11044)();
+    const isEligibleForInappropriateConversationWarning = require(10109) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
+    const obj = require(10109) /* InappropriateConversationExperiment */;
     const tmp2 = null == tmp || tmp;
     let tmp5 = !tmp2;
-    const isEligibleForInappropriateConversationDefaultOn = require(10071) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
+    const isEligibleForInappropriateConversationDefaultOn = require(10111) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
     if (tmp5) {
       tmp5 = isEligibleForInappropriateConversationWarning;
     }
@@ -44,12 +44,12 @@ let obj = {
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    const tmp = importDefault(11006)();
-    const isEligibleForInappropriateConversationWarning = require(10069) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
-    const obj = require(10069) /* InappropriateConversationExperiment */;
+    const tmp = importDefault(11044)();
+    const isEligibleForInappropriateConversationWarning = require(10109) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
+    const obj = require(10109) /* InappropriateConversationExperiment */;
     const tmp2 = null == tmp || tmp;
     let tmp5 = !tmp2;
-    const isEligibleForInappropriateConversationDefaultOn = require(10071) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
+    const isEligibleForInappropriateConversationDefaultOn = require(10111) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
     if (tmp5) {
       tmp5 = isEligibleForInappropriateConversationWarning;
     }

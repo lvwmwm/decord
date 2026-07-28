@@ -1,10 +1,10 @@
-// Module ID: 13881
-// Function ID: 106309
+// Module ID: 13925
+// Function ID: 106482
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [31, 27, 5766, 33, 4131, 689, 6201, 6200, 11051, 1212, 2199, 4127, 13882, 13884, 4661, 4338, 13887, 1935, 1273, 13889, 2]
+// Dependencies: [31, 27, 5776, 33, 4165, 689, 6236, 6235, 11089, 1212, 2199, 4161, 13926, 13928, 4695, 4372, 13931, 1935, 1273, 13933, 2]
 // Exports: default
 
-// Module 13881 (FamilyCenterAcceptedLinkRow)
+// Module 13925 (FamilyCenterAcceptedLinkRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import items from "items";
@@ -37,11 +37,11 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       obj.pushLazy(str(outer1_2[17])(outer1_2[16], outer1_2.paths), obj);
     };
     obj.style = tmp.actionButton;
-    obj = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13889) };
+    obj = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13933) };
     obj.children = callback(str(1273).Icon, obj);
-    obj.actions = callback(str(4661).PressableOpacity, obj);
-    tmp8Result = callback(importDefault(13884), obj);
-    const tmp11 = importDefault(13884);
+    obj.actions = callback(str(4695).PressableOpacity, obj);
+    tmp8Result = callback(importDefault(13928), obj);
+    const tmp11 = importDefault(13928);
     const tmp12 = callback;
     const tmp8 = callback;
   }
@@ -63,26 +63,26 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterAcceptedLinks() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6200) /* useUserIdsForLinkStatus */;
+  let obj = require(6235) /* useUserIdsForLinkStatus */;
   const activeLinkUsers = obj.useActiveLinkUsers();
-  obj = { count: activeLinkUsers.length, max: importDefault(6201)() ? closure_4 : closure_5 };
-  let obj2 = require(11051) /* useAgeSpecificText */;
+  obj = { count: activeLinkUsers.length, max: importDefault(6236)() ? closure_4 : closure_5 };
+  let obj2 = require(11089) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
-  const tmp2 = importDefault(6201)();
+  const tmp2 = importDefault(6236)();
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj = { style: tmp.container };
   const ageSpecificText = obj2.useAgeSpecificText(intl.formatToPlainString(importDefault(2199)["+tnO34"], obj), intl2.formatToPlainString(importDefault(2199)["pu6/U0"], obj));
   const obj1 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: ageSpecificText };
-  const items = [callback(require(4127) /* Text */.Text, obj1), ];
+  const items = [callback(require(4161) /* Text */.Text, obj1), ];
   obj2 = { style: tmp.content };
   if (0 === activeLinkUsers.length) {
     const obj3 = { style: tmp.empty };
     const obj4 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj4.text = intl3.string(importDefault(2199).C4ScLD);
-    obj3.children = callback(importDefault(13882), obj4);
+    obj3.children = callback(importDefault(13926), obj4);
     let mapped = callback(View, obj3);
-    const tmp14 = importDefault(13882);
+    const tmp14 = importDefault(13926);
   } else {
     mapped = activeLinkUsers.map((id) => outer1_6(outer1_10, { otherUser: id }, "accepted-" + id.id));
   }

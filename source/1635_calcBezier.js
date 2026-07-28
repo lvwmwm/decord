@@ -1,5 +1,5 @@
 // Module ID: 1635
-// Function ID: 18310
+// Function ID: 18314
 // Name: calcBezier
 // Dependencies: [1593]
 

@@ -1,10 +1,10 @@
-// Module ID: 12327
-// Function ID: 95986
+// Module ID: 12370
+// Function ID: 96156
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4123, 1850, 2]
+// Dependencies: [4157, 1850, 2]
 // Exports: createDisplayNameStylesMobile
 
-// Module 12327 (createDisplayNameStylesMobile)
+// Module 12370 (createDisplayNameStylesMobile)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 

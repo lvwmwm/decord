@@ -1,5 +1,5 @@
 // Module ID: 1137
-// Function ID: 12938
+// Function ID: 12942
 // Name: discardEmptyNavigationSpan
 // Dependencies: [27, 1098, 794]
 // Exports: adjustTransactionDuration, cancelInBackground, ignoreEmptyBackNavigation, ignoreEmptyRouteChangeTransactions, onThisSpanEnd, onlySampleIfChildSpans

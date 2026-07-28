@@ -1,10 +1,10 @@
-// Module ID: 8176
-// Function ID: 65616
+// Module ID: 8214
+// Function ID: 65726
 // Name: TwinButtons
-// Dependencies: [31, 27, 33, 4131, 689, 4550, 4544, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4584, 4578, 2]
 // Exports: TwinButtons
 
-// Module 8176 (TwinButtons)
+// Module 8214 (TwinButtons)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
 const result = require("jsxProd").fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
 
 export const TwinButtons = function TwinButtons(children) {
-  let obj = require(4550) /* getFontScale */;
+  let obj = require(4584) /* getFontScale */;
   let tmp = callback(obj.useFontScale() > 1.2);
   require = tmp;
   obj = {

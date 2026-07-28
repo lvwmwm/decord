@@ -1,10 +1,10 @@
-// Module ID: 5761
-// Function ID: 50314
+// Module ID: 5771
+// Function ID: 50170
 // Name: useOptInEnabledForGuild
-// Dependencies: [1838, 3759, 4326, 1850, 653, 566, 2]
+// Dependencies: [1838, 3793, 4360, 1850, 653, 566, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild
 
-// Module 5761 (useOptInEnabledForGuild)
+// Module 5771 (useOptInEnabledForGuild)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

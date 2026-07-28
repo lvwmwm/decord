@@ -1,10 +1,10 @@
-// Module ID: 15931
-// Function ID: 123135
+// Module ID: 15970
+// Function ID: 123291
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4131, 689, 8056, 1324, 2]
+// Dependencies: [4165, 689, 8094, 1324, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 15931 (useVoicePanelButtonStyles)
+// Module 15970 (useVoicePanelButtonStyles)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_3 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
@@ -43,6 +43,6 @@ let closure_3 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelStyles.tsx");
 
 export const useVoicePanelButtonStyles = function useVoicePanelButtonStyles(wrapperSpecs) {
-  const derivedStateFromSharedValue = require(8056) /* _createForOfIteratorHelperLoose */.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode);
+  const derivedStateFromSharedValue = require(8094) /* _createForOfIteratorHelperLoose */.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode);
   return callback(derivedStateFromSharedValue, importDefault(1324)("VoicePanelStyles"));
 };

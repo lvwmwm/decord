@@ -1,10 +1,10 @@
-// Module ID: 5175
-// Function ID: 45014
+// Module ID: 5209
+// Function ID: 45129
 // Name: DragIcon
-// Dependencies: [31, 33, 689, 3834, 5176, 2]
+// Dependencies: [31, 33, 689, 3868, 5210, 2]
 // Exports: DragIcon
 
-// Module 5175 (DragIcon)
+// Module 5209 (DragIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const DragIcon = function DragIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(5176) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(5210) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(5176) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(5210) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

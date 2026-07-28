@@ -1,10 +1,10 @@
-// Module ID: 7256
-// Function ID: 60120
+// Module ID: 7292
+// Function ID: 60209
 // Name: NitroOpalBadgeLargeBadge
-// Dependencies: [33, 5085, 7257, 2]
+// Dependencies: [33, 5119, 7293, 2]
 // Exports: NitroOpalBadgeLargeBadge
 
-// Module 7256 (NitroOpalBadgeLargeBadge)
+// Module 7292 (NitroOpalBadgeLargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroOpalBadgeLargeBadge.native.tsx");
@@ -27,7 +27,7 @@ export const NitroOpalBadgeLargeBadge = function NitroOpalBadgeLargeBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7257) };
+  obj = { uri: importDefault(7293) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const NitroOpalBadgeLargeBadge = function NitroOpalBadgeLargeBadge(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

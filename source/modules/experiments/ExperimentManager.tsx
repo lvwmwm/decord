@@ -1,10 +1,10 @@
-// Module ID: 4053
-// Function ID: 33819
+// Module ID: 4087
+// Function ID: 33921
 // Name: trackExposureToExperiment
-// Dependencies: [4045, 4046, 686, 2]
+// Dependencies: [4079, 4080, 686, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 4053 (trackExposureToExperiment)
+// Module 4087 (trackExposureToExperiment)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { registerExperiment } from "_isNativeReflectConstruct";
 import ExperimentBuckets from "ExperimentBuckets";

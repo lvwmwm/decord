@@ -1,10 +1,10 @@
-// Module ID: 14505
-// Function ID: 110815
+// Module ID: 14549
+// Function ID: 110988
 // Name: contextMenuItems
-// Dependencies: [31, 27, 33, 11808, 9096, 7689, 9243, 4096, 14506, 14507, 9946, 4131, 689, 22, 9231, 4544, 5166, 4127, 2]
+// Dependencies: [31, 27, 33, 11847, 9140, 7725, 9287, 4130, 14550, 14551, 9986, 4165, 689, 22, 9275, 4578, 5200, 4161, 2]
 // Exports: default
 
-// Module 14505 (contextMenuItems)
+// Module 14549 (contextMenuItems)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -102,29 +102,29 @@ export default function UserSettingsDesignSystemAlertModal() {
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.card };
-  const items = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Basic Example" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." }), callback(DemoContextMenu, { label: "Open Menu" })];
+  const items = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Basic Example" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." }), callback(DemoContextMenu, { label: "Open Menu" })];
   obj.children = items;
-  const items1 = [callback2(require(5166) /* getCardBackgroundToken */.Card, obj), , , , , ];
+  const items1 = [callback2(require(5200) /* getCardBackgroundToken */.Card, obj), , , , , ];
   const obj1 = { style: tmp.card };
-  const items2 = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Long Press" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." }), callback(DemoContextMenu, { triggerOnLongPress: true, label: "Long Press to Open" })];
+  const items2 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Long Press" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." }), callback(DemoContextMenu, { triggerOnLongPress: true, label: "Long Press to Open" })];
   obj1.children = items2;
-  items1[1] = callback2(require(5166) /* getCardBackgroundToken */.Card, obj1);
+  items1[1] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj1);
   const obj2 = { style: tmp.card };
-  const items3 = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Sections" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." }), callback(DemoContextMenu, { label: "Open Sectioned Menu", sections: 3, count: 2 })];
+  const items3 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Sections" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." }), callback(DemoContextMenu, { label: "Open Sectioned Menu", sections: 3, count: 2 })];
   obj2.children = items3;
-  items1[2] = callback2(require(5166) /* getCardBackgroundToken */.Card, obj2);
+  items1[2] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj2);
   const obj3 = { style: tmp.card };
-  const items4 = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Automatic Alignment" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." }), callback(DemoContextMenu, { alignButton: "flex-end", label: "Open Right-Aligned Menu" }), callback(closure_3, { style: tmp.divider }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "It will also position itself vertically, so that it doesn't overflow offscreen vertically." }), callback(DemoContextMenu, { count: 8, label: "Open Tall Menu" })];
+  const items4 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Automatic Alignment" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." }), callback(DemoContextMenu, { alignButton: "flex-end", label: "Open Right-Aligned Menu" }), callback(closure_3, { style: tmp.divider }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "It will also position itself vertically, so that it doesn't overflow offscreen vertically." }), callback(DemoContextMenu, { count: 8, label: "Open Tall Menu" })];
   obj3.children = items4;
-  items1[3] = callback2(require(5166) /* getCardBackgroundToken */.Card, obj3);
+  items1[3] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj3);
   const obj5 = { style: tmp.card };
-  const items5 = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Intentional Alignment" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, align: "right", label: "Open Right" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, alignButton: "flex-end", align: "left", label: "Open Left" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, align: "below", label: "Always Open Below" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, alignButton: "flex-end", align: "above", label: "Always Open Above" })];
+  const items5 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Intentional Alignment" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, align: "right", label: "Open Right" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, alignButton: "flex-end", align: "left", label: "Open Left" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, align: "below", label: "Always Open Below" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, alignButton: "flex-end", align: "above", label: "Always Open Above" })];
   obj5.children = items5;
-  items1[4] = callback2(require(5166) /* getCardBackgroundToken */.Card, obj5);
+  items1[4] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj5);
   const obj10 = { style: tmp.card };
-  const items6 = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Overflow Scrolling" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." }), callback(DemoContextMenu, { count: 30, label: "Open Really Tall Menu" })];
+  const items6 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Overflow Scrolling" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." }), callback(DemoContextMenu, { count: 30, label: "Open Really Tall Menu" })];
   obj10.children = items6;
-  items1[5] = callback2(require(5166) /* getCardBackgroundToken */.Card, obj10);
+  items1[5] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj10);
   obj.children = items1;
   obj.children = callback2(closure_3, obj);
   return callback(closure_4, obj);

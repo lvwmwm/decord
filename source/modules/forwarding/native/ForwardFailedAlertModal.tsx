@@ -1,10 +1,10 @@
-// Module ID: 9866
-// Function ID: 76450
+// Module ID: 9906
+// Function ID: 76579
 // Name: ForwardFailedAlertModal
-// Dependencies: [31, 33, 9830, 9867, 1212, 2]
+// Dependencies: [31, 33, 9870, 9907, 1212, 2]
 // Exports: default
 
-// Module 9866 (ForwardFailedAlertModal)
+// Module 9906 (ForwardFailedAlertModal)
 import result from "result";
 import { jsx } from "jsxProd";
 

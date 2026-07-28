@@ -1,10 +1,10 @@
-// Module ID: 9706
-// Function ID: 75617
+// Module ID: 9746
+// Function ID: 75746
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [57, 31, 27, 6164, 1850, 653, 1852, 33, 4131, 689, 5159, 5468, 566, 5450, 491, 4560, 675, 9707, 9697, 477, 686, 9692, 1212, 9702, 4127, 4544, 2]
+// Dependencies: [57, 31, 27, 6198, 1850, 653, 1852, 33, 4165, 689, 5193, 5503, 566, 5485, 491, 4594, 675, 9747, 9737, 477, 686, 9732, 1212, 9742, 4161, 4578, 2]
 // Exports: default
 
-// Module 9706 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 9746 (SocialLayerStorefrontGiftPurchaseSection)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

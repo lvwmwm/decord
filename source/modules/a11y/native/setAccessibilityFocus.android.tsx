@@ -1,10 +1,10 @@
-// Module ID: 4540
-// Function ID: 39843
+// Module ID: 4574
+// Function ID: 39957
 // Name: setAccessibilityFocus
-// Dependencies: [27, 3, 4530, 3995, 2]
+// Dependencies: [27, 3, 4564, 4029, 2]
 // Exports: setAccessibilityFocus
 
-// Module 4540 (setAccessibilityFocus)
+// Module 4574 (setAccessibilityFocus)
 import get_ActivityIndicator from "get ActivityIndicator";
 import importDefaultResult from "isFabric";
 

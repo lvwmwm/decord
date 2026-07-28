@@ -1,10 +1,10 @@
-// Module ID: 8634
-// Function ID: 68625
+// Module ID: 8678
+// Function ID: 68776
 // Name: DiceIcon
-// Dependencies: [31, 33, 689, 3834, 8635, 2]
+// Dependencies: [31, 33, 689, 3868, 8679, 2]
 // Exports: DiceIcon
 
-// Module 8634 (DiceIcon)
+// Module 8678 (DiceIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const DiceIcon = function DiceIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8635) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8679) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8635) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8679) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

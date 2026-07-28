@@ -1,10 +1,10 @@
-// Module ID: 6629
-// Function ID: 58602
+// Module ID: 6665
+// Function ID: 58691
 // Name: getButtonActionHandler
-// Dependencies: [6207, 1852, 653, 6212, 6630, 6162, 5622, 12365, 6554, 2]
+// Dependencies: [6242, 1852, 653, 6250, 6666, 6196, 5657, 12408, 6590, 2]
 // Exports: getButtonActionHandler
 
-// Module 6629 (getButtonActionHandler)
+// Module 6665 (getButtonActionHandler)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 import ME from "ME";
@@ -25,30 +25,30 @@ export const getButtonActionHandler = function getButtonActionHandler(arg0) {
   let importDefault;
   let require;
   ({ buttonAction, applicationId: require, analyticsLocations: importDefault, analyticsPage: dependencyMap, onPaymentSuccess: _isNativeReflectConstruct, onPaymentDismiss: PremiumTypes } = arg0);
-  if (require(6212) /* _callSuper */.ButtonAction.OPEN_SOCIAL_LAYER_STOREFRONT === buttonAction) {
+  if (require(6250) /* _isNativeReflectConstruct */.ButtonAction.OPEN_SOCIAL_LAYER_STOREFRONT === buttonAction) {
     return () => {
       if (null != closure_0) {
         const obj = { applicationId: closure_0 };
         outer1_1(outer1_2[4])(obj);
       }
     };
-  } else if (require(6212) /* _callSuper */.ButtonAction.OPEN_TIER_1_PAYMENT_MODAL === buttonAction) {
+  } else if (require(6250) /* _isNativeReflectConstruct */.ButtonAction.OPEN_TIER_1_PAYMENT_MODAL === buttonAction) {
     return () => {
       obj = { analyticsLocation: obj, analyticsLocations: closure_1, premiumType: outer1_4.TIER_1, onPaymentSuccess: _isNativeReflectConstruct, onPaymentDismiss: closure_4 };
       obj = { page: closure_2, section: outer1_5.FOOTER, object: outer1_6.BUTTON_CTA, objectType: outer1_7.TIER_1 };
       return outer1_1(outer1_2[5])(obj);
     };
   } else {
-    if (require(6212) /* _callSuper */.ButtonAction.OPEN_TIER_2_PAYMENT_MODAL !== buttonAction) {
-      if (require(6212) /* _callSuper */.ButtonAction.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER !== buttonAction) {
-        if (require(6212) /* _callSuper */.ButtonAction.OPEN_PLAN_SELECTION_MODAL === buttonAction) {
+    if (require(6250) /* _isNativeReflectConstruct */.ButtonAction.OPEN_TIER_2_PAYMENT_MODAL !== buttonAction) {
+      if (require(6250) /* _isNativeReflectConstruct */.ButtonAction.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER !== buttonAction) {
+        if (require(6250) /* _isNativeReflectConstruct */.ButtonAction.OPEN_PLAN_SELECTION_MODAL === buttonAction) {
           return () => {
             obj = { analyticsLocation: obj, analyticsLocations: closure_1, onPaymentSuccess: _isNativeReflectConstruct, onPaymentDismiss: closure_4 };
             obj = { page: closure_2, section: outer1_5.FOOTER, object: outer1_6.BUTTON_CTA, objectType: outer1_7.BUY };
             return outer1_1(outer1_2[5])(obj);
           };
         } else {
-          const OPEN_MARKETING_PAGE = require(6212) /* _callSuper */.ButtonAction.OPEN_MARKETING_PAGE;
+          const OPEN_MARKETING_PAGE = require(6250) /* _isNativeReflectConstruct */.ButtonAction.OPEN_MARKETING_PAGE;
           return () => {
             let obj = outer1_0(outer1_2[8]);
             obj = { screen: outer1_8.PREMIUM };

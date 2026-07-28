@@ -1,10 +1,10 @@
-// Module ID: 15508
-// Function ID: 119191
+// Module ID: 15547
+// Function ID: 119347
 // Name: getTrackFriendsListViewedData
-// Dependencies: [11706, 5895, 5891, 4813, 3768, 653, 3804, 1360, 15509, 11707, 2]
+// Dependencies: [11745, 5929, 5925, 4847, 3802, 653, 3838, 1360, 15548, 11746, 2]
 // Exports: default
 
-// Module 15508 (getTrackFriendsListViewedData)
+// Module 15547 (getTrackFriendsListViewedData)
 import { useContactSyncStore } from "setStoredContacts";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -19,14 +19,14 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default function getTrackFriendsListViewedData() {
   localAccount = localAccount.getLocalAccount(constants.CONTACTS);
-  const FriendDiscoverySettings = require(3804) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = require(3838) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.getSetting();
   let obj = require(1360) /* hasFlag */;
   const hasFlagResult = obj.hasFlag(setting, constants2.FIND_BY_PHONE);
   const obj2 = require(1360) /* hasFlag */;
   suggestionCount = suggestionCount.getSuggestionCount();
   obj = { num_friends: store2.getFriendCount() };
-  const merged = Object.assign(importDefault(15509)());
+  const merged = Object.assign(importDefault(15548)());
   obj["num_outgoing_requests"] = store2.getOutgoingCount();
   obj["num_incoming_requests"] = store2.getPendingCount();
   obj["num_game_friends"] = store.getGameFriendCount();
@@ -35,7 +35,7 @@ export default function getTrackFriendsListViewedData() {
   obj["num_suggestions"] = suggestionCount;
   obj["was_dismissed"] = useContactSyncStore.getState().upsellCTADismissed;
   const hasFlagResult1 = require(1360) /* hasFlag */.hasFlag(setting, constants2.FIND_BY_EMAIL);
-  obj["contact_sync_is_enabled"] = require(11707) /* isContactSyncAvailable */.isContactSyncEnabled(localAccount);
+  obj["contact_sync_is_enabled"] = require(11746) /* isContactSyncAvailable */.isContactSyncEnabled(localAccount);
   obj["is_discoverable_email"] = hasFlagResult1;
   obj["is_discoverable_phone"] = hasFlagResult;
   return obj;

@@ -1,10 +1,10 @@
-// Module ID: 13839
-// Function ID: 106091
+// Module ID: 13883
+// Function ID: 106264
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [31, 33, 4131, 689, 13831, 13832, 3828, 4127, 13840, 1212, 2199, 2]
+// Dependencies: [31, 33, 4165, 689, 13875, 13876, 3862, 4161, 13884, 1212, 2199, 2]
 // Exports: default
 
-// Module 13839 (FamilyCenterParentalConsentNotice)
+// Module 13883 (FamilyCenterParentalConsentNotice)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,9 +24,9 @@ export default function FamilyCenterParentalConsentNotice() {
   }
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
-  let obj = require(13831) /* useIsParentalConsentBannerActive */;
+  let obj = require(13875) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  let obj1 = require(13832) /* useParentalConsentWarning */;
+  let obj1 = require(13876) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
   if (null != parentalConsentWarning) {
@@ -53,7 +53,7 @@ export default function FamilyCenterParentalConsentNotice() {
           formatResult = intl.format(importDefault(2199)["5jm+T3"], obj1);
         }
         obj.text = formatResult;
-        return jsx(importDefault(13840), { style: tmp.container });
+        return jsx(importDefault(13884), { style: tmp.container });
       }
     }
   }

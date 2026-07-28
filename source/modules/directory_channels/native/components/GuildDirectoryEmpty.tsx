@@ -1,10 +1,10 @@
-// Module ID: 11793
-// Function ID: 91517
+// Module ID: 11832
+// Function ID: 91668
 // Name: GuildDirectoryEmpty
-// Dependencies: [31, 27, 1908, 653, 33, 4131, 689, 1557, 566, 9998, 11794, 1273, 1212, 4127, 7575, 9999, 11795, 8286, 11796, 2]
+// Dependencies: [31, 27, 1908, 653, 33, 4165, 689, 1557, 566, 10038, 11833, 1273, 1212, 4161, 7611, 10039, 11834, 8324, 11835, 2]
 // Exports: default
 
-// Module 11793 (GuildDirectoryEmpty)
+// Module 11832 (GuildDirectoryEmpty)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,14 +38,14 @@ export default function GuildDirectoryEmpty(guild) {
   let obj = guild(566);
   const items = [_isNativeReflectConstruct];
   const dependencyMap = obj.useStateFromStores(items, () => outer1_5.getChannels(guild.id));
-  let obj1 = guild(9998);
+  let obj1 = guild(10038);
   obj = { contentContainerStyle: items1 };
   items1 = [tmp.container, ];
   obj = { paddingBottom: channel(1557)().bottom + 16 };
   items1[1] = obj;
   obj1 = {};
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
-  obj1.source = channel(11794);
+  obj1.source = channel(11833);
   obj1.style = tmp.header;
   const items2 = [callback(closure_3, obj1), , , , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header" };
@@ -55,33 +55,33 @@ export default function GuildDirectoryEmpty(guild) {
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = guild(1212).intl;
   obj4.children = intl2.string(guild(1212).t.WypE0i);
-  items2[2] = callback(guild(4127).Text, obj4);
+  items2[2] = callback(guild(4161).Text, obj4);
   let tmp5 = null;
   if (canCreateOrAddGuildInDirectory) {
     const obj5 = {
       style: tmp.ctaContainer,
       onPress() {
-          let obj = channel(9999);
+          let obj = channel(10039);
           obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj);
         },
-      iconSource: channel(11795)
+      iconSource: channel(11834)
     };
     const intl3 = guild(1212).intl;
     obj5.title = intl3.string(guild(1212).t.hyK15i);
-    tmp5 = callback(guild(7575).FormCTA, obj5);
+    tmp5 = callback(guild(7611).FormCTA, obj5);
   }
   items2[3] = tmp5;
   const obj6 = {
     style: tmp.ctaContainer,
     onPress() {
-      return guild(8286).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
+      return guild(8324).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
     },
-    iconSource: channel(11796)
+    iconSource: channel(11835)
   };
   const intl4 = guild(1212).intl;
   obj6.title = intl4.string(guild(1212).t.L4bwJ9);
-  items2[4] = callback(guild(7575).FormCTA, obj6);
+  items2[4] = callback(guild(7611).FormCTA, obj6);
   obj.children = items2;
   return closure_8(closure_4, obj);
 };

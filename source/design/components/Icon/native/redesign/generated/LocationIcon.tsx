@@ -1,10 +1,10 @@
-// Module ID: 8189
-// Function ID: 65652
+// Module ID: 8227
+// Function ID: 65762
 // Name: LocationIcon
-// Dependencies: [31, 33, 689, 3834, 8190, 2]
+// Dependencies: [31, 33, 689, 3868, 8228, 2]
 // Exports: LocationIcon
 
-// Module 8189 (LocationIcon)
+// Module 8227 (LocationIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LocationIcon = function LocationIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8190) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8228) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8190) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8228) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

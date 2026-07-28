@@ -1,9 +1,9 @@
-// Module ID: 10445
-// Function ID: 80983
+// Module ID: 10483
+// Function ID: 81104
 // Name: ChannelCallCameraPreview
-// Dependencies: [57, 31, 4144, 1348, 10174, 10175, 10446, 653, 33, 10178, 10447, 3982, 10455, 10612, 6622, 10613, 3992, 3990, 10805, 566, 1450, 10448, 10806, 5462, 5482, 10816, 4342, 5217, 10179, 2]
+// Dependencies: [57, 31, 4178, 1348, 10214, 10215, 10484, 653, 33, 10218, 10485, 4016, 10493, 10650, 6658, 10651, 4026, 4024, 10843, 566, 1450, 10486, 10844, 5497, 5517, 10854, 4376, 5251, 10219, 2]
 
-// Module 10445 (ChannelCallCameraPreview)
+// Module 10483 (ChannelCallCameraPreview)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,7 +57,7 @@ class ChannelCallModal {
   constructor(arg0) {
     channel = global.channel;
     obj = { channelId: channel.id, guildId: channel.guild_id };
-    return jsx(f80990, obj);
+    return jsx(f81111, obj);
   }
 }
 ({ useChannelCallOrientationHandlers: closure_7, resetChannelCallStore: closure_8, useChannelCallStore: closure_9, setVoiceChatDrawerState: closure_10, useIsVoiceChatFocused: closure_11 } = resetFocusTimer);
@@ -84,7 +84,7 @@ let closure_17 = importAllResult.memo((arg0) => {
   let tmp4 = null;
   if (null != first) {
     let obj = { channel: first };
-    tmp4 = callback5(importDefault(10613), obj);
+    tmp4 = callback5(importDefault(10651), obj);
   }
   return tmp4;
 });

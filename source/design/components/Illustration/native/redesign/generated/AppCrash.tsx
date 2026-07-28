@@ -1,17 +1,17 @@
-// Module ID: 12163
-// Function ID: 95252
+// Module ID: 12206
+// Function ID: 95422
 // Name: getAppCrashSource
-// Dependencies: [31, 27, 33, 6481, 12164, 12165, 12166, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 12207, 12208, 12209, 4011, 2]
 // Exports: AppCrash
 
-// Module 12163 (getAppCrashSource)
+// Module 12206 (getAppCrashSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getAppCrashSource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getAppCrashSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useAppCrashSource() {
-  return getAppCrashSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getAppCrashSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
 

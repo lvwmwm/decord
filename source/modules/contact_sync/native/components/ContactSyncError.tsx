@@ -1,10 +1,10 @@
-// Module ID: 11721
-// Function ID: 91010
+// Module ID: 11760
+// Function ID: 91161
 // Name: ContactSyncError
-// Dependencies: [31, 33, 4131, 3992, 4132, 4127, 2]
+// Dependencies: [31, 33, 4165, 4026, 4166, 4161, 2]
 // Exports: default
 
-// Module 11721 (ContactSyncError)
+// Module 11760 (ContactSyncError)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,7 +23,7 @@ export default function ContactSyncError(error) {
     tmp2 = "" !== error;
   }
   _require = tmp2;
-  let obj = _require(3992);
+  let obj = _require(4026);
   const fn = function l() {
     const obj = {};
     let num = 0;
@@ -33,7 +33,7 @@ export default function ContactSyncError(error) {
     obj.height = _undefined(outer1_2[4]).withTiming(num);
     return obj;
   };
-  obj = { withTiming: _require(4132).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
+  obj = { withTiming: _require(4166).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
   fn.__closure = obj;
   fn.__workletHash = 14558247431913;
   fn.__initData = closure_5;
@@ -41,6 +41,6 @@ export default function ContactSyncError(error) {
   obj = { style: items };
   items = [tmp.container, error.style, animatedStyle];
   const obj1 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error };
-  obj.children = jsx(_require(4127).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
-  return jsx(importDefault(3992).View, { style: items });
+  obj.children = jsx(_require(4161).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
+  return jsx(importDefault(4026).View, { style: items });
 };

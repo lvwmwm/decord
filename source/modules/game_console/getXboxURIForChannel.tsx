@@ -1,10 +1,10 @@
-// Module ID: 8983
-// Function ID: 70795
+// Module ID: 9027
+// Function ID: 70946
 // Name: getXboxURIForChannel
-// Dependencies: [1838, 4178, 3768, 1850, 8877, 653, 4321, 1212, 507, 2]
+// Dependencies: [1838, 4212, 3802, 1850, 8921, 653, 4355, 1212, 507, 2]
 // Exports: default
 
-// Module 8983 (getXboxURIForChannel)
+// Module 9027 (getXboxURIForChannel)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ export default function getXboxURIForChannel(getGuildId) {
   }
   obj.guildId = guildId;
   obj.channelId = getGuildId.id;
-  obj.channelName = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(getGuildId, closure_5, closure_4);
+  obj.channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(getGuildId, closure_5, closure_4);
   let name;
   if (null != guild) {
     name = guild.name;

@@ -1,9 +1,9 @@
-// Module ID: 5799
-// Function ID: 50995
+// Module ID: 5809
+// Function ID: 50851
 // Name: CollectiblesShopHomeRecord
-// Dependencies: [6, 7, 5771, 5800, 5802, 5805, 5806, 5807, 5808, 5809, 5810, 5811, 5812, 5813, 5814, 5801, 2]
+// Dependencies: [6, 7, 5781, 5810, 5812, 5815, 5816, 5817, 5818, 5819, 5820, 5821, 5822, 5823, 5824, 5811, 2]
 
-// Module 5799 (CollectiblesShopHomeRecord)
+// Module 5809 (CollectiblesShopHomeRecord)
 import FramesBannerBlockRecord from "FramesBannerBlockRecord";
 import FramesProductShelfBlockRecord from "FramesProductShelfBlockRecord";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 16411
-// Function ID: 128116
+// Module ID: 16451
+// Function ID: 128277
 // Name: InvitesDisabledRow
-// Dependencies: [57, 31, 27, 10183, 6640, 1348, 1838, 8243, 653, 33, 4131, 1212, 1921, 9024, 4127, 5170, 9104, 11408, 566, 22, 7740, 7738, 4099, 10957, 1935, 3832, 10130, 5583, 1273, 16412, 5448, 2]
+// Dependencies: [57, 31, 27, 10223, 6676, 1348, 1838, 8281, 653, 33, 4165, 1212, 1921, 9068, 4161, 5204, 9148, 11446, 566, 22, 7776, 7774, 4133, 10995, 1935, 3866, 10170, 5618, 1273, 16452, 5483, 2]
 // Exports: default
 
-// Module 16411 (InvitesDisabledRow)
+// Module 16451 (InvitesDisabledRow)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "SceneLoadingIndicator";
@@ -227,7 +227,7 @@ export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
   if (null != stateFromStores) {
     obj = {};
     obj = { guild: stateFromStores, invites: tmp3, contentContainerStyle: guildId.contentContainerStyle, showChannel: true };
-    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5448).NavScrim, {})];
+    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5483).NavScrim, {})];
     obj.children = items1;
     tmp4 = callback2(closure_13, obj);
   }

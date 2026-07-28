@@ -1,9 +1,9 @@
-// Module ID: 3807
-// Function ID: 31395
+// Module ID: 3841
+// Function ID: 31497
 // Name: STICKER_PICKER_TAB_PANEL_ID
 // Dependencies: [2]
 
-// Module 3807 (STICKER_PICKER_TAB_PANEL_ID)
+// Module 3841 (STICKER_PICKER_TAB_PANEL_ID)
 const result = require("set").fileFinishedImporting("modules/stickers/StickersConstants.tsx");
 
 export const STICKER_PICKER_TAB_PANEL_ID = "sticker-picker-tab-panel";

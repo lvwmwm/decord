@@ -1,10 +1,10 @@
-// Module ID: 5461
-// Function ID: 46672
+// Module ID: 5496
+// Function ID: 46799
 // Name: ApplicationConnectionCard
-// Dependencies: [31, 4168, 653, 33, 566, 5462, 5463, 1212, 5465, 5472, 675, 4325, 5477, 2]
+// Dependencies: [31, 4202, 653, 33, 566, 5497, 5498, 1212, 5500, 5507, 675, 4359, 5512, 2]
 // Exports: default
 
-// Module 5461 (ApplicationConnectionCard)
+// Module 5496 (ApplicationConnectionCard)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";

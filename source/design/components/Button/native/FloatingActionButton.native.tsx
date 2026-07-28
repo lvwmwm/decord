@@ -1,10 +1,10 @@
-// Module ID: 8181
-// Function ID: 65630
+// Module ID: 8219
+// Function ID: 65740
 // Name: styles
-// Dependencies: [31, 33, 4131, 689, 4548, 1324, 3992, 4543, 6626, 2]
+// Dependencies: [31, 33, 4165, 689, 4582, 1324, 4026, 4577, 6662, 2]
 // Exports: FloatingActionButton
 
-// Module 8181 (styles)
+// Module 8219 (styles)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -19,7 +19,7 @@ const styles = _createForOfIteratorHelperLoose.createStyles(() => {
   obj = {};
   const merged = Object.assign(importDefault(689).shadows.SHADOW_HIGH);
   obj.button = obj;
-  obj = { minWidth: require(4548) /* getButtonPadding */.FAB_BUTTON_SIZE, minHeight: require(4548) /* getButtonPadding */.FAB_BUTTON_SIZE, padding: 0 };
+  obj = { minWidth: require(4582) /* getButtonPadding */.FAB_BUTTON_SIZE, minHeight: require(4582) /* getButtonPadding */.FAB_BUTTON_SIZE, padding: 0 };
   if (flag) {
     const obj1 = { borderRadius: importDefault(689).radii.lg };
     let obj2 = obj1;
@@ -45,7 +45,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   Object.setPrototypeOf(null);
   const merged = Object.assign(positionRight, obj);
   const tmp3 = styles(positionRight(1324)("FloatingActionButton"));
-  let obj1 = positionBottom(3992);
+  let obj1 = positionBottom(4026);
   class F {
     constructor() {
       obj = { position: "absolute" };
@@ -64,7 +64,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
       return obj;
     }
   }
-  obj = { withSpring: positionBottom(4543).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
+  obj = { withSpring: positionBottom(4577).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
   F.__closure = obj;
   F.__workletHash = 10762818944671;
   F.__initData = closure_7;
@@ -83,6 +83,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   obj1["icon"] = cloneElementResult;
   obj1["style"] = tmp3.button;
   obj1["pillStyle"] = tmp3.iconButtonPill;
-  obj.children = jsx(positionBottom(6626).BaseIconButton, {});
-  return jsx(positionRight(3992).View, { style: animatedStyle });
+  obj.children = jsx(positionBottom(6662).BaseIconButton, {});
+  return jsx(positionRight(4026).View, { style: animatedStyle });
 };

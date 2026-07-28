@@ -1,10 +1,10 @@
-// Module ID: 6672
-// Function ID: 58968
+// Module ID: 6708
+// Function ID: 59057
 // Name: ErrorText
-// Dependencies: [31, 33, 3837, 3977, 4542, 6673, 4127, 2]
+// Dependencies: [31, 33, 3871, 4011, 4576, 6709, 4161, 2]
 // Exports: ErrorText
 
-// Module 6672 (ErrorText)
+// Module 6708 (ErrorText)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -16,7 +16,7 @@ const result = require("getNodeText").fileFinishedImporting("design/components/E
 
 export const ErrorText = function ErrorText(children) {
   children = children.children;
-  let obj = nodeText(3837);
+  let obj = nodeText(3871);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
@@ -30,9 +30,9 @@ export const ErrorText = function ErrorText(children) {
     }
   }, items);
   obj = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style };
-  const items1 = [callback(nodeText(6673).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+  const items1 = [callback(nodeText(6709).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
   obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
-  items1[1] = callback(nodeText(4127).Text, obj);
+  items1[1] = callback(nodeText(4161).Text, obj);
   obj.children = items1;
-  return callback2(nodeText(4542).Stack, obj);
+  return callback2(nodeText(4576).Stack, obj);
 };

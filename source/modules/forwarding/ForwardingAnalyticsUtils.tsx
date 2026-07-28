@@ -1,10 +1,10 @@
-// Module ID: 9831
-// Function ID: 76234
+// Module ID: 9871
+// Function ID: 76363
 // Name: trackForwardStart
-// Dependencies: [31, 1348, 653, 675, 4325, 22, 2]
+// Dependencies: [31, 1348, 653, 675, 4359, 22, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 9831 (trackForwardStart)
+// Module 9871 (trackForwardStart)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -47,11 +47,11 @@ export const trackForwardSent = function trackForwardSent(arg0) {
     if (null != channel) {
       guild_id = channel.guild_id;
     }
-    const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id));
-    const obj5 = require(4325) /* _createForOfIteratorHelperLoose */;
-    const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel));
+    const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id));
+    const obj5 = require(4359) /* _createForOfIteratorHelperLoose */;
+    const merged1 = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel));
     obj3.track(AnalyticEvents.MESSAGE_SHORTCUT_ACTION_SENT, obj);
-    const obj2 = require(4325) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(4359) /* _createForOfIteratorHelperLoose */;
   }
 };
 export const trackForwardCopyLink = function trackForwardCopyLink(channel_id, id) {

@@ -1,10 +1,10 @@
-// Module ID: 4642
-// Function ID: 40345
+// Module ID: 4676
+// Function ID: 40460
 // Name: ForumSpoilerIcon
-// Dependencies: [31, 33, 689, 3834, 4616, 2]
+// Dependencies: [31, 33, 689, 3868, 4650, 2]
 // Exports: ForumSpoilerIcon
 
-// Module 4642 (ForumSpoilerIcon)
+// Module 4676 (ForumSpoilerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ForumSpoilerIcon = function ForumSpoilerIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4616) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4650) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4616) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4650) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

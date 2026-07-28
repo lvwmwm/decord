@@ -1,9 +1,9 @@
-// Module ID: 5772
-// Function ID: 50648
+// Module ID: 5782
+// Function ID: 50504
 // Name: _callSuper
-// Dependencies: [57, 6, 7, 15, 17, 102, 18, 5773, 5774, 5779, 655, 653, 4172, 1877, 2]
+// Dependencies: [57, 6, 7, 15, 17, 102, 18, 5783, 5784, 5789, 655, 653, 4206, 1877, 2]
 
-// Module 5772 (_callSuper)
+// Module 5782 (_callSuper)
 import _slicedToArray from "_slicedToArray";
 import _inherits from "_inherits";
 import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord";

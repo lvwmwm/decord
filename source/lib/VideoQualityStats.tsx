@@ -1,9 +1,9 @@
-// Module ID: 5975
-// Function ID: 53125
+// Module ID: 6009
+// Function ID: 53244
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 5976, 5982, 4207, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 6010, 6016, 4241, 2]
 
-// Module 5975 (_isNativeReflectConstruct)
+// Module 6009 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -473,6 +473,7 @@ let tmp3 = (() => {
       }));
       this.codecBuckets = { H264: 0, H265: 0, VP8: 0, VP9: 0, AV1: 0, UNKNOWN: 0 };
       this.statsWindow = [];
+      this.hasSeededAggregation = false;
       histogram = new InboundStats(outer1_2[6]).Histogram();
       this.fpsHistogram = histogram;
       histogram1 = new InboundStats(outer1_2[6]).Histogram();
@@ -601,7 +602,8 @@ let tmp3 = (() => {
         const statsWindow = self.statsWindow;
         statsWindow.push(timestamp);
         if (self.statsWindow.length < 2) {
-          if (1 === self.statsWindow.length) {
+          if (!self.hasSeededAggregation) {
+            self.hasSeededAggregation = true;
             const prototype = outer1_19.prototype;
             const tmp16 = new outer1_19();
             tmp16.timestamp = timestamp.timestamp;

@@ -1,17 +1,15 @@
 // Module ID: 8567
-// Function ID: 68062
+// Function ID: 67977
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8479, 8568, 8478, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 8523, 8546]
 
 // Module 8567 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import pickNotNil from "pickNotNil";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
+import tmp2 from "_isNativeReflectConstruct";
 
 const require = arg1;
 function _isNativeReflectConstruct() {
@@ -23,7 +21,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Use";
-tmp3.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+tmp2.displayName = "FeImage";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

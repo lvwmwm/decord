@@ -1,10 +1,10 @@
-// Module ID: 5897
-// Function ID: 52366
+// Module ID: 5931
+// Function ID: 52485
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
 // Dependencies: [1850, 2]
 // Exports: default
 
-// Module 5897 (maybeDispatchDevOnlyDummyFriendSuggestions)
+// Module 5931 (maybeDispatchDevOnlyDummyFriendSuggestions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");

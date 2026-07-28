@@ -1,10 +1,10 @@
-// Module ID: 7514
-// Function ID: 60507
+// Module ID: 7550
+// Function ID: 60596
 // Name: Tome3dIllustration
-// Dependencies: [33, 5085, 7515, 2]
+// Dependencies: [33, 5119, 7551, 2]
 // Exports: Tome3dIllustration
 
-// Module 7514 (Tome3dIllustration)
+// Module 7550 (Tome3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/Tome3dIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const Tome3dIllustration = function Tome3dIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7515) };
+  obj = { uri: importDefault(7551) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const Tome3dIllustration = function Tome3dIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

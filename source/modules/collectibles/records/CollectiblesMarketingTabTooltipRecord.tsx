@@ -1,9 +1,9 @@
-// Module ID: 5797
-// Function ID: 50986
+// Module ID: 5807
+// Function ID: 50842
 // Name: CollectiblesMarketingTabTooltipRecord
-// Dependencies: [6, 7, 5794, 2]
+// Dependencies: [6, 7, 5804, 2]
 
-// Module 5797 (CollectiblesMarketingTabTooltipRecord)
+// Module 5807 (CollectiblesMarketingTabTooltipRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

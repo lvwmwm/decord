@@ -1,17 +1,17 @@
-// Module ID: 15640
-// Function ID: 120563
+// Module ID: 15679
+// Function ID: 120719
 // Name: getPendingSource
-// Dependencies: [31, 27, 33, 6481, 15641, 15642, 15643, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 15680, 15681, 15682, 4011, 2]
 // Exports: Pending
 
-// Module 15640 (getPendingSource)
+// Module 15679 (getPendingSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getPendingSource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getPendingSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function usePendingSource() {
-  return getPendingSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getPendingSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
 

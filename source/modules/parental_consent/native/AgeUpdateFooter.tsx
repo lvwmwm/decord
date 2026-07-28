@@ -1,10 +1,10 @@
-// Module ID: 16644
-// Function ID: 129829
+// Module ID: 16684
+// Function ID: 129990
 // Name: AgeUpdateFooter
-// Dependencies: [31, 33, 4131, 4127, 1212, 2461, 6690, 6692, 2]
+// Dependencies: [31, 33, 4165, 4161, 1212, 2461, 6726, 6728, 2]
 // Exports: default
 
-// Module 16644 (AgeUpdateFooter)
+// Module 16684 (AgeUpdateFooter)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,7 +24,7 @@ export default function AgeUpdateFooter() {
     }
   };
   obj.children = intl.format(importDefault(2461).ifObbX, obj);
-  return jsx(require(4127) /* Text */.Text, {
+  return jsx(require(4161) /* Text */.Text, {
     handleAgeVerifyHook() {
       let obj = outer1_1(outer1_2[6]);
       obj = { entryPoint: outer1_0(outer1_2[7]).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };

@@ -1,10 +1,10 @@
-// Module ID: 15290
-// Function ID: 116530
+// Module ID: 15330
+// Function ID: 116689
 // Name: truncateUsername
-// Dependencies: [31, 27, 1348, 1918, 1838, 653, 33, 15249, 689, 7909, 5513, 1273, 4550, 566, 4362, 8321, 4320, 4127, 4321, 15291, 1212, 4639, 15289, 4661, 5874, 8895, 2]
+// Dependencies: [31, 27, 1348, 1918, 1838, 653, 33, 15289, 689, 7945, 5548, 1273, 4584, 566, 4396, 8359, 4354, 4161, 4355, 15331, 1212, 4673, 15329, 4695, 5908, 8939, 2]
 // Exports: default
 
-// Module 15290 (truncateUsername)
+// Module 15330 (truncateUsername)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,13 +32,13 @@ function CutoutGuildIconWithUserCustom(guild) {
   obj = {};
   obj = { shape: null, x: 18, y: 18, size: 24 };
   const tmp = callback3();
-  obj.shape = require(7909) /* SolidCutout */.CutoutShape.Circle;
+  obj.shape = require(7945) /* SolidCutout */.CutoutShape.Circle;
   const items = [obj];
   obj.cutouts = items;
   const obj1 = { guild };
-  const tmp2 = importDefault(7909);
-  obj1.size = require(5513) /* makeSizeStyle */.GuildIconSizes.SMALL_32;
-  obj.children = callback(importDefault(5513), obj1);
+  const tmp2 = importDefault(7945);
+  obj1.size = require(5548) /* makeSizeStyle */.GuildIconSizes.SMALL_32;
+  obj.children = callback(importDefault(5548), obj1);
   const items1 = [callback(tmp2, obj), ];
   const obj2 = { animate: true, style: tmp.authorAvatar, guildId: guild.id, user: guild.author, size: require(1273) /* Button */.AvatarSizes.XSMALL_20 };
   items1[1] = callback(require(1273) /* Button */.Avatar, obj2);

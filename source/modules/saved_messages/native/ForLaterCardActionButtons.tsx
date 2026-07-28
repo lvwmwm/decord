@@ -1,10 +1,10 @@
-// Module ID: 9882
-// Function ID: 76560
+// Module ID: 9922
+// Function ID: 76689
 // Name: ForLaterCardActionButtons
-// Dependencies: [31, 27, 33, 4131, 4099, 9883, 1935, 9871, 1212, 9886, 5119, 9034, 9231, 6625, 8896, 2]
+// Dependencies: [31, 27, 33, 4165, 4133, 9923, 1935, 9911, 1212, 9926, 5153, 9078, 9275, 6661, 8940, 2]
 // Exports: default
 
-// Module 9882 (ForLaterCardActionButtons)
+// Module 9922 (ForLaterCardActionButtons)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -41,7 +41,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1212).intl;
   obj.label = intl.string(savedMessage(1212).t["+TSRGD"]);
-  obj.IconComponent = savedMessage(9886).ChatArrowRightIcon;
+  obj.IconComponent = savedMessage(9926).ChatArrowRightIcon;
   obj.action = function action() {
     return jumpToMessage();
   };
@@ -54,7 +54,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
     SvXS1Z = savedMessage(1212).t.SvXS1Z;
   }
   obj.label = intl2.string(SvXS1Z);
-  obj.IconComponent = savedMessage(5119).XSmallIcon;
+  obj.IconComponent = savedMessage(5153).XSmallIcon;
   obj.action = function action() {
     return savedMessage(outer1_2[7]).removeSavedMessage(savedMessage.saveData);
   };
@@ -64,7 +64,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
     obj = {};
     const intl3 = savedMessage(1212).intl;
     obj.label = intl3.string(savedMessage(1212).t.vrbqs1);
-    obj.IconComponent = savedMessage(9034).PencilIcon;
+    obj.IconComponent = savedMessage(9078).PencilIcon;
     obj.action = callback;
     items1.unshift(obj);
   }
@@ -87,7 +87,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
       return outer1_5(savedMessage(outer1_2[13]).IconButton, obj);
     }
   };
-  return <View style={callback().actionGroup}>{jsx(savedMessage(9231).ContextMenu, {
+  return <View style={callback().actionGroup}>{jsx(savedMessage(9275).ContextMenu, {
     items: items1,
     keyboardShouldPersistTaps: "handled",
     triggerOnTap: true,

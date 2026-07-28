@@ -1,10 +1,10 @@
-// Module ID: 9162
-// Function ID: 71904
+// Module ID: 9206
+// Function ID: 72055
 // Name: handleOpenEmailVerification
-// Dependencies: [31, 1850, 33, 4131, 689, 9109, 1212, 566, 4661, 4127, 2]
+// Dependencies: [31, 1850, 33, 4165, 689, 9153, 1212, 566, 4695, 4161, 2]
 // Exports: default
 
-// Module 9162 (handleOpenEmailVerification)
+// Module 9206 (handleOpenEmailVerification)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -14,7 +14,7 @@ let closure_4;
 let closure_5;
 const require = arg1;
 function handleOpenEmailVerification() {
-  importDefault(9109).open();
+  importDefault(9153).open();
 }
 function getBannerText(currentUser) {
   if (null == currentUser) {
@@ -57,11 +57,11 @@ export default function UserSettingsAccountUnverifiedHeader() {
   if (null != tmp2) {
     obj = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification };
     obj = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp2.title };
-    const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+    const items1 = [callback(require(4161) /* Text */.Text, obj), ];
     const obj1 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp2.button };
-    items1[1] = callback(require(4127) /* Text */.Text, obj1);
+    items1[1] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items1;
-    tmp3 = callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+    tmp3 = callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp3;
 };

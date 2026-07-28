@@ -1,10 +1,10 @@
-// Module ID: 15407
-// Function ID: 117574
+// Module ID: 15447
+// Function ID: 117733
 // Name: addSearchHistoryItem
-// Dependencies: [5, 31, 1348, 10041, 9033, 15408, 9061, 653, 1355, 11390, 11398, 1443, 3831, 1212, 8138, 3828, 1456, 15386, 9989, 1207, 8053, 4141, 4139, 6653, 1935, 4342, 4346, 12357, 4575, 4620, 9073, 1198, 10040, 2]
+// Dependencies: [5, 31, 1348, 10081, 9077, 15448, 9105, 653, 1355, 11428, 11436, 1443, 3865, 1212, 8176, 3862, 1456, 15426, 10029, 1207, 8091, 4175, 4173, 6689, 1935, 4376, 4380, 12400, 4609, 4654, 9117, 1198, 10080, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15407 (addSearchHistoryItem)
+// Module 15447 (addSearchHistoryItem)
 import SearchNavigatorScreens from "SearchNavigatorScreens";
 import shouldNavigate from "shouldNavigate";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -28,8 +28,8 @@ function addSearchHistoryItem(type) {
   let closure_1 = arg1;
   type = type.type;
   if (constants2.DMS === type) {
-    const result = _require(11390).delayUntilNavigationComplete(() => callback(outer1_2[10]).addSearchHistoryItem(closure_0, callback));
-    const obj = _require(11390);
+    const result = _require(11428).delayUntilNavigationComplete(() => callback(outer1_2[10]).addSearchHistoryItem(closure_0, callback));
+    const obj = _require(11428);
   }
 }
 function addCurrentSearchQueryToSearchHistory(arg0) {

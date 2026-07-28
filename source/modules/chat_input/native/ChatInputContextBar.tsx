@@ -1,9 +1,9 @@
-// Module ID: 10325
-// Function ID: 79793
+// Module ID: 10365
+// Function ID: 79922
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [31, 27, 4123, 1850, 653, 33, 1273, 4131, 689, 1324, 3835, 4127, 1212, 4661, 8930, 566, 3849, 4362, 8321, 7685, 3995, 10326, 3942, 3992, 4132, 9501, 675, 9499, 1198, 4361, 10327, 2]
+// Dependencies: [31, 27, 4157, 1850, 653, 33, 1273, 4165, 689, 1324, 3869, 4161, 1212, 4695, 8974, 566, 3883, 4396, 8359, 7721, 4029, 10366, 3976, 4026, 4166, 9541, 675, 9539, 1198, 4395, 10367, 2]
 
-// Module 10325 (ChatInputReplyBarNoAuthor)
+// Module 10365 (ChatInputReplyBarNoAuthor)
 import importAllResult from "set";
 import get_ActivityIndicator from "getContextBarCancelReason";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,16 +25,16 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
   onCancelReplying = onCancelReplying.onCancelReplying;
   let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const tmp = callback4();
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   const token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  let obj2 = require(3835) /* map */;
+  let obj2 = require(3869) /* map */;
   const bound = Math.max(0, (token - obj2.useToken(importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
   if (obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating) {
     obj = { style: tmp.contextBarRow };
     obj = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj.children = intl3.string(require(1212) /* getSystemLocale */.t["5IEsGx"]);
-    const items = [callback(require(4127) /* Text */.Text, obj), ];
+    const items = [callback(require(4161) /* Text */.Text, obj), ];
     obj1 = { style: tmp.floatingRightActions };
     obj2 = { activeOpacity: 0.5, accessibilityRole: "button" };
     const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -45,9 +45,9 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     }
     obj2.hitSlop = tmp20;
     obj2.onPress = onCancelReplying;
-    const obj3 = { source: importDefault(8930), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+    const obj3 = { source: importDefault(8974), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
-    obj1.children = callback(require(4661) /* PressableBase */.PressableOpacity, obj2);
+    obj1.children = callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
     items[1] = callback(closure_5, obj1);
     obj.children = items;
     let tmp4Result = tmp4(closure_5, obj);
@@ -62,15 +62,15 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     obj4.onPress = onCancelReplying;
     obj4.style = tmp.contextBarRow;
     const obj5 = { style: tmp.contextCancelIconWrapper };
-    const obj6 = { source: importDefault(8930), size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
+    const obj6 = { source: importDefault(8974), size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
     obj5.children = callback(require(1273) /* Button */.Icon, obj6);
     const items1 = [callback(closure_5, obj5), ];
     const obj7 = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", style: tmp.contextButtonText };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj7.children = intl2.string(require(1212) /* getSystemLocale */.t["5IEsGx"]);
-    items1[1] = callback(require(4127) /* Text */.Text, obj7);
+    items1[1] = callback(require(4161) /* Text */.Text, obj7);
     obj4.children = items1;
-    tmp4Result = tmp4(require(4661) /* PressableBase */.PressableOpacity, obj4);
+    tmp4Result = tmp4(require(4695) /* PressableBase */.PressableOpacity, obj4);
   }
   return tmp4Result;
 }
@@ -83,7 +83,7 @@ class ChatInputReplyBar {
     colorStrings = undefined;
     nick = undefined;
     guildId = undefined;
-    f79799 = undefined;
+    f79928 = undefined;
     c7 = undefined;
     useDisplayNameStylesFont = undefined;
     author = undefined;
@@ -138,14 +138,14 @@ class ChatInputReplyBar {
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = require("useIsMobileVisualRefreshExperimentEnabled");
     tmp = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp2 = f79802();
+    tmp2 = f79931();
     obj2 = require("map");
     token = obj2.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
     obj3 = require("map");
     bound = require("result");
     obj4 = require("initialize");
     items = [];
-    items[0] = f79799;
+    items[0] = f79928;
     stateFromStores = obj4.useStateFromStores(items, () => roleStyle.roleStyle);
     c1 = stateFromStores;
     obj5 = require("useCheckboxA11yNative");
@@ -159,7 +159,7 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f79799 = colorStrings.useMemo(() => {
+    f79928 = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
@@ -409,9 +409,9 @@ function ChatInputEditBar(onCancelEditing) {
   let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating;
   const tmp = callback4();
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   const token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  let obj2 = require(3835) /* map */;
+  let obj2 = require(3869) /* map */;
   const bound = Math.max(0, (token - obj2.useToken(importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
   obj = { lineClamp: 1 };
   let str = "text-sm/medium";
@@ -427,7 +427,7 @@ function ChatInputEditBar(onCancelEditing) {
   obj.style = chatInputFloating ? tmp.floatingReplyTextWrapper : tmp.contextButtonText;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.rtNXxN);
-  const tmp4Result = callback(require(4127) /* Text */.Text, obj);
+  const tmp4Result = callback(require(4161) /* Text */.Text, obj);
   obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5 };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.qv9j1K);
@@ -444,7 +444,7 @@ function ChatInputEditBar(onCancelEditing) {
   }
   obj.style = prop;
   obj.onPress = onCancelEditing.onCancelEditing;
-  obj1 = { source: importDefault(8930) };
+  obj1 = { source: importDefault(8974) };
   const Sizes = require(1273) /* Button */.Icon.Sizes;
   obj1.size = chatInputFloating ? Sizes.CUSTOM : Sizes.SMALL_20;
   let floatingCloseIcon;
@@ -453,7 +453,7 @@ function ChatInputEditBar(onCancelEditing) {
   }
   obj1.style = floatingCloseIcon;
   obj.children = callback(require(1273) /* Button */.Icon, obj1);
-  const tmp6Result = callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+  const tmp6Result = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
   obj2 = { style: tmp.contextBarRow };
   const obj3 = {};
   const items = [, ];

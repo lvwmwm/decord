@@ -1,9 +1,9 @@
-// Module ID: 4368
-// Function ID: 38764
+// Module ID: 4402
+// Function ID: 38878
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4030, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4064, 566, 686, 2]
 
-// Module 4368 (_isNativeReflectConstruct)
+// Module 4402 (_isNativeReflectConstruct)
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -81,10 +81,10 @@ tmp2 = new tmp2(require("dispatcher"), {
   PREMIUM_PAYMENT_UPDATE_SUCCESS: handleClearError,
   PREMIUM_PAYMENT_ERROR_CLEAR: handleClearError,
   BRAINTREE_TOKENIZE_PAYPAL_FAIL: function handlePayPalTokenizeFailure(message) {
-    const billingError = new require(4030) /* V6OrEarlierAPIError */.BillingError(message.message);
+    const billingError = new require(4064) /* V6OrEarlierAPIError */.BillingError(message.message);
   },
   BRAINTREE_TOKENIZE_VENMO_FAIL: function handleVenmoTokenizeFailure(message) {
-    const billingError = new require(4030) /* V6OrEarlierAPIError */.BillingError(message.message);
+    const billingError = new require(4064) /* V6OrEarlierAPIError */.BillingError(message.message);
   },
   SKU_PURCHASE_SUCCESS: function handleSKUPurchaseSuccess(arg0) {
     let c8;

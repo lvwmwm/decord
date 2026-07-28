@@ -1,10 +1,10 @@
-// Module ID: 11914
-// Function ID: 92216
+// Module ID: 11957
+// Function ID: 92386
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [57, 31, 27, 11905, 33, 4131, 689, 5187, 5186, 1212, 7596, 7595, 11915, 4544, 4099, 2]
+// Dependencies: [57, 31, 27, 11948, 33, 4165, 689, 5221, 5220, 1212, 7632, 7631, 11958, 4578, 4133, 2]
 // Exports: default
 
-// Module 11914 (ClearAfterOptionsActionSheet)
+// Module 11957 (ClearAfterOptionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -35,7 +35,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["5XnRQ+"]);
-  obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback2(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { onChange: tmp2[1] };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.title = intl2.string(require(1212) /* getSystemLocale */.t.E45wvP);
@@ -45,7 +45,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
     const obj = { value, label: callback2(outer1_2[12])(value) };
     return outer1_7(outer1_0(outer1_2[11]).TableRadioRow, obj, value);
   });
-  const items = [callback2(require(7596) /* context */.TableRadioGroup, obj), ];
+  const items = [callback2(require(7632) /* context */.TableRadioGroup, obj), ];
   const obj1 = { style: tmp.buttonWrapper };
   const obj2 = {
     onPress() {
@@ -55,8 +55,8 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl3.string(require(1212) /* getSystemLocale */.t.TyCVIq);
-  obj1.children = callback2(require(4544) /* Button */.Button, obj2);
+  obj1.children = callback2(require(4578) /* Button */.Button, obj2);
   items[1] = callback2(View, obj1);
   obj.children = items;
-  return callback3(require(5187) /* Background */.BottomSheet, obj);
+  return callback3(require(5221) /* Background */.BottomSheet, obj);
 };

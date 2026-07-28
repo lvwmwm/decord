@@ -1,10 +1,10 @@
-// Module ID: 11192
-// Function ID: 87088
+// Module ID: 11230
+// Function ID: 87207
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [31, 4123, 477, 1823, 3997, 1555, 1450, 11148, 5450, 10360, 2]
+// Dependencies: [31, 4157, 477, 1823, 4031, 1555, 1450, 11186, 5485, 10400, 2]
 // Exports: default
 
-// Module 11192 (useCustomKeyboardBottomSheetConfig)
+// Module 11230 (useCustomKeyboardBottomSheetConfig)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

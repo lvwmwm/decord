@@ -1,11 +1,11 @@
 // Module ID: 9799
-// Function ID: 76078
+// Function ID: 76051
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9799 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "317510f9e9255b233aed4b094f163966", name: "ic_file_small_document", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "80a1b67e775ddb8de80fde27e63a5302", name: "CircleQuestionIcon-secondary", type: "png" };
 
 export default registerAsset.registerAsset(obj);

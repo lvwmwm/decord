@@ -1,10 +1,10 @@
-// Module ID: 12572
-// Function ID: 97341
+// Module ID: 12615
+// Function ID: 97511
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [31, 27, 4123, 653, 33, 4131, 689, 624, 3992, 4543, 4555, 5513, 4127, 11617, 2]
+// Dependencies: [31, 27, 4157, 653, 33, 4165, 689, 624, 4026, 4577, 4589, 5548, 4161, 11656, 2]
 // Exports: default
 
-// Module 12572 (GuildBoostingMarketingPersistentCta)
+// Module 12615 (GuildBoostingMarketingPersistentCta)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   let obj = isVisible(624);
   let items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
-  let obj1 = isVisible(3992);
+  let obj1 = isVisible(4026);
   const fn = function _() {
     let obj = {};
     obj = {};
@@ -68,7 +68,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
     obj.opacity = isVisible(outer1_2[9]).withSpring(num4, outer1_8);
     return obj;
   };
-  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4543).withSpring, isVisible, SPRING_CONFIG: closure_8 };
+  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4577).withSpring, isVisible, SPRING_CONFIG: closure_8 };
   fn.__closure = obj;
   fn.__workletHash = 14370895185277;
   fn.__initData = closure_10;
@@ -84,18 +84,18 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   const obj2 = { style: tmp.innerWraper };
   let obj3 = { style: tmp.guildInfoContainer };
   const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild };
-  const tmp4 = stateFromStores(4555);
-  obj4.size = isVisible(5513).GuildIconSizes.LARGE;
-  const items3 = [callback(stateFromStores(5513), obj4), ];
+  const tmp4 = stateFromStores(4589);
+  obj4.size = isVisible(5548).GuildIconSizes.LARGE;
+  const items3 = [callback(stateFromStores(5548), obj4), ];
   const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-  items3[1] = callback(isVisible(4127).Text, obj5);
+  items3[1] = callback(isVisible(4161).Text, obj5);
   obj3.children = items3;
   const items4 = [callback2(View, obj3), ];
-  const tmp5 = stateFromStores(5513);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11617), obj7) });
+  const tmp5 = stateFromStores(5548);
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11656), obj7) });
   obj2.children = items4;
   obj1.children = callback2(View, obj2);
   obj.children = callback(tmp4, obj1);
-  return callback(stateFromStores(3992).View, obj);
+  return callback(stateFromStores(4026).View, obj);
 };
 export const VISIBILITY_OFFSET = 120;

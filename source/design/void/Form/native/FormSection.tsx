@@ -1,10 +1,10 @@
-// Module ID: 7588
-// Function ID: 60749
+// Module ID: 7624
+// Function ID: 60838
 // Name: hasTrailingError
-// Dependencies: [31, 27, 1277, 33, 4131, 689, 5163, 5157, 7582, 5501, 7589, 477, 2]
+// Dependencies: [31, 27, 1277, 33, 4165, 689, 5197, 5191, 7618, 5536, 7625, 477, 2]
 // Exports: default
 
-// Module 7588 (hasTrailingError)
+// Module 7624 (hasTrailingError)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { TitleStyleType } from "semanticColor";
@@ -20,7 +20,7 @@ const require = arg1;
 function hasTrailingError(found) {
   const element = found[found.length - 1];
   if (React.isValidElement(element)) {
-    if (element.type !== importDefault(7582)) {
+    if (element.type !== importDefault(7618)) {
       if (null != element.props) {
         const props = element.props;
         return "error" in props && null != props.error;
@@ -72,7 +72,7 @@ export default function FormSection(arg0) {
   ({ error, hint, hasIcons } = arg0);
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
   let tmp2 = _createForOfIteratorHelperLoose();
-  if (React.useContext(require(5163) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
     const Children = React.Children;
     const toArrayResult = Children.toArray(children);
     let tmp23 = null != toArrayResult.find((type) => {
@@ -107,7 +107,7 @@ export default function FormSection(arg0) {
     obj3.hasIcons = tmp23;
     obj3.hasTrailingText = hasTrailingError(found);
     obj3.children = found;
-    obj1.children = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj3);
+    obj1.children = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj3);
     const items = [callback(closure_4, obj1), ];
     let tmp31 = null;
     if (null != hint) {
@@ -136,8 +136,8 @@ export default function FormSection(arg0) {
       obj.thinTitle = thinTitle;
       obj.uppercaseTitle = uppercaseTitle;
       obj.inset = inset;
-      tmp4 = callback(importDefault(7589), obj);
-      const tmp9 = importDefault(7589);
+      tmp4 = callback(importDefault(7625), obj);
+      const tmp9 = importDefault(7625);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;

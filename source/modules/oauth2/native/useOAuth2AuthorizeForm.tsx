@@ -1,10 +1,10 @@
-// Module ID: 8879
-// Function ID: 70218
+// Module ID: 8923
+// Function ID: 70369
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 57, 31, 27, 3773, 4123, 4154, 4813, 1850, 8880, 653, 33, 4131, 3764, 566, 4529, 3992, 4132, 5463, 8881, 8882, 483, 8883, 507, 491, 8884, 8886, 8888, 5655, 5470, 1184, 8889, 8890, 4325, 8891, 4541, 8892, 4544, 1212, 5584, 4815, 8894, 8935, 8112, 8887, 8940, 8946, 8945, 8947, 8948, 8949, 8951, 8962, 5150, 2]
+// Dependencies: [5, 57, 31, 27, 3807, 4157, 4188, 4847, 1850, 8924, 653, 33, 4165, 3798, 566, 4563, 4026, 4166, 5498, 8925, 8926, 483, 8927, 507, 491, 8928, 8930, 8932, 8004, 5505, 1184, 8933, 8934, 4359, 8935, 4575, 8936, 4578, 1212, 5619, 4849, 8938, 8979, 8150, 8931, 8984, 8990, 8989, 8991, 8992, 8993, 8995, 9006, 5184, 2]
 // Exports: default
 
-// Module 8879 (useOAuth2AuthorizeForm)
+// Module 8923 (useOAuth2AuthorizeForm)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import convertOAuth2Authorization from "convertOAuth2Authorization";

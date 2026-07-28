@@ -1,9 +1,9 @@
-// Module ID: 8062
-// Function ID: 64178
+// Module ID: 8100
+// Function ID: 64288
 // Name: nativeEventEmitter
 // Dependencies: [6, 7, 27, 621, 682, 2]
 
-// Module 8062 (nativeEventEmitter)
+// Module 8100 (nativeEventEmitter)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import get_ActivityIndicator from "get ActivityIndicator";

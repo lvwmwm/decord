@@ -78,6 +78,7 @@ obj = {
   },
   USER_PROFILE_WIDGETS: "/users/@me/widgets",
   USER_PROFILE_SUGGESTED_GAMES: "/users/@me/widgets/suggested-games",
+  USER_PROFILE_WIDGET_ASSET_UPLOAD: "/users/@me/widgets/assets/upload",
   WIDGET_CONFIGS_FEATURED: "/widget-configs/featured",
   WIDGET_CONFIGS_DEVELOPER: "/widget-configs/developer",
   APPLICATION_WIDGET_CONFIGS(applicationId) {
@@ -394,6 +395,15 @@ obj = {
   },
   GUILD_BASIC(guildId) {
     return "/guilds/" + guildId + "/basic";
+  },
+  GUILD_SPACE(arg0) {
+    return "/guilds/" + arg0 + "/space";
+  },
+  GUILD_SPACE_WIDGETS_HYDRATE(arg0) {
+    return "/guilds/" + arg0 + "/space/widgets/hydrate";
+  },
+  GUILD_SPACE_WIDGETS_CATALOG(arg0) {
+    return "/guilds/" + arg0 + "/space/widgets/catalog";
   },
   GUILD_PINCODE(id) {
     return "/guilds/" + id + "/pincode";
@@ -905,6 +915,11 @@ obj = {
   },
   GAME_SERVER_REGIONS(arg0) {
     return "/guilds/" + arg0 + "/game-server-regions";
+  },
+  GAME_SERVER_MY_REGIONS: "/users/@me/game-server-regions",
+  GAME_SERVERS_ME: "/users/@me/game-servers",
+  GAME_SERVER_ME(id) {
+    return "/users/@me/game-servers/" + id;
   },
   GAME_SERVER_WAKE(arg0, arg1) {
     return "/guilds/" + arg0 + "/game-servers/" + arg1 + "/wake";
@@ -2353,9 +2368,9 @@ if (keys !== undefined) {
     continue;
   }
 }
-for (const key16300 in _module6) {
-  let tmp43 = key16300;
-  arg5[key16300] = sum[key16300];
+for (const key16307 in _module6) {
+  let tmp43 = key16307;
+  arg5[key16307] = sum[key16307];
   continue;
 }
 

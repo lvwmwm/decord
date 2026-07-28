@@ -1,10 +1,10 @@
-// Module ID: 6043
-// Function ID: 54223
+// Module ID: 6077
+// Function ID: 54342
 // Name: _generateAnimationSource
-// Dependencies: [5, 57, 31, 27, 3776, 6044, 1392, 477, 6081, 2]
+// Dependencies: [5, 57, 31, 27, 3810, 6078, 1392, 477, 6115, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 6043 (_generateAnimationSource)
+// Module 6077 (_generateAnimationSource)
 import items from "items";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

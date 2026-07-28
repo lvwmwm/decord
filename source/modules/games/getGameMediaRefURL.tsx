@@ -1,10 +1,10 @@
-// Module ID: 4161
-// Function ID: 35158
+// Module ID: 4195
+// Function ID: 35260
 // Name: getGameMediaRefURL
-// Dependencies: [1832, 1392, 4162, 2]
+// Dependencies: [1832, 1392, 4196, 2]
 // Exports: default
 
-// Module 4161 (getGameMediaRefURL)
+// Module 4195 (getGameMediaRefURL)
 const result = require("isImageProxyURL").fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 
 export default function getGameMediaRefURL(id, type, size) {
@@ -27,7 +27,7 @@ export default function getGameMediaRefURL(id, type, size) {
       }
       return tmp7;
     } else if ("url" === type) {
-      obj = require(4162) /* isImageProxyURL */;
+      obj = require(4196) /* isImageProxyURL */;
       obj = {};
       size = undefined;
       if (null != size) {

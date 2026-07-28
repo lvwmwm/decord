@@ -1,9 +1,9 @@
-// Module ID: 15131
-// Function ID: 115187
+// Module ID: 15171
+// Function ID: 115346
 // Name: handlePress
-// Dependencies: [31, 10223, 4327, 33, 4131, 689, 3832, 1212, 9243, 4321, 9029, 15027, 2]
+// Dependencies: [31, 10263, 4361, 33, 4165, 689, 3866, 1212, 9287, 4355, 9073, 15071, 2]
 
-// Module 15131 (handlePress)
+// Module 15171 (handlePress)
 import importAllResult from "result";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
@@ -11,11 +11,11 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function handlePress() {
-  let obj = importDefault(3832);
+  let obj = importDefault(3866);
   obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.content = intl.string(require(1212) /* getSystemLocale */.t["/ZjyYE"]);
-  obj.icon = importDefault(9243);
+  obj.icon = importDefault(9287);
   obj.open(obj);
 }
 let obj = {};
@@ -31,14 +31,14 @@ const memoResult = importAllResult.memo((channel) => {
     const result = channel(outer1_2[10]).openChannelLongPressActionSheet(channel.id);
   }, items);
   const obj = { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true };
-  const tmp2 = importDefault(4321)(channel);
+  const tmp2 = importDefault(4355)(channel);
   const intl = channel(1212).intl;
   obj.accessibilityLabel = intl.formatToPlainString(channel(1212).t.yjQ9P8, { channelName: tmp2 });
   obj.accessibilityState = { selected };
   obj.channel = channel;
   obj.selected = selected;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  return jsx(importDefault(15027), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true });
+  return jsx(importDefault(15071), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true });
 });
 let result = require("ReadStateTypes").fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 

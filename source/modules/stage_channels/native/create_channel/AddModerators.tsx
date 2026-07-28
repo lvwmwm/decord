@@ -1,10 +1,10 @@
-// Module ID: 8238
-// Function ID: 66064
+// Module ID: 8276
+// Function ID: 66174
 // Name: AddModerators
-// Dependencies: [57, 31, 27, 1838, 6661, 33, 4131, 689, 1456, 44, 8212, 4949, 1882, 1212, 5087, 6695, 4127, 1273, 8239, 1356, 2]
+// Dependencies: [57, 31, 27, 1838, 6697, 33, 4165, 689, 1456, 44, 8250, 4983, 1882, 1212, 5121, 6731, 4161, 1273, 8277, 1356, 2]
 // Exports: default
 
-// Module 8238 (AddModerators)
+// Module 8276 (AddModerators)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

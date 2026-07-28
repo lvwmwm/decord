@@ -1,10 +1,10 @@
-// Module ID: 11377
-// Function ID: 88393
+// Module ID: 11415
+// Function ID: 88512
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 653, 1327, 3764, 2]
+// Dependencies: [1348, 653, 1327, 3798, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, settingsFromServer, settingsToServer
 
-// Module 11377 (_createForOfIteratorHelperLoose)
+// Module 11415 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -378,7 +378,7 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
                     while (null != channel) {
                       let tmp7 = importAll;
                       let tmp8 = dependencyMap;
-                      let obj = importAll(3764);
+                      let obj = importAll(3798);
                       let tmp9 = constants2;
                       if (!obj.canEveryoneRole(constants2.VIEW_CHANNEL, channel)) {
                         break;
@@ -405,12 +405,12 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
 export const isChannelValidForResourceChannel = function isChannelValidForResourceChannel(type) {
   let canEveryoneRoleResult = type.type === constants.GUILD_TEXT;
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = !importAll(3764).canEveryoneRole(constants2.SEND_MESSAGES, type);
-    const obj = importAll(3764);
+    canEveryoneRoleResult = !importAll(3798).canEveryoneRole(constants2.SEND_MESSAGES, type);
+    const obj = importAll(3798);
   }
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = importAll(3764).canEveryoneRole(constants2.VIEW_CHANNEL, type);
-    const obj2 = importAll(3764);
+    canEveryoneRoleResult = importAll(3798).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+    const obj2 = importAll(3798);
   }
   return canEveryoneRoleResult;
 };
@@ -425,6 +425,6 @@ export const isChannelValidForNewMemberAction = function isChannelValidForNewMem
       }
     }
   }
-  return importAll(3764).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+  return importAll(3798).canEveryoneRole(constants2.VIEW_CHANNEL, type);
 };
 export const ChannelEditBlockTypes = { DEFAULT: 0, [0]: "DEFAULT", TODO: 1, [1]: "TODO", RESOURCE: 2, [2]: "RESOURCE", RULES: 3, [3]: "RULES", UPDATES: 4, [4]: "UPDATES" };

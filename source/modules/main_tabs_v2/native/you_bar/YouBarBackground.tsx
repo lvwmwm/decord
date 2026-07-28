@@ -1,9 +1,9 @@
-// Module ID: 15181
-// Function ID: 115591
+// Module ID: 15221
+// Function ID: 115750
 // Name: YouBarMaskedBackground
-// Dependencies: [31, 27, 14059, 33, 4131, 689, 5109, 4555, 666, 3835, 14140, 3992, 4543, 2]
+// Dependencies: [31, 27, 14103, 33, 4165, 689, 5143, 4589, 666, 3869, 14184, 4026, 4577, 2]
 
-// Module 15181 (YouBarMaskedBackground)
+// Module 15221 (YouBarMaskedBackground)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import jsxProd from "jsxProd";
@@ -29,8 +29,8 @@ function YouBarMaskedBackground(barWidth) {
   items[1] = callback(View, { style: obj2 });
   const obj3 = { style: obj4 };
   obj4 = { position: "absolute", top: YOU_BAR_HEIGHT / 2, width: 8, left: diff - 8, height: YOU_BAR_HEIGHT / 2 };
-  const tmp3 = importDefault(5109);
-  const tmp4 = importDefault(4555);
+  const tmp3 = importDefault(5143);
+  const tmp4 = importDefault(4589);
   const obj8 = importDefault(666)("#000000");
   const items1 = [importDefault(666)("#000000").alpha(0).hex(), "#000000"];
   obj3.colors = items1;
@@ -49,11 +49,11 @@ function YouBarAnimatedBackground(arg0) {
   let backgroundColor;
   let barWidth;
   ({ barWidth, backgroundColor } = arg0);
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const token = obj.useToken(importDefault(689).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp3 = importDefault(14140)(token);
+  const tmp3 = importDefault(14184)(token);
   require = tmp3;
-  const tmp4 = importDefault(14140)(token, YOU_BAR_HEIGHT / 2);
+  const tmp4 = importDefault(14184)(token, YOU_BAR_HEIGHT / 2);
   importDefault = tmp4;
   const tmp = callback3();
   const fn = function u() {
@@ -64,17 +64,17 @@ function YouBarAnimatedBackground(arg0) {
     obj.borderBottomLeftRadius = tmp3(outer1_2[12]).withSpring(tmp4.get(), outer1_5);
     return obj;
   };
-  obj = { withSpring: require(4543) /* withSpring */.withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
+  obj = { withSpring: require(4577) /* withSpring */.withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
   fn.__closure = obj;
   fn.__workletHash = 14606701040012;
   fn.__initData = closure_9;
-  const animatedStyle = require(3992).useAnimatedStyle(fn);
+  const animatedStyle = require(4026).useAnimatedStyle(fn);
   const style = [{ position: "absolute" }, tmp.youRowFloating, , , ];
   obj = { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor };
   style[2] = obj;
   style[3] = { borderTopRightRadius: 0, borderTopLeftRadius: 0 };
   style[4] = animatedStyle;
-  return callback(importDefault(3992).View, { style });
+  return callback(importDefault(4026).View, { style });
 }
 const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = CONNECTION_BANNER_HEIGHT.YOU_BAR_SPRING_CONFIG;
@@ -90,7 +90,7 @@ const memoResult = require("result").memo(function YouBarBackground(barWidth) {
   let isLargeAvatar;
   barWidth = barWidth.barWidth;
   ({ hasNameplate, isLargeAvatar, avatarSize } = barWidth);
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   let token = obj.useToken(importDefault(689).colors.MOBILE_FLOATINGBAR_BACKGROUND);
   if (hasNameplate) {
     token = obj2.useToken(importDefault(689).colors.MOBILE_FLOATINGBAR_BACKGROUND_NAMEPLATE);

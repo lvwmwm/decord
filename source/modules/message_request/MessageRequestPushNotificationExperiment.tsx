@@ -1,9 +1,9 @@
-// Module ID: 10202
-// Function ID: 78945
+// Module ID: 10242
+// Function ID: 79074
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 10202 (apexExperiment)
+// Module 10242 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-message-request-push-notification", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true }, [2]: { enabled: false }, [3]: { enabled: true } } };

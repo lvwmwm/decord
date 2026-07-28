@@ -1,10 +1,10 @@
-// Module ID: 5087
-// Function ID: 44297
+// Module ID: 5121
+// Function ID: 44412
 // Name: HeaderBackImage
-// Dependencies: [5, 31, 27, 653, 33, 4131, 689, 4127, 5088, 5091, 1457, 5093, 1212, 5094, 5119, 477, 1557, 5084, 2]
+// Dependencies: [5, 31, 27, 653, 33, 4165, 689, 4161, 5122, 5125, 1457, 5127, 1212, 5128, 5153, 477, 1557, 5118, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5087 (HeaderBackImage)
+// Module 5121 (HeaderBackImage)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -60,7 +60,7 @@ function CustomHeaderBackButton(onPress) {
   let obj = Object.create(null);
   obj.onPress = 0;
   const merged = Object.assign(onPress, obj);
-  obj = onPress(5093);
+  obj = onPress(5127);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       onPress();
@@ -74,7 +74,7 @@ function CustomHeaderBackButton(onPress) {
   obj["backImage"] = function backImage() {
     return outer1_6(outer1_9, {});
   };
-  return callback(onPress(5094).HeaderBackButton, obj);
+  return callback(onPress(5128).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -99,7 +99,7 @@ function HeaderTextButton(text) {
     tmp6 = text;
   }
   obj["accessibilityLabel"] = tmp6;
-  return closure_6(require(5094) /* Background */.HeaderBackButton, obj);
+  return closure_6(require(5128) /* Background */.HeaderBackButton, obj);
 }
 ({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -133,7 +133,7 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
   obj = { style: tmp.navigatorHeaderTitleContainer };
   const items = [icon, ];
   obj = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   const items1 = [callback2(closure_4, obj), , ];
   let tmp5 = null != subtitle;
@@ -142,10 +142,10 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
   }
   if (tmp5) {
     const obj1 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-    tmp5 = callback(require(4127) /* Text */.Text, obj1);
+    tmp5 = callback(require(4161) /* Text */.Text, obj1);
   }
   items1[1] = tmp5;
-  items1[2] = importDefault(5088)("js-stack");
+  items1[2] = importDefault(5122)("js-stack");
   obj.children = items1;
   return callback2(closure_4, obj);
 };
@@ -229,7 +229,7 @@ export const FauxHeader = function FauxHeader(arg0) {
   const top = importDefault(1557)().top;
   let obj = {};
   const items = [_createForOfIteratorHelperLoose().fauxHeaderWrapper, , ];
-  obj = { paddingTop: top, height: top + require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
+  obj = { paddingTop: top, height: top + require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
   items[1] = obj;
   items[2] = style;
   obj.style = items;

@@ -1,15 +1,15 @@
-// Module ID: 4319
-// Function ID: 37852
+// Module ID: 4353
+// Function ID: 37966
 // Name: isIOSWithWebM
-// Dependencies: [477, 4111, 2]
+// Dependencies: [477, 4145, 2]
 // Exports: isIOSWithWebM
 
-// Module 4319 (isIOSWithWebM)
+// Module 4353 (isIOSWithWebM)
 const result = require("set").fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");
 
 export const isIOSWithWebM = function isIOSWithWebM() {
   if (obj.isIOS()) {
-    const str = require(4111) /* getSystemVersion */.getSocName();
+    const str = require(4145) /* getSystemVersion */.getSocName();
     let tmp4 = null == str;
     if (!tmp4) {
       tmp4 = !str.startsWith("ARM64_");

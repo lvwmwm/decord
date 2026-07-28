@@ -1,9 +1,9 @@
-// Module ID: 15588
-// Function ID: 120179
+// Module ID: 15627
+// Function ID: 120335
 // Name: getAccessibilityLabel
-// Dependencies: [31, 27, 33, 689, 4131, 3764, 1212, 10388, 8623, 15589, 3849, 2]
+// Dependencies: [31, 27, 33, 689, 4165, 3798, 1212, 10428, 8667, 15628, 3883, 2]
 
-// Module 15588 (getAccessibilityLabel)
+// Module 15627 (getAccessibilityLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -13,43 +13,43 @@ let closure_3;
 let closure_4;
 const require = arg1;
 function getAccessibilityLabel(arg0) {
-  if (require(3764) /* calculateElevatedPermissions */.DENY === arg0) {
+  if (require(3798) /* calculateElevatedPermissions */.DENY === arg0) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t["6639O5"]);
-  } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
+  } else if (require(3798) /* calculateElevatedPermissions */.ALLOW === arg0) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(require(1212) /* getSystemLocale */.t.RzDfSk);
-  } else if (require(3764) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+  } else if (require(3798) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.ujC3ZS);
   }
 }
 function getIcon(arg0, arg1, icon) {
-  if (require(3764) /* calculateElevatedPermissions */.DENY === arg0) {
+  if (require(3798) /* calculateElevatedPermissions */.DENY === arg0) {
     let obj = { size: "sm", style: icon.icon };
     const colors3 = importDefault(689).colors;
     obj.color = arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL;
-    return jsx(require(10388) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
-  } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
+    return jsx(require(10428) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
+  } else if (require(3798) /* calculateElevatedPermissions */.ALLOW === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors2 = importDefault(689).colors;
     obj.color = arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE;
-    return jsx(require(8623) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
-  } else if (require(3764) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+    return jsx(require(8667) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
+  } else if (require(3798) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors = importDefault(689).colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(require(15589) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
+    return jsx(require(15628) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
   } else {
     return null;
   }
 }
 function getPressableStyleOverrides(arg0, arg1, denySelected) {
-  if (require(3764) /* calculateElevatedPermissions */.DENY === arg0) {
+  if (require(3798) /* calculateElevatedPermissions */.DENY === arg0) {
     return arg1 ? denySelected.denySelected : denySelected.denyActive;
-  } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
+  } else if (require(3798) /* calculateElevatedPermissions */.ALLOW === arg0) {
     return arg1 ? denySelected.allowSelected : denySelected.allowActive;
-  } else if (require(3764) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+  } else if (require(3798) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     return arg1 ? denySelected.passthroughSelected : denySelected.passthroughActive;
   }
 }

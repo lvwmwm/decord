@@ -1,10 +1,10 @@
-// Module ID: 16688
-// Function ID: 130111
+// Module ID: 16728
+// Function ID: 130272
 // Name: AppShare
-// Dependencies: [57, 31, 27, 5692, 13393, 1194, 653, 11447, 33, 566, 5588, 477, 13432, 11450, 5703, 675, 4560, 13541, 12971, 1553, 8135, 5583, 15661, 15705, 4476, 2]
+// Dependencies: [57, 31, 27, 5702, 13437, 1194, 653, 11485, 33, 566, 5623, 477, 13476, 11488, 5713, 675, 4594, 13585, 13015, 1553, 8173, 5618, 15700, 15744, 4510, 2]
 // Exports: default
 
-// Module 16688 (AppShare)
+// Module 16728 (AppShare)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -54,7 +54,7 @@ export default function AppShare(attachments) {
     obj.has_attachment = attachments.attachments.length > 0;
     obj.track(outer1_8.EXTERNAL_SHARE_OPENED, obj);
   }, items);
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     let mimeTypes;
     let numAttachments;
     attachments = attachments.attachments;
@@ -85,9 +85,9 @@ export default function AppShare(attachments) {
   let obj = { appEntryKey: "share" };
   if (tmp) {
     obj = { appEntryKey: "share", sharedContent: attachments };
-    const tmp12 = importDefault(12971);
+    const tmp12 = importDefault(13015);
     if (obj3.isMetaQuest()) {
-      let exitApp = importDefault(8135).close;
+      let exitApp = importDefault(8173).close;
     } else {
       exitApp = exitApp.exitApp;
     }
@@ -95,11 +95,11 @@ export default function AppShare(attachments) {
     tmp7(tmp12, obj);
     obj3 = _require(1553);
   } else {
-    let items1 = [tmp7(_require(5583).SceneLoadingIndicator, {}), , , ];
+    let items1 = [tmp7(_require(5618).SceneLoadingIndicator, {}), , , ];
     obj = { appEntryKey: "share" };
-    items1[1] = callback(_require(15661).ActionSheetContainer, obj);
-    items1[2] = callback(importDefault(15705), {});
-    items1[3] = callback(_require(4476).AlertModalContainer, {});
+    items1[1] = callback(_require(15700).ActionSheetContainer, obj);
+    items1[2] = callback(importDefault(15744), {});
+    items1[3] = callback(_require(4510).AlertModalContainer, {});
     obj.children = items1;
     return closure_11(tmp6, obj);
   }

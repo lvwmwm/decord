@@ -1,10 +1,10 @@
-// Module ID: 11715
-// Function ID: 90999
+// Module ID: 11754
+// Function ID: 91150
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [31, 27, 33, 4131, 5084, 689, 4127, 4544, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 5118, 689, 4161, 4578, 1212, 2]
 // Exports: default
 
-// Module 11715 (NewUserPermissionsOnboarding)
+// Module 11754 (NewUserPermissionsOnboarding)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -58,9 +58,9 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   const obj2 = { style: tmp.alert };
   const obj3 = { style: tmp.alertContent };
   const obj4 = { style: tmp.alertTitle, variant: "heading-lg/bold", color: "text-default", children: title };
-  const items1 = [callback(require(4127) /* Text */.Text, obj4), , , ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj4), , , ];
   const obj5 = { style: tmp.alertSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-  items1[1] = callback(require(4127) /* Text */.Text, obj5);
+  items1[1] = callback(require(4161) /* Text */.Text, obj5);
   const obj6 = {};
   const items2 = [tmp.buttonWrapper, ];
   let primaryButtonContainer = flag;
@@ -75,7 +75,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   obj7.onPress = onAllow;
   obj7.loading = loading;
   obj7.grow = true;
-  obj6.children = callback(require(4544) /* Button */.Button, obj7);
+  obj6.children = callback(require(4578) /* Button */.Button, obj7);
   items1[2] = callback(closure_2, obj6);
   if (flag) {
     const obj8 = { style: tmp.buttonWrapper };
@@ -84,7 +84,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     obj9.text = intl2.string(require(1212) /* getSystemLocale */.t["5Wxrcd"]);
     obj9.onPress = onDontAllow;
     obj9.grow = true;
-    obj8.children = callback(require(4544) /* Button */.Button, obj9);
+    obj8.children = callback(require(4578) /* Button */.Button, obj9);
     flag = callback(closure_2, obj8);
   }
   items1[3] = flag;

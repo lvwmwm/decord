@@ -1,10 +1,10 @@
-// Module ID: 12481
-// Function ID: 96765
+// Module ID: 12524
+// Function ID: 96935
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [27, 3791, 33, 4131, 689, 5187, 6673, 4127, 1212, 2781, 2]
+// Dependencies: [27, 3825, 33, 4165, 689, 5221, 6709, 4161, 1212, 2781, 2]
 // Exports: default
 
-// Module 12481 (PremiumGroupEducationActionSheet)
+// Module 12524 (PremiumGroupEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HELP_CENTER_LINK } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 import jsxProd from "jsxProd";
@@ -27,16 +27,16 @@ export default function PremiumGroupEducationActionSheet(aboutText) {
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.aboutContainer };
-  const items = [callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
+  const items = [callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
   const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText.aboutText };
-  items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4127) /* Text */.Text, obj3) });
+  items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4161) /* Text */.Text, obj3) });
   obj.children = items;
   const items1 = [callback2(View, obj), ];
   const obj4 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl.format(importDefault(2781).ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
-  items1[1] = callback(require(4127) /* Text */.Text, obj4);
+  items1[1] = callback(require(4161) /* Text */.Text, obj4);
   obj.children = items1;
   obj.children = callback2(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

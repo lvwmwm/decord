@@ -1,10 +1,10 @@
-// Module ID: 8015
-// Function ID: 63823
+// Module ID: 8053
+// Function ID: 63933
 // Name: useProfileTheme
-// Dependencies: [57, 4123, 8016, 653, 4067, 566, 688, 7850, 665, 7927, 3977, 2]
+// Dependencies: [57, 4157, 8054, 653, 4101, 566, 688, 7886, 665, 7964, 4011, 2]
 // Exports: default
 
-// Module 8015 (useProfileTheme)
+// Module 8053 (useProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore";
@@ -22,7 +22,7 @@ export default function useProfileTheme(arg0) {
   let user;
   ({ user, displayProfile, pendingAvatarSrc } = arg0);
   ({ pendingThemeColors, isPreview, forceUserTheme } = arg0);
-  const tmp = importDefault(4067)();
+  const tmp = importDefault(4101)();
   const tmp2 = useEffectiveThemeOverride();
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
@@ -40,7 +40,7 @@ export default function useProfileTheme(arg0) {
   }
   const result = require(688) /* unsafe_getRawColor */.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
   const obj2 = require(688) /* unsafe_getRawColor */;
-  callback(require(7850) /* hasFetchedColors */.useAvatarColors(pendingAvatarSrc, result, false), 2);
+  callback(require(7886) /* hasFetchedColors */.useAvatarColors(pendingAvatarSrc, result, false), 2);
   if (null != tmp2) {
     return tmp2;
   } else {
@@ -74,20 +74,20 @@ export default function useProfileTheme(arg0) {
     if (!stateFromStores) {
       tmp17 = tmp;
       if (!forceUserTheme) {
-        const profileTheme = require(7927) /* getProfileTheme */.getProfileTheme(first);
+        const profileTheme = require(7964) /* getProfileTheme */.getProfileTheme(first);
         let tmp21 = tmp;
         if (null != profileTheme) {
           tmp21 = profileTheme;
         }
         tmp17 = tmp21;
-        const obj7 = require(7927) /* getProfileTheme */;
+        const obj7 = require(7964) /* getProfileTheme */;
       }
     }
     if (tmp17 !== ThemeTypes.DARK) {
       let isThemeLightResult = tmp17 === ThemeTypes.DARK;
       if (isThemeLightResult) {
-        isThemeLightResult = require(3977) /* AccessibilityAnnouncer */.isThemeLight(tmp);
-        const obj9 = require(3977) /* AccessibilityAnnouncer */;
+        isThemeLightResult = require(4011) /* AccessibilityAnnouncer */.isThemeLight(tmp);
+        const obj9 = require(4011) /* AccessibilityAnnouncer */;
       }
       let DARKER = tmp17;
       if (isThemeLightResult) {
@@ -95,10 +95,10 @@ export default function useProfileTheme(arg0) {
       }
     } else {
       DARKER = tmp;
-      const obj8 = require(3977) /* AccessibilityAnnouncer */;
+      const obj8 = require(4011) /* AccessibilityAnnouncer */;
     }
     obj = { theme: DARKER, primaryColor: first, secondaryColor: hex2intResult };
     return obj;
   }
-  const obj3 = require(7850) /* hasFetchedColors */;
+  const obj3 = require(7886) /* hasFetchedColors */;
 };

@@ -1,10 +1,10 @@
-// Module ID: 11719
-// Function ID: 91005
+// Module ID: 11758
+// Function ID: 91156
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 31, 27, 4345, 33, 4131, 689, 5084, 4676, 11720, 4127, 1212, 4544, 11721, 11713, 2]
+// Dependencies: [5, 31, 27, 4379, 33, 4165, 689, 5118, 4710, 11759, 4161, 1212, 4578, 11760, 11752, 2]
 // Exports: default
 
-// Module 11719 (ContactSyncLandingOnboardingRedesign)
+// Module 11758 (ContactSyncLandingOnboardingRedesign)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -51,27 +51,27 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj = { style: tmp2.content };
   obj = { resizeMode: "contain", style: tmp2.headerImage };
   callback = React.useCallback(callback(tmp), items);
-  obj.source = importDefault(11720);
+  obj.source = importDefault(11759);
   const items1 = [callback2(closure_6, obj), , , , ];
   const obj1 = { style: tmp2.title, variant: "heading-xl/bold" };
   const intl = onNext(1212).intl;
   obj1.children = intl.string(onNext(1212).t["/G+nci"]);
-  items1[1] = callback2(onNext(4127).Text, obj1);
+  items1[1] = callback2(onNext(4161).Text, obj1);
   const obj2 = { style: tmp2.subtitle, variant: "text-sm/medium" };
   const intl2 = onNext(1212).intl;
   obj2.children = intl2.string(onNext(1212).t.G8zcHt);
-  items1[2] = callback2(onNext(4127).Text, obj2);
+  items1[2] = callback2(onNext(4161).Text, obj2);
   const obj3 = { style: tmp2.buttonContainer };
   const obj4 = { variant: "primary", size: "lg" };
   const intl3 = onNext(1212).intl;
   obj4.text = intl3.string(onNext(1212).t.LhlgY9);
   obj4.onPress = callback;
   obj4.loading = loading;
-  obj3.children = callback2(onNext(4544).Button, obj4);
+  obj3.children = callback2(onNext(4578).Button, obj4);
   items1[3] = callback2(closure_5, obj3);
-  items1[4] = callback2(importDefault(11721), { error });
+  items1[4] = callback2(importDefault(11760), { error });
   obj.children = items1;
-  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp2.trailing, children: callback2(importDefault(11713), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
+  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp2.trailing, children: callback2(importDefault(11752), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
   obj.children = items2;
   return callback3(closure_10, obj);
 };

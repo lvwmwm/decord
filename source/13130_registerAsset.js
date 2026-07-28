@@ -1,11 +1,11 @@
 // Module ID: 13130
-// Function ID: 101221
+// Function ID: 101271
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 13130 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "3b38f8bf8ac6605b344df2f05c37673a", name: "NitroGem9", type: "lottie" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "89ef758cad16b0f89bf10bf57ab078db", name: "StatusDND", type: "png" };
 
 export default registerAsset.registerAsset(obj);

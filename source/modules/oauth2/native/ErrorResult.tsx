@@ -1,10 +1,10 @@
-// Module ID: 8892
-// Function ID: 70432
+// Module ID: 8936
+// Function ID: 70583
 // Name: error
-// Dependencies: [31, 27, 33, 4131, 689, 5121, 8893, 4127, 1212, 4544, 4338, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5155, 8937, 4161, 1212, 4578, 4372, 2]
 // Exports: default
 
-// Module 8892 (error)
+// Module 8936 (error)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function ErrorResult(error) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { bottom: true, style: tmp.container };
   obj = { style: tmp.inner };
-  obj = { source: importDefault(8893), style: tmp.image };
+  obj = { source: importDefault(8937), style: tmp.image };
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium" };
   if (null == error) {
@@ -40,7 +40,7 @@ export default function ErrorResult(error) {
     error = intl.string(require(1212) /* getSystemLocale */.t.mqn873);
   }
   obj1.children = error;
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [closure_6(closure_4, obj), ];
   let tmp7 = null;
@@ -51,9 +51,9 @@ export default function ErrorResult(error) {
     obj2.onPress = function onPress() {
       return outer1_1(outer1_2[10]).pop();
     };
-    tmp7 = callback(require(4544) /* Button */.Button, obj2);
+    tmp7 = callback(require(4578) /* Button */.Button, obj2);
   }
   items1[1] = tmp7;
   obj.children = items1;
-  return closure_6(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_6(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

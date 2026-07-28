@@ -1,9 +1,9 @@
-// Module ID: 10141
-// Function ID: 78466
+// Module ID: 10181
+// Function ID: 78595
 // Name: memoResult1
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 4320, 3970, 9386, 1273, 566, 7575, 5164, 2]
+// Dependencies: [31, 27, 1850, 33, 4165, 689, 4354, 4004, 9430, 1273, 566, 7611, 5198, 2]
 
-// Module 10141 (memoResult1)
+// Module 10181 (memoResult1)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,16 +25,16 @@ const memoResult = importAllResult.memo((height) => {
   let user;
   ({ guildId, user } = height);
   const tmp = callback2();
-  let obj = importDefault(4320);
+  let obj = importDefault(4354);
   let nickname = obj.getNickname(guildId, undefined, user);
   if (null == nickname) {
-    let obj1 = importDefault(3970);
+    let obj1 = importDefault(4004);
     nickname = obj1.getGlobalName(user);
   }
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
   obj = { style: { height: height.contentHeight } };
   obj = { user, nick: nickname };
-  const items = [callback(importDefault(9386), obj), ];
+  const items = [callback(importDefault(9430), obj), ];
   if (hasAvatarForGuildResult) {
     obj1 = { style: tmp.mainIdentity };
     let tmp11 = null;
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo((height) => {
     }
     const items1 = [tmp11, ];
     const obj3 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = callback(importDefault(9386), obj3);
+    items1[1] = callback(importDefault(9430), obj3);
     obj1.children = items1;
     let tmp9Result = closure_6(View, obj1);
     const tmp10 = View;
@@ -86,7 +86,7 @@ const memoResult1 = importAllResult.memo(function DetailedGuildIdentityUserRow(a
   } else {
     let FormRow = require;
     if (deprecatedFormRow) {
-      FormRow = FormRow(7575).FormRow;
+      FormRow = FormRow(7611).FormRow;
       obj = { accessibilityLabel, disabled };
       if (tmp == leading) {
         accessibilityLabel = callback;
@@ -120,7 +120,7 @@ const memoResult1 = importAllResult.memo(function DetailedGuildIdentityUserRow(a
       obj2.trailing = trailing;
       obj2.accessibilityRole = accessibilityRole;
       obj2.accessibilityState = accessibilityState;
-      tmp2Result = tmp2(FormRow(5164).TableRow, obj2);
+      tmp2Result = tmp2(FormRow(5198).TableRow, obj2);
     }
   }
 });

@@ -1,8 +1,0 @@
-// Module ID: 5567
-// Function ID: 47349
-// Name: result
-// Dependencies: [31]
-
-// Module 5567 (result)
-
-export default require("result").createContext(undefined);

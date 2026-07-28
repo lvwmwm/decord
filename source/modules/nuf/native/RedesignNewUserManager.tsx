@@ -1,9 +1,9 @@
-// Module ID: 16197
-// Function ID: 125527
+// Module ID: 16236
+// Function ID: 125683
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 11704, 6638, 8286, 16198, 4338, 16200, 1935, 16199, 477, 3982, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 11743, 6674, 8324, 16237, 4372, 16239, 1935, 16238, 477, 4016, 5112, 2]
 
-// Module 16197 (_isNativeReflectConstruct)
+// Module 16236 (_isNativeReflectConstruct)
 import showInstantInviteActionSheet from "showInstantInviteActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";

@@ -1,9 +1,9 @@
-// Module ID: 9188
-// Function ID: 72047
+// Module ID: 9232
+// Function ID: 72198
 // Name: getBatchesToRender
-// Dependencies: [31, 27, 33, 9183, 9178, 7619, 9181, 2]
+// Dependencies: [31, 27, 33, 9227, 9222, 7655, 9225, 2]
 
-// Module 9188 (getBatchesToRender)
+// Module 9232 (getBatchesToRender)
 import importAllResult from "result";
 import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

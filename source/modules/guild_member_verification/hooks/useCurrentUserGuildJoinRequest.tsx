@@ -1,10 +1,10 @@
-// Module ID: 9090
-// Function ID: 71527
+// Module ID: 9134
+// Function ID: 71678
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [3949, 566, 2]
+// Dependencies: [3983, 566, 2]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 9090 (useCurrentUserGuildJoinRequest)
+// Module 9134 (useCurrentUserGuildJoinRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

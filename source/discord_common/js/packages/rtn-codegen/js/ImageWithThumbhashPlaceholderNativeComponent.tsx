@@ -1,9 +1,9 @@
-// Module ID: 8586
-// Function ID: 68212
+// Module ID: 8630
+// Function ID: 68359
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 8586 (__INTERNAL_VIEW_CONFIG)
+// Module 8630 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDImageWithThumbhashPlaceholderView", validAttributes: { uri: true, placeholder: true, placeholderVersion: true, alt: true } };

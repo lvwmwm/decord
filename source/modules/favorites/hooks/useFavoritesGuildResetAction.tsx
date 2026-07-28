@@ -1,19 +1,19 @@
-// Module ID: 15047
-// Function ID: 114661
+// Module ID: 15090
+// Function ID: 114834
 // Name: useFavoritesGuildResetAction
-// Dependencies: [31, 3804, 10152, 10151, 1212, 2945, 2]
+// Dependencies: [31, 3838, 10194, 10193, 1212, 2945, 2]
 // Exports: default
 
-// Module 15047 (useFavoritesGuildResetAction)
+// Module 15090 (useFavoritesGuildResetAction)
 import result from "result";
 
 const require = arg1;
 const result = require("computeFavoritesAccess").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
 
 export default function useFavoritesGuildResetAction() {
-  const DeveloperMode = require(3804) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = require(3838) /* explicitContentFromProto */.DeveloperMode;
   let hasAccess = DeveloperMode.useSetting();
-  let obj = require(10152) /* computeFavoritesAccess */;
+  let obj = require(10194) /* computeFavoritesAccess */;
   obj = {};
   const callback = React.useCallback(() => {
     outer1_0(outer1_2[3]).resetFavoritesGuild();

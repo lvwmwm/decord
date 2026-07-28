@@ -1,10 +1,10 @@
-// Module ID: 14647
-// Function ID: 111658
+// Module ID: 14691
+// Function ID: 111831
 // Name: toggleDismissibleContentShared
-// Dependencies: [31, 3948, 13060, 1346, 1336, 1331, 21, 566, 3947, 664, 1335, 2]
+// Dependencies: [31, 3982, 13104, 1346, 1336, 1331, 21, 566, 3981, 664, 1335, 2]
 // Exports: default
 
-// Module 14647 (toggleDismissibleContentShared)
+// Module 14691 (toggleDismissibleContentShared)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function toggleDismissibleContentShared(dismissibleContent, arg1, guildId) {
@@ -12,7 +12,7 @@ function toggleDismissibleContentShared(dismissibleContent, arg1, guildId) {
   if (!arg1) {
     tmp = dismissibleContent;
   }
-  const result = require(13060) /* handleDCShownToUser */.overrideDCFLastDCDismissed(tmp, guildId);
+  const result = require(13104) /* handleDCShownToUser */.overrideDCFLastDCDismissed(tmp, guildId);
 }
 require("result").useCallback;
 let result = require("handleDCShownToUser").fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");
@@ -23,7 +23,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuildId());
   obj = { cooldownDurationMs: stateFromStores(664).Millis.WEEK, guildId: stateFromStores };
-  let result = _require(3947).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
+  let result = _require(3981).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
   const dependencyMap = result;
   const items1 = [APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, stateFromStores, result];
   obj = {

@@ -1,9 +1,9 @@
-// Module ID: 12797
-// Function ID: 99567
+// Module ID: 12840
+// Function ID: 99737
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 15, 17, 18, 1194, 653, 4192, 664, 4450, 12798, 4279, 21, 477, 620, 22, 4016, 10497, 4228, 4298, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1194, 653, 4226, 664, 4484, 12841, 4313, 21, 477, 620, 22, 4050, 10535, 4262, 4332, 2]
 
-// Module 12797 (_createForOfIteratorHelperLoose)
+// Module 12840 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -106,7 +106,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getDefaultWants(any) {
-  let obj = require(12798) /* getBrowserInvertedWantsConfig */;
+  let obj = require(12841) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);

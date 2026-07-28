@@ -1,10 +1,10 @@
-// Module ID: 13690
-// Function ID: 105138
+// Module ID: 13734
+// Function ID: 105311
 // Name: getScreens
-// Dependencies: [13687, 33, 13691, 1212, 13698, 5087, 13693, 13703, 13704, 13707, 13708, 2]
+// Dependencies: [13731, 33, 13735, 1212, 13742, 5121, 13737, 13747, 13748, 13751, 13752, 2]
 // Exports: getScreens
 
-// Module 13690 (getScreens)
+// Module 13734 (getScreens)
 import { WebAuthnScreens } from "WebAuthnScreens";
 import { jsx } from "jsxProd";
 
@@ -27,8 +27,8 @@ export const getScreens = function getScreens(isModal) {
   };
   let headerCloseButton;
   if (isModal) {
-    let obj3 = require(5087) /* HeaderBackImage */;
-    headerCloseButton = obj3.getHeaderCloseButton(importDefault(13693).closePasskeyUpsellModal);
+    let obj3 = require(5121) /* HeaderBackImage */;
+    headerCloseButton = obj3.getHeaderCloseButton(importDefault(13737).closePasskeyUpsellModal);
   }
   obj.headerLeft = headerCloseButton;
   obj[WebAuthnScreens.INIT] = obj;
@@ -59,8 +59,8 @@ export const getScreens = function getScreens(isModal) {
   obj3.title = intl4.string(require(1212) /* getSystemLocale */.t["cY/IOu"]);
   let headerCloseButton1;
   if (isModal) {
-    headerCloseButton1 = require(5087) /* HeaderBackImage */.getHeaderCloseButton(importDefault(13693).closePasskeyUpsellModal);
-    const obj8 = require(5087) /* HeaderBackImage */;
+    headerCloseButton1 = require(5121) /* HeaderBackImage */.getHeaderCloseButton(importDefault(13737).closePasskeyUpsellModal);
+    const obj8 = require(5121) /* HeaderBackImage */;
   }
   obj3.headerLeft = headerCloseButton1;
   obj[WebAuthnScreens.NAME] = obj3;

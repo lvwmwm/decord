@@ -1,5 +1,5 @@
 // Module ID: 1815
-// Function ID: 19980
+// Function ID: 19984
 // Name: useEndVisible
 // Dependencies: [31, 1582, 1812]
 // Exports: useEndVisible

@@ -1,9 +1,9 @@
-// Module ID: 6699
-// Function ID: 59162
+// Module ID: 6735
+// Function ID: 59251
 // Name: SafetyHubLinks
 // Dependencies: [7, 6, 653, 480, 2]
 
-// Module 6699 (SafetyHubLinks)
+// Module 6735 (SafetyHubLinks)
 import importDefaultResult from "_defineProperties";
 import _classCallCheck from "_classCallCheck";
 import { AnalyticsSections } from "ME";

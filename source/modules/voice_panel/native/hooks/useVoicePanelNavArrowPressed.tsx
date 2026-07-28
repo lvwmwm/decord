@@ -1,10 +1,10 @@
-// Module ID: 15855
-// Function ID: 122407
+// Module ID: 15894
+// Function ID: 122563
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [31, 9974, 9975, 2]
+// Dependencies: [31, 10014, 10015, 2]
 // Exports: default
 
-// Module 15855 (useVoicePanelNavArrowPressed)
+// Module 15894 (useVoicePanelNavArrowPressed)
 import result from "result";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 

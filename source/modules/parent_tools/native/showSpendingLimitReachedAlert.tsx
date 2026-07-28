@@ -1,27 +1,27 @@
-// Module ID: 6199
-// Function ID: 55607
+// Module ID: 6234
+// Function ID: 55728
 // Name: isSpendingLimitError
-// Dependencies: [4030, 3799, 6200, 4472, 1212, 5817, 4141, 2]
+// Dependencies: [4064, 3833, 6235, 4506, 1212, 5827, 4175, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 6199 (isSpendingLimitError)
+// Module 6234 (isSpendingLimitError)
 const result = require("useUserIdsForLinkStatus").fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
 
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
-  let tmp = billingError instanceof require(4030) /* V6OrEarlierAPIError */.BillingError;
+  let tmp = billingError instanceof require(4064) /* V6OrEarlierAPIError */.BillingError;
   if (tmp) {
-    let tmp4 = billingError.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
+    let tmp4 = billingError.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
     if (!tmp4) {
-      tmp4 = billingError.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+      tmp4 = billingError.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
     }
     tmp = tmp4;
   }
   return tmp;
 };
 export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAlert() {
-  let obj = activeLinkUserIds(6200);
+  let obj = activeLinkUserIds(6235);
   activeLinkUserIds = obj.getActiveLinkUserIds();
-  let obj1 = importDefault(4472);
+  let obj1 = importDefault(4506);
   obj = {};
   const intl = activeLinkUserIds(1212).intl;
   obj.title = intl.string(activeLinkUserIds(1212).t.QJKKrT);

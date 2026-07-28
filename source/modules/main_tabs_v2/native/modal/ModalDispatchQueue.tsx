@@ -1,9 +1,9 @@
-// Module ID: 4341
-// Function ID: 38319
+// Module ID: 4375
+// Function ID: 38433
 // Name: ModalDispatchQueue
 // Dependencies: [6, 7, 2]
 
-// Module 4341 (ModalDispatchQueue)
+// Module 4375 (ModalDispatchQueue)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

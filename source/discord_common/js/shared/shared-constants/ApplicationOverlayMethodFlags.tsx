@@ -1,9 +1,9 @@
-// Module ID: 4160
-// Function ID: 35157
+// Module ID: 4194
+// Function ID: 35259
 // Name: ApplicationOverlayMethodFlags
 // Dependencies: [2]
 
-// Module 4160 (ApplicationOverlayMethodFlags)
+// Module 4194 (ApplicationOverlayMethodFlags)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationOverlayMethodFlags.tsx");
 
 export const ApplicationOverlayMethodFlags = { DEFAULT: 0, [0]: "DEFAULT", OUT_OF_PROCESS: 1, [1]: "OUT_OF_PROCESS" };

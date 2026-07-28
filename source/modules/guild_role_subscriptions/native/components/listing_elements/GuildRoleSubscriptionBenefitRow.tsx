@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 109210
+// Module ID: 14237
+// Function ID: 109383
 // Name: getEmojiId
-// Dependencies: [31, 27, 1348, 33, 4131, 3772, 14191, 1273, 4127, 566, 4321, 1212, 4594, 2]
+// Dependencies: [31, 27, 1348, 33, 4165, 3806, 14235, 1273, 4161, 566, 4355, 1212, 4628, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14193 (getEmojiId)
+// Module 14237 (getEmojiId)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,8 +20,8 @@ function getEmojiId(benefit) {
   } else {
     str = "";
     if (null != benefit.emoji_name) {
-      str = importDefault(3772).convertSurrogateToName(benefit.emoji_name, false);
-      const obj = importDefault(3772);
+      str = importDefault(3806).convertSurrogateToName(benefit.emoji_name, false);
+      const obj = importDefault(3806);
     }
   }
   return str;
@@ -34,13 +34,13 @@ function BenefitRow(description) {
   ({ emojiId, guildId, title } = description);
   const tmp = callback3();
   let obj = { style: tmp.container };
-  const items = [callback(importDefault(14191), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1273) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(14235), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1273) /* Button */.Spacer, { size: 16 }), ];
   obj = { style: tmp.textContainer };
   const items1 = [title, ];
   let tmp6 = null;
   if (null != description) {
     obj = { style: tmp.description, variant: "text-sm/normal", color: "interactive-text-default", children: description };
-    tmp6 = callback(require(4127) /* Text */.Text, obj);
+    tmp6 = callback(require(4161) /* Text */.Text, obj);
   }
   items1[1] = tmp6;
   obj.children = items1;
@@ -62,23 +62,23 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl = benefit(1212).intl;
   obj.children = "[" + intl.string(benefit(1212).t.bz1PZX) + "]";
-  let tmp4 = callback(benefit(4127).Text, obj);
+  let tmp4 = callback(benefit(4161).Text, obj);
   if (null != stateFromStores) {
     obj = { style: tmp.channelTitle };
-    const obj1 = { style: tmp.channelIcon, size: benefit(1273).Icon.Sizes.CUSTOM, source: benefit(4594).getChannelIcon(stateFromStores) };
+    const obj1 = { style: tmp.channelIcon, size: benefit(1273).Icon.Sizes.CUSTOM, source: benefit(4628).getChannelIcon(stateFromStores) };
     const items2 = [callback(benefit(1273).Icon, obj1), ];
     const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp3 };
-    items2[1] = callback(benefit(4127).Text, obj2);
+    items2[1] = callback(benefit(4161).Text, obj2);
     obj.children = items2;
     tmp4 = callback2(View, obj);
-    const obj6 = benefit(4594);
+    const obj6 = benefit(4628);
   }
   const obj3 = { emojiId: getEmojiId(benefit), guildId: benefit.guildId, title: tmp4, description: benefit.description };
   return callback(BenefitRow, obj3);
 };
 export const IntangibleBenefitRow = function IntangibleBenefitRow(benefit) {
   benefit = benefit.benefit;
-  obj = { emojiId: getEmojiId(benefit), guildId: benefit.guildId, title: callback(require(4127) /* Text */.Text, obj), description: benefit.description };
+  obj = { emojiId: getEmojiId(benefit), guildId: benefit.guildId, title: callback(require(4161) /* Text */.Text, obj), description: benefit.description };
   obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: benefit.name };
   return callback(BenefitRow, obj);
 };

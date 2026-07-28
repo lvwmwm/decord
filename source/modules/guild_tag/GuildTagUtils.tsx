@@ -1,10 +1,10 @@
-// Module ID: 7881
-// Function ID: 62834
+// Module ID: 7917
+// Function ID: 62924
 // Name: getUserPrimaryGuild
-// Dependencies: [1918, 1838, 1850, 7665, 653, 566, 3765, 2]
+// Dependencies: [1918, 1838, 1850, 7701, 653, 566, 3799, 2]
 // Exports: getGuildTagBadgeUrl, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 7881 (getUserPrimaryGuild)
+// Module 7917 (getUserPrimaryGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";
@@ -135,8 +135,8 @@ export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id, merged) 
   if (tmp7) {
     let result = null != merged && null != id;
     if (result) {
-      result = require(3765) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
-      const obj = require(3765) /* getAutomodQuarantinedProfileFlags */;
+      result = require(3799) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
+      const obj = require(3799) /* getAutomodQuarantinedProfileFlags */;
     }
     tmp7 = !result;
   }

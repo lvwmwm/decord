@@ -1,10 +1,10 @@
-// Module ID: 16446
-// Function ID: 128309
+// Module ID: 16486
+// Function ID: 128470
 // Name: ApplicationStatusNotice
-// Dependencies: [57, 31, 27, 14156, 653, 16447, 33, 4131, 689, 11321, 1212, 16448, 4127, 16449, 1456, 4099, 16451, 1935, 16451, 7575, 4544, 1273, 4545, 8284, 16459, 16463, 16472, 16475, 16480, 16481, 1457, 8364, 480, 5084, 16445, 3831, 5121, 5085, 16482, 2]
+// Dependencies: [57, 31, 27, 14200, 653, 16487, 33, 4165, 689, 11359, 1212, 16488, 4161, 16489, 1456, 4133, 16491, 1935, 16491, 7611, 4578, 1273, 4579, 8322, 16499, 16503, 16512, 16515, 16520, 16521, 1457, 8402, 480, 5118, 16485, 3865, 5155, 5119, 16522, 2]
 // Exports: default
 
-// Module 16446 (ApplicationStatusNotice)
+// Module 16486 (ApplicationStatusNotice)
 import _slicedToArray from "_slicedToArray";
 import trackImpression from "trackImpression";
 import get_ActivityIndicator from "useOnboardingMonetizationEnableFlow";
@@ -36,7 +36,7 @@ function ApplicationStatusNotice(arg0) {
     const items = [tmp.statusNoticeContainer, style];
     obj.style = items;
     obj = { children: resubmissionError.getAnyErrorMessage() };
-    obj.children = callback(importDefault(11321), obj);
+    obj.children = callback(importDefault(11359), obj);
     return callback(closure_6, obj);
   } else {
     if (isApplicationPending) {
@@ -56,7 +56,7 @@ function ApplicationStatusNotice(arg0) {
       const items1 = [tmp.statusNoticeContainer, style];
       obj.style = items1;
       const obj1 = { notice: requestRejectedNoticeText, ctaLabel: stringResult, onClick: createEnableRequest, submitting: resubmittingEnableRequest };
-      obj.children = callback(importDefault(16448), obj1);
+      obj.children = callback(importDefault(16488), obj1);
       tmp7 = callback(closure_6, obj);
     }
     return tmp7;

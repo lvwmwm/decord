@@ -1,10 +1,10 @@
-// Module ID: 15256
-// Function ID: 116124
+// Module ID: 15296
+// Function ID: 116283
 // Name: customScoreToIndex
-// Dependencies: [57, 31, 27, 4326, 8108, 33, 4131, 689, 8122, 1212, 1273, 15257, 15258, 15259, 8162, 8687, 566, 15260, 4127, 5502, 4321, 2]
+// Dependencies: [57, 31, 27, 4360, 8146, 33, 4165, 689, 8160, 1212, 1273, 15297, 15298, 15299, 8200, 8731, 566, 15300, 4161, 5537, 4355, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 15256 (customScoreToIndex)
+// Module 15296 (customScoreToIndex)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -17,9 +17,9 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function customScoreToIndex(first) {
-  if (require(8122) /* generateHydrationId */.ICYMICustomScore.LESS === first) {
+  if (require(8160) /* generateHydrationId */.ICYMICustomScore.LESS === first) {
     return 0;
-  } else if (require(8122) /* generateHydrationId */.ICYMICustomScore.MORE === first) {
+  } else if (require(8160) /* generateHydrationId */.ICYMICustomScore.MORE === first) {
     return 2;
   } else {
     return 1;
@@ -37,10 +37,10 @@ function ContentSettingsControl(initialValue) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.rdt65I);
   obj.id = "-1";
-  obj = { source: importDefault(15257) };
+  obj = { source: importDefault(15297) };
   const items = [tmp.icon, ];
   let iconSelected = null;
-  if (first === require(8122) /* generateHydrationId */.ICYMICustomScore.LESS) {
+  if (first === require(8160) /* generateHydrationId */.ICYMICustomScore.LESS) {
     iconSelected = tmp.iconSelected;
   }
   items[1] = iconSelected;
@@ -52,10 +52,10 @@ function ContentSettingsControl(initialValue) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl2.string(require(1212) /* getSystemLocale */.t.SnrG00);
   obj.id = "0";
-  const obj1 = { source: importDefault(15258) };
+  const obj1 = { source: importDefault(15298) };
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
-  if (first === require(8122) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
+  if (first === require(8160) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
     iconSelected1 = tmp.iconSelected;
   }
   items2[1] = iconSelected1;
@@ -67,10 +67,10 @@ function ContentSettingsControl(initialValue) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.Rxe3jF);
   obj2.id = "1";
-  const obj3 = { source: importDefault(15259) };
+  const obj3 = { source: importDefault(15299) };
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
-  if (first === require(8122) /* generateHydrationId */.ICYMICustomScore.MORE) {
+  if (first === require(8160) /* generateHydrationId */.ICYMICustomScore.MORE) {
     iconSelected2 = tmp.iconSelected;
   }
   items3[1] = iconSelected2;
@@ -78,7 +78,7 @@ function ContentSettingsControl(initialValue) {
   obj2.icon = callback2(require(1273) /* Button */.Icon, obj3);
   obj2.page = null;
   items1[2] = obj2;
-  let obj6 = require(8162) /* useSegmentedControlState */;
+  let obj6 = require(8200) /* useSegmentedControlState */;
   const obj5 = {};
   let tmp13 = null;
   const segmentedControlState = obj6.useSegmentedControlState({
@@ -106,7 +106,7 @@ function ContentSettingsControl(initialValue) {
     str = "none";
   }
   obj5.pointerEvents = str;
-  obj5.children = callback2(require(8687) /* SegmentedControl */.SegmentedControl, { variant: "experimental_Large", state: segmentedControlState });
+  obj5.children = callback2(require(8731) /* SegmentedControl */.SegmentedControl, { variant: "experimental_Large", state: segmentedControlState });
   return callback2(View, obj5);
 }
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -130,10 +130,10 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   let obj = id(566);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCustomGuildScore(id));
-  let obj1 = id(8122);
+  let obj1 = id(8160);
   const numberToCustomScoreResult = obj1.numberToCustomScore(stateFromStores);
   const importDefault = numberToCustomScoreResult;
-  const tmp3 = numberToCustomScoreResult === id(8122).ICYMICustomScore.MUTED;
+  const tmp3 = numberToCustomScoreResult === id(8160).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = React.useCallback((arg0) => {
@@ -162,11 +162,11 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   obj = { variant: "text-sm/semibold", color: "text-default" };
   const intl = id(1212).intl;
   obj.children = intl.string(id(1212).t.Clq6km);
-  const items3 = [callback2(id(4127).Text, obj), , , , ];
+  const items3 = [callback2(id(4161).Text, obj), , , , ];
   obj1 = { variant: "text-xs/normal", color: "text-default" };
   const intl2 = id(1212).intl;
   obj1.children = intl2.format(id(1212).t["0DhU2P"], { guildName: guild.name });
-  items3[1] = callback2(id(4127).Text, obj1);
+  items3[1] = callback2(id(4161).Text, obj1);
   let tmp9 = null;
   if (!tmp3) {
     let obj3 = { style: tmp6.customScoreWrapper };
@@ -186,12 +186,12 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   obj6.label = intl3.string(id(1212).t.oujX73);
   obj6.start = true;
   obj6.end = true;
-  obj5.children = callback2(id(5502).TableSwitchRow, obj6);
+  obj5.children = callback2(id(5537).TableSwitchRow, obj6);
   items3[3] = callback2(View, obj5);
   const obj7 = { variant: "text-xs/normal", color: "text-muted", style: tmp6.warningText };
   const intl4 = id(1212).intl;
   obj7.children = intl4.string(id(1212).t.vRVs07);
-  items3[4] = callback2(id(4127).Text, obj7);
+  items3[4] = callback2(id(4161).Text, obj7);
   obj.children = items3;
   return closure_9(View, obj);
 };

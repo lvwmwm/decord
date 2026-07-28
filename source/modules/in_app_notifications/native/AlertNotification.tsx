@@ -1,10 +1,10 @@
-// Module ID: 10299
-// Function ID: 79631
+// Module ID: 10339
+// Function ID: 79760
 // Name: AlertNotification
-// Dependencies: [31, 27, 33, 5513, 7909, 689, 4131, 10203, 1212, 4139, 10273, 7570, 10218, 2]
+// Dependencies: [31, 27, 33, 5548, 7945, 689, 4165, 10243, 1212, 4173, 10313, 7606, 10258, 2]
 // Exports: default
 
-// Module 10299 (AlertNotification)
+// Module 10339 (AlertNotification)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ export default function AlertNotification(notification) {
   const channel = notification.channel;
   const guild = notification.guild;
   const tmp = callback3();
-  let obj = channel(10203);
+  let obj = channel(10243);
   const incidentData = obj.useGuildIncidentsState(notification.key).incidentData;
   let raidDetectedAt;
   if (null != incidentData) {
@@ -57,18 +57,18 @@ export default function AlertNotification(notification) {
   obj = {};
   const obj1 = { cutouts: items2 };
   items2 = [obj];
-  obj1.children = callback(guild(5513), { guild, selected: false });
-  const items3 = [callback(guild(7909), obj1), ];
+  obj1.children = callback(guild(5548), { guild, selected: false });
+  const items3 = [callback(guild(7945), obj1), ];
   const obj2 = { style: tmp.warningBadge };
   const obj3 = { style: tmp.warningIcon, color: guild(689).colors.ICON_FEEDBACK_WARNING };
-  obj2.children = callback(channel(7570).WarningIcon, obj3);
+  obj2.children = callback(channel(7606).WarningIcon, obj3);
   items3[1] = callback(View, obj2);
   obj.children = items3;
   obj.icon = callback2(closure_6, obj);
   obj.header = memo;
   const obj4 = { text: stringResult };
-  obj.children = callback(channel(10218).SystemMessageText, obj4);
+  obj.children = callback(channel(10258).SystemMessageText, obj4);
   obj.onPress = callback;
   obj.notification = notification;
-  return callback(channel(10273).NotificationPressable, obj);
+  return callback(channel(10313).NotificationPressable, obj);
 };

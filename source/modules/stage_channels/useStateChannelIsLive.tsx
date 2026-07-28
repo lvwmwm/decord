@@ -1,10 +1,10 @@
-// Module ID: 6656
-// Function ID: 58884
+// Module ID: 6692
+// Function ID: 58973
 // Name: useStageChannelIsLive
 // Dependencies: [1353, 566, 2]
 // Exports: default
 
-// Module 6656 (useStageChannelIsLive)
+// Module 6692 (useStageChannelIsLive)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

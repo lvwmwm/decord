@@ -1,10 +1,10 @@
-// Module ID: 11759
-// Function ID: 91335
+// Module ID: 11798
+// Function ID: 91486
 // Name: InviteErrorBase
-// Dependencies: [31, 27, 653, 33, 4131, 689, 3977, 4067, 11760, 11761, 11762, 1212, 4127, 4544, 1392, 1273, 11763, 5513, 1921, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 4011, 4101, 11799, 11800, 11801, 1212, 4161, 4578, 1392, 1273, 11802, 5548, 1921, 2]
 // Exports: default
 
-// Module 11759 (InviteErrorBase)
+// Module 11798 (InviteErrorBase)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -25,13 +25,13 @@ function InviteErrorBase(invite) {
   let require;
   ({ onPressClose: require, inviteError } = invite);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3977) /* AccessibilityAnnouncer */;
-  if (obj.isThemeDark(importDefault(4067)())) {
-    let tmp4 = 11760;
+  let obj = require(4011) /* AccessibilityAnnouncer */;
+  if (obj.isThemeDark(importDefault(4101)())) {
+    let tmp4 = 11799;
   } else {
-    tmp4 = 11761;
+    tmp4 = 11800;
   }
-  let obj1 = require(11762) /* getDescriptiveInviteError */;
+  let obj1 = require(11801) /* getDescriptiveInviteError */;
   let code;
   if (null != inviteError) {
     code = inviteError.code;
@@ -63,16 +63,16 @@ function InviteErrorBase(invite) {
     title = intl3.string(require(1212) /* getSystemLocale */.t.u9zxnX);
   }
   obj1.children = title;
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  items[2] = callback(require(4127) /* Text */.Text, obj2);
+  items[2] = callback(require(4161) /* Text */.Text, obj2);
   const obj3 = { variant: "primary", size: "lg" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl4.string(require(1212) /* getSystemLocale */.t.wcqOoF);
   obj3.onPress = function handlePressClose() {
     callback();
   };
-  items[3] = callback(require(4544) /* Button */.Button, obj3);
+  items[3] = callback(require(4578) /* Button */.Button, obj3);
   obj.children = items;
   return closure_10(closure_9, obj);
 }
@@ -91,30 +91,30 @@ function InviteDisabledError(onPressClose) {
     obj = {};
     const obj1 = { style: tmp.disabledView };
     const guildIconURL = obj.getGuildIconURL(obj);
-    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11763) };
+    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11802) };
     const items = [callback(onPressClose(1273).Icon, obj2), ];
-    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5513).GuildIconSizes.XLARGE };
-    items[1] = callback(importDefault(5513), obj3);
+    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5548).GuildIconSizes.XLARGE };
+    items[1] = callback(importDefault(5548), obj3);
     obj1.children = items;
     const items1 = [callback2(closure_4, obj1), , , ];
     const obj4 = { style: tmp.disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical" };
     const intl = onPressClose(1212).intl;
     obj4.children = intl.string(onPressClose(1212).t.jlLX2Z);
-    items1[1] = callback(onPressClose(4127).Text, obj4);
+    items1[1] = callback(onPressClose(4161).Text, obj4);
     const obj5 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default" };
     const intl2 = onPressClose(1212).intl;
     const obj6 = {};
-    const tmp11 = importDefault(5513);
+    const tmp11 = importDefault(5548);
     obj6.articleLink = importDefault(1921).getArticleURL(constants2.INVITE_DISABLED);
     obj5.children = intl2.format(onPressClose(1212).t.RXSeLl, obj6);
-    items1[2] = callback(onPressClose(4127).Text, obj5);
+    items1[2] = callback(onPressClose(4161).Text, obj5);
     const obj7 = { variant: "primary", size: "lg" };
     const intl3 = onPressClose(1212).intl;
     obj7.text = intl3.string(onPressClose(1212).t["yD/zkn"]);
     obj7.onPress = function handlePressClose() {
       onPressClose();
     };
-    items1[3] = callback(onPressClose(4544).Button, obj7);
+    items1[3] = callback(onPressClose(4578).Button, obj7);
     obj.children = items1;
     return callback2(closure_9, obj);
   }

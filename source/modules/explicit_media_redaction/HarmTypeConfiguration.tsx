@@ -1,9 +1,9 @@
-// Module ID: 5850
-// Function ID: 51648
+// Module ID: 5860
+// Function ID: 51504
 // Name: ContentHarmType
-// Dependencies: [653, 5851, 4359, 5852, 3804, 5853, 5855, 1282, 2]
+// Dependencies: [653, 5861, 4393, 5862, 3838, 5863, 5865, 1282, 2]
 
-// Module 5850 (ContentHarmType)
+// Module 5860 (ContentHarmType)
 import ME from "ME";
 
 let MessageAttachmentFlags;
@@ -33,71 +33,71 @@ obj[obj.EXPLICIT] = {
     if (null != prop) {
       prop1 = prop.explicitContentGuilds;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
     let prop2;
     if (null != prop) {
       prop2 = prop.explicitContentFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
     let prop3;
     if (null != prop) {
       prop3 = prop.explicitContentNonFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
     return obj;
   },
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (null == arg0) {
       let obj = {};
-      const ExplicitContentSettings3 = require(3804) /* explicitContentFromProto */.ExplicitContentSettings;
+      const ExplicitContentSettings3 = require(3838) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting = ExplicitContentSettings3.getSetting();
       let prop;
       if (null != setting) {
         prop = setting.explicitContentGuilds;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop;
-      const ExplicitContentSettings = require(3804) /* explicitContentFromProto */.ExplicitContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop;
+      const ExplicitContentSettings = require(3838) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting1 = ExplicitContentSettings.getSetting();
       let prop1;
       if (null != setting1) {
         prop1 = setting1.explicitContentFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop1;
-      const ExplicitContentSettings2 = require(3804) /* explicitContentFromProto */.ExplicitContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop1;
+      const ExplicitContentSettings2 = require(3838) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting2 = ExplicitContentSettings2.getSetting();
       let prop2;
       if (null != setting2) {
         prop2 = setting2.explicitContentNonFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop2;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop2;
       tmp = obj;
     }
     obj = {};
-    let obj1 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+    let obj1 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
     obj = {};
     let tmp11;
     if (null != tmp) {
-      tmp11 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
+      tmp11 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
     }
     obj.setting = tmp11;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
     obj1 = { setting: null, isDm: true, isFriend: true };
     let tmp14;
     if (null != tmp) {
-      tmp14 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
+      tmp14 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
     }
     obj1.setting = tmp14;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5853) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
-    const obj4 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
+    const obj4 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
     const obj2 = {};
     let tmp17;
     if (null != tmp) {
-      tmp17 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp17 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj2.setting = tmp17;
     obj2.isDm = true;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5853) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
     return obj;
   }
 };
@@ -122,71 +122,71 @@ let obj1 = {
     if (null != prop) {
       prop1 = prop.explicitContentGuilds;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
     let prop2;
     if (null != prop) {
       prop2 = prop.explicitContentFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
     let prop3;
     if (null != prop) {
       prop3 = prop.explicitContentNonFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
     return obj;
   },
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (null == arg0) {
       let obj = {};
-      const ExplicitContentSettings3 = require(3804) /* explicitContentFromProto */.ExplicitContentSettings;
+      const ExplicitContentSettings3 = require(3838) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting = ExplicitContentSettings3.getSetting();
       let prop;
       if (null != setting) {
         prop = setting.explicitContentGuilds;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop;
-      const ExplicitContentSettings = require(3804) /* explicitContentFromProto */.ExplicitContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop;
+      const ExplicitContentSettings = require(3838) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting1 = ExplicitContentSettings.getSetting();
       let prop1;
       if (null != setting1) {
         prop1 = setting1.explicitContentFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop1;
-      const ExplicitContentSettings2 = require(3804) /* explicitContentFromProto */.ExplicitContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop1;
+      const ExplicitContentSettings2 = require(3838) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting2 = ExplicitContentSettings2.getSetting();
       let prop2;
       if (null != setting2) {
         prop2 = setting2.explicitContentNonFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop2;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop2;
       tmp = obj;
     }
     obj = {};
-    let obj1 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+    let obj1 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
     obj = {};
     let tmp11;
     if (null != tmp) {
-      tmp11 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
+      tmp11 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
     }
     obj.setting = tmp11;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
     obj1 = { setting: null, isDm: true, isFriend: true };
     let tmp14;
     if (null != tmp) {
-      tmp14 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
+      tmp14 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
     }
     obj1.setting = tmp14;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5853) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
-    const obj4 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
+    const obj4 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
     const obj2 = {};
     let tmp17;
     if (null != tmp) {
-      tmp17 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp17 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj2.setting = tmp17;
     obj2.isDm = true;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5853) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
     return obj;
   }
 };
@@ -211,71 +211,71 @@ obj[obj.GORE] = {
     if (null != goreContentSettings) {
       goreContentGuilds = goreContentSettings.goreContentGuilds;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
     let goreContentFriendDm;
     if (null != goreContentSettings) {
       goreContentFriendDm = goreContentSettings.goreContentFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
     let prop;
     if (null != goreContentSettings) {
       prop = goreContentSettings.goreContentNonFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
     return obj;
   },
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (null == arg0) {
       let obj = {};
-      const GoreContentSettings3 = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+      const GoreContentSettings3 = require(3838) /* explicitContentFromProto */.GoreContentSettings;
       const setting = GoreContentSettings3.getSetting();
       let goreContentGuilds;
       if (null != setting) {
         goreContentGuilds = setting.goreContentGuilds;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
-      const GoreContentSettings = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
+      const GoreContentSettings = require(3838) /* explicitContentFromProto */.GoreContentSettings;
       const setting1 = GoreContentSettings.getSetting();
       let goreContentFriendDm;
       if (null != setting1) {
         goreContentFriendDm = setting1.goreContentFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
-      const GoreContentSettings2 = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
+      const GoreContentSettings2 = require(3838) /* explicitContentFromProto */.GoreContentSettings;
       const setting2 = GoreContentSettings2.getSetting();
       let prop;
       if (null != setting2) {
         prop = setting2.goreContentNonFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
       tmp = obj;
     }
     obj = {};
-    let obj1 = require(5855) /* resolveGoreSettingWithDefaults */;
+    let obj1 = require(5865) /* resolveGoreSettingWithDefaults */;
     obj = {};
     let tmp11;
     if (null != tmp) {
-      tmp11 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
+      tmp11 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
     }
     obj.setting = tmp11;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
     obj1 = { setting: null, isDm: true, isFriend: true };
     let tmp14;
     if (null != tmp) {
-      tmp14 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
+      tmp14 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
     }
     obj1.setting = tmp14;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
-    const obj4 = require(5855) /* resolveGoreSettingWithDefaults */;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
+    const obj4 = require(5865) /* resolveGoreSettingWithDefaults */;
     const obj2 = {};
     let tmp17;
     if (null != tmp) {
-      tmp17 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp17 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj2.setting = tmp17;
     obj2.isDm = true;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
     return obj;
   }
 };
@@ -300,71 +300,71 @@ let obj2 = {
     if (null != goreContentSettings) {
       goreContentGuilds = goreContentSettings.goreContentGuilds;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
     let goreContentFriendDm;
     if (null != goreContentSettings) {
       goreContentFriendDm = goreContentSettings.goreContentFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
     let prop;
     if (null != goreContentSettings) {
       prop = goreContentSettings.goreContentNonFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
     return obj;
   },
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (null == arg0) {
       let obj = {};
-      const GoreContentSettings3 = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+      const GoreContentSettings3 = require(3838) /* explicitContentFromProto */.GoreContentSettings;
       const setting = GoreContentSettings3.getSetting();
       let goreContentGuilds;
       if (null != setting) {
         goreContentGuilds = setting.goreContentGuilds;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
-      const GoreContentSettings = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
+      const GoreContentSettings = require(3838) /* explicitContentFromProto */.GoreContentSettings;
       const setting1 = GoreContentSettings.getSetting();
       let goreContentFriendDm;
       if (null != setting1) {
         goreContentFriendDm = setting1.goreContentFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
-      const GoreContentSettings2 = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
+      const GoreContentSettings2 = require(3838) /* explicitContentFromProto */.GoreContentSettings;
       const setting2 = GoreContentSettings2.getSetting();
       let prop;
       if (null != setting2) {
         prop = setting2.goreContentNonFriendDm;
       }
-      obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
+      obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop;
       tmp = obj;
     }
     obj = {};
-    let obj1 = require(5855) /* resolveGoreSettingWithDefaults */;
+    let obj1 = require(5865) /* resolveGoreSettingWithDefaults */;
     obj = {};
     let tmp11;
     if (null != tmp) {
-      tmp11 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
+      tmp11 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD];
     }
     obj.setting = tmp11;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
     obj1 = { setting: null, isDm: true, isFriend: true };
     let tmp14;
     if (null != tmp) {
-      tmp14 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
+      tmp14 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM];
     }
     obj1.setting = tmp14;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
-    const obj4 = require(5855) /* resolveGoreSettingWithDefaults */;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
+    const obj4 = require(5865) /* resolveGoreSettingWithDefaults */;
     const obj2 = {};
     let tmp17;
     if (null != tmp) {
-      tmp17 = tmp[require(undefined, 5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp17 = tmp[require(undefined, 5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj2.setting = tmp17;
     obj2.isDm = true;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
     return obj;
   }
 };
@@ -389,24 +389,24 @@ obj[obj.SELF_HARM] = {
     if (null != prop) {
       prop1 = prop.selfHarmContentGuilds;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
     let prop2;
     if (null != prop) {
       prop2 = prop.selfHarmContentFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
     let prop3;
     if (null != prop) {
       prop3 = prop.selfHarmContentNonFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
     return obj;
   },
   getUserSettingsWithDefaults() {
     const obj = {};
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
     return obj;
   }
 };
@@ -431,24 +431,24 @@ const obj3 = {
     if (null != prop) {
       prop1 = prop.selfHarmContentGuilds;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop1;
     let prop2;
     if (null != prop) {
       prop2 = prop.selfHarmContentFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop2;
     let prop3;
     if (null != prop) {
       prop3 = prop.selfHarmContentNonFriendDm;
     }
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = prop3;
     return obj;
   },
   getUserSettingsWithDefaults() {
     const obj = {};
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
-    obj[require(5852) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    obj[require(5862) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.NON_FRIEND_DM] = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
     return obj;
   }
 };

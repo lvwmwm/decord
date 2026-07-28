@@ -1,8 +1,8 @@
-// Module ID: 10785
-// Function ID: 83693
-// Dependencies: [31, 27, 4144, 4149, 33, 4131, 689, 10776, 1450, 4664, 566, 10786, 1273, 2]
+// Module ID: 10823
+// Function ID: 83814
+// Dependencies: [31, 27, 4178, 4183, 33, 4165, 689, 10814, 1450, 4698, 566, 10824, 1273, 2]
 
-// Module 10785
+// Module 10823
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ParticipantTypes } from "ParticipantTypes";
@@ -20,10 +20,10 @@ const memoResult = require("result").memo((channel) => {
   const participant = channel.participant;
   const size = channel.size;
   const tmp = callback();
-  let obj = channel(10776);
+  let obj = channel(10814);
   const speakerTileStyles = obj.useSpeakerTileStyles();
-  const isScreenLandscape = channel(4664).useIsScreenLandscape();
-  const obj2 = channel(4664);
+  const isScreenLandscape = channel(4698).useIsScreenLandscape();
+  const obj2 = channel(4698);
   const items = [_isNativeReflectConstruct];
   const items1 = [channel.id, participant.id];
   const stateFromStores = channel(566).useStateFromStores(items, () => outer1_4.getParticipant(channel.id, participant.id), items1);
@@ -32,19 +32,19 @@ const memoResult = require("result").memo((channel) => {
     tmp5 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       obj = {};
-      const items2 = [tmp.container, channel(10776).getSizeStyle(size, speakerTileStyles), ];
-      const obj5 = channel(10776);
-      items2[2] = channel(10776).getTileWidthStyle(size, participant(1450)().width, isScreenLandscape);
+      const items2 = [tmp.container, channel(10814).getSizeStyle(size, speakerTileStyles), ];
+      const obj5 = channel(10814);
+      items2[2] = channel(10814).getTileWidthStyle(size, participant(1450)().width, isScreenLandscape);
       obj.style = items2;
       obj = { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores };
-      const obj6 = channel(10776);
+      const obj6 = channel(10814);
       obj.avatarSize = channel(1273).AvatarSizes.XLARGE;
       obj.channel = channel;
       obj.shrinkStreamEmptyState = false;
       obj.contentStyle = tmp.media;
-      obj.children = jsx(participant(10786), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores });
+      obj.children = jsx(participant(10824), { hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores });
       tmp5 = <View hasBottomSafeArea={false} hasLeftSafeArea={false} hasRightSafeArea={false} hasTopSafeArea={false} participant={stateFromStores} />;
-      const tmp12 = participant(10786);
+      const tmp12 = participant(10824);
     }
   }
   return tmp5;

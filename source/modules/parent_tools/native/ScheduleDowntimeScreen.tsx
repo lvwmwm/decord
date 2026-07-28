@@ -1,10 +1,10 @@
-// Module ID: 13900
-// Function ID: 106403
+// Module ID: 13944
+// Function ID: 106576
 // Name: openTimePicker
-// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4099, 8191, 1935, 4131, 689, 1273, 4542, 4127, 1212, 2199, 1456, 6273, 10186, 624, 13901, 13902, 4090, 5501, 5502, 5164, 5121, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4133, 8229, 1935, 4165, 689, 1273, 4576, 4161, 1212, 2199, 1456, 6309, 10226, 624, 13945, 13946, 4124, 5536, 5537, 5198, 5155, 4578, 2]
 // Exports: default
 
-// Module 13900 (openTimePicker)
+// Module 13944 (openTimePicker)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -22,9 +22,9 @@ let closure_8;
 let require = arg1;
 function openTimePicker(arg0, title, hours) {
   const _require = arg3;
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = { title, mode: "time" };
-  const tmp = _require(1935)(8191, dependencyMap.paths);
+  const tmp = _require(1935)(8229, dependencyMap.paths);
   obj.startDate = new Date(2025, 0, 1, hours.hours, hours.minutes, 0, 0);
   obj.onSubmit = function onSubmit(hours) {
     return callback({ hours: hours.hours(), minutes: hours.minutes() });
@@ -40,7 +40,7 @@ function OverlappingSchedulesWarning(conflictingEntries) {
     obj = { variant: "text-sm/medium" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(importDefault(2199)["26A0Df"]);
-    const items = [callback2(require(4127) /* Text */.Text, obj), ];
+    const items = [callback2(require(4161) /* Text */.Text, obj), ];
     const obj1 = {
       spacing: 4,
       children: conflictingEntries.map((dayLabel) => {
@@ -49,9 +49,9 @@ function OverlappingSchedulesWarning(conflictingEntries) {
           return outer1_11(outer1_0(outer1_2[14]).Text, obj, dayLabel);
         })
     };
-    items[1] = callback2(require(4542) /* Stack */.Stack, obj1);
+    items[1] = callback2(require(4576) /* Stack */.Stack, obj1);
     obj.children = items;
-    obj.children = callback3(require(4542) /* Stack */.Stack, obj);
+    obj.children = callback3(require(4576) /* Stack */.Stack, obj);
     tmp = callback2(require(1273) /* Button */.HelpMessage, obj);
   }
   return tmp;

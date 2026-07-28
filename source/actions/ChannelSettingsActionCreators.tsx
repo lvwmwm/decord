@@ -1,10 +1,10 @@
-// Module ID: 7627
-// Function ID: 61001
+// Module ID: 7663
+// Function ID: 61091
 // Name: init
-// Dependencies: [5, 7628, 1348, 653, 686, 3983, 6024, 507, 7629, 2]
+// Dependencies: [5, 7664, 1348, 653, 686, 4017, 6058, 507, 7665, 2]
 // Exports: deleteChannel, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 7627 (init)
+// Module 7663 (init)
 import getRootNavigationRef from "getRootNavigationRef";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function init(channelId, location, subsection) {
   obj.dispatch(obj);
 }
 function open(channelId) {
-  let obj = require(3983) /* getRootNavigationRef */;
+  let obj = require(4017) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {

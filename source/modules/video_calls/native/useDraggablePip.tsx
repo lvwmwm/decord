@@ -1,10 +1,10 @@
-// Module ID: 10464
-// Function ID: 81198
+// Module ID: 10502
+// Function ID: 81319
 // Name: clamp
-// Dependencies: [57, 10174, 10446, 3992, 4132, 1273, 9379, 5217, 4543, 2]
+// Dependencies: [57, 10214, 10484, 4026, 4166, 1273, 9423, 5251, 4577, 2]
 // Exports: useDraggablePip
 
-// Module 10464 (clamp)
+// Module 10502 (clamp)
 import _slicedToArray from "_slicedToArray";
 import { useChannelCallStore } from "resetFocusTimer";
 import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET";

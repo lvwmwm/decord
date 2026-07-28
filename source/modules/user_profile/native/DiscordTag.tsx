@@ -1,10 +1,10 @@
-// Module ID: 9386
-// Function ID: 73199
+// Module ID: 9430
+// Function ID: 73350
 // Name: DiscordTag
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 8328, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 8366, 2]
 // Exports: default
 
-// Module 9386 (DiscordTag)
+// Module 9430 (DiscordTag)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function DiscordTag(arg0) {
   let obj = { style: tmp.container };
   if (null != nick) {
     obj = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: nicknameStyle, lineClamp: 1, children: nick };
-    let tmp4Result = callback(require(4127) /* Text */.Text, obj);
+    let tmp4Result = callback(require(4161) /* Text */.Text, obj);
   } else {
     tmp4Result = null;
     if (null != user) {
@@ -47,11 +47,11 @@ export default function DiscordTag(arg0) {
         const obj1 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle };
         const items1 = ["#", user.discriminator];
         obj1.children = items1;
-        tmp7 = callback2(require(4127) /* Text */.Text, obj1);
+        tmp7 = callback2(require(4161) /* Text */.Text, obj1);
       }
       items[1] = tmp7;
       obj.children = items;
-      tmp4Result = callback2(require(4127) /* Text */.Text, obj);
+      tmp4Result = callback2(require(4161) /* Text */.Text, obj);
       const tmp4 = callback2;
     }
   }
@@ -65,8 +65,8 @@ export default function DiscordTag(arg0) {
     tmp16 = null;
     if (!hideBotTag) {
       const obj2 = { style: tmp.botTag, verified: user.isVerifiedBot() };
-      tmp16 = callback(importDefault(8328), obj2);
-      const tmp20 = importDefault(8328);
+      tmp16 = callback(importDefault(8366), obj2);
+      const tmp20 = importDefault(8366);
     }
   }
   items2[1] = tmp16;

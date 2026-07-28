@@ -1,10 +1,10 @@
-// Module ID: 11173
-// Function ID: 86856
+// Module ID: 11211
+// Function ID: 86975
 // Name: BannerBase
-// Dependencies: [57, 31, 27, 4123, 33, 689, 4131, 11162, 3992, 1450, 3975, 566, 4543, 4555, 5453, 11174, 4127, 2]
+// Dependencies: [57, 31, 27, 4157, 33, 689, 4165, 11200, 4026, 1450, 4009, 566, 4577, 4589, 5488, 11212, 4161, 2]
 // Exports: default
 
-// Module 11173 (BannerBase)
+// Module 11211 (BannerBase)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -42,18 +42,18 @@ export default function BannerBase(arg0) {
   const tmp2 = callback(React.useState(0), 2);
   const first = tmp2[0];
   const _require = tmp2[1];
-  let obj = _require(3992);
+  let obj = _require(4026);
   const sharedValue = obj.useSharedValue(false);
   const diff = sharedValue(1450)().width - 2 * sharedValue(689).space.PX_16;
   const backgroundColor = tmp.bannerGradientColor.backgroundColor;
-  let obj1 = _require(3975);
+  let obj1 = _require(4009);
   let items = [obj1.hexOpacityToRgba(backgroundColor, 0.2), ];
-  let obj2 = _require(3975);
+  let obj2 = _require(4009);
   items[1] = obj2.hexOpacityToRgba(backgroundColor, 0);
   let obj3 = _require(566);
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj3.useStateFromStores(items1, () => outer1_6.useReducedMotion);
-  let obj4 = _require(3992);
+  let obj4 = _require(4026);
   const fn = function _() {
     let obj = {};
     let num = 0;
@@ -75,7 +75,7 @@ export default function BannerBase(arg0) {
     obj.transform = items;
     return obj;
   };
-  obj = { bannerMeasured: sharedValue, withDelay: _require(3992).withDelay, withSpring: _require(4543).withSpring, SPRING_CONFIG: closure_9 };
+  obj = { bannerMeasured: sharedValue, withDelay: _require(4026).withDelay, withSpring: _require(4577).withSpring, SPRING_CONFIG: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 5314641176204;
   fn.__initData = closure_11;
@@ -103,15 +103,15 @@ export default function BannerBase(arg0) {
     }
   };
   const items3 = [tmp.bannerBackgroundGradient, { height: first, width: diff }];
-  const items4 = [callback2(sharedValue(4555), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 }), , ];
+  const items4 = [callback2(sharedValue(4589), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 }), , ];
   obj2 = { style: tmp.imageContainer };
-  obj3 = { style: tmp.trinketsLottie, source: _require(11174), autoPlay: !stateFromStores };
-  const items5 = [callback2(sharedValue(5453), obj3), image];
+  obj3 = { style: tmp.trinketsLottie, source: _require(11212), autoPlay: !stateFromStores };
+  const items5 = [callback2(sharedValue(5488), obj3), image];
   obj2.children = items5;
   items4[1] = callback3(View, obj2);
-  obj4 = { style: tmp.bannerTextContainer, children: callback2(_require(4127).Text, obj5) };
+  obj4 = { style: tmp.bannerTextContainer, children: callback2(_require(4161).Text, obj5) };
   obj5 = { variant: "text-md/semibold", color: "text-overlay-light", style: tmp.bannerText, children: text };
   items4[2] = callback2(View, obj4);
   obj.children = items4;
-  return callback3(sharedValue(3992).View, obj);
+  return callback3(sharedValue(4026).View, obj);
 };

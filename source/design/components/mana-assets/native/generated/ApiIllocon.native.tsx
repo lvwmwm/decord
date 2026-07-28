@@ -1,10 +1,10 @@
-// Module ID: 6778
-// Function ID: 59403
+// Module ID: 6814
+// Function ID: 59492
 // Name: ApiIllocon
-// Dependencies: [33, 5085, 6779, 2]
+// Dependencies: [33, 5119, 6815, 2]
 // Exports: ApiIllocon
 
-// Module 6778 (ApiIllocon)
+// Module 6814 (ApiIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ApiIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const ApiIllocon = function ApiIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6779) };
+  obj = { uri: importDefault(6815) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const ApiIllocon = function ApiIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num, height: num });
+  return jsx(importDefault(5119), { width: num, height: num });
 };

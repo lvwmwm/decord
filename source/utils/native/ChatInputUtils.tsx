@@ -1,10 +1,10 @@
-// Module ID: 3990
-// Function ID: 33109
+// Module ID: 4024
+// Function ID: 33211
 // Name: getHighestActiveScreenIndex
-// Dependencies: [3991, 1820, 3997, 1555, 1454, 3998, 2]
+// Dependencies: [4025, 1820, 4031, 1555, 1454, 4032, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef
 
-// Module 3990 (getHighestActiveScreenIndex)
+// Module 4024 (getHighestActiveScreenIndex)
 function getHighestActiveScreenIndex(map1) {
   let obj = map1;
   if (map1 === undefined) {
@@ -159,12 +159,12 @@ export const dismissKeyboard = function dismissKeyboard() {
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  const keyboardType = require(3997) /* getKeyboardContextForType */.getKeyboardType();
+  const keyboardType = require(4031) /* getKeyboardContextForType */.getKeyboardType();
   if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     obj = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM };
     require(1454) /* _createForOfIteratorHelperLoose */.setKeyboardType(obj);
     const obj4 = require(1454) /* _createForOfIteratorHelperLoose */;
   }
-  const obj3 = require(3997) /* getKeyboardContextForType */;
-  const result1 = require(3998) /* closePortalKeyboard */.closePortalKeyboardRequest();
+  const obj3 = require(4031) /* getKeyboardContextForType */;
+  const result1 = require(4032) /* closePortalKeyboard */.closePortalKeyboardRequest();
 };

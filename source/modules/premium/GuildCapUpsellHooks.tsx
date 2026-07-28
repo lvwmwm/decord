@@ -1,17 +1,17 @@
-// Module ID: 5595
-// Function ID: 47566
+// Module ID: 5630
+// Function ID: 47693
 // Name: hasIncreasedGuildCap
-// Dependencies: [1838, 1850, 653, 566, 5596, 3777, 2]
+// Dependencies: [1838, 1850, 653, 566, 5631, 3811, 2]
 // Exports: hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 5595 (hasIncreasedGuildCap)
+// Module 5630 (hasIncreasedGuildCap)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MAX_USER_GUILDS } from "ME";
 
 const require = arg1;
 function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(3777).canUseIncreasedGuildCap(currentUser);
+  let result = importDefault(3811).canUseIncreasedGuildCap(currentUser);
   if (!result) {
     let isStaffResult;
     if (null != currentUser) {
@@ -27,7 +27,7 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   const items = [_createForOfIteratorHelperLoose];
   let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getGuildCount() >= 95);
   const obj = require(566) /* initialize */;
-  const items1 = [require(5596) /* HotspotStore */.HotspotStore];
+  const items1 = [require(5631) /* HotspotStore */.HotspotStore];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => {
     const HotspotStore = outer1_0(outer1_2[4]).HotspotStore;
     return HotspotStore.hasHotspot(outer1_0(outer1_2[4]).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
@@ -44,7 +44,7 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   return stateFromStores;
 };
 export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
-  require(5596) /* HotspotStore */.hideHotspot(require(5596) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  require(5631) /* HotspotStore */.hideHotspot(require(5631) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
 export { hasIncreasedGuildCap };
 export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {

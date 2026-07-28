@@ -1,11 +1,11 @@
 // Module ID: 11828
-// Function ID: 91739
+// Function ID: 91663
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 11828 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 216, height: 115, scales: [1], hash: "fe842af4f5691380d31cd9c08c20f016", name: "gift_coffee", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/images", width: 221, height: 195, scales: [1, 2, 3], hash: "3a31ec2d5aeb0eedce9411671227bdc1", name: "discoverability-header", type: "png" };
 
 export default registerAsset.registerAsset(obj);

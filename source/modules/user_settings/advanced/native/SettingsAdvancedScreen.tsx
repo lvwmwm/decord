@@ -1,8 +1,8 @@
-// Module ID: 14425
-// Function ID: 110282
-// Dependencies: [31, 7697, 653, 33, 1212, 10059, 13613, 2]
+// Module ID: 14469
+// Function ID: 110455
+// Dependencies: [31, 7733, 653, 33, 1212, 10099, 13657, 2]
 
-// Module 14425
+// Module 14469
 import importAllResult from "result";
 import { MobileSetting } from "MobileSetting";
 import { MarketingURLs } from "ME";
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(() => {
     obj.sections = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13613), { node });
+  return jsx(importDefault(13657), { node });
 });
 const result = require("ME").fileFinishedImporting("modules/user_settings/advanced/native/SettingsAdvancedScreen.tsx");
 

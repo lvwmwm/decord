@@ -1,10 +1,10 @@
-// Module ID: 14850
-// Function ID: 113276
+// Module ID: 14894
+// Function ID: 113449
 // Name: useMainTabsPanelsGesture
-// Dependencies: [31, 10415, 477, 14851, 10416, 1557, 1450, 3992, 4132, 4135, 4543, 14852, 5217, 2]
+// Dependencies: [31, 10455, 477, 14895, 10456, 1557, 1450, 4026, 4166, 4169, 4577, 14896, 5251, 2]
 // Exports: default
 
-// Module 14850 (useMainTabsPanelsGesture)
+// Module 14894 (useMainTabsPanelsGesture)
 import result from "result";
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 import set from "set";

@@ -1,10 +1,10 @@
-// Module ID: 5925
-// Function ID: 52627
+// Module ID: 5959
+// Function ID: 52746
 // Name: trackAppEmbedViewed
-// Dependencies: [31, 653, 675, 5926, 5927, 2]
+// Dependencies: [31, 653, 675, 5960, 5961, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, useTrackAppEmbedViewed
 
-// Module 5925 (trackAppEmbedViewed)
+// Module 5959 (trackAppEmbedViewed)
 import result from "result";
 import { AnalyticEvents } from "ME";
 
@@ -37,10 +37,10 @@ export const trackAppEmbedClick = function trackAppEmbedClick(arg0) {
 };
 export { trackAppEmbedViewed };
 export const useTrackAppEmbedViewed = function useTrackAppEmbedViewed(id) {
-  _require = _require(5926).trackingConfigWithDefaults(id);
+  _require = _require(5960).trackingConfigWithDefaults(id);
   let closure_1 = React.useRef(false);
-  let obj = _require(5926);
-  return _require(5927).useIsVisible((arg0) => {
+  let obj = _require(5960);
+  return _require(5961).useIsVisible((arg0) => {
     if (tmp) {
       ref.current = true;
       if (null != closure_0.onView) {

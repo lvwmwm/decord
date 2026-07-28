@@ -1,10 +1,10 @@
-// Module ID: 10010
-// Function ID: 77479
+// Module ID: 10050
+// Function ID: 77608
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 31, 27, 33, 4131, 10011, 1387, 10012, 9999, 10000, 4127, 1212, 10008, 2]
+// Dependencies: [5, 31, 27, 33, 4165, 10051, 1387, 10052, 10039, 10040, 4161, 1212, 10048, 2]
 // Exports: default
 
-// Module 10010 (GuildDirectoryCreateOrAddDescription)
+// Module 10050 (GuildDirectoryCreateOrAddDescription)
 import _createGuildFromTemplate from "_createGuildFromTemplate";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -39,11 +39,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = directoryChannelId(1212).intl;
   obj1.children = intl.string(directoryChannelId(1212).t["5bQcoa"]);
-  const items = [callback(directoryChannelId(4127).Text, obj1), ];
+  const items = [callback(directoryChannelId(4161).Text, obj1), ];
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = directoryChannelId(1212).intl;
   obj2.children = intl2.string(directoryChannelId(1212).t.Ie60Wc);
-  items[1] = callback(directoryChannelId(4127).Text, obj2);
+  items[1] = callback(directoryChannelId(4161).Text, obj2);
   obj.children = items;
   const items1 = [callback2(_onSubmit, obj), ];
   const obj3 = {
@@ -54,8 +54,8 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   const intl3 = directoryChannelId(1212).intl;
   obj3.buttonLabel = intl3.string(directoryChannelId(1212).t.H9jxS1);
   obj3.directoryChannelId = directoryChannelId;
-  items1[1] = callback(importDefault(10008), obj3);
+  items1[1] = callback(importDefault(10048), obj3);
   obj.children = items1;
   obj.children = callback2(closure_5, obj);
-  return callback(directoryChannelId(10000).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(10040).GuildDirectoryAddModalScreen, obj);
 };

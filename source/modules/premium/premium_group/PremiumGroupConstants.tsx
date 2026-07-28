@@ -1,10 +1,10 @@
-// Module ID: 3791
-// Function ID: 29554
+// Module ID: 3825
+// Function ID: 29656
 // Name: TOTAL_PREMIUM_GROUP_MEMBER_SEATS
 // Dependencies: [653, 664, 1921, 1212, 2781, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 3791 (TOTAL_PREMIUM_GROUP_MEMBER_SEATS)
+// Module 3825 (TOTAL_PREMIUM_GROUP_MEMBER_SEATS)
 import ME from "ME";
 import importDefaultResult from "wrapURL";
 

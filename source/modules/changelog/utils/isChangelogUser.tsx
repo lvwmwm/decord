@@ -1,5 +1,5 @@
 // Module ID: 1905
-// Function ID: 21385
+// Function ID: 21389
 // Name: isChangelogUser
 // Dependencies: [1906, 2]
 // Exports: default

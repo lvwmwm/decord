@@ -1,10 +1,10 @@
-// Module ID: 7766
-// Function ID: 61748
+// Module ID: 7802
+// Function ID: 61838
 // Name: createChannelLinkedToLobbySystemMessage
-// Dependencies: [4168, 653, 7677, 7684, 7686, 1921, 1212, 7687, 2]
+// Dependencies: [4202, 653, 7713, 7720, 7722, 1921, 1212, 7723, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 7766 (createChannelLinkedToLobbySystemMessage)
+// Module 7802 (createChannelLinkedToLobbySystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { HelpdeskArticles } from "ME";
 
@@ -16,7 +16,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
   let theme;
   message = message.message;
   ({ roleStyle, theme } = message);
-  const tmp = importDefault(7677)(theme);
+  const tmp = importDefault(7713)(theme);
   const applicationId = message.applicationId;
   let str = "";
   if (null != applicationId) {
@@ -26,11 +26,11 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
   if (null == application) {
     return null;
   } else {
-    let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+    let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
     obj = { username: messageAuthorWithProcessedColor.nick };
     obj = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj.usernameOnClick = importDefault(7686)(obj);
+    obj.usernameOnClick = importDefault(7722)(obj);
     obj.applicationName = application.name;
     const obj1 = { linkColor: tmp.defaultUsernameColor, medium: true };
     obj.applicationNameOnClick = obj1;
@@ -39,7 +39,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     const obj3 = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj3.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.gZfhOw, obj);
-    const merged = Object.assign(importDefault(7687)(message));
+    const merged = Object.assign(importDefault(7723)(message));
     return obj3;
   }
 };

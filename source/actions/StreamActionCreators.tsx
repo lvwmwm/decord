@@ -1,10 +1,10 @@
-// Module ID: 4310
-// Function ID: 37734
+// Module ID: 4344
+// Function ID: 37848
 // Name: isVoiceChannelFull
-// Dependencies: [5, 4145, 4311, 4312, 4150, 1194, 1348, 1838, 1907, 4147, 653, 4196, 686, 4195, 44, 4313, 4324, 4337, 507, 664, 4943, 480, 8783, 4945, 4141, 8849, 2]
+// Dependencies: [5, 4179, 4345, 4346, 4184, 1194, 1348, 1838, 1907, 4181, 653, 4230, 686, 4229, 44, 4347, 4358, 4371, 507, 664, 4977, 480, 8827, 4979, 4175, 8893, 2]
 // Exports: changeStreamRegion, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, toggleSelfStreamHidden, updateStreamSettings
 
-// Module 4310 (isVoiceChannelFull)
+// Module 4344 (isVoiceChannelFull)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -27,8 +27,8 @@ function isVoiceChannelFull(arg0, channelId) {
   importDefault(44)(null != channel, "Cannot join a null voice channel");
   let isChannelFullResult = !inChannel.isInChannel(channelId);
   if (isChannelFullResult) {
-    isChannelFullResult = require(4313) /* _createForOfIteratorHelperLoose */.isChannelFull(channel, inChannel, _createForOfIteratorHelperLoose);
-    const obj = require(4313) /* _createForOfIteratorHelperLoose */;
+    isChannelFullResult = require(4347) /* _createForOfIteratorHelperLoose */.isChannelFull(channel, inChannel, _createForOfIteratorHelperLoose);
+    const obj = require(4347) /* _createForOfIteratorHelperLoose */;
   }
   return isChannelFullResult;
 }
@@ -36,7 +36,7 @@ function watchStream(stream, forceMultiple) {
   if (null == remoteSessionId.getRemoteSessionId()) {
     const channelId = stream.channelId;
     if (null == stream.guildId) {
-      let obj = require(4195) /* isStreamKey */;
+      let obj = require(4229) /* isStreamKey */;
       const encodeStreamKeyResult = obj.encodeStreamKey(stream);
       forceMultiple = undefined;
       if (null != forceMultiple) {
@@ -61,8 +61,8 @@ function watchStream(stream, forceMultiple) {
         tmp12 = forceMultiple;
       }
       if (!tmp12) {
-        const participant = importDefault(4324).selectParticipant(stream.channelId, encodeStreamKeyResult);
-        const obj4 = importDefault(4324);
+        const participant = importDefault(4358).selectParticipant(stream.channelId, encodeStreamKeyResult);
+        const obj4 = importDefault(4358);
       }
       const obj2 = importDefault(686);
     }
@@ -77,7 +77,7 @@ function watchStreamAndTransitionToStream(stream, forceMultiple) {
       windowOpen = store.getVoiceChannelId() === channelId;
     }
     if (!windowOpen) {
-      importDefault(4337)(stream);
+      importDefault(4371)(stream);
     }
   }
 }
@@ -164,7 +164,7 @@ export const startStream = function startStream(guildId, channelId) {
   obj.dispatch(obj);
 };
 export const setStreamPaused = function setStreamPaused(currentUserActiveStream, paused) {
-  let obj = require(4195) /* isStreamKey */;
+  let obj = require(4229) /* isStreamKey */;
   const encodeStreamKeyResult = obj.encodeStreamKey(currentUserActiveStream);
   obj = { type: "STREAM_SET_PAUSED", streamKey: encodeStreamKeyResult, paused };
   importDefault(686).dispatch(obj);
@@ -191,7 +191,7 @@ export const notifyStreamStart = function notifyStreamStart() {
 };
 export const updateStreamSettings = function updateStreamSettings(noTrack) {
   if (true !== noTrack.noTrack) {
-    let obj = require(8783) /* isPremiumRequirement */;
+    let obj = require(8827) /* isPremiumRequirement */;
     const result = obj.trackStreamSettingsUpdate(noTrack.preset, noTrack.resolution, noTrack.frameRate, noTrack.soundshareEnabled);
   }
   obj = { type: "STREAM_UPDATE_SETTINGS" };
@@ -210,22 +210,22 @@ export const stopOwnStream = function stopOwnStream(flag) {
   }
   const currentUserActiveStream = authStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    stopStream(require(4195) /* isStreamKey */.encodeStreamKey(currentUserActiveStream), flag);
-    const obj = require(4195) /* isStreamKey */;
+    stopStream(require(4229) /* isStreamKey */.encodeStreamKey(currentUserActiveStream), flag);
+    const obj = require(4229) /* isStreamKey */;
   }
 };
 export const joinPrivateChannelAndWatchStream = function joinPrivateChannelAndWatchStream(id, streamKey) {
   const _require = id;
   id = id.getId();
-  const importDefault = _require(4195).decodeStreamKey(streamKey);
+  const importDefault = _require(4229).decodeStreamKey(streamKey);
   const voiceChannelId = store.getVoiceChannelId();
   if (tmp3) {
-    importDefault(4945).disconnect();
-    const obj2 = importDefault(4945);
+    importDefault(4979).disconnect();
+    const obj2 = importDefault(4979);
   }
-  const obj = _require(4195);
+  const obj = _require(4229);
   tmp3 = null != voiceChannelId && voiceChannelId !== id;
-  importDefault(4141).addRecipient(id, id, undefined, () => {
+  importDefault(4175).addRecipient(id, id, undefined, () => {
     callback(outer1_2[25]).call(closure_0, false, false, null, () => {
       outer2_20(outer1_1);
     });

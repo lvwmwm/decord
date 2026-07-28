@@ -1,10 +1,10 @@
-// Module ID: 15083
-// Function ID: 114876
+// Module ID: 15123
+// Function ID: 115034
 // Name: useAllVisibleChannels
-// Dependencies: [1348, 3759, 1353, 1356, 566, 1327, 21, 2]
+// Dependencies: [1348, 3793, 1353, 1356, 566, 1327, 21, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 15083 (useAllVisibleChannels)
+// Module 15123 (useAllVisibleChannels)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 16259
-// Function ID: 126150
+// Module ID: 16298
+// Function ID: 126306
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1850, 6157, 482, 6445, 1873, 6447, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1850, 6191, 482, 6481, 1873, 6483, 5112, 2]
 
-// Module 16259 (_isNativeReflectConstruct)
+// Module 16298 (_isNativeReflectConstruct)
 import sum from "sum";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

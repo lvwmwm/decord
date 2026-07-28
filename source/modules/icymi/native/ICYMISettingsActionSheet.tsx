@@ -1,10 +1,10 @@
-// Module ID: 15251
-// Function ID: 116074
+// Module ID: 15291
+// Function ID: 116233
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 31, 27, 4143, 8120, 8108, 653, 33, 4131, 689, 566, 8124, 5498, 5501, 1212, 5502, 8123, 5164, 6104, 669, 21, 5070, 4099, 8122, 4338, 15252, 1935, 15261, 2]
+// Dependencies: [5, 31, 27, 4177, 8158, 8146, 653, 33, 4165, 689, 566, 8162, 5533, 5536, 1212, 5537, 8161, 5198, 6138, 669, 21, 5104, 4133, 8160, 4372, 15292, 1935, 15301, 2]
 // Exports: default
 
-// Module 15251 (ICYMISettingsActionSheet)
+// Module 15291 (ICYMISettingsActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import "result";
 import { View } from "ICYMI_CUSTOM_SCORES_MODAL_KEY";
@@ -33,7 +33,7 @@ export default function ICYMISettingsActionSheet() {
   let obj = stateFromStoresObject(566);
   const items = [closure_6];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getState());
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8124).ICYMIStaffDebuggingUtilityExperiment;
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8162).ICYMIStaffDebuggingUtilityExperiment;
   obj = { showGradient: true, startExpanded: true };
   obj = {};
   const intl = stateFromStoresObject(1212).intl;
@@ -55,7 +55,7 @@ export default function ICYMISettingsActionSheet() {
       obj.setFilters(obj);
       const dehydrated = outer1_1(outer1_2[16]).fetchDehydrated();
     };
-    const items1 = [callback2(stateFromStoresObject(5502).TableSwitchRow, obj2), , ];
+    const items1 = [callback2(stateFromStoresObject(5537).TableSwitchRow, obj2), , ];
     let obj3 = {
       label: "Clear read states",
       onPress() {
@@ -82,11 +82,11 @@ export default function ICYMISettingsActionSheet() {
           outer1_1(outer1_2[22]).hideActionSheet();
         }
     };
-    items1[1] = callback2(stateFromStoresObject(5164).TableRow, obj3);
+    items1[1] = callback2(stateFromStoresObject(5198).TableRow, obj3);
     let obj4 = { label: "Regenerate feed and clear read states" };
     // CreateGeneratorClosureLongIndex (0x67)
     obj4.onPress = callback("Regenerate feed and clear read states");
-    items1[2] = callback2(stateFromStoresObject(5164).TableRow, obj4);
+    items1[2] = callback2(stateFromStoresObject(5198).TableRow, obj4);
     obj1.children = items1;
     tmp5Result = closure_12(closure_11, obj1);
     const tmp5 = closure_12;
@@ -108,11 +108,11 @@ export default function ICYMISettingsActionSheet() {
     const tmp3 = stateFromStoresObject(outer1_2[26])(outer1_2[25], outer1_2.paths);
     outer1_1(outer1_2[22]).hideActionSheet();
   };
-  items2[1] = callback2(stateFromStoresObject(5164).TableRow, obj5);
+  items2[1] = callback2(stateFromStoresObject(5198).TableRow, obj5);
   obj.children = items2;
-  const items3 = [closure_12(stateFromStoresObject(5501).TableRowGroup, obj), ];
+  const items3 = [closure_12(stateFromStoresObject(5536).TableRowGroup, obj), ];
   const tmp2 = _createForOfIteratorHelperLoose();
   items3[1] = callback2(View, { style: _createForOfIteratorHelperLoose().padding });
   obj.children = items3;
-  return closure_12(stateFromStoresObject(5498).ActionSheet, obj);
+  return closure_12(stateFromStoresObject(5533).ActionSheet, obj);
 };

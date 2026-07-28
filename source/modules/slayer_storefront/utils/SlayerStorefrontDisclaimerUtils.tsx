@@ -1,10 +1,10 @@
-// Module ID: 9702
-// Function ID: 75598
+// Module ID: 9742
+// Function ID: 75727
 // Name: getNotSupportedSentence
-// Dependencies: [1922, 5611, 653, 9703, 1212, 3105, 2]
+// Dependencies: [1922, 5646, 653, 9743, 1212, 3137, 2]
 // Exports: getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getRedeemPurchaseDescriptionForApplication
 
-// Module 9702 (getNotSupportedSentence)
+// Module 9742 (getNotSupportedSentence)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { MarketingURLs } from "ME";
@@ -26,7 +26,7 @@ function getNotSupportedSentence(id) {
     const listFormat = new ListFormat(locale.locale);
     obj.platforms = listFormat.format(arr.map((arg0) => outer1_6[arg0]));
     obj.count = arr.length;
-    str = intl.formatToPlainString(importDefault(3105)["5h8p5P"], obj);
+    str = intl.formatToPlainString(importDefault(3137)["5h8p5P"], obj);
   }
   return str;
 }
@@ -38,9 +38,9 @@ function getCheckoutDisclaimerMessageForApplication(id) {
     id = id.id;
   }
   obj.platforms_info = getNotSupportedSentence(id);
-  return intl.format(importDefault(3105).Q0dHYO, obj);
+  return intl.format(importDefault(3137).Q0dHYO, obj);
 }
-let closure_6 = { [arg1(9703).StorefrontPlatform.DESKTOP]: "PC", [arg1(9703).StorefrontPlatform.XBOX]: "Xbox", [arg1(9703).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9703).StorefrontPlatform.SWITCH]: "Switch", [arg1(9703).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9703).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9703).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
+let closure_6 = { [arg1(9743).StorefrontPlatform.DESKTOP]: "PC", [arg1(9743).StorefrontPlatform.XBOX]: "Xbox", [arg1(9743).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9743).StorefrontPlatform.SWITCH]: "Switch", [arg1(9743).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9743).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9743).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [require("StorefrontPlatform").StorefrontPlatform.PLAYSTATION];
 const result = require("ME").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
 
@@ -59,7 +59,7 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
   const format = intl.format;
   if (shouldAppendDisclaimer.shouldAppendDisclaimer) {
     let obj = { applicationName: str, platforms_info: getCheckoutDisclaimerMessageForApplication(name) };
-    let formatResult = format(importDefault(3105)["3ah/a2"], obj);
+    let formatResult = format(importDefault(3137)["3ah/a2"], obj);
   } else {
     obj = { applicationName: str };
     formatResult = format(require(1212) /* getSystemLocale */.t.CVITgq, obj);
@@ -79,21 +79,21 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
   if (shouldAppendDisclaimer.shouldAppendDisclaimer) {
     const items = [getCheckoutDisclaimerMessageForApplication(result), ];
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.format(importDefault(3105).Ufm9XX, obj);
+    items[1] = intl2.format(importDefault(3137).Ufm9XX, obj);
     let items1 = items;
   } else {
     const intl = require(1212) /* getSystemLocale */.intl;
-    items1 = [intl.format(importDefault(3105).Ufm9XX, obj)];
+    items1 = [intl.format(importDefault(3137).Ufm9XX, obj)];
   }
   return items1;
 };
 export const getRedeemPurchaseDescriptionForApplication = function getRedeemPurchaseDescriptionForApplication(applicationName) {
   const intl = require(1212) /* getSystemLocale */.intl;
   const obj = { applicationName: applicationName.name, platforms_info: getNotSupportedSentence(applicationName.id) };
-  return intl.format(importDefault(3105).fO4b1C, obj);
+  return intl.format(importDefault(3137).fO4b1C, obj);
 };
 export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkAccountDescriptionForApplication(applicationName, hasAlreadyLinked) {
-  const tmp = importDefault(3105);
+  const tmp = importDefault(3137);
   const intl = require(1212) /* getSystemLocale */.intl;
   return intl.format(hasAlreadyLinked.hasAlreadyLinked ? tmp.yqAKVO : tmp.vyAtfo, { applicationName: applicationName.name, platforms_info: getNotSupportedSentence(applicationName.id) });
 };

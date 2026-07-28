@@ -1,9 +1,9 @@
-// Module ID: 7656
-// Function ID: 61303
+// Module ID: 7692
+// Function ID: 61393
 // Name: UserOption
 // Dependencies: [2]
 
-// Module 7656 (UserOption)
+// Module 7692 (UserOption)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RenderMessageOptionsContext.tsx");
 
 export const UserOption = { USER_SETTING: 0, [0]: "USER_SETTING", FORCE_ENABLE: 1, [1]: "FORCE_ENABLE", FORCE_DISABLE: 2, [2]: "FORCE_DISABLE" };

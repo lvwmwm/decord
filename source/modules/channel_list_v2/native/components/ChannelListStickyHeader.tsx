@@ -1,24 +1,24 @@
-// Module ID: 15044
-// Function ID: 114648
+// Module ID: 15087
+// Function ID: 114821
 // Name: ChannelListStickyHeader
-// Dependencies: [31, 27, 3760, 653, 33, 3992, 4131, 689, 1324, 1841, 1212, 15045, 12978, 15043, 5169, 3835, 566, 6634, 9351, 4127, 8396, 1273, 5512, 15048, 11388, 11465, 15056, 2]
+// Dependencies: [31, 27, 3794, 653, 33, 4026, 4165, 689, 1324, 1841, 1212, 15088, 13022, 15086, 5203, 3869, 566, 6670, 9395, 4161, 8440, 1273, 5547, 15091, 11426, 11503, 15096, 2]
 // Exports: default
 
-// Module 15044 (ChannelListStickyHeader)
+// Module 15087 (ChannelListStickyHeader)
 import result from "result";
 import get_ActivityIndicator from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { JoinGuildSources } from "ME";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let closure_7;
 let closure_8;
 const require = arg1;
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = require("module_3992").createAnimatedComponent(get_ActivityIndicator.Pressable);
+let closure_9 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.Pressable);
 let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
@@ -106,20 +106,20 @@ export default function ChannelListStickyHeader(guild) {
       _undefined(outer1_2[12])(guild);
     }
   }, items);
-  const tmp7 = importDefault(15043)(guild);
-  let obj1 = guild(5169);
+  const tmp7 = importDefault(15086)(guild);
+  let obj1 = guild(5203);
   const iOSPressEffects = obj1.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
   let obj2 = guild(1841);
   const favoritesAwareGuildName = obj2.getFavoritesAwareGuildName(guild);
-  let obj3 = guild(3835);
+  let obj3 = guild(3869);
   const token = obj3.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  let obj4 = guild(3835);
+  let obj4 = guild(3869);
   const token1 = obj4.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   let obj5 = guild(566);
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj5.useStateFromStores(items1, () => outer1_5.isLurking(guild.id));
-  let obj6 = guild(6634);
+  let obj6 = guild(6670);
   let enabled = stateFromStores;
   if (stateFromStores) {
     enabled = obj6.useMobileLurkerServerPreview("ChannelListStickyHeader").enabled;
@@ -157,18 +157,18 @@ export default function ChannelListStickyHeader(guild) {
   let tmp23 = null;
   if (isFavoritesGuildIdResult) {
     obj1 = { style: tmp2.headerIcon, size: "sm", color: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY };
-    tmp23 = callback(guild(9351).StarIcon, obj1);
+    tmp23 = callback(guild(9395).StarIcon, obj1);
   }
   const items3 = [tmp23, , , ];
-  obj2 = { ref, collapsable: false, style: tmp2.flex, children: callback(guild(4127).Text, obj3) };
+  obj2 = { ref, collapsable: false, style: tmp2.flex, children: callback(guild(4161).Text, obj3) };
   obj3 = { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName };
   items3[1] = callback(View, obj2);
   obj4 = { guild, size: guild(1273).Icon.Sizes.REFRESH_SMALL_16, style: tmp2.guildBadge };
-  items3[2] = callback(importDefault(8396), obj4);
+  items3[2] = callback(importDefault(8440), obj4);
   let tmp29 = null;
   if (flag2) {
     obj5 = { size: "xxs", color: importDefault(689).colors.TEXT_SUBTLE, style: tmp2.chevron };
-    tmp29 = callback(guild(5512).ChevronSmallRightIcon, obj5);
+    tmp29 = callback(guild(5547).ChevronSmallRightIcon, obj5);
   }
   items3[3] = tmp29;
   obj.children = items3;
@@ -182,13 +182,13 @@ export default function ChannelListStickyHeader(guild) {
       const intl2 = guild(1212).intl;
       const obj8 = { count: tmp7 };
       obj7.children = intl2.format(guild(1212).t.zRl6XR, obj8);
-      const items5 = [callback(guild(4127).Text, obj7), , ];
+      const items5 = [callback(guild(4161).Text, obj7), , ];
       const obj9 = { style: tmp2.ellipse };
       items5[1] = callback(View, obj9);
       const obj10 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
       const intl3 = guild(1212).intl;
       obj10.children = intl3.string(guild(1212).t["1g9A/f"]);
-      items5[2] = callback(guild(4127).Text, obj10);
+      items5[2] = callback(guild(4161).Text, obj10);
       obj6.children = items5;
       tmp34 = callback2(View, obj6);
     }
@@ -203,7 +203,7 @@ export default function ChannelListStickyHeader(guild) {
   const tmp14 = closure_9;
   const tmp21 = callback2;
   const tmp22 = View;
-  const tmp28 = importDefault(8396);
+  const tmp28 = importDefault(8440);
   tmp5 = isFavoritesGuildIdResult ? t.hW8QDk : t["Gpyp/e"];
   if (isFavoritesGuildIdResult) {
     headerRowInset = tmp2.headerRowInset;
@@ -213,7 +213,7 @@ export default function ChannelListStickyHeader(guild) {
   const items7 = [callback2(closure_9, obj), ];
   let tmp44 = null;
   if (isFavoritesGuildIdResult) {
-    tmp44 = callback(guild(15048).FavoritesGuildHeaderActionButton, {});
+    tmp44 = callback(guild(15091).FavoritesGuildHeaderActionButton, {});
   }
   items7[1] = tmp44;
   obj12.children = items7;
@@ -223,14 +223,14 @@ export default function ChannelListStickyHeader(guild) {
     tmp48 = null;
     if (!enabled) {
       const obj13 = { guild, useButtonComponent: true, useEventsButton: true };
-      tmp48 = callback(importDefault(11388), obj13);
+      tmp48 = callback(importDefault(11426), obj13);
     }
   }
   items8[1] = tmp48;
   if (enabled) {
     const obj14 = { style: tmp2.joinButton };
     const obj15 = { guildId: guild.id, joinSource: JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER };
-    obj14.children = callback(importDefault(11465), obj15);
+    obj14.children = callback(importDefault(11503), obj15);
     enabled = callback(View, obj14);
   }
   items8[2] = enabled;
@@ -243,7 +243,7 @@ export default function ChannelListStickyHeader(guild) {
   let tmp60 = null;
   if (flag3) {
     const obj17 = { targetRef: ref, guild };
-    tmp60 = callback(importDefault(15056), obj17);
+    tmp60 = callback(importDefault(15096), obj17);
   }
   items8[4] = tmp60;
   obj11.children = items8;

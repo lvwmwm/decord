@@ -1,10 +1,10 @@
-// Module ID: 10324
-// Function ID: 79776
+// Module ID: 10364
+// Function ID: 79905
 // Name: AnimatedChatInputReplyBar
-// Dependencies: [5, 57, 31, 27, 1348, 1853, 33, 4131, 689, 1324, 3992, 4132, 10325, 5159, 4361, 4321, 6683, 10200, 10279, 4100, 5914, 5685, 9268, 10329, 6625, 9911, 1212, 6686, 6519, 4077, 2]
+// Dependencies: [5, 57, 31, 27, 1348, 1853, 33, 4165, 689, 1324, 4026, 4166, 10365, 5193, 4395, 4355, 6719, 10240, 10319, 4134, 5948, 5695, 9312, 10369, 6661, 9951, 1212, 6722, 6555, 4111, 2]
 // Exports: MessageReplyInput
 
-// Module 10324 (AnimatedChatInputReplyBar)
+// Module 10364 (AnimatedChatInputReplyBar)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -27,7 +27,7 @@ function AnimatedChatInputReplyBar(replying) {
   ({ pendingReply, pendingReplyAuthor, onToggleReplyMention } = replying);
   let obj = replying(1324);
   const tmp = _createForOfIteratorHelperLoose();
-  const sharedValue = replying(3992).useSharedValue(0);
+  const sharedValue = replying(4026).useSharedValue(0);
   const items = [replying, sharedValue];
   const effect = React.useEffect(() => {
     const withTiming = replying(outer1_2[11]).withTiming;
@@ -38,20 +38,20 @@ function AnimatedChatInputReplyBar(replying) {
       const result1 = set(withTiming(0, obj));
     }
   }, items);
-  const obj2 = replying(3992);
+  const obj2 = replying(4026);
   const fn = function y() {
     const obj = { height: replying(outer1_2[10]).interpolate(sharedValue.get(), [0, 1], [0, 40]), opacity: sharedValue.get() };
     return obj;
   };
-  obj = { interpolate: replying(3992).interpolate, sv: sharedValue, REPLY_BAR_HEIGHT: 40 };
+  obj = { interpolate: replying(4026).interpolate, sv: sharedValue, REPLY_BAR_HEIGHT: 40 };
   fn.__closure = obj;
   fn.__workletHash = 878601267127;
   fn.__initData = closure_13;
-  const animatedStyle = replying(3992).useAnimatedStyle(fn);
+  const animatedStyle = replying(4026).useAnimatedStyle(fn);
   obj = { style: items1 };
   items1 = [tmp.replyBarContainer, obj.useMobileVisualRefreshConfig({ location: "MessageReplyInput" }).chatInputFloating ? tmp.replyBarRedesign : tmp.replyBarNoRedesign, animatedStyle];
-  obj.children = callback2(replying(10325).ChatInputReplyBar, { pendingReply, pendingReplyAuthor, onToggleReplyMention, chatInputFloatingOverride: true });
-  return callback2(sharedValue(3992).View, obj);
+  obj.children = callback2(replying(10365).ChatInputReplyBar, { pendingReply, pendingReplyAuthor, onToggleReplyMention, chatInputFloatingOverride: true });
+  return callback2(sharedValue(4026).View, obj);
 }
 ({ Keyboard: closure_6, View: closure_7 } = get_ActivityIndicator);
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);

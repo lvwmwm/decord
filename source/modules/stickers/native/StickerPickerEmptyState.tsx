@@ -1,10 +1,10 @@
-// Module ID: 9587
-// Function ID: 74780
+// Module ID: 9627
+// Function ID: 74909
 // Name: EmptyStateSticker
-// Dependencies: [57, 31, 27, 5036, 3807, 653, 1852, 33, 4131, 9557, 9573, 5462, 5482, 566, 675, 4127, 1212, 4661, 4100, 4101, 4544, 5085, 9309, 9581, 2]
+// Dependencies: [57, 31, 27, 5070, 3841, 653, 1852, 33, 4165, 9597, 9613, 5497, 5517, 566, 675, 4161, 1212, 4695, 4134, 4135, 4578, 5119, 9353, 9621, 2]
 // Exports: default
 
-// Module 9587 (EmptyStateSticker)
+// Module 9627 (EmptyStateSticker)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -22,14 +22,14 @@ let closure_9;
 let require = arg1;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = require(9557) /* _createForOfIteratorHelperLoose */.useShouldAnimateSticker(sticker.isFocused);
+  const animated = require(9597) /* _createForOfIteratorHelperLoose */.useShouldAnimateSticker(sticker.isFocused);
   let id;
-  const obj = require(9557) /* _createForOfIteratorHelperLoose */;
+  const obj = require(9597) /* _createForOfIteratorHelperLoose */;
   const tmp2 = closure_11;
   if (null != sticker) {
     id = sticker.id;
   }
-  return tmp2(importDefault(9573), { sticker, size: 60, animated }, id);
+  return tmp2(importDefault(9613), { sticker, size: 60, animated }, id);
 }
 ({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = ME);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -39,9 +39,9 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/sti
 export default function _default() {
   let tmp = callback4();
   const require = tmp;
-  let obj = require(9557) /* _createForOfIteratorHelperLoose */;
+  let obj = require(9597) /* _createForOfIteratorHelperLoose */;
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).EMPTY_STATE).analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)(analyticsLocations(5517).EMPTY_STATE).analyticsLocations;
   let obj1 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
@@ -62,12 +62,12 @@ export default function _default() {
   obj = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.HEm04J);
-  const items2 = [callback2(require(4127) /* Text */.Text, obj), , , ];
+  const items2 = [callback2(require(4161) /* Text */.Text, obj), , , ];
   obj1 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.FnNud4);
-  items2[1] = callback2(require(4127) /* Text */.Text, obj1);
-  const tmp3 = analyticsLocations(5462);
+  items2[1] = callback2(require(4161) /* Text */.Text, obj1);
+  const tmp3 = analyticsLocations(5497);
   items2[2] = callback2(View, {
     style: tmp.stickersRow,
     children: stateFromStoresArray.map((id) => {
@@ -76,7 +76,7 @@ export default function _default() {
       let obj = {
         accessible: false,
         onLongPress() {
-          const result = id(4100).triggerHapticFeedback(analyticsLocations(4101).IMPACT_LIGHT);
+          const result = id(4134).triggerHapticFeedback(analyticsLocations(4135).IMPACT_LIGHT);
           outer1_3(id.id);
         },
         style: tmp.sticker
@@ -87,7 +87,7 @@ export default function _default() {
       if (null != id) {
         id = id.id;
       }
-      return tmp(tmp(4661).PressableOpacity, obj, id);
+      return tmp(tmp(4695).PressableOpacity, obj, id);
     })
   });
   const obj3 = { style: tmp.premiumButton };
@@ -101,7 +101,7 @@ export default function _default() {
       let obj = {
         accessible: false,
         onLongPress() {
-          const result = id(4100).triggerHapticFeedback(analyticsLocations(4101).IMPACT_LIGHT);
+          const result = id(4134).triggerHapticFeedback(analyticsLocations(4135).IMPACT_LIGHT);
           outer1_3(id.id);
         },
         style: tmp.sticker
@@ -112,21 +112,21 @@ export default function _default() {
       if (null != id) {
         id = id.id;
       }
-      return tmp(tmp(4661).PressableOpacity, obj, id);
+      return tmp(tmp(4695).PressableOpacity, obj, id);
     })
   };
-  obj5.source = analyticsLocations(9309);
+  obj5.source = analyticsLocations(9353);
   obj5.style = tmp.nitroWheel;
   obj5.resizeMode = "contain";
-  obj4.icon = callback2(analyticsLocations(5085), obj5);
+  obj4.icon = callback2(analyticsLocations(5119), obj5);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj4.text = intl3.string(require(1212) /* getSystemLocale */.t.pj0XBN);
   obj4.variant = "active";
   obj4.size = "sm";
   obj4.onPress = function onPress() {
-    return analyticsLocations(9581)({ section: outer1_9.EXPRESSION_PICKER });
+    return analyticsLocations(9621)({ section: outer1_9.EXPRESSION_PICKER });
   };
-  obj3.children = callback2(require(4544) /* Button */.Button, obj4);
+  obj3.children = callback2(require(4578) /* Button */.Button, obj4);
   items2[3] = callback2(View, obj3);
   obj.children = items2;
   return callback3(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 6501
-// Function ID: 58108
+// Module ID: 6537
+// Function ID: 58197
 // Name: AccountCreditTier
-// Dependencies: [31, 27, 5821, 653, 33, 4131, 689, 3777, 1212, 2781, 5472, 4127, 566, 22, 2]
+// Dependencies: [31, 27, 5831, 653, 33, 4165, 689, 3811, 1212, 2781, 5507, 4161, 566, 22, 2]
 // Exports: default
 
-// Module 6501 (AccountCreditTier)
+// Module 6537 (AccountCreditTier)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,10 +25,10 @@ function AccountCreditTier(arg0) {
   ({ planId, currentSubscription } = arg0);
   ({ months, shouldAddDivider, unconsumedFractionalPremiumUnits, hasPremiumGroup } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3777) /* _createForOfIteratorHelperLoose */;
-  let obj1 = importDefault(3777);
+  let obj = require(3811) /* _createForOfIteratorHelperLoose */;
+  let obj1 = importDefault(3811);
   const result = obj.castPremiumSubscriptionAsSkuId(obj1.getSkuIdForPlan(planId));
-  let obj2 = importDefault(3777);
+  let obj2 = importDefault(3811);
   const tierDisplayNameByPlanId = obj2.getTierDisplayNameByPlanId(planId);
   if (hasPremiumGroup) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -41,7 +41,7 @@ function AccountCreditTier(arg0) {
             const _Date2 = Date;
             let date = new Date(currentSubscription.pauseEndsAt);
           }
-          let obj4 = require(3777) /* _createForOfIteratorHelperLoose */;
+          let obj4 = require(3811) /* _createForOfIteratorHelperLoose */;
           const result1 = obj4.extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
           const intl2 = require(1212) /* getSystemLocale */.intl;
           obj = {};
@@ -68,17 +68,17 @@ function AccountCreditTier(arg0) {
   }
   items[1] = divider;
   obj1.style = items;
-  obj2 = { size: require(5472) /* GameIcon */.GameIconSizes.SMALL, skuId: result };
-  const items1 = [callback(importDefault(5472), obj2), , ];
+  obj2 = { size: require(5507) /* GameIcon */.GameIconSizes.SMALL, skuId: result };
+  const items1 = [callback(importDefault(5507), obj2), , ];
   const obj3 = { style: tmp.textContainer };
   obj4 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl4.format(require(1212) /* getSystemLocale */.t.LzobT9, { planName: tierDisplayNameByPlanId });
-  const items2 = [callback(require(4127) /* Text */.Text, obj4), ];
+  const items2 = [callback(require(4161) /* Text */.Text, obj4), ];
   let tmp29 = !(null != currentSubscription && currentSubscription.isPurchasedExternally);
   if (tmp29) {
     const obj5 = { style: tmp.subText, variant: "text-xs/medium", color: "text-default", children: stringResult };
-    tmp29 = callback(require(4127) /* Text */.Text, obj5);
+    tmp29 = callback(require(4161) /* Text */.Text, obj5);
   }
   items2[1] = tmp29;
   obj3.children = items2;
@@ -86,7 +86,7 @@ function AccountCreditTier(arg0) {
   const obj6 = { style: tmp.timeText, variant: "text-md/medium", color: "text-default" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl5.format(require(1212) /* getSystemLocale */.t["ess/xl"], { count: months });
-  items1[2] = callback(require(4127) /* Text */.Text, obj6);
+  items1[2] = callback(require(4161) /* Text */.Text, obj6);
   obj1.children = items1;
   return closure_7(View, obj1);
 }
@@ -139,7 +139,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       obj = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
       const intl = currentSubscription(1212).intl;
       obj.children = intl.string(currentSubscription(1212).t.YugZY0);
-      const items1 = [callback(currentSubscription(4127).Text, obj), , , ];
+      const items1 = [callback(currentSubscription(4161).Text, obj), , , ];
       const obj1 = {};
       const items2 = [tmp.creditList, creditListContainerStyle];
       obj1.style = items2;
@@ -153,7 +153,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       const obj2 = { style: tmp.creditDescription, variant: "text-sm/medium" };
       const intl2 = currentSubscription(1212).intl;
       obj2.children = intl2.string(currentSubscription(1212).t.kNEjGm);
-      items1[2] = callback(currentSubscription(4127).Text, obj2);
+      items1[2] = callback(currentSubscription(4161).Text, obj2);
       let tmp14 = null;
       if (null != currentSubscription) {
         tmp14 = null;
@@ -161,14 +161,14 @@ export default function PremiumAccountCredit(currentSubscription) {
           const obj3 = { style: tmp.creditDescription, variant: "text-sm/medium" };
           const intl3 = currentSubscription(1212).intl;
           obj3.children = intl3.string(currentSubscription(1212).t.azRP0E);
-          tmp14 = callback(currentSubscription(4127).Text, obj3);
+          tmp14 = callback(currentSubscription(4161).Text, obj3);
         }
       }
       items1[3] = tmp14;
       obj.children = items1;
       return closure_7(c3, obj);
     }
-    obj8 = importDefault(3777);
+    obj8 = importDefault(3811);
   }
   return null;
 };

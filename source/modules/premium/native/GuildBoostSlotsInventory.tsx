@@ -1,10 +1,10 @@
-// Module ID: 12466
-// Function ID: 96712
+// Module ID: 12509
+// Function ID: 96882
 // Name: GuildBoostSlotCooldown
-// Dependencies: [31, 27, 1278, 1838, 4024, 3783, 653, 33, 4131, 689, 5053, 6180, 4127, 1212, 21, 4661, 4967, 5513, 12467, 566, 1392, 12468, 12472, 4452, 4027, 22, 2]
+// Dependencies: [31, 27, 1278, 1838, 4058, 3817, 653, 33, 4165, 689, 5087, 6214, 4161, 1212, 21, 4695, 5001, 5548, 12510, 566, 1392, 12511, 12515, 4486, 4061, 22, 2]
 // Exports: default
 
-// Module 12466 (GuildBoostSlotCooldown)
+// Module 12509 (GuildBoostSlotCooldown)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,15 +29,15 @@ function GuildBoostSlotCooldown(cooldownEndsAt) {
   const items = [cooldownEndsAt];
   const memo = React.useMemo(() => new Date(cooldownEndsAt), items);
   const tmp = _createForOfIteratorHelperLoose();
-  ({ days, hours, minutes } = importDefault(6180)(memo, 15000));
-  const tmp2 = importDefault(6180)(memo, 15000);
+  ({ days, hours, minutes } = importDefault(6214)(memo, 15000));
+  const tmp2 = importDefault(6214)(memo, 15000);
   let tmp4 = null;
   if (valueOfResult > Date.now()) {
     let obj = { style: tmp.subscriptionSlotInfoCooldown, variant: "text-xs/medium", color: "text-muted" };
     const intl = cooldownEndsAt(1212).intl;
     obj = { days, hours, minutes };
     obj.children = intl.format(cooldownEndsAt(1212).t.NffSH8, obj);
-    tmp4 = callback(cooldownEndsAt(4127).Text, obj);
+    tmp4 = callback(cooldownEndsAt(4161).Text, obj);
   }
   return tmp4;
 }
@@ -52,7 +52,7 @@ function GuildBoostSlotsInventoryRow(arg0) {
   obj = { style: tmp.subscriptionSlotInner };
   obj = { style: tmp.subscriptionSlotInfo };
   const obj1 = { style: tmp.subscriptionSlotInfoTitle, lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: title };
-  const items = [callback(require(4127) /* Text */.Text, obj1), subtitle];
+  const items = [callback(require(4161) /* Text */.Text, obj1), subtitle];
   obj.children = items;
   const items1 = [callback2(closure_5, obj), action];
   obj.children = items1;
@@ -109,8 +109,8 @@ function GuildBoostSlot(guildBoostSlot) {
       const obj3 = { variant: "text-md/medium", color: "control-brand-foreground" };
       const intl2 = guildBoostSlot(1212).intl;
       obj3.children = intl2.string(guildBoostSlot(1212).t.jqqLb6);
-      obj2.children = callback(guildBoostSlot(4127).Text, obj3);
-      tmp20 = callback(guildBoostSlot(4661).PressableOpacity, obj2);
+      obj2.children = callback(guildBoostSlot(4161).Text, obj3);
+      tmp20 = callback(guildBoostSlot(4695).PressableOpacity, obj2);
     }
     obj.action = tmp20;
     obj.isLast = tmp;
@@ -159,8 +159,8 @@ function UnusedGuildBoostSlots(unusedSlots) {
     const obj2 = { variant: "text-md/medium", color: "text-link" };
     const intl2 = found(1212).intl;
     obj2.children = intl2.string(found(1212).t["7KyPor"]);
-    obj1.children = callback(found(4127).Text, obj2);
-    obj.action = callback(found(4661).PressableOpacity, obj1);
+    obj1.children = callback(found(4161).Text, obj2);
+    obj.action = callback(found(4695).PressableOpacity, obj1);
     obj.isLast = 0 === found.length;
     tmp4 = callback(GuildBoostSlotsInventoryRow, obj);
   }
@@ -190,27 +190,27 @@ function BoostedGuildInfo(guild) {
   if (null != guild) {
     let obj = { style: tmp.guildInfo };
     obj = { style: tmp.guildInfoIcon };
-    obj = { guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.NORMAL, selected: false };
-    obj.children = callback(importDefault(5513), obj);
+    obj = { guild, size: require(5548) /* makeSizeStyle */.GuildIconSizes.NORMAL, selected: false };
+    obj.children = callback(importDefault(5548), obj);
     const items = [callback(closure_5, obj), ];
     const obj1 = {};
     const obj2 = { style: tmp.guildInfoName, variant: "heading-lg/extrabold", color: "interactive-text-active", children: guild.name };
-    const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
+    const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
     const obj3 = { style: tmp.guildInfoRowBottom };
-    const obj4 = { source: importDefault(12467), style: tmp.guildInfoRowIcon };
+    const obj4 = { source: importDefault(12510), style: tmp.guildInfoRowIcon };
     const items2 = [callback(closure_6, obj4), ];
     const obj5 = { style: tmp.guildInfoSubscriptionCount, variant: "text-xs/semibold", color: "interactive-text-active" };
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj6 = { numSubscriptions: guild.numGuildBoostSlots };
     obj5.children = intl.format(require(1212) /* getSystemLocale */.t.bexfNy, obj6);
-    items2[1] = callback(require(4127) /* Text */.Text, obj5);
+    items2[1] = callback(require(4161) /* Text */.Text, obj5);
     obj3.children = items2;
     items1[1] = callback2(closure_5, obj3);
     obj1.children = items1;
     items[1] = callback2(closure_5, obj1);
     obj.children = items;
     tmp2 = callback2(closure_5, obj);
-    const tmp10 = importDefault(5513);
+    const tmp10 = importDefault(5548);
   }
   return tmp2;
 }
@@ -233,7 +233,7 @@ function BoostedGuild(arg0) {
       guildBannerSource = obj2.getGuildBannerSource(stateFromStores);
     }
   }
-  let obj3 = require(12468) /* getSubscriptionPlaceholderPatternSource */;
+  let obj3 = require(12511) /* getSubscriptionPlaceholderPatternSource */;
   let subscriptionPlaceholderPatternSource = obj3.useSubscriptionPlaceholderPatternSource();
   if (null != guildBannerSource) {
     subscriptionPlaceholderPatternSource = guildBannerSource;
@@ -256,7 +256,7 @@ function BoostedGuild(arg0) {
     tmp17 = callback(closure_5, obj3);
   }
   items3[1] = tmp17;
-  items3[2] = callback(guildBoostSlots(12472), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = callback(guildBoostSlots(12515), { guild: stateFromStores, theme: stateFromStores1 });
   obj1.children = items3;
   const items4 = [closure_12(closure_5, obj1), callback(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj.children = items4;
@@ -343,7 +343,7 @@ export default function GuildBoostSlotsInventory() {
         obj2 = { style: tmp.header, variant: "eyebrow", color: "text-default" };
         const intl = require(1212) /* getSystemLocale */.intl;
         obj2.children = intl.string(require(1212) /* getSystemLocale */.t.gB9oQ7);
-        const items3 = [callback(require(4127) /* Text */.Text, obj2), found.map((guildId) => outer1_11(outer1_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];
+        const items3 = [callback(require(4161) /* Text */.Text, obj2), found.map((guildId) => outer1_11(outer1_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];
         obj1.children = items3;
         tmp13 = callback2(closure_13, obj1);
       }

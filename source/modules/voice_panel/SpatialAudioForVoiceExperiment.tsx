@@ -1,9 +1,9 @@
-// Module ID: 12819
-// Function ID: 99899
+// Module ID: 12862
+// Function ID: 100069
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12819 (apexExperiment)
+// Module 12862 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-05-spatial-audio-for-voice", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

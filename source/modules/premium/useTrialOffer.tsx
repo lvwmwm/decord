@@ -1,10 +1,10 @@
-// Module ID: 6189
-// Function ID: 55540
+// Module ID: 6224
+// Function ID: 55661
 // Name: hasUserTrialOfferExpired
-// Dependencies: [57, 31, 1850, 6157, 566, 3777, 4016, 2]
+// Dependencies: [57, 31, 1850, 6191, 566, 3811, 4050, 2]
 // Exports: useTrialOffer
 
-// Module 6189 (hasUserTrialOfferExpired)
+// Module 6224 (hasUserTrialOfferExpired)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

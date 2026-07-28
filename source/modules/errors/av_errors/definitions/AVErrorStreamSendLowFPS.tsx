@@ -1,9 +1,9 @@
-// Module ID: 16604
-// Function ID: 129512
+// Module ID: 16644
+// Function ID: 129673
 // Name: AVErrorStreamSendLowFPSDefinition
-// Dependencies: [4144, 4150, 4217, 653, 664, 4195, 16601, 8783, 8784, 16598, 2]
+// Dependencies: [4178, 4184, 4251, 653, 664, 4229, 16641, 8827, 8828, 16638, 2]
 
-// Module 16604 (AVErrorStreamSendLowFPSDefinition)
+// Module 16644 (AVErrorStreamSendLowFPSDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ export const AVErrorStreamSendLowFPSDefinition = {
         if (0 === authStore.getViewerIds(currentUserActiveStream).length) {
           return null;
         } else {
-          const encodeStreamKeyResult = require(4195) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
+          const encodeStreamKeyResult = require(4229) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
           const rTCConnection = store.getRTCConnection(encodeStreamKeyResult);
           if (null == rTCConnection) {
             return null;
@@ -38,42 +38,42 @@ export const AVErrorStreamSendLowFPSDefinition = {
                 }
               }
               if (rTCConnection.hasActiveRemoteWants()) {
-                let obj = require(4195) /* isStreamKey */;
+                let obj = require(4229) /* isStreamKey */;
                 participant = participant.getParticipant(currentUserActiveStream.channelId, obj.encodeStreamKey(currentUserActiveStream));
                 if (null == participant) {
                   return null;
                 } else {
-                  const accumulatedStatsWithMinDatapoints = require(16601) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
+                  const accumulatedStatsWithMinDatapoints = require(16641) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
                   if (null == accumulatedStatsWithMinDatapoints) {
                     return null;
                   } else {
-                    const maxQuality = require(8783) /* isPremiumRequirement */.getMaxQuality(participant);
+                    const maxQuality = require(8827) /* isPremiumRequirement */.getMaxQuality(participant);
                     let tmp17 = null;
                     if (null != maxQuality) {
                       if (accumulatedStatsWithMinDatapoints.short.frameRate < obj2.getWarningFrameRate(maxQuality.maxFrameRate)) {
-                        obj = { type: require(8784) /* validateUniqueErrorCodes */.AVError.STREAM_SEND_LOW_FPS };
-                        const obj5 = require(16598) /* getCommonErrorContext */;
-                        const merged = Object.assign(obj5.getStreamErrorContext(require(4195) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
+                        obj = { type: require(8828) /* validateUniqueErrorCodes */.AVError.STREAM_SEND_LOW_FPS };
+                        const obj5 = require(16638) /* getCommonErrorContext */;
+                        const merged = Object.assign(obj5.getStreamErrorContext(require(4229) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
                         const items = [obj];
                         let tmp12 = items;
-                        const obj6 = require(4195) /* isStreamKey */;
+                        const obj6 = require(4229) /* isStreamKey */;
                       } else {
                         tmp12 = null;
-                        const obj3 = require(16601) /* getReportInboundErrors */;
+                        const obj3 = require(16641) /* getReportInboundErrors */;
                       }
                       tmp17 = tmp12;
-                      obj2 = require(16601) /* getReportInboundErrors */;
+                      obj2 = require(16641) /* getReportInboundErrors */;
                     }
                     return tmp17;
                   }
-                  const obj9 = require(16601) /* getReportInboundErrors */;
+                  const obj9 = require(16641) /* getReportInboundErrors */;
                 }
               } else {
                 return null;
               }
             }
           }
-          const obj7 = require(4195) /* isStreamKey */;
+          const obj7 = require(4229) /* isStreamKey */;
         }
       }
     }

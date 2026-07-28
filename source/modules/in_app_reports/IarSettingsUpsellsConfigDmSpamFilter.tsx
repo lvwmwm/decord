@@ -1,9 +1,9 @@
-// Module ID: 7646
-// Function ID: 61262
+// Module ID: 7682
+// Function ID: 61352
 // Name: items
-// Dependencies: [1212, 7634, 669, 3804, 1282, 2]
+// Dependencies: [1212, 7670, 669, 3838, 1282, 2]
 
-// Module 7646 (items)
+// Module 7682 (items)
 const obj = {
   getTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -23,11 +23,11 @@ obj.eligibleReportSubtypes = items;
 const items1 = [require("set").ChannelTypes.DM, require("set").ChannelTypes.GROUP_DM];
 obj.eligibleChannelTypes = items1;
 obj.onApply = function onApply() {
-  const DmSpamFilterV2 = require(3804) /* explicitContentFromProto */.DmSpamFilterV2;
+  const DmSpamFilterV2 = require(3838) /* explicitContentFromProto */.DmSpamFilterV2;
   return DmSpamFilterV2.updateSetting(require(1282) /* _callSuper */.DmSpamFilterV2.NON_FRIENDS);
 };
 obj.predicate = function predicate() {
-  const DmSpamFilterV2 = require(3804) /* explicitContentFromProto */.DmSpamFilterV2;
+  const DmSpamFilterV2 = require(3838) /* explicitContentFromProto */.DmSpamFilterV2;
   const setting = DmSpamFilterV2.getSetting();
   return setting === require(1282) /* _callSuper */.DmSpamFilterV2.DISABLED;
 };

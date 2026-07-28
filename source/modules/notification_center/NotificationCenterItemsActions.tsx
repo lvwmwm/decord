@@ -1,10 +1,10 @@
-// Module ID: 15211
-// Function ID: 115836
+// Module ID: 15251
+// Function ID: 115995
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 5872, 653, 686, 4943, 480, 1361, 5874, 507, 3804, 2]
+// Dependencies: [5, 5906, 653, 686, 4977, 480, 1361, 5908, 507, 3838, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15211 (_fetchNotificationCenterItems)
+// Module 15251 (_fetchNotificationCenterItems)
 import isThrottled from "isThrottled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
@@ -73,7 +73,7 @@ export const markNotificationCenterItemAcked = function markNotificationCenterIt
     } else {
       markNotificationCenterRemoteItemAcked(local_id.id);
     }
-    obj = require(5874) /* getRelativeTimestamp */;
+    obj = require(5908) /* getRelativeTimestamp */;
   }
 };
 export { markNotificationCenterLocalItemsAcked };

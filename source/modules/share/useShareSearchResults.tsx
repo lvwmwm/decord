@@ -1,10 +1,10 @@
-// Module ID: 9844
-// Function ID: 76340
+// Module ID: 9884
+// Function ID: 76469
 // Name: makeAutocompleterSearchParams
-// Dependencies: [57, 31, 4809, 1194, 5043, 6124, 9845, 566, 9848, 9541, 6106, 2]
+// Dependencies: [57, 31, 4843, 1194, 5077, 6158, 9885, 566, 9888, 9581, 6140, 2]
 // Exports: useShareSearchResults
 
-// Module 9844 (makeAutocompleterSearchParams)
+// Module 9884 (makeAutocompleterSearchParams)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ import { ALLOWED_TYPES } from "ALLOWED_TYPES";
 
 const require = arg1;
 function makeAutocompleterSearchParams(arg0) {
-  let obj = require(9845) /* getQuickSwitcherOptions */;
+  let obj = require(9885) /* getQuickSwitcherOptions */;
   const quickSwitcherOptions = obj.getQuickSwitcherOptions(arg0);
   const queryMode = quickSwitcherOptions.queryMode;
   let tmp2 = ALLOWED_TYPES;

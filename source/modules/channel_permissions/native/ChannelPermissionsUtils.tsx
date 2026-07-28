@@ -1,10 +1,10 @@
-// Module ID: 10856
-// Function ID: 84378
+// Module ID: 10894
+// Function ID: 84499
 // Name: openAddMembersActionSheet
-// Dependencies: [653, 675, 4099, 8222, 1935, 10857, 2]
+// Dependencies: [653, 675, 4133, 8260, 1935, 10895, 2]
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
-// Module 10856 (openAddMembersActionSheet)
+// Module 10894 (openAddMembersActionSheet)
 import { AnalyticEvents } from "ME";
 
 const result = require("showActionSheet").fileFinishedImporting("modules/channel_permissions/native/ChannelPermissionsUtils.tsx");
@@ -16,14 +16,14 @@ export const openAddMembersActionSheet = function openAddMembersActionSheet(chan
   }
   let obj = importDefault(675);
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
-  const obj2 = importDefault(4099);
+  const obj2 = importDefault(4133);
   obj = { channel, canSkip: flag };
-  obj2.openLazy(require(1935) /* maybeLoadBundle */(8222, dependencyMap.paths), "channel-add-members-" + channel.id, obj);
+  obj2.openLazy(require(1935) /* maybeLoadBundle */(8260, dependencyMap.paths), "channel-add-members-" + channel.id, obj);
 };
 export const openChannelMembersActionSheet = function openChannelMembersActionSheet(id, guild_id) {
   let obj = importDefault(675);
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Manage Channel Access" });
-  const obj2 = importDefault(4099);
+  const obj2 = importDefault(4133);
   obj = { channelId: id, guildId: guild_id };
-  obj2.openLazy(require(1935) /* maybeLoadBundle */(10857, dependencyMap.paths), "channel-members-" + id, obj);
+  obj2.openLazy(require(1935) /* maybeLoadBundle */(10895, dependencyMap.paths), "channel-members-" + id, obj);
 };

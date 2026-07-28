@@ -1,9 +1,9 @@
-// Module ID: 7586
-// Function ID: 60743
+// Module ID: 7622
+// Function ID: 60832
 // Name: getLengthRemainingTextColor
-// Dependencies: [31, 27, 33, 4131, 689, 6683, 6677, 3837, 7587, 1212, 6686, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 6719, 6713, 3871, 7623, 1212, 6722, 4161, 2]
 
-// Module 7586 (getLengthRemainingTextColor)
+// Module 7622 (getLengthRemainingTextColor)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -41,22 +41,22 @@ const forwardRefResult = require("result").forwardRef((isDisabled) => {
   let inputProps;
   let isFocused;
   let label = isDisabled;
-  let obj = require(6683) /* useInputStyles */;
+  let obj = require(6719) /* useInputStyles */;
   obj = { size: "lg", isRound: false, isDisabled: isDisabled.isDisabled };
   const inputStyles = obj.useInputStyles(obj);
   const tmp2 = callback2();
   const maxLength = isDisabled.maxLength;
-  let obj2 = require(6677) /* useTextFieldState */;
+  let obj2 = require(6713) /* useTextFieldState */;
   const textField = obj2.useTextField(isDisabled, arg1);
   ({ inputProps, innerRef } = textField);
-  let obj3 = require(3837) /* getNodeText */;
+  let obj3 = require(3871) /* getNodeText */;
   const focus = obj3.useFocus();
   let diff;
   ({ focusProps, isFocused } = focus);
   if (null != maxLength) {
     diff = maxLength - iter.value.length;
   }
-  let obj4 = require(7587) /* useCharacterLimitAnnouncement */;
+  let obj4 = require(7623) /* useCharacterLimitAnnouncement */;
   obj = { currentLength: iter.value.length, maxLength };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.message = intl.string(require(1212) /* getSystemLocale */.t.c2Jqed);
@@ -65,7 +65,7 @@ const forwardRefResult = require("result").forwardRef((isDisabled) => {
   const merged = Object.assign(label);
   obj1["isFocused"] = isFocused;
   obj2 = {};
-  const merged1 = Object.assign(require(3837) /* getNodeText */.mergeProps(inputProps, focusProps));
+  const merged1 = Object.assign(require(3871) /* getNodeText */.mergeProps(inputProps, focusProps));
   obj2["ref"] = innerRef;
   const items = [, , ];
   ({ padding: arr[0], text: arr[1] } = inputStyles);
@@ -73,11 +73,11 @@ const forwardRefResult = require("result").forwardRef((isDisabled) => {
   obj2["style"] = items;
   obj2["placeholderTextColor"] = inputStyles.placeholderText.color;
   obj2["multiline"] = true;
-  const items1 = [callback(require(6686) /* useKeyboardBlurring */.NativeTextInput, obj2), ];
+  const items1 = [callback(require(6722) /* useKeyboardBlurring */.NativeTextInput, obj2), ];
   if (null == diff) {
     items1[1] = null;
     obj1["children"] = items1;
-    return closure_4(require(6683) /* useInputStyles */.InputFieldContainer, obj1);
+    return closure_4(require(6719) /* useInputStyles */.InputFieldContainer, obj1);
   } else {
     obj3 = { style: tmp2.maxLengthIndicator };
     obj4 = { variant: "text-xs/semibold", color: getLengthRemainingTextColor(maxLength, diff) };
@@ -95,7 +95,7 @@ const forwardRefResult = require("result").forwardRef((isDisabled) => {
     }
     obj4.accessibilityLabel = formatToPlainStringResult;
     obj4.children = diff;
-    obj4 = tmp16(require(4127) /* Text */.Text, obj4);
+    obj4 = tmp16(require(4161) /* Text */.Text, obj4);
     obj3.children = obj4;
     callback(View, obj3);
     const tmp17 = View;

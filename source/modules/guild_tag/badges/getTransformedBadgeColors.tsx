@@ -1,10 +1,10 @@
-// Module ID: 12989
-// Function ID: 100752
+// Module ID: 13033
+// Function ID: 100925
 // Name: transformGuildBadgeColors
 // Dependencies: [666, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 12989 (transformGuildBadgeColors)
+// Module 13033 (transformGuildBadgeColors)
 function transformGuildBadgeColors(secondaryTintLuminances, primaryTintColor, secondaryLuminanceWeights) {
   const importDefault = secondaryLuminanceWeights;
   if (obj.valid(primaryTintColor)) {

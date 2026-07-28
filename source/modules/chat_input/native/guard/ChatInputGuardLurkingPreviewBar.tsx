@@ -1,8 +1,8 @@
-// Module ID: 11464
-// Function ID: 89251
-// Dependencies: [31, 27, 1838, 11093, 653, 33, 4131, 689, 566, 4099, 8385, 1935, 4325, 4661, 5513, 4127, 8396, 1273, 5512, 1212, 11465, 2]
+// Module ID: 11502
+// Function ID: 89375
+// Dependencies: [31, 27, 1838, 11131, 653, 33, 4165, 689, 566, 4133, 8429, 1935, 4359, 4695, 5548, 4161, 8440, 1273, 5547, 1212, 11503, 2]
 
-// Module 11464
+// Module 11502
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -49,35 +49,35 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
   if (null != stateFromStores) {
     obj = { style: tmp.cardContainer };
     obj = { style: tmp.headerRow, onPress: callback, accessibilityRole: "button", accessibilityLabel: stateFromStores.name };
-    const obj1 = { guild: stateFromStores, size: guildId(5513).GuildIconSizes.LARGE, style: tmp.guildIcon };
-    const items3 = [callback(importDefault(5513), obj1), ];
+    const obj1 = { guild: stateFromStores, size: guildId(5548).GuildIconSizes.LARGE, style: tmp.guildIcon };
+    const items3 = [callback(importDefault(5548), obj1), ];
     const obj2 = { style: tmp.textColumn };
     const obj3 = { style: tmp.nameRow };
     const obj4 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: stateFromStores.name };
-    const items4 = [callback(guildId(4127).Text, obj4), , ];
+    const items4 = [callback(guildId(4161).Text, obj4), , ];
     const obj5 = {};
-    const tmp12 = importDefault(5513);
+    const tmp12 = importDefault(5548);
     obj5.size = guildId(1273).Icon.Sizes.SMALL;
     obj5.guild = stateFromStores;
     obj5.style = tmp.badge;
-    items4[1] = callback(importDefault(8396), obj5);
+    items4[1] = callback(importDefault(8440), obj5);
     const obj6 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.chevron };
-    items4[2] = callback(guildId(5512).ChevronSmallRightIcon, obj6);
+    items4[2] = callback(guildId(5547).ChevronSmallRightIcon, obj6);
     obj3.children = items4;
     const items5 = [callback2(View, obj3), ];
     const obj7 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1 };
     const intl = guildId(1212).intl;
     obj7.children = intl.string(guildId(1212).t.BRSnEj);
-    items5[1] = callback(guildId(4127).Text, obj7);
+    items5[1] = callback(guildId(4161).Text, obj7);
     obj2.children = items5;
     items3[1] = callback2(View, obj2);
     obj.children = items3;
-    const items6 = [callback2(guildId(4661).PressableOpacity, obj), ];
+    const items6 = [callback2(guildId(4695).PressableOpacity, obj), ];
     const obj8 = { guildId, joinSource: constants.CHAT_INPUT_BLOCKER, onBeforeJoin: tmp4 };
-    items6[1] = callback(importDefault(11465), obj8);
+    items6[1] = callback(importDefault(11503), obj8);
     obj.children = items6;
     tmp5 = callback2(View, obj);
-    const tmp13 = importDefault(8396);
+    const tmp13 = importDefault(8440);
   }
   return tmp5;
 });

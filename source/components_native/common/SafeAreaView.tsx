@@ -1,10 +1,10 @@
-// Module ID: 5121
-// Function ID: 44414
+// Module ID: 5155
+// Function ID: 44529
 // Name: SafeAreaPaddingView
-// Dependencies: [31, 27, 33, 1557, 5122, 636, 2]
+// Dependencies: [31, 27, 33, 1557, 5156, 636, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 5121 (SafeAreaPaddingView)
+// Module 5155 (SafeAreaPaddingView)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

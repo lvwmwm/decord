@@ -1,10 +1,10 @@
-// Module ID: 11077
-// Function ID: 86053
+// Module ID: 11115
+// Function ID: 86176
 // Name: _joinOrStartActivityInChannel
-// Dependencies: [5, 1347, 1348, 1907, 10444, 5668, 10546, 2]
+// Dependencies: [5, 1347, 1348, 1907, 10482, 5678, 10584, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11077 (_joinOrStartActivityInChannel)
+// Module 11115 (_joinOrStartActivityInChannel)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

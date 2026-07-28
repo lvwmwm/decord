@@ -1,10 +1,10 @@
-// Module ID: 8113
-// Function ID: 64668
+// Module ID: 8151
+// Function ID: 64778
 // Name: spotifyUtmParams
-// Dependencies: [653, 4815, 477, 2]
+// Dependencies: [653, 4849, 477, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8113 (spotifyUtmParams)
+// Module 8151 (spotifyUtmParams)
 import set from "set";
 import set from "set";
 

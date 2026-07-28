@@ -1,8 +1,8 @@
-// Module ID: 11438
-// Function ID: 88931
-// Dependencies: [31, 27, 33, 4131, 689, 11426, 8867, 4127, 1212, 7575, 2]
+// Module ID: 11476
+// Function ID: 89050
+// Dependencies: [31, 27, 33, 4165, 689, 11464, 8911, 4161, 1212, 7611, 2]
 
-// Module 11438
+// Module 11476
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,17 +28,17 @@ const memoResult = importAllResult.memo(function GameMentionSearchBar() {
   let obj = { style: tmp.container };
   obj = { accessible: true, accessibilityRole: "header" };
   obj = { style: tmp.headerRow };
-  const items = [callback(require(8867) /* GameControllerIcon */.GameControllerIcon, { size: "sm", style: tmp.icon }), ];
-  const obj2 = { variant: require(11426) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
-  items[1] = callback(require(4127) /* Text */.Text, obj2);
+  const items = [callback(require(8911) /* GameControllerIcon */.GameControllerIcon, { size: "sm", style: tmp.icon }), ];
+  const obj2 = { variant: require(11464) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
+  items[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items;
   const items1 = [callback2(View, obj), ];
-  const obj3 = { style: tmp.description, variant: require(11426) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted" };
+  const obj3 = { style: tmp.description, variant: require(11464) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t["1kR88y"]);
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj.children = items1;
-  const items2 = [callback2(View, obj), callback(require(7575) /* Form */.FormDivider, { style: tmp.divider })];
+  const items2 = [callback2(View, obj), callback(require(7611) /* Form */.FormDivider, { style: tmp.divider })];
   obj.children = items2;
   return callback2(View, obj);
 });

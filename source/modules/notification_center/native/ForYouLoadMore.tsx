@@ -1,10 +1,10 @@
-// Module ID: 15244
-// Function ID: 116020
+// Module ID: 15284
+// Function ID: 116179
 // Name: ForYouLoadMore
-// Dependencies: [31, 27, 5872, 33, 4131, 624, 4544, 1212, 2]
+// Dependencies: [31, 27, 5906, 33, 4165, 624, 4578, 1212, 2]
 // Exports: ForYouLoadMore
 
-// Module 15244 (ForYouLoadMore)
+// Module 15284 (ForYouLoadMore)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.text = intl.string(require(1212) /* getSystemLocale */.t["Q/LSXp"]);
     obj.onPress = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(require(4544) /* Button */.Button, obj);
+    tmp4Result = tmp4(require(4578) /* Button */.Button, obj);
   }
   obj.children = tmp4Result;
   return <closure_3 style={callback().container} />;

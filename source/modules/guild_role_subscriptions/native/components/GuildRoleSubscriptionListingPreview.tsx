@@ -1,10 +1,10 @@
-// Module ID: 16530
-// Function ID: 128805
+// Module ID: 16570
+// Function ID: 128966
 // Name: PriceTier
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 5616, 1212, 14182, 14178, 5085, 16531, 16525, 16504, 14189, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 5651, 1212, 14226, 14222, 5119, 16571, 16565, 16544, 14233, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 16530 (PriceTier)
+// Module 16570 (PriceTier)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -26,28 +26,28 @@ function PriceTier(arg0) {
   const tmp3 = _createForOfIteratorHelperLoose();
   obj = { style: tmp3.priceGroup };
   obj = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  let obj2 = require(5616) /* formatSingleCurrencyPrice */;
+  let obj2 = require(5651) /* formatSingleCurrencyPrice */;
   obj.children = obj2.formatPrice(price, currency);
-  const items = [callback2(require(4127) /* Text */.Text, obj), ];
+  const items = [callback2(require(4161) /* Text */.Text, obj), ];
   const obj1 = { style: tmp3.priceInterval, variant: "eyebrow", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj2 = { period: require(14182) /* getBenefitKey */.formatPlanInterval(merged) };
+  obj2 = { period: require(14226) /* getBenefitKey */.formatPlanInterval(merged) };
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.isLGyX, obj2);
-  items[1] = callback2(require(4127) /* Text */.Text, obj1);
+  items[1] = callback2(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   return callback3(View, obj);
 }
 function Header(onPress) {
   const listingId = onPress.listingId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14178);
-  let obj1 = importAll(14178);
-  let obj2 = importAll(14178);
+  let obj = importAll(14222);
+  let obj1 = importAll(14222);
+  let obj2 = importAll(14222);
   const first = callback(obj2.useImage(listingId), 1)[0];
-  let obj3 = importAll(14178);
+  let obj3 = importAll(14222);
   obj = { style: tmp.header };
   obj = { variant: "heading-md/semibold", color: "interactive-text-active", children: callback(obj1.useName(listingId), 1)[0] };
-  const items = [callback2(require(4127) /* Text */.Text, obj), , , , ];
+  const items = [callback2(require(4161) /* Text */.Text, obj), , , , ];
   obj1 = { style: tmp.image };
   obj2 = {};
   let str = "";
@@ -56,12 +56,12 @@ function Header(onPress) {
   }
   obj2.uri = str;
   obj1.source = obj2;
-  items[1] = callback2(importDefault(5085), obj1);
+  items[1] = callback2(importDefault(5119), obj1);
   obj3 = {};
   const merged = Object.assign(callback(obj.useSubscriptionPlan(listingId), 1)[0]);
   items[2] = callback2(PriceTier, obj3);
-  items[3] = callback2(require(16531) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
-  items[4] = callback2(require(4127) /* Text */.Text, { variant: "text-sm/medium", children: callback(obj3.useDescription(listingId), 1)[0] });
+  items[3] = callback2(require(16571) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
+  items[4] = callback2(require(4161) /* Text */.Text, { variant: "text-sm/medium", children: callback(obj3.useDescription(listingId), 1)[0] });
   obj.children = items;
   return closure_7(View, obj);
 }
@@ -90,7 +90,7 @@ function SectionLabel(label) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj = { style: _createForOfIteratorHelperLoose().sectionLabel, variant: "eyebrow", color: "text-default", children: label.label };
-  obj["children"] = callback2(require(4127) /* Text */.Text, obj);
+  obj["children"] = callback2(require(4161) /* Text */.Text, obj);
   return callback2(Content, obj);
 }
 function LabeledSection(arg0) {
@@ -205,11 +205,11 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   let listingId;
   const tmp = _createForOfIteratorHelperLoose();
   ({ guildId, listingId } = arg0);
-  let obj = importAll(14178);
+  let obj = importAll(14222);
   const first = callback(obj.useChannelBenefits(listingId), 1)[0];
-  let obj1 = importAll(14178);
+  let obj1 = importAll(14222);
   const first1 = callback(obj1.useIntangibleBenefits(listingId), 1)[0];
-  let obj2 = importAll(14178);
+  let obj2 = importAll(14222);
   obj = { style: tmp.container };
   obj = {};
   const role = obj2.useRole(listingId, guildId);
@@ -218,7 +218,7 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   obj1 = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.label = intl.string(require(1212) /* getSystemLocale */.t.FJZmYx);
-  obj1.children = callback2(require(14189) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
+  obj1.children = callback2(require(14233) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
   items[1] = callback2(LabeledSection, obj1);
   let tmp6 = first.length > 0;
   if (tmp6) {

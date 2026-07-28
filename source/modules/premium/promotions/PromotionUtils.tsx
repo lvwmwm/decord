@@ -1,10 +1,10 @@
-// Module ID: 6509
-// Function ID: 58169
+// Module ID: 6545
+// Function ID: 58258
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 1316, 6208, 6207, 1852, 653, 4156, 3977, 507, 477, 675, 1360, 1334, 21, 1336, 6209, 2]
+// Dependencies: [5, 1316, 6243, 6242, 1852, 653, 4190, 4011, 507, 477, 675, 1360, 1334, 21, 1336, 6244, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getOutboundPromotionRedemptionUrl, getPromotionImageURL, shouldShowOutboundPromotionNotice
 
-// Module 6509 (_createForOfIteratorHelperLoose)
+// Module 6545 (_createForOfIteratorHelperLoose)
 import closure_3 from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -170,7 +170,7 @@ function getNextUnseenOutboundPromotionId() {
   return id;
 }
 function isLogitechPromotion(promotion) {
-  return promotion.partnerId === require(6209) /* CountryListMode */.LOGITECH_PARTNER_ID;
+  return promotion.partnerId === require(6244) /* CountryListMode */.LOGITECH_PARTNER_ID;
 }
 function shouldShowOutboundPromotionOnPlatform(promotion) {
   let tmp = !require(477) /* set */.isIOS();
@@ -180,7 +180,7 @@ function shouldShowOutboundPromotionOnPlatform(promotion) {
   return tmp;
 }
 function isRecurringPromotion(promotionType) {
-  return promotionType.promotionType === require(6209) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
+  return promotionType.promotionType === require(6244) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
 }
 ({ AnalyticEvents: closure_8, Endpoints: closure_9, Platforms: closure_10 } = ME);
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/promotions/PromotionUtils.tsx");

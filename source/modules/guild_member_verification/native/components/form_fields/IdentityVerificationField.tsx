@@ -1,10 +1,10 @@
-// Module ID: 9108
-// Function ID: 71596
+// Module ID: 9152
+// Function ID: 71747
 // Name: BaseIdentityVerificationField
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 4083, 4544, 1212, 3951, 9109, 4338, 9164, 1935, 9167, 9194, 9140, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 4117, 4578, 1212, 3985, 9153, 4372, 9208, 1935, 9211, 9238, 9184, 2]
 // Exports: default
 
-// Module 9108 (BaseIdentityVerificationField)
+// Module 9152 (BaseIdentityVerificationField)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,12 +31,12 @@ function BaseIdentityVerificationField(icon) {
   const items1 = [tmp.label];
   obj.style = items1;
   obj.children = label;
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   const obj1 = {};
   if (passesVerification) {
     obj1.style = tmp.verifiedContainer;
     const obj2 = { color: "status-positive" };
-    obj1.children = callback(require(4083) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj2);
+    obj1.children = callback(require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj2);
     let tmp11 = obj1;
   } else {
     obj1.style = tmp.ctaButton;
@@ -44,7 +44,7 @@ function BaseIdentityVerificationField(icon) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj3.text = intl.string(require(1212) /* getSystemLocale */.t["13ofGu"]);
     obj3.onPress = onPress;
-    obj1.children = callback(require(4544) /* Button */.Button, obj3);
+    obj1.children = callback(require(4578) /* Button */.Button, obj3);
     tmp11 = obj1;
   }
   items[2] = callback(View, tmp11);
@@ -66,7 +66,7 @@ export default function IdentityVerificationField(arg0) {
   let passesVerification;
   let platform;
   ({ platform, passesVerification } = arg0);
-  if (require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
+  if (require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const string2 = intl3.string;
     let INsLgA = require(1212) /* getSystemLocale */.t;
@@ -77,7 +77,7 @@ export default function IdentityVerificationField(arg0) {
       string2Result = string2(INsLgA.c6EUJI);
     }
   } else {
-    if (require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
+    if (require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       const string = intl2.string;
       const t = require(1212) /* getSystemLocale */.t;
@@ -91,12 +91,12 @@ export default function IdentityVerificationField(arg0) {
       const intl = require(1212) /* getSystemLocale */.intl;
       stringResult1 = intl.string(require(1212) /* getSystemLocale */.t.mhv8BM);
     }
-    if (require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = require(9194) /* EnvelopeIcon */.EnvelopeIcon;
-    } else if (require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = require(9140) /* MobilePhoneIcon */.MobilePhoneIcon;
+    if (require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
+      let EnvelopeIcon = require(9238) /* EnvelopeIcon */.EnvelopeIcon;
+    } else if (require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
+      EnvelopeIcon = require(9184) /* MobilePhoneIcon */.MobilePhoneIcon;
     } else {
-      EnvelopeIcon = require(9194) /* EnvelopeIcon */.EnvelopeIcon;
+      EnvelopeIcon = require(9238) /* EnvelopeIcon */.EnvelopeIcon;
     }
     let obj = {
       label: stringResult1,

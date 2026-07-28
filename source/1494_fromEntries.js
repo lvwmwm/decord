@@ -1,5 +1,5 @@
 // Module ID: 1494
-// Function ID: 17234
+// Function ID: 17238
 // Name: fromEntries
 // Dependencies: [57]
 // Exports: default

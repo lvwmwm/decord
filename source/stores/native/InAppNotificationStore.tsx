@@ -1,9 +1,9 @@
-// Module ID: 10182
-// Function ID: 78676
+// Module ID: 10222
+// Function ID: 78805
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1347, 4144, 10183, 5075, 5765, 1316, 1348, 1838, 10184, 4143, 1907, 1342, 1850, 653, 7740, 7738, 3713, 22, 10185, 10187, 7668, 5870, 10188, 10197, 4352, 10198, 664, 10199, 10200, 10192, 10202, 10203, 10207, 4322, 3804, 1282, 9492, 5828, 10208, 4325, 21, 566, 686, 2]
+// Dependencies: [15, 17, 18, 6, 7, 1347, 4178, 10223, 5109, 5775, 1316, 1348, 1838, 10224, 4177, 1907, 1342, 1850, 653, 7776, 7774, 3747, 22, 10225, 10227, 7704, 5904, 10228, 10237, 4386, 10238, 664, 10239, 10240, 10232, 10242, 10243, 10247, 4356, 3838, 1282, 9532, 5838, 10248, 4359, 21, 566, 686, 2]
 
-// Module 10182 (_isNativeReflectConstruct)
+// Module 10222 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "ME";
@@ -119,9 +119,9 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function handleAlertMessage() {
-  let obj = guild(10188);
+  let obj = guild(10228);
   if (obj.allowInAppNotifications()) {
-    let obj1 = guild(10203);
+    let obj1 = guild(10243);
     const result = obj1.shouldShowRaidInAppNotification();
     const guildId = result.guildId;
     if (result.show) {
@@ -130,7 +130,7 @@ function handleAlertMessage() {
         if (null == guild) {
           return false;
         } else {
-          channel = store.getChannel(channel(10207)(guild));
+          channel = store.getChannel(channel(10247)(guild));
           let tmp15 = null != channel;
           if (tmp15) {
             let tmp6 = channelId.getChannelId() !== channel.id;
@@ -151,11 +151,11 @@ function handleAlertMessage() {
                                 },
                   channel,
                   guild,
-                  inAppNotificationId: guild(10200).generateInAppNotificationId()
+                  inAppNotificationId: guild(10240).generateInAppNotificationId()
                 };
                 obj.notification = obj1;
                 handleEnqueueNotification(obj);
-                const obj6 = guild(10200);
+                const obj6 = guild(10240);
               }
               tmp6 = tmp8;
             }
@@ -194,14 +194,14 @@ function handleEnqueueNotification(notification) {
     trackDismissed(notification, "restricted_hours");
     return false;
   } else {
-    let obj = require(10200) /* hasMedia */;
+    let obj = require(10240) /* hasMedia */;
     const result = obj.extractMetadataFromNotification(notification);
     ({ guildId, channelId, messageId } = result);
     obj = { type: notification.type, guild_id: guildId, channel_id: channelId, in_app_notification_id: notification.inAppNotificationId, message_id: messageId };
-    importDefault(4325).trackWithMetadata(constants.IN_APP_NOTIFICATION_CREATED, obj);
+    importDefault(4359).trackWithMetadata(constants.IN_APP_NOTIFICATION_CREATED, obj);
     constants.enqueue(notification);
-    const obj2 = importDefault(4325);
-    const result1 = require(10208) /* playInAppMessageSound */.playInAppMessageSound(notification);
+    const obj2 = importDefault(4359);
+    const result1 = require(10248) /* playInAppMessageSound */.playInAppMessageSound(notification);
     if (null == c26) {
       showNextNotification();
     }
@@ -211,11 +211,11 @@ function trackDismissed(type, dismiss_reason) {
   let channelId;
   let guildId;
   let messageId;
-  let obj = require(10200) /* hasMedia */;
+  let obj = require(10240) /* hasMedia */;
   const result = obj.extractMetadataFromNotification(type);
   ({ guildId, channelId, messageId } = result);
   obj = { type: type.type, guild_id: guildId, channel_id: channelId, message_id: messageId, dismiss_reason, in_app_notification_id: type.inAppNotificationId };
-  importDefault(4325).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
+  importDefault(4359).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj);
 }
 function showNextNotification() {
   let closure_26 = tmp5.tryDrain();
@@ -407,12 +407,12 @@ tmp7.displayName = "InAppNotificationStore";
 tmp7 = new tmp7(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
     let c29 = true;
-    let closure_30 = require(10185) /* _createForOfIteratorHelperLoose */.toScheduleSnapshot(getCurrentRestrictedSchedule());
+    let closure_30 = require(10225) /* _createForOfIteratorHelperLoose */.toScheduleSnapshot(getCurrentRestrictedSchedule());
     handleAlertMessage();
   },
   LOGOUT: function handleLogout() {
     let c29 = false;
-    const EMPTY_SCHEDULE_SNAPSHOT = require(10185) /* _createForOfIteratorHelperLoose */.EMPTY_SCHEDULE_SNAPSHOT;
+    const EMPTY_SCHEDULE_SNAPSHOT = require(10225) /* _createForOfIteratorHelperLoose */.EMPTY_SCHEDULE_SNAPSHOT;
     let c26 = null;
     tmp5.removeAll(() => true);
   },
@@ -420,12 +420,12 @@ tmp7 = new tmp7(require("dispatcher"), {
   MESSAGE_CREATE: function handleIncomingMessage(message) {
     message = message.message;
     const channel_id = message.channel_id;
-    let obj = require(10187) /* canViewPotentiallyNSFWChannel */;
+    let obj = require(10227) /* canViewPotentiallyNSFWChannel */;
     if (obj.canViewPotentiallyNSFWChannel(channel_id)) {
       if (obj2.shouldShowSpoilerGateForChannelId(channel_id)) {
         return false;
       } else {
-        if (importDefault(5870)(message)) {
+        if (importDefault(5904)(message)) {
           const SELF_MENTIONABLE_SYSTEM = constants4.SELF_MENTIONABLE_SYSTEM;
           if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
             return false;
@@ -435,15 +435,15 @@ tmp7 = new tmp7(require("dispatcher"), {
           if (obj3.allowInAppNotifications()) {
             if (!obj4.isEnabled()) {
               if (!uiStore.getChatOpen(channel_id)) {
-                const result = require(10188) /* _createForOfIteratorHelperLoose */.shouldIncludeSelectedChannel();
-                const obj5 = require(10188) /* _createForOfIteratorHelperLoose */;
+                const result = require(10228) /* _createForOfIteratorHelperLoose */.shouldIncludeSelectedChannel();
+                const obj5 = require(10228) /* _createForOfIteratorHelperLoose */;
                 if (obj6.shouldNotify(message, channel_id, result)) {
                   const channel = store.getChannel(channel_id);
                   if (null == channel) {
                     return false;
                   } else {
-                    const messageRecord = require(4352) /* createMinimalMessageRecord */.createMessageRecord(message);
-                    const obj11 = require(4352) /* createMinimalMessageRecord */;
+                    const messageRecord = require(4386) /* createMinimalMessageRecord */.createMessageRecord(message);
+                    const obj11 = require(4386) /* createMinimalMessageRecord */;
                     if (obj12.isMessageContentPreviewable(messageRecord)) {
                       callback3(message, channel.guild_id);
                       obj = {};
@@ -458,7 +458,7 @@ tmp7 = new tmp7(require("dispatcher"), {
                                             outer1_1(outer1_2[32]).clearNotification();
                                           },
                         parentChannel: store.getChannel(channel.parent_id),
-                        inAppNotificationId: require(10200) /* hasMedia */.generateInAppNotificationId(),
+                        inAppNotificationId: require(10240) /* hasMedia */.generateInAppNotificationId(),
                         mentionCount: mentionCount.getMentionCount(channel.id)
                       };
                       obj.notification = obj;
@@ -466,28 +466,28 @@ tmp7 = new tmp7(require("dispatcher"), {
                     } else {
                       return false;
                     }
-                    obj12 = require(10198) /* isMessageContentPreviewable */;
+                    obj12 = require(10238) /* isMessageContentPreviewable */;
                   }
                 } else {
                   return false;
                 }
-                obj6 = require(10188) /* _createForOfIteratorHelperLoose */;
+                obj6 = require(10228) /* _createForOfIteratorHelperLoose */;
               }
             }
-            obj4 = importDefault(10197);
+            obj4 = importDefault(10237);
           }
-          obj3 = require(10188) /* _createForOfIteratorHelperLoose */;
+          obj3 = require(10228) /* _createForOfIteratorHelperLoose */;
         }
         return false;
       }
-      obj2 = require(7668) /* getSpoilerGatingChannelId */;
+      obj2 = require(7704) /* getSpoilerGatingChannelId */;
     } else {
       return false;
     }
   },
   MESSAGE_REQUEST_NOTIFICATION_SENT: function handleMessageRequest(triggeringUserId) {
     triggeringUserId = triggeringUserId.triggeringUserId;
-    let obj = importDefault(10202);
+    let obj = importDefault(10242);
     if (obj.getConfig({ location: "inAppNotificationStore" }).enabled) {
       const user = authStore.getUser(triggeringUserId);
       if (null == user) {
@@ -501,7 +501,7 @@ tmp7 = new tmp7(require("dispatcher"), {
         obj.onDismiss = function onDismiss() {
           outer1_1(outer1_2[32]).clearNotification();
         };
-        obj.inAppNotificationId = require(10200) /* hasMedia */.generateInAppNotificationId();
+        obj.inAppNotificationId = require(10240) /* hasMedia */.generateInAppNotificationId();
         obj.notification = obj;
         handleEnqueueNotification(obj);
       }
@@ -543,7 +543,7 @@ tmp7 = new tmp7(require("dispatcher"), {
       if (null != message.reactions) {
         if (null != emoji) {
           if (obj13.allowInAppNotifications()) {
-            let obj = emoji(4322);
+            let obj = emoji(4356);
             let tryParseChannelPathResult = obj.tryParseChannelPath(tmp);
             if (null == tryParseChannelPathResult) {
               tryParseChannelPathResult = { channelId: null, guildId: null };
@@ -551,7 +551,7 @@ tmp7 = new tmp7(require("dispatcher"), {
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {
               if (null != guildId) {
-                const ReactionNotifications = emoji(3804).ReactionNotifications;
+                const ReactionNotifications = emoji(3838).ReactionNotifications;
                 const setting = ReactionNotifications.getSetting();
                 if (setting === emoji(1282).ReactionNotificationType.NOTIFICATIONS_DISABLED) {
                   return false;
@@ -576,12 +576,12 @@ tmp7 = new tmp7(require("dispatcher"), {
                   if (null != channel) {
                     if (!obj4.isEnabled()) {
                       if (!uiStore.getChatOpen(channelId)) {
-                        const result1 = emoji(10188).shouldIncludeSelectedChannel();
-                        const obj5 = emoji(10188);
+                        const result1 = emoji(10228).shouldIncludeSelectedChannel();
+                        const obj5 = emoji(10228);
                         obj = { message, channel, reactor: user, includeSelectedChannel: result1 };
                         if (obj6.shouldNotifyForReaction(obj)) {
-                          const messageRecord = emoji(4352).createMessageRecord(message);
-                          const obj8 = emoji(4352);
+                          const messageRecord = emoji(4386).createMessageRecord(message);
+                          const obj8 = emoji(4386);
                           if (obj9.isMessageContentPreviewable(messageRecord)) {
                             const reactions = message.reactions;
                             const found = reactions.find((emoji) => {
@@ -617,18 +617,18 @@ tmp7 = new tmp7(require("dispatcher"), {
                               message: messageRecord,
                               parentChannel: store.getChannel(channel.parent_id),
                               reaction: tmp25,
-                              inAppNotificationId: emoji(10200).generateInAppNotificationId()
+                              inAppNotificationId: emoji(10240).generateInAppNotificationId()
                             };
                             obj.notification = obj1;
                             handleEnqueueNotification(obj);
                           } else {
                             return false;
                           }
-                          obj9 = emoji(10198);
+                          obj9 = emoji(10238);
                         } else {
                           return false;
                         }
-                        obj6 = emoji(10188);
+                        obj6 = emoji(10228);
                       }
                     }
                     return false;
@@ -639,7 +639,7 @@ tmp7 = new tmp7(require("dispatcher"), {
             }
             return false;
           }
-          obj13 = emoji(10188);
+          obj13 = emoji(10228);
         }
       }
     }
@@ -647,7 +647,7 @@ tmp7 = new tmp7(require("dispatcher"), {
   },
   MESSAGE_REMINDER_DUE: function handleMessageReminderDue(savedMessage) {
     savedMessage = savedMessage.savedMessage;
-    let obj = importDefault(9492);
+    let obj = importDefault(9532);
     if (obj.getConfig({ location: "inAppNotificationStore" }).enabled) {
       if (null != savedMessage.message) {
         const channel = store.getChannel(savedMessage.saveData.channelId);
@@ -664,11 +664,11 @@ tmp7 = new tmp7(require("dispatcher"), {
             channel,
             author: savedMessage.message.author,
             savedMessage,
-            inAppNotificationId: require(10200) /* hasMedia */.generateInAppNotificationId()
+            inAppNotificationId: require(10240) /* hasMedia */.generateInAppNotificationId()
           };
           obj.notification = obj;
           handleEnqueueNotification(obj);
-          const obj4 = require(10200) /* hasMedia */;
+          const obj4 = require(10240) /* hasMedia */;
         }
       }
     }
@@ -677,7 +677,7 @@ tmp7 = new tmp7(require("dispatcher"), {
     let subtitle;
     let title;
     ({ title, subtitle } = arg0);
-    let obj = require(5828) /* apexExperiment */;
+    let obj = require(5838) /* apexExperiment */;
     const tmp = !obj.getIsFamilyCenterV3Enabled({ location: "InAppNotificationStore" });
     let tmp2 = !tmp;
     if (!tmp) {
@@ -692,11 +692,11 @@ tmp7 = new tmp7(require("dispatcher"), {
               },
           title,
           subtitle,
-          inAppNotificationId: require(10200) /* hasMedia */.generateInAppNotificationId()
+          inAppNotificationId: require(10240) /* hasMedia */.generateInAppNotificationId()
         };
         obj.notification = obj;
         handleEnqueueNotification(obj);
-        const obj4 = require(10200) /* hasMedia */;
+        const obj4 = require(10240) /* hasMedia */;
       }
       tmp2 = !!obj.screenDowntimeReminder;
       const tmp5 = !!obj.screenDowntimeReminder;
@@ -721,7 +721,7 @@ tmp7 = new tmp7(require("dispatcher"), {
       if (channel.isForumLikeChannel()) {
         if (channel.isNewlyCreated) {
           if (obj2.allowInAppNotifications()) {
-            const obj3 = require(10188) /* _createForOfIteratorHelperLoose */;
+            const obj3 = require(10228) /* _createForOfIteratorHelperLoose */;
             if (obj3.shouldNotifyForForumThreadCreation(channel, channel, !obj4.isChannelFocused())) {
               const user = authStore.getUser(channel.ownerId);
               if (null == user) {
@@ -743,14 +743,14 @@ tmp7 = new tmp7(require("dispatcher"), {
                     onDismiss() {
                                     outer1_1(outer1_2[32]).clearNotification();
                                   },
-                    inAppNotificationId: require(10200) /* hasMedia */.generateInAppNotificationId()
+                    inAppNotificationId: require(10240) /* hasMedia */.generateInAppNotificationId()
                   };
                   obj.notification = obj;
                   handleEnqueueNotification(obj);
                 }
               }
             }
-            obj4 = require(10192) /* getFocusedChannelId */;
+            obj4 = require(10232) /* getFocusedChannelId */;
           }
           return false;
         } else {
@@ -821,7 +821,7 @@ tmp7 = new tmp7(require("dispatcher"), {
     return rejectNotifications(predicate);
   },
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsUpdate() {
-    let flag = !require(10188) /* _createForOfIteratorHelperLoose */.allowInAppNotifications();
+    let flag = !require(10228) /* _createForOfIteratorHelperLoose */.allowInAppNotifications();
     if (flag) {
       if (null != c26) {
         const tmp5 = trackDismissed(c26, "settings_updated");
@@ -834,41 +834,41 @@ tmp7 = new tmp7(require("dispatcher"), {
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {
     if (c29) {
-      let obj = require(5828) /* apexExperiment */;
+      let obj = require(5838) /* apexExperiment */;
       obj = { location: "InAppNotificationStore" };
       if (obj.getIsFamilyCenterV3Enabled(obj)) {
-        const toScheduleSnapshotResult = require(10185) /* _createForOfIteratorHelperLoose */.toScheduleSnapshot(getCurrentRestrictedSchedule());
+        const toScheduleSnapshotResult = require(10225) /* _createForOfIteratorHelperLoose */.toScheduleSnapshot(getCurrentRestrictedSchedule());
         const EMPTY_SCHEDULE_SNAPSHOT = toScheduleSnapshotResult;
-        const obj3 = require(10185) /* _createForOfIteratorHelperLoose */;
-        const diffSchedulesResult = require(10185) /* _createForOfIteratorHelperLoose */.diffSchedules(EMPTY_SCHEDULE_SNAPSHOT, toScheduleSnapshotResult);
+        const obj3 = require(10225) /* _createForOfIteratorHelperLoose */;
+        const diffSchedulesResult = require(10225) /* _createForOfIteratorHelperLoose */.diffSchedules(EMPTY_SCHEDULE_SNAPSHOT, toScheduleSnapshotResult);
         let setting = null != diffSchedulesResult;
         if (setting) {
-          const EnableScreenDowntimeScheduleNotifications = require(3804) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
+          const EnableScreenDowntimeScheduleNotifications = require(3838) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
           setting = EnableScreenDowntimeScheduleNotifications.getSetting();
         }
         if (setting) {
-          setting = require(10188) /* _createForOfIteratorHelperLoose */.allowInAppNotifications();
-          const obj5 = require(10188) /* _createForOfIteratorHelperLoose */;
+          setting = require(10228) /* _createForOfIteratorHelperLoose */.allowInAppNotifications();
+          const obj5 = require(10228) /* _createForOfIteratorHelperLoose */;
         }
         if (setting) {
           obj = {};
           const obj1 = {
             type: constants3.RESTRICTED_SCHEDULE_UPDATED,
-            key: require(10185) /* _createForOfIteratorHelperLoose */.restrictedScheduleNotificationKey(diffSchedulesResult.kind),
+            key: require(10225) /* _createForOfIteratorHelperLoose */.restrictedScheduleNotificationKey(diffSchedulesResult.kind),
             duration: 7 * importDefault(664).Millis.SECOND,
             onDismiss() {
                     outer1_1(outer1_2[32]).clearNotification();
                   }
           };
-          const obj8 = require(10185) /* _createForOfIteratorHelperLoose */;
-          obj1.title = require(10185) /* _createForOfIteratorHelperLoose */.getRestrictedScheduleNotificationTitle(diffSchedulesResult.kind);
-          const obj9 = require(10185) /* _createForOfIteratorHelperLoose */;
-          obj1.subtitle = require(10185) /* _createForOfIteratorHelperLoose */.getRestrictedScheduleNotificationSubtitle(diffSchedulesResult.rule);
-          const obj10 = require(10185) /* _createForOfIteratorHelperLoose */;
-          obj1.inAppNotificationId = require(10200) /* hasMedia */.generateInAppNotificationId();
+          const obj8 = require(10225) /* _createForOfIteratorHelperLoose */;
+          obj1.title = require(10225) /* _createForOfIteratorHelperLoose */.getRestrictedScheduleNotificationTitle(diffSchedulesResult.kind);
+          const obj9 = require(10225) /* _createForOfIteratorHelperLoose */;
+          obj1.subtitle = require(10225) /* _createForOfIteratorHelperLoose */.getRestrictedScheduleNotificationSubtitle(diffSchedulesResult.rule);
+          const obj10 = require(10225) /* _createForOfIteratorHelperLoose */;
+          obj1.inAppNotificationId = require(10240) /* hasMedia */.generateInAppNotificationId();
           obj.notification = obj1;
           handleEnqueueNotification(obj);
-          const obj11 = require(10200) /* hasMedia */;
+          const obj11 = require(10240) /* hasMedia */;
         }
       } else {
         return false;

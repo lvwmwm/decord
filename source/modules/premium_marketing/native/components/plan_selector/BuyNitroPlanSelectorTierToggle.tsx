@@ -1,10 +1,10 @@
-// Module ID: 12370
-// Function ID: 96165
+// Module ID: 12413
+// Function ID: 96335
 // Name: items
-// Dependencies: [57, 31, 27, 6173, 1852, 33, 4131, 689, 3992, 4132, 4135, 4134, 4555, 668, 6512, 4100, 4101, 4127, 1212, 2]
+// Dependencies: [57, 31, 27, 6207, 1852, 33, 4165, 689, 4026, 4166, 4169, 4168, 4589, 668, 6548, 4134, 4135, 4161, 1212, 2]
 // Exports: default
 
-// Module 12370 (items)
+// Module 12413 (items)
 import importDefaultResult from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -166,9 +166,9 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
     return obj;
   })(selectedTier);
   let closure_7 = React.useRef(new Map());
-  let obj = selectedTier(3992);
+  let obj = selectedTier(4026);
   let sharedValue = obj.useSharedValue(0);
-  let obj1 = selectedTier(3992);
+  let obj1 = selectedTier(4026);
   let sharedValue1 = obj1.useSharedValue(0);
   let closure_10 = React.useRef(false);
   const layoutEffect = React.useLayoutEffect(() => {
@@ -210,7 +210,7 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
       }
     }
   }, items);
-  selectedTier(3992);
+  selectedTier(4026);
   let fn = function k() {
     let obj = {};
     obj = { translateX: sharedValue.get() };
@@ -239,14 +239,14 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
     const items3 = [tmp.gradientTrack, gradientFlowStyle];
     obj3.style = items3;
     let obj4 = { colors: items, locations: closure_12, start: selectedTier(668).HorizontalGradient.START, end: selectedTier(668).HorizontalGradient.END, style: tmp.gradientFill };
-    obj3.children = sharedValue1(importDefault(4555), obj4);
-    obj2.children = sharedValue1(importDefault(3992).View, obj3);
-    obj.children = sharedValue1(importDefault(3992).View, obj2);
-    tmp15 = sharedValue1(importDefault(3992).View, obj);
-    const tmp19 = importDefault(4555);
+    obj3.children = sharedValue1(importDefault(4589), obj4);
+    obj2.children = sharedValue1(importDefault(4026).View, obj3);
+    obj.children = sharedValue1(importDefault(4026).View, obj2);
+    tmp15 = sharedValue1(importDefault(4026).View, obj);
+    const tmp19 = importDefault(4589);
   }
   const items4 = [tmp15, ];
-  const NITRO_PLAN_TIERS = selectedTier(6512).NITRO_PLAN_TIERS;
+  const NITRO_PLAN_TIERS = selectedTier(6548).NITRO_PLAN_TIERS;
   items4[1] = NITRO_PLAN_TIERS.map((arg0) => {
     let closure_0 = arg0;
     let str = "text-muted";

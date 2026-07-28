@@ -1,14 +1,20 @@
 // Module ID: 13354
-// Function ID: 102236
+// Function ID: 102319
 // Name: __core-js_shared__
-// Dependencies: [13302, 13321, 13311]
+// Dependencies: [13355]
 
 // Module 13354 (__core-js_shared__)
-import all from "all";
 
-let closure_0 = require("call")(Function.toString);
-if (!all(require("__core-js_shared__").inspectSource)) {
-  require("__core-js_shared__").inspectSource = (arg0) => callback(arg0);
-}
-
-export { inspectSource as default } from "__core-js_shared__";
+export default (arg0, arg1) => {
+  let obj = arg1;
+  let tmp = require(13355) /* __core-js_shared__ */[arg0];
+  if (!tmp) {
+    if (!obj) {
+      obj = {};
+    }
+    require(13355) /* __core-js_shared__ */[arg0] = obj;
+    tmp = obj;
+    const tmp4 = require(13355) /* __core-js_shared__ */;
+  }
+  return tmp;
+};

@@ -1,10 +1,10 @@
-// Module ID: 11347
-// Function ID: 88171
+// Module ID: 11385
+// Function ID: 88290
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [31, 4123, 33, 4131, 689, 1324, 3835, 566, 477, 3992, 4661, 5453, 2]
+// Dependencies: [31, 4157, 33, 4165, 689, 1324, 3869, 566, 477, 4026, 4695, 5488, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11347 (PremiumAnimatedGiftButton)
+// Module 11385 (PremiumAnimatedGiftButton)
 import result from "result";
 import { useRef } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,16 +38,16 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
   let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const enabled = obj.useMobileVisualRefreshConfig({ location: "PremiumAnimatedGiftButton" }).enabled;
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   const token = obj1.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  let obj2 = require(3835) /* map */;
+  let obj2 = require(3869) /* map */;
   const token1 = obj2.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const token2 = require(3835) /* map */.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = require(3869) /* map */.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp4 = callback(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp6 = useRef(null);
   require = tmp6;
-  const obj4 = require(3835) /* map */;
+  const obj4 = require(3869) /* map */;
   const items = [_isNativeReflectConstruct];
   stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.useReducedMotion);
   const items1 = [channelId, stateFromStores];
@@ -79,7 +79,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj = {};
   let FadeOut;
   if (!stateFromStores) {
-    FadeOut = require(3992).FadeOut;
+    FadeOut = require(4026).FadeOut;
   }
   obj.exiting = FadeOut;
   obj = {};
@@ -103,7 +103,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj.accessibilityState = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp6, style: enabled ? tmp4.animationRefresh : tmp4.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj["children"] = jsx(stateFromStores(5453), { ref: tmp6, style: enabled ? tmp4.animationRefresh : tmp4.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
-  obj.children = jsx(require(4661) /* PressableBase */.PressableOpacity, {});
-  return jsx(stateFromStores(3992).View, {});
+  obj["children"] = jsx(stateFromStores(5488), { ref: tmp6, style: enabled ? tmp4.animationRefresh : tmp4.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj.children = jsx(require(4695) /* PressableBase */.PressableOpacity, {});
+  return jsx(stateFromStores(4026).View, {});
 };

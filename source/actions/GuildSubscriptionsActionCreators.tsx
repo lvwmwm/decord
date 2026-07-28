@@ -1,10 +1,10 @@
-// Module ID: 6019
-// Function ID: 53797
+// Module ID: 6053
+// Function ID: 53916
 // Name: subscribeChannel
-// Dependencies: [686, 6006, 2]
+// Dependencies: [686, 6040, 2]
 // Exports: subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 6019 (subscribeChannel)
+// Module 6053 (subscribeChannel)
 function subscribeChannel(guildId, channelId, DEFAULT_RANGES) {
   let obj = importDefault(686);
   obj = { type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges: DEFAULT_RANGES };
@@ -68,8 +68,8 @@ export const subscribeChannelDimensions = function subscribeChannelDimensions(ar
     const _Math = Math;
     bound = Math.max(pushRange(0), toIndexResult1);
   }
-  const rounded = Math.floor(bound / require(6006) /* serializeChannelRanges */.MINIMUM_RANGE);
-  let result = rounded * require(6006) /* serializeChannelRanges */.MINIMUM_RANGE;
+  const rounded = Math.floor(bound / require(6040) /* serializeChannelRanges */.MINIMUM_RANGE);
+  let result = rounded * require(6040) /* serializeChannelRanges */.MINIMUM_RANGE;
   if (result <= toIndexResult2) {
     do {
       result = pushRange(result);

@@ -1,8 +1,8 @@
-// Module ID: 15516
-// Function ID: 119279
-// Dependencies: [31, 4469, 4468, 1552, 653, 1455, 11147, 33, 675, 3992, 3997, 1555, 15517, 1324, 3835, 689, 7952, 15518, 11273, 9610, 4675, 3990, 4666, 477, 4665, 9608, 11309, 1212, 6556, 4632, 9613, 9615, 4645, 9617, 15519, 15520, 9619, 15521, 9620, 2]
+// Module ID: 15555
+// Function ID: 119435
+// Dependencies: [31, 4503, 4502, 1552, 653, 1455, 11185, 33, 675, 4026, 4031, 1555, 15556, 1324, 3869, 689, 7989, 15557, 11311, 9650, 4709, 4024, 4700, 477, 4699, 9648, 11347, 1212, 6592, 4666, 9653, 9655, 4679, 9657, 15558, 15559, 9659, 15560, 9660, 2]
 
-// Module 15516
+// Module 15555
 import importAllResult from "AttachmentIcon";
 import { DraftType } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -10,7 +10,7 @@ import DRAG_HANDLE from "DRAG_HANDLE";
 import ME from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import { KEYBOARD_ANIMATION_CONFIG } from "KEYBOARD_ANIMATION_DURATION";
-import jsxProd from "module_9617";
+import jsxProd from "module_9657";
 
 let closure_12;
 let closure_13;

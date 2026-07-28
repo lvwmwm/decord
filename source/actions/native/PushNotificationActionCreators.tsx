@@ -1,10 +1,10 @@
-// Module ID: 11445
-// Function ID: 89008
+// Module ID: 11483
+// Function ID: 89127
 // Name: getOrRefreshPushSyncToken
-// Dependencies: [5, 11446, 1194, 653, 5591, 3, 684, 507, 1184, 11450, 587, 4943, 477, 480, 1327, 686, 2]
+// Dependencies: [5, 11484, 1194, 653, 5626, 3, 684, 507, 1184, 11488, 587, 4977, 477, 480, 1327, 686, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11445 (getOrRefreshPushSyncToken)
+// Module 11483 (getOrRefreshPushSyncToken)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -44,7 +44,7 @@ let obj = {
     if (canUseMultiAccountNotifications) {
       let syncDeviceResult = self.syncDevice(token, flag);
     } else {
-      obj = importDefault(4943);
+      obj = importDefault(4977);
       obj = { url: constants.DEVICES };
       obj = {};
       if (flag) {
@@ -80,7 +80,7 @@ let obj = {
   },
   unregisterDevice(token) {
     importDefaultResult.log("Unregistering push notification token: " + token);
-    let obj = importDefault(4943);
+    let obj = importDefault(4977);
     obj = { url: constants.DEVICES };
     obj = { provider: callback2(), token };
     obj.body = obj;

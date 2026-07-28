@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 86432
+// Module ID: 11148
+// Function ID: 86551
 // Name: areMemberGroupsHydrated
-// Dependencies: [57, 31, 6003, 6019, 6006, 6130, 22, 2]
+// Dependencies: [57, 31, 6037, 6053, 6040, 6164, 22, 2]
 // Exports: useHereMentionCallback
 
-// Module 11110 (areMemberGroupsHydrated)
+// Module 11148 (areMemberGroupsHydrated)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,9 +33,9 @@ function tryUpdateSubscriptionForHereMention(arr, maxMessageLength, guild_id, id
     if (!tmp3) {
       let flag = -1 !== arr.indexOf(c6);
       if (flag) {
-        require(6019) /* subscribeChannel */.subscribeChannel(guild_id, id, require(6006) /* serializeChannelRanges */.DEFAULT_RANGES);
+        require(6053) /* subscribeChannel */.subscribeChannel(guild_id, id, require(6040) /* serializeChannelRanges */.DEFAULT_RANGES);
         flag = true;
-        const obj = require(6019) /* subscribeChannel */;
+        const obj = require(6053) /* subscribeChannel */;
       }
       tmp5 = flag;
     }
@@ -51,7 +51,7 @@ export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1
   let closure_0 = arg0;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  const tmp = importDefault(6130)();
+  const tmp = importDefault(6164)();
   const callback = tmp;
   const tmp2 = callback(first.useState(false), 2);
   first = tmp2[0];

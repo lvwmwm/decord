@@ -1,10 +1,10 @@
-// Module ID: 8585
-// Function ID: 68210
+// Module ID: 8629
+// Function ID: 68357
 // Name: ImagePlaceholderVersions
-// Dependencies: [27, 33, 477, 8586, 5085, 2]
+// Dependencies: [27, 33, 477, 8630, 5119, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 8585 (ImagePlaceholderVersions)
+// Module 8629 (ImagePlaceholderVersions)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
@@ -46,6 +46,6 @@ export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
   }
   obj = { style };
   const merged2 = Object.assign(merged);
-  obj["children"] = jsx(importDefault(5085), { style: closure_4, resizeMode: "cover", source: { uri }, alt });
+  obj["children"] = jsx(importDefault(5119), { style: closure_4, resizeMode: "cover", source: { uri }, alt });
   tmp5 = <View style={style} />;
 };

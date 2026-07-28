@@ -1,10 +1,10 @@
-// Module ID: 15054
-// Function ID: 114689
+// Module ID: 15094
+// Function ID: 114847
 // Name: AddFavoriteCategoryActionSheet
-// Dependencies: [57, 31, 1386, 33, 4131, 689, 1841, 10151, 4099, 5187, 5186, 1212, 6670, 4544, 2]
+// Dependencies: [57, 31, 1386, 33, 4165, 689, 1841, 10193, 4133, 5221, 5220, 1212, 6706, 4578, 2]
 // Exports: openAddFavoriteCategoryActionSheet
 
-// Module 15054 (AddFavoriteCategoryActionSheet)
+// Module 15094 (AddFavoriteCategoryActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_5 } from "date";
@@ -34,7 +34,7 @@ function AddFavoriteCategoryActionSheet() {
   obj = {};
   const intl = first(1212).intl;
   obj.title = intl.string(first(1212).t["ISN+NM"]);
-  obj.header = callback2(first(5186).BottomSheetTitleHeader, obj);
+  obj.header = callback2(first(5220).BottomSheetTitleHeader, obj);
   const obj1 = {};
   const intl2 = first(1212).intl;
   obj1.label = intl2.string(first(1212).t.OCAkGP);
@@ -47,15 +47,15 @@ function AddFavoriteCategoryActionSheet() {
   obj1.isClearable = true;
   obj1.returnKeyType = "done";
   obj1.onSubmitEditing = callback;
-  const items1 = [callback2(first(6670).TextInput, obj1), ];
+  const items1 = [callback2(first(6706).TextInput, obj1), ];
   let obj2 = {};
   const intl4 = first(1212).intl;
   obj2.text = intl4.string(first(1212).t.CumH4u);
   obj2.onPress = callback;
   obj2.disabled = !result;
-  items1[1] = callback2(first(4544).Button, obj2);
+  items1[1] = callback2(first(4578).Button, obj2);
   obj.children = items1;
-  return callback3(first(5187).BottomSheet, obj);
+  return callback3(first(5221).BottomSheet, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 AddFavoriteCategoryActionSheet = "AddFavoriteCategoryActionSheet";
@@ -68,7 +68,7 @@ let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
 let result = require("date").fileFinishedImporting("modules/favorites/native/AddFavoriteCategoryActionSheet.tsx");
 
 export const openAddFavoriteCategoryActionSheet = function openAddFavoriteCategoryActionSheet() {
-  let obj = require(4099) /* showActionSheet */;
+  let obj = require(4133) /* showActionSheet */;
   obj = { content: callback2(AddFavoriteCategoryActionSheet, {}), key: AddFavoriteCategoryActionSheet };
   obj.showActionSheet(obj);
 };

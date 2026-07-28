@@ -1,10 +1,10 @@
-// Module ID: 11634
-// Function ID: 90327
+// Module ID: 11673
+// Function ID: 90478
 // Name: UserProfileStackedActionSheet
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 5189, 7575, 477, 5187, 4661, 1212, 5091, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1557, 5223, 7611, 477, 5221, 4695, 1212, 5125, 4161, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11634 (UserProfileStackedActionSheet)
+// Module 11673 (UserProfileStackedActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -55,12 +55,12 @@ export default function UserProfileStackedActionSheet(onBack) {
     obj2.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
     obj2.onPress = onBack;
     const obj3 = { size: "md" };
-    obj2.children = callback(require(5091) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon, obj3);
-    tmp9 = callback(require(4661) /* PressableBase */.PressableOpacity, obj2);
+    obj2.children = callback(require(5125) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon, obj3);
+    tmp9 = callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
   }
   const items1 = [tmp9, , ];
   const obj4 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  items1[1] = callback(require(4127) /* Text */.Text, obj4);
+  items1[1] = callback(require(4161) /* Text */.Text, obj4);
   if (tmp4) {
     const obj5 = { style: tmp3.headerSpacer };
     tmp4 = callback(View, obj5);
@@ -69,7 +69,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   obj.children = items1;
   obj["header"] = closure_5(View, obj);
   obj["children"] = children;
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };
 export const UserProfileStackedActionSheetList = function UserProfileStackedActionSheetList(data) {
   data = data.data;
@@ -100,7 +100,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(5189).BottomSheetFlatList, obj);
+  return closure_4(data(5223).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
@@ -119,5 +119,5 @@ export const UserProfileStackedActionSheetSectionList = function UserProfileStac
   obj["ItemSeparatorComponent"] = function ItemSeparatorComponent() {
     return outer1_4(renderItem(outer1_2[7]).FormDivider, { style: divider.divider });
   };
-  return callback(renderItem(5189).BottomSheetSectionList, obj);
+  return callback(renderItem(5223).BottomSheetSectionList, obj);
 };

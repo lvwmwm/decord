@@ -1,10 +1,10 @@
-// Module ID: 15622
-// Function ID: 120468
+// Module ID: 15661
+// Function ID: 120624
 // Name: ContextMenuCommandItem
-// Dependencies: [31, 27, 33, 4131, 689, 5164, 22, 1212, 11329, 5085, 1882, 4077, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5198, 22, 1212, 11367, 5119, 1882, 4111, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 15622 (ContextMenuCommandItem)
+// Module 15661 (ContextMenuCommandItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -46,19 +46,19 @@ export default function ContextMenuCommandItem(item) {
     obj.commandName = item.displayName;
     return intl.formatToPlainString(item(outer1_2[7]).t.Pk4Mz3, obj);
   }, items);
-  let obj = item(11329);
+  let obj = item(11367);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { accessibilityLabel: memo, onPress, label: item.displayName };
   let tmp7 = null != applicationCommandsIconSource;
   if (tmp7) {
     obj = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp7 = jsx(section(5085), { style: tmp.commandIcon, source: applicationCommandsIconSource });
+    tmp7 = jsx(section(5119), { style: tmp.commandIcon, source: applicationCommandsIconSource });
   }
   obj.icon = tmp7;
-  obj.trailing = jsx(item(4077).SendMessageIcon, {});
+  obj.trailing = jsx(item(4111).SendMessageIcon, {});
   obj.start = start;
   obj.end = end;
-  return jsx(item(5164).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName });
+  return jsx(item(5198).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName });
 };
 export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingItem(arg0) {
   let end;
@@ -77,7 +77,7 @@ export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingI
   obj.icon = <View style={items1} />;
   obj.start = start;
   obj.end = end;
-  return jsx(require(5164) /* TableRowInner */.TableRow, { width: "" + importDefault(22).random(60, 80) + "%" });
+  return jsx(require(5198) /* TableRowInner */.TableRow, { width: "" + importDefault(22).random(60, 80) + "%" });
 };
 export const ContextMenuCommandEmptyItem = function ContextMenuCommandEmptyItem(arg0) {
   let end;
@@ -91,7 +91,7 @@ export const ContextMenuCommandEmptyItem = function ContextMenuCommandEmptyItem(
   obj.icon = <View style={items} />;
   obj.start = start;
   obj.end = end;
-  return jsx(require(5164) /* TableRowInner */.TableRow, {});
+  return jsx(require(5198) /* TableRowInner */.TableRow, {});
 };
 export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(section) {
   let end;
@@ -99,17 +99,17 @@ export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(sect
   let start;
   section = section.section;
   ({ onPress, start, end } = section);
-  let obj = require(11329) /* getApplicationCommandsIconSource */;
+  let obj = require(11367) /* getApplicationCommandsIconSource */;
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { onPress, label: section.name };
   let tmp4 = null != applicationCommandsIconSource;
   if (tmp4) {
     obj = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp4 = jsx(importDefault(5085), { style: tmp.commandIcon, source: applicationCommandsIconSource });
+    tmp4 = jsx(importDefault(5119), { style: tmp.commandIcon, source: applicationCommandsIconSource });
   }
   obj.icon = tmp4;
   obj.start = start;
   obj.end = end;
   obj.arrow = true;
-  return jsx(require(5164) /* TableRowInner */.TableRow, { onPress, label: section.name });
+  return jsx(require(5198) /* TableRowInner */.TableRow, { onPress, label: section.name });
 };

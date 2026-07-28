@@ -1,10 +1,10 @@
-// Module ID: 8282
-// Function ID: 66508
+// Module ID: 8320
+// Function ID: 66618
 // Name: GuildStageChannelSelection
-// Dependencies: [31, 3768, 1850, 33, 4131, 8186, 4321, 1820, 4099, 8184, 1935, 1212, 4127, 2]
+// Dependencies: [31, 3802, 1850, 33, 4165, 8224, 4355, 1820, 4133, 8222, 1935, 1212, 4161, 2]
 // Exports: default
 
-// Module 8282 (GuildStageChannelSelection)
+// Module 8320 (GuildStageChannelSelection)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

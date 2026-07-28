@@ -1,5 +1,5 @@
 // Module ID: 1070
-// Function ID: 12300
+// Function ID: 12304
 // Name: isSpotlightInteraction
 // Dependencies: [1048, 794, 1009]
 

@@ -1,10 +1,10 @@
-// Module ID: 16454
-// Function ID: 128385
+// Module ID: 16494
+// Function ID: 128546
 // Name: passthrough
 // Dependencies: [2]
 // Exports: useEnableMFAHook
 
-// Module 16454 (passthrough)
+// Module 16494 (passthrough)
 function passthrough(arg0) {
   return arg0;
 }

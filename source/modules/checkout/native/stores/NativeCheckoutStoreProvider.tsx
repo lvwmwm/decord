@@ -1,10 +1,10 @@
-// Module ID: 6608
-// Function ID: 58477
+// Module ID: 6644
+// Function ID: 58566
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 57, 31, 27, 6164, 4114, 33, 4131, 5450, 6609, 6169, 6170, 5584, 491, 1184, 6615, 2]
+// Dependencies: [5, 57, 31, 27, 6198, 4148, 33, 4165, 5485, 6645, 6203, 6204, 5619, 491, 1184, 6651, 2]
 // Exports: default
 
-// Module 6608 (NativeCheckoutStoreProvider)
+// Module 6644 (NativeCheckoutStoreProvider)
 import CustomCheckoutFlow from "CustomCheckoutFlow";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -26,7 +26,7 @@ function NativeCheckoutStoreProvider(children) {
   let require;
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: CustomCheckoutFlow, onOrderRetryCancellation: _slicedToArray } = children);
-  const React = order(5450)(() => {
+  const React = order(5485)(() => {
     let id;
     if (null != order) {
       id = order.id;

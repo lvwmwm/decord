@@ -1,12 +1,12 @@
-// Module ID: 11148
-// Function ID: 86651
+// Module ID: 11186
+// Function ID: 86770
 // Name: computeKeyboardActionSheetHeight
-// Dependencies: [5084, 1557, 1450, 5162, 2]
+// Dependencies: [5118, 1557, 1450, 5196, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11148 (computeKeyboardActionSheetHeight)
+// Module 11186 (computeKeyboardActionSheetHeight)
 function computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, customKeyboardHeight) {
-  let diff = windowDimensions.height - require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
+  let diff = windowDimensions.height - require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
   if (customKeyboardHeight >= diff) {
     diff = customKeyboardHeight;
   }
@@ -17,12 +17,12 @@ const result = require("useWindowDimensions").fileFinishedImporting("modules/act
 
 export default function useKeyboardActionSheetHeight() {
   const tmp = importDefault(1557)();
-  return computeKeyboardActionSheetHeight(tmp, importDefault(1450)({ ignoreKeyboard: true }), importDefault(5162)());
+  return computeKeyboardActionSheetHeight(tmp, importDefault(1450)({ ignoreKeyboard: true }), importDefault(5196)());
 };
 export const getKeyboardActionSheetHeight = function getKeyboardActionSheetHeight() {
   const safeAreaInsets = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets();
   const obj = require(1557) /* useSafeAreaInsets */;
   const windowDimensions = require(1450) /* useWindowDimensions */.getWindowDimensions({ ignoreKeyboard: true });
   const obj2 = require(1450) /* useWindowDimensions */;
-  return computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, require(5162) /* useCustomKeyboardHeight */.getCustomKeyboardHeight());
+  return computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, require(5196) /* useCustomKeyboardHeight */.getCustomKeyboardHeight());
 };

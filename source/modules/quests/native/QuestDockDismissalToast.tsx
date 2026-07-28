@@ -1,10 +1,10 @@
-// Module ID: 14069
-// Function ID: 107689
+// Module ID: 14113
+// Function ID: 107862
 // Name: QuestDockDismissalNotification
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 6627, 3832, 6493, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 6663, 3866, 6529, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 14069 (QuestDockDismissalNotification)
+// Module 14113 (QuestDockDismissalNotification)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,7 +26,7 @@ function QuestDockDismissalNotification() {
     }
   };
   obj.children = intl.format(_require(1212).t.dYE1px, obj);
-  return jsx(_require(4127).Text, {
+  return jsx(_require(4161).Text, {
     arrowHook() {
       let obj = { style: closure_0.toastArrowForwardIconContainer };
       obj = { resizeMode: "contain", source: outer1_1(outer1_2[7]), style: closure_0.toastArrowForwardIcon };
@@ -47,7 +47,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles(() => {
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");
 
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
-  let obj = importDefault(3832);
-  obj = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: importDefault(6493), position: "bottom" };
+  let obj = importDefault(3866);
+  obj = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: importDefault(6529), position: "bottom" };
   obj.open(obj);
 };

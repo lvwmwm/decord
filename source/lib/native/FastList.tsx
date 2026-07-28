@@ -1,12 +1,12 @@
-// Module ID: 7619
-// Function ID: 60867
+// Module ID: 7655
+// Function ID: 60956
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5515, 4127, 477, 3992, 7620, 7621, 5189, 7622, 5217, 3995, 2]
+// Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5550, 4161, 477, 4026, 7656, 7657, 5223, 7658, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7619 (_isNativeReflectConstruct)
+// Module 7655 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import module_3992 from "module_3992";
+import module_4026 from "module_4026";
 import createFakeSharedValue from "createFakeSharedValue";
 import BottomSheetModal from "BottomSheetModal";
 import _slicedToArray from "_slicedToArray";
@@ -15,7 +15,7 @@ import result from "result";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let StyleSheet;
 let closure_12;
@@ -138,29 +138,46 @@ function computeBlock(endImportTime) {
     return obj;
   }
 }
-class FastListIosFabricGestureWorkaround {
-  constructor(arg0) {
-    children = global.children;
-    tmp2 = children;
-    if (true !== global.inActionSheet) {
-      tmp3 = closure_0;
-      tmp4 = closure_2;
-      num = 21;
-      obj = require("isFabric");
-      tmp2 = children;
-      if (obj.isIosFabric()) {
-        tmp5 = jsx;
-        tmp6 = closure_0;
-        tmp7 = closure_2;
-        num2 = 20;
-        obj = {};
-        obj.gesture = tmp;
-        obj.children = children;
-        tmp2 = jsx(require("Directions").GestureDetector, obj);
+function FastListScrollWorklet(scrollViewRef) {
+  scrollViewRef = scrollViewRef.scrollViewRef;
+  const scrollPosValue = scrollViewRef.scrollPosValue;
+  const horizontal = scrollViewRef.horizontal;
+  const onScrollWorklet = scrollViewRef.onScrollWorklet;
+  const mutable = scrollViewRef(horizontal[15]).makeMutable(false);
+  const obj = scrollViewRef(horizontal[15]);
+  const fn = function r(contentOffset) {
+    contentOffset = contentOffset.contentOffset;
+    const tmp = horizontal ? contentOffset.x : contentOffset.y;
+    const contentSize = contentOffset.contentSize;
+    const tmp2 = horizontal ? contentSize.width : contentSize.height;
+    if (0 !== tmp2) {
+      const result = mutable.set(true);
+      const _Math = Math;
+      const result1 = scrollPosValue.set(Math.min(tmp, tmp2));
+      if (null != onScrollWorklet) {
+        let layoutMeasurement = contentOffset.layoutMeasurement;
+        layoutMeasurement = onScrollWorklet;
+        onScrollWorklet(tmp, tmp2, horizontal ? layoutMeasurement.width : layoutMeasurement.height);
+        const tmp12 = horizontal ? layoutMeasurement.width : layoutMeasurement.height;
       }
     }
-    return tmp2;
-  }
+  };
+  fn.__closure = { horizontal, workletMounted: mutable, scrollPosValue, onScrollWorklet };
+  fn.__workletHash = 16225357996403;
+  fn.__initData = closure_30;
+  const event = scrollViewRef(horizontal[15]).useEvent(fn, ["onScroll"]);
+  const items = [event, scrollViewRef];
+  const effect = importAllResult.useEffect(() => {
+    const tmp = outer1_14(scrollViewRef.current);
+    scrollViewRef = tmp;
+    if (null != tmp) {
+      event.workletEventHandler.registerForEvents(tmp);
+      return () => {
+        outer1_5.workletEventHandler.unregisterFromEvents(closure_0);
+      };
+    }
+  }, items);
+  return null;
 }
 let closure_3 = ["manualRef", "onScroll", "onScrollWorklet", "onScrollEnd", "onLayout", "renderHeader", "renderFooter", "renderSection", "renderItem", "renderSectionFooter", "getRecyclerKey", "onEndReached", "endReachedThreshold", "headerSize", "footerSize", "sectionSize", "sectionFooterSize", "itemSize", "sections", "scrollPosValue", "batchesToRender", "optimizeListItemRender", "initialScrollSection", "initialScrollItem", "initialScrollOrientation", "initialScrollStart", "getAnchorIdFromIndex", "getAnchorIndexFromId", "EXPERIMENTAL_enableAnchorWhileScrolling", "chunkBase", "disableContentWrappers", "childrenWrapper", "stickyHeaderFooter", "stickySectionsVariant", "persistantKeys", "disableRecyclingOnFullCompute", "disableLegacyGestureHandling", "viewabilityConfig", "onViewableItemsChanged", "debugLayout", "renderAccessory", "removeClippedSubviews", "inActionSheet"];
 ({ PixelRatio: closure_12, ScrollView: closure_13, StyleSheet, findNodeHandle: closure_14 } = get_ActivityIndicator);
@@ -1619,7 +1636,7 @@ let closure_24 = importAllResult.memo(function _FastListSectionRenderer(disableW
   fastListInstance = children(section, fastListInstance);
   section = [fastListInstance, false];
   obj.children = section;
-  closure_15(importDefault(5515), obj);
+  closure_15(importDefault(5550), obj);
 });
 let closure_25 = importAllResult.memo(function _FastListSectionFooterRenderer(disableWrapper) {
   let children;
@@ -1648,7 +1665,7 @@ let closure_25 = importAllResult.memo(function _FastListSectionFooterRenderer(di
   children = children(section, fastListInstance);
   section = [children, false];
   obj.children = section;
-  closure_15(importDefault(5515), obj);
+  closure_15(importDefault(5550), obj);
 });
 let closure_26 = importAllResult.memo(function _FastListItemRenderer(disableWrapper) {
   let children;
@@ -1683,7 +1700,7 @@ let closure_26 = importAllResult.memo(function _FastListItemRenderer(disableWrap
   }
   const items = [childrenResult1, false];
   obj.children = items;
-  childrenResult = closure_15(importDefault(5515), obj);
+  childrenResult = closure_15(importDefault(5550), obj);
 });
 let closure_27 = importAllResult.memo(function _FastListHeaderFooterRenderer(disableWrapper) {
   let children;
@@ -1711,7 +1728,7 @@ let closure_27 = importAllResult.memo(function _FastListHeaderFooterRenderer(dis
   children = children(fastListInstance);
   fastListInstance = [children, false];
   obj.children = fastListInstance;
-  closure_15(importDefault(5515), obj);
+  closure_15(importDefault(5550), obj);
 });
 let closure_28 = importAllResult.memo(function _FastListSpacer(layoutSize) {
   layoutSize = layoutSize.layoutSize;
@@ -1725,7 +1742,7 @@ let closure_28 = importAllResult.memo(function _FastListSpacer(layoutSize) {
     tmp3 = obj;
   }
   obj.style = tmp3;
-  return closure_16(importDefault(5515), obj);
+  return closure_16(importDefault(5550), obj);
 });
 let closure_29 = (() => {
   class FastListScrollAnchor {
@@ -1839,7 +1856,6 @@ let closure_29 = (() => {
   };
   return callback2(FastListScrollAnchor, items);
 })();
-let closure_30 = { code: "function FastListTsx2(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
 let tmp7 = ((PureComponent) => {
   class FastList {
     constructor(arg0) {
@@ -1872,9 +1888,6 @@ let tmp7 = ((PureComponent) => {
       tmp2Result.getItems = () => tmp2Result.state.items;
       tmp2Result.getScrollPosition = () => tmp2Result.scrollPos;
       tmp2Result.disableAnchoringTimeout = undefined;
-      tmp2Result.viewTag = null;
-      obj4 = FastList(outer1_2[15]);
-      tmp2Result.workletMounted = obj4.makeMutable(false);
       tmp2Result.deferredCompute = -1;
       tmp2Result.deferNextCompute = false;
       tmp7 = new outer1_29(tmp2Result.getScrollPosition);
@@ -2429,38 +2442,7 @@ let tmp7 = ((PureComponent) => {
   obj = {
     key: "componentDidMount",
     value() {
-      const self = this;
-      const scrollPosValue = this.scrollPosValue;
-      const workletMounted = this.workletMounted;
-      const props = this.props;
-      const horizontal = props.horizontal;
-      let closure_2 = tmp;
-      const onScrollWorklet = props.onScrollWorklet;
-      const fn = function t(contentOffset) {
-        contentOffset = contentOffset.contentOffset;
-        const tmp = closure_2 ? contentOffset.x : contentOffset.y;
-        const contentSize = contentOffset.contentSize;
-        const tmp2 = closure_2 ? contentSize.width : contentSize.height;
-        if (0 !== tmp2) {
-          const result = workletMounted.set(true);
-          const _Math = Math;
-          const result1 = scrollPosValue.set(Math.min(tmp, tmp2));
-          if (null != onScrollWorklet) {
-            let layoutMeasurement = contentOffset.layoutMeasurement;
-            layoutMeasurement = onScrollWorklet;
-            onScrollWorklet(tmp, tmp2, closure_2 ? layoutMeasurement.width : layoutMeasurement.height);
-            const tmp12 = closure_2 ? layoutMeasurement.width : layoutMeasurement.height;
-          }
-        }
-      };
-      fn.__closure = { horizontal: undefined !== horizontal && horizontal, workletMounted, scrollPosValue, onScrollWorklet };
-      fn.__workletHash = 16225357996403;
-      fn.__initData = outer1_30;
-      self.worklet = new FastList(outer1_2[15]).WorkletEventHandler(fn, ["onScroll"]);
-      self.viewTag = outer1_14(self.scrollView.current);
-      const worklet = self.worklet;
-      worklet.registerForEvents(self.viewTag);
-      let result = self.queueViewabilityChange();
+      const result = this.queueViewabilityChange();
     }
   };
   items[2] = obj;
@@ -2578,11 +2560,7 @@ let tmp7 = ((PureComponent) => {
     key: "componentWillUnmount",
     value() {
       const self = this;
-      const worklet = this.worklet;
-      if (null != worklet) {
-        worklet.unregisterFromEvents(self.viewTag);
-      }
-      if (-1 !== self.deferredCompute) {
+      if (-1 !== this.deferredCompute) {
         const _cancelAnimationFrame = cancelAnimationFrame;
         cancelAnimationFrame(self.deferredCompute);
       }
@@ -2910,7 +2888,6 @@ let tmp7 = ((PureComponent) => {
       let onLayout;
       let onScroll;
       let onScrollEnd;
-      let onScrollWorklet;
       let onViewableItemsChanged;
       let optimizeListItemRender;
       let persistantKeys;
@@ -2930,17 +2907,17 @@ let tmp7 = ((PureComponent) => {
       let viewabilityConfig;
       const self = this;
       const props = this.props;
-      ({ manualRef, onScroll, onScrollWorklet, onScrollEnd, onLayout, renderHeader, renderFooter, renderSection, renderItem, renderSectionFooter, getRecyclerKey, onEndReached, endReachedThreshold, headerSize, footerSize, sectionSize, sectionFooterSize, itemSize, sections, scrollPosValue, batchesToRender, optimizeListItemRender, initialScrollSection, initialScrollItem, initialScrollOrientation, initialScrollStart, getAnchorIdFromIndex, getAnchorIndexFromId, EXPERIMENTAL_enableAnchorWhileScrolling, chunkBase, disableContentWrappers, childrenWrapper, stickyHeaderFooter, stickySectionsVariant, persistantKeys, disableRecyclingOnFullCompute, disableLegacyGestureHandling, viewabilityConfig, onViewableItemsChanged, debugLayout, renderAccessory, removeClippedSubviews } = props);
+      ({ manualRef, onScroll, onScrollEnd, onLayout, renderHeader, renderFooter, renderSection, renderItem, renderSectionFooter, getRecyclerKey, onEndReached, endReachedThreshold, headerSize, footerSize, sectionSize, sectionFooterSize, itemSize, sections, scrollPosValue, batchesToRender, optimizeListItemRender, initialScrollSection, initialScrollItem, initialScrollOrientation, initialScrollStart, getAnchorIdFromIndex, getAnchorIndexFromId, EXPERIMENTAL_enableAnchorWhileScrolling, chunkBase, disableContentWrappers, childrenWrapper, stickyHeaderFooter, stickySectionsVariant, persistantKeys, disableRecyclingOnFullCompute, disableLegacyGestureHandling, viewabilityConfig, onViewableItemsChanged, debugLayout, renderAccessory, removeClippedSubviews } = props);
       if (undefined === removeClippedSubviews) {
         let obj = FastList(outer1_2[14]);
         removeClippedSubviews = obj.isAndroid();
       }
-      const inActionSheet = props.inActionSheet;
-      if (inActionSheet) {
+      if (props.inActionSheet) {
         let BottomSheetScrollView = FastList(outer1_2[18]).BottomSheetScrollView;
       } else {
         BottomSheetScrollView = outer1_13;
       }
+      obj = {};
       obj = {};
       const merged = Object.assign(outer1_4(props, outer1_3));
       obj["accessibilityRole"] = "list";
@@ -2953,14 +2930,21 @@ let tmp7 = ((PureComponent) => {
       obj["onScrollBeginDrag"] = self.handleScrollBeginDrag;
       obj["removeClippedSubviews"] = removeClippedSubviews;
       obj["children"] = self.renderItems();
-      obj = {};
-      const obj1 = { inActionSheet, children: outer1_16(BottomSheetScrollView, obj) };
-      const items = [outer1_16(outer1_38, obj1), ];
+      const items = [outer1_16(BottomSheetScrollView, obj), , ];
+      const obj1 = { scrollViewRef: self.scrollView, scrollPosValue: self.scrollPosValue };
+      const horizontal = self.props.horizontal;
+      let tmp11 = null != horizontal;
+      if (tmp11) {
+        tmp11 = horizontal;
+      }
+      obj1.horizontal = tmp11;
+      obj1.onScrollWorklet = props.onScrollWorklet;
+      items[1] = outer1_16(outer1_38, obj1);
       let renderAccessoryResult = null;
       if (null != renderAccessory) {
         renderAccessoryResult = renderAccessory(self);
       }
-      items[1] = renderAccessoryResult;
+      items[2] = renderAccessoryResult;
       obj.children = items;
       return outer1_15(outer1_17, obj);
     }
@@ -3012,7 +2996,8 @@ let tmp7 = ((PureComponent) => {
 })(importAllResult.PureComponent);
 obj = { batchesToRender: 12, contentInset: { top: 0, right: 0, left: 0, bottom: 0 }, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false };
 tmp7.defaultProps = obj;
-const animatedComponent = require("module_3992").createAnimatedComponent(tmp7);
+let closure_30 = { code: "function FastListTsx2(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
+const animatedComponent = require("module_4026").createAnimatedComponent(tmp7);
 let result = require("_getPrototypeOf").fileFinishedImporting("lib/native/FastList.tsx");
 
 export default tmp7;
@@ -3023,5 +3008,4 @@ export const getItemSizeOverrideKey = function getItemSizeOverrideKey(arg0, arg1
 };
 export const FastListItemTypes = obj;
 export const FastListComputer = tmp6;
-export { FastListIosFabricGestureWorkaround };
 export const AnimatedFastList = animatedComponent;

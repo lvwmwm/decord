@@ -1,10 +1,10 @@
-// Module ID: 10071
-// Function ID: 78077
+// Module ID: 10111
+// Function ID: 78206
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1325, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 10071 (InappropriateConversationsDefaultOn)
+// Module 10111 (InappropriateConversationsDefaultOn)
 const obj = { name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const tmp2 = require("getUnitId")(obj);
 let closure_0 = tmp2;

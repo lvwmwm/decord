@@ -1,10 +1,10 @@
-// Module ID: 12482
-// Function ID: 96767
+// Module ID: 12525
+// Function ID: 96937
 // Name: handlePress
-// Dependencies: [27, 33, 4131, 689, 4099, 12483, 1935, 1212, 4127, 2]
+// Dependencies: [27, 33, 4165, 689, 4133, 12526, 1935, 1212, 4161, 2]
 // Exports: default
 
-// Module 12482 (handlePress)
+// Module 12525 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -14,11 +14,11 @@ let closure_4;
 let closure_5;
 let closure_6;
 function handlePress() {
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.aboutText = intl.string(require(1212) /* getSystemLocale */.t["07lzz7"]);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12483, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12526, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
 ({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
@@ -50,7 +50,7 @@ export default function BoostingCountDownPill(style) {
   if (tmp7) {
     obj = { style: tmp.fpDurationPill };
     const obj1 = { variant: "text-sm/bold", style: tmp.fpDurationText, children: fpDurationText.toUpperCase() };
-    obj.children = callback(require(4127) /* Text */.Text, obj1);
+    obj.children = callback(require(4161) /* Text */.Text, obj1);
     tmp7 = callback(closure_4, obj);
   }
   const items1 = [tmp7, ];
@@ -63,7 +63,7 @@ export default function BoostingCountDownPill(style) {
   obj3.style = prop;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t["5nrJDO"]);
-  obj2.children = callback(require(4127) /* Text */.Text, obj3);
+  obj2.children = callback(require(4161) /* Text */.Text, obj3);
   items1[1] = callback(closure_4, obj2);
   obj.children = items1;
   obj.children = closure_6(closure_4, obj);

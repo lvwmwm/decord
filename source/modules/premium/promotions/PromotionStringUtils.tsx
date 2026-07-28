@@ -1,10 +1,10 @@
-// Module ID: 12366
-// Function ID: 96150
+// Module ID: 12409
+// Function ID: 96320
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3782, 1852, 566, 3777, 5616, 1212, 1921, 2]
+// Dependencies: [3816, 1852, 566, 3811, 5651, 1212, 1921, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12366 (useFormatStringWithCommonPremiumParams)
+// Module 12409 (useFormatStringWithCommonPremiumParams)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 
@@ -20,10 +20,10 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isLoadedForSKU(outer1_4.TIER_2));
   if (-1 !== body.indexOf("{price}")) {
     if (stateFromStores) {
-      const defaultPrice = importDefault(3777).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
-      const obj2 = importDefault(3777);
-      str = require(5616) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-      const obj3 = require(5616) /* formatSingleCurrencyPrice */;
+      const defaultPrice = importDefault(3811).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+      const obj2 = importDefault(3811);
+      str = require(5651) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+      const obj3 = require(5651) /* formatSingleCurrencyPrice */;
     }
   }
   const replaced = body.replace(/\{price\}/g, str);

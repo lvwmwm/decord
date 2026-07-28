@@ -1,9 +1,9 @@
-// Module ID: 4468
-// Function ID: 39434
+// Module ID: 4502
+// Function ID: 39548
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4469, 653, 4471, 1212, 22, 4665, 4673, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4503, 653, 4505, 1212, 22, 4699, 4707, 566, 686, 2]
 
-// Module 4468 (_isNativeReflectConstruct)
+// Module 4502 (_isNativeReflectConstruct)
 import ME from "ME";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -238,7 +238,7 @@ tmp3 = new tmp3(require("dispatcher"), {
     ({ channelId, id: require, file, draftType } = allowOptimization);
     const items = [..._getUploads(channelId, draftType)];
     const found = items.filter((id) => id.id !== closure_0);
-    const cloudUpload = new require(4665) /* _callSuper */.CloudUpload(file, channelId, undefined, allowOptimization.allowOptimization);
+    const cloudUpload = new require(4699) /* _callSuper */.CloudUpload(file, channelId, undefined, allowOptimization.allowOptimization);
     found.push(cloudUpload);
     setUploads(channelId, draftType, found);
   }

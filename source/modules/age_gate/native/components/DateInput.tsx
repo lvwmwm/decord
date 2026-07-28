@@ -1,16 +1,16 @@
-// Module ID: 16054
-// Function ID: 124129
+// Module ID: 16093
+// Function ID: 124285
 // Name: subtractYearsFromToday
-// Dependencies: [31, 27, 33, 3713, 4099, 8191, 1935, 8927, 1273, 2]
+// Dependencies: [31, 27, 33, 3747, 4133, 8229, 1935, 8971, 1273, 2]
 
-// Module 16054 (subtractYearsFromToday)
+// Module 16093 (subtractYearsFromToday)
 import importAllResult from "result";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function subtractYearsFromToday(arg0) {
-  const obj = importDefault(3713)();
+  const obj = importDefault(3747)();
   const result = obj.set("year", obj.year() - arg0);
   return obj.toDate();
 }

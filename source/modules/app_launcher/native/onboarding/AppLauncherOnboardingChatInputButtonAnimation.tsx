@@ -1,10 +1,10 @@
-// Module ID: 11340
-// Function ID: 88126
+// Module ID: 11378
+// Function ID: 88245
 // Name: EnteringAnimation
-// Dependencies: [31, 27, 4123, 33, 4131, 4548, 689, 4132, 4135, 566, 8756, 11149, 3992, 5453, 11341, 11174, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 4582, 689, 4166, 4169, 566, 8800, 11187, 4026, 5488, 11379, 11212, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 11340 (EnteringAnimation)
+// Module 11378 (EnteringAnimation)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ const require = arg1;
 ({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 let closure_9 = _createForOfIteratorHelperLoose.createStyles(() => {
-  const sum = require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + require(4548) /* getButtonPadding */.SMALL_BUTTON_PADDING + 2;
+  const sum = require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + require(4582) /* getButtonPadding */.SMALL_BUTTON_PADDING + 2;
   let obj = {};
   obj = { zIndex: 3, borderWidth: 1.5, borderColor: importDefault(689).colors.BACKGROUND_BRAND, borderRadius: importDefault(689).radii.round, alignItems: "center", justifyContent: "center", width: sum, height: sum, marginLeft: 4 };
   obj.fakeButton = obj;
@@ -43,7 +43,7 @@ let closure_11 = (() => {
       return obj;
     }
   }
-  EnteringAnimation.__closure = { withTiming: require(4132) /* withTiming */.withTiming, timingStandard: require(4135) /* timingNone */.timingStandard };
+  EnteringAnimation.__closure = { withTiming: require(4166) /* withTiming */.withTiming, timingStandard: require(4169) /* timingNone */.timingStandard };
   EnteringAnimation.__workletHash = 2327377243473;
   EnteringAnimation.__initData = closure_10;
   return EnteringAnimation;
@@ -60,7 +60,7 @@ let closure_13 = (() => {
       return obj;
     }
   }
-  ExitingAnimation.__closure = { withTiming: require(4132) /* withTiming */.withTiming, timingStandard: require(4135) /* timingNone */.timingStandard };
+  ExitingAnimation.__closure = { withTiming: require(4166) /* withTiming */.withTiming, timingStandard: require(4169) /* timingNone */.timingStandard };
   ExitingAnimation.__workletHash = 1065249287738;
   ExitingAnimation.__initData = closure_12;
   return ExitingAnimation;
@@ -73,25 +73,25 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj1 = require(8756) /* useGradientBottom */;
+  let obj1 = require(8800) /* useGradientBottom */;
   const gradientBottom = obj1.useGradientBottom();
-  importDefault(11149)({ channelId: channelId.channelId });
+  importDefault(11187)({ channelId: channelId.channelId });
   obj = {};
   obj = { entering: closure_11, exiting: closure_13, style: items1, collapsable: false };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
-  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11341) /* items */, autoPlay: !stateFromStores };
-  const items2 = [callback(importDefault(5453), obj1), , ];
+  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11379) /* items */, autoPlay: !stateFromStores };
+  const items2 = [callback(importDefault(5488), obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
   items2[1] = callback(closure_3, { collapsable: false, style: items3 });
   items2[2] = callback(closure_3, { collapsable: false, style: tmp.fakeButton });
   obj.children = items2;
-  const items4 = [callback2(importDefault(3992).View, obj), ];
+  const items4 = [callback2(importDefault(4026).View, obj), ];
   const obj3 = { collapsable: false, style: tmp.trinketsLottie };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
-  const tmp5 = importDefault(5453);
-  obj3.source = require(11174) /* items1 */;
+  const tmp5 = importDefault(5488);
+  obj3.source = require(11212) /* items1 */;
   obj3.autoPlay = !stateFromStores;
-  items4[1] = callback(importDefault(5453), obj3);
+  items4[1] = callback(importDefault(5488), obj3);
   obj.children = items4;
   return callback2(closure_8, obj);
 };

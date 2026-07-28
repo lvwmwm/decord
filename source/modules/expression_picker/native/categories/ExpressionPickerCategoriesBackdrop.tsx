@@ -1,8 +1,8 @@
-// Module ID: 9377
-// Function ID: 73124
-// Dependencies: [31, 27, 653, 33, 4131, 689, 477, 8316, 2]
+// Module ID: 9421
+// Function ID: 73275
+// Dependencies: [31, 27, 653, 33, 4165, 689, 477, 8354, 2]
 
-// Module 9377
+// Module 9421
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,7 +33,7 @@ const memoResult = require("result").memo(function EmojiPickerCategoriesBackdrop
   } else {
     obj = { style: tmp.backdrop };
     const obj1 = { style: tmp.backdrop };
-    obj.children = tmp2(importDefault(8316), obj1);
+    obj.children = tmp2(importDefault(8354), obj1);
     tmp2Result = tmp2(tmp3, obj);
   }
   return tmp2Result;

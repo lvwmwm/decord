@@ -1,9 +1,9 @@
-// Module ID: 10242
-// Function ID: 79224
+// Module ID: 10282
+// Function ID: 79353
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3768, 4326, 1850, 653, 33, 5079, 5074, 6554, 4321, 7575, 1212, 10243, 566, 5087, 5517, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3802, 4360, 1850, 653, 33, 5113, 5108, 6590, 4355, 7611, 1212, 10283, 566, 5121, 5552, 2]
 
-// Module 10242 (_isNativeReflectConstruct)
+// Module 10282 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import openUserSettings from "openUserSettings";
@@ -66,7 +66,7 @@ function getScreens(channelId, pop) {
       obj.subtitle = channelName;
       return outer1_16(callback(outer1_2[21]).NavigatorHeader, obj);
     },
-    headerLeft: _require(5087).getHeaderCloseButton(pop),
+    headerLeft: _require(5121).getHeaderCloseButton(pop),
     render() {
       return outer1_16(outer1_20, { channel: closure_0 });
     }
@@ -204,7 +204,7 @@ const memoResult = importAllResult.memo((channelId) => {
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
   const screens = importAllResult.useMemo(() => outer1_21(channelId, onClose), items);
-  return callback3(channelId(5517).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return callback3(channelId(5552).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
 let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 10471
-// Function ID: 81242
+// Module ID: 10509
+// Function ID: 81363
 // Name: isActivitiesAllowed
-// Dependencies: [4369, 2]
+// Dependencies: [4403, 2]
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 10471 (isActivitiesAllowed)
+// Module 10509 (isActivitiesAllowed)
 function isActivitiesAllowed() {
-  return !require(4369) /* isTablet */.isTablet;
+  return !require(4403) /* isTablet */.isTablet;
 }
 const result = require("set").fileFinishedImporting("modules/activities/useIsActivitiesEnabledForCurrentPlatform.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 805
-// Function ID: 9048
+// Function ID: 9052
 // Name: _htmlElementAsString
 // Dependencies: [798, 804]
 

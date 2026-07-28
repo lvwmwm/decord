@@ -1,9 +1,9 @@
-// Module ID: 5596
-// Function ID: 47574
+// Module ID: 5631
+// Function ID: 47701
 // Name: HotspotStore
-// Dependencies: [5597, 2, 5598, 5599]
+// Dependencies: [5632, 2, 5633, 5634]
 
-// Module 5596 (HotspotStore)
+// Module 5631 (HotspotStore)
 import importDefaultResult from "_isNativeReflectConstruct";
 import HotspotLocations from "HotspotLocations";
 

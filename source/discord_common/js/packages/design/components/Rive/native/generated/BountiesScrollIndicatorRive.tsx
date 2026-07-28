@@ -1,9 +1,9 @@
-// Module ID: 3914
-// Function ID: 32357
+// Module ID: 3948
+// Function ID: 32459
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [29, 31, 33, 3860, 3915, 3911, 2]
+// Dependencies: [29, 31, 33, 3894, 3949, 3945, 2]
 
-// Module 3914 (BountiesScrollIndicatorRive)
+// Module 3948 (BountiesScrollIndicatorRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -27,8 +27,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       startAnimation1 = onDataBindingChange.startAnimation;
     }
-    const triggerBinding = require(3860) /* useObservedValue */.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
-    const obj = require(3860) /* useObservedValue */;
+    const triggerBinding = require(3894) /* useObservedValue */.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
+    const obj = require(3894) /* useObservedValue */;
     let looping;
     if (null != dataBinding) {
       looping = dataBinding.looping;
@@ -37,8 +37,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       looping1 = onDataBindingChange.looping;
     }
-    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
-    const obj2 = require(3860) /* useObservedValue */;
+    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
+    const obj2 = require(3894) /* useObservedValue */;
     let color;
     if (null != dataBinding) {
       color = dataBinding.color;
@@ -47,7 +47,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       color1 = onDataBindingChange.color;
     }
-    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("color", instance, color, color1, playIfNeeded);
+    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("color", instance, color, color1, playIfNeeded);
     return null;
   }
 };
@@ -87,7 +87,7 @@ const forwardRefResult = importAllResult.forwardRef(function BountiesScrollIndic
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollIndicatorRive.tsx");
 

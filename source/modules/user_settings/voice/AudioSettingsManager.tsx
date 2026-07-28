@@ -1,9 +1,9 @@
-// Module ID: 16064
-// Function ID: 124218
+// Module ID: 16103
+// Function ID: 124374
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 57, 4145, 4579, 1194, 4178, 4192, 8773, 21, 1282, 587, 1331, 8772, 22, 12894, 8971, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 57, 4179, 4613, 1194, 4212, 4226, 8817, 21, 1282, 587, 1331, 8816, 22, 12938, 9015, 5112, 2]
 
-// Module 16064 (_isNativeReflectConstruct)
+// Module 16103 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -109,7 +109,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function updateAudioSettingsProto(arg0, arg1, arg2, arg3) {
-  let obj = require(8772) /* snapVolumeToDefault */;
+  let obj = require(8816) /* snapVolumeToDefault */;
   const result = obj.coerceAudioContextForProto(arg2);
   if (null == result) {
     return false;
@@ -334,9 +334,9 @@ function handleSetLocalVolume(arg0) {
       callback3(remoteSessionId, userId, context, obj);
     }
     obj = { volume };
-    const result = require(12894) /* makeContextUserKey */.updatePendingSettings(context, userId, obj);
+    const result = require(12938) /* makeContextUserKey */.updatePendingSettings(context, userId, obj);
     lib();
-    const obj2 = require(12894) /* makeContextUserKey */;
+    const obj2 = require(12938) /* makeContextUserKey */;
   }
 }
 function handleSetLocalMute(arg0) {
@@ -344,7 +344,7 @@ function handleSetLocalMute(arg0) {
   let userId;
   ({ context, userId } = arg0);
   if (userId !== store.getId()) {
-    let obj = require(12894) /* makeContextUserKey */;
+    let obj = require(12938) /* makeContextUserKey */;
     obj = { muted: closure_12.isLocalMute(userId, context) };
     const result = obj.updatePendingSettings(context, userId, obj);
     lib.cancel();
@@ -356,7 +356,7 @@ function handleSetLocalSoundboardMute(userId) {
   userId = userId.userId;
   if (userId !== store.getId()) {
     const result = localSoundboardMuted.isLocalSoundboardMuted(userId);
-    let obj = require(12894) /* makeContextUserKey */;
+    let obj = require(12938) /* makeContextUserKey */;
     obj = { soundboardMuted: result };
     const result1 = obj.updatePendingSettings(userId.context, userId, obj);
     lib.cancel();
@@ -380,9 +380,9 @@ function SETTINGS_MIGRATION_KEY(arg0) {
 }
 function DEFAULT_VOLUME_FOR_CONTEXT(arg0) {
   if (arg0 === MediaEngineContextTypes.STREAM) {
-    let USER = require(8773) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
+    let USER = require(8817) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = require(8773) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
+    USER = require(8817) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
   }
   return USER;
 }

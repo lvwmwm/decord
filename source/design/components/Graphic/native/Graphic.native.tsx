@@ -1,10 +1,10 @@
-// Module ID: 6601
-// Function ID: 58431
+// Module ID: 6637
+// Function ID: 58520
 // Name: ImageGraphic
-// Dependencies: [31, 27, 33, 4131, 5085, 3843, 3941, 2]
+// Dependencies: [31, 27, 33, 4165, 5119, 3877, 3975, 2]
 // Exports: Graphic
 
-// Module 6601 (ImageGraphic)
+// Module 6637 (ImageGraphic)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 const require = arg1;
 function ImageGraphic(source) {
   const tmp = callback();
-  return jsx(importDefault(5085), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
+  return jsx(importDefault(5119), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;

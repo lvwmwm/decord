@@ -1,10 +1,10 @@
-// Module ID: 5485
-// Function ID: 46836
+// Module ID: 5520
+// Function ID: 46963
 // Name: RoleDot
-// Dependencies: [31, 27, 1918, 1911, 653, 33, 4131, 689, 5486, 3804, 5489, 5490, 3831, 1212, 5487, 5495, 5506, 4127, 4661, 566, 5508, 5509, 2]
+// Dependencies: [31, 27, 1918, 1911, 653, 33, 4165, 689, 5521, 3838, 5524, 5525, 3865, 1212, 5522, 5530, 5541, 4161, 4695, 566, 5543, 5544, 2]
 // Exports: default
 
-// Module 5485 (RoleDot)
+// Module 5520 (RoleDot)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -198,8 +198,8 @@ export default function UserProfileRolesCard(userId) {
     obj.style = userId.style;
     obj = { guildId, guildMemberRoleIds: roles };
     obj.children = callback(RolesList, obj);
-    tmp2 = callback(guildId(5509), obj);
-    const tmp6 = guildId(5509);
+    tmp2 = callback(guildId(5544), obj);
+    const tmp6 = guildId(5544);
   }
   return tmp2;
 };

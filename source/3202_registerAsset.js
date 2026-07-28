@@ -1,11 +1,11 @@
 // Module ID: 3202
-// Function ID: 25723
+// Function ID: 25727
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 3202 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/game_invite_channels", scales: [1], hash: "076269e2b56b0de9d686111cd146cba2", name: "GameInviteChannels.compiled.messages", type: "jsona" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/spatial_audio", scales: [1], hash: "3d1a75c972ac0602a167f63fd159ff4e", name: "SpatialAudio.compiled.messages", type: "jsona" };
 
 export default registerAsset.registerAsset(obj);

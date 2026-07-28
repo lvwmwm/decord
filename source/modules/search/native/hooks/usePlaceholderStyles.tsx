@@ -1,10 +1,10 @@
-// Module ID: 15410
-// Function ID: 117620
+// Module ID: 15450
+// Function ID: 117779
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4123, 9033, 1450, 566, 3992, 4132, 1273, 2]
+// Dependencies: [4157, 9077, 1450, 566, 4026, 4166, 1273, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15410 (useFullscreenPlaceholderCount)
+// Module 15450 (useFullscreenPlaceholderCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 
@@ -77,9 +77,9 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(3992).withRepeat, withSequence: _require(3992).withSequence, withTiming: _require(4132).withTiming, STANDARD_EASING: _require(1273).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4026).withRepeat, withSequence: _require(4026).withSequence, withTiming: _require(4166).withTiming, STANDARD_EASING: _require(1273).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return _require(3992).useAnimatedStyle(A);
+  return _require(4026).useAnimatedStyle(A);
 };

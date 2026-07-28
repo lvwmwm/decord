@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 112027
+// Module ID: 14749
+// Function ID: 112200
 // Name: isValidClipboardCode
-// Dependencies: [5, 57, 31, 33, 14706, 14701, 1212, 14707, 14704, 2]
+// Dependencies: [5, 57, 31, 33, 14750, 14745, 1212, 14751, 14748, 2]
 // Exports: default
 
-// Module 14705 (isValidClipboardCode)
+// Module 14749 (isValidClipboardCode)
 import MFAOptionScreen from "MFAOptionScreen";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -12,7 +12,7 @@ import { jsx } from "jsxProd";
 
 const require = arg1;
 function isValidClipboardCode(arg0) {
-  let isMatch = arg0.length === require(14706) /* finishMFACheck */.TOTP_CODE_LENGTH;
+  let isMatch = arg0.length === require(14750) /* finishMFACheck */.TOTP_CODE_LENGTH;
   if (isMatch) {
     isMatch = /^\d+$/.test(arg0);
     const obj = /^\d+$/;

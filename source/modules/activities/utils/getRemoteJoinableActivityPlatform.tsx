@@ -1,10 +1,10 @@
-// Module ID: 10890
-// Function ID: 84570
+// Module ID: 10928
+// Function ID: 84691
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [5068, 4146, 653, 478, 1360, 10413, 2]
+// Dependencies: [5102, 4180, 653, 478, 1360, 10453, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 10890 (getRemoteJoinableActivityPlatform)
+// Module 10928 (getRemoteJoinableActivityPlatform)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -67,7 +67,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
               }
             }
           }
-          obj = require(10413) /* _computeActivityPartyPrivacyFlags */;
+          obj = require(10453) /* _computeActivityPartyPrivacyFlags */;
         }
         return tmp4;
       }

@@ -1,9 +1,9 @@
-// Module ID: 13529
-// Function ID: 104086
+// Module ID: 13573
+// Function ID: 104259
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 4123, 1907, 477, 13530, 4530, 686, 4531, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 4157, 1907, 477, 13574, 4564, 686, 4565, 2]
 
-// Module 13529 (_isNativeReflectConstruct)
+// Module 13573 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -28,8 +28,8 @@ function _isNativeReflectConstruct() {
 }
 function pauseCurrentAudioPlayer(arg0) {
   if (obj.isAndroid()) {
-    importDefault(13530).pauseCurrentPlayer(arg0);
-    const obj2 = importDefault(13530);
+    importDefault(13574).pauseCurrentPlayer(arg0);
+    const obj2 = importDefault(13574);
   } else {
     const DCDAudioPlayerManager = closure_9.DCDAudioPlayerManager;
     if (null != DCDAudioPlayerManager) {
@@ -39,8 +39,8 @@ function pauseCurrentAudioPlayer(arg0) {
 }
 function playCurrentAudioPlayer() {
   if (obj.isAndroid()) {
-    const result = importDefault(13530).maybePlayCurrentPlayer();
-    const obj2 = importDefault(13530);
+    const result = importDefault(13574).maybePlayCurrentPlayer();
+    const obj2 = importDefault(13574);
   } else {
     const DCDAudioPlayerManager = closure_9.DCDAudioPlayerManager;
     if (null != DCDAudioPlayerManager) {
@@ -50,8 +50,8 @@ function playCurrentAudioPlayer() {
 }
 function handleVoiceMessageDeleted(arg0) {
   if (obj.isAndroid()) {
-    const result = importDefault(13530).handleVoiceMessageDeleted(arg0);
-    const obj2 = importDefault(13530);
+    const result = importDefault(13574).handleVoiceMessageDeleted(arg0);
+    const obj2 = importDefault(13574);
   } else {
     const DCDAudioPlayerManager = closure_9.DCDAudioPlayerManager;
     if (null != DCDAudioPlayerManager) {

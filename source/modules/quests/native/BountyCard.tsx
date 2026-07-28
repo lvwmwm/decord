@@ -1,9 +1,9 @@
-// Module ID: 14028
-// Function ID: 107315
+// Module ID: 14072
+// Function ID: 107488
 // Name: CARD_WIDTH
-// Dependencies: [57, 31, 27, 4123, 5931, 33, 4131, 689, 478, 566, 9415, 3835, 5166, 8081, 5085, 8329, 4127, 1212, 4544, 4092, 2]
+// Dependencies: [57, 31, 27, 4157, 5965, 33, 4165, 689, 478, 566, 9455, 3869, 5200, 8119, 5119, 8367, 4161, 1212, 4578, 4126, 2]
 
-// Module 14028 (CARD_WIDTH)
+// Module 14072 (CARD_WIDTH)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

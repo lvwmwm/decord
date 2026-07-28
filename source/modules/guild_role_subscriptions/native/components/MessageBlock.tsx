@@ -1,10 +1,10 @@
-// Module ID: 11322
-// Function ID: 88044
+// Module ID: 11360
+// Function ID: 88163
 // Name: getContainerStyles
-// Dependencies: [31, 27, 33, 689, 4131, 1273, 2]
+// Dependencies: [31, 27, 33, 689, 4165, 1273, 2]
 // Exports: default
 
-// Module 11322 (getContainerStyles)
+// Module 11360 (getContainerStyles)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

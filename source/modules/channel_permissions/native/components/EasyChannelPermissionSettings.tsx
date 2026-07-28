@@ -1,10 +1,10 @@
-// Module ID: 15576
-// Function ID: 119962
+// Module ID: 15615
+// Function ID: 120118
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [57, 5, 31, 27, 15577, 1348, 1918, 1911, 1838, 3759, 3768, 1850, 6661, 653, 33, 4131, 689, 1456, 566, 8215, 8216, 8217, 1212, 4321, 4471, 8223, 3764, 4542, 5501, 5502, 1273, 5164, 11246, 10856, 5093, 4325, 8162, 8687, 15578, 15580, 2]
+// Dependencies: [57, 5, 31, 27, 15616, 1348, 1918, 1911, 1838, 3793, 3802, 1850, 6697, 653, 33, 4165, 689, 1456, 566, 8253, 8254, 8255, 1212, 4355, 4505, 8261, 3798, 4576, 5536, 5537, 1273, 5198, 11284, 10894, 5127, 4359, 8200, 8731, 15617, 15619, 2]
 // Exports: default
 
-// Module 15576 (ChannelPermissionSettingsBasicView)
+// Module 15615 (ChannelPermissionSettingsBasicView)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TableRowInner from "TableRowInner";
@@ -181,7 +181,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   return null;
 }
 function onBack() {
-  importDefault(4471).close();
+  importDefault(4505).close();
   return false;
 }
 ({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);

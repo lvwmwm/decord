@@ -1,5 +1,5 @@
 // Module ID: 670
-// Function ID: 8275
+// Function ID: 8279
 // Name: MessageEmbedTypes
 // Dependencies: [2]
 

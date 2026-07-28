@@ -1,9 +1,9 @@
-// Module ID: 10373
-// Function ID: 80055
+// Module ID: 10413
+// Function ID: 80184
 // Name: LikelyAtoWarningBanner
-// Dependencies: [31, 9031, 10374, 653, 662, 33, 4131, 689, 10095, 10096, 4338, 10245, 6664, 3828, 10375, 1212, 10378, 1935, 4127, 10382, 2]
+// Dependencies: [31, 9075, 10414, 653, 662, 33, 4165, 689, 10135, 10136, 4372, 10285, 6700, 3862, 10415, 1212, 10418, 1935, 4161, 10422, 2]
 
-// Module 10373 (LikelyAtoWarningBanner)
+// Module 10413 (LikelyAtoWarningBanner)
 import result from "result";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY";
@@ -55,7 +55,7 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f80060 = handleLearnMore.useCallback((cta) => {
+    f80189 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: outer1_9.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);

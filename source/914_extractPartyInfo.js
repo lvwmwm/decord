@@ -1,5 +1,5 @@
 // Module ID: 914
-// Function ID: 10030
+// Function ID: 10034
 // Name: extractPartyInfo
 // Dependencies: [77, 912, 915, 916]
 // Exports: buildClientAttributesFromInfo, buildServerAttributesFromInfo, buildTransportAttributes, extractSessionDataFromInitializeRequest, extractSessionDataFromInitializeResponse

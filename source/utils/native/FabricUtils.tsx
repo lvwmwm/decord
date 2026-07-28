@@ -1,15 +1,15 @@
-// Module ID: 3995
-// Function ID: 33138
+// Module ID: 4029
+// Function ID: 33240
 // Name: isFabric
-// Dependencies: [3996, 477, 2]
+// Dependencies: [4030, 477, 2]
 // Exports: isIosFabric
 
-// Module 3995 (isFabric)
+// Module 4029 (isFabric)
 function isFabric() {
   let isFabricResult;
-  if (null != importDefault(3996)) {
-    isFabricResult = importDefault(3996).isFabric();
-    const obj = importDefault(3996);
+  if (null != importDefault(4030)) {
+    isFabricResult = importDefault(4030).isFabric();
+    const obj = importDefault(4030);
   }
   return null != isFabricResult && isFabricResult;
 }

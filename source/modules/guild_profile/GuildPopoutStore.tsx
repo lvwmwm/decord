@@ -1,9 +1,9 @@
-// Module ID: 13039
-// Function ID: 100884
+// Module ID: 13083
+// Function ID: 101057
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 6632, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 6668, 566, 686, 2]
 
-// Module 13039 (_isNativeReflectConstruct)
+// Module 13083 (_isNativeReflectConstruct)
 import _startLurking from "_startLurking";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -97,7 +97,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   GUILD_POPOUT_FETCH_SUCCESS: function handleFetchSuccess(guildId) {
     guildId = guildId.guildId;
-    let obj = require(6632) /* _startLurking */;
+    let obj = require(6668) /* _startLurking */;
     obj = {};
     const discoverableGuild = obj.makeDiscoverableGuild(guildId.guild);
     const merged = Object.assign(closure_9.guilds[guildId]);

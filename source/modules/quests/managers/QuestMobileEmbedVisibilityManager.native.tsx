@@ -1,9 +1,9 @@
-// Module ID: 16580
-// Function ID: 129318
+// Module ID: 16620
+// Function ID: 129479
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 15, 17, 102, 18, 3824, 4144, 9060, 4343, 1352, 1348, 1907, 9448, 6271, 5932, 10434, 653, 5938, 1362, 4120, 4980, 5960, 10433, 10192, 3982, 668, 669, 4473, 5959, 3983, 5078, 2]
+// Dependencies: [57, 6, 7, 15, 17, 102, 18, 3858, 4178, 9104, 4377, 1352, 1348, 1907, 9488, 6307, 5966, 8425, 653, 5972, 1362, 4154, 5014, 5994, 10473, 10232, 4016, 668, 669, 4507, 5993, 4017, 5112, 2]
 
-// Module 16580 (_createForOfIteratorHelperLoose)
+// Module 16620 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -136,7 +136,7 @@ function _superPropGet(arg0, arg1, arg2, arg3) {
 ({ useChannelDetailsStore: closure_12, getIsChannelDetailsSearchActive: closure_13 } = createChannelState);
 function log(arg0) {
   if (null == questLogger) {
-    let obj = require(5938) /* getQuestLogger */;
+    let obj = require(5972) /* getQuestLogger */;
     obj = { location: "QuestMobileEmbedVisibilityManager" };
     questLogger = obj.getQuestLogger(obj);
   }

@@ -1,9 +1,9 @@
-// Module ID: 7581
-// Function ID: 60722
+// Module ID: 7617
+// Function ID: 60811
 // Name: getCTAButtonColor
-// Dependencies: [31, 27, 1277, 653, 33, 4131, 5053, 689, 1273, 5163, 7578, 2]
+// Dependencies: [31, 27, 1277, 653, 33, 4165, 5087, 689, 1273, 5197, 7614, 2]
 
-// Module 7581 (getCTAButtonColor)
+// Module 7617 (getCTAButtonColor)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import semanticColor from "semanticColor";

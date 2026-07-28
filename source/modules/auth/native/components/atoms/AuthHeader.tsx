@@ -1,10 +1,10 @@
-// Module ID: 9149
-// Function ID: 71832
+// Module ID: 9193
+// Function ID: 71983
 // Name: AuthHeader
-// Dependencies: [31, 653, 33, 4131, 5053, 689, 1273, 2]
+// Dependencies: [31, 653, 33, 4165, 5087, 689, 1273, 2]
 // Exports: default
 
-// Module 9149 (AuthHeader)
+// Module 9193 (AuthHeader)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

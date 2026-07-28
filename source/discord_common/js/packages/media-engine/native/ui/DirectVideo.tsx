@@ -1,10 +1,10 @@
-// Module ID: 4232
-// Function ID: 37106
+// Module ID: 4266
+// Function ID: 37218
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 31, 33, 4, 4180, 4233, 2]
+// Dependencies: [6, 7, 31, 33, 4, 4214, 4267, 2]
 // Exports: default
 
-// Module 4232 (_createForOfIteratorHelperLoose)
+// Module 4266 (_createForOfIteratorHelperLoose)
 import classNames from "classNames";
 import set from "set";
 import result from "result";
@@ -93,10 +93,10 @@ function _arrayLikeToArray(arg0, arg1) {
 function releaseDirectVideoStream(arg0) {
   const value = map.get(arg0);
   if (tmp) {
-    const voiceEngine = require(4180) /* assertInjected */.getVoiceEngine();
+    const voiceEngine = require(4214) /* assertInjected */.getVoiceEngine();
     const result = voiceEngine.removeDirectVideoOutputSink(arg0);
     map.delete(arg0);
-    const obj2 = require(4180) /* assertInjected */;
+    const obj2 = require(4214) /* assertInjected */;
   }
 }
 const logger = new require("log").Logger("DirectVideo");

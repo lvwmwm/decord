@@ -1,9 +1,9 @@
-// Module ID: 14950
-// Function ID: 113987
+// Module ID: 14994
+// Function ID: 114160
 // Name: PreviewItem
-// Dependencies: [31, 4971, 14871, 33, 4131, 3988, 3992, 4543, 7620, 4477, 14881, 14902, 3744, 2]
+// Dependencies: [31, 5005, 14915, 33, 4165, 4022, 4026, 4577, 7656, 4511, 14925, 14946, 3778, 2]
 
-// Module 14950 (PreviewItem)
+// Module 14994 (PreviewItem)
 import importAllResult from "result";
 import { GuildsNodeType } from "_isNativeReflectConstruct";
 import withEqualityFn from "withEqualityFn";
@@ -347,7 +347,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       }
       return null;
     }
-  }, require(3744) /* isIterable */.shallow);
+  }, require(3778) /* isIterable */.shallow);
   let tmp2 = null;
   if (null != tmp) {
     let obj = {};

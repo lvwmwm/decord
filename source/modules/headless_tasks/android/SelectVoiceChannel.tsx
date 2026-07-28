@@ -1,14 +1,14 @@
-// Module ID: 16700
-// Function ID: 130221
+// Module ID: 16740
+// Function ID: 130382
 // Name: promise
-// Dependencies: [1348, 4203, 16693, 4945, 4342, 4139, 2]
+// Dependencies: [1348, 4237, 16733, 4979, 4376, 4173, 2]
 
-// Module 16700 (promise)
+// Module 16740 (promise)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
 const require = arg1;
-let result = require("module_16693").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
+let result = require("module_16733").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
 
 export default (arg0) => {
   let importDefault;

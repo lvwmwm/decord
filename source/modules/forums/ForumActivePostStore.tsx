@@ -1,10 +1,10 @@
-// Module ID: 6013
-// Function ID: 53657
+// Module ID: 6047
+// Function ID: 53776
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5041, 6014, 1194, 1348, 4143, 1907, 1357, 1359, 22, 6015, 21, 1390, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5075, 6048, 1194, 1348, 4177, 1907, 1357, 1359, 22, 6049, 21, 1390, 566, 686, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 6013 (_isNativeReflectConstruct)
+// Module 6047 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -409,7 +409,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     channel = channel.channel;
     if (null != channel.parent_id) {
       if (channel.parent_id === c17) {
-        const isForumPostPinnedResult = require(6015) /* getForumPostReadStates */.isForumPostPinned(channel.id);
+        const isForumPostPinnedResult = require(6049) /* getForumPostReadStates */.isForumPostPinned(channel.id);
         const hasItem = set2.has(channel.id);
         if (isForumPostPinnedResult) {
           if (!hasItem) {

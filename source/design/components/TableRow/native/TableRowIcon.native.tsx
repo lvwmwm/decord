@@ -1,10 +1,10 @@
-// Module ID: 5170
-// Function ID: 45006
+// Module ID: 5204
+// Function ID: 45121
 // Name: TableRowIcon
-// Dependencies: [29, 31, 27, 33, 4131, 689, 4546, 2]
+// Dependencies: [29, 31, 27, 33, 4165, 689, 4580, 2]
 // Exports: TableRowIcon
 
-// Module 5170 (TableRowIcon)
+// Module 5204 (TableRowIcon)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -71,9 +71,9 @@ export const TableRowIcon = function TableRowIcon(arg0) {
   }
   const color = translucent.color;
   if ("default" === variant) {
-    let REFRESH_SMALL_16 = require(4546) /* getIconSize */.IconSizes.MEDIUM;
+    let REFRESH_SMALL_16 = require(4580) /* getIconSize */.IconSizes.MEDIUM;
   } else {
-    REFRESH_SMALL_16 = require(4546) /* getIconSize */.IconSizes.REFRESH_SMALL_16;
+    REFRESH_SMALL_16 = require(4580) /* getIconSize */.IconSizes.REFRESH_SMALL_16;
   }
   let str8 = "md";
   if ("default" !== variant) {
@@ -100,7 +100,7 @@ export const TableRowIcon = function TableRowIcon(arg0) {
     let tmp13 = <IconComponent size={str8} color={color} />;
   } else {
     obj = { color, source, size: REFRESH_SMALL_16 };
-    tmp13 = jsx(importDefault(4546), { color, source, size: REFRESH_SMALL_16 });
+    tmp13 = jsx(importDefault(4580), { color, source, size: REFRESH_SMALL_16 });
   }
   obj.children = tmp13;
   <View style={items} />;

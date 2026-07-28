@@ -1,10 +1,10 @@
-// Module ID: 15049
-// Function ID: 114666
+// Module ID: 15092
+// Function ID: 114839
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [31, 653, 10152, 1198, 1212, 2945, 2]
+// Dependencies: [31, 653, 10194, 1198, 1212, 2945, 2]
 // Exports: default
 
-// Module 15049 (useFavoritesGuildHeaderAction)
+// Module 15092 (useFavoritesGuildHeaderAction)
 import result from "result";
 import { Routes } from "ME";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("computeFavoritesAccess").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");
 
 export default function useFavoritesGuildHeaderAction() {
-  let obj = require(10152) /* computeFavoritesAccess */;
+  let obj = require(10194) /* computeFavoritesAccess */;
   const hasAccess = obj.useFavoritesAccess().hasAccess;
   obj = { isPreview: !hasAccess };
   const callback = React.useCallback(() => {

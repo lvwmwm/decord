@@ -1,10 +1,10 @@
-// Module ID: 7772
-// Function ID: 61760
+// Module ID: 7808
+// Function ID: 61850
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1850, 3791, 3970, 1212, 2781, 2, 7773]
+// Dependencies: [1850, 3825, 4004, 1212, 2781, 2, 7809]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7772 (getPremiumGroupInviteEmbedText)
+// Module 7808 (getPremiumGroupInviteEmbedText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 
@@ -61,7 +61,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     }
     return tmp8;
   } else {
-    obj = require(3970) /* conceal */;
+    obj = require(4004) /* conceal */;
     let nameFromUserResult = obj.nameFromUser(sender);
     const obj3 = {};
     const intl = require(1212) /* getSystemLocale */.intl;

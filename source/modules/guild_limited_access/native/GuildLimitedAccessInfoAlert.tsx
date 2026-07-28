@@ -1,10 +1,10 @@
-// Module ID: 12905
-// Function ID: 100264
+// Module ID: 12949
+// Function ID: 100437
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [31, 1838, 12906, 653, 33, 4131, 5053, 689, 1212, 4562, 1273, 4127, 2]
+// Dependencies: [31, 1838, 12950, 653, 33, 4165, 5087, 689, 1212, 4596, 1273, 4161, 2]
 // Exports: default
 
-// Module 12905 (GuildLimitedAccessInfoAlert)
+// Module 12949 (GuildLimitedAccessInfoAlert)
 import "result";
 import closure_3 from "_createForOfIteratorHelperLoose";
 import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK";
@@ -46,7 +46,7 @@ export default function GuildLimitedAccessInfoAlert(arg0) {
   obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.kJwpBW);
   const items = [callback(require(1273) /* Button */.LegacyText, obj1), ];
   const obj2 = { style: tmp.text, variant: "text-md/medium", children: formatResult };
-  items[1] = callback(require(4127) /* Text */.Text, obj2);
+  items[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items;
-  return callback2(importDefault(4562), obj);
+  return callback2(importDefault(4596), obj);
 };

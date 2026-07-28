@@ -1,9 +1,9 @@
-// Module ID: 5692
-// Function ID: 49175
+// Module ID: 5702
+// Function ID: 49031
 // Name: result
-// Dependencies: [1194, 653, 480, 686, 5693, 675, 673, 2]
+// Dependencies: [1194, 653, 480, 686, 5703, 675, 673, 2]
 
-// Module 5692 (result)
+// Module 5702 (result)
 import importDefaultResult from "_isNativeReflectConstruct";
 import isThrottled from "isThrottled";
 
@@ -15,7 +15,7 @@ isThrottled = {
   waitFor: items,
   getFingerprint: importDefaultResult.getFingerprint,
   getSessionId() {
-    const session = require(5693) /* stopAnalyticsHeartbeat */.getSession();
+    const session = require(5703) /* stopAnalyticsHeartbeat */.getSession();
     return session.then((uuid) => {
       const obj = {};
       uuid = undefined;

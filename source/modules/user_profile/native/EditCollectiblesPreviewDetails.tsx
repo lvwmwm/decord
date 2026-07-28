@@ -1,10 +1,10 @@
-// Module ID: 7913
-// Function ID: 63012
+// Module ID: 7949
+// Function ID: 63103
 // Name: EditCollectiblesPreviewDescription
-// Dependencies: [31, 27, 1922, 33, 4131, 566, 3777, 5782, 3801, 4127, 1212, 7894, 2]
+// Dependencies: [31, 27, 1922, 33, 4165, 566, 3811, 5792, 3835, 4161, 1212, 7930, 2]
 // Exports: default
 
-// Module 7913 (EditCollectiblesPreviewDescription)
+// Module 7949 (EditCollectiblesPreviewDescription)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,17 +26,17 @@ function EditCollectiblesPreviewDescription(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.locale);
-  let obj1 = importDefault(3777);
+  let obj1 = importDefault(3811);
   const canUseCollectiblesResult = obj1.canUseCollectibles(user);
-  let obj2 = require(5782) /* getPriceForCollectiblesProduct */;
+  let obj2 = require(5792) /* getPriceForCollectiblesProduct */;
   let result = obj2.isPremiumCollectiblesProduct(product);
   if (!result) {
-    let obj3 = require(5782) /* getPriceForCollectiblesProduct */;
+    let obj3 = require(5792) /* getPriceForCollectiblesProduct */;
     result = obj3.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
   if (result1) {
-    let obj4 = require(5782) /* getPriceForCollectiblesProduct */;
+    let obj4 = require(5792) /* getPriceForCollectiblesProduct */;
     result1 = obj4.isPremiumCollectiblesPurchase(purchase);
   }
   if (null != purchase) {
@@ -47,7 +47,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       }
       let diffAsUnitsResult = null;
       if (null != expiresAt) {
-        let obj5 = require(3801) /* resetCache */;
+        let obj5 = require(3835) /* resetCache */;
         const _Date = Date;
         const date = new Date();
         diffAsUnitsResult = obj5.diffAsUnits(date, purchase.expiresAt);
@@ -59,7 +59,7 @@ function EditCollectiblesPreviewDescription(arg0) {
         const intl = require(1212) /* getSystemLocale */.intl;
         obj1 = { days: diffAsUnitsResult.days.toString() };
         obj.children = intl.format(require(1212) /* getSystemLocale */.t.Io7ozn, obj1);
-        tmp20 = callback(require(4127) /* Text */.Text, obj);
+        tmp20 = callback(require(4161) /* Text */.Text, obj);
         const str = diffAsUnitsResult.days;
       }
       const items1 = [tmp20, , ];
@@ -73,7 +73,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       }
       obj3.date = toLocaleDateStringResult;
       obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.gW9R4B, obj3);
-      items1[1] = callback(require(4127) /* Text */.Text, obj2);
+      items1[1] = callback(require(4161) /* Text */.Text, obj2);
       let expiresAt1;
       if (null != purchase) {
         expiresAt1 = purchase.expiresAt;
@@ -86,7 +86,7 @@ function EditCollectiblesPreviewDescription(arg0) {
         expiresAt = purchase.expiresAt;
         obj5.date = expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" });
         obj4.children = intl3.format(require(1212) /* getSystemLocale */.t.eZSTa5, obj5);
-        tmp29 = callback(require(4127) /* Text */.Text, obj4);
+        tmp29 = callback(require(4161) /* Text */.Text, obj4);
       }
       items1[2] = tmp29;
       obj.children = items1;
@@ -98,10 +98,10 @@ function EditCollectiblesPreviewDescription(arg0) {
       const obj6 = { variant: "text-sm/medium", color: "text-default" };
       const intl5 = require(1212) /* getSystemLocale */.intl;
       obj6.children = intl5.string(require(1212) /* getSystemLocale */.t.hmyYK8);
-      let tmp39Result = callback(require(4127) /* Text */.Text, obj6);
+      let tmp39Result = callback(require(4161) /* Text */.Text, obj6);
     } else {
-      const obj15 = importDefault(3777);
-      const Text = require(4127) /* Text */.Text;
+      const obj15 = importDefault(3811);
+      const Text = require(4161) /* Text */.Text;
       const obj7 = { variant: "text-sm/medium", color: "text-default" };
       if (isPremiumResult) {
         obj7.children = nitroUpgradeCTA;
@@ -110,13 +110,13 @@ function EditCollectiblesPreviewDescription(arg0) {
         obj7.children = nitroJoinCTA;
         tmp39Result = tmp39(Text, obj7);
       }
-      isPremiumResult = importDefault(3777).isPremium(user);
+      isPremiumResult = importDefault(3811).isPremium(user);
     }
   } else {
     const obj8 = { variant: "text-sm/medium", color: "text-default" };
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj8.children = intl4.string(require(1212) /* getSystemLocale */.t.fEGjVQ);
-    return callback(require(4127) /* Text */.Text, obj8);
+    return callback(require(4161) /* Text */.Text, obj8);
   }
 }
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
@@ -132,7 +132,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
   previewSkuId = previewSkuId.previewSkuId;
   ({ user, nitroJoinCTA, nitroUpgradeCTA } = previewSkuId);
   const tmp = callback2();
-  ({ product, purchase } = importDefault(7894)(previewSkuId));
+  ({ product, purchase } = importDefault(7930)(previewSkuId));
   let tmp4Result = null;
   if (null != previewSkuId) {
     if (null != product) {
@@ -150,7 +150,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
         name = name1;
       }
       obj.children = name;
-      const items = [callback(require(4127) /* Text */.Text, obj), ];
+      const items = [callback(require(4161) /* Text */.Text, obj), ];
       obj = { user, product, purchase, nitroJoinCTA, nitroUpgradeCTA };
       items[1] = callback(EditCollectiblesPreviewDescription, obj);
       obj.children = items;

@@ -1,10 +1,10 @@
-// Module ID: 6616
-// Function ID: 58547
+// Module ID: 6652
+// Function ID: 58636
 // Name: renderTitleWithNitroLink
-// Dependencies: [33, 4127, 2]
+// Dependencies: [33, 4161, 2]
 // Exports: default
 
-// Module 6616 (renderTitleWithNitroLink)
+// Module 6652 (renderTitleWithNitroLink)
 import jsxProd from "jsxProd";
 
 let closure_2;
@@ -18,7 +18,7 @@ function renderTitleWithNitroLink(title) {
     let obj = {};
     const items = [title.slice(0, index), , ];
     obj = { variant: "text-sm/semibold", color: "text-link", accessibilityRole: "link", onPress: title.onPress, children: Nitro };
-    items[1] = callback(require(4127) /* Text */.Text, obj);
+    items[1] = callback(require(4161) /* Text */.Text, obj);
     items[2] = title.slice(index + 5);
     obj.children = items;
     tmp2 = callback2(closure_3, obj);
@@ -46,5 +46,5 @@ export default function BuyNitroSectionHeader(arg0) {
     tmp2 = renderTitleWithNitroLink(obj);
   }
   obj.children = tmp2;
-  return closure_2(require(4127) /* Text */.Text, obj);
+  return closure_2(require(4161) /* Text */.Text, obj);
 };

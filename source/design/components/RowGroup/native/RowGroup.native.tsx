@@ -1,10 +1,10 @@
-// Module ID: 13049
-// Function ID: 100964
+// Module ID: 13093
+// Function ID: 101137
 // Name: RowGroup
-// Dependencies: [31, 27, 33, 4131, 689, 4542, 5501, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4576, 5536, 2]
 // Exports: RowGroup
 
-// Module 13049 (RowGroup)
+// Module 13093 (RowGroup)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,11 +35,11 @@ export const RowGroup = function RowGroup(children) {
     let tmp8 = null != title;
     if (tmp8) {
       obj = { title };
-      tmp8 = callback(require(5501) /* TableRowGroupTitle */.TableRowGroupTitle, obj);
+      tmp8 = callback(require(5536) /* TableRowGroupTitle */.TableRowGroupTitle, obj);
     }
     const items = [tmp8, trailing];
     obj.children = items;
-    tmp5Result = closure_4(require(4542) /* Stack */.Stack, obj);
+    tmp5Result = closure_4(require(4576) /* Stack */.Stack, obj);
     const tmp5 = closure_4;
   }
   const items1 = [tmp5Result, callback(View, { style: tmp.content, children: children.children })];

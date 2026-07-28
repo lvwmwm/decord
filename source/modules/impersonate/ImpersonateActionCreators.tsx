@@ -1,10 +1,10 @@
-// Module ID: 5065
-// Function ID: 43907
+// Module ID: 5099
+// Function ID: 44022
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 1908, 1918, 1911, 3759, 1907, 4326, 1910, 653, 1355, 675, 4325, 1916, 686, 1198, 2]
+// Dependencies: [1348, 1908, 1918, 1911, 3793, 1907, 4360, 1910, 653, 1355, 675, 4359, 1916, 686, 1198, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5065 (_createForOfIteratorHelperLoose)
+// Module 5099 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -106,10 +106,10 @@ function updateImpersonating(guildId, type) {
     obj = {};
     const _Object = Object;
     obj.num_roles = Object.keys(data.roles).length;
-    const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+    const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
     obj["is_viewing_as_member"] = data.type === require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-    const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
     obj = { type: "IMPERSONATE_UPDATE", guildId };
     const obj1 = {};
     const merged1 = Object.assign(data);
@@ -144,10 +144,10 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 export const startImpersonating = function startImpersonating(guildId, data) {
   let obj = importDefault(675);
   obj = { num_roles: Object.keys(data.roles).length };
-  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
   obj["is_viewing_as_member"] = data.type === require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
   obj = { type: "IMPERSONATE_UPDATE", guildId, data };
   importDefault(686).dispatch(obj);
   puntFromSelectedChannelIfInaccessible(guildId);

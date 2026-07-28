@@ -1,10 +1,10 @@
-// Module ID: 12350
-// Function ID: 96072
+// Module ID: 12393
+// Function ID: 96242
 // Name: InAppReportsBottomButton
-// Dependencies: [31, 27, 482, 33, 4131, 689, 1212, 2299, 4127, 4544, 1273, 2]
+// Dependencies: [31, 27, 482, 33, 4165, 689, 1212, 2299, 4161, 4578, 1273, 2]
 // Exports: default
 
-// Module 12350 (InAppReportsBottomButton)
+// Module 12393 (InAppReportsBottomButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -71,7 +71,7 @@ export default function InAppReportsBottomButton(button) {
       let tmp20 = null;
       if (null != tmp2) {
         const obj1 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp2 };
-        tmp20 = callback(button(4127).Text, obj1);
+        tmp20 = callback(button(4161).Text, obj1);
       }
       const items1 = [tmp20, , ];
       const obj2 = {
@@ -82,7 +82,7 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult1,
         variant: str2
       };
-      items1[1] = callback(button(4544).Button, obj2);
+      items1[1] = callback(button(4578).Button, obj2);
       let tmp27 = null;
       if (hasError) {
         const obj3 = { style: tmp.errorText, children: string2Result };

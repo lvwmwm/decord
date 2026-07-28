@@ -1,10 +1,10 @@
-// Module ID: 10538
-// Function ID: 81509
+// Module ID: 10576
+// Function ID: 81630
 // Name: Emoji
-// Dependencies: [31, 27, 4123, 33, 664, 4131, 689, 5085, 1273, 566, 3992, 4132, 10510, 2]
+// Dependencies: [31, 27, 4157, 33, 664, 4165, 689, 5119, 1273, 566, 4026, 4166, 10548, 2]
 // Exports: default
 
-// Module 10538 (Emoji)
+// Module 10576 (Emoji)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ function Emoji(url) {
     obj.style = items;
     obj = { uri: url };
     obj.source = obj;
-    let tmp5 = jsx(importDefault(5085), { uri: url });
+    let tmp5 = jsx(importDefault(5119), { uri: url });
   } else {
     obj = {};
     const items1 = [tmp.textEmoji];

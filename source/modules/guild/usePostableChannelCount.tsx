@@ -1,10 +1,10 @@
-// Module ID: 15498
-// Function ID: 119122
+// Module ID: 15537
+// Function ID: 119278
 // Name: useSendMessageChannelCount
-// Dependencies: [1908, 3759, 653, 566, 483, 2]
+// Dependencies: [1908, 3793, 653, 566, 483, 2]
 // Exports: default
 
-// Module 15498 (useSendMessageChannelCount)
+// Module 15537 (useSendMessageChannelCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_4 } from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

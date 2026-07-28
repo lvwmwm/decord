@@ -1,10 +1,10 @@
-// Module ID: 14546
-// Function ID: 111106
+// Module ID: 14590
+// Function ID: 111279
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [31, 27, 33, 14547, 2]
+// Dependencies: [31, 27, 33, 14591, 2]
 // Exports: default
 
-// Module 14546 (FeaturedFirstCardCoachmarkAnchor)
+// Module 14590 (FeaturedFirstCardCoachmarkAnchor)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,7 +17,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/collectibles/na
 export default function FeaturedFirstCardCoachmarkAnchor(children) {
   const ref = React.useRef(null);
   const obj = { collapsable: false };
-  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14547), { anchorRef: ref })];
+  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14591), { anchorRef: ref })];
   obj.children = items;
   return callback2(View, obj);
 };

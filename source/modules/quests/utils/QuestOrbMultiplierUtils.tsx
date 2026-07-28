@@ -1,10 +1,10 @@
-// Module ID: 9423
-// Function ID: 73549
+// Module ID: 9463
+// Function ID: 73677
 // Name: items
-// Dependencies: [3777, 1866, 1868, 5784, 2]
+// Dependencies: [3811, 1866, 1868, 5794, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9423 (items)
+// Module 9463 (items)
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
 const items = [, ];
@@ -17,7 +17,7 @@ export const shouldReceiveQuestOrbMultiplier = function shouldReceiveQuestOrbMul
   return items.includes(orbMultiplierEligibility);
 };
 export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(perks) {
-  const obj = importDefault(3777);
+  const obj = importDefault(3811);
   if (obj.canUseMoreQuestOrbs(perks)) {
     if (obj2.canUseQuestOrbMultiplier(perks)) {
       return obj.NITRO;
@@ -44,9 +44,9 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
           }
         }
       }
-      obj5 = require(5784) /* apexExperiment */;
+      obj5 = require(5794) /* apexExperiment */;
     }
-    obj2 = importDefault(3777);
+    obj2 = importDefault(3811);
   } else {
     return null;
   }

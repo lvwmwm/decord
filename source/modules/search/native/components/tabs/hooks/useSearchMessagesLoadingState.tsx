@@ -1,10 +1,10 @@
-// Module ID: 15456
-// Function ID: 117938
+// Module ID: 15495
+// Function ID: 118094
 // Name: useSearchMessagesLoadingState
-// Dependencies: [5847, 10041, 9033, 15410, 566, 10042, 2]
+// Dependencies: [5857, 10081, 9077, 15450, 566, 10082, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 15456 (useSearchMessagesLoadingState)
+// Module 15495 (useSearchMessagesLoadingState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
@@ -19,8 +19,8 @@ export const useSearchMessagesLoadingState = function useSearchMessagesLoadingSt
   let require;
   ({ searchContext: require, tab: dependencyMap } = arg0);
   ({ placeholderHeight, numColumns } = arg0);
-  let _isNativeReflectConstruct = require(15410) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
-  let obj = require(15410) /* useFullscreenPlaceholderCount */;
+  let _isNativeReflectConstruct = require(15450) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
+  let obj = require(15450) /* useFullscreenPlaceholderCount */;
   const items = [closure_3, _isNativeReflectConstruct];
   return require(566) /* initialize */.useStateFromStoresObject(items, () => {
     let obj = outer1_0(outer1_1[5]);

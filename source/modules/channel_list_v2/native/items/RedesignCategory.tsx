@@ -1,10 +1,10 @@
-// Module ID: 15023
-// Function ID: 114511
+// Module ID: 15067
+// Function ID: 114685
 // Name: renderCategoryItem
-// Dependencies: [31, 27, 5756, 5077, 4326, 10223, 33, 4131, 477, 4127, 4661, 689, 8330, 9940, 9029, 1324, 566, 4321, 5073, 1212, 5496, 9941, 6679, 2]
+// Dependencies: [31, 27, 5766, 5111, 4360, 10263, 33, 4165, 477, 689, 4161, 4695, 11831, 8368, 9980, 9073, 1324, 566, 4355, 11856, 5107, 1212, 5531, 9981, 6715, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 15023 (renderCategoryItem)
+// Module 15067 (renderCategoryItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,12 +31,13 @@ function renderCategoryItem(arg0) {
   let onLongPress;
   let onPress;
   let styles;
+  let trailingAction;
   let withMarginTop;
   ({ name, icon, note, muted } = arg0);
   if (muted === undefined) {
     muted = false;
   }
-  ({ onPress, onLongPress, styles, isRefreshEnabled } = arg0);
+  ({ onPress, onLongPress, styles, isRefreshEnabled, trailingAction } = arg0);
   const items = [styles.categoryWrapper, ];
   let obj = {};
   let num = 16;
@@ -66,7 +67,7 @@ function renderCategoryItem(arg0) {
     obj.color = str;
     obj.style = styles.categoryText;
     obj.children = name;
-    tmp3Result = callback(require(4127) /* Text */.Text, obj);
+    tmp3Result = callback(trailingAction(4161).Text, obj);
     const tmp3 = callback;
   }
   let tmp6 = null;
@@ -74,35 +75,78 @@ function renderCategoryItem(arg0) {
     obj = { style: styles.iconWrapperStyles, children: icon };
     tmp6 = callback(View, obj);
   }
-  const obj1 = {};
-  const items1 = [, , ];
-  if (isRefreshEnabled) {
-    items1[0] = tmp3Result;
-    let tmp12 = null;
-    if (null != note) {
-      const obj2 = { style: styles.noteWrapper, children: note };
-      tmp12 = callback(View, obj2);
+  if (null == trailingAction) {
+    const obj1 = {};
+    const items1 = [, , , ];
+    if (isRefreshEnabled) {
+      items1[0] = tmp3Result;
+      let tmp23 = null;
+      if (null != note) {
+        const obj2 = { style: styles.noteWrapper, children: note };
+        tmp23 = callback(View, obj2);
+      }
+      items1[1] = tmp23;
+      items1[2] = tmp6;
+      items1[3] = null;
+      obj1.children = items1;
+      let tmp22 = obj1;
+    } else {
+      items1[0] = tmp6;
+      items1[1] = tmp3Result;
+      items1[2] = note;
+      items1[3] = null;
+      obj1.children = items1;
+      tmp22 = obj1;
     }
-    items1[1] = tmp12;
-    items1[2] = tmp6;
-    obj1.children = items1;
-    let tmp11 = obj1;
+    const tmp20Result = closure_13(closure_12, tmp22);
+    if (null == onPress) {
+      if (null == onLongPress) {
+        const obj3 = { accessibilityRole: "header", style: items, children: tmp20Result };
+        let tmp30Result = callback(View, obj3);
+      }
+      return tmp30Result;
+    }
+    const obj4 = { accessibilityRole: "header", accessibilityState };
+    let tmp33;
+    if (null != trailingAction) {
+      const obj5 = { name: "add-to-category", label: trailingAction.label };
+      const items2 = [obj5];
+      tmp33 = items2;
+    }
+    obj4.accessibilityActions = tmp33;
+    let fn;
+    if (null != trailingAction) {
+      fn = (nativeEvent) => {
+        if ("add-to-category" === nativeEvent.nativeEvent.actionName) {
+          trailingAction.perform();
+        }
+      };
+    }
+    obj4.onAccessibilityAction = fn;
+    obj4.onPress = onPress;
+    obj4.onLongPress = onLongPress;
+    obj4.style = items;
+    obj4.children = tmp20Result;
+    tmp30Result = callback(trailingAction(4695).PressableHighlight, obj4);
+    const tmp20 = closure_13;
+    const tmp21 = closure_12;
+    const tmp30 = callback;
   } else {
-    items1[0] = tmp6;
-    items1[1] = tmp3Result;
-    items1[2] = note;
-    obj1.children = items1;
-    tmp11 = obj1;
+    const obj6 = { style: styles.trailingActionWrapper };
+    let obj7 = { accessible: false, onPress: trailingAction.perform, hitSlop: closure_15, androidRippleConfig: closure_16 };
+    let obj8 = { size: "xxs" };
+    const colors = importDefault(689).colors;
+    obj8.color = muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
+    obj8 = callback(trailingAction(11831).PlusMediumIcon, obj8);
+    obj7.children = obj8;
+    obj7 = callback(trailingAction(4695).PressableOpacity, obj7);
+    obj6.children = obj7;
+    callback(View, obj6);
+    const tmp10 = View;
+    const tmp11 = callback;
+    const tmp16 = callback;
+    const tmp9 = callback;
   }
-  const tmp9Result = closure_13(closure_12, tmp11);
-  if (null == onPress) {
-    if (null == onLongPress) {
-      const obj3 = { accessibilityRole: "header", style: items, children: tmp9Result };
-      let tmp18 = callback(View, obj3);
-    }
-    return tmp18;
-  }
-  tmp18 = callback(require(4661) /* PressableBase */.PressableHighlight, { accessibilityRole: "header", accessibilityState, onPress, onLongPress, style: items, children: tmp9Result });
 }
 function renderCollapsibleCategoryItem(collapsed) {
   collapsed = collapsed.collapsed;
@@ -113,7 +157,7 @@ function renderCollapsibleCategoryItem(collapsed) {
   const colors = importDefault(689).colors;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["icon"] = callback(require(8330) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
+  obj["icon"] = callback(require(8368) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
   obj = { expanded: !collapsed };
   obj["accessibilityState"] = obj;
   obj["isRefreshEnabled"] = collapsed.isRefreshEnabled;
@@ -126,14 +170,14 @@ function useCategoryPressEvents(id, collapsed) {
   const items1 = [id];
   return {
     onPress: React.useCallback(() => {
-      const obj = id(outer1_2[13]);
+      const obj = id(outer1_2[14]);
       if (closure_1) {
         obj.categoryExpand(id);
       } else {
         obj.categoryCollapse(id);
       }
     }, items),
-    onLongPress: React.useCallback(() => id(outer1_2[14]).openChannelLongPressActionSheet(id), items1)
+    onLongPress: React.useCallback(() => id(outer1_2[15]).openChannelLongPressActionSheet(id), items1)
   };
 }
 ({ CATEGORY_MARGIN_BOTTOM: closure_8, CATEGORY_MARGIN_TOP: closure_9, CATEGORY_VERTICAL_PADDING: closure_10 } = hairlineWidth);
@@ -155,8 +199,9 @@ const styles = _createForOfIteratorHelperLoose.createStyles(() => {
     tmp = obj1;
   }
   const merged = Object.assign(tmp);
+  let obj4 = require(477) /* set */;
   let num = 0;
-  if (obj5.isAndroid()) {
+  if (obj4.isAndroid()) {
     num = -1;
   }
   obj["marginTop"] = num;
@@ -172,8 +217,12 @@ const styles = _createForOfIteratorHelperLoose.createStyles(() => {
   }
   const merged1 = Object.assign(tmp3);
   obj.iconWrapperStyles = {};
+  obj4 = { paddingLeft: importDefault(689).space.PX_8, marginLeft: "auto" };
+  obj.trailingActionWrapper = obj4;
   return obj;
 });
+let closure_15 = { top: 16, bottom: 16, left: 16, right: 16 };
+let closure_16 = { borderless: true, radius: 16 };
 _createForOfIteratorHelperLoose = { flexShrink: 0, flexGrow: 0 };
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = Object.assign(_createForOfIteratorHelperLoose);
@@ -196,7 +245,7 @@ export const CategoryChannel = function CategoryChannel(channel) {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ collapsed: outer1_6.isCollapsed(channel.id), muted: outer1_7.isChannelMuted(channel.getGuildId(), channel.id) }));
   const collapsed = stateFromStoresObject.collapsed;
   const tmp2 = styles(tmp);
-  obj = { name: importDefault(4321)(channel), muted: stateFromStoresObject.muted, collapsed, onPress, onLongPress, withMarginTop: channel.withMarginTop, styles: tmp2, isRefreshEnabled: tmp };
+  obj = { name: importDefault(4355)(channel), muted: stateFromStoresObject.muted, collapsed, onPress, onLongPress, withMarginTop: channel.withMarginTop, styles: tmp2, isRefreshEnabled: tmp, trailingAction: importDefault(11856)(channel) };
   ({ onPress, onLongPress } = useCategoryPressEvents(channel.id, collapsed));
   return renderCollapsibleCategoryItem(obj);
 };
@@ -208,7 +257,7 @@ export const RecentlyActiveCategory = function RecentlyActiveCategory(guildId) {
   stateFromStores = obj.useStateFromStores(items, () => outer1_5.isCollapsed(guildId));
   const items1 = [guildId, stateFromStores];
   obj = {};
-  const callback = React.useCallback(() => guildId(outer1_2[18]).setRecentlyActiveCollapsed(guildId, !stateFromStores), items1);
+  const callback = React.useCallback(() => guildId(outer1_2[20]).setRecentlyActiveCollapsed(guildId, !stateFromStores), items1);
   const intl = guildId(1212).intl;
   obj.name = intl.string(guildId(1212).t.uZyspD);
   obj.collapsed = stateFromStores;
@@ -225,15 +274,15 @@ export const SuggestedCategory = function SuggestedCategory(guildId) {
   let items = [guildId, channelIds];
   let obj = {};
   const callback = React.useCallback(() => {
-    let obj = guildId(outer1_2[20]);
+    let obj = guildId(outer1_2[22]);
     obj = { key: "REDESIGN_SUGGESTED_CHANNELS_CLEAR", options: null, hasIcons: true };
     obj = {};
-    const intl = guildId(outer1_2[19]).intl;
-    obj.label = intl.string(guildId(outer1_2[19]).t.VkKicb);
+    const intl = guildId(outer1_2[21]).intl;
+    obj.label = intl.string(guildId(outer1_2[21]).t.VkKicb);
     obj.onPress = function onPress() {
-      guildId(outer2_2[21]).clearRecentChannels(outer1_0, outer1_1);
+      guildId(outer2_2[23]).clearRecentChannels(outer1_0, outer1_1);
     };
-    obj.IconComponent = guildId(outer1_2[22]).CircleXIcon;
+    obj.IconComponent = guildId(outer1_2[24]).CircleXIcon;
     const items = [obj];
     obj.options = items;
     const result = obj.showSimpleActionSheet(obj);

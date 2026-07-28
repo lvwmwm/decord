@@ -1,9 +1,9 @@
-// Module ID: 6690
-// Function ID: 59050
+// Module ID: 6726
+// Function ID: 59139
 // Name: openIncodeAgeVerificationModal
-// Dependencies: [5, 1850, 6691, 6693, 4345, 6659, 33, 4676, 4338, 6694, 1935, 6664, 1553, 4473, 6710, 6711, 6712, 4348, 3810, 686, 6713, 6714, 7557, 7558, 3828, 2]
+// Dependencies: [5, 1850, 6727, 6729, 4379, 6695, 33, 4710, 4372, 6730, 1935, 6700, 1553, 4507, 6746, 6747, 6748, 4382, 3844, 686, 6749, 6750, 7593, 7594, 3862, 2]
 
-// Module 6690 (openIncodeAgeVerificationModal)
+// Module 6726 (openIncodeAgeVerificationModal)
 import SafetyToastType from "SafetyToastType";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
@@ -121,14 +121,14 @@ export default {
     }
     let obj = entryPoint(1553);
     if (obj.isMetaQuest()) {
-      let tmpResult = tmp(4473);
-      tmpResult.openAlert(closure_7, jsx(onClose(6710), {}), onClose);
+      let tmpResult = tmp(4507);
+      tmpResult.openAlert(closure_7, jsx(onClose(6746), {}), onClose);
     } else {
-      tmpResult = tmp(4348);
+      tmpResult = tmp(4382);
       let isAgeVerifiedResult = tmpResult.isAgeVerified();
       if (isAgeVerifiedResult) {
-        isAgeVerifiedResult = entryPoint(3810).hasAgeGatedFeatures();
-        const obj3 = entryPoint(3810);
+        isAgeVerifiedResult = entryPoint(3844).hasAgeGatedFeatures();
+        const obj3 = entryPoint(3844);
       }
       dependencyMap = isAgeVerifiedResult;
       if (obj4.isAgeVerificationIncodeEnabled(entryPoint)) {
@@ -151,7 +151,7 @@ export default {
       } else {
         if (!isAgeVerifiedResult) {
           if (obj5.isExpressiveModalV2Enabled(entryPoint)) {
-            onClose(4338).pushLazy(prop(async () => {
+            onClose(4372).pushLazy(prop(async () => {
               let closure_0;
               closure_0 = yield entryPoint(c2[10])(c2[21], c2.paths).default;
               return () => outer3_12(closure_0, {
@@ -165,23 +165,23 @@ export default {
                 }
               });
             }), {}, closure_6);
-            const obj6 = onClose(4338);
+            const obj6 = onClose(4372);
           }
-          obj5 = entryPoint(6713);
+          obj5 = entryPoint(6749);
         }
-        currentUser = entryPoint(7557).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-        const obj7 = entryPoint(7557);
-        onClose(4338).pushLazy(prop(async () => {
+        currentUser = entryPoint(7593).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
+        const obj7 = entryPoint(7593);
+        onClose(4372).pushLazy(prop(async () => {
           let closure_0;
           closure_0 = yield entryPoint(c2[10])(c2[23], c2.paths).default;
           return () => outer3_12(closure_0, { entryPoint: outer2_0, isRetry: outer2_2, useEmbeddedMethods: outer2_4 });
         }), {}, closure_6);
-        const obj8 = onClose(4338);
+        const obj8 = onClose(4372);
       }
-      obj4 = entryPoint(6711);
+      obj4 = entryPoint(6747);
     }
   },
   openUrl(arg0) {
-    importDefault(3828).openURL(arg0);
+    importDefault(3862).openURL(arg0);
   }
 };

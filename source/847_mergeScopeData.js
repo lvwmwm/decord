@@ -1,5 +1,5 @@
 // Module ID: 847
-// Function ID: 9463
+// Function ID: 9467
 // Name: mergeScopeData
 // Dependencies: [65, 823, 825, 796, 833]
 // Exports: applyScopeDataToEvent, getCombinedScopeData

@@ -1,10 +1,10 @@
-// Module ID: 16683
-// Function ID: 130092
+// Module ID: 16723
+// Function ID: 130253
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 653, 3, 1848, 1845, 1842, 675, 2]
 // Exports: default, libDiscoreSmokeTest
 
-// Module 16683 (libDiscoreSmokeTest)
+// Module 16723 (libDiscoreSmokeTest)
 import _callSuper from "_callSuper";
 import { AnalyticEvents } from "ME";
 import importDefaultResult from "_initLibdiscore";

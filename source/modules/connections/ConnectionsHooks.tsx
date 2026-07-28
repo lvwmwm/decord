@@ -1,10 +1,10 @@
-// Module ID: 5731
-// Function ID: 49803
+// Module ID: 5741
+// Function ID: 49659
 // Name: usePlatformAllowed
-// Dependencies: [57, 31, 4813, 1850, 653, 5732, 664, 566, 5734, 22, 4815, 2]
+// Dependencies: [57, 31, 4847, 1850, 653, 5742, 664, 566, 5744, 22, 4849, 2]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatforms
 
-// Module 5731 (usePlatformAllowed)
+// Module 5741 (usePlatformAllowed)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

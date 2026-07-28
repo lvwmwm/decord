@@ -1,10 +1,10 @@
-// Module ID: 12301
-// Function ID: 95864
+// Module ID: 12344
+// Function ID: 96034
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [57, 27, 1391, 1348, 1838, 3759, 3768, 1850, 653, 5969, 7666, 1392, 477, 1212, 4594, 4321, 2]
+// Dependencies: [57, 27, 1391, 1348, 1838, 3793, 3802, 1850, 653, 6003, 7702, 1392, 477, 1212, 4628, 4355, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12301 (createVoiceChannelLinkEmbed)
+// Module 12344 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import { getGuildAcronym } from "isGuildOwner";
@@ -30,7 +30,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
       if (null != guild) {
         if (closure_8.can(Permissions.VIEW_CHANNEL, channel)) {
           if (closure_8.can(Permissions.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(7666)(closure_2));
+            ({ colors, baseColors } = importDefault(7702)(closure_2));
             let icon;
             if (null != guild) {
               icon = guild.icon;
@@ -56,7 +56,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             }
             obj = {};
             const merged = Object.assign(baseColors);
-            const tmp8 = importDefault(7666)(closure_2);
+            const tmp8 = importDefault(7702)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";
@@ -76,14 +76,14 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj["onlineText"] = undefined;
             obj["memberText"] = undefined;
             isGuildStageVoiceResult = channel.isGuildStageVoice();
-            const assetSource = Image.resolveAssetSource(require(4594) /* getThreadChannelIcon */.getChannelIcon(channel));
+            const assetSource = Image.resolveAssetSource(require(4628) /* getThreadChannelIcon */.getChannelIcon(channel));
             let uri;
             if (null != assetSource) {
               uri = assetSource.uri;
             }
             obj["channelIcon"] = uri;
-            const obj6 = require(4594) /* getThreadChannelIcon */;
-            obj["titleText"] = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_10, closure_9);
+            const obj6 = require(4628) /* getThreadChannelIcon */;
+            obj["titleText"] = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_10, closure_9);
             obj["titleColor"] = colors.titleColor;
             let tmp35;
             if (null != guildIconURL) {

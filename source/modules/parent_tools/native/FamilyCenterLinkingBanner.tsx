@@ -1,10 +1,10 @@
-// Module ID: 13879
-// Function ID: 106303
+// Module ID: 13923
+// Function ID: 106476
 // Name: FamilyCenterLinkingBannerParentContent
-// Dependencies: [31, 27, 33, 4131, 689, 6201, 11051, 1212, 2199, 13880, 4127, 13842, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 6236, 11089, 1212, 2199, 13924, 4161, 13886, 2]
 // Exports: default
 
-// Module 13879 (FamilyCenterLinkingBannerParentContent)
+// Module 13923 (FamilyCenterLinkingBannerParentContent)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,12 +39,12 @@ function FamilyCenterLinkingBannerParentContent() {
   obj1.description = intl6.string(importDefault(2199)["8rLBxD"]);
   obj1.isLast = true;
   items[2] = callback(FamilyCenterLinkingInstructionsRow, obj1);
-  items[3] = callback(require(13842) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
+  items[3] = callback(require(13886) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
   obj.children = items;
   return callback2(closure_3, obj);
 }
 function FamilyCenterLinkingBannerTeenContent() {
-  return callback(closure_3, { style: _createForOfIteratorHelperLoose().container, children: callback(require(13842) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
+  return callback(closure_3, { style: _createForOfIteratorHelperLoose().container, children: callback(require(13886) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
 }
 function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
@@ -54,7 +54,7 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   ({ header, description, index, isLast } = arg0);
   const tmp = callback4();
   let obj = { style: tmp.row };
-  obj = { style: tmp.circle, children: callback(require(4127) /* Text */.Text, obj) };
+  obj = { style: tmp.circle, children: callback(require(4161) /* Text */.Text, obj) };
   obj = { variant: "heading-md/semibold", color: "text-brand", children: index };
   const items = [callback(closure_3, obj), ];
   const obj1 = {};
@@ -65,9 +65,9 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   }
   items1[1] = gap;
   obj1.style = items1;
-  const items2 = [callback(require(4127) /* Text */.Text, { variant: "heading-sm/bold", children: header }), ];
+  const items2 = [callback(require(4161) /* Text */.Text, { variant: "heading-sm/bold", children: header }), ];
   const obj2 = { variant: "text-sm/medium", color: "text-muted", children: description };
-  items2[1] = callback(require(4127) /* Text */.Text, obj2);
+  items2[1] = callback(require(4161) /* Text */.Text, obj2);
   obj1.children = items2;
   items[1] = closure_6(closure_3, obj1);
   obj.children = items;
@@ -102,26 +102,26 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterLinkingBanner() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11051) /* useAgeSpecificText */;
+  let obj = require(11089) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
-  const tmp2 = importDefault(6201)();
+  const tmp2 = importDefault(6236)();
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2199).zUCWEL), intl2.string(importDefault(2199).B0NPbp));
-  let obj1 = require(11051) /* useAgeSpecificText */;
+  let obj1 = require(11089) /* useAgeSpecificText */;
   const intl3 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2199).zUCWEL);
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj = { style: tmp.container };
   obj = {};
   const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(2199).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(2199).JsAEDi));
-  obj.source = importDefault(13880);
+  obj.source = importDefault(13924);
   obj.style = tmp.art;
   obj.resizeMethod = "resize";
   const items = [callback(closure_4, obj), , ];
   obj1 = { style: tmp.content };
-  const items1 = [callback(require(4127) /* Text */.Text, { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText }), ];
+  const items1 = [callback(require(4161) /* Text */.Text, { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText }), ];
   const obj3 = { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj1.children = items1;
   items[1] = callback2(closure_3, obj1);
   items[2] = callback(tmp2 ? FamilyCenterLinkingBannerParentContent : FamilyCenterLinkingBannerTeenContent, {});

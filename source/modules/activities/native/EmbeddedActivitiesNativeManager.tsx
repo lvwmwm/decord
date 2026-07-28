@@ -1,9 +1,9 @@
-// Module ID: 10547
-// Function ID: 81555
+// Module ID: 10585
+// Function ID: 81676
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 5, 27, 1348, 4203, 1347, 4156, 653, 6702, 477, 10548, 10549, 1184, 10550, 4472, 1212, 10565, 3749, 675, 686, 10567, 5668, 3832, 10295, 1207, 1327, 491, 10568, 2]
+// Dependencies: [6, 7, 15, 17, 102, 18, 5, 27, 1348, 4237, 1347, 4190, 653, 6738, 477, 10586, 10587, 1184, 10588, 4506, 1212, 10603, 3783, 675, 686, 10605, 5678, 3866, 10335, 1207, 1327, 491, 10606, 2]
 
-// Module 10547 (_isNativeReflectConstruct)
+// Module 10585 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import getActivityIndicator from "get ActivityIndicator";
 import enforcing from "enforcing";

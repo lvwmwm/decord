@@ -1,10 +1,10 @@
-// Module ID: 10229
-// Function ID: 79171
+// Module ID: 10269
+// Function ID: 79300
 // Name: HighlightText
-// Dependencies: [31, 653, 33, 4131, 3975, 689, 1273, 2]
+// Dependencies: [31, 653, 33, 4165, 4009, 689, 1273, 2]
 // Exports: default
 
-// Module 10229 (HighlightText)
+// Module 10269 (HighlightText)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

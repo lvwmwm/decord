@@ -1,9 +1,9 @@
-// Module ID: 7099
-// Function ID: 59885
+// Module ID: 7135
+// Function ID: 59974
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7099 (metadata)
+// Module 7135 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLevel3Illocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/68d3c8c1c6429771da8c97810b169395ca38e2e20a517cab97acc632cf4eabf9.png";

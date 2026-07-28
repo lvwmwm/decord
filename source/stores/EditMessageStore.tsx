@@ -1,9 +1,9 @@
-// Module ID: 5913
-// Function ID: 52494
+// Module ID: 5947
+// Function ID: 52613
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4350, 3804, 5914, 5917, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4384, 3838, 5948, 5951, 566, 686, 2]
 
-// Module 5913 (_isNativeReflectConstruct)
+// Module 5947 (_isNativeReflectConstruct)
 import explicitContentFromProto from "explicitContentFromProto";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -130,15 +130,15 @@ tmp2 = new tmp2(require("dispatcher"), {
     let source;
     ({ channelId, content } = arg0);
     ({ messageId, source } = arg0);
-    const UseLegacyChatInput = require(3804) /* explicitContentFromProto */.UseLegacyChatInput;
+    const UseLegacyChatInput = require(3838) /* explicitContentFromProto */.UseLegacyChatInput;
     const setting = UseLegacyChatInput.getSetting();
-    let obj = importDefault(5914);
+    let obj = importDefault(5948);
     const unparseResult = obj.unparse(content, channelId);
     obj = { channelId, messageId, textValue: unparseResult };
     if (setting) {
       content = unparseResult;
     }
-    obj.richValue = require(5917) /* toRichValue */.toRichValue(content);
+    obj.richValue = require(5951) /* toRichValue */.toRichValue(content);
     closure_9[channelId] = obj;
     closure_10[channelId] = source;
   },

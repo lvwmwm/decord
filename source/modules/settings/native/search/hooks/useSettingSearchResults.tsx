@@ -1,10 +1,10 @@
-// Module ID: 14640
-// Function ID: 111590
+// Module ID: 14684
+// Function ID: 111763
 // Name: useSettingSearchResults
-// Dependencies: [57, 31, 13615, 13616, 14636, 13620, 14641, 13618, 574, 2]
+// Dependencies: [57, 31, 13659, 13660, 14680, 13664, 14685, 13662, 574, 2]
 // Exports: useSettingSearchResults
 
-// Module 14640 (useSettingSearchResults)
+// Module 14684 (useSettingSearchResults)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import zustandStore from "zustandStore";
@@ -16,8 +16,8 @@ const result = require("zustandStore").fileFinishedImporting("modules/settings/n
 
 export const useSettingSearchResults = function useSettingSearchResults() {
   const memo = memo1.useMemo(() => {
-    let tmp = callback(14641);
-    tmp = new tmp(memo(13618).getSettingSearchableTitles());
+    let tmp = callback(14685);
+    tmp = new tmp(memo(13662).getSettingSearchableTitles());
     return tmp;
   }, []);
   const settings = callback(memo1.useState(closure_7), 2);
@@ -31,9 +31,9 @@ export const useSettingSearchResults = function useSettingSearchResults() {
     const field = outer2_6.getField("blocklist");
     const found = outer1_0.getScoredSearchResults(arg0).filter((setting) => {
       setting = setting.setting;
-      let tmp = !callback(14636).isBlocked(setting, closure_0);
+      let tmp = !callback(14680).isBlocked(setting, closure_0);
       if (tmp) {
-        tmp = !memo(13620).SETTING_RENDERER_CONFIG[setting].unsearchable;
+        tmp = !memo(13664).SETTING_RENDERER_CONFIG[setting].unsearchable;
       }
       return tmp;
     });

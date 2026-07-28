@@ -1,5 +1,5 @@
 // Module ID: 917
-// Function ID: 10049
+// Function ID: 10053
 // Name: createSpanName
 // Dependencies: [77, 916, 816, 918, 914, 919, 825, 920, 842]
 // Exports: buildMcpServerSpanConfig, createMcpNotificationSpan, createMcpOutgoingNotificationSpan

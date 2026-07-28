@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 68326
+// Module ID: 8649
+// Function ID: 68473
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 5630, 1194, 1850, 8606, 8607, 566, 8612, 22, 8613, 7923, 8617, 8622, 2]
+// Dependencies: [57, 31, 5878, 1194, 1850, 8650, 8651, 566, 8656, 22, 8657, 7959, 8661, 8666, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 8605 (_createForOfIteratorHelperLoose)
+// Module 8649 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useEffect } from "result";

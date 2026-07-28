@@ -1,10 +1,10 @@
-// Module ID: 15458
-// Function ID: 117949
+// Module ID: 15497
+// Function ID: 118105
 // Name: SearchFetchPendingManager
-// Dependencies: [7, 6, 31, 11390, 5450, 2]
+// Dependencies: [7, 6, 31, 11428, 5485, 2]
 // Exports: useSearchFetchPendingManager
 
-// Module 15458 (SearchFetchPendingManager)
+// Module 15497 (SearchFetchPendingManager)
 import _classCallCheck from "_classCallCheck";
 import result from "result";
 import importDefaultResult from "_defineProperties";
@@ -46,7 +46,7 @@ const result = require("result").fileFinishedImporting("modules/search/native/co
 
 export const useSearchFetchPendingManager = function useSearchFetchPendingManager(searchContext) {
   const importDefault = searchContext;
-  const tmp = importDefault(5450)(() => new outer1_4());
+  const tmp = importDefault(5485)(() => new outer1_4());
   const dependencyMap = tmp;
   const items = [searchContext, tmp];
   const effect = React.useEffect(() => searchContext(tmp[3]).subscribeTextInputValue(searchContext, (arg0, arg1) => {

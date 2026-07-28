@@ -1,10 +1,10 @@
-// Module ID: 12455
-// Function ID: 96594
+// Module ID: 12498
+// Function ID: 96764
 // Name: _fetchPremiumGroupMembership
-// Dependencies: [5, 1858, 12456, 653, 686, 507, 44, 2]
+// Dependencies: [5, 1858, 12499, 653, 686, 507, 44, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 12455 (_fetchPremiumGroupMembership)
+// Module 12498 (_fetchPremiumGroupMembership)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

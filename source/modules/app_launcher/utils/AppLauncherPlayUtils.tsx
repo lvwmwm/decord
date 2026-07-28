@@ -1,10 +1,10 @@
-// Module ID: 10818
-// Function ID: 83908
+// Module ID: 10856
+// Function ID: 84029
 // Name: _launchActivityInBotDM
-// Dependencies: [5, 10576, 10575, 4141, 10581, 2]
+// Dependencies: [5, 10614, 10613, 4175, 10619, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10818 (_launchActivityInBotDM)
+// Module 10856 (_launchActivityInBotDM)
 import set from "set";
 
 const require = arg1;

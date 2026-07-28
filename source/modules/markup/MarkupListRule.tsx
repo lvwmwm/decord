@@ -1,36 +1,54 @@
-// Module ID: 4591
-// Function ID: 40242
+// Module ID: 4625
+// Function ID: 40357
 // Name: regExp
-// Dependencies: [3830, 44, 2]
+// Dependencies: [3864, 44, 2]
 
-// Module 4591 (regExp)
+// Module 4625 (regExp)
+import closure_10 from "t";
+
 const re2 = /\n{2,}$/;
 const re3 = /(?:^|\n)( *)$/;
 let regExp = new RegExp("^" + "(%INDENT_CAPTURE_PATTERN%)((?:[*-]|\\d+\\.)) +".replace("%INDENT_CAPTURE_PATTERN%", " *"));
 const re5 = / *\n$/;
 let regExp1 = new RegExp("^( *)((?:[*-]|\\d+\\.)) [\\s\\S]+?(?:\\n(?! )(?!\\1(?:[*-]|\\d+\\.) )|$)");
-const re7 = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/;
+const regExp2 = new RegExp("^\\n" + require("invariant"));
+const re8 = /^\n/;
+const re9 = /\n *$/;
+const re11 = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/;
 let obj = {};
 let merged = Object.assign(require("t").defaultRules.list);
-obj["requiredFirstCharacters"] = " *-0123456789".split("");
-obj["match"] = function match(arg0, allowList) {
+obj["requiredFirstCharacters"] = "\n *-0123456789".split("");
+obj["match"] = function match(str, allowList) {
   if (allowList.allowList) {
     if (allowList._listLevel >= 11) {
       return null;
+    } else if (str.charCodeAt(0) === closure_10) {
+      let str3 = "";
+      if (null != allowList.prevCapture) {
+        str3 = allowList.prevCapture[0];
+      }
+      let match = null;
+      if ("" !== str3) {
+        match = null;
+        if (!regex3.test(str3)) {
+          match = regExp2.exec(str);
+        }
+      }
+      return match;
     } else {
-      let str = "";
+      str = "";
       if (null != allowList.prevCapture) {
         str = allowList.prevCapture[0];
       }
-      const match = regex.exec(str);
-      let match1 = null;
-      if (null != match) {
-        match1 = null;
-        if (!regex3.test(match[0])) {
-          match1 = regExp1.exec(arg0);
+      const match1 = regex.exec(str);
+      let match2 = null;
+      if (null != match1) {
+        match2 = null;
+        if (!regex4.test(match1[0])) {
+          match2 = regExp1.exec(str);
         }
       }
-      return match1;
+      return match2;
     }
   } else {
     return null;
@@ -45,8 +63,8 @@ obj["parse"] = function parse(arg0, arg1, arg2) {
     const _Math2 = Math;
     bound = Math.min(1000000000, Math.max(1, +arr));
   }
-  const str2 = arg0[0].replace(regExp1, "\n");
-  const match = regex2.exec(str2);
+  const str3 = arg0[0].replace(closure_8, "").replace(regExp1, "\n");
+  const match = regex2.exec(str3);
   let num2 = 0;
   if (null != match) {
     num2 = match[0].length;
@@ -57,7 +75,7 @@ obj["parse"] = function parse(arg0, arg1, arg2) {
   }
   const regExp = new RegExp("(%INDENT_CAPTURE_PATTERN%)((?:[*-]|\\d+\\.)) +[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%(?:[*-]|\\d+\\.) )[^\\n]*)*(\n|$)".replaceAll("%INDENT_CAPTURE_PATTERN%", " {" + num3 + "," + num3 + 1 + "}"), "gm");
   regExp1 = new RegExp("^ {1," + num2 + "}", "gm");
-  const match1 = str2.match(regExp);
+  const match1 = str3.match(regExp);
   importDefault(44)(null != match1, "markup list items can not be parsed.");
   regex2 = false;
   let obj = {

@@ -1,9 +1,9 @@
-// Module ID: 16186
-// Function ID: 125487
+// Module ID: 16225
+// Function ID: 125643
 // Name: AddAvatarScreen
-// Dependencies: [5, 57, 31, 27, 7877, 653, 33, 4131, 689, 5084, 5053, 1557, 566, 7890, 16187, 7919, 4675, 7880, 7882, 4127, 1212, 16196, 1273, 4544, 16184, 480, 6695, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 7913, 653, 33, 4165, 689, 5118, 5087, 1557, 566, 7926, 16226, 7955, 4709, 7916, 7918, 4161, 1212, 16235, 1273, 4578, 16223, 480, 6731, 5121, 5552, 2]
 
-// Module 16186 (AddAvatarScreen)
+// Module 16225 (AddAvatarScreen)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -38,9 +38,9 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getPendingChanges().pendingAvatar);
   if (null != first1) {
-    let obj1 = _require(7890);
-    obj = { imageUri: _require(16187).DEFAULT_AVATARS[first1] };
-    let obj3 = _require(7890);
+    let obj1 = _require(7926);
+    obj = { imageUri: _require(16226).DEFAULT_AVATARS[first1] };
+    let obj3 = _require(7926);
     obj.description = obj3.generateAvatarDescription();
     pendingImage = obj1.createPendingImage(obj);
   }
@@ -49,7 +49,7 @@ function AddAvatarScreen() {
     tmp11 = pendingImage;
   }
   let closure_3 = tmp11;
-  let obj4 = _require(7919);
+  let obj4 = _require(7955);
   let imageUri;
   if (null != tmp11) {
     imageUri = tmp11.imageUri;
@@ -69,11 +69,11 @@ function AddAvatarScreen() {
   obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = _require(1212).intl;
   obj4.children = intl.string(_require(1212).t.XQRWvR);
-  const items2 = [callback(_require(4127).Text, obj4), ];
+  const items2 = [callback(_require(4161).Text, obj4), ];
   const obj5 = { style: tmp.subtitle, variant: "heading-deprecated-12/medium", color: "text-default" };
   const intl2 = _require(1212).intl;
   obj5.children = intl2.string(_require(1212).t.fH9TLT);
-  items2[1] = callback(_require(4127).Text, obj5);
+  items2[1] = callback(_require(4161).Text, obj5);
   obj3.children = items2;
   const items3 = [callback2(View, obj3), , ];
   const obj6 = {
@@ -83,7 +83,7 @@ function AddAvatarScreen() {
       return _handleSelectAvatar(...arguments);
     }
   };
-  items3[1] = callback(first1(16196), obj6);
+  items3[1] = callback(first1(16235), obj6);
   const obj7 = { style: tmp.errorContainer };
   const obj8 = { style: tmp.errorText };
   if (first) {
@@ -94,7 +94,7 @@ function AddAvatarScreen() {
   obj7.children = callback(_require(1273).LegacyText, obj8);
   items3[2] = callback(View, obj7);
   obj2.children = items3;
-  const items4 = [callback2(View, obj2), callback(first1(16187), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
+  const items4 = [callback2(View, obj2), callback(first1(16226), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
   const obj9 = { style: tmp.buttonContainer };
   const obj10 = {};
   const intl4 = _require(1212).intl;
@@ -104,7 +104,7 @@ function AddAvatarScreen() {
     return callback(tmp6[24]).handlePressNext(closure_3, first1);
   };
   obj10.disabled = null == tmp11;
-  obj9.children = callback(_require(4544).Button, obj10);
+  obj9.children = callback(_require(4578).Button, obj10);
   items4[2] = callback(View, obj9);
   obj.children = items4;
   return callback2(View, obj);

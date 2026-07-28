@@ -1,9 +1,9 @@
-// Module ID: 12721
-// Function ID: 98990
+// Module ID: 12764
+// Function ID: 99160
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4203, 3768, 12722, 12720, 664, 12723, 668, 12727, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4237, 3802, 12765, 12763, 664, 12766, 668, 12770, 5112, 2]
 
-// Module 12721 (_isNativeReflectConstruct)
+// Module 12764 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import set from "set";
@@ -53,7 +53,7 @@ function handleChannelSelect(channelId) {
             blockedUserWarningDismissed = num2 > Date.now() - closure_16;
           }
           if (!blockedUserWarningDismissed) {
-            let obj = require(12723) /* showGdmBlockedUserModal */;
+            let obj = require(12766) /* showGdmBlockedUserModal */;
             obj = { channelId, blockedUserIds: found, ignoredUserIds: found1 };
             const result = obj.showGdmBlockedUserModal(obj);
           }
@@ -78,8 +78,8 @@ function handleAppStateChanged(state) {
           if (!voiceBlockedWarningInCooldownForUsers(set)) {
             const items1 = [];
             HermesBuiltin.arraySpread(ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(blockedUsersForVoiceChannel, 0));
-            const result = require(12727) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
-            const obj = require(12727) /* showVoiceChannelBlockedUserWarning */;
+            const result = require(12770) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
+            const obj = require(12770) /* showVoiceChannelBlockedUserWarning */;
           }
         }
       }

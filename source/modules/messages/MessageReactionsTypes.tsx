@@ -1,9 +1,9 @@
-// Module ID: 6023
-// Function ID: 53895
+// Module ID: 6057
+// Function ID: 54014
 // Name: ReactionTypes
 // Dependencies: [2]
 
-// Module 6023 (ReactionTypes)
+// Module 6057 (ReactionTypes)
 import set from "set";
 
 const obj = { NORMAL: 0, [0]: "NORMAL", BURST: 1, [1]: "BURST", VOTE: 2, [2]: "VOTE" };

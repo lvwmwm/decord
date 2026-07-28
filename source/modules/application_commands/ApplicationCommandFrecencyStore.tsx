@@ -1,10 +1,10 @@
-// Module ID: 5671
-// Function ID: 48673
+// Module ID: 5681
+// Function ID: 48529
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 4567, 4157, 662, 4215, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 4601, 4191, 662, 4249, 22, 566, 686, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 5671 (_isNativeReflectConstruct)
+// Module 5681 (_isNativeReflectConstruct)
 import closure_2 from "TRUE_OPTION_NAME";
 import ApplicationTypes from "ApplicationTypes";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

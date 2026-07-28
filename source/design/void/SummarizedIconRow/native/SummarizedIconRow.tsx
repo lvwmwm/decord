@@ -1,10 +1,10 @@
-// Module ID: 13073
-// Function ID: 101060
+// Module ID: 13117
+// Function ID: 101233
 // Name: OverflowSquircle
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 13073 (OverflowSquircle)
+// Module 13117 (OverflowSquircle)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ function OverflowSquircle(arg0) {
   items = [tmp.overflowSquircleWrap, style];
   obj = { style: tmp.overflowSquircle };
   obj = { variant: "text-xs/medium", children: "+" + overflow };
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
   obj.children = <View variant="text-xs/medium">{"+" + overflow}</View>;
   return <View variant="text-xs/medium">{"+" + overflow}</View>;
 }
@@ -104,7 +104,7 @@ export const OverflowText = function OverflowText(arg0) {
   const items = [_createForOfIteratorHelperLoose().overflowTextOnly, style];
   obj.style = items;
   obj = { variant: "text-xs/medium", children: "+" + overflow };
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
   return <View variant="text-xs/medium">{"+" + overflow}</View>;
 };
 export const OverflowTextSmall = function OverflowTextSmall(arg0) {
@@ -115,7 +115,7 @@ export const OverflowTextSmall = function OverflowTextSmall(arg0) {
   const items = [_createForOfIteratorHelperLoose().overflowTextOnly, style];
   obj.style = items;
   obj = { variant: "text-xxs/medium", children: "+" + overflow };
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xxs/medium", children: "+" + overflow });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xxs/medium", children: "+" + overflow });
   return <View variant="text-xxs/medium">{"+" + overflow}</View>;
 };
 export const OverflowCircle = function OverflowCircle(arg0) {
@@ -127,7 +127,7 @@ export const OverflowCircle = function OverflowCircle(arg0) {
   items = [tmp.overflowCircleWrap, style];
   obj = { style: tmp.overflowCircle };
   obj = { variant: "text-xs/medium", children: "+" + overflow };
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
   obj.children = <View variant="text-xs/medium">{"+" + overflow}</View>;
   return <View variant="text-xs/medium">{"+" + overflow}</View>;
 };

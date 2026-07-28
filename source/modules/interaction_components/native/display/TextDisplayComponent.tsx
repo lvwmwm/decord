@@ -1,8 +1,8 @@
-// Module ID: 14746
-// Function ID: 112410
-// Dependencies: [57, 31, 27, 4123, 1907, 7831, 33, 477, 3995, 14747, 7832, 44, 4121, 7817, 566, 3804, 9440, 10843, 2]
+// Module ID: 14790
+// Function ID: 112583
+// Dependencies: [57, 31, 27, 4157, 1907, 7867, 33, 477, 4029, 14791, 7868, 44, 4155, 7853, 566, 3838, 9480, 10881, 2]
 
-// Module 14746
+// Module 14790
 import _slicedToArray from "_slicedToArray";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,12 +19,12 @@ if (!set.isAndroid()) {
   obj2 = require("isFabric");
   const result1 = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/display/TextDisplayComponent.tsx");
   exports.default = function TextDisplayComponent(content) {
-    let obj = channelId(7832);
+    let obj = channelId(7868);
     const componentContainerId = obj.useComponentContainerId();
     channelId = channelId.getChannelId();
     importDefault(44)(channelId, "channelId not available in TextDisplayComponent");
-    let obj1 = importDefault(4121);
-    let obj2 = channelId(7817);
+    let obj1 = importDefault(4155);
+    let obj2 = channelId(7853);
     obj = { channelId, renderOptions: closure_6 };
     const parseToASTResult = obj1.parseToAST(content.content, true, obj2.getInitialParserState(obj));
     let items = [_isNativeReflectConstruct];
@@ -34,7 +34,7 @@ if (!set.isAndroid()) {
       return items;
     }), 2);
     const first = tmp5[0];
-    const AnimateEmoji = channelId(3804).AnimateEmoji;
+    const AnimateEmoji = channelId(3838).AnimateEmoji;
     obj = {};
     obj1 = {};
     const setting = AnimateEmoji.useSetting();
@@ -46,13 +46,13 @@ if (!set.isAndroid()) {
     obj.onTapLink = function onTapLink(nativeEvent) {
       const result = channelId(outer1_2[16]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
     };
-    obj.onLongPressLink = channelId(10843).contentHandlers.onLongPressLink;
-    obj.onTapAttachmentLink = channelId(10843).contentHandlers.onTapAttachmentLink;
-    obj.onLongPressAttachmentLink = channelId(10843).contentHandlers.onLongPressAttachmentLink;
-    obj.onTapMention = channelId(10843).contentHandlers.onTapMention;
-    obj.onTapTimestamp = channelId(10843).contentHandlers.onTapTimestamp;
-    obj.onTapInlineCode = channelId(10843).contentHandlers.onTapInlineCode;
-    obj.onTapEmoji = channelId(10843).contentHandlers.onTapEmoji;
+    obj.onLongPressLink = channelId(10881).contentHandlers.onLongPressLink;
+    obj.onTapAttachmentLink = channelId(10881).contentHandlers.onTapAttachmentLink;
+    obj.onLongPressAttachmentLink = channelId(10881).contentHandlers.onLongPressAttachmentLink;
+    obj.onTapMention = channelId(10881).contentHandlers.onTapMention;
+    obj.onTapTimestamp = channelId(10881).contentHandlers.onTapTimestamp;
+    obj.onTapInlineCode = channelId(10881).contentHandlers.onTapInlineCode;
+    obj.onTapEmoji = channelId(10881).contentHandlers.onTapEmoji;
     obj.style = { width: "100%" };
     return <closure_8 />;
   };

@@ -1,10 +1,10 @@
-// Module ID: 15294
-// Function ID: 116581
+// Module ID: 15334
+// Function ID: 116740
 // Name: isMediaSourceGif
-// Dependencies: [57, 31, 27, 4123, 1348, 3768, 1850, 8108, 653, 33, 4131, 689, 4318, 668, 566, 8080, 3992, 4132, 15295, 5085, 4127, 1212, 8065, 4675, 4661, 8123, 10711, 4659, 15250, 8055, 6104, 1327, 22, 5070, 8053, 4321, 2]
+// Dependencies: [57, 31, 27, 4157, 1348, 3802, 1850, 8146, 653, 33, 4165, 689, 4352, 668, 566, 8118, 4026, 4166, 15335, 5119, 4161, 1212, 8103, 4709, 4695, 8161, 10749, 4693, 15290, 8093, 6138, 1327, 22, 5104, 8091, 4355, 2]
 // Exports: default
 
-// Module 15294 (isMediaSourceGif)
+// Module 15334 (isMediaSourceGif)
 import _slicedToArray from "_slicedToArray";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import get_ActivityIndicator from "VoiceNormalIcon";
@@ -29,8 +29,8 @@ const require = arg1;
 function isMediaSourceGif(source) {
   let isGIFV = source.isGIFV;
   if (!isGIFV) {
-    isGIFV = require(4318) /* urlMatchesFileExtension */.urlMatchesFileExtension(source.sourceURI, require(668) /* keys */.GIF_RE_IOS);
-    const obj = require(4318) /* urlMatchesFileExtension */;
+    isGIFV = require(4352) /* urlMatchesFileExtension */.urlMatchesFileExtension(source.sourceURI, require(668) /* keys */.GIF_RE_IOS);
+    const obj = require(4352) /* urlMatchesFileExtension */;
   }
   return isGIFV;
 }
@@ -69,7 +69,7 @@ function MediaMosaicVideo(source) {
     isGIFV = source.isGIFV;
   }
   obj.disableFocus = isGIFV;
-  return closure_15(importDefault(8080), obj);
+  return closure_15(importDefault(8118), obj);
 }
 function MediaMosaicImage(source) {
   let dimensions;
@@ -81,17 +81,17 @@ function MediaMosaicImage(source) {
   let num = 0;
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj = source(3992);
+  let obj = source(4026);
   const fn = function c() {
     const obj = {};
     let num = 1;
     if (first) {
       num = 0;
     }
-    obj.opacity = source(4132).withTiming(num, { duration: 150 });
+    obj.opacity = source(4166).withTiming(num, { duration: 150 });
     return obj;
   };
-  obj = { withTiming: source(4132).withTiming, imageFinishedLoading: first };
+  obj = { withTiming: source(4166).withTiming, imageFinishedLoading: first };
   fn.__closure = obj;
   fn.__workletHash = 7803531897566;
   fn.__initData = closure_19;
@@ -101,7 +101,7 @@ function MediaMosaicImage(source) {
   obj = {};
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
-      const obj = { uri: source(15295).createThumbhashImageFromPlaceholder(source.placeholder) };
+      const obj = { uri: source(15335).createThumbhashImageFromPlaceholder(source.placeholder) };
       ({ width: obj.width, height: obj.height } = source);
       return obj;
     }
@@ -109,8 +109,8 @@ function MediaMosaicImage(source) {
   const obj1 = { style: items1 };
   items1 = [animatedStyle, tmp.thumbhashMedia];
   const items2 = [style, tmp.media, dimensions];
-  obj1.children = callback2(first(5085), { source: memo, style: items2 });
-  const items3 = [callback2(first(3992).View, obj1), ];
+  obj1.children = callback2(first(5119), { source: memo, style: items2 });
+  const items3 = [callback2(first(4026).View, obj1), ];
   const obj2 = {
     source,
     style: items4,
@@ -123,7 +123,7 @@ function MediaMosaicImage(source) {
     num = 100;
   }
   obj2.blurRadius = num;
-  items3[1] = callback2(first(3992).Image, obj2, source.uri);
+  items3[1] = callback2(first(4026).Image, obj2, source.uri);
   obj.children = items3;
   return closure_17(closure_16, obj);
 }
@@ -393,7 +393,7 @@ class GravityAttachmentMediaMosaic {
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f116607();
+    tmp = f116766();
     memo = isDiscordFrontendDevelopment.useMemo(() => {
       let sum;
       const items = [];
@@ -483,7 +483,7 @@ class GravityAttachmentMediaMosaic {
 }
 function useMaxWidth(widthOverride) {
   let diff = widthOverride;
-  const context = React.useContext(require(15250) /* useICYMIContextConstructor */.ICYMIContext);
+  const context = React.useContext(require(15290) /* useICYMIContextConstructor */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (null != context) {

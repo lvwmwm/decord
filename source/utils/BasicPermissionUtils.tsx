@@ -1,9 +1,9 @@
-// Module ID: 3767
-// Function ID: 28867
+// Module ID: 3801
+// Function ID: 28969
 // Name: BasicPermissionUtils
 // Dependencies: [6, 7, 483, 2]
 
-// Module 3767 (BasicPermissionUtils)
+// Module 3801 (BasicPermissionUtils)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

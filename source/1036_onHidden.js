@@ -1,5 +1,5 @@
 // Module ID: 1036
-// Function ID: 11176
+// Function ID: 11180
 // Name: onHidden
 // Dependencies: [1015, 1017]
 

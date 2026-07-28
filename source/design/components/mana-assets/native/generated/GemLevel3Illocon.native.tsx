@@ -1,10 +1,10 @@
-// Module ID: 7098
-// Function ID: 59883
+// Module ID: 7134
+// Function ID: 59972
 // Name: GemLevel3Illocon
-// Dependencies: [33, 5085, 7099, 2]
+// Dependencies: [33, 5119, 7135, 2]
 // Exports: GemLevel3Illocon
 
-// Module 7098 (GemLevel3Illocon)
+// Module 7134 (GemLevel3Illocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel3Illocon.native.tsx");
@@ -19,7 +19,7 @@ export const GemLevel3Illocon = function GemLevel3Illocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7099) };
+  obj = { uri: importDefault(7135) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const GemLevel3Illocon = function GemLevel3Illocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num, height: num });
+  return jsx(importDefault(5119), { width: num, height: num });
 };

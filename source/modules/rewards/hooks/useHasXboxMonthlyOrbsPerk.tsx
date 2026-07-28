@@ -1,10 +1,10 @@
-// Module ID: 12718
-// Function ID: 98947
+// Module ID: 12761
+// Function ID: 99117
 // Name: hasCrepeMonthlyOrbsPerk
-// Dependencies: [1850, 1852, 3777, 1866, 1868, 566, 2]
+// Dependencies: [1850, 1852, 3811, 1866, 1868, 566, 2]
 // Exports: useHasXboxMonthlyOrbsPerk
 
-// Module 12718 (hasCrepeMonthlyOrbsPerk)
+// Module 12761 (hasCrepeMonthlyOrbsPerk)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -23,7 +23,7 @@ function hasCrepeMonthlyOrbsPerk(currentUser) {
       }
       return hasItem;
     }
-    obj2 = require(3777) /* _createForOfIteratorHelperLoose */;
+    obj2 = require(3811) /* _createForOfIteratorHelperLoose */;
   }
   return false;
 }

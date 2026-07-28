@@ -1,10 +1,10 @@
-// Module ID: 14564
-// Function ID: 111177
+// Module ID: 14608
+// Function ID: 111350
 // Name: ListEdgeSpacer
-// Dependencies: [31, 27, 5770, 655, 653, 33, 4131, 689, 1456, 8595, 14545, 5462, 5482, 566, 14035, 14037, 5769, 8592, 4127, 4544, 1212, 5449, 6619, 2]
+// Dependencies: [31, 27, 5780, 655, 653, 33, 4165, 689, 1456, 8639, 14589, 5497, 5517, 566, 14079, 14081, 5779, 8636, 4161, 4578, 1212, 5484, 6655, 2]
 // Exports: default
 
-// Module 14564 (ListEdgeSpacer)
+// Module 14608 (ListEdgeSpacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

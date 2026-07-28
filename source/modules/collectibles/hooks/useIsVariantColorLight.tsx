@@ -1,10 +1,10 @@
-// Module ID: 8660
-// Function ID: 68792
+// Module ID: 8704
+// Function ID: 68943
 // Name: useIsVariantColorLight
 // Dependencies: [31, 665, 2]
 // Exports: default
 
-// Module 8660 (useIsVariantColorLight)
+// Module 8704 (useIsVariantColorLight)
 import result from "result";
 
 const require = arg1;

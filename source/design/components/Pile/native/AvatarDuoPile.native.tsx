@@ -1,10 +1,10 @@
-// Module ID: 13153
-// Function ID: 101301
+// Module ID: 13197
+// Function ID: 101474
 // Name: AvatarDuoPile
-// Dependencies: [31, 33, 9869, 11649, 7909, 22, 11954, 2]
+// Dependencies: [31, 33, 9909, 11688, 7945, 22, 11997, 2]
 // Exports: AvatarDuoPile
 
-// Module 13153 (AvatarDuoPile)
+// Module 13197 (AvatarDuoPile)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,17 +21,17 @@ export const AvatarDuoPile = function AvatarDuoPile(size) {
   if ("aria-label" in merged) {
     aria_label = merged["aria-label"];
   } else {
-    aria_label = require(11649) /* getListSummaryLabel */.getListSummaryLabel(merged.names);
-    const obj2 = require(11649) /* getListSummaryLabel */;
+    aria_label = require(11688) /* getListSummaryLabel */.getListSummaryLabel(merged.names);
+    const obj2 = require(11688) /* getListSummaryLabel */;
   }
   obj["aria-label"] = aria_label;
-  obj.shape = require(7909) /* SolidCutout */.CutoutShape.Circle;
+  obj.shape = require(7945) /* SolidCutout */.CutoutShape.Circle;
   if (obj3.isArray(size)) {
     let mapped = size.map((arg0) => outer1_0(outer1_1[6]).AVATAR_SIZE_MAP[arg0]);
   } else {
-    mapped = require(11954) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+    mapped = require(11997) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
   }
   obj.size = mapped;
   obj.children = size.children;
-  return jsx(require(9869) /* Pile */.Pile, { "aria-label": null, shape: null, size: null, gap: 4, depthX: 0.5, depthY: 0.5 });
+  return jsx(require(9909) /* Pile */.Pile, { "aria-label": null, shape: null, size: null, gap: 4, depthX: 0.5, depthY: 0.5 });
 };

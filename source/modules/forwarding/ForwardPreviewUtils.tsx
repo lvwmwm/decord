@@ -1,10 +1,10 @@
-// Module ID: 9857
-// Function ID: 76423
+// Module ID: 9897
+// Function ID: 76552
 // Name: useForwardPreviewContent
-// Dependencies: [3759, 566, 4465, 2]
+// Dependencies: [3793, 566, 4499, 2]
 // Exports: useForwardPreviewContent
 
-// Module 9857 (useForwardPreviewContent)
+// Module 9897 (useForwardPreviewContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

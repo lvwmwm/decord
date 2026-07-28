@@ -1,9 +1,9 @@
-// Module ID: 5593
-// Function ID: 47550
+// Module ID: 5628
+// Function ID: 47677
 // Name: SignalHelpers
-// Dependencies: [5, 6, 7, 27, 3, 5594, 2]
+// Dependencies: [5, 6, 7, 27, 3, 5629, 2]
 
-// Module 5593 (SignalHelpers)
+// Module 5628 (SignalHelpers)
 import encodeUserIdForWebAuthn from "encodeUserIdForWebAuthn";
 import set from "set";
 import _defineProperties from "_defineProperties";

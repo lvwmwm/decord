@@ -1,10 +1,10 @@
-// Module ID: 14944
-// Function ID: 113957
+// Module ID: 14988
+// Function ID: 114130
 // Name: computeIsFavoritesGuildVisible
-// Dependencies: [1340, 3948, 1351, 1841, 10158, 10152, 1334, 3947, 566, 2]
+// Dependencies: [1340, 3982, 1351, 1841, 10200, 10194, 1334, 3981, 566, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 14944 (computeIsFavoritesGuildVisible)
+// Module 14988 (computeIsFavoritesGuildVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -21,8 +21,8 @@ function computeIsFavoritesGuildVisible(closure_5, closure_4, isExperimentEnable
       if (tmp10) {
         let isFavoritesGuildEnabled = !tmp12;
         if (!!tmp2) {
-          isFavoritesGuildEnabled = require(10158) /* computeIsFavoritesGuildEnabled */.computeIsFavoritesGuildEnabled(tmp, closure_5);
-          const obj2 = require(10158) /* computeIsFavoritesGuildEnabled */;
+          isFavoritesGuildEnabled = require(10200) /* computeIsFavoritesGuildEnabled */.computeIsFavoritesGuildEnabled(tmp, closure_5);
+          const obj2 = require(10200) /* computeIsFavoritesGuildEnabled */;
         }
         tmp11 = isFavoritesGuildEnabled;
       }
@@ -55,10 +55,10 @@ export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
   let hasAccess;
   let isExperimentEnabled;
   let isFreemium;
-  let obj = require(10152) /* computeFavoritesAccess */;
+  let obj = require(10194) /* computeFavoritesAccess */;
   const favoritesAccess = obj.getFavoritesAccess();
   ({ isExperimentEnabled, isFreemium, hasAccess } = favoritesAccess);
   const tmp2 = callback(require(1334) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
-  obj = { isExperimentEnabled, isFreemium, hasAccess, isMenuItemDCSelected: tmp2, isIntroDCDismissed: require(3947) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) };
+  obj = { isExperimentEnabled, isFreemium, hasAccess, isMenuItemDCSelected: tmp2, isIntroDCDismissed: require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) };
   return computeIsFavoritesGuildVisible(closure_5, closure_4, obj);
 };

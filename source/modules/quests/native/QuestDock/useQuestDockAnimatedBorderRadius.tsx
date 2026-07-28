@@ -1,15 +1,15 @@
-// Module ID: 14140
-// Function ID: 108754
+// Module ID: 14184
+// Function ID: 108927
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [31, 14060, 3992, 2]
+// Dependencies: [31, 14104, 4026, 2]
 // Exports: default
 
-// Module 14140 (useQuestDockAnimatedBorderRadius)
+// Module 14184 (useQuestDockAnimatedBorderRadius)
 import result from "result";
 
 const require = arg1;
 let closure_3 = { code: "function useQuestDockAnimatedBorderRadiusTsx1(){const{interpolate,questDockOffset,minBorder,maxBorder,Extrapolation}=this.__closure;return interpolate(questDockOffset.get(),[0,50],[minBorder,maxBorder],Extrapolation.CLAMP);}" };
-const result = require("module_3992").fileFinishedImporting("modules/quests/native/QuestDock/useQuestDockAnimatedBorderRadius.tsx");
+const result = require("module_4026").fileFinishedImporting("modules/quests/native/QuestDock/useQuestDockAnimatedBorderRadius.tsx");
 
 export default function useQuestDockAnimatedBorderRadius(maxBorder) {
   let num = arg1;

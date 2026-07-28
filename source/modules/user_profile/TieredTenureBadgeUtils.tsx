@@ -1,10 +1,10 @@
-// Module ID: 5651
-// Function ID: 48299
+// Module ID: 5900
+// Function ID: 51814
 // Name: getTieredTenureBadgeData
-// Dependencies: [1852, 3713, 2]
+// Dependencies: [1852, 3747, 2]
 // Exports: getEarnedOnDate, getTieredTenureBadge
 
-// Module 5651 (getTieredTenureBadgeData)
+// Module 5900 (getTieredTenureBadgeData)
 import { TENURE_BADGES } from "GuildFeatures";
 
 function getTieredTenureBadgeData(tieredTenureBadge) {
@@ -28,7 +28,7 @@ export const getEarnedOnDate = function getEarnedOnDate(tieredTenureBadge, premi
     if (null == tmp3) {
       return null;
     } else {
-      const obj = importDefault(3713)(premiumSince);
+      const obj = importDefault(3747)(premiumSince);
       obj.add(tmp3.tenureReqNumMonths, "months");
       obj.add(1, "days");
       return obj.toDate();

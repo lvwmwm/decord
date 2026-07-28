@@ -1,10 +1,10 @@
-// Module ID: 15502
-// Function ID: 119142
+// Module ID: 15541
+// Function ID: 119298
 // Name: getRedirectPath
-// Dependencies: [31, 653, 660, 33, 484, 3959, 2]
+// Dependencies: [31, 653, 660, 33, 484, 3993, 2]
 // Exports: default
 
-// Module 15502 (getRedirectPath)
+// Module 15541 (getRedirectPath)
 import "result";
 import { Routes } from "ME";
 import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
@@ -24,6 +24,6 @@ const result = require("CONFERENCE_MODE_ENABLED").fileFinishedImporting("modules
 
 export default function RedirectUnauthenticated() {
   const obj = { to: getRedirectPath() };
-  return jsx(require(3959) /* _extends */.Redirect, { to: getRedirectPath() });
+  return jsx(require(3993) /* _extends */.Redirect, { to: getRedirectPath() });
 };
 export { getRedirectPath };

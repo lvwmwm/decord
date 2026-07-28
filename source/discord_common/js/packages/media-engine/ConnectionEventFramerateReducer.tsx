@@ -1,9 +1,9 @@
-// Module ID: 4282
-// Function ID: 37513
+// Module ID: 4316
+// Function ID: 37625
 // Name: logger
-// Dependencies: [6, 7, 4192, 4, 4228, 2]
+// Dependencies: [6, 7, 4226, 4, 4262, 2]
 
-// Module 4282 (logger)
+// Module 4316 (logger)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import DesktopSources from "DesktopSources";

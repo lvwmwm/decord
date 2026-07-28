@@ -1,10 +1,10 @@
-// Module ID: 8677
-// Function ID: 68886
+// Module ID: 8721
+// Function ID: 69037
 // Name: ProfileFrameUserPreview
-// Dependencies: [31, 33, 8014, 1212, 2]
+// Dependencies: [31, 33, 8052, 1212, 2]
 // Exports: default
 
-// Module 8677 (ProfileFrameUserPreview)
+// Module 8721 (ProfileFrameUserPreview)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -27,5 +27,5 @@ export default function ProfileFrameUserPreview(profileFrame) {
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8014), { profileFrameOverride: profileFrame });
+  return jsx(importDefault(8052), { profileFrameOverride: profileFrame });
 };

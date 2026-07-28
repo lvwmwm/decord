@@ -1,10 +1,10 @@
-// Module ID: 12792
-// Function ID: 99550
+// Module ID: 12835
+// Function ID: 99720
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [31, 653, 33, 4131, 4476, 6673, 1212, 1921, 4476, 2]
+// Dependencies: [31, 653, 33, 4165, 4510, 6709, 1212, 1921, 4510, 2]
 // Exports: default
 
-// Module 12792 (ProvisionalAccountNoCallAllowed)
+// Module 12835 (ProvisionalAccountNoCallAllowed)
 import "result";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
@@ -17,7 +17,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/provisional_acc
 export default function ProvisionalAccountNoCallAllowed() {
   let obj = {};
   obj = { size: "lg", style: callback().header };
-  obj.header = jsx(require(6673) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
+  obj.header = jsx(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["vh+Zpq"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -29,7 +29,7 @@ export default function ProvisionalAccountNoCallAllowed() {
   const obj2 = { variant: "secondary" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
-  obj1.children = jsx(require(4476) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" }, "got-it");
-  obj.actions = jsx(require(4476) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4476) /* getAlertModalItemKey */.AlertModal, {});
+  obj1.children = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" }, "got-it");
+  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, {});
 };

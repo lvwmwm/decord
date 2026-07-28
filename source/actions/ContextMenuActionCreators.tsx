@@ -1,10 +1,10 @@
-// Module ID: 5132
-// Function ID: 44498
+// Module ID: 5166
+// Function ID: 44613
 // Name: open
-// Dependencies: [653, 686, 5133, 477, 5136, 2]
+// Dependencies: [653, 686, 5167, 477, 5170, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5132 (open)
+// Module 5166 (open)
 import { AppContext } from "ME";
 
 function open(contextMenu) {
@@ -111,7 +111,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const dOMRect = new DOMRect(tmp3, sum1, 0, 0);
     obj.rect = dOMRect;
     obj = {};
-    let APP = obj(5133).getCurrentlyInteractingAppContext();
+    let APP = obj(5167).getCurrentlyInteractingAppContext();
     if (null == APP) {
       APP = AppContext.APP;
     }
@@ -126,11 +126,11 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
       if (enableSpellCheck.enableSpellCheck) {
         if (obj5.isDesktop()) {
           if (nativeEvent.isTrusted) {
-            let closure_1 = obj(5136).addResultListener(() => {
+            let closure_1 = obj(5170).addResultListener(() => {
               callback();
               outer1_4(obj);
             });
-            const obj6 = obj(5136);
+            const obj6 = obj(5170);
           }
         }
         obj5 = obj(477);
@@ -138,7 +138,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     }
     stopPropagation.preventDefault();
     open(obj);
-    const obj4 = obj(5133);
+    const obj4 = obj(5167);
   } else {
     const currentTarget = stopPropagation.currentTarget;
   }

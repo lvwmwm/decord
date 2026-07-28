@@ -1,9 +1,9 @@
-// Module ID: 10183
-// Function ID: 78734
+// Module ID: 10223
+// Function ID: 78863
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4045, 1316, 1838, 3759, 7738, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4079, 1316, 1838, 3793, 7774, 566, 686, 2]
 
-// Module 10183 (_isNativeReflectConstruct)
+// Module 10223 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -215,12 +215,12 @@ tmp2 = new tmp2(require("dispatcher"), {
         if (tmp5) {
           let tmp6 = require;
           let tmp7 = dependencyMap;
-          let obj = require(7738) /* hasDetectedRaid */;
+          let obj = require(7774) /* hasDetectedRaid */;
           let hasDetectedActivityResult = obj.hasDetectedActivity(tmp2Result);
           if (!hasDetectedActivityResult) {
             let tmp9 = require;
             let tmp10 = dependencyMap;
-            let obj2 = require(7738) /* hasDetectedRaid */;
+            let obj2 = require(7774) /* hasDetectedRaid */;
             hasDetectedActivityResult = obj2.isUnderLockdown(tmp2Result);
           }
           tmp5 = hasDetectedActivityResult;
@@ -244,13 +244,13 @@ tmp2 = new tmp2(require("dispatcher"), {
     const tmpResult = incidentsDataFromServer(incidents_data);
     let tmp4 = null != tmpResult;
     if (tmp4) {
-      let hasDetectedActivityResult = require(7738) /* hasDetectedRaid */.hasDetectedActivity(tmpResult);
+      let hasDetectedActivityResult = require(7774) /* hasDetectedRaid */.hasDetectedActivity(tmpResult);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = require(7738) /* hasDetectedRaid */.isUnderLockdown(tmpResult);
-        const obj2 = require(7738) /* hasDetectedRaid */;
+        hasDetectedActivityResult = require(7774) /* hasDetectedRaid */.isUnderLockdown(tmpResult);
+        const obj2 = require(7774) /* hasDetectedRaid */;
       }
       tmp4 = hasDetectedActivityResult;
-      const obj = require(7738) /* hasDetectedRaid */;
+      const obj = require(7774) /* hasDetectedRaid */;
     }
     if (tmp4) {
       closure_11[guild.id] = tmpResult;
@@ -264,10 +264,10 @@ tmp2 = new tmp2(require("dispatcher"), {
       delete tmp2[tmp];
     } else {
       if (!obj.hasDetectedActivity(tmp3)) {
-        const obj2 = require(7738) /* hasDetectedRaid */;
+        const obj2 = require(7774) /* hasDetectedRaid */;
       }
       closure_11[guild.id] = tmp3;
-      obj = require(7738) /* hasDetectedRaid */;
+      obj = require(7774) /* hasDetectedRaid */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(arg0) {

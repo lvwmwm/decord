@@ -1,10 +1,10 @@
-// Module ID: 8654
-// Function ID: 68747
+// Module ID: 8698
+// Function ID: 68898
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4176, 653, 3, 686, 507, 4030, 6444, 1184, 2]
+// Dependencies: [5, 4210, 653, 3, 686, 507, 4064, 6480, 1184, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 8654 (fetchVirtualCurrencyBalance)
+// Module 8698 (fetchVirtualCurrencyBalance)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

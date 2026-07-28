@@ -1,10 +1,10 @@
-// Module ID: 10321
-// Function ID: 79764
+// Module ID: 10361
+// Function ID: 79893
 // Name: MessageRequestInAppNotification
-// Dependencies: [31, 33, 1212, 10199, 3983, 10273, 1273, 10218, 2]
+// Dependencies: [31, 33, 1212, 10239, 4017, 10313, 1273, 10258, 2]
 // Exports: default
 
-// Module 10321 (MessageRequestInAppNotification)
+// Module 10361 (MessageRequestInAppNotification)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -38,8 +38,8 @@ export default function MessageRequestInAppNotification(notification) {
   obj = {};
   let intl = author(1212).intl;
   obj.text = intl.string(author(1212).t["Bx4/Lf"]);
-  obj.children = jsx(author(10218).SystemMessageText, {});
+  obj.children = jsx(author(10258).SystemMessageText, {});
   obj.onPress = callback;
   obj.notification = notification;
-  return jsx(author(10273).NotificationPressable, {});
+  return jsx(author(10313).NotificationPressable, {});
 };

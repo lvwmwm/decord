@@ -1,10 +1,10 @@
-// Module ID: 8363
-// Function ID: 66916
+// Module ID: 8401
+// Function ID: 67026
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [5630, 566, 5651, 2]
+// Dependencies: [5878, 566, 5900, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 8363 (useTieredTenureBadgeForUser)
+// Module 8401 (useTieredTenureBadgeForUser)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

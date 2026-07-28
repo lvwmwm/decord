@@ -1,8 +1,8 @@
-// Module ID: 14142
-// Function ID: 108768
-// Dependencies: [31, 27, 4977, 14056, 33, 4131, 14138, 14057, 3992, 4543, 7620, 14143, 14148, 2]
+// Module ID: 14186
+// Function ID: 108941
+// Dependencies: [31, 27, 5011, 14100, 33, 4165, 14182, 14101, 4026, 4577, 7656, 14187, 14192, 2]
 
-// Module 14142
+// Module 14186
 import importAllResult from "result";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { QUEST_DOCK_MODE_CHANGE_PHYSICS as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -25,14 +25,14 @@ let closure_10 = { code: "function QuestDockContentCollapsedTsx2(){const{activeQ
 const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideOnExpand) {
   hideOnExpand = hideOnExpand.hideOnExpand;
   const require = tmp;
-  const userStatus = importAllResult.useContext(activeQuestDockMode(14138)).quest.userStatus;
+  const userStatus = importAllResult.useContext(activeQuestDockMode(14182)).quest.userStatus;
   let enrolledAt;
   if (null != userStatus) {
     enrolledAt = userStatus.enrolledAt;
   }
   let tmp4 = null != enrolledAt;
-  activeQuestDockMode = importAllResult.useContext(require(14057) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
-  let obj = require(3992);
+  activeQuestDockMode = importAllResult.useContext(require(14101) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
+  let obj = require(4026);
   const fn = function p() {
     const obj = {};
     let num = 1;
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideO
     obj.opacity = tmp(outer1_2[9]).withSpring(num, outer1_5);
     return obj;
   };
-  obj = { withSpring: require(4543) /* withSpring */.withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
+  obj = { withSpring: require(4577) /* withSpring */.withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   fn.__closure = obj;
   fn.__workletHash = 13361221764426;
   fn.__initData = closure_9;
@@ -69,22 +69,22 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideO
   S.__closure = { activeQuestDockMode, QuestDockMode, hideOnExpand: undefined === hideOnExpand || hideOnExpand };
   S.__workletHash = 14339269503421;
   S.__initData = closure_10;
-  const animatedProps = require(3992).useAnimatedProps(S);
+  const animatedProps = require(4026).useAnimatedProps(S);
   obj = { style: items, animatedProps };
   items = [tmp2.questDockContentCollapsed, animatedStyle];
   let tmp9 = !tmp4;
-  const obj3 = require(3992);
+  const obj3 = require(4026);
   const tmp7 = closure_7;
   if (!tmp4) {
-    tmp9 = callback(activeQuestDockMode(14143), {});
+    tmp9 = callback(activeQuestDockMode(14187), {});
   }
   const items1 = [tmp9, ];
   if (tmp4) {
-    tmp4 = callback(activeQuestDockMode(14148), {});
+    tmp4 = callback(activeQuestDockMode(14192), {});
   }
   items1[1] = tmp4;
   obj.children = items1;
-  return tmp7(activeQuestDockMode(7620), obj);
+  return tmp7(activeQuestDockMode(7656), obj);
 });
 const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 

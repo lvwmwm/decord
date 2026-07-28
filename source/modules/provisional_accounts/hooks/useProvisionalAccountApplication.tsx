@@ -1,10 +1,10 @@
-// Module ID: 11660
-// Function ID: 90438
+// Module ID: 11699
+// Function ID: 90589
 // Name: useProvisionalAccountApplication
-// Dependencies: [5891, 566, 5468, 2]
+// Dependencies: [5925, 566, 5503, 2]
 // Exports: default
 
-// Module 11660 (useProvisionalAccountApplication)
+// Module 11699 (useProvisionalAccountApplication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -18,5 +18,5 @@ export default function useProvisionalAccountApplication(arg0) {
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
   const obj = _require(566);
-  return _require(5468).useGetOrFetchApplication(stateFromStores);
+  return _require(5503).useGetOrFetchApplication(stateFromStores);
 };

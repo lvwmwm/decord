@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 90207
+// Module ID: 11654
+// Function ID: 90358
 // Name: getBoostRowMessageText
-// Dependencies: [1212, 2231, 11610, 2]
+// Dependencies: [1212, 2231, 11649, 2]
 // Exports: default
 
-// Module 11615 (getBoostRowMessageText)
+// Module 11654 (getBoostRowMessageText)
 const result = require("BOOST_EXPIRING_DISPLAY_WINDOW_DAYS").fileFinishedImporting("modules/premium/powerups/utils/getBoostRowMessageText.tsx");
 
 export default function getBoostRowMessageText(phase) {
@@ -18,7 +18,7 @@ export default function getBoostRowMessageText(phase) {
     let endsAt = phase.boost.endsAt;
     if (null == endsAt) {
       const _Date = Date;
-      endsAt = new Date(phase.sortKey + require(11610) /* BOOST_EXPIRING_DISPLAY_WINDOW_DAYS */.BOOST_EXPIRING_DISPLAY_WINDOW_MS);
+      endsAt = new Date(phase.sortKey + require(11649) /* BOOST_EXPIRING_DISPLAY_WINDOW_DAYS */.BOOST_EXPIRING_DISPLAY_WINDOW_MS);
     }
     obj.date = endsAt;
     return intl2.formatToPlainString(importDefault(2231).vct4l8, obj);

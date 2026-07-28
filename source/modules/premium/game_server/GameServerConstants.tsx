@@ -1,10 +1,10 @@
-// Module ID: 4020
-// Function ID: 33454
+// Module ID: 4054
+// Function ID: 33556
 // Name: NewGamesCoachmarkContent
-// Dependencies: [7, 6, 1857, 4021, 2]
+// Dependencies: [7, 6, 1857, 4055, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4020 (NewGamesCoachmarkContent)
+// Module 4054 (NewGamesCoachmarkContent)
 import _classCallCheck from "_classCallCheck";
 import importDefaultResult from "_defineProperties";
 
@@ -85,6 +85,6 @@ export const HYTALE_GAME_ID = str8;
 export const NewGamesCoachmarkContent = importDefaultResultResult;
 export const GameServerGameProvider = { SHOCKBYTE: 0, [0]: "SHOCKBYTE" };
 export const GAME_SERVER_SUPPORT_URLS = obj1;
-export const GAME_SERVER_TOS = { [arg1(4021).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
+export const GAME_SERVER_TOS = { [arg1(4055).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
 export const GAME_SERVER_SURVEY_URL = (arg0, arg1) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=" + arg0 + "&guild_id=" + arg1;
 export const GAME_SERVER_POWERUP_SKU_ID = "0";

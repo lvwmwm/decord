@@ -1,10 +1,10 @@
-// Module ID: 9503
-// Function ID: 74148
+// Module ID: 9543
+// Function ID: 74277
 // Name: clearDraft
-// Dependencies: [31, 27, 9504, 1348, 4469, 4468, 6001, 33, 4131, 689, 1820, 4472, 1212, 6036, 6134, 5462, 566, 9505, 9502, 1454, 1555, 21, 6026, 5093, 9506, 2]
+// Dependencies: [31, 27, 9544, 1348, 4503, 4502, 6035, 33, 4165, 689, 1820, 4506, 1212, 6070, 6168, 5497, 566, 9545, 9542, 1454, 1555, 21, 6060, 5127, 9546, 2]
 // Exports: default
 
-// Module 9503 (clearDraft)
+// Module 9543 (clearDraft)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,11 +18,11 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function clearDraft(arg0) {
-  importDefault(6036).clearDraft(arg0, DraftType.ThreadSettings);
-  const obj = importDefault(6036);
-  importDefault(6036).clearDraft(arg0, DraftType.ChannelMessage);
-  const obj2 = importDefault(6036);
-  importDefault(6134).clearAll(arg0, DraftType.ChannelMessage);
+  importDefault(6070).clearDraft(arg0, DraftType.ThreadSettings);
+  const obj = importDefault(6070);
+  importDefault(6070).clearDraft(arg0, DraftType.ChannelMessage);
+  const obj2 = importDefault(6070);
+  importDefault(6168).clearAll(arg0, DraftType.ChannelMessage);
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };

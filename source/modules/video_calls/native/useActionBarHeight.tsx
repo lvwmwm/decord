@@ -1,10 +1,10 @@
-// Module ID: 10465
-// Function ID: 81218
+// Module ID: 10503
+// Function ID: 81339
 // Name: sum
-// Dependencies: [4178, 653, 5188, 10466, 10469, 10330, 566, 2]
+// Dependencies: [4212, 653, 5222, 10504, 10507, 10370, 566, 2]
 // Exports: default
 
-// Module 10465 (sum)
+// Module 10503 (sum)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { InputModes } from "ME";
 import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -14,9 +14,9 @@ let sum = 2 * require("ActionButton").SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadiu
 const result = require("ACTION_SHEET_START_HEIGHT_RATIO").fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
 
 export default function useActionBarHeight(id) {
-  const isFiveButtonLayout = require(10469) /* useIsFiveButtonLayout */.useIsFiveButtonLayout(id);
-  const obj = require(10469) /* useIsFiveButtonLayout */;
-  const tmp2 = importDefault(10330)(id);
+  const isFiveButtonLayout = require(10507) /* useIsFiveButtonLayout */.useIsFiveButtonLayout(id);
+  const obj = require(10507) /* useIsFiveButtonLayout */;
+  const tmp2 = importDefault(10370)(id);
   const items = [_isNativeReflectConstruct];
   let num = 88;
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getMode() === outer1_4.PUSH_TO_TALK);

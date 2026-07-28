@@ -1,10 +1,10 @@
-// Module ID: 15080
-// Function ID: 114843
+// Module ID: 15120
+// Function ID: 115001
 // Name: isFavoritesSection
-// Dependencies: [653, 5753, 4325, 2]
+// Dependencies: [653, 5763, 4359, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 15080 (isFavoritesSection)
+// Module 15120 (isFavoritesSection)
 import { AnalyticEvents } from "ME";
 
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/channel_list_v2/native/ChannelListUtils.tsx");
@@ -19,8 +19,8 @@ export const isVoiceChannelsSection = function isVoiceChannelsSection(section, g
   return section === guildChannels.voiceChannelsSectionNumber;
 };
 export const isNamedCategorySection = function isNamedCategorySection(section) {
-  return section >= require(5753) /* _superPropGet */.SECTION_INDEX_FIRST_NAMED_CATEGORY;
+  return section >= require(5763) /* _superPropGet */.SECTION_INDEX_FIRST_NAMED_CATEGORY;
 };
 export const logChannelListEndReached = function logChannelListEndReached() {
-  importDefault(4325).trackWithMetadata(AnalyticEvents.CHANNEL_LIST_END_REACHED);
+  importDefault(4359).trackWithMetadata(AnalyticEvents.CHANNEL_LIST_END_REACHED);
 };

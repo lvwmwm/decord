@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 91963
+// Module ID: 11920
+// Function ID: 92133
 // Name: _fetchDetectableGames
-// Dependencies: [5, 4163, 11878, 507, 2]
+// Dependencies: [5, 4197, 11921, 507, 2]
 // Exports: fetchDetectableGames
 
-// Module 11877 (_fetchDetectableGames)
+// Module 11920 (_fetchDetectableGames)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { gameFromServer } from "_isNativeReflectConstruct";
 import { DETECTABLE_GAMES_CDN_URL } from "detectableCDNUrl";

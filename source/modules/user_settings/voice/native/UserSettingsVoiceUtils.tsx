@@ -1,10 +1,10 @@
-// Module ID: 10725
-// Function ID: 83383
+// Module ID: 10763
+// Function ID: 83504
 // Name: getSelectedNoiseSuppressionOption
-// Dependencies: [4178, 653, 8770, 10726, 566, 2]
+// Dependencies: [4212, 653, 8814, 10764, 566, 2]
 // Exports: handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10725 (getSelectedNoiseSuppressionOption)
+// Module 10763 (getSelectedNoiseSuppressionOption)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -29,24 +29,24 @@ let obj = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
 let result = require("getInputDeviceName").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
 
 export const handleAutomaticGainControlChange = function handleAutomaticGainControlChange(arg0) {
-  let obj = importDefault(8770);
+  let obj = importDefault(8814);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   const result = obj.setAutomaticGainControl(arg0, obj);
 };
-export const handleEchoCancellationChange = function handleEchoCancellationChange(echoCancellation) {
-  let obj = importDefault(8770);
+export const handleEchoCancellationChange = function handleEchoCancellationChange(closure_0) {
+  let obj = importDefault(8814);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  obj.setEchoCancellation(echoCancellation, obj);
+  obj.setEchoCancellation(closure_0, obj);
 };
 export const handleNoiseSuppressionChange = function handleNoiseSuppressionChange(arg0) {
   let KRISP;
   let STANDARD;
   ({ KRISP, STANDARD } = obj);
-  obj = importDefault(8770);
+  obj = importDefault(8814);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   obj.setNoiseCancellation(arg0 === KRISP, obj);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  importDefault(8770).setNoiseSuppression(arg0 === STANDARD, obj);
+  importDefault(8814).setNoiseSuppression(arg0 === STANDARD, obj);
 };
 export const NoiseSuppressionOpt = obj;
 export { getSelectedNoiseSuppressionOption };

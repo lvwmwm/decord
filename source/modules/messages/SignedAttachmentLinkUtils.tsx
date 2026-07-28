@@ -1,10 +1,10 @@
-// Module ID: 9538
-// Function ID: 74445
+// Module ID: 9578
+// Function ID: 74574
 // Name: isAttachmentUrl
-// Dependencies: [5, 653, 664, 4162, 1443, 507, 2]
+// Dependencies: [5, 653, 664, 4196, 1443, 507, 2]
 // Exports: isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9538 (isAttachmentUrl)
+// Module 9578 (isAttachmentUrl)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
 import set from "set";
@@ -115,7 +115,7 @@ let result = set.fileFinishedImporting("modules/messages/SignedAttachmentLinkUti
 
 export { isAttachmentUrl };
 export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachmentUrl(toURLSafeResult) {
-  return require(4162) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
+  return require(4196) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
   let length;

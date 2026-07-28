@@ -1,5 +1,5 @@
 // Module ID: 1626
-// Function ID: 18191
+// Function ID: 18195
 // Name: getSensorContainer
 // Dependencies: [1627, 1585, 1593, 1590, 1628, 1612, 1630, 1619, 1632, 1589]
 // Exports: configureLayoutAnimationBatch, enableLayoutAnimations, getViewProp, initializeSensor, isConfigured, isReanimated3, jsiConfigureProps, markNodeAsRemovable, registerEventHandler, registerSensor, setShouldAnimateExitingForTag, subscribeForKeyboardEvents, unmarkNodeAsRemovable, unregisterEventHandler, unregisterSensor, unsubscribeFromKeyboardEvents

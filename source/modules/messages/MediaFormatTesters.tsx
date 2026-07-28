@@ -1,10 +1,10 @@
-// Module ID: 4318
-// Function ID: 37838
+// Module ID: 4352
+// Function ID: 37952
 // Name: urlMatchesFileExtension
-// Dependencies: [57, 477, 4319, 2]
+// Dependencies: [57, 477, 4353, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl
 
-// Module 4318 (urlMatchesFileExtension)
+// Module 4352 (urlMatchesFileExtension)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import set from "set";
@@ -28,7 +28,7 @@ function contentTypeMatches(contentType, image) {
   }
 }
 function isWebPlayerVideoUrl(mediaUrl) {
-  let isIOSWithWebMResult = require(4319) /* isIOSWithWebM */.isIOSWithWebM();
+  let isIOSWithWebMResult = require(4353) /* isIOSWithWebM */.isIOSWithWebM();
   if (isIOSWithWebMResult) {
     isIOSWithWebMResult = urlMatchesFileExtension(mediaUrl, closure_6);
   }
@@ -37,8 +37,8 @@ function isWebPlayerVideoUrl(mediaUrl) {
 function isWebPlayerVideoFile(filename) {
   let isIOSWithWebMResult = null != filename;
   if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = require(4319) /* isIOSWithWebM */.isIOSWithWebM();
-    const obj = require(4319) /* isIOSWithWebM */;
+    isIOSWithWebMResult = require(4353) /* isIOSWithWebM */.isIOSWithWebM();
+    const obj = require(4353) /* isIOSWithWebM */;
   }
   if (isIOSWithWebMResult) {
     isIOSWithWebMResult = regex2.test(filename);

@@ -1,9 +1,9 @@
-// Module ID: 4030
-// Function ID: 33576
+// Module ID: 4064
+// Function ID: 33678
 // Name: V6OrEarlierAPIError
-// Dependencies: [2, 3800, 4031, 3799, 4032, 4033, 4035, 4036, 4037]
+// Dependencies: [2, 3834, 4065, 3833, 4066, 4067, 4069, 4070, 4071]
 
-// Module 4030 (V6OrEarlierAPIError)
+// Module 4064 (V6OrEarlierAPIError)
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("errors/index.tsx");
 
 export const V6OrEarlierAPIError = require("_isNativeReflectConstruct");

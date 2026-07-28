@@ -1,10 +1,10 @@
-// Module ID: 9508
-// Function ID: 74251
+// Module ID: 9548
+// Function ID: 74380
 // Name: formSubmitError
-// Dependencies: [1212, 6126, 2]
+// Dependencies: [1212, 6160, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 9508 (formSubmitError)
+// Module 9548 (formSubmitError)
 function formSubmitError(type) {
   const obj = { type };
   let tmp = null;
@@ -30,7 +30,7 @@ export const makeEmptyMessageError = function makeEmptyMessageError() {
   return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t["w/BT3G"]));
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  const obj = require(6126) /* _callSuper */;
+  const obj = require(6160) /* _callSuper */;
   id = undefined;
   if (null != id) {
     id = id.id;

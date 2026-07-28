@@ -1,10 +1,10 @@
-// Module ID: 10177
-// Function ID: 78658
+// Module ID: 10217
+// Function ID: 78787
 // Name: useSelectedParticipant
-// Dependencies: [4144, 566, 2]
+// Dependencies: [4178, 566, 2]
 // Exports: default
 
-// Module 10177 (useSelectedParticipant)
+// Module 10217 (useSelectedParticipant)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

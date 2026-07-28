@@ -1,10 +1,10 @@
-// Module ID: 9993
-// Function ID: 77298
+// Module ID: 10033
+// Function ID: 77427
 // Name: DefaultState
-// Dependencies: [57, 31, 27, 1838, 9994, 653, 33, 4131, 689, 9997, 4127, 1212, 1273, 566, 9998, 9999, 1557, 10033, 10036, 5087, 10038, 10007, 9991, 675, 2]
+// Dependencies: [57, 31, 27, 1838, 10034, 653, 33, 4165, 689, 10037, 4161, 1212, 1273, 566, 10038, 10039, 1557, 10073, 10076, 5121, 10078, 10047, 10031, 675, 2]
 // Exports: default
 
-// Module 9993 (DefaultState)
+// Module 10033 (DefaultState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -13,7 +13,7 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import ArrayResult from "module_10038";
+import ArrayResult from "module_10078";
 
 let closure_12;
 let closure_13;
@@ -25,7 +25,7 @@ function DefaultState() {
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
   let obj = { style: tmp.emptyWrapper };
-  obj = { style: tmp.emptyStateImage, source: importDefault(9997) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(10037) };
   const items = [callback(closure_7, obj), ];
   obj = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -34,7 +34,7 @@ function DefaultState() {
       return outer1_12(tmp(outer1_3[12]).LegacyText, { style: tmp.proTip, children }, "protip");
     }
   });
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_6, obj);
 }
@@ -44,7 +44,7 @@ function EmptyState(channel) {
   let obj = channel(566);
   const items = [closure_9];
   const importDefault = obj.useStateFromStores(items, () => outer1_9.getGuild(channel.getGuildId()));
-  let obj1 = channel(9998);
+  let obj1 = channel(10038);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1212).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -60,14 +60,14 @@ function EmptyState(channel) {
     formatResult = intl.string(tmp3(1212).t.vYyEnv);
   }
   obj = { style: tmp.emptyWrapper };
-  obj1 = { style: tmp.emptyStateImage, source: importDefault(9997) };
+  obj1 = { style: tmp.emptyStateImage, source: importDefault(10037) };
   const items1 = [callback(closure_7, obj1), , ];
   const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
   const intl2 = channel(1212).intl;
   obj2.children = intl2.string(channel(1212).t["6HXiuE"]);
-  items1[1] = callback(channel(4127).Text, obj2);
+  items1[1] = callback(channel(4161).Text, obj2);
   const obj3 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  items1[2] = callback(channel(4127).Text, obj3);
+  items1[2] = callback(channel(4161).Text, obj3);
   obj.children = items1;
   return callback2(closure_6, obj);
 }
@@ -84,7 +84,7 @@ _createForOfIteratorHelperLoose.emptyStateTitle = { marginBottom: 4, textAlign: 
 _createForOfIteratorHelperLoose.proTip = { fontFamily: ME.Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let obj1 = { fontFamily: ME.Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
-let closure_15 = require("module_10038").fill(null);
+let closure_15 = require("module_10078").fill(null);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearch.tsx");
 
 export default function GuildDirectorySearch(channel) {

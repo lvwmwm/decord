@@ -1,10 +1,10 @@
-// Module ID: 6172
-// Function ID: 55496
+// Module ID: 6206
+// Function ID: 55615
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [31, 27, 1852, 6173, 33, 4131, 6174, 6175, 3777, 4555, 668, 5085, 6176, 6177, 6178, 6179, 6191, 6192, 6193, 2]
+// Dependencies: [31, 27, 1852, 6207, 33, 4165, 6208, 6209, 3811, 4589, 668, 5119, 6210, 6211, 6212, 6213, 6226, 6227, 6228, 2]
 // Exports: default
 
-// Module 6172 (PremiumPlanActionSheetHeader)
+// Module 6206 (PremiumPlanActionSheetHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -45,10 +45,10 @@ export default function PremiumPlanActionSheetHeader(premiumType) {
     if (null != subscription_trial) {
       sku_id = subscription_trial.sku_id;
     }
-    let obj = importDefault(3777);
+    let obj = importDefault(3811);
     tmp2 = sku_id === obj.getSkuIdForPremiumType(premiumType);
   }
-  premiumType(3777);
+  premiumType(3811);
   let tmp8 = null != discountOffer;
   if (tmp8) {
     const discount = discountOffer.discount;
@@ -60,55 +60,55 @@ export default function PremiumPlanActionSheetHeader(premiumType) {
     tmp8 = hasItem;
   }
   obj = { style: tmp.header, colors: getPremiumGradientColor(premiumType), start: premiumType(668).HorizontalGradient.START, end: premiumType(668).HorizontalGradient.END, accessible: true, accessibilityRole: "header" };
-  let obj2 = premiumType(3777);
+  let obj2 = premiumType(3811);
   obj.accessibilityLabel = obj2.getPremiumTypeDisplayName(premiumType);
   let clouds = getClouds();
   if (clouds) {
     obj = { source: getClouds() };
-    clouds = callback(importDefault(5085), obj);
-    const tmp16 = importDefault(5085);
+    clouds = callback(importDefault(5119), obj);
+    const tmp16 = importDefault(5119);
   }
   const items = [clouds, , ];
   const obj1 = { style: tmp.logoContainer };
   obj2 = {};
   const tmp10 = closure_8;
-  const tmp11 = importDefault(4555);
+  const tmp11 = importDefault(4589);
   const tmp17 = closure_8;
   const tmp18 = View;
   const tmp19 = callback;
   if (closure_4.TIER_0 === premiumType) {
-    let tmp23 = importDefault(6176);
+    let tmp23 = importDefault(6210);
   } else if (closure_4.TIER_1 === premiumType) {
-    tmp23 = importDefault(6177);
+    tmp23 = importDefault(6211);
   } else if (closure_4.TIER_2 === premiumType) {
-    tmp23 = importDefault(6178);
+    tmp23 = importDefault(6212);
   }
   obj2.source = tmp23;
   obj2.resizeMode = "contain";
-  const items1 = [tmp19(importDefault(5085), obj2), , ];
+  const items1 = [tmp19(importDefault(5119), obj2), , ];
   let tmp30 = null;
   if (tmp2) {
     const obj3 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp30 = callback(premiumType(6179).PremiumPill, obj3);
+    tmp30 = callback(premiumType(6213).PremiumPill, obj3);
   }
   items1[1] = tmp30;
   let tmp34 = null;
   if (tmp8) {
     const obj4 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp34 = callback(premiumType(6179).PremiumPill, obj4);
+    tmp34 = callback(premiumType(6213).PremiumPill, obj4);
   }
   items1[2] = tmp34;
   obj1.children = items1;
   items[1] = tmp17(tmp18, obj1);
   const obj5 = {};
-  const tmp20 = importDefault(5085);
+  const tmp20 = importDefault(5119);
   const tmp38 = callback;
   if (closure_4.TIER_0 === premiumType) {
-    let tmp42 = importDefault(6191);
+    let tmp42 = importDefault(6226);
   } else if (closure_4.TIER_1 === premiumType) {
-    tmp42 = importDefault(6192);
+    tmp42 = importDefault(6227);
   } else if (closure_4.TIER_2 === premiumType) {
-    tmp42 = importDefault(6193);
+    tmp42 = importDefault(6228);
   }
   obj5.source = tmp42;
   const items2 = [tmp.imgWumpus, ];

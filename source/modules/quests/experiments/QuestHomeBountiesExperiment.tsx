@@ -1,9 +1,9 @@
-// Module ID: 10822
-// Function ID: 83921
+// Module ID: 10860
+// Function ID: 84042
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 10822 (apexExperiment)
+// Module 10860 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-quest-home-bounties", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

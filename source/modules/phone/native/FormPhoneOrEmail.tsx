@@ -1,9 +1,9 @@
-// Module ID: 9168
-// Function ID: 71959
+// Module ID: 9212
+// Function ID: 72110
 // Name: CountryCodeSelector
-// Dependencies: [31, 27, 33, 4131, 689, 4661, 1212, 4127, 9143, 8928, 8929, 8931, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4695, 1212, 4161, 9187, 8972, 8973, 8975, 2]
 
-// Module 9168 (CountryCodeSelector)
+// Module 9212 (CountryCodeSelector)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,8 +36,8 @@ function CountryCodeSelector(alpha2) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t.GwAW3k);
     const obj2 = { style: tmp.selectorText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: combined };
-    obj.children = callback(require(4127) /* Text */.Text, obj2);
-    const items = [callback(require(4661) /* PressableBase */.PressableOpacity, obj), ];
+    obj.children = callback(require(4161) /* Text */.Text, obj2);
+    const items = [callback(require(4695) /* PressableBase */.PressableOpacity, obj), ];
     const obj3 = { style: tmp.separator };
     items[1] = callback(View, obj3);
     obj.children = items;

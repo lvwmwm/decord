@@ -1,9 +1,9 @@
-// Module ID: 15189
-// Function ID: 115649
+// Module ID: 15229
+// Function ID: 115808
 // Name: YouBarButtonIcon
-// Dependencies: [31, 27, 14059, 33, 4131, 689, 7909, 9056, 6625, 2]
+// Dependencies: [31, 27, 14103, 33, 4165, 689, 7945, 9100, 6661, 2]
 
-// Module 15189 (YouBarButtonIcon)
+// Module 15229 (YouBarButtonIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
@@ -59,10 +59,10 @@ function YouBarButtonIcon(hasBadge) {
     }
     return items1;
   }, items);
-  let items1 = [callback(importDefault(7909), { cutouts: memo, children: icon }), ];
+  let items1 = [callback(importDefault(7945), { cutouts: memo, children: icon }), ];
   if (hasBadge) {
     const obj2 = { style: tmp2, size: 8, badgeStyle };
-    hasBadge = callback(importDefault(9056), obj2);
+    hasBadge = callback(importDefault(9100), obj2);
   }
   items1[1] = hasBadge;
   obj.children = items1;
@@ -101,7 +101,7 @@ const memoResult = importAllResult.memo(function YouBarButton(arg0) {
   obj.onPress = onPress;
   obj.onLongPress = onLongPress;
   obj.hitSlop = closure_5;
-  obj.children = callback(require(6625) /* IconButton */.IconButton, obj);
+  obj.children = callback(require(6661) /* IconButton */.IconButton, obj);
   return callback(YouBarButtonContainer, obj);
 });
 let result = require("CONNECTION_BANNER_HEIGHT").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarButton.tsx");

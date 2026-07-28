@@ -1,10 +1,10 @@
-// Module ID: 10000
-// Function ID: 77354
+// Module ID: 10040
+// Function ID: 77483
 // Name: GuildDirectoryAddModal
-// Dependencies: [31, 10001, 33, 4131, 5084, 480, 5087, 9999, 10002, 10010, 10014, 10024, 5121, 5450, 5517, 1212, 2]
+// Dependencies: [31, 10041, 33, 4165, 5118, 480, 5121, 10039, 10042, 10050, 10054, 10064, 5155, 5485, 5552, 1212, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10000 (GuildDirectoryAddModal)
+// Module 10040 (GuildDirectoryAddModal)
 import "result";
 import { GuildDirectoryCreate } from "GuildDirectoryCreate";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ export default function GuildDirectoryAddModal(arg0) {
   let initialStack;
   let screens;
   const _require = arg0;
-  ({ screens, initialStack } = importDefault(5450)(() => {
+  ({ screens, initialStack } = importDefault(5485)(() => {
     let obj = { name: outer1_3.CREATE_OR_ADD };
     obj = {};
     let merged = Object.assign(callback);
@@ -92,9 +92,9 @@ export default function GuildDirectoryAddModal(arg0) {
   let obj = { screens, initialRouteStack: initialStack };
   const intl = _require(1212).intl;
   obj.headerBackTitle = intl.string(_require(1212).t["13/7kX"]);
-  return jsx(_require(5517).Navigator, { screens, initialRouteStack: initialStack });
+  return jsx(_require(5552).Navigator, { screens, initialRouteStack: initialStack });
 };
 export const GuildDirectoryAddModalScreen = function GuildDirectoryAddModalScreen(children) {
   const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: _createForOfIteratorHelperLoose().safeArea, children: children.children });
+  return jsx(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: _createForOfIteratorHelperLoose().safeArea, children: children.children });
 };

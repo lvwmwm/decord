@@ -1,9 +1,9 @@
-// Module ID: 5773
-// Function ID: 50671
+// Module ID: 5783
+// Function ID: 50527
 // Name: CollectiblesBundledProductRecord
-// Dependencies: [6, 7, 4172, 2]
+// Dependencies: [6, 7, 4206, 2]
 
-// Module 5773 (CollectiblesBundledProductRecord)
+// Module 5783 (CollectiblesBundledProductRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

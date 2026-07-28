@@ -1,10 +1,10 @@
-// Module ID: 8681
-// Function ID: 68900
+// Module ID: 8725
+// Function ID: 69051
 // Name: FractionalNitroPreview
-// Dependencies: [31, 27, 653, 33, 4131, 689, 1212, 4555, 5085, 8682, 8683, 5153, 4127, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 1212, 4589, 5119, 8726, 8727, 5187, 4161, 2]
 // Exports: FractionalNitroPreview
 
-// Module 8681 (FractionalNitroPreview)
+// Module 8725 (FractionalNitroPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -34,15 +34,15 @@ export const FractionalNitroPreview = function FractionalNitroPreview() {
   let items = [require(1212) /* getSystemLocale */.t.E1NP2x, require(1212) /* getSystemLocale */.t.kpMomJ, require(1212) /* getSystemLocale */.t.xT1Vfn, require(1212) /* getSystemLocale */.t.myyAEr, require(1212) /* getSystemLocale */.t.zTk8Ul];
   let obj = { style: tmp.container };
   obj = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
-  const items1 = [callback(importDefault(4555), obj), , , ];
+  const items1 = [callback(importDefault(4589), obj), , , ];
   obj = {};
-  const obj1 = { uri: importDefault(8682) };
+  const obj1 = { uri: importDefault(8726) };
   obj.source = obj1;
   obj.style = tmp.headerImage;
-  items1[1] = callback(importDefault(5085), obj);
-  const tmp2 = importDefault(5085);
-  items1[2] = callback(View, { style: tmp.nitroIconContainer, children: callback(importDefault(8683), {}) });
-  const obj2 = { style: tmp.nitroIconContainer, children: callback(importDefault(8683), {}) };
+  items1[1] = callback(importDefault(5119), obj);
+  const tmp2 = importDefault(5119);
+  items1[2] = callback(View, { style: tmp.nitroIconContainer, children: callback(importDefault(8727), {}) });
+  const obj2 = { style: tmp.nitroIconContainer, children: callback(importDefault(8727), {}) };
   items1[3] = callback(View, {
     style: tmp.benefits,
     children: items.map((arg0, arg1) => {

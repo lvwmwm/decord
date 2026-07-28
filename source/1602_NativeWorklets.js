@@ -1,5 +1,5 @@
 // Module ID: 1602
-// Function ID: 17831
+// Function ID: 17835
 // Name: NativeWorklets
 // Dependencies: [6, 7, 99, 100, 1603, 1604, 1593]
 // Exports: createNativeWorkletsModule

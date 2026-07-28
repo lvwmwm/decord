@@ -1,10 +1,10 @@
-// Module ID: 4964
-// Function ID: 42678
+// Module ID: 4998
+// Function ID: 42793
 // Name: useStageParticipants
-// Dependencies: [57, 4952, 566, 4965, 4958, 2]
+// Dependencies: [57, 4986, 566, 4999, 4992, 2]
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount
 
-// Module 4964 (useStageParticipants)
+// Module 4998 (useStageParticipants)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -19,7 +19,7 @@ export const useStageParticipants = function useStageParticipants(id, SPEAKER) {
   return callback(_require(566).useStateFromStores(items, () => {
     const items = [outer1_3.getMutableParticipants(closure_0, closure_1), outer1_3.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(4965).isVersionEqual), 1)[0];
+  }, items1, _require(4999).isVersionEqual), 1)[0];
 };
 export const useStageParticipantsCount = function useStageParticipantsCount(id, AUDIENCE) {
   const _require = id;
@@ -35,7 +35,7 @@ export const useSortedRequestToSpeakParticipants = function useSortedRequestToSp
   return callback(_require(566).useStateFromStores(items, () => {
     const items = [outer1_3.getMutableRequestToSpeakParticipants(closure_0), outer1_3.getRequestToSpeakParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(4965).isVersionEqual), 1)[0];
+  }, items1, _require(4999).isVersionEqual), 1)[0];
 };
 export const useActualStageSpeakerCount = function useActualStageSpeakerCount(id) {
   const _require = id;

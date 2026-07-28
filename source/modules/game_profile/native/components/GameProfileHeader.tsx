@@ -1,10 +1,10 @@
-// Module ID: 8448
-// Function ID: 67325
+// Module ID: 8492
+// Function ID: 67472
 // Name: GameProfileHeader
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 8449, 4555, 8450, 4127, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4026, 8493, 4589, 8494, 4161, 2]
 // Exports: default
 
-// Module 8448 (GameProfileHeader)
+// Module 8492 (GameProfileHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

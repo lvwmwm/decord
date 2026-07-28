@@ -1,10 +1,10 @@
-// Module ID: 7701
-// Function ID: 61544
+// Module ID: 7737
+// Function ID: 61634
 // Name: createCallSystemMessage
-// Dependencies: [4144, 1194, 4147, 653, 4149, 7702, 7703, 1212, 1395, 3801, 7687, 2]
+// Dependencies: [4178, 1194, 4181, 653, 4183, 7738, 7739, 1212, 1395, 3835, 7723, 2]
 // Exports: createCallSystemMessage
 
-// Module 7701 (createCallSystemMessage)
+// Module 7737 (createCallSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,9 +20,9 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   const channelId = message.getChannelId();
   const call = message.call;
   userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp4 = importDefault(7702)(message);
+  const tmp4 = importDefault(7738)(message);
   participants = participants.getParticipants(channelId);
-  let obj = require(7703) /* checkIsCallActive */;
+  let obj = require(7739) /* checkIsCallActive */;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
   let tmp6 = !checkIsCallActiveResult;
   if (tmp6) {
@@ -61,12 +61,12 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
     }
     if (null != tmp4) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj = { duration: tmp4, timestamp: require(3801) /* resetCache */.calendarFormat(message.timestamp) };
+      obj = { duration: tmp4, timestamp: require(3835) /* resetCache */.calendarFormat(message.timestamp) };
       formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.SBDnp1, obj);
-      const obj4 = require(3801) /* resetCache */;
+      const obj4 = require(3835) /* resetCache */;
     } else {
-      formatToPlainStringResult = require(3801) /* resetCache */.calendarFormat(message.timestamp);
-      const obj2 = require(3801) /* resetCache */;
+      formatToPlainStringResult = require(3835) /* resetCache */.calendarFormat(message.timestamp);
+      const obj2 = require(3835) /* resetCache */;
     }
     const author = message.author;
     mapped = [require(1395) /* ensureAvatarSource */.ensureAvatarSource(author.getAvatarSource(undefined)).uri];
@@ -75,6 +75,6 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp6, avatarURLs: mapped };
   const timestamp = message.timestamp;
   obj.rawMilliseconds = timestamp.valueOf();
-  const merged = Object.assign(importDefault(7687)(message));
+  const merged = Object.assign(importDefault(7723)(message));
   return obj;
 };

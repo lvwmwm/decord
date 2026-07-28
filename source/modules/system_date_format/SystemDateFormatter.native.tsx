@@ -1,10 +1,10 @@
-// Module ID: 3818
-// Function ID: 31731
+// Module ID: 3852
+// Function ID: 31833
 // Name: __DiscordCreateDateFormatter
-// Dependencies: [27, 477, 3819, 2]
+// Dependencies: [27, 477, 3853, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 3818 (__DiscordCreateDateFormatter)
+// Module 3852 (__DiscordCreateDateFormatter)
 if (null != global.__DiscordCreateDateFormatter) {
   let __DiscordCreateDateFormatter = global.__DiscordCreateDateFormatter;
 } else {

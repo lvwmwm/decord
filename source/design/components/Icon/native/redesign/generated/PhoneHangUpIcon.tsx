@@ -1,10 +1,10 @@
-// Module ID: 9062
-// Function ID: 71212
+// Module ID: 9106
+// Function ID: 71363
 // Name: PhoneHangUpIcon
-// Dependencies: [31, 33, 689, 3834, 9063, 2]
+// Dependencies: [31, 33, 689, 3868, 9107, 2]
 // Exports: PhoneHangUpIcon
 
-// Module 9062 (PhoneHangUpIcon)
+// Module 9106 (PhoneHangUpIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PhoneHangUpIcon = function PhoneHangUpIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9063) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9107) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9063) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9107) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

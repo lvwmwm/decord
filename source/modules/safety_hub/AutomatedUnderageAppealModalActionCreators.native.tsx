@@ -1,8 +1,8 @@
-// Module ID: 11022
-// Function ID: 85738
-// Dependencies: [5, 6699, 6691, 33, 686, 4099, 11023, 1935, 4338, 7558, 6692, 11016, 2]
+// Module ID: 11060
+// Function ID: 85861
+// Dependencies: [5, 6735, 6727, 33, 686, 4133, 11061, 1935, 4372, 7594, 6728, 11054, 2]
 
-// Module 11022
+// Module 11060
 import showActionSheet from "showActionSheet";
 import SafetyHubLinks from "SafetyHubLinks";
 import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set";
@@ -17,7 +17,7 @@ let obj = {
     let obj = importDefault(686);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { classificationId, onClose };
-    importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(11023, dependencyMap.paths), closure_4, obj);
+    importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(11061, dependencyMap.paths), closure_4, obj);
   },
   openV2(classificationId, onClose) {
     let closure_0 = classificationId;
@@ -26,7 +26,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     // CreateGeneratorClosureLongIndex (0x67)
     obj = { onClose };
-    importDefault(4338).pushLazy(callback(tmp), obj, closure_6);
+    importDefault(4372).pushLazy(callback(tmp), obj, closure_6);
   },
   close() {
     importDefault(686).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE" });

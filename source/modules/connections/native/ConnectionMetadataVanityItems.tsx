@@ -1,10 +1,10 @@
-// Module ID: 9962
-// Function ID: 77145
+// Module ID: 10002
+// Function ID: 77274
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 4941, 33, 4131, 689, 1212, 9963, 9964, 22, 1827, 4127, 1273, 4940, 2]
+// Dependencies: [31, 27, 4975, 33, 4165, 689, 1212, 10003, 10004, 22, 1827, 4161, 1273, 4974, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 9962 (_createForOfIteratorHelperLoose)
+// Module 10002 (_createForOfIteratorHelperLoose)
 import "result";
 import { View } from "get ActivityIndicator";
 import OperatorTypes from "OperatorTypes";
@@ -130,7 +130,7 @@ function VanityMetric(label) {
   const items = [_createForOfIteratorHelperLoose().connectedAccountVanityMetadata, style];
   obj1.style = items;
   obj1.children = formatResult;
-  return callback(require(4127) /* Text */.Text, obj1);
+  return callback(require(4161) /* Text */.Text, obj1);
 }
 function VanityItem(style) {
   let imageAlt;
@@ -146,7 +146,7 @@ function VanityItem(style) {
   obj = { source: imageSrc, accessibilityLabel: imageAlt, style: tmp.connectedAccountVanityMetadataItemIcon, disableColor: true };
   const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "text-xs/normal", color: "text-muted", style, children: label };
-  items1[1] = callback(require(4127) /* Text */.Text, obj);
+  items1[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -155,7 +155,7 @@ function VanityTag(arg0) {
   let style;
   let textStyle;
   ({ label, style, textStyle } = arg0);
-  obj = { style: items, children: callback(require(4127) /* Text */.Text, obj) };
+  obj = { style: items, children: callback(require(4161) /* Text */.Text, obj) };
   items = [, , ];
   ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = _createForOfIteratorHelperLoose());
   items[2] = style;
@@ -174,10 +174,10 @@ function VanityDate(arg0) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
   const tmp = _createForOfIteratorHelperLoose();
-  obj.value = require(4940) /* officialApplicationIds */.getCreatedAtDate(date, locale);
+  obj.value = require(4974) /* officialApplicationIds */.getCreatedAtDate(date, locale);
   obj.name = label;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.HLoinF, obj);
-  return callback(require(4127) /* Text */.Text, obj);
+  return callback(require(4161) /* Text */.Text, obj);
 }
 ({ MetadataFields: closure_4, MetadataItemTypes: closure_5 } = OperatorTypes);
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -286,7 +286,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl = require(1212) /* getSystemLocale */.intl;
     obj = { count: NumberResult1 };
     obj.label = intl.format(require(1212) /* getSystemLocale */.t.Y88M5x, obj);
-    obj.imageSrc = importDefault(9963);
+    obj.imageSrc = importDefault(10003);
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.imageAlt = intl2.string(require(1212) /* getSystemLocale */.t.HKUEZo);
     items.push(callback(VanityItem, obj, closure_4.STEAM_ITEM_COUNT_DOTA2));
@@ -296,7 +296,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { count: NumberResult2 };
     obj1.label = intl3.format(require(1212) /* getSystemLocale */.t.Y88M5x, obj2);
-    obj1.imageSrc = importDefault(9964);
+    obj1.imageSrc = importDefault(10004);
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj1.imageAlt = intl4.string(require(1212) /* getSystemLocale */.t.C8p1Sh);
     items.push(callback(VanityItem, obj1, closure_4.STEAM_ITEM_COUNT_TF2));

@@ -1,10 +1,10 @@
-// Module ID: 8978
-// Function ID: 70763
+// Module ID: 9022
+// Function ID: 70914
 // Name: _transferToPlaystationWithAlert
-// Dependencies: [5, 8971, 4471, 1212, 2]
+// Dependencies: [5, 9015, 4505, 1212, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 8978 (_transferToPlaystationWithAlert)
+// Module 9022 (_transferToPlaystationWithAlert)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

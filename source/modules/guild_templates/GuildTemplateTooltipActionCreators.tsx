@@ -1,8 +1,8 @@
-// Module ID: 7629
-// Function ID: 61064
-// Dependencies: [5, 3759, 653, 7630, 686, 2]
+// Module ID: 7665
+// Function ID: 61154
+// Dependencies: [5, 3793, 653, 7666, 686, 2]
 
-// Module 7629
+// Module 7665
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";

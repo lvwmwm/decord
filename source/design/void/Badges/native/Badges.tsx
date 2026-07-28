@@ -1,10 +1,10 @@
-// Module ID: 13168
-// Function ID: 101493
+// Module ID: 13212
+// Function ID: 101666
 // Name: BadgeColors
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 2]
 // Exports: TextBadge
 
-// Module 13168 (BadgeColors)
+// Module 13212 (BadgeColors)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -48,6 +48,6 @@ export const TextBadge = function TextBadge(color) {
   const obj = { style: items };
   items = [tmp2.base, tmp2[DANGER], style];
   const items1 = [tmp3.text, tmp3["" + DANGER + "Text"], textStyle];
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/bold", style: items1, children: text });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/bold", style: items1, children: text });
   return <View style={items} />;
 };

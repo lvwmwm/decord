@@ -1,10 +1,10 @@
-// Module ID: 11547
-// Function ID: 89895
+// Module ID: 11586
+// Function ID: 90046
 // Name: GuildPowerupsBottomSheetHeader
-// Dependencies: [27, 4123, 4020, 4019, 33, 4131, 689, 11528, 11525, 11548, 11549, 566, 11550, 3843, 11552, 4127, 11553, 11555, 11556, 4087, 1212, 2231, 11542, 11560, 4022, 8245, 11561, 11562, 11567, 11572, 11573, 4544, 11571, 5187, 2]
+// Dependencies: [27, 4157, 4054, 4053, 33, 4165, 689, 11567, 11564, 11587, 11588, 566, 11589, 3877, 11591, 4161, 11592, 11594, 11595, 4121, 1212, 2231, 11581, 11599, 4056, 8283, 11600, 11601, 11606, 11611, 11612, 4578, 11610, 5221, 2]
 // Exports: default
 
-// Module 11547 (GuildPowerupsBottomSheetHeader)
+// Module 11586 (GuildPowerupsBottomSheetHeader)
 import { View } from "useGuildPowerupOnActivate";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "NewGamesCoachmarkContent";
@@ -22,10 +22,10 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   let powerup;
   ({ guildId, powerup } = arg0);
   const tmp = callback3();
-  const tmp2 = importDefault(11528)(guildId, powerup);
-  let obj = require(11548) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11525)(guildId, powerup, "GuildPowerupsBottomSheet"));
-  const tmp5 = importDefault(11549)(powerup, true);
+  const tmp2 = importDefault(11567)(guildId, powerup);
+  let obj = require(11587) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11564)(guildId, powerup, "GuildPowerupsBottomSheet"));
+  const tmp5 = importDefault(11588)(powerup, true);
   let str = "";
   if (null != tmp5) {
     str = tmp5;
@@ -40,24 +40,24 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   obj = {};
   if (powerup.type === constants.LEVEL) {
     obj = { style: tmp.gemContainer };
-    let tmp14 = callback(importDefault(11550), obj);
+    let tmp14 = callback(importDefault(11589), obj);
   } else if (tmp7 === tmp8) {
     obj1 = { style: tmp.image };
     const obj2 = { stateMachine: "SM_Auto" };
     const obj3 = { reducedMotion: stateFromStores };
     obj2.dataBinding = obj3;
-    obj1.children = callback(require(3843) /* ManaContext */.GameServerHostingRive, obj2);
+    obj1.children = callback(require(3877) /* ManaContext */.GameServerHostingRive, obj2);
     tmp14 = callback(View, obj1);
   } else {
     const obj4 = { imageUrl: str, style: tmp.image, isAnimated: true };
-    tmp14 = callback(importDefault(11552), obj4);
+    tmp14 = callback(importDefault(11591), obj4);
   }
   const items1 = [tmp14, ];
   const obj5 = { style: tmp.headerContainer };
   const obj6 = { variant: "heading-xl/bold", accessibilityRole: "header", children: powerup.title };
-  const items2 = [callback(require(4127) /* Text */.Text, obj6), ];
+  const items2 = [callback(require(4161) /* Text */.Text, obj6), ];
   const obj7 = { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer };
-  items2[1] = callback(require(11553) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj7);
+  items2[1] = callback(require(11592) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj7);
   obj5.children = items2;
   items1[1] = callback2(View, obj5);
   obj.children = items1;
@@ -66,10 +66,10 @@ function GuildPowerupsBottomSheetHeader(arg0) {
 function GuildPowerupsBottomSheetLevelBody(powerup) {
   const tmp = callback3();
   const require = tmp;
-  const arr = importDefault(11555)(powerup.powerup);
+  const arr = importDefault(11594)(powerup.powerup);
   return callback(View, {
     style: tmp.levelContainer,
-    children: importDefault(11555)(powerup.powerup).map((children) => {
+    children: importDefault(11594)(powerup.powerup).map((children) => {
       let obj = tmp(outer1_2[18]);
       obj = { style: tmp.perkContainer };
       const iconForPerk = obj.getIconForPerk(children.perkIcon);
@@ -87,7 +87,7 @@ function GuildPowerupsBottomSheetBody(powerup) {
   if (constants.PERK === type) {
     let obj = {};
     obj = { style: tmp.description, variant: "text-md/medium", children: powerup.description };
-    const items = [callback(require(4127) /* Text */.Text, obj), ];
+    const items = [callback(require(4161) /* Text */.Text, obj), ];
     let tmp11 = null != powerup.deactivationCooldownPeriodDays;
     if (tmp11) {
       tmp11 = powerup.deactivationCooldownPeriodDays > 0;
@@ -95,12 +95,12 @@ function GuildPowerupsBottomSheetBody(powerup) {
     if (tmp11) {
       const obj1 = { style: tmp.cooldownInfo };
       const obj2 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED };
-      const items1 = [callback(require(4087) /* CircleInformationIcon */.CircleInformationIcon, obj2), ];
+      const items1 = [callback(require(4121) /* CircleInformationIcon */.CircleInformationIcon, obj2), ];
       const obj3 = { variant: "text-sm/medium", color: "text-muted" };
       const intl = require(1212) /* getSystemLocale */.intl;
       const obj4 = { cooldownDays: powerup.deactivationCooldownPeriodDays };
       obj3.children = intl.formatToPlainString(importDefault(2231).GMhQcE, obj4);
-      items1[1] = callback(require(4127) /* Text */.Text, obj3);
+      items1[1] = callback(require(4161) /* Text */.Text, obj3);
       obj1.children = items1;
       tmp11 = callback2(View, obj1);
     }
@@ -124,21 +124,21 @@ function GuildPowerupsBottomSheetFooter(arg0) {
   let onActivate;
   let dependencyMap;
   const tmp = callback3();
-  const tmp2 = onActivate(11542)(guildId);
-  ({ showToggleButton, showConfigureButton, isPowerupActive } = onActivate(11560)(guildId, powerup));
+  const tmp2 = onActivate(11581)(guildId);
+  ({ showToggleButton, showConfigureButton, isPowerupActive } = onActivate(11599)(guildId, powerup));
   if (showConfigureButton) {
-    let result = powerup.skuId !== isPowerupActive(4022).GUILD_POWERUP_TAG_SKU_ID;
+    let result = powerup.skuId !== isPowerupActive(4056).GUILD_POWERUP_TAG_SKU_ID;
     if (!result) {
-      let obj = isPowerupActive(8245);
+      let obj = isPowerupActive(8283);
       result = obj.canUseMobileServerTagSettings(guildId);
     }
     showConfigureButton = result;
   }
-  const tmp3 = onActivate(11560)(guildId, powerup);
-  ({ disabled, reason } = onActivate(11561)(guildId, powerup, isPowerupActive));
-  const tmp10 = onActivate(11562)(guildId, powerup);
+  const tmp3 = onActivate(11599)(guildId, powerup);
+  ({ disabled, reason } = onActivate(11600)(guildId, powerup, isPowerupActive));
+  const tmp10 = onActivate(11601)(guildId, powerup);
   onActivate = tmp10.onActivate;
-  dependencyMap = onActivate(11567)(guildId, powerup);
+  dependencyMap = onActivate(11606)(guildId, powerup);
   if (tmp2) {
     let tmp15 = !showConfigureButton;
     const hasItem = set.has(powerup.skuId);
@@ -159,7 +159,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
       obj = { style: tmp.description, variant: "text-md/bold" };
       const intl = isPowerupActive(1212).intl;
       obj.children = intl.string(onActivate(2231)["jo5++h"]);
-      tmp15 = callback(isPowerupActive(4127).Text, obj);
+      tmp15 = callback(isPowerupActive(4161).Text, obj);
     }
     const items = [tmp15, , , ];
     let tmp24 = disabled;
@@ -168,7 +168,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     }
     if (tmp24) {
       const obj1 = { text: reason };
-      tmp24 = callback(onActivate(11573), obj1);
+      tmp24 = callback(onActivate(11612), obj1);
     }
     items[1] = tmp24;
     if (showConfigureButton) {
@@ -176,7 +176,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
       const intl2 = isPowerupActive(1212).intl;
       obj2.text = intl2.string(onActivate(2231).g5Ds69);
       obj2.onPress = tmp11;
-      showConfigureButton = callback(isPowerupActive(4544).Button, obj2);
+      showConfigureButton = callback(isPowerupActive(4578).Button, obj2);
     }
     items[2] = showConfigureButton;
     if (showToggleButton) {
@@ -214,7 +214,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
           onActivate();
         }
       };
-      callback(isPowerupActive(4544).Button, obj3);
+      callback(isPowerupActive(4578).Button, obj3);
       const tmp34 = callback;
     }
     tmp18 = closure_9;
@@ -254,12 +254,12 @@ export default function GuildPowerupsBottomSheet(arg0) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = arg0);
-  let obj = require(11571) /* ModalType */;
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11571) /* ModalType */.ModalType.DETAIL);
+  let obj = require(11610) /* ModalType */;
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11610) /* ModalType */.ModalType.DETAIL);
   obj = { startExpanded: true };
   obj = { style: callback3().container };
   const items = [callback(GuildPowerupsBottomSheetHeader, { guildId, powerup }), callback(GuildPowerupsBottomSheetBody, { guildId, powerup }), callback(GuildPowerupsBottomSheetFooter, { guildId, powerup })];
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

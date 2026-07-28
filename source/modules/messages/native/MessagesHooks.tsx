@@ -1,10 +1,10 @@
-// Module ID: 10421
-// Function ID: 80557
+// Module ID: 10461
+// Function ID: 80686
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 9435, 9242, 4470, 1838, 4218, 566, 22, 620, 5463, 1327, 5968, 10422, 9241, 10423, 2]
+// Dependencies: [57, 31, 27, 9475, 9286, 4504, 1838, 4252, 566, 22, 620, 5498, 1327, 6002, 10462, 9285, 10463, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 10421 (_createForOfIteratorHelperLoose)
+// Module 10461 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { findNodeHandle } from "get ActivityIndicator";

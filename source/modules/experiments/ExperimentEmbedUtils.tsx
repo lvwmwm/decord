@@ -1,10 +1,10 @@
-// Module ID: 7819
-// Function ID: 62078
+// Module ID: 7855
+// Function ID: 62168
 // Name: regExp
-// Dependencies: [4053, 7820, 7821, 2]
+// Dependencies: [4087, 7856, 7857, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7819 (regExp)
+// Module 7855 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("getExperimentVariantsForDevTools").fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
 
@@ -49,9 +49,9 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   if (null != experimentServerAssignment) {
     if (null != system) {
       const system2 = system.system;
-      if (require(4053) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
-        return importDefault(7820).getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (require(4053) /* trackExposureToExperiment */.ExperimentSystem.APEX === system2) {
+      if (require(4087) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
+        return importDefault(7856).getExperimentBucketName(experimentServerAssignment.bucket);
+      } else if (require(4087) /* trackExposureToExperiment */.ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {
@@ -63,6 +63,6 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   return null;
 };
 export const getExperimentBuckets = function getExperimentBuckets(experiment) {
-  const experimentVariantsForDevTools = require(7821) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
+  const experimentVariantsForDevTools = require(7857) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
 };

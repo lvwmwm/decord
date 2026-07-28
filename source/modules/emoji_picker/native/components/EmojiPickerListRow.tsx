@@ -1,9 +1,9 @@
-// Module ID: 9318
-// Function ID: 72869
+// Module ID: 9362
+// Function ID: 73020
 // Name: getEmojiItemUrl
-// Dependencies: [31, 27, 1278, 9271, 1314, 33, 4131, 689, 477, 666, 1392, 4653, 4661, 5085, 3977, 5151, 5152, 1273, 9319, 2]
+// Dependencies: [31, 27, 1278, 9315, 1314, 33, 4165, 689, 477, 666, 1392, 4687, 4695, 5119, 4011, 5185, 5186, 1273, 9363, 2]
 
-// Module 9318 (getEmojiItemUrl)
+// Module 9362 (getEmojiItemUrl)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ function getEmojiItemUrl(emoji, animateEmoji) {
 }
 function EmojiItemLockedOverlay() {
   const tmp = callback2();
-  obj = { style: tmp.lockContainer, children: callback(require(4653) /* LockIcon */.LockIcon, obj) };
+  obj = { style: tmp.lockContainer, children: callback(require(4687) /* LockIcon */.LockIcon, obj) };
   obj = { style: tmp.lock };
   return callback(View, obj);
 }
@@ -74,19 +74,19 @@ function EmojiItem(emoji) {
   };
   if (null != emoji.id) {
     obj = { resizeMode: "contain", style: tmp.image };
-    const tmp10 = importDefault(5085);
+    const tmp10 = importDefault(5119);
     const tmp7 = callback;
     if (obj4.isThemeDark(theme.theme)) {
-      let tmp13Result = tmp13(5151);
+      let tmp13Result = tmp13(5185);
     } else {
-      tmp13Result = tmp13(5152);
+      tmp13Result = tmp13(5186);
     }
     obj.placeholder = tmp13Result;
     obj = { uri: tmp2 };
     obj.source = obj;
     obj.usesSmallCache = true;
     tmp7(tmp10, obj);
-    obj4 = emoji(3977);
+    obj4 = emoji(4011);
   } else {
     const obj1 = { allowFontScaling: false, style: tmp.surrogates, children: emoji.surrogates };
     const items1 = [callback(emoji(1273).LegacyText, obj1), ];
@@ -95,7 +95,7 @@ function EmojiItem(emoji) {
     }
     items1[1] = disabled;
     obj.children = items1;
-    return closure_8(emoji(4661).PressableOpacity, obj);
+    return closure_8(emoji(4695).PressableOpacity, obj);
   }
 }
 const View = get_ActivityIndicator.View;
@@ -189,7 +189,7 @@ let closure_10 = importAllResult.memo((emojis) => {
     }
   };
   obj = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return callback(importDefault(9319), obj);
+  return callback(importDefault(9363), obj);
 });
 let closure_11 = importAllResult.memo((arg0) => {
   let animateEmoji;

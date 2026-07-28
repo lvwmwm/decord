@@ -1,10 +1,10 @@
-// Module ID: 7621
-// Function ID: 60976
+// Module ID: 7657
+// Function ID: 61066
 // Name: createFakeSharedValue
 // Dependencies: [2]
 // Exports: createFakeSharedValue
 
-// Module 7621 (createFakeSharedValue)
+// Module 7657 (createFakeSharedValue)
 const result = require("set").fileFinishedImporting("modules/reanimated/ReanimatedHelperTypes.tsx");
 
 export const createFakeSharedValue = function createFakeSharedValue(COLLAPSED) {

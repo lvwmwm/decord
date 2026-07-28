@@ -1,10 +1,10 @@
-// Module ID: 6498
-// Function ID: 58094
+// Module ID: 6534
+// Function ID: 58183
 // Name: goToBillingStandalonePageWithHandoff
 // Dependencies: [653, 1443, 491, 507, 2]
 // Exports: goToStandalonePremiumCheckoutWeb
 
-// Module 6498 (goToBillingStandalonePageWithHandoff)
+// Module 6534 (goToBillingStandalonePageWithHandoff)
 import ME from "ME";
 
 let closure_3;

@@ -1,10 +1,10 @@
-// Module ID: 8985
-// Function ID: 70801
+// Module ID: 9029
+// Function ID: 70952
 // Name: PlatformTypes
-// Dependencies: [653, 4149, 8965, 8986, 2]
+// Dependencies: [653, 4183, 9009, 9030, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 8985 (PlatformTypes)
+// Module 9029 (PlatformTypes)
 import { PlatformTypes } from "ME";
 import { VoicePlatforms } from "ParticipantTypes";
 
@@ -19,11 +19,11 @@ export default function getConsoleIcon(arg0) {
 };
 export const getConsoleIconForVoicePlatform = function getConsoleIconForVoicePlatform(voicePlatform) {
   if (voicePlatform === VoicePlatforms.XBOX) {
-    let tmp2 = importDefault(8965);
+    let tmp2 = importDefault(9009);
   } else {
     tmp2 = null;
     if (voicePlatform === VoicePlatforms.PLAYSTATION) {
-      tmp2 = importDefault(8986);
+      tmp2 = importDefault(9030);
     }
   }
   return tmp2;

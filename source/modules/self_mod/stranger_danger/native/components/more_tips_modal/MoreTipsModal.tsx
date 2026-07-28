@@ -1,10 +1,10 @@
-// Module ID: 10378
-// Function ID: 80074
+// Module ID: 10418
+// Function ID: 80203
 // Name: MoreTipsModalScreen
-// Dependencies: [31, 27, 9031, 653, 33, 4131, 689, 10118, 4127, 1212, 10379, 6695, 4338, 7640, 1273, 1557, 624, 10095, 5839, 5844, 5517, 2]
+// Dependencies: [31, 27, 9075, 653, 33, 4165, 689, 10158, 4161, 1212, 10419, 6731, 4372, 7676, 1273, 1557, 624, 10135, 5849, 5854, 5552, 2]
 // Exports: default
 
-// Module 10378 (MoreTipsModalScreen)
+// Module 10418 (MoreTipsModalScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ function MoreTipsModalScreen(learnMore) {
   let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll };
   obj = { style: tmp.contentContainer };
   obj = { style: tmp.tipsContainer };
-  const items = [callback(importDefault(10118), { description, safetyTips, showHeader: true }), ];
+  const items = [callback(importDefault(10158), { description, safetyTips, showHeader: true }), ];
   let tmp8 = null;
   if (null != learnMore) {
     const obj1 = { style: tmp.learnMore, children: learnMore };
@@ -43,10 +43,10 @@ function MoreTipsModalScreen(learnMore) {
   const obj3 = { variant: "eyebrow", color: "text-default", style: tmp.header };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t.K5FKtc);
-  const items2 = [callback(require(4127) /* Text */.Text, obj3), actionItems];
+  const items2 = [callback(require(4161) /* Text */.Text, obj3), actionItems];
   obj2.children = items2;
   items1[1] = callback2(closure_4, obj2);
-  items1[2] = callback(importDefault(10379), { channelId, warningId, senderId });
+  items1[2] = callback(importDefault(10419), { channelId, warningId, senderId });
   obj.children = items1;
   obj.children = callback2(closure_4, obj);
   return callback(closure_5, obj);

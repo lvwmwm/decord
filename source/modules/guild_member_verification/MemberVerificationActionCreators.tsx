@@ -1,9 +1,9 @@
-// Module ID: 5127
-// Function ID: 44455
+// Module ID: 5161
+// Function ID: 44570
 // Name: _fetchVerificationForm
-// Dependencies: [5, 1910, 1918, 4116, 1850, 653, 507, 4117, 686, 5128, 5065, 3951, 5132, 4471, 1212, 4030, 675, 2]
+// Dependencies: [5, 1910, 1918, 4150, 1850, 653, 507, 4151, 686, 5162, 5099, 3985, 5166, 4505, 1212, 4064, 675, 2]
 
-// Module 5127 (_fetchVerificationForm)
+// Module 5161 (_fetchVerificationForm)
 import closure_3 from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

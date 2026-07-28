@@ -1,10 +1,10 @@
-// Module ID: 11950
-// Function ID: 92400
+// Module ID: 11993
+// Function ID: 92570
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [27, 3759, 482, 33, 4131, 477, 5462, 8045, 4529, 11951, 4321, 566, 4655, 4659, 1212, 5513, 4661, 3832, 5512, 4127, 8254, 4342, 4099, 11952, 1935, 8297, 11953, 1273, 2]
+// Dependencies: [27, 3793, 482, 33, 4165, 477, 5497, 8083, 4563, 11994, 4355, 566, 4689, 4693, 1212, 5548, 4695, 3866, 5547, 4161, 8292, 4376, 4133, 11995, 1935, 8335, 11996, 1273, 2]
 // Exports: default
 
-// Module 11950 (UserProfileActivityVoiceChannel)
+// Module 11993 (UserProfileActivityVoiceChannel)
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "sum";

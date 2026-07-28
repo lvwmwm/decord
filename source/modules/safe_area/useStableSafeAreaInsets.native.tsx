@@ -1,10 +1,10 @@
-// Module ID: 10602
-// Function ID: 82653
+// Module ID: 10640
+// Function ID: 82774
 // Name: getStableSafeAreaInsets
-// Dependencies: [57, 31, 1453, 477, 1569, 1557, 10359, 2]
+// Dependencies: [57, 31, 1453, 477, 1569, 1557, 10399, 2]
 // Exports: default
 
-// Module 10602 (getStableSafeAreaInsets)
+// Module 10640 (getStableSafeAreaInsets)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

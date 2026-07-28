@@ -1,10 +1,10 @@
-// Module ID: 6631
-// Function ID: 58618
+// Module ID: 6667
+// Function ID: 58707
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 6443, 5611, 653, 664, 686, 5609, 6444, 507, 1832, 561, 2]
+// Dependencies: [5, 6479, 5646, 653, 664, 686, 5644, 6480, 507, 1832, 561, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 6631 (_fetchSocialLayerStorefront)
+// Module 6667 (_fetchSocialLayerStorefront)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

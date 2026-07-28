@@ -1,10 +1,10 @@
-// Module ID: 16373
-// Function ID: 127590
+// Module ID: 16412
+// Function ID: 127746
 // Name: logTransitionEvent
-// Dependencies: [5, 57, 31, 27, 1391, 1911, 1850, 8243, 16374, 653, 33, 4131, 5084, 689, 675, 4325, 4127, 1212, 16372, 566, 44, 3764, 1456, 6687, 5087, 5049, 3831, 16371, 4099, 14879, 1935, 4542, 6670, 5501, 5164, 13632, 665, 4544, 16378, 16379, 8242, 16380, 5159, 4529, 4540, 5583, 4560, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 1391, 1911, 1850, 8281, 16413, 653, 33, 4165, 5118, 689, 675, 4359, 4161, 1212, 16411, 566, 44, 3798, 1456, 6723, 5121, 5083, 3865, 16410, 4133, 14923, 1935, 4576, 6706, 5536, 5198, 13676, 665, 4578, 16417, 16418, 8280, 16419, 5193, 4563, 4574, 5618, 4594, 5552, 2]
 // Exports: default
 
-// Module 16373 (logTransitionEvent)
+// Module 16412 (logTransitionEvent)
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Stack";
@@ -34,12 +34,12 @@ const require = arg1;
 function logTransitionEvent(from_step, FLOW_DISMISSED, skip, guildId) {
   let obj = importDefault(675);
   obj = { flow_type: constants2.GUILD_ROLE_CREATION_MODAL, from_step, to_step: FLOW_DISMISSED, skip };
-  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
   obj.track(constants.USER_FLOW_TRANSITION, obj);
 }
 function closeModal(from_step, guildId) {
   logTransitionEvent(from_step, constants4.FLOW_DISMISSED, false, guildId);
-  importDefault(16372).close();
+  importDefault(16411).close();
 }
 function useGuildSettingsStoreGuild() {
   const items = [closure_12];
@@ -69,7 +69,7 @@ function shouldSkipPermissions() {
   const guild = props.getProps().guild;
   importDefault(44)(null != guild, "shouldSkipPermissions: Guild cannot be null");
   currentUser = currentUser.getCurrentUser();
-  let obj = importAll(3764);
+  let obj = importAll(3798);
   obj = { permission: constants3.ADMINISTRATOR, user: currentUser, context: guild };
   const tmp3 = isGuildOwner(guild, currentUser);
   return !isGuildOwner(guild, currentUser) && !obj.can(obj);
@@ -390,7 +390,7 @@ let closure_27 = importAllResult.memo((step) => {
   obj = { style: closure_23.title, accessibilityRole: "header", variant: "heading-md/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t["8v/u0i"], { number: sum, total: keys.length });
-  obj.children = callback3(require(4127) /* Text */.Text, obj);
+  obj.children = callback3(require(4161) /* Text */.Text, obj);
   return callback3(closure_7, obj);
 });
 let closure_28 = {
@@ -436,8 +436,8 @@ let result = require("result").fileFinishedImporting("modules/guild_settings/rol
 
 export default function GuildSettingsRoleCreateModal() {
   const _require = useGuildSettingsStoreGuild();
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     outer1_29(outer1_26.FLOW_INITIALIZED, outer1_26[outer1_25.STEP_DISPLAY], false, id.id);
   });
-  return callback3(_require(5517).Navigator, { screens: closure_28, initialRouteName: obj4.STEP_DISPLAY });
+  return callback3(_require(5552).Navigator, { screens: closure_28, initialRouteName: obj4.STEP_DISPLAY });
 };

@@ -1,10 +1,10 @@
-// Module ID: 8420
-// Function ID: 67264
+// Module ID: 8464
+// Function ID: 67411
 // Name: useInAppBrowserReturn
-// Dependencies: [31, 8414, 478, 4097, 8412, 8418, 2]
+// Dependencies: [31, 8458, 478, 4131, 8456, 8462, 2]
 // Exports: default
 
-// Module 8420 (useInAppBrowserReturn)
+// Module 8464 (useInAppBrowserReturn)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

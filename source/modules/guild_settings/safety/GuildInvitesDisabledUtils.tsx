@@ -1,10 +1,10 @@
-// Module ID: 11408
-// Function ID: 88690
+// Module ID: 11446
+// Function ID: 88809
 // Name: useInvitesDisabledPermission
-// Dependencies: [10183, 3759, 653, 566, 2]
+// Dependencies: [10223, 3793, 653, 566, 2]
 // Exports: useShouldShowInvitesDisabledNotif
 
-// Module 11408 (useInvitesDisabledPermission)
+// Module 11446 (useInvitesDisabledPermission)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import ME from "ME";

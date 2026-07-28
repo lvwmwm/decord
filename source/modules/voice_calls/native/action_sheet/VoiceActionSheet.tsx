@@ -1,10 +1,10 @@
-// Module ID: 12757
-// Function ID: 99375
+// Module ID: 12800
+// Function ID: 99545
 // Name: VoiceActionSheet
-// Dependencies: [31, 27, 4204, 33, 4131, 5462, 5482, 566, 3982, 4342, 12758, 12759, 5498, 12769, 12772, 12773, 4534, 12776, 2]
+// Dependencies: [31, 27, 4238, 33, 4165, 5497, 5517, 566, 4016, 4376, 12801, 12802, 5533, 12812, 12815, 12816, 4568, 12819, 2]
 // Exports: default
 
-// Module 12757 (VoiceActionSheet)
+// Module 12800 (VoiceActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,31 +41,31 @@ export default function VoiceActionSheet(channel) {
       outer2_1(outer2_2[10]).terminate();
     };
   }, items1);
-  let obj1 = importDefault(12759);
+  let obj1 = importDefault(12802);
   if (obj1.requiresVoiceChannelsOnboard()) {
     obj = {};
     obj = { channel };
-    obj.children = callback(importDefault(12769), obj);
-    let tmp11 = callback(channel(5498).ActionSheet, obj);
+    obj.children = callback(importDefault(12812), obj);
+    let tmp11 = callback(channel(5533).ActionSheet, obj);
   } else if (stateFromStores) {
     obj1 = {};
     const obj2 = { channel };
-    const items2 = [callback(importDefault(12772), obj2), ];
+    const items2 = [callback(importDefault(12815), obj2), ];
     let obj3 = { channel };
-    items2[1] = callback(importDefault(12773), obj3);
+    items2[1] = callback(importDefault(12816), obj3);
     obj1.children = items2;
-    tmp11 = callback2(channel(5498).ActionSheet, obj1);
+    tmp11 = callback2(channel(5533).ActionSheet, obj1);
   } else {
     const obj4 = { scrollable: true, startExpanded: true };
     const obj5 = { style: tmp.container };
     const obj6 = { blurTheme: "dark", style: tmp.visualEffectView };
-    const items3 = [callback(importDefault(4534), obj6), ];
+    const items3 = [callback(importDefault(4568), obj6), ];
     const obj7 = { channel };
-    items3[1] = callback(importDefault(12776), obj7);
+    items3[1] = callback(importDefault(12819), obj7);
     obj5.children = items3;
     obj4.children = callback2(View, obj5);
-    tmp11 = callback(channel(5498).ActionSheet, obj4);
+    tmp11 = callback(channel(5533).ActionSheet, obj4);
   }
-  const obj8 = { value: importDefault(5462)(importDefault(5482).VOICE_ACTION_SHEET).analyticsLocations, children: tmp11 };
-  return callback(channel(5462).AnalyticsLocationProvider, obj8);
+  const obj8 = { value: importDefault(5497)(importDefault(5517).VOICE_ACTION_SHEET).analyticsLocations, children: tmp11 };
+  return callback(channel(5497).AnalyticsLocationProvider, obj8);
 };

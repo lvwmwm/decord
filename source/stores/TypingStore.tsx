@@ -1,9 +1,9 @@
-// Module ID: 11096
-// Function ID: 86227
+// Module ID: 11134
+// Function ID: 86350
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 5918, 653, 664, 5604, 507, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 5952, 653, 664, 5639, 507, 686, 566, 2]
 
-// Module 11096 (_isNativeReflectConstruct)
+// Module 11134 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -198,7 +198,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     const id = store.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;

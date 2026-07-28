@@ -1,10 +1,10 @@
-// Module ID: 6666
-// Function ID: 58949
+// Module ID: 6702
+// Function ID: 59038
 // Name: _startStageInstance
 // Dependencies: [5, 653, 507, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 6666 (_startStageInstance)
+// Module 6702 (_startStageInstance)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 4207
-// Function ID: 36503
+// Module ID: 4241
+// Function ID: 36613
 // Name: sleep
-// Dependencies: [5, 153, 6, 7, 4208, 629, 4209, 2]
+// Dependencies: [5, 153, 6, 7, 4242, 629, 4243, 2]
 // Exports: getTimeAndUnit
 
-// Module 4207 (sleep)
+// Module 4241 (sleep)
 import module_629 from "module_629";
 import "_readOnlyError";
 import findLastIndex from "findLastIndex";
@@ -45,7 +45,7 @@ function convertMinutesToGivenTimeUnit(rounded, unit) {
 function getTimeUnit(rounded, arg1) {
   let closure_0 = rounded;
   const importDefault = arg1;
-  const tmp2 = importDefault(4209)(items, (unit) => callback(unit.unit), items.findIndex((max) => {
+  const tmp2 = importDefault(4243)(items, (unit) => callback(unit.unit), items.findIndex((max) => {
     max = max.max;
     let tmp = max.unit === outer1_11.NONE;
     if (tmp) {
@@ -451,7 +451,7 @@ const tmp10 = (() => {
       }
     }
   });
-  obj1.value = function waitFor(outer1_8, outer1_9, outer1_11, outer1_12, outer1_112, outer1_14, outer1_17, outer1_113, outer1_19, outer1_192, outer1_13, outer1_20, outer1_22, outer1_23, outer1_132, outer1_35, outer1_36, outer1_37, outer1_38, outer1_21, outer1_39, outer1_40) {
+  obj1.value = function waitFor(outer1_8, outer1_9, outer1_11, outer1_13, outer1_112, outer1_14, outer1_17, outer1_113, outer1_19, outer1_192, outer1_132, outer1_20, outer1_22, outer1_23, outer1_133, outer1_35, outer1_36, outer1_37, outer1_38, outer1_21, outer1_39, outer1_40) {
     return callback(...arguments);
   };
   items1[1] = obj1;

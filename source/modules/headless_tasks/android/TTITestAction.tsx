@@ -1,9 +1,9 @@
-// Module ID: 16691
-// Function ID: 130132
+// Module ID: 16731
+// Function ID: 130293
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 15973, 4045, 6637, 1194, 1348, 1838, 3, 3989, 10293, 16162, 686, 5907, 1554, 675, 5588, 6636, 4139, 14462, 1284, 2]
+// Dependencies: [5, 16012, 4079, 6673, 1194, 1348, 1838, 3, 4023, 10333, 16201, 686, 5941, 1554, 675, 5623, 6672, 4173, 14506, 1284, 2]
 
-// Module 16691 (_createForOfIteratorHelperLoose)
+// Module 16731 (_createForOfIteratorHelperLoose)
 import importDefaultResult from "_isNativeReflectConstruct";
 import { applicationReady } from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -95,12 +95,12 @@ function _arrayLikeToArray(arg0, arg1) {
 function sendReply(success, message, arg2) {
   const merged = Object.assign(arg2);
   const json = JSON.stringify({ type: "response", status: success, message });
-  importDefault(3989).logToDevice(json);
+  importDefault(4023).logToDevice(json);
 }
 function sendStatus(message) {
   importDefaultResult1.log(message);
   const json = JSON.stringify({ type: "status", message });
-  importDefault(3989).logToDevice(json);
+  importDefault(4023).logToDevice(json);
 }
 function getErrorDetails(arr) {
   let done2;
@@ -177,45 +177,45 @@ let obj = {
   "setup-test": setupTTITest,
   ping() {
     const json = JSON.stringify({ type: "pong" });
-    importDefault(3989).logToDevice(json);
+    importDefault(4023).logToDevice(json);
   },
   () => {
-    const result = require(10293) /* formatString */.resetComponentProfiler();
+    const result = require(10333) /* formatString */.resetComponentProfiler();
     sendReply("success", "reset-component-profiler");
   },
   () => {
-    const result = require(10293) /* formatString */.pauseComponentProfiler();
+    const result = require(10333) /* formatString */.pauseComponentProfiler();
     sendReply("success", "pause-component-profiler");
   },
   () => {
-    const result = require(10293) /* formatString */.resumeComponentProfiler();
+    const result = require(10333) /* formatString */.resumeComponentProfiler();
     sendReply("success", "resume-component-profiler");
   },
   () => {
-    const obj = { stats: require(10293) /* formatString */.dumpStats() };
+    const obj = { stats: require(10333) /* formatString */.dumpStats() };
     sendReply("success", "dump-component-profiler-stats", obj);
   },
   () => {
     const obj = {};
     let report;
-    if (null != importDefault(16162)) {
-      report = importDefault(16162).requestReport();
-      const obj2 = importDefault(16162);
+    if (null != importDefault(16201)) {
+      report = importDefault(16201).requestReport();
+      const obj2 = importDefault(16201);
     }
     obj.report = report;
     sendReply("success", "dump-jank-stats", obj);
   },
   (multiplier) => {
-    if (null != importDefault(16162)) {
-      const result = importDefault(16162).setJankHeuristicMultiplier(multiplier.multiplier);
-      const obj = importDefault(16162);
+    if (null != importDefault(16201)) {
+      const result = importDefault(16201).setJankHeuristicMultiplier(multiplier.multiplier);
+      const obj = importDefault(16201);
     }
     sendReply("success", "set-jank-multiplier");
   },
   () => {
-    if (null != importDefault(16162)) {
-      importDefault(16162).startTracking();
-      const obj = importDefault(16162);
+    if (null != importDefault(16201)) {
+      importDefault(16201).startTracking();
+      const obj = importDefault(16201);
     }
     sendReply("success", "start-jank-stats");
   },
@@ -229,9 +229,9 @@ let obj = {
   "get-resource-usage": fn
 };
 fn = () => {
-  const obj = { cumulativeCPU: importDefault(5907).getCumulativeCPUUsage() };
-  const obj2 = importDefault(5907);
-  obj.currentMemoryUsage = importDefault(5907).getCurrentMemoryUsageKB();
+  const obj = { cumulativeCPU: importDefault(5941).getCumulativeCPUUsage() };
+  const obj2 = importDefault(5941);
+  obj.currentMemoryUsage = importDefault(5941).getCurrentMemoryUsageKB();
   sendReply("success", "get-resource-usage", obj);
 };
 // CreateGeneratorClosureLongIndex (0x67)

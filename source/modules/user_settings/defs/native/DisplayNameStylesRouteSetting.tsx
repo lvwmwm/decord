@@ -1,9 +1,9 @@
-// Module ID: 14283
-// Function ID: 109698
+// Module ID: 14327
+// Function ID: 109871
 // Name: useTitle
-// Dependencies: [653, 10059, 1212, 2557, 14284, 2]
+// Dependencies: [653, 10099, 1212, 2557, 14328, 2]
 
-// Module 14283 (useTitle)
+// Module 14327 (useTitle)
 import createToggle from "createToggle";
 
 const obj = {
@@ -16,7 +16,7 @@ const obj = {
   screen: {
     route: require("ME").UserSettingsSections.DISPLAY_NAME_STYLES,
     getComponent() {
-      return require(14284) /* ApplyButton */.default;
+      return require(14328) /* ApplyButton */.default;
     }
   },
   usePredicate() {

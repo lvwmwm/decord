@@ -1,10 +1,10 @@
-// Module ID: 9740
-// Function ID: 75849
+// Module ID: 9780
+// Function ID: 75978
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
 // Dependencies: [1428, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9740 (useIsEligibleForUserProfileWYSIWYGEditing)
+// Module 9780 (useIsEligibleForUserProfileWYSIWYGEditing)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

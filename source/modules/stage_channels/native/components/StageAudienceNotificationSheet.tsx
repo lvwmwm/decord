@@ -1,10 +1,10 @@
-// Module ID: 7572
-// Function ID: 60682
+// Module ID: 7608
+// Function ID: 60771
 // Name: handleDismiss
-// Dependencies: [31, 27, 1353, 4948, 1354, 33, 4131, 689, 4099, 1273, 566, 7573, 5085, 7574, 4127, 1212, 7575, 7612, 7613, 7614, 7615, 4544, 2]
+// Dependencies: [31, 27, 1353, 4982, 1354, 33, 4165, 689, 4133, 1273, 566, 7609, 5119, 7610, 4161, 1212, 7611, 7648, 7649, 7650, 7651, 4578, 2]
 // Exports: default
 
-// Module 7572 (handleDismiss)
+// Module 7608 (handleDismiss)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function handleDismiss() {
-  importDefault(4099).hideActionSheet(closure_5);
+  importDefault(4133).hideActionSheet(closure_5);
 }
 function BulletIcon(source) {
   const tmp = _createForOfIteratorHelperLoose();
@@ -53,51 +53,51 @@ export default function StageAudienceNotificationSheet(channelId) {
   const obj1 = { style: tmp.header };
   const obj2 = {};
   const tmp4 = callback;
-  const tmp5 = importDefault(7573);
+  const tmp5 = importDefault(7609);
   const tmp7 = View;
   const tmp8 = View;
-  obj2.source = importDefault(7574);
+  obj2.source = importDefault(7610);
   obj2.style = tmp.headerImage;
-  const items1 = [callback(importDefault(5085), obj2), , ];
+  const items1 = [callback(importDefault(5119), obj2), , ];
   const obj3 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = channelId(1212).intl;
   obj3.children = intl.string(channelId(1212).t.UVuXCs);
-  items1[1] = callback(channelId(4127).Text, obj3);
+  items1[1] = callback(channelId(4161).Text, obj3);
   const obj4 = { style: tmp.headerBulletList };
   const obj5 = {};
-  const obj6 = { source: importDefault(7612) };
+  const obj6 = { source: importDefault(7648) };
   obj5.leading = callback(BulletIcon, obj6);
   const obj7 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
   const intl2 = channelId(1212).intl;
   obj7.children = intl2.string(channelId(1212).t.sBDfo6);
-  obj5.label = callback(channelId(4127).Text, obj7);
-  const items2 = [callback(channelId(7575).FormRow, obj5), , , ];
+  obj5.label = callback(channelId(4161).Text, obj7);
+  const items2 = [callback(channelId(7611).FormRow, obj5), , , ];
   const obj8 = {};
-  const obj9 = { source: importDefault(7613) };
+  const obj9 = { source: importDefault(7649) };
   obj8.leading = callback(BulletIcon, obj9);
   const obj10 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
   const intl3 = channelId(1212).intl;
   obj10.children = intl3.string(channelId(1212).t.x58YtH);
-  obj8.label = callback(channelId(4127).Text, obj10);
-  items2[1] = callback(channelId(7575).FormRow, obj8);
+  obj8.label = callback(channelId(4161).Text, obj10);
+  items2[1] = callback(channelId(7611).FormRow, obj8);
   const obj11 = {};
-  const obj12 = { source: importDefault(7614) };
+  const obj12 = { source: importDefault(7650) };
   obj11.leading = callback(BulletIcon, obj12);
   const obj13 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
   const intl4 = channelId(1212).intl;
   obj13.children = intl4.string(channelId(1212).t.XtVqla);
-  obj11.label = callback(channelId(4127).Text, obj13);
-  items2[2] = callback(channelId(7575).FormRow, obj11);
+  obj11.label = callback(channelId(4161).Text, obj13);
+  items2[2] = callback(channelId(7611).FormRow, obj11);
   let tmp11 = null;
   if (privacy_level === constants.PUBLIC) {
     const obj14 = {};
-    const obj15 = { source: importDefault(7615) };
+    const obj15 = { source: importDefault(7651) };
     obj14.leading = callback(BulletIcon, obj15);
     const obj16 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
     const intl6 = channelId(1212).intl;
     obj16.children = intl6.string(channelId(1212).t.nDsbJg);
-    obj14.label = callback(channelId(4127).Text, obj16);
-    tmp11 = callback(channelId(7575).FormRow, obj14);
+    obj14.label = callback(channelId(4161).Text, obj16);
+    tmp11 = callback(channelId(7611).FormRow, obj14);
   }
   items2[3] = tmp11;
   obj4.children = items2;
@@ -109,7 +109,7 @@ export default function StageAudienceNotificationSheet(channelId) {
   const intl5 = channelId(1212).intl;
   obj18.text = intl5.string(channelId(1212).t.obLqZ8);
   obj18.onPress = handleDismiss;
-  obj17.children = callback(channelId(4544).Button, obj18);
+  obj17.children = callback(channelId(4578).Button, obj18);
   items3[1] = callback(View, obj17);
   obj.children = items3;
   obj.children = closure_8(tmp7, obj);

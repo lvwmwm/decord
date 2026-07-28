@@ -1,9 +1,9 @@
-// Module ID: 11619
-// Function ID: 90238
+// Module ID: 11658
+// Function ID: 90389
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 11619 (apexExperiment)
+// Module 11658 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-server-setup-boost-cta", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

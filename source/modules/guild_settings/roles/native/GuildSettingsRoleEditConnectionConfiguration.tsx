@@ -1,10 +1,10 @@
-// Module ID: 16402
-// Function ID: 128012
+// Module ID: 16441
+// Function ID: 128168
 // Name: Header
-// Dependencies: [57, 31, 27, 653, 4941, 33, 4131, 689, 4067, 9945, 1273, 1392, 3977, 5164, 1212, 4661, 5119, 5502, 477, 4127, 4815, 5501, 2]
+// Dependencies: [57, 31, 27, 653, 4975, 33, 4165, 689, 4101, 9985, 1273, 1392, 4011, 5198, 1212, 4695, 5153, 5537, 16442, 477, 4161, 4849, 5536, 2]
 // Exports: default
 
-// Module 16402 (Header)
+// Module 16441 (Header)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(9945) /* useRequestApplication */;
+  let obj = require(9985) /* useRequestApplication */;
   let application;
   if (null != integration) {
     application = integration.application;
@@ -80,7 +80,7 @@ function Header(arg0) {
   } else if (null != platform) {
     const obj1 = {};
     let obj2 = require(1392) /* getAvatarURL */;
-    let obj3 = require(3977) /* AccessibilityAnnouncer */;
+    let obj3 = require(4011) /* AccessibilityAnnouncer */;
     const icon = platform.icon;
     obj1.source = obj2.makeSource(obj3.isThemeDark(tmp) ? icon.darkPNG : icon.lightPNG);
     obj1.disableColor = true;
@@ -104,9 +104,9 @@ function Header(arg0) {
   obj4["aria-label"] = intl2.string(require(1212) /* getSystemLocale */.t.N86XcP);
   obj4.onPress = onRemove;
   obj4.disabled = locked;
-  obj4.children = callback2(require(5119) /* XSmallIcon */.XSmallIcon, {});
-  obj2.trailing = callback2(require(4661) /* PressableBase */.PressableOpacity, obj4);
-  return callback2(require(5164) /* TableRowInner */.TableRow, obj2);
+  obj4.children = callback2(require(5153) /* XSmallIcon */.XSmallIcon, {});
+  obj2.trailing = callback2(require(4695) /* PressableBase */.PressableOpacity, obj4);
+  return callback2(require(5198) /* TableRowInner */.TableRow, obj2);
 }
 function BooleanConfigRule(metadataField) {
   let _slicedToArray;
@@ -158,7 +158,7 @@ function BooleanConfigRule(metadataField) {
     }
     _slicedToArray(tmp, num);
   };
-  return closure_12(metadataField(5502).TableSwitchRow, obj, metadataField);
+  return closure_12(metadataField(5537).TableSwitchRow, obj, metadataField);
 }
 function NumericalConfigRule(existingPendingConfiguration) {
   let _slicedToArray;
@@ -168,49 +168,44 @@ function NumericalConfigRule(existingPendingConfiguration) {
   let fieldTextHook;
   let locked;
   let metadataField;
-  let operator;
   ({ fieldText, fieldTextHook, metadataField } = existingPendingConfiguration);
   existingPendingConfiguration = existingPendingConfiguration.existingPendingConfiguration;
-  ({ platform: dependencyMap, onConfigurationChange: _slicedToArray, locked, operator, applicationId: result } = existingPendingConfiguration);
+  ({ platform: dependencyMap, onConfigurationChange: _slicedToArray, locked, applicationId: result } = existingPendingConfiguration);
   let num;
-  operator = undefined;
+  let c7;
+  let str;
   let first;
-  let c9;
   let c10;
-  let closure_11;
-  function onInputValueChange(Text, arg1, metadataField) {
-    _undefined(Text);
-    if (null != existingPendingConfiguration) {
-      if ("" !== Text) {
-        const _Math3 = Math;
-        const _Number = Number;
-        const rounded = Math.round(Number(Text));
-        if (operator === first.GREATER_THAN) {
-          const _Math2 = Math;
-          let str = Math.max(0, rounded - 1);
-        } else {
-          str = rounded;
-          if (operator === first.LESS_THAN) {
-            const _Math = Math;
-            str = Math.max(1, rounded + 1);
-          }
-        }
-        const obj = {};
-        let type;
-        if (null != closure_2) {
-          type = closure_2.type;
-        }
-        if (null == type) {
-          type = c10;
-        }
-        obj.connectionType = type;
-        obj.applicationId = result;
-        obj.connectionMetadataField = metadataField;
-        obj.operator = operator;
-        obj.value = str.toString();
-        _slicedToArray(obj, num);
-        const tmp4 = _slicedToArray;
+  let c11;
+  let callback2;
+  function onInputValueChange(arg0) {
+    _undefined(arg0);
+    let isFiniteResult = null != existingPendingConfiguration;
+    if (isFiniteResult) {
+      isFiniteResult = "" !== arg0;
+    }
+    if (isFiniteResult) {
+      const _Number = Number;
+      const _Number2 = Number;
+      isFiniteResult = Number.isFinite(Number(arg0));
+    }
+    if (isFiniteResult) {
+      const obj = {};
+      let type;
+      if (null != closure_2) {
+        type = closure_2.type;
       }
+      if (null == type) {
+        type = _undefined;
+      }
+      obj.connectionType = type;
+      obj.applicationId = result;
+      obj.connectionMetadataField = metadataField;
+      obj.operator = c7;
+      obj.value = metadataField(outer1_2[18]).storedValueFor(arg0, c7);
+      _slicedToArray(obj, 18);
+      const obj2 = metadataField(outer1_2[18]);
+      const tmp4 = _slicedToArray;
     }
   }
   let fieldTextHookResult = _createForOfIteratorHelperLoose();
@@ -223,71 +218,62 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (null != index) {
     num = index;
   }
-  if (null == operator) {
-    operator = first.GREATER_THAN;
-  }
+  let obj = metadataField(16442);
+  const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
+  c7 = realizedOperatorForResult;
   let value;
   if (null != existingPendingConfiguration) {
     if (null != existingPendingConfiguration.configuration) {
       value = iter.value;
     }
   }
-  let num2 = 0;
-  if (null != value) {
-    num2 = value;
+  let obj1 = metadataField(16442);
+  str = obj1.displayedValueFor(value, realizedOperatorForResult);
+  str = str.toString();
+  const tmp6 = callback(React.useState(str), 2);
+  first = tmp6[0];
+  c10 = tmp8;
+  let tmp9 = null != value;
+  if (tmp9) {
+    tmp9 = "" !== first;
   }
-  let rounded = Math.round(Number(num2));
-  if (operator === first.GREATER_THAN) {
-    let _Math2 = Math;
-    let str = Math.max(1, rounded + 1);
-  } else {
-    str = rounded;
-    if (operator === first.LESS_THAN) {
-      let _Math = Math;
-      str = Math.max(0, rounded - 1);
-    }
+  if (tmp9) {
+    tmp9 = first !== str;
   }
-  const tmp7 = callback(React.useState(str.toString()), 2);
-  first = tmp7[0];
-  c9 = tmp9;
-  const tmp10 = callback(React.useState(value), 2);
-  if (tmp10[0] !== value) {
-    tmp10[1](value);
-    if (null != value) {
-      tmp9(str.toString());
-    }
+  if (tmp9) {
+    tmp8(str);
   }
   let configuration;
   if (null != existingPendingConfiguration) {
     configuration = existingPendingConfiguration.configuration;
   }
-  let tmp15 = locked;
+  let tmp13 = locked;
   if (!locked) {
-    tmp15 = !tmp14;
+    tmp13 = !tmp12;
   }
-  c10 = tmp15;
+  c11 = tmp13;
   if (undefined !== fieldTextHook) {
-    let obj1 = metadataField(477);
-    closure_11 = obj1.isIOS() ? fieldTextHookResult.numericalInputContainerIOSInline : fieldTextHookResult.numericalInputContainerAndroidInline;
+    let obj3 = metadataField(477);
+    callback2 = obj3.isIOS() ? fieldTextHookResult.numericalInputContainerIOSInline : fieldTextHookResult.numericalInputContainerAndroidInline;
     const intl = metadataField(1212).intl;
-    let obj = {
+    obj = {
       metadataHook() {
           let obj = { style: items };
-          items = [closure_11, closure_5.numericalInputContainerBase];
-          obj = { keyboardType: "numeric" };
+          items = [closure_12, closure_5.numericalInputContainerBase];
+          obj = { keyboardType: "number-pad" };
           const items1 = [closure_5.numericalInput, ];
-          let numericalInputDisabled = c10;
-          if (c10) {
+          let numericalInputDisabled = c11;
+          if (c11) {
             numericalInputDisabled = closure_5.numericalInputDisabled;
           }
           items1[1] = numericalInputDisabled;
           obj.style = items1;
-          obj.editable = !c10;
+          obj.editable = !c11;
           obj.value = first;
           obj.onChangeText = onInputValueChange;
           obj.hitSlop = 8;
-          obj.children = onInputValueChange(metadataField(outer1_2[10]).TextInput, obj, metadataField);
-          return onInputValueChange(fieldTextHookResult, obj, "_numericalInputContainer");
+          obj.children = closure_12(metadataField(outer1_2[10]).TextInput, obj, metadataField);
+          return closure_12(fieldTextHookResult, obj, "_numericalInputContainer");
         }
     };
     obj = { style: fieldTextHookResult.metadataRow };
@@ -298,86 +284,76 @@ function NumericalConfigRule(existingPendingConfiguration) {
       if ("string" === typeof children) {
         const obj = { variant: "text-md/semibold", style: closure_5.metadataRowText, children };
         const _HermesInternal = HermesInternal;
-        tmp = onInputValueChange(metadataField(outer1_2[19]).Text, obj, "t-" + arg1);
+        tmp = callback(metadataField(outer1_2[20]).Text, obj, "t-" + arg1);
       }
       return tmp;
     });
     obj.children = fieldTextHookResult;
-    onInputValueChange(View, obj);
+    callback2(View, obj);
     const formatResult = intl.format(fieldTextHook, obj);
   } else {
-    let tmp32Result;
+    let tmp30Result;
     if (undefined !== fieldText) {
       obj1 = { style: fieldTextHookResult.appNumericalInputContainer };
-      const obj2 = {};
-      const obj3 = { keyboardType: "numeric" };
+      let obj2 = {};
+      obj3 = { keyboardType: "number-pad" };
       let items = [fieldTextHookResult.appNumericalInput, ];
-      let numericalInputDisabled = tmp15;
-      if (tmp15) {
+      let numericalInputDisabled = tmp13;
+      if (tmp13) {
         numericalInputDisabled = fieldTextHookResult.numericalInputDisabled;
       }
       items[1] = numericalInputDisabled;
       obj3.style = items;
-      obj3.editable = !tmp15;
+      obj3.editable = !tmp13;
       obj3.value = first;
       obj3.onChangeText = onInputValueChange;
-      obj2.children = onInputValueChange(metadataField(1273).TextInput, obj3, metadataField);
-      let items1 = [onInputValueChange(View, obj2, "_numericalInputContainer"), ];
-      obj = { variant: "text-md/semibold", style: fieldTextHookResult.appNumericalInputText, children: fieldText };
-      items1[1] = onInputValueChange(metadataField(4127).Text, obj);
+      obj2.children = callback2(metadataField(1273).TextInput, obj3, metadataField);
+      let items1 = [callback2(View, obj2, "_numericalInputContainer"), ];
+      const obj4 = { variant: "text-md/semibold", style: fieldTextHookResult.appNumericalInputText, children: fieldText };
+      items1[1] = callback2(metadataField(4161).Text, obj4);
       obj1.children = items1;
-      tmp32Result = closure_13(View, obj1);
-      const tmp32 = closure_13;
+      tmp30Result = onInputValueChange(View, obj1);
+      const tmp30 = onInputValueChange;
+      const tmp31 = View;
       const tmp33 = View;
-      const tmp35 = View;
     }
-    const obj4 = {
-      label: tmp32Result,
-      value: tmp14,
+    const obj5 = {
+      label: tmp30Result,
+      value: tmp12,
       disabled: locked,
       onValueChange(arg0) {
-          let tmp = null;
+          const tmp = "" !== first ? first : str;
+          _undefined(tmp);
+          let tmp3 = null;
           if (arg0) {
-            const _Math = Math;
-            const _Number = Number;
-            const rounded = Math.round(Number(first));
-            if (operator === first.GREATER_THAN) {
-              const _Math3 = Math;
-              let str = Math.max(0, rounded - 1);
-            } else {
-              str = rounded;
-              if (operator === first.LESS_THAN) {
-                const _Math2 = Math;
-                str = Math.max(1, rounded + 1);
-              }
-            }
             const obj = {};
             let type;
             if (null != closure_2) {
               type = closure_2.type;
             }
             if (null == type) {
-              type = c10;
+              type = _undefined;
             }
             obj.connectionType = type;
             obj.applicationId = result;
             obj.connectionMetadataField = metadataField;
-            obj.operator = operator;
-            obj.value = str.toString();
-            tmp = obj;
+            obj.operator = c7;
+            obj.value = metadataField(outer1_2[18]).storedValueFor(tmp, c7);
+            tmp3 = obj;
+            const obj2 = metadataField(outer1_2[18]);
           }
           let index;
           if (null != existingPendingConfiguration) {
             index = existingPendingConfiguration.index;
           }
-          let num4 = -1;
+          let num2 = -1;
           if (null != index) {
-            num4 = index;
+            num2 = index;
           }
-          _slicedToArray(tmp, num4);
+          _slicedToArray(tmp3, num2);
         }
     };
-    return onInputValueChange(metadataField(5502).TableSwitchRow, obj4, metadataField);
+    return callback2(metadataField(5537).TableSwitchRow, obj5, metadataField);
   }
 }
 function BlueskyMetadataRules(arg0) {
@@ -385,7 +361,7 @@ function BlueskyMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.BLUESKY);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -400,7 +376,7 @@ function SteamMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.STEAM);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -417,7 +393,7 @@ function TwitterMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.TWITTER);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -441,7 +417,7 @@ function RedditMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.REDDIT);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -472,7 +448,7 @@ function PaypalMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.PAYPAL);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -494,7 +470,7 @@ function EbayMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.EBAY);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -520,7 +496,7 @@ function TikTokMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(PlatformTypes.TIKTOK);
   obj = {};
   obj = {};
@@ -685,9 +661,9 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
         locked
       };
       obj.children = callback2(Header, obj);
-      return callback2(configurationItems(applicationId[21]).TableRowGroup, obj);
+      return callback2(configurationItems(applicationId[22]).TableRowGroup, obj);
     } else {
-      obj = onConfigurationChange(applicationId[20]);
+      obj = onConfigurationChange(applicationId[21]);
       const value = obj.get(arr2[0].configuration.connectionType);
       while (true) {
         let tmp9 = globalThis;
@@ -810,7 +786,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
         let tmp66 = callback3;
         let tmp67 = configurationItems;
         let tmp68 = applicationId;
-        let num2 = 21;
+        let num2 = 22;
         let obj10 = {};
         let flag = true;
         obj10.hasIcons = true;
@@ -827,7 +803,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
         obj11.locked = locked;
         let items = [callback2(Header, obj11), tmp30];
         obj10.children = items;
-        return callback3(configurationItems(applicationId[21]).TableRowGroup, obj10);
+        return callback3(configurationItems(applicationId[22]).TableRowGroup, obj10);
       }
     }
   }

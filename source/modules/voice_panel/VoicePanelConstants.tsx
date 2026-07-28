@@ -1,10 +1,10 @@
-// Module ID: 9976
-// Function ID: 77203
+// Module ID: 10016
+// Function ID: 77332
 // Name: VoicePanelModes
 // Dependencies: [477, 2]
 // Exports: getAnalyticsNameForVoicePanelMode
 
-// Module 9976 (VoicePanelModes)
+// Module 10016 (VoicePanelModes)
 import set from "set";
 import set from "set";
 import set from "set";

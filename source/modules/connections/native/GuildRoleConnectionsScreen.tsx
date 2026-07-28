@@ -1,10 +1,10 @@
-// Module ID: 9953
-// Function ID: 77063
+// Module ID: 9993
+// Function ID: 77192
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [57, 31, 27, 1858, 1194, 1918, 1911, 653, 33, 4131, 689, 1273, 4067, 566, 675, 4325, 5049, 4099, 9954, 1935, 9944, 9951, 4815, 1392, 3977, 4127, 1212, 1921, 9950, 5506, 9955, 2]
+// Dependencies: [57, 31, 27, 1858, 1194, 1918, 1911, 653, 33, 4165, 689, 1273, 4101, 566, 675, 4359, 5083, 4133, 9994, 1935, 9984, 9991, 4849, 1392, 4011, 4161, 1212, 1921, 9990, 5541, 9995, 2]
 // Exports: default
 
-// Module 9953 (GuildRoleConnectionsScreen)
+// Module 9993 (GuildRoleConnectionsScreen)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "wrapURL";
@@ -54,7 +54,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   const onCloseModal = guildId.onCloseModal;
   let tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  const callback = onCloseModal(4067)();
+  const callback = onCloseModal(4101)();
   let obj = guildId(566);
   let items = [closure_11];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getSortedRoles(guildId));
@@ -92,7 +92,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     const intl = guildId(1212).intl;
     obj2 = { helpdeskArticleUrl: onCloseModal(1921).getArticleURL(constants.CONNECTION_DETAILS) };
     obj1.children = intl.format(guildId(1212).t["Y+TsEV"], obj2);
-    const items5 = [callback2(guildId(4127).Text, obj1), ];
+    const items5 = [callback2(guildId(4161).Text, obj1), ];
     let obj3 = {
       style: tmp.verifiedRoles,
       children: found.map((id) => {
@@ -123,9 +123,9 @@ export default function GuildRoleConnectionsScreen(guildId) {
                   let obj = onCloseModal(paths[17]);
                   obj = {
                     onLeaveRolePressed() {
-                      onCloseModal(4099).hideActionSheet();
-                      const obj = onCloseModal(4099);
-                      const result = onCloseModal(5049).unassignGuildRoleConnection(closure_1, id.id);
+                      onCloseModal(4133).hideActionSheet();
+                      const obj = onCloseModal(4133);
+                      const result = onCloseModal(5083).unassignGuildRoleConnection(closure_1, id.id);
                     }
                   };
                   obj.openLazy(guildId(paths[19])(paths[18], paths.paths), "LeaveConnectionRoleActionSheet-" + id.id, obj);
@@ -177,7 +177,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
                     tmp = outer3_17;
                   }
                   if (isNaN(parseInt(replaced))) {
-                    let obj = onCloseModal(4815);
+                    let obj = onCloseModal(4849);
                     let XSMALL = obj.get(replaced);
                     let tmp7 = onCloseModal(1392);
                     let CutoutableAvatarImage = tmp7.makeSource;
@@ -202,7 +202,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
                     obj.style = outer2_2.cutout;
                     obj.cutout = tmp;
                     items.push(outer3_14(CutoutableAvatarImage, obj, replaced));
-                    obj2 = guildId(3977);
+                    obj2 = guildId(4011);
                   } else {
                     let bot;
                     if (null != found.applications[replaced]) {
@@ -252,7 +252,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
                   tmp = outer3_17;
                 }
                 if (isNaN(parseInt(replaced))) {
-                  let obj = onCloseModal(4815);
+                  let obj = onCloseModal(4849);
                   let XSMALL = obj.get(replaced);
                   let tmp7 = onCloseModal(1392);
                   let CutoutableAvatarImage = tmp7.makeSource;
@@ -277,7 +277,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
                   obj.style = outer2_2.cutout;
                   obj.cutout = tmp;
                   items.push(outer3_14(CutoutableAvatarImage, obj, replaced));
-                  obj2 = guildId(3977);
+                  obj2 = guildId(4011);
                 } else {
                   let bot;
                   if (null != found.applications[replaced]) {

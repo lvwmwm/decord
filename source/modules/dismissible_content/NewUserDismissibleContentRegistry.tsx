@@ -1,10 +1,10 @@
-// Module ID: 3969
-// Function ID: 32847
+// Module ID: 4003
+// Function ID: 32949
 // Name: isUserAccountOldEnough
 // Dependencies: [1194, 1338, 1334, 664, 624, 21, 2]
 // Exports: disableNewUserDismissibleContent, useNewUserDismissibleContent
 
-// Module 3969 (isUserAccountOldEnough)
+// Module 4003 (isUserAccountOldEnough)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

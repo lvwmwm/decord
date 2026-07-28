@@ -1,10 +1,10 @@
-// Module ID: 13492
-// Function ID: 103766
+// Module ID: 13536
+// Function ID: 103939
 // Name: validateScope
-// Dependencies: [4034, 2]
+// Dependencies: [4068, 2]
 // Exports: default
 
-// Module 13492 (validateScope)
+// Module 13536 (validateScope)
 import { RPC_SCOPE_CONFIG } from "RPC_SCOPE_CONFIG";
 
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/validateScope.tsx");

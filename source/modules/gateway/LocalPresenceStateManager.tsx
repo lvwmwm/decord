@@ -1,9 +1,9 @@
-// Module ID: 12666
-// Function ID: 98008
+// Module ID: 12709
+// Function ID: 98178
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4811, 12667, 12668, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4845, 12710, 12711, 2]
 
-// Module 12666 (_isNativeReflectConstruct)
+// Module 12709 (_isNativeReflectConstruct)
 import rateLimit from "rateLimit";
 import StateManager from "StateManager";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

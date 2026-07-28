@@ -1,10 +1,10 @@
-// Module ID: 10063
-// Function ID: 78024
+// Module ID: 10103
+// Function ID: 78153
 // Name: NewBadge
-// Dependencies: [57, 31, 27, 1345, 33, 1334, 4131, 689, 4127, 1212, 8379, 8368, 2]
+// Dependencies: [57, 31, 27, 1345, 33, 1334, 4165, 689, 4161, 1212, 8417, 8406, 2]
 // Exports: ConversationCoachmark
 
-// Module 10063 (NewBadge)
+// Module 10103 (NewBadge)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ function NewBadge() {
   obj = { variant: "text-sm/bold", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.c2GSIl);
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-sm/bold", color: "text-default" });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-sm/bold", color: "text-default" });
   return <View variant="text-sm/bold" color="text-default" />;
 }
 const TOPICAL_NAVIGATION_HEADER_COACHMARK = require("DismissibleContent").DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
@@ -36,7 +36,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   let isLast;
   ({ children, isLast } = arg0);
   const ref = React.useRef(null);
-  let obj = first(8379);
+  let obj = first(8417);
   const tmp3 = callback(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   const dependencyMap = tmp5;
@@ -58,7 +58,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     return obj;
   }, items);
   const tmp = _createForOfIteratorHelperLoose();
-  const coachmark = first(8368).useCoachmark(ref, memo);
+  const coachmark = first(8406).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   obj = {};
   let coachmarkWrapper;

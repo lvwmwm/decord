@@ -1,10 +1,10 @@
-// Module ID: 6874
-// Function ID: 59547
+// Module ID: 6910
+// Function ID: 59636
 // Name: ClydeHeadsetSpotIllustration
-// Dependencies: [33, 5085, 6875, 2]
+// Dependencies: [33, 5119, 6911, 2]
 // Exports: ClydeHeadsetSpotIllustration
 
-// Module 6874 (ClydeHeadsetSpotIllustration)
+// Module 6910 (ClydeHeadsetSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHeadsetSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const ClydeHeadsetSpotIllustration = function ClydeHeadsetSpotIllustratio
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6875) };
+  obj = { uri: importDefault(6911) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ClydeHeadsetSpotIllustration = function ClydeHeadsetSpotIllustratio
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

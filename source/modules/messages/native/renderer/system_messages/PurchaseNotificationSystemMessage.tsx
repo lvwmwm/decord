@@ -1,10 +1,10 @@
-// Module ID: 7746
-// Function ID: 61702
+// Module ID: 7782
+// Function ID: 61792
 // Name: createPurchaseNotificationSystemMessage
-// Dependencies: [1882, 7747, 2]
+// Dependencies: [1882, 7783, 2]
 // Exports: createPurchaseNotificationSystemMessage
 
-// Module 7746 (createPurchaseNotificationSystemMessage)
+// Module 7782 (createPurchaseNotificationSystemMessage)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
 
 export const createPurchaseNotificationSystemMessage = function createPurchaseNotificationSystemMessage(message) {
@@ -15,8 +15,8 @@ export const createPurchaseNotificationSystemMessage = function createPurchaseNo
   }
   let guildProductPurchaseSystemMessage = null;
   if (type === require(1882) /* PermissionOverwriteType */.PurchaseNotificationType.GUILD_PRODUCT) {
-    guildProductPurchaseSystemMessage = require(7747) /* createGuildProductPurchaseSystemMessage */.createGuildProductPurchaseSystemMessage(message);
-    const obj = require(7747) /* createGuildProductPurchaseSystemMessage */;
+    guildProductPurchaseSystemMessage = require(7783) /* createGuildProductPurchaseSystemMessage */.createGuildProductPurchaseSystemMessage(message);
+    const obj = require(7783) /* createGuildProductPurchaseSystemMessage */;
   }
   return guildProductPurchaseSystemMessage;
 };

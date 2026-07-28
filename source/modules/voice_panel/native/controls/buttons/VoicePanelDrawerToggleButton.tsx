@@ -1,10 +1,10 @@
-// Module ID: 15950
-// Function ID: 123205
+// Module ID: 15989
+// Function ID: 123361
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [31, 33, 4131, 689, 15931, 15918, 15932, 5515, 8330, 12541, 2]
+// Dependencies: [31, 33, 4165, 689, 15970, 15957, 15971, 5550, 8368, 12584, 2]
 // Exports: default
 
-// Module 15950 (VoicePanelDrawerToggleButton)
+// Module 15989 (VoicePanelDrawerToggleButton)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,23 +29,23 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   let wrapperSpecs;
   ({ props, openTab, wrapperSpecs } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(15931) /* useVoicePanelButtonStyles */;
+  let obj = require(15970) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(15918)(openTab));
+  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(15957)(openTab));
   obj = { onPress: handlePress, props, accessibilityLabel };
-  const tmp3 = importDefault(15918)(openTab);
+  const tmp3 = importDefault(15957)(openTab);
   const tmp4 = closure_4;
   const items = [tmp.circle, { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor }];
-  const items1 = [callback(importDefault(5515), { style: items }), ];
+  const items1 = [callback(importDefault(5550), { style: items }), ];
   obj = { style: tmp.iconContainer };
-  const tmp5 = importDefault(15932);
+  const tmp5 = importDefault(15971);
   if (isDrawerOpen) {
-    let ChevronSmallUpIcon = tmp8(8330).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp8(8368).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp8(12541).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp8(12584).ChevronSmallUpIcon;
   }
   obj.children = callback(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
-  items1[1] = callback(importDefault(5515), obj);
+  items1[1] = callback(importDefault(5550), obj);
   obj.children = items1;
   return tmp4(tmp5, obj);
 };

@@ -1,22 +1,22 @@
-// Module ID: 15504
-// Function ID: 119169
+// Module ID: 15543
+// Function ID: 119325
 // Name: headerBackground
-// Dependencies: [31, 33, 4663, 8757, 1557, 477, 4111, 2]
+// Dependencies: [31, 33, 4697, 8801, 1557, 477, 4145, 2]
 // Exports: default
 
-// Module 15504 (headerBackground)
+// Module 15543 (headerBackground)
 import result from "result";
 import { jsx } from "jsxProd";
 
 let require = arg1;
 function headerBackground(arg0) {
-  return jsx(importDefault(4663), { absolute: true, tall: true, wide: true });
+  return jsx(importDefault(4697), { absolute: true, tall: true, wide: true });
 }
 let closure_5 = { headerBackground: undefined, contentStyle: undefined };
 const result = require("getThemeMixColor").fileFinishedImporting("modules/client_themes/native/useThemedHeaderOptions.tsx");
 
 export default function useThemedHeaderOptions() {
-  const tmp = top(8757)();
+  const tmp = top(8801)();
   const require = tmp;
   top = top(1557)().top;
   const items = [top, tmp];

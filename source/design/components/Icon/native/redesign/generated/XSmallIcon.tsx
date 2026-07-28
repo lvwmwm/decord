@@ -1,10 +1,10 @@
-// Module ID: 5119
-// Function ID: 44411
+// Module ID: 5153
+// Function ID: 44526
 // Name: XSmallIcon
-// Dependencies: [31, 33, 689, 3834, 5120, 2]
+// Dependencies: [31, 33, 689, 3868, 5154, 2]
 // Exports: XSmallIcon
 
-// Module 5119 (XSmallIcon)
+// Module 5153 (XSmallIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const XSmallIcon = function XSmallIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(5120) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(5154) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(5120) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(5154) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

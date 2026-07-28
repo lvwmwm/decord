@@ -1,9 +1,9 @@
-// Module ID: 10028
-// Function ID: 77556
+// Module ID: 10068
+// Function ID: 77685
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4131, 689, 3977, 10029, 10030, 4127, 1212, 10031, 10032, 4661, 3843, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4165, 689, 4011, 10069, 10070, 4161, 1212, 10071, 10072, 4695, 3877, 2]
 
-// Module 10028 (_isNativeReflectConstruct)
+// Module 10068 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";

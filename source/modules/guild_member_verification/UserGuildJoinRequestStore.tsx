@@ -1,9 +1,9 @@
-// Module ID: 3949
-// Function ID: 32605
+// Module ID: 3983
+// Function ID: 32707
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 3950, 1387, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 3984, 1387, 566, 686, 2]
 
-// Module 3949 (_isNativeReflectConstruct)
+// Module 3983 (_isNativeReflectConstruct)
 import isActionedApplicationStatus from "isActionedApplicationStatus";
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -47,7 +47,7 @@ function handleGatewayJoinRequestUpdate(arg0) {
     } else {
       closure_9[guildId] = tmp2;
     }
-    obj = require(3950) /* isActionedApplicationStatus */;
+    obj = require(3984) /* isActionedApplicationStatus */;
   }
 }
 let c8 = null;
@@ -160,7 +160,7 @@ tmp2 = new tmp2(require("dispatcher"), {
       } else {
         closure_9[guildId] = tmp4;
       }
-      obj = require(3950) /* isActionedApplicationStatus */;
+      obj = require(3984) /* isActionedApplicationStatus */;
     } else {
       deleteJoinRequest(guildId);
     }

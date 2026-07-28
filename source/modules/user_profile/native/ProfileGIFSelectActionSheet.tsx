@@ -1,10 +1,10 @@
-// Module ID: 13645
-// Function ID: 104859
+// Module ID: 13689
+// Function ID: 105032
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [57, 5, 31, 27, 33, 4131, 689, 4694, 7890, 7883, 7880, 7882, 4099, 5187, 5186, 1212, 6570, 9531, 2]
+// Dependencies: [57, 5, 31, 27, 33, 4165, 689, 4728, 7926, 7919, 7916, 7918, 4133, 5221, 5220, 1212, 6606, 9571, 2]
 // Exports: default
 
-// Module 13645 (ProfileGIFSelectActionSheet)
+// Module 13689 (ProfileGIFSelectActionSheet)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import result from "result";
@@ -40,13 +40,13 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["xsC+/y"]);
-  obj.trailing = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, {});
+  obj.trailing = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, {});
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
-  obj = { style: tmp.gifPicker, children: callback(importDefault(9531), obj1) };
+  const items = [callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  obj = { style: tmp.gifPicker, children: callback(importDefault(9571), obj1) };
   items[1] = callback(View, obj);
   obj.children = items;
-  return callback2(require(5187) /* Background */.BottomSheet, obj);
+  return callback2(require(5221) /* Background */.BottomSheet, obj);
 };
 export const ProfileAssetType = obj1;
 export const GIFSelectionContext = obj2;

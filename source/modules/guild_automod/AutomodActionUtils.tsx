@@ -1,10 +1,10 @@
-// Module ID: 16304
-// Function ID: 126967
+// Module ID: 16343
+// Function ID: 127123
 // Name: getDefaultActions
-// Dependencies: [10991, 2]
+// Dependencies: [11029, 2]
 // Exports: getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled
 
-// Module 16304 (getDefaultActions)
+// Module 16343 (getDefaultActions)
 import { AutomodActionType } from "AutomodEventType";
 
 function getDefaultActions() {

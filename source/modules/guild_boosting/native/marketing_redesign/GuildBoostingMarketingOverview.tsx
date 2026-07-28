@@ -1,10 +1,10 @@
-// Module ID: 12571
-// Function ID: 97329
+// Module ID: 12614
+// Function ID: 97499
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [57, 31, 27, 1838, 1850, 653, 33, 4131, 12421, 566, 1456, 5462, 5450, 5820, 1868, 675, 686, 6244, 4452, 12572, 12573, 12580, 12585, 12593, 12598, 12602, 2]
+// Dependencies: [57, 31, 27, 1838, 1850, 653, 33, 4165, 12464, 566, 1456, 5497, 5485, 5830, 1868, 675, 686, 6280, 4486, 12615, 12616, 12623, 12628, 12636, 12641, 12645, 2]
 // Exports: default
 
-// Module 12571 (GuildBoostingMarketingOverview)
+// Module 12614 (GuildBoostingMarketingOverview)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";

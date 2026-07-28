@@ -1,10 +1,10 @@
-// Module ID: 11230
-// Function ID: 87352
+// Module ID: 11268
+// Function ID: 87471
 // Name: useFrecentApps
-// Dependencies: [31, 5067, 1850, 11231, 4156, 4567, 1882, 7962, 566, 5470, 8112, 11232, 7964, 7953, 11233, 2]
+// Dependencies: [31, 5101, 1850, 11269, 4190, 4601, 1882, 7999, 566, 5505, 8150, 11270, 8001, 7990, 11271, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11230 (useFrecentApps)
+// Module 11268 (useFrecentApps)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
@@ -168,7 +168,7 @@ export const useAppLauncherFrecentApps = function useAppLauncherFrecentApps(cont
   let onlyActivityApps;
   context = context.context;
   ({ onlyActivityApps, allowCommandFetch, includeAuthorizedAppsAndFetch } = context);
-  let obj = importAll(7962);
+  let obj = importAll(7999);
   obj = { context, filters: obj, options: obj, allowFetch: allowCommandFetch };
   const discovery = obj.useDiscovery(obj);
   obj = { loading: discovery.loading, frecentApps: useFrecentApps(obj1) };

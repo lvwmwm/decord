@@ -1,8 +1,8 @@
-// Module ID: 11332
-// Function ID: 88086
-// Dependencies: [31, 6039, 4469, 4468, 9242, 33, 566, 9606, 2]
+// Module ID: 11370
+// Function ID: 88205
+// Dependencies: [31, 6073, 4503, 4502, 9286, 33, 566, 9646, 2]
 
-// Module 11332
+// Module 11370
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DraftType } from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ const memoResult = require("result").memo(function ChatInputImageCarousel(canUpl
   let tmp3 = null;
   if (null != stateFromStores) {
     obj = { attachments: stateFromStores, channelId };
-    tmp3 = jsx(channelId(9606), { attachments: stateFromStores, channelId });
+    tmp3 = jsx(channelId(9646), { attachments: stateFromStores, channelId });
   }
   return tmp3;
 });

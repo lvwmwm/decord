@@ -1,9 +1,9 @@
-// Module ID: 4676
-// Function ID: 40750
+// Module ID: 4710
+// Function ID: 40865
 // Name: NativePermissionsRequestOptions
-// Dependencies: [4677, 4678, 4679, 4683, 2, 4680]
+// Dependencies: [4711, 4712, 4713, 4717, 2, 4714]
 
-// Module 4676 (NativePermissionsRequestOptions)
+// Module 4710 (NativePermissionsRequestOptions)
 import { ProcessArgs } from "ProcessArgs";
 import importDefaultResult from "_isNativeReflectConstruct";
 

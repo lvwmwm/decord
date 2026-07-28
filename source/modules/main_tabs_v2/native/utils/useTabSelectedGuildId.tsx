@@ -1,10 +1,10 @@
-// Module ID: 13677
-// Function ID: 105048
+// Module ID: 13721
+// Function ID: 105221
 // Name: useTabSelectedGuildId
-// Dependencies: [3948, 4971, 624, 2]
+// Dependencies: [3982, 5005, 624, 2]
 // Exports: default
 
-// Module 13677 (useTabSelectedGuildId)
+// Module 13721 (useTabSelectedGuildId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

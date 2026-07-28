@@ -1,10 +1,10 @@
-// Module ID: 14160
-// Function ID: 108859
+// Module ID: 14204
+// Function ID: 109032
 // Name: GuildRoleSubscriptionsSectionHeader
-// Dependencies: [31, 27, 33, 4131, 4127, 1212, 1273, 14161, 14162, 14163, 14166, 14167, 2]
+// Dependencies: [31, 27, 33, 4165, 4161, 1212, 1273, 14205, 14206, 14207, 14210, 14211, 2]
 // Exports: default
 
-// Module 14160 (GuildRoleSubscriptionsSectionHeader)
+// Module 14204 (GuildRoleSubscriptionsSectionHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,11 +21,11 @@ function GuildRoleSubscriptionsSectionHeader() {
   obj = { variant: "eyebrow", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   obj = { style: tmp.sectionSubtitle, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(require(1212) /* getSystemLocale */.t["Y+ucR7"]);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_3, obj);
 }
@@ -47,11 +47,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subs
 
 export default function UserSettingsGuildRoleSubscriptions() {
   const tmp = callback3();
-  importDefault(14161)({ forceRestore: true });
-  const tmp3 = importDefault(14162)({ ensureFresh: true });
-  let obj = require(14163) /* _createForOfIteratorHelperLoose */;
+  importDefault(14205)({ forceRestore: true });
+  const tmp3 = importDefault(14206)({ ensureFresh: true });
+  let obj = require(14207) /* _createForOfIteratorHelperLoose */;
   if (obj.useFetchListingsForSubscriptions(tmp3).loading) {
-    let tmp4Result = tmp4(importDefault(14166), {});
+    let tmp4Result = tmp4(importDefault(14210), {});
   } else {
     obj = { style: tmp.container };
     obj = {};

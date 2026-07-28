@@ -1,10 +1,10 @@
-// Module ID: 3986
-// Function ID: 33099
+// Module ID: 4020
+// Function ID: 33201
 // Name: calculateFromWidth
-// Dependencies: [3987, 2]
+// Dependencies: [4021, 2]
 // Exports: default, getWindowSizeClassifier
 
-// Module 3986 (calculateFromWidth)
+// Module 4020 (calculateFromWidth)
 function calculateFromWidth(width) {
   if (width <= 360) {
     let XLARGE = obj.SMALL;
@@ -21,9 +21,9 @@ const obj = { SMALL: 0, [0]: "SMALL", NORMAL: 1, [1]: "NORMAL", LARGE: 2, [2]: "
 const result = require("set").fileFinishedImporting("modules/screen/native/useWindowSizeClassifier.tsx");
 
 export default function useWindowSizeClassifier() {
-  return calculateFromWidth(importDefault(3987)().width);
+  return calculateFromWidth(importDefault(4021)().width);
 };
 export const WindowSizeClassifier = obj;
 export const getWindowSizeClassifier = function getWindowSizeClassifier() {
-  return calculateFromWidth(require(3987) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width);
+  return calculateFromWidth(require(4021) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width);
 };

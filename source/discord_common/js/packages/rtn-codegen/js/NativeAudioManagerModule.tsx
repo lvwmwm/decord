@@ -1,10 +1,10 @@
-// Module ID: 8768
-// Function ID: 69420
+// Module ID: 8812
+// Function ID: 69571
 // Name: enforcing
 // Dependencies: [27, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 8768 (enforcing)
+// Module 8812 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 let obj = { SPEAKERPHONE: "SPEAKERPHONE", WIRED_HEADSET: "WIRED_HEADSET", EARPIECE: "EARPIECE", BLUETOOTH_HEADSET: "BLUETOOTH_HEADSET", INVALID: "INVALID" };

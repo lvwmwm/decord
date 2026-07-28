@@ -1,10 +1,10 @@
-// Module ID: 6131
-// Function ID: 55001
+// Module ID: 6165
+// Function ID: 55120
 // Name: getIsPrivate
-// Dependencies: [57, 5, 31, 6013, 1194, 1348, 4469, 4350, 5918, 1211, 653, 4124, 5996, 5914, 6132, 1212, 6133, 21, 507, 6036, 6134, 5915, 1360, 4667, 6135, 6026, 4325, 5685, 4471, 686, 3977, 664, 5987, 12544, 2]
+// Dependencies: [57, 5, 31, 6047, 1194, 1348, 4503, 4384, 5952, 1211, 653, 4158, 6030, 5948, 6166, 1212, 6167, 21, 507, 6070, 6168, 5949, 1360, 4701, 6169, 6060, 4359, 5695, 4505, 686, 4011, 664, 6021, 12587, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 6131 (getIsPrivate)
+// Module 6165 (getIsPrivate)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
@@ -95,10 +95,10 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
     if (null != content) {
       str3 = content;
     }
-    const obj = importDefault(5914);
-    const str4 = importDefault(5914).unparse(str3, stateFromStores.id, true);
-    const tmp10 = importDefault(6132);
-    let str7 = importDefault(6132)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
+    const obj = importDefault(5948);
+    const str4 = importDefault(5948).unparse(str3, stateFromStores.id, true);
+    const tmp10 = importDefault(6166);
+    let str7 = importDefault(6166)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
     const items = [];
     const match = str7.match(/(?:\s|[!@#$%^&*()_\-+={}[\]:";'<>?,./])+/);
     while (null != match) {
@@ -186,7 +186,7 @@ let result = require("result").fileFinishedImporting("modules/threads/ThreadCrea
 
 export const PrivateThreadMode = obj;
 export const usePrivateThreadMode = function usePrivateThreadMode(parentChannel) {
-  const obj = require(5996) /* useCanStartPublicThread */;
+  const obj = require(6030) /* useCanStartPublicThread */;
   const canStartPublicThread = obj.useCanStartPublicThread(parentChannel);
   if (!obj2.useCanStartPrivateThread(parentChannel)) {
     return tmp2.Disabled;

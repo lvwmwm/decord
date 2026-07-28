@@ -1,10 +1,10 @@
-// Module ID: 11412
-// Function ID: 88707
+// Module ID: 11450
+// Function ID: 88826
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [31, 27, 1838, 4326, 4327, 33, 4131, 566, 5498, 5186, 5513, 1212, 7575, 1273, 11413, 5070, 4099, 11414, 11415, 5079, 5074, 2]
+// Dependencies: [31, 27, 1838, 4360, 4361, 33, 4165, 566, 5533, 5220, 5548, 1212, 7611, 1273, 11451, 5104, 4133, 11452, 11453, 5113, 5108, 2]
 // Exports: default
 
-// Module 11412 (UpcomingEventsLongPressActionSheet)
+// Module 11450 (UpcomingEventsLongPressActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -35,31 +35,31 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   const tmp = callback2();
   const tmp4 = closure_8;
   const tmp6 = stateFromStores1;
-  obj2.size = guildId(5513).GuildIconSizes.LARGE;
-  obj1.children = callback(stateFromStores1(5513), obj2);
+  obj2.size = guildId(5548).GuildIconSizes.LARGE;
+  obj1.children = callback(stateFromStores1(5548), obj2);
   obj.leading = callback(View, obj1);
   const intl = guildId(1212).intl;
   obj.title = intl.string(guildId(1212).t.tlopTM);
-  const items2 = [callback(guildId(5186).BottomSheetTitleHeader, obj), , ];
+  const items2 = [callback(guildId(5220).BottomSheetTitleHeader, obj), , ];
   const obj3 = {};
-  const obj4 = { source: stateFromStores1(11413) };
+  const obj4 = { source: stateFromStores1(11451) };
   obj3.leading = callback(guildId(1273).Icon, obj4);
   const obj5 = {};
   const intl2 = guildId(1212).intl;
   obj5.text = intl2.string(guildId(1212).t.e6RscS);
-  obj3.label = callback(guildId(7575).FormLabel, obj5);
+  obj3.label = callback(guildId(7611).FormLabel, obj5);
   obj3.onPress = function onPress() {
     guildId(outer1_2[15]).ackGuildFeature(guildId, outer1_6.GUILD_EVENT);
     const obj = guildId(outer1_2[15]);
     stateFromStores1(outer1_2[16]).hideActionSheet();
   };
-  items2[1] = callback(guildId(7575).FormRow, obj3);
+  items2[1] = callback(guildId(7611).FormRow, obj3);
   const obj6 = {};
   const obj7 = {};
   if (stateFromStores1) {
-    let tmp9 = 11414;
+    let tmp9 = 11452;
   } else {
-    tmp9 = 11415;
+    tmp9 = 11453;
   }
   obj7.source = tmp6(tmp9);
   obj6.leading = callback(guildId(1273).Icon, obj7);
@@ -73,14 +73,14 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
     stringResult = string(t.ONG3Yz);
   }
   obj8.text = stringResult;
-  obj6.label = callback(guildId(7575).FormLabel, obj8);
+  obj6.label = callback(guildId(7611).FormLabel, obj8);
   obj6.onPress = function onPress() {
     let obj = stateFromStores1(outer1_2[19]);
     obj = { mute_scheduled_events: !stateFromStores1 };
     const NotificationLabel = guildId(outer1_2[20]).NotificationLabel;
     const result = obj.updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
   };
-  items2[2] = callback(guildId(7575).FormRow, obj6);
+  items2[2] = callback(guildId(7611).FormRow, obj6);
   obj.children = items2;
-  return tmp4(guildId(5498).ActionSheet, obj);
+  return tmp4(guildId(5533).ActionSheet, obj);
 };

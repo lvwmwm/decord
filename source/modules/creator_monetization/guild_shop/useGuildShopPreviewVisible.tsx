@@ -1,10 +1,10 @@
-// Module ID: 12560
-// Function ID: 97275
+// Module ID: 12603
+// Function ID: 97445
 // Name: useGuildShopPreviewVisible
-// Dependencies: [3759, 653, 3947, 1334, 624, 12555, 2]
+// Dependencies: [3793, 653, 3981, 1334, 624, 12598, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 12560 (useGuildShopPreviewVisible)
+// Module 12603 (useGuildShopPreviewVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -16,8 +16,8 @@ let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporti
 
 export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(features) {
   const _require = features;
-  const result = _require(3947).useIsDismissibleContentDismissed_UNSAFE(_require(1334).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
-  const obj = _require(3947);
+  const result = _require(3981).useIsDismissibleContentDismissed_UNSAFE(_require(1334).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
+  const obj = _require(3981);
   const items = [_isNativeReflectConstruct];
   let hasItem;
   const stateFromStores = _require(624).useStateFromStores(items, () => {
@@ -39,9 +39,9 @@ export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(fe
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants);
-  const guildEligibleForGuildProducts = _require(12555).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = _require(12598).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const obj3 = _require(12555);
+  const obj3 = _require(12598);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

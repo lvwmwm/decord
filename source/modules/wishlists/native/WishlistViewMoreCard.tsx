@@ -1,10 +1,10 @@
-// Module ID: 9714
-// Function ID: 75708
+// Module ID: 9754
+// Function ID: 75837
 // Name: WishlistViewMoreCard
-// Dependencies: [31, 27, 33, 4131, 689, 1212, 9709, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1212, 9749, 4161, 2]
 // Exports: default
 
-// Module 9714 (WishlistViewMoreCard)
+// Module 9754 (WishlistViewMoreCard)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,12 +41,12 @@ export default function WishlistViewMoreCard(recipientName) {
   let obj = { onPress };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["8uYD+I"], { username: recipientName });
-  const items = [callback(importDefault(9709), { accessibilityHidden: true, sku, size, recipientName }), ];
+  const items = [callback(importDefault(9749), { accessibilityHidden: true, sku, size, recipientName }), ];
   obj = { style: callback3().moreOverlay };
   obj = { variant: "text-md/semibold", color: "text-overlay-light" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.format(require(1212) /* getSystemLocale */.t.F6iMs4, { count: overflowCount });
-  obj.children = callback(require(4127) /* Text */.Text, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
   items[1] = callback(closure_5, obj);
   obj.children = items;
   return callback2(closure_3, obj);

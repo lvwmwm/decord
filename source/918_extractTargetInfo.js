@@ -1,5 +1,5 @@
 // Module ID: 918
-// Function ID: 10056
+// Function ID: 10060
 // Name: extractTargetInfo
 // Dependencies: [57, 77, 916]
 // Exports: extractTargetInfo, getRequestArguments

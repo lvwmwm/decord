@@ -1,10 +1,10 @@
-// Module ID: 10276
-// Function ID: 79441
+// Module ID: 10316
+// Function ID: 79570
 // Name: LocationText
-// Dependencies: [31, 27, 4123, 3768, 1850, 33, 4131, 689, 4127, 4321, 669, 4630, 4632, 4594, 566, 4661, 1212, 5119, 2]
+// Dependencies: [31, 27, 4157, 3802, 1850, 33, 4165, 689, 4161, 4355, 669, 4664, 4666, 4628, 566, 4695, 1212, 5153, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10276 (LocationText)
+// Module 10316 (LocationText)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -107,7 +107,7 @@ export default function MessageNotificationHeader(arg0) {
     const tmp4 = obj;
   }
   ({ channel: channel2, parentChannel: parentChannel2, guild: guild2 } = { channel, parentChannel, guild });
-  let obj2 = onDismiss(4321);
+  let obj2 = onDismiss(4355);
   const channelName = obj2.computeChannelName(channel2, closure_6, closure_5);
   const type = channel2.type;
   let tmp6 = channelName;
@@ -122,7 +122,7 @@ export default function MessageNotificationHeader(arg0) {
           }
           let channelName1 = null;
           if (null != parentChannel2) {
-            let obj3 = onDismiss(4321);
+            let obj3 = onDismiss(4355);
             channelName1 = obj3.computeChannelName(parentChannel2, closure_6, closure_5);
           }
           if (null != channelName1) {
@@ -154,7 +154,7 @@ export default function MessageNotificationHeader(arg0) {
     const items1 = [tmp.primaryText, tmp4];
     obj2.style = items1;
     obj2.children = author.nick;
-    tmp25 = callback(onDismiss(4127).Text, obj2);
+    tmp25 = callback(onDismiss(4161).Text, obj2);
   }
   const items2 = [tmp25, ];
   let tmp29 = null != tmp6;
@@ -178,8 +178,8 @@ export default function MessageNotificationHeader(arg0) {
       return onDismiss("close_from_expanded");
     };
     const obj5 = { color: "icon-subtle", style: { height: 20, width: 20 } };
-    obj4.children = callback(onDismiss(5119).XSmallIcon, obj5);
-    expanded = callback(onDismiss(4661).PressableOpacity, obj4);
+    obj4.children = callback(onDismiss(5153).XSmallIcon, obj5);
+    expanded = callback(onDismiss(4695).PressableOpacity, obj4);
   }
   items3[1] = expanded;
   obj.children = items3;
@@ -196,14 +196,14 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   const items = [tmp.primaryText, labelStyle];
   obj.style = items;
   obj.children = text;
-  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
   let tmp4 = null != secondaryText;
   if (tmp4) {
     obj = { style: tmp.secondaryTextContainer };
     const obj1 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    const items2 = [callback(require(4127) /* Text */.Text, obj1), ];
+    const items2 = [callback(require(4161) /* Text */.Text, obj1), ];
     const obj2 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
-    items2[1] = callback(require(4127) /* Text */.Text, obj2);
+    items2[1] = callback(require(4161) /* Text */.Text, obj2);
     obj.children = items2;
     tmp4 = callback2(View, obj);
   }

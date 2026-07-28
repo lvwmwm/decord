@@ -1,9 +1,9 @@
-// Module ID: 4944
-// Function ID: 42381
+// Module ID: 4978
+// Function ID: 42496
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 4192, 477, 3804, 664, 686, 3742, 4945, 574, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 4226, 477, 3838, 664, 686, 3776, 4979, 574, 566, 2]
 
-// Module 4944 (_isNativeReflectConstruct)
+// Module 4978 (_isNativeReflectConstruct)
 import closure_3 from "ME";
 import DesktopSources from "DesktopSources";
 import initialize from "initialize";
@@ -45,7 +45,7 @@ function checkIdleAFK() {
         obj.dispatch({ type: "IDLE", idle: false });
       }
     }
-    const AfkTimeout = require(3804) /* explicitContentFromProto */.AfkTimeout;
+    const AfkTimeout = require(3838) /* explicitContentFromProto */.AfkTimeout;
     const setting = AfkTimeout.getSetting();
     if (0 !== setting) {
       if (null == closure_12) {
@@ -132,14 +132,14 @@ if (require("set").isPlatformEmbedded) {
         const timerId = setTimeout(outer1_24, 10 * outer1_1(outer1_2[10]).Millis.SECOND);
       }
       let getSystemIdleTimeMs;
-      if (null != importDefault(3742)) {
-        const powerMonitor = importDefault(3742).powerMonitor;
+      if (null != importDefault(3776)) {
+        const powerMonitor = importDefault(3776).powerMonitor;
         if (null != powerMonitor) {
           getSystemIdleTimeMs = powerMonitor.getSystemIdleTimeMs;
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = importDefault(3742).powerMonitor;
+        const powerMonitor2 = importDefault(3776).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(handleIdleTime);
@@ -158,7 +158,7 @@ if (require("set").isPlatformEmbedded) {
     powerMonitor2.on("suspend", () => {
       let c16 = true;
       handlePowerEvent(true);
-      importDefault(4945).disconnect();
+      importDefault(4979).disconnect();
     });
     const powerMonitor3 = require("set").powerMonitor;
     powerMonitor3.on("lock-screen", () => {

@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 91874
+// Module ID: 11898
+// Function ID: 92044
 // Name: Spacer
-// Dependencies: [31, 27, 33, 689, 4131, 8408, 8418, 8412, 1212, 4127, 8444, 11856, 1450, 6619, 2]
+// Dependencies: [31, 27, 33, 689, 4165, 8452, 8462, 8456, 1212, 4161, 8488, 11899, 1450, 6655, 2]
 // Exports: default
 
-// Module 11855 (Spacer)
+// Module 11898 (Spacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -117,10 +117,10 @@ export default function GameProfileSimilarGames(trackAction) {
   trackAction = trackAction.trackAction;
   let importDefault;
   const tmp = _createForOfIteratorHelperLoose();
-  const GameProfileSimilarGamesMobileExperiment = trackAction(8444).GameProfileSimilarGamesMobileExperiment;
+  const GameProfileSimilarGamesMobileExperiment = trackAction(8488).GameProfileSimilarGamesMobileExperiment;
   const config = GameProfileSimilarGamesMobileExperiment.useConfig({ location: "GameProfileSimilarGames" });
   ({ enabled, dense } = config);
-  const tmp3 = importDefault(11856)(trackAction.gameId, enabled);
+  const tmp3 = importDefault(11899)(trackAction.gameId, enabled);
   const similarGames = tmp3.similarGames;
   let num = 3;
   if (dense) {
@@ -135,7 +135,7 @@ export default function GameProfileSimilarGames(trackAction) {
     obj = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary" };
     const intl = trackAction(1212).intl;
     obj.children = intl.string(trackAction(1212).t["6rLyQB"]);
-    obj.children = callback(trackAction(4127).Text, obj);
+    obj.children = callback(trackAction(4161).Text, obj);
     const items = [callback(closure_6, obj), ];
     const obj1 = {
       horizontal: true,
@@ -148,7 +148,7 @@ export default function GameProfileSimilarGames(trackAction) {
       ListHeaderComponent: ListPadding,
       ListFooterComponent: ListPadding
     };
-    items[1] = callback(trackAction(6619).FlashList, obj1);
+    items[1] = callback(trackAction(6655).FlashList, obj1);
     obj.children = items;
     let tmp6 = callback2(closure_6, obj);
   } else {
@@ -159,7 +159,7 @@ export default function GameProfileSimilarGames(trackAction) {
       const obj4 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary" };
       const intl2 = trackAction(1212).intl;
       obj4.children = intl2.string(trackAction(1212).t["6rLyQB"]);
-      obj3.children = callback(trackAction(4127).Text, obj4);
+      obj3.children = callback(trackAction(4161).Text, obj4);
       const items1 = [callback(closure_6, obj3), ];
       const obj5 = {
         horizontal: true,
@@ -174,7 +174,7 @@ export default function GameProfileSimilarGames(trackAction) {
         decelerationRate: "fast",
         snapToInterval: result + PX_12
       };
-      items1[1] = callback(trackAction(6619).FlashList, obj5);
+      items1[1] = callback(trackAction(6655).FlashList, obj5);
       obj2.children = items1;
       tmp6 = callback2(closure_6, obj2);
     }

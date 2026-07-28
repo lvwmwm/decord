@@ -1,10 +1,10 @@
-// Module ID: 10509
-// Function ID: 81454
+// Module ID: 10547
+// Function ID: 81575
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4149, 686, 664, 22, 10510, 3977, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4183, 686, 664, 22, 10548, 4011, 566, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 10509 (_isNativeReflectConstruct)
+// Module 10547 (_isNativeReflectConstruct)
 import dispatcher from "dispatcher";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -29,8 +29,8 @@ let closure_12 = [];
 let closure_13 = [];
 let closure_14 = 10 * require("set").Millis.SECOND;
 let closure_15 = apply.debounce(() => {
-  const effectAnnouncement = require(10510) /* getUniqueListFromMetadata */.getEffectAnnouncement(closure_12);
-  const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const effectAnnouncement = require(10548) /* getUniqueListFromMetadata */.getEffectAnnouncement(closure_12);
+  const AccessibilityAnnouncer = require(4011) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(effectAnnouncement, "polite");
   closure_12 = [];
 }, 500);

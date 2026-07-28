@@ -1,30 +1,25 @@
 // Module ID: 8565
-// Function ID: 68052
+// Function ID: 67953
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 8471, 8479, 8485, 8478, 8566, 8562, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 8546]
 
 // Module 8565 (_isNativeReflectConstruct)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import result from "result";
-import jsxProd from "jsxProd";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
+import tmp2 from "_isNativeReflectConstruct";
 
-const require = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classCallCheck;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = ["children", "xlinkHref", "href", "startOffset", "method", "spacing", "side", "alignmentBaseline", "midLine"];
-tmp3.displayName = "TextPath";
+tmp2.displayName = "FeMergeNode";
 
-export default tmp3;
+export default tmp2;

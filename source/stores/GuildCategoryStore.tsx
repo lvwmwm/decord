@@ -1,9 +1,9 @@
-// Module ID: 5071
-// Function ID: 44053
+// Module ID: 5105
+// Function ID: 44168
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1351, 1194, 1348, 1908, 1838, 653, 5072, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1351, 1194, 1348, 1908, 1838, 653, 5106, 566, 686, 2]
 
-// Module 5071 (_isNativeReflectConstruct)
+// Module 5105 (_isNativeReflectConstruct)
 import closure_2 from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -135,7 +135,7 @@ function rebuildGuild(arg0) {
   });
   const item1 = channels[closure_10].forEach(updateChannel);
   const item2 = channels[closure_11].forEach(updateChannel);
-  const item3 = obj(5072)(obj._categories, obj).forEach(setIndex);
+  const item3 = obj(5106)(obj._categories, obj).forEach(setIndex);
   closure_17[arg0] = obj;
   return obj;
 }

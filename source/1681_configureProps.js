@@ -1,5 +1,5 @@
 // Module ID: 1681
-// Function ID: 18634
+// Function ID: 18638
 // Name: configureProps
 // Dependencies: [1585, 1595, 1593, 1626, 1586]
 // Exports: adaptViewConfig, addWhitelistedNativeProps, configureReanimatedLogger

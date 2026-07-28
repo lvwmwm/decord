@@ -1,10 +1,10 @@
-// Module ID: 12973
-// Function ID: 100636
+// Module ID: 13017
+// Function ID: 100809
 // Name: _sendShareMessage
-// Dependencies: [5, 4469, 4124, 3832, 9243, 6134, 6036, 4666, 4665, 5914, 5672, 5685, 2]
+// Dependencies: [5, 4503, 4158, 3866, 9287, 6168, 6070, 4700, 4699, 5948, 5682, 5695, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 12973 (_sendShareMessage)
+// Module 13017 (_sendShareMessage)
 import dispatcher from "dispatcher";
 import { DraftType } from "_isNativeReflectConstruct";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
@@ -18,8 +18,8 @@ function _sendShareMessage() {
 const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/share/native/ShareUtils.tsx");
 
 export const showInformationToast = function showInformationToast(intl3) {
-  let obj = importDefault(3832);
-  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(9243) };
+  let obj = importDefault(3866);
+  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(9287) };
   obj.open(obj);
 };
 export const sendShareMessage = function sendShareMessage(arg0) {

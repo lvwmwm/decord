@@ -1,9 +1,9 @@
-// Module ID: 4127
-// Function ID: 34335
+// Module ID: 4161
+// Function ID: 34437
 // Name: Text
-// Dependencies: [31, 27, 482, 33, 3992, 689, 22, 4128, 4129, 4131, 290, 4136, 2]
+// Dependencies: [31, 27, 482, 33, 4026, 689, 22, 4162, 4163, 4165, 290, 4170, 2]
 
-// Module 4127 (Text)
+// Module 4161 (Text)
 import importAllResult from "result";
 import { Text } from "get ActivityIndicator";
 import { Fonts } from "sum";
@@ -11,10 +11,10 @@ import { jsx } from "jsxProd";
 import { TextVariantsFlat } from "TEXT_VARIANT";
 import useManaTextMigrationHighlight from "useManaTextMigrationHighlight";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 const require = arg1;
-let closure_5 = require("module_3992").createAnimatedComponent(Text);
+let closure_5 = require("module_4026").createAnimatedComponent(Text);
 const keys = Object.keys(require("_createForOfIteratorHelperLoose").colors);
 let closure_6 = Object.fromEntries(keys.map((arg0) => {
   const items = [importDefault(22).kebabCase(arg0), arg0];
@@ -108,11 +108,11 @@ const forwardRefResult = importAllResult.forwardRef((animated, ref) => {
   }
   const tmp3 = closure_12;
   const tmp3Result = closure_12(str, tabularNumbers);
-  const typographyVariantRemap = require(4136) /* useTypographyVariantRemap */.useTypographyVariantRemap(variant, false);
-  const obj2 = require(4136) /* useTypographyVariantRemap */;
+  const typographyVariantRemap = require(4170) /* useTypographyVariantRemap */.useTypographyVariantRemap(variant, false);
+  const obj2 = require(4170) /* useTypographyVariantRemap */;
   obj = {};
   const items = [dependencyMap[typographyVariantRemap], tmp3Result.text, , ];
-  const manaTextMigrationHighlight = require(4129) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
+  const manaTextMigrationHighlight = require(4163) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
   if (includeFontPadding) {
     obj = { includeFontPadding };
     const items1 = [obj];
@@ -136,7 +136,7 @@ const forwardRefResult = importAllResult.forwardRef((animated, ref) => {
   return <NativeText />;
 });
 const forwardRefResult1 = importAllResult.forwardRef((variant, ref) => {
-  let obj = require(4136) /* useTypographyVariantRemap */;
+  let obj = require(4170) /* useTypographyVariantRemap */;
   obj = { ref };
   const typographyVariantRemap = obj.useTypographyVariantRemap(variant.variant, true);
   const merged = Object.assign(variant);

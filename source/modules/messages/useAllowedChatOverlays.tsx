@@ -1,10 +1,10 @@
-// Module ID: 10401
-// Function ID: 80246
+// Module ID: 10441
+// Function ID: 80375
 // Name: ChatOverlays
-// Dependencies: [1347, 1348, 10399, 5660, 624, 3749, 10402, 2]
+// Dependencies: [1347, 1348, 10439, 5670, 624, 3783, 10442, 2]
 // Exports: default
 
-// Module 10401 (ChatOverlays)
+// Module 10441 (ChatOverlays)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChatOverlays } from "ChatOverlays";
@@ -30,12 +30,12 @@ export default function useAllowedChatOverlays() {
   const obj = require(624) /* defaultAreStatesEqual */;
   const items1 = [_createForOfIteratorHelperLoose];
   const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_3.getActivityPanelMode());
-  require(3749) /* getEmbeddedActivityLocationChannelId */;
+  require(3783) /* getEmbeddedActivityLocationChannelId */;
   if (null != stateFromStores) {
     const _location = stateFromStores.location;
   }
   if (undefined !== stateFromStores) {
-    if (!importDefault(10402)(tmp4, _isNativeReflectConstruct)) {
+    if (!importDefault(10442)(tmp4, _isNativeReflectConstruct)) {
       no_text_activity = no_text_activity[stateFromStores1];
     }
     return no_text_activity;

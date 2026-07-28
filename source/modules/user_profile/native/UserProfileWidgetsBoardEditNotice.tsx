@@ -1,10 +1,10 @@
-// Module ID: 11990
-// Function ID: 92683
+// Module ID: 12033
+// Function ID: 92853
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [31, 27, 1345, 33, 4131, 689, 8017, 1324, 9602, 1334, 4087, 4127, 1212, 4661, 5119, 2]
+// Dependencies: [31, 27, 1345, 33, 4165, 689, 8055, 1324, 9642, 1334, 4121, 4161, 1212, 4695, 5153, 2]
 // Exports: default
 
-// Module 11990 (UserProfileWidgetsBoardEditNotice)
+// Module 12033 (UserProfileWidgetsBoardEditNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -26,7 +26,7 @@ const result = require("ContentDismissActionType").fileFinishedImporting("module
 
 export default function UserProfileWidgetsBoardEditNotice() {
   const _require = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(8017)();
+  importDefault = importDefault(8055)();
   const dependencyMap = importDefault(1324)("UserProfileWidgetsBoardEditNotice");
   let obj = {};
   let items = [_require(1334).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
@@ -41,7 +41,7 @@ export default function UserProfileWidgetsBoardEditNotice() {
       obj.style = items;
       obj = { style: markAsDismissed.icon };
       const obj1 = { size: "xs", color: lib(689).colors.TEXT_MUTED };
-      obj.children = outer1_5(callback(4087).CircleInformationIcon, obj1);
+      obj.children = outer1_5(callback(4121).CircleInformationIcon, obj1);
       const items1 = [outer1_5(outer1_3, obj), , ];
       const obj2 = { style: markAsDismissed.text };
       let str = "text-sm/semibold";
@@ -56,7 +56,7 @@ export default function UserProfileWidgetsBoardEditNotice() {
       obj2.color = str2;
       const intl = callback(1212).intl;
       obj2.children = intl.string(callback(1212).t.kv8ULD);
-      items1[1] = outer1_5(callback(4127).Text, obj2);
+      items1[1] = outer1_5(callback(4161).Text, obj2);
       obj = { accessibilityRole: "button" };
       const intl2 = callback(1212).intl;
       obj.accessibilityLabel = intl2.string(callback(1212).t.WAI6xu);
@@ -65,8 +65,8 @@ export default function UserProfileWidgetsBoardEditNotice() {
       };
       obj.style = markAsDismissed.closeButton;
       const obj3 = { size: "sm" };
-      obj.children = outer1_5(callback(5119).XSmallIcon, obj3);
-      items1[2] = outer1_5(callback(4661).PressableOpacity, obj);
+      obj.children = outer1_5(callback(5153).XSmallIcon, obj3);
+      items1[2] = outer1_5(callback(4695).PressableOpacity, obj);
       obj.children = items1;
       tmp = outer1_6(outer1_3, obj);
       const tmp11 = outer1_5;
@@ -75,5 +75,5 @@ export default function UserProfileWidgetsBoardEditNotice() {
     }
     return tmp;
   };
-  return callback(importDefault(9602), obj);
+  return callback(importDefault(9642), obj);
 };

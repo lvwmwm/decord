@@ -1,9 +1,9 @@
-// Module ID: 4281
-// Function ID: 37469
+// Module ID: 4315
+// Function ID: 37581
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 4192, 4278, 4282, 4283, 4239, 4284, 4298, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 4226, 4312, 4316, 4317, 4273, 4318, 4332, 2]
 
-// Module 4281 (_isNativeReflectConstruct)
+// Module 4315 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import closure_4 from "DesktopSources";
 import WantsVideoQuality from "WantsVideoQuality";

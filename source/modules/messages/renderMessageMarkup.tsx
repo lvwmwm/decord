@@ -1,10 +1,10 @@
-// Module ID: 7817
-// Function ID: 62040
+// Module ID: 7853
+// Function ID: 62130
 // Name: getInitialParserStateFromMessage
-// Dependencies: [7818, 4121, 2]
+// Dependencies: [7854, 4155, 2]
 // Exports: default, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 7817 (getInitialParserStateFromMessage)
+// Module 7853 (getInitialParserStateFromMessage)
 function getInitialParserStateFromMessage(message, closure_7) {
   let mentionGames;
   let obj = { channelId: message.channel_id, messageId: message.id };
@@ -96,7 +96,7 @@ export default function renderMessageMarkup(arg0) {
   if (arg1 === undefined) {
     obj = {};
   }
-  const tmp2 = importDefault(4121);
+  const tmp2 = importDefault(4155);
   return render(obj.formatInline ? tmp2.parseInlineReply : tmp2.parse, arg0, obj);
 };
 export { getInitialParserStateFromMessage };
@@ -113,7 +113,7 @@ export const renderMessageMarkupToAST = function renderMessageMarkupToAST(messag
   if (arg1 === undefined) {
     obj = {};
   }
-  const tmp2 = importDefault(4121);
+  const tmp2 = importDefault(4155);
   obj = {};
   const merged = Object.assign(obj);
   obj["toAST"] = true;
@@ -151,8 +151,8 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
   })(notifCenterV2MessagePreviewParser, arg1, obj);
 };
 export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
-  return renderAutomodMessageMarkupWithParser(importDefault(4121).parseAutoModerationSystemMessage, arg0, highlightWord, channelId);
+  return renderAutomodMessageMarkupWithParser(importDefault(4155).parseAutoModerationSystemMessage, arg0, highlightWord, channelId);
 };
 export const renderAutomodMessageMarkupToAST = function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
-  return renderAutomodMessageMarkupWithParser(importDefault(4121).parseAutoModerationSystemMessageToAST, arg0, highlightWord, channelId);
+  return renderAutomodMessageMarkupWithParser(importDefault(4155).parseAutoModerationSystemMessageToAST, arg0, highlightWord, channelId);
 };

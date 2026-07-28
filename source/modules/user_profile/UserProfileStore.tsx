@@ -1,14 +1,14 @@
-// Module ID: 5630
-// Function ID: 48067
+// Module ID: 5878
+// Function ID: 51560
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1922, 1858, 1194, 1838, 1196, 4218, 4971, 653, 5631, 22, 5632, 5650, 4016, 1877, 1829, 5651, 1212, 5652, 4815, 1327, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1922, 1858, 1194, 1838, 1196, 4252, 5005, 653, 5879, 22, 5880, 5899, 5886, 4050, 1877, 1829, 5900, 1212, 5901, 4849, 1327, 2]
 
-// Module 5630 (_isNativeReflectConstruct)
+// Module 5878 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import items from "items";
+import stripUploadDataUri from "stripUploadDataUri";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import CollectiblesItemType from "CollectiblesItemType";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
@@ -110,26 +110,37 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function createUserWidgetFromServer(data) {
   const type = data.data.type;
-  if (require(5631) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
-    if (require(5631) /* WidgetType */.WidgetType.FAVORITE_GAMES !== type) {
-      if (require(5631) /* WidgetType */.WidgetType.PLAYED_GAMES !== type) {
-        if (require(5631) /* WidgetType */.WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (require(5631) /* WidgetType */.WidgetType.APPLICATION === type) {
-            const ApplicationWidget = require(5650) /* ApplicationWidget */.ApplicationWidget;
-            let obj = { id: data.id, applicationId: data.data.application_id };
+  if (require(5879) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (require(5879) /* WidgetType */.WidgetType.FAVORITE_GAMES !== type) {
+      if (require(5879) /* WidgetType */.WidgetType.PLAYED_GAMES !== type) {
+        if (require(5879) /* WidgetType */.WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (require(5879) /* WidgetType */.WidgetType.APPLICATION === type) {
+            const ApplicationWidget = require(5899) /* ApplicationWidget */.ApplicationWidget;
+            let obj = { id: tmp.id, applicationId: tmp.data.application_id };
             const prototype = ApplicationWidget.prototype;
             const applicationWidget = new ApplicationWidget(obj);
             return applicationWidget;
+          } else if (require(5879) /* WidgetType */.WidgetType.PERSONAL === type) {
+            if (null != tmp.data.title) {
+              const _JSON = JSON;
+              const parsed = JSON.parse(tmp.data.title);
+              const UserProfilePersonalWidget = require(5886) /* stripUploadDataUri */.UserProfilePersonalWidget;
+              obj = { id: tmp.id };
+              ({ header: obj4.header, top: obj4.top, bottom: obj4.bottom } = parsed);
+              const prototype2 = UserProfilePersonalWidget.prototype;
+              const userProfilePersonalWidget = new UserProfilePersonalWidget(obj);
+              return userProfilePersonalWidget;
+            }
           }
         }
       }
     }
   }
-  const games = data.data.games;
+  const games = tmp.data.games;
   const mapped = games.map((applicationId) => ({ applicationId: applicationId.game_id, comment: applicationId.comment, tags: applicationId.tags }));
   const obj2 = importDefault(22);
-  obj = { id: data.id, type, games: importDefault(22).uniqBy(mapped, "applicationId") };
-  const baseGameWidget = new require(5632) /* items */.BaseGameWidget(obj);
+  obj = { id: tmp.id, type, games: importDefault(22).uniqBy(mapped, "applicationId") };
+  const baseGameWidget = new require(5880) /* items */.BaseGameWidget(obj);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -177,7 +188,7 @@ function checkUserProfileCollectiblesExpiration(id, guild_id) {
             } else {
               let skuId = outer1_20[id];
               skuId = expiresAt.skuId;
-              const Timeout = id(value1[17]).Timeout;
+              const Timeout = id(value1[18]).Timeout;
               const prototype = Timeout.prototype;
               const timeout = new Timeout();
               skuId[null != closure_1 ? closure_1 : outer1_15][skuId] = timeout;
@@ -192,9 +203,9 @@ function checkUserProfileCollectiblesExpiration(id, guild_id) {
       const collectibles2 = value1.collectibles;
       value1.collectibles = collectibles2.filter((arg0) => !items.includes(arg0));
       const item1 = items.forEach((type) => {
-        if (type.type === id(value1[18]).CollectiblesItemType.PROFILE_EFFECT) {
+        if (type.type === id(value1[19]).CollectiblesItemType.PROFILE_EFFECT) {
           value1.profileEffect = undefined;
-        } else if (type.type === id(value1[18]).CollectiblesItemType.PROFILE_FRAME) {
+        } else if (type.type === id(value1[19]).CollectiblesItemType.PROFILE_FRAME) {
           value1.profileFrame = undefined;
         }
         if (null == outer1_20[id]) {
@@ -240,8 +251,8 @@ function getMutualFriends(id) {
     let obj = { key: id.id };
     obj = {};
     const merged = Object.assign(id);
-    obj["collectibles"] = outer1_0(outer1_2[19]).parseServerUserCollectibles(id.collectibles);
-    const obj3 = outer1_0(outer1_2[19]);
+    obj["collectibles"] = outer1_0(outer1_2[20]).parseServerUserCollectibles(id.collectibles);
+    const obj3 = outer1_0(outer1_2[20]);
     obj.user = new outer1_9(obj);
     obj.status = outer1_12.getStatus(id.id);
     return obj;
@@ -318,17 +329,17 @@ function handleProfileFetch(arg0) {
   if (null != userProfile.badges) {
     const badges = userProfile.badges;
     let mapped = badges.map((id) => {
-      let obj = dependencyMap(date1[20]);
+      let obj = dependencyMap(date1[21]);
       const tieredTenureBadgeData = obj.getTieredTenureBadgeData(id.id);
       if ("premium" === id.id) {
         if (null != date) {
-          const intl2 = dependencyMap(date1[21]).intl;
+          const intl2 = dependencyMap(date1[22]).intl;
           obj = { date };
-          let formatToPlainStringResult = intl2.formatToPlainString(dependencyMap(date1[21]).t["8zbGNR"], obj);
+          let formatToPlainStringResult = intl2.formatToPlainString(dependencyMap(date1[22]).t["8zbGNR"], obj);
           if (null != tieredTenureBadgeData) {
-            const intl3 = dependencyMap(date1[21]).intl;
+            const intl3 = dependencyMap(date1[22]).intl;
             obj = { date };
-            formatToPlainStringResult = intl3.formatToPlainString(dependencyMap(date1[21]).t.Hu4jfi, obj);
+            formatToPlainStringResult = intl3.formatToPlainString(dependencyMap(date1[22]).t.Hu4jfi, obj);
           }
           const obj1 = {};
           const merged = Object.assign(id);
@@ -343,9 +354,9 @@ function handleProfileFetch(arg0) {
         if (null != date1) {
           const obj2 = {};
           const merged1 = Object.assign(id);
-          const intl = dependencyMap(date1[21]).intl;
+          const intl = dependencyMap(date1[22]).intl;
           const obj3 = { date: date1 };
-          obj2["description"] = intl.formatToPlainString(dependencyMap(date1[21]).t.IWkAq7, obj3);
+          obj2["description"] = intl.formatToPlainString(dependencyMap(date1[22]).t.IWkAq7, obj3);
           tmp5 = obj2;
         }
       }
@@ -368,7 +379,7 @@ function handleProfileFetch(arg0) {
   }
   const timestamp = Date.now();
   let obj = {};
-  let merged = Object.assign(date(date1[22])(userProfile.user_profile));
+  let merged = Object.assign(date(date1[23])(userProfile.user_profile));
   obj["userId"] = userProfile.user.id;
   const user_profile = userProfile.user_profile;
   let banner;
@@ -415,7 +426,7 @@ function handleProfileFetch(arg0) {
   }
   obj["pronouns"] = str;
   const connected_accounts = userProfile.connected_accounts;
-  let found1 = connected_accounts.filter((type) => date(date1[23]).isSupported(type.type));
+  let found1 = connected_accounts.filter((type) => date(date1[24]).isSupported(type.type));
   if (null == found1) {
     found1 = [];
   }
@@ -443,7 +454,7 @@ function handleProfileFetch(arg0) {
   let found2;
   if (null != widgets) {
     const mapped1 = widgets.map(createUserWidgetFromServer);
-    found2 = mapped1.filter(_require(date1[24]).isNotNullish);
+    found2 = mapped1.filter(_require(date1[25]).isNotNullish);
   }
   obj["widgets"] = found2;
   obj["wishlistSettings"] = userProfile.wishlist_settings;
@@ -452,7 +463,7 @@ function handleProfileFetch(arg0) {
   checkUserProfileCollectiblesExpiration(userProfile.user.id);
   if (null != userProfile.guild_member_profile) {
     let obj1 = {};
-    let merged1 = Object.assign(date(date1[22])(userProfile.guild_member_profile));
+    let merged1 = Object.assign(date(date1[23])(userProfile.guild_member_profile));
     obj1["userId"] = userProfile.user.id;
     obj1["guildId"] = userProfile.guild_member_profile.guild_id;
     obj1["banner"] = userProfile.guild_member_profile.banner;
@@ -602,7 +613,7 @@ function handleProfileUpdateSuccess(guild_id) {
           let obj = {};
           const merged = Object.assign(value);
           obj = { collectibles };
-          const merged1 = Object.assign(importDefault(5652)(obj));
+          const merged1 = Object.assign(importDefault(5901)(obj));
           obj["accentColor"] = accent_color;
           obj["banner"] = banner;
           obj["bio"] = bio;
@@ -622,7 +633,7 @@ function handleProfileUpdateSuccess(guild_id) {
       const obj1 = {};
       const merged2 = Object.assign(value1);
       const obj2 = { collectibles: collectibles2 };
-      const merged3 = Object.assign(importDefault(5652)(obj2));
+      const merged3 = Object.assign(importDefault(5901)(obj2));
       obj1["accentColor"] = accent_color2;
       obj1["banner"] = banner2;
       obj1["bio"] = bio2;

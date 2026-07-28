@@ -1,8 +1,8 @@
-// Module ID: 13478
-// Function ID: 103608
-// Dependencies: [653, 3, 10557, 10559, 2]
+// Module ID: 13522
+// Function ID: 103781
+// Dependencies: [653, 3, 10595, 10597, 2]
 
-// Module 13478
+// Module 13522
 import ME from "ME";
 import importDefaultResult from "recurseReplaceContentTree";
 
@@ -12,7 +12,7 @@ let result = require("createRpcJoiSchemaObject").fileFinishedImporting("modules/
 export default {
   [ME.RPCCommands.CAPTURE_LOG]: {
     validation(string) {
-      let obj = importDefault(10557)(string);
+      let obj = importDefault(10595)(string);
       obj = {};
       const requiredResult = obj.required();
       const stringResult = string.string();
@@ -27,7 +27,7 @@ export default {
       let socket;
       ({ socket, args } = arg0);
       const level = args.level;
-      const result = require(10559) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.transport);
+      const result = require(10597) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.transport);
       const combined = "" + socket.application.id + " - " + args.message;
       if ("log" === level) {
         importDefaultResult.log(combined);

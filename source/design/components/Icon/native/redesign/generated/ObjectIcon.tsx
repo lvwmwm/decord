@@ -1,10 +1,10 @@
-// Module ID: 9371
-// Function ID: 73113
+// Module ID: 9415
+// Function ID: 73264
 // Name: ObjectIcon
-// Dependencies: [31, 33, 689, 3834, 9372, 2]
+// Dependencies: [31, 33, 689, 3868, 9416, 2]
 // Exports: ObjectIcon
 
-// Module 9371 (ObjectIcon)
+// Module 9415 (ObjectIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ObjectIcon = function ObjectIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9372) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9416) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9372) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9416) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

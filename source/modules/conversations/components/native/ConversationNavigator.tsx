@@ -1,10 +1,10 @@
-// Module ID: 9215
-// Function ID: 72243
+// Module ID: 9259
+// Function ID: 72394
 // Name: HeaderWithBorder
-// Dependencies: [31, 33, 3835, 689, 9050, 477, 9041, 5517, 9216, 9217, 1212, 9218, 9226, 9237, 3983, 2]
+// Dependencies: [31, 33, 3869, 689, 9094, 477, 9085, 5552, 9260, 9261, 1212, 9262, 9270, 9281, 4017, 2]
 // Exports: default, openConversationNavigator
 
-// Module 9215 (HeaderWithBorder)
+// Module 9259 (HeaderWithBorder)
 import "result";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -13,11 +13,11 @@ let closure_3;
 let closure_4;
 const require = arg1;
 function HeaderWithBorder(arg0) {
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const token = obj.useToken(importDefault(689).colors.BORDER_SUBTLE);
   obj = {};
   const merged = Object.assign(arg0);
-  const obj2 = require(9050) /* GenericHeaderTitle */;
+  const obj2 = require(9094) /* GenericHeaderTitle */;
   obj["shouldHandleSafeArea"] = require(477) /* set */.isAndroid();
   obj["style"] = { borderColor: token };
   return obj2.renderHeader(obj);
@@ -31,11 +31,11 @@ export default function ConversationNavigator(route) {
   let Screen;
   const params = route.route.params;
   const channelId = params.channelId;
-  let obj = channelId(5517);
+  let obj = channelId(5552);
   obj = { id: "conversation-navigator", screenOptions: obj.useAccessibilityNativeStackOptions() };
   obj = {
     initialParams: { channelId, guildId: params.guildId },
-    name: channelId(9216).ConversationNavigatorScreens.LIST,
+    name: channelId(9260).ConversationNavigatorScreens.LIST,
     options(navigation) {
       let obj = {
         header(arg0) {
@@ -60,7 +60,7 @@ export default function ConversationNavigator(route) {
   const items = [
     callback(Screen, obj),
     callback(createNativeStackNavigator.Screen, {
-      name: channelId(9216).ConversationNavigatorScreens.FOCUS,
+      name: channelId(9260).ConversationNavigatorScreens.FOCUS,
       options(route) {
         route = route.route;
         const obj = {
@@ -90,7 +90,7 @@ export const openConversationNavigator = function openConversationNavigator(arg0
   let channelId;
   let guildId;
   ({ channelId, guildId } = arg0);
-  let obj = require(3983) /* getRootNavigationRef */;
+  let obj = require(4017) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp) {
     obj = { channelId, guildId };

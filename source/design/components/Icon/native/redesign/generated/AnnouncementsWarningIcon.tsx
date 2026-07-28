@@ -1,10 +1,10 @@
-// Module ID: 4649
-// Function ID: 40359
+// Module ID: 4683
+// Function ID: 40474
 // Name: AnnouncementsWarningIcon
-// Dependencies: [31, 33, 689, 3834, 4611, 2]
+// Dependencies: [31, 33, 689, 3868, 4645, 2]
 // Exports: AnnouncementsWarningIcon
 
-// Module 4649 (AnnouncementsWarningIcon)
+// Module 4683 (AnnouncementsWarningIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const AnnouncementsWarningIcon = function AnnouncementsWarningIcon(color)
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4611) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4645) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4611) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4645) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

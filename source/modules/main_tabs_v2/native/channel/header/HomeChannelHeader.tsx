@@ -1,8 +1,8 @@
-// Module ID: 10078
-// Function ID: 78103
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 10079, 4127, 1212, 2]
+// Module ID: 10118
+// Function ID: 78232
+// Dependencies: [31, 27, 33, 4165, 689, 1273, 10119, 4161, 1212, 2]
 
-// Module 10078
+// Module 10118
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,12 +18,12 @@ obj.container = obj;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(function HomeChannelHeader() {
   let obj = { style: callback3().container };
-  obj = { source: importDefault(10079), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
+  obj = { source: importDefault(10119), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.Ym2Ri6);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 });

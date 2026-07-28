@@ -1,9 +1,9 @@
-// Module ID: 3994
-// Function ID: 33136
+// Module ID: 4028
+// Function ID: 33238
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 3994 (__INTERNAL_VIEW_CONFIG)
+// Module 4028 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "ReanimatedView", validAttributes: { hasEnteringAnimation: true } };

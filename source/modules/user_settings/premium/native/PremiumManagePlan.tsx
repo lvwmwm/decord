@@ -1,10 +1,10 @@
-// Module ID: 12462
-// Function ID: 96667
+// Module ID: 12505
+// Function ID: 96837
 // Name: ManagePlanHeader
-// Dependencies: [5, 57, 31, 27, 3778, 1850, 3779, 3782, 3783, 5821, 6271, 5619, 653, 5126, 4114, 1852, 33, 3, 4131, 689, 1456, 4661, 5091, 4127, 1212, 4974, 1324, 5462, 6490, 5482, 566, 3843, 3977, 668, 4452, 5450, 6238, 6495, 675, 3777, 44, 5616, 12463, 12464, 6465, 6475, 6256, 4544, 6454, 6500, 6494, 4649, 9255, 12380, 1921, 5166, 4555, 1273, 6571, 1557, 6503, 5820, 4560, 6244, 7782, 12426, 12403, 1390, 4533, 6448, 6449, 6501, 12441, 2]
+// Dependencies: [5, 57, 31, 27, 3812, 1850, 3813, 3816, 3817, 5831, 6307, 5654, 653, 5160, 4148, 1852, 33, 3, 4165, 689, 1456, 4695, 5125, 4161, 1212, 5008, 1324, 5497, 6526, 5517, 566, 3877, 4011, 668, 4486, 5485, 6274, 6531, 675, 3811, 44, 5651, 12506, 12507, 6501, 6511, 6292, 4578, 6490, 6536, 6530, 4683, 9299, 12423, 1921, 5200, 4589, 1273, 6607, 1557, 6539, 5830, 4594, 6280, 7818, 12469, 12446, 1390, 4567, 6484, 6485, 6537, 12484, 2]
 // Exports: default
 
-// Module 12462 (ManagePlanHeader)
+// Module 12505 (ManagePlanHeader)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Button from "Button";
 import ManaContext from "ManaContext";
@@ -53,13 +53,13 @@ function ManagePlanHeader() {
     onPress() {
       return arr.pop();
     },
-    children: callback3(_require(5091).ArrowLargeLeftIcon, { size: "md" })
+    children: callback3(_require(5125).ArrowLargeLeftIcon, { size: "md" })
   };
-  const items = [callback3(_require(4661).PressableOpacity, obj), , ];
+  const items = [callback3(_require(4695).PressableOpacity, obj), , ];
   const obj1 = { variant: "redesign/heading-18/bold", accessibilityRole: "header" };
   const intl = _require(1212).intl;
   obj1.children = intl.string(_require(1212).t["1bX7Tx"]);
-  items[1] = callback3(_require(4127).Text, obj1);
+  items[1] = callback3(_require(4161).Text, obj1);
   items[2] = callback3(closure_8, { style: tmp.backButtonWrapper });
   obj.children = items;
   return callback4(closure_8, obj);
@@ -456,21 +456,21 @@ function FractionalPremiumCredits(durationText) {
   let obj = { style: tmp.container };
   if (showPremiumFeaturesCard) {
     obj = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    showPremiumFeaturesCard = callback3(importDefault(9255), obj);
+    showPremiumFeaturesCard = callback3(importDefault(9299), obj);
   }
   const items = [showPremiumFeaturesCard, ];
   obj = { style: tmp.extraInfoContainer };
   const obj1 = { variant: "eyebrow", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.Obre8v);
-  const items1 = [callback3(require(4127) /* Text */.Text, obj1), , ];
+  const items1 = [callback3(require(4161) /* Text */.Text, obj1), , ];
   const obj2 = { variant: "text-md/semibold", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const obj3 = {};
   let obj6 = importDefault(1921);
   obj3.helpCenterLink = obj6.getArticleURL(constants.FRACTIONAL_PREMIUM_ABOUT);
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.AYGoBn, obj3);
-  items1[1] = callback3(require(4127) /* Text */.Text, obj2);
+  items1[1] = callback3(require(4161) /* Text */.Text, obj2);
   const obj4 = {};
   const obj5 = { style: tmp.fpRowStart, start: true, end: false, variant: "primary" };
   obj6 = { style: tmp.fpRowIcon };
@@ -482,26 +482,26 @@ function FractionalPremiumCredits(durationText) {
   const items2 = [importDefault(689).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(689).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj7.colors = items2;
   const obj9 = {};
-  const obj10 = { color: importDefault(689).unsafe_rawColors.WHITE, source: importDefault(6571), size: require(1273) /* Button */.IconSizes.LARGE };
+  const obj10 = { color: importDefault(689).unsafe_rawColors.WHITE, source: importDefault(6607), size: require(1273) /* Button */.IconSizes.LARGE };
   obj9.children = callback3(require(1273) /* Button */.Icon, obj10);
   obj7.children = callback3(closure_8, obj9);
-  obj6.children = callback3(importDefault(4555), obj7);
+  obj6.children = callback3(importDefault(4589), obj7);
   const items3 = [callback3(closure_8, obj6), ];
   const obj11 = { style: tmp.fpRowContent };
   const obj12 = { variant: "text-sm/semibold", style: tmp.fpUnitsTitle };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj12.children = intl3.string(require(1212) /* getSystemLocale */.t.DFMPWS);
-  const items4 = [callback3(require(4127) /* Text */.Text, obj12), ];
+  const items4 = [callback3(require(4161) /* Text */.Text, obj12), ];
   if (hasUnactivatedUnits) {
     if (fractionalPremiumInfo.fractionalState === constants3.NONE) {
       const obj13 = { variant: "text-sm/medium", children: unactivatedHoursString };
-      let tmp16 = callback3(require(4127) /* Text */.Text, obj13);
+      let tmp16 = callback3(require(4161) /* Text */.Text, obj13);
     }
     items4[1] = tmp16;
     obj11.children = items4;
     items3[1] = closure_30(closure_8, obj11);
     obj5.children = items3;
-    const items5 = [tmp10(require(5166) /* getCardBackgroundToken */.Card, obj5), , ];
+    const items5 = [tmp10(require(5200) /* getCardBackgroundToken */.Card, obj5), , ];
     const obj14 = { style: tmp.dividerContainer };
     const obj15 = { style: tmp.divider };
     obj14.children = callback3(closure_8, obj15);
@@ -514,14 +514,14 @@ function FractionalPremiumCredits(durationText) {
         const obj19 = { variant: "text-md/semibold" };
         const intl6 = require(1212) /* getSystemLocale */.intl;
         obj19.children = intl6.string(require(1212) /* getSystemLocale */.t["hT6i/0"]);
-        const items6 = [callback3(require(4127) /* Text */.Text, obj19), ];
+        const items6 = [callback3(require(4161) /* Text */.Text, obj19), ];
         let tmp40 = undefined !== activationDate;
         if (tmp40) {
           const obj20 = { variant: "text-xs/medium", color: "text-subtle" };
           const intl7 = require(1212) /* getSystemLocale */.intl;
           const obj21 = { activateDate: activationDate };
           obj20.children = intl7.format(require(1212) /* getSystemLocale */.t["0Vwb/l"], obj21);
-          tmp40 = callback3(require(4127) /* Text */.Text, obj20);
+          tmp40 = callback3(require(4161) /* Text */.Text, obj20);
         }
         items6[1] = tmp40;
         obj18.children = items6;
@@ -534,7 +534,7 @@ function FractionalPremiumCredits(durationText) {
         if (fractionalPremiumInfo.fractionalState === constants3.NONE) {
           const obj22 = { style: tmp.fpUnactivatedHoursPill };
           const obj23 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: unactivatedHoursString };
-          obj22.children = callback3(require(4127) /* Text */.Text, obj23);
+          obj22.children = callback3(require(4161) /* Text */.Text, obj23);
           let tmp50 = callback3(closure_8, obj22);
         }
         items7[1] = tmp50;
@@ -550,19 +550,19 @@ function FractionalPremiumCredits(durationText) {
       }
       const obj24 = { style: tmp.fpTimeRemainingPill };
       const obj25 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: durationText.durationText };
-      obj24.children = callback3(require(4127) /* Text */.Text, obj25);
+      obj24.children = callback3(require(4161) /* Text */.Text, obj25);
       tmp50 = callback3(closure_8, obj24);
     }
     const obj26 = { variant: "text-md/semibold", style: tmp.fpTimeRemaining };
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj26.children = intl5.string(require(1212) /* getSystemLocale */.t["3G0CTC"]);
-    tmp35Result = callback3(require(4127) /* Text */.Text, obj26);
+    tmp35Result = callback3(require(4161) /* Text */.Text, obj26);
     tmp24 = callback3;
   }
   const obj27 = { variant: "text-sm/medium", style: tmp.fpUnitsStatusText };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj27.children = intl4.string(require(1212) /* getSystemLocale */.t["B66Z+f"]);
-  tmp16 = callback3(require(4127) /* Text */.Text, obj27);
+  tmp16 = callback3(require(4161) /* Text */.Text, obj27);
 }
 ({ Image: closure_6, ImageBackground: closure_7, View: closure_8, ScrollView: closure_9, ActivityIndicator: closure_10 } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_19, HelpdeskArticles: closure_20, SubscriptionStatusTypes: closure_21, UserSettingsSections: closure_22 } = ME);
@@ -632,7 +632,7 @@ let closure_34 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   if (arg0) {
     let DIVIDER_BACKGROUND = importDefault(689).colors.BORDER_SUBTLE;
   } else {
-    DIVIDER_BACKGROUND = require(4974) /* result */.DIVIDER_BACKGROUND;
+    DIVIDER_BACKGROUND = require(5008) /* result */.DIVIDER_BACKGROUND;
   }
   obj12.backgroundColor = DIVIDER_BACKGROUND;
   obj.divider = obj12;
@@ -647,7 +647,7 @@ export default function PremiumManagePlan() {
   const tmp = _createForOfIteratorHelperLoose();
   const rect = importDefault(1557)();
   const top = rect.top;
-  let obj = navigation(6503);
+  let obj = navigation(6539);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
   let obj1 = navigation(1456);
   navigation = obj1.useNavigation();
@@ -668,8 +668,8 @@ export default function PremiumManagePlan() {
   let obj4 = navigation(566);
   const items3 = [closure_12];
   const stateFromStores1 = obj4.useStateFromStores(items3, () => outer1_12.getCurrentUser());
-  const tmp9 = importDefault(5820)({ forceFetch: true });
-  importDefault(4560)(() => {
+  const tmp9 = importDefault(5830)({ forceFetch: true });
+  importDefault(4594)(() => {
     let isSubscriptionFetching = outer1_15.hasFetchedSubscriptions();
     if (!isSubscriptionFetching) {
       isSubscriptionFetching = outer1_13.isSubscriptionFetching;
@@ -687,10 +687,10 @@ export default function PremiumManagePlan() {
       const obj2 = navigation(outer1_2[63]);
     }
   });
-  let obj6 = navigation(7782);
+  let obj6 = navigation(7818);
   let isInReverseTrial = obj6.useIsInReverseTrial();
-  const tmp12 = importDefault(12426);
-  let obj7 = navigation(3777);
+  const tmp12 = importDefault(12469);
+  let obj7 = navigation(3811);
   const unactivatedFractionalPremiumDurationString = obj7.getUnactivatedFractionalPremiumDurationString(tmp9);
   if (null !== first) {
     if (!first.isPurchasedExternally) {
@@ -708,7 +708,7 @@ export default function PremiumManagePlan() {
   if (!tmp15) {
     tmp15 = tmp14;
   }
-  let obj8 = navigation(3843);
+  let obj8 = navigation(3877);
   importDefault = React.useRef(false);
   const callback = React.useCallback((nativeEvent) => {
     let obj = navigation(outer1_2[66]);
@@ -749,7 +749,7 @@ export default function PremiumManagePlan() {
   const items5 = [tmp.topBlur, ];
   obj1 = {};
   let num = 0;
-  const tmp12Result = importDefault(12426)(tmp9.endsAt, navigation(12426).CountDownMessageTypes.SHORT_TIME);
+  const tmp12Result = importDefault(12469)(tmp9.endsAt, navigation(12469).CountDownMessageTypes.SHORT_TIME);
   const tmp23 = callback4;
   const tmp24 = closure_8;
   const tmp25 = callback3;
@@ -760,7 +760,7 @@ export default function PremiumManagePlan() {
   items5[1] = obj1;
   obj.style = items5;
   obj.blurTheme = obj8.useThemeContext().theme;
-  const items6 = [tmp25(importDefault(4533), obj), ];
+  const items6 = [tmp25(importDefault(4567), obj), ];
   obj2 = {};
   const items7 = [tmp.container, ];
   obj3 = {};
@@ -785,7 +785,7 @@ export default function PremiumManagePlan() {
   const items9 = [tmp31, , , , , , ];
   if (isInReverseTrial) {
     obj6 = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    isInReverseTrial = callback3(importDefault(9255), obj6);
+    isInReverseTrial = callback3(importDefault(9299), obj6);
   }
   items9[1] = isInReverseTrial;
   let tmp38 = result;
@@ -794,7 +794,7 @@ export default function PremiumManagePlan() {
   }
   if (tmp38) {
     obj7 = { premiumType: closure_27.TIER_2, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole };
-    tmp38 = callback3(importDefault(9255), obj7);
+    tmp38 = callback3(importDefault(9299), obj7);
   }
   items9[2] = tmp38;
   if (tmp15) {
@@ -821,16 +821,16 @@ export default function PremiumManagePlan() {
         },
       subscription: first
     };
-    const items10 = [callback3(importDefault(6454), obj10), ];
+    const items10 = [callback3(importDefault(6490), obj10), ];
     const obj11 = { style: tmp.billingInfo, subscription: first };
-    items10[1] = callback3(importDefault(6494), obj11);
+    items10[1] = callback3(importDefault(6530), obj11);
     obj9.children = items10;
     tmp20 = callback4(closure_8, obj9);
   }
   items9[4] = tmp20;
   const obj12 = { style: tmp.accountCredit, creditListContainerStyle: tmp.accountCreditList, currentSubscription: first, entitlements: stateFromStores2 };
   let tmp54 = null != result;
-  const tmp26 = importDefault(4533);
+  const tmp26 = importDefault(4567);
   const tmp27 = callback4;
   const tmp28 = closure_9;
   const tmp29 = callback4;
@@ -840,15 +840,15 @@ export default function PremiumManagePlan() {
     tmp54 = result;
   }
   obj12.hasPremiumGroup = tmp54;
-  items9[5] = tmp52(importDefault(6501), obj12);
+  items9[5] = tmp52(importDefault(6537), obj12);
   const obj13 = { style: tmp.featuresTable, variant: "nitro_home" };
-  const tmp53 = importDefault(6501);
+  const tmp53 = importDefault(6537);
   const intl = navigation(1212).intl;
   obj13.titleOverride = intl.string(navigation(1212).t.QXx2gs);
   obj13.isFractionalOnly = tmp9.fractionalState === constants3.FP_ONLY;
   obj13.isPremiumGroup = result;
   obj13.premiumGroupRole = premiumGroupRole;
-  items9[6] = callback3(importDefault(12441), obj13);
+  items9[6] = callback3(importDefault(12484), obj13);
   obj4.children = items9;
   items8[1] = tmp29(tmp30, obj4);
   obj2.children = items8;

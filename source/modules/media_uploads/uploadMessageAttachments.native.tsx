@@ -1,10 +1,10 @@
-// Module ID: 6096
-// Function ID: 54440
+// Module ID: 6130
+// Function ID: 54559
 // Name: _uploadMessageAttachments
-// Dependencies: [5, 6097, 6098, 4352, 686, 2]
+// Dependencies: [5, 6131, 6132, 4386, 686, 2]
 // Exports: uploadMessageAttachments
 
-// Module 6096 (_uploadMessageAttachments)
+// Module 6130 (_uploadMessageAttachments)
 import closure_3 from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "_createForOfIteratorHelperLoose";

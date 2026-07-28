@@ -1,9 +1,9 @@
-// Module ID: 14126
-// Function ID: 108607
+// Module ID: 14170
+// Function ID: 108780
 // Name: QuestHomeRoundtripTracker
-// Dependencies: [6, 7, 653, 675, 5839, 5844, 9413, 2]
+// Dependencies: [6, 7, 653, 675, 5849, 5854, 9453, 2]
 
-// Module 14126 (QuestHomeRoundtripTracker)
+// Module 14170 (QuestHomeRoundtripTracker)
 import canUIRequestGatewaySocket from "canUIRequestGatewaySocket";
 import set from "set";
 import { AnalyticEvents } from "ME";

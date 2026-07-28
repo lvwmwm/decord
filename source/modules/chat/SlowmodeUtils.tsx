@@ -1,46 +1,47 @@
-// Module ID: 5919
-// Function ID: 52608
+// Module ID: 5953
+// Function ID: 52727
 // Name: canBypassSlowmodeHelper
-// Dependencies: [3759, 653, 566, 1212, 664, 3713, 2]
+// Dependencies: [3793, 653, 566, 1212, 664, 3747, 2]
 // Exports: canBypassSlowmode, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 5919 (canBypassSlowmodeHelper)
+// Module 5953 (canBypassSlowmodeHelper)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 
 const require = arg1;
-function canBypassSlowmodeHelper(channel, arg1, _isNativeReflectConstruct) {
+function canBypassSlowmodeHelper(channel, _isNativeReflectConstruct) {
   return _isNativeReflectConstruct.can(Permissions.BYPASS_SLOWMODE, channel);
 }
 const result = require("initialize").fileFinishedImporting("modules/chat/SlowmodeUtils.tsx");
 
-export const canBypassSlowmode = function canBypassSlowmode(channel, SendMessage) {
-  return canBypassSlowmodeHelper(channel, undefined, _isNativeReflectConstruct);
+export { canBypassSlowmodeHelper };
+export const canBypassSlowmode = function canBypassSlowmode(channel) {
+  return canBypassSlowmodeHelper(channel, _isNativeReflectConstruct);
 };
-export const useCanBypassSlowmode = function useCanBypassSlowmode(channel, slowmodeType) {
+export const useCanBypassSlowmode = function useCanBypassSlowmode(channel) {
   const _require = channel;
   const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_5(closure_0, undefined, outer1_3));
+  return _require(566).useStateFromStores(items, () => outer1_5(closure_0, outer1_3));
 };
 export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
   if (canBypassSlowmode) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(require(1212) /* getSystemLocale */.t["8+NidX"]);
   } else if (stateFromStores >= importDefault(664).Millis.HOUR) {
-    const durationResult = importDefault(3713).duration(stateFromStores);
+    const durationResult = importDefault(3747).duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + durationResult.minutes();
-    const obj4 = importDefault(3713);
+    const obj4 = importDefault(3747);
     const _HermesInternal4 = HermesInternal;
     const combined1 = "" + durationResult.seconds();
     const padStartResult = combined.padStart(2, "0");
     const _HermesInternal5 = HermesInternal;
     return "" + durationResult.hours() + ":" + padStartResult + ":" + combined1.padStart(2, "0");
   } else if (stateFromStores > 0) {
-    const durationResult1 = importDefault(3713).duration(stateFromStores);
+    const durationResult1 = importDefault(3747).duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + durationResult1.seconds();
-    const obj = importDefault(3713);
+    const obj = importDefault(3747);
     const _HermesInternal2 = HermesInternal;
     return "" + durationResult1.minutes() + ":" + combined2.padStart(2, "0");
   } else {

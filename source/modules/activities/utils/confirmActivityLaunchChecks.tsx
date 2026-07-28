@@ -1,10 +1,10 @@
-// Module ID: 10585
-// Function ID: 82516
+// Module ID: 10623
+// Function ID: 82637
 // Name: getOrFetchApplicationForLaunch
-// Dependencies: [5, 1348, 1347, 653, 10582, 10586, 686, 4030, 3749, 10587, 10546, 10588, 5664, 10590, 2]
+// Dependencies: [5, 1348, 1347, 653, 10620, 10624, 686, 4064, 3783, 10625, 10584, 10626, 5674, 10628, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10585 (getOrFetchApplicationForLaunch)
+// Module 10623 (getOrFetchApplicationForLaunch)
 import EmbeddedActivityLocationKind from "EmbeddedActivityLocationKind";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

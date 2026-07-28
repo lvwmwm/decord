@@ -1,10 +1,10 @@
-// Module ID: 8603
-// Function ID: 68323
+// Module ID: 8647
+// Function ID: 68470
 // Name: HeartIcon
-// Dependencies: [31, 33, 689, 3834, 8604, 2]
+// Dependencies: [31, 33, 689, 3868, 8648, 2]
 // Exports: HeartIcon
 
-// Module 8603 (HeartIcon)
+// Module 8647 (HeartIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const HeartIcon = function HeartIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8604) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8648) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8604) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8648) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12088
-// Function ID: 94719
+// Module ID: 12131
+// Function ID: 94889
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 12006, 12089, 2]
+// Dependencies: [57, 12049, 12132, 2]
 // Exports: default
 
-// Module 12088 (_createForOfIteratorHelperLoose)
+// Module 12131 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -103,7 +103,7 @@ function isVisualUnfurledMedia(value) {
 function resolvedValuesFromProfileTopLevel(username) {
   let obj = {};
   if (null != username.username) {
-    obj = { type: require(12006) /* resolveFieldValue */.ResolvedValueType.STRING, value: username.username };
+    obj = { type: require(12049) /* resolveFieldValue */.ResolvedValueType.STRING, value: username.username };
     obj.username = obj;
   }
   return obj;
@@ -131,14 +131,14 @@ function resolvedValuesFromPrimary(data) {
         obj = {};
         let tmp12 = require;
         let tmp13 = dependencyMap;
-        obj.type = require(12006) /* resolveFieldValue */.ResolvedValueType.STRING;
+        obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.STRING;
         obj.value = tmp5;
         obj[tmp4] = obj;
       } else if ("number" === tmp6) {
         obj = {};
         let tmp10 = require;
         let tmp11 = dependencyMap;
-        obj.type = require(12006) /* resolveFieldValue */.ResolvedValueType.NUMBER;
+        obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER;
         obj.value = tmp5;
         obj[tmp4] = obj;
       } else if ("object" === tmp6) {
@@ -150,7 +150,7 @@ function resolvedValuesFromPrimary(data) {
                 let obj1 = {};
                 let tmp8 = require;
                 let tmp9 = dependencyMap;
-                obj1.type = require(12006) /* resolveFieldValue */.ResolvedValueType.MEDIA;
+                obj1.type = require(12049) /* resolveFieldValue */.ResolvedValueType.MEDIA;
                 let obj2 = {};
                 ({ proxy_url: obj3.url, width: obj3.width, height: obj3.height } = tmp5);
                 obj1.media = obj2;
@@ -182,33 +182,33 @@ function resolvedValuesFromDynamic(data) {
         let iter = iter3.value;
         let tmp2 = require;
         let tmp3 = dependencyMap;
-        if (iter.type === require(12089) /* ProfileDataDynamicType */.ProfileDataDynamicType.STRING) {
+        if (iter.type === require(12132) /* ProfileDataDynamicType */.ProfileDataDynamicType.STRING) {
           obj = {};
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          obj.type = require(12006) /* resolveFieldValue */.ResolvedValueType.STRING;
+          obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.STRING;
           obj.value = iter.value;
           obj[iter.name] = obj;
         } else {
           let tmp12 = require;
           let tmp13 = dependencyMap;
-          if (iter.type === require(12089) /* ProfileDataDynamicType */.ProfileDataDynamicType.NUMBER) {
+          if (iter.type === require(12132) /* ProfileDataDynamicType */.ProfileDataDynamicType.NUMBER) {
             obj = {};
             let tmp6 = require;
             let tmp7 = dependencyMap;
-            obj.type = require(12006) /* resolveFieldValue */.ResolvedValueType.NUMBER;
+            obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER;
             obj.value = iter.value;
             obj[iter.name] = obj;
           } else {
             let tmp14 = require;
             let tmp15 = dependencyMap;
-            if (iter.type === require(12089) /* ProfileDataDynamicType */.ProfileDataDynamicType.MEDIA) {
+            if (iter.type === require(12132) /* ProfileDataDynamicType */.ProfileDataDynamicType.MEDIA) {
               let tmp16 = isVisualUnfurledMedia;
               if (isVisualUnfurledMedia(iter.value)) {
                 let obj1 = {};
                 let tmp4 = require;
                 let tmp5 = dependencyMap;
-                obj1.type = require(12006) /* resolveFieldValue */.ResolvedValueType.MEDIA;
+                obj1.type = require(12049) /* resolveFieldValue */.ResolvedValueType.MEDIA;
                 let obj2 = { url: iter.value.proxy_url, width: iter.value.width, height: iter.value.height };
                 obj1.media = obj2;
                 obj[iter.name] = obj1;

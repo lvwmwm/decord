@@ -1,10 +1,10 @@
-// Module ID: 12094
-// Function ID: 94741
+// Module ID: 12137
+// Function ID: 94911
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [31, 27, 33, 4131, 689, 12003, 12091, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 12046, 12134, 4161, 2]
 // Exports: default
 
-// Module 12094 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 12137 (UserProfileApplicationWidgetBottomProgressLayout)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,26 +45,26 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   if (null != objective) {
     image = objective.fields.image;
   }
-  const items = [require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  let obj = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  let obj1 = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj1 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton1 = obj1.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
   if (null != progress) {
     current = progress.fields.current;
   }
-  const items1 = [require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items1 = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
   let iter = resolveFieldValue(current, items1);
   let max;
   if (null != progress) {
     max = progress.fields.max;
   }
-  const items2 = [require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items2 = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
   let iter2 = resolveFieldValue(max, items2);
-  let obj2 = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj2 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
   obj = { style: tmp.root };
   const progressPercentage = obj2.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
@@ -76,7 +76,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     let tmp14 = callback(closure_2, obj);
   } else {
     obj2 = { style: tmp.image };
-    tmp14 = callback(require(12091) /* ImageSkeleton */.ImageSkeleton, obj2);
+    tmp14 = callback(require(12134) /* ImageSkeleton */.ImageSkeleton, obj2);
   }
   const items3 = [tmp14, ];
   const obj3 = { style: tmp.content };
@@ -112,18 +112,18 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   const obj9 = { style: tmp.textLeft };
   if ("value" === singleStringOrSkeleton.status) {
     const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    let tmp27 = callback(require(4127) /* Text */.Text, obj10);
+    let tmp27 = callback(require(4161) /* Text */.Text, obj10);
   } else {
     const obj11 = { variant: "heading-sm/medium" };
-    tmp27 = callback(require(12091) /* ImageSkeleton */.TextSkeleton, obj11);
+    tmp27 = callback(require(12134) /* ImageSkeleton */.TextSkeleton, obj11);
   }
   const items6 = [tmp27, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj12 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    let tmp34 = callback(require(4127) /* Text */.Text, obj12);
+    let tmp34 = callback(require(4161) /* Text */.Text, obj12);
   } else {
     const obj13 = { variant: "text-xs/medium" };
-    tmp34 = callback(require(12091) /* ImageSkeleton */.TextSkeleton, obj13);
+    tmp34 = callback(require(12134) /* ImageSkeleton */.TextSkeleton, obj13);
   }
   items6[1] = tmp34;
   obj9.children = items6;
@@ -137,14 +137,14 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
       const _HermesInternal = HermesInternal;
-      iter2Result = "" + require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */.decimalToClampedPercentage(iter.value) + "%";
-      const obj20 = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
+      iter2Result = "" + require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.decimalToClampedPercentage(iter.value) + "%";
+      const obj20 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
     }
     obj14.children = iter2Result;
-    callback(require(4127) /* Text */.Text, obj14);
+    callback(require(4161) /* Text */.Text, obj14);
     const tmp41 = callback;
   } else {
-    items7[1] = callback(require(12091) /* ImageSkeleton */.TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    items7[1] = callback(require(12134) /* ImageSkeleton */.TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
     obj8.children = items7;
     items5[1] = tmp23(tmp22, obj8);
     obj3.children = items5;

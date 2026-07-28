@@ -1,17 +1,17 @@
-// Module ID: 14244
-// Function ID: 109455
+// Module ID: 14288
+// Function ID: 109628
 // Name: HAPPENING_NOW_BADGE_SIZE
-// Dependencies: [31, 27, 1922, 14245, 33, 3992, 1273, 4131, 689, 624, 7909, 5085, 4127, 1827, 14246, 14247, 14248, 2]
+// Dependencies: [31, 27, 1922, 14289, 33, 4026, 1273, 4165, 689, 624, 7945, 5119, 4161, 1827, 14290, 14291, 14292, 2]
 // Exports: default
 
-// Module 14244 (HAPPENING_NOW_BADGE_SIZE)
+// Module 14288 (HAPPENING_NOW_BADGE_SIZE)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let HAPPENING_NOW_BADGE_SIZE;
 let HAPPENING_NOW_CARD_HEIGHT;
@@ -26,7 +26,7 @@ const View = get_ActivityIndicator.View;
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
 ({ HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = require("module_3992").createAnimatedComponent(require("Button").Icon);
+let closure_7 = require("module_4026").createAnimatedComponent(require("Button").Icon);
 let obj = {};
 obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj.card = obj;

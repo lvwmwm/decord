@@ -1,10 +1,10 @@
-// Module ID: 15511
-// Function ID: 119200
+// Module ID: 15550
+// Function ID: 119356
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1352, 1348, 3768, 5601, 8745, 653, 33, 3992, 4127, 4131, 689, 477, 4141, 5604, 686, 566, 675, 15512, 15513, 4132, 9050, 1212, 10349, 15514, 5462, 5482, 5159, 4560, 9059, 1198, 3831, 10160, 10159, 4070, 4069, 9852, 4544, 11403, 2]
+// Dependencies: [5, 57, 31, 27, 1352, 1348, 3802, 5636, 8789, 653, 33, 4026, 4161, 4165, 689, 477, 4175, 5639, 686, 566, 675, 15551, 15552, 4166, 9094, 1212, 10389, 15553, 5497, 5517, 5193, 4594, 9103, 1198, 3865, 10202, 10201, 4104, 4103, 9892, 4578, 11441, 2]
 // Exports: default
 
-// Module 15511 (_createForOfIteratorHelperLoose)
+// Module 15550 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import useMountLayoutEffect from "useMountLayoutEffect";
@@ -169,7 +169,7 @@ function useChannelForParticipants(first) {
   const effect = React.useEffect(() => {
     function handleChannelCreate(channel) {
       channel = channel.channel;
-      if (channel.id !== handleChannelCreate(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+      if (channel.id !== handleChannelCreate(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
         if (channel.isPrivate()) {
           if (outer2_24(handleChannelCreate, channel)) {
             outer1_2(outer2_25(handleChannelCreate));
@@ -233,7 +233,7 @@ function useChannelForParticipants(first) {
         let obj = first(686);
         obj = { type: "CHANNEL_CREATE" };
         let tmp8 = outer1_7;
-        obj = { id: lib(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID };
+        obj = { id: lib(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID };
         if (1 === lib.length) {
           let GROUP_DM = outer1_14.DM;
         } else {
@@ -250,7 +250,7 @@ function useChannelForParticipants(first) {
         return () => {
           let obj = first(686);
           obj = { type: "CHANNEL_DELETE" };
-          obj = { id: callback(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: undefined, parent_id: undefined };
+          obj = { id: callback(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: undefined, parent_id: undefined };
           obj.channel = obj;
           obj.dispatch(obj);
         };
@@ -261,7 +261,7 @@ function useChannelForParticipants(first) {
   const effect3 = React.useEffect(() => {
     let tmp = null != stateFromStores;
     if (tmp) {
-      tmp = stateFromStores.id === lib(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      tmp = stateFromStores.id === lib(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
     }
     if (tmp) {
       let obj = first(686);
@@ -275,7 +275,7 @@ function Header(title) {
   const numInGroup = title.numInGroup;
   const items = [numInGroup];
   const memo = React.useMemo(() => outer1_1(outer1_2[22])() - (numInGroup + 1), items);
-  let obj = numInGroup(3992);
+  let obj = numInGroup(4026);
   const fn = function a() {
     const obj = {};
     let num = 0;
@@ -291,13 +291,13 @@ function Header(title) {
     obj.maxHeight = numInGroup(outer1_2[23]).withTiming(num2);
     return obj;
   };
-  obj = { numInGroup, NUM_IN_GROUP_THRESHOLD: 5, withTiming: numInGroup(4132).withTiming };
+  obj = { numInGroup, NUM_IN_GROUP_THRESHOLD: 5, withTiming: numInGroup(4166).withTiming };
   fn.__closure = obj;
   fn.__workletHash = 12426216833792;
   fn.__initData = closure_21;
   obj = { style: callback5().header };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items1 = [callback3(numInGroup(9050).GenericHeaderTitle, { title: title.title }), ];
+  const items1 = [callback3(numInGroup(9094).GenericHeaderTitle, { title: title.title }), ];
   const obj1 = { style: animatedStyle, variant: "text-xs/medium" };
   let str = "text-muted";
   if (0 === memo) {
@@ -346,18 +346,18 @@ function ChatPreview(channelId) {
   let obj = { style: tmp.background };
   obj = { style: tmp.container };
   obj = { guildId: closure_15, channelId, chatInputRef: React.useRef(null), HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
-  const items1 = [callback3(importDefault(10349), obj), ];
+  const items1 = [callback3(importDefault(10389), obj), ];
   const obj1 = {};
   const ref = React.useRef(null);
   obj1.portal = channelId(477).isAndroid();
-  items1[1] = callback3(channelId(15514).PortalKeyboardRenderer, obj1);
+  items1[1] = callback3(channelId(15553).PortalKeyboardRenderer, obj1);
   obj.children = items1;
   obj.children = callback4(View, obj);
   return callback3(View, obj);
 }
 ({ AnalyticEvents: closure_12, AnalyticsSections: closure_13, ChannelTypes: closure_14, ME: closure_15, Routes: closure_16 } = ME);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-let closure_19 = require("module_3992").createAnimatedComponent(require("Text").Text);
+let closure_19 = require("module_4026").createAnimatedComponent(require("Text").Text);
 let obj = { container: { flex: 1 } };
 obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
@@ -393,8 +393,8 @@ export default function NewMessageScreen(navigation) {
   let stateFromStores;
   let tmp = callback5();
   const dependencyMap = tmp;
-  const insets = importDefault(5159)({ includeKeyboardHeight: true }).insets;
-  importDefault(4560)(() => {
+  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
+  importDefault(4594)(() => {
     let obj = outer1_1(tmp[20]);
     obj = { source_page: closure_1 };
     obj.track(outer1_12.MESSAGE_COMPOSER_OPENED, obj);
@@ -410,7 +410,7 @@ export default function NewMessageScreen(navigation) {
   React = tmp5[1];
   const tmp6 = first(React.useState(false), 2);
   closure_6 = tmp6[1];
-  const tmp2 = importDefault(5462);
+  const tmp2 = importDefault(5497);
   [tmp8, c7] = first(React.useState(false), 2);
   FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = useChannelForParticipants(first);
   const ref = React.useRef(null);
@@ -424,9 +424,9 @@ export default function NewMessageScreen(navigation) {
         let tmp = null;
         if (null !== outer1_8) {
           tmp = null;
-          if (outer1_8 !== navigation(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+          if (outer1_8 !== navigation(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
             const obj = { channelId: outer1_8, screenIndex: "new-message" };
-            tmp = outer2_17(outer2_1(9059), obj);
+            tmp = outer2_17(outer2_1(9103), obj);
           }
         }
         return tmp;
@@ -460,7 +460,7 @@ export default function NewMessageScreen(navigation) {
       if (first.length > 0) {
         let obj = {};
         if (null == FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = navigation(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = navigation(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
         }
         obj.channelId = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
         obj.navigateToChannel = callback;
@@ -540,8 +540,8 @@ export default function NewMessageScreen(navigation) {
     obj.children = outer1_17(tmp, obj);
     return outer1_17(closure_6, obj);
   }, items8);
-  obj = { value: tmp2(importDefault(5482).NEW_MESSAGE_COMPOSER).analyticsLocations };
+  obj = { value: tmp2(importDefault(5517).NEW_MESSAGE_COMPOSER).analyticsLocations };
   obj = { actions: memo, noResultActions: memo1, rowMode: stateFromStores.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds: first, withAffinitySuggestions: true, overrideResults: tmp17Result, withGuildMembers: 0 === first.length, withGDMNames: true, forceSearchResults: tmp8, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
-  obj.children = callback3(importDefault(11403), obj);
-  return callback3(navigation(5462).AnalyticsLocationProvider, obj);
+  obj.children = callback3(importDefault(11441), obj);
+  return callback3(navigation(5497).AnalyticsLocationProvider, obj);
 };

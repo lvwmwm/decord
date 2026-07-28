@@ -1,10 +1,10 @@
-// Module ID: 7987
-// Function ID: 63692
+// Module ID: 8025
+// Function ID: 63802
 // Name: _getGuildIdsToFetchSoundsFor
-// Dependencies: [31, 1838, 4579, 624, 2]
+// Dependencies: [31, 1838, 4613, 624, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 7987 (_getGuildIdsToFetchSoundsFor)
+// Module 8025 (_getGuildIdsToFetchSoundsFor)
 import { useMemo } from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

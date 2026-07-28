@@ -1,10 +1,10 @@
-// Module ID: 15893
-// Function ID: 122744
+// Module ID: 15932
+// Function ID: 122900
 // Name: UserVideoFailed
-// Dependencies: [27, 653, 33, 4131, 689, 8784, 10489, 4127, 1212, 4544, 10499, 4228, 8770, 2]
+// Dependencies: [27, 653, 33, 4165, 689, 8828, 10527, 4161, 1212, 4578, 10537, 4262, 8814, 2]
 // Exports: default
 
-// Module 15893 (UserVideoFailed)
+// Module 15932 (UserVideoFailed)
 import { View } from "get ActivityIndicator";
 import { VideoToggleState } from "ME";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function UserVideoFailed(userId) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(userId, obj);
   const tmp3 = callback2();
-  let obj1 = userId(8784);
+  let obj1 = userId(8828);
   obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp3.container, style];
@@ -42,19 +42,19 @@ export default function UserVideoFailed(userId) {
   let tmp8 = !removeSplashImage;
   if (tmp8) {
     obj1 = { style: tmp3.placeholderImage };
-    tmp8 = callback(userId(10489).StreamFailed, obj1);
+    tmp8 = callback(userId(10527).StreamFailed, obj1);
   }
   const items1 = [tmp8, ];
   const obj2 = { variant: "text-md/semibold", color: "text-strong" };
   const intl = userId(1212).intl;
   obj2.children = intl.string(userId(1212).t["z+mxvo"]);
-  items1[1] = callback(userId(4127).Text, obj2);
+  items1[1] = callback(userId(4161).Text, obj2);
   obj.children = items1;
   const items2 = [closure_7(closure_6, obj), , ];
   const obj3 = { variant: "text-sm/semibold", color: "text-muted", selectable: true };
   const intl2 = userId(1212).intl;
   obj3.children = intl2.formatToPlainString(userId(1212).t.ejOT95, { errorCode: obj1.getErrorInfo(avError).errorCode });
-  items2[1] = callback(userId(4127).Text, obj3);
+  items2[1] = callback(userId(4161).Text, obj3);
   const obj4 = { style: tmp3.button };
   let tmp14 = !removeRetryButton;
   if (tmp14) {
@@ -69,7 +69,7 @@ export default function UserVideoFailed(userId) {
         outer2_1(outer2_2[12]).setDisableLocalVideo(outer1_0, outer2_4.MANUAL_ENABLED, userId(outer2_2[11]).MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp14 = callback(userId(4544).Button, obj5);
+    tmp14 = callback(userId(4578).Button, obj5);
   }
   obj4.children = tmp14;
   items2[2] = callback(View, obj4);

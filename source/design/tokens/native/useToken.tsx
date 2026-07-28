@@ -1,10 +1,10 @@
-// Module ID: 3835
-// Function ID: 32008
+// Module ID: 3869
+// Function ID: 32110
 // Name: map
-// Dependencies: [689, 3836, 22, 3843, 2]
+// Dependencies: [689, 3870, 22, 3877, 2]
 // Exports: useToken
 
-// Module 3835 (map)
+// Module 3869 (map)
 const require = arg1;
 const map = new Map();
 const keys = Object.keys(require("_createForOfIteratorHelperLoose").colors);
@@ -16,7 +16,7 @@ let result = require("apply").fileFinishedImporting("design/tokens/native/useTok
 
 export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
   let obj = BACKGROUND_BASE_LOW;
-  const themeContext = require(3843) /* ManaContext */.useThemeContext();
+  const themeContext = require(3877) /* ManaContext */.useThemeContext();
   let tmp2 = null;
   if (null == theme) {
     theme = themeContext.theme;
@@ -72,7 +72,7 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
         semanticColor = value;
         if (str7) {
           const internal5 = importDefault(689).internal;
-          obj = require(3836) /* getSemanticColorContextFromThemeContext */;
+          obj = require(3870) /* getSemanticColorContextFromThemeContext */;
           semanticColor = internal5.resolveSemanticColor(theme, importDefault(689).colors[table[obj]], obj.getSemanticColorContextFromThemeContext(themeContext));
         }
       }
@@ -81,8 +81,8 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
       semanticColor = value;
       if (str7.isSemanticColor(obj)) {
         const internal4 = importDefault(689).internal;
-        semanticColor = internal4.resolveSemanticColor(theme, obj, require(3836) /* getSemanticColorContextFromThemeContext */.getSemanticColorContextFromThemeContext(themeContext));
-        const obj4 = require(3836) /* getSemanticColorContextFromThemeContext */;
+        semanticColor = internal4.resolveSemanticColor(theme, obj, require(3870) /* getSemanticColorContextFromThemeContext */.getSemanticColorContextFromThemeContext(themeContext));
+        const obj4 = require(3870) /* getSemanticColorContextFromThemeContext */;
       }
     }
     resolveResult = tmp23;

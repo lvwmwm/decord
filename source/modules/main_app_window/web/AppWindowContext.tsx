@@ -1,10 +1,10 @@
-// Module ID: 5133
-// Function ID: 44504
+// Module ID: 5167
+// Function ID: 44619
 // Name: getWindowDispatchForElement
-// Dependencies: [57, 31, 653, 33, 1207, 5134, 1835, 5135, 2]
+// Dependencies: [57, 31, 653, 33, 1207, 5168, 1835, 5169, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 5133 (getWindowDispatchForElement)
+// Module 5167 (getWindowDispatchForElement)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ function getWindowDispatchForElement(target) {
   const defaultView = target.ownerDocument.defaultView;
   if (null != defaultView) {
     let windowDispatch;
-    const value = map.get(require(5134) /* getWindowId */.getWindowId(defaultView));
+    const value = map.get(require(5168) /* getWindowId */.getWindowId(defaultView));
     if (null != value) {
       windowDispatch = value.windowDispatch;
     }
@@ -23,7 +23,7 @@ function getWindowDispatchForElement(target) {
   }
 }
 function getCurrentlyInteractingAppWindowContext() {
-  const currentlyInteractingWindowId = require(5135) /* INTERACTION_EVENTS */.getCurrentlyInteractingWindowId();
+  const currentlyInteractingWindowId = require(5169) /* INTERACTION_EVENTS */.getCurrentlyInteractingWindowId();
   let tmp2 = null;
   if (null != currentlyInteractingWindowId) {
     const value = map.get(currentlyInteractingWindowId);

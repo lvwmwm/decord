@@ -1,9 +1,9 @@
-// Module ID: 16062
-// Function ID: 124204
+// Module ID: 16101
+// Function ID: 124360
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4955, 4148, 1194, 1348, 4178, 4203, 653, 4345, 4676, 16063, 4315, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4989, 4182, 1194, 1348, 4212, 4237, 653, 4379, 4710, 16102, 4349, 5112, 2]
 
-// Module 16062 (_isNativeReflectConstruct)
+// Module 16101 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getAudienceRequestToSpeakState from "getAudienceRequestToSpeakState";
@@ -30,15 +30,15 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function voicePermissionRequest() {
-  const permission = importDefault(4676).requestPermission(NativePermissionTypes.AUDIO);
+  const permission = importDefault(4710).requestPermission(NativePermissionTypes.AUDIO);
   permission.then((arg0) => {
     if (arg0) {
       outer1_1(outer1_2[14])(true);
     }
   });
   if (mode.getMode() === InputModes.PUSH_TO_TALK) {
-    const permission1 = importDefault(4676).requestPermission(NativePermissionTypes.INPUT_MONITORING);
-    const obj2 = importDefault(4676);
+    const permission1 = importDefault(4710).requestPermission(NativePermissionTypes.INPUT_MONITORING);
+    const obj2 = importDefault(4710);
   }
 }
 function shouldImmediatelyRequestVoicePermissions(id, id2) {

@@ -1,10 +1,10 @@
-// Module ID: 13860
-// Function ID: 106186
+// Module ID: 13904
+// Function ID: 106359
 // Name: useActionTotalsForDisplayType
-// Dependencies: [5765, 5766, 624, 5827, 5616, 2]
+// Dependencies: [5775, 5776, 624, 5837, 5651, 2]
 // Exports: useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 13860 (useActionTotalsForDisplayType)
+// Module 13904 (useActionTotalsForDisplayType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { TeenActionDisplayType } from "items";
 
@@ -36,7 +36,7 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     num = tmp;
   }
   if (displayType === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
-    return require(5827) /* getActivityTypeTextConfigs */.formatTotalTime(num);
+    return require(5837) /* getActivityTypeTextConfigs */.formatTotalTime(num);
   } else if (displayType === TeenActionDisplayType.PURCHASES) {
     const totalSpendAmount = store.getTotalSpendAmount();
     const totalSpendCurrency = store.getTotalSpendCurrency();
@@ -44,8 +44,8 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     if (null != totalSpendAmount) {
       result = num;
       if (null != totalSpendCurrency) {
-        result = require(5616) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
-        const obj2 = require(5616) /* formatSingleCurrencyPrice */;
+        result = require(5651) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
+        const obj2 = require(5651) /* formatSingleCurrencyPrice */;
       }
     }
     return result;
@@ -53,8 +53,8 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     const totalGiftValue = store.getTotalGiftValue();
     let result1 = num;
     if (null != totalGiftValue) {
-      result1 = require(5616) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
-      const obj = require(5616) /* formatSingleCurrencyPrice */;
+      result1 = require(5651) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
+      const obj = require(5651) /* formatSingleCurrencyPrice */;
     }
     return result1;
   } else {

@@ -1,9 +1,9 @@
-// Module ID: 7919
-// Function ID: 63047
+// Module ID: 7955
+// Function ID: 63138
 // Name: useDominantRGBFromImage
-// Dependencies: [57, 31, 27, 653, 33, 4131, 22, 7920, 7921, 3975, 689, 1324, 7922, 7926, 7923, 1273, 4555, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 22, 7956, 7957, 4009, 689, 1324, 7958, 7963, 7959, 1273, 4589, 2]
 
-// Module 7919 (useDominantRGBFromImage)
+// Module 7955 (useDominantRGBFromImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -28,15 +28,15 @@ function useDominantRGBFromImage(arg0, arg1) {
     first = arg1[0];
     tmp = first;
   }
-  let tmp3 = first(7920)();
+  let tmp3 = first(7956)();
   const dependencyMap = tmp3;
   let hexToRgbResult;
   if (null != arg0) {
-    hexToRgbResult = first(7921).cachedDominantColors[arg0];
+    hexToRgbResult = first(7957).cachedDominantColors[arg0];
   }
   if (null == hexToRgbResult) {
-    hexToRgbResult = _require(3975).hexToRgb(first(689).unsafe_rawColors.PRIMARY_800);
-    let obj = _require(3975);
+    hexToRgbResult = _require(4009).hexToRgb(first(689).unsafe_rawColors.PRIMARY_800);
+    let obj = _require(4009);
   }
   const tmp11 = callback(importAllResult.useState(hexToRgbResult), 2);
   callback = tmp11[1];
@@ -96,7 +96,7 @@ class VideoBackground {
     c1 = undefined;
     id = undefined;
     tmp3 = c12();
-    tmp4 = f63054(url);
+    tmp4 = f63145(url);
     tmp5 = useDominantColorFromImage(url, tmp4);
     tmp6 = require("useIsMobileVisualRefreshExperimentEnabled")("VideoBackground-native");
     c1 = tmp6;

@@ -1,15 +1,24 @@
 // Module ID: 8511
-// Function ID: 67752
+// Function ID: 67550
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 8479]
+// Dependencies: [65, 29, 6, 7, 15, 17, 18, 31, 27, 33, 8512, 8513, 8514, 8515, 8519, 8520, 8521, 8531]
 
 // Module 8511 (_isNativeReflectConstruct)
-import pickNotNil from "pickNotNil";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
+import _toConsumableArray from "_toConsumableArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
 import _inherits from "_inherits";
+import result from "result";
+import reduced from "reduced";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_10 from "_inherits";
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import tmp4 from "_isNativeReflectConstruct";
 
+let Platform;
+let StyleSheet;
+let closure_11;
 const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -20,40 +29,10 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-const tmp2 = ((Component) => {
-  class FeDistantLight {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, FeDistantLight);
-      obj = outer1_5(FeDistantLight);
-      tmp2 = outer1_4;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(FeDistantLight, Component);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const result = FeDistantLight(outer1_1[6]).warnUnimplementedFilter();
-        return null;
-      }
-    }
-  ];
-  return callback(FeDistantLight, items);
-})(require("result").Component);
-tmp2.displayName = "FeDistantLight";
-tmp2.defaultProps = {};
+let closure_3 = ["style", "opacity", "viewBox", "children", "onLayout", "preserveAspectRatio"];
+({ findNodeHandle: closure_11, Platform, StyleSheet } = get_ActivityIndicator);
+const svg = StyleSheet.create({ svg: { backgroundColor: "transparent", borderWidth: 0 } }).svg;
+tmp4.displayName = "Svg";
+tmp4.defaultProps = { preserveAspectRatio: "xMidYMid meet" };
 
-export default tmp2;
+export default tmp4;

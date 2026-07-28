@@ -1,10 +1,10 @@
-// Module ID: 12952
-// Function ID: 100521
+// Module ID: 12996
+// Function ID: 100694
 // Name: UserCodeInput
-// Dependencies: [57, 31, 27, 12953, 33, 4131, 12954, 12955, 4127, 1212, 6670, 4544, 2]
+// Dependencies: [57, 31, 27, 12997, 33, 4165, 12998, 12999, 4161, 1212, 6706, 4578, 2]
 // Exports: UserCodeInput
 
-// Module 12952 (UserCodeInput)
+// Module 12996 (UserCodeInput)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -37,19 +37,19 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   const tmp3 = callback(React.useState(str), 2);
   const first = tmp3[0];
   _require = tmp3[1];
-  let obj = _require(12954);
+  let obj = _require(12998);
   const userCodeSubmit = obj.useUserCodeSubmit(first, onUserCodeAccepted, onClose);
   obj = {};
-  obj = { style: importDefault(12955).innerContent };
+  obj = { style: importDefault(12999).innerContent };
   ({ manualSubmit, error, submitting } = userCodeSubmit);
   const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.text };
   const intl = _require(1212).intl;
   obj1.children = intl.string(_require(1212).t.KYPNUv);
-  const items = [callback2(_require(4127).Text, obj1), ];
+  const items = [callback2(_require(4161).Text, obj1), ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.text };
   const intl2 = _require(1212).intl;
   obj2.children = intl2.string(_require(1212).t.xRHk7f);
-  items[1] = callback2(_require(4127).Text, obj2);
+  items[1] = callback2(_require(4161).Text, obj2);
   obj.children = items;
   const items1 = [callback3(View, obj), , ];
   const obj3 = {
@@ -64,7 +64,7 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   const intl3 = _require(1212).intl;
   obj3.placeholder = intl3.formatToPlainString(_require(1212).t["0tbz6x"], { number: OAuthConstants.USER_CODE_LENGTH });
   obj3.errorMessage = error;
-  items1[1] = callback2(_require(6670).TextInput, obj3);
+  items1[1] = callback2(_require(6706).TextInput, obj3);
   const obj5 = { size: "lg" };
   const intl4 = _require(1212).intl;
   obj5.text = intl4.string(_require(1212).t["3PatSz"]);
@@ -72,7 +72,7 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   obj5.loading = submitting;
   obj5.disabled = first.length !== OAuthConstants.USER_CODE_LENGTH;
   obj5.grow = true;
-  items1[2] = callback2(_require(4544).Button, obj5);
+  items1[2] = callback2(_require(4578).Button, obj5);
   obj.children = items1;
   return callback3(closure_9, obj);
 };

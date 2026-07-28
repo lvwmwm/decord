@@ -1,5 +1,5 @@
 // Module ID: 1319
-// Function ID: 15517
+// Function ID: 15521
 // Name: MAX_FAVORITES
 // Dependencies: [662, 2]
 

@@ -1,9 +1,9 @@
-// Module ID: 10044
-// Function ID: 77804
+// Module ID: 10084
+// Function ID: 77933
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 1838, 1907, 3971, 1850, 653, 5044, 10042, 6115, 3970, 4277, 5048, 4975, 10043, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 1838, 1907, 4005, 1850, 653, 5078, 10082, 6149, 4004, 4311, 5082, 5009, 10083, 566, 686, 2]
 
-// Module 10044 (_isNativeReflectConstruct)
+// Module 10084 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import conceal from "conceal";
@@ -110,13 +110,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getOrCreateUserSearchContext(searchContext) {
-  let obj = require(10042) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10082) /* _createForOfIteratorHelperLoose */;
   const searchContextId = obj.getSearchContextId(searchContext);
   let value = map1.get(searchContextId);
   if (null == value) {
-    obj = { results: [], context: importDefault(6115).getUserSearchContext(handleUserSearchResults.bind(null, searchContext)) };
+    obj = { results: [], context: importDefault(6149).getUserSearchContext(handleUserSearchResults.bind(null, searchContext)) };
     value = obj;
-    const obj3 = importDefault(6115);
+    const obj3 = importDefault(6149);
   }
   const result = map1.set(searchContextId, value);
   return value;
@@ -153,7 +153,7 @@ function isUserAutocompleteMode(autocompleteMode) {
 function handleUserSearchResults(searchContext, results) {
   let mode;
   let tokens;
-  let obj = require(10042) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10082) /* _createForOfIteratorHelperLoose */;
   const searchContextId = obj.getSearchContextId(searchContext);
   let value = map1.get(searchContextId);
   value = map.get(searchContextId);
@@ -177,7 +177,7 @@ function handleUserSearchResults(searchContext, results) {
             if (null != user) {
               let tmp11 = importDefault;
               let tmp12 = dependencyMap;
-              let obj2 = importDefault(3970);
+              let obj2 = importDefault(4004);
               let userTag = obj2.getUserTag(user);
               let tmp14 = userTag;
               if (null != userTag) {
@@ -203,10 +203,10 @@ function handleUserSearchResults(searchContext, results) {
   }
 }
 function setSelectedSearchContext(searchContext) {
-  if (!importDefault(4277)(closure_18, searchContext)) {
+  if (!importDefault(4311)(closure_18, searchContext)) {
     closure_18 = searchContext;
-    require(10042) /* _createForOfIteratorHelperLoose */.clearTokenCache();
-    const obj = require(10042) /* _createForOfIteratorHelperLoose */;
+    require(10082) /* _createForOfIteratorHelperLoose */.clearTokenCache();
+    const obj = require(10082) /* _createForOfIteratorHelperLoose */;
   }
 }
 function getAutocompleteList(searchContext, autocompleteMode, tokens) {
@@ -305,12 +305,12 @@ function getAutocompleteList(searchContext, autocompleteMode, tokens) {
   }
 }
 function handleChannelCreateOrDelete() {
-  require(10042) /* _createForOfIteratorHelperLoose */.clearTokenCache();
+  require(10082) /* _createForOfIteratorHelperLoose */.clearTokenCache();
 }
 function rebuildAutocompleteResults(c18) {
   let mode;
   let tokens;
-  let obj = require(10042) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10082) /* _createForOfIteratorHelperLoose */;
   const searchContextId = obj.getSearchContextId(c18);
   const value = map.get(searchContextId);
   if (null == value) {
@@ -401,11 +401,11 @@ tmp6 = new tmp6(require("dispatcher"), {
     let tokens;
     ({ searchContext, tokens, cursorScope } = arg0);
     setSelectedSearchContext(searchContext);
-    let obj = require(10042) /* _createForOfIteratorHelperLoose */;
+    let obj = require(10082) /* _createForOfIteratorHelperLoose */;
     const queryFromTokens = obj.getQueryFromTokens(tokens);
-    let obj1 = require(10042) /* _createForOfIteratorHelperLoose */;
+    let obj1 = require(10082) /* _createForOfIteratorHelperLoose */;
     const autocompleteMode = obj1.getAutocompleteMode(cursorScope, tokens);
-    const searchContextId = require(10042) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
+    const searchContextId = require(10082) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null != value) {
       if (queryFromTokens === value.query) {
@@ -428,10 +428,10 @@ tmp6 = new tmp6(require("dispatcher"), {
       }
       if (null != trimmed) {
         if (trimmed.length > 0) {
-          const guildIdFromSearchContext = require(10042) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
+          const guildIdFromSearchContext = require(10082) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
           if (null != guildIdFromSearchContext) {
-            const members = importDefault(5048).requestMembers(guildIdFromSearchContext, trimmed, c22);
-            const obj5 = importDefault(5048);
+            const members = importDefault(5082).requestMembers(guildIdFromSearchContext, trimmed, c22);
+            const obj5 = importDefault(5082);
           }
           const context3 = tmp10.context;
           obj = { query: trimmed };
@@ -442,8 +442,8 @@ tmp6 = new tmp6(require("dispatcher"), {
           }
           obj1.guild = tmp21;
           obj.filters = obj1;
-          const obj4 = require(10042) /* _createForOfIteratorHelperLoose */;
-          obj.boosters = require(4975) /* _createForOfIteratorHelperLoose */.getBoosterMap(AutocompleterResultTypes.USER);
+          const obj4 = require(10082) /* _createForOfIteratorHelperLoose */;
+          obj.boosters = require(5009) /* _createForOfIteratorHelperLoose */.getBoosterMap(AutocompleterResultTypes.USER);
           context3.setQuery(obj);
           autocompletes = undefined;
           if (null != value) {
@@ -453,7 +453,7 @@ tmp6 = new tmp6(require("dispatcher"), {
             autocompletes = [];
           }
           flag = false;
-          const obj8 = require(4975) /* _createForOfIteratorHelperLoose */;
+          const obj8 = require(5009) /* _createForOfIteratorHelperLoose */;
         }
       }
       const context2 = tmp10.context;

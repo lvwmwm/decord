@@ -1,10 +1,10 @@
-// Module ID: 11244
-// Function ID: 87477
+// Module ID: 11282
+// Function ID: 87596
 // Name: getActivityLaunchURL
 // Dependencies: [653, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 11244 (getActivityLaunchURL)
+// Module 11282 (getActivityLaunchURL)
 import { Routes } from "ME";
 
 let result = require("set").fileFinishedImporting("modules/applications/getApplicationInstallURL.tsx");

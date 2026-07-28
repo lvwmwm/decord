@@ -1,10 +1,10 @@
-// Module ID: 7768
-// Function ID: 61752
+// Module ID: 7804
+// Function ID: 61842
 // Name: getMessageContent
-// Dependencies: [5686, 3949, 1838, 1850, 653, 1212, 21, 7687, 2]
+// Dependencies: [5696, 3983, 1838, 1850, 653, 1212, 21, 7723, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 7768 (getMessageContent)
+// Module 7804 (getMessageContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -89,6 +89,6 @@ export const createJoinRequestNotificationSystemMessage = function createJoinReq
     name = tmp2.name;
   }
   obj.content = getMessageContent(message.type, username, name);
-  const merged = Object.assign(importDefault(7687)(message));
+  const merged = Object.assign(importDefault(7723)(message));
   return obj;
 };

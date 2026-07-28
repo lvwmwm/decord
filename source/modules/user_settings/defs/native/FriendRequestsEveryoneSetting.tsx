@@ -1,9 +1,9 @@
-// Module ID: 13942
-// Function ID: 106673
+// Module ID: 13986
+// Function ID: 106846
 // Name: toggle
-// Dependencies: [31, 7697, 653, 3804, 6449, 13790, 10059, 1212, 2]
+// Dependencies: [31, 7733, 653, 3838, 6485, 13834, 10099, 1212, 2]
 
-// Module 13942 (toggle)
+// Module 13986 (toggle)
 import result from "result";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -19,13 +19,13 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsEveryoneSettingValue() {
-    const FriendSourceFlagsSetting = setting(3804).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(3838).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return React.useMemo(() => setting(outer1_1[4]).computeFlags(setting), items).all;
   },
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
-    const FriendSourceFlagsSetting = require(3804) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = require(3838) /* explicitContentFromProto */.FriendSourceFlagsSetting;
     if (arg0) {
       let tmp3 = tmp;
     } else {
@@ -34,7 +34,7 @@ createToggle = {
     FriendSourceFlagsSetting.updateSetting(tmp3);
   },
   useIsDisabled() {
-    return require(13790) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13834) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

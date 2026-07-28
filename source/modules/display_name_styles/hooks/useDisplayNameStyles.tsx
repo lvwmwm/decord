@@ -1,10 +1,10 @@
-// Module ID: 4362
-// Function ID: 38706
+// Module ID: 4396
+// Function ID: 38820
 // Name: useDisplayNameStyles
-// Dependencies: [31, 1918, 1850, 4363, 566, 4365, 2]
+// Dependencies: [31, 1918, 1850, 4397, 566, 4399, 2]
 // Exports: default
 
-// Module 4362 (useDisplayNameStyles)
+// Module 4396 (useDisplayNameStyles)
 import { useContext } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

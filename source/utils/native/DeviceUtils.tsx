@@ -1,10 +1,10 @@
-// Module ID: 4111
-// Function ID: 34010
+// Module ID: 4145
+// Function ID: 34112
 // Name: getSystemVersion
 // Dependencies: [27, 477, 648, 587, 2]
 // Exports: getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS
 
-// Module 4111 (getSystemVersion)
+// Module 4145 (getSystemVersion)
 import set from "set";
 import set from "enforcing";
 

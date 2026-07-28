@@ -1,8 +1,8 @@
-// Module ID: 16031
-// Function ID: 123807
-// Dependencies: [3824, 9405, 566, 4099, 16032, 1935, 9403, 2]
+// Module ID: 16070
+// Function ID: 123963
+// Dependencies: [3858, 9448, 566, 4133, 16071, 1935, 9446, 2]
 
-// Module 16031
+// Module 16070
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 
@@ -29,10 +29,10 @@ export default {
         return outer1_1(outer1_2[3]).hideActionSheet(outer1_4);
       }
     };
-    const obj2 = importDefault(4099);
+    const obj2 = importDefault(4133);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options.options);
-    obj2.openLazy(_require(1935)(16032, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
+    obj2.openLazy(_require(1935)(16071, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
   },
   showCaptchaAsync(nextResult1) {
     let c1;
@@ -59,8 +59,8 @@ export default {
           return callback({ captcha_key, captcha_rqtoken, captcha_session_id: outer1_3 });
         },
         onReject(arg0) {
-          if (arg0 === obj(9403).CaptchaError.CANCEL) {
-            const CaptchaCancelError = obj(9403).CaptchaCancelError;
+          if (arg0 === obj(9446).CaptchaError.CANCEL) {
+            const CaptchaCancelError = obj(9446).CaptchaCancelError;
             const prototype2 = CaptchaCancelError.prototype;
             const captchaCancelError = new CaptchaCancelError();
             callback2(captchaCancelError);
@@ -72,7 +72,7 @@ export default {
           }
         },
         close() {
-          return callback2(4099).hideActionSheet(c4);
+          return callback2(4133).hideActionSheet(c4);
         }
       };
       const merged = Object.assign(closure_0);

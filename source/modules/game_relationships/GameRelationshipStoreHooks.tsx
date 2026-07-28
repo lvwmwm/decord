@@ -1,10 +1,10 @@
-// Module ID: 11989
-// Function ID: 92672
+// Module ID: 12032
+// Function ID: 92842
 // Name: useGameRelationshipsForUserByType
-// Dependencies: [57, 5891, 653, 566, 4965, 2]
+// Dependencies: [57, 5925, 653, 566, 4999, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 11989 (useGameRelationshipsForUserByType)
+// Module 12032 (useGameRelationshipsForUserByType)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RelationshipTypes } from "ME";
@@ -18,7 +18,7 @@ function useGameRelationshipsForUserByType(id, FRIEND) {
   return callback(_require(566).useStateFromStores(items, () => {
     const items = [outer1_3.getGameRelationshipsForUserByType(closure_0, closure_1), outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4965).isVersionEqual), 1)[0];
+  }, items1, _require(4999).isVersionEqual), 1)[0];
 }
 const result = require("ME").fileFinishedImporting("modules/game_relationships/GameRelationshipStoreHooks.tsx");
 
@@ -29,7 +29,7 @@ export const useGameRelationshipsByType = function useGameRelationshipsByType(FR
   return callback(_require(566).useStateFromStores(items, () => {
     const items = [outer1_3.getGameRelationshipsByType(closure_0), outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4965).isVersionEqual), 1)[0];
+  }, items1, _require(4999).isVersionEqual), 1)[0];
 };
 export const useGameFriendsForUser = function useGameFriendsForUser(id) {
   return useGameRelationshipsForUserByType(id, RelationshipTypes.FRIEND);
@@ -45,7 +45,7 @@ export const useHasGameRelationshipsForUser = function useHasGameRelationshipsFo
     const gameRelationshipsForUser = outer1_3.getGameRelationshipsForUser(closure_0);
     const items = [gameRelationshipsForUser.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4965).isVersionEqual), 1)[0];
+  }, items1, _require(4999).isVersionEqual), 1)[0];
 };
 export const useHasGameRelationshipsForUserByType = function useHasGameRelationshipsForUserByType(arg0, arg1) {
   const _require = arg0;
@@ -56,5 +56,5 @@ export const useHasGameRelationshipsForUserByType = function useHasGameRelations
     const gameRelationshipsForUserByType = outer1_3.getGameRelationshipsForUserByType(closure_0, closure_1);
     const items = [gameRelationshipsForUserByType.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4965).isVersionEqual), 1)[0];
+  }, items1, _require(4999).isVersionEqual), 1)[0];
 };

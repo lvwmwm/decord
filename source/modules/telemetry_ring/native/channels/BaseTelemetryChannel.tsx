@@ -1,9 +1,9 @@
-// Module ID: 13186
-// Function ID: 101601
+// Module ID: 13230
+// Function ID: 101774
 // Name: BaseTelemetryChannel
 // Dependencies: [6, 7, 2]
 
-// Module 13186 (BaseTelemetryChannel)
+// Module 13230 (BaseTelemetryChannel)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

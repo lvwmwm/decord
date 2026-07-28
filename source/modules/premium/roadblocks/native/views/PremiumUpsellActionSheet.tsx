@@ -1,10 +1,10 @@
-// Module ID: 6146
-// Function ID: 55077
+// Module ID: 6180
+// Function ID: 55196
 // Name: getPageContent
-// Dependencies: [57, 31, 27, 4123, 1278, 1280, 3948, 1850, 1852, 653, 4186, 33, 4131, 689, 3835, 3777, 6147, 4712, 4671, 1212, 3828, 1921, 6148, 6149, 6150, 6151, 668, 566, 6152, 5502, 4127, 477, 6153, 5085, 6137, 6155, 5462, 675, 6156, 3990, 4099, 6145, 5498, 4555, 12542, 4544, 6571, 2]
+// Dependencies: [57, 31, 27, 4157, 1278, 1280, 3982, 1850, 1852, 653, 4220, 33, 4165, 689, 3869, 3811, 6181, 4746, 4705, 1212, 3862, 1921, 6182, 6183, 6184, 6185, 668, 566, 6186, 5537, 4161, 477, 6187, 5119, 6171, 6189, 5497, 675, 6190, 4024, 4133, 6179, 5533, 4589, 12585, 4578, 6607, 2]
 // Exports: default
 
-// Module 6146 (getPageContent)
+// Module 6180 (getPageContent)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "initialize";
@@ -32,7 +32,7 @@ let closure_21;
 const require = arg1;
 function getPageContent(featureName, isKestrelTreatment) {
   let tmp = null;
-  if (featureName === require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
+  if (featureName === require(6181) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
     const obj = { isKestrelTreatment };
     tmp = callback2(AlwaysCompressImagesSwitch, obj);
   }
@@ -61,8 +61,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       const obj1 = { style: tmp.compressionHint, variant: "text-xs/normal" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["wC0+Ph"]);
-      obj.subLabel = callback2(require(4127) /* Text */.Text, obj1);
-      obj.children = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
+      obj.subLabel = callback2(require(4161) /* Text */.Text, obj1);
+      obj.children = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
       tmp4 = callback2(View, obj);
     }
   }
@@ -78,13 +78,13 @@ function PremiumUpsellImage(arg0) {
     if (!useReducedMotion) {
       if (null != image.uri) {
         obj = { url: image.uri, style, autoplay: true };
-        let tmp5 = callback2(require(6153) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(6187) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }
   }
   obj = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = callback2(importDefault(5085), obj);
+  tmp5 = callback2(importDefault(5119), obj);
 }
 ({ PremiumSubscriptionSKUs: closure_11, PremiumTypes: closure_12, PremiumUpsellTypes: closure_13 } = GuildFeatures);
 ({ AnalyticEvents: closure_14, AnalyticsPages: closure_15, HelpdeskArticles: closure_16, ThemeTypes: closure_17 } = ME);

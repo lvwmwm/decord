@@ -1,10 +1,10 @@
-// Module ID: 14042
-// Function ID: 107468
+// Module ID: 14086
+// Function ID: 107641
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 5931, 4977, 33, 689, 8592, 14029, 10821, 566, 4127, 1212, 14043, 14044, 6619, 5949, 5959, 8595, 5449, 2]
+// Dependencies: [57, 31, 27, 5965, 5011, 33, 689, 8636, 14073, 10859, 566, 4161, 1212, 14087, 14088, 6655, 5983, 5993, 8639, 5484, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 14042 (_createForOfIteratorHelperLoose)
+// Module 14086 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -109,7 +109,7 @@ function QuestHomeOrbShopCarouselHeading(orbAmount) {
   obj = { variant: "text-md/semibold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.CXlsRP, { orbAmount: orbAmount.orbRewardAmount });
-  obj.children = callback(require(4127) /* Text */.Heading, obj);
+  obj.children = callback(require(4161) /* Text */.Heading, obj);
   return callback(View, obj);
 }
 function QuestHomeOrbShopCarouselPlaceholder() {
@@ -131,7 +131,7 @@ function QuestHomeOrbShopCarouselPlaceholder() {
   obj.ListHeaderComponent = ListEdgeSpacer;
   obj.ListFooterComponent = ListEdgeSpacer;
   obj.ItemSeparatorComponent = ItemSeparator;
-  return callback(require(6619) /* useModalDismissGuardRefreshControl */.FlashList, obj);
+  return callback(require(6655) /* useModalDismissGuardRefreshControl */.FlashList, obj);
 }
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const PX_16 = require("_createForOfIteratorHelperLoose").space.PX_16;
@@ -244,7 +244,7 @@ export const useQuestHomeOrbShopCarouselData = function useQuestHomeOrbShopCarou
   let enabled;
   let variation;
   ({ enabled, variation } = arg0);
-  let obj = require(14029) /* _createForOfIteratorHelperLoose */;
+  let obj = require(14073) /* _createForOfIteratorHelperLoose */;
   const popularOrbShopProducts = obj.usePopularOrbShopProducts({ enabled, variation });
   obj = {
     products: popularOrbShopProducts.products,

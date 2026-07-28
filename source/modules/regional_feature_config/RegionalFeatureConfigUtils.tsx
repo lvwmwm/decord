@@ -1,10 +1,10 @@
-// Module ID: 3810
-// Function ID: 31419
+// Module ID: 3844
+// Function ID: 31521
 // Name: isFeatureAgeGated
-// Dependencies: [3811, 566, 2]
+// Dependencies: [3845, 566, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 3810 (isFeatureAgeGated)
+// Module 3844 (isFeatureAgeGated)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

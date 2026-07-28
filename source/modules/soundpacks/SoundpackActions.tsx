@@ -1,10 +1,10 @@
-// Module ID: 16138
-// Function ID: 125038
+// Module ID: 16177
+// Function ID: 125194
 // Name: setSoundpack
-// Dependencies: [10211, 653, 675, 686, 2]
+// Dependencies: [10251, 653, 675, 686, 2]
 // Exports: setSoundpack
 
-// Module 16138 (setSoundpack)
+// Module 16177 (setSoundpack)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

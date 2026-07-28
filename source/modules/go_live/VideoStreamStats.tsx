@@ -1,9 +1,9 @@
-// Module ID: 4226
-// Function ID: 36896
+// Module ID: 4260
+// Function ID: 37006
 // Name: round
-// Dependencies: [6, 7, 4221, 653, 4016, 4207, 2]
+// Dependencies: [6, 7, 4255, 653, 4050, 4241, 2]
 
-// Module 4226 (round)
+// Module 4260 (round)
 import set from "set";
 import _defineProperties from "_defineProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

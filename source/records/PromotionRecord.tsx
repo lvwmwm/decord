@@ -1,9 +1,9 @@
-// Module ID: 6208
-// Function ID: 55741
+// Module ID: 6243
+// Function ID: 55862
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 6209, 1360, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 6244, 1360, 2]
 
-// Module 6208 (_isNativeReflectConstruct)
+// Module 6243 (_isNativeReflectConstruct)
 import CountryListMode from "CountryListMode";
 import hasFlag from "hasFlag";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

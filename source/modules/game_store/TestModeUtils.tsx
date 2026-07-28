@@ -1,10 +1,10 @@
-// Module ID: 6444
-// Function ID: 57876
+// Module ID: 6480
+// Function ID: 57965
 // Name: isTestModeForApplication
-// Dependencies: [5663, 5662, 566, 2]
+// Dependencies: [5673, 5672, 566, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 6444 (isTestModeForApplication)
+// Module 6480 (isTestModeForApplication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

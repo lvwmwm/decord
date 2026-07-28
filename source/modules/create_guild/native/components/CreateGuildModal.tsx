@@ -1,10 +1,10 @@
-// Module ID: 11736
-// Function ID: 91128
+// Module ID: 11775
+// Function ID: 91279
 // Name: getScreens
-// Dependencies: [31, 27, 1908, 9155, 653, 33, 11504, 8293, 675, 5049, 11735, 480, 5087, 11737, 11739, 10024, 1212, 11740, 9050, 11747, 11748, 11765, 9071, 5517, 2]
+// Dependencies: [31, 27, 1908, 9199, 653, 33, 11542, 8331, 675, 5083, 11774, 480, 5121, 11776, 11778, 10064, 1212, 11779, 9094, 11786, 11787, 11804, 9115, 5552, 2]
 // Exports: default
 
-// Module 11736 (getScreens)
+// Module 11775 (getScreens)
 import result from "result";
 import { Keyboard } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,8 +29,8 @@ function getScreens(arg0, arg1, arg2) {
       return null;
     }
   };
-  let obj2 = _require(5087);
-  obj.headerLeft = obj2.getHeaderCloseButton(importDefault(11735).closeCreateGuildModal);
+  let obj2 = _require(5121);
+  obj.headerLeft = obj2.getHeaderCloseButton(importDefault(11774).closeCreateGuildModal);
   obj.render = function render() {
     return outer1_10(callback2(outer1_2[13]), { trigger: outer1_7.IN_APP });
   };

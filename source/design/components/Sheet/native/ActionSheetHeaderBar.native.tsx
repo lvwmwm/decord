@@ -1,10 +1,10 @@
-// Module ID: 5446
-// Function ID: 46584
+// Module ID: 5481
+// Function ID: 46711
 // Name: ActionSheetHeaderBar
-// Dependencies: [31, 27, 33, 4131, 689, 1212, 1450, 3835, 4529, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1212, 1450, 3869, 4563, 2]
 // Exports: ActionSheetHeaderBar
 
-// Module 5446 (ActionSheetHeaderBar)
+// Module 5481 (ActionSheetHeaderBar)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -64,9 +64,9 @@ export const ActionSheetHeaderBar = function ActionSheetHeaderBar(accessibilityL
   if (variant === undefined) {
     variant = "default";
   }
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const tmp3 = callback3(variant, importDefault(1450)().height, obj.useToken(importDefault(689).modules.mobile.SHEET_HANDLE_MARGIN_BOTTOM));
-  let obj1 = require(4529) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj1 = require(4563) /* SCREEN_READER_ENABLED_GETTER */;
   obj = { onPress, onAccessibilityEscape: onPress, "aria-hidden": true };
   obj = { style: items };
   items = [tmp3.header, style];

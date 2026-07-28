@@ -1,10 +1,10 @@
-// Module ID: 13624
-// Function ID: 104732
+// Module ID: 13668
+// Function ID: 104905
 // Name: EditUserProfileBanner
-// Dependencies: [31, 27, 9739, 5510, 653, 662, 13625, 33, 13626, 3777, 5462, 5482, 13627, 4099, 13628, 1935, 7883, 7880, 7882, 1212, 8017, 13638, 6687, 5159, 689, 9786, 13639, 7896, 11000, 7922, 8018, 7890, 8033, 8015, 8019, 13641, 4127, 3843, 11913, 13642, 11902, 8317, 13647, 13648, 13653, 13655, 13656, 13660, 13664, 13669, 13672, 13673, 2]
+// Dependencies: [31, 27, 9779, 5545, 653, 662, 13669, 33, 13670, 3811, 5497, 5517, 13671, 4133, 13672, 1935, 7919, 7916, 7918, 1212, 8055, 13682, 6723, 5193, 689, 9826, 13683, 7932, 11038, 7958, 8056, 7926, 8071, 8053, 8057, 13685, 4161, 3877, 11956, 13686, 11945, 8355, 13691, 13692, 13697, 13699, 13700, 13704, 13708, 13713, 13716, 13717, 2]
 // Exports: default
 
-// Module 13624 (EditUserProfileBanner)
+// Module 13668 (EditUserProfileBanner)
 import getImageFormat from "getImageFormat";
 import get_ActivityIndicator from "useFetchPurchases";
 import zustandStore from "zustandStore";
@@ -125,14 +125,14 @@ export default function UserProfileEditForm(arg0) {
     isTryItOut = false;
   }
   let _require;
-  const tmp = importDefault(8017)();
-  const tmp2 = importDefault(13638)();
-  const tmp3 = importDefault(6687)();
+  const tmp = importDefault(8055)();
+  const tmp2 = importDefault(13682)();
+  const tmp3 = importDefault(6723)();
   const ref = React.useRef(null);
   const ref1 = React.useRef(null);
   const ref2 = React.useRef(null);
   const ref3 = React.useRef(null);
-  const insets = importDefault(5159)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
   const PX_16 = importDefault(689).space.PX_16;
   let obj = { insets };
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } }, { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } }, ];
@@ -142,27 +142,27 @@ export default function UserProfileEditForm(arg0) {
   items[2] = obj;
   obj.inputs = items;
   obj.scrollViewRef = ref;
-  const onFocus = importDefault(9786)(obj).onFocus;
-  const tmp9 = importDefault(13639)();
+  const onFocus = importDefault(9826)(obj).onFocus;
+  const tmp9 = importDefault(13683)();
   ({ errors, isSubmitting, pendingAvatarDecoration, pendingProfileEffect, pendingThemeColors, tryItOutThemeColors, pendingGlobalName, pendingPronouns, pendingBio, pendingLegacyUsernameDisabled, pendingDisplayNameStyles } = tmp9);
   ({ pendingAvatar, pendingBanner, pendingProfileFrame, pendingNameplate, pendingAccentColor, tryItOutBanner, tryItOutAvatarDecoration, tryItOutProfileEffect, tryItOutDisplayNameStyles, pendingPrimaryGuildId } = tmp9);
-  importDefault(7896)();
-  let obj3 = _require(11000);
+  importDefault(7932)();
+  let obj3 = _require(11038);
   const guildAutomodProfileQuarantineErrors = obj3.useGuildAutomodProfileQuarantineErrors();
   const id = currentUser.id;
   let str = "";
-  const tmp8 = importDefault(9786);
+  const tmp8 = importDefault(9826);
   if (null != id) {
     str = id;
   }
-  const tmp12Result = importDefault(7922)(str);
-  let obj5 = _require(8018);
+  const tmp12Result = importDefault(7958)(str);
+  let obj5 = _require(8056);
   const customStatusActivity = obj5.useCustomStatusActivity();
-  let obj6 = _require(7890);
+  let obj6 = _require(7926);
   const pendingAvatarSrc = obj6.getPendingAvatarSrc({ userId: currentUser.id, image: pendingAvatar });
   const obj1 = { userId: currentUser.id, image: pendingAvatar };
-  const tmp12 = importDefault(7922);
-  let obj8 = importDefault(3777);
+  const tmp12 = importDefault(7958);
+  let obj8 = importDefault(3811);
   const result = obj8.canUsePremiumProfileCustomization(currentUser);
   let legacyUsername;
   if (null != tmp12Result) {
@@ -191,15 +191,15 @@ export default function UserProfileEditForm(arg0) {
   }
   const obj2 = { user: currentUser, displayProfile: tmp12Result };
   let tmp21 = pendingThemeColors;
-  const tmp15 = importDefault(8033)(tmp12Result, pendingLegacyUsernameDisabled);
+  const tmp15 = importDefault(8071)(tmp12Result, pendingLegacyUsernameDisabled);
   if (isTryItOut) {
     tmp21 = tryItOutThemeColors;
   }
   obj2.pendingThemeColors = tmp21;
   obj2.isPreview = isTryItOut;
-  const tmp20 = importDefault(8015);
-  ({ theme, primaryColor, secondaryColor } = importDefault(8015)(obj2));
-  let obj10 = _require(8019);
+  const tmp20 = importDefault(8053);
+  ({ theme, primaryColor, secondaryColor } = importDefault(8053)(obj2));
+  let obj10 = _require(8057);
   const userProfileColors = obj10.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ gradientFallbackBackground, gradientSecondaryBackground, containerBackground } = userProfileColors);
   let num = 0;
@@ -256,7 +256,7 @@ export default function UserProfileEditForm(arg0) {
     }
   }
   const field = zustandStore.useField("scrollPosition");
-  _require = importDefault(13641)(ref, field);
+  _require = importDefault(13685)(ref, field);
   const obj4 = { theme, primaryColor, secondaryColor };
   obj5 = { style: items1 };
   items1 = [tmp2.container, { backgroundColor: gradientSecondaryBackground }];
@@ -265,28 +265,28 @@ export default function UserProfileEditForm(arg0) {
   obj8 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: { backgroundColor: gradientSecondaryBackground } };
   const obj9 = { user: currentUser, displayProfile: tmp12Result, pendingAvatarSrc, pendingBanner, pendingAccentColor, pendingThemeColors, tryItOutBanner, isTryItOut, disabled: isSubmitting };
   const obj7 = { style: tmp2.bounceOffset };
-  const tmp20Result = importDefault(8015)(obj2);
+  const tmp20Result = importDefault(8053)(obj2);
   const tmp35 = callback;
   const tmp38 = closure_4;
   const items3 = [callback(EditUserProfileBanner, obj9), ];
   obj10 = {};
-  const tmp39 = importDefault(11913);
+  const tmp39 = importDefault(11956);
   const items4 = [, , , ];
   ({ avatarBackground: arr5[0], avatarPosition: arr5[1] } = tmp);
   items4[2] = tmp2.avatarContainer;
   items4[3] = obj3;
   const obj12 = { user: currentUser, disabled: isSubmitting, disableStatus: null != isTryItOut, statusStyle: obj3, isTryItOut, autoStartEditFlow: autoFocusElement === constants.AVATAR };
-  const items5 = [callback(closure_5, { style: items4, children: callback(importDefault(13642), obj12) }), ];
+  const items5 = [callback(closure_5, { style: items4, children: callback(importDefault(13686), obj12) }), ];
   const obj13 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items6 };
   items6 = [, , ];
   ({ profileContentWrapper: arr7[0], profileContent: arr7[1] } = tmp);
   items6[2] = { paddingTop: 0, paddingBottom: sum1 };
-  const obj11 = { style: items4, children: callback(importDefault(13642), obj12) };
-  const items7 = [callback(importDefault(11902), { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp.customStatusBubble, emojiOnlyStyle: tmp.emojiOnlyCustomStatusBubble, editEnabled: true }), , ];
+  const obj11 = { style: items4, children: callback(importDefault(13686), obj12) };
+  const items7 = [callback(importDefault(11945), { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp.customStatusBubble, emojiOnlyStyle: tmp.emojiOnlyCustomStatusBubble, editEnabled: true }), , ];
   const obj15 = { user: currentUser, displayName: pendingGlobalName, badges: tmp15 };
   let tmp43 = str3;
   const obj14 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp.customStatusBubble, emojiOnlyStyle: tmp.emojiOnlyCustomStatusBubble, editEnabled: true };
-  const tmp40 = importDefault(11913);
+  const tmp40 = importDefault(11956);
   const tmp41 = callback;
   if (null != pendingPronouns) {
     tmp43 = pendingPronouns;
@@ -298,7 +298,7 @@ export default function UserProfileEditForm(arg0) {
     pendingDisplayNameStyles = tryItOutDisplayNameStyles;
   }
   obj15.pendingDisplayNameStyles = pendingDisplayNameStyles;
-  items7[1] = tmp41(importDefault(8317), obj15);
+  items7[1] = tmp41(importDefault(8355), obj15);
   const obj16 = { style: items8 };
   items8 = [tmp2.formContainer, { backgroundColor: containerBackground }];
   let tmp46 = null;
@@ -307,13 +307,13 @@ export default function UserProfileEditForm(arg0) {
     if ("" !== stringResult) {
       const obj17 = { style: tmp2.errorContainer };
       const obj18 = { variant: "text-sm/bold", color: "text-feedback-critical", children: stringResult };
-      obj17.children = callback(_require(4127).Text, obj18);
+      obj17.children = callback(_require(4161).Text, obj18);
       tmp46 = callback(closure_5, obj17);
     }
   }
   const items9 = [tmp46, , , , , , , , , , , ];
   const obj19 = { inputRef: ref1 };
-  const tmp42 = importDefault(8317);
+  const tmp42 = importDefault(8355);
   const tmp44 = closure_14;
   const tmp45 = closure_5;
   const tmp52 = callback;
@@ -333,18 +333,18 @@ export default function UserProfileEditForm(arg0) {
   obj19.placeholder = currentUser.toString();
   obj19.maxLength = closure_9;
   obj19.isDisabled = isSubmitting;
-  items9[1] = tmp52(importDefault(13647), obj19);
+  items9[1] = tmp52(importDefault(13691), obj19);
   let tmp54 = result;
   if (!result) {
     tmp54 = isTryItOut;
   }
   if (tmp54) {
     const obj20 = { user: currentUser, isTryItOut };
-    tmp54 = callback(importDefault(13648), obj20);
+    tmp54 = callback(importDefault(13692), obj20);
   }
   items9[2] = tmp54;
   const obj21 = { inputRef: ref2 };
-  const tmp53 = importDefault(13647);
+  const tmp53 = importDefault(13691);
   const tmp58 = callback;
   const intl3 = _require(1212).intl;
   obj21.label = intl3.string(_require(1212).t["+T3RI/"]);
@@ -361,9 +361,9 @@ export default function UserProfileEditForm(arg0) {
   };
   obj21.maxLength = closure_10;
   obj21.isDisabled = isSubmitting;
-  items9[3] = tmp58(importDefault(13647), obj21);
+  items9[3] = tmp58(importDefault(13691), obj21);
   const obj22 = { inputRef: ref3 };
-  const tmp59 = importDefault(13647);
+  const tmp59 = importDefault(13691);
   const tmp60 = callback;
   const intl4 = _require(1212).intl;
   obj22.label = intl4.string(_require(1212).t.ZzAR2Y);
@@ -382,12 +382,12 @@ export default function UserProfileEditForm(arg0) {
   obj22.maxLength = closure_8;
   obj22.numberOfLines = 5;
   obj22.isDisabled = isSubmitting;
-  items9[4] = tmp60(importDefault(13647), obj22);
+  items9[4] = tmp60(importDefault(13691), obj22);
   const obj23 = { user: currentUser };
-  const tmp61 = importDefault(13647);
+  const tmp61 = importDefault(13691);
   const tmp62 = callback;
   if (isTryItOut) {
-    let fn = _require(7883).setTryItOutThemeColors;
+    let fn = _require(7919).setTryItOutThemeColors;
   } else {
     fn = (themeColors) => {
       let obj = ref(outer1_2[17]);
@@ -402,18 +402,18 @@ export default function UserProfileEditForm(arg0) {
   }
   obj23.pendingThemeColors = pendingThemeColors;
   obj23.isTryItOut = isTryItOut;
-  items9[5] = tmp62(importDefault(13653), obj23);
+  items9[5] = tmp62(importDefault(13697), obj23);
   const obj24 = { user: currentUser };
-  const tmp63 = importDefault(13653);
+  const tmp63 = importDefault(13697);
   const tmp66 = callback;
   if (isTryItOut) {
     pendingAvatarDecoration = tryItOutAvatarDecoration;
   }
   obj24.pendingAvatarDecoration = pendingAvatarDecoration;
   obj24.isTryItOut = isTryItOut;
-  items9[6] = tmp66(importDefault(13655), obj24);
+  items9[6] = tmp66(importDefault(13699), obj24);
   const obj25 = { user: currentUser };
-  const tmp67 = importDefault(13655);
+  const tmp67 = importDefault(13699);
   const tmp68 = callback;
   if (isTryItOut) {
     pendingProfileEffect = tryItOutProfileEffect;
@@ -421,22 +421,22 @@ export default function UserProfileEditForm(arg0) {
   obj25.pendingProfileEffect = pendingProfileEffect;
   obj25.displayProfile = tmp12Result;
   obj25.isTryItOut = isTryItOut;
-  items9[7] = tmp68(importDefault(13656), obj25);
-  items9[8] = callback(importDefault(13660), { user: currentUser, pendingProfileFrame, displayProfile: tmp12Result });
-  items9[9] = callback(importDefault(13664), { user: currentUser, pendingNameplate });
-  const tmp69 = importDefault(13656);
+  items9[7] = tmp68(importDefault(13700), obj25);
+  items9[8] = callback(importDefault(13704), { user: currentUser, pendingProfileFrame, displayProfile: tmp12Result });
+  items9[9] = callback(importDefault(13708), { user: currentUser, pendingNameplate });
+  const tmp69 = importDefault(13700);
   items9[10] = callback(closure_5, {
     ref(arg0) {
       if (null != arg0) {
         ref.current[outer1_11.GUILD_TAG] = arg0;
       }
     },
-    children: callback(importDefault(13669), { user: currentUser, disabled: isSubmitting, tagStyle: { backgroundColor: containerBackground }, pendingPrimaryGuildId })
+    children: callback(importDefault(13713), { user: currentUser, disabled: isSubmitting, tagStyle: { backgroundColor: containerBackground }, pendingPrimaryGuildId })
   });
   let tmp70 = null != legacyUsername;
   if (tmp70) {
     const obj27 = { legacyUsername, pendingLegacyUsernameDisabled };
-    tmp70 = callback(importDefault(13672), obj27);
+    tmp70 = callback(importDefault(13716), obj27);
   }
   items9[11] = tmp70;
   obj16.children = items9;
@@ -452,10 +452,10 @@ export default function UserProfileEditForm(arg0) {
   let tmp74 = !result && !tmp3;
   if (tmp74) {
     const obj28 = { isTryItOut };
-    tmp74 = callback(_require(13673).UserProfilePremiumUpsellCard, obj28);
+    tmp74 = callback(_require(13717).UserProfilePremiumUpsellCard, obj28);
   }
   items10[1] = tmp74;
   obj5.children = items10;
   obj4.children = closure_14(closure_5, obj5);
-  return tmp35(_require(3843).ThemeContextProvider, obj4);
+  return tmp35(_require(3877).ThemeContextProvider, obj4);
 };

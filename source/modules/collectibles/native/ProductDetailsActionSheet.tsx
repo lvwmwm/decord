@@ -1,10 +1,10 @@
-// Module ID: 8664
-// Function ID: 68800
+// Module ID: 8708
+// Function ID: 68951
 // Name: PreviewProfileTrigger
-// Dependencies: [57, 31, 27, 655, 653, 482, 33, 4131, 689, 4548, 3843, 3977, 1212, 8665, 1877, 8596, 8297, 8663, 6445, 8667, 5462, 5482, 5781, 8668, 8669, 8595, 8364, 480, 7984, 675, 8632, 8670, 8671, 7906, 8634, 8637, 3790, 8672, 5187, 5189, 8639, 8673, 8689, 8695, 1273, 8696, 6608, 4099, 8698, 477, 2]
+// Dependencies: [57, 31, 27, 655, 653, 482, 33, 4165, 689, 4582, 3877, 4011, 1212, 8709, 1877, 8640, 8335, 8707, 6481, 8711, 5497, 5517, 5791, 8712, 8713, 8639, 8402, 480, 8022, 675, 8676, 8714, 8715, 7942, 8678, 8681, 3824, 8716, 5221, 5223, 8683, 8717, 8733, 8739, 1273, 8740, 6644, 4133, 8742, 477, 2]
 // Exports: default
 
-// Module 8664 (PreviewProfileTrigger)
+// Module 8708 (PreviewProfileTrigger)
 import _slicedToArray from "_slicedToArray";
 import BadgeWithTooltip from "BadgeWithTooltip";
 import result from "BadgeWithTooltip";
@@ -33,9 +33,9 @@ function PreviewProfileTrigger(handlePreviewPress) {
   let closure_5;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = handlePreviewPress(3843);
+  let obj = handlePreviewPress(3877);
   const theme = obj.useThemeContext().theme;
-  const isThemeLightResult = handlePreviewPress(3977).isThemeLight(theme);
+  const isThemeLightResult = handlePreviewPress(4011).isThemeLight(theme);
   let _slicedToArray = theme === constants2.MIDNIGHT;
   React = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
   closure_5 = isThemeLightResult ? tmp.previewProfileButtonLightPressed : tmp.previewProfileButtonDarkPressed;
@@ -64,7 +64,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   const intl = handlePreviewPress(1212).intl;
   obj.accessibilityLabel = intl.string(handlePreviewPress(1212).t["3Qcx6K"]);
   obj = { size: "md", color: onTrackPress(689).colors.INTERACTIVE_ICON_DEFAULT };
-  obj.children = callback4(handlePreviewPress(8665).EyeIcon, obj);
+  obj.children = callback4(handlePreviewPress(8709).EyeIcon, obj);
   return callback4(closure_7, obj);
 }
 function ProductDetailsActionSheetInner(product) {
@@ -405,5 +405,5 @@ export default function ProductDetailsActionSheet(shopAnalyticsContext) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj.children = callback4(ProductDetailsActionSheetWithOrderCTX, obj);
-  return callback4(require(8595) /* useCollectiblesAnalyticsContext */.CollectiblesAnalyticsProvider, obj);
+  return callback4(require(8639) /* useCollectiblesAnalyticsContext */.CollectiblesAnalyticsProvider, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15563
-// Function ID: 119761
+// Module ID: 15602
+// Function ID: 119917
 // Name: UserProfileYourFriendsCard
-// Dependencies: [57, 31, 27, 5892, 3768, 1850, 653, 33, 1273, 4131, 689, 566, 11989, 8748, 22, 1327, 4661, 1212, 4127, 5512, 2]
+// Dependencies: [57, 31, 27, 5926, 3802, 1850, 653, 33, 1273, 4165, 689, 566, 12032, 8792, 22, 1327, 4695, 1212, 4161, 5547, 2]
 // Exports: default
 
-// Module 15563 (UserProfileYourFriendsCard)
+// Module 15602 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -48,9 +48,9 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [closure_7];
   stateFromStoresArray1 = require(566) /* initialize */.useStateFromStoresArray(items1, () => outer1_7.getFriendIDs());
   const obj2 = require(566) /* initialize */;
-  const gameRelationshipsByType = require(11989) /* useGameRelationshipsForUserByType */.useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  const gameRelationshipsByType = require(12032) /* useGameRelationshipsForUserByType */.useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = tmp(8748).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = tmp(8792).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -109,7 +109,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   obj = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", style: tmp.label };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(require(1212) /* getSystemLocale */.t.TdEu5X);
-  const items5 = [callback(require(4127) /* Text */.Text, obj), memo, callback(require(5512) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" })];
+  const items5 = [callback(require(4161) /* Text */.Text, obj), memo, callback(require(5547) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" })];
   obj.children = items5;
-  return callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
 };

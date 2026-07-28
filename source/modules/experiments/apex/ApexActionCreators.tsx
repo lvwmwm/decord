@@ -1,10 +1,10 @@
-// Module ID: 10427
-// Function ID: 80647
+// Module ID: 10467
+// Function ID: 80776
 // Name: _fetchApexExperimentsMetadata
-// Dependencies: [29, 5, 1188, 653, 507, 686, 7822, 1429, 566, 2]
+// Dependencies: [29, 5, 1188, 653, 507, 686, 7858, 1429, 566, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 10427 (_fetchApexExperimentsMetadata)
+// Module 10467 (_fetchApexExperimentsMetadata)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

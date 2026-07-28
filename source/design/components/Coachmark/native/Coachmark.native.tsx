@@ -1,17 +1,17 @@
-// Module ID: 8377
-// Function ID: 66999
+// Module ID: 8415
+// Function ID: 67109
 // Name: Coachmark
-// Dependencies: [29, 57, 31, 27, 33, 3992, 4131, 689, 8372, 4549, 6601, 1324, 4540, 4127, 4544, 1212, 5119, 8174, 6600, 477, 3843, 2]
+// Dependencies: [29, 57, 31, 27, 33, 4026, 4165, 689, 8410, 4583, 6637, 1324, 4574, 4161, 4578, 1212, 5153, 8212, 6636, 477, 3877, 2]
 // Exports: CoachmarkContainer
 
-// Module 8377 (Coachmark)
+// Module 8415 (Coachmark)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let Pressable;
 let closure_10;
@@ -40,7 +40,7 @@ class Coachmark {
     tmp5 = require("useTooltipPosition")(first, surfaceMeasurements, targetMeasurements, position, -8 + num);
     adjustmentX = tmp5.adjustmentX;
     ({ tooltipX, tooltipY } = tmp5);
-    obj = require("module_3992");
+    obj = require("module_4026");
     sharedValue = require("_objectWithoutProperties");
     result = sharedValue;
     items = [];
@@ -370,7 +370,7 @@ let closure_3 = ["style"];
 ({ View: closure_7, Pressable } = get_ActivityIndicator);
 const Image = get_ActivityIndicator.Image;
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let closure_13 = require("module_3992").createAnimatedComponent(Pressable);
+let closure_13 = require("module_4026").createAnimatedComponent(Pressable);
 let obj = { container: { position: "absolute", alignItems: "center" } };
 obj = {};
 let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_BUTTON_OVERLAY);
@@ -406,7 +406,7 @@ let result = require("result").fileFinishedImporting("design/components/Coachmar
 
 export { Coachmark };
 export const CoachmarkContainer = function CoachmarkContainer(experimental_withBlurBackground) {
-  let obj = require(3843) /* ManaContext */;
+  let obj = require(3877) /* ManaContext */;
   let str = "dark";
   if (!experimental_withBlurBackground.experimental_withBlurBackground) {
     str = obj.useThemeContext().theme;
@@ -415,5 +415,5 @@ export const CoachmarkContainer = function CoachmarkContainer(experimental_withB
   obj = {};
   const merged = Object.assign(experimental_withBlurBackground);
   obj.children = callback2(Coachmark, obj);
-  return callback2(require(3843) /* ManaContext */.ThemeContextProvider, obj);
+  return callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj);
 };

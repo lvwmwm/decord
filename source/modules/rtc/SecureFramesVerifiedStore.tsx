@@ -1,9 +1,9 @@
-// Module ID: 8806
-// Function ID: 69676
+// Module ID: 8850
+// Function ID: 69827
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 4203, 4217, 8807, 8808, 653, 8824, 4195, 4228, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 4237, 4251, 8851, 8852, 653, 8868, 4229, 4262, 566, 686, 2]
 
-// Module 8806 (_isNativeReflectConstruct)
+// Module 8850 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -171,7 +171,7 @@ function handleUserUpdate(userId) {
       }
       flag = isKeyVerifiedResult !== map.get(userId);
       const result = map.set(userId, isKeyVerifiedResult);
-      obj = require(8824) /* _createForOfIteratorHelperLoose */;
+      obj = require(8868) /* _createForOfIteratorHelperLoose */;
     }
     const tmp18 = computeStreamVerifications();
     if (!flag) {
@@ -260,14 +260,14 @@ tmp4 = new tmp4(require("dispatcher"), {
     ({ streamKey, context } = state);
     if (state.state !== RTCConnectionStates.DISCONNECTED) {
       return false;
-    } else if (require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM === context) {
+    } else if (require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM === context) {
       let tmp8 = null != streamKey;
       if (tmp8) {
         map1.delete(streamKey);
         tmp8 = computeCallVerification();
       }
       return tmp8;
-    } else if (require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT === context) {
+    } else if (require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT === context) {
       handleReset();
     }
   },

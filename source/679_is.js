@@ -1,5 +1,5 @@
 // Module ID: 679
-// Function ID: 8390
+// Function ID: 8394
 // Name: is
 // Dependencies: [31, 680]
 // Exports: useSyncExternalStoreWithSelector

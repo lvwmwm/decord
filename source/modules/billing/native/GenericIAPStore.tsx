@@ -1,9 +1,9 @@
-// Module ID: 5621
-// Function ID: 47989
+// Module ID: 5656
+// Function ID: 48116
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 22, 5622, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 22, 5657, 566, 686, 2]
 
-// Module 5621 (_isNativeReflectConstruct)
+// Module 5656 (_isNativeReflectConstruct)
 import SubscriptionPlans from "SubscriptionPlans";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

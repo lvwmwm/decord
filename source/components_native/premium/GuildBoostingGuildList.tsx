@@ -1,10 +1,10 @@
-// Module ID: 12503
-// Function ID: 96818
+// Module ID: 12546
+// Function ID: 96988
 // Name: GuildBoostingGuildListItem
-// Dependencies: [31, 27, 1838, 4971, 653, 33, 4131, 689, 4067, 566, 4038, 8278, 6633, 6448, 5513, 4127, 9584, 1212, 12472, 2]
+// Dependencies: [31, 27, 1838, 5005, 653, 33, 4165, 689, 4101, 566, 4072, 8316, 6669, 6484, 5548, 4161, 9624, 1212, 12515, 2]
 // Exports: default
 
-// Module 12503 (GuildBoostingGuildListItem)
+// Module 12546 (GuildBoostingGuildListItem)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -24,7 +24,7 @@ function GuildBoostingGuildListItem(guildId) {
   let obj = guildId(566);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId));
-  importDefault(4038);
+  importDefault(4072);
   if (null != stateFromStores) {
     const id = stateFromStores.id;
   }
@@ -40,31 +40,31 @@ function GuildBoostingGuildListItem(guildId) {
         }
     };
     obj = { guild: stateFromStores };
-    const tmp10 = importDefault(8278);
-    obj.size = guildId(5513).GuildIconSizes.LARGE;
+    const tmp10 = importDefault(8316);
+    obj.size = guildId(5548).GuildIconSizes.LARGE;
     obj.style = tmp.guildIcon;
     obj.selected = false;
-    const items1 = [callback(importDefault(5513), obj), , ];
+    const items1 = [callback(importDefault(5548), obj), , ];
     const obj1 = { style: tmp.guildCardDescription };
     const obj2 = { variant: "text-md/bold", children: stateFromStores.name };
-    const items2 = [callback(guildId(4127).Text, obj2), ];
+    const items2 = [callback(guildId(4161).Text, obj2), ];
     const obj3 = { style: tmp.subscriptionInfo };
-    const obj4 = { source: importDefault(9584), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
+    const obj4 = { source: importDefault(9624), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const items3 = [callback(closure_4, obj4), ];
     const obj5 = { variant: "text-xs/medium" };
     const intl = guildId(1212).intl;
     const obj6 = { subscriberCount: tmp5 };
     obj5.children = intl.format(guildId(1212).t.If4iTS, obj6);
-    items3[1] = callback(guildId(4127).Text, obj5);
+    items3[1] = callback(guildId(4161).Text, obj5);
     obj3.children = items3;
     items2[1] = callback2(closure_3, obj3);
     obj1.children = items2;
     items1[1] = callback2(closure_3, obj1);
     const obj7 = { guild: stateFromStores, theme: tmp2 };
-    items1[2] = callback(importDefault(12472), obj7);
+    items1[2] = callback(importDefault(12515), obj7);
     obj.children = items1;
     tmp6 = callback2(tmp10, obj);
-    const tmp12 = importDefault(5513);
+    const tmp12 = importDefault(5548);
   }
   return tmp6;
 }

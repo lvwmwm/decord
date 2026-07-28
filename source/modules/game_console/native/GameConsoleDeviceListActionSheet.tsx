@@ -1,10 +1,10 @@
-// Module ID: 8979
-// Function ID: 70768
+// Module ID: 9023
+// Function ID: 70919
 // Name: TransferFooter
-// Dependencies: [5, 57, 31, 27, 4145, 653, 33, 4131, 689, 5121, 4544, 1212, 8980, 4127, 8981, 566, 8971, 44, 8978, 4099, 1207, 1273, 7993, 5187, 5186, 5189, 2]
+// Dependencies: [5, 57, 31, 27, 4179, 653, 33, 4165, 689, 5155, 4578, 1212, 9024, 4161, 9025, 566, 9015, 44, 9022, 4133, 1207, 1273, 8031, 5221, 5220, 5223, 2]
 // Exports: default
 
-// Module 8979 (TransferFooter)
+// Module 9023 (TransferFooter)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -36,32 +36,32 @@ function TransferFooter(arg0) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.FYi3ry);
   obj.grow = true;
-  obj.children = closure_12(require(4544) /* Button */.Button, obj);
-  return closure_12(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj.children = closure_12(require(4578) /* Button */.Button, obj);
+  return closure_12(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function DeviceOption(name) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.deviceOption };
-  obj = { style: tmp.deviceIcon, source: importDefault(8980) };
+  obj = { style: tmp.deviceIcon, source: importDefault(9024) };
   const items = [callback(closure_8, obj), ];
   obj = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: name.name };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_7, obj);
 }
 function EmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.emptyContainer };
-  obj = { source: importDefault(8981), style: tmp.emptyArt };
+  obj = { source: importDefault(9025), style: tmp.emptyArt };
   const items = [callback(closure_8, obj), , ];
   obj = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.OkJf1e);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   const obj1 = { style: tmp.emptyBody, variant: "text-md/normal", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["of/l5Z"]);
-  items[2] = callback(require(4127) /* Text */.Text, obj1);
+  items[2] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   return callback2(closure_7, obj);
 }

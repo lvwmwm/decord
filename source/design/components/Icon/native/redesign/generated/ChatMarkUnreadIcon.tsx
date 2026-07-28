@@ -1,10 +1,10 @@
-// Module ID: 9913
-// Function ID: 76770
+// Module ID: 9953
+// Function ID: 76899
 // Name: ChatMarkUnreadIcon
-// Dependencies: [31, 33, 689, 3834, 9914, 2]
+// Dependencies: [31, 33, 689, 3868, 9954, 2]
 // Exports: ChatMarkUnreadIcon
 
-// Module 9913 (ChatMarkUnreadIcon)
+// Module 9953 (ChatMarkUnreadIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ChatMarkUnreadIcon = function ChatMarkUnreadIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9914) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9954) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9914) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9954) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9207
-// Function ID: 72209
+// Module ID: 9251
+// Function ID: 72360
 // Name: overrideSurvey
-// Dependencies: [9206, 653, 686, 675, 4943, 480, 1361, 507, 2]
+// Dependencies: [9250, 653, 686, 675, 4977, 480, 1361, 507, 2]
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 9207 (overrideSurvey)
+// Module 9251 (overrideSurvey)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SURVEY_REFETCH_INTERVAL } from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -64,7 +64,7 @@ export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_see
     }
   };
   obj.trackedActionData = obj;
-  const obj2 = importDefault(4943);
+  const obj2 = importDefault(4977);
   obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
   const value = obj2.get(obj);
   return value.then((body) => {
@@ -103,7 +103,7 @@ export const surveySeen = function surveySeen(key) {
   obj = { type: "SURVEY_SEEN", key };
   obj.dispatch(obj);
   obj = { url: closure_7.USER_SURVEY_SEEN(key) };
-  const obj3 = importDefault(4943);
+  const obj3 = importDefault(4977);
   obj.trackedActionData = {
     event: _require(480).NetworkActionNames.USER_SURVEY_SEEN,
     properties() {

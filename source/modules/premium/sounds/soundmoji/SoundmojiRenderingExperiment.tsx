@@ -1,10 +1,10 @@
-// Module ID: 4583
-// Function ID: 40207
+// Module ID: 4617
+// Function ID: 40322
 // Name: getSoundmojiRenderingExperiment
 // Dependencies: [1428, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 4583 (getSoundmojiRenderingExperiment)
+// Module 4617 (getSoundmojiRenderingExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-soundmoji-rendering", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,10 +1,10 @@
-// Module ID: 11501
-// Function ID: 89544
+// Module ID: 11539
+// Function ID: 89668
 // Name: ChannelAccessInfo
-// Dependencies: [31, 27, 1391, 1918, 1911, 33, 4131, 689, 1212, 566, 8215, 1327, 4127, 4661, 10856, 1273, 11500, 4647, 8226, 8224, 10675, 2]
+// Dependencies: [31, 27, 1391, 1918, 1911, 33, 4165, 689, 1212, 566, 8253, 1327, 4161, 4695, 10894, 1273, 11538, 4681, 8264, 8262, 10713, 2]
 // Exports: default
 
-// Module 11501 (ChannelAccessInfo)
+// Module 11539 (ChannelAccessInfo)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { isGuildOwner } from "isGuildOwner";
@@ -84,7 +84,7 @@ export default function ChannelAccessInfo(guild) {
     id = guild.id;
   }
   memberIds = memberIds.getMemberIds(id);
-  let obj1 = guild(8215);
+  let obj1 = guild(8253);
   const existingMembers = obj1.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
   let tmp6 = 0 === stateFromStoresArray.length;
   if (tmp6) {
@@ -98,7 +98,7 @@ export default function ChannelAccessInfo(guild) {
     first = existingMembers[0];
   }
   obj = {};
-  const items2 = [callback(guild(4127).Text, { variant: "eyebrow", children: stringResult }), ];
+  const items2 = [callback(guild(4161).Text, { variant: "eyebrow", children: stringResult }), ];
   obj = {
     accessibilityLabel: stringResult,
     accessibilityRole: "button",
@@ -114,11 +114,11 @@ export default function ChannelAccessInfo(guild) {
     const items3 = [callback(guild(1273).Avatar, obj3), ];
     let obj4 = {};
     let obj5 = { variant: "text-sm/semibold", children: first.tag };
-    const items4 = [callback(guild(4127).Text, obj5), ];
+    const items4 = [callback(guild(4161).Text, obj5), ];
     const obj6 = { variant: "text-xs/medium" };
     let intl2 = guild(1212).intl;
     obj6.children = intl2.string(guild(1212).t.rt0ERW);
-    items4[1] = callback(guild(4127).Text, obj6);
+    items4[1] = callback(guild(4161).Text, obj6);
     obj4.children = items4;
     items3[1] = callback2(View, obj4);
     obj2.children = items3;
@@ -126,19 +126,19 @@ export default function ChannelAccessInfo(guild) {
   } else {
     obj7 = {};
     const MEMBERS = constants.MEMBERS;
-    channel(11500);
-    const items5 = [renderCounts(MEMBERS, existingMembers.length, undefined, guild(4647).GroupIcon), ];
+    channel(11538);
+    const items5 = [renderCounts(MEMBERS, existingMembers.length, undefined, guild(4681).GroupIcon), ];
     const ROLES = constants.ROLES;
-    channel(8226);
-    items5[1] = renderCounts(ROLES, stateFromStoresArray.length, undefined, guild(8224).ShieldUserIcon);
+    channel(8264);
+    items5[1] = renderCounts(ROLES, stateFromStoresArray.length, undefined, guild(8262).ShieldUserIcon);
     obj7.children = items5;
   }
   obj1.children = callback2(closure_10, obj7);
   const items6 = [callback(View, obj1), ];
-  const obj8 = { source: channel(10675), size: guild(1273).Icon.Sizes.SMALL };
+  const obj8 = { source: channel(10713), size: guild(1273).Icon.Sizes.SMALL };
   items6[1] = callback(guild(1273).Icon, obj8);
   obj.children = items6;
-  items2[1] = callback2(guild(4661).PressableOpacity, obj);
+  items2[1] = callback2(guild(4695).PressableOpacity, obj);
   obj.children = items2;
   return callback2(closure_10, obj);
 };

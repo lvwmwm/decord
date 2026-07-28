@@ -1,10 +1,10 @@
-// Module ID: 16592
-// Function ID: 129448
+// Module ID: 16632
+// Function ID: 129609
 // Name: _navigateToGuild
-// Dependencies: [5, 1922, 12693, 8244, 653, 1212, 1327, 6632, 675, 16591, 491, 2]
+// Dependencies: [5, 1922, 12736, 8282, 653, 1212, 1327, 6668, 675, 16631, 491, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 16592 (_navigateToGuild)
+// Module 16632 (_navigateToGuild)
 import getSystemLocale from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -199,7 +199,7 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
   let isInitialFetchComplete = store.getIsInitialFetchComplete(closure_9);
   if (!isInitialFetchComplete) {
     if (!isFetching) {
-      let obj = importDefault(16591);
+      let obj = importDefault(16631);
       const featuredGuilds = obj.fetchFeaturedGuilds();
     }
   }
@@ -211,8 +211,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
   }
   if (isInitialFetchComplete) {
     obj = { forceRefresh: true };
-    const featuredGuilds1 = importDefault(16591).fetchFeaturedGuilds(obj);
-    const obj2 = importDefault(16591);
+    const featuredGuilds1 = importDefault(16631).fetchFeaturedGuilds(obj);
+    const obj2 = importDefault(16631);
   }
 };
 export const makeAnalyticsID = function makeAnalyticsID() {

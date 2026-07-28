@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 120960
+// Module ID: 15722
+// Function ID: 121116
 // Name: BogoPromotionActionSheet
-// Dependencies: [31, 27, 1852, 653, 1345, 33, 4131, 689, 5462, 6162, 5187, 5085, 4127, 1212, 1921, 8365, 2]
+// Dependencies: [31, 27, 1852, 653, 1345, 33, 4165, 689, 5497, 6196, 5221, 5119, 4161, 1212, 1921, 8403, 2]
 // Exports: default
 
-// Module 15683 (BogoPromotionActionSheet)
+// Module 15722 (BogoPromotionActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -38,7 +38,7 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/premium/p
 export default function BogoPromotionActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = _createForOfIteratorHelperLoose();
-  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
   const items = [analyticsLocations, markAsDismissed];
   const items1 = [markAsDismissed];
   const callback = React.useCallback(() => {
@@ -54,20 +54,20 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   obj = { style: items2 };
   items2 = [tmp.container];
   obj = { source: { uri: "https://cdn.discordapp.com/assets/content/a59aed2e0e61a955dc3e0f4f6f7ab295e39f89a93c4f01e4bd84ed7fb418ec63.png" }, style: tmp.image };
-  const items3 = [callback(analyticsLocations(5085), obj), , , ];
+  const items3 = [callback(analyticsLocations(5119), obj), , , ];
   const obj1 = { style: null, color: "mobile-text-heading-primary", variant: "heading-xl/bold" };
   const items4 = [tmp.header];
   obj1.style = items4;
   const intl = markAsDismissed(1212).intl;
   obj1.children = intl.string(markAsDismissed(1212).t["6Jjfk8"]);
-  items3[1] = callback(markAsDismissed(4127).Text, obj1);
+  items3[1] = callback(markAsDismissed(4161).Text, obj1);
   const obj2 = { style: null, color: "text-subtle", variant: "text-md/medium" };
   const items5 = [tmp.subheader];
   obj2.style = items5;
   const intl2 = markAsDismissed(1212).intl;
   const obj3 = { helpCenterLink: analyticsLocations(1921).getArticleURL(SUMMER_BOGO_2025.SUMMER_BOGO_2025) };
   obj2.children = intl2.format(markAsDismissed(1212).t.y7lJK6, obj3);
-  items3[2] = callback(markAsDismissed(4127).Text, obj2);
+  items3[2] = callback(markAsDismissed(4161).Text, obj2);
   const obj4 = { style: items6 };
   items6 = [tmp.buttonContainer];
   const obj5 = {};
@@ -75,9 +75,9 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   const intl3 = markAsDismissed(1212).intl;
   obj5.text = intl3.string(markAsDismissed(1212).t.J61px0);
   obj5.onPress = callback;
-  obj4.children = callback(analyticsLocations(8365), obj5);
+  obj4.children = callback(analyticsLocations(8403), obj5);
   items3[3] = callback(View, obj4);
   obj.children = items3;
   obj.children = callback2(View, obj);
-  return callback(markAsDismissed(5187).BottomSheet, obj);
+  return callback(markAsDismissed(5221).BottomSheet, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 5686
-// Function ID: 49056
+// Module ID: 5696
+// Function ID: 48912
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 3949, 3713, 3951, 3755, 3950, 664, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 3983, 3747, 3985, 3789, 3984, 664, 566, 686, 2]
 
-// Module 5686 (_isNativeReflectConstruct)
+// Module 5696 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "t";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -27,15 +27,15 @@ function getSubmittedGuildJoinRequestTotal(guildId) {
 }
 function setSubmittedGuildJoinRequestTotal(guildId, total) {
   closure_11[guildId] = total;
-  const result = map.set(guildId, importDefault(3713)());
+  const result = map.set(guildId, importDefault(3747)());
 }
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
   if (DELETED !== applicationStatus) {
     if (null != DELETED) {
-      if (DELETED === require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (DELETED === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         setSubmittedGuildJoinRequestTotal(guildId, getSubmittedGuildJoinRequestTotal(guildId) + 1);
       }
-      if (applicationStatus === require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         setSubmittedGuildJoinRequestTotal(guildId, Math.max(0, getSubmittedGuildJoinRequestTotal(guildId) - 1));
       }
@@ -61,7 +61,7 @@ function upsert(joinRequestId) {
     secondaryIndexMap2.delete(joinRequestId.joinRequestId);
     const result1 = secondaryIndexMap1.set(joinRequestId.joinRequestId, joinRequestId);
   }
-  obj = require(3950) /* isActionedApplicationStatus */;
+  obj = require(3984) /* isActionedApplicationStatus */;
   if (obj2.isActionedApplicationStatus(joinRequestId.applicationStatus)) {
     secondaryIndexMap1.delete(joinRequestId.joinRequestId);
     const result2 = secondaryIndexMap2.set(joinRequestId.joinRequestId, joinRequestId);
@@ -248,7 +248,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     requests = requests.requests;
     let c13 = false;
     ({ status, total, guildId } = requests);
-    if (status === require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+    if (status === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
       setSubmittedGuildJoinRequestTotal(guildId, total);
     }
     const item = requests.forEach((arg0) => {
@@ -292,11 +292,11 @@ tmp6 = new tmp6(require("dispatcher"), {
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         secondaryIndexMap2.clear();
       }
-      obj = require(3950) /* isActionedApplicationStatus */;
+      obj = require(3984) /* isActionedApplicationStatus */;
       if (obj2.isSubmittedApplicationStatus(applicationStatus)) {
         secondaryIndexMap1.clear();
       }
-      obj2 = require(3950) /* isActionedApplicationStatus */;
+      obj2 = require(3984) /* isActionedApplicationStatus */;
     }
   },
   GUILD_JOIN_REQUESTS_SET_SELECTED: function handleGuildJoinRequestSelect(guildId) {

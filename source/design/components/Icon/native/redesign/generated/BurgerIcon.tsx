@@ -1,10 +1,10 @@
-// Module ID: 13599
-// Function ID: 104542
+// Module ID: 13643
+// Function ID: 104715
 // Name: BurgerIcon
-// Dependencies: [31, 33, 689, 3834, 13600, 2]
+// Dependencies: [31, 33, 689, 3868, 13644, 2]
 // Exports: BurgerIcon
 
-// Module 13599 (BurgerIcon)
+// Module 13643 (BurgerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const BurgerIcon = function BurgerIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13600) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13644) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13600) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(13644) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 16493
-// Function ID: 128506
+// Module ID: 16533
+// Function ID: 128667
 // Name: Content
-// Dependencies: [57, 31, 27, 16494, 14156, 653, 33, 4131, 12969, 16489, 8281, 1212, 16495, 4127, 14168, 7575, 16498, 2]
+// Dependencies: [57, 31, 27, 16534, 14200, 653, 33, 4165, 13013, 16529, 8319, 1212, 16535, 4161, 14212, 7611, 16538, 2]
 // Exports: default
 
-// Module 16493 (Content)
+// Module 16533 (Content)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -99,6 +99,6 @@ export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
   obj["description"] = first1;
   obj["setDescription"] = tmp3[1];
   obj["children"] = callback2(Content, obj);
-  return callback2(importDefault(16498), obj);
+  return callback2(importDefault(16538), obj);
 };
 export { Content };

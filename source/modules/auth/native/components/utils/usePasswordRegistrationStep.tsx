@@ -1,10 +1,10 @@
-// Module ID: 14813
-// Function ID: 113008
+// Module ID: 14857
+// Function ID: 113181
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 57, 31, 14790, 9137, 14814, 1212, 14801, 2]
+// Dependencies: [5, 57, 31, 14834, 9181, 14858, 1212, 14845, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 14813 (usePasswordRegistrationStep)
+// Module 14857 (usePasswordRegistrationStep)
 import PasswordScore from "PasswordScore";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

@@ -1,9 +1,9 @@
-// Module ID: 15898
-// Function ID: 122785
+// Module ID: 15937
+// Function ID: 122941
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 31, 27, 33, 4131, 689, 9975, 5462, 10579, 10608, 4661, 15899, 15900, 5515, 2]
+// Dependencies: [5, 31, 27, 33, 4165, 689, 10015, 5497, 10617, 10646, 4695, 15938, 15939, 5550, 2]
 
-// Module 15898 (ActivityItemEmptyCard)
+// Module 15937 (ActivityItemEmptyCard)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
 import { ActivityIndicator } from "get ActivityIndicator";
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(function ActivityItemMissingCard(arg0) {
   obj = { style: callback3().loadingActivity };
   const tmp = callback3();
   obj.children = callback(ActivityIndicator, { size: "large" });
-  tmp4 = callback(importDefault(5515), obj);
+  tmp4 = callback(importDefault(5550), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityItemMissingCard.tsx");
 

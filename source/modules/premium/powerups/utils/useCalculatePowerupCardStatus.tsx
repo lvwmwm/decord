@@ -1,10 +1,10 @@
-// Module ID: 11548
-// Function ID: 89904
+// Module ID: 11587
+// Function ID: 90055
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [31, 4019, 1212, 2231, 2]
+// Dependencies: [31, 4053, 1212, 2231, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 11548 (useCalculatePowerupCardStatus)
+// Module 11587 (useCalculatePowerupCardStatus)
 import result from "result";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
 

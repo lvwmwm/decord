@@ -1,9 +1,9 @@
-// Module ID: 16068
-// Function ID: 124298
+// Module ID: 16107
+// Function ID: 124454
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1347, 1348, 4147, 4204, 5685, 1212, 4945, 4016, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1347, 1348, 4181, 4238, 5695, 1212, 4979, 4050, 5112, 2]
 
-// Module 16068 (_isNativeReflectConstruct)
+// Module 16107 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -52,12 +52,12 @@ function disconnect() {
   if (isIdle()) {
     const currentClientVoiceChannelId = store.getCurrentClientVoiceChannelId(null);
     if (null != currentClientVoiceChannelId) {
-      let obj = importDefault(5685);
+      let obj = importDefault(5695);
       const intl = require(1212) /* getSystemLocale */.intl;
       obj = { number: 3 };
       obj.sendBotMessage(currentClientVoiceChannelId, intl.formatToPlainString(require(1212) /* getSystemLocale */.t.XYof5G, obj));
-      const voiceChannel = importDefault(4945).selectVoiceChannel(null);
-      const obj3 = importDefault(4945);
+      const voiceChannel = importDefault(4979).selectVoiceChannel(null);
+      const obj3 = importDefault(4979);
     }
   }
 }

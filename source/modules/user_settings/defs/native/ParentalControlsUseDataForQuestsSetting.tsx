@@ -1,9 +1,9 @@
-// Module ID: 14626
-// Function ID: 111518
+// Module ID: 14670
+// Function ID: 111691
 // Name: toggle
-// Dependencies: [5765, 7697, 13791, 1212, 2199, 10059, 2]
+// Dependencies: [5775, 7733, 13835, 1212, 2199, 10099, 2]
 
-// Module 14626 (toggle)
+// Module 14670 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -17,7 +17,7 @@ createToggle = {
   useValue: function useDataToSupportQuestsSettingValue() {
     const selectedTeenId = store.getSelectedTeenId();
     let tmp2;
-    const ParentalControlledDropsOptedOut = require(13791) /* result */.ParentalControlledDropsOptedOut;
+    const ParentalControlledDropsOptedOut = require(13835) /* result */.ParentalControlledDropsOptedOut;
     if (null != selectedTeenId) {
       tmp2 = selectedTeenId;
     }
@@ -25,7 +25,7 @@ createToggle = {
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = store.getSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(13791) /* result */.ParentalControlledDropsOptedOut;
+    const ParentalControlledDropsOptedOut = require(13835) /* result */.ParentalControlledDropsOptedOut;
     let tmp2;
     if (null != selectedTeenId) {
       tmp2 = selectedTeenId;

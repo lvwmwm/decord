@@ -1,10 +1,10 @@
-// Module ID: 7556
-// Function ID: 60570
+// Module ID: 7592
+// Function ID: 60659
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 57, 31, 27, 33, 1456, 4348, 6723, 5839, 5844, 1212, 2717, 6725, 6726, 4542, 4127, 4966, 4544, 6692, 2]
+// Dependencies: [5, 57, 31, 27, 33, 1456, 4382, 6759, 5849, 5854, 1212, 2717, 6761, 6762, 4576, 4161, 5000, 4578, 6728, 2]
 // Exports: default
 
-// Module 7556 (GoogleWalletVerificationScreen)
+// Module 7592 (GoogleWalletVerificationScreen)
 import useNavigation from "useNavigation";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -25,7 +25,7 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
   const tmp2 = callback1(React.useState({ type: "loading" }), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj1 = modalSessionId(4348);
+  let obj1 = modalSessionId(4382);
   const watchAgeVerificationStatusChange = obj1.useWatchAgeVerificationStatusChange(modalSessionId.onClose);
   const items = [navigation];
   const callback = React.useCallback(() => {
@@ -33,10 +33,10 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
   }, items);
   const items1 = [callback];
   callback1 = React.useCallback(callback(async () => {
-    const obj = modalSessionId(6723);
-    const obj2 = modalSessionId(6723);
-    const tmp = yield modalSessionId(6723).getGoogleWalletCredential(yield obj.requestGoogleWalletVerification().request_json);
-    yield modalSessionId(6723).verifyGoogleWalletCredential(tmp);
+    const obj = modalSessionId(6759);
+    const obj2 = modalSessionId(6759);
+    const tmp = yield modalSessionId(6759).getGoogleWalletCredential(yield obj.requestGoogleWalletVerification().request_json);
+    yield modalSessionId(6759).verifyGoogleWalletCredential(tmp);
   }), items1);
   React = React.useRef(false);
   const items2 = [navigation, callback1];
@@ -71,31 +71,31 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     const obj3 = { variant: "text-md/medium", color: "text-strong" };
     const intl = modalSessionId(1212).intl;
     obj3.children = intl.string(navigation(2717).MlFuBI);
-    items3[1] = callback(modalSessionId(4127).Text, obj3);
+    items3[1] = callback(modalSessionId(4161).Text, obj3);
     obj1.children = items3;
-    obj.children = callback2(modalSessionId(4542).Stack, obj1);
-    obj.children = callback(modalSessionId(6726).ModalContent, obj);
-    let tmp14 = callback(modalSessionId(6725).ModalScreen, obj);
+    obj.children = callback2(modalSessionId(4576).Stack, obj1);
+    obj.children = callback(modalSessionId(6762).ModalContent, obj);
+    let tmp14 = callback(modalSessionId(6761).ModalScreen, obj);
   } else {
     const obj4 = {};
     const obj5 = {};
     const obj6 = { align: "center", justify: "center", spacing: 16 };
     const obj7 = { variant: "text-md/medium", color: "text-strong", children: first.message };
-    const items4 = [callback(modalSessionId(4127).Text, obj7), ];
+    const items4 = [callback(modalSessionId(4161).Text, obj7), ];
     const obj8 = {};
     const obj9 = { variant: "primary", size: "lg" };
     const intl2 = modalSessionId(1212).intl;
     obj9.text = intl2.string(navigation(2717).fEUKEv);
     obj9.onPress = function onPress() {
-      const result = modalSessionId(6692).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(6692).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(6692).AgeVerificationModalCta.METHOD_SELECT);
+      const result = modalSessionId(6728).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(6728).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(6728).AgeVerificationModalCta.METHOD_SELECT);
       callback();
     };
-    obj8.children = callback(modalSessionId(4544).Button, obj9);
-    items4[1] = callback(modalSessionId(4966).ButtonGroup, obj8);
+    obj8.children = callback(modalSessionId(4578).Button, obj9);
+    items4[1] = callback(modalSessionId(5000).ButtonGroup, obj8);
     obj6.children = items4;
-    obj5.children = callback2(modalSessionId(4542).Stack, obj6);
-    obj4.children = callback(modalSessionId(6726).ModalContent, obj5);
-    tmp14 = callback(modalSessionId(6725).ModalScreen, obj4);
+    obj5.children = callback2(modalSessionId(4576).Stack, obj6);
+    obj4.children = callback(modalSessionId(6762).ModalContent, obj5);
+    tmp14 = callback(modalSessionId(6761).ModalScreen, obj4);
   }
   return tmp14;
 };

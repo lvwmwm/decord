@@ -1,10 +1,10 @@
-// Module ID: 16143
-// Function ID: 125070
+// Module ID: 16182
+// Function ID: 125226
 // Name: useApplicationInfo
-// Dependencies: [5, 57, 31, 1194, 1348, 4469, 1918, 3948, 4468, 13395, 7833, 653, 7832, 1882, 1392, 5661, 12552, 566, 5450, 21, 686, 6134, 1212, 44, 4354, 6100, 7837, 4667, 507, 664, 2]
+// Dependencies: [5, 57, 31, 1194, 1348, 4503, 1918, 3982, 4502, 13439, 7869, 653, 7868, 1882, 1392, 5671, 12595, 566, 5485, 21, 686, 6168, 1212, 44, 4388, 6134, 7873, 4701, 507, 664, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16143 (useApplicationInfo)
+// Module 16182 (useApplicationInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -217,7 +217,7 @@ function _submitModal() {
 let result = require("result").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(7832) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(7868) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (null != componentStateContext) {
     const modal = componentStateContext.modal;

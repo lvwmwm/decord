@@ -1,10 +1,10 @@
-// Module ID: 11821
-// Function ID: 91725
+// Module ID: 11864
+// Function ID: 91895
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1850, 566, 8648, 9698, 2]
+// Dependencies: [1850, 566, 8692, 9738, 2]
 // Exports: default
 
-// Module 11821 (useMobileCollectiblesPurchaseSKU)
+// Module 11864 (useMobileCollectiblesPurchaseSKU)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -18,12 +18,12 @@ export default function useMobileCollectiblesPurchaseSKU(product) {
   obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  const collectibleGoogleSkuId = require(8648) /* _createForOfIteratorHelperLoose */.getCollectibleGoogleSkuId(product, stateFromStores);
+  const collectibleGoogleSkuId = require(8692) /* _createForOfIteratorHelperLoose */.getCollectibleGoogleSkuId(product, stateFromStores);
   obj = {};
-  const obj2 = require(8648) /* _createForOfIteratorHelperLoose */;
+  const obj2 = require(8692) /* _createForOfIteratorHelperLoose */;
   const merged1 = Object.assign(merged);
   obj["skuId"] = product.skuId;
   obj["platformSkuId"] = collectibleGoogleSkuId;
   obj["isFreeForStaffSelfPurchase"] = true;
-  return importDefault(9698)(obj);
+  return importDefault(9738)(obj);
 };

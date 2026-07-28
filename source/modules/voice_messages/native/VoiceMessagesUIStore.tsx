@@ -1,10 +1,10 @@
-// Module ID: 11091
-// Function ID: 86185
+// Module ID: 11129
+// Function ID: 86308
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11092, 621, 3992, 682, 4543, 2]
+// Dependencies: [11130, 621, 4026, 682, 4577, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11091 (VoiceMessageRecordingStatus)
+// Module 11129 (VoiceMessageRecordingStatus)
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import keys from "keys";
 
@@ -15,7 +15,7 @@ let obj = keys.create(() => {
   const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: null, showRecordingOverlay: false };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
-  obj.voiceMessageAnimationState = require(3992).makeMutable(items);
+  obj.voiceMessageAnimationState = require(4026).makeMutable(items);
   obj.currWaveHeight = undefined;
   obj.startTimeMillis = undefined;
   obj.waveform = [];
@@ -26,7 +26,7 @@ let obj = keys.create(() => {
   obj.isUsingHoldGesture = false;
   return obj;
 });
-let result = require("module_3992").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
+let result = require("module_4026").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
 
 export const VoiceMessageRecordingStatus = { REQUESTED: 0, [0]: "REQUESTED", STARTED: 1, [1]: "STARTED" };
 export const useVoiceMessagesUIStore = obj;
@@ -66,7 +66,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveformVersion = obj.getState().waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    obj = waveformVersion(4543);
+    obj = waveformVersion(4577);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];
@@ -93,8 +93,8 @@ export const resetVoiceMessageState = function resetVoiceMessageState() {
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    const result = currWaveHeight.set(require(4543) /* withSpring */.withSpring(0));
-    const obj2 = require(4543) /* withSpring */;
+    const result = currWaveHeight.set(require(4577) /* withSpring */.withSpring(0));
+    const obj2 = require(4577) /* withSpring */;
   }
 };
 export const setSavedVoiceMessageUploadData = function setSavedVoiceMessageUploadData(arg0) {

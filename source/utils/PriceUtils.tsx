@@ -1,10 +1,10 @@
-// Module ID: 5616
-// Function ID: 47881
+// Module ID: 5651
+// Function ID: 48008
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1922, 3779, 1852, 482, 477, 5617, 5619, 5621, 1212, 3777, 2]
+// Dependencies: [1922, 3813, 1852, 482, 477, 5652, 5654, 5656, 1212, 3811, 2]
 // Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice
 
-// Module 5616 (formatSingleCurrencyPrice)
+// Module 5651 (formatSingleCurrencyPrice)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -46,7 +46,7 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   if (tmp11) {
     obj.minimumFractionDigits = 0;
   }
-  return require(5617) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
+  return require(5652) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
 }
 function formatDualPriceForBG(result, localeOverride) {
   return "" + formatSingleCurrencyPrice(result, CurrencyCodes.EUR, localeOverride) + " (" + formatSingleCurrencyPrice(1.95583 * result, CurrencyCodes.BGN, localeOverride) + ")";
@@ -57,16 +57,16 @@ function formatPrice(amount, currency, localeOverride, localeOverride) {
   if (timestamp < date.getTime()) {
     const platformName = require(477) /* set */.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = require(5619) /* _isNativeReflectConstruct */.default.getUserCountry();
-      const _default2 = require(5619) /* _isNativeReflectConstruct */.default;
+      let ipCountryCode = require(5654) /* _isNativeReflectConstruct */.default.getUserCountry();
+      const _default2 = require(5654) /* _isNativeReflectConstruct */.default;
     } else if ("ios" === platformName) {
-      const storeFront = require(5621) /* _isNativeReflectConstruct */.default.getStoreFront();
+      const storeFront = require(5656) /* _isNativeReflectConstruct */.default.getStoreFront();
       let country;
       if (null != storeFront) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = require(5621) /* _isNativeReflectConstruct */.default;
+      const _default = require(5656) /* _isNativeReflectConstruct */.default;
     } else {
       ipCountryCode = ipCountryCode.ipCountryCode;
     }
@@ -132,7 +132,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
-  const price = require(3777) /* _createForOfIteratorHelperLoose */.getPrice(interval_count.id);
+  const price = require(3811) /* _createForOfIteratorHelperLoose */.getPrice(interval_count.id);
   return formatRate(formatPrice(price.amount, price.currency), interval_count.interval, "interval_count" in interval_count ? interval_count.interval_count : interval_count.intervalCount);
 };
 export { maybeShortenPrice };

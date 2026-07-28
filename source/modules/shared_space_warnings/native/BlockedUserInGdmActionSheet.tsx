@@ -1,12 +1,12 @@
-// Module ID: 12724
-// Function ID: 99023
+// Module ID: 12767
+// Function ID: 99193
 // Name: getUserCalloutRowText
-// Dependencies: [31, 27, 1348, 1850, 12725, 653, 33, 4131, 689, 4127, 4320, 1212, 566, 1327, 1273, 10953, 9026, 4092, 4087, 675, 5498, 10377, 5501, 5164, 4544, 4099, 12726, 4141, 2]
+// Dependencies: [31, 27, 1348, 1850, 12768, 653, 33, 4165, 689, 4161, 4354, 1212, 566, 1327, 1273, 10991, 9070, 4126, 4121, 675, 5533, 10417, 5536, 5198, 4578, 4133, 12769, 4175, 2]
 // Exports: default
 
-// Module 12724 (getUserCalloutRowText)
+// Module 12767 (getUserCalloutRowText)
 import result from "result";
-import get_ActivityIndicator from "module_4141";
+import get_ActivityIndicator from "module_4175";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import GdmWarningMedium from "GdmWarningMedium";
@@ -29,8 +29,8 @@ function getUserCalloutRowText(arg0) {
   let totalUsers;
   ({ calledOutUserIds, totalUsers, guildId: require, channelId: importDefault } = arg0);
   function renderUsername(arg0) {
-    const obj = { variant: "text-md/semibold", children: outer1_1(4320).getName(closure_0, closure_1, arg0) };
-    return outer1_11(outer1_0(4127).Text, obj);
+    const obj = { variant: "text-md/semibold", children: outer1_1(4354).getName(closure_0, closure_1, arg0) };
+    return outer1_11(outer1_0(4161).Text, obj);
   }
   const items = [...calledOutUserIds];
   const dependencyMap = items.map((arg0) => outer1_7.getUser(arg0));
@@ -97,11 +97,11 @@ function UserCalloutAvatars(userIds) {
       obj["aria-hidden"] = true;
       let tmp10 = callback(userIds(1273).Avatar, obj);
     } else {
-      tmp10 = callback(userIds(10953).UserIcon, {});
+      tmp10 = callback(userIds(10991).UserIcon, {});
     }
   } else {
     obj = { users: found, size: userIds(1273).AvatarSizes.REFRESH_MEDIUM_32 };
-    return callback(userIds(9026).FacepileGroupDMAvatar, obj);
+    return callback(userIds(9070).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

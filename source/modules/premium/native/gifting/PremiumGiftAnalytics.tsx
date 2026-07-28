@@ -1,10 +1,10 @@
-// Module ID: 9766
-// Function ID: 75952
+// Module ID: 9806
+// Function ID: 76081
 // Name: PremiumGiftAnalytics
-// Dependencies: [31, 653, 8736, 6238, 477, 675, 1212, 6239, 2]
+// Dependencies: [31, 653, 8780, 6274, 477, 675, 1212, 6275, 2]
 // Exports: default
 
-// Module 9766 (PremiumGiftAnalytics)
+// Module 9806 (PremiumGiftAnalytics)
 import result from "result";
 import { AnalyticEvents } from "ME";
 

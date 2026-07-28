@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 79046
+// Module ID: 10255
+// Function ID: 79175
 // Name: NotificationWrapper
-// Dependencies: [57, 31, 27, 9504, 4143, 10201, 653, 33, 3992, 4131, 10216, 7693, 7698, 10217, 10280, 10281, 10282, 10299, 10300, 10317, 10318, 10321, 10322, 10200, 8056, 566, 3947, 1334, 4099, 4325, 4541, 1450, 21, 5070, 4132, 4560, 675, 5217, 4543, 1273, 4532, 1212, 5121, 10241, 2]
+// Dependencies: [57, 31, 27, 9544, 4177, 10241, 653, 33, 4026, 4165, 10256, 7729, 7734, 10257, 10320, 10321, 10322, 10339, 10340, 10357, 10358, 10361, 10362, 10240, 8094, 566, 3981, 1334, 4133, 4359, 4575, 1450, 21, 5104, 4166, 4594, 675, 5251, 4577, 1273, 4566, 1212, 5155, 10281, 2]
 // Exports: default
 
-// Module 10215 (NotificationWrapper)
+// Module 10255 (NotificationWrapper)
 import _slicedToArray from "_slicedToArray";
 import useWindowDimensions from "useWindowDimensions";
 import get_ActivityIndicator from "DismissibleContent";
@@ -13,7 +13,7 @@ import closure_9 from "_isNativeReflectConstruct";
 import set from "set";
 import ME from "ME";
 import jsxProd from "_createForOfIteratorHelperLoose";
-import { Easing } from "module_3992";
+import { Easing } from "module_4026";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import set from "get ActivityIndicator";
 
@@ -41,38 +41,38 @@ function NotificationWrapper(notification) {
   const type = notification.type;
   if (constants.MESSAGE === type) {
     let obj = { notification };
-    return callback(importDefault(10217), obj);
+    return callback(importDefault(10257), obj);
   } else if (constants.MESSAGE_FAILED_TO_SEND === type) {
     obj = { notification };
-    return callback(importDefault(10280), obj);
+    return callback(importDefault(10320), obj);
   } else if (constants.FORUM_THREAD_CREATED === type) {
     const obj1 = { notification };
-    return callback(importDefault(10281), obj1);
+    return callback(importDefault(10321), obj1);
   } else if (constants.BUG_REPORTER === type) {
     const obj2 = { notification };
-    return callback(require(10282) /* BugReporterNotification */.BugReporterNotification, obj2);
+    return callback(require(10322) /* BugReporterNotification */.BugReporterNotification, obj2);
   } else if (constants.ALERT === type) {
     const obj3 = { notification };
-    return callback(importDefault(10299), obj3);
+    return callback(importDefault(10339), obj3);
   } else if (constants.REACTION === type) {
     const obj4 = { notification };
-    return callback(importDefault(10300), obj4);
+    return callback(importDefault(10340), obj4);
   } else if (constants.MESSAGE_REMINDER === type) {
     const obj5 = { notification };
-    return callback(importDefault(10317), obj5);
+    return callback(importDefault(10357), obj5);
   } else {
     if (constants.RESTRICTED_HOURS_WARNING !== type) {
       if (constants.RESTRICTED_SCHEDULE_UPDATED !== type) {
         if (constants.MESSAGE_REQUEST === type) {
           obj = { notification };
-          return callback(importDefault(10321), obj);
+          return callback(importDefault(10361), obj);
         } else {
           return null;
         }
       }
     }
     const obj6 = { notification };
-    return callback(importDefault(10318), obj6);
+    return callback(importDefault(10358), obj6);
   }
 }
 function DetachedNotificationContent(notification) {
@@ -80,7 +80,7 @@ function DetachedNotificationContent(notification) {
   let tmp = null;
   if (notification.type === constants.MESSAGE) {
     const obj = { notification };
-    tmp = callback(require(10322) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
+    tmp = callback(require(10362) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
   }
   return tmp;
 }
@@ -89,7 +89,7 @@ function DetachedNotificationContent(notification) {
 ({ InAppNotificationTypes: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, AnalyticsObjects: closure_20, AnalyticsObjectTypes: closure_21 } = ME);
 ({ jsx: closure_22, jsxs: closure_23 } = jsxProd);
 let obj = { duration: 200 };
-obj.easing = Easing.in(require("module_3992").Easing.ease);
+obj.easing = Easing.in(require("module_4026").Easing.ease);
 let closure_25 = _createForOfIteratorHelperLoose.createStyles({ safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, backdrop: { position: "absolute", zIndex: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } });
 let closure_26 = { code: "function InAppNotificationContainerTsx1(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('autodismissed');}}" };
 let closure_27 = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };

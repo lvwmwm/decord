@@ -1,9 +1,9 @@
-// Module ID: 4710
-// Function ID: 40984
+// Module ID: 4744
+// Function ID: 41099
 // Name: ICYMIAttachmentUploadTarget
-// Dependencies: [6, 7, 653, 4667, 2]
+// Dependencies: [6, 7, 653, 4701, 2]
 
-// Module 4710 (ICYMIAttachmentUploadTarget)
+// Module 4744 (ICYMIAttachmentUploadTarget)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 6630
-// Function ID: 58610
+// Module ID: 6666
+// Function ID: 58699
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1838, 5611, 653, 6631, 5609, 1198, 6632, 6636, 2]
+// Dependencies: [5, 1838, 5646, 653, 6667, 5644, 1198, 6668, 6672, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 6630 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 6666 (navigateToSocialLayerStorefrontWithGuildPreview)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -87,7 +87,7 @@ export default function navigateToSocialLayerStorefront(arg0) {
   }
   let socialLayerStorefrontGuildId = guildId;
   if (null == guildId) {
-    let obj = require(5609) /* _createForOfIteratorHelperLoose */;
+    let obj = require(5644) /* _createForOfIteratorHelperLoose */;
     socialLayerStorefrontGuildId = obj.getSocialLayerStorefrontGuildId(applicationId);
   }
   if (null == applicationIdFromGuildId) {
@@ -119,7 +119,7 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
     guildId = id;
   }
   if (null != guildId) {
-    let obj = require(6631) /* _fetchSocialLayerStorefront */;
+    let obj = require(6667) /* _fetchSocialLayerStorefront */;
     obj = { eager: true, forceFetch: forceFetch.forceFetch };
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
   }
@@ -128,6 +128,6 @@ export const eagerNavigateToSocialLayerStorefrontForApplication = function eager
   let applicationId;
   let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = require(6631) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = require(6667) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

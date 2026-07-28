@@ -1,8 +1,8 @@
-// Module ID: 13432
-// Function ID: 103154
-// Dependencies: [5, 27, 4123, 653, 1281, 13433, 686, 675, 13436, 9980, 13434, 3973, 3977, 2]
+// Module ID: 13476
+// Function ID: 103327
+// Dependencies: [5, 27, 4157, 653, 1281, 13477, 686, 675, 13480, 10020, 13478, 4007, 4011, 2]
 
-// Module 13432
+// Module 13476
 import toggleFeature from "toggleFeature";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,12 +18,12 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 export default {
   init() {
     const self = this;
-    importDefault(13433).init();
+    importDefault(13477).init();
     this.updateNativeColors();
     this.updateMotionSettings();
     _isNativeReflectConstruct.addChangeListener(this.updateNativeColors);
     _isNativeReflectConstruct.addChangeListener(this.updateMotionSettings);
-    let obj = importDefault(13433);
+    let obj = importDefault(13477);
     const subscription = importDefault(686).subscribe("CONNECTION_OPEN", this.updateMotionSettings);
     closure_5.addChangeListener(this.updateSystemAppearance);
     const listener = closure_4.addEventListener("screenReaderChanged", (arg0) => {
@@ -38,10 +38,10 @@ export default {
     let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    require(13436) /* updateSaturation */.updateSaturation(_isNativeReflectConstruct.saturation);
+    require(13480) /* updateSaturation */.updateSaturation(_isNativeReflectConstruct.saturation);
   },
   updateMotionSettings() {
-    importDefault(9980)(require(13434) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: _isNativeReflectConstruct.useReducedMotion, prefersCrossfades: _isNativeReflectConstruct.systemPrefersCrossfades });
+    importDefault(10020)(require(13478) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: _isNativeReflectConstruct.useReducedMotion, prefersCrossfades: _isNativeReflectConstruct.systemPrefersCrossfades });
   },
   checkScreenreaderEnabled() {
     const self = this;
@@ -49,7 +49,7 @@ export default {
     return callback(tmp)();
   },
   updateScreenReaderEnabled(screenReaderEnabled) {
-    importDefault(9980)(require(13434) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
+    importDefault(10020)(require(13478) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
   },
   updateSystemAppearance(colorScheme) {
     let DARK = SystemTheme.NO_PREFERENCE;
@@ -59,7 +59,7 @@ export default {
     } else if ("dark" === colorScheme) {
       DARK = SystemTheme.DARK;
     }
-    require(3973) /* setSystemTheme */.setSystemTheme(DARK);
+    require(4007) /* setSystemTheme */.setSystemTheme(DARK);
   },
   startAnnouncementQueue() {
     const set = new Set();

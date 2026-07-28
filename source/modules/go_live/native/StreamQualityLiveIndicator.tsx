@@ -1,10 +1,10 @@
-// Module ID: 10505
-// Function ID: 81428
+// Module ID: 10543
+// Function ID: 81549
 // Name: StreamQualityLiveIndicator
-// Dependencies: [31, 27, 653, 1852, 4192, 33, 4131, 689, 10447, 9339, 5462, 3992, 4132, 1273, 8783, 10506, 675, 9253, 9254, 3777, 4661, 5085, 9309, 2]
+// Dependencies: [31, 27, 653, 1852, 4226, 33, 4165, 689, 10485, 9383, 5497, 4026, 4166, 1273, 8827, 10544, 675, 9297, 9298, 3811, 4695, 5119, 9353, 2]
 // Exports: default
 
-// Module 10505 (StreamQualityLiveIndicator)
+// Module 10543 (StreamQualityLiveIndicator)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";

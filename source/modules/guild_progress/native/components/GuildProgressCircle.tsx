@@ -1,10 +1,10 @@
-// Module ID: 11621
-// Function ID: 90243
+// Module ID: 11660
+// Function ID: 90394
 // Name: GuildProgressCircle
-// Dependencies: [31, 27, 33, 4131, 689, 11622, 11504, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 11661, 11542, 2]
 // Exports: default
 
-// Module 11621 (GuildProgressCircle)
+// Module 11660 (GuildProgressCircle)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,15 +37,15 @@ export default function GuildProgressCircle(size) {
   obj.size = num;
   obj.strokeWidth = 4;
   obj.percent = 100;
-  obj.color = require(11504) /* useIOSCompletionStates */.PROGRESS_BACKGROUND_COLOR;
-  const items2 = [callback(importDefault(11622), obj), ];
+  obj.color = require(11542) /* useIOSCompletionStates */.PROGRESS_BACKGROUND_COLOR;
+  const items2 = [callback(importDefault(11661), obj), ];
   const obj1 = { style: items3 };
   items3 = [tmp.circle, obj];
   obj1.size = num;
   obj1.strokeWidth = 4;
   obj1.color = tmp.progressCircle.color;
   obj1.percent = percent;
-  items2[1] = callback(importDefault(11622), obj1);
+  items2[1] = callback(importDefault(11661), obj1);
   obj.children = items2;
   return callback2(View, obj);
 };

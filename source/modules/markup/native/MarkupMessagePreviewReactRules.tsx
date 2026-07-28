@@ -1,10 +1,10 @@
-// Module ID: 10222
-// Function ID: 79134
+// Module ID: 10262
+// Function ID: 79263
 // Name: defaultReactFn
-// Dependencies: [31, 10223, 33, 4126, 9929, 10224, 5511, 4564, 4566, 10229, 5085, 478, 10230, 10231, 1273, 3995, 9615, 4613, 10232, 2]
+// Dependencies: [31, 10263, 33, 4160, 9969, 10264, 5546, 4598, 4600, 10269, 5119, 478, 10270, 10271, 1273, 4029, 9655, 4647, 10272, 2]
 // Exports: default
 
-// Module 10222 (defaultReactFn)
+// Module 10262 (defaultReactFn)
 import "result";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
@@ -16,8 +16,8 @@ function defaultReactFn(content, output, state) {
   if ("string" === typeof content.content) {
     content = content.content;
   } else {
-    content = require(9929) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9929) /* smartOutput */;
+    content = require(9969) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(9969) /* smartOutput */;
   }
   return content;
 }
@@ -235,7 +235,7 @@ const regExp = new RegExp(require("_createForOfIteratorHelperLoose").ANSI_CONTRO
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(10224) /* getLayoutStyles */;
+  let obj = require(10264) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {
@@ -243,7 +243,7 @@ export default function createChannelListMessagePreviewReactRules(layout, iconCo
     bound = Math.min(arg2, arg3);
   }
   obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize };
-  const tmp5 = require(5511) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
+  const tmp5 = require(5546) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
   let num = 0;
   if (null != tmp5) {
     num = tmp5;

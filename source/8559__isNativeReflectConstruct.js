@@ -1,7 +1,7 @@
 // Module ID: 8559
-// Function ID: 68022
+// Function ID: 67923
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8560, 8476, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8560, 8545, 8546]
 
 // Module 8559 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
@@ -13,6 +13,7 @@ import "result";
 import { jsx } from "jsxProd";
 import tmp3 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,6 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Symbol";
+tmp3.displayName = "FeOffset";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { dx: 0, dy: 0 });
 
 export default tmp3;

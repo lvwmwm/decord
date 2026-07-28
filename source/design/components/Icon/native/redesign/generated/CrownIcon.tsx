@@ -1,10 +1,10 @@
-// Module ID: 9021
-// Function ID: 70934
+// Module ID: 9065
+// Function ID: 71085
 // Name: CrownIcon
-// Dependencies: [31, 33, 689, 3834, 9022, 2]
+// Dependencies: [31, 33, 689, 3868, 9066, 2]
 // Exports: CrownIcon
 
-// Module 9021 (CrownIcon)
+// Module 9065 (CrownIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const CrownIcon = function CrownIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9022) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9066) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9022) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9066) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

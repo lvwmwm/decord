@@ -1,10 +1,10 @@
-// Module ID: 10351
-// Function ID: 79951
+// Module ID: 10391
+// Function ID: 80080
 // Name: useIsSelectedResourceChannel
-// Dependencies: [5846, 1348, 1907, 653, 1355, 624, 1360, 10352, 5605, 2]
+// Dependencies: [5856, 1348, 1907, 653, 1355, 624, 1360, 10392, 5640, 2]
 // Exports: default
 
-// Module 10351 (useIsSelectedResourceChannel)
+// Module 10391 (useIsSelectedResourceChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,6 +33,6 @@ export default function useIsSelectedResourceChannel(arg0) {
   if (null == stateFromStores) {
     tmp2 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const obj2 = _require(5605);
-  return null != stateFromStores && _require(5605).useCanSeeOnboardingHome(tmp2);
+  const obj2 = _require(5640);
+  return null != stateFromStores && _require(5640).useCanSeeOnboardingHome(tmp2);
 };

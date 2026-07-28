@@ -1,10 +1,10 @@
-// Module ID: 14552
-// Function ID: 111126
+// Module ID: 14596
+// Function ID: 111299
 // Name: ShopCardGridItem
-// Dependencies: [31, 27, 5770, 33, 4131, 8592, 8595, 14551, 22, 2]
+// Dependencies: [31, 27, 5780, 33, 4165, 8636, 8639, 14595, 22, 2]
 // Exports: default
 
-// Module 14552 (ShopCardGridItem)
+// Module 14596 (ShopCardGridItem)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,8 +25,8 @@ function ShopCardGridItem(index) {
   const items = [index];
   ({ product, cardWidth, preferVCPrice, unpublishedAt, disableBundleStaticBackground, muteBundleStaticBackground } = index);
   const memo = React.useMemo(() => ({ tilePosition: index }), items);
-  const obj = { newValue: memo, children: jsx(importDefault(8592), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) };
-  return jsx(index(8595).CollectiblesAnalyticsProvider, { newValue: memo, children: jsx(importDefault(8592), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) });
+  const obj = { newValue: memo, children: jsx(importDefault(8636), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) };
+  return jsx(index(8639).CollectiblesAnalyticsProvider, { newValue: memo, children: jsx(importDefault(8636), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) });
 }
 ({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
 _createForOfIteratorHelperLoose = {};
@@ -55,14 +55,14 @@ export default function CollectiblesShopCardsGrid(accessibilityLabel) {
   let cardWidth;
   ({ onScroll, paddingTop, paddingBottom } = accessibilityLabel);
   closure_5 = _createForOfIteratorHelperLoose();
-  let obj = products(14551);
+  let obj = products(14595);
   const cardLayout = obj.useCardLayout();
   columns = cardLayout.columns;
   cardWidth = cardLayout.cardWidth;
   const items = [products, columns];
   const memo = React.useMemo(() => outer1_1(outer1_2[8]).chunk(products, columns), items);
   obj = { accessibilityLabel: accessibilityLabel.accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll };
-  obj = { gap: products(8592).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom };
+  obj = { gap: products(8636).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom };
   obj.contentContainerStyle = obj;
   obj.children = memo.map((arr) => {
     let closure_0 = arg1;

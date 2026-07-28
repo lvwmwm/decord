@@ -1,5 +1,5 @@
 // Module ID: 1764
-// Function ID: 19690
+// Function ID: 19694
 // Name: createAnimatedPropAdapter
 // Dependencies: [1681]
 

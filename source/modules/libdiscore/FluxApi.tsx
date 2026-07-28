@@ -1,5 +1,5 @@
 // Module ID: 1844
-// Function ID: 20251
+// Function ID: 20255
 // Name: fluxApi
 // Dependencies: [1845, 2]
 // Exports: hasFluxApi

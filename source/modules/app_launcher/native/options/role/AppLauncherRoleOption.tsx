@@ -1,10 +1,10 @@
-// Module ID: 11298
-// Function ID: 87856
+// Module ID: 11336
+// Function ID: 87975
 // Name: AppLauncherRoleOption
-// Dependencies: [57, 31, 1911, 33, 624, 11291, 4099, 11296, 1935, 11296, 2]
+// Dependencies: [57, 31, 1911, 33, 624, 11329, 4133, 11334, 1935, 11334, 2]
 // Exports: default
 
-// Module 11298 (AppLauncherRoleOption)
+// Module 11336 (AppLauncherRoleOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

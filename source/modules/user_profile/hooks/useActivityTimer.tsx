@@ -1,10 +1,10 @@
-// Module ID: 11949
-// Function ID: 92390
+// Module ID: 11992
+// Function ID: 92560
 // Name: extractTimeComponents
-// Dependencies: [57, 31, 664, 7853, 4016, 2]
+// Dependencies: [57, 31, 664, 7889, 4050, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 11949 (extractTimeComponents)
+// Module 11992 (extractTimeComponents)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -30,7 +30,7 @@ result = require("set").fileFinishedImporting("modules/user_profile/hooks/useAct
 
 export default function useActivityTimer(start) {
   start = start.start;
-  const interval = new first(4016).Interval();
+  const interval = new first(4050).Interval();
   first = callback(callback3(interval), 1)[0];
   const tmp3 = callback(callback3(() => Date.now()), 2);
   const importDefault = tmp3[1];
@@ -68,5 +68,5 @@ export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
   let seconds;
   ({ hours, minutes, seconds } = extractTimeComponents(arg0));
   const tmp = extractTimeComponents(arg0);
-  return require(7853) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
+  return require(7889) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
 };

@@ -1,22 +1,22 @@
-// Module ID: 9849
-// Function ID: 76390
+// Module ID: 9889
+// Function ID: 76519
 // Name: scaleLineHeight
-// Dependencies: [9850, 4127, 4550, 2]
+// Dependencies: [9890, 4161, 4584, 2]
 // Exports: useScaledTextLineHeight
 
-// Module 9849 (scaleLineHeight)
+// Module 9889 (scaleLineHeight)
 function scaleLineHeight(lineHeight, arg1) {
   let value = map.get(lineHeight);
   if (null == value) {
-    const scaledHeightForText = importDefault(9850).getScaledHeightForText(lineHeight);
+    const scaledHeightForText = importDefault(9890).getScaledHeightForText(lineHeight);
     const result = map.set(lineHeight, scaledHeightForText);
     value = scaledHeightForText;
-    const obj = importDefault(9850);
+    const obj = importDefault(9890);
   }
   return value;
 }
 function scaleTextLineHeight(c17, fontScale) {
-  return scaleLineHeight(require(4127) /* Text */.TextStyleSheet[c17].lineHeight);
+  return scaleLineHeight(require(4161) /* Text */.TextStyleSheet[c17].lineHeight);
 }
 const map = new Map();
 let result = require("getFontScale").fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");
@@ -24,6 +24,6 @@ let result = require("getFontScale").fileFinishedImporting("modules/screen/nativ
 export { scaleLineHeight };
 export { scaleTextLineHeight };
 export const useScaledTextLineHeight = function useScaledTextLineHeight(textVariant) {
-  const fontScale = require(4550) /* getFontScale */.useFontScale();
+  const fontScale = require(4584) /* getFontScale */.useFontScale();
   return scaleTextLineHeight(textVariant);
 };

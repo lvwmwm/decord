@@ -1,11 +1,11 @@
 // Module ID: 6566
-// Function ID: 58377
+// Function ID: 58408
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6566 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium_marketing/native/images", width: 271, height: 180, scales: [2, 3], hash: "d76b7a9b1989d0bc422e3a5f4c1443a2", name: "img_streaming", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MidnightPrismIcon", width: 60, height: 60, scales: [2, 3], hash: "44efb56cf36c8202533bcbc557ebf8e5", name: "MidnightPrismIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

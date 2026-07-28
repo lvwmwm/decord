@@ -1,9 +1,9 @@
-// Module ID: 14195
-// Function ID: 109226
+// Module ID: 14239
+// Function ID: 109399
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 5619, 33, 14196, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 5654, 33, 14240, 566, 2]
 
-// Module 14195 (_isNativeReflectConstruct)
+// Module 14239 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 11462
-// Function ID: 89237
+// Module ID: 11500
+// Function ID: 89361
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [31, 1922, 4143, 4142, 653, 11463, 566, 8142, 7808, 675, 2]
+// Dependencies: [31, 1922, 4177, 4176, 653, 11501, 566, 8180, 7844, 675, 2]
 // Exports: default
 
-// Module 11462 (useChangelogRenderedAnalytics)
+// Module 11500 (useChangelogRenderedAnalytics)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

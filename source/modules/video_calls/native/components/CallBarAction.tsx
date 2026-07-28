@@ -1,10 +1,10 @@
-// Module ID: 10466
-// Function ID: 81221
+// Module ID: 10504
+// Function ID: 81342
 // Name: ActionButton
-// Dependencies: [31, 27, 10174, 33, 3975, 689, 4131, 10467, 4661, 10468, 4127, 2]
+// Dependencies: [31, 27, 10214, 33, 4009, 689, 4165, 10505, 4695, 10506, 4161, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10466 (ActionButton)
+// Module 10504 (ActionButton)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "resetFocusTimer";
@@ -244,7 +244,7 @@ export const NotifiedActionButton = function NotifiedActionButton(isMentioned) {
     items[1] = notificationAreaMentioned;
     obj1.style = items;
     const obj2 = { style: tmp3.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: isMentioned.notifications };
-    obj1.children = callback(require(4127) /* Text */.Text, obj2);
+    obj1.children = callback(require(4161) /* Text */.Text, obj2);
     obj["children"] = tmp8(tmp9, obj1);
     obj.children = tmp4(ActionButton, obj);
     return tmp4(closure_5, obj);

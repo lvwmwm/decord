@@ -1,10 +1,10 @@
-// Module ID: 11071
-// Function ID: 86026
+// Module ID: 11109
+// Function ID: 86149
 // Name: createBlockedAppMessageEmbed
-// Dependencies: [57, 1850, 7857, 4168, 1455, 9436, 5463, 11072, 7666, 1212, 11073, 7953, 7856, 10443, 11074, 11076, 1392, 1443, 11077, 5482, 10818, 5676, 5665, 3990, 1555, 10938, 5490, 3831, 1327, 2]
+// Dependencies: [57, 1850, 7893, 4202, 1455, 9476, 5498, 11110, 7702, 1212, 11111, 7990, 7892, 10481, 11112, 11114, 1392, 1443, 11115, 5517, 10856, 5686, 5675, 4024, 1555, 10976, 5525, 3865, 1327, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 11071 (createBlockedAppMessageEmbed)
+// Module 11109 (createBlockedAppMessageEmbed)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function createBlockedAppMessageEmbed(arg0) {
   let theme;
   let visibility;
   ({ theme, message, visibility } = arg0);
-  if (visibility === require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE) {
+  if (visibility === require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.LPOzxB);
   } else {
@@ -27,8 +27,8 @@ function createBlockedAppMessageEmbed(arg0) {
     stringResult = intl.string(require(1212) /* getSystemLocale */.t.NIZyKq);
   }
   const obj = {};
-  const merged = Object.assign(importDefault(7666)(theme).baseColors);
-  obj["displayType"] = require(11073) /* AppMessageEmbedDisplayType */.AppMessageEmbedDisplayType.BLOCKED;
+  const merged = Object.assign(importDefault(7702)(theme).baseColors);
+  obj["displayType"] = require(11111) /* AppMessageEmbedDisplayType */.AppMessageEmbedDisplayType.BLOCKED;
   obj["appId"] = "";
   obj["messageId"] = message.id;
   obj["title"] = null;
@@ -59,8 +59,8 @@ export const getAppLinkGateResult = function getAppLinkGateResult(appId) {
   const application = store.getApplication(appId);
   if (null == application) {
     if (false === store.isFetchingApplication(appId)) {
-      const application1 = require(5463) /* fetchApplication */.fetchApplication(appId);
-      const obj5 = require(5463) /* fetchApplication */;
+      const application1 = require(5498) /* fetchApplication */.fetchApplication(appId);
+      const obj5 = require(5498) /* fetchApplication */;
     }
     let obj = { state: "unavailable" };
     return obj;
@@ -70,9 +70,9 @@ export const getAppLinkGateResult = function getAppLinkGateResult(appId) {
     if (null != currentUser) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
-    obj = require(11072) /* getContentClassificationVisibility */;
+    obj = require(11110) /* getContentClassificationVisibility */;
     const contentClassificationVisibility = obj.getContentClassificationVisibility(application.contentClassification, channel, nsfwAllowed);
-    if (contentClassificationVisibility !== require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY) {
+    if (contentClassificationVisibility !== require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY) {
       obj = { state: "blocked" };
       const obj1 = { theme, message, visibility: contentClassificationVisibility };
       obj.model = createBlockedAppMessageEmbed(obj1);
@@ -98,15 +98,15 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
   let theme;
   ({ message, app } = arg0);
   ({ theme, embedUrl } = arg0);
-  const baseColors = importDefault(7666)(theme).baseColors;
+  const baseColors = importDefault(7702)(theme).baseColors;
   ({ id, tags, maxParticipants, icon } = app);
   ({ name, bot } = app);
-  let obj = require(7953) /* _createForOfIteratorHelperLoose */;
+  let obj = require(7990) /* _createForOfIteratorHelperLoose */;
   const isEmbeddedAppResult = obj.isEmbeddedApp(app);
   if (isEmbeddedAppResult) {
     applicationAssetFetchState = applicationAssetFetchState.getApplicationAssetFetchState(id);
     if (applicationAssetFetchState === FetchState.NOT_FETCHED) {
-      const assetIds = require(7856) /* _createForOfIteratorHelperLoose */.fetchAssetIds(id, closure_10);
+      const assetIds = require(7892) /* _createForOfIteratorHelperLoose */.fetchAssetIds(id, closure_10);
       return null;
     } else if (applicationAssetFetchState === FetchState.FETCHING) {
       return null;
@@ -120,14 +120,14 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
     }
     const items = [];
     if (isEmbeddedAppResult) {
-      let obj2 = require(10443) /* canLaunchFrame */;
+      let obj2 = require(10481) /* canLaunchFrame */;
       if (obj2.canLaunchFrame(app)) {
         obj = { id: "play_frame" };
         const intl6 = require(1212) /* getSystemLocale */.intl;
         obj.label = intl6.string(require(1212) /* getSystemLocale */.t.RscU7I);
         items.push(obj);
       } else {
-        let obj3 = require(11074) /* usePlayInContext */;
+        let obj3 = require(11112) /* usePlayInContext */;
         const playInContext = obj3.getPlayInContext(id, message.channel_id);
         const isCurrentlyInInstance = playInContext.isCurrentlyInInstance;
         if (playInContext.canLaunchInChannel) {
@@ -154,17 +154,17 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
     }
     ({ id: id2, bot: bot2 } = app);
     const joined = tags.join(" \u2219 ");
-    let obj7 = require(7953) /* _createForOfIteratorHelperLoose */;
+    let obj7 = require(7990) /* _createForOfIteratorHelperLoose */;
     if (obj7.isEmbeddedApp(app)) {
-      let assetIds1 = require(7856) /* _createForOfIteratorHelperLoose */.getAssetIds(id2, closure_10);
+      let assetIds1 = require(7892) /* _createForOfIteratorHelperLoose */.getAssetIds(id2, closure_10);
       if (null == assetIds1) {
         assetIds1 = [];
       }
       const first = callback(assetIds1, 1)[0];
       let assetImage = null;
       if (null != first) {
-        assetImage = require(7856) /* _createForOfIteratorHelperLoose */.getAssetImage(id2, first, 512);
-        const obj10 = require(7856) /* _createForOfIteratorHelperLoose */;
+        assetImage = require(7892) /* _createForOfIteratorHelperLoose */.getAssetImage(id2, first, 512);
+        const obj10 = require(7892) /* _createForOfIteratorHelperLoose */;
       }
       if (null != assetImage) {
         obj3 = { bannerRatio: "activity", staticBannerSrc: assetImage };
@@ -172,8 +172,8 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
       }
       let appIconSrc = null;
       if (null != icon) {
-        appIconSrc = require(11076) /* items */.getAppIconSrc(id, icon, bot);
-        const obj16 = require(11076) /* items */;
+        appIconSrc = require(11114) /* items */.getAppIconSrc(id, icon, bot);
+        const obj16 = require(11114) /* items */;
       }
       let staticBannerSrc = appIconSrc;
       if (null == appIconSrc) {
@@ -183,12 +183,12 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
       if (null != staticBannerSrc) {
         tmp46 = staticBannerSrc;
       }
-      const obj9 = require(7856) /* _createForOfIteratorHelperLoose */;
+      const obj9 = require(7892) /* _createForOfIteratorHelperLoose */;
       const obj4 = {};
-      const appGradientColors = require(11076) /* items */.getAppGradientColors(tmp46);
+      const appGradientColors = require(11114) /* items */.getAppGradientColors(tmp46);
       const merged = Object.assign(baseColors);
       const merged1 = Object.assign(obj7);
-      obj4["displayType"] = require(11073) /* AppMessageEmbedDisplayType */.AppMessageEmbedDisplayType.DISPLAY;
+      obj4["displayType"] = require(11111) /* AppMessageEmbedDisplayType */.AppMessageEmbedDisplayType.DISPLAY;
       obj4["appId"] = app.id;
       obj4["messageId"] = message.id;
       obj4["title"] = null;
@@ -241,12 +241,12 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
   const actionId = appId.actionId;
   if ("play_in_channel" === actionId) {
     obj = { appId: appId.appId, channelId: appId.message.channel_id };
-    const items = [importDefault(5482).APP_MESSAGE_EMBED];
+    const items = [importDefault(5517).APP_MESSAGE_EMBED];
     obj.analyticsLocations = items;
     obj.referrerId = id;
     obj.customId = tmp5;
-    const result = require(11077) /* _joinOrStartActivityInChannel */.joinOrStartActivityInChannel(obj);
-    const obj11 = require(11077) /* _joinOrStartActivityInChannel */;
+    const result = require(11115) /* _joinOrStartActivityInChannel */.joinOrStartActivityInChannel(obj);
+    const obj11 = require(11115) /* _joinOrStartActivityInChannel */;
   } else if ("play_in_dm" === actionId) {
     let bot;
     if (null != application) {
@@ -254,39 +254,39 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
     }
     if (null != bot) {
       obj = { appId: appId.appId, botId: application.bot.id };
-      const items1 = [importDefault(5482).APP_MESSAGE_EMBED];
+      const items1 = [importDefault(5517).APP_MESSAGE_EMBED];
       obj.analyticsLocations = items1;
-      obj.commandOrigin = require(5676) /* ApplicationCommandSectionType */.CommandOrigin.APP_MESSAGE_EMBED;
+      obj.commandOrigin = require(5686) /* ApplicationCommandSectionType */.CommandOrigin.APP_MESSAGE_EMBED;
       obj.referrerId = id;
       obj.customId = tmp5;
-      const result1 = require(10818) /* _launchActivityInBotDM */.launchActivityInBotDM(obj);
-      const obj15 = require(10818) /* _launchActivityInBotDM */;
+      const result1 = require(10856) /* _launchActivityInBotDM */.launchActivityInBotDM(obj);
+      const obj15 = require(10856) /* _launchActivityInBotDM */;
     }
   } else if ("play_frame" === actionId) {
     let obj1 = { applicationId: appId.appId };
-    importDefault(5665).launchFrame(obj1);
-    const obj9 = importDefault(5665);
+    importDefault(5675).launchFrame(obj1);
+    const obj9 = importDefault(5675);
   } else if ("view_in_app_launcher" === actionId) {
-    const bestActiveInput = require(3990) /* getHighestActiveScreenIndex */.getBestActiveInput();
+    const bestActiveInput = require(4024) /* getHighestActiveScreenIndex */.getBestActiveInput();
     if (null != bestActiveInput) {
       let obj2 = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER };
       let obj3 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, initiallyExpanded: true, applicationId: appId.appId, referrerId: id, customId: tmp5 };
       obj2.context = obj3;
       bestActiveInput.openCustomKeyboard(obj2);
     }
-    const obj7 = require(3990) /* getHighestActiveScreenIndex */;
+    const obj7 = require(4024) /* getHighestActiveScreenIndex */;
   } else if ("add_app" === actionId) {
     if (null != application) {
-      let obj4 = require(10938) /* openOAuth2Modal */;
+      let obj4 = require(10976) /* openOAuth2Modal */;
       obj4 = {};
       ({ id: obj6.applicationId, customInstallUrl: obj6.customInstallUrl, installParams: obj6.installParams, integrationTypesConfig: obj6.integrationTypesConfig } = application);
       obj4.source = "app_message_embed";
       obj4.installApplication(obj4);
     }
   } else if ("link_copied" === actionId) {
-    obj2 = require(5490) /* _copy */;
+    obj2 = require(5525) /* _copy */;
     obj2.copy(appId.embedUrl);
-    obj3 = require(3831) /* presentAddedFriendToast */;
+    obj3 = require(3865) /* presentAddedFriendToast */;
     obj3.presentLinkCopied();
   } else {
     obj1 = require(1327) /* isDiscordFrontendDevelopment */;

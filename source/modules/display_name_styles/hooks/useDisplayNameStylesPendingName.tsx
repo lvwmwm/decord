@@ -1,10 +1,10 @@
-// Module ID: 14285
-// Function ID: 109726
+// Module ID: 14329
+// Function ID: 109899
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [7877, 1918, 3970, 566, 2]
+// Dependencies: [7913, 1918, 4004, 566, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14285 (useDisplayNameStylesPendingName)
+// Module 14329 (useDisplayNameStylesPendingName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -14,8 +14,8 @@ const result = require("conceal").fileFinishedImporting("modules/display_name_st
 export const useDisplayNameStylesPendingName = function useDisplayNameStylesPendingName(stateFromStores, guildId) {
   const _require = stateFromStores;
   const importDefault = guildId;
-  let name = importDefault(3970).useName(stateFromStores);
-  const obj = importDefault(3970);
+  let name = importDefault(4004).useName(stateFromStores);
+  const obj = importDefault(4004);
   const items = [_isNativeReflectConstruct, closure_4];
   const items1 = [guildId, stateFromStores];
   stateFromStores = _require(566).useStateFromStores(items, () => {

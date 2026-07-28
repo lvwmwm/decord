@@ -1,5 +1,5 @@
 // Module ID: 1593
-// Function ID: 17781
+// Function ID: 17785
 // Name: processStack
 // Dependencies: [57]
 // Exports: registerWorkletStackDetails, reportFatalErrorOnJS

@@ -1,8 +1,8 @@
-// Module ID: 14937
-// Function ID: 113900
-// Dependencies: [31, 27, 4470, 33, 4131, 689, 4471, 1212, 566, 14928, 2]
+// Module ID: 14981
+// Function ID: 114073
+// Dependencies: [31, 27, 4504, 33, 4165, 689, 4505, 1212, 566, 14972, 2]
 
-// Module 14937
+// Module 14981
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -41,8 +41,8 @@ const memoResult = require("result").memo(function GuildsBarItemUnavailableGuild
       obj.show(obj);
     };
     obj.style = tmp.unavailableGuilds;
-    const obj1 = { style: tmp.unavailableGuildsIcon, source: importDefault(14928) };
-    obj.children = <closure_3 style={tmp.unavailableGuildsIcon} source={importDefault(14928)} />;
+    const obj1 = { style: tmp.unavailableGuildsIcon, source: importDefault(14972) };
+    obj.children = <closure_3 style={tmp.unavailableGuildsIcon} source={importDefault(14972)} />;
     tmp3 = <closure_4 count={stateFromStores} />;
   }
   return tmp3;

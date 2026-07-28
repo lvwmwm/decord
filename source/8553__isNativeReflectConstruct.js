@@ -1,18 +1,17 @@
 // Module ID: 8553
-// Function ID: 67986
+// Function ID: 67885
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8552, 8547, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 8523, 8546]
 
 // Module 8553 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import extractPolyPoints from "extractPolyPoints";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
+import tmp2 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +21,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Polyline";
-tmp3.defaultProps = { points: "" };
+tmp2.displayName = "FeDiffuseLighting";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

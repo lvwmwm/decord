@@ -1,10 +1,10 @@
-// Module ID: 8162
-// Function ID: 65472
+// Module ID: 8200
+// Function ID: 65582
 // Name: useSegmentedControlState
-// Dependencies: [31, 689, 3850, 3992, 4100, 4529, 2]
+// Dependencies: [31, 689, 3884, 4026, 4134, 4563, 2]
 // Exports: useSegmentedControlState
 
-// Module 8162 (useSegmentedControlState)
+// Module 8200 (useSegmentedControlState)
 import result from "result";
 
 const require = arg1;

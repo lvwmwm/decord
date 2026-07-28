@@ -1,10 +1,10 @@
-// Module ID: 12290
-// Function ID: 95824
+// Module ID: 12333
+// Function ID: 95994
 // Name: createGroupDMInvite
-// Dependencies: [1348, 3768, 1850, 5969, 7666, 9437, 1212, 11956, 1395, 4321, 2]
+// Dependencies: [1348, 3802, 1850, 6003, 7702, 9477, 1212, 11999, 1395, 4355, 2]
 // Exports: createGroupDMInvite
 
-// Module 12290 (createGroupDMInvite)
+// Module 12333 (createGroupDMInvite)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,9 +20,9 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   let channel;
   let colors;
   let recipients_;
-  ({ colors, baseColors } = importDefault(7666)(closure_2));
-  const tmp = importDefault(7666)(closure_2);
-  ({ channel, recipients_ } = importDefault(9437)(invite));
+  ({ colors, baseColors } = importDefault(7702)(closure_2));
+  const tmp = importDefault(7702)(closure_2);
+  ({ channel, recipients_ } = importDefault(9477)(invite));
   let id;
   if (null != channel) {
     id = channel.id;
@@ -56,8 +56,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    channelIconSource = require(11956) /* getChannelIconURL */.getChannelIconSource(channel);
-    const obj2 = require(11956) /* getChannelIconURL */;
+    channelIconSource = require(11999) /* getChannelIconURL */.getChannelIconSource(channel);
+    const obj2 = require(11999) /* getChannelIconURL */;
   }
   let uri = null;
   if (null != channelIconSource) {
@@ -68,8 +68,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName = null;
     if (null != channel) {
-      channelName = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
-      const obj4 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+      channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
+      const obj4 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
     }
   }
   if (!channelName) {
@@ -128,8 +128,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      channelName1 = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
-      const obj7 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+      channelName1 = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
+      const obj7 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
     }
   }
   obj["channelName"] = channelName1;

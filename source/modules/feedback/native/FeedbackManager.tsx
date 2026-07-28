@@ -1,9 +1,9 @@
-// Module ID: 16093
-// Function ID: 124567
+// Module ID: 16132
+// Function ID: 124723
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 4168, 1348, 4203, 4217, 9457, 4195, 16094, 1935, 5582, 4099, 3749, 16098, 16101, 16103, 16107, 2]
+// Dependencies: [7, 6, 15, 17, 18, 4202, 1348, 4237, 4251, 9497, 4229, 16133, 1935, 5617, 4133, 3783, 16137, 16140, 16142, 16146, 2]
 
-// Module 16093 (_isNativeReflectConstruct)
+// Module 16132 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";

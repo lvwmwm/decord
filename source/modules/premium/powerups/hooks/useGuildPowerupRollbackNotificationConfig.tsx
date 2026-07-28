@@ -1,10 +1,10 @@
-// Module ID: 11526
-// Function ID: 89787
+// Module ID: 11565
+// Function ID: 89938
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4018, 566, 4022, 11527, 1334, 1212, 2231, 11529, 2]
+// Dependencies: [4052, 566, 4056, 11566, 1334, 1212, 2231, 11568, 2]
 // Exports: default
 
-// Module 11526 (useGuildPowerupRollbackNotificationConfig)
+// Module 11565 (useGuildPowerupRollbackNotificationConfig)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -17,12 +17,12 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
   let tmp2;
   if (null != stateFromStores) {
-    tmp2 = stateFromStores.allPowerups[_require(undefined, 4022).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+    tmp2 = stateFromStores.allPowerups[_require(undefined, 4056).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
   }
   if (null != tmp2) {
     const storeRemovalDate = tmp2.storeRemovalDate;
   }
-  let obj1 = _require(11527);
+  let obj1 = _require(11566);
   let tmp5 = null;
   if (obj1.useShouldShowFileUploadRollback(guildId, location)) {
     tmp5 = null;
@@ -41,10 +41,10 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
         if (null != cost) {
           obj = { dismissibleContent: _require(1334).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION };
           const intl = _require(1212).intl;
-          obj = { dateString: importDefault(11529)(storeRemovalDate) };
+          obj = { dateString: importDefault(11568)(storeRemovalDate) };
           obj.title = intl.formatToPlainString(importDefault(2231)["6e2ry1"], obj);
           const intl2 = _require(1212).intl;
-          obj1 = { startDate: importDefault(11529)(storeRemovalDate), endDate: importDefault(11529)(storeRemovalDate) };
+          obj1 = { startDate: importDefault(11568)(storeRemovalDate), endDate: importDefault(11568)(storeRemovalDate) };
           let title1;
           if (null != tmp2) {
             title1 = tmp2.title;

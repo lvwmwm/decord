@@ -1,9 +1,9 @@
-// Module ID: 15863
-// Function ID: 122457
+// Module ID: 15902
+// Function ID: 122613
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1347, 4144, 10456, 1194, 1348, 4178, 3759, 1850, 4204, 653, 4149, 8826, 33, 4131, 689, 566, 15864, 4321, 8843, 8805, 5515, 4127, 8858, 1212, 4653, 12, 3832, 15861, 8134, 5164, 5170, 14454, 7631, 5171, 686, 5502, 3804, 8770, 4324, 7627, 10702, 4099, 15865, 1935, 8828, 8846, 15866, 15854, 15812, 10400, 8792, 15867, 8943, 15868, 8797, 15869, 6580, 10682, 10159, 10160, 2]
+// Dependencies: [31, 1347, 4178, 10494, 1194, 1348, 4212, 3793, 1850, 4238, 653, 4183, 8870, 33, 4165, 689, 566, 15903, 4355, 8887, 8849, 5550, 4161, 8902, 1212, 4687, 12, 3866, 15900, 8172, 5198, 5204, 14498, 7667, 5205, 686, 5537, 3838, 8814, 4358, 7663, 10740, 4133, 15904, 1935, 8872, 8890, 15905, 15893, 15851, 10440, 8836, 15906, 8987, 15907, 8841, 15908, 6616, 10720, 10201, 10202, 2]
 
-// Module 15863 (_createForOfIteratorHelperLoose)
+// Module 15902 (_createForOfIteratorHelperLoose)
 import importAllResult from "TableRowIcon";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -209,12 +209,12 @@ function ShareActivityLogsButton() {
     }
   }, []);
   let obj = { onPress: callback };
-  obj = { IconComponent: require(14454) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
-  obj.icon = callback(require(5170) /* TableRowIcon */.TableRowIcon, obj);
+  obj = { IconComponent: require(14498) /* WrenchIcon */.WrenchIcon, source: importDefault(7667) };
+  obj.icon = callback(require(5204) /* TableRowIcon */.TableRowIcon, obj);
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.iQzQs3);
-  obj.trailing = callback(require(5171) /* TableRowArrow */.TableRowArrow, {});
-  return callback(require(5164) /* TableRowInner */.TableRow, obj);
+  obj.trailing = callback(require(5205) /* TableRowArrow */.TableRowArrow, {});
+  return callback(require(5198) /* TableRowInner */.TableRow, obj);
 }
 function ActivityDebugToggle() {
   let obj = require(566) /* initialize */;
@@ -226,15 +226,15 @@ function ActivityDebugToggle() {
     obj.dispatch(obj);
   }, []);
   obj = {};
-  obj = { IconComponent: require(14454) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
-  obj.icon = callback(require(5170) /* TableRowIcon */.TableRowIcon, obj);
+  obj = { IconComponent: require(14498) /* WrenchIcon */.WrenchIcon, source: importDefault(7667) };
+  obj.icon = callback(require(5204) /* TableRowIcon */.TableRowIcon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["qv5/SP"]);
   obj.value = stateFromStores;
   obj.onValueChange = callback;
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl2.string(require(1212) /* getSystemLocale */.t["qv5/SP"]);
-  return callback(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 ({ AnalyticsSections: closure_13, Permissions: closure_14, RPC_APPLICATION_LOGGING_CATEGORY: closure_15 } = ME);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = jsxProd);

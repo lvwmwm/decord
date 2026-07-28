@@ -1,10 +1,10 @@
-// Module ID: 10101
-// Function ID: 78282
+// Module ID: 10141
+// Function ID: 78411
 // Name: useShouldShowHelplineLink
-// Dependencies: [31, 1922, 5765, 6201, 624, 10102, 2]
+// Dependencies: [31, 1922, 5775, 6236, 624, 10142, 2]
 // Exports: useShouldShowThroughlineLink
 
-// Module 10101 (useShouldShowHelplineLink)
+// Module 10141 (useShouldShowHelplineLink)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -12,7 +12,7 @@ import set from "_isNativeReflectConstruct";
 
 const require = arg1;
 function useShouldShowHelplineLink() {
-  const tmp = importDefault(6201)();
+  const tmp = importDefault(6236)();
   const items = [closure_5];
   stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_5.getUserCountry());
   let obj = stateFromStores(624);
@@ -43,6 +43,6 @@ const result = set.fileFinishedImporting("modules/parent_tools/hooks/useHelpLine
 
 export { useShouldShowHelplineLink };
 export const useShouldShowThroughlineLink = function useShouldShowThroughlineLink() {
-  const tmp = importDefault(6201)();
-  return !importDefault(6201)() && !useShouldShowHelplineLink();
+  const tmp = importDefault(6236)();
+  return !importDefault(6236)() && !useShouldShowHelplineLink();
 };

@@ -1,10 +1,10 @@
-// Module ID: 10422
-// Function ID: 80587
+// Module ID: 10462
+// Function ID: 80716
 // Name: fetchChannelInfo
-// Dependencies: [4809, 5754, 686, 2]
+// Dependencies: [4843, 5764, 686, 2]
 // Exports: fetchChannelInfo
 
-// Module 10422 (fetchChannelInfo)
+// Module 10462 (fetchChannelInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

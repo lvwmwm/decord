@@ -1,10 +1,10 @@
-// Module ID: 10783
-// Function ID: 83687
+// Module ID: 10821
+// Function ID: 83808
 // Name: StageSectionHeader
-// Dependencies: [31, 27, 33, 4131, 689, 3992, 4132, 4127, 1273, 5452, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4026, 4166, 4161, 1273, 5487, 2]
 // Exports: default
 
-// Module 10783 (StageSectionHeader)
+// Module 10821 (StageSectionHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export default function StageSectionHeader(collapsed) {
   const children = collapsed.children;
   ({ label, count, onToggleCollapse } = collapsed);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = collapsed(3992);
+  let obj = collapsed(4026);
   const fn = function y() {
     let obj = {};
     obj = {};
@@ -47,7 +47,7 @@ export default function StageSectionHeader(collapsed) {
     obj.transform = items;
     return obj;
   };
-  obj = { withTiming: collapsed(4132).withTiming, collapsed };
+  obj = { withTiming: collapsed(4166).withTiming, collapsed };
   fn.__closure = obj;
   fn.__workletHash = 13855092771739;
   fn.__initData = closure_8;
@@ -57,7 +57,7 @@ export default function StageSectionHeader(collapsed) {
   const obj2 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header" };
   let items = [label, " \u2014 ", count];
   obj2.children = items;
-  const items1 = [callback(collapsed(4127).Text, obj2), , ];
+  const items1 = [callback(collapsed(4161).Text, obj2), , ];
   let tmp7 = null != children;
   if (tmp7) {
     const obj3 = { style: tmp.children, children };
@@ -66,9 +66,9 @@ export default function StageSectionHeader(collapsed) {
   items1[1] = tmp7;
   const obj4 = { style: tmp.collapseButton };
   const obj5 = { style: animatedStyle };
-  const obj6 = { source: importDefault(5452), style: tmp.collapseIcon };
+  const obj6 = { source: importDefault(5487), style: tmp.collapseIcon };
   obj5.children = callback2(collapsed(1273).Icon, obj6);
-  obj4.children = callback2(importDefault(3992).View, obj5);
+  obj4.children = callback2(importDefault(4026).View, obj5);
   items1[2] = callback2(closure_4, obj4);
   obj1.children = items1;
   obj.children = callback(closure_3, obj1);

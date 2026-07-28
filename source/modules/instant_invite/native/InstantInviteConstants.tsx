@@ -1,9 +1,9 @@
-// Module ID: 8292
-// Function ID: 66653
+// Module ID: 8330
+// Function ID: 66763
 // Name: SHARE_APPS_KEY
 // Dependencies: [2]
 
-// Module 8292 (SHARE_APPS_KEY)
+// Module 8330 (SHARE_APPS_KEY)
 let obj = { TWITTER: "twitter", WHATSAPP: "whatsapp", GMAIL: "googlegmail", LINE: "line", MESSENGER: "fb-messenger", TELEGRAM: "tg" };
 obj = { [obj.TWITTER]: (arg0) => "twitter://post?message=" + arg0, [obj.WHATSAPP]: (arg0) => "whatsapp://send?text=" + arg0, [obj.GMAIL]: (arg0, arg1) => "googlegmail://co?subject=" + arg0 + "&body=" + arg1, [obj.LINE]: (arg0) => "https://line.me/R/msg/text/?" + arg0, [obj.MESSENGER]: (arg0) => "fb-messenger://share/?link=" + arg0, [obj.TELEGRAM]: (arg0, arg1) => "https://telegram.me/share/url?url=" + arg1 + "&text=" + arg0 };
 const result = require("set").fileFinishedImporting("modules/instant_invite/native/InstantInviteConstants.tsx");

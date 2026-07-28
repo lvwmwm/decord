@@ -1,10 +1,10 @@
-// Module ID: 13857
-// Function ID: 106168
+// Module ID: 13901
+// Function ID: 106341
 // Name: Row
-// Dependencies: [31, 27, 5766, 33, 4630, 11052, 3833, 6584, 4632, 11054, 4095, 8700, 4131, 689, 4127, 11051, 1212, 2199, 6201, 5827, 6725, 6726, 11058, 4544, 4338, 5087, 11060, 2]
+// Dependencies: [31, 27, 5776, 33, 4664, 11090, 3867, 6620, 4666, 11092, 4129, 8744, 4165, 689, 4161, 11089, 1212, 2199, 6236, 5837, 6761, 6762, 11096, 4578, 4372, 5121, 11098, 2]
 // Exports: default
 
-// Module 13857 (Row)
+// Module 13901 (Row)
 import result from "result";
 import { View } from "set";
 import { TeenActionDisplayType } from "items";
@@ -27,9 +27,9 @@ function Row(arg0) {
   const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content };
   const obj2 = { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header };
-  const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
   const obj3 = { variant: "text-xs/medium", color: "text-default", children: description };
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj1.children = items1;
   items[1] = callback2(View, obj1);
   obj.children = items;
@@ -37,19 +37,19 @@ function Row(arg0) {
 }
 function FamilyCenterModalDataTooltipScreen() {
   const tmp = callback4();
-  let obj = _require(11051);
+  let obj = _require(11089);
   const intl = _require(1212).intl;
   const intl2 = _require(1212).intl;
   const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2199).n6LOrh), intl2.string(importDefault(2199).JNLpDZ));
-  _require = importDefault(6201)();
-  let obj1 = _require(5827);
+  _require = importDefault(6236)();
+  let obj1 = _require(5837);
   const sortedActivityTypeConfigs = obj1.getSortedActivityTypeConfigs();
   obj = {};
   obj = {};
   obj1 = { style: tmp.container };
   const obj2 = { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText };
   const items = [
-    callback(_require(4127).Text, obj2),
+    callback(_require(4161).Text, obj2),
     sortedActivityTypeConfigs.map((arg0) => {
       let obj;
       let tmp;
@@ -65,16 +65,16 @@ function FamilyCenterModalDataTooltipScreen() {
   ];
   obj1.children = items;
   obj.children = callback2(View, obj1);
-  const items1 = [callback(_require(6726).ModalContent, obj), ];
+  const items1 = [callback(_require(6762).ModalContent, obj), ];
   const obj3 = {};
   const obj4 = { variant: "primary" };
   const intl3 = _require(1212).intl;
   obj4.text = intl3.string(_require(1212).t["NX+WJN"]);
-  obj4.onPress = importDefault(4338).pop;
-  obj3.children = callback(_require(4544).Button, obj4);
-  items1[1] = callback(_require(11058).ModalFooter, obj3);
+  obj4.onPress = importDefault(4372).pop;
+  obj3.children = callback(_require(4578).Button, obj4);
+  items1[1] = callback(_require(11096).ModalFooter, obj3);
   obj.children = items1;
-  return callback2(_require(6725).ModalScreen, obj);
+  return callback2(_require(6761).ModalScreen, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = { [TeenActionDisplayType.USER_INTERACTION]: require("ChatIcon").ChatIcon, [TeenActionDisplayType.USER_CALLED]: require("PhoneIcon").PhoneIcon, [TeenActionDisplayType.USER_ADD]: require("FriendsIcon").FriendsIcon, [TeenActionDisplayType.GUILD_ADD]: require("ServerGridIcon").ServerGridIcon, [TeenActionDisplayType.GUILD_INTERACTION]: require("ThreadIcon").ThreadIcon, [TeenActionDisplayType.PURCHASES]: require("CreditCardIcon").CreditCardIcon, [TeenActionDisplayType.TOTAL_VOICE_MINUTES]: require("ClockIcon").ClockIcon, [TeenActionDisplayType.GIFTS]: require("GiftIcon").GiftIcon };
@@ -116,5 +116,5 @@ export default function FamilyCenterModalDataTooltip() {
   let obj = { initialRouteName: "DATA_TOOLTIP", screens: memo };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(11060) /* Modal */.Modal, obj);
+  return callback(require(11098) /* Modal */.Modal, obj);
 };

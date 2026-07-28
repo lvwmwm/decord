@@ -1,10 +1,10 @@
-// Module ID: 11912
-// Function ID: 92211
+// Module ID: 11955
+// Function ID: 92381
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [31, 27, 1850, 5510, 33, 4131, 689, 566, 11897, 4320, 1212, 11634, 7915, 11902, 2]
+// Dependencies: [31, 27, 1850, 5545, 33, 4165, 689, 566, 11940, 4354, 1212, 11673, 7951, 11945, 2]
 // Exports: default
 
-// Module 11912 (UserProfileCustomStatusActionSheet)
+// Module 11955 (UserProfileCustomStatusActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -47,7 +47,7 @@ export default function UserProfileCustomStatusActionSheet(user) {
     }
     return id === user.id;
   }, items1);
-  let obj1 = importDefault(4320);
+  let obj1 = importDefault(4354);
   const name = obj1.useName(guildId, channelId, user);
   const intl = user(1212).intl;
   if (stateFromStores) {
@@ -59,12 +59,12 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj = { title: stringResult };
   obj1 = { style: tmp.statusPreviewContainer };
   const obj2 = { style: tmp.avatarContainer };
-  const tmp3 = importDefault(11897)(user.id);
-  obj2.children = callback(importDefault(7915), { user, statusStyle: tmp.avatarStatus });
+  const tmp3 = importDefault(11940)(user.id);
+  obj2.children = callback(importDefault(7951), { user, statusStyle: tmp.avatarStatus });
   const items2 = [callback(View, obj2), ];
   const obj4 = { customStatusActivity: tmp3, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText };
-  items2[1] = callback(importDefault(11902), obj4);
+  items2[1] = callback(importDefault(11945), obj4);
   obj1.children = items2;
   obj.children = callback2(View, obj1);
-  return callback(importDefault(11634), obj);
+  return callback(importDefault(11673), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11977
-// Function ID: 92573
+// Module ID: 12020
+// Function ID: 92743
 // Name: UserProfileNote
-// Dependencies: [31, 33, 4131, 8045, 11978, 9213, 11980, 4661, 1212, 4099, 11982, 5509, 4127, 2]
+// Dependencies: [31, 33, 4165, 8083, 12021, 9257, 12023, 4695, 1212, 4133, 12025, 5544, 4161, 2]
 // Exports: default
 
-// Module 11977 (UserProfileNote)
+// Module 12020 (UserProfileNote)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

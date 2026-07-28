@@ -1,10 +1,10 @@
-// Module ID: 9480
-// Function ID: 73915
+// Module ID: 9520
+// Function ID: 74043
 // Name: onClose
-// Dependencies: [31, 27, 653, 33, 4131, 5053, 689, 4099, 5187, 5186, 5499, 9481, 4127, 1212, 1921, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 5087, 689, 4133, 5221, 5220, 5534, 9521, 4161, 1212, 1921, 2]
 // Exports: default
 
-// Module 9480 (onClose)
+// Module 9520 (onClose)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -18,7 +18,7 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function onClose() {
-  importDefault(4099).hideActionSheet();
+  importDefault(4133).hideActionSheet();
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
 const HelpdeskArticles = ME.HelpdeskArticles;
@@ -44,26 +44,26 @@ export default function NotificationSurveyResponseActionSheet(header) {
   if (tmp3) {
     obj = { title: header };
     obj = { onPress: onClose };
-    obj.trailing = callback(require(5499) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj);
-    tmp3 = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+    obj.trailing = callback(require(5534) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj);
+    tmp3 = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   }
   const items = [tmp3, ];
   const obj1 = { style: tmp.view };
-  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(9481) }), , ];
+  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(9521) }), , ];
   const obj3 = { style: tmp.title, variant: "heading-md/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t["d9+vQ8"]);
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   const obj4 = { style: tmp.subtitle, variant: "text-md/normal" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const obj5 = {};
-  const obj2 = { style: tmp.rating, source: importDefault(9481) };
+  const obj2 = { style: tmp.rating, source: importDefault(9521) };
   const tmp2 = callback2;
   obj5.helpUrl = importDefault(1921).getArticleURL(HelpdeskArticles.HIGHLIGHTS_NOTIFICATIONS);
   obj4.children = intl2.format(require(1212) /* getSystemLocale */.t.WxD5QY, obj5);
-  items1[2] = callback(require(4127) /* Text */.Text, obj4);
+  items1[2] = callback(require(4161) /* Text */.Text, obj4);
   obj1.children = items1;
   items[1] = callback2(closure_3, obj1);
   obj.children = items;
-  return tmp2(require(5187) /* Background */.BottomSheet, obj);
+  return tmp2(require(5221) /* Background */.BottomSheet, obj);
 };

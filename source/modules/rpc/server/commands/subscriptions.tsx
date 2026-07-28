@@ -1,8 +1,8 @@
-// Module ID: 13491
-// Function ID: 103758
-// Dependencies: [5, 653, 10554, 13492, 675, 13493, 2]
+// Module ID: 13535
+// Function ID: 103931
+// Dependencies: [5, 653, 10592, 13536, 675, 13537, 2]
 
-// Module 13491
+// Module 13535
 import getInitialSubscriptionPayload from "getInitialSubscriptionPayload";
 import ME from "ME";
 
@@ -28,7 +28,7 @@ obj = {
     let server;
     ({ server, evt } = arg0);
     if (null == server.events[evt]) {
-      let tmp6 = importDefault(10554);
+      let tmp6 = importDefault(10592);
       let obj = { errorCode: constants.INVALID_EVENT };
       const _HermesInternal = HermesInternal;
       const prototype = tmp6.prototype;

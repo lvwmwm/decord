@@ -1,10 +1,10 @@
-// Module ID: 6171
-// Function ID: 55482
+// Module ID: 6205
+// Function ID: 55601
 // Name: usePremiumPlanPurchasedStore
-// Dependencies: [3824, 1852, 621, 682, 6162, 5482, 2]
+// Dependencies: [3858, 1852, 621, 682, 6196, 5517, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 6171 (usePremiumPlanPurchasedStore)
+// Module 6205 (usePremiumPlanPurchasedStore)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 import keys from "keys";
@@ -49,11 +49,11 @@ export const handleMobileWebCheckoutStatus = function handleMobileWebCheckoutSta
     if ("dismissed" !== state.mobileWebRedirectCheckoutStatus) {
       if (key.getKey() !== closure_4) {
         const obj = { premiumType: TIER_2.TIER_2 };
-        const items = [importDefault(5482).DEEPLINK];
+        const items = [importDefault(5517).DEEPLINK];
         obj.analyticsLocations = items;
         obj.analyticsLocation = {};
-        importDefault(6162)(obj);
-        const tmp3 = importDefault(6162);
+        importDefault(6196)(obj);
+        const tmp3 = importDefault(6196);
       }
       _require(682).batchUpdates(() => outer1_6.setState({ isPaymentSuccess: true, mobileWebRedirectCheckoutStatus: closure_0 }));
       if (null != onPaymentSuccess) {

@@ -1,10 +1,10 @@
-// Module ID: 15719
-// Function ID: 121216
+// Module ID: 15758
+// Function ID: 121372
 // Name: nativeEventEmitter
-// Dependencies: [31, 27, 3992, 10627, 2]
+// Dependencies: [31, 27, 4026, 10665, 2]
 // Exports: default
 
-// Module 15719 (nativeEventEmitter)
+// Module 15758 (nativeEventEmitter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 
@@ -17,7 +17,7 @@ if (DCDScrollTracker) {
   nativeEventEmitter = new NativeEventEmitter(DCDScrollTracker);
 }
 let closure_4 = { code: "function useLaunchPadPullTabMinimizedTsx1(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
-let result = require("module_3992").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
+let result = require("module_4026").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
 
 export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;

@@ -1,10 +1,10 @@
-// Module ID: 5609
-// Function ID: 47699
+// Module ID: 5644
+// Function ID: 47826
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4168, 5610, 4154, 1838, 5611, 5612, 653, 655, 482, 4370, 22, 5613, 1443, 4989, 566, 5468, 2]
+// Dependencies: [4202, 5645, 4188, 1838, 5646, 5647, 653, 655, 482, 4404, 22, 5648, 1443, 5023, 566, 5503, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5609 (_createForOfIteratorHelperLoose)
+// Module 5644 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { WishlistRecommendationReason as closure_4 } from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -202,7 +202,7 @@ function parseServerDate(published_at) {
 }
 function isOnCollectiblesShopGameShopPage(pathname, search, applicationId, skuId) {
   let tab;
-  const parsed = require(4989) /* encode */.parse(search);
+  const parsed = require(5023) /* encode */.parse(search);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
@@ -434,8 +434,8 @@ export const transformSlayerApplicationStorefrontServer = function transformSlay
   obj.application = fromServer;
   let result;
   if (null != body.storefront_pricing) {
-    result = require(5613) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(body.storefront_pricing);
-    const obj3 = require(5613) /* transformStorefrontSKUPricesServer */;
+    result = require(5648) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(body.storefront_pricing);
+    const obj3 = require(5648) /* transformStorefrontSKUPricesServer */;
   }
   obj.storefrontPricing = result;
   const obj2 = importDefault(22);
@@ -474,7 +474,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
           obj = { primaryIconAsset: undefined, primaryIconLabel: undefined };
         } else {
           obj = {};
-          const obj4 = require(4370) /* _httpGetWithCountryCodeQuery */;
+          const obj4 = require(4404) /* _httpGetWithCountryCodeQuery */;
           const toURLSafeResult = importDefault(1443).toURLSafe(obj4.getAssetURL(application_id, first.labelIconAssetId, num, "webp"));
           let tmp9;
           if (null != toURLSafeResult) {
@@ -502,7 +502,7 @@ export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   }
   if (null != error) {
     if (null != error.thumbnailAssetId) {
-      const obj3 = require(4370) /* _httpGetWithCountryCodeQuery */;
+      const obj3 = require(4404) /* _httpGetWithCountryCodeQuery */;
       return importDefault(1443).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
     }
   }
@@ -539,7 +539,7 @@ export const getCardImageURL = function getCardImageURL(sku, arg1) {
   }
   if (null != cardImageAssetId) {
     if (null != applicationId) {
-      const obj3 = require(4370) /* _httpGetWithCountryCodeQuery */;
+      const obj3 = require(4404) /* _httpGetWithCountryCodeQuery */;
       return importDefault(1443).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
     }
   }
@@ -570,7 +570,7 @@ export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku,
       applicationId = sku.applicationId;
     }
     if (null != applicationId) {
-      const obj3 = require(4370) /* _httpGetWithCountryCodeQuery */;
+      const obj3 = require(4404) /* _httpGetWithCountryCodeQuery */;
       return importDefault(1443).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
     }
   }
@@ -674,7 +674,7 @@ export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetS
   let obj = _require(566);
   const items = [closure_7];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuildIdFromApplicationId(closure_0));
-  const getOrFetchApplication = _require(5468).useGetOrFetchApplication(applicationId);
+  const getOrFetchApplication = _require(5503).useGetOrFetchApplication(applicationId);
   obj = {};
   if (null == stateFromStores) {
     let guildId;

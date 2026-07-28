@@ -1,10 +1,10 @@
-// Module ID: 15536
-// Function ID: 119560
+// Module ID: 15575
+// Function ID: 119716
 // Name: handleConfirm
-// Dependencies: [5, 31, 33, 8850, 4476, 1212, 4476, 2]
+// Dependencies: [5, 31, 33, 8894, 4510, 1212, 4510, 2]
 // Exports: default
 
-// Module 15536 (handleConfirm)
+// Module 15575 (handleConfirm)
 import getSystemLocale from "getSystemLocale";
 import "result";
 import jsxProd from "jsxProd";
@@ -33,12 +33,12 @@ export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount)
   obj = { variant: "destructive", onPress: handleConfirm };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-  const items = [callback2(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback2(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  items[1] = callback2(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  items[1] = callback2(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
   obj.children = items;
-  obj.actions = callback3(require(4476) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback2(require(4476) /* getAlertModalItemKey */.AlertModal, obj);
+  obj.actions = callback3(require(4510) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback2(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
 };

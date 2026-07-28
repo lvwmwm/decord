@@ -1,9 +1,9 @@
-// Module ID: 4017
-// Function ID: 33396
+// Module ID: 4051
+// Function ID: 33498
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4018, 1838, 3948, 653, 4022, 1837, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4052, 1838, 3982, 653, 4056, 1837, 22, 566, 686, 2]
 
-// Module 4017 (_isNativeReflectConstruct)
+// Module 4051 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -120,7 +120,7 @@ function syncSnapshotOnFeatureTransition(id) {
           if (null != stateForGuild) {
             const unlockedPowerups = stateForGuild.unlockedPowerups;
             if (null != unlockedPowerups) {
-              tmp4 = unlockedPowerups[require(undefined, 4022) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
+              tmp4 = unlockedPowerups[require(undefined, 4056) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
             }
           }
           let tmp7 = null != tmp4;

@@ -1,10 +1,10 @@
-// Module ID: 10972
-// Function ID: 85338
+// Module ID: 11010
+// Function ID: 85461
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 57, 31, 27, 1850, 1920, 653, 33, 4131, 7699, 4560, 675, 10971, 3832, 1212, 10295, 4562, 4127, 4320, 10128, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 1920, 653, 33, 4165, 7735, 4594, 675, 11009, 3866, 1212, 10335, 4596, 4161, 4354, 10168, 2]
 // Exports: default
 
-// Module 10972 (GuildEnableCommunicationAlert)
+// Module 11010 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
 import "result";
@@ -40,8 +40,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   }
   const tmp3 = callback();
   const dependencyMap = tmp3;
-  let closure_3 = _handleConfirmRemoveTimeout(userId(7699)(userId, guildId), 1)[0];
-  userId(4560)(() => {
+  let closure_3 = _handleConfirmRemoveTimeout(userId(7735)(userId, guildId), 1)[0];
+  userId(4594)(() => {
     let obj = userId(tmp3[11]);
     obj = { type: outer1_7, guild_id: guildId, other_user_id: userId };
     obj.track(outer1_9.OPEN_MODAL, obj);
@@ -72,8 +72,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp11 = closure_11;
   const tmp12 = View;
   const tmp5 = closure_10;
-  const tmp6 = userId(4562);
-  const name = userId(4320).getName(guildId, null, user);
+  const tmp6 = userId(4596);
+  const name = userId(4354).getName(guildId, null, user);
   let str = "";
   if (null != name) {
     str = name;
@@ -89,13 +89,13 @@ export default function GuildEnableCommunicationAlert(guildId) {
     return outer1_10(userId(tmp3[19]), obj);
   };
   obj1.children = intl4.format(guildId(1212).t["t+abNU"], obj2);
-  const items = [closure_10(guildId(4127).Text, obj1), ];
+  const items = [closure_10(guildId(4161).Text, obj1), ];
   const obj3 = { style: items1, variant: "text-sm/medium" };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp3);
   const intl5 = tmp9(1212).intl;
   obj3.children = intl5.format(guildId(1212).t.KtENkK, { link: closure_8 });
-  items[1] = closure_10(guildId(4127).Text, obj3);
+  items[1] = closure_10(guildId(4161).Text, obj3);
   obj.children = items;
   obj["children"] = tmp11(tmp12, obj);
   return tmp5(tmp6, obj);

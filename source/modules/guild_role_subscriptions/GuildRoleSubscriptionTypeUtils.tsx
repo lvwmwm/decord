@@ -1,10 +1,10 @@
-// Module ID: 14182
-// Function ID: 109125
+// Module ID: 14226
+// Function ID: 109298
 // Name: getBenefitKey
-// Dependencies: [14156, 1852, 1212, 2]
+// Dependencies: [14200, 1852, 1212, 2]
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 14182 (getBenefitKey)
+// Module 14226 (getBenefitKey)
 import { GuildRoleSubscriptionBenefitTypes as closure_2 } from "MAX_SUBSCRIPTION_TIERS";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 

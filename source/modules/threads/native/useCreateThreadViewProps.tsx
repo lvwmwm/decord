@@ -1,17 +1,17 @@
-// Module ID: 10362
-// Function ID: 80020
+// Module ID: 10402
+// Function ID: 80149
 // Name: useCreateThreadViewProps
-// Dependencies: [1348, 9505, 624, 2]
+// Dependencies: [1348, 9545, 624, 2]
 // Exports: default
 
-// Module 10362 (useCreateThreadViewProps)
+// Module 10402 (useCreateThreadViewProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let require = arg1;
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/threads/native/useCreateThreadViewProps.tsx");
 
 export default function useCreateThreadViewProps(arg0) {
-  const tmp = importDefault(9505)(arg0);
+  const tmp = importDefault(9545)(arg0);
   const require = tmp;
   let obj = require(624) /* defaultAreStatesEqual */;
   const items = [_isNativeReflectConstruct];

@@ -1,10 +1,10 @@
-// Module ID: 9314
-// Function ID: 72858
+// Module ID: 9358
+// Function ID: 73009
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [31, 27, 6173, 33, 4131, 689, 9315, 4555, 668, 4653, 2]
+// Dependencies: [31, 27, 6207, 33, 4165, 689, 9359, 4589, 668, 4687, 2]
 // Exports: default
 
-// Module 9314 (PremiumUpsellSectionDivider)
+// Module 9358 (PremiumUpsellSectionDivider)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -62,7 +62,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
   ({ useTier0UpsellContent, position } = arg0);
   let lock = callback2(position);
   let obj = { style: lock.container };
-  obj = { style: lock.gradient, children: callback(require(9315) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
+  obj = { style: lock.gradient, children: callback(require(9359) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
   const items = [callback(closure_4, obj), , ];
   obj = { style: lock.divider, start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END };
   if (true === useTier0UpsellContent) {
@@ -71,7 +71,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
   obj.colors = PREMIUM_TIER_2_TRI_COLOR;
-  items[1] = callback(importDefault(4555), obj);
+  items[1] = callback(importDefault(4589), obj);
   if (position !== _createForOfIteratorHelperLoose.START) {
     items[2] = tmp7;
     obj.children = items;
@@ -81,15 +81,15 @@ export default function PremiumUpsellSectionDivider(arg0) {
     let obj2 = { style: lock.lockGradient, start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END };
     let LockIcon = Gradients;
     obj2.colors = useTier0UpsellContent ? LockIcon.PREMIUM_TIER_0 : LockIcon.PREMIUM_TIER_2_TRI_COLOR;
-    LockIcon = require(4653) /* LockIcon */.LockIcon;
+    LockIcon = require(4687) /* LockIcon */.LockIcon;
     const obj3 = { color: importDefault(689).colors.WHITE };
     lock = lock.lock;
     obj3.style = lock;
     obj2.children = callback(LockIcon, obj3);
-    obj2 = tmp8(importDefault(4555), obj2);
+    obj2 = tmp8(importDefault(4589), obj2);
     obj1.children = obj2;
     callback(closure_4, obj1);
-    const tmp12 = importDefault(4555);
+    const tmp12 = importDefault(4589);
     const tmp9 = closure_4;
   }
 };

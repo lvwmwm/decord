@@ -1,10 +1,10 @@
-// Module ID: 10888
-// Function ID: 84566
+// Module ID: 10926
+// Function ID: 84687
 // Name: getIsInParty
 // Dependencies: [2]
 // Exports: getIsInParty
 
-// Module 10888 (getIsInParty)
+// Module 10926 (getIsInParty)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getIsInParty.tsx");
 
 export const getIsInParty = function getIsInParty(tmp8Result, activity) {

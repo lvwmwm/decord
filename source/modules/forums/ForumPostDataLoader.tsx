@@ -1,10 +1,10 @@
-// Module ID: 6012
-// Function ID: 53618
+// Module ID: 6046
+// Function ID: 53737
 // Name: _shouldRequestFirstMessage
-// Dependencies: [5, 6, 7, 1348, 6013, 6001, 6017, 653, 22, 21, 566, 507, 686, 2]
+// Dependencies: [5, 6, 7, 1348, 6047, 6035, 6051, 653, 22, 21, 566, 507, 686, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 6012 (_shouldRequestFirstMessage)
+// Module 6046 (_shouldRequestFirstMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";

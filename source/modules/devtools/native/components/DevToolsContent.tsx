@@ -1,9 +1,9 @@
-// Module ID: 13569
-// Function ID: 104389
+// Module ID: 13613
+// Function ID: 104562
 // Name: DevToolsContentSortButtons
-// Dependencies: [57, 31, 27, 10404, 4045, 1188, 33, 4131, 689, 566, 10918, 13570, 4127, 4661, 4100, 14016, 14766, 1456, 1557, 5501, 5164, 3832, 13568, 2]
+// Dependencies: [57, 31, 27, 10444, 4079, 1188, 33, 4165, 689, 566, 10956, 13614, 4161, 4695, 4134, 14060, 14810, 1456, 1557, 5536, 5198, 3866, 13612, 2]
 
-// Module 13569 (DevToolsContentSortButtons)
+// Module 13613 (DevToolsContentSortButtons)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -41,8 +41,8 @@ function DevToolsContentSortButtons(arg0) {
   obj.style = items;
   obj.accessibilityRole = "button";
   obj.accessibilityLabel = "Shift up";
-  obj.children = callback2(require(14016) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
-  const items1 = [callback2(require(4661) /* PressableBase */.PressableOpacity, obj), ];
+  obj.children = callback2(require(14060) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
+  const items1 = [callback2(require(4695) /* PressableBase */.PressableOpacity, obj), ];
   obj = {
     onPress() {
       const result = outer1_0(outer1_2[14]).triggerHapticFeedback(outer1_0(outer1_2[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -59,8 +59,8 @@ function DevToolsContentSortButtons(arg0) {
   obj.style = items2;
   obj.accessibilityRole = "button";
   obj.accessibilityLabel = "Shift down";
-  obj.children = callback2(require(14766) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
-  items1[1] = callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+  obj.children = callback2(require(14810) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
+  items1[1] = callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
   obj.children = items1;
   return closure_11(closure_5, obj);
 }
@@ -79,9 +79,9 @@ const memoResult = importAllResult.memo((arg0) => {
   let value;
   ({ label, value } = arg0);
   const obj = { variant: "text-xs/medium", color: "text-subtle" };
-  const items = [label, callback2(require(4127) /* Text */.Text, { variant: "text-xs/semibold", children: value })];
+  const items = [label, callback2(require(4161) /* Text */.Text, { variant: "text-xs/semibold", children: value })];
   obj.children = items;
-  return callback3(require(4127) /* Text */.Text, obj);
+  return callback3(require(4161) /* Text */.Text, obj);
 });
 let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: require("_createForOfIteratorHelperLoose").space.PX_32, height: require("_createForOfIteratorHelperLoose").space.PX_32, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, justifyContent: "center", alignItems: "center" };
 const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
@@ -111,7 +111,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
     const items2 = [outer1_9];
     const dependencyMap = stateFromStores + callback(566).useStateFromStores(items2, () => Object.keys(outer2_9.getClientOverrides()).length);
     const obj3 = callback(566);
-    return dependencyMap(13570)().map((arg0) => {
+    return dependencyMap(13614)().map((arg0) => {
       let tmp;
       [tmp] = arg0;
       if ("buildOverride" === tmp) {
@@ -134,14 +134,14 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
   let tmp3 = callback(arr.useState(false), 2);
   let dependencyMap = tmp3[0];
   callback = tmp3[1];
-  arr = importDefault(13570)();
+  arr = importDefault(13614)();
   obj = {
     title,
     hasIcons: true,
     children: arr.map((arg0, arg1) => {
       let tmp2;
       [tmp2, ] = arg0;
-      let obj = { label: tmp3, subLabel: dependencyMap[arg1], icon: outer1_10(callback(5164).TableRow.Icon, { IconComponent: tmp4 }), arrow: !dependencyMap2 };
+      let obj = { label: tmp3, subLabel: dependencyMap[arg1], icon: outer1_10(callback(5198).TableRow.Icon, { IconComponent: tmp4 }), arrow: !dependencyMap2 };
       let tmp6;
       if (dependencyMap2) {
         obj = { screenKey: tmp2, start: 0 === arg1, end: arg1 === arr.length - 1 };
@@ -149,7 +149,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
       }
       obj.trailing = tmp6;
       obj.onLongPress = function onLongPress() {
-        let obj = callback2(3832);
+        let obj = callback2(3866);
         obj = {};
         let str = "sorting-enabled";
         if (outer1_2) {
@@ -162,7 +162,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
         }
         obj.content = str2;
         obj.open(obj);
-        const result = callback(4100).triggerHapticFeedback(callback(4100).HapticFeedbackTypes.IMPACT_MEDIUM);
+        const result = callback(4134).triggerHapticFeedback(callback(4134).HapticFeedbackTypes.IMPACT_MEDIUM);
         outer1_3((arg0) => !arg0);
       };
       obj.onPress = function onPress() {
@@ -170,16 +170,16 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
           if (null != outer1_0.push) {
             outer1_0.push(callback);
           } else {
-            let obj = callback(13568);
+            let obj = callback(13612);
             obj = { screenKey: callback };
             obj.navigateToDevTools(obj);
           }
         }
       };
-      return outer1_10(callback(5164).TableRow, obj, tmp);
+      return outer1_10(callback(5198).TableRow, obj, tmp);
     })
   };
-  let tmp4 = callback2(_require(5501).TableRowGroup, obj);
+  let tmp4 = callback2(_require(5536).TableRowGroup, obj);
   let tmp5 = tmp4;
   if (!embedded) {
     obj = { style: tmp.devToolsContainer };

@@ -1,10 +1,10 @@
-// Module ID: 7560
-// Function ID: 60608
+// Module ID: 7596
+// Function ID: 60697
 // Name: useIsManualAgeVerificationHidden
 // Dependencies: [1428, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 7560 (useIsManualAgeVerificationHidden)
+// Module 7596 (useIsManualAgeVerificationHidden)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2025-11-hide-manual-link", defaultConfig: { isHidden: false }, variations: { [1]: { isHidden: true } } };

@@ -1,9 +1,9 @@
-// Module ID: 15018
-// Function ID: 114459
+// Module ID: 15062
+// Function ID: 114632
 // Name: getFriendInviteCode
-// Dependencies: [5, 31, 27, 653, 33, 10064, 689, 4131, 6636, 3831, 1212, 8286, 5992, 3983, 4661, 4127, 12925, 15019, 2]
+// Dependencies: [5, 31, 27, 653, 33, 10104, 689, 4165, 6672, 3865, 1212, 8324, 6026, 4017, 4695, 4161, 12969, 15063, 2]
 
-// Module 15018 (getFriendInviteCode)
+// Module 15062 (getFriendInviteCode)
 import ButtonBadge from "ButtonBadge";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -77,20 +77,20 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
   obj = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2 };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(require(1212) /* getSystemLocale */.t.afcl67);
-  obj.children = callback2(require(4127) /* Text */.Text, obj);
-  const items = [callback2(require(4661) /* PressableBase */.PressableHighlight, obj), ];
+  obj.children = callback2(require(4161) /* Text */.Text, obj);
+  const items = [callback2(require(4695) /* PressableBase */.PressableHighlight, obj), ];
   const obj1 = { style: tmp.actions };
-  let obj2 = { style: tmp.actionIcon, variant: "filled", source: importDefault(12925), onPress: handleShare };
+  let obj2 = { style: tmp.actionIcon, variant: "filled", source: importDefault(12969), onPress: handleShare };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.Ej3B3Y);
-  const items1 = [callback2(importDefault(10064), obj2), ];
+  const items1 = [callback2(importDefault(10104), obj2), ];
   const obj3 = { style: tmp.actionIcon, variant: "filled" };
-  const tmp3 = importDefault(10064);
-  obj3.source = importDefault(15019);
+  const tmp3 = importDefault(10104);
+  obj3.source = importDefault(15063);
   obj3.onPress = handleLink;
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj3.accessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t.WqhZss);
-  items1[1] = callback2(importDefault(10064), obj3);
+  items1[1] = callback2(importDefault(10104), obj3);
   obj1.children = items1;
   items[1] = callback3(View, obj1);
   obj.children = items;

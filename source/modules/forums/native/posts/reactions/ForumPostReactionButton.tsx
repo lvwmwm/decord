@@ -1,10 +1,10 @@
-// Module ID: 10301
-// Function ID: 79650
+// Module ID: 10341
+// Function ID: 79779
 // Name: BurstReactionButton
-// Dependencies: [31, 27, 33, 4131, 689, 10302, 4661, 1212, 4127, 6023, 9244, 10313, 3804, 9388, 665, 1392, 3770, 5150, 10315, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 10342, 4695, 1212, 4161, 6057, 9288, 10353, 3838, 9432, 665, 1392, 3804, 5184, 10355, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10301 (BurstReactionButton)
+// Module 10341 (BurstReactionButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -158,12 +158,12 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.N8hbZB);
   const items = [_createForOfIteratorHelperLoose().container, containerStyle];
   obj.style = items;
-  obj.onPress = importDefault(10302)({ threadId }).onTapReactionCount;
+  obj.onPress = importDefault(10342)({ threadId }).onTapReactionCount;
   obj = { variant: "heading-sm/medium", color: "interactive-text-default" };
   const items1 = ["+", count];
   obj.children = items1;
-  obj.children = callback(require(4127) /* Text */.Text, obj);
-  return callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
+  return callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
 };
 export const AddReactionButton = function AddReactionButton(reactionType) {
   let containerStyle;
@@ -171,16 +171,16 @@ export const AddReactionButton = function AddReactionButton(reactionType) {
   let NORMAL = reactionType.reactionType;
   ({ threadId, containerStyle } = reactionType);
   if (NORMAL === undefined) {
-    NORMAL = require(6023) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = require(6057) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   let obj = { threadId, reactionType: NORMAL };
   obj = { style: items, accessible: true };
   items = [_createForOfIteratorHelperLoose().container, containerStyle];
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lfIHs4);
-  obj.onPress = importDefault(10302)(obj).onTapAddReaction;
-  obj.children = callback2(require(9244) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
-  return callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+  obj.onPress = importDefault(10342)(obj).onTapAddReaction;
+  obj.children = callback2(require(9288) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
+  return callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
 };
 export const ForumPostReactionButton = function ForumPostReactionButton(emojiSize) {
   let animateCount;

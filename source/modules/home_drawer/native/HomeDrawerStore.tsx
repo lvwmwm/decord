@@ -1,9 +1,9 @@
-// Module ID: 14862
-// Function ID: 113376
+// Module ID: 14906
+// Function ID: 113549
 // Name: computeMaxX
-// Dependencies: [653, 677, 3992, 3744, 2]
+// Dependencies: [653, 677, 4026, 3778, 2]
 
-// Module 14862 (computeMaxX)
+// Module 14906 (computeMaxX)
 import { DM_WIDTH } from "ME";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
@@ -13,13 +13,13 @@ function computeMaxX(width, left) {
 const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   const dependencyMap = arg1;
-  let obj = { panelX: _require(3992).makeMutable(0) };
-  const obj2 = _require(3992);
-  obj.gestureState = _require(3992).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
+  let obj = { panelX: _require(4026).makeMutable(0) };
+  const obj2 = _require(4026);
+  obj.gestureState = _require(4026).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
   obj.maxX = 0;
   obj.lastInteractionAt = { current: 0 };
-  const obj3 = _require(3992);
-  obj.isPanelTouchActive = _require(3992).makeMutable(false);
+  const obj3 = _require(4026);
+  obj.isPanelTouchActive = _require(4026).makeMutable(false);
   obj.setPanelX = function setPanelX(arg0) {
     let gestureState;
     let panelX;
@@ -42,7 +42,7 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
   };
   return obj;
 }, require("isIterable").shallow);
-let result = require("module_3992").fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
+let result = require("module_4026").fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
 
 export default withEqualityFn;
 export { computeMaxX };

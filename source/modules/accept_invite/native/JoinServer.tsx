@@ -1,10 +1,10 @@
-// Module ID: 9154
-// Function ID: 71841
+// Module ID: 9198
+// Function ID: 71992
 // Name: OrSeparator
-// Dependencies: [31, 27, 9155, 33, 4131, 689, 4127, 1212, 5159, 1456, 1450, 8927, 4544, 2]
+// Dependencies: [31, 27, 9199, 33, 4165, 689, 4161, 1212, 5193, 1456, 1450, 8971, 4578, 2]
 // Exports: default
 
-// Module 9154 (OrSeparator)
+// Module 9198 (OrSeparator)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -78,7 +78,7 @@ export default function JoinServer(arg0) {
   const callback = React.useCallback(() => {
     navigation.push(outer1_7.JOIN_STUDENT_HUB);
   }, items);
-  obj.paddingBottom = importDefault(5159)().insets.bottom + importDefault(689).space.PX_16;
+  obj.paddingBottom = importDefault(5193)().insets.bottom + importDefault(689).space.PX_16;
   items1[1] = obj;
   obj.contentContainerStyle = items1;
   const obj1 = {};
@@ -88,11 +88,11 @@ export default function JoinServer(arg0) {
     const obj3 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
     const intl = navigation(1212).intl;
     obj3.children = intl.string(navigation(1212).t.jlfuFW);
-    const items2 = [callback(navigation(4127).Text, obj3), ];
+    const items2 = [callback(navigation(4161).Text, obj3), ];
     const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
     const intl2 = navigation(1212).intl;
     obj4.children = intl2.string(navigation(1212).t.lVvN3A);
-    items2[1] = callback(navigation(4127).Text, obj4);
+    items2[1] = callback(navigation(4161).Text, obj4);
     obj2.children = items2;
     tmp8 = callback2(closure_10, obj2);
   }
@@ -112,7 +112,7 @@ export default function JoinServer(arg0) {
   obj5.returnKeyType = "join";
   obj5.textStyle = tmp.textInput;
   obj5.onSubmitEditing = onDone;
-  items3[1] = callback(importDefault(8927), obj5);
+  items3[1] = callback(importDefault(8971), obj5);
   const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted" };
   const intl5 = navigation(1212).intl;
   obj6.children = intl5.format(navigation(1212).t.vwWaTe, {
@@ -124,7 +124,7 @@ export default function JoinServer(arg0) {
       return outer1_8(navigation(outer1_2[6]).Text, obj, arg1);
     }
   });
-  items3[2] = callback(navigation(4127).Text, obj6);
+  items3[2] = callback(navigation(4161).Text, obj6);
   obj1.children = items3;
   const items4 = [callback2(closure_4, obj1), ];
   const obj8 = {};
@@ -137,7 +137,7 @@ export default function JoinServer(arg0) {
   obj10.loading = submitting;
   obj10.disabled = submitting;
   obj10.onPress = onDone;
-  items5[1] = callback(navigation(4544).Button, obj10);
+  items5[1] = callback(navigation(4578).Button, obj10);
   items5[2] = callback(OrSeparator, {});
   const obj11 = { size: "lg", variant: "secondary" };
   const intl8 = navigation(1212).intl;
@@ -145,7 +145,7 @@ export default function JoinServer(arg0) {
   const intl9 = navigation(1212).intl;
   obj11.accessibilityLabel = intl9.string(navigation(1212).t["MOqX/G"]);
   obj11.onPress = callback;
-  items5[3] = callback(navigation(4544).Button, obj11);
+  items5[3] = callback(navigation(4578).Button, obj11);
   obj8.children = items5;
   items4[1] = callback2(closure_10, obj8);
   obj.children = items4;

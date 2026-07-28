@@ -1,10 +1,10 @@
-// Module ID: 11769
-// Function ID: 91373
+// Module ID: 11808
+// Function ID: 91524
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 57, 31, 27, 1348, 11757, 653, 33, 4131, 689, 1456, 5159, 11770, 4030, 1212, 11765, 6727, 4127, 4099, 11771, 1935, 8927, 1273, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 1348, 11796, 653, 33, 4165, 689, 1456, 5193, 11809, 4064, 1212, 11804, 6763, 4161, 4133, 11810, 1935, 8971, 1273, 4578, 2]
 // Exports: default
 
-// Module 11769 (HubEmailConnectionContent)
+// Module 11808 (HubEmailConnectionContent)
 import closure_3 from "HubEmailConnectionSteps";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -84,15 +84,15 @@ export default function HubEmailConnectionContent(arg0) {
   obj = {};
   const obj1 = { ref };
   const items = [tmp.scrollViewContainer, ];
-  obj2 = { paddingBottom: invite(5159)().insets.bottom + invite(689).space.PX_16 };
+  obj2 = { paddingBottom: invite(5193)().insets.bottom + invite(689).space.PX_16 };
   items[1] = obj2;
   obj1.contentContainerStyle = items;
   const obj3 = { style: tmp.container };
   const tmp15 = _signup;
   const tmp5 = callback(React.useState(null), 2);
-  const items1 = [callback2(ref, { style: tmp.header, children: callback2(require(6727) /* AccountAgeTier10LargeBadge */.StudyGroupsSpotIllustration, { scale: 0.75 }) }), , , ];
+  const items1 = [callback2(ref, { style: tmp.header, children: callback2(require(6763) /* AccountAgeTier10LargeBadge */.StudyGroupsSpotIllustration, { scale: 0.75 }) }), , , ];
   const obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
-  items1[1] = callback2(require(4127) /* Text */.Text, obj5);
+  items1[1] = callback2(require(4161) /* Text */.Text, obj5);
   const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl3.format(require(1212) /* getSystemLocale */.t["6kzaqs"], {
@@ -100,9 +100,9 @@ export default function HubEmailConnectionContent(arg0) {
       invite(paths[18]).openLazy(outer1_0(paths[20])(paths[19], paths.paths), "HubEmailConnectionDescriptionActionsheet");
     }
   });
-  items1[2] = callback2(require(4127) /* Text */.Text, obj6);
+  items1[2] = callback2(require(4161) /* Text */.Text, obj6);
   const obj8 = { label: null, placeholder: null, value: null, textContentType: "emailAddress", autoCapitalize: "none", keyboardType: "email-address" };
-  const obj4 = { style: tmp.header, children: callback2(require(6727) /* AccountAgeTier10LargeBadge */.StudyGroupsSpotIllustration, { scale: 0.75 }) };
+  const obj4 = { style: tmp.header, children: callback2(require(6763) /* AccountAgeTier10LargeBadge */.StudyGroupsSpotIllustration, { scale: 0.75 }) };
   const obj7 = {
     onClick() {
       invite(paths[18]).openLazy(outer1_0(paths[20])(paths[19], paths.paths), "HubEmailConnectionDescriptionActionsheet");
@@ -141,7 +141,7 @@ export default function HubEmailConnectionContent(arg0) {
       }
     }, 100);
   };
-  items1[3] = callback2(invite(8927), obj8);
+  items1[3] = callback2(invite(8971), obj8);
   obj3.children = items1;
   const items2 = [closure_13(tmp16, obj3), callback2(ref, { style: tmp.growSpacing }), ];
   const obj11 = { style: tmp.buttonContainer };
@@ -152,9 +152,9 @@ export default function HubEmailConnectionContent(arg0) {
     return _signup(...arguments);
   };
   obj12.loading = tmp4[0];
-  obj11.children = callback2(require(4544) /* Button */.Button, obj12);
+  obj11.children = callback2(require(4578) /* Button */.Button, obj12);
   items2[2] = callback2(ref, obj11);
   obj1.children = items2;
   obj.children = closure_13(tmp15, obj1);
-  return callback2(require(11765) /* getScreens */.HubEmailConnectionScreen, obj);
+  return callback2(require(11804) /* getScreens */.HubEmailConnectionScreen, obj);
 };

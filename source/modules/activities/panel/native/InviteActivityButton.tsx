@@ -1,8 +1,8 @@
-// Module ID: 15778
-// Function ID: 121672
-// Dependencies: [31, 10408, 4811, 33, 4099, 15779, 1935, 566, 10891, 4544, 10160, 1212, 2]
+// Module ID: 15817
+// Function ID: 121828
+// Dependencies: [31, 10448, 4845, 33, 4133, 15818, 1935, 566, 10929, 4578, 10202, 1212, 2]
 
-// Module 15778
+// Module 15817
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ const memoResult = require("result").memo(function InviteActivityButton(applicat
           obj = { activity: stateFromStores };
           obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
         },
-      icon: stateFromStores(10160)
+      icon: stateFromStores(10202)
     };
     const intl = applicationId(1212).intl;
     obj.text = intl.string(applicationId(1212).t["OzOM/q"]);
@@ -33,13 +33,13 @@ const memoResult = require("result").memo(function InviteActivityButton(applicat
     obj.size = "sm";
     obj.shrink = true;
     obj.maxFontSizeMultiplier = 1;
-    tmp2 = jsx(applicationId(4544).Button, {
+    tmp2 = jsx(applicationId(4578).Button, {
       onPress() {
           let obj = stateFromStores(outer1_2[4]);
           obj = { activity: stateFromStores };
           obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
         },
-      icon: stateFromStores(10160)
+      icon: stateFromStores(10202)
     });
   }
   return tmp2;

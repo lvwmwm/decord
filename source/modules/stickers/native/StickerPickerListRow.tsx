@@ -1,10 +1,10 @@
-// Module ID: 9572
-// Function ID: 74689
+// Module ID: 9612
+// Function ID: 74818
 // Name: STICKER_SIZE
-// Dependencies: [57, 31, 27, 1850, 3807, 9525, 1314, 33, 4131, 477, 3804, 4100, 4101, 4467, 9559, 4800, 9573, 9576, 1184, 4661, 2]
+// Dependencies: [57, 31, 27, 1850, 3841, 9565, 1314, 33, 4165, 477, 3838, 4134, 4135, 4501, 9599, 4834, 9613, 9616, 1184, 4695, 2]
 // Exports: default
 
-// Module 9572 (STICKER_SIZE)
+// Module 9612 (STICKER_SIZE)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -77,7 +77,7 @@ export default function StickerPickerListRow(stickers) {
   }
   const tmp3 = handleOnPressSticker();
   c6 = tmp3;
-  let AnimateStickers = stickers(3804).AnimateStickers;
+  let AnimateStickers = stickers(3838).AnimateStickers;
   closure_7 = AnimateStickers.useSetting();
   items = [];
   if (nativeRow) {
@@ -92,7 +92,7 @@ export default function StickerPickerListRow(stickers) {
         ({ id: obj4.stickerId, name: obj4.stickerName, format_type: obj4.stickerType } = tmp8);
         let tmp17 = stickers;
         let tmp18 = dependencyMap;
-        let obj5 = stickers(9573);
+        let obj5 = stickers(9613);
         let tmp19 = closure_7;
         obj.stickerUrl = obj5.getStickerAssetUrl(tmp8, closure_7, first);
         obj.stickerAnimated = first;
@@ -104,7 +104,7 @@ export default function StickerPickerListRow(stickers) {
         obj = { stickerId: null, stickerName: "", stickerType: null, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false };
         let tmp10 = stickers;
         let tmp11 = dependencyMap;
-        obj.stickerType = stickers(4800).StickerFormat.PNG;
+        obj.stickerType = stickers(4834).StickerFormat.PNG;
         arr = arr2.push(obj);
       }
     }
@@ -125,7 +125,7 @@ export default function StickerPickerListRow(stickers) {
         handleOnLongPressSticker(found);
       }
     };
-    return jsx(importDefault(9576), { style: tmp3.row });
+    return jsx(importDefault(9616), { style: tmp3.row });
   } else {
     let num2 = 0;
     jsx = 0;

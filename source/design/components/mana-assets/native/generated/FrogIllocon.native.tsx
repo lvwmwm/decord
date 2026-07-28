@@ -1,10 +1,10 @@
-// Module ID: 6988
-// Function ID: 59718
+// Module ID: 7024
+// Function ID: 59807
 // Name: FrogIllocon
-// Dependencies: [33, 5085, 6989, 2]
+// Dependencies: [33, 5119, 7025, 2]
 // Exports: FrogIllocon
 
-// Module 6988 (FrogIllocon)
+// Module 7024 (FrogIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FrogIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const FrogIllocon = function FrogIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6989) };
+  obj = { uri: importDefault(7025) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const FrogIllocon = function FrogIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num, height: num });
+  return jsx(importDefault(5119), { width: num, height: num });
 };

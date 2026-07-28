@@ -1,9 +1,9 @@
-// Module ID: 10418
-// Function ID: 80524
+// Module ID: 10458
+// Function ID: 80653
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 4218, 4156, 10419, 4016, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 4252, 4190, 10459, 4050, 566, 686, 2]
 
-// Module 10418 (_isNativeReflectConstruct)
+// Module 10458 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items3 from "items3";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -59,8 +59,8 @@ const delayedCall = new require("_createForOfIteratorHelperLoose").DelayedCall(3
     } while (num < length);
   }
   if (0 !== items.length) {
-    importDefault(10419).subscribeActivities(items);
-    const obj = importDefault(10419);
+    importDefault(10459).subscribeActivities(items);
+    const obj = importDefault(10459);
   }
 });
 let tmp3 = ((Store) => {

@@ -1,10 +1,10 @@
-// Module ID: 14529
-// Function ID: 110980
+// Module ID: 14573
+// Function ID: 111153
 // Name: HapticButton
-// Dependencies: [31, 27, 33, 4131, 4544, 4100, 4101, 4542, 5166, 4127, 4102, 2]
+// Dependencies: [31, 27, 33, 4165, 4578, 4134, 4135, 4576, 5200, 4161, 4136, 2]
 // Exports: default
 
-// Module 14529 (HapticButton)
+// Module 14573 (HapticButton)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -15,7 +15,7 @@ let closure_4;
 const require = arg1;
 function HapticButton(text) {
   const type = text.type;
-  return callback(type(4544).Button, {
+  return callback(type(4578).Button, {
     variant: "secondary",
     onPress() {
       return type(outer1_1[5]).triggerHapticFeedback(type);
@@ -99,58 +99,58 @@ export default function UserSettingsDesignSystemHaptics() {
   obj = { spacing: 24 };
   obj = {};
   const obj1 = {};
-  const items = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Semantic Types" }), callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
+  const items = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Semantic Types" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
   items[2] = items.map((label) => {
     label = label.label;
     return outer1_3(outer1_11, { type: label.type, label }, label);
   });
   obj1.children = items;
-  obj.children = callback2(require(4542) /* Stack */.Stack, obj1);
-  const items1 = [callback(require(5166) /* getCardBackgroundToken */.Card, obj), , , , ];
+  obj.children = callback2(require(4576) /* Stack */.Stack, obj1);
+  const items1 = [callback(require(5200) /* getCardBackgroundToken */.Card, obj), , , , ];
   const obj2 = {};
   const obj3 = {};
   const items2 = [
-    callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }),
-    callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }),
+    callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }),
+    callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }),
     items1.map((label) => {
       label = label.label;
       return outer1_3(outer1_11, { type: label.type, label }, label);
     })
   ];
   obj3.children = items2;
-  obj2.children = callback2(require(4542) /* Stack */.Stack, obj3);
-  items1[1] = callback(require(5166) /* getCardBackgroundToken */.Card, obj2);
+  obj2.children = callback2(require(4576) /* Stack */.Stack, obj3);
+  items1[1] = callback(require(5200) /* getCardBackgroundToken */.Card, obj2);
   const obj4 = {};
   const obj5 = {};
   const items3 = [
-    callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }),
-    callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }),
+    callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }),
+    callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }),
     items2.map((label) => {
       label = label.label;
       return outer1_3(outer1_11, { type: label.type, label }, label);
     })
   ];
   obj5.children = items3;
-  obj4.children = callback2(require(4542) /* Stack */.Stack, obj5);
-  items1[2] = callback(require(5166) /* getCardBackgroundToken */.Card, obj4);
+  obj4.children = callback2(require(4576) /* Stack */.Stack, obj5);
+  items1[2] = callback(require(5200) /* getCardBackgroundToken */.Card, obj4);
   const obj6 = {};
   const obj7 = {};
   const items4 = [
-    callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }),
-    callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }),
+    callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }),
+    callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }),
     items3.map((label) => {
       label = label.label;
       return outer1_3(outer1_11, { type: label.type, label }, label);
     })
   ];
   obj7.children = items4;
-  obj6.children = callback2(require(4542) /* Stack */.Stack, obj7);
-  items1[3] = callback(require(5166) /* getCardBackgroundToken */.Card, obj6);
+  obj6.children = callback2(require(4576) /* Stack */.Stack, obj7);
+  items1[3] = callback(require(5200) /* getCardBackgroundToken */.Card, obj6);
   const obj8 = {};
   const obj9 = {};
   const items5 = [
-    callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: "Pattern Presets" }),
-    callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
+    callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Pattern Presets" }),
+    callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
     items4.map((description) => {
       let closure_0;
       let label;
@@ -166,9 +166,9 @@ export default function UserSettingsDesignSystemHaptics() {
     })
   ];
   obj9.children = items5;
-  obj8.children = callback2(require(4542) /* Stack */.Stack, obj9);
-  items1[4] = callback(require(5166) /* getCardBackgroundToken */.Card, obj8);
+  obj8.children = callback2(require(4576) /* Stack */.Stack, obj9);
+  items1[4] = callback(require(5200) /* getCardBackgroundToken */.Card, obj8);
   obj.children = items1;
-  obj.children = callback2(require(4542) /* Stack */.Stack, obj);
+  obj.children = callback2(require(4576) /* Stack */.Stack, obj);
   return callback(ScrollView, obj);
 };

@@ -1,17 +1,12 @@
 // Module ID: 8548
-// Function ID: 67964
+// Function ID: 67859
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [38, 110, 42]
+// Dependencies: [42]
 
 // Module 8548 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
 import get from "get";
 
-let obj = { uiViewClassName: "RNSVGPath", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
-obj = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: null, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, d: true };
-obj = { process: require("processColor").default };
-obj.color = obj;
-obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
+const obj = { uiViewClassName: "RNSVGFeColorMatrix", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, type: true, values: true } };
 
-export default get.get("RNSVGPath", () => obj);
+export default get.get("RNSVGFeColorMatrix", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

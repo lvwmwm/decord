@@ -1,10 +1,10 @@
-// Module ID: 7664
-// Function ID: 61381
+// Module ID: 7700
+// Function ID: 61471
 // Name: isFirstMessageInMediaPost
 // Dependencies: [1348, 624, 21, 2]
 // Exports: useIsFirstMessageInMediaPost
 
-// Module 7664 (isFirstMessageInMediaPost)
+// Module 7700 (isFirstMessageInMediaPost)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

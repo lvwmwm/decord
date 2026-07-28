@@ -1,15 +1,15 @@
-// Module ID: 6619
-// Function ID: 58556
+// Module ID: 6655
+// Function ID: 58645
 // Name: useModalDismissGuardRefreshControl
-// Dependencies: [31, 27, 33, 477, 5354, 3992, 5353, 5189, 2]
+// Dependencies: [31, 27, 33, 477, 5389, 4026, 5388, 5223, 2]
 
-// Module 6619 (useModalDismissGuardRefreshControl)
+// Module 6655 (useModalDismissGuardRefreshControl)
 import importAllResult from "result";
 import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_3992";
-import importDefaultResult1 from "module_3992";
+import importDefaultResult from "module_4026";
+import importDefaultResult1 from "module_4026";
 import set from "jsxProd";
 
 const require = arg1;
@@ -42,9 +42,9 @@ function noop() {
 }
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(require(5354).FlashList, { maintainVisibleContentPosition: closure_6, ref });
+  return jsx(require(5389).FlashList, { maintainVisibleContentPosition: closure_6, ref });
 });
-let closure_8 = require("module_3992").createAnimatedComponent(require("module_5354").FlashList);
+let closure_8 = require("module_4026").createAnimatedComponent(require("module_5389").FlashList);
 const forwardRefResult1 = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
   return <closure_8 maintainVisibleContentPosition={closure_6} ref={arg1} />;
@@ -55,9 +55,9 @@ const forwardRefResult2 = importAllResult.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0, obj);
   obj = { ref, maintainVisibleContentPosition: closure_6, masonry: true };
   const merged1 = Object.assign(merged);
-  return jsx(require(5354).FlashList, { ref, maintainVisibleContentPosition: closure_6, masonry: true });
+  return jsx(require(5389).FlashList, { ref, maintainVisibleContentPosition: closure_6, masonry: true });
 });
-let closure_9 = require("module_3992").createAnimatedComponent(require("module_5354").FlashList);
+let closure_9 = require("module_4026").createAnimatedComponent(require("module_5389").FlashList);
 const forwardRefResult3 = importAllResult.forwardRef((arg0, ref) => {
   let preventNativeModalDismiss;
   let refreshControl;
@@ -70,12 +70,12 @@ const forwardRefResult3 = importAllResult.forwardRef((arg0, ref) => {
   const tmp3 = useModalDismissGuardRefreshControl(preventNativeModalDismiss, refreshControl);
   const merged1 = Object.assign(merged);
   obj["refreshControl"] = tmp3;
-  return jsx(importDefault(5353), { ref, maintainVisibleContentPosition: closure_6 });
+  return jsx(importDefault(5388), { ref, maintainVisibleContentPosition: closure_6 });
 });
 const result = set.fileFinishedImporting("../discord_common/js/packages/flash-list/index.js");
-for (const key10073 in require("module_5354")) {
+for (const key10073 in require("module_5389")) {
   let tmp9 = key10073;
-  arg5[key10073] = require("module_5354")[key10073];
+  arg5[key10073] = require("module_5389")[key10073];
   continue;
 }
 
@@ -92,8 +92,8 @@ export const BottomSheetMasonryFlashList = importAllResult.forwardRef((arg0, ref
   obj.preventNativeModalDismiss = 0;
   obj.refreshControl = 0;
   const merged = Object.assign(arg0, obj);
-  obj = { ref, maintainVisibleContentPosition: closure_6, masonry: true, renderScrollComponent: require(5189) /* BottomSheetModal */.BottomSheetScrollView };
+  obj = { ref, maintainVisibleContentPosition: closure_6, masonry: true, renderScrollComponent: require(5223) /* BottomSheetModal */.BottomSheetScrollView };
   const merged1 = Object.assign(merged);
   obj["refreshControl"] = useModalDismissGuardRefreshControl(preventNativeModalDismiss, refreshControl);
-  return <closure_9 ref={arg1} maintainVisibleContentPosition={closure_6} masonry renderScrollComponent={require(5189) /* BottomSheetModal */.BottomSheetScrollView} />;
+  return <closure_9 ref={arg1} maintainVisibleContentPosition={closure_6} masonry renderScrollComponent={require(5223) /* BottomSheetModal */.BottomSheetScrollView} />;
 });

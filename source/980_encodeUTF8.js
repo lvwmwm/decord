@@ -1,5 +1,5 @@
 // Module ID: 980
-// Function ID: 10629
+// Function ID: 10633
 // Name: encodeUTF8
 // Dependencies: [981, 982]
 

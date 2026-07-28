@@ -1,8 +1,8 @@
-// Module ID: 11735
-// Function ID: 91122
-// Dependencies: [9155, 4338, 11736, 1935, 11731, 2]
+// Module ID: 11774
+// Function ID: 91273
+// Dependencies: [9199, 4372, 11775, 1935, 11770, 2]
 
-// Module 11735
+// Module 11774
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
 
 let closure_3;
@@ -12,26 +12,26 @@ const result = require("getScreens").fileFinishedImporting("modules/create_guild
 
 export default {
   openCreateGuildModal(onSuccess) {
-    let obj = importDefault(4338);
+    let obj = importDefault(4372);
     obj = { onSuccess };
-    obj.pushLazy(require(1935) /* maybeLoadBundle */(11736, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(1935) /* maybeLoadBundle */(11775, dependencyMap.paths), obj, closure_4);
   },
   closeCreateGuildModal() {
-    importDefault(4338).popWithKey(closure_4);
+    importDefault(4372).popWithKey(closure_4);
   },
   closeCreateGuildOnboardingModal() {
-    importDefault(4338).popWithKey(closure_4);
-    const obj = importDefault(4338);
-    require(11731) /* _startContactSyncForDiscoverability */.nextOnboardingStep({});
+    importDefault(4372).popWithKey(closure_4);
+    const obj = importDefault(4372);
+    require(11770) /* _startContactSyncForDiscoverability */.nextOnboardingStep({});
   },
   openGuildInviteScreen(stateFromStores1) {
-    let obj = importDefault(4338);
+    let obj = importDefault(4372);
     obj = { channel: stateFromStores1 };
-    obj.pushLazy(require(1935) /* maybeLoadBundle */(11736, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(1935) /* maybeLoadBundle */(11775, dependencyMap.paths), obj, closure_4);
   },
   openGuildJoinServerScreen() {
-    let obj = importDefault(4338);
+    let obj = importDefault(4372);
     obj = { initialState: constants.JOIN_SERVER };
-    obj.pushLazy(require(1935) /* maybeLoadBundle */(11736, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(1935) /* maybeLoadBundle */(11775, dependencyMap.paths), obj, closure_4);
   }
 };

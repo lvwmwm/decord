@@ -1,10 +1,10 @@
-// Module ID: 14713
-// Function ID: 112095
+// Module ID: 14757
+// Function ID: 112268
 // Name: showCaptchaTestModal
-// Dependencies: [5, 31, 33, 4338, 14714, 1935, 2]
+// Dependencies: [5, 31, 33, 4372, 14758, 1935, 2]
 // Exports: showCaptchaTestModal
 
-// Module 14713 (showCaptchaTestModal)
+// Module 14757 (showCaptchaTestModal)
 import maybeLoadBundle from "maybeLoadBundle";
 import "result";
 import { jsx } from "jsxProd";
@@ -14,5 +14,5 @@ const result = require("jsxProd").fileFinishedImporting("modules/captcha/tooling
 
 export const showCaptchaTestModal = function showCaptchaTestModal() {
   // CreateGeneratorClosureLongIndex (0x67)
-  importDefault(4338).pushLazy(callback(tmp));
+  importDefault(4372).pushLazy(callback(tmp));
 };

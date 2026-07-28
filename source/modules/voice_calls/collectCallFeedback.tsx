@@ -1,10 +1,10 @@
-// Module ID: 12624
-// Function ID: 97582
+// Module ID: 12667
+// Function ID: 97752
 // Name: collectCallFeedback
-// Dependencies: [8776, 1348, 4178, 4203, 1907, 1850, 8764, 4325, 8780, 8777, 686, 2]
+// Dependencies: [8820, 1348, 4212, 4237, 1907, 1850, 8808, 4359, 8824, 8821, 686, 2]
 // Exports: default
 
-// Module 12624 (collectCallFeedback)
+// Module 12667 (collectCallFeedback)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         obj.rtc_connection_id = store2.getRTCConnectionId();
         obj.duration = store2.getDuration();
         obj.media_session_id = store2.getMediaSessionId();
-        let obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+        let obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
         const guildId = store2.getGuildId();
         const merged = Object.assign(obj3.getVoiceStateMetadata(guildId, store2.getChannelId(), videoEnabled));
         let duration_muted_ms;
@@ -50,7 +50,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         if (obj.hasUsedBackgroundInCall) {
           obj = {};
           const merged1 = Object.assign(obj);
-          const lastUsedVideoBackgroundOption = require(8780) /* getOptionFromSettingsFiltered */.getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
+          const lastUsedVideoBackgroundOption = require(8824) /* getOptionFromSettingsFiltered */.getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
           const obj1 = {};
           const videoDevices = store.getVideoDevices();
           const tmp29 = videoDevices[store.getVideoDeviceId(store)];
@@ -60,12 +60,12 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
           }
           obj1.video_device_name = name;
           obj1.video_hardware_scaling_enabled = store.getHardwareEncoding();
-          const obj8 = require(8780) /* getOptionFromSettingsFiltered */;
-          obj1.video_effect_type = require(8777) /* isCustomBackgroundOption */.getEffectAnalyticsType(lastUsedVideoBackgroundOption);
-          const obj10 = require(8777) /* isCustomBackgroundOption */;
-          obj1.video_effect_detail = require(8777) /* isCustomBackgroundOption */.getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
+          const obj8 = require(8824) /* getOptionFromSettingsFiltered */;
+          obj1.video_effect_type = require(8821) /* isCustomBackgroundOption */.getEffectAnalyticsType(lastUsedVideoBackgroundOption);
+          const obj10 = require(8821) /* isCustomBackgroundOption */;
+          obj1.video_effect_detail = require(8821) /* isCustomBackgroundOption */.getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
           const merged2 = Object.assign(obj1);
-          const obj11 = require(8777) /* isCustomBackgroundOption */;
+          const obj11 = require(8821) /* isCustomBackgroundOption */;
           const obj2 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: obj };
           importDefault(686).dispatch(obj2);
           const obj12 = importDefault(686);

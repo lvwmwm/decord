@@ -1,10 +1,10 @@
-// Module ID: 15046
-// Function ID: 114658
+// Module ID: 15089
+// Function ID: 114831
 // Name: useFavoritesGuildHideAction
-// Dependencies: [31, 3948, 653, 10152, 10151, 1841, 1198, 1212, 2945, 2]
+// Dependencies: [31, 3982, 653, 10194, 10193, 1841, 1198, 1212, 2945, 2]
 // Exports: default
 
-// Module 15046 (useFavoritesGuildHideAction)
+// Module 15089 (useFavoritesGuildHideAction)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Routes } from "ME";
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("ME").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
 
 export default function useFavoritesGuildHideAction() {
-  let obj = hasAccess(10152);
+  let obj = hasAccess(10194);
   hasAccess = obj.useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   obj = { isPreview: !hasAccess };

@@ -1,10 +1,10 @@
-// Module ID: 16501
-// Function ID: 128591
+// Module ID: 16541
+// Function ID: 128752
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 44, 16502, 5187, 5189, 4127, 1273, 4544, 4099, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1557, 44, 16542, 5221, 5223, 4161, 1273, 4578, 4133, 1212, 2]
 // Exports: default
 
-// Module 16501 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 16541 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,23 +36,23 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   ({ editStateId, guildId } = groupListingId);
   const tmp = _createForOfIteratorHelperLoose();
   importDefault(44)(null != groupListingId, "group listing id cannot be null");
-  const tmp3 = importDefault(16502)(guildId, groupListingId, editStateId);
+  const tmp3 = importDefault(16542)(guildId, groupListingId, editStateId);
   let deleting = tmp3.deleting;
   ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, archiving } = tmp3);
   let obj = { backdropOpacity: 0.8 };
   obj = { style: tmp.container };
   obj = { contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
   const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText };
-  const items = [callback(require(4127) /* Text */.Text, obj1), callback(require(1273) /* Button */.Spacer, { size: 12 }), , , , , ];
+  const items = [callback(require(4161) /* Text */.Text, obj1), callback(require(1273) /* Button */.Spacer, { size: 12 }), , , , , ];
   const obj2 = { variant: "text-sm/normal", color: "text-default", children: descriptionText };
-  items[2] = callback(require(4127) /* Text */.Text, obj2);
+  items[2] = callback(require(4161) /* Text */.Text, obj2);
   items[3] = callback(require(1273) /* Button */.Spacer, { size: 24 });
   const obj3 = { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete };
   if (!deleting) {
     deleting = archiving;
   }
   obj3.disabled = deleting;
-  items[4] = callback(require(4544) /* Button */.Button, obj3);
+  items[4] = callback(require(4578) /* Button */.Button, obj3);
   items[5] = callback(require(1273) /* Button */.Spacer, { size: 24 });
   const obj4 = {
     onPress() {
@@ -64,10 +64,10 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj4.children = callback(require(4127) /* Text */.Text, obj5);
+  obj4.children = callback(require(4161) /* Text */.Text, obj5);
   items[6] = callback(closure_3, obj4);
   obj.children = items;
-  obj.children = closure_6(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  obj.children = closure_6(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj);
   obj.children = callback(closure_4, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

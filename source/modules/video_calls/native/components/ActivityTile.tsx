@@ -1,10 +1,10 @@
-// Module ID: 10539
-// Function ID: 81517
+// Module ID: 10577
+// Function ID: 81638
 // Name: ActivityTileInner
-// Dependencies: [5, 57, 31, 27, 1347, 1850, 653, 1277, 4156, 33, 1273, 4131, 689, 566, 1327, 5468, 4320, 3970, 10540, 5462, 5482, 9339, 1212, 10542, 10544, 10594, 10579, 4661, 10595, 10607, 4127, 4545, 3843, 2]
+// Dependencies: [5, 57, 31, 27, 1347, 1850, 653, 1277, 4190, 33, 1273, 4165, 689, 566, 1327, 5503, 4354, 4004, 10578, 5497, 5517, 9383, 1212, 10580, 10582, 10632, 10617, 4695, 10633, 10645, 4161, 4579, 3877, 2]
 // Exports: default
 
-// Module 10539 (ActivityTileInner)
+// Module 10577 (ActivityTileInner)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import "CollapsingText";
@@ -229,5 +229,5 @@ export default function ActivityTile(arg0) {
   obj = {};
   const merged = Object.assign(arg0);
   obj.children = callback(ActivityTileInner, obj);
-  return callback(require(3843) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(3877) /* ManaContext */.ThemeContextProvider, obj);
 };

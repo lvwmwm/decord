@@ -1,10 +1,10 @@
-// Module ID: 10795
-// Function ID: 83748
+// Module ID: 10833
+// Function ID: 83869
 // Name: ParticipantTitle
-// Dependencies: [31, 33, 4131, 689, 1273, 10778, 2]
+// Dependencies: [31, 33, 4165, 689, 1273, 10816, 2]
 // Exports: default
 
-// Module 10795 (ParticipantTitle)
+// Module 10833 (ParticipantTitle)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,6 +23,6 @@ export default function ParticipantTitle(arg0) {
   ({ channel, participant, style } = arg0);
   const obj = { style: items, numberOfLines: 1 };
   items = [_createForOfIteratorHelperLoose().usernameText, style];
-  obj.children = importDefault(10778)(channel, participant);
+  obj.children = importDefault(10816)(channel, participant);
   return jsx(require(1273) /* Button */.LegacyText, { style: items, numberOfLines: 1 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 70710
+// Module ID: 9014
+// Function ID: 70861
 // Name: _beginConsoleTransfer
-// Dependencies: [5, 653, 8971, 8978, 4099, 8979, 1935, 480, 8982, 2]
+// Dependencies: [5, 653, 9015, 9022, 4133, 9023, 1935, 480, 9026, 2]
 // Exports: beginConsoleTransfer
 
-// Module 8970 (_beginConsoleTransfer)
+// Module 9014 (_beginConsoleTransfer)
 import TransferFooter from "TransferFooter";
 import set from "logRemoteCommand";
 

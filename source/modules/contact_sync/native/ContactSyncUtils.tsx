@@ -1,10 +1,10 @@
-// Module ID: 11707
-// Function ID: 90877
+// Module ID: 11746
+// Function ID: 91028
 // Name: isContactSyncAvailable
-// Dependencies: [5, 27, 4813, 11706, 11705, 653, 478, 4943, 480, 686, 11708, 3804, 1184, 566, 1360, 1921, 3828, 4338, 2]
+// Dependencies: [5, 27, 4847, 11745, 11744, 653, 478, 4977, 480, 686, 11747, 3838, 1184, 566, 1360, 1921, 3862, 4372, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getStoredContacts, handleOpenLearnMoreLink, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 11707 (isContactSyncAvailable)
+// Module 11746 (isContactSyncAvailable)
 import closure_3 from "ME";
 import { NativeModules } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -77,7 +77,7 @@ export const uploadContacts = function uploadContacts(payload, arg1) {
   return _uploadContacts(...arguments);
 };
 export const bulkAddFriends = function bulkAddFriends(arr, bulkAddToken) {
-  let obj = importDefault(4943);
+  let obj = importDefault(4977);
   obj = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj };
   obj = { user_ids: arr, token: bulkAddToken, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE }, rejectWithError: false };
   const obj1 = { event: require(480) /* isThrottled */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
@@ -86,15 +86,15 @@ export const bulkAddFriends = function bulkAddFriends(arr, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(11708) /* _isNativeReflectConstruct */;
+  let obj = require(11747) /* _isNativeReflectConstruct */;
   const result = obj.removeLastUserContactsUpload();
-  const ContactSyncEnabled = require(3804) /* explicitContentFromProto */.ContactSyncEnabled;
+  const ContactSyncEnabled = require(3838) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true };
   obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
   obj.trackedActionData = obj;
   obj.rejectWithError = false;
-  return importDefault(4943).delete(obj);
+  return importDefault(4977).delete(obj);
 };
 export const getImageForContactId = function getImageForContactId(closure_0, arg1) {
   let DCDContactSyncManager = NativeModules.DCDContactSyncManager;
@@ -163,7 +163,7 @@ export const useContactSyncEnabled = function useContactSyncEnabled() {
   return require(566) /* initialize */.useStateFromStores(items, () => outer1_20(outer1_5.getLocalAccount(outer1_13.CONTACTS)));
 };
 export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDiscoverable() {
-  const FriendDiscoverySettings = require(3804) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = require(3838) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   let obj = require(1360) /* hasFlag */;
   let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
@@ -178,8 +178,8 @@ export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDis
 export { isContactSyncEnabled };
 export { getOpenLearnMoreUrl };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
-  importDefault(3828).openURL(getOpenLearnMoreUrl());
+  importDefault(3862).openURL(getOpenLearnMoreUrl());
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
-  importDefault(4338).popWithKey(closure_9);
+  importDefault(4372).popWithKey(closure_9);
 };

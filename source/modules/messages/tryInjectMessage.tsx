@@ -1,10 +1,10 @@
-// Module ID: 11084
-// Function ID: 86108
+// Module ID: 11122
+// Function ID: 86231
 // Name: createInjectedInGameNuxMessage
-// Dependencies: [1194, 653, 5986, 4352, 1360, 11085, 11086, 2]
+// Dependencies: [1194, 653, 6020, 4386, 1360, 11123, 11124, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 11084 (createInjectedInGameNuxMessage)
+// Module 11122 (createInjectedInGameNuxMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -14,8 +14,8 @@ let closure_6;
 const require = arg1;
 function createInjectedInGameNuxMessage(author, id) {
   const obj = { channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT };
-  const tmp = importDefault(5986)({ channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT });
-  const messageRecord = require(4352) /* createMinimalMessageRecord */.createMessageRecord(tmp);
+  const tmp = importDefault(6020)({ channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT });
+  const messageRecord = require(4386) /* createMinimalMessageRecord */.createMessageRecord(tmp);
   ({ applicationId: tmp2.applicationId, timestamp: tmp2.timestamp } = author);
   return messageRecord;
 }
@@ -44,7 +44,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                 num2 = recipientFlags;
               }
               tmp4 = null;
-              if (!obj2.hasFlag(num2, require(11085) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
+              if (!obj2.hasFlag(num2, require(11123) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
                 tmp4 = null;
                 if (!map.has(closure_0.id)) {
                   const result = map.set(closure_0.id, id.id);
@@ -55,10 +55,10 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                     num4 = recipientFlags2;
                   }
                   const obj3 = require(1360) /* hasFlag */;
-                  const setFlagResult = require(1360) /* hasFlag */.setFlag(num4, require(11085) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const result1 = importDefault(11086).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
+                  const setFlagResult = require(1360) /* hasFlag */.setFlag(num4, require(11123) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
+                  const result1 = importDefault(11124).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
                   tmp4 = tmp12;
-                  const obj4 = importDefault(11086);
+                  const obj4 = importDefault(11124);
                 }
               }
               obj2 = require(1360) /* hasFlag */;

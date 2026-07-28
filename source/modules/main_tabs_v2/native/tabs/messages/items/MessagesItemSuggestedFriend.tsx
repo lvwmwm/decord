@@ -1,10 +1,10 @@
-// Module ID: 14968
-// Function ID: 114106
+// Module ID: 15012
+// Function ID: 114279
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [57, 31, 27, 3768, 653, 33, 4131, 689, 9849, 8297, 1935, 624, 1212, 3970, 14969, 14970, 675, 4661, 1273, 4127, 4544, 4077, 2]
+// Dependencies: [57, 31, 27, 3802, 653, 33, 4165, 689, 9889, 8335, 1935, 624, 1212, 4004, 15013, 15014, 675, 4695, 1273, 4161, 4578, 4111, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 14968 (getMessagesItemSuggestedFriendHeight)
+// Module 15012 (getMessagesItemSuggestedFriendHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -134,8 +134,8 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/m
 
 export default memoResult;
 export const getMessagesItemSuggestedFriendHeight = function getMessagesItemSuggestedFriendHeight(fontScale) {
-  const obj = require(9849) /* scaleLineHeight */;
-  const scaleTextLineHeightResult = require(9849) /* scaleLineHeight */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const sum = scaleTextLineHeightResult + require(9849) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
+  const obj = require(9889) /* scaleLineHeight */;
+  const scaleTextLineHeightResult = require(9889) /* scaleLineHeight */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const sum = scaleTextLineHeightResult + require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
   return sum + importDefault(689).space.PX_16;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10688
-// Function ID: 83220
+// Module ID: 10726
+// Function ID: 83341
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1188, 4221, 4186, 1325, 566, 587, 4310, 2]
+// Dependencies: [1188, 4255, 4220, 1325, 566, 587, 4344, 2]
 // Exports: maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10688 (getGoLiveAutoQualityExperimentConfig)
+// Module 10726 (getGoLiveAutoQualityExperimentConfig)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ApplicationStreamPresets } from "makeButton";
@@ -45,7 +45,7 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
     if (tmp3 < 1) {
       state = state.getState();
       if (state.preset !== ApplicationStreamPresets.PRESET_CUSTOM) {
-        let obj = require(4310) /* isVoiceChannelFull */;
+        let obj = require(4344) /* isVoiceChannelFull */;
         obj = { preset: ApplicationStreamPresets.PRESET_AUTO };
         ({ resolution: obj2.resolution, fps: obj2.frameRate, soundshareEnabled: obj2.soundshareEnabled } = state);
         obj.noTrack = true;

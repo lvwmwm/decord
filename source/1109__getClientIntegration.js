@@ -1,5 +1,5 @@
 // Module ID: 1109
-// Function ID: 12652
+// Function ID: 12656
 // Name: _getClientIntegration
 // Dependencies: [794]
 

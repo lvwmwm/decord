@@ -1,10 +1,10 @@
-// Module ID: 16301
-// Function ID: 126917
+// Module ID: 16340
+// Function ID: 127073
 // Name: useSyncAutomodRules
-// Dependencies: [57, 5, 31, 10991, 653, 677, 16302, 682, 10996, 4030, 3744, 2]
+// Dependencies: [57, 5, 31, 11029, 653, 677, 16341, 682, 11034, 4064, 3778, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRulesEffect
 
-// Module 16301 (useSyncAutomodRules)
+// Module 16340 (useSyncAutomodRules)
 import _slicedToArray from "_slicedToArray";
 import closure_3 from "useStoreWithEqualityFn";
 import result from "result";
@@ -21,7 +21,7 @@ function useSyncAutomodRules(arg0) {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _require(3744).shallow), 2);
+  }, _require(3778).shallow), 2);
   first = tmp3[0];
   const callback2 = tmp5;
   let items = [tmp2[0], ];
@@ -159,5 +159,5 @@ export const useAutomodRulesList = function useAutomodRulesList(arg0) {
     obj.rulesByTriggerType = obj;
     ({ updateRule: obj.updateRule, removeRule: obj.removeRule } = arg0);
     return obj;
-  }, _require(3744).shallow);
+  }, _require(3778).shallow);
 };

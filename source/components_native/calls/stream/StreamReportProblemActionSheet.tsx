@@ -1,10 +1,10 @@
-// Module ID: 15962
-// Function ID: 123320
+// Module ID: 16001
+// Function ID: 123476
 // Name: ReportProblem
-// Dependencies: [31, 4218, 653, 33, 4131, 689, 4560, 5971, 675, 15963, 4099, 3831, 15964, 5500, 5498, 5186, 1212, 5189, 2]
+// Dependencies: [31, 4252, 653, 33, 4165, 689, 4594, 6005, 675, 16002, 4133, 3865, 16003, 5535, 5533, 5220, 1212, 5223, 2]
 // Exports: default
 
-// Module 15962 (ReportProblem)
+// Module 16001 (ReportProblem)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -22,7 +22,7 @@ export default function ReportProblem(arg0) {
   let importDefault;
   let require;
   ({ stream: require, analyticsData: importDefault } = arg0);
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     let obj = outer1_0(outer1_2[7]);
     const streamerApplication = obj.getStreamerApplication(ownerId, outer1_3);
     obj = { type: "Stream Issue Sheet", other_user_id: ownerId.ownerId };
@@ -44,7 +44,7 @@ export default function ReportProblem(arg0) {
     outer1_1(outer1_2[8]).track(outer1_4.OPEN_POPOUT, obj);
   });
   let tmp = _createForOfIteratorHelperLoose();
-  const mapped = importDefault(15964)({ isStreamer: false, isEndStream: false }).map((label) => {
+  const mapped = importDefault(16003)({ isStreamer: false, isEndStream: false }).map((label) => {
     const value = label.value;
     return outer1_5(outer1_0(outer1_2[13]).ActionSheetRow, {
       label: label.label,
@@ -67,8 +67,8 @@ export default function ReportProblem(arg0) {
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.XuqqwI);
-  obj.header = jsx(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, {});
-  obj = { style: tmp.container, children: jsx(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) };
-  obj.children = jsx(require(5189) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: jsx(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
-  return jsx(require(5498) /* ActionSheet */.ActionSheet, { style: tmp.container, children: jsx(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
+  obj.header = jsx(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, {});
+  obj = { style: tmp.container, children: jsx(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) };
+  obj.children = jsx(require(5223) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: jsx(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
+  return jsx(require(5533) /* ActionSheet */.ActionSheet, { style: tmp.container, children: jsx(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
 };

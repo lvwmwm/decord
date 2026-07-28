@@ -1,10 +1,10 @@
-// Module ID: 13736
-// Function ID: 105450
+// Module ID: 13780
+// Function ID: 105623
 // Name: SettingsAgeGroupHeader
-// Dependencies: [31, 27, 7697, 653, 33, 4131, 689, 6690, 1921, 4127, 1212, 2717, 10059, 13613, 2]
+// Dependencies: [31, 27, 7733, 653, 33, 4165, 689, 6726, 1921, 4161, 1212, 2717, 10099, 13657, 2]
 // Exports: default
 
-// Module 13736 (SettingsAgeGroupHeader)
+// Module 13780 (SettingsAgeGroupHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { MobileSetting } from "MobileSetting";
@@ -24,11 +24,11 @@ function SettingsAgeGroupHeader() {
   obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(importDefault(2717).PY4MA0);
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   obj = { variant: "text-sm/normal", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.format(importDefault(2717)["1DN29p"], { handleOnHelpUrlHook: callback });
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
@@ -54,5 +54,5 @@ export default function SettingsAgeGroupScreen() {
     obj.ListHeaderComponent = outer1_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13613), { node });
+  return callback(importDefault(13657), { node });
 };

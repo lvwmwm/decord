@@ -1,8 +1,8 @@
-// Module ID: 15540
-// Function ID: 119590
-// Dependencies: [31, 27, 8699, 33, 4131, 689, 1557, 14858, 1450, 3985, 15541, 478, 2]
+// Module ID: 15579
+// Function ID: 119746
+// Dependencies: [31, 27, 8743, 33, 4165, 689, 1557, 14902, 1450, 4019, 15580, 478, 2]
 
-// Module 15540
+// Module 15579
 import { View } from "get ActivityIndicator";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(function YouScreenContainer(route) {
   route = route.route;
   let tmp = callback();
-  let obj = require(14858) /* trackForScreen */;
+  let obj = require(14902) /* trackForScreen */;
   const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
   if (null != route) {
     const params = route.params;
@@ -29,7 +29,7 @@ const memoResult = require("result").memo(function YouScreenContainer(route) {
       const initialTab = params.initialTab;
     }
   }
-  if (importDefault(3985)().isChatBesideChannelList) {
+  if (importDefault(4019)().isChatBesideChannelList) {
     obj = {};
     const items = [tmp.container, ];
     let obj3 = require(478) /* isWindows */;
@@ -49,20 +49,20 @@ const memoResult = require("result").memo(function YouScreenContainer(route) {
       const obj2 = { maxWidth: 0.6 * importDefault(1450)().width };
       items1[1] = obj2;
       obj1.style = items1;
-      tmp = importDefault(15541);
+      tmp = importDefault(15580);
       obj3 = { initialTab };
       obj1.children = tmp14(tmp, obj3);
       let tmp14Result = tmp14(View, obj1);
     } else {
       const obj4 = { initialTab };
-      tmp14Result = tmp14(importDefault(15541), obj4);
+      tmp14Result = tmp14(importDefault(15580), obj4);
     }
     obj.children = tmp14Result;
     tmp3(View, obj);
     const tmp6 = View;
   } else {
     obj5 = { initialTab };
-    return tmp3(importDefault(15541), obj5);
+    return tmp3(importDefault(15580), obj5);
   }
 });
 const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");

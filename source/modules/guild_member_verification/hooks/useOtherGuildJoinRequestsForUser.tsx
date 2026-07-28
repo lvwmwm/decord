@@ -1,10 +1,10 @@
-// Module ID: 15379
-// Function ID: 117255
+// Module ID: 15419
+// Function ID: 117414
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [31, 5686, 566, 9088, 2]
+// Dependencies: [31, 5696, 566, 9132, 2]
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 15379 (useOtherGuildJoinRequestsForUser)
+// Module 15419 (useOtherGuildJoinRequestsForUser)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

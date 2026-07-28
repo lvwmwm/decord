@@ -1,15 +1,15 @@
-// Module ID: 13762
-// Function ID: 105584
+// Module ID: 13806
+// Function ID: 105757
 // Name: showUserSettingsInputAlert
-// Dependencies: [31, 33, 4472, 13763, 1935, 1212, 4562, 2]
+// Dependencies: [31, 33, 4506, 13807, 1935, 1212, 4596, 2]
 // Exports: default
 
-// Module 13762 (showUserSettingsInputAlert)
+// Module 13806 (showUserSettingsInputAlert)
 import "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4472").fileFinishedImporting("modules/user_settings/account/native/showUserSettingsInputAlert.tsx");
+const result = require("module_4506").fileFinishedImporting("modules/user_settings/account/native/showUserSettingsInputAlert.tsx");
 
 export default function showUserSettingsInputAlert(arg0) {
   let dependencyMap;
@@ -45,5 +45,5 @@ export default function showUserSettingsInputAlert(arg0) {
       });
     }
   };
-  importDefault(4472).openLazy(obj);
+  importDefault(4506).openLazy(obj);
 };

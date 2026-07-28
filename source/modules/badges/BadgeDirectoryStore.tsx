@@ -1,9 +1,9 @@
-// Module ID: 8047
-// Function ID: 63996
+// Module ID: 8085
+// Function ID: 64106
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 664, 8048, 561, 8050, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 664, 8086, 561, 8088, 566, 686, 2]
 
-// Module 8047 (_isNativeReflectConstruct)
+// Module 8085 (_isNativeReflectConstruct)
 import closure_3 from "set";
 import closure_4 from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -418,8 +418,8 @@ tmp8 = new tmp8(require("dispatcher"), {
           const _Date2 = Date;
           const timestamp = Date.now();
           const result1 = map3.set(id, timestamp + value1.fail());
-          const badgeDirectory = require(8050) /* urlUserId */.fetchBadgeDirectory(id);
-          const obj4 = require(8050) /* urlUserId */;
+          const badgeDirectory = require(8088) /* urlUserId */.fetchBadgeDirectory(id);
+          const obj4 = require(8088) /* urlUserId */;
         }
       } else {
         const value2 = map2.get(id);

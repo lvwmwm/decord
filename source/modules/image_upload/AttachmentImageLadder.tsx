@@ -1,5 +1,5 @@
 // Module ID: 1824
-// Function ID: 20016
+// Function ID: 20020
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [2]
 // Exports: snapAttachmentDimensions

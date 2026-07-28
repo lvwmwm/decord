@@ -1,10 +1,10 @@
-// Module ID: 8687
-// Function ID: 68949
+// Module ID: 8731
+// Function ID: 69100
 // Name: SegmentedControl
-// Dependencies: [31, 27, 33, 4131, 689, 3835, 3992, 4543, 8688, 5217, 477, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 3869, 4026, 4577, 8732, 5251, 477, 2]
 // Exports: SegmentedControl
 
-// Module 8687 (SegmentedControl)
+// Module 8731 (SegmentedControl)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

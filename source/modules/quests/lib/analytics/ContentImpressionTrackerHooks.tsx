@@ -1,16 +1,16 @@
-// Module ID: 10432
-// Function ID: 80866
+// Module ID: 10472
+// Function ID: 80995
 // Name: useQuestImpressionRef
-// Dependencies: [31, 5932, 5960, 566, 5959, 8063, 10433, 2]
+// Dependencies: [31, 5966, 5994, 566, 5993, 8101, 10473, 2]
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpressionId, useQuestStatusChanged
 
-// Module 10432 (useQuestImpressionRef)
+// Module 10472 (useQuestImpressionRef)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let require = arg1;
 function useQuestImpressionRef() {
-  return React.useContext(require(10433) /* getQuestPlacementCombinationKey */.QuestImpressionContext);
+  return React.useContext(require(10473) /* getQuestPlacementCombinationKey */.QuestImpressionContext);
 }
 function useQuestImpression() {
   let current;

@@ -1,10 +1,10 @@
-// Module ID: 9716
-// Function ID: 75712
+// Module ID: 9756
+// Function ID: 75841
 // Name: GiftingSKUSelectScreen
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1557, 4127, 1212, 9717, 4544, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 1557, 4161, 1212, 9757, 4578, 2]
 // Exports: default
 
-// Module 9716 (GiftingSKUSelectScreen)
+// Module 9756 (GiftingSKUSelectScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

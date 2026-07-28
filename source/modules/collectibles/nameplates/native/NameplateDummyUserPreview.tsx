@@ -1,10 +1,10 @@
-// Module ID: 8007
-// Function ID: 63793
+// Module ID: 8045
+// Function ID: 63903
 // Name: NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG
-// Dependencies: [31, 27, 1278, 33, 1273, 689, 4131, 566, 3841, 8008, 8010, 8011, 2]
+// Dependencies: [31, 27, 1278, 33, 1273, 689, 4165, 566, 3875, 8046, 8048, 8049, 2]
 // Exports: NameplateDummyUserPreview
 
-// Module 8007 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
+// Module 8045 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -72,13 +72,13 @@ export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hide
   items1 = [tmp3.container, style];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_0(outer1_2[8]).isThemeDark(outer1_4.theme));
   obj = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
-  const items2 = [callback(importDefault(8008), obj), , ];
+  const items2 = [callback(importDefault(8046), obj), , ];
   const obj1 = { style: tmp3.avatarContainer };
   const obj2 = {};
   if (stateFromStores) {
-    let tmp10 = 8010;
+    let tmp10 = 8048;
   } else {
-    tmp10 = 8011;
+    tmp10 = 8049;
   }
   obj2.source = importDefault(tmp10);
   obj2.size = NORMAL;

@@ -1,17 +1,17 @@
-// Module ID: 10486
-// Function ID: 81346
+// Module ID: 10524
+// Function ID: 81467
 // Name: getStreamEndedSource
-// Dependencies: [31, 27, 33, 6481, 10487, 10488, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 10525, 10526, 4011, 2]
 // Exports: StreamEnded
 
-// Module 10486 (getStreamEndedSource)
+// Module 10524 (getStreamEndedSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getStreamEndedSource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -23,7 +23,7 @@ function getStreamEndedSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useStreamEndedSource() {
-  return getStreamEndedSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getStreamEndedSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/StreamEnded.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 11974
-// Function ID: 92541
+// Module ID: 12017
+// Function ID: 92711
 // Name: ModeratorActionRow
-// Dependencies: [31, 4955, 1348, 1908, 1918, 1838, 3759, 4147, 653, 3747, 33, 4131, 1324, 5164, 5509, 4127, 8045, 4099, 8997, 566, 5996, 10963, 1356, 10964, 4321, 4315, 4313, 3764, 1212, 10653, 6658, 10655, 7575, 4659, 10338, 1935, 5049, 8943, 4338, 10965, 1360, 9919, 3748, 10982, 10968, 8801, 10737, 8797, 11557, 9062, 4073, 10984, 8956, 10986, 11975, 11650, 6024, 5501, 2]
+// Dependencies: [31, 4989, 1348, 1908, 1918, 1838, 3793, 4181, 653, 3781, 33, 4165, 1324, 5198, 5544, 4161, 8083, 4133, 9041, 566, 6030, 11001, 1356, 11002, 4355, 4349, 4347, 3798, 1212, 10691, 6694, 10693, 7611, 4693, 10378, 1935, 5083, 8987, 4372, 11003, 1360, 9959, 3782, 11020, 11006, 8845, 10775, 8841, 11596, 9106, 4107, 11022, 9000, 11024, 12018, 11689, 6058, 5536, 2]
 // Exports: default
 
-// Module 11974 (ModeratorActionRow)
+// Module 12017 (ModeratorActionRow)
 import "MicrophoneArrowRightIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ function ModeratorActionRow(arg0) {
     }
     let obj = { label, subLabel: sublabel };
     obj = { IconComponent: icon, variant: str };
-    obj.icon = jsx(require(5164) /* TableRowInner */.TableRow.Icon, { IconComponent: icon, variant: str });
+    obj.icon = jsx(require(5198) /* TableRowInner */.TableRow.Icon, { IconComponent: icon, variant: str });
     obj.arrow = null != hint;
     obj.variant = str;
     obj.disabled = disabled;
@@ -50,13 +50,13 @@ function ModeratorActionRow(arg0) {
     }
     obj.accessibilityLabel = combined;
     obj.accessibilityRole = "button";
-    return jsx(require(5164) /* TableRowInner */.TableRow, { IconComponent: icon, variant: str });
+    return jsx(require(5198) /* TableRowInner */.TableRow, { IconComponent: icon, variant: str });
   } else {
     obj = { label };
     let tmp5;
     if (null != sublabel) {
       const obj1 = { variant: "text-xs/normal", color: "text-subtle", children: sublabel };
-      tmp5 = jsx(require(4127) /* Text */.Text, { variant: "text-xs/normal", color: "text-subtle", children: sublabel });
+      tmp5 = jsx(require(4161) /* Text */.Text, { variant: "text-xs/normal", color: "text-subtle", children: sublabel });
     }
     obj.sublabel = tmp5;
     obj.icon = icon;
@@ -64,7 +64,7 @@ function ModeratorActionRow(arg0) {
     obj.disabled = disabled;
     obj.isDestructive = isDestructive;
     obj.onPress = onPress;
-    return jsx(require(5509) /* Divider */.UserProfileFormRow, { label });
+    return jsx(require(5544) /* Divider */.UserProfileFormRow, { label });
   }
 }
 ({ GuildFeatures: closure_12, Permissions: closure_13 } = ME);

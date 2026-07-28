@@ -1,10 +1,10 @@
-// Module ID: 9737
-// Function ID: 75842
+// Module ID: 9777
+// Function ID: 75971
 // Name: getCurrentUserProfile
-// Dependencies: [1850, 5630, 2]
+// Dependencies: [1850, 5878, 2]
 // Exports: default
 
-// Module 9737 (getCurrentUserProfile)
+// Module 9777 (getCurrentUserProfile)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 

@@ -1,9 +1,9 @@
-// Module ID: 6160
-// Function ID: 55280
+// Module ID: 6194
+// Function ID: 55399
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1859, 1852, 2]
 
-// Module 6160 (_isNativeReflectConstruct)
+// Module 6194 (_isNativeReflectConstruct)
 import closure_0 from "GuildFeatures";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

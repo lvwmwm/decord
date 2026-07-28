@@ -1,10 +1,10 @@
-// Module ID: 7406
-// Function ID: 60345
+// Module ID: 7442
+// Function ID: 60434
 // Name: ServerIconShieldzordExample
-// Dependencies: [33, 5085, 7407, 2]
+// Dependencies: [33, 5119, 7443, 2]
 // Exports: ServerIconShieldzordExample
 
-// Module 7406 (ServerIconShieldzordExample)
+// Module 7442 (ServerIconShieldzordExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconShieldzordExample.native.tsx");
@@ -27,7 +27,7 @@ export const ServerIconShieldzordExample = function ServerIconShieldzordExample(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7407) };
+  obj = { uri: importDefault(7443) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerIconShieldzordExample = function ServerIconShieldzordExample(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

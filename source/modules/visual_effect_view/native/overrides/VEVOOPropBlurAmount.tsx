@@ -1,8 +1,8 @@
-// Module ID: 14771
-// Function ID: 112602
-// Dependencies: [57, 31, 4535, 33, 4131, 7575, 5503, 14772, 2]
+// Module ID: 14815
+// Function ID: 112775
+// Dependencies: [57, 31, 4569, 33, 4165, 7611, 5538, 14816, 2]
 
-// Module 14771
+// Module 14815
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
       callback(tmp3);
     }
   };
-  obj.leading = jsx(_require(5503).FormSwitch, {
+  obj.leading = jsx(_require(5538).FormSwitch, {
     value: first,
     onValueChange(arg0) {
       callback(arg0);
@@ -66,9 +66,9 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
   });
   const ref = importAllResult.useRef(first1);
   const tmp7 = jsx;
-  obj.subLabel = jsx(first1(14772), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
+  obj.subLabel = jsx(first1(14816), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
   obj.disabled = !first;
-  return tmp7(_require(7575).FormRow, obj);
+  return tmp7(_require(7611).FormRow, obj);
 });
 const result = require("useVisualEffectViewOverrides").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurAmount.tsx");
 

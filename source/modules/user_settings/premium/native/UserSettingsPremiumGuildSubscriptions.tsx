@@ -1,10 +1,10 @@
-// Module ID: 12465
-// Function ID: 96697
+// Module ID: 12508
+// Function ID: 96867
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1850, 3779, 4024, 3782, 3783, 653, 1852, 33, 4131, 4974, 6448, 6449, 4027, 6244, 4452, 4127, 1212, 1921, 12466, 1868, 12480, 12482, 12484, 12488, 3843, 12382, 5820, 7782, 12426, 566, 1456, 6495, 1553, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1850, 3813, 4058, 3816, 3817, 653, 1852, 33, 4165, 5008, 6484, 6485, 4061, 6280, 4486, 4161, 1212, 1921, 12509, 1868, 12523, 12525, 12527, 12531, 3877, 12425, 5830, 7818, 12469, 566, 1456, 6531, 1553, 2]
 // Exports: default
 
-// Module 12465 (_isNativeReflectConstruct)
+// Module 12508 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";

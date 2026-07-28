@@ -1,5 +1,5 @@
 // Module ID: 1748
-// Function ID: 19552
+// Function ID: 19556
 // Name: JsPerformance
 // Dependencies: [31, 27, 33, 1681, 1616, 1725]
 // Exports: PerformanceMonitor

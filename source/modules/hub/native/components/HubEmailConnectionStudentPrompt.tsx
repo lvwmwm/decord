@@ -1,10 +1,10 @@
-// Module ID: 11766
-// Function ID: 91368
+// Module ID: 11805
+// Function ID: 91519
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [31, 27, 11757, 653, 33, 4131, 5053, 689, 1456, 11765, 1273, 1212, 5157, 11767, 675, 11768, 2]
+// Dependencies: [31, 27, 11796, 653, 33, 4165, 5087, 689, 1456, 11804, 1273, 1212, 5191, 11806, 675, 11807, 2]
 // Exports: default
 
-// Module 11766 (HubEmailConnectionStudentPrompt)
+// Module 11805 (HubEmailConnectionStudentPrompt)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
@@ -45,9 +45,9 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   obj1.children = intl.string(onClose(1212).t["+/Pv0h"]);
   const items = [callback(onClose(1273).LegacyText, obj1), , ];
   const obj2 = { DEPRECATED_style: tmp.row };
-  const obj3 = { source: invite(11767) };
+  const obj3 = { source: invite(11806) };
   obj2.leading = callback(closure_4, obj3);
-  obj2.trailing = invite(5157).Arrow;
+  obj2.trailing = invite(5191).Arrow;
   const intl2 = onClose(1212).intl;
   obj2.label = intl2.string(onClose(1212).t["a7a/D+"]);
   const intl3 = onClose(1212).intl;
@@ -58,18 +58,18 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
     obj = { onClose, invite };
     arr = arr.push(outer1_5.VERIFY_EMAIL, obj);
   };
-  items[1] = callback(invite(5157), obj2);
+  items[1] = callback(invite(5191), obj2);
   const obj4 = { DEPRECATED_style: tmp.row };
   const obj5 = {};
-  const tmp2 = invite(5157);
-  obj5.source = invite(11768);
+  const tmp2 = invite(5191);
+  obj5.source = invite(11807);
   obj4.leading = callback(closure_4, obj5);
-  obj4.trailing = invite(5157).Arrow;
+  obj4.trailing = invite(5191).Arrow;
   const intl4 = onClose(1212).intl;
   obj4.label = intl4.string(onClose(1212).t.GLG9n4);
   obj4.onPress = onClose;
-  items[2] = callback(invite(5157), obj4);
+  items[2] = callback(invite(5191), obj4);
   obj.children = items;
   obj.children = callback2(closure_3, obj);
-  return callback(onClose(11765).HubEmailConnectionScreen, obj);
+  return callback(onClose(11804).HubEmailConnectionScreen, obj);
 };

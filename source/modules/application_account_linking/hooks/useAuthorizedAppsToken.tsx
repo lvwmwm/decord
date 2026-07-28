@@ -1,10 +1,10 @@
-// Module ID: 5469
-// Function ID: 46748
+// Module ID: 5504
+// Function ID: 46875
 // Name: useAuthorizedAppsTokens
-// Dependencies: [31, 5067, 566, 1327, 5470, 2]
+// Dependencies: [31, 5101, 566, 1327, 5505, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 5469 (useAuthorizedAppsTokens)
+// Module 5504 (useAuthorizedAppsTokens)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";

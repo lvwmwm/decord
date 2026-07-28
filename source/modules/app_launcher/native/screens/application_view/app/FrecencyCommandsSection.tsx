@@ -1,10 +1,10 @@
-// Module ID: 11262
-// Function ID: 87543
+// Module ID: 11300
+// Function ID: 87662
 // Name: FrecencyCommandsSection
-// Dependencies: [31, 27, 653, 33, 4131, 11241, 11263, 4325, 7955, 4127, 1212, 5676, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 11279, 11301, 4359, 7992, 4161, 1212, 5686, 2]
 // Exports: default
 
-// Module 11262 (FrecencyCommandsSection)
+// Module 11300 (FrecencyCommandsSection)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -31,7 +31,7 @@ export default function FrecencyCommandsSection(commands) {
   const context = commands.context;
   ({ onPressCommand: importDefault, section: dependencyMap, onExecuteCommand: result, installOnDemand: View, sectionName } = commands);
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(11263)({ context, commands: commands.allCommands, limit: 5 });
+  const arr = importDefault(11301)({ context, commands: commands.allCommands, limit: 5 });
   const items = [arr.length, sectionName];
   const effect = React.useEffect(() => {
     if (0 !== arr.length) {
@@ -47,7 +47,7 @@ export default function FrecencyCommandsSection(commands) {
     obj = { variant: "text-md/medium", color: "text-default" };
     const intl = context(1212).intl;
     obj.children = intl.string(context(1212).t.acSE0h);
-    obj.children = arr(context(4127).Heading, obj);
+    obj.children = arr(context(4161).Heading, obj);
     const items1 = [
       arr(View, obj),
       arr.map((command) => {

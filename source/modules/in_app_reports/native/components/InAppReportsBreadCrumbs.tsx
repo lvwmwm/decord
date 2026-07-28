@@ -1,10 +1,10 @@
-// Module ID: 12336
-// Function ID: 96007
+// Module ID: 12379
+// Function ID: 96177
 // Name: Breadcrumbs
-// Dependencies: [31, 27, 33, 4131, 689, 22, 4127, 7636, 1212, 2299, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 22, 4161, 7672, 1212, 2299, 2]
 // Exports: default
 
-// Module 12336 (Breadcrumbs)
+// Module 12379 (Breadcrumbs)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -60,9 +60,9 @@ export default function Breadcrumbs(element) {
         return null;
       } else {
         obj = { style: tmp3.container };
-        let map = require(4127) /* Text */.Text;
+        let map = require(4161) /* Text */.Text;
         let obj1 = { style: tmp3.title, accessibilityRole: "header", variant: "text-xs/bold" };
-        const REPORT_TO_MOD = require(7636) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
+        const REPORT_TO_MOD = require(7672) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(element.menuName);
         const intl = require(1212) /* getSystemLocale */.intl;
         const string = intl.string;

@@ -1,8 +1,8 @@
-// Module ID: 5637
-// Function ID: 48232
+// Module ID: 5885
+// Function ID: 51729
 // Dependencies: [5, 1850, 653, 686, 507, 1184, 2]
 
-// Module 5637
+// Module 5885
 import isNonEmptyString from "isNonEmptyString";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
@@ -44,6 +44,34 @@ export default {
   },
   clearPendingWidgets() {
     importDefault(686).dispatch({ type: "WIDGET_PENDING_CLEAR" });
+  },
+  uploadWidgetAsset(arg0) {
+    let closure_0 = arg0;
+    return callback(async () => {
+      let upload_filename;
+      let upload_url;
+      const HTTP = callback(outer2_2[4]).HTTP;
+      obj = { url: outer2_5.USER_PROFILE_WIDGET_ASSET_UPLOAD, body: obj, rejectWithError: true };
+      obj = { filename: outer1_0.name, file_size: outer1_0.size };
+      obj = { method: "PUT", body: outer1_0 };
+      const obj1 = {};
+      let str = "application/octet-stream";
+      ({ upload_url, upload_filename } = yield HTTP.post(obj).body);
+      if ("" !== outer1_0.type) {
+        str = outer1_0.type;
+      }
+      obj1["Content-Type"] = str;
+      obj.headers = obj1;
+      const tmp2 = yield fetch(upload_url, obj);
+      if (tmp2.ok) {
+        return upload_filename;
+      } else {
+        const _Error = Error;
+        const _HermesInternal = HermesInternal;
+        const error = new Error("Failed to upload widget asset: " + tmp2.status);
+        throw error;
+      }
+    })();
   },
   fetchSuggestedGames() {
     return callback(async () => {

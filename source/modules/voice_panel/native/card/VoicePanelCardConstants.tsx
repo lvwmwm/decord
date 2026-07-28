@@ -1,10 +1,10 @@
-// Module ID: 9979
-// Function ID: 77255
+// Module ID: 10019
+// Function ID: 77384
 // Name: CARD_SIZE
 // Dependencies: [689, 2]
 // Exports: getCallTileGutter, getEdgeGutter
 
-// Module 9979 (CARD_SIZE)
+// Module 10019 (CARD_SIZE)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCardConstants.tsx");
 
 export const CARD_SIZE = 165;

@@ -1,10 +1,10 @@
-// Module ID: 15878
-// Function ID: 122574
+// Module ID: 15917
+// Function ID: 122730
 // Name: useCanConnect
-// Dependencies: [1348, 1838, 3759, 4147, 482, 566, 4313, 2]
+// Dependencies: [1348, 1838, 3793, 4181, 482, 566, 4347, 2]
 // Exports: default
 
-// Module 15878 (useCanConnect)
+// Module 15917 (useCanConnect)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";

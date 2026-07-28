@@ -1,5 +1,5 @@
 // Module ID: 835
-// Function ID: 9293
+// Function ID: 9297
 // Name: logIgnoredSpan
 // Dependencies: [801, 809, 800]
 

@@ -1,10 +1,10 @@
-// Module ID: 10767
-// Function ID: 83533
+// Module ID: 10805
+// Function ID: 83654
 // Name: Text
-// Dependencies: [31, 27, 1348, 1838, 4203, 10768, 4217, 1850, 4192, 33, 4131, 3975, 689, 1273, 566, 4321, 10770, 10769, 686, 5121, 4544, 1212, 2]
+// Dependencies: [31, 27, 1348, 1838, 4237, 10806, 4251, 1850, 4226, 33, 4165, 4009, 689, 1273, 566, 4355, 10808, 10807, 686, 5155, 4578, 1212, 2]
 // Exports: default
 
-// Module 10767 (Text)
+// Module 10805 (Text)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -102,7 +102,7 @@ function RTCDebugGeneral() {
   }
   obj2.name = name;
   obj1.guild = obj2;
-  obj1.channel = { id: channelId, name: channelId(4321)(stateFromStores1) };
+  obj1.channel = { id: channelId, name: channelId(4355)(stateFromStores1) };
   obj.obj = obj1;
   obj.children = closure_14(ObjectKV, obj);
   return closure_14(Section, obj);
@@ -239,8 +239,8 @@ export default function RTCDebugOverlay(arg0) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj1.onPress = onClose;
-  obj.children = callback(require(4544) /* Button */.Button, obj1);
+  obj.children = callback(require(4578) /* Button */.Button, obj1);
   items2[1] = callback(closure_5, obj);
   obj.children = items2;
-  return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 6513
-// Function ID: 58224
+// Module ID: 6549
+// Function ID: 58313
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [31, 5619, 482, 566, 5622, 5616, 2]
+// Dependencies: [31, 5654, 482, 566, 5657, 5651, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 6513 (useDiscountedPremiumProductInfo)
+// Module 6549 (useDiscountedPremiumProductInfo)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CurrencyCodes } from "sum";

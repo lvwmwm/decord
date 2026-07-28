@@ -1,9 +1,9 @@
-// Module ID: 3916
-// Function ID: 32363
+// Module ID: 3950
+// Function ID: 32465
 // Name: CameraRive
-// Dependencies: [29, 31, 33, 3860, 3917, 3911, 2]
+// Dependencies: [29, 31, 33, 3894, 3951, 3945, 2]
 
-// Module 3916 (CameraRive)
+// Module 3950 (CameraRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -19,8 +19,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3860) /* useObservedValue */;
+    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3894) /* useObservedValue */;
     let fill;
     if (null != dataBinding) {
       fill = dataBinding.fill;
@@ -29,8 +29,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(3860) /* useObservedValue */;
+    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(3894) /* useObservedValue */;
     let on;
     if (null != dataBinding) {
       on = dataBinding.on;
@@ -39,7 +39,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = require(3894) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   }
 };
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef(function CameraRiveWithBound
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CameraRive.tsx");
 

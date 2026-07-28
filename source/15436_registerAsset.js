@@ -1,11 +1,11 @@
 // Module ID: 15436
-// Function ID: 117792
+// Function ID: 117613
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15436 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 24, height: 24, scales: [2, 3], hash: "210c1b00e626925954729db07b85fa94", name: "ic_polls", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1785b591bc534f1d0463ddef745bdb5c", name: "CalendarMinusIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

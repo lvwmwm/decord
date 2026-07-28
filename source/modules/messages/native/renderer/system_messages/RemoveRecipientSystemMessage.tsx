@@ -1,10 +1,10 @@
-// Module ID: 7700
-// Function ID: 61542
+// Module ID: 7736
+// Function ID: 61632
 // Name: createRemoveRecipientSystemMessage
-// Dependencies: [1352, 1348, 1850, 7684, 7686, 1212, 7687, 2]
+// Dependencies: [1352, 1348, 1850, 7720, 7722, 1212, 7723, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 7700 (createRemoveRecipientSystemMessage)
+// Module 7736 (createRemoveRecipientSystemMessage)
 import { THREAD_CHANNEL_TYPES } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,9 +20,9 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
   if (hasItem) {
     hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
   }
-  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
   if (message.author.id === first) {
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -34,17 +34,17 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
       formatToPartsResult = formatToParts(t["Qn5+Lf"], obj);
     }
     obj.content = formatToPartsResult;
-    const merged = Object.assign(importDefault(7687)(message));
+    const merged = Object.assign(importDefault(7723)(message));
     return obj;
   } else {
     user = user.getUser(first);
-    let obj3 = require(7684) /* getMessageAuthorWithProcessedColor */;
+    let obj3 = require(7720) /* getMessageAuthorWithProcessedColor */;
     const userAuthorWithProcessedColor = obj3.getUserAuthorWithProcessedColor(user, channel);
     const obj1 = {};
     const merged1 = Object.assign(obj);
     obj1["otherUsername"] = userAuthorWithProcessedColor.nick;
     const obj2 = { userId: first, message, author: userAuthorWithProcessedColor, roleStyle };
-    obj1["otherUsernameOnClick"] = importDefault(7686)(obj2);
+    obj1["otherUsernameOnClick"] = importDefault(7722)(obj2);
     obj3 = {};
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToParts2 = intl2.formatToParts;
@@ -55,7 +55,7 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
       formatToParts2Result = formatToParts2(t2.QtZ0RD, obj1);
     }
     obj3.content = formatToParts2Result;
-    const merged2 = Object.assign(importDefault(7687)(message));
+    const merged2 = Object.assign(importDefault(7723)(message));
     return obj3;
   }
 };

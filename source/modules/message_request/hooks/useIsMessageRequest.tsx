@@ -1,10 +1,10 @@
-// Module ID: 10369
-// Function ID: 80040
+// Module ID: 10409
+// Function ID: 80169
 // Name: useIsMessageRequest
-// Dependencies: [5602, 5603, 566, 2]
+// Dependencies: [5637, 5638, 566, 2]
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 10369 (useIsMessageRequest)
+// Module 10409 (useIsMessageRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

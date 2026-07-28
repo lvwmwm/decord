@@ -1,9 +1,9 @@
-// Module ID: 13614
-// Function ID: 104602
+// Module ID: 13658
+// Function ID: 104775
 // Name: SearchListSectionLabel
-// Dependencies: [31, 27, 13615, 13616, 10060, 33, 4131, 689, 5501, 4127, 13617, 1557, 13618, 14639, 6619, 14640, 14643, 14644, 1820, 2]
+// Dependencies: [31, 27, 13659, 13660, 10100, 33, 4165, 689, 5536, 4161, 13661, 1557, 13662, 14683, 6655, 14684, 14687, 14688, 1820, 2]
 
-// Module 13614 (SearchListSectionLabel)
+// Module 13658 (SearchListSectionLabel)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";
@@ -19,7 +19,7 @@ function SearchListSectionLabel(label) {
   let tmp3 = label;
   if ("string" === typeof label) {
     obj = { title: label };
-    tmp3 = jsx(require(5501) /* TableRowGroupTitle */.TableRowGroupTitle, { title: label });
+    tmp3 = jsx(require(5536) /* TableRowGroupTitle */.TableRowGroupTitle, { title: label });
   }
   obj.children = tmp3;
   return <View style={callback().spacer} />;
@@ -29,7 +29,7 @@ function SearchListSectionSubLabel(subLabel) {
   let obj = { style: callback().subLabel };
   if ("string" === typeof subLabel) {
     obj = { variant: "text-xs/normal", color: "text-muted", children: subLabel };
-    let tmp4 = jsx(require(4127) /* Text */.Text, { variant: "text-xs/normal", color: "text-muted", children: subLabel });
+    let tmp4 = jsx(require(4161) /* Text */.Text, { variant: "text-xs/normal", color: "text-muted", children: subLabel });
   } else {
     const _Array = Array;
     tmp4 = subLabel;
@@ -62,11 +62,11 @@ function renderItem(item) {
     obj = { subLabel: item.label };
     return <SearchListSectionSubLabel subLabel={item.label} />;
   } else if (ListItemType.SETTING_SEARCH_RESULT === type) {
-    return require(13617) /* formatSettingsRowTrailing */.renderSettingSearchResultItem(item);
+    return require(13661) /* formatSettingsRowTrailing */.renderSettingSearchResultItem(item);
   } else if (ListItemType.SECTION_ROW === type) {
-    return require(13617) /* formatSettingsRowTrailing */.renderSettingItem(item);
+    return require(13661) /* formatSettingsRowTrailing */.renderSettingItem(item);
   } else if (ListItemType.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13617) /* formatSettingsRowTrailing */;
+    obj = require(13661) /* formatSettingsRowTrailing */;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -107,7 +107,7 @@ const memoResult = importAllResult.memo((node) => {
   const items = [field, node];
   const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(14639);
+  let obj = node(14683);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent };
@@ -120,7 +120,7 @@ const memoResult = importAllResult.memo((node) => {
   obj.renderItem = renderItem;
   obj.data = memo;
   obj.getItemType = getItemType;
-  obj.children = jsx(node(6619).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent });
+  obj.children = jsx(node(6655).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent });
   return <View ref={ref} ListHeaderComponent={node.ListHeaderComponent} />;
 });
 const memoResult1 = importAllResult.memo((node) => {

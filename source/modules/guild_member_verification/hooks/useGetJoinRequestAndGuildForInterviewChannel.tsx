@@ -1,10 +1,10 @@
-// Module ID: 11662
-// Function ID: 90447
+// Module ID: 11701
+// Function ID: 90598
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: [57, 31, 1838, 3759, 5686, 3949, 653, 21, 566, 9088, 2]
+// Dependencies: [57, 31, 1838, 3793, 5696, 3983, 653, 21, 566, 9132, 2]
 // Exports: default
 
-// Module 11662 (useGetJoinRequestAndGuildForInterviewChannel)
+// Module 11701 (useGetJoinRequestAndGuildForInterviewChannel)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -52,19 +52,19 @@ export default function useGetJoinRequestAndGuildForInterviewChannel(id) {
   const effect = joinRequest.useEffect(() => {
     if (!tmp) {
       dependencyMap(true);
-      const requestToJoinGuilds = first(9088).fetchRequestToJoinGuilds();
-      const obj = first(9088);
+      const requestToJoinGuilds = first(9132).fetchRequestToJoinGuilds();
+      const obj = first(9132);
     }
   }, items1);
   const items2 = [joinRequest, castResult];
   const effect1 = joinRequest.useEffect(() => {
     if (null == joinRequest) {
       callback(true);
-      const joinRequestForInterview = first(9088).fetchJoinRequestForInterview(_slicedToArray);
+      const joinRequestForInterview = first(9132).fetchJoinRequestForInterview(_slicedToArray);
       joinRequestForInterview.finally(() => {
         outer1_0(false);
       });
-      const obj = first(9088);
+      const obj = first(9132);
     }
   }, items2);
   return { loading, joinRequest, joinRequestGuild };

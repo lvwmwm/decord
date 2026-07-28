@@ -1,5 +1,5 @@
 // Module ID: 700
-// Function ID: 8710
+// Function ID: 8714
 // Name: isStrictComparable
 // Dependencies: [573]
 

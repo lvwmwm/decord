@@ -1,10 +1,10 @@
-// Module ID: 10570
-// Function ID: 82407
+// Module ID: 10608
+// Function ID: 82528
 // Name: getShelfItemData
-// Dependencies: [4168, 2]
+// Dependencies: [4202, 2]
 // Exports: default
 
-// Module 10570 (getShelfItemData)
+// Module 10608 (getShelfItemData)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/activities/getShelfItemData.tsx");

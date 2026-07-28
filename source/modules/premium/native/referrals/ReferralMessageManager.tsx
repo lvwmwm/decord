@@ -1,9 +1,9 @@
-// Module ID: 16594
-// Function ID: 129466
+// Module ID: 16634
+// Function ID: 129627
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3783, 6157, 663, 21, 6447, 16174, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 3817, 6191, 663, 21, 6483, 16213, 5112, 2]
 
-// Module 16594 (_isNativeReflectConstruct)
+// Module 16634 (_isNativeReflectConstruct)
 import set from "set";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -30,8 +30,8 @@ function handleReferralMessages(type) {
         premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
         const obj = importDefault(21);
         if (tmp6) {
-          const userOffer = require(6447) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
-          const obj2 = require(6447) /* _fetchUserOffer */;
+          const userOffer = require(6483) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
+          const obj2 = require(6483) /* _fetchUserOffer */;
         }
         tmp6 = null == premiumTypeSubscription && closure_9.shouldFetchReferralOffer(importDefault(21).extractTimestamp(type.content));
       }

@@ -1,10 +1,10 @@
-// Module ID: 15198
-// Function ID: 115697
+// Module ID: 15238
+// Function ID: 115856
 // Name: goBack
-// Dependencies: [31, 27, 8699, 1345, 33, 4131, 689, 3983, 6504, 9492, 15199, 5121, 4661, 1212, 15200, 4127, 15201, 9490, 15203, 5462, 5482, 5703, 5093, 5449, 15207, 15208, 9986, 3978, 1557, 14858, 4663, 3843, 2]
+// Dependencies: [31, 27, 8743, 1345, 33, 4165, 689, 4017, 6540, 9532, 15239, 5155, 4695, 1212, 15240, 4161, 15241, 9530, 15243, 5497, 5517, 5713, 5127, 5484, 15247, 15248, 10026, 4012, 1557, 14902, 4697, 3877, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15198 (goBack)
+// Module 15238 (goBack)
 import importAllResult from "ManaContext";
 import { View } from "getGuildThemeName";
 import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
@@ -17,7 +17,7 @@ let closure_8;
 let closure_9;
 let require = arg1;
 function goBack() {
-  const navigation = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
+  const navigation = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != navigation) {
     if (navigation.canGoBack()) {
       navigation.goBack();
@@ -134,9 +134,9 @@ let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   const tmp = callback3();
-  let obj = importDefault(9492);
+  let obj = importDefault(9532);
   const ref = importAllResult.useRef(null);
-  const tmp4 = importDefault(15199)(ref);
+  const tmp4 = importDefault(15239)(ref);
   const require = tmp4;
   const items = [tmp4];
   const callback = importAllResult.useCallback(() => tmp4(outer1_6.TAKE_ACTION), items);
@@ -154,28 +154,28 @@ let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj2.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
     obj2.onPress = goBack;
-    obj2.children = callback(require(15200) /* IconWithBadge */.LeftBackIconWithBadge, {});
-    const items1 = [callback(require(4661) /* PressableBase */.PressableOpacity, obj2), , ];
+    obj2.children = callback(require(15240) /* IconWithBadge */.LeftBackIconWithBadge, {});
+    const items1 = [callback(require(4695) /* PressableBase */.PressableOpacity, obj2), , ];
     const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.HcoRu0);
-    items1[1] = callback(require(4127) /* Text */.Text, obj3);
+    items1[1] = callback(require(4161) /* Text */.Text, obj3);
     const obj4 = { style: tmp.actionButtons };
     let tmp21 = null;
     if (obj.useConfig({ location: "NativeNotifications" }).enabled) {
       const obj5 = {};
-      const obj6 = { ref, type: require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
-      const items2 = [callback(importDefault(15201), obj6), ];
+      const obj6 = { ref, type: require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
+      const items2 = [callback(importDefault(15241), obj6), ];
       const obj7 = {};
-      const tmp27 = importDefault(15201);
-      obj7.type = require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+      const tmp27 = importDefault(15241);
+      obj7.type = require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
       obj7.onOpen = callback;
-      items2[1] = callback(importDefault(15201), obj7);
+      items2[1] = callback(importDefault(15241), obj7);
       obj5.children = items2;
       tmp21 = callback2(closure_8, obj5);
-      const tmp30 = importDefault(15201);
+      const tmp30 = importDefault(15241);
     }
-    const items3 = [tmp21, callback(importDefault(15203), {})];
+    const items3 = [tmp21, callback(importDefault(15243), {})];
     obj4.children = items3;
     items1[2] = callback2(View, obj4);
     obj1.children = items1;
@@ -186,7 +186,7 @@ let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     const tmp20 = View;
   }
   obj.children = tmp11Result;
-  const items4 = [callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj), ];
+  const items4 = [callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj), ];
   const items5 = [tmp.headerBorder];
   items4[1] = callback(View, { style: items5 });
   obj.children = items4;

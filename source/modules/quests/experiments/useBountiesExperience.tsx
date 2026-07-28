@@ -1,20 +1,20 @@
-// Module ID: 10819
-// Function ID: 83913
+// Module ID: 10857
+// Function ID: 84034
 // Name: useBountiesExperience
-// Dependencies: [10820, 10821, 10822, 2]
+// Dependencies: [10858, 10859, 10860, 2]
 // Exports: useBountiesExperience
 
-// Module 10819 (useBountiesExperience)
+// Module 10857 (useBountiesExperience)
 const result = require("apexExperiment").fileFinishedImporting("modules/quests/experiments/useBountiesExperience.tsx");
 
 export const useBountiesExperience = function useBountiesExperience(VIDEO_MODAL_MOBILE) {
-  const BountiesVerticalScrollExperiment = require(10820) /* shouldUseScrollIndicatorOverlay */.BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = require(10858) /* shouldUseScrollIndicatorOverlay */.BountiesVerticalScrollExperiment;
   let obj = { location: VIDEO_MODAL_MOBILE };
   const config = BountiesVerticalScrollExperiment.useConfig(obj);
-  const BountiesStage1Experiment = require(10821) /* apexExperiment */.BountiesStage1Experiment;
+  const BountiesStage1Experiment = require(10859) /* apexExperiment */.BountiesStage1Experiment;
   obj = { location: VIDEO_MODAL_MOBILE };
   const config1 = BountiesStage1Experiment.useConfig(obj);
-  const QuestHomeBountiesExperiment = require(10822) /* apexExperiment */.QuestHomeBountiesExperiment;
+  const QuestHomeBountiesExperiment = require(10860) /* apexExperiment */.QuestHomeBountiesExperiment;
   obj = { location: VIDEO_MODAL_MOBILE };
   let num = 50;
   const config2 = QuestHomeBountiesExperiment.useConfig(obj);

@@ -1,10 +1,10 @@
-// Module ID: 10780
-// Function ID: 83677
+// Module ID: 10818
+// Function ID: 83798
 // Name: VoiceStatus
-// Dependencies: [31, 27, 4178, 4147, 4955, 33, 4131, 689, 566, 10739, 10534, 10535, 1273, 10781, 10782, 8302, 2]
+// Dependencies: [31, 27, 4212, 4181, 4989, 33, 4165, 689, 566, 10777, 10572, 10573, 1273, 10819, 10820, 8340, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10780 (VoiceStatus)
+// Module 10818 (VoiceStatus)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,15 +42,15 @@ const memoResult = importAllResult.memo((userId) => {
     isVoiceDeafenedResult = stateFromStores1.isVoiceDeafened();
   }
   if (stateFromStores) {
-    let tmp7 = channelId(10739);
+    let tmp7 = channelId(10777);
     let flag = true;
   } else if (tmp6) {
-    tmp7 = channelId(10534);
+    tmp7 = channelId(10572);
     flag = false;
   } else {
     flag = false;
     if (tmp4) {
-      tmp7 = channelId(10535);
+      tmp7 = channelId(10573);
       flag = false;
     }
   }
@@ -73,7 +73,7 @@ const memoResult1 = importAllResult.memo((userId) => {
   const items1 = [channelId, userId];
   let tmp2;
   if (obj.useStateFromStores(items, () => outer1_6.isModerator(userId, channelId), items1)) {
-    tmp2 = channelId(10781);
+    tmp2 = channelId(10819);
   }
   let tmp5 = null;
   if (null != tmp2) {
@@ -91,10 +91,10 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export const VoiceStatus = memoResult;
 export const ModeratorStatus = memoResult1;
 export const BlockedStatus = function BlockedStatus() {
-  const obj = { style: callback().restricted, source: importDefault(10782), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: importDefault(689).unsafe_rawColors.RED_400 };
-  return jsx(require(1273) /* Button */.Icon, { style: callback().restricted, source: importDefault(10782), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: importDefault(689).unsafe_rawColors.RED_400 });
+  const obj = { style: callback().restricted, source: importDefault(10820), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: importDefault(689).unsafe_rawColors.RED_400 };
+  return jsx(require(1273) /* Button */.Icon, { style: callback().restricted, source: importDefault(10820), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: importDefault(689).unsafe_rawColors.RED_400 });
 };
 export const IgnoredStatus = function IgnoredStatus() {
-  const obj = { style: callback().restricted, source: importDefault(8302), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
-  return jsx(require(1273) /* Button */.Icon, { style: callback().restricted, source: importDefault(8302), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL });
+  const obj = { style: callback().restricted, source: importDefault(8340), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
+  return jsx(require(1273) /* Button */.Icon, { style: callback().restricted, source: importDefault(8340), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL });
 };

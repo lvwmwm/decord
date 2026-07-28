@@ -1,9 +1,9 @@
-// Module ID: 6090
-// Function ID: 54351
+// Module ID: 6124
+// Function ID: 54470
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1907, 5910, 5911, 653, 3755, 4016, 6091, 1207, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1907, 5944, 5945, 653, 3789, 4050, 6125, 1207, 566, 686, 2]
 
-// Module 6090 (_isNativeReflectConstruct)
+// Module 6124 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -83,7 +83,7 @@ function updateCombo(value) {
     decayInterval = iter.decayInterval;
   }
   if (null == decayInterval) {
-    const Interval = obj(4016).Interval;
+    const Interval = obj(4050).Interval;
     const prototype = Interval.prototype;
     decayInterval = new Interval();
   }
@@ -299,13 +299,13 @@ tmp6 = new tmp6(require("dispatcher"), {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
                 if (null != value) {
-                  const comboShakeIntensity = id(6091).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  const comboShakeIntensity = id(6125).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
                   let num3 = 0.001;
                   if (null != comboShakeIntensity) {
                     num3 = comboShakeIntensity;
                   }
                   let result = num3;
-                  const obj2 = id(6091);
+                  const obj2 = id(6125);
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();

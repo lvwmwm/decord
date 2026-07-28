@@ -1,8 +1,8 @@
-// Module ID: 15899
-// Function ID: 122790
-// Dependencies: [57, 31, 27, 33, 4131, 5515, 11196, 2]
+// Module ID: 15938
+// Function ID: 122946
+// Dependencies: [57, 31, 27, 33, 4165, 5550, 11234, 2]
 
-// Module 15899
+// Module 15938
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { Image } from "get ActivityIndicator";
@@ -42,18 +42,18 @@ const memoResult = importAllResult.memo(function ActivityShelfItemBackground(asp
           obj.children = <Image onError={function onError() {
             return callback(true);
           }} />;
-          let tmp9Result = tmp9(importDefault(5515), obj);
-          const tmp12 = importDefault(5515);
+          let tmp9Result = tmp9(importDefault(5550), obj);
+          const tmp12 = importDefault(5550);
           const tmp13 = Image;
         }
       }
       obj = { style: tmp.previewImage };
-      tmp9Result = jsx(importDefault(5515), { style: tmp.previewImage });
+      tmp9Result = jsx(importDefault(5550), { style: tmp.previewImage });
     }
     return tmp9Result;
   }
-  const obj2 = { style: tmp.previewImage, children: jsx(importDefault(11196), {}) };
-  tmp9Result = jsx(importDefault(5515), { style: tmp.previewImage, children: jsx(importDefault(11196), {}) });
+  const obj2 = { style: tmp.previewImage, children: jsx(importDefault(11234), {}) };
+  tmp9Result = jsx(importDefault(5550), { style: tmp.previewImage, children: jsx(importDefault(11234), {}) });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemBackground.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 8157
-// Function ID: 65405
+// Module ID: 8195
+// Function ID: 65515
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [57, 31, 27, 1838, 5751, 1354, 33, 4131, 689, 1212, 5462, 5482, 566, 8158, 8160, 8161, 8159, 1557, 8162, 8163, 8687, 5187, 5189, 12208, 12209, 2]
+// Dependencies: [57, 31, 27, 1838, 5761, 1354, 33, 4165, 689, 1212, 5497, 5517, 566, 8196, 8198, 8199, 8197, 1557, 8200, 8201, 8731, 5221, 5223, 12251, 12252, 2]
 // Exports: default
 
-// Module 8157 (GuildScheduledEventDetailsActionSheet)
+// Module 8195 (GuildScheduledEventDetailsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

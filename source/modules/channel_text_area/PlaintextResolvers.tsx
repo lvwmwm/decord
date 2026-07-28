@@ -1,10 +1,10 @@
-// Module ID: 7961
-// Function ID: 63378
+// Module ID: 7998
+// Function ID: 63487
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4992, 5040, 1348, 1908, 1918, 1911, 1838, 3759, 3768, 1850, 653, 1853, 5917, 4321, 21, 4975, 3772, 3776, 2]
+// Dependencies: [57, 5026, 5074, 1348, 1908, 1918, 1911, 1838, 3793, 3802, 1850, 653, 1853, 5951, 4355, 21, 5009, 3806, 3810, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 7961 (_createForOfIteratorHelperLoose)
+// Module 7998 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -176,7 +176,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
       return null;
     })(arr, source, id, tmp, tmp2);
   } else if (":" === first) {
-    const EMOJI_NAME_RE = importDefault(3772).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3806).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arr);
     let tmp47 = null;
     if (null != match) {
@@ -206,7 +206,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
           const _HermesInternal = HermesInternal;
           const combined = ":" + obj2.name + ":";
         }
-        obj17 = importDefault(3776);
+        obj17 = importDefault(3810);
       }
     }
     return tmp47;
@@ -216,7 +216,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
       if (arr.length > 3) {
         if ("\"" === arr[1]) {
           if ("\"" === arr[arr.length - 1]) {
-            obj1 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+            obj1 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
             let unescapeChannelNameResult = obj1.unescapeChannelName(arr.slice(2, arr.length - 1));
           }
           const textChannelNameDisambiguations = store.getTextChannelNameDisambiguations(source);
@@ -225,7 +225,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
           let iter = tmp13();
           let iter2 = iter;
           if (iter.done) {
-            const tmp17 = _createForOfIteratorHelperLoose(require(4975) /* _createForOfIteratorHelperLoose */.COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+            const tmp17 = _createForOfIteratorHelperLoose(require(5009) /* _createForOfIteratorHelperLoose */.COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
             const iter4 = tmp17();
             let iter5 = iter4;
             if (!iter4.done) {
@@ -247,7 +247,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                       channel = iter7.value.channel;
                       let tmp21 = require;
                       let tmp22 = dependencyMap;
-                      let obj6 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+                      let obj6 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
                       let tmp23 = closure_14;
                       let tmp24 = closure_13;
                       if (obj6.computeChannelName(channel, closure_14, closure_13) !== unescapeChannelNameResult) {
@@ -307,7 +307,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                   let channel2 = activeJoinedThreadsForGuild[value1][iter12.value].channel;
                   let tmp39 = require;
                   let tmp40 = dependencyMap;
-                  let obj11 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+                  let obj11 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
                   let tmp41 = closure_14;
                   let tmp42 = closure_13;
                   while (obj11.computeChannelName(channel2, closure_14, closure_13) !== unescapeChannelNameResult) {
@@ -386,8 +386,8 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
   const tmp = resolvePlaintextInlineVoid(text, source, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(5917) /* toRichValue */.voidToOptionValue(tmp);
-    const obj = require(5917) /* toRichValue */;
+    voidToOptionValueResult = require(5951) /* toRichValue */.voidToOptionValue(tmp);
+    const obj = require(5951) /* toRichValue */;
   }
   return voidToOptionValueResult;
 };

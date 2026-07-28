@@ -1,20 +1,20 @@
-// Module ID: 14864
-// Function ID: 113387
+// Module ID: 14908
+// Function ID: 113560
 // Name: items
-// Dependencies: [57, 31, 4123, 14862, 653, 1345, 3992, 1334, 1457, 14865, 566, 14860, 3947, 8379, 4132, 4543, 14861, 2]
+// Dependencies: [57, 31, 4157, 14906, 653, 1345, 4026, 1334, 1457, 14909, 566, 14904, 3981, 8417, 4166, 4577, 14905, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 14864 (items)
+// Module 14908 (items)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import computeMaxX from "computeMaxX";
 import { ME } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import { Easing } from "module_3992";
+import { Easing } from "module_4026";
 
 const require = arg1;
-let closure_8 = Easing.inOut(require("module_3992").Easing.cubic);
+let closure_8 = Easing.inOut(require("module_4026").Easing.cubic);
 let closure_9 = [];
 let items = [require("DismissibleContent").DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
 let closure_11 = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };

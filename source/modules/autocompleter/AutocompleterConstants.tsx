@@ -1,9 +1,9 @@
-// Module ID: 5044
-// Function ID: 43610
+// Module ID: 5078
+// Function ID: 43725
 // Name: HeaderRecord
 // Dependencies: [7, 6, 2]
 
-// Module 5044 (HeaderRecord)
+// Module 5078 (HeaderRecord)
 import _classCallCheck from "_classCallCheck";
 import importDefaultResult from "_defineProperties";
 

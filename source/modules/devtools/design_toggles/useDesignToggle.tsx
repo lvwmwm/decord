@@ -1,10 +1,10 @@
-// Module ID: 5089
-// Function ID: 44329
+// Module ID: 5123
+// Function ID: 44444
 // Name: useDesignToggle
-// Dependencies: [5090, 566, 2]
+// Dependencies: [5124, 566, 2]
 // Exports: default
 
-// Module 5089 (useDesignToggle)
+// Module 5123 (useDesignToggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

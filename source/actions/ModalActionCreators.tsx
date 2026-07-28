@@ -1,8 +1,8 @@
-// Module ID: 4338
-// Function ID: 38303
-// Dependencies: [653, 4339, 3982, 4340, 686, 3983, 4341, 2]
+// Module ID: 4372
+// Function ID: 38417
+// Dependencies: [653, 4373, 4016, 4374, 686, 4017, 4375, 2]
 
-// Module 4338
+// Module 4372
 import { AppContext } from "ME";
 
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("actions/ModalActionCreators.tsx");
@@ -12,13 +12,13 @@ export default {
     let tmp = arg2;
     let APP = arg4;
     if (arg2 === undefined) {
-      tmp = importDefault(4339)("modal");
+      tmp = importDefault(4373)("modal");
     }
     if (APP === undefined) {
       APP = AppContext.APP;
     }
-    let obj = require(3982) /* _createForOfIteratorHelperLoose */;
-    obj = { key: tmp, modal: importDefault(4340)(modal, {}, props, tmp) };
+    let obj = require(4016) /* _createForOfIteratorHelperLoose */;
+    obj = { key: tmp, modal: importDefault(4374)(modal, {}, props, tmp) };
     const merged = Object.assign(arg3);
     obj.pushModal(obj);
     obj = { type: "MODAL_PUSH", modal, props, key: tmp, appContext: APP };
@@ -31,11 +31,11 @@ export default {
     const importDefault = outer1_1;
     const dependencyMap = merged;
     if (closure_4 === undefined) {
-      tmp = importDefault(4339)("modal");
+      tmp = importDefault(4373)("modal");
     }
     const AppContext = tmp;
     closure_4 = navigationParams;
-    const rootNavigationRef = self(3983).getRootNavigationRef();
+    const rootNavigationRef = self(4017).getRootNavigationRef();
     if (null != rootNavigationRef) {
       if (rootNavigationRef.isReady()) {
         if (outer1_1 instanceof Promise) {
@@ -46,7 +46,7 @@ export default {
         nextPromise.then((arg0) => self.push(arg0, closure_2, closure_3, closure_4));
       }
     }
-    const obj = self(3983);
+    const obj = self(4017);
     return new Promise((arg0) => {
       let closure_0 = arg0;
       return outer1_1(merged[6]).enqueue(() => lib(lib.pushLazy(outer1_1, outer1_2, outer1_3, outer1_4)));
@@ -58,22 +58,22 @@ export default {
     obj.dispatch(obj);
   },
   pop() {
-    require(3982) /* _createForOfIteratorHelperLoose */.popModal();
-    const obj = require(3982) /* _createForOfIteratorHelperLoose */;
+    require(4016) /* _createForOfIteratorHelperLoose */.popModal();
+    const obj = require(4016) /* _createForOfIteratorHelperLoose */;
     importDefault(686).dispatch({ type: "MODAL_POP" });
   },
   popWithKey(PREMIUM_KEY, onExited) {
-    let obj = require(3982) /* _createForOfIteratorHelperLoose */;
+    let obj = require(4016) /* _createForOfIteratorHelperLoose */;
     obj.popModal(PREMIUM_KEY, onExited);
     obj = { type: "MODAL_POP", key: PREMIUM_KEY, onExited };
     importDefault(686).dispatch(obj);
   },
   popAboveKey(voiceChannelKey) {
-    return require(3982) /* _createForOfIteratorHelperLoose */.popModalsAboveKey(voiceChannelKey);
+    return require(4016) /* _createForOfIteratorHelperLoose */.popModalsAboveKey(voiceChannelKey);
   },
   popAll() {
-    require(3982) /* _createForOfIteratorHelperLoose */.popAllModals();
-    const obj = require(3982) /* _createForOfIteratorHelperLoose */;
+    require(4016) /* _createForOfIteratorHelperLoose */.popAllModals();
+    const obj = require(4016) /* _createForOfIteratorHelperLoose */;
     importDefault(686).dispatch({ type: "MODAL_POP_ALL" });
     const obj2 = importDefault(686);
     importDefault(686).dispatch({ type: "EMAIL_VERIFICATION_MODAL_CLOSE" });

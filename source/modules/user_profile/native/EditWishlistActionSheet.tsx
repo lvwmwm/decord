@@ -1,10 +1,10 @@
-// Module ID: 12131
-// Function ID: 95038
+// Module ID: 12174
+// Function ID: 95208
 // Name: exitingAnimation
-// Dependencies: [57, 31, 27, 4123, 8606, 8607, 1850, 5630, 8043, 5188, 33, 4131, 689, 3992, 4132, 566, 1557, 5462, 5482, 12127, 12128, 7829, 12109, 8612, 8046, 11634, 1212, 5189, 5501, 5502, 7620, 9709, 6625, 4090, 2]
+// Dependencies: [57, 31, 27, 4157, 8650, 8651, 1850, 5878, 8081, 5222, 33, 4165, 689, 4026, 4166, 566, 1557, 5497, 5517, 12170, 12171, 7865, 12152, 8656, 8084, 11673, 1212, 5223, 5536, 5537, 7656, 9749, 6661, 4124, 2]
 // Exports: default
 
-// Module 12131 (exitingAnimation)
+// Module 12174 (exitingAnimation)
 import _slicedToArray from "_slicedToArray";
 import WishlistItemCard from "WishlistItemCard";
 import get_ActivityIndicator from "BottomSheetModal";
@@ -17,7 +17,7 @@ import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOL
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import jsxProd from "TrashIcon";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import { LinearTransition } from "module_3992";
+import { LinearTransition } from "module_4026";
 import module_300 from "module_300";
 import dampingResult from "module_100";
 
@@ -57,7 +57,7 @@ let closure_19 = (() => {
     obj.initialValues = { opacity: 1, transform: items1 };
     return obj;
   }
-  exitingAnimation.__closure = { withTiming: require(4132) /* withTiming */.withTiming };
+  exitingAnimation.__closure = { withTiming: require(4166) /* withTiming */.withTiming };
   exitingAnimation.__workletHash = 17293915965800;
   exitingAnimation.__initData = closure_18;
   return exitingAnimation;
@@ -86,10 +86,10 @@ export default function EditWishlistActionSheet(wishlistId) {
   if (null == analyticsLocations) {
     analyticsLocations = [];
   }
-  analyticsLocations = analyticsContext(5462)(analyticsLocations, analyticsContext(5482).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(5497)(analyticsLocations, analyticsContext(5517).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  const tmp2 = analyticsContext(5462);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(12127)(obj));
+  const tmp2 = analyticsContext(5497);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(12170)(obj));
   if (null != rowWidth) {
     obj = { width: rowWidth };
     let tmp4 = obj;
@@ -127,7 +127,7 @@ export default function EditWishlistActionSheet(wishlistId) {
       callback(stateFromStores2.visibility === wishlistId(tmp[20]).WishlistVisibility.PUBLIC);
     }
   }, items4);
-  let obj6 = wishlistId(7829);
+  let obj6 = wishlistId(7865);
   isEligibleForSocialLayerStorefrontMobilePurchasing = obj6.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "edit_wishlist_action_sheet" });
   const items5 = [stateFromStores, isEligibleForSocialLayerStorefrontMobilePurchasing];
   const memo = analyticsLocations.useMemo(() => {
@@ -169,7 +169,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     const result = analyticsContext(tmp[23]).removeSkuFromWishlist(wishlistId, arg0, analyticsLocations);
   }, items7);
   let obj1 = { scrollable: true, startExpanded: true };
-  const tmp3 = analyticsContext(12127)(obj);
+  const tmp3 = analyticsContext(12170)(obj);
   let intl = wishlistId(1212).intl;
   obj1.title = intl.string(wishlistId(1212).t["OEgx/4"]);
   let obj2 = { contentContainerStyle: { paddingBottom: analyticsContext(1557)().bottom } };
@@ -183,8 +183,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   obj6.subLabel = intl3.string(wishlistId(1212).t.dw58pE);
   obj6.value = first;
   obj6.onValueChange = callback;
-  obj5.children = callback2(wishlistId(5502).TableSwitchRow, obj6);
-  obj4.children = callback2(wishlistId(5501).TableRowGroup, obj5);
+  obj5.children = callback2(wishlistId(5537).TableSwitchRow, obj6);
+  obj4.children = callback2(wishlistId(5536).TableRowGroup, obj5);
   const items8 = [callback2(stateFromStores, obj4), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -194,7 +194,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     items8[1] = tmp19;
     obj3.children = items8;
     obj2.children = closure_15(stateFromStores, obj3);
-    obj1.children = tmp15(wishlistId(5189).BottomSheetScrollView, obj2);
+    obj1.children = tmp15(wishlistId(5223).BottomSheetScrollView, obj2);
     return tmp15(tmp16, obj1);
   }
   tmp19 = null;

@@ -1,9 +1,9 @@
-// Module ID: 11349
-// Function ID: 88180
+// Module ID: 11387
+// Function ID: 88299
 // Name: ChatInputNativeComponent
-// Dependencies: [57, 31, 27, 3943, 33, 4131, 689, 1212, 4067, 3977, 3975, 477, 11097, 11103, 11105, 2]
+// Dependencies: [57, 31, 27, 3977, 33, 4165, 689, 1212, 4101, 4011, 4009, 477, 11135, 11141, 11143, 2]
 
-// Module 11349 (ChatInputNativeComponent)
+// Module 11387 (ChatInputNativeComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,18 +46,18 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   _require = undefined;
   ({ setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onMaxHeightChanged, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset } = markAsSpoilerTitle);
   const tmp3 = callback2();
-  let obj = _require(4067);
+  let obj = _require(4101);
   const theme = obj.useTheme();
-  const isThemeDarkResult = _require(3977).isThemeDark(theme);
-  const obj2 = _require(3977);
+  const isThemeDarkResult = _require(4011).isThemeDark(theme);
+  const obj2 = _require(4011);
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   let num2 = 0.6;
   if (null != gradientPreset.gradientPreset) {
     num2 = 0.8;
   }
-  const obj3 = _require(3975);
+  const obj3 = _require(4009);
   const tmp6 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
-  const hexWithOpacityResult = _require(3975).hexWithOpacity(isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500, num2);
+  const hexWithOpacityResult = _require(4009).hexWithOpacity(isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500, num2);
   let tmp8;
   if (!obj4.isAndroid()) {
     tmp8 = accessibilityLabel;
@@ -73,8 +73,8 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
     num3 = 1;
   }
   const obj6 = _require(477);
-  const tmp10 = importDefault(11097)(onMaxHeightChanged);
-  _require = _require(11103).useShouldUseFabricChatInput();
+  const tmp10 = importDefault(11135)(onMaxHeightChanged);
+  _require = _require(11141).useShouldUseFabricChatInput();
   obj = { accessibilityLabel: tmp8, children: tmp9, editable, keyboardAppearance: num3, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp10, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
   return jsx(callback(importAllResult.useState(() => {
     if (callback) {

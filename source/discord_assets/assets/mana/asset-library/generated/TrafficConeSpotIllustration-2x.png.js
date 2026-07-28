@@ -1,9 +1,9 @@
-// Module ID: 7517
-// Function ID: 60512
+// Module ID: 7553
+// Function ID: 60601
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7517 (metadata)
+// Module 7553 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrafficConeSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/42c427af3192d26fdb92e9e67a7f654ce4a3f5d8d0e944f2d0ec99a20661bdaf.png";

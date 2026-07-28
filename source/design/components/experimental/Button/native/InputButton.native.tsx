@@ -1,9 +1,9 @@
-// Module ID: 8178
-// Function ID: 65622
+// Module ID: 8216
+// Function ID: 65732
 // Name: InputButton
-// Dependencies: [29, 31, 27, 33, 4131, 689, 4548, 6683, 4545, 2]
+// Dependencies: [29, 31, 27, 33, 4165, 689, 4582, 6719, 4579, 2]
 
-// Module 8178 (InputButton)
+// Module 8216 (InputButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -39,10 +39,10 @@ const forwardRefResult = require("result").forwardRef((size) => {
   }
   ({ accessibilityLabel, accessibilityValue, maxFontSizeMultiplier } = size);
   if (undefined === maxFontSizeMultiplier) {
-    maxFontSizeMultiplier = require(4548) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    maxFontSizeMultiplier = require(4582) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = callback(size, closure_2);
-  let obj = require(6683) /* useInputStyles */;
+  let obj = require(6719) /* useInputStyles */;
   obj = { size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: "start" === str2 };
   const inputStyles = obj.useInputStyles(obj);
   const tmp7 = callback2();
@@ -89,7 +89,7 @@ const forwardRefResult = require("result").forwardRef((size) => {
     }
     obj4.children = text;
     obj2["textElement"] = <Text />;
-    return jsx(require(4545) /* CollapsingText */.BaseTextButton, {});
+    return jsx(require(4579) /* CollapsingText */.BaseTextButton, {});
   }
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");

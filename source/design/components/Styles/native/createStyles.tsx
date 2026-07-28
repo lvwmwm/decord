@@ -1,10 +1,10 @@
-// Module ID: 4131
-// Function ID: 34363
+// Module ID: 4165
+// Function ID: 34465
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 27, 4123, 3943, 3843, 477, 689, 3836, 3992, 4132, 4135, 4064, 1324, 2]
+// Dependencies: [57, 27, 4157, 3977, 3877, 477, 689, 3870, 4026, 4166, 4169, 4098, 1324, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, useLegacyClassComponentStyles
 
-// Module 4131 (_createForOfIteratorHelperLoose)
+// Module 4165 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -156,7 +156,7 @@ function parseThemedStyles(arg0, enabledExperiments) {
       if (internal.isSemanticColor(obj2)) {
         let tmp26 = require;
         let tmp27 = dependencyMap;
-        let obj3 = require(3836) /* getSemanticColorContextFromThemeContext */;
+        let obj3 = require(3870) /* getSemanticColorContextFromThemeContext */;
         let tmp29 = importDefault;
         let semanticColorContextFromThemeContext = obj3.getSemanticColorContextFromThemeContext(enabledExperiments);
         let internal4 = importDefault(689).internal;
@@ -315,7 +315,7 @@ export const createLegacyClassComponentStyles = function createLegacyClassCompon
   };
 };
 export const useLegacyClassComponentStyles = function useLegacyClassComponentStyles(_createForOfIteratorHelperLoose) {
-  return _createForOfIteratorHelperLoose(require(3843) /* ManaContext */.useThemeContext());
+  return _createForOfIteratorHelperLoose(require(3877) /* ManaContext */.useThemeContext());
 };
 export const createStyleProperties = function createStyleProperties(_createForOfIteratorHelperLoose) {
   let closure_0 = _createForOfIteratorHelperLoose;

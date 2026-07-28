@@ -1,9 +1,9 @@
-// Module ID: 4534
-// Function ID: 39824
+// Module ID: 4568
+// Function ID: 39938
 // Name: getIOSBlurEffect
-// Dependencies: [31, 27, 4535, 33, 477, 4536, 3835, 689, 4539, 3975, 2]
+// Dependencies: [31, 27, 4569, 33, 477, 4570, 3869, 689, 4573, 4009, 2]
 
-// Module 4534 (getIOSBlurEffect)
+// Module 4568 (getIOSBlurEffect)
 import { View } from "get ActivityIndicator";
 import { useVisualEffectViewOverrides as closure_4 } from "useVisualEffectViewOverrides";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import set from "useVisualEffectViewOverrides";
 
 const require = arg1;
 function getIOSBlurEffect(blurTheme, blurStyle) {
-  if (require(4536) /* BLUR_EFFECT_NAMES */.MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
+  if (require(4570) /* BLUR_EFFECT_NAMES */.MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
     if ("default" !== blurStyle) {
       let str3 = "UIBlurEffectStyleSystemUltraThinMaterialDark";
       if ("light" === blurTheme) {
@@ -46,7 +46,7 @@ function isBlurDisabled(merged) {
     let tmp4 = null == tmp;
     if (!tmp4) {
       if (android_softwareBlurDisabled) {
-        android_softwareBlurDisabled = !require(4539) /* MODERN_ANDROID_BLURRING_AVAILABLE */.MODERN_ANDROID_BLURRING_AVAILABLE;
+        android_softwareBlurDisabled = !require(4573) /* MODERN_ANDROID_BLURRING_AVAILABLE */.MODERN_ANDROID_BLURRING_AVAILABLE;
       }
       tmp4 = true === android_softwareBlurDisabled;
     }
@@ -90,9 +90,9 @@ export default require("result").forwardRef(function VisualEffectView(blurAmount
   obj = { blurTheme, blurStyle, style: merged.style, android_fallbackColor };
   ({ blurTheme: blurTheme2, android_fallbackColor: android_fallbackColor2 } = obj);
   ({ style, blurStyle: blurStyle2 } = obj);
-  let obj2 = require(3835) /* map */;
+  let obj2 = require(3869) /* map */;
   const token = obj2.useToken(importDefault(689).colors.LEGACY_BLUR_FALLBACK_DEFAULT, blurTheme2);
-  let obj3 = require(3835) /* map */;
+  let obj3 = require(3869) /* map */;
   let token1 = obj3.useToken(importDefault(689).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN, blurTheme2);
   obj = {};
   if ("default" === blurStyle2) {
@@ -107,8 +107,8 @@ export default require("result").forwardRef(function VisualEffectView(blurAmount
   }
   items[2] = tmp6;
   const tmp3 = callback();
-  const token2 = require(3835) /* map */.useToken(importDefault(689).colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, blurTheme);
-  require(3835) /* map */;
+  const token2 = require(3869) /* map */.useToken(importDefault(689).colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, blurTheme);
+  require(3869) /* map */;
   if ("default" === blurStyle) {
     let tmp10 = token2;
   } else {
@@ -122,12 +122,12 @@ export default require("result").forwardRef(function VisualEffectView(blurAmount
     let tmp12Result = <View ref={arg1} />;
   } else if (set) {
     const obj4 = { ref };
-    let tmp13Result = tmp13(4539);
+    let tmp13Result = tmp13(4573);
     if (null == blurAmountOverride) {
       blurAmountOverride = getAndroidBlurAmount(blurTheme, num);
     }
     obj4.blurAmount = blurAmountOverride;
-    obj4.blurTintIOSParityCompensationRgba = require(3975) /* hexToRgb */.hexToRgbaString(tmp10);
+    obj4.blurTintIOSParityCompensationRgba = require(4009) /* hexToRgb */.hexToRgbaString(tmp10);
     if (null != blurTintRgbaOverride) {
       blurTintRgba = blurTintRgbaOverride;
     }
@@ -135,10 +135,10 @@ export default require("result").forwardRef(function VisualEffectView(blurAmount
     obj4.blurTargetViewNativeId = android_blurTargetViewNativeId;
     const merged2 = Object.assign(merged);
     tmp12Result = tmp12(tmp13Result, obj4);
-    const obj11 = require(3975) /* hexToRgb */;
+    const obj11 = require(4009) /* hexToRgb */;
   } else {
     const obj5 = { ref };
-    tmp13Result = tmp13(4536);
+    tmp13Result = tmp13(4570);
     if (null == blurEffectNameOverride) {
       blurEffectNameOverride = getIOSBlurEffect(blurTheme, blurStyle);
     }

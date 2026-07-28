@@ -1,10 +1,10 @@
-// Module ID: 11628
-// Function ID: 90299
+// Module ID: 11667
+// Function ID: 90450
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [33, 10833, 1212, 11629, 7993, 4476, 2]
+// Dependencies: [33, 10871, 1212, 11668, 8031, 4510, 2]
 // Exports: default
 
-// Module 11628 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11667 (UserSettingsAuthedAppDeleteWarningModal)
 import jsxProd from "jsxProd";
 
 let closure_3;
@@ -18,7 +18,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let scopes;
   application = application.application;
   ({ scopes, onDelete } = application);
-  let obj = require(10833) /* isSocialLayerApplication */;
+  let obj = require(10871) /* isSocialLayerApplication */;
   let result = obj.isSocialLayerSDKAuthorization(application, scopes);
   const intl = require(1212) /* getSystemLocale */.intl;
   if (result) {
@@ -38,22 +38,22 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
   const obj2 = {};
-  let tmp8 = importDefault(11629)(application.id);
+  let tmp8 = importDefault(11668)(application.id);
   if (tmp8) {
     const obj3 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj4 = { applicationName: application.name };
     obj3.children = intl3.format(require(1212) /* getSystemLocale */.t.KRnERi, obj4);
-    tmp8 = callback(importDefault(7993), obj3);
-    const tmp12 = importDefault(7993);
+    tmp8 = callback(importDefault(8031), obj3);
+    const tmp12 = importDefault(8031);
   }
   const items = [tmp8, ];
   if (result) {
-    const obj5 = { look: require(7993) /* InfoBox */.InfoBoxLooks.WARNING };
+    const obj5 = { look: require(8031) /* InfoBox */.InfoBoxLooks.WARNING };
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj5.children = intl4.string(require(1212) /* getSystemLocale */.t.LY35Zy);
-    result = callback(importDefault(7993), obj5);
-    const tmp17 = importDefault(7993);
+    result = callback(importDefault(8031), obj5);
+    const tmp17 = importDefault(8031);
   }
   items[1] = result;
   obj2.children = items;
@@ -63,12 +63,12 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj8.text = intl5.string(require(1212) /* getSystemLocale */.t.xUqheM);
   obj8.onPress = onDelete;
-  const items1 = [callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj8, "confirm"), ];
+  const items1 = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj8, "confirm"), ];
   const obj9 = { variant: "secondary" };
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj9.text = intl6.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  items1[1] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj9, "cancel");
+  items1[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj9, "cancel");
   obj7.children = items1;
   obj6.actions = callback2(closure_4, obj7);
-  return callback(require(4476) /* getAlertModalItemKey */.AlertModal, obj6);
+  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj6);
 };

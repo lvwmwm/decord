@@ -1,12 +1,12 @@
-// Module ID: 3772
-// Function ID: 28972
+// Module ID: 3806
+// Function ID: 29074
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 3773, 3774, 3775, 3776, 22, 13055, 2]
+// Dependencies: [6, 7, 3807, 3808, 3809, 3810, 22, 13099, 2]
 // Exports: asUnicodeEmoji
 
-// Module 3772 (_createForOfIteratorHelperLoose)
+// Module 3806 (_createForOfIteratorHelperLoose)
 import apply from "apply";
-import module_13055 from "module_13055";
+import module_13099 from "module_13099";
 import createText from "createText";
 import module_917631 from "module_917631";
 import module_127988 from "module_127988";
@@ -92,18 +92,18 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getEmojiObjectByName(emojiName) {
-  const tmp = require(3774).nameToEmoji[emojiName];
+  const tmp = require(3808).nameToEmoji[emojiName];
   let tmp2 = null;
   if (null != tmp) {
-    tmp2 = require(3774).emojis[tmp];
+    tmp2 = require(3808).emojis[tmp];
   }
   return tmp2;
 }
 function getEmojiObjectBySurrogate(surrogate) {
-  const tmp = require(3774).surrogateToEmoji[surrogate];
+  const tmp = require(3808).surrogateToEmoji[surrogate];
   let tmp2 = null;
   if (null != tmp) {
-    tmp2 = require(3774).emojis[tmp];
+    tmp2 = require(3808).emojis[tmp];
   }
   return tmp2;
 }
@@ -473,19 +473,19 @@ let obj = {
     let c6 = tmp;
   },
   getCategories() {
-    return Object.keys(require(3774).emojisByCategory);
+    return Object.keys(require(3808).emojisByCategory);
   },
   getByName,
   getByCategory(name) {
     let value = map.get(name);
     if (null == value) {
-      const tmp4 = require(3774).emojisByCategory[name];
-      const emojis = require(3774).emojis;
-      const result = importDefault(3776).filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
+      const tmp4 = require(3808).emojisByCategory[name];
+      const emojis = require(3808).emojis;
+      const result = importDefault(3810).filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
       const mapped = result.map(parseRawEmojiObject);
       const result1 = map.set(name, mapped);
       value = mapped;
-      const obj = importDefault(3776);
+      const obj = importDefault(3810);
     }
     return value;
   },
@@ -522,8 +522,8 @@ let obj = {
     if (str === undefined) {
       str = "";
     }
-    if (hasOwnProperty.call(require(13055), arg0)) {
-      str = require(13055)[arg0];
+    if (hasOwnProperty.call(require(13099), arg0)) {
+      str = require(13099)[arg0];
     }
     let combined = str;
     if (flag) {
@@ -537,7 +537,7 @@ let obj = {
   },
   forEach(arg0) {
     let iter2;
-    const tmp = _createForOfIteratorHelperLoose(require(3774).emojis);
+    const tmp = _createForOfIteratorHelperLoose(require(3808).emojis);
     let iter = tmp();
     if (!iter.done) {
       do {
@@ -552,8 +552,8 @@ let obj = {
       } while (!iter2.done);
     }
   },
-  numDiversitySprites: require("module_3774").numDiversitySprites,
-  numNonDiversitySprites: require("module_3774").numNonDiversitySprites,
+  numDiversitySprites: require("module_3808").numDiversitySprites,
+  numNonDiversitySprites: require("module_3808").numNonDiversitySprites,
   EMOJI_NAME_RE: /^:([^\s:]+?(?:::skin-tone-\d)?):/,
   EMOJI_NAME_AND_DIVERSITY_RE: tmp3,
   EMOJI_SHORTCUT_RE: /^(>:\(|>:\-\(|>=\(|>=\-\(|:"\)|:\-"\)|="\)|=\-"\)|<\/3|<\\3|:\-\\|:\-\/|=\-\\|=\-\/|:'\(|:'\-\(|:,\(|:,\-\(|='\(|='\-\(|=,\(|=,\-\(|:\(|:\-\(|=\(|=\-\(|<3|♡|\]:\(|\]:\-\(|\]=\(|\]=\-\(|o:\)|O:\)|o:\-\)|O:\-\)|0:\)|0:\-\)|o=\)|O=\)|o=\-\)|O=\-\)|0=\)|0=\-\)|:'D|:'\-D|:,D|:,\-D|='D|='\-D|=,D|=,\-D|:\*|:\-\*|=\*|=\-\*|x\-\)|X\-\)|:\||:\-\||=\||=\-\||:o|:\-o|:O|:\-O|=o|=\-o|=O|=\-O|:@|:\-@|=@|=\-@|:D|:\-D|=D|=\-D|:'\)|:'\-\)|:,\)|:,\-\)|='\)|='\-\)|=,\)|=,\-\)|:\)|:\-\)|=\)|=\-\)|\]:\)|\]:\-\)|\]=\)|\]=\-\)|:,'\(|:,'\-\(|;\(|;\-\(|=,'\(|=,'\-\(|:P|:\-P|=P|=\-P|8\-\)|B\-\)|,:\(|,:\-\(|,=\(|,=\-\(|,:\)|,:\-\)|,=\)|,=\-\)|:s|:\-S|:z|:\-Z|:\$|:\-\$|=s|=\-S|=z|=\-Z|=\$|=\-\$|;\)|;\-\))/,

@@ -1,17 +1,17 @@
-// Module ID: 13547
-// Function ID: 104269
+// Module ID: 13591
+// Function ID: 104442
 // Name: useRequestGatewaySocket
-// Dependencies: [31, 9413, 652, 2]
+// Dependencies: [31, 9453, 652, 2]
 // Exports: useRequestGatewaySocket
 
-// Module 13547 (useRequestGatewaySocket)
+// Module 13591 (useRequestGatewaySocket)
 import result from "result";
 
 const result = require("addToken").fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
 
 export const useRequestGatewaySocket = function useRequestGatewaySocket(arg0) {
   const importDefault = arg0;
-  const canUIRequestGatewaySocket = importDefault(9413).useCanUIRequestGatewaySocket();
+  const canUIRequestGatewaySocket = importDefault(9453).useCanUIRequestGatewaySocket();
   const items = [arg0, canUIRequestGatewaySocket];
   const effect = React.useEffect(() => {
     if (canUIRequestGatewaySocket) {

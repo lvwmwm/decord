@@ -1,10 +1,10 @@
-// Module ID: 11239
-// Function ID: 87430
+// Module ID: 11277
+// Function ID: 87549
 // Name: AppLauncherApplicationViewScreenInner
-// Dependencies: [31, 27, 5669, 1455, 4567, 33, 4131, 10862, 11240, 7953, 1555, 11241, 5468, 3992, 11242, 2]
+// Dependencies: [31, 27, 5679, 1455, 4601, 33, 4165, 10900, 11278, 7990, 1555, 11279, 5503, 4026, 11280, 2]
 // Exports: default
 
-// Module 11239 (AppLauncherApplicationViewScreenInner)
+// Module 11277 (AppLauncherApplicationViewScreenInner)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 6614
-// Function ID: 58539
+// Module ID: 6650
+// Function ID: 58628
 // Name: useResubscribeSubscriptionParams
-// Dependencies: [31, 6612, 491, 2]
+// Dependencies: [31, 6648, 491, 2]
 // Exports: default
 
-// Module 6614 (useResubscribeSubscriptionParams)
+// Module 6650 (useResubscribeSubscriptionParams)
 import result from "result";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("v1").fileFinishedImporting("modules/billing/native/subsc
 
 export default function useResubscribeSubscriptionParams(arg0) {
   let closure_0 = arg0;
-  let tmp = importDefault(6612)();
+  let tmp = importDefault(6648)();
   importDefault = tmp;
   const items = [arg0, tmp];
   return React.useMemo(() => {

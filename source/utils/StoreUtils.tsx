@@ -1,10 +1,10 @@
-// Module ID: 4370
-// Function ID: 38782
+// Module ID: 4404
+// Function ID: 38896
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1194, 3779, 3780, 3783, 653, 4371, 4369, 4450, 1426, 4452, 507, 477, 1212, 2]
+// Dependencies: [5, 1194, 3813, 3814, 3817, 653, 4405, 4403, 4484, 1426, 4486, 507, 477, 1212, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4370 (_httpGetWithCountryCodeQuery)
+// Module 4404 (_httpGetWithCountryCodeQuery)
 import closure_2 from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -42,7 +42,7 @@ async function _httpGetWithCountryCodeQuery(arg0, arg1) {
           return new Promise((() => {
             let closure_0 = outer4_2(async (arg0) => {
               function wait() { ... }
-              return (/* F38789 */ function*() { ... })();
+              return (/* F38903 */ function*() { ... })();
             });
             return function() {
               return callback(...arguments);

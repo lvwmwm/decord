@@ -1,10 +1,10 @@
-// Module ID: 8614
-// Function ID: 68475
+// Module ID: 8658
+// Function ID: 68622
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 3779, 5614, 6443, 8615, 8616, 653, 664, 686, 507, 5613, 2]
+// Dependencies: [5, 3813, 5649, 6479, 8659, 8660, 653, 664, 686, 507, 5648, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8614 (shouldFetchStorefrontPromotions)
+// Module 8658 (shouldFetchStorefrontPromotions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import "_isNativeReflectConstruct";
@@ -35,6 +35,14 @@ function _maybeFetchStorefrontPromotions() {
   const obj = callback(tmp);
   return obj(...arguments);
 }
+function fetchStorefrontPromotions() {
+  return _fetchStorefrontPromotions(...arguments);
+}
+function _fetchStorefrontPromotions() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
+}
 function _fetchStorefrontPricesForApplicationId() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -61,6 +69,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export const maybeFetchStorefrontPromotions = function maybeFetchStorefrontPromotions() {
   return _maybeFetchStorefrontPromotions(...arguments);
 };
+export { fetchStorefrontPromotions };
 export const fetchStorefrontPricesForApplicationId = function fetchStorefrontPricesForApplicationId(arg0) {
   return _fetchStorefrontPricesForApplicationId(...arguments);
 };

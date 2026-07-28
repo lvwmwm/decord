@@ -1,10 +1,10 @@
-// Module ID: 6452
-// Function ID: 57931
+// Module ID: 6488
+// Function ID: 58020
 // Name: useBuyNitroExperiment
-// Dependencies: [57, 31, 6171, 5450, 6453, 2]
+// Dependencies: [57, 31, 6205, 5485, 6489, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 6452 (useBuyNitroExperiment)
+// Module 6488 (useBuyNitroExperiment)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore";
@@ -17,7 +17,7 @@ export const useBuyNitroExperiment = function useBuyNitroExperiment(isNitroHomeS
   let userHasSubscription;
   isNitroHomeSurface = isNitroHomeSurface.isNitroHomeSurface;
   ({ userHasSubscription, isConfirmedNonSubscriber } = isNitroHomeSurface);
-  let tmp = importDefault(5450)(() => outer1_0(outer1_2[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
+  let tmp = importDefault(5485)(() => outer1_0(outer1_2[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
   const tmp3 = callback(React.useState(false), 2);
   const first = tmp3[0];
   let tmp5 = tmp;

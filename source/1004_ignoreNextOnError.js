@@ -1,5 +1,5 @@
 // Module ID: 1004
-// Function ID: 10977
+// Function ID: 10981
 // Name: ignoreNextOnError
 // Dependencies: [794]
 // Exports: getHttpRequestData, shouldIgnoreOnError

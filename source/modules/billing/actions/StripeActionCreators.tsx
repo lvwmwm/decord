@@ -1,10 +1,10 @@
-// Module ID: 4457
-// Function ID: 39294
+// Module ID: 4491
+// Function ID: 39408
 // Name: _createStripeSetupIntent
 // Dependencies: [5, 653, 507, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4457 (_createStripeSetupIntent)
+// Module 4491 (_createStripeSetupIntent)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

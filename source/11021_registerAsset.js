@@ -1,11 +1,11 @@
 // Module ID: 11021
-// Function ID: 85737
+// Function ID: 85529
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 11021 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/safety_hub/images", width: 350, height: 350, scales: [1], hash: "401f8c2bcc4aaf9b9964b431f7df8a68", name: "video_dark", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "cc5db5ae696f6fff236bd5ec86149ea8", name: "ClockWarningIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

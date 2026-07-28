@@ -1,9 +1,9 @@
-// Module ID: 10456
-// Function ID: 81131
+// Module ID: 10494
+// Function ID: 81252
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1907, 10175, 8105, 636, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1907, 10215, 8143, 636, 566, 686, 2]
 
-// Module 10456 (_isNativeReflectConstruct)
+// Module 10494 (_isNativeReflectConstruct)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 import handleOrientationChange from "handleOrientationChange";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

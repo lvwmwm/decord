@@ -1,10 +1,10 @@
-// Module ID: 16660
-// Function ID: 129967
+// Module ID: 16700
+// Function ID: 130128
 // Name: onStageConnectionError
-// Dependencies: [5, 6637, 5751, 1194, 1348, 1850, 5591, 653, 4196, 1354, 11447, 3, 3832, 1212, 9243, 3983, 1207, 6653, 4139, 6633, 8155, 3982, 15213, 5873, 8297, 5482, 4141, 8849, 675, 4325, 477, 10817, 21, 15211, 5703, 20, 5704, 4809, 12707, 11450, 566, 10806, 9837, 4112, 668, 9458, 8123, 6104, 686, 4338, 1198, 4337, 12921, 2]
+// Dependencies: [5, 6673, 5761, 1194, 1348, 1850, 5626, 653, 4230, 1354, 11485, 3, 3866, 1212, 9287, 4017, 1207, 6689, 4173, 6669, 8193, 4016, 15253, 5907, 8335, 5517, 4175, 8893, 675, 4359, 477, 10855, 21, 15251, 5713, 20, 5714, 4843, 12750, 11488, 566, 10844, 9877, 4146, 668, 9498, 8161, 6138, 686, 4372, 1198, 4371, 12965, 2]
 // Exports: default
 
-// Module 16660 (onStageConnectionError)
+// Module 16700 (onStageConnectionError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -23,11 +23,11 @@ let closure_13;
 let closure_14;
 const require = arg1;
 function onStageConnectionError() {
-  let obj = importDefault(3832);
+  let obj = importDefault(3866);
   obj = { key: "STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.content = intl.string(require(1212) /* getSystemLocale */.t.ah3RLk);
-  obj.icon = importDefault(9243);
+  obj.icon = importDefault(9287);
   obj.open(obj);
 }
 function waitForConnection() {
@@ -96,7 +96,7 @@ function _maybeAckNotificationCenter() {
 }
 function receiveNotification_(type) {
   const _require = type;
-  let obj = _require(10806);
+  let obj = _require(10844);
   const result = obj.initializeRouteManagerIfNeeded();
   let importDefault = false;
   if ("MESSAGE_CREATE" === type.type) {
@@ -105,10 +105,10 @@ function receiveNotification_(type) {
     obj = {};
     ({ guild_id: obj10.guildId, channel_id: obj10.channelId, message_id: obj10.messageId } = type);
     obj.isPreload = true;
-    const messages = importDefault(9837).fetchMessages(obj);
+    const messages = importDefault(9877).fetchMessages(obj);
     importDefault = true;
     let flag = true;
-    const obj9 = importDefault(9837);
+    const obj9 = importDefault(9877);
   } else {
     flag = false;
     if ("GENERIC_PUSH_NOTIFICATION_SENT" === type.type) {
@@ -116,7 +116,7 @@ function receiveNotification_(type) {
       if (null != type.deeplink) {
         flag = false;
         if ("" !== type.deeplink) {
-          const payload = importDefault(4112)(type.deeplink).payload;
+          const payload = importDefault(4146)(type.deeplink).payload;
           if (payload.type === _require(668).LinkingTypes.MESSAGE) {
             let tracking_type;
             if (null != type) {
@@ -126,24 +126,24 @@ function receiveNotification_(type) {
               tracking_type = type.type;
             }
             if (tmp13) {
-              _require(9458).receivedNotification(payload.messageId, payload.channelId, tracking_type);
-              const obj6 = _require(9458);
+              _require(9498).receivedNotification(payload.messageId, payload.channelId, tracking_type);
+              const obj6 = _require(9498);
             }
             obj = {};
             ({ guildId: obj8.guildId, channelId: obj8.channelId, messageId: obj8.messageId } = payload);
             obj.isPreload = true;
-            const messages1 = importDefault(9837).fetchMessages(obj);
+            const messages1 = importDefault(9877).fetchMessages(obj);
             importDefault = true;
             flag = true;
-            let obj7 = importDefault(9837);
+            let obj7 = importDefault(9877);
             tmp13 = null != tracking_type && null != payload.messageId && null != payload.channelId;
           } else {
             if (payload.type === _require(668).LinkingTypes.ICYMI) {
               if (null != type.channel_id) {
                 if (null != type.message_id) {
-                  const forNotification = importDefault(8123).fetchForNotification(type.channel_id, type.message_id);
+                  const forNotification = importDefault(8161).fetchForNotification(type.channel_id, type.message_id);
                   flag = false;
-                  let obj5 = importDefault(8123);
+                  let obj5 = importDefault(8161);
                 }
               }
             }
@@ -160,16 +160,16 @@ function receiveNotification_(type) {
                       status_emoji_id = type.status_emoji_id;
                     }
                   }
-                  let obj1 = { id: type.notification_center_id, type: _require(6104).ICYMIItemTypes.CUSTOM_STATUS, score: 1000 };
+                  let obj1 = { id: type.notification_center_id, type: _require(6138).ICYMIItemTypes.CUSTOM_STATUS, score: 1000 };
                   let obj2 = {};
                   ({ user_id: obj3.user_id, status_text: obj3.text } = type);
                   obj2.emoji_id = status_emoji_id;
                   obj2.emoji_name = type.status_emoji_name;
                   obj2.emoji_animated = type.status_emoji_animated;
                   obj1.data = obj2;
-                  const forStatusNotification = importDefault(8123).fetchForStatusNotification(obj1);
+                  const forStatusNotification = importDefault(8161).fetchForStatusNotification(obj1);
                   flag = false;
-                  const obj4 = importDefault(8123);
+                  const obj4 = importDefault(8161);
                 }
               }
             }
@@ -347,25 +347,25 @@ export default function receiveNotification(getData) {
   if (null == getData.getData) {
     return false;
   } else {
-    data(5703).trackAppOpened("notification");
+    data(5713).trackAppOpened("notification");
     data = getData.getData();
-    const obj2 = data(5703);
+    const obj2 = data(5713);
     const _HermesInternal = HermesInternal;
     importDefault(20).mark("\u2757", "Receive notification " + data.type);
     if (null != data.receiving_user_id) {
       if (null != store.getId()) {
         if (data.receiving_user_id !== store.getId()) {
-          data(5704);
-          data(4809);
-          data(12707);
+          data(5714);
+          data(4843);
+          data(12750);
           let then = closure_17;
-          const obj = data(11450);
-          then = data(11450).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
+          const obj = data(11488);
+          then = data(11488).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
           then(() => {
             const Emitter = outer1_1(outer1_3[40]).Emitter;
             Emitter.batched(() => outer2_34(outer1_0));
           });
-          const switchAccountResult = data(11450).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
+          const switchAccountResult = data(11488).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
         }
       }
     }

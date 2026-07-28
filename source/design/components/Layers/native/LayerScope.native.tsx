@@ -1,10 +1,10 @@
-// Module ID: 5449
-// Function ID: 46595
+// Module ID: 5484
+// Function ID: 46722
 // Name: Layer
-// Dependencies: [57, 31, 27, 653, 33, 5450, 5451, 2]
+// Dependencies: [57, 31, 27, 653, 33, 5485, 5486, 2]
 // Exports: LayerScope
 
-// Module 5449 (Layer)
+// Module 5484 (Layer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -18,7 +18,7 @@ let closure_9;
 const require = arg1;
 function Layer(zIndex) {
   zIndex = zIndex.zIndex;
-  const context = React.useContext(zIndex(5451).LayerContext);
+  const context = React.useContext(zIndex(5486).LayerContext);
   const dependencyMap = callback(React.useState({}), 2)[1];
   callback = React.useRef(null);
   const items = [context];
@@ -55,12 +55,12 @@ export const LayerScope = function LayerScope(arg0) {
   let zIndex;
   ({ children, zIndex } = arg0);
   const obj = {
-    value: importDefault(5450)(() => {
+    value: importDefault(5485)(() => {
       const layerContextManager = new outer1_0(outer1_2[6]).LayerContextManager();
       return layerContextManager;
     })
   };
   const items = [children, callback2(Layer, { zIndex })];
   obj.children = items;
-  return callback3(require(5451) /* LayerContextManager */.LayerContext.Provider, obj);
+  return callback3(require(5486) /* LayerContextManager */.LayerContext.Provider, obj);
 };

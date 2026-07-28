@@ -1,10 +1,10 @@
-// Module ID: 11240
-// Function ID: 87437
+// Module ID: 11278
+// Function ID: 87556
 // Name: useNavigationTransitionEnded
 // Dependencies: [57, 31, 1455, 1457, 2]
 // Exports: default
 
-// Module 11240 (useNavigationTransitionEnded)
+// Module 11278 (useNavigationTransitionEnded)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useAppLauncherNavigation } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

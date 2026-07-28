@@ -1,10 +1,10 @@
-// Module ID: 15501
-// Function ID: 119139
+// Module ID: 15540
+// Function ID: 119295
 // Name: makeAuthenticated
-// Dependencies: [31, 1194, 653, 33, 1328, 15502, 2]
+// Dependencies: [31, 1194, 653, 33, 1328, 15541, 2]
 // Exports: makeAuthenticated
 
-// Module 15501 (makeAuthenticated)
+// Module 15540 (makeAuthenticated)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { LoginStates } from "ME";

@@ -1,8 +1,8 @@
-// Module ID: 11451
-// Function ID: 89080
-// Dependencies: [5, 27, 11442, 653, 11445, 675, 10632, 10210, 2]
+// Module ID: 11489
+// Function ID: 89199
+// Dependencies: [5, 27, 11480, 653, 11483, 675, 10670, 10250, 2]
 
-// Module 11451
+// Module 11489
 import expandLocation from "expandLocation";
 import { NativeModules } from "get ActivityIndicator";
 import { PermissionStateType } from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/n
 
 export default {
   hasPermission() {
-    return importDefault(10632).requestPermissions((badge) => {
+    return importDefault(10670).requestPermissions((badge) => {
       let _alert;
       let sound;
       ({ alert: _alert, sound } = badge);
@@ -28,11 +28,11 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(11445).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(11445);
+    let result = _require(11483).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11483);
     importDefault(675).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
     const obj2 = importDefault(675);
-    const permissions = importDefault(10632).requestPermissions();
+    const permissions = importDefault(10670).requestPermissions();
     permissions.then((sound) => {
       let _alert;
       let badge;
@@ -76,6 +76,6 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    require(10210) /* createSound */.playSound(arg0, num, undefined, arg2);
+    require(10250) /* createSound */.playSound(arg0, num, undefined, arg2);
   }
 };

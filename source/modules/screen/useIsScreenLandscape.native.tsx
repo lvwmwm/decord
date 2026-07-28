@@ -1,10 +1,10 @@
-// Module ID: 4664
-// Function ID: 40418
+// Module ID: 4698
+// Function ID: 40533
 // Name: getIsScreenLandscape
 // Dependencies: [31, 1451, 1453, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 4664 (getIsScreenLandscape)
+// Module 4698 (getIsScreenLandscape)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

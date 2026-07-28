@@ -1,9 +1,9 @@
-// Module ID: 11676
-// Function ID: 90563
+// Module ID: 11715
+// Function ID: 90714
 // Name: WaveformBar
-// Dependencies: [57, 31, 27, 4123, 11091, 11092, 653, 33, 3992, 4131, 689, 477, 4543, 4132, 1324, 3835, 4705, 4127, 3843, 2]
+// Dependencies: [57, 31, 27, 4157, 11129, 11130, 653, 33, 4026, 4165, 689, 477, 4577, 4166, 1324, 3869, 4739, 4161, 3877, 2]
 
-// Module 11676 (WaveformBar)
+// Module 11715 (WaveformBar)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -13,7 +13,7 @@ import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import { ThemeTypes } from "ME";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 import set from "set";
 import set from "set";
 import set from "get ActivityIndicator";
@@ -209,7 +209,7 @@ function Duration(animationValue) {
 const View = get_ActivityIndicator.View;
 ({ VOICE_RECORDING_MAX_DURATION_MILLIS: closure_8, VOICE_RECORDING_MAX_DURATION_OFFSET: closure_9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: closure_10, VOICE_RECORDING_WARN_DURATION_MILLIS: closure_11, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageAnimationState);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-let closure_16 = require("module_3992").createAnimatedComponent(get_ActivityIndicator.ActivityIndicator);
+let closure_16 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.ActivityIndicator);
 let obj = {};
 obj = { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHATINPUT_BORDER_DEFAULT };
 obj.container = obj;

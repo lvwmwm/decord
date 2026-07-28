@@ -1,10 +1,10 @@
-// Module ID: 5729
-// Function ID: 49777
+// Module ID: 5739
+// Function ID: 49633
 // Name: getMemberSupplementalByGuildId
-// Dependencies: [5730, 2]
+// Dependencies: [5740, 2]
 // Exports: hasMemberSupplemental, syncMemberSupplemental
 
-// Module 5729 (getMemberSupplementalByGuildId)
+// Module 5739 (getMemberSupplementalByGuildId)
 function getMemberSupplementalByGuildId(guildId) {
   if (null == dependencyMap[guildId]) {
     dependencyMap[guildId] = {};

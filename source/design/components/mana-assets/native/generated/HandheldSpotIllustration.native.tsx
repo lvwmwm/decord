@@ -1,10 +1,10 @@
-// Module ID: 7166
-// Function ID: 59985
+// Module ID: 7202
+// Function ID: 60074
 // Name: HandheldSpotIllustration
-// Dependencies: [33, 5085, 7167, 2]
+// Dependencies: [33, 5119, 7203, 2]
 // Exports: HandheldSpotIllustration
 
-// Module 7166 (HandheldSpotIllustration)
+// Module 7202 (HandheldSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const HandheldSpotIllustration = function HandheldSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7167) };
+  obj = { uri: importDefault(7203) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const HandheldSpotIllustration = function HandheldSpotIllustration(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

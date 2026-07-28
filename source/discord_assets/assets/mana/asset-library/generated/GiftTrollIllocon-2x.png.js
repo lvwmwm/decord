@@ -1,9 +1,9 @@
-// Module ID: 7135
-// Function ID: 59939
+// Module ID: 7171
+// Function ID: 60028
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7135 (metadata)
+// Module 7171 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftTrollIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/991010ec5fbc282598515b80942a3d25a7c85a9eb25b8f65291750ad29998442.png";

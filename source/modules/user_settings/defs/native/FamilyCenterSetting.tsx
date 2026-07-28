@@ -1,9 +1,9 @@
-// Module ID: 13830
-// Function ID: 106045
+// Module ID: 13874
+// Function ID: 106218
 // Name: route
-// Dependencies: [31, 653, 33, 13831, 13832, 7570, 689, 1212, 2199, 10059, 4647, 13835, 2]
+// Dependencies: [31, 653, 33, 13875, 13876, 7606, 689, 1212, 2199, 10099, 4681, 13879, 2]
 
-// Module 13830 (route)
+// Module 13874 (route)
 import "result";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,9 +17,9 @@ createToggle = {
   parent: null,
   IconComponent: require("GroupIcon").GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
-    let obj = require(13831) /* useIsParentalConsentBannerActive */;
+    let obj = require(13875) /* useIsParentalConsentBannerActive */;
     const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = require(13832) /* useParentalConsentWarning */.useParentalConsentWarning();
+    const parentalConsentWarning = require(13876) /* useParentalConsentWarning */.useParentalConsentWarning();
     let daysRemaining;
     if (null != parentalConsentWarning) {
       daysRemaining = parentalConsentWarning.daysRemaining;
@@ -37,7 +37,7 @@ createToggle = {
           obj = { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_WARNING, accessible: true };
           const intl = require(1212) /* getSystemLocale */.intl;
           obj.accessibilityLabel = intl.string(importDefault(2199).wucWfE);
-          tmp5 = jsx(require(7570) /* WarningIcon */.WarningIcon, { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_WARNING, accessible: true });
+          tmp5 = jsx(require(7606) /* WarningIcon */.WarningIcon, { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_WARNING, accessible: true });
         }
       }
     }
@@ -48,7 +48,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
-    return require(13835) /* FamilyCenterLoading */.default;
+    return require(13879) /* FamilyCenterLoading */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

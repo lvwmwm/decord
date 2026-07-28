@@ -1,10 +1,10 @@
-// Module ID: 13709
-// Function ID: 105253
+// Module ID: 13753
+// Function ID: 105426
 // Name: CodeRow
-// Dependencies: [31, 27, 12734, 33, 4131, 689, 5490, 3831, 5164, 5153, 1212, 3835, 566, 13710, 4542, 4127, 5501, 2]
+// Dependencies: [31, 27, 12777, 33, 4165, 689, 5525, 3865, 5198, 5187, 1212, 3869, 566, 13754, 4576, 4161, 5536, 2]
 // Exports: default
 
-// Module 13709 (CodeRow)
+// Module 13753 (CodeRow)
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,10 +33,10 @@ function CodeRow(code) {
   let tmp4 = null;
   if (showCheckMark) {
     obj = { color: importDefault(689).colors.TEXT_BRAND };
-    tmp4 = callback(code(5153).CheckmarkSmallIcon, obj);
+    tmp4 = callback(code(5187).CheckmarkSmallIcon, obj);
   }
   obj.trailing = tmp4;
-  return callback(code(5164).TableRow, obj);
+  return callback(code(5198).TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -54,7 +54,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     headerLabel = intl.format(stateFromStores(1212).t.OhmvYt, {});
   }
   stateFromStores = undefined;
-  let obj = stateFromStores(3835);
+  let obj = stateFromStores(3869);
   const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_PADDING);
   let obj1 = stateFromStores(566);
   const items = [_isNativeReflectConstruct];
@@ -89,7 +89,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     obj2.title = intl2.string(stateFromStores(1212).t.zdzyFo);
     obj2.hasIcons = false;
     obj2.children = unusedCodes.map((code) => outer1_6(outer1_9, { code: code.code, showCheckMark: false }, arg1));
-    tmp11 = callback(stateFromStores(5501).TableRowGroup, obj2);
+    tmp11 = callback(stateFromStores(5536).TableRowGroup, obj2);
   }
   items2[1] = tmp11;
   let tmp15 = usedCodes.length > 0;
@@ -99,7 +99,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     obj3.title = intl3.string(stateFromStores(1212).t.FkFLDN);
     obj3.hasIcons = false;
     obj3.children = usedCodes.map((code) => outer1_6(outer1_9, { code: code.code, showCheckMark: true }, arg1));
-    tmp15 = callback(stateFromStores(5501).TableRowGroup, obj3);
+    tmp15 = callback(stateFromStores(5536).TableRowGroup, obj3);
   }
   items2[2] = tmp15;
   let tmp19 = null !== headerLabel.onGenerate;
@@ -109,16 +109,16 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     const obj6 = { variant: "text-md/semibold", style: tmp4.generateCode };
     const intl4 = stateFromStores(1212).intl;
     obj6.children = intl4.string(stateFromStores(1212).t.RIThUu);
-    obj5.label = callback(stateFromStores(4127).Text, obj6);
+    obj5.label = callback(stateFromStores(4161).Text, obj6);
     obj5.onPress = function onPress() {
       const verificationKey = outer1_5.getVerificationKey();
       const result = outer1_1(outer1_2[13]).confirmViewBackupCodes(verificationKey, true);
     };
-    obj4.children = callback(stateFromStores(5164).TableRow, obj5);
-    tmp19 = callback(stateFromStores(5501).TableRowGroup, obj4);
+    obj4.children = callback(stateFromStores(5198).TableRow, obj5);
+    tmp19 = callback(stateFromStores(5536).TableRowGroup, obj4);
   }
   items2[3] = tmp19;
   obj.children = items2;
-  obj.children = closure_7(stateFromStores(4542).Stack, obj);
+  obj.children = closure_7(stateFromStores(4576).Stack, obj);
   return callback(ScrollView, obj);
 };

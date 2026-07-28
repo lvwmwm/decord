@@ -1,10 +1,10 @@
-// Module ID: 4951
-// Function ID: 42454
+// Module ID: 4985
+// Function ID: 42569
 // Name: useStageHasStream
-// Dependencies: [1838, 4147, 4952, 566, 4958, 2]
+// Dependencies: [1838, 4181, 4986, 566, 4992, 2]
 // Exports: getStageHasMedia, isStageVideoEnabled, useIsStageVideoEnabled, useStageHasMedia
 
-// Module 4951 (useStageHasStream)
+// Module 4985 (useStageHasStream)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function useStageHasStream(id) {
   }, items1);
 }
 function getStageHasStream(id) {
-  mutableParticipants = mutableParticipants.getMutableParticipants(id, require(4958) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  mutableParticipants = mutableParticipants.getMutableParticipants(id, require(4992) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
   return null != mutableParticipants.find((type) => type.type === outer1_0(outer1_1[4]).StageChannelParticipantTypes.STREAM);
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageMediaHooks.tsx");

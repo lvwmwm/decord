@@ -1,12 +1,12 @@
-// Module ID: 8625
-// Function ID: 68590
+// Module ID: 8669
+// Function ID: 68741
 // Name: extractBundleItemsFromArray
-// Dependencies: [7984, 5782, 2]
+// Dependencies: [8022, 5792, 2]
 // Exports: bundleContainsNameplates, isValidCollectiblesBundle, isValidCollectiblesBundleItems
 
-// Module 8625 (extractBundleItemsFromArray)
+// Module 8669 (extractBundleItemsFromArray)
 function extractBundleItemsFromArray(items) {
-  const itemsSortingHat = new require(7984) /* ItemsSortingHat */.ItemsSortingHat(items);
+  const itemsSortingHat = new require(8022) /* ItemsSortingHat */.ItemsSortingHat(items);
   return { firstProfileEffect: itemsSortingHat.firstProfileEffect, firstAvatarDecoration: itemsSortingHat.firstAvatarDecoration, firstNameplate: itemsSortingHat.firstNameplate };
 }
 function extractBundleItems(items) {
@@ -33,7 +33,7 @@ export const isValidCollectiblesBundleItems = function isValidCollectiblesBundle
   return isValidBundleItems(extractBundleItemsFromArray(items));
 };
 export const bundleContainsNameplates = function bundleContainsNameplates(type) {
-  const tmp = !require(5782) /* getPriceForCollectiblesProduct */.isBundleProduct(type);
+  const tmp = !require(5792) /* getPriceForCollectiblesProduct */.isBundleProduct(type);
   let tmp2 = !tmp;
   if (!tmp) {
     tmp2 = null != extractBundleItems(type).firstNameplate;

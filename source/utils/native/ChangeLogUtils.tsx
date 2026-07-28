@@ -1,9 +1,9 @@
-// Module ID: 7810
-// Function ID: 62008
+// Module ID: 7846
+// Function ID: 62098
 // Name: ChangeLogLink
-// Dependencies: [31, 27, 33, 4131, 689, 4974, 4563, 4127, 3830, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5008, 4597, 4161, 3864, 2]
 
-// Module 7810 (ChangeLogLink)
+// Module 7846 (ChangeLogLink)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -85,7 +85,7 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (null == Paragraph) {
-    Paragraph = require(4127) /* Text */.Text;
+    Paragraph = require(4161) /* Text */.Text;
   }
   const tmp = _createForOfIteratorHelperLoose();
   return <Paragraph key={state.key} variant="text-sm/normal" style={_createForOfIteratorHelperLoose().text}>{output(node.content, state)}</Paragraph>;
@@ -95,9 +95,9 @@ function ChangeLogImage(arg0) {
   let state;
   ({ node, state } = arg0);
   let obj = { style: _createForOfIteratorHelperLoose().image };
-  obj = { uri: importDefault(3830).sanitizeUrl(node.target) };
+  obj = { uri: importDefault(3864).sanitizeUrl(node.target) };
   obj.source = obj;
-  return <closure_4 key={state.key} uri={importDefault(3830).sanitizeUrl(node.target)} />;
+  return <closure_4 key={state.key} uri={importDefault(3864).sanitizeUrl(node.target)} />;
 }
 function ChangeLogBlockQuote(state) {
   let node;
@@ -107,7 +107,7 @@ function ChangeLogBlockQuote(state) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) };
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) });
   return <closure_3 key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</closure_3>;
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);

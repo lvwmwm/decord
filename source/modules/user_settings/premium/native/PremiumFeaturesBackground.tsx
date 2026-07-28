@@ -1,10 +1,10 @@
-// Module ID: 7907
-// Function ID: 62993
+// Module ID: 7943
+// Function ID: 63084
 // Name: PremiumFeaturesBackground
-// Dependencies: [31, 6173, 1852, 33, 4131, 689, 666, 4555, 668, 2]
+// Dependencies: [31, 6207, 1852, 33, 4165, 689, 666, 4589, 668, 2]
 // Exports: default
 
-// Module 7907 (PremiumFeaturesBackground)
+// Module 7943 (PremiumFeaturesBackground)
 import "result";
 import { Gradients } from "items";
 import { PremiumTypes } from "GuildFeatures";
@@ -49,5 +49,5 @@ export default function PremiumFeaturesBackground(opacity) {
   obj.end = num(668).HorizontalGradient.END;
   const merged1 = Object.assign(merged);
   obj["children"] = children;
-  return jsx(importDefault(4555), { style: items });
+  return jsx(importDefault(4589), { style: items });
 };

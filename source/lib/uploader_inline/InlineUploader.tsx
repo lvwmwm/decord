@@ -1,9 +1,9 @@
-// Module ID: 7888
-// Function ID: 62897
+// Module ID: 7924
+// Function ID: 62988
 // Name: InlineUploader
-// Dependencies: [5, 6, 7, 4694, 7889, 2]
+// Dependencies: [5, 6, 7, 4728, 7925, 2]
 
-// Module 7888 (InlineUploader)
+// Module 7924 (InlineUploader)
 import set from "set";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";

@@ -1,10 +1,10 @@
-// Module ID: 5083
-// Function ID: 44256
+// Module ID: 5117
+// Function ID: 44371
 // Name: _getBackgroundGradientColor
-// Dependencies: [57, 5, 31, 27, 4123, 5082, 1348, 1838, 1907, 5059, 5060, 5056, 653, 33, 1198, 4131, 5084, 689, 1447, 3975, 5085, 4555, 668, 566, 1557, 1456, 3992, 5064, 5066, 1392, 1825, 675, 4325, 4132, 5087, 5121, 5123, 1327, 5453, 4127, 1212, 2]
+// Dependencies: [57, 5, 31, 27, 4157, 5116, 1348, 1838, 1907, 5093, 5094, 5090, 653, 33, 1198, 4165, 5118, 689, 1447, 4009, 5119, 4589, 668, 566, 1557, 1456, 4026, 5098, 5100, 1392, 1825, 675, 4359, 4166, 5121, 5155, 5157, 1327, 5488, 4161, 1212, 2]
 // Exports: default
 
-// Module 5083 (_getBackgroundGradientColor)
+// Module 5117 (_getBackgroundGradientColor)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import expandLocation from "expandLocation";
@@ -44,10 +44,10 @@ function BackgroundImageGradient(uri) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   const items = [tmp.backgroundImage];
-  const items1 = [callback2(importDefault(5085), { source: { uri: uri.splashUrl }, style: items, resizeMode: "cover" }), ];
+  const items1 = [callback2(importDefault(5119), { source: { uri: uri.splashUrl }, style: items, resizeMode: "cover" }), ];
   obj = { style: tmp.backgroundColorGradient, start: require(668) /* keys */.VerticalGradient.START, end: require(668) /* keys */.VerticalGradient.END };
-  const tmp2 = importDefault(4555);
-  const items2 = [require(3975) /* hexToRgb */.hexWithOpacity(color, 0.16), color];
+  const tmp2 = importDefault(4589);
+  const items2 = [require(4009) /* hexToRgb */.hexWithOpacity(color, 0.16), color];
   obj.colors = items2;
   items1[1] = callback2(tmp2, obj);
   obj.children = items1;

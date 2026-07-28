@@ -1,10 +1,10 @@
-// Module ID: 14074
-// Function ID: 107700
+// Module ID: 14118
+// Function ID: 107873
 // Name: UnsendIcon
-// Dependencies: [31, 33, 689, 3834, 14075, 2]
+// Dependencies: [31, 33, 689, 3868, 14119, 2]
 // Exports: UnsendIcon
 
-// Module 14074 (UnsendIcon)
+// Module 14118 (UnsendIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UnsendIcon = function UnsendIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14075) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14119) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(14075) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(14119) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

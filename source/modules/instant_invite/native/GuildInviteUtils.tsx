@@ -1,10 +1,10 @@
-// Module ID: 12141
-// Function ID: 95121
+// Module ID: 12184
+// Function ID: 95291
 // Name: _sendGuildInvite
-// Dependencies: [5, 31, 1908, 4052, 1918, 1838, 3759, 4971, 1850, 12142, 5969, 653, 675, 4099, 12143, 1935, 5046, 566, 3844, 1212, 6636, 8288, 11743, 2]
+// Dependencies: [5, 31, 1908, 4086, 1918, 1838, 3793, 5005, 1850, 12185, 6003, 653, 675, 4133, 12186, 1935, 5080, 566, 3878, 1212, 6672, 8326, 11782, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12141 (_sendGuildInvite)
+// Module 12184 (_sendGuildInvite)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,9 +33,9 @@ export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id
   let obj = importDefault(675);
   obj = { type: "Invite to Guilds", source: newestAnalyticsLocation };
   obj.track(constants.OPEN_POPOUT, obj);
-  const obj3 = importDefault(4099);
+  const obj3 = importDefault(4133);
   obj = { recipientId: id, source: newestAnalyticsLocation };
-  obj3.openLazy(require(1935) /* maybeLoadBundle */(12143, dependencyMap.paths), "invite-to-guilds-" + id, obj);
+  obj3.openLazy(require(1935) /* maybeLoadBundle */(12186, dependencyMap.paths), "invite-to-guilds-" + id, obj);
 };
 export const useServerInviteRows = function useServerInviteRows(id, query) {
   const _require = id;

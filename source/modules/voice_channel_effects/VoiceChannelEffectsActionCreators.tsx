@@ -1,10 +1,10 @@
-// Module ID: 10716
-// Function ID: 83339
+// Module ID: 10754
+// Function ID: 83460
 // Name: _getCancellationSlowConnection
-// Dependencies: [4992, 1907, 10717, 10511, 653, 4580, 22, 10510, 507, 10718, 5482, 4586, 2]
+// Dependencies: [5026, 1907, 10755, 10549, 653, 4614, 22, 10548, 507, 10756, 5517, 4620, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
 
-// Module 10716 (_getCancellationSlowConnection)
+// Module 10754 (_getCancellationSlowConnection)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -40,16 +40,16 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
   if (null == BASIC) {
     BASIC = constants.BASIC;
   }
-  let obj = { animation_type: BASIC, animation_id: abortController(10510).sampleAnimationId(BASIC, abortController(10510).CUSTOM_CALL_SOUND_ANIMATION_RANGE) };
+  let obj = { animation_type: BASIC, animation_id: abortController(10548).sampleAnimationId(BASIC, abortController(10548).CUSTOM_CALL_SOUND_ANIMATION_RANGE) };
   const HTTP = abortController(507).HTTP;
   obj = { url: closure_7.CUSTOM_CALL_SOUNDS(id), body: obj, signal: abortController.signal, onRequestProgress: tmp.onRequestProgress, rejectWithError: true };
-  const obj2 = abortController(10510);
+  const obj2 = abortController(10548);
   HTTP.post(obj).then(closure_8, () => {
 
   });
   const postResult = HTTP.post(obj);
-  const items = [importDefault(5482).CHANNEL_CALL];
-  importDefault(10718)(items, arg2, sound, abortController(4586).AnalyticsSoundType.ENTRY);
+  const items = [importDefault(5517).CHANNEL_CALL];
+  importDefault(10756)(items, arg2, sound, abortController(4620).AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(id, emojiId, arg2, arg3, arg4) {
   let items = arg3;
@@ -81,5 +81,5 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
   if (null == items) {
     items = [];
   }
-  importDefault(10718)(items, arg2, emojiId, abortController(4586).AnalyticsSoundType.DEFAULT, arg4);
+  importDefault(10756)(items, arg2, emojiId, abortController(4620).AnalyticsSoundType.DEFAULT, arg4);
 };

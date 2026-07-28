@@ -1,10 +1,10 @@
-// Module ID: 6609
-// Function ID: 58497
+// Module ID: 6645
+// Function ID: 58586
 // Name: useNativeIAPPayments
-// Dependencies: [5, 57, 31, 5621, 3782, 3783, 5619, 653, 3, 566, 6274, 6610, 3792, 6611, 5450, 675, 6239, 5622, 44, 4452, 6613, 6614, 2]
+// Dependencies: [5, 57, 31, 5656, 3816, 3817, 5654, 653, 3, 566, 6310, 6646, 3826, 6647, 5485, 675, 6275, 5657, 44, 4486, 6649, 6650, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
-// Module 6609 (useNativeIAPPayments)
+// Module 6645 (useNativeIAPPayments)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -43,7 +43,7 @@ function useNativeIAPPayments() {
       const obj = tmp3(tmp4[10]);
     }
   }, items1);
-  importDefault(6610)(() => {
+  importDefault(6646)(() => {
     let tmp = first;
     if (!first) {
       tmp = outer1_15;

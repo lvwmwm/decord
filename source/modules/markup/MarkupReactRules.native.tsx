@@ -1,10 +1,10 @@
-// Module ID: 4122
-// Function ID: 34158
+// Module ID: 4156
+// Function ID: 34260
 // Name: MarkupText
-// Dependencies: [31, 27, 4123, 1348, 1918, 1911, 1838, 653, 1355, 482, 33, 4126, 4127, 4131, 689, 4139, 4322, 3983, 4338, 8297, 4471, 1212, 5490, 3831, 5513, 1273, 1443, 8138, 3828, 9445, 9482, 9929, 566, 3975, 7685, 4099, 10844, 1935, 21, 3804, 5085, 9947, 12913, 10859, 4564, 10230, 12914, 12916, 4075, 4566, 477, 4594, 12918, 10232, 2]
+// Dependencies: [31, 27, 4157, 1348, 1918, 1911, 1838, 653, 1355, 482, 33, 4160, 4161, 4165, 689, 4173, 4356, 4017, 4372, 8335, 4505, 1212, 5525, 3865, 5548, 1273, 1443, 8176, 3862, 9485, 9522, 9969, 566, 4009, 7721, 4133, 10882, 1935, 21, 3838, 5119, 9987, 12957, 10897, 4598, 10270, 12958, 12960, 4109, 4600, 477, 4628, 12962, 10272, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
-// Module 4122 (MarkupText)
+// Module 4156 (MarkupText)
 import smartOutput from "smartOutput";
 import get_ActivityIndicator from "isLinkTrusted";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -131,8 +131,8 @@ function MarkupLink(arg0) {
   obj = {};
   const merged = Object.assign(state);
   obj["inLink"] = true;
-  obj.children = node(9929).smartOutput(node, output, obj);
-  return tmp2(node(4127).Text, obj, state.key);
+  obj.children = node(9969).smartOutput(node, output, obj);
+  return tmp2(node(4161).Text, obj, state.key);
 }
 function MarkupMention(styles) {
   let node;
@@ -300,7 +300,7 @@ function MarkupBlockQuote(state) {
     textColor = state.textColor;
   }
   obj.color = textColor;
-  obj.children = require(9929) /* smartOutput */.smartOutput(node, output, state);
+  obj.children = require(9969) /* smartOutput */.smartOutput(node, output, state);
   return closure_16(MarkupText, obj, state.key);
 }
 function MarkupInlineCode(arg0) {
@@ -347,7 +347,7 @@ function MarkupInlineCode(arg0) {
   const tmp4 = styles.inlineCode || callback2().inlineCode;
   const tmp6 = closure_16;
   const tmp7 = MarkupText;
-  obj.children = node(9929).smartOutput(node, output, state);
+  obj.children = node(9969).smartOutput(node, output, state);
   return tmp6(tmp7, obj, state.key);
 }
 function MarkupCodeBlock(state) {
@@ -367,7 +367,7 @@ function MarkupCodeBlock(state) {
     textColor = state.textColor;
   }
   obj.color = textColor;
-  const items = [require(9929) /* smartOutput */.smartOutput(node, output, state), "\n"];
+  const items = [require(9969) /* smartOutput */.smartOutput(node, output, state), "\n"];
   obj.children = items;
   return closure_17(MarkupText, obj, state.key);
 }
@@ -375,7 +375,7 @@ function MarkupCustomEmoji(styles) {
   let node;
   let state;
   ({ state, node } = styles);
-  const AnimateEmoji = require(3804) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3838) /* explicitContentFromProto */.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   require(566) /* initialize */;
   [][0] = _isNativeReflectConstruct;
@@ -399,8 +399,8 @@ function MarkupCustomEmoji(styles) {
     const obj2 = { uri: node.src };
     obj.source = obj2;
     obj.enableAnimation = !tmp3 && setting;
-    let tmp4Result = tmp4(importDefault(5085), obj, state.key);
-    const tmp11 = importDefault(5085);
+    let tmp4Result = tmp4(importDefault(5119), obj, state.key);
+    const tmp11 = importDefault(5119);
   } else {
     obj = {};
     let textColor;
@@ -441,10 +441,10 @@ function MarkupChannelMention(state) {
   const items = [outputResult, , ];
   if (null == node.inContent) {
     items[1] = null;
-    let obj3 = state(9929);
+    let obj3 = state(9969);
     items[2] = obj3.smartOutput(node, output, state);
     obj.children = items;
-    const tmp2Result = closure_17(state(4127).Text, obj, state.key);
+    const tmp2Result = closure_17(state(4161).Text, obj, state.key);
     let tmp18Result = tmp2Result;
     if (!state.disablePressableChannelMention) {
       obj = { accessibilityRole: str };
@@ -519,7 +519,7 @@ function MarkupChannelMention(state) {
       obj3 = fontScale < 2 ? { width: 12, height: 12 } : { width: 16, height: 16 };
     }
     obj2.style = obj3;
-    obj2.source = node(9947);
+    obj2.source = node(9987);
     obj2.size = state(1273).Icon.Sizes.CUSTOM;
     closure_16(state(1273).ThemedIcon, obj2);
     const tmp4 = closure_16;
@@ -545,12 +545,12 @@ function MarkupAttachmentLink(state) {
   }
   obj.variant = str2;
   obj.style = tmp.channelMentionText;
-  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12913), size: getIconSize() };
+  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12957), size: getIconSize() };
   const items = [callback(state(1273).ThemedIcon, obj), ];
-  let obj2 = state(9929);
+  let obj2 = state(9969);
   items[1] = obj2.smartOutput(node, output, state);
   obj.children = items;
-  const tmp2Result = closure_17(state(4127).Text, obj, state.key);
+  const tmp2Result = closure_17(state(4161).Text, obj, state.key);
   let tmp5Result = tmp2Result;
   if (!state.disablePressableChannelMention) {
     obj = { accessibilityRole: str };
@@ -602,7 +602,7 @@ function MarkupCommandMention(state) {
     mention = tmp.mention;
   }
   obj.style = mention;
-  return tmp2(importDefault(10859), obj, state.key);
+  return tmp2(importDefault(10897), obj, state.key);
 }
 ({ PixelRatio: closure_4, Pressable: closure_5, View: closure_6, Text: closure_7 } = get_ActivityIndicator);
 ({ EMOJI_CHAT_SIZE, GuildFeatures: closure_13 } = ME);
@@ -663,7 +663,7 @@ export default function createRules() {
     };
   })(obj);
   obj = {};
-  obj[obj(4564).AST_KEY.TEXT] = {
+  obj[obj(4598).AST_KEY.TEXT] = {
     react(content, output, textColor) {
       if ("string" === typeof content.content) {
         content = content.content;
@@ -683,7 +683,7 @@ export default function createRules() {
       return content;
     }
   };
-  obj[obj(4564).AST_KEY.STRIKETHROUGH] = {
+  obj[obj(4598).AST_KEY.STRIKETHROUGH] = {
     react(node, output, textColor) {
       const obj = { style: { textDecorationLine: "line-through" } };
       textColor = undefined;
@@ -696,7 +696,7 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.UNDERLINE] = {
+  obj[obj(4598).AST_KEY.UNDERLINE] = {
     react(node, output, textColor) {
       const obj = { style: { textDecorationLine: "underline" } };
       textColor = undefined;
@@ -709,7 +709,7 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.ITALICS] = {
+  obj[obj(4598).AST_KEY.ITALICS] = {
     react(node, output, textColor) {
       let obj = {};
       obj = {};
@@ -734,7 +734,7 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.STRONG] = {
+  obj[obj(4598).AST_KEY.STRONG] = {
     react(node, output, textColor) {
       const obj = {};
       let strong = obj.strong;
@@ -752,10 +752,10 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.LINK] = { react: tmp };
-  obj[obj(4564).AST_KEY.URL] = { react: tmp };
-  obj[obj(4564).AST_KEY.AUTOLINK] = { react: tmp };
-  obj[obj(4564).AST_KEY.LINE_BREAK] = {
+  obj[obj(4598).AST_KEY.LINK] = { react: tmp };
+  obj[obj(4598).AST_KEY.URL] = { react: tmp };
+  obj[obj(4598).AST_KEY.AUTOLINK] = { react: tmp };
+  obj[obj(4598).AST_KEY.LINE_BREAK] = {
     react(arg0, arg1, textColor) {
       const obj = {};
       textColor = undefined;
@@ -767,7 +767,7 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.HIGHLIGHT] = {
+  obj[obj(4598).AST_KEY.HIGHLIGHT] = {
     react(node, output, textColor) {
       const obj = {};
       textColor = undefined;
@@ -779,13 +779,13 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.BLOCK_QUOTE] = {
+  obj[obj(4598).AST_KEY.BLOCK_QUOTE] = {
     react(node, output, key) {
       obj = { styles: obj, state: key, node, output };
       return outer1_16(outer1_25, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.PARAGRAPH] = {
+  obj[obj(4598).AST_KEY.PARAGRAPH] = {
     order: 600,
     react(node, output, textColor) {
       const obj = {};
@@ -798,7 +798,7 @@ export default function createRules() {
       return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.EMOJI] = {
+  obj[obj(4598).AST_KEY.EMOJI] = {
     react(surrogate, arg1, key) {
       const obj = {};
       let content = surrogate.surrogate;
@@ -809,13 +809,13 @@ export default function createRules() {
       return outer1_16(outer1_7, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.CUSTOM_EMOJI] = {
+  obj[obj(4598).AST_KEY.CUSTOM_EMOJI] = {
     react(node, arg1, key) {
       obj = { state: key, node, styles: obj };
       return outer1_16(outer1_28, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.SPOILER] = {
+  obj[obj(4598).AST_KEY.SPOILER] = {
     react(node, output, key) {
       obj = { spoilerStyle: obj.spoiler, spoilerRevealedStyle: obj.spoilerRevealed };
       const tmp = obj(outer1_2[45]);
@@ -823,7 +823,7 @@ export default function createRules() {
       return outer1_16(tmp, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.STATIC_ROUTE_LINK] = {
+  obj[obj(4598).AST_KEY.STATIC_ROUTE_LINK] = {
     react(channelId, output, textColor) {
       let obj = channelId;
       obj = obj(outer1_2[31]);
@@ -882,13 +882,13 @@ export default function createRules() {
       }
     }
   };
-  obj[obj(4564).AST_KEY.INLINE_CODE] = {
+  obj[obj(4598).AST_KEY.INLINE_CODE] = {
     react(node, output, key) {
       obj = { styles: obj, state: key, node, output };
       return outer1_16(outer1_26, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.CODE_BLOCK] = {
+  obj[obj(4598).AST_KEY.CODE_BLOCK] = {
     parse(arg0, arg1, arg2) {
       obj = obj(outer1_2[49]).RULES[obj(undefined, outer1_2[44]).AST_KEY.CODE_BLOCK];
       const parsed = obj.parse(arg0, arg1, arg2);
@@ -903,7 +903,7 @@ export default function createRules() {
       return outer1_16(outer1_27, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.MENTION] = {
+  obj[obj(4598).AST_KEY.MENTION] = {
     react: ((arg0, arg1) => {
       let obj = arg0;
       let str = arg1;
@@ -919,19 +919,19 @@ export default function createRules() {
       };
     })(obj, arg2)
   };
-  obj[obj(4564).AST_KEY.CHANNEL_MENTION] = {
+  obj[obj(4598).AST_KEY.CHANNEL_MENTION] = {
     react(node, output, key) {
       obj = { styles: obj, state: key, node, output, variants: obj };
       return outer1_16(outer1_29, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.ATTACHMENT_LINK] = {
+  obj[obj(4598).AST_KEY.ATTACHMENT_LINK] = {
     react(node, output, key) {
       obj = { styles: obj, state: key, node, output, variants: obj };
       return outer1_16(outer1_30, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.SOUNDBOARD] = {
+  obj[obj(4598).AST_KEY.SOUNDBOARD] = {
     react(node, output, key) {
       const obj = { variant: "text-md/bold" };
       const items = ["<sound:", obj(outer1_2[31]).smartOutput(node, output, key), ">"];
@@ -939,7 +939,7 @@ export default function createRules() {
       return outer1_17(obj(outer1_2[12]).Text, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.GUILD] = {
+  obj[obj(4598).AST_KEY.GUILD] = {
     react(icon, output, textColor) {
       obj = obj(outer1_2[50]);
       let num = 2;
@@ -989,7 +989,7 @@ export default function createRules() {
       }
     }
   };
-  obj[obj(4564).AST_KEY.CHANNEL] = {
+  obj[obj(4598).AST_KEY.CHANNEL] = {
     react(iconType, output, textColor) {
       iconType = iconType.iconType;
       let str = "text";
@@ -1022,25 +1022,25 @@ export default function createRules() {
       return tmp2(tmp3, obj, textColor.key);
     }
   };
-  obj[obj(4564).AST_KEY.COMMAND_MENTION] = {
+  obj[obj(4598).AST_KEY.COMMAND_MENTION] = {
     react(node, output, key) {
       obj = { styles: obj, state: key, node, output };
       return outer1_16(outer1_31, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.GAME_MENTION] = {
+  obj[obj(4598).AST_KEY.GAME_MENTION] = {
     react(node, arg1, key) {
       const obj = { node, state: key };
       return outer1_16(obj(outer1_2[52]), obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.TIMESTAMP] = {
+  obj[obj(4598).AST_KEY.TIMESTAMP] = {
     react(node, arg1, key) {
       obj = { node, style: obj.timestamp };
       return outer1_16(obj(outer1_2[53]), obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.LIST] = {
+  obj[obj(4598).AST_KEY.LIST] = {
     react(start, arg1, level) {
       let closure_0 = start;
       let closure_1 = arg1;
@@ -1166,7 +1166,7 @@ export default function createRules() {
       }
     }
   };
-  obj[obj(4564).AST_KEY.HEADING] = {
+  obj[obj(4598).AST_KEY.HEADING] = {
     react(level, output, formatInline) {
       if (formatInline.formatInline) {
         let obj = { variant: "text-sm/semibold" };
@@ -1199,7 +1199,7 @@ export default function createRules() {
       }
     }
   };
-  obj[obj(4564).AST_KEY.SUBTEXT] = {
+  obj[obj(4598).AST_KEY.SUBTEXT] = {
     react(node, output, key) {
       const obj = { variant: "text-sm/normal", color: "text-muted" };
       const items = [obj(outer1_2[31]).smartOutput(node, output, key), "\n"];
@@ -1207,7 +1207,7 @@ export default function createRules() {
       return outer1_17(obj(outer1_2[12]).Text, obj, key.key);
     }
   };
-  obj[obj(4564).AST_KEY.SILENT_PREFIX] = {
+  obj[obj(4598).AST_KEY.SILENT_PREFIX] = {
     react(content, output, textColor) {
       if ("string" === typeof content.content) {
         content = content.content;
@@ -1234,8 +1234,8 @@ export const plainMentionRenderer = function plainMentionRenderer(content, outpu
   if ("string" === typeof content.content) {
     content = content.content;
   } else {
-    content = require(9929) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9929) /* smartOutput */;
+    content = require(9969) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(9969) /* smartOutput */;
   }
   return content;
 };

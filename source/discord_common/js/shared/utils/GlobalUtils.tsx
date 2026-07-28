@@ -1,5 +1,5 @@
 // Module ID: 674
-// Function ID: 8285
+// Function ID: 8289
 // Name: getGlobalObject
 // Dependencies: [2]
 // Exports: getGlobalObject

@@ -1,10 +1,10 @@
-// Module ID: 7595
-// Function ID: 60777
+// Module ID: 7631
+// Function ID: 60866
 // Name: TableRadioRow
-// Dependencies: [31, 33, 7596, 3837, 3849, 5164, 7597, 2]
+// Dependencies: [31, 33, 7632, 3871, 3883, 5198, 7633, 2]
 // Exports: TableRadioRow
 
-// Module 7595 (TableRadioRow)
+// Module 7631 (TableRadioRow)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -30,17 +30,17 @@ export const TableRadioRow = function TableRadioRow(value) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let onSelect;
-  const context = onSelect.useContext(require(7596) /* context */.TableRadioGroupContext);
+  const context = onSelect.useContext(require(7632) /* context */.TableRadioGroupContext);
   onSelect = context.onSelect;
   if (null == legacyCompat_selected) {
     legacyCompat_selected = context.selectedValue === value;
   }
-  let obj1 = require(3837) /* getNodeText */;
+  let obj1 = require(3871) /* getNodeText */;
   const nodeText = obj1.getNodeText(label);
-  const nodeText1 = require(3837) /* getNodeText */.getNodeText(subLabel);
-  const obj3 = require(3837) /* getNodeText */;
+  const nodeText1 = require(3871) /* getNodeText */.getNodeText(subLabel);
+  const obj3 = require(3871) /* getNodeText */;
   obj = { selected: legacyCompat_selected, disabled };
-  const radioA11yNative = require(3849) /* useCheckboxA11yNative */.useRadioA11yNative(obj);
+  const radioA11yNative = require(3883) /* useCheckboxA11yNative */.useRadioA11yNative(obj);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   obj = {};
   const merged1 = Object.assign(merged);
@@ -64,6 +64,6 @@ export const TableRadioRow = function TableRadioRow(value) {
     onSelect(closure_0);
   };
   obj1 = { selected: legacyCompat_selected };
-  obj["trailing"] = jsx(require(7597) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
-  return jsx(require(5164) /* TableRowInner */.TableRow, {});
+  obj["trailing"] = jsx(require(7633) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
+  return jsx(require(5198) /* TableRowInner */.TableRow, {});
 };

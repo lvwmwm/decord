@@ -1,10 +1,10 @@
-// Module ID: 5953
-// Function ID: 52962
+// Module ID: 5987
+// Function ID: 53081
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4145, 1838, 3759, 4147, 5954, 4977, 5955, 5956, 5957, 5958, 5959, 2]
+// Dependencies: [57, 4179, 1838, 3793, 4181, 5988, 5011, 5989, 5990, 5991, 5992, 5993, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 5953 (_createForOfIteratorHelperLoose)
+// Module 5987 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -100,7 +100,7 @@ function isSponsoredPlayQuest(quest) {
   if (null == quest) {
     return false;
   } else {
-    const desktopApplicationIds = require(5955) /* _createForOfIteratorHelperLoose */.getDesktopApplicationIds(quest);
+    const desktopApplicationIds = require(5989) /* _createForOfIteratorHelperLoose */.getDesktopApplicationIds(quest);
     let tmp3 = null != desktopApplicationIds;
     if (tmp3) {
       tmp3 = desktopApplicationIds.length > 1;
@@ -116,14 +116,14 @@ let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("m
 
 export { isSponsoredPlayQuest };
 export const isPlayAnyActivityQuest = function isPlayAnyActivityQuest(quest3) {
-  return require(5955) /* _createForOfIteratorHelperLoose */.getPlayActivityApplicationId(quest3) === closure_8;
+  return require(5989) /* _createForOfIteratorHelperLoose */.getPlayActivityApplicationId(quest3) === closure_8;
 };
 export { hasVariant };
 export const canLaunchActivity = function canLaunchActivity(quest) {
-  let hasPlayActivityTaskResult = require(5955) /* _createForOfIteratorHelperLoose */.hasPlayActivityTask(quest);
+  let hasPlayActivityTaskResult = require(5989) /* _createForOfIteratorHelperLoose */.hasPlayActivityTask(quest);
   if (!hasPlayActivityTaskResult) {
-    hasPlayActivityTaskResult = require(5955) /* _createForOfIteratorHelperLoose */.hasAchievementActivityTask(quest);
-    const obj2 = require(5955) /* _createForOfIteratorHelperLoose */;
+    hasPlayActivityTaskResult = require(5989) /* _createForOfIteratorHelperLoose */.hasAchievementActivityTask(quest);
+    const obj2 = require(5989) /* _createForOfIteratorHelperLoose */;
   }
   return hasPlayActivityTaskResult;
 };
@@ -150,7 +150,7 @@ export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEn
           let tmp12 = _createForOfIteratorHelperLoose;
           let tmp13 = require;
           let tmp14 = dependencyMap;
-          let obj2 = require(5955) /* _createForOfIteratorHelperLoose */;
+          let obj2 = require(5989) /* _createForOfIteratorHelperLoose */;
           let tmp15 = _createForOfIteratorHelperLoose(obj2.getQuestTaskTypes(tmp6));
           let iter3 = tmp15();
           let iter4 = iter3;
@@ -180,20 +180,20 @@ export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEn
   return map;
 };
 export const isShareableQuest = function isShareableQuest(config) {
-  return config.sharePolicy !== require(5956) /* QuestSharePolicy */.QuestSharePolicy.NOT_SHAREABLE;
+  return config.sharePolicy !== require(5990) /* QuestSharePolicy */.QuestSharePolicy.NOT_SHAREABLE;
 };
 export const isStreamingAndCanWatch = function isStreamingAndCanWatch(arg0, stateFromStores) {
   let first = null != arg0 && null != stateFromStores;
   if (first) {
-    const obj = require(5957) /* _createForOfIteratorHelperLoose */;
+    const obj = require(5991) /* _createForOfIteratorHelperLoose */;
     first = obj.canWatchStream(stateFromStores, closure_6, _createForOfIteratorHelperLoose, closure_5, _isNativeReflectConstruct)[0];
   }
   return first;
 };
 export const getQuestType = function getQuestType(config) {
-  let obj = require(5955) /* _createForOfIteratorHelperLoose */;
+  let obj = require(5989) /* _createForOfIteratorHelperLoose */;
   obj = { config };
-  const QuestType = require(5958) /* QuestType */.QuestType;
+  const QuestType = require(5992) /* QuestType */.QuestType;
   return obj.hasWatchVideoTasks(obj) ? QuestType.VIDEO : QuestType.GAMEPLAY;
 };
 export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHero, id) {
@@ -231,6 +231,6 @@ export const setQuestHomeUtmContext = function setQuestHomeUtmContext(arg0) {
   let utmSource;
   ({ questId, fromContent, utmSource, utmMedium } = arg0);
   state = state.getState();
-  const obj = { utmSourceCurrent: utmSource, utmMediumCurrent: utmMedium, utmCampaignCurrent: questId, utmContentCurrent: require(5959) /* getQuestContentName */.getQuestContentName(fromContent) };
+  const obj = { utmSourceCurrent: utmSource, utmMediumCurrent: utmMedium, utmCampaignCurrent: questId, utmContentCurrent: require(5993) /* getQuestContentName */.getQuestContentName(fromContent) };
   state.setUtmCurrentContext(obj);
 };

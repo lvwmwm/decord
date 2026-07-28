@@ -1,9 +1,9 @@
-// Module ID: 15803
-// Function ID: 121826
+// Module ID: 15842
+// Function ID: 121982
 // Name: VoicePanel
-// Dependencies: [31, 1348, 4343, 33, 566, 15804, 15845, 3744, 4477, 2]
+// Dependencies: [31, 1348, 4377, 33, 566, 15843, 15884, 3778, 4511, 2]
 
-// Module 15803 (VoicePanel)
+// Module 15842 (VoicePanel)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import withEqualityFn from "withEqualityFn";
@@ -26,7 +26,7 @@ function VoicePanel(arg0) {
   const merged = Object.assign(arg0);
   obj["guildId"] = stateFromStores;
   obj["children"] = importAllResult.useMemo(() => outer1_6(outer1_1(outer1_2[6]), {}), []);
-  return jsx(importDefault(15804), {});
+  return jsx(importDefault(15843), {});
 }
 function getChannelKey(arg0) {
   return arg0;
@@ -35,8 +35,8 @@ function renderVoicePanel(arg0, channelId, transitionState, transitionCleanUp) {
   return <VoicePanel key={arg1} channelId={arg1} transitionState={arg2} transitionCleanUp={arg3} />;
 }
 const memoResult = importAllResult.memo(function VoicePanelContainer() {
-  const tmp = callback((channels) => Array.from(channels.channels), require(3744) /* isIterable */.shallow);
-  return jsx(require(4477) /* _createForOfIteratorHelperLoose */.TransitionGroup, { items: callback((channels) => Array.from(channels.channels), require(3744) /* isIterable */.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
+  const tmp = callback((channels) => Array.from(channels.channels), require(3778) /* isIterable */.shallow);
+  return jsx(require(4511) /* _createForOfIteratorHelperLoose */.TransitionGroup, { items: callback((channels) => Array.from(channels.channels), require(3778) /* isIterable */.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
 });
 const result = require("withEqualityFn").fileFinishedImporting("modules/voice_panel/native/VoicePanelContainer.tsx");
 

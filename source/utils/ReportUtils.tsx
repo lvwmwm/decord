@@ -1,10 +1,10 @@
-// Module ID: 6009
-// Function ID: 53598
+// Module ID: 6043
+// Function ID: 53717
 // Name: canReportUser
-// Dependencies: [1348, 4052, 3759, 1850, 653, 2]
+// Dependencies: [1348, 4086, 3793, 1850, 653, 2]
 // Exports: canDeleteAndReportMessage
 
-// Module 6009 (canReportUser)
+// Module 6043 (canReportUser)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

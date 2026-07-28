@@ -1,9 +1,9 @@
-// Module ID: 10385
-// Function ID: 80113
+// Module ID: 10425
+// Function ID: 80242
 // Name: BlockedInformationTable
-// Dependencies: [57, 31, 27, 1348, 3768, 1850, 8851, 10384, 653, 33, 4131, 689, 8299, 1212, 4089, 5501, 5164, 1273, 1557, 5462, 5482, 566, 5656, 5187, 675, 5189, 8301, 4127, 4320, 8302, 4099, 10386, 1935, 480, 4544, 8850, 6664, 1921, 3828, 2]
+// Dependencies: [57, 31, 27, 1348, 3802, 1850, 8895, 10424, 653, 33, 4165, 689, 8337, 1212, 4123, 5536, 5198, 1273, 1557, 5497, 5517, 566, 7960, 5221, 675, 5223, 8339, 4161, 4354, 8340, 4133, 10426, 1935, 480, 4578, 8894, 6700, 1921, 3862, 2]
 
-// Module 10385 (BlockedInformationTable)
+// Module 10425 (BlockedInformationTable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "IgnoredInformationTable";
 import { View } from "Text";
@@ -37,7 +37,7 @@ function BlockedInformationTable() {
       return outer1_14(outer1_0(outer1_2[16]).TableRow, obj, arg1);
     })
   };
-  return callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: closure_10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: closure_11 } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
 ({ HelpdeskArticles: closure_12, AnalyticEvents: closure_13 } = ME);
@@ -163,7 +163,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
   ({ onBlock: dependencyMap, onIgnore: _slicedToArray, onSuccess: closure_4 } = userId);
   const tmp = callback4();
   const bottom = channelId(1557)().bottom;
-  const items = [channelId(5482).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const items = [channelId(5517).IGNORE_CONFIRMATION_ACTION_SHEET];
   const tmp3 = callback(importAllResult.useState(false), 2);
   const first = tmp3[0];
   let closure_5 = tmp3[1];
@@ -220,7 +220,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     const obj5 = { guildId: undefined, user: stateFromStores, animate: false, size: userId(1273).AvatarSizes.XLARGE, style: tmp.avatar };
     const items8 = [callback2(userId(1273).Avatar, obj5), ];
     const obj6 = { style: tmp.avatarIconContainer };
-    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8301) };
+    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8339) };
     obj6.children = callback2(userId(1273).Icon, obj7);
     items8[1] = callback2(closure_5, obj6);
     obj4.children = items8;
@@ -228,14 +228,14 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     const obj8 = { style: tmp.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
     const intl = userId(1212).intl;
     const obj9 = {};
-    let obj14 = channelId(4320);
+    let obj14 = channelId(4354);
     obj9.username = obj14.getName(stateFromStores2, channelId, stateFromStores);
     obj8.children = intl.format(userId(1212).t.CIbzHR, obj9);
-    items9[1] = callback2(userId(4127).Text, obj8);
+    items9[1] = callback2(userId(4161).Text, obj8);
     const obj10 = { style: tmp.headerText, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header" };
     const intl2 = userId(1212).intl;
     obj10.children = intl2.string(userId(1212).t.S70jou);
-    items9[2] = callback2(userId(4127).Text, obj10);
+    items9[2] = callback2(userId(4161).Text, obj10);
     obj3.children = items9;
     const items10 = [callback3(closure_5, obj3), , , ];
     const obj11 = { style: tmp.tableContainer, children: callback2(BlockedInformationTable, {}) };
@@ -248,7 +248,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       obj13.title = intl3.string(userId(1212).t["+BJTcB"]);
       obj13.hasIcons = true;
       obj14 = {};
-      const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8302) };
+      const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8340) };
       obj14.icon = callback2(userId(1273).Icon, obj15);
       const intl4 = userId(1212).intl;
       obj14.label = intl4.string(userId(1212).t.hC8tcc);
@@ -265,8 +265,8 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         obj3.openLazy(userId(outer1_2[32])(outer1_2[31], outer1_2.paths), outer1_10, obj, "replaceTopSheet");
       };
       obj14.arrow = true;
-      obj13.children = callback2(userId(5164).TableRow, obj14);
-      obj12.children = callback2(userId(5501).TableRowGroup, obj13);
+      obj13.children = callback2(userId(5198).TableRow, obj14);
+      obj12.children = callback2(userId(5536).TableRowGroup, obj13);
       tmp31 = callback2(closure_5, obj12);
     }
     items10[2] = tmp31;
@@ -294,7 +294,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     };
     obj17.disabled = first;
     obj17.loading = first;
-    const items11 = [callback2(userId(4544).Button, obj17), ];
+    const items11 = [callback2(userId(4578).Button, obj17), ];
     const obj18 = { style: tmp.footerText, variant: "text-sm/normal", color: "text-default" };
     const intl8 = userId(1212).intl;
     const obj19 = {
@@ -307,13 +307,13 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         }
     };
     obj18.children = intl8.format(userId(1212).t.CpTgBn, obj19);
-    items11[1] = callback2(userId(4127).Text, obj18);
+    items11[1] = callback2(userId(4161).Text, obj18);
     obj16.children = items11;
     items10[3] = callback3(closure_5, obj16);
     obj2.children = items10;
-    obj.children = callback3(userId(5189).BottomSheetScrollView, obj2);
-    obj.children = callback2(userId(5187).BottomSheet, obj);
-    tmp10Result = callback2(userId(5462).AnalyticsLocationProvider, obj);
+    obj.children = callback3(userId(5223).BottomSheetScrollView, obj2);
+    obj.children = callback2(userId(5221).BottomSheet, obj);
+    tmp10Result = callback2(userId(5497).AnalyticsLocationProvider, obj);
     const tmp10 = callback2;
     const tmp13 = callback2;
     const tmp20 = callback3;

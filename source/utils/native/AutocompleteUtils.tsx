@@ -1,8 +1,8 @@
-// Module ID: 5045
-// Function ID: 43612
+// Module ID: 5079
+// Function ID: 43727
 // Dependencies: [653, 1212, 2]
 
-// Module 5045
+// Module 5079
 require("ME").AutoCompleteResultTypes;
 const result = require("set").fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
 

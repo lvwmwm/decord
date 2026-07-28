@@ -1,9 +1,9 @@
-// Module ID: 7648
-// Function ID: 61274
+// Module ID: 7684
+// Function ID: 61364
 // Name: items
-// Dependencies: [5855, 1282, 1212, 7634, 2]
+// Dependencies: [5865, 1282, 1212, 7670, 2]
 
-// Module 7648 (items)
+// Module 7684 (items)
 let obj = {
   getTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -24,8 +24,8 @@ obj.onApply = function onApply() {
   let goreContentFriendDm;
   let goreContentGuilds;
   let goreContentNonFriendDm;
-  let obj = require(5855) /* resolveGoreSettingWithDefaults */;
-  const goreContentSettingOrDefault = require(5855) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
+  let obj = require(5865) /* resolveGoreSettingWithDefaults */;
+  const goreContentSettingOrDefault = require(5865) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
   obj = {};
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
   if (goreContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
@@ -43,7 +43,7 @@ obj.predicate = function predicate() {
   let goreContentFriendDm;
   let goreContentGuilds;
   let goreContentNonFriendDm;
-  const goreContentSettingOrDefault = require(5855) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
+  const goreContentSettingOrDefault = require(5865) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
   let tmp2 = goreContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   if (!tmp2) {

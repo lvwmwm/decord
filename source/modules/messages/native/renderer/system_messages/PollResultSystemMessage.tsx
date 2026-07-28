@@ -1,10 +1,10 @@
-// Module ID: 7764
-// Function ID: 61739
+// Module ID: 7800
+// Function ID: 61829
 // Name: castHook
-// Dependencies: [1853, 7684, 7686, 1212, 1392, 3772, 7765, 7687, 2]
+// Dependencies: [1853, 7720, 7722, 1212, 1392, 3806, 7801, 7723, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 7764 (castHook)
+// Module 7800 (castHook)
 import { EMOJI_URL_BASE_SIZE } from "set";
 
 function castHook(arg0) {
@@ -14,17 +14,17 @@ function castHook(arg0) {
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
-  const tmp = importDefault(7765)(message.message.embeds[0]);
+  const tmp = importDefault(7801)(message.message.embeds[0]);
   if (null == tmp) {
     return null;
   } else if (null == message.message.messageReference) {
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = require(7684) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = require(7720) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
     let obj = { username: messageAuthorWithProcessedColor.nick };
     obj = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-    obj.usernameOnClick = importDefault(7686)(obj);
+    obj.usernameOnClick = importDefault(7722)(obj);
     obj.title = tmp.questionText;
     let obj1 = { action: "bindJumpToMessage", targetChannelId: message.messageReference.channel_id, targetMessageId: message.messageReference.message_id, medium: true };
     obj.titleOnClick = obj1;
@@ -74,7 +74,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
             items.push(obj7);
           } else {
             obj = { type: "emoji" };
-            obj1 = importDefault(3772);
+            obj1 = importDefault(3806);
             obj.content = obj1.convertSurrogateToName(flag2.name, false);
             obj.surrogate = flag2.name;
             items.push(obj);
@@ -84,7 +84,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(importDefault(7687)(message));
+    const merged3 = Object.assign(importDefault(7723)(message));
     obj10["content"] = formatToPartsResult;
     return obj10;
   }

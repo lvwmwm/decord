@@ -1,10 +1,10 @@
-// Module ID: 8971
-// Function ID: 70715
+// Module ID: 9015
+// Function ID: 70866
 // Name: logRemoteCommand
-// Dependencies: [5, 4203, 4146, 4145, 653, 675, 686, 4471, 1212, 8772, 8972, 507, 1184, 8973, 8974, 8977, 2]
+// Dependencies: [5, 4237, 4180, 4179, 653, 675, 686, 4505, 1212, 8816, 9016, 507, 1184, 9017, 9018, 9021, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 8971 (logRemoteCommand)
+// Module 9015 (logRemoteCommand)
 import expandLocation from "expandLocation";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -103,7 +103,7 @@ export const remoteDisconnect = function remoteDisconnect(remoteSessionId) {
   disconnectRemote();
 };
 export const remoteAudioSettingsUpdate = function remoteAudioSettingsUpdate(sessionId, id) {
-  let obj = require(8772) /* snapVolumeToDefault */;
+  let obj = require(8816) /* snapVolumeToDefault */;
   const result = obj.coerceAudioContextForProto(arg2);
   if (null != result) {
     obj = { type: "REMOTE_COMMAND", sessionId };

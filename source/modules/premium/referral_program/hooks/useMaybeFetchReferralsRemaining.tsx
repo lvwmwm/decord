@@ -1,10 +1,10 @@
-// Module ID: 7779
-// Function ID: 61793
+// Module ID: 7815
+// Function ID: 61883
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [31, 1850, 6158, 1852, 566, 7780, 7781, 5820, 1873, 2]
+// Dependencies: [31, 1850, 6192, 1852, 566, 7816, 7817, 5830, 1873, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7779 (useMaybeFetchReferralsRemaining)
+// Module 7815 (useMaybeFetchReferralsRemaining)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -24,10 +24,10 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   const items = [_isNativeReflectConstruct];
   const stateFromStores = flag(566).useStateFromStores(items, () => outer1_4.getCurrentUser());
   const obj = flag(566);
-  const hasDiscountApplied = flag(7780).useHasDiscountApplied();
-  const obj2 = flag(7780);
-  const hasActiveTrial = flag(7781).useHasActiveTrial();
-  const tmp4 = fetched(5820)();
+  const hasDiscountApplied = flag(7816).useHasDiscountApplied();
+  const obj2 = flag(7816);
+  const hasActiveTrial = flag(7817).useHasActiveTrial();
+  const tmp4 = fetched(5830)();
   let verified;
   if (null != stateFromStores) {
     verified = stateFromStores.verified;

@@ -1,10 +1,10 @@
-// Module ID: 14908
-// Function ID: 113735
+// Module ID: 14952
+// Function ID: 113908
 // Name: VoiceUsers
-// Dependencies: [31, 27, 1908, 3768, 4326, 4204, 653, 33, 4131, 689, 11953, 1273, 4127, 1212, 10791, 5085, 4555, 14907, 566, 22, 14909, 2]
+// Dependencies: [31, 27, 1908, 3802, 4360, 4238, 653, 33, 4165, 689, 11996, 1273, 4161, 1212, 10829, 5119, 4589, 14951, 566, 22, 14953, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 14908 (VoiceUsers)
+// Module 14952 (VoiceUsers)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ function VoiceUsers(arg0) {
           return outer1_11(outer1_0(outer1_2[11]).Avatar, obj, user.id);
         })
     };
-    obj.children = callback(require(11953) /* AvatarPile */.AvatarPile, obj);
+    obj.children = callback(require(11996) /* AvatarPile */.AvatarPile, obj);
     tmp = callback(View, obj);
   }
   return tmp;
@@ -51,7 +51,7 @@ function LiveTag() {
   obj = { variant: "text-xxs/bold", style: tmp.tagText, lineClamp: 1 };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.dI3q4h).toUpperCase();
-  obj.children = callback(require(4127) /* Text */.Text, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
   return callback(View, obj);
 }
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -89,7 +89,7 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
   if (null != streamingUser) {
     id = streamingUser.id;
   }
-  const previewUrl = importDefault(10791)(guildId, tmp4, id).previewUrl;
+  const previewUrl = importDefault(10829)(guildId, tmp4, id).previewUrl;
   if (!tmp2) {
     return null;
   } else {
@@ -112,11 +112,11 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj3 = { style: tmp.streamPreview };
       const obj4 = { uri: previewUrl };
       obj3.source = obj4;
-      const items1 = [callback(importDefault(5085), obj3), , , , ];
+      const items1 = [callback(importDefault(5119), obj3), , , , ];
       const obj5 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
-      items1[1] = callback(importDefault(4555), obj5);
+      items1[1] = callback(importDefault(4589), obj5);
       const obj6 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
-      items1[2] = callback(importDefault(4555), obj6);
+      items1[2] = callback(importDefault(4589), obj6);
       const obj7 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = callback(View, obj7);
       items1[4] = callback(LiveTag, {});

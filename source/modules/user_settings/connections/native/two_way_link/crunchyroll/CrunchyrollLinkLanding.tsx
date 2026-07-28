@@ -1,10 +1,10 @@
-// Module ID: 8918
-// Function ID: 70526
+// Module ID: 8962
+// Function ID: 70677
 // Name: CrunchyrollLinkLanding
-// Dependencies: [31, 8917, 653, 33, 4131, 1212, 8065, 1456, 8869, 8919, 1921, 2]
+// Dependencies: [31, 8961, 653, 33, 4165, 1212, 8103, 1456, 8913, 8963, 1921, 2]
 // Exports: default
 
-// Module 8918 (CrunchyrollLinkLanding)
+// Module 8962 (CrunchyrollLinkLanding)
 import result from "result";
 import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
 import ME from "ME";
@@ -33,7 +33,7 @@ export default function CrunchyrollLinkLanding() {
   const callback = React.useCallback(() => {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  obj = { platformType: constants2.CRUNCHYROLL, img: importDefault(8919), imgStyle: callback().image };
+  obj = { platformType: constants2.CRUNCHYROLL, img: importDefault(8963), imgStyle: callback().image };
   let intl = navigation(1212).intl;
   obj.headerConnect = intl.string(navigation(1212).t["Da+3NJ"]);
   const intl2 = navigation(1212).intl;
@@ -42,5 +42,5 @@ export default function CrunchyrollLinkLanding() {
   obj.learnMoreLink = importDefault(1921).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
   obj.onNext = callback;
   obj.valueProps = memo;
-  return jsx(navigation(8869).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: importDefault(8919), imgStyle: callback().image });
+  return jsx(navigation(8913).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: importDefault(8963), imgStyle: callback().image });
 };

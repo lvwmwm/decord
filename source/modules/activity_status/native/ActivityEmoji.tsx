@@ -1,10 +1,10 @@
-// Module ID: 9017
-// Function ID: 70921
+// Module ID: 9061
+// Function ID: 71072
 // Name: ActivityEmoji
-// Dependencies: [31, 33, 4131, 3804, 1392, 6519, 5150, 2]
+// Dependencies: [31, 33, 4165, 3838, 1392, 6555, 5184, 2]
 // Exports: default
 
-// Module 9017 (ActivityEmoji)
+// Module 9061 (ActivityEmoji)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ export default function ActivityEmoji(emoji) {
   }
   let importDefault;
   const tmp = callback();
-  const AnimateEmoji = emoji(3804).AnimateEmoji;
+  const AnimateEmoji = emoji(3838).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   if (null != emoji) {
@@ -67,7 +67,7 @@ export default function ActivityEmoji(emoji) {
     let obj = { style };
     style = "sm";
     obj.size = "sm";
-    jsx(emoji(6519).ReactionIcon, { style });
+    jsx(emoji(6555).ReactionIcon, { style });
   } else {
     obj = { src: memo, name: emoji.name };
     const items1 = [style, ];
@@ -81,6 +81,6 @@ export default function ActivityEmoji(emoji) {
     obj.textEmojiStyle = items2;
     obj.fastImageStyle = tmp.emoji;
     obj.adjustsFontSizeToFit = true;
-    jsx(importDefault(5150), { width: size, height: size });
+    jsx(importDefault(5184), { width: size, height: size });
   }
 };

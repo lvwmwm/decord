@@ -1,10 +1,10 @@
-// Module ID: 8698
-// Function ID: 69017
+// Module ID: 8742
+// Function ID: 69168
 // Name: GiftButton
-// Dependencies: [57, 31, 27, 6164, 5786, 655, 653, 8699, 1852, 33, 4131, 689, 6625, 8700, 4099, 8663, 8701, 1212, 8694, 8693, 8642, 1456, 5462, 4338, 11835, 1935, 5769, 11839, 656, 11840, 9728, 8637, 4127, 4545, 1877, 4067, 3977, 3835, 8596, 566, 8334, 3777, 5782, 5781, 8651, 9734, 11842, 11843, 11844, 6206, 11846, 1557, 478, 4555, 8463, 4544, 5482, 1921, 11847, 2]
+// Dependencies: [57, 31, 27, 6198, 5796, 655, 653, 8743, 1852, 33, 4165, 689, 6661, 8744, 4133, 8707, 8745, 1212, 8738, 8737, 8686, 1456, 5497, 4372, 11878, 1935, 5779, 11882, 656, 11883, 9768, 8681, 4161, 4579, 1877, 4101, 4011, 3869, 8640, 566, 8372, 3811, 5792, 5791, 8695, 9774, 11885, 11886, 11887, 6241, 11889, 1557, 478, 4589, 8507, 4578, 5517, 1921, 11890, 2]
 // Exports: default
 
-// Module 8698 (GiftButton)
+// Module 8742 (GiftButton)
 import wrapURL from "wrapURL";
 import OrbsIcon from "OrbsIcon";
 import { View } from "screens";
@@ -215,7 +215,7 @@ function PurchaseDisclaimer(arg0) {
     formatResult = intl.format(require(1212) /* getSystemLocale */.t.iIglwJ, obj);
   }
   obj.children = formatResult;
-  return closure_16(require(4127) /* Text */.Text, obj);
+  return closure_16(require(4161) /* Text */.Text, obj);
 }
 ({ EXTERNAL_PRODUCT_SKU_IDS: closure_8, ShopCtaEnum: closure_9 } = items);
 ({ HelpdeskArticles: closure_10, MarketingURLs: closure_11, UserSettingsSections: closure_12 } = ME);

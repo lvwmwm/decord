@@ -1,9 +1,9 @@
-// Module ID: 10386
-// Function ID: 80135
+// Module ID: 10426
+// Function ID: 80264
 // Name: IgnoredInformationTable
-// Dependencies: [57, 31, 27, 1348, 1850, 8851, 10384, 653, 33, 4131, 689, 8299, 1212, 4089, 5501, 5164, 1273, 1557, 5462, 5482, 566, 675, 5656, 5187, 5189, 8302, 4127, 4320, 8301, 4099, 10385, 1935, 480, 4544, 8850, 1921, 3828, 2]
+// Dependencies: [57, 31, 27, 1348, 1850, 8895, 10424, 653, 33, 4165, 689, 8337, 1212, 4123, 5536, 5198, 1273, 1557, 5497, 5517, 566, 675, 7960, 5221, 5223, 8340, 4161, 4354, 8339, 4133, 10425, 1935, 480, 4578, 8894, 1921, 3862, 2]
 
-// Module 10386 (IgnoredInformationTable)
+// Module 10426 (IgnoredInformationTable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "maybeLoadBundle";
 import { View } from "getNickname";
@@ -36,7 +36,7 @@ function IgnoredInformationTable() {
       return outer1_13(outer1_0(outer1_2[15]).TableRow, obj, arg1);
     })
   };
-  return callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_9, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: closure_10 } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
 ({ AnalyticEvents: closure_11, HelpdeskArticles: closure_12 } = ME);
@@ -170,7 +170,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
   const tmp2 = callback(importAllResult.useState(false), 2);
   const first = tmp2[0];
   const bottom = channelId(1557)().bottom;
-  const items = [channelId(5482).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const items = [channelId(5517).IGNORE_CONFIRMATION_ACTION_SHEET];
   let obj = userId(566);
   const items1 = [closure_7];
   const items2 = [userId];
@@ -218,7 +218,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj5.style = tmp.avatar;
     const items6 = [callback2(userId(1273).Avatar, obj5), ];
     const obj6 = { style: tmp.avatarIconContainer };
-    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8302) };
+    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8340) };
     obj6.children = callback2(userId(1273).Icon, obj7);
     items6[1] = callback2(stateFromStores, obj6);
     obj4.children = items6;
@@ -226,14 +226,14 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     const obj8 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
     const intl = userId(1212).intl;
     const obj9 = {};
-    let obj13 = channelId(4320);
+    let obj13 = channelId(4354);
     obj9.username = obj13.getName(stateFromStores1, channelId, stateFromStores);
     obj8.children = intl.format(userId(1212).t["WrQD/Y"], obj9);
-    items7[1] = callback2(userId(4127).Text, obj8);
+    items7[1] = callback2(userId(4161).Text, obj8);
     const obj10 = { style: tmp.subTitle, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header" };
     const intl2 = userId(1212).intl;
     obj10.children = intl2.string(userId(1212).t.JKL1u1);
-    items7[2] = callback2(userId(4127).Text, obj10);
+    items7[2] = callback2(userId(4161).Text, obj10);
     obj3.children = items7;
     const items8 = [callback3(stateFromStores, obj3), , , ];
     const obj11 = { style: tmp.tableContainer, children: callback2(IgnoredInformationTable, {}) };
@@ -244,7 +244,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj13.title = intl3.string(userId(1212).t["1v01gh"]);
     obj13.hasIcons = true;
     const obj14 = {};
-    const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8301), color: tmp.destructiveIcon.color };
+    const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8339), color: tmp.destructiveIcon.color };
     obj14.icon = callback2(userId(1273).Icon, obj15);
     const intl4 = userId(1212).intl;
     obj14.label = intl4.string(userId(1212).t.bwxY30);
@@ -252,7 +252,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     const obj16 = { variant: "text-xs/medium", color: "text-feedback-critical" };
     const intl5 = userId(1212).intl;
     obj16.children = intl5.string(userId(1212).t.NTnf1T);
-    obj14.subLabel = callback2(userId(4127).Text, obj16);
+    obj14.subLabel = callback2(userId(4161).Text, obj16);
     const intl6 = userId(1212).intl;
     obj14.accessibilityLabel = intl6.string(userId(1212).t["fZ+p9C"]);
     obj14.onPress = function onPress() {
@@ -264,8 +264,8 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
       obj3.openLazy(userId(outer1_2[31])(outer1_2[30], outer1_2.paths), outer1_9, obj, "replaceTopSheet");
     };
     obj14.arrow = true;
-    obj13.children = callback2(userId(5164).TableRow, obj14);
-    obj12.children = callback2(userId(5501).TableRowGroup, obj13);
+    obj13.children = callback2(userId(5198).TableRow, obj14);
+    obj12.children = callback2(userId(5536).TableRowGroup, obj13);
     items8[2] = callback2(stateFromStores, obj12);
     const obj17 = { style: tmp.button };
     const obj18 = { size: "lg" };
@@ -288,7 +288,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     };
     obj18.disabled = first;
     obj18.loading = first;
-    const items9 = [callback2(userId(4544).Button, obj18), ];
+    const items9 = [callback2(userId(4578).Button, obj18), ];
     const obj19 = { onPress: handleClose };
     const obj20 = { textAlign: "center", marginTop: channelId(689).space.PX_12, paddingBottom: channelId(689).space.PX_4 };
     obj19.style = obj20;
@@ -305,13 +305,13 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
         }
     };
     obj19.children = intl8.format(userId(1212).t.iX9qtL, obj21);
-    items9[1] = callback2(userId(4127).Text, obj19);
+    items9[1] = callback2(userId(4161).Text, obj19);
     obj17.children = items9;
     items8[3] = callback3(stateFromStores, obj17);
     obj2.children = items8;
-    obj.children = callback3(userId(5189).BottomSheetScrollView, obj2);
-    obj.children = callback2(userId(5187).BottomSheet, obj);
-    tmp9Result = callback2(userId(5462).AnalyticsLocationProvider, obj);
+    obj.children = callback3(userId(5223).BottomSheetScrollView, obj2);
+    obj.children = callback2(userId(5221).BottomSheet, obj);
+    tmp9Result = callback2(userId(5497).AnalyticsLocationProvider, obj);
     const tmp12 = callback2;
     const tmp21 = callback2;
     const tmp9 = callback2;

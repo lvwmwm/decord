@@ -1,9 +1,9 @@
-// Module ID: 4665
-// Function ID: 40422
+// Module ID: 4699
+// Function ID: 40537
 // Name: _callSuper
-// Dependencies: [57, 29, 5, 102, 6, 7, 15, 17, 18, 162, 4130, 1280, 4223, 653, 3, 507, 4666, 4673, 664, 561, 22, 1430, 4675, 4706, 4707, 4711, 4712, 1184, 4674, 4667, 675, 4713, 4714, 1935, 2]
+// Dependencies: [57, 29, 5, 102, 6, 7, 15, 17, 18, 162, 4164, 1280, 4257, 653, 3, 507, 4700, 4707, 664, 561, 22, 1430, 4709, 4740, 4741, 4745, 4746, 1184, 4708, 4701, 675, 4747, 4748, 1935, 2]
 
-// Module 4665 (_callSuper)
+// Module 4699 (_callSuper)
 import _slicedToArray from "_slicedToArray";
 import items from "items";
 import _defineProperties from "_defineProperties";
@@ -234,11 +234,11 @@ export const CloudUploadStatus = obj;
 export const CloudUpload = ((arg0) => {
   class CloudUpload {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = f40450(this, CloudUpload);
+      tmp = f40565(this, CloudUpload);
       items = [];
       items[0] = arg0;
       tmp2 = outer1_23(this, CloudUpload, items);
-      f40504 = tmp2;
+      f40619 = tmp2;
       tmp2.status = outer1_21.NOT_STARTED;
       tmp2.loaded = 0;
       tmp2.reactNativeFilePrepped = false;
@@ -279,17 +279,17 @@ export const CloudUpload = ((arg0) => {
       if (null != arg3) {
         tmp2.allowOptimization = arg3;
       }
-      tmp6 = arg0.platform === f40504(f40490[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
+      tmp6 = arg0.platform === f40619(f40605[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
       if (tmp6) {
         tmp2.mimeType = arg0.compressionMetadata.originalContentType;
       }
       abortController = new AbortController();
       tmp2._abortController = abortController;
       if (null == tmp2.origin) {
-        tmp10 = f40504;
-        tmp11 = f40490;
+        tmp10 = f40619;
+        tmp11 = f40605;
         num3 = 17;
-        DefaultHttpClient = f40504(f40490[17]).DefaultHttpClient;
+        DefaultHttpClient = f40619(f40605[17]).DefaultHttpClient;
         prototype = DefaultHttpClient.prototype;
         tmp12 = new.target;
         tmp13 = new.target;
@@ -303,9 +303,9 @@ export const CloudUpload = ((arg0) => {
         if ("string" === typeof tmp2.origin) {
           origin = tmp2.origin;
         } else {
-          tmp8 = f40504;
-          tmp9 = f40490;
-          origin = f40504(f40490[16]).UploadOrigin[tmp2.origin];
+          tmp8 = f40619;
+          tmp9 = f40605;
+          origin = f40619(f40605[16]).UploadOrigin[tmp2.origin];
         }
         tmp2.uploadAnalytics.origin = origin;
       }
@@ -332,7 +332,7 @@ export const CloudUpload = ((arg0) => {
   obj = {
     key: "retryOpts",
     value() {
-      if (this.item.platform === callback(4666).UploadPlatform.REACT_NATIVE) {
+      if (this.item.platform === callback(4700).UploadPlatform.REACT_NATIVE) {
         let obj = { timeout: callback2(664).Millis.HOUR };
         let tmp10 = callback2(561);
         const result = 0.5 * callback2(664).Millis.SECOND;
@@ -355,7 +355,7 @@ export const CloudUpload = ((arg0) => {
     key: "createAttachmentUrlRetryOpts",
     value() {
       const self = this;
-      if (this.item.platform === callback(4666).UploadPlatform.REACT_NATIVE) {
+      if (this.item.platform === callback(4700).UploadPlatform.REACT_NATIVE) {
         let obj = {};
         obj = { response: 30 * callback2(664).Millis.SECOND, deadline: 30 * callback2(664).Millis.MINUTE };
         obj.timeout = obj;
@@ -378,7 +378,7 @@ export const CloudUpload = ((arg0) => {
     value() {
       let _libdiscoreEnabled = this._libdiscoreEnabled;
       if (!_libdiscoreEnabled) {
-        _libdiscoreEnabled = this.item.platform !== callback(4666).UploadPlatform.REACT_NATIVE;
+        _libdiscoreEnabled = this.item.platform !== callback(4700).UploadPlatform.REACT_NATIVE;
       }
       return _libdiscoreEnabled;
     }
@@ -393,7 +393,7 @@ export const CloudUpload = ((arg0) => {
     } else {
       const _HermesInternal3 = HermesInternal;
       const combined = "Uploading " + self.id;
-      if (self.item.platform === callback(4666).UploadPlatform.REACT_NATIVE) {
+      if (self.item.platform === callback(4700).UploadPlatform.REACT_NATIVE) {
         const _HermesInternal2 = HermesInternal;
         let combined1 = "filename=" + self.item.filename + ", uri=" + self.item.uri;
       } else {
@@ -401,7 +401,7 @@ export const CloudUpload = ((arg0) => {
         combined1 = "filename=" + self.item.file.name;
       }
       outer2_18.log(combined, combined1);
-      if (self.item.platform === callback(4666).UploadPlatform.REACT_NATIVE) {
+      if (self.item.platform === callback(4700).UploadPlatform.REACT_NATIVE) {
         const obj = { type: self.item.mimeType, uri: self.item.uri, name: self.item.filename };
         let str6 = "application/octet-stream";
         if (null != obj.type) {
@@ -417,7 +417,7 @@ export const CloudUpload = ((arg0) => {
         str4 = "application/octet-stream";
       }
       if (obj2.canUploadNatively(self.item)) {
-        const LibdiscoreHttpClient = callback(4673).LibdiscoreHttpClient;
+        const LibdiscoreHttpClient = callback(4707).LibdiscoreHttpClient;
         const prototype = LibdiscoreHttpClient.prototype;
         const libdiscoreHttpClient = new LibdiscoreHttpClient();
         self._uploadHttpClient = libdiscoreHttpClient;
@@ -533,9 +533,9 @@ export const CloudUpload = ((arg0) => {
   items[7] = obj5;
   const obj6 = { key: "getSize" };
   callback = callback(async function() {
-    if (null != callback(4675).getFileSize) {
-      const fileSize = callback(4675).getFileSize(this.item.uri);
-      const obj = callback(4675);
+    if (null != callback(4709).getFileSize) {
+      const fileSize = callback(4709).getFileSize(this.item.uri);
+      const obj = callback(4709);
     }
     const tmp4 = yield fileSize;
     let num = 0;
@@ -575,7 +575,7 @@ export const CloudUpload = ((arg0) => {
         self.handleComplete(self.id);
       } else {
         if (self.allowOptimization) {
-          if (self.item.platform === callback(4666).UploadPlatform.WEB) {
+          if (self.item.platform === callback(4700).UploadPlatform.WEB) {
             const tmp41 = yield outer1_11.tryConvertToWebP(self.item.file, () => self._aborted, self.id);
             if (null != tmp41) {
               if (null != tmp41.convertedFile) {
@@ -595,20 +595,20 @@ export const CloudUpload = ((arg0) => {
             }
           }
         }
-        const tmp7 = yield callback(4706).default.getUploadPayload(self);
+        const tmp7 = yield callback(4740).default.getUploadPayload(self);
         c2 = tmp7;
-        let obj = callback(4707);
+        let obj = callback(4741);
         uploadTarget = obj.getUploadTarget(self.item.target);
         if (null != tmp7.filename) {
           if ("" !== tmp7.filename) {
             const currentSize2 = self.currentSize;
             if (0 !== self.currentSize) {
               obj = { location: "CloudUpload.upload.postCompressionCheck" };
-              const kestrelConfig = callback(4712).getKestrelConfig(obj);
-              const obj3 = callback(4712);
+              const kestrelConfig = callback(4746).getKestrelConfig(obj);
+              const obj3 = callback(4746);
               const currentSize = self.currentSize;
               let num5 = 0;
-              const effectiveKestrelLimit = callback(4712).getEffectiveKestrelLimit(kestrelConfig, uploadTarget.getMaxFileSize(self.channelId));
+              const effectiveKestrelLimit = callback(4746).getEffectiveKestrelLimit(kestrelConfig, uploadTarget.getMaxFileSize(self.channelId));
               if (null != currentSize) {
                 num5 = currentSize;
               }
@@ -641,7 +641,7 @@ export const CloudUpload = ((arg0) => {
                 self.trackUploadFinished(outer2_21.COMPLETED);
                 self.handleComplete(self.id);
               }
-              const obj5 = callback(4712);
+              const obj5 = callback(4746);
             } else {
               self.handleError(outer2_16.ENTITY_EMPTY);
             }
@@ -660,7 +660,7 @@ export const CloudUpload = ((arg0) => {
   const obj9 = { key: "reactNativeCompressAndExtractData" };
   let closure_3 = callback(async function() {
     const self = this;
-    let obj = callback(4707);
+    let obj = callback(4741);
     if (obj.getUploadTarget(self.item.target).shouldReactNativeCompressUploads) {
       if (true === self.reactNativeFilePrepped) {
         self.uploadAnalytics.fileAlreadyPrepped = true;
@@ -741,7 +741,7 @@ export const CloudUpload = ((arg0) => {
                   self.uploadAnalytics.convertedMimeType = str5;
                   let size = tmp28.fileSize;
                   if (null == size) {
-                    let obj1 = callback(4667);
+                    let obj1 = callback(4701);
                     size = yield obj1.getFileData(uri).size;
                   }
                   self.postCompressionSize = size;
@@ -886,11 +886,11 @@ export const CloudUpload = ((arg0) => {
   let closure_2 = callback(async function() {
     const self = this;
     if (null != self.uploadedFilename) {
-      const uploadTarget = callback(4707).getUploadTarget(self.item.target);
+      const uploadTarget = callback(4741).getUploadTarget(self.item.target);
       const deleteUploadURL = uploadTarget.getDeleteUploadURL(self.uploadedFilename);
       const HTTP = callback(507).HTTP;
       yield HTTP.del(deleteUploadURL);
-      const obj = callback(4707);
+      const obj = callback(4741);
     }
   });
   obj17.value = function _delete() {
@@ -908,14 +908,14 @@ export const CloudUpload = ((arg0) => {
   let closure_1 = callback(async function() {
     const self = this;
     if (outer1_11.isResponseUrlStale(self.responseUrlSetAt)) {
-      const _default = callback(4706).default;
-      let obj = callback(4707);
+      const _default = callback(4740).default;
+      let obj = callback(4741);
       const uploadTarget = obj.getUploadTarget(self.item.target);
       const createAttachmentURL = uploadTarget.getCreateAttachmentURL(self.channelId);
       const HTTP = callback(507).HTTP;
       obj = { url: createAttachmentURL };
       obj = {};
-      const items = [yield callback(4706).default.getUploadPayload(self)];
+      const items = [yield callback(4740).default.getUploadPayload(self)];
       obj.files = items;
       obj.body = obj;
       const merged = Object.assign(self.createAttachmentUrlRetryOpts());

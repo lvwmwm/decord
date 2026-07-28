@@ -1,10 +1,10 @@
-// Module ID: 11823
-// Function ID: 91732
+// Module ID: 11866
+// Function ID: 91902
 // Name: GiftBackgroundSelectTile
-// Dependencies: [31, 27, 1852, 11824, 33, 11825, 11826, 11827, 11828, 11829, 11830, 11831, 11832, 11833, 4131, 689, 1212, 2263, 5085, 2]
+// Dependencies: [31, 27, 1852, 11867, 33, 11868, 11869, 11870, 11871, 11872, 11873, 11874, 11875, 11876, 4165, 689, 1212, 2263, 5119, 2]
 // Exports: default
 
-// Module 11823 (GiftBackgroundSelectTile)
+// Module 11866 (GiftBackgroundSelectTile)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PremiumGiftStyles } from "GuildFeatures";
@@ -71,7 +71,7 @@ export default function GiftBackgroundSelectTile(index) {
     }
     const items = [selected, ];
     const obj1 = { resizeMode: "contain", style: tmp.image, source: tmp2 };
-    items[1] = callback(importDefault(5085), obj1);
+    items[1] = callback(importDefault(5119), obj1);
     obj.children = items;
     tmp4Result = closure_7(closure_4, obj);
     const tmp4 = closure_7;

@@ -1,10 +1,10 @@
-// Module ID: 10683
-// Function ID: 83174
+// Module ID: 10721
+// Function ID: 83295
 // Name: handleCloseScreenshare
-// Dependencies: [31, 27, 4150, 653, 4111, 5990, 4180, 8763, 4310, 4195, 8770, 8784, 10684, 10679, 1553, 10695, 10696, 10697, 10698, 10690, 566, 5462, 1212, 2]
+// Dependencies: [31, 27, 4184, 653, 4145, 6024, 4214, 8807, 4344, 4229, 8814, 8828, 10722, 10717, 1553, 10733, 10734, 10735, 10736, 10728, 566, 5497, 1212, 2]
 // Exports: default, tryStartScreenShare
 
-// Module 10683 (handleCloseScreenshare)
+// Module 10721 (handleCloseScreenshare)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ApplicationStreamStates } from "ME";
@@ -14,14 +14,14 @@ const require = arg1;
 function handleCloseScreenshare() {
   currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    const obj = require(4310) /* isVoiceChannelFull */;
-    obj.stopStream(require(4195) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
-    const obj2 = require(4195) /* isStreamKey */;
+    const obj = require(4344) /* isVoiceChannelFull */;
+    obj.stopStream(require(4229) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
+    const obj2 = require(4229) /* isStreamKey */;
   }
-  importDefault(8770).setGoLiveSource(null);
+  importDefault(8814).setGoLiveSource(null);
 }
 function stopScreenshare() {
-  const voiceEngine = require(4180) /* assertInjected */.getVoiceEngine();
+  const voiceEngine = require(4214) /* assertInjected */.getVoiceEngine();
   voiceEngine.stopBroadcast();
   handleCloseScreenshare();
 }
@@ -90,7 +90,7 @@ function getStreamPressHandler(analyticsLocations) {
           return obj.showMobileGoLiveActionSheet(analyticsLocations);
         }
       }
-      const S = require(8763) /* _handleToggleVideo */.showScreenshareDisabledAlert;
+      const S = require(8807) /* _handleToggleVideo */.showScreenshareDisabledAlert;
     }
   } else {
     class S {
@@ -109,18 +109,18 @@ function getStreamPressHandler(analyticsLocations) {
 function getShareIcon(arg0, arg1) {
   if (obj.isMetaQuest()) {
     if (arg0) {
-      let tmp5 = 10695;
+      let tmp5 = 10733;
     } else {
-      tmp5 = 10696;
+      tmp5 = 10734;
     }
     tmp(tmp5);
   } else {
     if (arg1) {
-      let tmp4 = 10697;
+      let tmp4 = 10735;
     } else if (arg0) {
-      tmp4 = 10698;
+      tmp4 = 10736;
     } else {
-      tmp4 = 10697;
+      tmp4 = 10735;
     }
     return tmp(tmp4);
   }
@@ -131,15 +131,15 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function useScreenshareUtils(arg0) {
   const _require = arg0;
-  let tmp = importDefault(10679)(arg0);
+  let tmp = importDefault(10717)(arg0);
   importDefault = tmp;
   const tmp2 = getOSRequirement();
   const dependencyMap = tmp2;
-  const showMobileGoLiveUpsell = importDefault(10690).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
-  let obj = importDefault(10690);
+  const showMobileGoLiveUpsell = importDefault(10728).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
+  let obj = importDefault(10728);
   const items = [stateFromStores];
   stateFromStores = _require(566).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
-  const analyticsLocations = importDefault(5462)().analyticsLocations;
+  const analyticsLocations = importDefault(5497)().analyticsLocations;
   const items1 = [stateFromStores, arg0, tmp, tmp2, showMobileGoLiveUpsell, analyticsLocations];
   return showMobileGoLiveUpsell.useMemo(() => {
     let tmp = null != stateFromStores;
@@ -176,8 +176,8 @@ export { getStreamPressHandler };
 export const tryStartScreenShare = function tryStartScreenShare(channel) {
   let videoPermission = getOSRequirement();
   if (videoPermission) {
-    videoPermission = require(10679) /* useHasVideoPermission */.getVideoPermission(channel);
-    const obj = require(10679) /* useHasVideoPermission */;
+    videoPermission = require(10717) /* useHasVideoPermission */.getVideoPermission(channel);
+    const obj = require(10717) /* useHasVideoPermission */;
   }
   if (videoPermission) {
     startStream();

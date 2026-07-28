@@ -1,10 +1,10 @@
-// Module ID: 16564
-// Function ID: 129086
+// Module ID: 16604
+// Function ID: 129247
 // Name: InviteSelectActionSheet
-// Dependencies: [31, 33, 4131, 689, 5187, 5186, 7596, 4099, 7595, 2]
+// Dependencies: [31, 33, 4165, 689, 5221, 5220, 7632, 4133, 7631, 2]
 // Exports: default
 
-// Module 16564 (InviteSelectActionSheet)
+// Module 16604 (InviteSelectActionSheet)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,7 +23,7 @@ export default function InviteSelectActionSheet(arg0) {
   let value;
   ({ options, onChange: require } = arg0);
   ({ title, value } = arg0);
-  let obj = { contentStyles: _createForOfIteratorHelperLoose().content, header: jsx(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title }) };
+  let obj = { contentStyles: _createForOfIteratorHelperLoose().content, header: jsx(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title }) };
   obj = {
     value,
     onChange(arg0) {
@@ -33,7 +33,7 @@ export default function InviteSelectActionSheet(arg0) {
     hasIcons: false,
     children: options.map((value) => outer1_3(outer1_0(outer1_2[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   };
-  obj.children = jsx(require(7596) /* context */.TableRadioGroup, {
+  obj.children = jsx(require(7632) /* context */.TableRadioGroup, {
     value,
     onChange(arg0) {
       callback(arg0);
@@ -42,7 +42,7 @@ export default function InviteSelectActionSheet(arg0) {
     hasIcons: false,
     children: options.map((value) => outer1_3(outer1_0(outer1_2[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   });
-  return jsx(require(5187) /* Background */.BottomSheet, {
+  return jsx(require(5221) /* Background */.BottomSheet, {
     value,
     onChange(arg0) {
       callback(arg0);

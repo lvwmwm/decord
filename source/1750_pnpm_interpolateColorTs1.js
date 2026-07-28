@@ -1,5 +1,5 @@
 // Module ID: 1750
-// Function ID: 19578
+// Function ID: 19582
 // Name: pnpm_interpolateColorTs1
 // Dependencies: [1751, 1625, 1752, 1593, 1734, 1626]
 // Exports: useInterpolateConfig

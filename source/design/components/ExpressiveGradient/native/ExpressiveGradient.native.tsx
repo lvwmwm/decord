@@ -1,10 +1,10 @@
-// Module ID: 6600
-// Function ID: 58429
+// Module ID: 6636
+// Function ID: 58518
 // Name: ExpressiveGradient
-// Dependencies: [31, 27, 33, 689, 3835, 666, 4555, 2]
+// Dependencies: [31, 27, 33, 689, 3869, 666, 4589, 2]
 // Exports: ExpressiveGradient
 
-// Module 6600 (ExpressiveGradient)
+// Module 6636 (ExpressiveGradient)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -58,11 +58,11 @@ export const ExpressiveGradient = function ExpressiveGradient(color) {
   } else {
     tmp2 = str;
   }
-  obj = require(3835) /* map */;
+  obj = require(3869) /* map */;
   const token = obj.useToken(tmp2.start);
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   const token1 = obj1.useToken(tmp2.end);
-  let obj2 = require(3835) /* map */;
+  let obj2 = require(3869) /* map */;
   const token2 = obj2.useToken(backgroundColor);
   let obj3 = importDefault(666)(token2);
   obj = { style: items };
@@ -79,10 +79,10 @@ export const ExpressiveGradient = function ExpressiveGradient(color) {
   obj.style = items1;
   obj2 = { style: closure_4.absoluteFillObject, colors: items2, start: closure_8, end: closure_9, pointerEvents: "none" };
   items2 = [token, token1];
-  const items3 = [callback(importDefault(4555), obj2), ];
+  const items3 = [callback(importDefault(4589), obj2), ];
   obj3 = { style: closure_4.absoluteFillObject, colors: items4, start: closure_10, end: closure_11, pointerEvents: "none" };
   items4 = [obj3.alpha(0).css(), token2];
-  items3[1] = callback(importDefault(4555), obj3);
+  items3[1] = callback(importDefault(4589), obj3);
   obj.children = items3;
   const items5 = [closure_6(closure_3, obj), children];
   obj.children = items5;

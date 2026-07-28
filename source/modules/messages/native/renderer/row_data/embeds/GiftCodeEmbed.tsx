@@ -1,10 +1,10 @@
-// Module ID: 7969
-// Function ID: 63445
+// Module ID: 8007
+// Function ID: 63555
 // Name: getGiftStyleUrl
-// Dependencies: [27, 1194, 7970, 1850, 4176, 653, 1852, 12269, 12270, 12271, 12272, 12273, 12274, 12275, 12276, 12277, 12278, 12279, 11829, 3970, 7666, 3977, 3942, 1212, 10932, 10933, 689, 3713, 7658, 7670, 12280, 12281, 12282, 12283, 12284, 5609, 3777, 2]
+// Dependencies: [27, 1194, 8008, 1850, 4210, 653, 1852, 12312, 12313, 12314, 12315, 12316, 12317, 12318, 12319, 12320, 12321, 12322, 11872, 4004, 7702, 4011, 3976, 1212, 10970, 10971, 689, 3747, 7694, 7706, 12323, 12324, 12325, 12326, 12327, 5644, 3811, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 7969 (getGiftStyleUrl)
+// Module 8007 (getGiftStyleUrl)
 import get_ActivityIndicator from "t";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -21,36 +21,36 @@ let closure_4;
 let closure_9;
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
-    return importDefault(12269);
+    return importDefault(12312);
   } else if (constants.CUP === arg0) {
-    return importDefault(12270);
+    return importDefault(12313);
   } else if (constants.SNOWGLOBE === arg0) {
-    return importDefault(12271);
+    return importDefault(12314);
   } else if (constants.STANDARD_BOX === arg0) {
-    return importDefault(12272);
+    return importDefault(12315);
   } else if (constants.COFFEE === arg0) {
-    return importDefault(12273);
+    return importDefault(12316);
   } else if (constants.CAKE === arg0) {
-    return importDefault(12274);
+    return importDefault(12317);
   } else if (constants.CHEST === arg0) {
-    return importDefault(12275);
+    return importDefault(12318);
   } else if (constants.SEASONAL_STANDARD_BOX === arg0) {
-    return importDefault(12276);
+    return importDefault(12319);
   } else if (constants.SEASONAL_CAKE === arg0) {
-    return importDefault(12277);
+    return importDefault(12320);
   } else if (constants.SEASONAL_CHEST === arg0) {
-    return importDefault(12278);
+    return importDefault(12321);
   } else if (constants.SEASONAL_COFFEE === arg0) {
-    return importDefault(12279);
+    return importDefault(12322);
   } else if (constants.NITROWEEN_STANDARD === arg0) {
-    const obj = { uri: importDefault(11829) };
+    const obj = { uri: importDefault(11872) };
     return obj;
   } else {
-    return importDefault(12272);
+    return importDefault(12315);
   }
 }
 function getUserNameOrDefault(arg0) {
-  const name = importDefault(3970).getName(arg0);
+  const name = importDefault(4004).getName(arg0);
   let str = "";
   if (null != name) {
     str = name;
@@ -79,12 +79,12 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
   const importDefault = forcedTheme;
   if (null != message.author) {
     if (0 !== message.giftCodes.length) {
-      const colors = importDefault(7666)(forcedTheme).colors;
+      const colors = importDefault(7702)(forcedTheme).colors;
       ({ headerColor: dependencyMap, titleColor: closure_3, subtitleColor: closure_4, bodyTextColor: _isNativeReflectConstruct, backgroundColor, resolvingGradientStart: closure_6, resolvingGradientEnd: closure_7, acceptLabelDisabledBackgroundColor: closure_8, acceptLabelDisabledColor: closure_9, thumbnailBackgroundColor: closure_10, acceptLabelGreenColor: closure_11, acceptBlurpleLabelBackgroundColor: closure_12 } = colors);
       let obj = { borderColor: colors.borderColor };
       let tmp4 = backgroundColor;
       if (obj2.isThemeDark(forcedTheme)) {
-        const embedBackground = _require(3942).getEmbedBackground();
+        const embedBackground = _require(3976).getEmbedBackground();
         let tmp9;
         if (null != embedBackground) {
           tmp9 = embedBackground;
@@ -94,7 +94,7 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
         if (null != tmp5Result) {
           tmp4 = tmp5Result;
         }
-        let obj3 = _require(3942);
+        let obj3 = _require(3976);
         const tmp5 = closure_4;
       }
       obj.backgroundColor = tmp4;

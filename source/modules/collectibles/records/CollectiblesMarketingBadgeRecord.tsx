@@ -1,9 +1,9 @@
-// Module ID: 5793
-// Function ID: 50973
+// Module ID: 5803
+// Function ID: 50829
 // Name: CollectiblesMarketingBadgeRecord
-// Dependencies: [6, 7, 5794, 2]
+// Dependencies: [6, 7, 5804, 2]
 
-// Module 5793 (CollectiblesMarketingBadgeRecord)
+// Module 5803 (CollectiblesMarketingBadgeRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

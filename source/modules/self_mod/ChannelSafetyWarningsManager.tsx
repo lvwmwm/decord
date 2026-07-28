@@ -1,9 +1,9 @@
-// Module ID: 16076
-// Function ID: 124401
+// Module ID: 16115
+// Function ID: 124557
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1348, 1907, 10069, 10094, 16077, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1348, 1907, 10109, 10134, 16116, 5112, 2]
 
-// Module 16076 (_isNativeReflectConstruct)
+// Module 16115 (_isNativeReflectConstruct)
 import InappropriateConversationExperiment from "InappropriateConversationExperiment";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -30,21 +30,21 @@ function handleChannelSelect(channelId) {
   } else {
     let obj = { location: "channel_select" };
     if (obj6.isEligibleForInappropriateConversationWarning(obj)) {
-      obj = require(10094) /* shouldShowTakeoverForWarnings */;
+      obj = require(10134) /* shouldShowTakeoverForWarnings */;
       if (obj.getSafetyAlertsSettingOrDefault()) {
         channel = channel.getChannel(channelId);
         if (null != channel) {
           if (channel.isDM()) {
-            const inappropriateConversationTakeoverForChannel = require(10094) /* shouldShowTakeoverForWarnings */.getInappropriateConversationTakeoverForChannel(channelId);
+            const inappropriateConversationTakeoverForChannel = require(10134) /* shouldShowTakeoverForWarnings */.getInappropriateConversationTakeoverForChannel(channelId);
             let flag3 = null != inappropriateConversationTakeoverForChannel;
             if (flag3) {
               obj = {};
               ({ id: obj5.warningId, type: obj5.warningType } = inappropriateConversationTakeoverForChannel);
               obj.senderId = channel.getRecipientId();
               obj.channelId = channelId;
-              require(16077) /* showTakeoverModal */.showTakeoverModal(obj);
+              require(16116) /* showTakeoverModal */.showTakeoverModal(obj);
               flag3 = true;
-              const obj4 = require(16077) /* showTakeoverModal */;
+              const obj4 = require(16116) /* showTakeoverModal */;
             }
             return flag3;
           }
@@ -56,13 +56,13 @@ function handleChannelSelect(channelId) {
     } else {
       return false;
     }
-    obj6 = require(10069) /* InappropriateConversationExperiment */;
+    obj6 = require(10109) /* InappropriateConversationExperiment */;
   }
 }
 function handleChannelUpdates(channels) {
   channels = channels.channels;
   let currentlySelectedChannelId;
-  let obj = currentlySelectedChannelId(10069);
+  let obj = currentlySelectedChannelId(10109);
   if (obj.isEligibleForInappropriateConversationWarning({ location: "channel_updates" })) {
     if (obj2.getSafetyAlertsSettingOrDefault()) {
       currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
@@ -73,7 +73,7 @@ function handleChannelUpdates(channels) {
         if (null == found) {
           return false;
         } else {
-          const inappropriateConversationTakeoverForChannel = currentlySelectedChannelId(10094).getInappropriateConversationTakeoverForChannel(found.id);
+          const inappropriateConversationTakeoverForChannel = currentlySelectedChannelId(10134).getInappropriateConversationTakeoverForChannel(found.id);
           const tmp6 = null == inappropriateConversationTakeoverForChannel || !found.isDM();
           let flag3 = !tmp6;
           if (!tmp6) {
@@ -81,9 +81,9 @@ function handleChannelUpdates(channels) {
             ({ id: obj4.warningId, type: obj4.warningType } = inappropriateConversationTakeoverForChannel);
             obj.senderId = found.getRecipientId();
             obj.channelId = found.id;
-            currentlySelectedChannelId(16077).showTakeoverModal(obj);
+            currentlySelectedChannelId(16116).showTakeoverModal(obj);
             flag3 = true;
-            const obj3 = currentlySelectedChannelId(16077);
+            const obj3 = currentlySelectedChannelId(16116);
           }
           return flag3;
         }
@@ -91,7 +91,7 @@ function handleChannelUpdates(channels) {
     } else {
       return false;
     }
-    obj2 = currentlySelectedChannelId(10094);
+    obj2 = currentlySelectedChannelId(10134);
   } else {
     return false;
   }

@@ -1,10 +1,10 @@
-// Module ID: 8594
-// Function ID: 68270
+// Module ID: 8638
+// Function ID: 68417
 // Name: trackOnConsecutiveVisibility
-// Dependencies: [31, 653, 8595, 5462, 1450, 8596, 3777, 5782, 675, 8364, 480, 5781, 2]
+// Dependencies: [31, 653, 8639, 5497, 1450, 8640, 3811, 5792, 675, 8402, 480, 5791, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 8594 (trackOnConsecutiveVisibility)
+// Module 8638 (trackOnConsecutiveVisibility)
 import result from "result";
 import { AnalyticEvents } from "ME";
 
@@ -39,17 +39,17 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const _require = product;
   const importDefault = selectedProduct;
   const dependencyMap = flag2;
-  const collectiblesAnalyticsContext = _require(8595).useCollectiblesAnalyticsContext();
-  const analyticsLocations = importDefault(5462)().analyticsLocations;
+  const collectiblesAnalyticsContext = _require(8639).useCollectiblesAnalyticsContext();
+  const analyticsLocations = importDefault(5497)().analyticsLocations;
   const size = importDefault(1450)();
   const width = size.width;
   const height = size.height;
-  let obj = _require(8595);
-  const currentUser = _require(8596).useCurrentUser();
-  let obj2 = _require(8596);
-  const canUseCollectiblesResult = importDefault(3777).canUseCollectibles(currentUser);
-  const obj3 = importDefault(3777);
-  const shopDiscountSource = _require(5782).getShopDiscountSource(currentUser);
+  let obj = _require(8639);
+  const currentUser = _require(8640).useCurrentUser();
+  let obj2 = _require(8640);
+  const canUseCollectiblesResult = importDefault(3811).canUseCollectibles(currentUser);
+  const obj3 = importDefault(3811);
+  const shopDiscountSource = _require(5792).getShopDiscountSource(currentUser);
   const ref = collectiblesAnalyticsContext.useRef(null);
   let closure_10 = collectiblesAnalyticsContext.useRef(null);
   let closure_11 = collectiblesAnalyticsContext.useRef({ windowWidth: width, windowHeight: height });
@@ -91,13 +91,13 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const callback = collectiblesAnalyticsContext.useCallback(() => {
     let priceForCollectiblesProduct = null;
     if (null != product) {
-      let obj = product(5782);
+      let obj = product(5792);
       priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(product, closure_7, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
     if (null != product) {
-      strikeThroughPriceAmountForCollectiblesProduct = product(5782).getStrikeThroughPriceAmountForCollectiblesProduct(product, closure_7, true);
-      const obj2 = product(5782);
+      strikeThroughPriceAmountForCollectiblesProduct = product(5792).getStrikeThroughPriceAmountForCollectiblesProduct(product, closure_7, true);
+      const obj2 = product(5792);
     }
     obj = {};
     let sessionId;
@@ -160,7 +160,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
   const callback1 = collectiblesAnalyticsContext.useCallback(() => {
-    let obj = product(8364);
+    let obj = product(8402);
     obj = { name: product(480).ImpressionNames.SHOP_CARD, type: product(480).ImpressionTypes.VIEW };
     obj = { sku_id: selectedProduct.skuId };
     let cardId;
@@ -178,10 +178,10 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
       tilePosition = collectiblesAnalyticsContext.tilePosition;
     }
     obj.position_in_section = tilePosition;
-    obj.product_sku_ids = product(5781).getProductSkuIds(product);
+    obj.product_sku_ids = product(5791).getProductSkuIds(product);
     obj.location_stack = analyticsLocations;
-    const obj4 = product(5781);
-    obj.discount_source = product(5782).getAnalyticsShopDiscountSource(shopDiscountSource);
+    const obj4 = product(5791);
+    obj.discount_source = product(5792).getAnalyticsShopDiscountSource(shopDiscountSource);
     obj.properties = obj;
     obj.trackImpression(obj, false, true);
   }, items2);

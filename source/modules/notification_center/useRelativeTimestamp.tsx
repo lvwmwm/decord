@@ -1,10 +1,10 @@
-// Module ID: 14963
-// Function ID: 114085
+// Module ID: 15007
+// Function ID: 114258
 // Name: useRelativeTimestamp
-// Dependencies: [57, 31, 5874, 664, 2]
+// Dependencies: [57, 31, 5908, 664, 2]
 // Exports: useRelativeTimestamp
 
-// Module 14963 (useRelativeTimestamp)
+// Module 15007 (useRelativeTimestamp)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -18,11 +18,11 @@ export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
     flag = true;
   }
   let closure_2;
-  const tmp = callback(React.useState(() => timestamp(5874).getRelativeTimestamp(timestamp, flag)), 2);
+  const tmp = callback(React.useState(() => timestamp(5908).getRelativeTimestamp(timestamp, flag)), 2);
   closure_2 = tmp[1];
   const items = [timestamp, flag];
   const effect = React.useEffect(() => {
-    dependencyMap(timestamp(5874).getRelativeTimestamp(interval, flag));
+    dependencyMap(timestamp(5908).getRelativeTimestamp(interval, flag));
     const diff = Date.now() - interval;
     if (diff <= flag(664).Millis.DAY) {
       if (diff >= flag(664).Millis.HOUR) {
@@ -36,7 +36,7 @@ export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
       }, MINUTE, MINUTE - diff % MINUTE);
       return () => clearInterval(closure_0);
     }
-    const obj = timestamp(5874);
+    const obj = timestamp(5908);
   }, items);
   return tmp[0];
 };

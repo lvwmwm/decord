@@ -1,10 +1,10 @@
-// Module ID: 12237
-// Function ID: 95564
+// Module ID: 12280
+// Function ID: 95734
 // Name: ObscuredView
-// Dependencies: [57, 31, 27, 8074, 33, 12238, 3835, 689, 3992, 4534, 477, 4131, 5085, 8055, 3993, 7619, 2]
+// Dependencies: [57, 31, 27, 8112, 33, 12281, 3869, 689, 4026, 4568, 477, 4165, 5119, 8093, 4027, 7655, 2]
 // Exports: default
 
-// Module 12237 (ObscuredView)
+// Module 12280 (ObscuredView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,9 +23,9 @@ function ObscuredView(source) {
   let tmp2;
   let tmp3;
   source = source.source;
-  let obj = require(12238) /* useMediaItemSpoilerState */;
+  let obj = require(12281) /* useMediaItemSpoilerState */;
   [tmp2, tmp3] = callback(obj.useMediaItemSpoilerState(source.index), 2);
-  require(3835) /* map */;
+  require(3869) /* map */;
   let tmp7Result = null;
   if (tmp2) {
     if (source.spoiler) {
@@ -34,7 +34,7 @@ function ObscuredView(source) {
       obj.style = items;
       obj = {};
       const tmp11 = closure_8;
-      const tmp12 = importDefault(4534);
+      const tmp12 = importDefault(4568);
       const tmp7 = closure_8;
       let str = "light";
       if (obj4.isAndroid()) {
@@ -44,7 +44,7 @@ function ObscuredView(source) {
       obj.style = closure_6.absoluteFill;
       obj.android_fallbackColor = tmp5;
       obj.children = tmp11(tmp12, obj);
-      tmp7Result = tmp7(importDefault(3992).View, obj);
+      tmp7Result = tmp7(importDefault(4026).View, obj);
       obj4 = require(477) /* set */;
     } else {
       tmp7Result = null;
@@ -86,12 +86,12 @@ let closure_11 = importAllResult.memo((onSelect) => {
   }
   obj.source = tmp10;
   obj.enableAnimation = false;
-  const items2 = [callback2(onSelect(5085), obj), ];
+  const items2 = [callback2(onSelect(5119), obj), ];
   const obj1 = { source: first, index };
   items2[1] = callback2(ObscuredView, obj1);
   obj.children = items2;
   obj.children = closure_9(closure_5, obj);
-  return callback2(onSelect(3992).View, obj);
+  return callback2(onSelect(4026).View, obj);
 });
 let closure_12 = { code: "function MediaViewerThumbnailsTsx1(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/MediaViewerThumbnails.tsx");

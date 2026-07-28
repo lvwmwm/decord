@@ -1,5 +1,5 @@
 // Module ID: 962
-// Function ID: 10427
+// Function ID: 10431
 // Name: _isFetchSupported
 // Dependencies: [798, 800, 801]
 

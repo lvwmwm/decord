@@ -1,5 +1,5 @@
 // Module ID: 1899
-// Function ID: 21319
+// Function ID: 21323
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 6, 7, 15, 17, 18, 1194, 3, 686, 1900, 1884, 566, 2]
 
@@ -133,7 +133,7 @@ let tmp4 = ((Store) => {
               return tmp2Result.handleAuthenticationStoreChanged();
             }
       };
-      items[2] = f21348(outer1_3[8]).DispatchBand.Early;
+      items[2] = f21352(outer1_3[8]).DispatchBand.Early;
       obj = outer1_8(DatabaseManager);
       tmp2 = outer1_7;
       if (outer1_14()) {

@@ -1,10 +1,10 @@
-// Module ID: 15143
-// Function ID: 115235
+// Module ID: 15183
+// Function ID: 115394
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [57, 31, 27, 4123, 653, 1345, 33, 4131, 689, 4664, 624, 5187, 1212, 8080, 4127, 4544, 8242, 4099, 2]
+// Dependencies: [57, 31, 27, 4157, 653, 1345, 33, 4165, 689, 4698, 624, 5221, 1212, 8118, 4161, 4578, 8280, 4133, 2]
 // Exports: default
 
-// Module 15143 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 15183 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -43,7 +43,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   const tmp2 = callback(React.useState(0), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj = require(4664) /* getIsScreenLandscape */;
+  let obj = require(4698) /* getIsScreenLandscape */;
   callback = obj.useIsScreenLandscape();
   let obj1 = require(624) /* defaultAreStatesEqual */;
   const items = [_isNativeReflectConstruct];
@@ -65,17 +65,17 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1 = { accessibilityRole: "image" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.gCgirr);
-  obj1.children = callback2(markAsDismissed(8080), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
+  obj1.children = callback2(markAsDismissed(8118), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info };
   const obj4 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.gCgirr);
-  const items3 = [callback2(require(4127) /* Text */.Text, obj4), ];
+  const items3 = [callback2(require(4161) /* Text */.Text, obj4), ];
   const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl3.string(require(1212) /* getSystemLocale */.t.fLMZFw);
-  items3[1] = callback2(require(4127) /* Text */.Text, obj5);
+  items3[1] = callback2(require(4161) /* Text */.Text, obj5);
   obj3.children = items3;
   items2[1] = callback3(View, obj3);
   const obj6 = { style: items4 };
@@ -85,24 +85,24 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj8.text = intl4.string(require(1212) /* getSystemLocale */.t.BQq86h);
   obj8.onPress = function onPress() {
-    markAsDismissed(8242).open(closure_0, outer1_7.ROLE_SUBSCRIPTIONS_TIERS, undefined, outer1_8.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
+    markAsDismissed(8280).open(closure_0, outer1_7.ROLE_SUBSCRIPTIONS_TIERS, undefined, outer1_8.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
     markAsDismissed(outer1_9.UNKNOWN);
   };
-  obj7.children = callback2(require(4544) /* Button */.Button, obj8);
+  obj7.children = callback2(require(4578) /* Button */.Button, obj8);
   const items5 = [callback2(View, obj7), ];
   const obj9 = { style: tmp.button };
   const obj10 = {};
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj10.text = intl5.string(require(1212) /* getSystemLocale */.t.WAI6xu);
   obj10.onPress = function onPress() {
-    return markAsDismissed(4099).hideActionSheet();
+    return markAsDismissed(4133).hideActionSheet();
   };
   obj10.variant = "secondary";
-  obj9.children = callback2(require(4544) /* Button */.Button, obj10);
+  obj9.children = callback2(require(4578) /* Button */.Button, obj10);
   items5[1] = callback2(View, obj9);
   obj6.children = items5;
   items2[2] = callback3(View, obj6);
   obj.children = items2;
   obj.children = callback3(View, obj);
-  return callback2(require(5187) /* Background */.BottomSheet, obj);
+  return callback2(require(5221) /* Background */.BottomSheet, obj);
 };

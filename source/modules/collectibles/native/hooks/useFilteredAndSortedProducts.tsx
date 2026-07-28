@@ -1,10 +1,10 @@
-// Module ID: 14037
-// Function ID: 107429
+// Module ID: 14081
+// Function ID: 107602
 // Name: useFilteredAndSortedProducts
-// Dependencies: [31, 1850, 655, 14038, 14039, 14040, 566, 3777, 5781, 2]
+// Dependencies: [31, 1850, 655, 14082, 14083, 14084, 566, 3811, 5791, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 14037 (useFilteredAndSortedProducts)
+// Module 14081 (useFilteredAndSortedProducts)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";

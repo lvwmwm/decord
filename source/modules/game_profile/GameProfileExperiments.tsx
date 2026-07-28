@@ -1,9 +1,9 @@
-// Module ID: 5967
-// Function ID: 53088
+// Module ID: 6001
+// Function ID: 53207
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 5967 (apexExperiment)
+// Module 6001 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-06-game-profile-share-link", defaultConfig: { enabled: false, showSmallEmbed: false }, variations: { [1]: { enabled: true, showSmallEmbed: true }, [2]: { enabled: true, showSmallEmbed: false } } };

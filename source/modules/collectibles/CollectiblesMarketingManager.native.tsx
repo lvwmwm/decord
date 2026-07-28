@@ -1,9 +1,9 @@
-// Module ID: 13533
-// Function ID: 104124
+// Module ID: 13577
+// Function ID: 104297
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4130, 5769, 5825, 686, 4531, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4164, 5779, 5835, 686, 4565, 2]
 
-// Module 13533 (_isNativeReflectConstruct)
+// Module 13577 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

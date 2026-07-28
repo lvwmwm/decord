@@ -1,5 +1,5 @@
 // Module ID: 1915
-// Function ID: 21597
+// Function ID: 21601
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1388, 1912, 483, 665, 1914, 2]
 // Exports: fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition

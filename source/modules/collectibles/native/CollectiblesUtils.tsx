@@ -1,10 +1,10 @@
-// Module ID: 8648
-// Function ID: 68687
+// Module ID: 8692
+// Function ID: 68838
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [653, 5616, 3790, 5619, 5782, 3777, 5781, 8649, 8650, 2]
+// Dependencies: [653, 5651, 3824, 5654, 5792, 3811, 5791, 8693, 8694, 2]
 // Exports: createOrbProfileBadge, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct
 
-// Module 8648 (_createForOfIteratorHelperLoose)
+// Module 8692 (_createForOfIteratorHelperLoose)
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -87,7 +87,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function extractPriceByPurchaseTypes(googleSkuIds) {
-  let obj = require(3790) /* isPremiumGiftingSupported */;
+  let obj = require(3824) /* isPremiumGiftingSupported */;
   if (obj.isGooglePlayBillingSupported()) {
     if (arg1 !== closure_3.MOBILE) {
       if (arg1 !== closure_3.MOBILE_PREMIUM_TIER_2) {
@@ -99,7 +99,7 @@ function extractPriceByPurchaseTypes(googleSkuIds) {
     if (null != googleSkuIds) {
       tmp8 = googleSkuIds[arg1];
     }
-    const product = importDefault(5619).getProduct(tmp8);
+    const product = importDefault(5654).getProduct(tmp8);
     let tmp10;
     if (null != product) {
       obj = {};
@@ -110,7 +110,7 @@ function extractPriceByPurchaseTypes(googleSkuIds) {
     }
     return tmp10;
   } else {
-    return require(5782) /* getPriceForCollectiblesProduct */.extractPriceByPurchaseTypes(googleSkuIds, arg1);
+    return require(5792) /* getPriceForCollectiblesProduct */.extractPriceByPurchaseTypes(googleSkuIds, arg1);
   }
 }
 function isGPlaySynced(variants) {
@@ -123,17 +123,17 @@ function isGPlaySynced(variants) {
     if (null != googleSkuIds) {
       tmp4 = googleSkuIds[closure_3.MOBILE];
     }
-    const product = importDefault(5619).getProduct(tmp4);
-    const obj2 = importDefault(5619);
+    const product = importDefault(5654).getProduct(tmp4);
+    const obj2 = importDefault(5654);
     const googleSkuIds2 = variants.googleSkuIds;
     let tmp9;
     if (null != googleSkuIds2) {
       tmp9 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
     }
-    const obj3 = importDefault(5619);
-    return null != product && null != importDefault(5619).getProduct(tmp9);
+    const obj3 = importDefault(5654);
+    return null != product && null != importDefault(5654).getProduct(tmp9);
   }
-  obj = require(5781) /* getProductOrbPrice */;
+  obj = require(5791) /* getProductOrbPrice */;
 }
 function hasAtLeastOneGPlaySynced(value) {
   const products = value.products;
@@ -149,8 +149,8 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
     } else if (null != tmpResult.priceString) {
       let priceString = tmpResult.priceString;
     } else {
-      priceString = require(5616) /* formatSingleCurrencyPrice */.formatPrice(tmpResult.amount, tmpResult.currency);
-      const obj = require(5616) /* formatSingleCurrencyPrice */;
+      priceString = require(5651) /* formatSingleCurrencyPrice */.formatPrice(tmpResult.amount, tmpResult.currency);
+      const obj = require(5651) /* formatSingleCurrencyPrice */;
     }
   }
 };
@@ -159,7 +159,7 @@ export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(clos
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj = importDefault(3777);
+    const obj = importDefault(3811);
     const googleSkuIds = closure_0.googleSkuIds;
     let tmp5;
     if (null != googleSkuIds) {
@@ -210,5 +210,5 @@ export const filterHiddenCategories = function filterHiddenCategories(result) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: require(8649) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8649) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8650), description: "", isPreviewMode: true };
+  return { id: require(8693) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8693) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8694), description: "", isPreviewMode: true };
 };

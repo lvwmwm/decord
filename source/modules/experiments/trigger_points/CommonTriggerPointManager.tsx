@@ -1,9 +1,9 @@
-// Module ID: 16078
-// Function ID: 124412
+// Module ID: 16117
+// Function ID: 124568
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 16079, 15657, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 16118, 15696, 5112, 2]
 
-// Module 16078 (_isNativeReflectConstruct)
+// Module 16117 (_isNativeReflectConstruct)
 import commonTriggerPointConfiguration from "commonTriggerPointConfiguration";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

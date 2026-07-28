@@ -1,8 +1,8 @@
-// Module ID: 10501
-// Function ID: 81416
-// Dependencies: [31, 27, 33, 10502, 2]
+// Module ID: 10539
+// Function ID: 81537
+// Dependencies: [31, 27, 33, 10540, 2]
 
-// Module 10501
+// Module 10539
 import importAllResult from "result";
 import { PixelRatio } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -49,7 +49,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   let obj = {};
   const merged = Object.assign(arg0);
   obj["ref"] = ref;
-  return jsx(importDefault(10502), {});
+  return jsx(importDefault(10540), {});
 });
 let result = require("jsxProd").fileFinishedImporting("modules/zoom_layout/ZoomLayout.android.tsx");
 

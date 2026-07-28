@@ -1,26 +1,26 @@
-// Module ID: 12009
-// Function ID: 92779
+// Module ID: 12052
+// Function ID: 92949
 // Name: applicationWidgetStaticFieldConfigSchema
-// Dependencies: [12010, 12008, 12007, 12086, 2]
+// Dependencies: [12053, 12051, 12050, 12129, 2]
 
-// Module 12009 (applicationWidgetStaticFieldConfigSchema)
-import { z } from "module_12010";
-import { z as z2 } from "module_12010";
-import { z as z3 } from "module_12010";
-import { z as z4 } from "module_12010";
-import { z as z5 } from "module_12010";
-import { z as z6 } from "module_12010";
-import { z as z7 } from "module_12010";
-import { z as z8 } from "module_12010";
-import { z as z9 } from "module_12010";
-import { z as z10 } from "module_12010";
-import { z as z11 } from "module_12010";
-import { z as z12 } from "module_12010";
-import { z as z13 } from "module_12010";
-import { z as z14 } from "module_12010";
-import { z as z15 } from "module_12010";
-import { z as z16 } from "module_12010";
-import { z as z17 } from "module_12010";
+// Module 12052 (applicationWidgetStaticFieldConfigSchema)
+import { z } from "module_12053";
+import { z as z2 } from "module_12053";
+import { z as z3 } from "module_12053";
+import { z as z4 } from "module_12053";
+import { z as z5 } from "module_12053";
+import { z as z6 } from "module_12053";
+import { z as z7 } from "module_12053";
+import { z as z8 } from "module_12053";
+import { z as z9 } from "module_12053";
+import { z as z10 } from "module_12053";
+import { z as z11 } from "module_12053";
+import { z as z12 } from "module_12053";
+import { z as z13 } from "module_12053";
+import { z as z14 } from "module_12053";
+import { z as z15 } from "module_12053";
+import { z as z16 } from "module_12053";
+import { z as z17 } from "module_12053";
 
 let obj = {};
 obj.value_type = z2.enum(require("ApplicationWidgetFieldValueType").ApplicationWidgetFieldValueType);

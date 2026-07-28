@@ -1,85 +1,85 @@
-// Module ID: 5002
-// Function ID: 43280
+// Module ID: 5036
+// Function ID: 43395
 // Name: emojiTermsImporter
-// Dependencies: [5003, 1935, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5014, 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026, 5027, 5028, 5029, 5030, 5031, 2]
+// Dependencies: [5037, 1935, 5038, 5039, 5040, 5041, 5042, 5043, 5044, 5045, 5046, 5047, 5048, 5049, 5050, 5051, 5052, 5053, 5054, 5055, 5056, 5057, 5058, 5059, 5060, 5061, 5062, 5063, 5064, 5065, 2]
 
-// Module 5002 (emojiTermsImporter)
-const result = require("module_5004").fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
+// Module 5036 (emojiTermsImporter)
+const result = require("module_5038").fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
 
 export const emojiTermsImporter = {
   bg() {
-    return require(1935) /* maybeLoadBundle */(5003, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5037, dependencyMap.paths);
   },
   cs() {
-    return require(1935) /* maybeLoadBundle */(5004, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5038, dependencyMap.paths);
   },
   da() {
-    return require(1935) /* maybeLoadBundle */(5005, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5039, dependencyMap.paths);
   },
   de() {
-    return require(1935) /* maybeLoadBundle */(5006, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5040, dependencyMap.paths);
   },
   el() {
-    return require(1935) /* maybeLoadBundle */(5007, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5041, dependencyMap.paths);
   },
-  () => require(1935) /* maybeLoadBundle */(5008, dependencyMap.paths),
-  () => require(1935) /* maybeLoadBundle */(5009, dependencyMap.paths),
-  () => require(1935) /* maybeLoadBundle */(5010, dependencyMap.paths),
+  () => require(1935) /* maybeLoadBundle */(5042, dependencyMap.paths),
+  () => require(1935) /* maybeLoadBundle */(5043, dependencyMap.paths),
+  () => require(1935) /* maybeLoadBundle */(5044, dependencyMap.paths),
   fi() {
-    return require(1935) /* maybeLoadBundle */(5011, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5045, dependencyMap.paths);
   },
   fr() {
-    return require(1935) /* maybeLoadBundle */(5012, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5046, dependencyMap.paths);
   },
   hr() {
-    return require(1935) /* maybeLoadBundle */(5013, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5047, dependencyMap.paths);
   },
   hu() {
-    return require(1935) /* maybeLoadBundle */(5014, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5048, dependencyMap.paths);
   },
   it() {
-    return require(1935) /* maybeLoadBundle */(5015, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5049, dependencyMap.paths);
   },
   ja() {
-    return require(1935) /* maybeLoadBundle */(5016, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5050, dependencyMap.paths);
   },
   ko() {
-    return require(1935) /* maybeLoadBundle */(5017, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5051, dependencyMap.paths);
   },
   lt() {
-    return require(1935) /* maybeLoadBundle */(5018, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5052, dependencyMap.paths);
   },
   nl() {
-    return require(1935) /* maybeLoadBundle */(5019, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5053, dependencyMap.paths);
   },
   no() {
-    return require(1935) /* maybeLoadBundle */(5020, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5054, dependencyMap.paths);
   },
   pl() {
-    return require(1935) /* maybeLoadBundle */(5021, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5055, dependencyMap.paths);
   },
-  () => require(1935) /* maybeLoadBundle */(5022, dependencyMap.paths),
+  () => require(1935) /* maybeLoadBundle */(5056, dependencyMap.paths),
   ro() {
-    return require(1935) /* maybeLoadBundle */(5023, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5057, dependencyMap.paths);
   },
   ru() {
-    return require(1935) /* maybeLoadBundle */(5024, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5058, dependencyMap.paths);
   },
-  () => require(1935) /* maybeLoadBundle */(5025, dependencyMap.paths),
+  () => require(1935) /* maybeLoadBundle */(5059, dependencyMap.paths),
   th() {
-    return require(1935) /* maybeLoadBundle */(5026, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5060, dependencyMap.paths);
   },
   tr() {
-    return require(1935) /* maybeLoadBundle */(5027, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5061, dependencyMap.paths);
   },
   uk() {
-    return require(1935) /* maybeLoadBundle */(5028, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5062, dependencyMap.paths);
   },
   vi() {
-    return require(1935) /* maybeLoadBundle */(5029, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5063, dependencyMap.paths);
   },
-  () => require(1935) /* maybeLoadBundle */(5030, dependencyMap.paths),
+  () => require(1935) /* maybeLoadBundle */(5064, dependencyMap.paths),
   hi() {
-    return require(1935) /* maybeLoadBundle */(5031, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(5065, dependencyMap.paths);
   }
 };

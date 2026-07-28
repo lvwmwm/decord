@@ -1,8 +1,8 @@
-// Module ID: 15617
-// Function ID: 120423
-// Dependencies: [31, 27, 9061, 15408, 653, 33, 4131, 689, 9041, 5517, 10040, 1557, 15618, 9050, 15613, 15614, 2]
+// Module ID: 15656
+// Function ID: 120579
+// Dependencies: [31, 27, 9105, 15448, 653, 33, 4165, 689, 9085, 5552, 10080, 1557, 15657, 9094, 15652, 15653, 2]
 
-// Module 15617
+// Module 15656
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -23,7 +23,7 @@ let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo((route) => {
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(5517);
+  let obj = searchContext(5552);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = importAllResult.useEffect(() => {

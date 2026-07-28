@@ -1,10 +1,10 @@
-// Module ID: 10264
-// Function ID: 79370
+// Module ID: 10304
+// Function ID: 79499
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [31, 4326, 653, 4327, 662, 33, 10251, 10263, 1212, 10252, 5079, 5074, 2]
+// Dependencies: [31, 4360, 653, 4361, 662, 33, 10291, 10303, 1212, 10292, 5113, 5108, 2]
 // Exports: default
 
-// Module 10264 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 10304 (NotificationSettingsMessageNotificationChannelActionSheet)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserNotificationSettings } from "ME";
@@ -17,7 +17,7 @@ let result = require("ME").fileFinishedImporting("modules/notifications/settings
 
 export default function NotificationSettingsMessageNotificationChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10251);
+  let obj = _require(10291);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   const unread = channelPresetSettings.unread;
   const notification = channelPresetSettings.notification;
@@ -43,5 +43,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
     const result = unread(outer1_2[10]).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10263), { context: "channel", value: notification });
+  return jsx(unread(10303), { context: "channel", value: notification });
 };

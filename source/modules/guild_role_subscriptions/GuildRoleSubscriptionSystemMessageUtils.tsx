@@ -1,10 +1,10 @@
-// Module ID: 7714
-// Function ID: 61606
+// Module ID: 7750
+// Function ID: 61696
 // Name: identityHook
-// Dependencies: [1838, 1850, 7715, 653, 21, 1212, 7716, 4325, 2]
+// Dependencies: [1838, 1850, 7751, 653, 21, 1212, 7752, 4359, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 7714 (identityHook)
+// Module 7750 (identityHook)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getJoinButtonLabels from "getJoinButtonLabels";
@@ -155,10 +155,10 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
   }
 };
 export const isEligibleForRoleSubscriptionPurchaseSystemMessageSettings = function isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild) {
-  return require(7716) /* isCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
+  return require(7752) /* isCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
 };
 export const trackRoleSubscriptionPurchaseMessageTierClick = function trackRoleSubscriptionPurchaseMessageTierClick(guildId, channelId, messageId, roleSubscriptionListingId) {
-  let obj = importDefault(4325);
+  let obj = importDefault(4359);
   obj = { guild_id: guildId };
   const currentUser = authStore.getCurrentUser();
   let id;

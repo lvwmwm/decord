@@ -1,9 +1,9 @@
-// Module ID: 12742
-// Function ID: 99224
+// Module ID: 12785
+// Function ID: 99394
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4045, 5892, 1352, 1348, 5590, 5043, 1918, 1838, 3768, 1850, 653, 12743, 5048, 1832, 3970, 3804, 6115, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4079, 5926, 1352, 1348, 5625, 5077, 1918, 1838, 3802, 1850, 653, 12786, 5082, 1832, 4004, 3838, 6149, 566, 686, 2]
 
-// Module 12742 (_isNativeReflectConstruct)
+// Module 12785 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_5 from "ME";
@@ -230,11 +230,11 @@ function performQuery() {
       if (null != currentUser) {
         isStaffResult = currentUser.isStaff();
       }
-      let obj = require(12743) /* getFrictionlessGDMsEnabled */;
+      let obj = require(12786) /* getFrictionlessGDMsEnabled */;
       let frictionlessGDMsEnabled = obj.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
       if (frictionlessGDMsEnabled) {
-        const members = importDefault(5048).requestMembers(null, _var);
-        let obj2 = importDefault(5048);
+        const members = importDefault(5082).requestMembers(null, _var);
+        let obj2 = importDefault(5082);
       }
       if (null != closure_19) {
         obj = { query: _var };
@@ -265,16 +265,16 @@ function updateHasFriends() {
 }
 function sortUserList(user, user2) {
   const obj = require(1832) /* isNullOrEmpty */;
-  const name = importDefault(3970).getName(user.user);
-  const obj2 = importDefault(3970);
+  const name = importDefault(4004).getName(user.user);
+  const obj2 = importDefault(4004);
   const stripDiacriticsResult = obj.stripDiacritics(name.toLocaleLowerCase());
   const obj5 = require(1832) /* isNullOrEmpty */;
-  const name1 = importDefault(3970).getName(user2.user);
+  const name1 = importDefault(4004).getName(user2.user);
   return stripDiacriticsResult.localeCompare(obj5.stripDiacritics(name1.toLocaleLowerCase()));
 }
 function getMutualGuildsWithCurrentUser(id, set) {
   let iter3;
-  const RestrictedGuildIds = require(3804) /* explicitContentFromProto */.RestrictedGuildIds;
+  const RestrictedGuildIds = require(3838) /* explicitContentFromProto */.RestrictedGuildIds;
   const setting = RestrictedGuildIds.getSetting();
   const items = [];
   const tmp = _createForOfIteratorHelperLoose(set);
@@ -309,7 +309,7 @@ function parseUserResults(arg0) {
   if (c20) {
     if ("" !== c21) {
       const currentUser = authStore.getCurrentUser();
-      const frictionlessGDMsEnabled = require(12743) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const frictionlessGDMsEnabled = require(12786) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
       let set = null;
       if (frictionlessGDMsEnabled) {
         const _Set = Set;
@@ -400,7 +400,7 @@ function parseUserResults(arg0) {
         } while (!iter3.done);
       }
       tmp4.emitChange();
-      const obj4 = require(12743) /* getFrictionlessGDMsEnabled */;
+      const obj4 = require(12786) /* getFrictionlessGDMsEnabled */;
     }
   }
 }
@@ -430,7 +430,7 @@ function createSearchContext() {
     c19.destroy();
     c19 = null;
   }
-  return importDefault(6115).getUserSearchContext(parseUserResults, 1000);
+  return importDefault(6149).getUserSearchContext(parseUserResults, 1000);
 }
 function handleModalActionSheetOpen(key) {
   if (key.key !== closure_18) {
@@ -460,8 +460,8 @@ function handleClose() {
 function performQueryOnAffinityChange() {
   let tmp = !c20;
   if (!tmp) {
-    tmp = !require(12743) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-    const obj = require(12743) /* getFrictionlessGDMsEnabled */;
+    tmp = !require(12786) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+    const obj = require(12786) /* getFrictionlessGDMsEnabled */;
   }
   let tmp4 = !tmp;
   if (!tmp) {
@@ -555,8 +555,8 @@ tmp4 = new tmp4(require("dispatcher"), {
   GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch() {
     let tmp = !c20;
     if (!tmp) {
-      tmp = !require(12743) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = require(12743) /* getFrictionlessGDMsEnabled */;
+      tmp = !require(12786) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const obj = require(12786) /* getFrictionlessGDMsEnabled */;
     }
     let tmp4 = !tmp;
     if (!tmp) {
@@ -567,8 +567,8 @@ tmp4 = new tmp4(require("dispatcher"), {
   GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(query) {
     let tmp = !c20;
     if (!tmp) {
-      tmp = !require(12743) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = require(12743) /* getFrictionlessGDMsEnabled */;
+      tmp = !require(12786) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const obj = require(12786) /* getFrictionlessGDMsEnabled */;
     }
     let tmp4 = !tmp;
     if (!tmp) {

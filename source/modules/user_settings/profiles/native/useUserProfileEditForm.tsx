@@ -1,10 +1,10 @@
-// Module ID: 13639
-// Function ID: 104820
+// Module ID: 13683
+// Function ID: 104993
 // Name: useUserProfileEditForm
-// Dependencies: [29, 5, 31, 7877, 5630, 653, 566, 686, 9158, 9736, 9159, 9160, 13640, 7883, 4030, 3804, 12985, 2]
+// Dependencies: [29, 5, 31, 7913, 5878, 653, 566, 686, 9202, 9776, 9203, 9204, 13684, 7919, 4064, 3838, 13029, 2]
 // Exports: default
 
-// Module 13639 (useUserProfileEditForm)
+// Module 13683 (useUserProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import result from "result";
@@ -37,7 +37,7 @@ export default function useUserProfileEditForm() {
   // CreateGeneratorClosureLongIndex (0x67)
   callback = React.useCallback(callback(React.useEffect(() => () => stateFromStores(outer2_2[7]).wait(pendingChanges(outer2_2[8]).resetAllPending), [])), items2);
   const items3 = [stateFromStores, pendingChanges.pendingAvatarDecoration];
-  obj = { hasAvatarDecorationEdits: undefined !== pendingChanges.pendingAvatarDecoration, errors, isSubmitting: stateFromStores, handleSubmit: callback, handleSubmitAvatarDecoration: React.useCallback(callback(tmp), items3), resetPending: pendingChanges(9158).resetAllPending };
+  obj = { hasAvatarDecorationEdits: undefined !== pendingChanges.pendingAvatarDecoration, errors, isSubmitting: stateFromStores, handleSubmit: callback, handleSubmitAvatarDecoration: React.useCallback(callback(tmp), items3), resetPending: pendingChanges(9202).resetAllPending };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);
   return obj;

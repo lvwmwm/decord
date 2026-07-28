@@ -1,10 +1,10 @@
-// Module ID: 13611
-// Function ID: 104576
+// Module ID: 13655
+// Function ID: 104749
 // Name: DevToolsPersistedStoresActionSheet
-// Dependencies: [57, 31, 27, 567, 1194, 33, 4131, 689, 5164, 1883, 3832, 566, 1899, 1457, 5159, 8759, 8760, 8754, 9171, 4099, 4127, 9173, 5498, 5186, 5500, 2]
+// Dependencies: [57, 31, 27, 567, 1194, 33, 4165, 689, 5198, 1883, 3866, 566, 1899, 1457, 5193, 8803, 8804, 8798, 9215, 4133, 4161, 9217, 5533, 5220, 5535, 2]
 // Exports: default
 
-// Module 13611 (DevToolsPersistedStoresActionSheet)
+// Module 13655 (DevToolsPersistedStoresActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ function DevToolsPersistedStoresActionSheet(store) {
   const close = store.close;
   let obj = {};
   obj = { title: store.getName() };
-  obj.header = jsx(store(5186).BottomSheetTitleHeader, { title: store.getName() });
+  obj.header = jsx(store(5220).BottomSheetTitleHeader, { title: store.getName() });
   obj = { hasIcons: false };
   const obj1 = {
     variant: "danger",
@@ -31,7 +31,7 @@ function DevToolsPersistedStoresActionSheet(store) {
       close();
     }
   };
-  obj.children = jsx(store(5500).ActionSheetRow, {
+  obj.children = jsx(store(5535).ActionSheetRow, {
     variant: "danger",
     label: "Clear persisted store",
     subLabel: "App restart required to re-init the cleared store",
@@ -41,8 +41,8 @@ function DevToolsPersistedStoresActionSheet(store) {
       close();
     }
   });
-  obj.children = jsx(store(5500).ActionSheetRow.Group, { hasIcons: false });
-  return jsx(store(5498).ActionSheet, { hasIcons: false });
+  obj.children = jsx(store(5535).ActionSheetRow.Group, { hasIcons: false });
+  return jsx(store(5533).ActionSheet, { hasIcons: false });
 }
 let obj = {};
 obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1 };
@@ -63,7 +63,7 @@ let closure_10 = importAllResult.memo(() => {
       }
     }
   };
-  return jsx(require(5164) /* TableRowInner */.TableRow, {
+  return jsx(require(5198) /* TableRowInner */.TableRow, {
     label: "Disable Database",
     start: true,
     onPress() {
@@ -92,9 +92,9 @@ let closure_11 = importAllResult.memo(() => {
     combined = "Handle: " + stateFromStores.handle;
   }
   obj.subLabel = combined;
-  return jsx(require(5164) /* TableRowInner */.TableRow, { label: null, start: true, end: true });
+  return jsx(require(5198) /* TableRowInner */.TableRow, { label: null, start: true, end: true });
 });
-let closure_12 = importAllResult.memo(() => jsx(require(5164) /* TableRowInner */.TableRow, {
+let closure_12 = importAllResult.memo(() => jsx(require(5198) /* TableRowInner */.TableRow, {
   label: "Disable + Remove Database",
   onPress() {
     const result = outer1_1(outer1_2[12]).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
@@ -112,7 +112,7 @@ let closure_13 = importAllResult.memo(() => {
       navigation.navigate("cacheStats");
     }
   };
-  return jsx(_require(5164).TableRow, {
+  return jsx(_require(5198).TableRow, {
     label: "View Cache Stats",
     end: true,
     onPress() {

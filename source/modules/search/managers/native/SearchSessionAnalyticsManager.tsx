@@ -1,9 +1,9 @@
-// Module ID: 10055
-// Function ID: 77974
+// Module ID: 10095
+// Function ID: 78103
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 9061, 10042, 10056, 2]
+// Dependencies: [6, 7, 15, 17, 18, 9105, 10082, 10096, 2]
 
-// Module 10055 (_isNativeReflectConstruct)
+// Module 10095 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import createDefaultSessionState from "createDefaultSessionState";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

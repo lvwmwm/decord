@@ -1,10 +1,10 @@
-// Module ID: 7830
-// Function ID: 62461
+// Module ID: 7866
+// Function ID: 62551
 // Name: transformToRowGeneratedComponent
-// Dependencies: [29, 27, 4355, 7831, 7817, 1327, 1882, 4354, 1212, 7832, 7839, 7840, 7842, 7845, 7846, 4348, 4672, 7847, 7676, 4318, 1360, 4359, 7827, 7826, 1443, 1362, 664, 4121, 7860, 478, 3772, 2]
+// Dependencies: [29, 27, 4389, 7867, 7853, 1327, 1882, 4388, 1212, 7868, 7875, 7876, 7878, 7881, 7882, 4382, 4706, 7883, 7712, 4352, 1360, 4393, 7863, 7862, 1443, 1362, 664, 4155, 7896, 478, 3806, 2]
 // Exports: default
 
-// Module 7830 (transformToRowGeneratedComponent)
+// Module 7866 (transformToRowGeneratedComponent)
 import isWindows from "isWindows";
 import { processColor } from "combineAndInjectMentionRule";
 import { CheckpointVersions } from "CheckpointPersonas";
@@ -513,9 +513,9 @@ function transformToRowGeneratedComponent(message, type) {
   }
 }
 function getSelectAccessibilityLabel(type, found, arg2) {
-  let obj = require(7676) /* apexExperiment */;
+  let obj = require(7712) /* apexExperiment */;
   if (obj.shouldSkipAccessibilityLabels()) {
-    return require(4354) /* _createForOfIteratorHelperLoose */.getSelectPlaceholder(type);
+    return require(4388) /* _createForOfIteratorHelperLoose */.getSelectPlaceholder(type);
   } else {
     if (null != found) {
       if (0 !== found.length) {
@@ -525,7 +525,7 @@ function getSelectAccessibilityLabel(type, found, arg2) {
         return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["I/ROH+"], obj);
       }
     }
-    const selectPlaceholder = require(4354) /* _createForOfIteratorHelperLoose */.getSelectPlaceholder(type);
+    const selectPlaceholder = require(4388) /* _createForOfIteratorHelperLoose */.getSelectPlaceholder(type);
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { placeholder: selectPlaceholder };
     return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["3aednA"], obj);
@@ -541,19 +541,19 @@ function getUnfurledMediaItemType(arg0) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp3(7846).MediaGalleryItemType.IMAGE;
+            return tmp3(7882).MediaGalleryItemType.IMAGE;
           } else {
             if (tmp3Result.isVideoContentType(contentType)) {
-              return require(7846) /* MediaGalleryItemType */.MediaGalleryItemType.VIDEO;
+              return require(7882) /* MediaGalleryItemType */.MediaGalleryItemType.VIDEO;
             }
-            tmp3Result = tmp3(4318);
+            tmp3Result = tmp3(4352);
           }
-          obj = require(4318) /* urlMatchesFileExtension */;
+          obj = require(4352) /* urlMatchesFileExtension */;
         }
       }
     }
   }
-  return require(7846) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
+  return require(7882) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
 }
 function transformUnfurledMediaItem(file, shouldShowMedia) {
   let proxyUrl;
@@ -561,13 +561,13 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
   const size = {};
   const merged = Object.assign(file);
   const tmp = getUnfurledMediaItemType(file);
-  size["srcIsAnimated"] = require(1360) /* hasFlag */.hasFlag(file.flags, require(4359) /* toContentScanMetadata */.UnfurledMediaItemFlags.IS_ANIMATED);
+  size["srcIsAnimated"] = require(1360) /* hasFlag */.hasFlag(file.flags, require(4393) /* toContentScanMetadata */.UnfurledMediaItemFlags.IS_ANIMATED);
   if (!shouldShowMedia.shouldShowMedia) {
     size.height = 0;
     size.width = 0;
   }
-  if (tmp === require(7846) /* MediaGalleryItemType */.MediaGalleryItemType.IMAGE) {
-    const obj2 = importDefault(7827);
+  if (tmp === require(7882) /* MediaGalleryItemType */.MediaGalleryItemType.IMAGE) {
+    const obj2 = importDefault(7863);
     ({ proxyUrl, width } = size);
     let num3 = 0;
     if (null != width) {
@@ -581,9 +581,9 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
     size.proxyUrl = obj2.getImageSrc(proxyUrl, num3, num4, !shouldShowMedia.shouldAutoPlayGifs);
   }
   const obj = require(1360) /* hasFlag */;
-  size.width = require(7826) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.width);
-  const obj3 = require(7826) /* sanitizeMediaDimension */;
-  size.height = require(7826) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.height);
+  size.width = require(7862) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.width);
+  const obj3 = require(7862) /* sanitizeMediaDimension */;
+  size.height = require(7862) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.height);
   return size;
 }
 function renderMarkdownText(textDisplayComponent, id, content) {
@@ -594,7 +594,7 @@ function renderMarkdownText(textDisplayComponent, id, content) {
   } else {
     const obj = {};
     const merged = Object.assign(textDisplayComponent.parserState);
-    const parseToASTResult = importDefault(4121).parseToAST(content, true, obj);
+    const parseToASTResult = importDefault(4155).parseToAST(content, true, obj);
     const result = importDefaultResult.set(combined, parseToASTResult);
     return parseToASTResult;
   }
@@ -606,7 +606,7 @@ let result = require("CheckpointPersonas").fileFinishedImporting("modules/messag
 
 export default function transformMessageComponents(message, arr) {
   let obj = { type: "textDisplayComponent" };
-  obj.parserState = obj(7817).getInitialParserStateFromMessage(message.message, closure_7);
+  obj.parserState = obj(7853).getInitialParserStateFromMessage(message.message, closure_7);
   obj = {};
   const merged = Object.assign(message);
   obj["markdownConfigs"] = { textDisplayComponent: obj };

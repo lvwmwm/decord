@@ -1,10 +1,10 @@
-// Module ID: 6494
-// Function ID: 58066
+// Module ID: 6530
+// Function ID: 58155
 // Name: GoogleManagementLink
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 3790, 4127, 1212, 3777, 6490, 5462, 5482, 6495, 6500, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 3824, 4161, 1212, 3811, 6526, 5497, 5517, 6531, 6536, 2]
 // Exports: default
 
-// Module 6494 (GoogleManagementLink)
+// Module 6530 (GoogleManagementLink)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -60,28 +60,28 @@ const result = require("get ActivityIndicator").fileFinishedImporting("component
 export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6490) /* createSubscriptionInvoicePreview */;
-  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5462)(), analyticsLocation: importDefault(5482).PREMIUM_BILLING_INFO };
+  let obj = require(6526) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5497)(), analyticsLocation: importDefault(5517).PREMIUM_BILLING_INFO };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
-  require(6490) /* createSubscriptionInvoicePreview */;
+  require(6526) /* createSubscriptionInvoicePreview */;
   if (null == first) {
     return null;
   } else {
-    let obj3 = require(6495) /* getPremiumManagementMethod */;
+    let obj3 = require(6531) /* getPremiumManagementMethod */;
     obj = { shouldAllowExternalManagement: true };
     const externalManagementMessage = obj3.getExternalManagementMessage(subscription, obj);
     const obj1 = { style: subscription.style };
     const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Sb6wI1);
-    const items = [callback2(require(4127) /* Text */.Text, obj2), , ];
+    const items = [callback2(require(4161) /* Text */.Text, obj2), , ];
     obj3 = { style: tmp.billingContainer };
     const obj4 = { variant: "text-md/semibold" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.KXQjfc);
-    const items1 = [callback2(require(4127) /* Text */.Text, obj4), , ];
-    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: require(6500) /* getBillingInformationStringNative */.getBillingInformationStringNative(subscription, first, tmp4) };
-    items1[1] = callback2(require(4127) /* Text */.Text, obj5);
+    const items1 = [callback2(require(4161) /* Text */.Text, obj4), , ];
+    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: require(6536) /* getBillingInformationStringNative */.getBillingInformationStringNative(subscription, first, tmp4) };
+    items1[1] = callback2(require(4161) /* Text */.Text, obj5);
     const obj6 = { style: tmp.billingManageGoogle, subscription };
     items1[2] = callback2(GoogleManagementLink, obj6);
     obj3.children = items1;
@@ -89,7 +89,7 @@ export default function PremiumBillingInfo(subscription) {
     let tmp8 = null;
     if (null != externalManagementMessage) {
       const obj7 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp8 = callback2(require(4127) /* Text */.Text, obj7);
+      tmp8 = callback2(require(4161) /* Text */.Text, obj7);
     }
     items[2] = tmp8;
     obj1.children = items;

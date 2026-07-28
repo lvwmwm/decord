@@ -1,10 +1,10 @@
-// Module ID: 13743
-// Function ID: 105479
+// Module ID: 13787
+// Function ID: 105652
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1341, 6555, 1850, 653, 33, 4131, 689, 9158, 9160, 22, 675, 6448, 9162, 13744, 4127, 1212, 4542, 6670, 4544, 3843, 6273, 566, 44, 1456, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1341, 6591, 1850, 653, 33, 4165, 689, 9202, 9204, 22, 675, 6484, 9206, 13788, 4161, 1212, 4576, 6706, 4578, 3877, 6309, 566, 44, 1456, 2]
 // Exports: default
 
-// Module 13743 (_isNativeReflectConstruct)
+// Module 13787 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showInvalidUsernameToast from "showInvalidUsernameToast";
@@ -273,7 +273,7 @@ tmp6.contextType = require("ManaContext").ThemeContext;
 let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
 
 export default function EditPasswordWrapper() {
-  let obj = _require(6273);
+  let obj = _require(6309);
   const params = obj.useSettingNavigationRoute().params;
   let prop;
   if (null != params) {

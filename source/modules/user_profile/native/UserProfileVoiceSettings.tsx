@@ -1,10 +1,10 @@
-// Module ID: 11969
-// Function ID: 92518
+// Module ID: 12012
+// Function ID: 92688
 // Name: UserVoiceSettings
-// Dependencies: [31, 27, 4579, 4178, 3759, 653, 482, 33, 4131, 8045, 566, 4315, 8843, 10710, 8770, 5509, 1212, 8801, 10737, 11970, 6575, 11972, 6580, 6673, 4127, 11650, 8858, 7575, 4099, 8828, 8824, 2]
+// Dependencies: [31, 27, 4613, 4212, 3793, 653, 482, 33, 4165, 8083, 566, 4349, 8887, 10748, 8814, 5544, 1212, 8845, 10775, 12013, 6611, 12015, 6616, 6709, 4161, 11689, 8902, 7611, 4133, 8872, 8868, 2]
 // Exports: default
 
-// Module 11969 (UserVoiceSettings)
+// Module 12012 (UserVoiceSettings)
 import "set";
 import { View } from "Form";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -192,7 +192,7 @@ function CurrentUserVoiceSettings(channel) {
   channel = channel.channel;
   ({ user, style } = channel);
   const tmp = callback3();
-  let obj = channel(8045);
+  let obj = channel(8083);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = channel(566);
   const items = [closure_5];
@@ -228,20 +228,20 @@ function CurrentUserVoiceSettings(channel) {
     }
     obj1.label = stringResult;
     if (stateFromStores) {
-      let MicrophoneIcon = tmp18(8801).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp18(8845).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp18(10737).MicrophoneIcon;
+      MicrophoneIcon = tmp18(10775).MicrophoneIcon;
     }
     obj1.icon = MicrophoneIcon;
     obj1.onPress = function onPress() {
       trackUserProfileAction({ action: "MUTE" });
       trackUserProfileAction(outer1_2[14]).toggleSelfMute();
     };
-    obj.children = closure_9(channel(5509).UserProfileFormRow, obj1, "mute");
-    obj = closure_9(channel(5509).UserProfileCardRows, obj);
+    obj.children = closure_9(channel(5544).UserProfileFormRow, obj1, "mute");
+    obj = closure_9(channel(5544).UserProfileCardRows, obj);
     obj.children = obj;
-    closure_9(trackUserProfileAction(5509), obj);
-    const tmp11 = trackUserProfileAction(5509);
+    closure_9(trackUserProfileAction(5544), obj);
+    const tmp11 = trackUserProfileAction(5544);
     const tmp13 = closure_9;
     const tmp14 = closure_9;
     const tmp8 = closure_9;

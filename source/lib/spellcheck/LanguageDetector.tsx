@@ -1,9 +1,9 @@
-// Module ID: 5140
-// Function ID: 44594
+// Module ID: 5174
+// Function ID: 44709
 // Name: LanguageDetector
-// Dependencies: [6, 7, 5141, 2]
+// Dependencies: [6, 7, 5175, 2]
 
-// Module 5140 (LanguageDetector)
+// Module 5174 (LanguageDetector)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

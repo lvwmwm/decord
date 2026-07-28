@@ -1,10 +1,10 @@
-// Module ID: 6722
-// Function ID: 59299
+// Module ID: 6758
+// Function ID: 59388
 // Name: _fetchAgeVerificationMethodsV
-// Dependencies: [5, 6691, 653, 1868, 507, 2]
+// Dependencies: [5, 6727, 653, 1868, 507, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 6722 (_fetchAgeVerificationMethodsV)
+// Module 6758 (_fetchAgeVerificationMethodsV)
 import closure_2 from "set";
 import set from "set";
 import { Endpoints } from "ME";

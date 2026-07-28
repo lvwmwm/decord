@@ -1,10 +1,10 @@
-// Module ID: 4325
-// Function ID: 37894
+// Module ID: 4359
+// Function ID: 38008
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1194, 1348, 1908, 4052, 1918, 1911, 1838, 4178, 3759, 4218, 4203, 4143, 3768, 1907, 3948, 4326, 1850, 4147, 653, 1355, 3764, 483, 4328, 675, 664, 4329, 4333, 22, 2]
+// Dependencies: [1352, 1194, 1348, 1908, 4086, 1918, 1911, 1838, 4212, 3793, 4252, 4237, 4177, 3802, 1907, 3982, 4360, 1850, 4181, 653, 1355, 3798, 483, 4362, 675, 664, 4363, 4367, 22, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, trackWithMetadata
 
-// Module 4325 (_createForOfIteratorHelperLoose)
+// Module 4359 (_createForOfIteratorHelperLoose)
 import { THREAD_CHANNEL_TYPES } from "_callSuper";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -151,7 +151,7 @@ function collectGuildAnalyticsMetadata(guildId) {
       obj.guild_member_num_roles = num;
       let NONE = store3.getGuildPermissions(guild);
       if (null == NONE) {
-        NONE = importAll(3764).NONE;
+        NONE = importAll(3798).NONE;
       }
       obj.guild_member_perms = String(NONE);
       const features = guild.features;
@@ -193,7 +193,7 @@ function collectChannelAnalyticsMetadata(channel) {
       }
       obj.channel_size_total = num;
       if (null == guildId) {
-        let NONE = importAll(3764).NONE;
+        let NONE = importAll(3798).NONE;
       } else {
         NONE = store3.getChannelPermissions(channel);
       }
@@ -348,7 +348,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
       obj.media_session_id = mediaSessionId;
       const merged = Object.assign(getVoiceStateMetadata(channel.getGuildId(), channel.id, videoEnabled.isVideoEnabled()));
       const isVideoEnabledResult = videoEnabled.isVideoEnabled();
-      const merged1 = Object.assign(require(4328) /* getVoiceAnalyticsMetadataAdditional */.getVoiceAnalyticsMetadataAdditional());
+      const merged1 = Object.assign(require(4362) /* getVoiceAnalyticsMetadataAdditional */.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
@@ -397,17 +397,17 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
         obj3.channel_is_spoiler = channel.isSpoilerChannel();
         obj3.channel_resolved_unread_setting = closure_22.resolveUnreadSetting(channel);
         const unreadSetting = closure_22.resolveUnreadSetting(channel);
-        obj3.channel_preset = require(4329) /* Presets */.presetFromSettings(unreadSetting, closure_22.resolvedMessageNotifications(channel));
+        obj3.channel_preset = require(4363) /* Presets */.presetFromSettings(unreadSetting, closure_22.resolvedMessageNotifications(channel));
         obj3.guild_id = channel.guild_id;
         ({ guildUnread: obj6.guild_was_unread, guildMentionCount: obj6.guild_mention_count } = snapshot);
         obj3.guild_is_muted = closure_22.isMuted(channel.guild_id);
         obj3.guild_resolved_unread_setting = closure_22.resolveGuildUnreadSetting(guild);
-        const obj7 = require(4329) /* Presets */;
+        const obj7 = require(4363) /* Presets */;
         const guildUnreadSetting = closure_22.resolveGuildUnreadSetting(guild);
-        obj3.guild_preset = require(4329) /* Presets */.presetFromSettings(guildUnreadSetting, closure_22.getMessageNotifications(channel.guild_id));
+        obj3.guild_preset = require(4363) /* Presets */.presetFromSettings(guildUnreadSetting, closure_22.getMessageNotifications(channel.guild_id));
         ({ parent_id: obj6.parent_id, parentChannelThreadType: obj6.parent_channel_type } = channel);
-        const obj8 = require(4329) /* Presets */;
-        obj3.has_pending_member_action = require(4333) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
+        const obj8 = require(4363) /* Presets */;
+        obj3.has_pending_member_action = require(4367) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
         obj3.can_send_message = store3.can(constants3.SEND_MESSAGES, channel);
         obj3.is_app_dm = false;
         return obj3;
@@ -417,11 +417,11 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
 };
 export { getRecipientFriendCounts };
 export { getVoiceStateMetadata };
-export const getCustomStatusMetadata = function getCustomStatusMetadata(closure_0) {
-  closure_0 = arg1;
+export const getCustomStatusMetadata = function getCustomStatusMetadata(arg0, arg1) {
+  let closure_0 = arg1;
   const obj = { custom_status_count: 0 };
   let tmp = obj(22);
-  const item = obj(22)(store4.getVoiceStates(closure_0)).forEach((channelId) => {
+  const item = obj(22)(store4.getVoiceStates(arg0)).forEach((channelId) => {
     let tmp = channelId.channelId === closure_0;
     if (tmp) {
       tmp = null != outer1_16.findActivity(channelId.userId, (type) => type.type === outer2_28.CUSTOM_STATUS);

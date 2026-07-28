@@ -1,10 +1,10 @@
-// Module ID: 4658
-// Function ID: 40377
+// Module ID: 4692
+// Function ID: 40492
 // Name: VoiceNormalSpoilerIcon
-// Dependencies: [31, 33, 689, 3834, 4607, 2]
+// Dependencies: [31, 33, 689, 3868, 4641, 2]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 4658 (VoiceNormalSpoilerIcon)
+// Module 4692 (VoiceNormalSpoilerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const VoiceNormalSpoilerIcon = function VoiceNormalSpoilerIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4607) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4641) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4607) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4641) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,9 +1,9 @@
-// Module ID: 15008
-// Function ID: 114413
+// Module ID: 15052
+// Function ID: 114586
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [31, 27, 1922, 1850, 14245, 653, 33, 4131, 689, 1273, 7909, 566, 15009, 8148, 8158, 675, 8155, 1392, 12203, 14246, 4647, 4127, 1827, 1212, 2]
+// Dependencies: [31, 27, 1922, 1850, 14289, 653, 33, 4165, 689, 1273, 7945, 566, 15053, 8186, 8196, 675, 8193, 1392, 12246, 14290, 4681, 4161, 1827, 1212, 2]
 
-// Module 15008 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15052 (HAPPENING_NOW_CONTENT_HEIGHT)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

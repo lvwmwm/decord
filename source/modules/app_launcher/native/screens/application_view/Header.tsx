@@ -1,10 +1,10 @@
-// Module ID: 11242
-// Function ID: 87464
+// Module ID: 11280
+// Function ID: 87583
 // Name: xl
-// Dependencies: [31, 27, 1850, 7954, 1455, 653, 33, 689, 4131, 3992, 566, 11163, 3835, 7850, 11168, 7953, 5664, 11243, 4127, 1273, 6625, 4076, 675, 5490, 11244, 3831, 1212, 11245, 2]
+// Dependencies: [31, 27, 1850, 7991, 1455, 653, 33, 689, 4165, 4026, 566, 11201, 3869, 7886, 11206, 7990, 5674, 11281, 4161, 1273, 6661, 4110, 675, 5525, 11282, 3865, 1212, 11283, 2]
 // Exports: default
 
-// Module 11242 (xl)
+// Module 11280 (xl)
 import "result";
 import { View } from "AppDetailsOverflowMenu";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -56,10 +56,10 @@ export default function Header(application) {
   const tmp = _createForOfIteratorHelperLoose();
   let appLauncherIconSource = null;
   if (null != application) {
-    let obj1 = application(11163);
+    let obj1 = application(11201);
     appLauncherIconSource = obj1.getAppLauncherIconSource(application);
   }
-  let obj2 = application(3835);
+  let obj2 = application(3869);
   const token = obj2.useToken(importDefault(689).colors.BACKGROUND_BASE_LOW);
   let tmp7 = appLauncherIconSource;
   if ("number" !== typeof appLauncherIconSource) {
@@ -74,15 +74,15 @@ export default function Header(application) {
   if (null != token) {
     str2 = token;
   }
-  const tmp6Result = importDefault(7850)(tmp7, str2);
+  const tmp6Result = importDefault(7886)(tmp7, str2);
   if (null != appLauncherIconSource) {
     obj = { iconSource: appLauncherIconSource, iconBorderRadius: xl, iconSize: 72 };
-    let tmp12 = callback(importDefault(11168), obj);
+    let tmp12 = callback(importDefault(11206), obj);
   } else {
     obj = { style: tmp.loadingIcon };
     tmp12 = callback(currentUser2, obj);
   }
-  const tmp6 = importDefault(7850);
+  const tmp6 = importDefault(7886);
   const tmp18 = (function useCollapsedHeaderAnimation(scrollOffsetY) {
     scrollOffsetY = scrollOffsetY.scrollOffsetY;
     let obj = {};
@@ -91,7 +91,7 @@ export default function Header(application) {
       obj = {};
       const items = [0, 105];
       const items1 = [0, 105];
-      obj.translateY = application(3992).interpolate(scrollOffsetY.get(), items, items1, "clamp");
+      obj.translateY = application(4026).interpolate(scrollOffsetY.get(), items, items1, "clamp");
       const items2 = [obj];
       obj.transform = items2;
       return obj;
@@ -106,12 +106,12 @@ export default function Header(application) {
       let obj = {};
       obj = {};
       const items = [52.5, 105];
-      obj.translateY = application(3992).interpolate(scrollOffsetY.get(), items, [16, 0], "clamp");
+      obj.translateY = application(4026).interpolate(scrollOffsetY.get(), items, [16, 0], "clamp");
       const items1 = [obj];
       obj.transform = items1;
-      const obj3 = application(3992);
+      const obj3 = application(4026);
       const items2 = [52.5, 105];
-      obj.opacity = application(3992).interpolate(scrollOffsetY.get(), items2, [0, 1], "clamp");
+      obj.opacity = application(4026).interpolate(scrollOffsetY.get(), items2, [0, 1], "clamp");
       return obj;
     };
     obj = { interpolate: application(_undefined[9]).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE: 105 };
@@ -142,7 +142,7 @@ export default function Header(application) {
     return obj;
   })({ scrollOffsetY });
   if (null != application) {
-    let obj5 = application(7953);
+    let obj5 = application(7990);
     str = obj5.getSectionName(application);
   }
   let hasApplicationFlagResult = null != application;
@@ -150,7 +150,7 @@ export default function Header(application) {
     hasApplicationFlagResult = "flags" in application;
   }
   if (hasApplicationFlagResult) {
-    let obj6 = application(5664);
+    let obj6 = application(5674);
     hasApplicationFlagResult = obj6.hasApplicationFlag(application, constants.EMBEDDED);
   }
   dependencyMap = hasApplicationFlagResult;
@@ -183,14 +183,14 @@ export default function Header(application) {
       return obj;
     })({ scrollOffsetY }).style
   ];
-  const items6 = [callback(importDefault(3992).View, { style: items5, pointerEvents: "none" }), callback(importDefault(11243), { onPress: onPressBack }), , ];
+  const items6 = [callback(importDefault(4026).View, { style: items5, pointerEvents: "none" }), callback(importDefault(11281), { onPress: onPressBack }), , ];
   obj5 = { style: tmp18.nameStyle, pointerEvents: "none" };
   obj6 = { variant: "heading-lg/bold", color: "text-overlay-light", children: str };
-  obj5.children = callback(application(4127).Heading, obj6);
-  items6[2] = callback(importDefault(3992).View, obj5);
+  obj5.children = callback(application(4161).Heading, obj6);
+  items6[2] = callback(importDefault(4026).View, obj5);
   items6[3] = callback(application(1273).Spacer, { size: 32, pointerEvents: "none" });
   obj4.children = items6;
-  items3[1] = callback2(importDefault(3992).View, obj4);
+  items3[1] = callback2(importDefault(4026).View, obj4);
   let tmp27 = null;
   if (null != application) {
     tmp27 = null;
@@ -199,7 +199,7 @@ export default function Header(application) {
       const obj8 = {
         size: "sm",
         variant: "secondary-overlay",
-        icon: importDefault(4076),
+        icon: importDefault(4110),
         onPress() {
               let obj = callback(_undefined[22]);
               obj = { application_id: application.id, source: callback };
@@ -229,17 +229,17 @@ export default function Header(application) {
       const intl = application(1212).intl;
       obj8.accessibilityLabel = intl.string(application(1212).t.XWDihq);
       obj8.maxFontSizeMultiplier = 1.5;
-      const items7 = [callback(application(6625).IconButton, obj8), ];
+      const items7 = [callback(application(6661).IconButton, obj8), ];
       const obj9 = { application, onAddAppMenuClick };
-      items7[1] = callback(importDefault(11245), obj9);
+      items7[1] = callback(importDefault(11283), obj9);
       obj7.children = items7;
       tmp27 = callback2(currentUser2, obj7);
     }
-    obj14 = application(7953);
+    obj14 = application(7990);
   }
   items3[2] = tmp27;
   obj1.children = items3;
-  return callback2(importDefault(3992).View, obj1);
+  return callback2(importDefault(4026).View, obj1);
 };
 export const SHEET_HANDLE_CONTAINER_HEIGHT = 16;
 export const EXPANDED_HEADER_HEIGHT = 161;

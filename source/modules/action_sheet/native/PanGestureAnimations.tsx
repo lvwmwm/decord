@@ -1,10 +1,10 @@
-// Module ID: 10805
-// Function ID: 83795
+// Module ID: 10843
+// Function ID: 83916
 // Name: getNearestValue
-// Dependencies: [1273, 4543, 4132, 3992, 5217, 2]
+// Dependencies: [1273, 4577, 4166, 4026, 5251, 2]
 // Exports: default
 
-// Module 10805 (getNearestValue)
+// Module 10843 (getNearestValue)
 let obj = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { duration: 500, easing: require("Button").STANDARD_EASING };
 let closure_4 = { code: "function getNearestValue_PanGestureAnimationsTsx1(array,measure,velocity=0){const unitVector=velocity<0?-1:velocity>0?1:0;function getSortedByMeasure(array,measure){'worklet';const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}if(array.length===0){return measure;}const sorted=getSortedByMeasure(array,measure);if(unitVector!==0){var _sorted$find;return(_sorted$find=sorted.find(function(value){const result=unitVector<0?measure>value:measure<value;return result;}))!==null&&_sorted$find!==void 0?_sorted$find:sorted[0];}return sorted[0];}" };
@@ -62,7 +62,7 @@ let tmp2 = (() => {
     obj["velocity"] = arg1;
     return obj.withSpring(value, obj);
   }
-  obj = { SPRING_CONFIG: obj, withSpring: require(4543) /* withSpring */.withSpring };
+  obj = { SPRING_CONFIG: obj, withSpring: require(4577) /* withSpring */.withSpring };
   withPanGestureSpring.__closure = obj;
   withPanGestureSpring.__workletHash = 12189464558811;
   withPanGestureSpring.__initData = closure_7;
@@ -78,7 +78,7 @@ const tmp3 = (() => {
     }
     return outer1_0(outer1_1[2]).withTiming(value, tmp);
   }
-  obj = { TIMING_CONFIG: obj, withTiming: require(4132) /* withTiming */.withTiming };
+  obj = { TIMING_CONFIG: obj, withTiming: require(4166) /* withTiming */.withTiming };
   withPanGestureTiming.__closure = obj;
   withPanGestureTiming.__workletHash = 7636074551896;
   withPanGestureTiming.__initData = closure_9;

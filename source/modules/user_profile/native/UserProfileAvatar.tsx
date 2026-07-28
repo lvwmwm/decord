@@ -1,10 +1,10 @@
-// Module ID: 8042
-// Function ID: 63953
+// Module ID: 8080
+// Function ID: 64063
 // Name: OpenableUserProfileAvatar
-// Dependencies: [31, 27, 8043, 5510, 33, 8017, 7915, 8045, 8052, 1212, 2]
+// Dependencies: [31, 27, 8081, 5545, 33, 8055, 7951, 8083, 8090, 1212, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8042 (OpenableUserProfileAvatar)
+// Module 8080 (OpenableUserProfileAvatar)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -25,7 +25,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   obj.backgroundColor = 0;
   obj.size = 0;
   const merged = Object.assign(backgroundColor, obj);
-  const tmp3 = importDefault(8017)();
+  const tmp3 = importDefault(8055)();
   obj = {};
   const items = [, , ];
   ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp3);
@@ -36,7 +36,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp3);
   obj.size = size;
   const merged1 = Object.assign(merged);
-  items1[1] = callback(importDefault(7915), obj);
+  items1[1] = callback(importDefault(7951), obj);
   obj.children = items1;
   return callback2(closure_8, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 6717
-// Function ID: 59287
+// Module ID: 6753
+// Function ID: 59376
 // Name: UserCircleIcon
-// Dependencies: [31, 33, 689, 3834, 6718, 2]
+// Dependencies: [31, 33, 689, 3868, 6754, 2]
 // Exports: UserCircleIcon
 
-// Module 6717 (UserCircleIcon)
+// Module 6753 (UserCircleIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UserCircleIcon = function UserCircleIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(6718) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6754) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6718) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6754) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

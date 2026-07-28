@@ -1,9 +1,9 @@
-// Module ID: 4574
-// Function ID: 40109
+// Module ID: 4608
+// Function ID: 40224
 // Name: getGuildIdFromChannelId
-// Dependencies: [1909, 1348, 1838, 3759, 3768, 1850, 653, 1832, 1392, 1212, 4575, 4313, 4321, 4576, 4322, 4573, 3830, 2]
+// Dependencies: [1909, 1348, 1838, 3793, 3802, 1850, 653, 1832, 1392, 1212, 4609, 4347, 4355, 4610, 4356, 4607, 3864, 2]
 
-// Module 4574 (getGuildIdFromChannelId)
+// Module 4608 (getGuildIdFromChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -60,9 +60,9 @@ function makeMessage(isForumPost) {
 function getChannel(channelId, mentionChannels) {
   const _require = channelId;
   const channel = store.getChannel(channelId);
-  const isSubscriptionGated = _require(4575).getChannelRoleSubscriptionStatus(channelId, store, _isNativeReflectConstruct, closure_6).isSubscriptionGated;
-  const obj2 = _require(4575);
-  const mentionIconType = _require(4313).getMentionIconType(channel);
+  const isSubscriptionGated = _require(4609).getChannelRoleSubscriptionStatus(channelId, store, _isNativeReflectConstruct, closure_6).isSubscriptionGated;
+  const obj2 = _require(4609);
+  const mentionIconType = _require(4347).getMentionIconType(channel);
   let str = "text";
   if (null != mentionIconType) {
     str = mentionIconType;
@@ -91,18 +91,18 @@ function getChannel(channelId, mentionChannels) {
   if (null != channel) {
     obj = {};
     ({ type: obj4.type, id: obj4.id, guild_id: obj4.guildId } = channel);
-    obj.name = _require(4321).computeChannelName(channel, closure_8, closure_7);
+    obj.name = _require(4355).computeChannelName(channel, closure_8, closure_7);
     obj.isDm = channel.isPrivate();
     obj.isForumPost = channel.isForumPost();
-    const obj5 = _require(4321);
-    obj.isMentionable = _require(4576).isChannelTypeMentionable(channel.type);
-    const obj6 = _require(4576);
-    obj.canViewChannel = _require(4322).canViewChannel(channel);
+    const obj5 = _require(4355);
+    obj.isMentionable = _require(4610).isChannelTypeMentionable(channel.type);
+    const obj6 = _require(4610);
+    obj.canViewChannel = _require(4356).canViewChannel(channel);
     obj.roleSubscriptionGated = isSubscriptionGated;
     obj.iconType = str;
     obj.parentId = channel.parent_id;
     tmp3 = obj;
-    const obj7 = _require(4322);
+    const obj7 = _require(4356);
   }
   return tmp3;
 }
@@ -151,10 +151,10 @@ function formatChannelMentionContent(guild, isForumPost, arg2, arg3) {
         const channel = store.getChannel(isForumPost.parentId);
         if (null != channel) {
           obj = {};
-          obj = { name: require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_8, closure_7), type: channel.type };
-          const obj7 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+          obj = { name: require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_8, closure_7), type: channel.type };
+          const obj7 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
           const tmp11 = makeChannel;
-          const mentionIconType = require(4313) /* _createForOfIteratorHelperLoose */.getMentionIconType(channel);
+          const mentionIconType = require(4347) /* _createForOfIteratorHelperLoose */.getMentionIconType(channel);
           let str = "forum";
           if (null != mentionIconType) {
             str = mentionIconType;
@@ -299,7 +299,7 @@ obj = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const CHANNEL_OR_MESSAGES_URL_RE = require(4322) /* canViewChannel */.CHANNEL_OR_MESSAGES_URL_RE;
+    const CHANNEL_OR_MESSAGES_URL_RE = require(4356) /* canViewChannel */.CHANNEL_OR_MESSAGES_URL_RE;
     const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
     if (null != match) {
       if (null != match[2]) {
@@ -337,7 +337,7 @@ obj.mediaPostLink = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4322) /* canViewChannel */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = require(4356) /* canViewChannel */.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(channelId, arg1, channelId) {
@@ -365,7 +365,7 @@ let obj1 = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4322) /* canViewChannel */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = require(4356) /* canViewChannel */.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(channelId, arg1, channelId) {

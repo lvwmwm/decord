@@ -1,9 +1,9 @@
-// Module ID: 14143
-// Function ID: 108772
+// Module ID: 14187
+// Function ID: 108945
 // Name: questDockHeaderLayoutAnimation
-// Dependencies: [57, 31, 27, 4977, 14056, 482, 33, 4131, 689, 4543, 14138, 14057, 478, 14053, 14066, 4980, 5959, 4067, 3977, 3835, 14140, 3992, 14052, 7620, 14144, 14118, 5085, 14146, 14147, 14109, 4127, 1212, 4661, 9758, 8895, 2]
+// Dependencies: [57, 31, 27, 5011, 14100, 482, 33, 4165, 689, 4577, 14182, 14101, 478, 14097, 14110, 5014, 5993, 4101, 4011, 3869, 14184, 4026, 14096, 7656, 14188, 14162, 5119, 14190, 14191, 14153, 4161, 1212, 4695, 9798, 8939, 2]
 
-// Module 14143 (questDockHeaderLayoutAnimation)
+// Module 14187 (questDockHeaderLayoutAnimation)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";
@@ -47,7 +47,7 @@ let closure_18 = (() => {
     obj.animations = obj;
     return obj;
   }
-  questDockHeaderLayoutAnimation.__closure = { withSpring: require(4543) /* withSpring */.withSpring, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: closure_8 };
+  questDockHeaderLayoutAnimation.__closure = { withSpring: require(4577) /* withSpring */.withSpring, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: closure_8 };
   questDockHeaderLayoutAnimation.__workletHash = 6787168806966;
   questDockHeaderLayoutAnimation.__initData = closure_17;
   return questDockHeaderLayoutAnimation;

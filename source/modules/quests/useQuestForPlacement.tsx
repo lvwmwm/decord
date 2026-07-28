@@ -1,17 +1,17 @@
-// Module ID: 14076
-// Function ID: 107703
+// Module ID: 14120
+// Function ID: 107876
 // Name: maybeRefreshAd
-// Dependencies: [31, 5932, 664, 10429, 9413, 9401, 5947, 566, 14077, 5930, 2]
+// Dependencies: [31, 5966, 664, 10469, 9453, 9445, 5981, 566, 14121, 5964, 2]
 // Exports: default
 
-// Module 14076 (maybeRefreshAd)
+// Module 14120 (maybeRefreshAd)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let closure_3;
 let closure_4;
 function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, callerSource) {
-  let obj = require(10429) /* getIsEligibleForQuests */;
+  let obj = require(10469) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     let tmp3 = null != fetchedAt;
@@ -28,21 +28,21 @@ function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, callerSource) {
         let enableNewRequestBehavior = _isNativeReflectConstruct.canRefreshAd(MOBILE_HOME_DOCK_AREA);
         if (enableNewRequestBehavior) {
           obj = { location: "maybeRefreshAd" };
-          enableNewRequestBehavior = importDefault(5947).getConfig(obj).enableNewRequestBehavior;
-          const obj3 = importDefault(5947);
+          enableNewRequestBehavior = importDefault(5981).getConfig(obj).enableNewRequestBehavior;
+          const obj3 = importDefault(5981);
         }
         if (enableNewRequestBehavior) {
-          const currentQuests = require(9401) /* _manuallyStartConsoleQuest */.fetchCurrentQuests();
-          const obj5 = require(9401) /* _manuallyStartConsoleQuest */;
-          const questToDeliver = require(9401) /* _manuallyStartConsoleQuest */.fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, callerSource);
-          const obj6 = require(9401) /* _manuallyStartConsoleQuest */;
+          const currentQuests = require(9445) /* _manuallyStartConsoleQuest */.fetchCurrentQuests();
+          const obj5 = require(9445) /* _manuallyStartConsoleQuest */;
+          const questToDeliver = require(9445) /* _manuallyStartConsoleQuest */.fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, callerSource);
+          const obj6 = require(9445) /* _manuallyStartConsoleQuest */;
         }
       }
     } else if (null != fetchedAt) {
-      require(9401) /* _manuallyStartConsoleQuest */.clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
-      const obj7 = require(9401) /* _manuallyStartConsoleQuest */;
+      require(9445) /* _manuallyStartConsoleQuest */.clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
+      const obj7 = require(9445) /* _manuallyStartConsoleQuest */;
     }
-    obj2 = importDefault(9413);
+    obj2 = importDefault(9453);
   }
 }
 ({ useEffect: closure_3, useRef: closure_4 } = result);

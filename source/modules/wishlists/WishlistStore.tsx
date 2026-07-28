@@ -1,9 +1,9 @@
-// Module ID: 8606
-// Function ID: 68360
+// Module ID: 8650
+// Function ID: 68507
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8607, 1184, 5630, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 8651, 1184, 5878, 566, 686, 2]
 
-// Module 8606 (_isNativeReflectConstruct)
+// Module 8650 (_isNativeReflectConstruct)
 import isNonEmptyString from "isNonEmptyString";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -220,7 +220,7 @@ tmp3 = new tmp3(require("dispatcher"), {
     let recipientId;
     let skuId;
     ({ recipientId, skuId } = arg0);
-    const firstWishlistId = require(5630) /* _isNativeReflectConstruct */.default.getFirstWishlistId(recipientId);
+    const firstWishlistId = require(5878) /* _isNativeReflectConstruct */.default.getFirstWishlistId(recipientId);
     let tmp2 = null != firstWishlistId;
     if (tmp2) {
       tmp2 = null != dependencyMap[firstWishlistId];

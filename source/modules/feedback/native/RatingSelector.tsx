@@ -1,10 +1,10 @@
-// Module ID: 9461
-// Function ID: 73850
+// Module ID: 9501
+// Function ID: 73978
 // Name: RatingSelector
-// Dependencies: [31, 27, 9457, 33, 4131, 9462, 9463, 1212, 9467, 9468, 9472, 9473, 7578, 4661, 2]
+// Dependencies: [31, 27, 9497, 33, 4165, 9502, 9503, 1212, 9507, 9508, 9512, 9513, 7614, 4695, 2]
 // Exports: default
 
-// Module 9461 (RatingSelector)
+// Module 9501 (RatingSelector)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import FeedbackRating from "FeedbackRating";

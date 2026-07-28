@@ -1,10 +1,10 @@
-// Module ID: 8946
-// Function ID: 70636
+// Module ID: 8990
+// Function ID: 70787
 // Name: Scope
-// Dependencies: [31, 27, 33, 4131, 1212, 6679, 689, 4092, 4127, 5450, 8882, 5655, 8112, 2]
+// Dependencies: [31, 27, 33, 4165, 1212, 6715, 689, 4126, 4161, 5485, 8926, 8004, 8150, 2]
 // Exports: default
 
-// Module 8946 (Scope)
+// Module 8990 (Scope)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,10 +37,10 @@ function Scope(arg0) {
   obj = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants" };
   if (isFake) {
     obj = { style: tmp.fakeScopeIcon, color: importDefault(689).colors.TEXT_MUTED, size: "refresh_sm" };
-    let tmp8Result = tmp8(tmp9(6679).CircleXIcon, obj);
+    let tmp8Result = tmp8(tmp9(6715).CircleXIcon, obj);
   } else {
     const obj1 = { color: importDefault(689).colors.TEXT_MUTED, size: "refresh_sm" };
-    tmp8Result = tmp8(tmp9(4092).CircleCheckIcon, obj1);
+    tmp8Result = tmp8(tmp9(4126).CircleCheckIcon, obj1);
   }
   obj.children = tmp8Result;
   const items = [callback(View, obj), ];
@@ -52,11 +52,11 @@ function Scope(arg0) {
   }
   obj3.color = str5;
   obj3.children = text;
-  const items1 = [callback(require(4127) /* Text */.Text, obj3), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj3), ];
   let tmp17 = null;
   if (null != error) {
     const obj4 = { variant: "text-xs/normal", children: error };
-    tmp17 = callback(require(4127) /* Text */.Text, obj4);
+    tmp17 = callback(require(4161) /* Text */.Text, obj4);
   }
   items1[1] = tmp17;
   obj2.children = items1;
@@ -85,16 +85,16 @@ export default function AuthorizeScopes(accountScopes) {
     return null;
   } else {
     const t = accountScopes(1212).t;
-    let hasItem = integrationType === accountScopes(5655).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === accountScopes(8004).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(accountScopes(8112).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(accountScopes(8150).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: tmp.scopesContainer };
     obj = { variant: "heading-sm/normal", color: "text-default" };
     const intl = accountScopes(1212).intl;
     obj = { application: application.name };
     obj.children = intl.format(isTrustedName ? t.PZpY9c : t["1Hz+Sl"], obj);
-    const items = [callback(accountScopes(4127).Text, obj), ];
+    const items = [callback(accountScopes(4161).Text, obj), ];
     const obj1 = { style: tmp.scopes };
     const mapped = accountScopes.map((value) => {
       let closure_0 = value;

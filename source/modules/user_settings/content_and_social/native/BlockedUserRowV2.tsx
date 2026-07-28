@@ -1,21 +1,21 @@
-// Module ID: 13772
-// Function ID: 105639
+// Module ID: 13816
+// Function ID: 105812
 // Name: handleUnblockUser
-// Dependencies: [31, 1850, 33, 8850, 5462, 5164, 1273, 1212, 8297, 4544, 566, 2]
+// Dependencies: [31, 1850, 33, 8894, 5497, 5198, 1273, 1212, 8335, 4578, 566, 2]
 // Exports: default
 
-// Module 13772 (handleUnblockUser)
+// Module 13816 (handleUnblockUser)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function handleUnblockUser(id) {
-  importDefault(8850).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
+  importDefault(8894).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
 }
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button" };
   obj = { user: userRecord, guildId: undefined, size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.icon = jsx(userRecord(1273).Avatar, { user: userRecord, guildId: undefined, size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 });
@@ -60,8 +60,8 @@ function BlockedUserRow(userRecord) {
   obj1.onPress = function onPress() {
     outer1_5(userRecord.id);
   };
-  obj.trailing = jsx(userRecord(4544).Button, { size: "sm", variant: "secondary" });
-  return jsx(userRecord(5164).TableRow, { name: "unblock" });
+  obj.trailing = jsx(userRecord(4578).Button, { size: "sm", variant: "secondary" });
+  return jsx(userRecord(5198).TableRow, { name: "unblock" });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 

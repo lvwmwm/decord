@@ -1,10 +1,10 @@
-// Module ID: 5855
-// Function ID: 51666
+// Module ID: 5865
+// Function ID: 51522
 // Name: resolveGoreSettingWithDefaults
-// Dependencies: [31, 1850, 653, 1282, 3810, 3817, 3804, 2]
+// Dependencies: [31, 1850, 653, 1282, 3844, 3851, 3838, 2]
 // Exports: updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 5855 (resolveGoreSettingWithDefaults)
+// Module 5865 (resolveGoreSettingWithDefaults)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { HelpdeskArticles } from "ME";
@@ -27,8 +27,8 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
   }
   currentUser = currentUser.getCurrentUser();
-  let obj = require(3810) /* isFeatureAgeGated */;
-  if (obj.isSettingTeenByDefault(require(3817) /* SettingsDefaultFeature */.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
+  let obj = require(3844) /* isFeatureAgeGated */;
+  if (obj.isSettingTeenByDefault(require(3851) /* SettingsDefaultFeature */.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
     obj = { isDm, isFriend: flag };
     let flag5 = obj.isDm;
     if (flag5 === undefined) {
@@ -94,7 +94,7 @@ function resolveGoreSettingWithDefaultsForTeen(isDm) {
 function getGoreContentSettingOrDefault(arg0) {
   let setting = arg0;
   if (null == arg0) {
-    const GoreContentSettings = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+    const GoreContentSettings = require(3838) /* explicitContentFromProto */.GoreContentSettings;
     setting = GoreContentSettings.getSetting();
   }
   let obj = {};
@@ -128,7 +128,7 @@ export { resolveGoreSettingWithDefaults };
 export { resolveGoreSettingWithDefaultsForTeen };
 export { getGoreContentSettingOrDefault };
 export const updateGoreContentSetting = function updateGoreContentSetting(arg0) {
-  const GoreContentSettings = require(3804) /* explicitContentFromProto */.GoreContentSettings;
+  const GoreContentSettings = require(3838) /* explicitContentFromProto */.GoreContentSettings;
   const merged = Object.assign(getGoreContentSettingOrDefault());
   const merged1 = Object.assign(arg0);
   GoreContentSettings.updateSetting({});

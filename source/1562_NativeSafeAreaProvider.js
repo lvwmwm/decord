@@ -1,5 +1,5 @@
 // Module ID: 1562
-// Function ID: 17629
+// Function ID: 17633
 // Name: NativeSafeAreaProvider
 // Dependencies: [1563]
 

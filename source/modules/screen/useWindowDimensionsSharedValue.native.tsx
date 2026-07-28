@@ -1,24 +1,24 @@
-// Module ID: 14769
-// Function ID: 112591
+// Module ID: 14813
+// Function ID: 112764
 // Name: getWindowDimensionsWorklet
-// Dependencies: [3992, 1450, 11098, 9980, 2]
+// Dependencies: [4026, 1450, 11136, 10020, 2]
 // Exports: default
 
-// Module 14769 (getWindowDimensionsWorklet)
-import module_3992 from "module_3992";
+// Module 14813 (getWindowDimensionsWorklet)
+import module_4026 from "module_4026";
 import useWindowDimensions from "useWindowDimensions";
-import module_3992 from "module_3992";
+import module_4026 from "module_4026";
 import useWindowDimensions from "useWindowDimensions";
 
 let obj = {};
 const merged = Object.assign(useWindowDimensions.getWindowDimensions());
-let closure_2 = module_3992.makeMutable(obj);
+let closure_2 = module_4026.makeMutable(obj);
 obj = {};
 const merged1 = Object.assign(useWindowDimensions.getWindowDimensions({ ignoreKeyboard: true }));
-let closure_3 = module_3992.makeMutable(obj);
+let closure_3 = module_4026.makeMutable(obj);
 require("subscribeToWindowDimensions")((arg0, arg1) => {
-  importDefault(9980)(closure_2, arg0);
-  importDefault(9980)(closure_3, arg1);
+  importDefault(10020)(closure_2, arg0);
+  importDefault(10020)(closure_3, arg1);
 });
 let closure_4 = { code: "function getWindowDimensionsWorklet_useWindowDimensionsSharedValueNativeTsx1(params=undefined){const{windowDimensionsSharedValueIgnoringKeyboard,windowDimensionsSharedValue}=this.__closure;return(params===null||params===void 0?void 0:params.ignoreKeyboard)===true?windowDimensionsSharedValueIgnoringKeyboard.get():windowDimensionsSharedValue.get();}" };
 const tmp5 = (() => {

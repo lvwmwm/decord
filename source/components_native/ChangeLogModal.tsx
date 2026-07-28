@@ -1,16 +1,16 @@
-// Module ID: 14437
-// Function ID: 110371
+// Module ID: 14481
+// Function ID: 110544
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1906, 33, 4131, 689, 3843, 8053, 675, 14438, 5085, 8080, 1212, 4661, 8278, 9568, 1273, 7806, 1450, 7807, 1457, 5087, 3713, 7808, 4127, 4338, 5517, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1906, 33, 4165, 689, 3877, 8091, 675, 14482, 5119, 8118, 1212, 4695, 8316, 9608, 1273, 7842, 1450, 7843, 1457, 5121, 3747, 7844, 4161, 4372, 5552, 2]
 // Exports: default
 
-// Module 14437 (_callSuper)
+// Module 14481 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
-import module_14438 from "module_14438";
+import module_14482 from "module_14482";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
-import importAllResult from "module_4338";
+import importAllResult from "module_4372";
 import { View } from "HeaderBackImage";
 import { AnalyticEvents } from "ME";
 import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY";
@@ -32,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return module_14438(arg0, constructResult);
+  return module_14482(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -158,19 +158,19 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f110386;
+      tmp13 = f110559;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f110386, obj5);
+      tmp14 = jsx(f110559, obj5);
     }
     return tmp14;
   }
 }
 function hideChangeLog() {
-  importDefault(4338).popWithKey(CHANGELOG_MODAL_KEY);
+  importDefault(4372).popWithKey(CHANGELOG_MODAL_KEY);
 }
 ({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
 let c14 = 0.5625;
@@ -426,7 +426,7 @@ export default function ChangelogModal() {
     obj.CHANGELOG = obj;
     return obj;
   }, []);
-  return callback4(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
+  return callback4(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
 };
 export const ListItem = tmp4;
 export { ChangeLogScreen };

@@ -1,11 +1,11 @@
-// Module ID: 10786
-// Function ID: 83696
+// Module ID: 10824
+// Function ID: 83817
 // Name: StreamPreviewTile
-// Dependencies: [31, 27, 4150, 1850, 10174, 4149, 33, 4131, 3975, 689, 5462, 1557, 566, 4324, 8297, 10482, 10756, 10508, 10539, 10787, 10792, 10793, 8965, 8986, 10794, 1273, 10447, 3992, 4132, 10795, 2]
+// Dependencies: [31, 27, 4184, 1850, 10214, 4183, 33, 4165, 4009, 689, 5497, 1557, 566, 4358, 8335, 10520, 10794, 10546, 10577, 10825, 10830, 10831, 9009, 9030, 10832, 1273, 10485, 4026, 4166, 10833, 2]
 
-// Module 10786 (StreamPreviewTile)
+// Module 10824 (StreamPreviewTile)
 import importAllResult from "result";
-import get_ActivityIndicator from "module_3992";
+import get_ActivityIndicator from "module_4026";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import resetFocusTimer from "resetFocusTimer";
@@ -49,17 +49,17 @@ class StreamPreviewTile {
 function ParticipantIcon(participant) {
   participant = participant.participant;
   if (participant.type === constants.STREAM) {
-    let tmp5 = importDefault(10792);
+    let tmp5 = importDefault(10830);
   } else if (participant.type === constants.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp5 = importDefault(10793);
+      tmp5 = importDefault(10831);
     } else if (constants2.XBOX === voicePlatform) {
-      tmp5 = importDefault(8965);
+      tmp5 = importDefault(9009);
     } else if (constants2.PLAYSTATION === voicePlatform) {
-      tmp5 = importDefault(8986);
+      tmp5 = importDefault(9030);
     } else if (constants2.QUEST === voicePlatform) {
-      tmp5 = importDefault(10794);
+      tmp5 = importDefault(10832);
     }
   }
   let tmp16 = null;
@@ -77,7 +77,7 @@ class TileOverlay {
     tmp2 = require("useSafeAreaInsets")();
     ({ bottom, left, top, right } = tmp2);
     reveal = Object.useContext(require("useRevealProviderValue").RevealContext).reveal;
-    obj = require("module_3992");
+    obj = require("module_4026");
     class T {
       constructor() {
         obj = {};
@@ -145,7 +145,7 @@ class TileOverlay {
     obj4.children = jsxs(View, obj5);
     items1[1] = jsx(View, obj4);
     obj2.children = items1;
-    return tmp4(require("module_3992").View, obj2);
+    return tmp4(require("module_4026").View, obj2);
   }
 }
 ({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);

@@ -1,10 +1,10 @@
-// Module ID: 12136
-// Function ID: 95080
+// Module ID: 12179
+// Function ID: 95250
 // Name: useWishlistAnalyticsContext
 // Dependencies: [31, 33, 2]
 // Exports: WishlistAnalyticsProvider
 
-// Module 12136 (useWishlistAnalyticsContext)
+// Module 12179 (useWishlistAnalyticsContext)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 

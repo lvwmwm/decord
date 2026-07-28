@@ -1,10 +1,10 @@
-// Module ID: 8182
-// Function ID: 65634
+// Module ID: 8220
+// Function ID: 65744
 // Name: useCollapsibleFloatingActionButtonState
-// Dependencies: [31, 3992, 2]
+// Dependencies: [31, 4026, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 8182 (useCollapsibleFloatingActionButtonState)
+// Module 8220 (useCollapsibleFloatingActionButtonState)
 import result from "result";
 
 const require = arg1;
@@ -12,7 +12,7 @@ let closure_3 = { code: "function CollapsibleFloatingActionButtonStateNativeTsx1
 let result = require("set").fileFinishedImporting("design/components/experimental/Button/native/CollapsibleFloatingActionButtonState.native.tsx");
 
 export const useCollapsibleFloatingActionButtonState = function useCollapsibleFloatingActionButtonState() {
-  const obj = { collapseText: require(3992).useSharedValue(0) };
+  const obj = { collapseText: require(4026).useSharedValue(0) };
   return obj;
 };
 export const useCollapsibleFloatingActionButtonScroll = function useCollapsibleFloatingActionButtonScroll(collapsibleFloatingActionButtonState, UNDETERMINED) {

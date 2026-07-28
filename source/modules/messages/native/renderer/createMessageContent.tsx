@@ -1,9 +1,9 @@
-// Module ID: 7661
-// Function ID: 61335
+// Module ID: 7697
+// Function ID: 61425
 // Name: createThreadEmbed
-// Dependencies: [27, 4123, 4168, 3943, 4992, 7660, 7662, 3760, 7663, 5829, 3761, 6014, 1278, 1194, 1348, 1918, 1838, 3768, 6097, 1850, 4124, 7655, 653, 7665, 4321, 7666, 21, 7667, 7668, 1212, 7670, 7671, 7672, 4467, 1360, 6020, 7677, 4572, 7678, 7680, 5870, 7682, 7804, 7805, 7824, 5849, 5834, 3804, 7825, 7830, 7756, 7871, 4361, 1395, 1392, 7874, 1273, 5486, 7929, 1327, 7930, 3748, 4940, 7931, 7932, 3801, 7935, 7943, 7881, 5994, 689, 7944, 7685, 7946, 7947, 7801, 7950, 7969, 12285, 12304, 12306, 12320, 7688, 7689, 12321, 12324, 12325, 12326, 7690, 12327, 2]
+// Dependencies: [27, 4157, 4202, 3977, 5026, 7696, 7698, 3794, 7699, 5839, 3795, 6048, 1278, 1194, 1348, 1918, 1838, 3802, 6131, 1850, 4158, 7691, 653, 7701, 4355, 7702, 21, 7703, 7704, 1212, 7706, 7707, 7708, 4501, 1360, 6054, 7713, 4606, 7714, 7716, 5904, 7718, 7840, 7841, 7860, 5859, 5844, 3838, 7861, 7866, 7792, 7907, 4395, 1395, 1392, 7910, 1273, 5521, 7966, 1327, 7967, 3782, 4974, 7968, 7969, 3835, 7972, 7980, 7917, 6028, 689, 7981, 7721, 7983, 7984, 7837, 7987, 8007, 12328, 12347, 12349, 12363, 7724, 7725, 12364, 12367, 12368, 12369, 7726, 12370, 2]
 
-// Module 7661 (createThreadEmbed)
+// Module 7697 (createThreadEmbed)
 import { processColor } from "shouldUseOldMaxMessageCount";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -41,19 +41,19 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
   if (!isInlineReplyPreview) {
     if (message.hasFlag(closure_30.HAS_THREAD)) {
       if (null != channel1) {
-        let channelName = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel1, closure_23, closure_21);
-        const backgroundColor = importDefault(7666)(forcedTheme).baseColors.backgroundColor;
-        const obj11 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+        let channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel1, closure_23, closure_21);
+        const backgroundColor = importDefault(7702)(forcedTheme).baseColors.backgroundColor;
+        const obj11 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
         const mostRecentMessage = store3.getMostRecentMessage(importDefault(21).castMessageIdAsChannelId(message.id));
         const obj12 = importDefault(21);
         const count = store3.getCount(importDefault(21).castMessageIdAsChannelId(message.id));
         const obj13 = importDefault(21);
-        let intl5 = require(7667) /* shouldUseOldMaxMessageCount */.formatMobileMessageCountLabel(count, channel1.id);
-        const obj14 = require(7667) /* shouldUseOldMaxMessageCount */;
-        let string2 = require(7667) /* shouldUseOldMaxMessageCount */.formatMessageCountLabel(count, channel1.id);
+        let intl5 = require(7703) /* shouldUseOldMaxMessageCount */.formatMobileMessageCountLabel(count, channel1.id);
+        const obj14 = require(7703) /* shouldUseOldMaxMessageCount */;
+        let string2 = require(7703) /* shouldUseOldMaxMessageCount */.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let obj1 = require(7668) /* getSpoilerGatingChannelId */;
+            let obj1 = require(7704) /* getSpoilerGatingChannelId */;
             if (obj1.isChannelSpoilerGated(channel1)) {
               let obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
               channelName = require;
@@ -71,10 +71,10 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                   const intl4 = require(1212) /* getSystemLocale */.intl;
                   obj.messagePreviewString = intl4.string(require(1212) /* getSystemLocale */.t.ZTo4HS);
                   obj.archived = true;
-                  obj.archivedIconUrl = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(7671));
+                  obj.archivedIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7707));
                   obj.backgroundColor = backgroundColor;
                   obj1 = obj;
-                  const obj9 = require(7670) /* frozen */;
+                  const obj9 = require(7706) /* frozen */;
                 }
               }
               if (null != mostRecentMessage) {
@@ -143,14 +143,14 @@ function getForumPostActions(message, channel) {
       if (null != emojiId) {
         usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(defaultReactionEmoji.emojiId);
       }
-      let obj = require(7672) /* createDefaultReaction */;
+      let obj = require(7708) /* createDefaultReaction */;
       obj = { defaultReactionEmoji, customGuildEmoji: usableCustomEmojiById };
       defaultReaction = obj.createDefaultReaction(obj);
     }
     const hasJoinedResult = closure_14.hasJoined(message.channel_id);
     const shouldDisplayPromptResult = closure_11.shouldDisplayPrompt(channel.id);
     obj = { isFollowing: hasJoinedResult, hasReactions: 0 !== message.reactions.length, defaultReaction, showMediaPostSharePrompt: shouldDisplayPromptResult };
-    return require(7672) /* createDefaultReaction */.createForumPostActions(obj);
+    return require(7708) /* createDefaultReaction */.createForumPostActions(obj);
   }
 }
 function createMessageContent(message) {

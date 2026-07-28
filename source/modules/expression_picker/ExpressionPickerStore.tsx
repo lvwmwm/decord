@@ -1,10 +1,10 @@
-// Module ID: 15816
-// Function ID: 122031
+// Module ID: 15855
+// Function ID: 122187
 // Name: openExpressionPicker
-// Dependencies: [1314, 4339, 677, 4000, 682, 2]
+// Dependencies: [1314, 4373, 677, 4034, 682, 2]
 // Exports: setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 15816 (openExpressionPicker)
+// Module 15855 (openExpressionPicker)
 import { ExpressionPickerViewType } from "ExpressionPickerViewType";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 import createJSONStorage from "createJSONStorage";

@@ -1,10 +1,10 @@
-// Module ID: 9597
-// Function ID: 74870
+// Module ID: 9637
+// Function ID: 74999
 // Name: toGameResults
-// Dependencies: [6038, 6039, 6108, 5036, 1348, 1918, 1838, 653, 4567, 4568, 9598, 1853, 22, 7957, 4975, 9599, 6117, 9558, 9559, 1392, 1212, 2]
+// Dependencies: [6072, 6073, 6142, 5070, 1348, 1918, 1838, 653, 4601, 4602, 9638, 1853, 22, 7994, 5009, 9639, 6151, 9598, 9599, 1392, 1212, 2]
 // Exports: getAutocompleteOptions
 
-// Module 9597 (toGameResults)
+// Module 9637 (toGameResults)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

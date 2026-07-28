@@ -1,10 +1,10 @@
-// Module ID: 5509
-// Function ID: 46951
+// Module ID: 5544
+// Function ID: 47078
 // Name: Divider
-// Dependencies: [31, 27, 5510, 33, 4131, 689, 4661, 4127, 5512, 1324, 2]
+// Dependencies: [31, 27, 5545, 33, 4165, 689, 4695, 4161, 5547, 1324, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 5509 (Divider)
+// Module 5544 (Divider)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
@@ -78,7 +78,7 @@ export default function UserProfileCard(arg0) {
       obj2.color = str3;
       obj2.lineClamp = 1;
       obj2.children = title;
-      items1[1] = closure_6(require(4127) /* Text */.Text, obj2);
+      items1[1] = closure_6(require(4161) /* Text */.Text, obj2);
       items1[2] = titleIcon;
       obj1.children = items1;
       tmp12Result = closure_7(View, obj1);
@@ -131,7 +131,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   obj1.color = str2;
   obj1.style = tmp.rowLabelText;
   obj1.children = label;
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   let tmp5 = null != hint;
   if (tmp5) {
     const obj2 = { size: closure_5, color: str };
@@ -140,7 +140,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   items[2] = tmp5;
   if (arrow) {
     const obj3 = { size: "sm" };
-    arrow = callback(require(5512) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj3);
+    arrow = callback(require(5547) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj3);
   }
   items[3] = arrow;
   obj.children = items;
@@ -152,7 +152,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   }
   items1[1] = tmp11;
   obj.children = items1;
-  return closure_7(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return closure_7(require(4695) /* PressableBase */.PressableOpacity, obj);
 };
 export const UserProfileCardRows = function UserProfileCardRows(children) {
   let closure_0 = importDefault(1324)("UserProfileCardRows");

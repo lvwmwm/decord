@@ -1,10 +1,10 @@
-// Module ID: 12670
-// Function ID: 98046
+// Module ID: 12713
+// Function ID: 98216
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 1352, 4029, 1858, 1348, 1918, 1850, 4147, 3782, 3783, 653, 3, 12642, 12626, 14, 566, 12671, 1318, 5720, 12672, 686, 22, 6041, 1829, 1861, 9490, 6023, 12748, 4452, 6244, 5656, 8050, 4461, 4354, 12749, 12751, 1828, 12753, 2]
+// Dependencies: [29, 1352, 4063, 1858, 1348, 1918, 1850, 4181, 3816, 3817, 653, 3, 12685, 12669, 14, 566, 12714, 1318, 5730, 12715, 686, 22, 6075, 1829, 1861, 9530, 6057, 12791, 4486, 6280, 7960, 8088, 4495, 4388, 12792, 12794, 1828, 12796, 2]
 // Exports: default
 
-// Module 12670 (_createForOfIteratorHelperLoose)
+// Module 12713 (_createForOfIteratorHelperLoose)
 import fetchSubscriptionPlansForSKU from "fetchSubscriptionPlansForSKU";
 import { createChannelRecordFromServer as closure_6 } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -363,8 +363,8 @@ function transformPresence(activities, guild_id) {
   if (null == hidden_activities) {
     hidden_activities = [];
   }
-  const tmpResult = importDefault(12753)(activities, hidden_activities);
-  const tmp = importDefault(12753);
+  const tmpResult = importDefault(12796)(activities, hidden_activities);
+  const tmp = importDefault(12796);
   return { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: populateCountdownFlagToActivities(tmpResult.activities), hiddenActivities: tmpResult.hiddenActivities, guildId: guild_id, processedAtTimestamp: activities.processed_at_timestamp };
 }
 function dispatchPresence(arg0) {
@@ -549,7 +549,7 @@ defineSimpleDispatch(["READY_SUPPLEMENTAL"], (arg0) => {
 });
 let result1 = definePreloadableDispatch(["READY"], (guilds) => {
   guilds = guilds.guilds;
-  const result = importAll(12671).preloadReadyPayloadData();
+  const result = importAll(12714).preloadReadyPayloadData();
   const found = guilds.filter((unavailable) => {
     let tmp = !unavailable.unavailable;
     if (tmp) {
@@ -578,7 +578,7 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
     guildIds = Promise.resolve();
   }
   const items = [result, guildIds];
-  const obj = importAll(12671);
+  const obj = importAll(12714);
   return Promise.all(items).then((arg0) => {
     let tmp;
     [tmp] = arg0;
@@ -711,9 +711,9 @@ defineSimpleDispatch(["EXPERIMENT_SESSION_OVERRIDE_DELETE"], (experimentName) =>
   obj.dispatch(obj);
 });
 defineSimpleDispatch(["RESUMED"], () => {
-  const localPresenceState = require(12626) /* importDefaultResult1 */.localPresenceState;
+  const localPresenceState = require(12669) /* importDefaultResult1 */.localPresenceState;
   localPresenceState.forceUpdate();
-  const localVoiceState = require(12626) /* importDefaultResult1 */.localVoiceState;
+  const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
   localVoiceState.forceUpdate();
   dispatchOrResetSocket({ type: "CONNECTION_RESUMED" });
 });
@@ -844,7 +844,7 @@ const result12 = definePreloadableDispatch(["THREAD_LIST_SYNC"], (guild_id) => {
   threads = guildId.threads;
   let mapped;
   if (guildId.members) {
-    mapped = importDefault(22).map(guildId.members, importDefault(6041));
+    mapped = importDefault(22).map(guildId.members, importDefault(6075));
     const arr2 = importDefault(22);
   }
   obj.members = mapped;
@@ -893,7 +893,7 @@ const result13 = definePreloadableDispatch(["GUILD_CREATE"], (data_mode) => {
     let obj = { type: "GUILD_UNAVAILABLE", guildId: unavailable.id };
     dispatchOrResetSocket(obj);
   } else {
-    obj = importAll(12671);
+    obj = importAll(12714);
     const result = obj.hydratePreviouslyUnavailableGuild(unavailable);
     const require = result;
     obj = { type: "GUILD_CREATE", guild: result };
@@ -1155,11 +1155,11 @@ defineSimpleDispatch(["RECENT_MENTION_DELETE"], (id) => {
   dispatchOrResetSocket({ type: "RECENT_MENTION_DELETE", id: id.message_id });
 });
 defineSimpleDispatch(["SAVED_MESSAGE_CREATE"], (body) => {
-  const obj = { type: "SAVED_MESSAGE_CREATE", savedMessage: require(9490) /* savedMessageDataToClient */.savedMessageCreateObjectToClient(body) };
+  const obj = { type: "SAVED_MESSAGE_CREATE", savedMessage: require(9530) /* savedMessageDataToClient */.savedMessageCreateObjectToClient(body) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["SAVED_MESSAGE_DELETE"], (channelId) => {
-  const obj = { type: "SAVED_MESSAGE_DELETE", savedMessageData: require(9490) /* savedMessageDataToClient */.savedMessageDeleteObjectToClient(channelId) };
+  const obj = { type: "SAVED_MESSAGE_DELETE", savedMessageData: require(9530) /* savedMessageDataToClient */.savedMessageDeleteObjectToClient(channelId) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["FRIEND_SUGGESTION_CREATE"], (suggestion) => {
@@ -1184,7 +1184,7 @@ defineSimpleDispatch(["MESSAGE_POLL_VOTE_ADD", "MESSAGE_POLL_VOTE_REMOVE"], (ans
   ({ channel_id: obj.channelId, message_id: obj.messageId, user_id: obj.userId } = answer_id);
   obj = { id: answer_id.answer_id, name: "" };
   obj.emoji = obj;
-  obj.reactionType = require(6023) /* ReactionTypes */.ReactionTypes.VOTE;
+  obj.reactionType = require(6057) /* ReactionTypes */.ReactionTypes.VOTE;
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["MESSAGE_POLL_VOTE_ADD_MANY"], (channelId) => {
@@ -1220,25 +1220,25 @@ defineSimpleDispatch(["ENTITLEMENT_CREATE", "ENTITLEMENT_UPDATE", "ENTITLEMENT_D
 });
 defineSimpleDispatch(["USER_PAYMENT_SOURCES_UPDATE"], () => {
   if (obj.isUserSettingsOpen()) {
-    const paymentSources = require(4452) /* _deletePaymentSource */.fetchPaymentSources();
-    const obj2 = require(4452) /* _deletePaymentSource */;
-    const subscriptionPlansBySKUs = importAll(6244).fetchSubscriptionPlansBySKUs(fetchedSKUIDs.getFetchedSKUIDs());
-    const obj3 = importAll(6244);
+    const paymentSources = require(4486) /* _deletePaymentSource */.fetchPaymentSources();
+    const obj2 = require(4486) /* _deletePaymentSource */;
+    const subscriptionPlansBySKUs = importAll(6280).fetchSubscriptionPlansBySKUs(fetchedSKUIDs.getFetchedSKUIDs());
+    const obj3 = importAll(6280);
   }
 });
 defineSimpleDispatch(["USER_SUBSCRIPTIONS_UPDATE"], () => {
-  const currentUser = importAll(5656).fetchCurrentUser();
-  const obj = importAll(5656);
+  const currentUser = importAll(7960).fetchCurrentUser();
+  const obj = importAll(7960);
   if (obj2.isUserSettingsOpen()) {
-    const subscriptions = require(4452) /* _deletePaymentSource */.fetchSubscriptions();
-    const obj3 = require(4452) /* _deletePaymentSource */;
+    const subscriptions = require(4486) /* _deletePaymentSource */.fetchSubscriptions();
+    const obj3 = require(4486) /* _deletePaymentSource */;
   }
 });
 defineSimpleDispatch(["WISHLIST_ITEM_PURCHASED"], (recipientId) => {
   dispatchOrResetSocket({ type: "WISHLIST_ITEM_PURCHASED", recipientId: recipientId.recipient_id, skuId: recipientId.sku_id });
 });
 defineSimpleDispatch(["USER_BADGE_STATE_UPDATE"], (badge_id) => {
-  const badge = require(8050) /* urlUserId */.fetchBadge(badge_id.badge_id);
+  const badge = require(8088) /* urlUserId */.fetchBadge(badge_id.badge_id);
 });
 defineSimpleDispatch(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], (subscription_id) => {
   dispatchOrResetSocket({ type: "GUILD_BOOST_SLOT_CREATE", guildBoostSlot: _isNativeReflectConstruct.createFromServer(subscription_id, store2.getSubscriptionById(subscription_id.subscription_id)) });
@@ -1254,7 +1254,7 @@ defineSimpleDispatch(["USER_PAYMENT_BROWSER_CHECKOUT_DONE"], (loadId) => {
 });
 defineSimpleDispatch(["USER_PAYMENT_CLIENT_ADD"], (arg0) => {
   const _require = arg0;
-  const purchaseTokenHash = _require(4461).getPurchaseTokenHash();
+  const purchaseTokenHash = _require(4495).getPurchaseTokenHash();
   purchaseTokenHash.then((arg0) => {
     const purchase_token_hash = closure_0.purchase_token_hash;
     if (purchase_token_hash === arg0) {
@@ -1372,7 +1372,7 @@ defineSimpleDispatch(["APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE"], (choices) =>
   dispatchOrResetSocket({ type: "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", choices: choices.choices, nonce: choices.nonce });
 });
 defineSimpleDispatch(["INTERACTION_MODAL_CREATE"], (id) => {
-  const obj = { type: "INTERACTION_MODAL_CREATE", id: id.id, channelId: id.channel_id, customId: id.custom_id, application: id.application, title: id.title, components: require(4354) /* _createForOfIteratorHelperLoose */.transformComponents(id.components) };
+  const obj = { type: "INTERACTION_MODAL_CREATE", id: id.id, channelId: id.channel_id, customId: id.custom_id, application: id.application, title: id.title, components: require(4388) /* _createForOfIteratorHelperLoose */.transformComponents(id.components) };
   ({ nonce: obj.nonce, resolved: obj.resolved } = id);
   dispatchOrResetSocket(obj);
 });
@@ -1607,25 +1607,25 @@ defineSimpleDispatch(["SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE"], (intera
   dispatchOrResetSocket({ type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE", interactionId: interactionId.interaction_id, applicationId: interactionId.application_id, skuId: interactionId.sku_id, recipientId: interactionId.recipient_id, eligible: interactionId.eligible, ineligibleReason: interactionId.ineligible_reason });
 });
 defineSimpleDispatch(["GUILD_ROOM_CONNECT"], (body, type) => {
-  const obj = { type, room: require(12749) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
+  const obj = { type, room: require(12792) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["GUILD_ROOM_DISCONNECT"], (userId, type) => {
   dispatchOrResetSocket({ type, userId: userId.user_id, roomId: userId.room_id });
 });
 defineSimpleDispatch(["GUILD_ROOM_UPDATE"], (body, type) => {
-  const obj = { type, room: require(12749) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
+  const obj = { type, room: require(12792) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["HAVEN_CONNECT"], (roomId, type) => {
-  const obj = { type, room: require(12751) /* parseParticipant */.parseRoom(roomId) };
+  const obj = { type, room: require(12794) /* parseParticipant */.parseRoom(roomId) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["HAVEN_DISCONNECT"], (userId, type) => {
   dispatchOrResetSocket({ type, userId: userId.user_id, roomId: userId.room_id });
 });
 defineSimpleDispatch(["HAVEN_UPDATE"], (roomId, type) => {
-  const obj = { type, room: require(12751) /* parseParticipant */.parseRoom(roomId) };
+  const obj = { type, room: require(12794) /* parseParticipant */.parseRoom(roomId) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["GUILD_OFFICIAL_GAME_APPLICATIONS_UPDATE"], (gameApplicationIds, type) => {

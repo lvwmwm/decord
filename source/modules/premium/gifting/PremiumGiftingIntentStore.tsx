@@ -1,9 +1,9 @@
-// Module ID: 7794
-// Function ID: 61871
+// Module ID: 7830
+// Function ID: 61961
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4045, 1188, 5892, 1316, 5590, 3768, 653, 7795, 3804, 7796, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4079, 1188, 5926, 1316, 5625, 3802, 653, 7831, 3838, 7832, 22, 566, 686, 2]
 
-// Module 7794 (_isNativeReflectConstruct)
+// Module 7830 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import apply from "apply";
@@ -122,7 +122,7 @@ function categorizeTopAffinityFriendAnniversaries(flag) {
   if (flag === undefined) {
     flag = false;
   }
-  const result = require(7795) /* _createForOfIteratorHelperLoose */.categorizeFriendAnniversariesByAffinity(closure_16, (arg0) => {
+  const result = require(7831) /* _createForOfIteratorHelperLoose */.categorizeFriendAnniversariesByAffinity(closure_16, (arg0) => {
     const userAffinity = outer1_10.getUserAffinity(arg0);
     let dmProbability;
     if (null != userAffinity) {
@@ -138,7 +138,7 @@ function updateFriendAnniversaries() {
   if (null == c20) {
     resetFriendAnniversaries();
     if (closure_12.hasConsented(Consents.PERSONALIZATION)) {
-      const EnableFriendAnniversaryNotifications = require(3804) /* explicitContentFromProto */.EnableFriendAnniversaryNotifications;
+      const EnableFriendAnniversaryNotifications = require(3838) /* explicitContentFromProto */.EnableFriendAnniversaryNotifications;
       if (EnableFriendAnniversaryNotifications.getSetting()) {
         const tmp12 = _createForOfIteratorHelperLoose(store.getFriendIDs());
         const iter = tmp12();
@@ -167,7 +167,7 @@ function updateFriendAnniversaries() {
                     let tmp25 = date;
                     let tmp26 = require;
                     let tmp27 = dependencyMap;
-                    let obj = require(7795) /* _createForOfIteratorHelperLoose */;
+                    let obj = require(7831) /* _createForOfIteratorHelperLoose */;
                     tmp20 = date;
                     if (obj.isFriendAnniversary(date)) {
                       let tmp28 = arr;
@@ -194,7 +194,7 @@ function updateFriendAnniversaries() {
           } else {
             resetFriendAnniversaries();
           }
-          obj3 = require(7796) /* getFriendAnniversaryGateConfig */;
+          obj3 = require(7832) /* getFriendAnniversaryGateConfig */;
         }
       }
     }
@@ -216,7 +216,7 @@ function maybeUpdateMessageGiftIntentLastShownMap(recipientUserId) {
 function generateFriendAnniversaries(c20) {
   resetFriendAnniversaries();
   if (obj.getFriendAnniversaryGateConfig({ location: "PremiumGiftingIntentStore generateFriendAnniversaries" }).enabled) {
-    const EnableFriendAnniversaryNotifications = set(3804).EnableFriendAnniversaryNotifications;
+    const EnableFriendAnniversaryNotifications = set(3838).EnableFriendAnniversaryNotifications;
     if (EnableFriendAnniversaryNotifications.getSetting()) {
       let closure_20 = c20;
       const friendIDs = store.getFriendIDs();
@@ -523,7 +523,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         iter = iter2;
       } while (!iter2.done);
     }
-    closure_15.messageGiftIntentLastShownMap = require(7795) /* _createForOfIteratorHelperLoose */.pruneTimestampMap(obj, getCurrentTime(), 1296000000);
+    closure_15.messageGiftIntentLastShownMap = require(7831) /* _createForOfIteratorHelperLoose */.pruneTimestampMap(obj, getCurrentTime(), 1296000000);
     closure_15.lastKnownGiftIntentDismissedAtMs = settingsTimestampMs;
   },
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: function handleDevToolResetFriendsListGiftIntentsShown() {

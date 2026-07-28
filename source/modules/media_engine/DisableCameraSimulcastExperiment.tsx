@@ -1,9 +1,9 @@
-// Module ID: 12901
-// Function ID: 100252
+// Module ID: 12945
+// Function ID: 100425
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12901 (apexExperiment)
+// Module 12945 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-05-disable-camera-simulcast", kind: "user", defaultConfig: { enableSimulcast: true }, variations: { [1]: { enableSimulcast: false } } };

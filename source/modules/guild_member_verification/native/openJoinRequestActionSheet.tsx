@@ -1,14 +1,14 @@
-// Module ID: 15375
-// Function ID: 117227
+// Module ID: 15415
+// Function ID: 117386
 // Name: openJoinRequestActionSheet
-// Dependencies: [4099, 15376, 1935, 2]
+// Dependencies: [4133, 15416, 1935, 2]
 // Exports: default
 
-// Module 15375 (openJoinRequestActionSheet)
+// Module 15415 (openJoinRequestActionSheet)
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/guild_member_verification/native/openJoinRequestActionSheet.tsx");
 
 export default function openJoinRequestActionSheet(joinRequest) {
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = { joinRequest };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(15376, dependencyMap.paths), "joinRequestActionSheet" + joinRequest.joinRequestId, obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(15416, dependencyMap.paths), "joinRequestActionSheet" + joinRequest.joinRequestId, obj);
 };

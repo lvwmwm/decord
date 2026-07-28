@@ -1,9 +1,9 @@
-// Module ID: 9944
-// Function ID: 76954
+// Module ID: 9984
+// Function ID: 77083
 // Name: PlatformIcon
-// Dependencies: [5, 57, 31, 27, 5067, 1922, 1858, 1194, 1348, 4813, 1918, 3759, 4941, 653, 33, 4131, 689, 4067, 4815, 1392, 3977, 1273, 4594, 4321, 4127, 1212, 4940, 9945, 5465, 8328, 9946, 9947, 22, 3835, 9948, 44, 3832, 9243, 4560, 7575, 4939, 566, 4942, 5049, 675, 4325, 4099, 6554, 9951, 8897, 686, 4338, 9956, 1935, 5655, 9960, 5187, 9961, 5506, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 5101, 1922, 1858, 1194, 1348, 4847, 1918, 3793, 4975, 653, 33, 4165, 689, 4101, 4849, 1392, 4011, 1273, 4628, 4355, 4161, 1212, 4974, 9985, 5500, 8366, 9986, 9987, 22, 3869, 9988, 44, 3866, 9287, 4594, 7611, 4973, 566, 4976, 5083, 675, 4359, 4133, 6590, 9991, 8941, 686, 4372, 9996, 1935, 8004, 10000, 5221, 10001, 5541, 4578, 2]
 
-// Module 9944 (PlatformIcon)
+// Module 9984 (PlatformIcon)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import useAppplicationRoleConnectionItems from "useAppplicationRoleConnectionItems";
 import registerAsset from "registerAsset";
@@ -42,19 +42,19 @@ let closure_8;
 const require = arg1;
 function PlatformIcon(platformType) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(platformType.platformType);
-  const tmp2 = importDefault(4067)();
+  const tmp2 = importDefault(4101)();
   const obj2 = require(1392) /* getAvatarURL */;
   const icon = value.icon;
-  const source = obj2.makeSource(require(3977) /* AccessibilityAnnouncer */.isThemeLight(tmp2) ? icon.lightPNG : icon.darkPNG);
+  const source = obj2.makeSource(require(4011) /* AccessibilityAnnouncer */.isThemeLight(tmp2) ? icon.lightPNG : icon.darkPNG);
   obj = { source, style: tmp.platformIcon, disableColor: true };
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function ChannelName(channel) {
   channel = channel.channel;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4594) /* getThreadChannelIcon */;
+  let obj = require(4628) /* getThreadChannelIcon */;
   const channelIcon = obj.getChannelIcon(channel);
   obj = { style: items };
   items = [tmp.channelName, channel.style];
@@ -64,8 +64,8 @@ function ChannelName(channel) {
     tmp6 = callback2(require(1273) /* Button */.Icon, obj);
   }
   const items1 = [tmp6, ];
-  const obj1 = { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4321)(channel) };
-  items1[1] = callback2(require(4127) /* Text */.Text, obj1);
+  const obj1 = { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4355)(channel) };
+  items1[1] = callback2(require(4161) /* Text */.Text, obj1);
   obj.children = items1;
   return closure_30(closure_8, obj);
 }
@@ -112,7 +112,7 @@ function ConnectionsCheck(result) {
       } else {
         return null;
       }
-      obj = require(4940) /* officialApplicationIds */;
+      obj = require(4974) /* officialApplicationIds */;
       const obj1 = { connectionType, connectionMetadataField, operator, operatorText: _8W9OXU, value };
       formatResult = obj.getConnectionsCheckText(obj1);
     }
@@ -126,7 +126,7 @@ function ConnectionsCheck(result) {
       obj2.color = str2;
       obj2.style = tmp.connectionsCheck;
       obj2.children = formatResult;
-      tmp25Result = closure_29(require(4127) /* Text */.Text, obj2);
+      tmp25Result = closure_29(require(4161) /* Text */.Text, obj2);
       const tmp25 = closure_29;
     }
     return tmp25Result;
@@ -399,7 +399,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       const tmp12 = first;
     }
   }, items3);
-  let obj = eligibilityStatesGroups(3835);
+  let obj = eligibilityStatesGroups(3869);
   closure_16 = obj.useToken(importDefault(689).unsafe_rawColors.GREEN_330);
   obj = {};
   const keys = Object.keys(memo1);
@@ -658,11 +658,11 @@ function ConnectedUserAccountOptions(account) {
   const tmp6 = callback(first.useState(1 === account.visibility), 2);
   const first1 = tmp6[0];
   let closure_8 = tmp6[1];
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     callback(!first1);
     callback2(first);
   });
-  let obj = importDefault(4815);
+  let obj = importDefault(4849);
   const value = obj.get(account.type);
   let tmp10;
   if (set.has(account.type)) {
@@ -674,7 +674,7 @@ function ConnectedUserAccountOptions(account) {
       callback3(enabled);
       outer1_1(outer1_2[40]).setFriendSync(account.type, account.id, enabled);
     };
-    tmp10 = callback2(account(7575).FormSwitchRow, obj);
+    tmp10 = callback2(account(7611).FormSwitchRow, obj);
   }
   let tmp14;
   if (set2.has(account.type)) {
@@ -687,7 +687,7 @@ function ConnectedUserAccountOptions(account) {
       callback4(show_activity);
       outer1_1(outer1_2[40]).setShowActivity(account.type, account.id, show_activity);
     };
-    tmp14 = callback2(account(7575).FormSwitchRow, obj);
+    tmp14 = callback2(account(7611).FormSwitchRow, obj);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -708,7 +708,7 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = outer1_1(outer1_2[40]).setMetadataVisibility(type, id, num);
     };
-    tmp18 = callback2(account(7575).FormSwitchRow, obj2);
+    tmp18 = callback2(account(7611).FormSwitchRow, obj2);
   }
   const obj3 = { style: _createForOfIteratorHelperLoose().accountConnectedPrivacyOptionsContainer };
   const obj4 = {};
@@ -727,7 +727,7 @@ function ConnectedUserAccountOptions(account) {
     }
     outer1_1(outer1_2[40]).setVisibility(type, id, num);
   };
-  const items = [callback2(account(7575).FormSwitchRow, obj4), tmp18, tmp14, tmp10];
+  const items = [callback2(account(7611).FormSwitchRow, obj4), tmp18, tmp14, tmp10];
   obj3.children = items;
   return callback3(closure_8, obj3);
 }
@@ -792,7 +792,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     useState = undefined;
     useStateFromStores = undefined;
-    f77009 = undefined;
+    f77138 = undefined;
     useState = undefined;
     handleClose = function handleClose() {
       let flag = true;
@@ -932,7 +932,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         });
       }
     };
-    tmp = f77012();
+    tmp = f77141();
     registerAsset = tmp;
     tmp2 = onCloseModal(registerAsset.useState(filter.CHECKS_REQUIRED), 2);
     first = tmp2[0];
@@ -964,7 +964,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj3 = require("initialize");
     items2 = [];
     items2[0] = useState;
-    f77008 = obj3.useStateFromStores(items2, () => outer1_12.getId());
+    f77137 = obj3.useStateFromStores(items2, () => outer1_12.getId());
     tmp13 = onCloseModal(registerAsset.useState(null), 2);
     first2 = tmp13[0];
     useStateFromStores = first2;
@@ -986,7 +986,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp;
     }), 2);
-    [useState, f77009] = tmp17;
+    [useState, f77138] = tmp17;
     tmp18 = onCloseModal(registerAsset.useState(null), 2);
     [c28, useState] = tmp18;
     c30 = require("useTheme")();
@@ -994,7 +994,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores2 = obj4.useStateFromStores(items3, () => member.getMember(guildId, closure_21));
-    f77010 = stateFromStores2;
+    f77139 = stateFromStores2;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;
@@ -1002,7 +1002,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj6 = require("initialize");
     items5 = [];
     items5[0] = useState;
-    f77012 = obj6.useStateFromStores(items5, () => outer1_10.locale);
+    f77141 = obj6.useStateFromStores(items5, () => outer1_10.locale);
     values = Object.values(stateFromStores3);
     found = values.filter((channel) => {
       let canResult = outer1_16.can(_undefined.VIEW_CHANNEL, channel);

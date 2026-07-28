@@ -1,10 +1,10 @@
-// Module ID: 14691
-// Function ID: 111895
+// Module ID: 14735
+// Function ID: 112068
 // Name: TableRowGroupReactProfiling
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 277, 5501, 5502, 10293, 4542, 5164, 4127, 14692, 477, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 277, 5536, 5537, 10333, 4576, 5198, 4161, 14736, 477, 2]
 // Exports: default
 
-// Module 14691 (TableRowGroupReactProfiling)
+// Module 14735 (TableRowGroupReactProfiling)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -32,8 +32,8 @@ function TableRowGroupReactProfiling() {
   }, items);
   obj = { title: "React Profiling Renderer", hasIcons: false };
   obj = { label: "Enable React Profiling Renderer", subLabel: "Enables React.Profiler, app restart required after change.", onValueChange: tmp6[1], value: first };
-  obj.children = callback2(first(5502).TableSwitchRow, obj);
-  return callback2(first(5501).TableRowGroup, obj);
+  obj.children = callback2(first(5537).TableSwitchRow, obj);
+  return callback2(first(5536).TableRowGroup, obj);
 }
 const ScrollView = get_ActivityIndicator.ScrollView;
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);

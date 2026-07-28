@@ -1,10 +1,10 @@
-// Module ID: 14712
-// Function ID: 112092
+// Module ID: 14756
+// Function ID: 112265
 // Name: updateClientPremiumTypeOverride
-// Dependencies: [1850, 686, 5986, 2]
+// Dependencies: [1850, 686, 6020, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 14712 (updateClientPremiumTypeOverride)
+// Module 14756 (updateClientPremiumTypeOverride)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -24,9 +24,9 @@ export const updateClientPremiumTypeOverride = function updateClientPremiumTypeO
     const obj3 = importDefault(686);
     const obj1 = { type: "CURRENT_USER_UPDATE" };
     const obj5 = importDefault(686);
-    obj1.user = require(5986) /* userRecordToServer */.userRecordToServer(currentUser);
+    obj1.user = require(6020) /* userRecordToServer */.userRecordToServer(currentUser);
     obj5.dispatch(obj1);
-    const obj7 = require(5986) /* userRecordToServer */;
+    const obj7 = require(6020) /* userRecordToServer */;
   }
 };
 export const updateClientCreatedAtOverride = function updateClientCreatedAtOverride(createdAt) {

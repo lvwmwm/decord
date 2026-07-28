@@ -1,10 +1,10 @@
-// Module ID: 10985
-// Function ID: 85409
+// Module ID: 11023
+// Function ID: 85532
 // Name: KickConfirmModal
-// Dependencies: [31, 33, 9038, 9040, 1212, 10978, 2]
+// Dependencies: [31, 33, 9082, 9084, 1212, 11016, 2]
 // Exports: default
 
-// Module 10985 (KickConfirmModal)
+// Module 11023 (KickConfirmModal)
 import "result";
 import { jsx } from "jsxProd";
 

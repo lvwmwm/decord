@@ -1,10 +1,10 @@
-// Module ID: 7958
-// Function ID: 63349
+// Module ID: 7995
+// Function ID: 63458
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4567, 44, 7959, 4119, 1882, 2]
+// Dependencies: [4601, 44, 7996, 4153, 1882, 2]
 // Exports: getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, normalizeNumericString
 
-// Module 7958 (_createForOfIteratorHelperLoose)
+// Module 7995 (_createForOfIteratorHelperLoose)
 import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -254,17 +254,17 @@ export const normalizeNumericString = function normalizeNumericString(locale, so
   let group;
   if (locale !== closure_5) {
     closure_5 = locale;
-    en_US = require(7959) /* numberParts */.numberParts[locale];
+    en_US = require(7996) /* numberParts */.numberParts[locale];
     if (null == en_US) {
-      en_US = require(7959) /* numberParts */.numberParts["en-US"];
+      en_US = require(7996) /* numberParts */.numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);
-    const regExp = new RegExp(importDefault(4119).escape(group), "g");
+    const regExp = new RegExp(importDefault(4153).escape(group), "g");
     const _RegExp2 = RegExp;
-    const obj = importDefault(4119);
-    const regExp1 = new RegExp(importDefault(4119).escape(decimal), "g");
-    const obj2 = importDefault(4119);
+    const obj = importDefault(4153);
+    const regExp1 = new RegExp(importDefault(4153).escape(decimal), "g");
+    const obj2 = importDefault(4153);
   }
   return source.replace(regExp, "").replace(regExp1, ".");
 };

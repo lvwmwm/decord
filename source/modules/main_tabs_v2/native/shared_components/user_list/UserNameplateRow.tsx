@@ -1,10 +1,10 @@
-// Module ID: 8680
-// Function ID: 68896
+// Module ID: 8724
+// Function ID: 69047
 // Name: UserNameplateRow
-// Dependencies: [57, 31, 33, 4131, 689, 5165, 3835, 5166, 8008, 5164, 5125, 2]
+// Dependencies: [57, 31, 33, 4165, 689, 5199, 3869, 5200, 8046, 5198, 5159, 2]
 // Exports: UserNameplateRow
 
-// Module 8680 (UserNameplateRow)
+// Module 8724 (UserNameplateRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
@@ -57,7 +57,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);
   let dependencyMap;
-  const context = React.useContext(onPressIn(5165).TableRowGroupContext);
+  const context = React.useContext(onPressIn(5199).TableRowGroupContext);
   let tmp5 = !context;
   if (tmp5) {
     tmp5 = true === end;
@@ -78,7 +78,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
       onPressOut(arg0);
     }
   }, items1);
-  let obj1 = onPressIn(3835);
+  let obj1 = onPressIn(3869);
   const token = obj1.useToken(onPressOut(689).modules.mobile.TABLE_ROW_BORDER_RADIUS);
   obj = { shadow: "none", border: "none", radius: token };
   let tmp11 = !context;
@@ -94,11 +94,11 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   obj.style = _createForOfIteratorHelperLoose().card;
   const merged1 = Object.assign(merged);
   obj = { nameplate, isPressed: tmp6[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow };
-  const items2 = [callback2(onPressOut(8008), obj), ];
+  const items2 = [callback2(onPressOut(8046), obj), ];
   obj1 = { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps };
-  items2[1] = callback2(onPressIn(5164).TableRowInner, obj1);
+  items2[1] = callback2(onPressIn(5198).TableRowInner, obj1);
   obj["children"] = items2;
-  const tmp10Result = callback3(onPressIn(5166).Card, obj);
+  const tmp10Result = callback3(onPressIn(5200).Card, obj);
   let tmp15 = tmp10Result;
   if (!context) {
     tmp15 = tmp10Result;
@@ -106,7 +106,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
       const obj2 = {};
       const items3 = [tmp10Result, ];
       const obj3 = { adjustSpacingForIcon: null != icon };
-      items3[1] = callback2(onPressIn(5125).TableRowDivider, obj3);
+      items3[1] = callback2(onPressIn(5159).TableRowDivider, obj3);
       obj2.children = items3;
       tmp15 = callback3(closure_7, obj2);
     }

@@ -1,10 +1,10 @@
-// Module ID: 16066
-// Function ID: 124253
+// Module ID: 16105
+// Function ID: 124409
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 1352, 1348, 4143, 6271, 5707, 653, 5036, 4992, 1838, 3, 664, 587, 5989, 477, 686, 1184, 675, 1883, 507, 21, 22, 5886, 5889, 5887, 12664, 14462, 5705, 1327, 5715, 2]
+// Dependencies: [57, 5, 1352, 1348, 4177, 6307, 5717, 653, 5070, 5026, 1838, 3, 664, 587, 6023, 477, 686, 1184, 675, 1883, 507, 21, 22, 5920, 5923, 5921, 12707, 14506, 5715, 1327, 5725, 2]
 // Exports: backgroundSync
 
-// Module 16066 (_createForOfIteratorHelperLoose)
+// Module 16105 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";

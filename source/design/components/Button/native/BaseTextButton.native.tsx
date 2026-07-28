@@ -1,9 +1,9 @@
-// Module ID: 4545
-// Function ID: 39861
+// Module ID: 4579
+// Function ID: 39975
 // Name: CollapsingText
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 4546, 4543, 4547, 4548, 4549, 1324, 4127, 3850, 4100, 4551, 3837, 4553, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4026, 4580, 4577, 4581, 4582, 4583, 1324, 4161, 3884, 4134, 4585, 3871, 4587, 2]
 
-// Module 4545 (CollapsingText)
+// Module 4579 (CollapsingText)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -13,7 +13,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import getIconSize from "getIconSize";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let Platform;
 let closure_5;
@@ -23,7 +23,7 @@ let closure_8;
 const require = arg1;
 function CollapsingText(children) {
   const collapseText = children.collapseText;
-  let obj = sharedValue(3992);
+  let obj = sharedValue(4026);
   sharedValue = obj.useSharedValue(0);
   const tmp = callback3();
   let fn = function o(nativeEvent) {
@@ -35,8 +35,8 @@ function CollapsingText(children) {
   fn.__workletHash = 5541458715155;
   fn.__initData = closure_14;
   const items = [sharedValue];
-  const obj2 = sharedValue(3992);
-  const workletCallback = sharedValue(3992).useWorkletCallback(fn, items);
+  const obj2 = sharedValue(4026);
+  const workletCallback = sharedValue(4026).useWorkletCallback(fn, items);
   const tmp4 = (function useCollapsingTextContainerStyles(sharedValue, collapseText) {
     let closure_0 = sharedValue;
     let closure_1 = collapseText;
@@ -69,7 +69,7 @@ function CollapsingText(children) {
   })(sharedValue, collapseText);
   obj = { style: items1, onLayout: workletCallback };
   items1 = [tmp.container, tmp4];
-  obj.children = callback(importDefault(3992).View, {
+  obj.children = callback(importDefault(4026).View, {
     style: (function useCollapsingTextStyles(sharedValue, collapseText) {
       let closure_0 = sharedValue;
       let closure_1 = collapseText;
@@ -91,16 +91,16 @@ function CollapsingText(children) {
     })(sharedValue, collapseText),
     children: children.children
   });
-  return callback(importDefault(3992).View, obj);
+  return callback(importDefault(4026).View, obj);
 }
 function getHitSlop(lg) {
-  let MEDIUM_BUTTON_HEIGHT = require(4548) /* getButtonPadding */.LARGE_BUTTON_HEIGHT;
+  let MEDIUM_BUTTON_HEIGHT = require(4582) /* getButtonPadding */.LARGE_BUTTON_HEIGHT;
   if ("sm" === lg) {
-    MEDIUM_BUTTON_HEIGHT = require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT;
   } else if ("md" === lg) {
-    MEDIUM_BUTTON_HEIGHT = require(4548) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = require(4582) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT;
   }
-  const top = Math.max((require(4548) /* getButtonPadding */.MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const top = Math.max((require(4582) /* getButtonPadding */.MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
   return { top, left: undefined, right: undefined, bottom: top };
 }
 function BaseTextButtonIcon(arg0) {
@@ -110,7 +110,7 @@ function BaseTextButtonIcon(arg0) {
   let size;
   let style;
   ({ icon, size, iconPosition, iconOpticalOffsetMargin, style } = arg0);
-  let obj = require(4549) /* useProfileThemedButtonStyles */;
+  let obj = require(4583) /* useProfileThemedButtonStyles */;
   const iconSizeStyles = obj.useIconSizeStyles(size);
   obj = { source: icon };
   const items = [style, iconSizeStyles, callback5(iconPosition, iconOpticalOffsetMargin).offset];
@@ -177,7 +177,7 @@ _createForOfIteratorHelperLoose = {
       flag = true;
     }
     const context = importAllResult.useContext(closure_13);
-    let obj = require(4549) /* useProfileThemedButtonStyles */;
+    let obj = require(4583) /* useProfileThemedButtonStyles */;
     obj = { source: source.source, disableColor: flag };
     obj.style = obj.useIconSizeStyles(context);
     const tmp3 = callback(getIconSize, obj);

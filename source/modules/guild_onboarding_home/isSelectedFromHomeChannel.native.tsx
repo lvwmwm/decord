@@ -1,10 +1,10 @@
-// Module ID: 10352
-// Function ID: 79954
+// Module ID: 10392
+// Function ID: 80083
 // Name: isSelectedFromHomeChannel
-// Dependencies: [5846, 1907, 1355, 3983, 3982, 2]
+// Dependencies: [5856, 1907, 1355, 4017, 4016, 2]
 // Exports: default
 
-// Module 10352 (isSelectedFromHomeChannel)
+// Module 10392 (isSelectedFromHomeChannel)
 import "_isNativeReflectConstruct";
 import "_isNativeReflectConstruct";
 import { isGuildHomeChannel } from "set";
@@ -14,14 +14,14 @@ const result = require("set").fileFinishedImporting("modules/guild_onboarding_ho
 
 export default function isSelectedFromHomeChannel(id) {
   let coerceChannelRouteResult1;
-  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
       if (null == rootState) {
         return false;
       } else {
-        const coerceMainRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceMainRoute(rootState.routes[rootState.index]);
+        const coerceMainRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceMainRoute(rootState.routes[rootState.index]);
         if (null == coerceMainRouteResult) {
           return false;
         } else {
@@ -37,7 +37,7 @@ export default function isSelectedFromHomeChannel(id) {
                 if (null != tmp2) {
                   let tmp4 = require;
                   let tmp5 = dependencyMap;
-                  let obj3 = require(3982) /* _createForOfIteratorHelperLoose */;
+                  let obj3 = require(4016) /* _createForOfIteratorHelperLoose */;
                   let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp2);
                   let tmp7 = coerceChannelRouteResult;
                   tmp3 = tmp13;
@@ -47,7 +47,7 @@ export default function isSelectedFromHomeChannel(id) {
                     if (coerceChannelRouteResult.params.channelId === id.id) {
                       let tmp9 = require;
                       let tmp10 = dependencyMap;
-                      let obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
+                      let obj4 = require(4016) /* _createForOfIteratorHelperLoose */;
                       coerceChannelRouteResult1 = obj4.coerceChannelRoute(state.routes[index - 1]);
                       let tmp12 = coerceChannelRouteResult;
                       tmp3 = coerceChannelRouteResult1;
@@ -69,7 +69,7 @@ export default function isSelectedFromHomeChannel(id) {
             return false;
           }
         }
-        const obj5 = require(3982) /* _createForOfIteratorHelperLoose */;
+        const obj5 = require(4016) /* _createForOfIteratorHelperLoose */;
       }
     }
   }

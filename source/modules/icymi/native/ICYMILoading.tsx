@@ -1,10 +1,10 @@
-// Module ID: 15310
-// Function ID: 116787
+// Module ID: 15350
+// Function ID: 116946
 // Name: placeholderRowWidth
-// Dependencies: [31, 27, 33, 15249, 689, 11668, 3992, 15288, 2]
+// Dependencies: [31, 27, 33, 15289, 689, 11707, 4026, 15328, 2]
 // Exports: ICYMILoading
 
-// Module 15310 (placeholderRowWidth)
+// Module 15350 (placeholderRowWidth)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function ICYMILoadingItem() {
   let subtitle;
   let title;
   const tmp = callback3();
-  const tmp2 = importDefault(11668)({ visible: true, animated: true });
+  const tmp2 = importDefault(11707)({ visible: true, animated: true });
   const memo = React.useMemo(() => ({ avatarTitle: Math.floor(10 * Math.random()), title: Math.floor(10 * Math.random()), subtitle: Math.floor(10 * Math.random()) }), []);
   let obj = {};
   obj = { style: tmp.container };
@@ -32,7 +32,7 @@ function ICYMILoadingItem() {
   const items = [, , ];
   ({ backgroundColor: arr[0], avatar: arr[1] } = tmp);
   items[2] = tmp2;
-  const items1 = [callback(importDefault(3992).View, { style: items }), ];
+  const items1 = [callback(importDefault(4026).View, { style: items }), ];
   const obj1 = {};
   const items2 = [, , , ];
   ({ backgroundColor: arr3[0], avatarTitle: arr3[1] } = tmp);
@@ -40,7 +40,7 @@ function ICYMILoadingItem() {
   const obj2 = { width: "" + placeholderRowWidth(avatarTitle, 30, 60) + "%" };
   items2[3] = obj2;
   obj1.style = items2;
-  items1[1] = callback(importDefault(3992).View, obj1);
+  items1[1] = callback(importDefault(4026).View, obj1);
   obj.children = items1;
   const items3 = [callback2(View, obj), , , ];
   const obj3 = {};
@@ -50,7 +50,7 @@ function ICYMILoadingItem() {
   const obj4 = { width: "" + placeholderRowWidth(title, 75, 100) + "%" };
   items4[3] = obj4;
   obj3.style = items4;
-  items3[1] = callback(importDefault(3992).View, obj3);
+  items3[1] = callback(importDefault(4026).View, obj3);
   const obj5 = {};
   const items5 = [, , , ];
   ({ backgroundColor: arr6[0], subtitle: arr6[1] } = tmp);
@@ -58,13 +58,13 @@ function ICYMILoadingItem() {
   const obj6 = { width: "" + placeholderRowWidth(subtitle, 75, 100) + "%" };
   items5[3] = obj6;
   obj5.style = items5;
-  items3[2] = callback(importDefault(3992).View, obj5);
+  items3[2] = callback(importDefault(4026).View, obj5);
   const items6 = [, , ];
   ({ backgroundColor: arr7[0], image: arr7[1] } = tmp);
   items6[2] = tmp2;
-  items3[3] = callback(importDefault(3992).View, { style: items6 });
+  items3[3] = callback(importDefault(4026).View, { style: items6 });
   obj.children = items3;
-  const items7 = [callback2(View, obj), callback(require(15288) /* Separator */.Separator, {})];
+  const items7 = [callback2(View, obj), callback(require(15328) /* Separator */.Separator, {})];
   obj.children = items7;
   return callback2(closure_7, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 7876
-// Function ID: 62773
+// Module ID: 7912
+// Function ID: 62863
 // Name: usePendingAvatarSettings
-// Dependencies: [31, 7877, 7879, 624, 7880, 7882, 7883, 2]
+// Dependencies: [31, 7913, 7915, 624, 7916, 7918, 7919, 2]
 // Exports: default
 
-// Module 7876 (usePendingAvatarSettings)
+// Module 7912 (usePendingAvatarSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 require("result").useCallback;
@@ -16,7 +16,7 @@ export default function usePendingAvatarSettings(isTryItOut) {
   let pendingErrors;
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
-  const tmp = guildId(7879)(isTryItOut.analyticsLocations);
+  const tmp = guildId(7915)(isTryItOut.analyticsLocations);
   const dependencyMap = tmp;
   let obj = isTryItOut(624);
   const items = [_isNativeReflectConstruct];
@@ -59,11 +59,11 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   obj = { pendingAvatar, pendingAvatarDecoration, pendingErrors };
   if (isTryItOut) {
-    setTryItOutAvatar = isTryItOut(7883).setTryItOutAvatar;
+    setTryItOutAvatar = isTryItOut(7919).setTryItOutAvatar;
   }
   obj.setPendingAvatar = setTryItOutAvatar;
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = isTryItOut(7883).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = isTryItOut(7919).setTryItOutAvatarDecoration;
   }
   obj.setPendingAvatarDecoration = setTryItOutAvatarDecoration;
   return obj;

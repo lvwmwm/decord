@@ -1,10 +1,10 @@
-// Module ID: 8668
-// Function ID: 68823
+// Module ID: 8712
+// Function ID: 68974
 // Name: useTrackPdpClick
-// Dependencies: [31, 653, 8595, 8596, 5782, 675, 2]
+// Dependencies: [31, 653, 8639, 8640, 5792, 675, 2]
 // Exports: useTrackPdpClick
 
-// Module 8668 (useTrackPdpClick)
+// Module 8712 (useTrackPdpClick)
 import result from "result";
 import { AnalyticEvents } from "ME";
 

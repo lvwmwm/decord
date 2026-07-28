@@ -1,8 +1,8 @@
-// Module ID: 7893
-// Function ID: 62923
-// Dependencies: [31, 4123, 655, 1552, 33, 4131, 1557, 566, 7894, 3992, 4543, 3777, 5782, 1212, 4100, 7895, 5769, 4099, 4544, 2]
+// Module ID: 7929
+// Function ID: 63014
+// Dependencies: [31, 4157, 655, 1552, 33, 4165, 1557, 566, 7930, 4026, 4577, 3811, 5792, 1212, 4134, 7931, 5779, 4133, 4578, 2]
 
-// Module 7893
+// Module 7929
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";

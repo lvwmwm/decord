@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 96001
+// Module ID: 12377
+// Function ID: 96171
 // Name: GuildScheduledEventPreview
-// Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 3975, 4127, 1212, 5513, 2]
+// Dependencies: [31, 27, 1838, 33, 4165, 689, 566, 4009, 4161, 1212, 5548, 2]
 // Exports: default
 
-// Module 12334 (GuildScheduledEventPreview)
+// Module 12377 (GuildScheduledEventPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -36,12 +36,12 @@ export default function GuildScheduledEventPreview(event) {
   if (null == stateFromStores) {
     return null;
   } else {
-    let obj1 = event(3975);
+    let obj1 = event(4009);
     obj = { style: tmp.container };
     obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
     const intl = event(1212).intl;
     obj.children = intl.string(event(1212).t.SDTOL7);
-    const items1 = [callback(event(4127).Text, obj), ];
+    const items1 = [callback(event(4161).Text, obj), ];
     obj1 = {};
     const items2 = [tmp.itemContainer, ];
     const obj2 = { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) };
@@ -50,15 +50,15 @@ export default function GuildScheduledEventPreview(event) {
     const obj3 = { style: tmp.guildInfo };
     const obj4 = { guild: stateFromStores };
     const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj4.size = event(5513).GuildIconSizes.XXSMALL;
+    obj4.size = event(5548).GuildIconSizes.XXSMALL;
     obj4.selected = false;
-    const items3 = [callback(importDefault(5513), obj4), ];
+    const items3 = [callback(importDefault(5548), obj4), ];
     const obj5 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-    items3[1] = callback(event(4127).Text, obj5);
+    items3[1] = callback(event(4161).Text, obj5);
     obj3.children = items3;
     const items4 = [callback2(View, obj3), ];
     const obj6 = { style: tmp.eventName, variant: "text-md/bold", color: "mobile-text-heading-primary", children: event.name };
-    items4[1] = callback(event(4127).Text, obj6);
+    items4[1] = callback(event(4161).Text, obj6);
     obj1.children = items4;
     items1[1] = callback2(View, obj1);
     obj.children = items1;

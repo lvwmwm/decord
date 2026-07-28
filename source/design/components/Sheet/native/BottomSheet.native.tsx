@@ -1,9 +1,9 @@
-// Module ID: 5187
-// Function ID: 45046
+// Module ID: 5221
+// Function ID: 45161
 // Name: Background
-// Dependencies: [57, 31, 27, 5188, 33, 4131, 689, 3995, 1557, 4529, 5084, 5189, 4555, 668, 3992, 5444, 3850, 5445, 4560, 5446, 5447, 5448, 1450, 3978, 477, 5449, 3843, 2]
+// Dependencies: [57, 31, 27, 5222, 33, 4165, 689, 4029, 1557, 4563, 5118, 5223, 4589, 668, 4026, 5479, 3884, 5480, 4594, 5481, 5482, 5483, 1450, 4012, 477, 5484, 3877, 2]
 
-// Module 5187 (Background)
+// Module 5221 (Background)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "set";
@@ -87,7 +87,7 @@ let closure_18 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   obj2.borderTopLeftRadius = closure_14;
   obj2.borderTopRightRadius = closure_14;
   obj.gradient = obj2;
-  obj6 = require(3995) /* isFabric */;
+  obj6 = require(4029) /* isFabric */;
   obj.handleIndicator = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_STRONG };
   const obj4 = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);

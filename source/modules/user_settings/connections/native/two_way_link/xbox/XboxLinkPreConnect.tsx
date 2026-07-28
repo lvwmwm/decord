@@ -1,10 +1,10 @@
-// Module ID: 8872
-// Function ID: 70187
+// Module ID: 8916
+// Function ID: 70338
 // Name: XboxLinkPreConnect
-// Dependencies: [31, 8865, 653, 33, 4131, 1456, 8873, 8874, 1212, 2]
+// Dependencies: [31, 8909, 653, 33, 4165, 1456, 8917, 8918, 1212, 2]
 // Exports: default
 
-// Module 8872 (XboxLinkPreConnect)
+// Module 8916 (XboxLinkPreConnect)
 import result from "result";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import { PlatformTypes } from "ME";
@@ -32,5 +32,5 @@ export default function XboxLinkPreConnect() {
   obj.title = intl.string(navigation(1212).t["e/z3na"]);
   const intl2 = navigation(1212).intl;
   obj.body = intl2.string(navigation(1212).t["7tXu0i"]);
-  return jsx(navigation(8874).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image });
+  return jsx(navigation(8918).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image });
 };

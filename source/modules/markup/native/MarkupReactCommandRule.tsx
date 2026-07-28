@@ -1,10 +1,10 @@
-// Module ID: 10859
-// Function ID: 84394
+// Module ID: 10897
+// Function ID: 84515
 // Name: handleTapCommandMention
-// Dependencies: [31, 1348, 1455, 4567, 4568, 33, 5676, 3983, 4099, 1555, 4472, 1212, 1273, 10860, 3831, 5490, 3804, 6719, 5495, 10862, 4127, 3990, 10864, 9929, 2]
+// Dependencies: [31, 1348, 1455, 4601, 4602, 33, 5686, 4017, 4133, 1555, 4506, 1212, 1273, 10898, 3865, 5525, 3838, 6755, 5530, 10900, 4161, 4024, 10902, 9969, 2]
 // Exports: default
 
-// Module 10859 (handleTapCommandMention)
+// Module 10897 (handleTapCommandMention)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -116,19 +116,19 @@ function handleLongPressCommandMention(commandName, commandId) {
   let obj = {};
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t["42H+Nb"]);
-  obj.IconComponent = _require(10860).SlashBoxIcon;
+  obj.IconComponent = _require(10898).SlashBoxIcon;
   obj.onPress = function onPress() {
     commandName(outer1_2[14]).presentCommandCopied();
     const obj = commandName(outer1_2[14]);
     commandName(outer1_2[15]).copy("" + outer1_8 + commandName);
   };
   const items = [obj];
-  const DeveloperMode = _require(3804).DeveloperMode;
+  const DeveloperMode = _require(3838).DeveloperMode;
   if (DeveloperMode.getSetting()) {
     obj = {};
     const intl2 = _require(1212).intl;
     obj.label = intl2.string(_require(1212).t.oJ1Muw);
-    obj.IconComponent = _require(6719).IdIcon;
+    obj.IconComponent = _require(6755).IdIcon;
     obj.onPress = function onPress() {
       commandName(outer1_2[14]).presentIdCopied();
       const obj = commandName(outer1_2[14]);
@@ -137,7 +137,7 @@ function handleLongPressCommandMention(commandName, commandId) {
     items.push(obj);
   }
   obj = { key: "LongPressCommandMention", options: items, hasIcons: true };
-  const result = _require(5495).showSimpleActionSheet(obj);
+  const result = _require(5530).showSimpleActionSheet(obj);
 }
 ({ AppLauncherRouteName: closure_5, useAppLauncherNavigation: closure_6 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
 let result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
@@ -148,7 +148,7 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != React.useContext(node(10862).AppLauncherContext);
+  let closure_1 = null != React.useContext(node(10900).AppLauncherContext);
   const dependencyMap = callback();
   let obj = {
     style,
@@ -182,8 +182,8 @@ export default function MarkupReactCommandRule(node) {
       obj.onSetCommand = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10864)();
-        callback(4099).hideActionSheet();
+        callback(10902)();
+        callback(4133).hideActionSheet();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();
         }
@@ -195,7 +195,7 @@ export default function MarkupReactCommandRule(node) {
         }
         if (!tmp5) {
           ({ commandId, commandName } = bestActiveInput);
-          obj2.setPartialCommand(commandId, commandName, node(5676).ApplicationCommandTriggerLocations.MENTION);
+          obj2.setPartialCommand(commandId, commandName, node(5686).ApplicationCommandTriggerLocations.MENTION);
         }
       };
       outer1_10(obj);
@@ -204,9 +204,9 @@ export default function MarkupReactCommandRule(node) {
       outer1_11(node.commandName, node.commandId);
     }
   };
-  const items = ["/", node(9929).smartOutput(node, output, state)];
+  const items = ["/", node(9969).smartOutput(node, output, state)];
   obj.children = items;
-  return jsxs(node(4127).Text, {
+  return jsxs(node(4161).Text, {
     style,
     variant: "text-md/bold",
     onPress() {
@@ -238,8 +238,8 @@ export default function MarkupReactCommandRule(node) {
       obj.onSetCommand = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10864)();
-        callback(4099).hideActionSheet();
+        callback(10902)();
+        callback(4133).hideActionSheet();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();
         }
@@ -251,7 +251,7 @@ export default function MarkupReactCommandRule(node) {
         }
         if (!tmp5) {
           ({ commandId, commandName } = bestActiveInput);
-          obj2.setPartialCommand(commandId, commandName, node(5676).ApplicationCommandTriggerLocations.MENTION);
+          obj2.setPartialCommand(commandId, commandName, node(5686).ApplicationCommandTriggerLocations.MENTION);
         }
       };
       outer1_10(obj);

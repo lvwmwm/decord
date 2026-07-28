@@ -1,10 +1,10 @@
-// Module ID: 7374
-// Function ID: 60297
+// Module ID: 7410
+// Function ID: 60386
 // Name: SafetyShieldCenter3dIllustration
-// Dependencies: [33, 5085, 7375, 2]
+// Dependencies: [33, 5119, 7411, 2]
 // Exports: SafetyShieldCenter3dIllustration
 
-// Module 7374 (SafetyShieldCenter3dIllustration)
+// Module 7410 (SafetyShieldCenter3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldCenter3dIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const SafetyShieldCenter3dIllustration = function SafetyShieldCenter3dIll
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7375) };
+  obj = { uri: importDefault(7411) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const SafetyShieldCenter3dIllustration = function SafetyShieldCenter3dIll
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

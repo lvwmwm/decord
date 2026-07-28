@@ -1,10 +1,10 @@
-// Module ID: 10541
-// Function ID: 81533
+// Module ID: 10579
+// Function ID: 81654
 // Name: useCurrentEmbeddedActivity
 // Dependencies: [1347, 566, 2]
 // Exports: default
 
-// Module 10541 (useCurrentEmbeddedActivity)
+// Module 10579 (useCurrentEmbeddedActivity)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;

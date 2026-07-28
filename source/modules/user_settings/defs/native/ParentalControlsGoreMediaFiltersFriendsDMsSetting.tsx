@@ -1,9 +1,9 @@
-// Module ID: 14622
-// Function ID: 111500
+// Module ID: 14666
+// Function ID: 111673
 // Name: getTitle
-// Dependencies: [5765, 7697, 13790, 5834, 13794, 13787, 1212, 1282, 10059, 2]
+// Dependencies: [5775, 7733, 13834, 5844, 13838, 13831, 1212, 1282, 10099, 2]
 
-// Module 14622 (getTitle)
+// Module 14666 (getTitle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -16,22 +16,22 @@ createToggle = {
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const parentalControlledGoreContentSettings = require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+    const parentalControlledGoreContentSettings = require(13834) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
     let goreContentFriendDm;
     if (null != parentalControlledGoreContentSettings) {
       goreContentFriendDm = parentalControlledGoreContentSettings.goreContentFriendDm;
     }
     let tmp3 = null;
     if (null != goreContentFriendDm) {
-      tmp3 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(goreContentFriendDm)();
-      const obj2 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
+      tmp3 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(goreContentFriendDm)();
+      const obj2 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
     return tmp3;
   },
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(13794);
+      let obj = selectedTeenId(13838);
       obj = {};
       const intl = selectedTeenId(1212).intl;
       obj.title = intl.string(selectedTeenId(1212).t["16/3Bi"]);
@@ -44,8 +44,8 @@ createToggle = {
       obj.currentValue = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
       obj.excluded = items;
-      const result = selectedTeenId(13787).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(13787);
+      const result = selectedTeenId(13831).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(13831);
     }
   },
   unsearchable: true

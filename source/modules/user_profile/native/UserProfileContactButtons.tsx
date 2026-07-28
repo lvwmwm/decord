@@ -1,10 +1,10 @@
-// Module ID: 12155
-// Function ID: 95212
+// Module ID: 12198
+// Function ID: 95382
 // Name: FlatFriendButton
-// Dependencies: [31, 27, 3768, 653, 33, 4131, 689, 4544, 5462, 8045, 11989, 566, 3970, 12156, 4069, 1212, 11650, 8850, 10864, 4099, 4338, 4141, 12158, 6625, 4630, 9015, 10074, 2]
+// Dependencies: [31, 27, 3802, 653, 33, 4165, 689, 4578, 5497, 8083, 12032, 566, 4004, 12199, 4103, 1212, 11689, 8894, 10902, 4133, 4372, 4175, 12201, 6661, 4664, 9059, 10114, 2]
 // Exports: default
 
-// Module 12155 (FlatFriendButton)
+// Module 12198 (FlatFriendButton)
 import "result";
 import { View } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,7 +42,7 @@ function FlatFriendButton(label) {
   obj.size = "md";
   obj.grow = true;
   const merged1 = Object.assign(merged);
-  return callback(require(4544) /* Button */.Button, obj);
+  return callback(require(4578) /* Button */.Button, obj);
 }
 function FriendRequestButton(user) {
   let ButtonComponent;

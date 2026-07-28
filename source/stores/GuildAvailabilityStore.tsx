@@ -1,9 +1,9 @@
-// Module ID: 4470
-// Function ID: 39497
+// Module ID: 4504
+// Function ID: 39611
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1838, 3, 566, 686, 2]
 
-// Module 4470 (_isNativeReflectConstruct)
+// Module 4504 (_isNativeReflectConstruct)
 import timestamp from "timestamp";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

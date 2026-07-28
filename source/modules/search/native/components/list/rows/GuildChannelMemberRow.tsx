@@ -1,10 +1,10 @@
-// Module ID: 15442
-// Function ID: 117828
+// Module ID: 15482
+// Function ID: 117987
 // Name: GuildChannelMemberRow
-// Dependencies: [31, 33, 8761, 2]
+// Dependencies: [31, 33, 8805, 2]
 // Exports: default
 
-// Module 15442 (GuildChannelMemberRow)
+// Module 15482 (GuildChannelMemberRow)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -12,5 +12,5 @@ const result = require("handleCall").fileFinishedImporting("modules/search/nativ
 
 export default function GuildChannelMemberRow(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(8761), {});
+  return jsx(importDefault(8805), {});
 };

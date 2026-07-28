@@ -1,10 +1,10 @@
-// Module ID: 15578
-// Function ID: 120023
+// Module ID: 15617
+// Function ID: 120179
 // Name: openAddModeratorsActionSheet
-// Dependencies: [5, 31, 1918, 1911, 1838, 653, 6661, 33, 675, 4099, 15579, 1935, 1456, 566, 4949, 8215, 1356, 1882, 4472, 1212, 4141, 8216, 3831, 1273, 8223, 4542, 5501, 5164, 11246, 2]
+// Dependencies: [5, 31, 1918, 1911, 1838, 653, 6697, 33, 675, 4133, 15618, 1935, 1456, 566, 4983, 8253, 1356, 1882, 4506, 1212, 4175, 8254, 3865, 1273, 8261, 4576, 5536, 5198, 11284, 2]
 // Exports: default
 
-// Module 15578 (openAddModeratorsActionSheet)
+// Module 15617 (openAddModeratorsActionSheet)
 import ME from "ME";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,9 +24,9 @@ function openAddModeratorsActionSheet(channel) {
   }
   let obj = importDefault(675);
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
-  const obj2 = importDefault(4099);
+  const obj2 = importDefault(4133);
   obj = { channel, canSkip: flag };
-  obj2.openLazy(require(1935) /* maybeLoadBundle */(15579, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(require(1935) /* maybeLoadBundle */(15618, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 }
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");

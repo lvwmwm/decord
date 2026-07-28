@@ -1,10 +1,10 @@
-// Module ID: 7851
-// Function ID: 62632
+// Module ID: 7887
+// Function ID: 62722
 // Name: useHeroColors
-// Dependencies: [57, 31, 4123, 1278, 7850, 5780, 7852, 665, 666, 566, 2]
+// Dependencies: [57, 31, 4157, 1278, 7886, 5790, 7888, 665, 666, 566, 2]
 // Exports: default, getHeroColors
 
-// Module 7851 (useHeroColors)
+// Module 7887 (useHeroColors)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,9 +20,9 @@ export default function useHeroColors(pendingAvatarSrc) {
   const items1 = [closure_6];
   const stateFromStores1 = first(566).useStateFromStores(items1, () => outer1_6.theme);
   let obj2 = first(566);
-  const fallbackHeroColor = first(7852).getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj3 = first(7852);
-  let tmp4 = callback(first(7850).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
+  const fallbackHeroColor = first(7888).getFallbackHeroColor(stateFromStores1, stateFromStores);
+  let obj3 = first(7888);
+  let tmp4 = callback(first(7886).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
   first = tmp4[0];
   const importDefault = tmp6;
   const items2 = [first, tmp4[1]];
@@ -83,7 +83,7 @@ export default function useHeroColors(pendingAvatarSrc) {
 export const getHeroColors = function getHeroColors(image_url) {
   let tmp2;
   let tmp3;
-  let obj = require(7852) /* getFallbackHeroColor */;
+  let obj = require(7888) /* getFallbackHeroColor */;
   let num = 1;
   [tmp2, tmp3] = callback((function getPalette(image_url, fallbackHeroColor) {
     let num = 1;

@@ -1,10 +1,10 @@
-// Module ID: 12679
-// Function ID: 98427
+// Module ID: 12722
+// Function ID: 98597
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useDebugExperiment
 
-// Module 12679 (apexExperiment)
+// Module 12722 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: { [1]: {}, [2]: {} } };

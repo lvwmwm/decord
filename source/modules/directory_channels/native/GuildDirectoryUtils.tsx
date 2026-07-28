@@ -1,10 +1,10 @@
-// Module ID: 10012
-// Function ID: 77490
+// Module ID: 10052
+// Function ID: 77619
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: [5, 31, 33, 10007, 4472, 10013, 1935, 2]
+// Dependencies: [5, 31, 33, 10047, 4506, 10053, 1935, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 10012 (_onAddDirectoryGuildEntry)
+// Module 10052 (_onAddDirectoryGuildEntry)
 import GuildDirectoryAddAlert from "GuildDirectoryAddAlert";
 import "result";
 import { jsx } from "jsxProd";

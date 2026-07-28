@@ -1,10 +1,10 @@
-// Module ID: 8582
-// Function ID: 68174
+// Module ID: 8626
+// Function ID: 68321
 // Name: getSharedMarkdownParser
-// Dependencies: [31, 27, 33, 4563, 1212, 4131, 689, 8583, 4127, 8585, 3801, 6519, 5462, 8587, 8418, 8412, 8590, 4544, 5512, 2]
+// Dependencies: [31, 27, 33, 4597, 1212, 4165, 689, 8627, 4161, 8629, 3835, 6555, 5497, 8631, 8462, 8456, 8634, 4578, 5547, 2]
 // Exports: default
 
-// Module 8582 (getSharedMarkdownParser)
+// Module 8626 (getSharedMarkdownParser)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -20,8 +20,8 @@ let closure_9;
 const require = arg1;
 function getSharedMarkdownParser() {
   if (null == parser) {
-    parser = importAll(4563).getParser();
-    const obj = importAll(4563);
+    parser = importAll(4597).getParser();
+    const obj = importAll(4597);
   }
   return parser;
 }
@@ -63,7 +63,7 @@ function EmbedAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj = message(8583);
+    let obj = message(8627);
     posterUrl = obj.getPosterUrl(proxyUrl, 160, c12);
   }
   let tmp9 = proxyUrl;
@@ -91,7 +91,7 @@ function EmbedAnnouncementCard(message) {
     let tmp15 = null != embedSource.url;
     if (tmp15) {
       const obj2 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: embedSource.url };
-      tmp15 = callback(message(4127).Text, obj2);
+      tmp15 = callback(message(4161).Text, obj2);
     }
     const items = [tmp15, ];
     const obj3 = {};
@@ -110,7 +110,7 @@ function EmbedAnnouncementCard(message) {
       }
       const items2 = [tmp24, ];
       const obj7 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
-      items2[1] = callback(message(4127).Text, obj7);
+      items2[1] = callback(message(4161).Text, obj7);
       obj4.children = items2;
       tmp22Result = callback2(closure_7, obj4);
       const tmp22 = callback2;
@@ -121,7 +121,7 @@ function EmbedAnnouncementCard(message) {
     if (tmp30) {
       const obj8 = { style: tmp.embedMedia };
       const obj9 = { uri: tmp9, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp.mediaImage };
-      obj8.children = callback(message(8585).ImageWithPlaceholder, obj9);
+      obj8.children = callback(message(8629).ImageWithPlaceholder, obj9);
       tmp30 = callback(closure_7, obj8);
     }
     items3[1] = tmp30;
@@ -130,7 +130,7 @@ function EmbedAnnouncementCard(message) {
       const obj10 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2 };
       const obj11 = { guildId, channelId };
       obj10.children = tmp2(message.title, true, obj11);
-      tmp36 = callback(message(4127).Text, obj10);
+      tmp36 = callback(message(4161).Text, obj10);
     }
     items3[2] = tmp36;
     let tmp40 = message.body.length > 0;
@@ -138,7 +138,7 @@ function EmbedAnnouncementCard(message) {
       const obj12 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3 };
       const obj13 = { guildId, channelId };
       obj12.children = tmp2(message.body, true, obj13);
-      tmp40 = callback(message(4127).Text, obj12);
+      tmp40 = callback(message(4161).Text, obj12);
     }
     items3[3] = tmp40;
     const obj14 = { style: tmp.metadataRow };
@@ -158,19 +158,19 @@ function EmbedAnnouncementCard(message) {
       str3 = "" + embedSource.providerName + " \u00B7 ";
     }
     const items5 = [str3, ];
-    let obj20 = message(3801);
+    let obj20 = message(3835);
     const _Date = Date;
     const date = new Date(message.timestamp);
     items5[1] = obj20.dateFormat(date, "LL");
     obj17.children = items5;
-    items4[1] = callback2(message(4127).Text, obj17);
+    items4[1] = callback2(message(4161).Text, obj17);
     let tmp60 = message.reactionCount > 0;
     if (tmp60) {
       const obj18 = { style: tmp.reactionInfo };
       const obj19 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED };
-      const items6 = [callback(message(6519).ReactionIcon, obj19), ];
+      const items6 = [callback(message(6555).ReactionIcon, obj19), ];
       obj20 = { variant: "text-xs/medium", color: "text-muted", children: formatReactionCount(message.reactionCount) };
-      items6[1] = callback(message(4127).Text, obj20);
+      items6[1] = callback(message(4161).Text, obj20);
       obj18.children = items6;
       tmp60 = callback2(closure_7, obj18);
     }
@@ -207,7 +207,7 @@ function MessageAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj = message(8583);
+    let obj = message(8627);
     posterUrl = obj.getPosterUrl(proxyUrl, 160, c12);
   }
   let tmp9 = proxyUrl;
@@ -229,7 +229,7 @@ function MessageAnnouncementCard(message) {
   if (tmp12) {
     obj = { style: tmp.smallCardMedia };
     const obj1 = { uri: tmp9, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp.mediaImage };
-    obj.children = callback(message(8585).ImageWithPlaceholder, obj1);
+    obj.children = callback(message(8629).ImageWithPlaceholder, obj1);
     tmp12 = callback(closure_7, obj);
   }
   const items = [tmp12, ];
@@ -239,7 +239,7 @@ function MessageAnnouncementCard(message) {
     const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2 };
     const obj4 = { guildId, channelId };
     obj3.children = tmp2(message.title, true, obj4);
-    tmp20 = callback(message(4127).Text, obj3);
+    tmp20 = callback(message(4161).Text, obj3);
   }
   const items1 = [tmp20, , ];
   let tmp24 = message.body.length > 0;
@@ -247,21 +247,21 @@ function MessageAnnouncementCard(message) {
     const obj5 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3 };
     const obj6 = { guildId, channelId };
     obj5.children = tmp2(message.body, true, obj6);
-    tmp24 = callback(message(4127).Text, obj5);
+    tmp24 = callback(message(4161).Text, obj5);
   }
   items1[1] = tmp24;
   const obj7 = { style: tmp.metadataRow };
   const obj8 = { variant: "text-xs/medium", color: "text-muted" };
-  let obj11 = message(3801);
+  let obj11 = message(3835);
   obj8.children = obj11.dateFormat(new Date(message.timestamp), "LL");
-  const items2 = [callback(message(4127).Text, obj8), ];
+  const items2 = [callback(message(4161).Text, obj8), ];
   let tmp31 = message.reactionCount > 0;
   if (tmp31) {
     const obj9 = { style: tmp.reactionInfo };
     const obj10 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED };
-    const items3 = [callback(message(6519).ReactionIcon, obj10), ];
+    const items3 = [callback(message(6555).ReactionIcon, obj10), ];
     obj11 = { variant: "text-xs/medium", color: "text-muted", children: formatReactionCount(message.reactionCount) };
-    items3[1] = callback(message(4127).Text, obj11);
+    items3[1] = callback(message(4161).Text, obj11);
     obj9.children = items3;
     tmp31 = callback2(closure_7, obj9);
   }
@@ -295,7 +295,7 @@ function PollAnnouncementCard(message) {
     };
     obj = { style: tmp.cardBody };
     const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    const items = [callback(message(4127).Text, obj1), , ];
+    const items = [callback(message(4161).Text, obj1), , ];
     const obj2 = { style: tmp.pollAnswers };
     const items1 = [
       substr.map((poll_media) => {
@@ -318,7 +318,7 @@ function PollAnnouncementCard(message) {
       const intl = message(1212).intl;
       const obj3 = { count: diff };
       obj.children = intl.format(message(1212).t["mv/nIa"], obj3);
-      tmp5 = callback(message(4127).Text, obj);
+      tmp5 = callback(message(4161).Text, obj);
     }
     items1[1] = tmp5;
     obj2.children = items1;
@@ -330,10 +330,10 @@ function PollAnnouncementCard(message) {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj6.createdAt = date;
-    obj5 = message(8583);
+    obj5 = message(8627);
     obj6.expiryLabel = obj5.getPollExpiryLabel(poll);
     obj5.children = intl2.format(message(1212).t.t0FTsH, obj6);
-    obj4.children = callback(message(4127).Text, obj5);
+    obj4.children = callback(message(4161).Text, obj5);
     items[2] = callback(closure_7, obj4);
     obj.children = items;
     obj.children = closure_11(closure_7, obj);

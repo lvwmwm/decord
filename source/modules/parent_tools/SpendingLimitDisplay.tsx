@@ -1,10 +1,10 @@
-// Module ID: 13875
-// Function ID: 106287
+// Module ID: 13919
+// Function ID: 106460
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1316, 5765, 1852, 566, 13793, 5616, 5617, 1212, 2199, 2]
+// Dependencies: [1316, 5775, 1852, 566, 13837, 5651, 5652, 1212, 2199, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 13875 (getSpendingLimitDisplayState)
+// Module 13919 (getSpendingLimitDisplayState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -19,13 +19,13 @@ function getSpendingLimitDisplayState(amount) {
     return obj;
   } else {
     const currency = amount.currency;
-    const obj8 = require(5616) /* formatSingleCurrencyPrice */;
-    const formatRateResult = obj8.formatRate(require(5616) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, currency), SubscriptionIntervalTypes.MONTH, 1);
+    const obj8 = require(5651) /* formatSingleCurrencyPrice */;
+    const formatRateResult = obj8.formatRate(require(5651) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, currency), SubscriptionIntervalTypes.MONTH, 1);
     if (arg1 >= amount.amount) {
       const obj1 = { kind: "spent", monthlyText: formatRateResult };
       return obj1;
     } else {
-      const tmp12 = require(5617) /* CurrencyCodes */.CurrencyExponents[amount.currency];
+      const tmp12 = require(5652) /* CurrencyCodes */.CurrencyExponents[amount.currency];
       let num = 2;
       if (null != tmp12) {
         num = tmp12;
@@ -35,7 +35,7 @@ function getSpendingLimitDisplayState(amount) {
         const obj2 = { kind: "close-to-limit", monthlyText: formatRateResult };
         const intl = require(1212) /* getSystemLocale */.intl;
         let obj3 = {};
-        obj3 = require(5616) /* formatSingleCurrencyPrice */;
+        obj3 = require(5651) /* formatSingleCurrencyPrice */;
         obj3.amount = obj3.formatPrice(diff, currency);
         obj2.remainingText = intl.formatToPlainString(importDefault(2199)["+Q+bU1"], obj3);
         obj = obj2;
@@ -44,7 +44,7 @@ function getSpendingLimitDisplayState(amount) {
       }
       return obj;
     }
-    const obj9 = require(5616) /* formatSingleCurrencyPrice */;
+    const obj9 = require(5651) /* formatSingleCurrencyPrice */;
   }
 }
 const result = require("GuildFeatures").fileFinishedImporting("modules/parent_tools/SpendingLimitDisplay.tsx");
@@ -69,7 +69,7 @@ export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUse
       tmp2 = obj;
     }
     return tmp2;
-  }, undefined, require(13793) /* spendingLimitEqual */.spendingLimitEqual);
+  }, undefined, require(13837) /* spendingLimitEqual */.spendingLimitEqual);
 };
 export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
 export { getSpendingLimitDisplayState };

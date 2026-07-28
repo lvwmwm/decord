@@ -1,10 +1,10 @@
-// Module ID: 16196
-// Function ID: 125525
+// Module ID: 16235
+// Function ID: 125681
 // Name: TouchableUploadAvatar
-// Dependencies: [31, 27, 33, 4131, 689, 12933, 4661, 1212, 5085, 1273, 11808, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 12977, 4695, 1212, 5119, 1273, 11847, 2]
 // Exports: default
 
-// Module 16196 (TouchableUploadAvatar)
+// Module 16235 (TouchableUploadAvatar)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   if (!showPendingAvatar) {
-    let tmp3 = importDefault(12933);
+    let tmp3 = importDefault(12977);
   } else {
     tmp3 = avatarSource;
   }
@@ -50,14 +50,14 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["70lEQe"]);
     obj = { style: tmp.avatarWrapper };
     const obj1 = { resizeMode: "contain", style: defaultLogoStyle, source: tmp3 };
-    const items = [callback(importDefault(5085), obj1), ];
+    const items = [callback(importDefault(5119), obj1), ];
     const obj2 = { style: tmp.uploadAvatarWrapper };
-    const obj3 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(11808), style: tmp.uploadAvatarIcon };
+    const obj3 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(11847), style: tmp.uploadAvatarIcon };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
     items[1] = callback(View, obj2);
     obj.children = items;
     obj.children = callback2(View, obj);
-    obj.children = callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+    obj.children = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
     return callback(View, obj);
   }
   defaultLogoStyle = tmp.defaultLogoStyle;

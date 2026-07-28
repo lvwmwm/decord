@@ -1,10 +1,10 @@
-// Module ID: 6725
-// Function ID: 59323
+// Module ID: 6761
+// Function ID: 59412
 // Name: ModalScreen
-// Dependencies: [31, 27, 33, 4131, 689, 5159, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5193, 2]
 // Exports: ModalScreen
 
-// Module 6725 (ModalScreen)
+// Module 6761 (ModalScreen)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,7 +26,7 @@ export const ModalScreen = function ModalScreen(backgroundColor) {
     backgroundColor = tmp.container.backgroundColor;
   }
   obj.backgroundColor = backgroundColor;
-  ({ left: obj2.paddingLeft, right: obj2.paddingRight, bottom: obj2.paddingBottom } = importDefault(5159)().insets);
+  ({ left: obj2.paddingLeft, right: obj2.paddingRight, bottom: obj2.paddingBottom } = importDefault(5193)().insets);
   items[1] = obj;
   obj.style = items;
   obj.children = backgroundColor.children;

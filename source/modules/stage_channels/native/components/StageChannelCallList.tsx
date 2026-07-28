@@ -1,10 +1,10 @@
-// Module ID: 10774
-// Function ID: 83629
+// Module ID: 10812
+// Function ID: 83750
 // Name: getSpeakerRowHeight
-// Dependencies: [57, 31, 10775, 4948, 33, 1273, 10776, 4958, 4560, 4964, 44, 10783, 1212, 9955, 10784, 10796, 7619, 10800, 1450, 4664, 2]
+// Dependencies: [57, 31, 10813, 4982, 33, 1273, 10814, 4992, 4594, 4998, 44, 10821, 1212, 9995, 10822, 10834, 7655, 10838, 1450, 4698, 2]
 // Exports: default
 
-// Module 10774 (getSpeakerRowHeight)
+// Module 10812 (getSpeakerRowHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
@@ -18,13 +18,13 @@ let closure_9;
 const require = arg1;
 function getSpeakerRowHeight(arg0, arg1) {
   if (arg0 > 0) {
-    return require(10776) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
+    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
   } else if (1 === arg1) {
-    return require(10776) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.FULL + 8;
+    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.FULL + 8;
   } else if (2 === arg1) {
-    return require(10776) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.HALF + 8;
+    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.HALF + 8;
   } else {
-    return require(10776) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
+    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
   }
 }
 ({ useActiveSpeakerPillScrollHandler: closure_5, useActiveSpeakerPillState: closure_6 } = require("useActiveSpeakerPillScrollHandler"));
@@ -285,10 +285,10 @@ const result = require("useActiveSpeakerPillScrollHandler").fileFinishedImportin
 
 export default function StageChannelCallList(channel) {
   channel = channel.channel;
-  let obj = width(10800);
+  let obj = width(10838);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
   width = isScreenLandscape(1450)().width;
-  isScreenLandscape = width(4664).useIsScreenLandscape();
+  isScreenLandscape = width(4698).useIsScreenLandscape();
   const items = [width, isScreenLandscape];
   const memo = importAllResult.useMemo(() => {
     const obj = {};
@@ -302,8 +302,8 @@ export default function StageChannelCallList(channel) {
     obj[width(outer1_2[7]).StageChannelParticipantNamedIndex.AUDIENCE] = outer1_7;
     return obj;
   }, items);
-  const obj2 = width(4664);
-  const tmp4 = callback(width(10800).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
+  const obj2 = width(4698);
+  const tmp4 = callback(width(10838).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   obj = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return callback3(closure_12, obj);
 };

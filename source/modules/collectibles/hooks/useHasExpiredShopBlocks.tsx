@@ -1,10 +1,10 @@
-// Module ID: 14538
-// Function ID: 111052
+// Module ID: 14582
+// Function ID: 111225
 // Name: useHasExpiredShopBlocks
-// Dependencies: [57, 31, 653, 5801, 2]
+// Dependencies: [57, 31, 653, 5811, 2]
 // Exports: useHasExpiredShopBlocks
 
-// Module 14538 (useHasExpiredShopBlocks)
+// Module 14582 (useHasExpiredShopBlocks)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { MAX_TIMEOUT_MS } from "ME";
@@ -26,7 +26,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
     const tmp = (function getNextBlockExpiration(closure_0) {
       let c0 = null;
       const item = closure_0.forEach((type) => {
-        if (type.type === _null(5801).ShopBlockType.IMMERSIVE_BANNER) {
+        if (type.type === _null(5811).ShopBlockType.IMMERSIVE_BANNER) {
           let time = null;
           if (null != type.endTime) {
             const endTime2 = type.endTime;
@@ -35,7 +35,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
           let time1 = time;
         } else {
           time1 = null;
-          if (type.type === _null(5801).ShopBlockType.COUNTDOWN_TIMER) {
+          if (type.type === _null(5811).ShopBlockType.COUNTDOWN_TIMER) {
             const endTime = type.endTime;
             time1 = endTime.getTime();
           }

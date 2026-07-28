@@ -1,9 +1,9 @@
-// Module ID: 8246
-// Function ID: 66252
+// Module ID: 8284
+// Function ID: 66362
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 8246 (apexExperiment)
+// Module 8284 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-mobile-server-tag", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

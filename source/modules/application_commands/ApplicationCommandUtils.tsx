@@ -1,10 +1,10 @@
-// Module ID: 5674
-// Function ID: 48722
+// Module ID: 5684
+// Function ID: 48578
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 4469, 4567, 653, 482, 5675, 1882, 5676, 483, 22, 44, 24, 4325, 2]
+// Dependencies: [1352, 4503, 4601, 653, 482, 5685, 1882, 5686, 483, 22, 44, 24, 4359, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 5674 (_createForOfIteratorHelperLoose)
+// Module 5684 (_createForOfIteratorHelperLoose)
 import { isReadableType } from "_callSuper";
 import { DraftType } from "_isNativeReflectConstruct";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
@@ -135,7 +135,7 @@ function buildCommand(arg0) {
       CHAT = obj(1882).ApplicationCommandType.CHAT;
     }
     obj.type = CHAT;
-    obj.inputType = obj(5676).ApplicationCommandInputType.BOT;
+    obj.inputType = obj(5686).ApplicationCommandInputType.BOT;
     obj.untranslatedDescription = command.description;
     obj.options = mapOptions(command.options);
     obj.rootCommand = rootCommand;
@@ -163,10 +163,10 @@ function buildCommand(arg0) {
     ({ nsfw: obj3.nsfw, contexts: obj3.contexts, integration_types: obj3.integration_types, global_popularity_rank: obj3.global_popularity_rank, handler: obj3.handler } = rootCommand);
     return obj;
   } else if (useKeyedPermissions) {
-    const keyPermissionsResult = obj(5675).keyPermissions(rootCommand.permissions);
+    const keyPermissionsResult = obj(5685).keyPermissions(rootCommand.permissions);
     obj = keyPermissionsResult;
     obj = keyPermissionsResult;
-    const obj2 = obj(5675);
+    const obj2 = obj(5685);
   } else {
     obj = {};
     const permissions = rootCommand.permissions;
@@ -327,8 +327,8 @@ function buildSubCommands(arg0) {
   }
 }
 function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
-  const obj = require(5675) /* toPermissionKey */;
-  const tmp = commandLevelPermissions[obj.toPermissionKey(obj, selfMember.userId, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
+  const obj = require(5685) /* toPermissionKey */;
+  const tmp = commandLevelPermissions[obj.toPermissionKey(obj, selfMember.userId, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
   if (null != tmp) {
     return tmp.permission;
   } else {
@@ -341,8 +341,8 @@ function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
       while (true) {
         let tmp2 = require;
         let tmp3 = dependencyMap;
-        let obj2 = require(5675) /* toPermissionKey */;
-        let tmp4 = commandLevelPermissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+        let obj2 = require(5685) /* toPermissionKey */;
+        let tmp4 = commandLevelPermissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
         if (null != tmp4) {
           flag = true;
           if (tmp4.permission) {
@@ -358,8 +358,8 @@ function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
     if (flag2) {
       return false;
     } else {
-      const obj3 = require(5675) /* toPermissionKey */;
-      const tmp8 = commandLevelPermissions[obj3.toPermissionKey(obj3, id, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+      const obj3 = require(5685) /* toPermissionKey */;
+      const tmp8 = commandLevelPermissions[obj3.toPermissionKey(obj3, id, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       let permission = null;
       if (null != tmp8) {
         permission = tmp8.permission;
@@ -513,7 +513,7 @@ export const hasAccess = function hasAccess(arg0) {
   return true;
 };
 export const getCommandAttachmentDraftType = function getCommandAttachmentDraftType(commandOrigin) {
-  if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.CHAT === commandOrigin) {
+  if (require(5686) /* ApplicationCommandSectionType */.CommandOrigin.CHAT === commandOrigin) {
     return DraftType.SlashCommand;
   } else {
     return DraftType.ApplicationLauncherCommand;
@@ -522,18 +522,18 @@ export const getCommandAttachmentDraftType = function getCommandAttachmentDraftT
 export const getCommandTriggerSection = function getCommandTriggerSection(closure_3) {
   if (null != closure_3) {
     if (closure_3.id === constants.BUILT_IN) {
-      let APP = require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.BUILT_IN;
+      let APP = require(5686) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.BUILT_IN;
     } else if (closure_3.id === constants.FRECENCY) {
-      APP = require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.FRECENCY;
+      APP = require(5686) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.FRECENCY;
     } else {
-      APP = require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.APP;
+      APP = require(5686) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.APP;
     }
     return APP;
   }
 };
 export const getApplicationCommandSection = function getApplicationCommandSection(application, arg1, arg2) {
   let name = arg2;
-  const obj = { type: require(5676) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION, id: application.id };
+  const obj = { type: require(5686) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION, id: application.id };
   if (null == arg2) {
     let username;
     if (null != application) {
@@ -590,7 +590,7 @@ export const trackCommandSelected = function trackCommandSelected(command) {
   let triggerSection;
   command = command.command;
   ({ location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source } = command);
-  let obj = require(4325) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4359) /* _createForOfIteratorHelperLoose */;
   obj = {};
   const rootCommand = command.rootCommand;
   let id;

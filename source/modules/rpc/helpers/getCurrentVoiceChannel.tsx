@@ -1,10 +1,10 @@
-// Module ID: 10719
-// Function ID: 83357
+// Module ID: 10757
+// Function ID: 83478
 // Name: getCurrentVoiceChannel
-// Dependencies: [1194, 1348, 4147, 2]
+// Dependencies: [1194, 1348, 4181, 2]
 // Exports: default
 
-// Module 10719 (getCurrentVoiceChannel)
+// Module 10757 (getCurrentVoiceChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

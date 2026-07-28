@@ -1,10 +1,10 @@
-// Module ID: 13038
-// Function ID: 100875
+// Module ID: 13082
+// Function ID: 101048
 // Name: CommunityPill
-// Dependencies: [31, 27, 13039, 1838, 6002, 653, 33, 4131, 689, 478, 1212, 8400, 8394, 8952, 8403, 4661, 3832, 1273, 4127, 6504, 566, 1387, 13040, 13041, 1450, 5513, 1392, 1426, 8756, 3835, 5085, 8396, 10085, 2]
+// Dependencies: [31, 27, 13083, 1838, 6036, 653, 33, 4165, 689, 478, 1212, 8444, 8438, 8996, 8447, 4695, 3866, 1273, 4161, 6540, 566, 1387, 13084, 13085, 1450, 5548, 1392, 1426, 8800, 3869, 5119, 8440, 10125, 2]
 // Exports: default
 
-// Module 13038 (CommunityPill)
+// Module 13082 (CommunityPill)
 import GuildBadgeV2 from "GuildBadgeV2";
 import get_ActivityIndicator from "isAttachmentLadderEnabled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,12 +25,12 @@ function CommunityPill(guildVisibility) {
   const tmp = _createForOfIteratorHelperLoose();
   const intl = GlobeEarthIcon(1212).intl;
   let importDefault = intl.string(GlobeEarthIcon(1212).t.TME4LJ);
-  let tmp2 = importDefault(8400);
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(8394).GuildVisibility.PUBLIC) {
+  let tmp2 = importDefault(8444);
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(8438).GuildVisibility.PUBLIC) {
     const intl2 = GlobeEarthIcon(1212).intl;
     importDefault = intl2.string(GlobeEarthIcon(1212).t.op2cJ6);
-    GlobeEarthIcon = GlobeEarthIcon(8952).GlobeEarthIcon;
-    tmp2 = importDefault(8403);
+    GlobeEarthIcon = GlobeEarthIcon(8996).GlobeEarthIcon;
+    tmp2 = importDefault(8447);
   }
   let obj = {
     style: tmp.communityPill,
@@ -46,9 +46,9 @@ function CommunityPill(guildVisibility) {
   obj = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText };
   const intl3 = GlobeEarthIcon(1212).intl;
   obj.children = intl3.string(GlobeEarthIcon(1212).t.K7iRig);
-  items[1] = callback(GlobeEarthIcon(4127).Text, obj);
+  items[1] = callback(GlobeEarthIcon(4161).Text, obj);
   obj.children = items;
-  return callback2(GlobeEarthIcon(4661).PressableOpacity, obj);
+  return callback2(GlobeEarthIcon(4695).PressableOpacity, obj);
 }
 ({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);

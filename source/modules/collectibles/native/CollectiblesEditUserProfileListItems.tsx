@@ -1,10 +1,10 @@
-// Module ID: 7903
-// Function ID: 62976
+// Module ID: 7939
+// Function ID: 63067
 // Name: EditCollectibleListItem
-// Dependencies: [31, 27, 1850, 655, 33, 4131, 689, 4661, 4100, 4101, 1273, 7904, 4127, 1212, 5462, 5769, 4099, 7905, 7906, 566, 3777, 7894, 5782, 2]
+// Dependencies: [31, 27, 1850, 655, 33, 4165, 689, 4695, 4134, 4135, 1273, 7940, 4161, 1212, 5497, 5779, 4133, 7941, 7942, 566, 3811, 7930, 5792, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 7903 (EditCollectibleListItem)
+// Module 7939 (EditCollectibleListItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -74,7 +74,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
-  obj = { source: importDefault(7904), size: require(1273) /* Button */.IconSizes.LARGE };
+  obj = { source: importDefault(7940), size: require(1273) /* Button */.IconSizes.LARGE };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -86,7 +86,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
     stringResult = string(t.PoWNfe);
   }
   obj.children = stringResult;
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj["children"] = items;
   return closure_8(EditCollectibleListItem, obj);
 };
@@ -96,7 +96,7 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   obj.analyticsSource = 0;
   const merged = Object.assign(analyticsSource, obj);
   const tmp3 = _createForOfIteratorHelperLoose();
-  analyticsLocations = analyticsLocations(5462)(analyticsSource).analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   obj = {
     style: tmp3.optionCell,
@@ -109,13 +109,13 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
     }, items)
   };
   const merged1 = Object.assign(merged);
-  obj = { source: analyticsLocations(7905), size: analyticsSource(1273).IconSizes.LARGE };
+  obj = { source: analyticsLocations(7941), size: analyticsSource(1273).IconSizes.LARGE };
   const items1 = [callback(analyticsSource(1273).Icon, obj), , ];
   const obj1 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp3.optionCellText };
   const intl = analyticsSource(1212).intl;
   obj1.children = intl.string(analyticsSource(1212).t.pWG4ze);
-  items1[1] = callback(analyticsSource(4127).Text, obj1);
-  items1[2] = callback(analyticsSource(7906).NewBadge, { style: tmp3.newIcon });
+  items1[1] = callback(analyticsSource(4161).Text, obj1);
+  items1[2] = callback(analyticsSource(7942).NewBadge, { style: tmp3.newIcon });
   obj["children"] = items1;
   return callback2(EditCollectibleListItem, obj);
 };
@@ -132,16 +132,16 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   let obj1 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  const obj3 = importDefault(3777);
-  const tmp6 = importDefault(7894)(skuId);
+  const obj3 = importDefault(3811);
+  const tmp6 = importDefault(7930)(skuId);
   const purchase = tmp6.purchase;
-  const canUseCollectiblesResult = importDefault(3777).canUseCollectibles(stateFromStores);
-  const isProductNewResult = require(5782) /* getPriceForCollectiblesProduct */.isProductNew(skuId);
-  const obj4 = require(5782) /* getPriceForCollectiblesProduct */;
-  let result = require(5782) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(tmp6.product);
+  const canUseCollectiblesResult = importDefault(3811).canUseCollectibles(stateFromStores);
+  const isProductNewResult = require(5792) /* getPriceForCollectiblesProduct */.isProductNew(skuId);
+  const obj4 = require(5792) /* getPriceForCollectiblesProduct */;
+  let result = require(5792) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(tmp6.product);
   if (!result) {
-    result = require(5782) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesPurchase(purchase);
-    const obj6 = require(5782) /* getPriceForCollectiblesProduct */;
+    result = require(5792) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesPurchase(purchase);
+    const obj6 = require(5792) /* getPriceForCollectiblesProduct */;
   }
   obj = { isSelected };
   const merged1 = Object.assign(merged);
@@ -149,7 +149,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   if (null == purchase) {
     if (!result) {
       obj = { style: tmp3.lockIcon, isNew: isProductNewResult };
-      let tmp17 = callback(require(7906) /* NewBadge */.LockBadge, obj);
+      let tmp17 = callback(require(7942) /* NewBadge */.LockBadge, obj);
     }
     items1[1] = tmp17;
     obj["children"] = items1;
@@ -161,7 +161,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
     if (!isTryItOut) {
       if (null == purchase) {
         obj1 = { style: tmp3.lockIcon, isNew: isProductNewResult };
-        tmp18 = callback(require(7906) /* NewBadge */.PremiumBadge, obj1);
+        tmp18 = callback(require(7942) /* NewBadge */.PremiumBadge, obj1);
       } else {
         tmp18 = null;
       }

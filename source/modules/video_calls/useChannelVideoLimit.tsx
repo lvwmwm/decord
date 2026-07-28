@@ -1,10 +1,10 @@
-// Module ID: 8769
-// Function ID: 69422
+// Module ID: 8813
+// Function ID: 69573
 // Name: useChannelVideoLimit
-// Dependencies: [1838, 4204, 653, 566, 2]
+// Dependencies: [1838, 4238, 653, 566, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 8769 (useChannelVideoLimit)
+// Module 8813 (useChannelVideoLimit)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelTypes } from "ME";

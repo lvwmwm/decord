@@ -1,10 +1,10 @@
-// Module ID: 11876
-// Function ID: 91937
+// Module ID: 11919
+// Function ID: 92107
 // Name: ReportContent
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1456, 8418, 11877, 4338, 1212, 6695, 5119, 5087, 4127, 7596, 7595, 6670, 4544, 7585, 5517, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 1456, 8462, 11920, 4372, 1212, 6731, 5153, 5121, 4161, 7632, 7631, 6706, 4578, 7621, 5552, 2]
 // Exports: default
 
-// Module 11876 (ReportContent)
+// Module 11919 (ReportContent)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -277,6 +277,6 @@ export default function GameDetectionReportModal(applicationId) {
     }
   }), []);
   const initialRouteStack = [{ name: "REPORT", params: { applicationId: applicationId.applicationId } }];
-  return callback(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteStack });
+  return callback(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteStack });
 };
 export const MODAL_KEY = "game-detection-report";

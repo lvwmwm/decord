@@ -1,10 +1,10 @@
-// Module ID: 11045
-// Function ID: 85865
+// Module ID: 11083
+// Function ID: 85988
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
-// Dependencies: [4349, 5766, 653, 675, 5767, 4338, 11046, 1935, 2]
+// Dependencies: [4383, 5776, 653, 675, 5777, 4372, 11084, 1935, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 11045 (FAMILY_CENTER_REQUEST_MODAL_KEY)
+// Module 11083 (FAMILY_CENTER_REQUEST_MODAL_KEY)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items from "items";
 import { AnalyticEvents } from "ME";
@@ -24,23 +24,23 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     let obj = importDefault(675);
     obj = { action: ScanQRCode.ScanQRCode, selected_teen_id: match[1], source: FamilyCenterQRCodeScan };
     obj.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj);
-    importDefault(5767).setPendingConnection(match[1], match[2]);
-    const obj3 = importDefault(5767);
+    importDefault(5777).setPendingConnection(match[1], match[2]);
+    const obj3 = importDefault(5777);
     obj = { userId: match[1], linkCode: match[2] };
-    importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(11046, dependencyMap.paths), obj, "family-center-request-modal");
+    importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(11084, dependencyMap.paths), obj, "family-center-request-modal");
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
   pendingConnection = pendingConnection.getPendingConnection();
   let flag = null != pendingConnection;
   if (flag) {
-    let obj = importDefault(4338);
+    let obj = importDefault(4372);
     obj.popWithKey("family-center-request-modal");
     obj = {};
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
-    importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(11046, dependencyMap.paths), obj, "family-center-request-modal");
+    importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(11084, dependencyMap.paths), obj, "family-center-request-modal");
     flag = true;
-    const obj2 = importDefault(4338);
+    const obj2 = importDefault(4372);
   }
   return flag;
 };

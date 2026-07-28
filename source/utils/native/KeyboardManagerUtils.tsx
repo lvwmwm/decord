@@ -1,5 +1,5 @@
 // Module ID: 1820
-// Function ID: 20004
+// Function ID: 20008
 // Name: dismissGlobalKeyboard
 // Dependencies: [27, 477, 1821, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged

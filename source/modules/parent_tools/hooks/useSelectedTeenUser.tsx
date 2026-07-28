@@ -1,10 +1,10 @@
-// Module ID: 13859
-// Function ID: 106179
+// Module ID: 13903
+// Function ID: 106352
 // Name: useSelectedTeenUser
-// Dependencies: [1850, 5768, 5765, 6201, 624, 2]
+// Dependencies: [1850, 5778, 5775, 6236, 624, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 13859 (useSelectedTeenUser)
+// Module 13903 (useSelectedTeenUser)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
 
 export const useSelectedTeenUser = function useSelectedTeenUser() {
-  const _require = importDefault(6201)();
+  const _require = importDefault(6236)();
   const items = [closure_5, _isNativeReflectConstruct];
   return _require(624).useStateFromStores(items, () => {
     if (true !== closure_0) {

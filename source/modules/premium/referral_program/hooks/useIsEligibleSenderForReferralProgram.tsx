@@ -1,10 +1,10 @@
-// Module ID: 7778
-// Function ID: 61790
+// Module ID: 7814
+// Function ID: 61880
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [6158, 7779, 566, 2]
+// Dependencies: [6192, 7815, 566, 2]
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 7778 (useIsEligibleSenderForReferralProgram)
+// Module 7814 (useIsEligibleSenderForReferralProgram)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -15,8 +15,8 @@ export const useIsEligibleSenderForReferralProgram = function useIsEligibleSende
   if (result === undefined) {
     flag = false;
   }
-  const maybeFetchReferralsRemaining = require(7779) /* useMaybeFetchReferralsRemaining */.useMaybeFetchReferralsRemaining(flag);
-  const obj = require(7779) /* useMaybeFetchReferralsRemaining */;
+  const maybeFetchReferralsRemaining = require(7815) /* useMaybeFetchReferralsRemaining */.useMaybeFetchReferralsRemaining(flag);
+  const obj = require(7815) /* useMaybeFetchReferralsRemaining */;
   const items = [_isNativeReflectConstruct];
   return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getIsEligibleToSendReferrals());
 };

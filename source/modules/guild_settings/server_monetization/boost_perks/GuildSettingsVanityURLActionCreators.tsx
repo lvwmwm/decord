@@ -1,10 +1,10 @@
-// Module ID: 8247
-// Function ID: 66253
+// Module ID: 8285
+// Function ID: 66363
 // Name: fetchVanityUrl
 // Dependencies: [653, 507, 686, 2]
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
 
-// Module 8247 (fetchVanityUrl)
+// Module 8285 (fetchVanityUrl)
 import { Endpoints } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLActionCreators.tsx");

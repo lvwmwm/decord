@@ -1,10 +1,10 @@
-// Module ID: 7789
-// Function ID: 61861
+// Module ID: 7825
+// Function ID: 61951
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 7789 (apexExperiment)
+// Module 7825 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false, sortType: undefined }, [1]: { enabled: true, sortType: "vc_probability" }, [2]: { enabled: true, sortType: "communication_probability" } } };

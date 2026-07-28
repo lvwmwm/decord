@@ -1,10 +1,10 @@
-// Module ID: 7755
-// Function ID: 61721
+// Module ID: 7791
+// Function ID: 61811
 // Name: nativeStyleProperties
-// Dependencies: [1348, 4131, 689, 7677, 7684, 7686, 1212, 7756, 7687, 1395, 1392, 2]
+// Dependencies: [1348, 4165, 689, 7713, 7720, 7722, 1212, 7792, 7723, 1395, 1392, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 7755 (nativeStyleProperties)
+// Module 7791 (nativeStyleProperties)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -19,10 +19,10 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   let theme;
   ({ message, theme } = roleStyle);
   channel = channel.getChannel(message.channel_id);
-  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const automodUsernameColor = _createForOfIteratorHelperLoose(theme).automodUsernameColor;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   let str = "";
   if ("" !== message.content) {
     const _Date = Date;
@@ -30,9 +30,9 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
     str = date.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
   }
   obj.time = str;
-  const tmp = importDefault(7677)(theme);
+  const tmp = importDefault(7713)(theme);
   obj = {};
-  const merged = Object.assign(importDefault(7687)(roleStyle));
+  const merged = Object.assign(importDefault(7723)(roleStyle));
   const intl = require(1212) /* getSystemLocale */.intl;
   obj["content"] = intl.formatToParts(require(1212) /* getSystemLocale */.t.ig55n6, obj);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -42,7 +42,7 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
     tmp12 = automodUsernameColor;
   }
   obj["usernameColor"] = tmp12;
-  const tmp10 = importDefault(7756)({ message, channel, isSystemDM: true, colors: importDefault(7677)(theme) });
+  const tmp10 = importDefault(7792)({ message, channel, isSystemDM: true, colors: importDefault(7713)(theme) });
   const obj5 = require(1395) /* ensureAvatarSource */;
   const obj6 = require(1392) /* getAvatarURL */;
   obj["avatarURL"] = obj5.ensureAvatarSource(obj6.makeSource(require(1395) /* ensureAvatarSource */.getAutomodAvatarURL())).uri;
@@ -54,12 +54,12 @@ export const createGuildAlertModeDisabledSystemMessage = function createGuildAle
   let theme;
   ({ message, theme } = roleStyle);
   const automodUsernameColor = _createForOfIteratorHelperLoose(theme).automodUsernameColor;
-  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  const tmp = importDefault(7677)(theme);
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  const tmp = importDefault(7713)(theme);
   obj = {};
-  const merged = Object.assign(importDefault(7687)(roleStyle));
+  const merged = Object.assign(importDefault(7723)(roleStyle));
   const intl = require(1212) /* getSystemLocale */.intl;
   obj["content"] = intl.formatToParts(require(1212) /* getSystemLocale */.t.cyq2WA, obj);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -69,7 +69,7 @@ export const createGuildAlertModeDisabledSystemMessage = function createGuildAle
     tmp5 = automodUsernameColor;
   }
   obj["usernameColor"] = tmp5;
-  const tmp3 = importDefault(7756)({ message, channel: undefined, isSystemDM: true, colors: importDefault(7677)(theme) });
+  const tmp3 = importDefault(7792)({ message, channel: undefined, isSystemDM: true, colors: importDefault(7713)(theme) });
   const obj4 = require(1395) /* ensureAvatarSource */;
   const obj5 = require(1392) /* getAvatarURL */;
   obj["avatarURL"] = obj4.ensureAvatarSource(obj5.makeSource(require(1395) /* ensureAvatarSource */.getAutomodAvatarURL())).uri;

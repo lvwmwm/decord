@@ -1,11 +1,11 @@
 // Module ID: 8547
-// Function ID: 67956
+// Function ID: 67851
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8478, 8548, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8548, 8545, 8546]
 
 // Module 8547 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
-import propsAndStyles from "propsAndStyles";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -23,6 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Path";
+tmp3.displayName = "FeColorMatrix";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { type: "matrix", values: "" });
 
 export default tmp3;

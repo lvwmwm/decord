@@ -1,10 +1,10 @@
-// Module ID: 11809
-// Function ID: 91649
+// Module ID: 11848
+// Function ID: 91800
 // Name: ChannelTitleContent
-// Dependencies: [31, 27, 4809, 1352, 1348, 1838, 4218, 3768, 1850, 653, 1355, 1345, 33, 4131, 5053, 689, 566, 1212, 4594, 4321, 8994, 11810, 11811, 1273, 10079, 11812, 5085, 10077, 9290, 4661, 4127, 3970, 7917, 8278, 3947, 1334, 9602, 11813, 2]
+// Dependencies: [31, 27, 4843, 1352, 1348, 1838, 4252, 3802, 1850, 653, 1355, 1345, 33, 4165, 5087, 689, 566, 1212, 4628, 4355, 9038, 11849, 11850, 1273, 10119, 11851, 5119, 10117, 9334, 4695, 4161, 4004, 7953, 8316, 3981, 1334, 9642, 11852, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11809 (ChannelTitleContent)
+// Module 11848 (ChannelTitleContent)
 import importAllResult from "conceal";
 import { View } from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,7 +48,7 @@ function ChannelTitleContent(arg0) {
   if (!importAllResult.isValidElement(title)) {
     obj = { style: tmp.channelNameContainer };
     obj = { style: tmp.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
-    obj.children = callback(require(4127) /* Text */.Text, obj);
+    obj.children = callback(require(4161) /* Text */.Text, obj);
     tmp8 = callback(View, obj);
   }
   const obj1 = { style: tmp.flexRow };
@@ -67,11 +67,11 @@ function ParentChannelSubTitle(parentChannel) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
   const tmp = callback3();
-  obj.channelName = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_11, closure_10);
+  obj.channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_11, closure_10);
   obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.BjYvHO, obj);
-  const obj3 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
-  obj.children = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_11, closure_10, true);
-  return callback(require(4127) /* Text */.Text, obj);
+  const obj3 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+  obj.children = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_11, closure_10, true);
+  return callback(require(4161) /* Text */.Text, obj);
 }
 function DMChannelName(userId) {
   userId = userId.userId;
@@ -155,7 +155,7 @@ function ChannelTitleWrapper(arg0) {
       return null;
     };
     obj.children = children;
-    tmp5 = callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+    tmp5 = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp5;
 }
@@ -383,12 +383,12 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    let obj3 = require(4594) /* getThreadChannelIcon */;
+    let obj3 = require(4628) /* getThreadChannelIcon */;
     channelIcon = obj3.getChannelIcon(stateFromStores);
   }
   let channelName = null;
   if (null != stateFromStores) {
-    let obj4 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+    let obj4 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
     channelName = obj4.computeChannelName(stateFromStores, closure_11, closure_10);
   }
   if (null != stateFromStores) {
@@ -403,7 +403,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
       }
       const obj1 = { userId: recipientId, guildId: stateFromStores.guild_id };
       obj2 = { onPressTitle };
-      obj3 = { title: callback(DMChannelName, obj), icon: channelIcon, titleSuffix: tmp21, subTitle: callback(importDefault(8994), obj1) };
+      obj3 = { title: callback(DMChannelName, obj), icon: channelIcon, titleSuffix: tmp21, subTitle: callback(importDefault(9038), obj1) };
       obj2.children = callback(ChannelTitleContent, obj3);
       return callback(ChannelTitleWrapper, obj2);
     }

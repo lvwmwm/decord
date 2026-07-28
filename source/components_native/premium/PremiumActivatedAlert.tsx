@@ -1,10 +1,10 @@
-// Module ID: 6245
-// Function ID: 56279
+// Module ID: 6281
+// Function ID: 56368
 // Name: getHeaderBackground
-// Dependencies: [31, 27, 653, 33, 4131, 4974, 3777, 6246, 6247, 6248, 6249, 6250, 6191, 6192, 6251, 6252, 6253, 6254, 6255, 6256, 6257, 3977, 6258, 6259, 6260, 6261, 6262, 6263, 6264, 6265, 6266, 1212, 4067, 4562, 6267, 6268, 1273, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 5008, 3811, 6282, 6283, 6284, 6285, 6286, 6226, 6227, 6287, 6288, 6289, 6290, 6291, 6292, 6293, 4011, 6294, 6295, 6296, 6297, 6298, 6299, 6300, 6301, 6302, 1212, 4101, 4596, 6303, 6304, 1273, 2]
 // Exports: default
 
-// Module 6245 (getHeaderBackground)
+// Module 6281 (getHeaderBackground)
 import "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";
 import { SubscriptionStatusTypes } from "ME";
@@ -20,84 +20,84 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function getHeaderBackground(arg0) {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
-    return importDefault(6246);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
-    return importDefault(6247);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
-    return importDefault(6248);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
-    return importDefault(6249);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
-    return importDefault(6250);
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
+    return importDefault(6282);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
+    return importDefault(6283);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
+    return importDefault(6284);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
+    return importDefault(6285);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
+    return importDefault(6286);
   }
 }
 function getHeaderImage(premiumBranding) {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
-    return importDefault(6191);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
-    return importDefault(6192);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
-    return importDefault(6251);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {
-    return importDefault(6252);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
-    return importDefault(6253);
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
+    return importDefault(6226);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
+    return importDefault(6227);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
+    return importDefault(6287);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {
+    return importDefault(6288);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
+    return importDefault(6289);
   }
 }
 function getLogo(arg0) {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
-    return importDefault(6254);
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
-    return importDefault(6255);
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
+    return importDefault(6290);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
+    return importDefault(6291);
   } else {
-    if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE !== arg0) {
-      if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== arg0) {
-        if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
-          return importDefault(6257);
+    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE !== arg0) {
+      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== arg0) {
+        if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
+          return importDefault(6293);
         }
       }
     }
-    return importDefault(6256);
+    return importDefault(6292);
   }
 }
 function getActivatedImage(premiumBranding, arg1) {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
     if (obj4.isThemeDark(arg1)) {
-      let tmp22Result = tmp22(6258);
+      let tmp22Result = tmp22(6294);
     } else {
-      tmp22Result = tmp22(6259);
+      tmp22Result = tmp22(6295);
     }
     return tmp22Result;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
     if (obj3.isThemeDark(arg1)) {
-      let tmp17Result = tmp17(6260);
+      let tmp17Result = tmp17(6296);
     } else {
-      tmp17Result = tmp17(6261);
+      tmp17Result = tmp17(6297);
     }
     return tmp17Result;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
     if (obj2.isThemeDark(arg1)) {
-      let tmp12Result = tmp12(6262);
+      let tmp12Result = tmp12(6298);
     } else {
-      tmp12Result = tmp12(6263);
+      tmp12Result = tmp12(6299);
     }
     return tmp12Result;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {
     if (obj.isThemeDark(arg1)) {
-      let tmp7Result = tmp7(6264);
+      let tmp7Result = tmp7(6300);
     } else {
-      tmp7Result = tmp7(6265);
+      tmp7Result = tmp7(6301);
     }
     return tmp7Result;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
-    return importDefault(6266);
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
+    return importDefault(6302);
   }
 }
 function getDescription(arg0, arg1) {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 !== arg0) {
-    if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 !== arg0) {
-      if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 !== arg0) {
+    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 !== arg0) {
+      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         return intl2.string(require(1212) /* getSystemLocale */.t.aTUr3Z);
       } else {
@@ -105,7 +105,7 @@ function getDescription(arg0, arg1) {
         let obj = {};
         obj = {};
         ({ planId: obj3.planId, additionalPlans: obj3.additionalPlans } = arg1);
-        obj.planName = require(3777) /* _createForOfIteratorHelperLoose */.getExternalPlanDisplayName(obj);
+        obj.planName = require(3811) /* _createForOfIteratorHelperLoose */.getExternalPlanDisplayName(obj);
         return intl.format(require(1212) /* getSystemLocale */.t.YJUUH3, obj);
       }
     }
@@ -120,34 +120,34 @@ _createForOfIteratorHelperLoose = { fontSize: 14, lineHeight: 16, textAlign: "ce
 _createForOfIteratorHelperLoose.description = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
     let obj = { headerImage: { marginLeft: -27, width: 88, top: 18 } };
     return obj;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
     obj = { headerImage: { marginLeft: -27, width: 87, top: 18 } };
     return obj;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
     const obj1 = { headerImage: { marginLeft: -29.5, width: 91, top: 18 } };
     return obj1;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
     const obj2 = { headerImage: { marginLeft: -58, width: 122, height: 90, top: 18 } };
     return obj2;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
     obj = { headerImage: { marginLeft: -54, width: 140, top: 18 } };
     return obj;
   }
 });
 let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
     let obj = {};
     obj = { borderRadius: 6 };
     obj.animation = obj;
     return obj;
   } else {
-    if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 !== arg0) {
-      if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 !== arg0) {
-        if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== arg0) {
-          if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
+    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 !== arg0) {
+      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 !== arg0) {
+        if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== arg0) {
+          if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
             obj = {};
             const obj1 = { borderRadius: 9 };
             obj.animation = obj1;
@@ -181,18 +181,18 @@ export default function PremiumActivatedAlert(onClose) {
       }
     }
   }
-  let obj = require(3777) /* _createForOfIteratorHelperLoose */;
+  let obj = require(3811) /* _createForOfIteratorHelperLoose */;
   const premiumBranding = obj.getPremiumBranding(renewalMutations);
-  if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
+  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
     obj = { logo: { width: 82, height: 44 } };
     let tmp13 = obj;
-  } else if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
+  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
     obj = { logo: { width: 82, height: 32 } };
     tmp13 = obj;
   } else {
-    if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE !== premiumBranding) {
-      if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== premiumBranding) {
-        if (require(3777) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
+    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE !== premiumBranding) {
+      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== premiumBranding) {
+        if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
           const obj1 = { logo: { width: 82, height: 18 } };
           tmp13 = obj1;
         }
@@ -202,7 +202,7 @@ export default function PremiumActivatedAlert(onClose) {
     tmp13 = obj2;
   }
   const tmp4 = importDefault;
-  const tmp6 = importDefault(4067)();
+  const tmp6 = importDefault(4101)();
   const tmp14 = callback3(premiumBranding);
   const obj3 = { onClose: onClose.onClose };
   const tmp15 = callback4(premiumBranding);
@@ -213,13 +213,13 @@ export default function PremiumActivatedAlert(onClose) {
   const obj5 = { source: getLogo(premiumBranding), style: tmp13.logo };
   const items = [callback(closure_3, obj5), , ];
   let tmp19 = null;
-  if (premiumBranding === require(3777) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE) {
-    const obj6 = { source: importDefault(6267), style: tmp.logoPlusPremiumGuild };
+  if (premiumBranding === require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE) {
+    const obj6 = { source: importDefault(6303), style: tmp.logoPlusPremiumGuild };
     tmp19 = callback(closure_3, obj6);
   }
   items[1] = tmp19;
   const tmp18 = closure_4;
-  const tmp4Result = tmp4(4562);
+  const tmp4Result = tmp4(4596);
   const items1 = [tmp14.headerImage, tmp.headerImage];
   items[2] = callback(closure_3, { source: getHeaderImage(premiumBranding), style: items1 });
   obj4.children = items;
@@ -229,7 +229,7 @@ export default function PremiumActivatedAlert(onClose) {
   const obj7 = { source: getHeaderImage(premiumBranding), style: items1 };
   obj9.source = getActivatedImage(premiumBranding, tmp6);
   obj9.style = tmp15.animation;
-  const items3 = [callback(importDefault(6268), obj9), ];
+  const items3 = [callback(importDefault(6304), obj9), ];
   const obj10 = { style: tmp.description, children: getDescription(premiumBranding, renewalMutations) };
   items3[1] = callback(require(1273) /* Button */.LegacyText, obj10);
   obj8.children = items3;

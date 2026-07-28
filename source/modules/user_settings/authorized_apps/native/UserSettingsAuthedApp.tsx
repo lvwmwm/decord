@@ -1,10 +1,10 @@
-// Module ID: 13907
-// Function ID: 106470
+// Module ID: 13951
+// Function ID: 106643
 // Name: WarningLabel
-// Dependencies: [31, 27, 1347, 5067, 1348, 3768, 4326, 1922, 653, 9032, 10384, 33, 4131, 689, 4087, 4127, 1456, 1457, 1212, 5470, 10547, 8887, 566, 11629, 1392, 4473, 11628, 4099, 10385, 1935, 480, 8850, 6664, 6448, 6449, 8138, 3983, 5079, 5074, 21, 11168, 8939, 5501, 5502, 5164, 2]
+// Dependencies: [31, 27, 1347, 5101, 1348, 3802, 4360, 1922, 653, 9076, 10424, 33, 4165, 689, 4121, 4161, 1456, 1457, 1212, 5505, 10585, 8931, 566, 11668, 1392, 4507, 11667, 4133, 10425, 1935, 480, 8894, 6700, 6484, 6485, 8176, 4017, 5113, 5108, 21, 11206, 8983, 5536, 5537, 5198, 2]
 // Exports: default
 
-// Module 13907 (WarningLabel)
+// Module 13951 (WarningLabel)
 import showAlert from "showAlert";
 import get_ActivityIndicator from "showActionSheet";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -31,9 +31,9 @@ function WarningLabel(text) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.warningContainer };
   obj = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.warningIcon };
-  const items = [callback(require(4087) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
+  const items = [callback(require(4121) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
   obj = { color: "text-default", variant: "text-sm/medium", children: text.text };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }
@@ -60,7 +60,7 @@ function ParentApp(application) {
 }
 function handleDeleteApp(outer1_1) {
   const application = outer1_1.application;
-  let obj = importDefault(5470);
+  let obj = importDefault(5505);
   obj.delete(outer1_1.id);
   selfEmbeddedActivities = selfEmbeddedActivities.getSelfEmbeddedActivities();
   const value = selfEmbeddedActivities.get(application.id);
@@ -71,7 +71,7 @@ function handleDeleteApp(outer1_1) {
   }
   obj.location = _location;
   obj.applicationId = application.id;
-  importDefault(10547).leaveActivity(obj);
+  importDefault(10585).leaveActivity(obj);
 }
 ({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ UserSettingsSections: closure_12, AnalyticsSections: closure_13, AnalyticsPages: closure_14 } = ME);

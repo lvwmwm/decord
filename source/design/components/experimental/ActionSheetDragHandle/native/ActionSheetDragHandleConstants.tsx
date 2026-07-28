@@ -1,9 +1,9 @@
-// Module ID: 8175
-// Function ID: 65615
+// Module ID: 8213
+// Function ID: 65725
 // Name: PX_4
 // Dependencies: [689, 2]
 
-// Module 8175 (PX_4)
+// Module 8213 (PX_4)
 const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
 const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
 const sum = 2 * PX_8 + PX_4;

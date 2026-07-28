@@ -1,17 +1,17 @@
-// Module ID: 6480
-// Function ID: 57996
+// Module ID: 6516
+// Function ID: 58085
 // Name: getWhatYouLoseProfileTier1Source
-// Dependencies: [31, 27, 33, 6481, 6482, 6483, 6484, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 6518, 6519, 6520, 4011, 2]
 // Exports: WhatYouLoseProfileTier1
 
-// Module 6480 (getWhatYouLoseProfileTier1Source)
+// Module 6516 (getWhatYouLoseProfileTier1Source)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getWhatYouLoseProfileTier1Source(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getWhatYouLoseProfileTier1Source(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useWhatYouLoseProfileTier1Source() {
-  return getWhatYouLoseProfileTier1Source(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getWhatYouLoseProfileTier1Source(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
 

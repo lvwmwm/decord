@@ -1,10 +1,10 @@
-// Module ID: 16499
-// Function ID: 128561
+// Module ID: 16539
+// Function ID: 128722
 // Name: ApplicationRejectedNotice
-// Dependencies: [31, 27, 1838, 653, 33, 4131, 566, 16475, 11321, 16448, 1212, 14164, 16489, 2]
+// Dependencies: [31, 27, 1838, 653, 33, 4165, 566, 16515, 11359, 16488, 1212, 14208, 16529, 2]
 // Exports: default
 
-// Module 16499 (ApplicationRejectedNotice)
+// Module 16539 (ApplicationRejectedNotice)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -34,42 +34,42 @@ function ApplicationRejectedNotice(guildId) {
     const hasItem1 = features2.has(GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   }
   const tmp = callback3();
-  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(16475)(stateFromStores));
+  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(16515)(stateFromStores));
   if (null != resubmissionError) {
     obj = { children: resubmissionError.getAnyErrorMessage() };
-    let tmp11 = callback(importDefault(11321), obj);
-    const tmp33 = importDefault(11321);
+    let tmp11 = callback(importDefault(11359), obj);
+    const tmp33 = importDefault(11359);
   } else if (null != requestRejectedNoticeText) {
     obj = { notice: requestRejectedNoticeText };
-    tmp11 = callback(importDefault(16448), obj);
+    tmp11 = callback(importDefault(16488), obj);
   } else if (tmp10) {
     const obj1 = {};
     const intl3 = guildId(1212).intl;
     obj1.notice = intl3.string(guildId(1212).t.MyJpJT);
-    tmp11 = callback(importDefault(16448), obj1);
-    const tmp25 = importDefault(16448);
+    tmp11 = callback(importDefault(16488), obj1);
+    const tmp25 = importDefault(16488);
   } else if (null != reapplyNoticeText) {
     const obj2 = { notice: reapplyNoticeText };
     const intl2 = guildId(1212).intl;
     obj2.ctaLabel = intl2.string(guildId(1212).t["YKw/NQ"]);
     obj2.onClick = tmp9;
     obj2.submitting = tmp8;
-    tmp11 = callback(importDefault(16448), obj2);
-    const tmp20 = importDefault(16448);
+    tmp11 = callback(importDefault(16488), obj2);
+    const tmp20 = importDefault(16488);
   } else if (true === hasItem1) {
     const obj3 = {};
     const intl = guildId(1212).intl;
     obj3.notice = intl.string(guildId(1212).t.e2g9sW);
-    tmp11 = callback(importDefault(16448), obj3);
-    const tmp15 = importDefault(16448);
+    tmp11 = callback(importDefault(16488), obj3);
+    const tmp15 = importDefault(16488);
   } else {
     tmp11 = null;
     if (true === hasItem) {
       const obj4 = {};
       const intl4 = guildId(1212).intl;
       obj4.notice = intl4.string(guildId(1212).t.rxI9sl);
-      tmp11 = callback(importDefault(16448), obj4);
-      const tmp40 = importDefault(16448);
+      tmp11 = callback(importDefault(16488), obj4);
+      const tmp40 = importDefault(16488);
     }
   }
   let tmp34 = null;
@@ -84,7 +84,7 @@ function GuildSettingsRoleSubscription(arg0) {
   let guildId;
   ({ guildId, children } = arg0);
   const tmp = callback3();
-  let obj = require(14164) /* useGroupListingsFetchContext */;
+  let obj = require(14208) /* useGroupListingsFetchContext */;
   if (obj.useGroupListingsFetchContext()) {
     obj = { style: tmp.container };
     obj = { guildId };
@@ -108,6 +108,6 @@ export default function GuildSettingsRoleSubscriptionContainer(guildId) {
   obj = {};
   const merged = Object.assign(guildId);
   obj.children = callback(GuildSettingsRoleSubscription, obj);
-  obj.children = callback(require(16489) /* useRoleSubscriptionSettingsDisabled */.RoleSubscriptionSettingsDisabledContextProvider, obj);
-  return callback(require(14164) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  obj.children = callback(require(16529) /* useRoleSubscriptionSettingsDisabled */.RoleSubscriptionSettingsDisabledContextProvider, obj);
+  return callback(require(14208) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

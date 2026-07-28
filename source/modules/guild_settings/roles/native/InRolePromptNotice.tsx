@@ -1,10 +1,10 @@
-// Module ID: 16396
-// Function ID: 127936
+// Module ID: 16435
+// Function ID: 128092
 // Name: InRolePromptNotice
-// Dependencies: [31, 27, 653, 33, 4131, 689, 1360, 16397, 1273, 8284, 4127, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 1360, 16436, 1273, 8322, 4161, 1212, 2]
 // Exports: default
 
-// Module 16396 (InRolePromptNotice)
+// Module 16435 (InRolePromptNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
@@ -31,27 +31,27 @@ export default function InRolePromptNotice(role) {
   if (!obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
     return null;
   } else {
-    let obj1 = require(16397) /* _createForOfIteratorHelperLoose */;
+    let obj1 = require(16436) /* _createForOfIteratorHelperLoose */;
     obj = { style: stringResult.promptRow };
     let Icon = require(1273) /* Button */.Icon;
     if (isRolePowerfulResult) {
-      obj = { style: stringResult.icon, source: importDefault(8284), color: importDefault(689).unsafe_rawColors.YELLOW_300 };
+      obj = { style: stringResult.icon, source: importDefault(8322), color: importDefault(689).unsafe_rawColors.YELLOW_300 };
       const items = [tmp7(Icon, obj), ];
       obj1 = { style: stringResult.promptText, variant: "text-sm/medium" };
       const intl2 = tmp8(1212).intl;
       stringResult = intl2.string(tmp8(1212).t.YRbgXz);
       obj1.children = stringResult;
-      Icon = tmp7(tmp8(4127).Text, obj1);
+      Icon = tmp7(tmp8(4161).Text, obj1);
       items[1] = Icon;
       obj.children = items;
       let tmp5Result = tmp5(tmp6, obj);
     } else {
-      const obj2 = { style: stringResult.icon, source: importDefault(8284) };
+      const obj2 = { style: stringResult.icon, source: importDefault(8322) };
       const items1 = [tmp7(Icon, obj2), ];
       const obj3 = { style: stringResult.promptText, variant: "text-sm/medium" };
       const intl = tmp8(1212).intl;
       obj3.children = intl.string(tmp8(1212).t.mqeO2v);
-      items1[1] = tmp7(tmp8(4127).Text, obj3);
+      items1[1] = tmp7(tmp8(4161).Text, obj3);
       obj.children = items1;
       tmp5Result = tmp5(tmp6, obj);
     }

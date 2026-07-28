@@ -1,10 +1,10 @@
-// Module ID: 11692
-// Function ID: 90698
+// Module ID: 11731
+// Function ID: 90849
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 57, 31, 27, 1838, 11681, 33, 4131, 5084, 689, 566, 5159, 5080, 4030, 5513, 4127, 1212, 8927, 1273, 4544, 11682, 11691, 5087, 5517, 5450, 2]
+// Dependencies: [5, 57, 31, 27, 1838, 11720, 33, 4165, 5118, 689, 566, 5193, 5114, 4064, 5548, 4161, 1212, 8971, 1273, 4578, 11721, 11730, 5121, 5552, 5485, 2]
 // Exports: default
 
-// Module 11692 (GuildDirectoryNicknameUpsell)
+// Module 11731 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -34,7 +34,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   let obj = require(566) /* initialize */;
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
-  const insets = importDefault(5159)().insets;
+  const insets = importDefault(5193)().insets;
   const tmp3 = ref(_handleSubmit.useState(null), 2);
   const first = tmp3[0];
   dependencyMap = tmp3[1];
@@ -46,8 +46,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
   obj = { paddingBottom: insets.bottom + importDefault(689).space.PX_16, paddingTop: insets.top };
   items1[1] = obj;
   obj.contentContainerStyle = items1;
-  const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: require(5513) /* makeSizeStyle */.GuildIconSizes.XLARGE };
-  const items2 = [callback(importDefault(5513), obj1), , , , ];
+  const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: require(5548) /* makeSizeStyle */.GuildIconSizes.XLARGE };
+  const items2 = [callback(importDefault(5548), obj1), , , , ];
   const obj2 = { style: tmp.header };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -58,11 +58,11 @@ function GuildDirectoryNicknameUpsell(arg0) {
   }
   obj4.guildName = name;
   obj3.children = intl.format(require(1212) /* getSystemLocale */.t["d+6kzl"], obj4);
-  const items3 = [callback(require(4127) /* Text */.Text, obj3), ];
+  const items3 = [callback(require(4161) /* Text */.Text, obj3), ];
   const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl2.string(require(1212) /* getSystemLocale */.t.b3L8yx);
-  items3[1] = callback(require(4127) /* Text */.Text, obj5);
+  items3[1] = callback(require(4161) /* Text */.Text, obj5);
   obj2.children = items3;
   items2[1] = closure_11(closure_6, obj2);
   const obj6 = {};
@@ -72,7 +72,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   const tmp14 = callback;
   const tmp7 = closure_11;
   const tmp8 = closure_7;
-  const tmp9 = importDefault(5513);
+  const tmp9 = importDefault(5548);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.label = intl3.string(require(1212) /* getSystemLocale */.t.ilDlmW);
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -102,7 +102,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = tmp14(importDefault(8927), obj6);
+  items2[2] = tmp14(importDefault(8971), obj6);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj8 = { style: tmp.redesignButtonContainer };
   const obj9 = { size: "lg" };
@@ -111,7 +111,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   obj9.onPress = function handleSubmit() {
     return _handleSubmit(...arguments);
   };
-  obj8.children = callback(require(4544) /* Button */.Button, obj9);
+  obj8.children = callback(require(4578) /* Button */.Button, obj9);
   items2[4] = callback(closure_6, obj8);
   obj.children = items2;
   return tmp7(tmp8, obj);
@@ -138,7 +138,7 @@ const result = require("result").fileFinishedImporting("modules/directory_channe
 export default function GuildDirectoryNicknameUpsellModal(arg0) {
   const _require = arg0;
   let obj = {
-    screens: importDefault(5450)(() => (function getScreens(closure_0) {
+    screens: importDefault(5485)(() => (function getScreens(closure_0) {
       let closure_1;
       ({ guildId: closure_0, onHide: closure_1 } = closure_0);
       function handleClose() {
@@ -163,5 +163,5 @@ export default function GuildDirectoryNicknameUpsellModal(arg0) {
     })(closure_0)),
     initialRouteName: "UPSELL_SCREEN_KEY"
   };
-  return callback(_require(5517).Navigator, obj);
+  return callback(_require(5552).Navigator, obj);
 };

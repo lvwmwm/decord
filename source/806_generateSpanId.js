@@ -1,5 +1,5 @@
 // Module ID: 806
-// Function ID: 9056
+// Function ID: 9060
 // Name: generateSpanId
 // Dependencies: [807]
 

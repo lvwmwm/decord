@@ -1,10 +1,10 @@
-// Module ID: 16245
-// Function ID: 126002
+// Module ID: 16284
+// Function ID: 126158
 // Name: createRequestToSpeakMessage
 // Dependencies: [653, 686, 21, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 16245 (createRequestToSpeakMessage)
+// Module 16284 (createRequestToSpeakMessage)
 import ME from "ME";
 
 let closure_2;

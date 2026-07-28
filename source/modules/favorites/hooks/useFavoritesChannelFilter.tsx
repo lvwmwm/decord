@@ -1,10 +1,10 @@
-// Module ID: 15052
-// Function ID: 114683
+// Module ID: 11858
+// Function ID: 91852
 // Name: useFavoritesChannelFilter
-// Dependencies: [31, 1348, 3759, 1351, 653, 10152, 566, 6111, 1841, 1327, 2]
+// Dependencies: [31, 1348, 3793, 1351, 653, 10194, 566, 6145, 1841, 1327, 2]
 // Exports: default
 
-// Module 15052 (useFavoritesChannelFilter)
+// Module 11858 (useFavoritesChannelFilter)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

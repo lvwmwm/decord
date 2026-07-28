@@ -1,10 +1,10 @@
-// Module ID: 5948
-// Function ID: 52892
+// Module ID: 5982
+// Function ID: 53011
 // Name: resolveResponseTtl
 // Dependencies: [664, 2]
 // Exports: questAdDecisionFromAdDecision
 
-// Module 5948 (resolveResponseTtl)
+// Module 5982 (resolveResponseTtl)
 function resolveResponseTtl(responseTtlSeconds) {
   if (null == responseTtlSeconds) {
     return closure_0;

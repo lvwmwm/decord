@@ -1,10 +1,10 @@
-// Module ID: 15124
-// Function ID: 115112
+// Module ID: 15164
+// Function ID: 115270
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [31, 27, 33, 4131, 689, 5472, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5507, 4161, 2]
 // Exports: default
 
-// Module 15124 (ChannelItemEmbeddedActivities)
+// Module 15164 (ChannelItemEmbeddedActivities)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function ChannelItemEmbeddedActivities(muted) {
   let size;
   ({ embeddedApps, size } = muted);
   if (size === undefined) {
-    size = require(5472) /* GameIcon */.GameIconSizes.SIZE_24;
+    size = require(5507) /* GameIcon */.GameIconSizes.SIZE_24;
   }
   let modeMuted = muted.muted;
   const tmp3 = _createForOfIteratorHelperLoose();
@@ -39,18 +39,18 @@ export default function ChannelItemEmbeddedActivities(muted) {
       modeMuted = tmp3.modeMuted;
     }
     obj.style = modeMuted;
-    return callback(importDefault(5472), obj);
+    return callback(importDefault(5507), obj);
   } else {
     const diff = embeddedApps.length - 1;
-    const tmp16 = require(5472) /* GameIcon */.GameIconImageSize[size];
+    const tmp16 = require(5507) /* GameIcon */.GameIconImageSize[size];
     obj = { style: tmp3.container };
     const obj1 = { game: embeddedApps[0].application, size };
     const obj2 = { marginRight: 4 };
     obj1.style = obj2;
-    const items = [callback(importDefault(5472), obj1), ];
+    const items = [callback(importDefault(5507), obj1), ];
     if (2 === embeddedApps.length) {
       obj = { game: embeddedApps[1].application, size };
-      let tmp7 = callback(importDefault(5472), obj);
+      let tmp7 = callback(importDefault(5507), obj);
     } else {
       const obj3 = {};
       const items1 = [tmp3.overflowContainer, ];
@@ -60,7 +60,7 @@ export default function ChannelItemEmbeddedActivities(muted) {
       const obj5 = { style: tmp3.overflow, variant: "text-xs/bold" };
       const _HermesInternal = HermesInternal;
       obj5.children = "+" + diff;
-      obj3.children = callback(require(4127) /* Text */.Text, obj5);
+      obj3.children = callback(require(4161) /* Text */.Text, obj5);
       tmp7 = callback(View, obj3);
     }
     items[1] = tmp7;

@@ -1,9 +1,9 @@
-// Module ID: 9975
-// Function ID: 77193
+// Module ID: 10015
+// Function ID: 77322
 // Name: dismissPanel
-// Dependencies: [31, 9976, 9974, 9977, 7621, 9978, 1559, 2]
+// Dependencies: [31, 10016, 10014, 10017, 7657, 10018, 1559, 2]
 
-// Module 9975 (dismissPanel)
+// Module 10015 (dismissPanel)
 import { VoicePanelModes } from "VoicePanelModes";
 import VoicePanelControlsModes from "VoicePanelControlsModes";
 import createFakeSharedValue from "createFakeSharedValue";

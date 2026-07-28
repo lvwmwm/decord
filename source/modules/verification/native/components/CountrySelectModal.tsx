@@ -1,10 +1,10 @@
-// Module ID: 9169
-// Function ID: 71966
+// Module ID: 9213
+// Function ID: 72117
 // Name: CountrySelectModal
-// Dependencies: [31, 33, 1212, 5087, 4338, 9170, 9167, 5582, 9189, 5517, 2]
+// Dependencies: [31, 33, 1212, 5121, 4372, 9214, 9211, 5617, 9233, 5552, 2]
 // Exports: default
 
-// Module 9169 (CountrySelectModal)
+// Module 9213 (CountrySelectModal)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -34,5 +34,5 @@ export default function CountrySelectModal() {
   const effect = React.useEffect(() => () => {
     outer2_1(outer2_2[7]).runAfterInteractions(outer2_1(outer2_2[8]).setCountrySelectorClosed, 400);
   }, []);
-  return jsx(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
+  return jsx(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

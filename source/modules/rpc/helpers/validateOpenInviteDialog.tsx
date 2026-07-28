@@ -1,10 +1,10 @@
-// Module ID: 13471
-// Function ID: 103561
+// Module ID: 13515
+// Function ID: 103734
 // Name: validateOpenInviteDialog
-// Dependencies: [5658, 1838, 3759, 653, 13460, 10554, 8165, 2]
+// Dependencies: [5668, 1838, 3793, 653, 13504, 10592, 8203, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 13471 (validateOpenInviteDialog)
+// Module 13515 (validateOpenInviteDialog)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -19,9 +19,9 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog() {
     let obj = { frame: connectedFrame, channel: undefined, guild: undefined };
     return obj;
   } else {
-    const obj6 = importDefault(13460)();
+    const obj6 = importDefault(13504)();
     if (null == obj6) {
-      let tmp24 = importDefault(10554);
+      let tmp24 = importDefault(10592);
       obj = { errorCode: RPCErrors.INVALID_CHANNEL };
       const prototype3 = tmp24.prototype;
       tmp24 = new tmp24(obj, "Invalid channel");
@@ -29,7 +29,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog() {
     } else {
       guild = guild.getGuild(obj6.getGuildId());
       if (null == guild) {
-        let tmp14 = importDefault(10554);
+        let tmp14 = importDefault(10592);
         const obj1 = { errorCode: RPCErrors.INVALID_CHANNEL };
         const _HermesInternal2 = HermesInternal;
         const prototype2 = tmp14.prototype;
@@ -40,14 +40,14 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog() {
           const obj2 = { frame: undefined, channel: obj6, guild };
           return obj2;
         } else {
-          let tmp4 = importDefault(10554);
+          let tmp4 = importDefault(10592);
           obj = { errorCode: RPCErrors.INVALID_PERMISSIONS };
           const _HermesInternal = HermesInternal;
           const prototype = tmp4.prototype;
           tmp4 = new tmp4(obj, "No invite permissions for " + obj6.id);
           throw tmp4;
         }
-        obj7 = require(8165) /* canViewInviteModal */;
+        obj7 = require(8203) /* canViewInviteModal */;
       }
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 14825
-// Function ID: 113086
+// Module ID: 14869
+// Function ID: 113259
 // Name: ExternalLink
-// Dependencies: [31, 27, 33, 4131, 689, 9125, 1456, 9149, 1212, 4127, 4966, 4544, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 9169, 1456, 9193, 1212, 4161, 5000, 4578, 2]
 // Exports: default
 
-// Module 14825 (ExternalLink)
+// Module 14869 (ExternalLink)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

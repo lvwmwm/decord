@@ -1,9 +1,9 @@
-// Module ID: 15721
-// Function ID: 121282
+// Module ID: 15760
+// Function ID: 121438
 // Name: HistorySeparator
-// Dependencies: [31, 27, 1348, 4143, 1850, 653, 33, 4131, 689, 6633, 15722, 566, 1273, 9026, 5085, 11956, 4141, 4139, 9055, 15023, 1324, 1450, 15727, 1212, 7619, 2]
+// Dependencies: [31, 27, 1348, 4177, 1850, 653, 33, 4165, 689, 6669, 15761, 566, 1273, 9070, 5119, 11999, 4175, 4173, 9099, 15067, 1324, 1450, 15766, 1212, 7655, 2]
 
-// Module 15721 (HistorySeparator)
+// Module 15760 (HistorySeparator)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -54,7 +54,7 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
     guildId(outer1_2[9]).transitionToGuild(guildId);
   }, items1);
   obj = { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-  obj.children = callback(onGuildSelect(15722), obj);
+  obj.children = callback(onGuildSelect(15761), obj);
   return callback(closure_5, obj);
 });
 let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId) {

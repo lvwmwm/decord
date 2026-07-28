@@ -1,9 +1,9 @@
-// Module ID: 5891
-// Function ID: 52274
+// Module ID: 5925
+// Function ID: 52393
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3768, 653, 3755, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3802, 653, 3789, 566, 686, 2]
 
-// Module 5891 (_isNativeReflectConstruct)
+// Module 5925 (_isNativeReflectConstruct)
 import ME from "ME";
 import sortedInsert from "sortedInsert";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

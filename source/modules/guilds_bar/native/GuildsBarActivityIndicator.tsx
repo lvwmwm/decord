@@ -1,9 +1,9 @@
-// Module ID: 14921
-// Function ID: 113814
+// Module ID: 14965
+// Function ID: 113987
 // Name: getMediaIcon
-// Dependencies: [31, 33, 4131, 689, 3835, 5515, 1273, 8265, 8264, 4655, 7624, 11859, 14922, 6580, 14923, 4659, 14924, 6556, 6557, 14919, 2]
+// Dependencies: [31, 33, 4165, 689, 3869, 5550, 1273, 8303, 8302, 4689, 7660, 11902, 14966, 6616, 14967, 4693, 14968, 6592, 6593, 14963, 2]
 
-// Module 14921 (getMediaIcon)
+// Module 14965 (getMediaIcon)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -11,31 +11,31 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 let require = arg1;
 function getMediaIcon(closure_3) {
   if (closure_3.activeEvent) {
-    let obj = { icon: require(8265) /* CalendarIcon */.CalendarIcon, source: importDefault(8264) };
+    let obj = { icon: require(8303) /* CalendarIcon */.CalendarIcon, source: importDefault(8302) };
     let tmp6 = obj;
   } else if (tmp4) {
-    obj = { icon: require(4655) /* StageIcon */.StageIcon, source: importDefault(7624) };
+    obj = { icon: require(4689) /* StageIcon */.StageIcon, source: importDefault(7660) };
     tmp6 = obj;
   } else if (tmp3) {
-    const obj1 = { icon: require(11859) /* ScreenIcon */.ScreenIcon, source: importDefault(14922) };
+    const obj1 = { icon: require(11902) /* ScreenIcon */.ScreenIcon, source: importDefault(14966) };
     tmp6 = obj1;
   } else if (tmp2) {
-    const obj2 = { icon: require(6580) /* VideoIcon */.VideoIcon, source: importDefault(14923) };
+    const obj2 = { icon: require(6616) /* VideoIcon */.VideoIcon, source: importDefault(14967) };
     tmp6 = obj2;
   } else if (tmp) {
-    const obj3 = { icon: require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, source: importDefault(14924) };
+    const obj3 = { icon: require(4693) /* VoiceNormalIcon */.VoiceNormalIcon, source: importDefault(14968) };
     tmp6 = obj3;
   } else {
     tmp6 = null;
     if (tmp5) {
-      obj = { icon: require(6556) /* AppsIcon */.AppsIcon, source: importDefault(6557) };
+      obj = { icon: require(6592) /* AppsIcon */.AppsIcon, source: importDefault(6593) };
       tmp6 = obj;
     }
   }
   return tmp6;
 }
 function useActivityIndicatorState(guildId) {
-  const tmp = importDefault(14919)(guildId);
+  const tmp = importDefault(14963)(guildId);
   const require = tmp;
   const tmp2 = getMediaIcon(tmp);
   importDefault = tmp2;
@@ -87,14 +87,14 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ IconComponent, isCurrentUserConnected } = arg0);
   ({ style, source } = arg0);
   let activityIcon = callback();
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   let WHITE = obj.useToken(importDefault(689).colors.ICON_DEFAULT);
   obj = { style: items };
   items = [activityIcon.activityWrapper, style];
   obj = {};
   const items1 = [activityIcon.activityIconWrapper, ];
   let prop = null;
-  const tmp2 = importDefault(5515);
+  const tmp2 = importDefault(5550);
   if (isCurrentUserConnected) {
     prop = activityIcon.activityIconWrapperActive;
   }

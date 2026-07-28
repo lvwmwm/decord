@@ -1,10 +1,10 @@
-// Module ID: 11581
-// Function ID: 90029
+// Module ID: 11620
+// Function ID: 90180
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [27, 4019, 33, 4131, 689, 11582, 6561, 4127, 2]
+// Dependencies: [27, 4053, 33, 4165, 689, 11621, 6597, 4161, 2]
 // Exports: default
 
-// Module 11581 (GuildPowerupsBoostInfo)
+// Module 11620 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   let type;
   ({ count, type } = arg0);
   const tmp = callback2();
-  let obj = require(11582) /* getGuildPowerupsBoostInfoText */;
+  let obj = require(11621) /* getGuildPowerupsBoostInfoText */;
   const guildPowerupsBoostInfoText = obj.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false };
@@ -36,7 +36,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
     TEXT_MUTED = importDefault(689).colors.TEXT_MUTED;
   }
   obj1.color = TEXT_MUTED;
-  const items = [callback(require(6561) /* BoostGemIcon */.BoostGemIcon, obj1), ];
+  const items = [callback(require(6597) /* BoostGemIcon */.BoostGemIcon, obj1), ];
   const obj2 = { variant: "text-lg/medium", color: null, importantForAccessibility: "no-hide-descendants" };
   let str = "text-subtle";
   if (type === BoostInfoType.AVAILABLE) {
@@ -44,11 +44,11 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   obj2.color = str;
   obj2.children = count;
-  items[1] = callback(require(4127) /* Text */.Text, obj2);
+  items[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items;
   const items1 = [closure_6(View, obj), ];
   const obj3 = { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText };
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj.children = items1;
   return closure_6(View, obj);
 };

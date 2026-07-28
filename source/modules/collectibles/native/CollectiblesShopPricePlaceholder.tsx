@@ -1,10 +1,10 @@
-// Module ID: 8657
-// Function ID: 68777
+// Module ID: 8701
+// Function ID: 68928
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [31, 33, 4131, 689, 3992, 4132, 2]
+// Dependencies: [31, 33, 4165, 689, 4026, 4166, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 8657 (CollectiblesShopPricePlaceholder)
+// Module 8701 (CollectiblesShopPricePlaceholder)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -19,20 +19,20 @@ let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("m
 
 export const CollectiblesShopPricePlaceholder = function CollectiblesShopPricePlaceholder(style) {
   const tmp = _createForOfIteratorHelperLoose();
-  sharedValue = sharedValue(3992).useSharedValue(0.3);
+  sharedValue = sharedValue(4026).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const obj = sharedValue(outer1_2[4]);
     const result = sharedValue.set(obj.withRepeat(sharedValue(outer1_2[5]).withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj = sharedValue(3992);
+  let obj = sharedValue(4026);
   const fn = function h() {
     return { opacity: sharedValue.get() };
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10107093534072;
   fn.__initData = closure_6;
-  const animatedStyle = sharedValue(3992).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4026).useAnimatedStyle(fn);
   style = [tmp.skeletonContainer, style.style, animatedStyle];
-  return jsx(importDefault(3992).View, { style });
+  return jsx(importDefault(4026).View, { style });
 };

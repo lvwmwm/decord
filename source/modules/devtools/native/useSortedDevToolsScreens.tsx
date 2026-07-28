@@ -1,10 +1,10 @@
-// Module ID: 13570
-// Function ID: 104404
+// Module ID: 13614
+// Function ID: 104577
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5950, 13571, 13573, 566, 2]
+// Dependencies: [57, 5984, 13615, 13617, 566, 2]
 // Exports: default, updateSortOrder
 
-// Module 13570 (_createForOfIteratorHelperLoose)
+// Module 13614 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -93,7 +93,7 @@ function getSortedDevToolsScreens(arg0) {
   if (arg0 === undefined) {
     sortedScreenKeys = _isNativeReflectConstruct.sortedScreenKeys;
   }
-  const entries = Object.entries(sortedScreenKeys(13571).DevToolsScreens);
+  const entries = Object.entries(sortedScreenKeys(13615).DevToolsScreens);
   const found = entries.filter((arg0) => {
     let obj;
     [, obj] = arg0;
@@ -156,5 +156,5 @@ export const updateSortOrder = function updateSortOrder(closure_0, down) {
     items[index] = items[index + 1];
     items[index + 1] = items[index];
   }
-  const result = require(13573) /* updateDevToolsSettings */.updateDevToolsSettings({ sortedScreenKeys: items });
+  const result = require(13617) /* updateDevToolsSettings */.updateDevToolsSettings({ sortedScreenKeys: items });
 };

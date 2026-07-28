@@ -1,10 +1,10 @@
-// Module ID: 4458
-// Function ID: 39303
+// Module ID: 4492
+// Function ID: 39417
 // Name: getStripe
-// Dependencies: [5, 57, 1922, 653, 3, 4459, 507, 566, 2]
+// Dependencies: [5, 57, 1922, 653, 3, 4493, 507, 566, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 4458 (getStripe)
+// Module 4492 (getStripe)
 import _typeof from "_typeof";
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,12 +18,12 @@ function getStripe() {
   if (null != closure_2) {
     let resolved = Promise.resolve(closure_2);
   } else {
-    const stripe = require(4459) /* _typeof */.loadStripe(constants.STRIPE.KEY);
+    const stripe = require(4493) /* _typeof */.loadStripe(constants.STRIPE.KEY);
     resolved = stripe.then((arg0) => {
       const outer1_2 = arg0;
       return arg0;
     });
-    const obj = require(4459) /* _typeof */;
+    const obj = require(4493) /* _typeof */;
   }
   return resolved;
 }

@@ -1,10 +1,10 @@
-// Module ID: 12347
-// Function ID: 96062
+// Module ID: 12390
+// Function ID: 96232
 // Name: ExternalLinkItem
-// Dependencies: [27, 33, 4131, 4127, 1212, 7578, 5170, 12348, 3828, 2]
+// Dependencies: [27, 33, 4165, 4161, 1212, 7614, 5204, 12391, 3862, 2]
 // Exports: default
 
-// Module 12347 (ExternalLinkItem)
+// Module 12390 (ExternalLinkItem)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -17,14 +17,14 @@ function ExternalLinkItem(data) {
   let tmp3 = null;
   if (data.is_localized) {
     let obj = { label: tmp, subLabel: tmp2 };
-    obj = { IconComponent: url(12348).LinkExternalMediumIcon };
-    obj.trailing = callback(url(5170).TableRowIcon, obj);
+    obj = { IconComponent: url(12391).LinkExternalMediumIcon };
+    obj.trailing = callback(url(5204).TableRowIcon, obj);
     obj.onPress = function onPress() {
       outer1_1(outer1_2[8]).openURL(url);
     };
     obj.arrow = false;
     obj.accessibilityRole = "link";
-    tmp3 = callback(url(7578).RowButton, obj);
+    tmp3 = callback(url(7614).RowButton, obj);
   }
   return tmp3;
 }
@@ -44,7 +44,7 @@ export default function ExternalLinksElement(elements) {
           obj = { style: tmp.headerText, variant: "heading-deprecated-12/extrabold", color: "text-default", accessibilityRole: "header" };
           const intl = require(1212) /* getSystemLocale */.intl;
           obj.children = intl.string(require(1212) /* getSystemLocale */.t.hvVgAZ).toUpperCase();
-          tmp5 = callback(require(4127) /* Text */.Text, obj);
+          tmp5 = callback(require(4161) /* Text */.Text, obj);
           const str = intl.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
         }
         const items = [tmp5, elements.map((data) => outer1_4(outer1_7, { data: data.data }, "external-link-" + arg1))];

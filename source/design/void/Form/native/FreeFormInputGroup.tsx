@@ -1,8 +1,8 @@
-// Module ID: 8927
-// Function ID: 70568
-// Dependencies: [31, 27, 33, 4131, 477, 5163, 6670, 1273, 8928, 8929, 8931, 4127, 2]
+// Module ID: 8971
+// Function ID: 70719
+// Dependencies: [31, 27, 33, 4165, 477, 5197, 6706, 1273, 8972, 8973, 8975, 4161, 2]
 
-// Module 8927
+// Module 8971
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -49,18 +49,18 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     let obj2 = require(477) /* set */;
     str = "visible-password";
   }
-  const context = importAllResult.useContext(require(5163) /* context */.RedesignCompatContext);
+  const context = importAllResult.useContext(require(5197) /* context */.RedesignCompatContext);
   const id = importAllResult.useId();
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
     obj = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, isClearable: clearButtonVisibility !== require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    return callback(require(6670) /* TextInput */.TextInput, obj);
+    return callback(require(6706) /* TextInput */.TextInput, obj);
   } else {
     obj = { style };
     let tmp13 = null;
     if (null != label) {
       obj1 = { style: tmp3.label, nativeID: id, children: label };
-      tmp13 = callback(importDefault(8928), obj1);
+      tmp13 = callback(importDefault(8972), obj1);
     }
     const items = [tmp13, , , ];
     obj2 = {};
@@ -82,17 +82,17 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     obj2["keyboardType"] = str;
     const items1 = [tmp3.input, accessibilityLabel.textStyle];
     obj2["style"] = items1;
-    items[1] = callback(importDefault(8929), obj2);
+    items[1] = callback(importDefault(8973), obj2);
     let tmp28 = null;
     if (null != error) {
       const obj3 = { style: tmp3.error, children: error };
-      tmp28 = callback(importDefault(8931), obj3);
+      tmp28 = callback(importDefault(8975), obj3);
     }
     items[2] = tmp28;
     let tmp32 = null;
     if (null != hint) {
       const obj4 = { style: tmp3.hint, variant: "text-xs/medium", color: "text-muted", children: hint };
-      tmp32 = callback(require(4127) /* Text */.Text, obj4);
+      tmp32 = callback(require(4161) /* Text */.Text, obj4);
     }
     items[3] = tmp32;
     obj.children = items;

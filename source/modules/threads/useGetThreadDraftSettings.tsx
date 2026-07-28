@@ -1,10 +1,10 @@
-// Module ID: 9505
-// Function ID: 74171
+// Module ID: 9545
+// Function ID: 74300
 // Name: useGetThreadDraftSettings
-// Dependencies: [4469, 566, 21, 2]
+// Dependencies: [4503, 566, 21, 2]
 // Exports: default, useHasThreadDraft
 
-// Module 9505 (useGetThreadDraftSettings)
+// Module 9545 (useGetThreadDraftSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 16263
-// Function ID: 126197
+// Module ID: 16302
+// Function ID: 126353
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 8243, 1194, 8287, 16264, 1342, 653, 3983, 3982, 4340, 9117, 16265, 16266, 16274, 16275, 16556, 16558, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 8281, 1194, 8325, 16303, 1342, 653, 4017, 4016, 4374, 9161, 16304, 16305, 16313, 16314, 16596, 16598, 5112, 2]
 
-// Module 16263 (_isNativeReflectConstruct)
+// Module 16302 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import isEligibleForSafetyFlowsExperiment from "isEligibleForSafetyFlowsExperiment";
@@ -107,7 +107,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function handlePushedModal(key) {
-  let obj = require(3983) /* getRootNavigationRef */;
+  let obj = require(4017) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     obj = { name: "modal", key: key.key };
@@ -117,7 +117,7 @@ function handlePushedModal(key) {
   }
 }
 function handlePoppedModal() {
-  require(3982) /* _createForOfIteratorHelperLoose */.popModal();
+  require(4016) /* _createForOfIteratorHelperLoose */.popModal();
 }
 function pushFirstOpenModal(arg0, arg1) {
   let value;
@@ -155,7 +155,7 @@ function pushFirstOpenModal(arg0, arg1) {
       props = {};
     }
     const obj = { key: value.key };
-    handlePushedModal(importDefault(4340)(component, obj, props));
+    handlePushedModal(importDefault(4374)(component, obj, props));
   }
 }
 function createPushModalHandler(arg0) {
@@ -175,20 +175,20 @@ let obj = {
     if (null == action) {
       action = importDefaultResult.getAction();
     }
-    let obj = importDefault(9117);
+    let obj = importDefault(9161);
     let result = obj.isFullScreenVerification(action);
     if (result) {
       result = null != token.getToken();
     }
     if (result) {
       obj = { location: "modal-manager-verification" };
-      result = !require(16265) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment(obj);
-      const obj2 = require(16265) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16304) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment(obj);
+      const obj2 = require(16304) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16266) /* PhoneThenEmailInterstitial */.default;
+    return require(16305) /* PhoneThenEmailInterstitial */.default;
   }
 };
 obj = {
@@ -203,7 +203,7 @@ obj = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16274) /* handleTouch */.default;
+    return require(16313) /* handleTouch */.default;
   }
 };
 tmp4 = new tmp4();

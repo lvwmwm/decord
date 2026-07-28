@@ -1,10 +1,10 @@
-// Module ID: 9536
-// Function ID: 74437
+// Module ID: 9576
+// Function ID: 74566
 // Name: items
 // Dependencies: [2]
 // Exports: getProviderForRequest, isValidGifProvider
 
-// Module 9536 (items)
+// Module 9576 (items)
 const items = ["tenor", "giphy", "klipy"];
 const result = require("set").fileFinishedImporting("types/GifProvider.tsx");
 

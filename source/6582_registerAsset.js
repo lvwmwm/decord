@@ -1,11 +1,11 @@
 // Module ID: 6582
-// Function ID: 58399
+// Function ID: 58424
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6582 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 222.5, height: 118, scales: [2, 3], hash: "2762ca199009f1ddb659b515502ab30e", name: "img_tier_0_perk_custom_video_backgrounds", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/CircuitIcon", width: 60, height: 60, scales: [2, 3], hash: "68832d737c55ed046c40e8d11571a54e", name: "CircuitIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

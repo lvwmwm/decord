@@ -1,10 +1,10 @@
-// Module ID: 13861
-// Function ID: 106195
+// Module ID: 13905
+// Function ID: 106368
 // Name: FamilyCenterActivityTotal
-// Dependencies: [31, 27, 33, 4131, 689, 13860, 5827, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 13904, 5837, 4161, 2]
 // Exports: default
 
-// Module 13861 (FamilyCenterActivityTotal)
+// Module 13905 (FamilyCenterActivityTotal)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,16 +23,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = require(13860) /* useActionTotalsForDisplayType */;
+  let obj = require(13904) /* useActionTotalsForDisplayType */;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
-  let obj1 = require(13860) /* useActionTotalsForDisplayType */;
+  let obj1 = require(13904) /* useActionTotalsForDisplayType */;
   const formattedTotalForDisplayType = obj1.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {
     str = "text-brand";
   }
   const tmp = _createForOfIteratorHelperLoose();
-  const activityTypeTextConfigs = require(5827) /* getActivityTypeTextConfigs */.getActivityTypeTextConfigs();
+  const activityTypeTextConfigs = require(5837) /* getActivityTypeTextConfigs */.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
   let tooltipHeaderResult;
   if (null != value) {
@@ -45,9 +45,9 @@ export default function FamilyCenterActivityTotal(displayType) {
     num = formattedTotalForDisplayType;
   }
   obj.children = num;
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   obj1 = { variant: "text-sm/semibold", children: tooltipHeaderResult };
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   return closure_4(View, obj);
 };

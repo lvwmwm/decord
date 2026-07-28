@@ -1,10 +1,10 @@
-// Module ID: 5147
-// Function ID: 44901
+// Module ID: 5181
+// Function ID: 45016
 // Name: useGuildRoleMemberCounts
-// Dependencies: [31, 5148, 566, 5149, 2]
+// Dependencies: [31, 5182, 566, 5183, 2]
 // Exports: default
 
-// Module 5147 (useGuildRoleMemberCounts)
+// Module 5181 (useGuildRoleMemberCounts)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

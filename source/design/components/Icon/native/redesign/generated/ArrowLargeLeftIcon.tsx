@@ -1,10 +1,10 @@
-// Module ID: 5091
-// Function ID: 44346
+// Module ID: 5125
+// Function ID: 44461
 // Name: ArrowLargeLeftIcon
-// Dependencies: [31, 33, 689, 3834, 5092, 2]
+// Dependencies: [31, 33, 689, 3868, 5126, 2]
 // Exports: ArrowLargeLeftIcon
 
-// Module 5091 (ArrowLargeLeftIcon)
+// Module 5125 (ArrowLargeLeftIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ArrowLargeLeftIcon = function ArrowLargeLeftIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(5092) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(5126) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(5092) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(5126) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

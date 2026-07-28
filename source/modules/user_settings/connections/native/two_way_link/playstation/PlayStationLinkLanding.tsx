@@ -1,10 +1,10 @@
-// Module ID: 8901
-// Function ID: 70471
+// Module ID: 8945
+// Function ID: 70622
 // Name: PlayStationLinkLanding
-// Dependencies: [31, 8900, 653, 33, 4131, 1212, 4659, 8867, 1456, 1921, 8902, 8869, 2]
+// Dependencies: [31, 8944, 653, 33, 4165, 1212, 4693, 8911, 1456, 1921, 8946, 8913, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 8901 (PlayStationLinkLanding)
+// Module 8945 (PlayStationLinkLanding)
 import result from "result";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { HelpdeskArticles } from "ME";
@@ -50,5 +50,5 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   obj.body = intl.format(navigation(1212).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   obj.onNext = callback;
   obj.valueProps = memo;
-  return jsx(navigation(8869).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image });
+  return jsx(navigation(8913).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image });
 };

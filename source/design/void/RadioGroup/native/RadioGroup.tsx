@@ -1,9 +1,9 @@
-// Module ID: 13071
-// Function ID: 101041
+// Module ID: 13115
+// Function ID: 101214
 // Name: getOuterStylesFromSize
-// Dependencies: [31, 27, 482, 33, 4131, 689, 3849, 5157, 13072, 2]
+// Dependencies: [31, 27, 482, 33, 4165, 689, 3883, 5191, 13116, 2]
 
-// Module 13071 (getOuterStylesFromSize)
+// Module 13115 (getOuterStylesFromSize)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { NOOP } from "sum";
@@ -93,7 +93,7 @@ function RadioBar(arg0) {
   ({ style, size, onPress } = arg0);
   const tmp = callback2();
   const tmp2 = callback(RadioIndicator, { size, active: checked });
-  let obj = require(3849) /* useCheckboxA11yNative */;
+  let obj = require(3883) /* useCheckboxA11yNative */;
   obj = { selected: checked, disabled };
   const radioA11yNative = obj.useRadioA11yNative(obj);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -132,7 +132,7 @@ function RadioBar(arg0) {
     leading = option.leading;
   }
   obj.leading = leading;
-  return callback(importDefault(5157), obj);
+  return callback(importDefault(5191), obj);
 }
 class RadioItem {
   constructor(arg0) {

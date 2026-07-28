@@ -1,10 +1,10 @@
-// Module ID: 10673
-// Function ID: 83123
+// Module ID: 10711
+// Function ID: 83244
 // Name: useIsVoiceChannelFull
-// Dependencies: [1838, 3759, 4147, 482, 566, 4313, 2]
+// Dependencies: [1838, 3793, 4181, 482, 566, 4347, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 10673 (useIsVoiceChannelFull)
+// Module 10711 (useIsVoiceChannelFull)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

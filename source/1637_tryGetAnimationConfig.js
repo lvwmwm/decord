@@ -1,5 +1,5 @@
 // Module ID: 1637
-// Function ID: 18333
+// Function ID: 18337
 // Name: tryGetAnimationConfig
 // Dependencies: [1607, 1638, 1586, 1651, 1652, 1670, 1668, 1669, 1634]
 

@@ -1,10 +1,10 @@
-// Module ID: 15493
-// Function ID: 119069
+// Module ID: 15532
+// Function ID: 119225
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [31, 27, 653, 33, 4131, 689, 5468, 4127, 1212, 1921, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 5503, 4161, 1212, 1921, 2]
 // Exports: default
 
-// Module 15493 (ChannelDetailsLinkedLobby)
+// Module 15532 (ChannelDetailsLinkedLobby)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -25,7 +25,7 @@ const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/
 export default function ChannelDetailsLinkedLobby(channel) {
   channel = channel.channel;
   let divider = _createForOfIteratorHelperLoose();
-  let obj = require(5468) /* useGetOrFetchApplications */;
+  let obj = require(5503) /* useGetOrFetchApplications */;
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (null != linkedLobby) {
@@ -39,7 +39,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     const items = [divider.container, channel.containerStyle];
     obj.style = items;
     let tmp5 = callback;
-    let Text = require(4127) /* Text */.Text;
+    let Text = require(4161) /* Text */.Text;
     obj = { variant: "text-sm/normal", color: "text-default" };
     let obj1 = {};
     if (null != getOrFetchApplication) {

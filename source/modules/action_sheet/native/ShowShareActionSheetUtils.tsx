@@ -1,14 +1,14 @@
-// Module ID: 8136
-// Function ID: 64935
+// Module ID: 8174
+// Function ID: 65045
 // Name: resolveShareFileExtension
-// Dependencies: [653, 675, 8137, 5144, 2]
+// Dependencies: [653, 675, 8175, 5178, 2]
 // Exports: getMediaShareParams, trackAppClickInNativeShareSheet
 
-// Module 8136 (resolveShareFileExtension)
+// Module 8174 (resolveShareFileExtension)
 import { AnalyticEvents } from "ME";
 
 function resolveShareFileExtension(uri, contentType) {
-  return require(5144) /* decideFileExtension */.decideFileExtension(uri, contentType, true);
+  return require(5178) /* decideFileExtension */.decideFileExtension(uri, contentType, true);
 }
 const result = require("apexExperiment").fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
 
@@ -26,7 +26,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(8137) /* apexExperiment */;
+  let obj = require(8175) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (true === source.isGIFV) {

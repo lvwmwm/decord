@@ -1,10 +1,10 @@
-// Module ID: 9147
-// Function ID: 71826
+// Module ID: 9191
+// Function ID: 71977
 // Name: AuthFormView
-// Dependencies: [31, 27, 33, 4131, 689, 9125, 9148, 9149, 9150, 9153, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 9169, 9192, 9193, 9194, 9197, 2]
 // Exports: default
 
-// Module 9147 (AuthFormView)
+// Module 9191 (AuthFormView)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -63,9 +63,9 @@ export default function AuthFormView(arg0) {
   let subHeader;
   ({ children, headerText, subHeader, contentStyle } = arg0);
   ({ backgroundImageSource, backgroundImageCover } = arg0);
-  const tmp = importDefault(9125)();
+  const tmp = importDefault(9169)();
   const tmp2 = callback2(tmp);
-  _require = React.useContext(_require(9148).WideAuthScrollContext);
+  _require = React.useContext(_require(9192).WideAuthScrollContext);
   if (tmp) {
     let obj = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, scrollEventThrottle: 16 };
     obj = { top: 0 };
@@ -79,7 +79,7 @@ export default function AuthFormView(arg0) {
     let tmp20 = null;
     if (null != headerText) {
       const obj1 = { children: headerText };
-      tmp20 = callback(importDefault(9149), obj1);
+      tmp20 = callback(importDefault(9193), obj1);
     }
     const items1 = [tmp20, , ];
     let tmp24 = null;
@@ -98,7 +98,7 @@ export default function AuthFormView(arg0) {
     ({ container: arr[0], flex: arr[1] } = tmp2);
     obj.style = items2;
     const obj3 = { backgroundImageSource, backgroundImageCover };
-    const items3 = [callback(importDefault(9150), obj3), callback(importDefault(9153), {}), ];
+    const items3 = [callback(importDefault(9194), obj3), callback(importDefault(9197), {}), ];
     const obj4 = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
     const obj5 = { top: 0 };
     obj4.contentInset = obj5;
@@ -110,7 +110,7 @@ export default function AuthFormView(arg0) {
     let tmp10 = null;
     if (null != headerText) {
       const obj6 = { children: headerText };
-      tmp10 = callback(importDefault(9149), obj6);
+      tmp10 = callback(importDefault(9193), obj6);
     }
     const items5 = [tmp10, , ];
     let tmp14 = null;

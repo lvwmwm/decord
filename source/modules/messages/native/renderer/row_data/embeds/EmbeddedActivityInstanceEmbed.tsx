@@ -1,10 +1,10 @@
-// Module ID: 12304
-// Function ID: 95872
+// Module ID: 12347
+// Function ID: 96042
 // Name: createActivityInstanceEmbed
-// Dependencies: [1347, 4168, 1194, 1348, 4218, 1850, 9436, 11072, 1212, 11073, 12295, 12305, 11074, 11076, 5463, 11244, 2]
+// Dependencies: [1347, 4202, 1194, 1348, 4252, 1850, 9476, 11110, 1212, 11111, 12338, 12348, 11112, 11114, 5498, 11282, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 12304 (createActivityInstanceEmbed)
+// Module 12347 (createActivityInstanceEmbed)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -33,9 +33,9 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
         if (null != currentUser) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        let obj = require(11072) /* getContentClassificationVisibility */;
+        let obj = require(11110) /* getContentClassificationVisibility */;
         const contentClassificationVisibility = obj.getContentClassificationVisibility(application.content_classification, channel, nsfwAllowed);
-        if (require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
+        if (require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
           return (function createDisplayActivityInstanceEmbed(channel_id, application, id, channel) {
             let canLaunchInChannel;
             let instanceId;
@@ -163,7 +163,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           })(message, application, activityInstance.id, channel);
         } else {
           id = application.id;
-          if (contentClassificationVisibility === require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE) {
+          if (contentClassificationVisibility === require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE) {
             let intl2 = require(1212) /* getSystemLocale */.intl;
             let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.LPOzxB);
           } else {
@@ -171,7 +171,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             stringResult = intl.string(require(1212) /* getSystemLocale */.t.NIZyKq);
           }
           obj = { applicationId: id, instanceId: activityInstance.id, participantAvatarUris: [], participantsDescription: null };
-          obj = { displayType: require(11073) /* AppMessageEmbedDisplayType */.AppMessageEmbedDisplayType.BLOCKED, appId: id, messageId: message.id, title: null };
+          obj = { displayType: require(11111) /* AppMessageEmbedDisplayType */.AppMessageEmbedDisplayType.BLOCKED, appId: id, messageId: message.id, title: null };
           let intl3 = require(1212) /* getSystemLocale */.intl;
           obj.header = intl3.string(require(1212) /* getSystemLocale */.t.bZBN64);
           obj.info = stringResult;

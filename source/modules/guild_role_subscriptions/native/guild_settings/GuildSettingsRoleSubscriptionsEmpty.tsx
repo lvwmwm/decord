@@ -1,10 +1,10 @@
-// Module ID: 16443
-// Function ID: 128297
+// Module ID: 16483
+// Function ID: 128458
 // Name: GuildSettingsRoleSubscriptionsEmptyContent
-// Dependencies: [31, 1838, 653, 4157, 33, 1456, 16444, 16445, 16446, 566, 2]
+// Dependencies: [31, 1838, 653, 4191, 33, 1456, 16484, 16485, 16486, 566, 2]
 // Exports: default
 
-// Module 16443 (GuildSettingsRoleSubscriptionsEmptyContent)
+// Module 16483 (GuildSettingsRoleSubscriptionsEmptyContent)
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -19,14 +19,14 @@ function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   let obj = require(1456) /* useNavigation */;
   const str = obj.useNavigation();
   if (tmp.loading) {
-    let tmp8 = jsx(importDefault(16445), {});
+    let tmp8 = jsx(importDefault(16485), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(constants.CREATOR_MONETIZABLE_PROVISIONAL)) {
         obj = { guild };
-        tmp8 = jsx(importDefault(16446), { guild });
+        tmp8 = jsx(importDefault(16486), { guild });
       }
     }
     if (null == tmp2) {
@@ -48,7 +48,7 @@ export default function GuildSettingsRoleSubscriptionsEmpty(guildId) {
   const items = [_createForOfIteratorHelperLoose];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(guildId));
   if (null == stateFromStores) {
-    let tmp4 = jsx(importDefault(16445), {});
+    let tmp4 = jsx(importDefault(16485), {});
   } else {
     obj = { guild: stateFromStores };
     tmp4 = <GuildSettingsRoleSubscriptionsEmptyContent guild={stateFromStores} />;

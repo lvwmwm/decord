@@ -1,10 +1,10 @@
-// Module ID: 9083
-// Function ID: 71468
+// Module ID: 9127
+// Function ID: 71619
 // Name: MemberVerificationAlertPending
-// Dependencies: [31, 33, 9080, 9084, 9085, 1212, 4544, 2]
+// Dependencies: [31, 33, 9124, 9128, 9129, 1212, 4578, 2]
 // Exports: default
 
-// Module 9083 (MemberVerificationAlertPending)
+// Module 9127 (MemberVerificationAlertPending)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -33,7 +33,7 @@ export default function MemberVerificationAlertPending(guildId) {
   }, items);
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["icon"] = guildId(9085).ClipboardListIcon;
+  obj["icon"] = guildId(9129).ClipboardListIcon;
   const intl = guildId(1212).intl;
   obj["header"] = intl.string(guildId(1212).t.zhfXbs);
   const intl2 = guildId(1212).intl;
@@ -43,14 +43,14 @@ export default function MemberVerificationAlertPending(guildId) {
   const intl3 = guildId(1212).intl;
   obj1.text = intl3.string(guildId(1212).t.f293OM);
   obj1.onPress = onClose;
-  const items1 = [callback(guildId(4544).Button, obj1), ];
+  const items1 = [callback(guildId(4578).Button, obj1), ];
   const obj2 = {};
   const intl4 = guildId(1212).intl;
   obj2.text = intl4.string(guildId(1212).t.mqtdmQ);
   obj2.variant = "destructive";
   obj2.onPress = callback;
-  items1[1] = callback(guildId(4544).Button, obj2);
+  items1[1] = callback(guildId(4578).Button, obj2);
   obj.children = items1;
   obj["buttons"] = callback2(closure_5, obj);
-  return callback(onClose(9084), obj);
+  return callback(onClose(9128), obj);
 };

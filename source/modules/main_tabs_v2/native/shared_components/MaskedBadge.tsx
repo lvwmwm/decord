@@ -1,10 +1,10 @@
-// Module ID: 9055
-// Function ID: 71167
+// Module ID: 9099
+// Function ID: 71318
 // Name: MaskedBadge
-// Dependencies: [31, 33, 4131, 689, 1273, 9056, 2]
+// Dependencies: [31, 33, 4165, 689, 1273, 9100, 2]
 // Exports: default
 
-// Module 9055 (MaskedBadge)
+// Module 9099 (MaskedBadge)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -48,7 +48,7 @@ export default function MaskedBadge(backgroundColor) {
     tmp7Result = null;
     if (unread) {
       obj = { size, maskColor: backgroundColor, style: tmp.unreadBadge };
-      tmp7Result = jsx(importDefault(9056), { size, maskColor: backgroundColor, style: tmp.unreadBadge });
+      tmp7Result = jsx(importDefault(9100), { size, maskColor: backgroundColor, style: tmp.unreadBadge });
     }
   }
   return tmp7Result;

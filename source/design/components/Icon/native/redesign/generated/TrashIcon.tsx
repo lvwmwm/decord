@@ -1,10 +1,10 @@
-// Module ID: 4090
-// Function ID: 33920
+// Module ID: 4124
+// Function ID: 34022
 // Name: TrashIcon
-// Dependencies: [31, 33, 689, 3834, 4091, 2]
+// Dependencies: [31, 33, 689, 3868, 4125, 2]
 // Exports: TrashIcon
 
-// Module 4090 (TrashIcon)
+// Module 4124 (TrashIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TrashIcon = function TrashIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4091) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4125) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4091) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4125) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

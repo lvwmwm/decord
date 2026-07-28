@@ -1,10 +1,10 @@
-// Module ID: 11368
-// Function ID: 88336
+// Module ID: 11406
+// Function ID: 88455
 // Name: ChatFloatingNavButton
-// Dependencies: [31, 27, 33, 4131, 689, 3992, 3835, 4543, 4547, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4026, 3869, 4577, 4581, 2]
 // Exports: default
 
-// Module 11368 (ChatFloatingNavButton)
+// Module 11406 (ChatFloatingNavButton)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

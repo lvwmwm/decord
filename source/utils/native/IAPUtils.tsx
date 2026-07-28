@@ -1,10 +1,10 @@
-// Module ID: 6275
-// Function ID: 56448
+// Module ID: 6311
+// Function ID: 56537
 // Name: serializePurchaseResponse
-// Dependencies: [5, 27, 4130, 3812, 1850, 5619, 653, 1852, 6276, 3, 44, 477, 6295, 5622, 22, 491, 3792, 566, 6296, 1554, 4111, 6297, 2]
+// Dependencies: [5, 27, 4164, 3846, 1850, 5654, 653, 1852, 6312, 3, 44, 477, 6331, 5657, 22, 491, 3826, 566, 6332, 1554, 4145, 6333, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 6275 (serializePurchaseResponse)
+// Module 6311 (serializePurchaseResponse)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { convertToAlpha2 } from "getCountryCodeByCountryName";
 import closure_6 from "_isNativeReflectConstruct";
@@ -88,7 +88,7 @@ function isStorekit2Available() {
 function remapStorefront(countryCode) {
   const tmp = convertToAlpha2(countryCode.countryCode);
   if (null == countryCode.currency) {
-    if (null == require(6296) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[tmp]) {
+    if (null == require(6332) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[tmp]) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
       const error = new Error("Unable to get currency from countryCode " + countryCode.countryCode);
@@ -122,8 +122,8 @@ function shouldMockIAPForceEnable() {
     const tmp7 = !Identifier.startsWith("" + closure_9 + ".local");
     let isRunningOnSimulator = !tmp7;
     if (tmp7) {
-      isRunningOnSimulator = require(4111) /* getSystemVersion */.getIsRunningOnSimulator();
-      const obj3 = require(4111) /* getSystemVersion */;
+      isRunningOnSimulator = require(4145) /* getSystemVersion */.getIsRunningOnSimulator();
+      const obj3 = require(4145) /* getSystemVersion */;
     }
     tmp2 = isRunningOnSimulator;
     const obj2 = importAll(1554);
@@ -132,18 +132,18 @@ function shouldMockIAPForceEnable() {
 }
 ({ CurrencyCodes: closure_8, IOS_BUNDLE_ID: closure_9 } = ME);
 ({ InAppUtils: closure_11, RNIapIosSk2: closure_12 } = require("get ActivityIndicator").NativeModules);
-let items = [require("module_6276").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_6312").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 importDefaultResult1 = new importDefaultResult1("IAPUtils.tsx");
 let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [importDefault(6295).fetchSubscriptions(Object.values(require(5622) /* SubscriptionPlans */.ProductIds)), ];
-      const obj2 = importDefault(6295);
+      let items = [importDefault(6331).fetchSubscriptions(Object.values(require(5657) /* SubscriptionPlans */.ProductIds)), ];
+      const obj2 = importDefault(6331);
       const _Object2 = Object;
-      items[1] = importDefault(6295).fetchProducts(Object.values(require(5622) /* SubscriptionPlans */.ProductIds));
-      const obj3 = importDefault(6295);
+      items[1] = importDefault(6331).fetchProducts(Object.values(require(5657) /* SubscriptionPlans */.ProductIds));
+      const obj3 = importDefault(6331);
       let nextPromise = _Promise.all(items).then((arg0) => {
         let tmp;
         [r10006, tmp] = arg0;

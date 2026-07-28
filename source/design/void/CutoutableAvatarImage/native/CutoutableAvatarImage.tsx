@@ -1,9 +1,9 @@
-// Module ID: 11954
-// Function ID: 92429
+// Module ID: 11997
+// Function ID: 92599
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [31, 27, 11955, 33, 3, 1392, 11956, 11957, 7909, 5085, 3992, 4543, 491, 8463, 620, 2]
+// Dependencies: [31, 27, 11998, 33, 3, 1392, 11999, 12000, 7945, 5119, 4026, 4577, 491, 8507, 620, 2]
 
-// Module 11954 (StaticNativeCutoutAvatarImage)
+// Module 11997 (StaticNativeCutoutAvatarImage)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_SPRING_CONFIG } from "n";
@@ -27,10 +27,10 @@ function StaticNativeCutoutAvatarImage(cutout) {
     return items;
   }, items);
   const obj = { style, cutouts: memo };
-  const tmp2 = importDefault(11957)(source);
+  const tmp2 = importDefault(12000)(source);
   const items1 = [obj.image, imageStyle];
-  obj.children = callback(importDefault(5085), { style: items1, source: tmp2, usesSmallCache: true });
-  return callback(importDefault(7909), obj);
+  obj.children = callback(importDefault(5119), { style: items1, source: tmp2, usesSmallCache: true });
+  return callback(importDefault(7945), obj);
 }
 function AnimatedNativeCutoutAvatarImage(cutout) {
   let imageStyle;
@@ -38,7 +38,7 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
   let style;
   cutout = cutout.cutout;
   ({ source, style, imageStyle } = cutout);
-  let obj = cutout(3992);
+  let obj = cutout(4026);
   const fn = function h() {
     let obj = {};
     if (cutout.shape === cutout(outer1_2[8]).CutoutShape.RoundedRect) {
@@ -64,15 +64,15 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
     obj.cutouts = items;
     return obj;
   };
-  obj = { cutout, CutoutShape: cutout(7909).CutoutShape, withSpring: cutout(4543).withSpring, CHANNEL_SPRING_CONFIG };
+  obj = { cutout, CutoutShape: cutout(7945).CutoutShape, withSpring: cutout(4577).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 12529564164821;
   fn.__initData = closure_14;
   const animatedProps = obj.useAnimatedProps(fn);
   obj = { style, animatedProps };
   let items = [obj.image, imageStyle];
-  obj.children = callback(importDefault(5085), { style: items, source: importDefault(11957)(source), usesSmallCache: true });
-  return callback(cutout(7909).ClipViewAnimated, obj);
+  obj.children = callback(importDefault(5119), { style: items, source: importDefault(12000)(source), usesSmallCache: true });
+  return callback(cutout(7945).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
   if (true === animate.animate) {
@@ -131,11 +131,11 @@ function CutoutAvatarImage(arg0) {
       obj = {};
       const obj1 = { tintColor };
       obj.style = obj1;
-      obj.source = importDefault(11957)(source);
+      obj.source = importDefault(12000)(source);
       obj.usesSmallCache = true;
-      obj.children = callback(importDefault(5085), obj);
-      let tmp7 = callback(require(8463) /* inlineStyles */.ForeignObject, obj);
-      const tmp14 = importDefault(5085);
+      obj.children = callback(importDefault(5119), obj);
+      let tmp7 = callback(require(8507) /* inlineStyles */.ForeignObject, obj);
+      const tmp14 = importDefault(5119);
     }
     const obj2 = { style };
     let str3 = 13;
@@ -153,8 +153,8 @@ function CutoutAvatarImage(arg0) {
     const obj8 = { cx: diff, cy: diff1, r: tmp, fill: "black" };
     items[1] = callback(require(dependencyMap[str3]).Circle, obj8);
     obj5.children = items;
-    obj4.children = closure_8(require(8463) /* inlineStyles */.Mask, obj5);
-    const items1 = [callback(require(8463) /* inlineStyles */.Defs, obj4), tmp7, ];
+    obj4.children = closure_8(require(8507) /* inlineStyles */.Mask, obj5);
+    const items1 = [callback(require(8507) /* inlineStyles */.Defs, obj4), tmp7, ];
     if (null == cutout.border) {
       items1[2] = null;
       obj3.children = items1;
@@ -181,12 +181,12 @@ function CutoutAvatarImage(arg0) {
     tmp15 = callback;
     tmp16 = closure_5;
     tmp17 = closure_8;
-    tmp20 = importDefault(8463);
+    tmp20 = importDefault(8507);
     const tmp21 = callback;
     const tmp23 = closure_8;
   }
-  const obj11 = { x: "0", y: "0", height: "100%", width: "100%", href: importDefault(11957)(source), mask: "url(#" + v4Result + ")" };
-  tmp7 = callback(require(8463) /* inlineStyles */.Image, obj11);
+  const obj11 = { x: "0", y: "0", height: "100%", width: "100%", href: importDefault(12000)(source), mask: "url(#" + v4Result + ")" };
+  tmp7 = callback(require(8507) /* inlineStyles */.Image, obj11);
 }
 ({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -226,7 +226,7 @@ const memoResult = importAllResult.memo((style) => {
   } else if (null != user) {
     avatarSource = user.getAvatarSource(tmp6, animate2, size2);
   } else if (null != channel) {
-    let obj1 = require(11956) /* getChannelIconURL */;
+    let obj1 = require(11999) /* getChannelIconURL */;
     const channelIconURL = obj1.getChannelIconURL(channel, size2);
     let tmp13 = channelIconURL;
     if ("number" !== typeof channelIconURL) {
@@ -281,7 +281,7 @@ const memoResult = importAllResult.memo((style) => {
       }
       obj2.placeholder = tmp22;
       obj2.usesSmallCache = true;
-      return callback(importDefault(5085), obj2, "image");
+      return callback(importDefault(5119), obj2, "image");
     }
   }
 }, function customShallowEqual(source, source2) {

@@ -1,10 +1,10 @@
-// Module ID: 12785
-// Function ID: 99513
+// Module ID: 12828
+// Function ID: 99683
 // Name: useSelectedActiveStream
-// Dependencies: [4144, 4150, 566, 2]
+// Dependencies: [4178, 4184, 566, 2]
 // Exports: default
 
-// Module 12785 (useSelectedActiveStream)
+// Module 12828 (useSelectedActiveStream)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

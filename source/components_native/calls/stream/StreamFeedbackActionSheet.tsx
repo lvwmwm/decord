@@ -1,10 +1,10 @@
-// Module ID: 16094
-// Function ID: 124589
+// Module ID: 16133
+// Function ID: 124745
 // Name: StreamFeedbackActionSheet
-// Dependencies: [31, 1194, 653, 9457, 33, 5971, 566, 1212, 2429, 9460, 16095, 675, 15963, 16096, 4099, 16097, 1935, 3831, 2]
+// Dependencies: [31, 1194, 653, 9497, 33, 6005, 566, 1212, 2429, 9500, 16134, 675, 16002, 16135, 4133, 16136, 1935, 3865, 2]
 // Exports: default
 
-// Module 16094 (StreamFeedbackActionSheet)
+// Module 16133 (StreamFeedbackActionSheet)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -21,7 +21,7 @@ const result = require("ME").fileFinishedImporting("components_native/calls/stre
 export default function StreamFeedbackActionSheet(stream) {
   stream = stream.stream;
   const analyticsData = stream.analyticsData;
-  let obj = stream(5971);
+  let obj = stream(6005);
   const dependencyMap = obj.useGetStreamApplication(stream);
   let obj1 = stream(566);
   const items = [_isNativeReflectConstruct];
@@ -38,13 +38,13 @@ export default function StreamFeedbackActionSheet(stream) {
   const intl5 = stream(1212).intl;
   obj.problemsHeader = intl5.string(stream(1212).t["6Y1t5P"]);
   const stringResult1 = intl2.string(stream(1212).t["0uxA2V"]);
-  obj.problemOptions = stream(9460).getStreamFeedbackOptions({ isStreamer: stateFromStores });
+  obj.problemOptions = stream(9500).getStreamFeedbackOptions({ isStreamer: stateFromStores });
   obj = { value: constants.FREEFORM };
   const intl6 = stream(1212).intl;
   obj.label = intl6.string(stream(1212).t.emlT91);
   obj.freeformConfig = obj;
   obj1 = { headerLabel: stringResult, showHeaderCloseButton: true };
-  let obj4 = stream(9460);
+  let obj4 = stream(9500);
   const tmp7 = jsx;
   if (stateFromStores) {
     stringResult2 = stringResult1;
@@ -130,5 +130,5 @@ export default function StreamFeedbackActionSheet(stream) {
       const obj4 = stream(user[17]);
     }
   };
-  return tmp7(analyticsData(16095), obj1);
+  return tmp7(analyticsData(16134), obj1);
 };

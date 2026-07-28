@@ -1,10 +1,10 @@
-// Module ID: 14726
-// Function ID: 112256
+// Module ID: 14770
+// Function ID: 112429
 // Name: BalanceWidget
-// Dependencies: [31, 27, 653, 655, 1345, 4977, 33, 1324, 4661, 4127, 1212, 9602, 1334, 675, 10898, 4980, 14727, 8651, 4099, 9754, 1935, 5482, 5769, 9753, 3947, 4559, 4131, 689, 2]
+// Dependencies: [31, 27, 653, 655, 1345, 5011, 33, 1324, 4695, 4161, 1212, 9642, 1334, 675, 10936, 5014, 14771, 8695, 4133, 9794, 1935, 5517, 5779, 9793, 3981, 4593, 4165, 689, 2]
 // Exports: default
 
-// Module 14726 (BalanceWidget)
+// Module 14770 (BalanceWidget)
 import result from "result";
 import { View } from "_createForOfIteratorHelperLoose";
 import { AnalyticEvents } from "ME";
@@ -32,11 +32,11 @@ function BalanceWidget(arg0) {
   obj = { variant: "text-sm/semibold", color: "text-default", style: tmp.label };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.gGtZpz);
-  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
   obj = { style: tmp.pill, children };
   items1[1] = callback(View, obj);
   obj.children = items1;
-  return callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
 }
 class OrbsOnboardingMenuDismissibleContent {
   constructor(arg0) {
@@ -71,7 +71,7 @@ class OrbsOnboardingMenuDismissibleContent {
   }
 }
 function BalanceWidgetMenu(style) {
-  let obj = str(8651);
+  let obj = str(8695);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
@@ -125,7 +125,7 @@ function BalanceWidgetMenu(style) {
   }
   obj.balance = str2;
   obj.accessibilityLabel = intl.formatToPlainString(str(1212).t.zPaLL9, obj);
-  obj.children = callback(importDefault(9753), { balance: str, onPress: callback, accessible: false });
+  obj.children = callback(importDefault(9793), { balance: str, onPress: callback, accessible: false });
   return callback(BalanceWidget, obj);
 }
 ({ ContentDismissActionType: closure_7, DismissibleContentGroupName: closure_8 } = ContentDismissActionType);
@@ -151,9 +151,9 @@ let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
 let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(8651);
+  let obj = require(8695);
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
-  require(3947) /* UNSAFE_isDismissibleContentDismissed */;
+  require(3981) /* UNSAFE_isDismissibleContentDismissed */;
   if (null == balance) {
     obj = {
       onPress() {
@@ -165,7 +165,7 @@ export default function BalanceWidgetMenuWrapper(style) {
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cKwv4k);
     obj = { busy: true };
     obj.accessibilityState = obj;
-    const obj1 = { style: tmp.loadingContainer, children: callback(require(4559) /* EllipsisCircle */.Ellipsis, { variant: "primary", size: "sm" }) };
+    const obj1 = { style: tmp.loadingContainer, children: callback(require(4593) /* EllipsisCircle */.Ellipsis, { variant: "primary", size: "sm" }) };
     obj.children = callback(View, obj1);
     let tmp4Result = callback(BalanceWidget, obj);
   } else {

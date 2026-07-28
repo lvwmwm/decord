@@ -1,10 +1,10 @@
-// Module ID: 8636
-// Function ID: 68628
+// Module ID: 8680
+// Function ID: 68779
 // Name: LimitedTimeBadge
-// Dependencies: [31, 27, 1922, 1278, 33, 4131, 689, 1212, 566, 3977, 6180, 4127, 2]
+// Dependencies: [31, 27, 1922, 1278, 33, 4165, 689, 1212, 566, 4011, 6214, 4161, 2]
 // Exports: default
 
-// Module 8636 (LimitedTimeBadge)
+// Module 8680 (LimitedTimeBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
   const items1 = [_isNativeReflectConstruct];
   const items2 = ["en-US", "en-GB"];
   const hasItem = items2.includes(obj1.useStateFromStores(items1, () => outer1_4.locale));
-  ({ days, hours } = importDefault(6180)(unpublishedAt.unpublishedAt, 1000, undefined, true));
+  ({ days, hours } = importDefault(6214)(unpublishedAt.unpublishedAt, 1000, undefined, true));
   if (hasItem) {
     if (days > 1) {
       const intl6 = require(1212) /* getSystemLocale */.intl;
@@ -79,7 +79,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
     obj3.accessibilityLabel = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.TlZULM, obj4);
     obj3.allowFontScaling = false;
     obj3.children = sum;
-    obj2.children = jsx(require(4127) /* Text */.Text, {});
+    obj2.children = jsx(require(4161) /* Text */.Text, {});
     return <View />;
   }
 };

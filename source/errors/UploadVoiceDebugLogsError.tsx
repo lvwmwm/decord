@@ -1,9 +1,9 @@
-// Module ID: 4037
-// Function ID: 33609
+// Module ID: 4071
+// Function ID: 33711
 // Name: UploadVoiceDebugLogsError
 // Dependencies: [6, 7, 1212, 2]
 
-// Module 4037 (UploadVoiceDebugLogsError)
+// Module 4071 (UploadVoiceDebugLogsError)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

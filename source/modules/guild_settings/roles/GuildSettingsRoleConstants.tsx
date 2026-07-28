@@ -1,9 +1,9 @@
-// Module ID: 16374
-// Function ID: 127630
+// Module ID: 16413
+// Function ID: 127786
 // Name: title
-// Dependencies: [16375, 653, 16377, 483, 3764, 688, 1212, 2]
+// Dependencies: [16414, 653, 16416, 483, 3798, 688, 1212, 2]
 
-// Module 16374 (title)
+// Module 16413 (title)
 import { RoleColorsStyle } from "_isNativeReflectConstruct";
 import ME from "ME";
 import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS";

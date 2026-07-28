@@ -1,5 +1,5 @@
 // Module ID: 655
-// Function ID: 8019
+// Function ID: 8023
 // Name: items
 // Dependencies: [656, 657, 658, 659, 2]
 // Exports: isExternalProduct, isFractionalPremiumSku, isIndexPageTab, shouldAddTabToUrl

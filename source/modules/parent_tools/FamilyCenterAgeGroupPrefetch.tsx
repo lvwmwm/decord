@@ -1,10 +1,10 @@
-// Module ID: 14378
-// Function ID: 110083
+// Module ID: 14422
+// Function ID: 110256
 // Name: prefetchFamilyCenterAgeGroupWhen
-// Dependencies: [5765, 5767, 2]
+// Dependencies: [5775, 5777, 2]
 // Exports: prefetchFamilyCenterAgeGroupWhen
 
-// Module 14378 (prefetchFamilyCenterAgeGroupWhen)
+// Module 14422 (prefetchFamilyCenterAgeGroupWhen)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterAgeGroupPrefetch.tsx");
@@ -17,8 +17,8 @@ export const prefetchFamilyCenterAgeGroupWhen = function prefetchFamilyCenterAge
   if (tmp) {
     if (!_isNativeReflectConstruct.isLoading()) {
       if (_isNativeReflectConstruct.canRefetch()) {
-        importDefault(5767).initialPageLoad();
-        const obj = importDefault(5767);
+        importDefault(5777).initialPageLoad();
+        const obj = importDefault(5777);
       }
     }
   }

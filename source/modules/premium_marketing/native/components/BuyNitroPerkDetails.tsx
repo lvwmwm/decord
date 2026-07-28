@@ -1,10 +1,10 @@
-// Module ID: 6598
-// Function ID: 58421
+// Module ID: 6634
+// Function ID: 58510
 // Name: openBuyNitroPerkDetails
-// Dependencies: [31, 27, 33, 4131, 6512, 6599, 1212, 4542, 689, 6602, 6603, 5482, 4099, 2]
+// Dependencies: [31, 27, 33, 4165, 6548, 6635, 1212, 4576, 689, 6638, 6639, 5517, 4133, 2]
 // Exports: openBuyNitroPerkDetails
 
-// Module 6598 (openBuyNitroPerkDetails)
+// Module 6634 (openBuyNitroPerkDetails)
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,7 +24,7 @@ let closure_7 = require("result").memo((perk) => {
   let selectedTier;
   perk = perk.perk;
   ({ selectedTier, selectedProductId, analyticsLocations, applicationId, onPaymentSuccess, onPaymentDismiss } = perk);
-  let obj = require(6512) /* _createForOfIteratorHelperLoose */;
+  let obj = require(6548) /* _createForOfIteratorHelperLoose */;
   const buyNitroPlanSelection = obj.useBuyNitroPlanSelection({ tier: selectedTier, productId: selectedProductId });
   const detail = perk.detail;
   let tmp4Result = null;
@@ -38,12 +38,12 @@ let closure_7 = require("result").memo((perk) => {
     let tmp10 = null != buyNitroPlanSelection.selection.item;
     if (tmp10) {
       const obj2 = { planSelection: buyNitroPlanSelection, item: buyNitroPlanSelection.selection.item, centered: true };
-      tmp10 = callback(importDefault(6602), obj2);
+      tmp10 = callback(importDefault(6638), obj2);
     }
     const items = [tmp10, ];
     const obj3 = {
       planSelection: buyNitroPlanSelection,
-      location: importDefault(5482).PREMIUM_MARKETING_PERK_CARD,
+      location: importDefault(5517).PREMIUM_MARKETING_PERK_CARD,
       sourceAnalyticsLocations: analyticsLocations,
       applicationId,
       onHostSheetClose() {
@@ -52,11 +52,11 @@ let closure_7 = require("result").memo((perk) => {
       onPaymentSuccess,
       onPaymentDismiss
     };
-    items[1] = callback(importDefault(6603), obj3);
+    items[1] = callback(importDefault(6639), obj3);
     obj1.children = items;
-    obj.actions = closure_5(require(4542) /* Stack */.Stack, obj1);
-    tmp4Result = callback(require(6599) /* PromoSheet */.PromoSheet, obj);
-    const tmp17 = importDefault(6603);
+    obj.actions = closure_5(require(4576) /* Stack */.Stack, obj1);
+    tmp4Result = callback(require(6635) /* PromoSheet */.PromoSheet, obj);
+    const tmp17 = importDefault(6639);
     const tmp4 = callback;
     const tmp8 = closure_5;
   }
@@ -65,7 +65,7 @@ let closure_7 = require("result").memo((perk) => {
 const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerkDetails.tsx");
 
 export const openBuyNitroPerkDetails = function openBuyNitroPerkDetails(perk, arg1) {
-  let obj = require(4099) /* showActionSheet */;
+  let obj = require(4133) /* showActionSheet */;
   obj = {};
   obj = { perk };
   const merged = Object.assign(arg1);

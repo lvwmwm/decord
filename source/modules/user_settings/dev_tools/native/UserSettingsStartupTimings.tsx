@@ -1,10 +1,10 @@
-// Module ID: 14459
-// Function ID: 110518
+// Module ID: 14503
+// Function ID: 110691
 // Name: Code
-// Dependencies: [5, 57, 31, 27, 683, 653, 33, 4131, 689, 4127, 3989, 1557, 10292, 566, 14, 5703, 8134, 6619, 4542, 5501, 9024, 685, 5164, 12231, 2]
+// Dependencies: [5, 57, 31, 27, 683, 653, 33, 4165, 689, 4161, 4023, 1557, 10332, 566, 14, 5713, 8172, 6655, 4576, 5536, 9068, 685, 5198, 12274, 2]
 // Exports: default
 
-// Module 14459 (Code)
+// Module 14503 (Code)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -23,7 +23,7 @@ function Code(arg0) {
   let color;
   ({ children, color } = arg0);
   const obj = { variant: "text-sm/normal", color, lineClamp: 1, style: _createForOfIteratorHelperLoose().code, children };
-  return callback2(require(4127) /* Text */.Text, obj);
+  return callback2(require(4161) /* Text */.Text, obj);
 }
 ({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -63,7 +63,7 @@ export default function UserSettingsStartupTimings() {
   callback = tmp4[1];
   useResult = useResult.use(lastTrackedAppUiViewed2Properties);
   let items = [useResult, first, first1];
-  const memo = useResult.useMemo(() => first(10292)(result, !first, first1).split("\n"), items);
+  const memo = useResult.useMemo(() => first(10332)(result, !first, first1).split("\n"), items);
   let obj = require(566) /* initialize */;
   let items1 = [_isNativeReflectConstruct];
   let closure_6 = obj.useStateFromStores(items1, () => alertStartupMetrics.alertStartupMetrics);
@@ -73,7 +73,7 @@ export default function UserSettingsStartupTimings() {
   let closure_9 = first(14).loadLazyCache.end - first(14).loadLazyCache.start;
   let closure_10 = first(14).ready.end - first(14).ready.start;
   _createForOfIteratorHelperLoose = Math.ceil(first(14).renderLatestMessages.importTime);
-  let obj1 = require(5703) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(5713) /* _createForOfIteratorHelperLoose */;
   lastTrackedAppUiViewed2Properties = obj1.getLastTrackedAppUiViewed2Properties();
   let prop;
   if (null != lastTrackedAppUiViewed2Properties) {
@@ -95,7 +95,7 @@ export default function UserSettingsStartupTimings() {
     obj = {
       title: "Performance testing",
       hasIcons: false,
-      children: callback(callback2(9024).TableCheckboxRow, {
+      children: callback(callback2(9068).TableCheckboxRow, {
         label: "Show start times at launch",
         onPress() {
           let obj = callback(table[21]);
@@ -105,7 +105,7 @@ export default function UserSettingsStartupTimings() {
         checked: closure_6
       })
     };
-    const items = [callback(callback2(5501).TableRowGroup, obj), , , , ];
+    const items = [callback(callback2(5536).TableRowGroup, obj), , , , ];
     const obj2 = { title: "Key Cold Start Times", hasIcons: false };
     const obj3 = {};
     const obj4 = {};
@@ -151,26 +151,26 @@ export default function UserSettingsStartupTimings() {
     items2[7] = callback2(num, obj12);
     obj4.children = items2;
     obj3.label = callback2(closure_10, obj4);
-    obj2.children = callback(callback2(5164).TableRow, obj3);
-    items[1] = callback(callback2(5501).TableRowGroup, obj2);
+    obj2.children = callback(callback2(5198).TableRow, obj3);
+    items[1] = callback(callback2(5536).TableRowGroup, obj2);
     const obj13 = { title: "Legend", hasIcons: false };
     const obj14 = {};
     const obj15 = {};
     const items10 = [callback2(num, { children: ["\u2615", " - Java / Kotlin"] }), callback2(num, { children: ["\u{1F3A8}", " - React render"] }), callback2(num, { children: ["\u{1F4BE}", " - CacheStore"] }), callback2(num, { children: ["\u{1F9A5}", " - Slow Store Update / Handler"] }), callback2(num, { children: ["\u{1F3C3}", " - Startup Event"] }), callback2(num, { children: ["\u{1F310}", " - Socket Event"] })];
     obj15.children = items10;
     obj14.label = callback2(closure_10, obj15);
-    obj13.children = callback(callback2(5164).TableRow, obj14);
-    items[2] = callback(callback2(5501).TableRowGroup, obj13);
+    obj13.children = callback(callback2(5198).TableRow, obj14);
+    items[2] = callback(callback2(5536).TableRowGroup, obj13);
     const obj16 = { title: "Detailed Times", hasIcons: false };
     const items11 = [
-      callback(callback2(9024).TableCheckboxRow, {
+      callback(callback2(9068).TableCheckboxRow, {
         label: "Hide the Noise",
         onPress() {
           return outer1_2((arg0) => !arg0);
         },
         checked: first
       }),
-      callback(callback2(9024).TableCheckboxRow, {
+      callback(callback2(9068).TableCheckboxRow, {
         label: "Hide paints",
         onPress() {
           return outer1_4((arg0) => !arg0);
@@ -179,13 +179,13 @@ export default function UserSettingsStartupTimings() {
       })
     ];
     obj16.children = items11;
-    items[3] = callback2(callback2(5501).TableRowGroup, obj16);
+    items[3] = callback2(callback2(5536).TableRowGroup, obj16);
     const obj19 = { title: "Share Timings", hasIcons: true };
-    const obj20 = { icon: callback(callback2(12231).ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress: closure_14 };
-    obj19.children = callback(callback2(5164).TableRow, obj20);
-    items[4] = callback(callback2(5501).TableRowGroup, obj19);
+    const obj20 = { icon: callback(callback2(12274).ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress: closure_14 };
+    obj19.children = callback(callback2(5198).TableRow, obj20);
+    items[4] = callback(callback2(5536).TableRowGroup, obj19);
     obj.children = items;
-    const items12 = [callback2(callback2(4542).Stack, obj), callback(closure_6, { style: callback2.border })];
+    const items12 = [callback2(callback2(4576).Stack, obj), callback(closure_6, { style: callback2.border })];
     obj.children = items12;
     return callback2(closure_10, obj);
   };
@@ -193,6 +193,6 @@ export default function UserSettingsStartupTimings() {
   obj.renderItem = function renderItem(children) {
     return callback(num, { children: children.item });
   };
-  obj.children = callback2(require(6619) /* useModalDismissGuardRefreshControl */.FlashList, obj);
+  obj.children = callback2(require(6655) /* useModalDismissGuardRefreshControl */.FlashList, obj);
   return callback2(closure_6, obj);
 };

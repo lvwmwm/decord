@@ -1,9 +1,9 @@
-// Module ID: 10128
-// Function ID: 78398
+// Module ID: 10168
+// Function ID: 78527
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 1212, 664, 4127, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 1212, 664, 4161, 2]
 
-// Module 10128 (_isNativeReflectConstruct)
+// Module 10168 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
 import getSystemLocale from "getSystemLocale";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

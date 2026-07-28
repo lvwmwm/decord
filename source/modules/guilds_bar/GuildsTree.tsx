@@ -1,10 +1,10 @@
-// Module ID: 4973
-// Function ID: 42790
+// Module ID: 5007
+// Function ID: 42905
 // Name: randomFolderId
 // Dependencies: [6, 7, 44, 22, 2]
 // Exports: createFolderNode, createGuildNode
 
-// Module 4973 (randomFolderId)
+// Module 5007 (randomFolderId)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

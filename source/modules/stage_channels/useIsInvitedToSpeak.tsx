@@ -1,10 +1,10 @@
-// Module ID: 10624
-// Function ID: 82783
+// Module ID: 10662
+// Function ID: 82904
 // Name: useIsInvitedToSpeak
-// Dependencies: [1194, 1907, 566, 4315, 2]
+// Dependencies: [1194, 1907, 566, 4349, 2]
 // Exports: default
 
-// Module 10624 (useIsInvitedToSpeak)
+// Module 10662 (useIsInvitedToSpeak)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -18,5 +18,5 @@ export default function useIsInvitedToSpeak() {
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_3.getId());
   const obj2 = require(566) /* initialize */;
-  return importDefault(4315)(stateFromStores1, stateFromStores) === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  return importDefault(4349)(stateFromStores1, stateFromStores) === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

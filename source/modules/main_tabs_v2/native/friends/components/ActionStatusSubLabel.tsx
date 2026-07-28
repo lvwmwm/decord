@@ -1,25 +1,25 @@
-// Module ID: 15239
-// Function ID: 115990
+// Module ID: 15279
+// Function ID: 116149
 // Name: announceActioned
-// Dependencies: [31, 33, 4131, 3844, 3992, 4127, 4550, 4132, 2]
+// Dependencies: [31, 33, 4165, 3878, 4026, 4161, 4584, 4166, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 15239 (announceActioned)
+// Module 15279 (announceActioned)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let closure_3;
 let closure_4;
 const require = arg1;
 function announceActioned(intl) {
-  const AccessibilityAnnouncer = require(3844) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(3878) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
 }
 ({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
 let closure_5 = _createForOfIteratorHelperLoose.createStyles(() => ({ container: { overflow: "hidden" }, actionStatus: { position: "absolute" } }));
-let closure_6 = require("module_3992").createAnimatedComponent(require("Text").Text);
+let closure_6 = require("module_4026").createAnimatedComponent(require("Text").Text);
 let closure_7 = { code: "function ActionStatusSubLabelTsx1(){const{hasSecondLine,actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const currentlyHasSecondLine=hasSecondLine&&!actioned.get();const lineHeightValue=lineHeight*fontScale;const currentLineHeightValue=currentlyHasSecondLine?lineHeightValue*2:lineHeightValue;return{height:!animate||!actioned.get()?currentLineHeightValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[currentlyHasSecondLine?lineHeightValue*2:lineHeightValue,lineHeightValue]))};}" };
 let closure_8 = { code: "function ActionStatusSubLabelTsx2(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue=actioned.get()?lineHeight*fontScale:0;return{transform:[{translateY:!animate?translateYValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[0,translateYValue]))}]};}" };
 let closure_9 = { code: "function ActionStatusSubLabelTsx3(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue=actioned.get()?0:-lineHeight*fontScale;return{transform:[{translateY:!animate?translateYValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[translateYValue,0]))}],opacity:!animate?actioned.get()?1:0:withTiming(actioned.get()?1:0)};}" };

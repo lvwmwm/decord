@@ -1,9 +1,9 @@
-// Module ID: 5895
-// Function ID: 52341
+// Module ID: 5929
+// Function ID: 52460
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 1850, 22, 5896, 5897, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1858, 1850, 22, 5930, 5931, 566, 686, 2]
 
-// Module 5895 (_isNativeReflectConstruct)
+// Module 5929 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import apply from "apply";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -122,11 +122,11 @@ tmp2 = new tmp2(require("dispatcher"), {
       if (tmp5) {
         c11 = true;
         c12 = false;
-        const response = importDefault(5896).fetch();
-        const obj = importDefault(5896);
+        const response = importDefault(5930).fetch();
+        const obj = importDefault(5930);
       }
     } else {
-      importDefault(5897)();
+      importDefault(5931)();
     }
   },
   FRIEND_SUGGESTION_CREATE: function handleFriendSuggestionCreate(suggestion) {

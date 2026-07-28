@@ -1,10 +1,10 @@
-// Module ID: 16639
-// Function ID: 129777
+// Module ID: 16679
+// Function ID: 129938
 // Name: UpdateAppScreen
-// Dependencies: [27, 33, 4131, 689, 4127, 1212, 2461, 4544, 2]
+// Dependencies: [27, 33, 4165, 689, 4161, 1212, 2461, 4578, 2]
 // Exports: default
 
-// Module 16639 (UpdateAppScreen)
+// Module 16679 (UpdateAppScreen)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,11 +29,11 @@ export default function UpdateAppScreen() {
   obj = { variant: "heading-lg/semibold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(importDefault(2461).yxqMCD);
-  const items = [callback(require(4127) /* Text */.Text, obj), , ];
+  const items = [callback(require(4161) /* Text */.Text, obj), , ];
   obj = { variant: "text-md/normal", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(importDefault(2461).VBZJJg);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   const obj1 = { style: tmp.buttonContainer };
   const obj2 = {
     onPress() {
@@ -45,7 +45,7 @@ export default function UpdateAppScreen() {
   obj2.text = intl3.string(importDefault(2461).o4D6fm);
   obj2.variant = "primary";
   obj2.size = "md";
-  obj1.children = callback(require(4544) /* Button */.Button, obj2);
+  obj1.children = callback(require(4578) /* Button */.Button, obj2);
   items[2] = callback(closure_4, obj1);
   obj.children = items;
   return callback2(closure_4, obj);

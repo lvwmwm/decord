@@ -1,9 +1,9 @@
-// Module ID: 9489
-// Function ID: 74022
+// Module ID: 9529
+// Function ID: 74150
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 3755, 9490, 4352, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 3789, 9530, 4386, 566, 686, 2]
 
-// Module 9489 (_isNativeReflectConstruct)
+// Module 9529 (_isNativeReflectConstruct)
 import sortedInsert from "sortedInsert";
 import savedMessageDataToClient from "savedMessageDataToClient";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -188,11 +188,11 @@ function handleGuild() {
 }
 let c8 = 10000000000000;
 const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap((saveData) => {
-  const items = [require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.ALL, ];
+  const items = [require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.ALL, ];
   if (null != saveData.saveData.dueAt) {
-    let BOOKMARK = require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+    let BOOKMARK = require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;
@@ -230,7 +230,7 @@ let tmp6 = ((Store) => {
       this.waitFor(outer1_7);
     }
   };
-  const items = [obj, , , , , , , , , , , ];
+  const items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "getSavedMessages",
     value() {
@@ -270,31 +270,56 @@ let tmp6 = ((Store) => {
     }
   };
   items[7] = {
+    key: "getMostRecentOverdueDueAt",
+    value() {
+      const timestamp = Date.now();
+      const tmp2 = outer1_16(outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.REMINDER));
+      const iter = tmp2();
+      let iter2 = iter;
+      let num = 0;
+      let num2 = 0;
+      if (!iter.done) {
+        const tmp4 = outer1_18(iter2.value.saveData.dueAt);
+        num2 = num;
+        while (tmp4 <= timestamp) {
+          let iter3 = tmp2();
+          iter2 = iter3;
+          num = tmp4;
+          num2 = tmp4;
+          if (iter3.done) {
+            break;
+          }
+        }
+      }
+      return num2;
+    }
+  };
+  items[8] = {
     key: "getSavedMessageCount",
     value() {
       return outer1_9.size();
     }
   };
-  items[8] = {
+  items[9] = {
     key: "getIsStale",
     value() {
       return outer1_10;
     }
   };
-  items[9] = {
+  items[10] = {
     key: "getLastChanged",
     value() {
       return outer1_11;
     }
   };
-  items[10] = {
+  items[11] = {
     key: "isMessageBookmarked",
     value(channelId, messageId) {
       const value = outer1_9.get(outer1_21({ channelId, messageId }));
       return null != value && null == value.saveData.dueAt;
     }
   };
-  items[11] = {
+  items[12] = {
     key: "isMessageReminder",
     value(channelId, messageId) {
       const value = outer1_9.get(outer1_21({ channelId, messageId }));
@@ -388,7 +413,7 @@ tmp6 = new tmp6(require("dispatcher"), {
         } else {
           obj = {};
           const merged = Object.assign(value);
-          obj.message = require(4352) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
+          obj.message = require(4386) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
           const result = secondaryIndexMap.set(tmp10, obj);
         }
       }

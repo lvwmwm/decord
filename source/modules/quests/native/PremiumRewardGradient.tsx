@@ -1,10 +1,10 @@
-// Module ID: 14121
-// Function ID: 108580
+// Module ID: 14165
+// Function ID: 108753
 // Name: useGradientColors
-// Dependencies: [31, 27, 33, 4131, 3975, 689, 3835, 4067, 3946, 4555, 5109, 2]
+// Dependencies: [31, 27, 33, 4165, 4009, 689, 3869, 4101, 3980, 4589, 5143, 2]
 // Exports: default
 
-// Module 14121 (useGradientColors)
+// Module 14165 (useGradientColors)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,9 +19,9 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function useGradientColors() {
-  token = token(3835).useToken(token1(689).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
-  const obj = token(3835);
-  token1 = token(3835).useToken(token1(689).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
+  token = token(3869).useToken(token1(689).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
+  const obj = token(3869);
+  token1 = token(3869).useToken(token1(689).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
   let items = [token, token1];
   return React.useMemo(() => {
     const items = [token, token1];
@@ -64,14 +64,14 @@ function PremiumRewardGlowGradient(arg0) {
   ({ children, style } = arg0);
   const tmp = callback3();
   const tmp2 = useGradientColors();
-  let obj = require(3946);
+  let obj = require(3980);
   obj = { style: items };
   items = [tmp.wrapper, style];
-  const tmp3 = importDefault(4067)();
+  const tmp3 = importDefault(4101)();
   obj = {};
   const items1 = [tmp.glow, ];
-  let glowLight = !obj.isThemeDark(importDefault(4067)());
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4067)());
+  let glowLight = !obj.isThemeDark(importDefault(4101)());
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4101)());
   const tmp5 = closure_7;
   const tmp6 = closure_5;
   const tmp7 = callback;
@@ -80,9 +80,9 @@ function PremiumRewardGlowGradient(arg0) {
   }
   items1[1] = glowLight;
   obj.style = items1;
-  obj.maskElement = callback(importDefault(4555), { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 });
-  obj.children = callback(importDefault(4555), { style: closure_4.absoluteFill, colors: tmp2, start: closure_9, end: closure_10 });
-  const items2 = [tmp7(importDefault(5109), obj), children];
+  obj.maskElement = callback(importDefault(4589), { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 });
+  obj.children = callback(importDefault(4589), { style: closure_4.absoluteFill, colors: tmp2, start: closure_9, end: closure_10 });
+  const items2 = [tmp7(importDefault(5143), obj), children];
   obj.children = items2;
   return tmp5(tmp6, obj);
 }

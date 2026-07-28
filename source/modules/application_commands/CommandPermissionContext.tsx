@@ -1,10 +1,10 @@
-// Module ID: 5677
-// Function ID: 48766
+// Module ID: 5687
+// Function ID: 48622
 // Name: computeAllowNsfw
-// Dependencies: [31, 1910, 1352, 1391, 1194, 1348, 1918, 1838, 3759, 1850, 653, 5678, 566, 483, 1882, 2]
+// Dependencies: [31, 1910, 1352, 1391, 1194, 1348, 1918, 1838, 3793, 1850, 653, 5688, 566, 483, 1882, 2]
 // Exports: buildPermissionContext, computeCommandContextType, usePermissionContext
 
-// Module 5677 (computeAllowNsfw)
+// Module 5687 (computeAllowNsfw)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelRecordBase } from "_callSuper";
@@ -95,7 +95,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
   if (null != tmp) {
     tmp5 = getContextGuildId(tmp);
   }
-  let obj = require(5678) /* resolveNsfwTogglesWithDefaults */;
+  let obj = require(5688) /* resolveNsfwTogglesWithDefaults */;
   const viewNsfwCommandsOrDefault = obj.getViewNsfwCommandsOrDefault();
   id = id.getId();
   currentUser = currentUser.getCurrentUser();

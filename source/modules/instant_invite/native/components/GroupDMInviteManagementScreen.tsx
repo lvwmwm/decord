@@ -1,9 +1,9 @@
-// Module ID: 10129
-// Function ID: 78410
+// Module ID: 10169
+// Function ID: 78539
 // Name: GroupDMInviteManagement
-// Dependencies: [5, 57, 31, 27, 6640, 7628, 653, 33, 4131, 4560, 507, 22, 689, 10130, 5583, 1273, 10148, 10149, 1212, 5087, 480, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 6676, 7664, 653, 33, 4165, 4594, 507, 22, 689, 10170, 5618, 1273, 10188, 10189, 1212, 5121, 480, 5552, 2]
 
-// Module 10129 (GroupDMInviteManagement)
+// Module 10169 (GroupDMInviteManagement)
 import closure_3 from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -27,7 +27,7 @@ function GroupDMInviteManagement(channelId) {
   const dependencyMap = tmp2[1];
   const tmp3 = callback(importAllResult.useState(true), 2);
   let closure_3 = tmp3[1];
-  first(4560)(() => {
+  first(4594)(() => {
     function _fetchInvites() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
@@ -62,14 +62,14 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   callback = importAllResult.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp12 = jsx(channelId(5583).SceneLoadingIndicator, {});
+    let tmp12 = jsx(channelId(5618).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj = { lightSource: first(10148), darkSource: first(10149) };
+    let obj = { lightSource: first(10188), darkSource: first(10189) };
     const intl = channelId(1212).intl;
     obj.title = intl.string(channelId(1212).t["+nLJkZ"]);
     const intl2 = channelId(1212).intl;
     obj.body = intl2.string(channelId(1212).t.F53CAc);
-    tmp12 = jsx(channelId(1273).EmptyState, { lightSource: first(10148), darkSource: first(10149) });
+    tmp12 = jsx(channelId(1273).EmptyState, { lightSource: first(10188), darkSource: first(10189) });
   } else {
     obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp9, initialNumToRender: 10, windowSize: tmp5[0] };
     tmp12 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp9} initialNumToRender={10} windowSize={tmp5[0]} />;
@@ -97,7 +97,7 @@ const memoResult = importAllResult.memo(function GroupDMInviteManagementScreen(c
     obj[outer2_9.INSTANT_INVITES_MANAGEMENT] = obj;
     return obj;
   })(channelId, onClose), items);
-  return jsx(channelId(5517).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(5552).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });
 const result = require("result").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 

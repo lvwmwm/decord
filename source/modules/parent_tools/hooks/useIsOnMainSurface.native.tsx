@@ -1,10 +1,10 @@
-// Module ID: 15750
-// Function ID: 121447
+// Module ID: 15789
+// Function ID: 121603
 // Name: getActiveRoute
-// Dependencies: [57, 31, 3983, 2]
+// Dependencies: [57, 31, 4017, 2]
 // Exports: useIsOnMainSurface
 
-// Module 15750 (getActiveRoute)
+// Module 15789 (getActiveRoute)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import set from "getRootNavigationRef";
@@ -23,7 +23,7 @@ function getActiveRoute(routes) {
   }
 }
 function getIsOnMainSurface() {
-  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const tmp2 = getActiveRoute(rootNavigationRef.getRootState());

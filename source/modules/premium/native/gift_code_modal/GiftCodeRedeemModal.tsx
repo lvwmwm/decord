@@ -1,10 +1,10 @@
-// Module ID: 7975
-// Function ID: 63549
+// Module ID: 8013
+// Function ID: 63659
 // Name: GiftCodeRedeemModal
-// Dependencies: [31, 7970, 1850, 33, 5087, 4338, 7976, 12265, 12266, 566, 7978, 5517, 2]
+// Dependencies: [31, 8008, 1850, 33, 5121, 4372, 8014, 12308, 12309, 566, 8016, 5552, 2]
 // Exports: default
 
-// Module 7975 (GiftCodeRedeemModal)
+// Module 8013 (GiftCodeRedeemModal)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ export default function GiftCodeRedeemModal(code) {
   let obj1 = code(566);
   const items1 = [closure_4];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.getCurrentUser());
-  const tmp5 = importDefault(7978)(code, stateFromStores1);
+  const tmp5 = importDefault(8016)(code, stateFromStores1);
   if (null == stateFromStores1) {
     return null;
   } else if (null == stateFromStores) {
@@ -49,7 +49,7 @@ export default function GiftCodeRedeemModal(code) {
       items3 = [obj3];
     }
     obj.initialRouteStack = items3;
-    jsx(code(5517).Navigator, { screens: tmp17 });
+    jsx(code(5552).Navigator, { screens: tmp17 });
     const tmp6 = jsx;
   }
 };

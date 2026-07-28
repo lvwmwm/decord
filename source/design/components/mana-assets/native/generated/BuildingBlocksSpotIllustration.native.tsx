@@ -1,10 +1,10 @@
-// Module ID: 6840
-// Function ID: 59496
+// Module ID: 6876
+// Function ID: 59585
 // Name: BuildingBlocksSpotIllustration
-// Dependencies: [33, 5085, 6841, 2]
+// Dependencies: [33, 5119, 6877, 2]
 // Exports: BuildingBlocksSpotIllustration
 
-// Module 6840 (BuildingBlocksSpotIllustration)
+// Module 6876 (BuildingBlocksSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BuildingBlocksSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const BuildingBlocksSpotIllustration = function BuildingBlocksSpotIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6841) };
+  obj = { uri: importDefault(6877) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const BuildingBlocksSpotIllustration = function BuildingBlocksSpotIllustr
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

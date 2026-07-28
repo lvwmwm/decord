@@ -1,10 +1,10 @@
-// Module ID: 9202
-// Function ID: 72130
+// Module ID: 9246
+// Function ID: 72281
 // Name: _fetchChannelConversations
-// Dependencies: [5, 5830, 9203, 5832, 653, 9200, 686, 507, 5685, 9204, 9205, 9212, 2]
+// Dependencies: [5, 5840, 9247, 5842, 653, 9244, 686, 507, 5695, 9248, 9249, 9256, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9202 (_fetchChannelConversations)
+// Module 9246 (_fetchChannelConversations)
 import useGuildHasFeature from "useGuildHasFeature";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -52,8 +52,8 @@ export const setSelectedConversation = function setSelectedConversation(channelI
   }
   if (flag) {
     obj = { channelId, messageId: conversationMetadata.conversation.startMessageId, flash: false };
-    importDefault(5685).jumpToMessage(obj);
-    const obj3 = importDefault(5685);
+    importDefault(5695).jumpToMessage(obj);
+    const obj3 = importDefault(5695);
   }
 };
 export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
@@ -68,11 +68,11 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
 };
 export { fetchConversationMessages };
 export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
-  const ConversationsAnalytics = require(9204) /* channelProps */.ConversationsAnalytics;
+  const ConversationsAnalytics = require(9248) /* channelProps */.ConversationsAnalytics;
   const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (closure_5.shouldTriggerOnNextExposure()) {
-    importDefault(9205).fireSurveyAction(require(9212) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
-    const obj2 = importDefault(9205);
+    importDefault(9249).fireSurveyAction(require(9256) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    const obj2 = importDefault(9249);
   }
   importDefault(686).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

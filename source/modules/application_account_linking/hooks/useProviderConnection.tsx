@@ -1,10 +1,10 @@
-// Module ID: 5481
-// Function ID: 46804
+// Module ID: 5516
+// Function ID: 46931
 // Name: useProviderConnection
-// Dependencies: [5, 31, 4813, 566, 4939, 2]
+// Dependencies: [5, 31, 4847, 566, 4973, 2]
 // Exports: useProviderConnection
 
-// Module 5481 (useProviderConnection)
+// Module 5516 (useProviderConnection)
 import set from "set";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

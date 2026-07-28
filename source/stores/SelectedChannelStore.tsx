@@ -1,7 +1,7 @@
 // Module ID: 1907
-// Function ID: 21388
+// Function ID: 21392
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 1194, 1348, 1908, 1838, 4178, 3759, 3948, 653, 1355, 587, 22, 1327, 483, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1194, 1348, 1908, 1838, 4212, 3793, 3982, 653, 1355, 587, 22, 1327, 483, 566, 686, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 1907 (_isNativeReflectConstruct)

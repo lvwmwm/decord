@@ -1,9 +1,9 @@
-// Module ID: 5908
-// Function ID: 52437
+// Module ID: 5942
+// Function ID: 52556
 // Name: ProcessUtils
 // Dependencies: [6, 7, 2]
 
-// Module 5908 (ProcessUtils)
+// Module 5942 (ProcessUtils)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,10 +1,10 @@
-// Module ID: 9522
-// Function ID: 74329
+// Module ID: 9562
+// Function ID: 74458
 // Name: RoleLabel
-// Dependencies: [31, 27, 4123, 33, 4131, 566, 1273, 7575, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 566, 1273, 7611, 2]
 // Exports: RoleLabel
 
-// Module 9522 (RoleLabel)
+// Module 9562 (RoleLabel)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export const RoleLabel = function RoleLabel(color) {
   }
   const items1 = [tmp8, ];
   const obj2 = { style: {}, text: name };
-  items1[1] = callback(require(7575) /* Form */.FormLabel, obj2);
+  items1[1] = callback(require(7611) /* Form */.FormLabel, obj2);
   obj.children = items1;
   return closure_5(View, obj);
 };

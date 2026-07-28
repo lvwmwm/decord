@@ -1,10 +1,10 @@
-// Module ID: 10903
-// Function ID: 84669
+// Module ID: 10941
+// Function ID: 84790
 // Name: useHandleRedemptionLinkClick
-// Dependencies: [5, 57, 31, 9401, 4980, 10904, 10432, 9406, 9407, 9408, 5960, 5959, 3822, 2]
+// Dependencies: [5, 57, 31, 9445, 5014, 10942, 10472, 8421, 8422, 8426, 5994, 5993, 3856, 2]
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler
 
-// Module 10903 (useHandleRedemptionLinkClick)
+// Module 10941 (useHandleRedemptionLinkClick)
 import useTrackQuestEventWithImpression from "useTrackQuestEventWithImpression";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

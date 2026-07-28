@@ -1,10 +1,10 @@
-// Module ID: 12380
-// Function ID: 96231
+// Module ID: 12423
+// Function ID: 96401
 // Name: PremiumReferralTrialPill
-// Dependencies: [27, 33, 4131, 689, 4127, 1212, 2]
+// Dependencies: [27, 33, 4165, 689, 4161, 1212, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 12380 (PremiumReferralTrialPill)
+// Module 12423 (PremiumReferralTrialPill)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,7 +23,7 @@ export const PremiumReferralTrialPill = (hasExtraMargin) => {
   obj = { variant: "text-xs/bold", style: tmp.text };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.Y1q7js).toUpperCase();
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
   obj.children = <View variant="text-xs/bold" style={tmp.text} />;
   return <View variant="text-xs/bold" style={tmp.text} />;
 };

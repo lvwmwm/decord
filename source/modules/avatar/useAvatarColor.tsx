@@ -1,10 +1,10 @@
-// Module ID: 7850
-// Function ID: 62606
+// Module ID: 7886
+// Function ID: 62696
 // Name: hasFetchedColors
-// Dependencies: [57, 5, 31, 4123, 621, 682, 1447, 3975, 566, 5780, 2]
+// Dependencies: [57, 5, 31, 4157, 621, 682, 1447, 4009, 566, 5790, 2]
 // Exports: default, maybeFetchColors, useHasFetchedColors
 
-// Module 7850 (hasFetchedColors)
+// Module 7886 (hasFetchedColors)
 import _slicedToArray from "_slicedToArray";
 import batchUpdates from "batchUpdates";
 import result from "result";
@@ -108,11 +108,11 @@ function useAvatarColors(pendingAvatarSrc, PRIMARY_530, flag) {
         let tmp2;
         let tmp3;
         [tmp, tmp2, tmp3] = arg0;
-        let obj = flag(5780)({ r: tmp, g: tmp2, b: tmp3 });
+        let obj = flag(5790)({ r: tmp, g: tmp2, b: tmp3 });
         ({ h, s, l } = obj.toHsl());
         obj = { h, s: s * outer1_3, l };
         const toHslResult = obj.toHsl();
-        return flag(5780)(obj).toHexString();
+        return flag(5790)(obj).toHexString();
       });
     }
     return mapped;

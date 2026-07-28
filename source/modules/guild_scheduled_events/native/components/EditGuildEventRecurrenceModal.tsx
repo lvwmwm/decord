@@ -1,10 +1,10 @@
-// Module ID: 8168
-// Function ID: 65573
+// Module ID: 8206
+// Function ID: 65683
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 57, 31, 33, 4131, 689, 8153, 8148, 8161, 1820, 8169, 4544, 1212, 8170, 8147, 8171, 8172, 4127, 5517, 2]
+// Dependencies: [5, 57, 31, 33, 4165, 689, 8191, 8186, 8199, 1820, 8207, 4578, 1212, 8208, 8185, 8209, 8210, 4161, 5552, 2]
 // Exports: default
 
-// Module 8168 (EditGuildEventRecurrenceModal)
+// Module 8206 (EditGuildEventRecurrenceModal)
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -49,11 +49,11 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     callback(obj);
     callback2(null);
   }
-  let tmp2 = importDefault(8153)(recurrenceId, guildEvent.id);
+  let tmp2 = importDefault(8191)(recurrenceId, guildEvent.id);
   const dependencyMap = tmp2;
-  let obj = guildEvent(8148);
+  let obj = guildEvent(8186);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj1 = guildEvent(8148);
+  let obj1 = guildEvent(8186);
   scheduleForRecurrenceWithException = obj1.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp2);
   const tmp5 = callback(React.useState(scheduleForRecurrenceWithException), 2);
   callback = tmp5[0];
@@ -61,7 +61,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   const tmp6 = callback(React.useState(null), 2);
   const first = tmp6[0];
   closure_8 = tmp6[1];
-  const tmp8 = callback(importDefault(8161)(() => {
+  const tmp8 = callback(importDefault(8199)(() => {
     const result = recurrenceId(tmp2[9]).dismissGlobalKeyboard();
     return outer1_1(tmp2[10])(guildEvent, recurrenceId, _slicedToArray, tmp2);
   }), 2);
@@ -86,7 +86,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     return _handleSave(...arguments);
   };
   obj.disabled = null != first;
-  let closure_11 = first(guildEvent(4544).Button, obj);
+  let closure_11 = first(guildEvent(4578).Button, obj);
   obj = {
     title: "",
     customNavbar() {
@@ -113,5 +113,5 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     fullscreen: true
   };
   obj1 = { screens: { [closure_10.TIME]: obj }, initialRouteName: error.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: _createForOfIteratorHelperLoose().cardStyle };
-  return first(guildEvent(5517).Navigator, obj1);
+  return first(guildEvent(5552).Navigator, obj1);
 };

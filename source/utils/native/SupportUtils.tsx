@@ -1,10 +1,10 @@
-// Module ID: 14432
-// Function ID: 110305
+// Module ID: 14476
+// Function ID: 110478
 // Name: _emailSupport
-// Dependencies: [5, 1922, 1554, 4111, 3828, 1921, 2]
+// Dependencies: [5, 1922, 1554, 4145, 3862, 1921, 2]
 // Exports: emailSupport
 
-// Module 14432 (_emailSupport)
+// Module 14476 (_emailSupport)
 import wrapURL from "wrapURL";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,10 +1,10 @@
-// Module ID: 13932
-// Function ID: 106646
+// Module ID: 13976
+// Function ID: 106819
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [31, 27, 653, 1345, 33, 4131, 689, 5053, 1273, 9602, 4127, 4544, 1212, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 4165, 689, 5087, 1273, 9642, 4161, 4578, 1212, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 13932 (OneWayToTwoWayNewTag)
+// Module 13976 (OneWayToTwoWayNewTag)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -54,7 +54,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   obj = { style: tmp.titleContainer };
   const items = [newIndicatorDismissibleContent];
   const items1 = [
-    callback(importDefault(9602), {
+    callback(importDefault(9642), {
       contentTypes: items,
       children(visibleContent) {
         let tmp2 = null;
@@ -65,18 +65,18 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
         return tmp2;
       }
     }),
-    callback(newIndicatorDismissibleContent(4127).Text, { style: tmp.title, variant: "text-md/semibold", children: title })
+    callback(newIndicatorDismissibleContent(4161).Text, { style: tmp.title, variant: "text-md/semibold", children: title })
   ];
   obj.children = items1;
   const items2 = [callback2(View, obj), img];
   obj.children = items2;
-  const items3 = [callback2(View, obj), callback(newIndicatorDismissibleContent(4127).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
+  const items3 = [callback2(View, obj), callback(newIndicatorDismissibleContent(4161).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
   const obj4 = { style: tmp.reconnectButton };
   const obj5 = {};
   const intl = newIndicatorDismissibleContent(1212).intl;
   obj5.text = intl.string(newIndicatorDismissibleContent(1212).t.vD60Pv);
   obj5.onPress = onPress;
-  obj4.children = callback(newIndicatorDismissibleContent(4544).Button, obj5);
+  obj4.children = callback(newIndicatorDismissibleContent(4578).Button, obj5);
   items3[2] = callback(View, obj4);
   obj.children = items3;
   return callback2(View, obj);

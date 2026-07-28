@@ -1,9 +1,9 @@
-// Module ID: 5810
-// Function ID: 51037
+// Module ID: 5820
+// Function ID: 50893
 // Name: ImmersiveBannerBlockRecord
-// Dependencies: [6, 7, 5801, 2]
+// Dependencies: [6, 7, 5811, 2]
 
-// Module 5810 (ImmersiveBannerBlockRecord)
+// Module 5820 (ImmersiveBannerBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

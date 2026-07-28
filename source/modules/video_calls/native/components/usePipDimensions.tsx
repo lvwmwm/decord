@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 81192
+// Module ID: 10500
+// Function ID: 81313
 // Name: usePipDimensions
-// Dependencies: [31, 10463, 1450, 8105, 2]
+// Dependencies: [31, 10501, 1450, 8143, 2]
 // Exports: default
 
-// Module 10462 (usePipDimensions)
+// Module 10500 (usePipDimensions)
 import result from "result";
 
 const require = arg1;

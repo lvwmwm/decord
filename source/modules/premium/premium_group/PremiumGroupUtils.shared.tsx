@@ -1,10 +1,10 @@
-// Module ID: 7773
-// Function ID: 61769
+// Module ID: 7809
+// Function ID: 61859
 // Name: getPriceString
-// Dependencies: [3782, 3777, 5616, 2]
+// Dependencies: [3816, 3811, 5651, 2]
 // Exports: getPriceString
 
-// Module 7773 (getPriceString)
+// Module 7809 (getPriceString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -23,16 +23,16 @@ export const getPriceString = function getPriceString(premiumSubscription, arg1)
         if (null == value) {
           return null;
         } else {
-          const price = require(3777) /* _createForOfIteratorHelperLoose */.getPrice(planIdFromItems);
-          const obj2 = require(3777) /* _createForOfIteratorHelperLoose */;
-          const formatPriceResult = require(5616) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
+          const price = require(3811) /* _createForOfIteratorHelperLoose */.getPrice(planIdFromItems);
+          const obj2 = require(3811) /* _createForOfIteratorHelperLoose */;
+          const formatPriceResult = require(5651) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return require(5616) /* formatSingleCurrencyPrice */.formatRate(formatPriceResult, interval, intervalCount);
+            return require(5651) /* formatSingleCurrencyPrice */.formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }
-          const obj3 = require(5616) /* formatSingleCurrencyPrice */;
+          const obj3 = require(5651) /* formatSingleCurrencyPrice */;
         }
       }
     }

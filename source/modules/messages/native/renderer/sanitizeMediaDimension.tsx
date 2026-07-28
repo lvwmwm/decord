@@ -1,10 +1,10 @@
-// Module ID: 7826
-// Function ID: 62449
+// Module ID: 7862
+// Function ID: 62539
 // Name: sanitizeMediaDimension
 // Dependencies: [2]
 // Exports: sanitizeMediaDimension
 
-// Module 7826 (sanitizeMediaDimension)
+// Module 7862 (sanitizeMediaDimension)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/sanitizeMediaDimension.tsx");
 
 export const sanitizeMediaDimension = function sanitizeMediaDimension(height) {

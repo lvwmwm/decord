@@ -1,10 +1,10 @@
-// Module ID: 13767
-// Function ID: 105624
+// Module ID: 13811
+// Function ID: 105797
 // Name: BlockedUsersList
-// Dependencies: [31, 27, 3768, 33, 4131, 689, 5462, 5482, 1273, 13768, 1212, 5121, 4127, 5501, 13772, 566, 2]
+// Dependencies: [31, 27, 3802, 33, 4165, 689, 5497, 5517, 1273, 13812, 1212, 5155, 4161, 5536, 13816, 566, 2]
 // Exports: default
 
-// Module 13767 (BlockedUsersList)
+// Module 13811 (BlockedUsersList)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,9 +17,9 @@ const require = arg1;
 function BlockedUsersList(userIds) {
   userIds = userIds.userIds;
   const tmp = _createForOfIteratorHelperLoose();
-  importDefault(5462);
+  importDefault(5497);
   if (0 === userIds.length) {
-    let obj = { Illustration: require(13768) /* getBlockedSource */.Blocked };
+    let obj = { Illustration: require(13812) /* getBlockedSource */.Blocked };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.body = intl.string(require(1212) /* getSystemLocale */.t.nnsFif);
     let tmp7 = callback(require(1273) /* Button */.EmptyState, obj);
@@ -31,14 +31,14 @@ function BlockedUsersList(userIds) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj3 = { numberOfBlockedUsers: userIds.length };
     obj2.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["c+JVEB"], obj3);
-    const items = [callback(require(4127) /* Text */.Text, obj2), ];
+    const items = [callback(require(4161) /* Text */.Text, obj2), ];
     const obj4 = { hasIcons: true, children: userIds.map((userId) => outer1_5(outer1_1(outer1_2[14]), { userId }, userId)) };
     const intl3 = require(1212) /* getSystemLocale */.intl;
-    items[1] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1212) /* getSystemLocale */.t.PFOUKW));
+    items[1] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1212) /* getSystemLocale */.t.PFOUKW));
     obj1.children = items;
     obj.children = callback2(ScrollView, obj1);
-    obj.children = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-    tmp7 = callback(require(5462) /* mergeLocations */.AnalyticsLocationProvider, obj);
+    obj.children = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+    tmp7 = callback(require(5497) /* mergeLocations */.AnalyticsLocationProvider, obj);
   }
   return tmp7;
 }

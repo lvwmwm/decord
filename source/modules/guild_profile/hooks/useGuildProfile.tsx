@@ -1,10 +1,10 @@
-// Module ID: 8220
-// Function ID: 65940
+// Module ID: 8258
+// Function ID: 66050
 // Name: useGuildProfile
-// Dependencies: [5, 31, 8219, 566, 8221, 2]
+// Dependencies: [5, 31, 8257, 566, 8259, 2]
 // Exports: useGuildProfile
 
-// Module 8220 (useGuildProfile)
+// Module 8258 (useGuildProfile)
 import set from "set";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

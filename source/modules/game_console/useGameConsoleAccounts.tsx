@@ -1,10 +1,10 @@
-// Module ID: 8860
-// Function ID: 70142
+// Module ID: 8904
+// Function ID: 70293
 // Name: useGameConsoleAccounts
-// Dependencies: [4813, 653, 566, 1327, 2]
+// Dependencies: [4847, 653, 566, 1327, 2]
 // Exports: default
 
-// Module 8860 (useGameConsoleAccounts)
+// Module 8904 (useGameConsoleAccounts)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PlatformTypes } from "ME";
 

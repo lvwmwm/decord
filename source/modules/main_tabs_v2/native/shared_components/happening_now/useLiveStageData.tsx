@@ -1,10 +1,10 @@
-// Module ID: 14992
-// Function ID: 114308
+// Module ID: 15036
+// Function ID: 114481
 // Name: useLiveStageData
-// Dependencies: [31, 4952, 1348, 624, 4958, 22, 2]
+// Dependencies: [31, 4986, 1348, 624, 4992, 22, 2]
 // Exports: useLiveStageData
 
-// Module 14992 (useLiveStageData)
+// Module 15036 (useLiveStageData)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

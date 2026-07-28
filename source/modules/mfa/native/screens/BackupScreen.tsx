@@ -1,10 +1,10 @@
-// Module ID: 14708
-// Function ID: 112056
+// Module ID: 14752
+// Function ID: 112229
 // Name: isValidClipboardCode
-// Dependencies: [5, 57, 31, 33, 14706, 4127, 1212, 9125, 14701, 14707, 14704, 2]
+// Dependencies: [5, 57, 31, 33, 14750, 4161, 1212, 9169, 14745, 14751, 14748, 2]
 // Exports: default
 
-// Module 14708 (isValidClipboardCode)
+// Module 14752 (isValidClipboardCode)
 import Text from "Text";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -15,9 +15,9 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function isValidClipboardCode(arg0) {
-  let tmp = arg0.length >= require(14706) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
+  let tmp = arg0.length >= require(14750) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
   if (tmp) {
-    tmp = arg0.length <= require(14706) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
+    tmp = arg0.length <= require(14750) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
   }
   return tmp;
 }
@@ -38,7 +38,7 @@ function getFormattedExplainer(first2) {
     items1[1] = intl4.string(require(1212) /* getSystemLocale */.t.v3a6Pd);
     obj.children = items1;
   }
-  return closure_6(require(4127) /* Text */.Text, obj);
+  return closure_6(require(4161) /* Text */.Text, obj);
 }
 ({ jsxs: closure_6, jsx: closure_7, Fragment: closure_8 } = jsxProd);
 const result = require("result").fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");

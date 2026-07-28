@@ -1,9 +1,9 @@
-// Module ID: 4181
-// Function ID: 35866
+// Module ID: 4215
+// Function ID: 35970
 // Name: base64Decode
-// Dependencies: [6, 7, 27, 4, 4182, 2]
+// Dependencies: [6, 7, 27, 4, 4216, 2]
 
-// Module 4181 (base64Decode)
+// Module 4215 (base64Decode)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { Platform } from "get ActivityIndicator";
@@ -20,7 +20,7 @@ function base64Encode(arg0) {
 function callbackSetter(arg0, arg1) {
   const _require = arg1;
   const dependencyMap = null;
-  const VoiceEngineEmitter = _require(4182).VoiceEngineEmitter;
+  const VoiceEngineEmitter = _require(4216).VoiceEngineEmitter;
   VoiceEngineEmitter.addListener(arg0, (arg0) => {
     let applyResult;
     if (null != c1) {
@@ -50,7 +50,7 @@ require("constants").VoiceEngine.supportsFeature = (arg0) => supportedFeatures.i
 let closure_6 = ["configureConnectionRetries", "getEncryptionModes", "setTransportOptions", "mergeUsers", "destroyUser", "setLocalPan", "setLocalVolume", "setLocalMute", "fastUdpReconnect", "wasRemoteDisconnected", "setMinimumOutputDelay", "setSelfMute", "setSelfDeafen", "setNoInputThreshold", "setPTTActive", "setVideoBroadcast", "triggerOnVideoCallback", "getStats", "getFilteredStats", "setPingInterval", "setDesktopSource", "prepareSecureFramesTransition", "executeSecureFramesTransition", "prepareSecureFramesEpoch", "triggerOnSpeakingCallback"];
 if (null != require("constants").VoiceEngine.consoleLog) {
   require("constants").setNativeLogFn((arg0, arg1, arg2) => {
-    const VoiceEngine = require(4182) /* constants */.VoiceEngine;
+    const VoiceEngine = require(4216) /* constants */.VoiceEngine;
     VoiceEngine.consoleLog(arg1, "[" + arg0 + "] " + arg2);
   });
   const obj2 = require("constants");
@@ -58,7 +58,7 @@ if (null != require("constants").VoiceEngine.consoleLog) {
 if (null != require("constants").VoiceEngine.getMLSSigningKeyB64) {
   require("constants").VoiceEngine.getMLSSigningKey = (arg0, arg1, arg2) => {
     const _require = arg2;
-    const VoiceEngine = _require(4182).VoiceEngine;
+    const VoiceEngine = _require(4216).VoiceEngine;
     return VoiceEngine.getMLSSigningKeyB64(arg0, arg1, (arg0, arg1) => {
       let str = "";
       if (null != arg1) {
@@ -323,7 +323,7 @@ let closure_10 = callbackSetter("on-broadcast-thumbnail", (imgdata) => {
 });
 require("constants").VoiceEngine.setBroadcastThumbnailCallback = (arg0, arg1, arg2, arg3) => {
   callback4(arg3);
-  const VoiceEngine = require(4182) /* constants */.VoiceEngine;
+  const VoiceEngine = require(4216) /* constants */.VoiceEngine;
   const result = VoiceEngine.setBroadcastThumbnailParams(arg0, arg1, arg2);
 };
 require("constants").VoiceEngine.setAudioInputInitializationCallback = callbackSetter("audio-input-initialized", (arg0) => {

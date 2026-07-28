@@ -1,10 +1,10 @@
-// Module ID: 11436
-// Function ID: 88918
+// Module ID: 11474
+// Function ID: 89037
 // Name: ApplicationCommandItem
-// Dependencies: [31, 27, 1918, 9515, 33, 4131, 689, 4550, 566, 11329, 4661, 1212, 5085, 4127, 2]
+// Dependencies: [31, 27, 1918, 9555, 33, 4165, 689, 4584, 566, 11367, 4695, 1212, 5119, 4161, 2]
 // Exports: default
 
-// Module 11436 (ApplicationCommandItem)
+// Module 11474 (ApplicationCommandItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

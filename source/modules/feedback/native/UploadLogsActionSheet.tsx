@@ -1,10 +1,10 @@
-// Module ID: 16097
-// Function ID: 124615
+// Module ID: 16136
+// Function ID: 124771
 // Name: UploadLogsActionSheet
-// Dependencies: [31, 27, 653, 33, 4131, 689, 5187, 5186, 1212, 4127, 4544, 10287, 675, 4099, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 5221, 5220, 1212, 4161, 4578, 10327, 675, 4133, 2]
 // Exports: default
 
-// Module 16097 (UploadLogsActionSheet)
+// Module 16136 (UploadLogsActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -37,12 +37,12 @@ export default function UploadLogsActionSheet(arg0) {
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.KTjjrG);
-  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { style: tmp.container };
   const obj1 = { variant: "text-sm/normal", color: "text-muted", style: tmp.body };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["ZvRR/t"]);
-  const items = [callback(require(4127) /* Text */.Text, obj1), , , ];
+  const items = [callback(require(4161) /* Text */.Text, obj1), , , ];
   let obj2 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl3.string(require(1212) /* getSystemLocale */.t.EbwFfR);
@@ -64,7 +64,7 @@ export default function UploadLogsActionSheet(arg0) {
     const obj2 = outer1_1(outer1_2[12]);
     outer1_1(outer1_2[13]).hideActionSheet();
   };
-  items[1] = callback(require(4544) /* Button */.Button, obj2);
+  items[1] = callback(require(4578) /* Button */.Button, obj2);
   items[2] = callback(View, { style: tmp.buttonSpacer });
   const obj4 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -73,8 +73,8 @@ export default function UploadLogsActionSheet(arg0) {
   obj4.onPress = function onPress() {
     return outer1_1(outer1_2[13]).hideActionSheet();
   };
-  items[3] = callback(require(4544) /* Button */.Button, obj4);
+  items[3] = callback(require(4578) /* Button */.Button, obj4);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

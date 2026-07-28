@@ -1,10 +1,10 @@
-// Module ID: 11538
-// Function ID: 89846
+// Module ID: 11577
+// Function ID: 89997
 // Name: items
-// Dependencies: [4043, 4042, 2]
+// Dependencies: [4077, 4076, 2]
 // Exports: useIsGameServerPricingEnabled
 
-// Module 11538 (items)
+// Module 11577 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-03_game_server_pricing", label: "Game Server Pricing", defaultConfig: { enabled: false } };
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/premium/game_server
 
 export const GameServerPricingExperiment = experiment;
 export const useIsGameServerPricingEnabled = function useIsGameServerPricingEnabled(guildId, useGuildPowerupsChannelListPopout) {
-  let obj = require(4042) /* items */;
+  let obj = require(4076) /* items */;
   let enabled = obj.useGameServerEnabled(guildId, useGuildPowerupsChannelListPopout);
   obj = { guildId, location: useGuildPowerupsChannelListPopout };
   if (enabled) {

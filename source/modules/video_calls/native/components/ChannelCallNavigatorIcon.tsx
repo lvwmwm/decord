@@ -1,10 +1,10 @@
-// Module ID: 10660
-// Function ID: 83095
+// Module ID: 10698
+// Function ID: 83216
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [31, 27, 10174, 653, 33, 4131, 689, 4661, 3977, 4534, 1273, 2]
+// Dependencies: [31, 27, 10214, 653, 33, 4165, 689, 4695, 4011, 4568, 1273, 2]
 // Exports: default
 
-// Module 10660 (ChannelCallNavigatorIcon)
+// Module 10698 (ChannelCallNavigatorIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "resetFocusTimer";
@@ -70,13 +70,13 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
   }
   items[2] = disabled;
   obj.style = items;
-  let obj3 = require(3977) /* AccessibilityAnnouncer */;
+  let obj3 = require(4011) /* AccessibilityAnnouncer */;
   let tmp5 = null;
   if (obj3.isThemeDark(theme)) {
     tmp5 = null;
     if (!flag) {
       const obj1 = { blurTheme: "dark", style: absoluteFill.absoluteFill };
-      tmp5 = callback(importDefault(4534), obj1);
+      tmp5 = callback(importDefault(4568), obj1);
     }
   }
   const items1 = [tmp5, , ];
@@ -100,6 +100,6 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
   obj.children = items1;
   const items2 = [closure_7(closure_3, obj), children];
   obj.children = items2;
-  obj.children = closure_7(require(4661) /* PressableBase */.PressableOpacity, obj);
+  obj.children = closure_7(require(4695) /* PressableBase */.PressableOpacity, obj);
   return callback(closure_3, obj);
 };

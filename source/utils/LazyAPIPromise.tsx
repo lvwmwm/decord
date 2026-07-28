@@ -1,10 +1,10 @@
-// Module ID: 8161
-// Function ID: 65466
+// Module ID: 8199
+// Function ID: 65576
 // Name: useLazyAPIPromise
-// Dependencies: [5, 57, 31, 4030, 2]
+// Dependencies: [5, 57, 31, 4064, 2]
 // Exports: default
 
-// Module 8161 (useLazyAPIPromise)
+// Module 8199 (useLazyAPIPromise)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -15,12 +15,10 @@ const result = require("result").fileFinishedImporting("utils/LazyAPIPromise.tsx
 export default function useLazyAPIPromise(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
-  async function _execFn() {
-    outer2_2(true);
-    outer2_3(null);
-    outer2_2(false);
-    outer2_3(null);
-    return yield outer2_0();
+  function _execFn() {
+    // CreateGeneratorClosureLongIndex (0x67)
+    const obj = callback(tmp);
+    return obj(...arguments);
   }
   const tmp = callback(_execFn.useState(false), 2);
   let asyncGeneratorStep = tmp[1];

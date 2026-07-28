@@ -1,9 +1,9 @@
-// Module ID: 12817
-// Function ID: 99883
+// Module ID: 12860
+// Function ID: 100053
 // Name: VoiceStateAnalytics
-// Dependencies: [6, 7, 4178, 4147, 4204, 4192, 22, 2]
+// Dependencies: [6, 7, 4212, 4181, 4238, 4226, 22, 2]
 
-// Module 12817 (VoiceStateAnalytics)
+// Module 12860 (VoiceStateAnalytics)
 import apply from "apply";
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,22 +32,22 @@ let tmp2 = (() => {
   }
   let obj = {
     key: "updateVoiceStates",
-    value(arg0, arg1) {
+    value(arg0, id) {
       const self = this;
-      if (arg1 === this.channelId) {
+      if (id === this.channelId) {
         const totalParticipants = self.totalParticipants;
         totalParticipants.add(arg0);
         const _Math = Math;
-        self.maxVoiceStateCount = Math.max(outer1_6.countVoiceStatesForChannel(arg1), self.maxVoiceStateCount);
+        self.maxVoiceStateCount = Math.max(outer1_6.countVoiceStatesForChannel(id), self.maxVoiceStateCount);
       } else {
         if (tmp2) {
           self.totalSpeakers[arg0] = outer1_7.NONE;
         }
         if (tmp4) {
-          self.setChannelId(arg1);
+          self.setChannelId(id);
         }
-        tmp2 = null == arg1 && arg0 in self.totalSpeakers;
-        tmp4 = arg0 === self.userId && null != arg1;
+        tmp2 = null == id && arg0 in self.totalSpeakers;
+        tmp4 = arg0 === self.userId && null != id;
       }
     }
   };

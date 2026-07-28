@@ -1,10 +1,10 @@
-// Module ID: 4940
-// Function ID: 42328
+// Module ID: 4974
+// Function ID: 42443
 // Name: officialApplicationIds
-// Dependencies: [1911, 1838, 3759, 4941, 653, 1443, 44, 1212, 22, 4942, 566, 3947, 1334, 2]
+// Dependencies: [1911, 1838, 3793, 4975, 653, 1443, 44, 1212, 22, 4976, 566, 3981, 1334, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
 
-// Module 4940 (officialApplicationIds)
+// Module 4974 (officialApplicationIds)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -407,7 +407,7 @@ export const getVisibleConnectionsRole = function getVisibleConnectionsRole(guil
         }
         return hasItem;
       });
-      const intersectionResult = importDefault(22).intersection(found, importDefault(4942)(channel));
+      const intersectionResult = importDefault(22).intersection(found, importDefault(4976)(channel));
       if (intersectionResult.length > 0) {
         const first = intersectionResult[0];
         let tmp11 = null;

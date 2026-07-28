@@ -1,10 +1,10 @@
-// Module ID: 10130
-// Function ID: 78430
+// Module ID: 10170
+// Function ID: 78559
 // Name: LinkedChannelInvite
-// Dependencies: [31, 27, 1352, 653, 33, 4131, 5468, 10131, 10132, 4472, 1212, 10133, 1198, 10135, 5166, 4542, 5472, 4127, 9231, 6625, 10140, 10141, 10142, 10145, 10147, 2]
+// Dependencies: [31, 27, 1352, 653, 33, 4165, 5503, 10171, 10172, 4506, 1212, 10173, 1198, 10175, 5200, 4576, 5507, 4161, 9275, 6661, 10180, 10181, 10182, 10185, 10187, 2]
 // Exports: LinkedChannelInvite
 
-// Module 10130 (LinkedChannelInvite)
+// Module 10170 (LinkedChannelInvite)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { createChannelRecordFromInvite as closure_5 } from "_callSuper";
@@ -29,7 +29,7 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   }
   const items = [invite];
   const memo = importAllResult.useMemo(() => outer1_5(invite.channel), items);
-  let obj = invite(10142);
+  let obj = invite(10182);
   const items1 = [invite.roles];
   const inviteActions = obj.useInviteActions({ invite, onInviteRevoked: onInviteRevoked.onInviteRevoked });
   const memo1 = importAllResult.useMemo(() => {
@@ -41,8 +41,8 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   obj = { direction: "horizontal", justify: "space-between" };
   const obj1 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
   const items2 = [
-    callback(invite(4127).Text, obj1),
-    callback(invite(9231).ContextMenu, {
+    callback(invite(4161).Text, obj1),
+    callback(invite(9275).ContextMenu, {
       items: inviteActions,
       children(ref) {
         let obj = Object.create(null);
@@ -58,12 +58,12 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
     })
   ];
   obj.children = items2;
-  const items3 = [callback2(invite(4542).Stack, obj), , , ];
+  const items3 = [callback2(invite(4576).Stack, obj), , , ];
   const obj3 = { channel: memo, expiresAt: invite.getExpiresAt() };
-  items3[1] = callback(invite(10140).InstantInviteDetails, obj3);
+  items3[1] = callback(invite(10180).InstantInviteDetails, obj3);
   if (tmp5) {
     const obj4 = { roleIds: memo1, guildId: id };
-    tmp5 = callback(importDefault(10145), obj4);
+    tmp5 = callback(importDefault(10185), obj4);
   }
   items3[2] = tmp5;
   const obj5 = { direction: "horizontal", align: "flex-end" };
@@ -83,16 +83,16 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
     }
     obj7.userId = id2;
     obj7.guildId = id;
-    tmp15Result = callback(importDefault(10141), obj7);
+    tmp15Result = callback(importDefault(10181), obj7);
     const tmp15 = callback;
-    const tmp18 = importDefault(10141);
+    const tmp18 = importDefault(10181);
   }
   obj6.children = tmp15Result;
-  const items4 = [callback(View, obj6), callback(importDefault(10147), { uses, maxUses })];
+  const items4 = [callback(View, obj6), callback(importDefault(10187), { uses, maxUses })];
   obj5.children = items4;
-  items3[3] = callback2(invite(4542).Stack, obj5);
+  items3[3] = callback2(invite(4576).Stack, obj5);
   obj.children = items3;
-  return callback2(invite(5166).Card, obj);
+  return callback2(invite(5200).Card, obj);
 });
 const result = require("_callSuper").fileFinishedImporting("modules/guild_instant_invites/native/InstantInvite.tsx");
 
@@ -108,14 +108,14 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   if (null != linkedLobby) {
     linked_by = linkedLobby.linked_by;
   }
-  let obj = channel(5468);
+  let obj = channel(5503);
   const linkedLobby2 = channel.linkedLobby;
   let application_id;
   if (null != linkedLobby2) {
     application_id = linkedLobby2.application_id;
   }
   const getOrFetchApplication = obj.useGetOrFetchApplication(application_id);
-  let obj1 = channel(10131);
+  let obj1 = channel(10171);
   canUnlinkLobbyChannel = obj1.useCanUnlinkLobbyChannel(channel);
   let name;
   if (null != getOrFetchApplication) {
@@ -125,7 +125,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   if (null != name) {
     str = name;
   }
-  const tmp6Result = canUnlinkLobbyChannel(10132)(channel.id, str);
+  const tmp6Result = canUnlinkLobbyChannel(10172)(channel.id, str);
   dependencyMap = tmp6Result;
   let items = [canUnlinkLobbyChannel, tmp6Result];
   callback = callback.useCallback(() => {
@@ -168,20 +168,20 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   const obj2 = { game: getOrFetchApplication };
   const tmp12 = View;
   const tmp13 = callback;
-  const tmp6 = canUnlinkLobbyChannel(10132);
-  obj2.size = channel(5472).GameIconSizes.SIZE_24;
-  const items2 = [callback(canUnlinkLobbyChannel(5472), obj2), ];
+  const tmp6 = canUnlinkLobbyChannel(10172);
+  obj2.size = channel(5507).GameIconSizes.SIZE_24;
+  const items2 = [callback(canUnlinkLobbyChannel(5507), obj2), ];
   const obj3 = { ellipsizeMode: "tail", lineClamp: 1, variant: "text-lg/bold", style: tmp.gameText };
   let name1;
   if (null != getOrFetchApplication) {
     name1 = getOrFetchApplication.name;
   }
   obj3.children = name1;
-  items2[1] = tmp13(channel(4127).Text, obj3);
+  items2[1] = tmp13(channel(4161).Text, obj3);
   obj1.children = items2;
   const items3 = [
     closure_8(tmp12, obj1),
-    callback(channel(9231).ContextMenu, {
+    callback(channel(9275).ContextMenu, {
       items: memo,
       children(ref) {
         let obj = Object.create(null);
@@ -197,17 +197,17 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
     })
   ];
   obj.children = items3;
-  const items4 = [closure_8(channel(4542).Stack, obj), callback(channel(10140).InstantInviteDetails, { channel }), ];
+  const items4 = [closure_8(channel(4576).Stack, obj), callback(channel(10180).InstantInviteDetails, { channel }), ];
   const obj5 = { direction: "horizontal", align: "flex-end" };
   const obj6 = { style: tmp.creatorWrapper };
   let tmp18 = null;
   if (null != linked_by) {
     const obj7 = { start: true, end: true, userId: linked_by, guildId: channel.guild_id };
-    tmp18 = callback(canUnlinkLobbyChannel(10141), obj7);
+    tmp18 = callback(canUnlinkLobbyChannel(10181), obj7);
   }
   obj6.children = tmp18;
   obj5.children = callback(View, obj6);
-  items4[2] = callback(channel(4542).Stack, obj5);
+  items4[2] = callback(channel(4576).Stack, obj5);
   obj.children = items4;
-  return closure_8(channel(5166).Card, obj);
+  return closure_8(channel(5200).Card, obj);
 };

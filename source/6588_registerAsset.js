@@ -1,11 +1,11 @@
 // Module ID: 6588
-// Function ID: 58407
+// Function ID: 58430
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6588 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "805fda450615a79e013d34cae4b4a783", name: "PaintPaletteIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MushroomIcon", width: 60, height: 60, scales: [2, 3], hash: "d0258153ad64bd0da42bc5243da496aa", name: "MushroomIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

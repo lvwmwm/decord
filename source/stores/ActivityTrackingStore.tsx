@@ -1,9 +1,9 @@
-// Module ID: 12731
-// Function ID: 99072
+// Module ID: 12774
+// Function ID: 99242
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4151, 1316, 1194, 4163, 4166, 4203, 1907, 653, 664, 587, 4175, 10419, 4016, 4301, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4185, 1316, 1194, 4197, 4200, 4237, 1907, 653, 664, 587, 4209, 10459, 4050, 4335, 566, 686, 2]
 
-// Module 12731 (_isNativeReflectConstruct)
+// Module 12774 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import convertToTransitionState from "convertToTransitionState";
@@ -138,7 +138,7 @@ function updateActivity(applicationId) {
   if (num > closure_17 + closure_18) {
     num = 0;
   }
-  let obj = _require(4175);
+  let obj = _require(4209);
   const result = obj.shouldShareApplicationActivity(applicationId.applicationId, closure_12);
   voiceChannelId = voiceChannelId.getVoiceChannelId();
   sessionId = sessionId.getSessionId();
@@ -158,10 +158,10 @@ function updateActivity(applicationId) {
   obj.voiceChannelId = voiceChannelId;
   obj.sessionId = sessionId;
   obj.mediaSessionId = mediaSessionId;
-  importDefault(10419).updateActivity(obj);
+  importDefault(10459).updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const Interval = _require(4016).Interval;
+    const Interval = _require(4050).Interval;
     const prototype = Interval.prototype;
     const interval = new Interval();
     dependencyMap[applicationId.applicationId] = interval;
@@ -203,7 +203,7 @@ function handleRunningGamesChange(flag) {
           obj.distributor = value.distributor;
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          let obj3 = require(4301) /* normalizePath */;
+          let obj3 = require(4335) /* normalizePath */;
           let exePath = value.exePath;
           let str = "";
           if (null != exePath) {

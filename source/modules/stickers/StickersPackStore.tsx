@@ -1,9 +1,9 @@
-// Module ID: 5038
-// Function ID: 43434
+// Module ID: 5072
+// Function ID: 43549
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 664, 4800, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 664, 4834, 2]
 
-// Module 5038 (_isNativeReflectConstruct)
+// Module 5072 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import TypeTag from "TypeTag";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -106,12 +106,12 @@ function parseServerPackSticker(sticker) {
 }
 function deriveStickerMetadata(name, name2) {
   const items = [];
-  let obj = { type: require(4800) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME };
+  let obj = { type: require(4834) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME };
   const trimmed = name.name.trim();
   obj.value = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != name2) {
-    obj = { type: require(4800) /* StickerFormat */.StickerMetadataTypes.PACK_NAME, value: name2.name };
+    obj = { type: require(4834) /* StickerFormat */.StickerMetadataTypes.PACK_NAME, value: name2.name };
     items.push(obj);
   }
   return items;

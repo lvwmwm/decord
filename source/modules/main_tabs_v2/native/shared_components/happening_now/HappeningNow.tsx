@@ -1,9 +1,9 @@
-// Module ID: 14979
-// Function ID: 114163
+// Module ID: 15023
+// Function ID: 114336
 // Name: shouldTrackViewedEvent
-// Dependencies: [57, 31, 27, 14245, 653, 33, 7621, 4131, 689, 5217, 8193, 14980, 675, 4560, 1457, 14981, 5462, 5482, 14988, 14989, 3992, 9980, 22, 6619, 1212, 14990, 14991, 15008, 15010, 15011, 14994, 15007, 15012, 15006, 14993, 1327, 2]
+// Dependencies: [57, 31, 27, 14289, 653, 33, 7657, 4165, 689, 5251, 8231, 15024, 675, 4594, 1457, 15025, 5497, 5517, 15032, 15033, 4026, 10020, 22, 6655, 1212, 15034, 15035, 15052, 15054, 15055, 15038, 15051, 15056, 15050, 15037, 1327, 2]
 
-// Module 14979 (shouldTrackViewedEvent)
+// Module 15023 (shouldTrackViewedEvent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useVoiceChannelUsers";
 import get_ActivityIndicator from "HAPPENING_NOW_CONTENT_HEIGHT";
@@ -39,7 +39,7 @@ function renderCard(kind, fullWidth) {
         let obj = {};
         merged = obj;
         merged = kind;
-        merged = importDefault(14991);
+        merged = importDefault(15035);
         merged = Object.assign(kind);
         merged = obj;
         merged = fullWidth;
@@ -52,7 +52,7 @@ function renderCard(kind, fullWidth) {
         obj = {};
         merged = obj;
         merged = kind;
-        merged = importDefault(15008);
+        merged = importDefault(15052);
         merged = Object.assign(kind);
         merged = obj;
         merged = fullWidth;
@@ -63,54 +63,54 @@ function renderCard(kind, fullWidth) {
         const merged1 = Object.assign(kind);
         merged = fullWidth;
         merged = Object.assign(fullWidth);
-        return jsx(importDefault(15010), {});
+        return jsx(importDefault(15054), {});
       } else if ("user" === kind) {
         const obj2 = {};
         const merged2 = Object.assign(kind);
         const merged3 = Object.assign(fullWidth);
-        return jsx(importDefault(15011), {});
+        return jsx(importDefault(15055), {});
       } else if ("activity" === kind) {
         const obj3 = {};
         const merged4 = Object.assign(kind);
         const merged5 = Object.assign(fullWidth);
-        return jsx(importDefault(14994), {});
+        return jsx(importDefault(15038), {});
       } else if ("voice" === kind) {
         const obj4 = {};
         const merged6 = Object.assign(kind);
         const merged7 = Object.assign(fullWidth);
-        return jsx(importDefault(15007), {});
+        return jsx(importDefault(15051), {});
       } else if ("invite" === kind) {
         const obj5 = {};
         const merged8 = Object.assign(kind);
         const merged9 = Object.assign(fullWidth);
-        return jsx(require(15012) /* trackClick */.HappeningNowCardInvite, {});
+        return jsx(require(15056) /* trackClick */.HappeningNowCardInvite, {});
       } else if ("customize-guild" === kind) {
         const obj6 = {};
         const merged10 = Object.assign(kind);
         const merged11 = Object.assign(fullWidth);
-        return jsx(require(15012) /* trackClick */.HappeningNowCardCustomizeGuild, {});
+        return jsx(require(15056) /* trackClick */.HappeningNowCardCustomizeGuild, {});
       } else if ("create-channel" === kind) {
         const obj7 = {};
         const merged12 = Object.assign(kind);
         const merged13 = Object.assign(fullWidth);
-        return jsx(require(15012) /* trackClick */.HappeningNowCardCreateChannel, {});
+        return jsx(require(15056) /* trackClick */.HappeningNowCardCreateChannel, {});
       } else if ("student-hub-add-channel" === kind) {
         const obj8 = {};
         const merged14 = Object.assign(kind);
         const merged15 = Object.assign(fullWidth);
-        return jsx(require(15012) /* trackClick */.HappeningNowStudentHubAddServer, {});
+        return jsx(require(15056) /* trackClick */.HappeningNowStudentHubAddServer, {});
       } else if ("embedded-activity" === kind) {
         const obj9 = {};
         const merged16 = Object.assign(kind);
         const merged17 = Object.assign(fullWidth);
         obj9["cardKey"] = keyExtractor(kind);
-        return jsx(importDefault(15006), {});
+        return jsx(importDefault(15050), {});
       } else if ("unified-vc" === kind) {
         const obj10 = {};
         const merged18 = Object.assign(kind);
         const merged19 = Object.assign(fullWidth);
         obj10["cardKey"] = keyExtractor(kind);
-        return jsx(importDefault(14993), {});
+        return jsx(importDefault(15037), {});
       } else {
         merged = require;
         obj = require(1327) /* isDiscordFrontendDevelopment */;
@@ -118,7 +118,7 @@ function renderCard(kind, fullWidth) {
       }
     }
   }
-  return jsx(require(14990) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
+  return jsx(require(15034) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
 }
 function keyExtractor(kind) {
   kind = kind.kind;
@@ -195,7 +195,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj = { ref };
   const merged = Object.assign(arg0);
   obj.children = <closure_5 ref={arg1} />;
-  return jsx(require(5217) /* Directions */.GestureDetector, { ref });
+  return jsx(require(5251) /* Directions */.GestureDetector, { ref });
 });
 forwardRefResult.displayName = "HappeningNowScrollView";
 const NativeResult = Gesture.Native();

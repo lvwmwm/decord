@@ -1,9 +1,9 @@
-// Module ID: 15872
-// Function ID: 122532
+// Module ID: 15911
+// Function ID: 122688
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 8764, 1348, 4203, 15873, 8765, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 8808, 1348, 4237, 15912, 8809, 566, 686, 2]
 
-// Module 15872 (_isNativeReflectConstruct)
+// Module 15911 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -30,11 +30,11 @@ function disconnectFromCurrentStageChannel() {
 function handleAudioRouteChanged() {
   if (c13) {
     currentRouteType = currentRouteType.getCurrentRouteType();
-    let tmp5 = currentRouteType === require(8765) /* RouteTypes */.RouteTypes.SPEAKER;
+    let tmp5 = currentRouteType === require(8809) /* RouteTypes */.RouteTypes.SPEAKER;
     if (!tmp5) {
-      tmp5 = currentRouteType === require(8765) /* RouteTypes */.RouteTypes.BLUETOOTH;
+      tmp5 = currentRouteType === require(8809) /* RouteTypes */.RouteTypes.BLUETOOTH;
     }
-    let flag2 = currentRouteType !== require(8765) /* RouteTypes */.RouteTypes.UNKNOWN;
+    let flag2 = currentRouteType !== require(8809) /* RouteTypes */.RouteTypes.UNKNOWN;
     if (flag2) {
       if (tmp5) {
         c13 = false;
@@ -118,8 +118,8 @@ tmp2 = new tmp2(require("dispatcher"), {
               let defaultSpeakerForGuildCall = channel.isGuildVoice();
               if (defaultSpeakerForGuildCall) {
                 let obj = { location: "StageChannelAudioStore" };
-                defaultSpeakerForGuildCall = importDefault(15873).getConfig(obj).defaultSpeakerForGuildCall;
-                const obj2 = importDefault(15873);
+                defaultSpeakerForGuildCall = importDefault(15912).getConfig(obj).defaultSpeakerForGuildCall;
+                const obj2 = importDefault(15912);
               }
               isGuildStageVoiceResult = defaultSpeakerForGuildCall;
             }
@@ -127,8 +127,8 @@ tmp2 = new tmp2(require("dispatcher"), {
               let defaultSpeakerForDMCall = channel.isDM();
               if (defaultSpeakerForDMCall) {
                 obj = { location: "StageChannelAudioStore" };
-                defaultSpeakerForDMCall = importDefault(15873).getConfig(obj).defaultSpeakerForDMCall;
-                const obj4 = importDefault(15873);
+                defaultSpeakerForDMCall = importDefault(15912).getConfig(obj).defaultSpeakerForDMCall;
+                const obj4 = importDefault(15912);
               }
               isGuildStageVoiceResult = defaultSpeakerForDMCall;
             }

@@ -1,10 +1,10 @@
-// Module ID: 5623
-// Function ID: 48008
+// Module ID: 5658
+// Function ID: 48135
 // Name: getOrbPriceFromPrices
-// Dependencies: [653, 655, 5624, 1212, 5625, 3799, 2]
+// Dependencies: [653, 655, 5659, 1212, 5660, 3833, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5623 (getOrbPriceFromPrices)
+// Module 5658 (getOrbPriceFromPrices)
 import ME from "ME";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import { ConstraintReasonCode } from "ConstraintReasonCode";
@@ -64,17 +64,17 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
   if (null == code) {
     return null;
   } else {
-    if (!(code instanceof require(5625) /* _callSuper */.OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof require(5625) /* _callSuper */.OrderProcessingPendingError) {
+    if (!(code instanceof require(5660) /* _callSuper */.OrderSigningFailedWithConstraintsError)) {
+      if (code instanceof require(5660) /* _callSuper */.OrderProcessingPendingError) {
         const intl5 = require(1212) /* getSystemLocale */.intl;
         let stringResult = intl5.string(require(1212) /* getSystemLocale */.t["2BmwgV"]);
-      } else if (code.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+      } else if (code.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
         const intl4 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl4.string(require(1212) /* getSystemLocale */.t.keFvXM);
-      } else if (code.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.ALREADY_PURCHASED) {
+      } else if (code.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.ALREADY_PURCHASED) {
         const intl3 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl3.string(require(1212) /* getSystemLocale */.t.m371Mx);
-      } else if (code.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+      } else if (code.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl2.string(require(1212) /* getSystemLocale */.t.ZHgEG7);
       } else {

@@ -1,10 +1,10 @@
-// Module ID: 12337
-// Function ID: 96012
+// Module ID: 12380
+// Function ID: 96182
 // Name: RemediationsElement
-// Dependencies: [31, 27, 33, 4131, 689, 5501, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5536, 1212, 2]
 // Exports: default
 
-// Module 12337 (RemediationsElement)
+// Module 12380 (RemediationsElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,6 +24,6 @@ export default function RemediationsElement(children) {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["k+QA9N"]);
   obj.hasIcons = true;
   obj.children = children.children;
-  obj.children = jsx(require(5501) /* TableRowGroupTitle */.TableRowGroup, {});
+  obj.children = jsx(require(5536) /* TableRowGroupTitle */.TableRowGroup, {});
   return <View />;
 };

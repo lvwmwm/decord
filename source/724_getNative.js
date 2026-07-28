@@ -1,5 +1,5 @@
 // Module ID: 724
-// Function ID: 8760
+// Function ID: 8764
 // Name: getNative
 // Dependencies: [714, 580]
 

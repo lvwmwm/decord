@@ -1,5 +1,5 @@
 // Module ID: 831
-// Function ID: 9269
+// Function ID: 9273
 // Name: hasSpansEnabled
 // Dependencies: [825]
 

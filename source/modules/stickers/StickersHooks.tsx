@@ -1,10 +1,10 @@
-// Module ID: 9557
-// Function ID: 74546
+// Module ID: 9597
+// Function ID: 74675
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 1838, 3948, 4971, 1850, 5035, 5036, 653, 566, 9558, 3804, 4467, 8204, 4800, 4023, 1212, 3764, 9541, 9559, 2]
+// Dependencies: [5, 57, 31, 1838, 3982, 5005, 1850, 5069, 5070, 653, 566, 9598, 3838, 4501, 8242, 4834, 4057, 1212, 3798, 9581, 9599, 2]
 // Exports: useFetchStickerPack, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 9557 (_createForOfIteratorHelperLoose)
+// Module 9597 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -103,7 +103,7 @@ function useFetchStickerPacks() {
 }
 function useFavoriteStickerIds() {
   let stickerIds;
-  const favoriteStickers = require(9541) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
+  const favoriteStickers = require(9581) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
   if (null != favoriteStickers) {
     stickerIds = favoriteStickers.stickerIds;
   }
@@ -135,7 +135,7 @@ function useFavoriteStickers() {
   }, items1);
 }
 function useLatestFrecentStickerIds() {
-  const frecencySettings = require(9541) /* useFrecencySettings */.useFrecencySettings();
+  const frecencySettings = require(9581) /* useFrecencySettings */.useFrecencySettings();
   let keys = closure_13;
   let stickers;
   if (null != frecencySettings) {
@@ -309,9 +309,9 @@ export const useFetchStickerPack = function useFetchStickerPack(pack_id) {
   }, items1);
 };
 export const useShouldAnimateSticker = function useShouldAnimateSticker(isFocused) {
-  const AnimateStickers = require(3804) /* explicitContentFromProto */.AnimateStickers;
+  const AnimateStickers = require(3838) /* explicitContentFromProto */.AnimateStickers;
   const setting = AnimateStickers.useSetting();
-  return require(4467) /* getStickerPackPreviewSticker */.shouldAnimateSticker(setting, isFocused);
+  return require(4501) /* getStickerPackPreviewSticker */.shouldAnimateSticker(setting, isFocused);
 };
 export const useStickersGrid = function useStickersGrid(collapsedStickersCategories) {
   collapsedStickersCategories = collapsedStickersCategories.collapsedStickersCategories;
@@ -520,10 +520,10 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
   dependencyMap = tmp2[1];
   [tmp4, c3] = obj(React.useState(false), 2);
   const tmp3 = obj(React.useState(false), 2);
-  let isGuildStickerResult = _require(4467).isGuildSticker(renderableSticker);
+  let isGuildStickerResult = _require(4501).isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    isGuildStickerResult = _require(4467).isStandardSticker(renderableSticker);
-    const obj3 = _require(4467);
+    isGuildStickerResult = _require(4501).isStandardSticker(renderableSticker);
+    const obj3 = _require(4501);
   }
   obj = { hasFetched: tmp4, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: tmp2[0], stickersStoreDefinition: stateFromStores };
   React = React.useRef(obj);

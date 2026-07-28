@@ -1,5 +1,5 @@
 // Module ID: 945
-// Function ID: 10243
+// Function ID: 10247
 // Name: addPrivateRequestAttributes
 // Dependencies: [5, 77, 934, 936, 816, 946, 845, 817, 842, 948, 843, 825]
 // Exports: instrumentAnthropicAiClient

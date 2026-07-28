@@ -1,8 +1,8 @@
-// Module ID: 16339
-// Function ID: 127186
-// Dependencies: [5, 57, 31, 27, 4992, 5036, 653, 1853, 3807, 33, 4131, 689, 5159, 9786, 5450, 3772, 4675, 16340, 9558, 4467, 4127, 1212, 4026, 1921, 4544, 4542, 4661, 9573, 16341, 9268, 5150, 1392, 6519, 6670, 7585, 2]
+// Module ID: 16378
+// Function ID: 127342
+// Dependencies: [5, 57, 31, 27, 5026, 5070, 653, 1853, 3841, 33, 4165, 689, 5193, 9826, 5485, 3806, 4709, 16379, 9598, 4501, 4161, 1212, 4060, 1921, 4578, 4576, 4695, 9613, 16380, 9312, 5184, 1392, 6555, 6706, 7621, 2]
 
-// Module 16339
+// Module 16378
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
@@ -164,17 +164,17 @@ export default importAllResult.forwardRef((stickerId) => {
   const tmp12 = ref1(ref2.useState(undefined), 2);
   first1 = tmp12[0];
   const callback = tmp12[1];
-  const insets = importDefault(5159)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2 } }, { ref: ref2, offset: { type: "toBottom" } }];
-  const onFocus = importDefault(9786)({ insets, inputs: items, scrollViewRef: ref }).onFocus;
+  const onFocus = importDefault(9826)({ insets, inputs: items, scrollViewRef: ref }).onFocus;
   stickerById = undefined;
   const tmp11 = ref1(ref2.useState(undefined), 2);
   if (null != stickerId) {
     stickerById = stickerById.getStickerById(stickerId);
   }
-  const tmp14Result = importDefault(5450)(stickerById);
+  const tmp14Result = importDefault(5485)(stickerById);
   c16 = tmp14Result;
-  const tmp18 = importDefault(5450)(() => {
+  const tmp18 = importDefault(5485)(() => {
     if (null != _undefined3) {
       let customEmojiById = null;
       if (null != _undefined3.tags) {
@@ -244,22 +244,22 @@ export default importAllResult.forwardRef((stickerId) => {
     const obj1 = { variant: "heading-md/semibold", style: tmp.title };
     const intl = stickerId(1212).intl;
     obj1.children = intl.string(stickerId(1212).t["9N2OWD"]);
-    const items2 = [callback(stickerId(4127).Text, obj1), , , ];
+    const items2 = [callback(stickerId(4161).Text, obj1), , , ];
     let obj2 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description };
     const intl2 = stickerId(1212).intl;
     const obj3 = {};
-    let obj6 = stickerId(4026);
+    let obj6 = stickerId(4060);
     const obj4 = { useKibibytes: true };
     obj3.fileSize = obj6.formatKbSize(first1, obj4);
     obj2.children = intl2.format(stickerId(1212).t.hxLviw, obj3);
-    items2[1] = callback(stickerId(4127).Text, obj2);
+    items2[1] = callback(stickerId(4161).Text, obj2);
     const obj5 = { variant: "text-sm/medium", color: "text-muted", style: tmp.help };
     const intl3 = stickerId(1212).intl;
     obj6 = {};
     let obj10 = importDefault(1921);
     obj6.articleUrl = obj10.getArticleURL(first.STICKERS_UPLOAD);
     obj5.children = intl3.format(stickerId(1212).t.UBj0aX, obj6);
-    items2[2] = callback(stickerId(4127).Text, obj5);
+    items2[2] = callback(stickerId(4161).Text, obj5);
     const obj7 = {};
     const intl4 = stickerId(1212).intl;
     obj7.text = intl4.string(stickerId(1212).t.O1REe1);
@@ -269,7 +269,7 @@ export default importAllResult.forwardRef((stickerId) => {
       str2 = "primary";
     }
     obj7.variant = str2;
-    items2[3] = callback(stickerId(4544).Button, obj7);
+    items2[3] = callback(stickerId(4578).Button, obj7);
     obj.children = items2;
     tmp24Result = c17(c16, obj);
     const tmp24 = c17;
@@ -281,14 +281,14 @@ export default importAllResult.forwardRef((stickerId) => {
   const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel };
   const intl5 = stickerId(1212).intl;
   obj9.children = intl5.string(stickerId(1212).t.gjdiKE);
-  const items4 = [callback(stickerId(4127).Text, obj9), , , , , , ];
+  const items4 = [callback(stickerId(4161).Text, obj9), , , , , , ];
   obj10 = { style: tmp.stickerPreview, disabled: null != tmp14Result, onPress: handleImagePicker, accessibilityRole: "button" };
   const intl6 = stickerId(1212).intl;
   obj10.accessibilityLabel = intl6.string(stickerId(1212).t.O1REe1);
   if (null != tmp14Result) {
     const obj11 = { sticker: tmp14Result, size: importDefault(689).space.PX_96, animated: true };
-    let tmp37 = callback(importDefault(9573), obj11);
-    const tmp43 = importDefault(9573);
+    let tmp37 = callback(importDefault(9613), obj11);
+    const tmp43 = importDefault(9613);
   } else if (null != first) {
     const obj12 = {};
     const obj13 = { uri: first };
@@ -298,14 +298,14 @@ export default importAllResult.forwardRef((stickerId) => {
     tmp37 = callback(closure_6, obj12);
   } else {
     const obj14 = { size: "lg" };
-    tmp37 = callback(stickerId(16341).StickerPlusIcon, obj14);
+    tmp37 = callback(stickerId(16380).StickerPlusIcon, obj14);
   }
   obj10.children = tmp37;
-  items4[1] = callback(stickerId(4661).PressableHighlight, obj10);
+  items4[1] = callback(stickerId(4695).PressableHighlight, obj10);
   const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel };
   const intl7 = stickerId(1212).intl;
   obj15.children = intl7.string(stickerId(1212).t["3BQmiC"]);
-  items4[2] = callback(stickerId(4127).Text, obj15);
+  items4[2] = callback(stickerId(4161).Text, obj15);
   const obj16 = {
     style: tmp.emojiPreview,
     onPress() {
@@ -325,11 +325,11 @@ export default importAllResult.forwardRef((stickerId) => {
       emojiURL = obj22.getEmojiURL(obj18);
     }
     obj17.src = emojiURL;
-    let tmp49Result = callback(importDefault(5150), obj17);
+    let tmp49Result = callback(importDefault(5184), obj17);
     const tmp49 = callback;
-    const tmp52 = importDefault(5150);
+    const tmp52 = importDefault(5184);
   } else {
-    tmp49Result = callback(stickerId(6519).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp49Result = callback(stickerId(6555).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   const items5 = [tmp49Result, ];
   const obj19 = { variant: "text-md/semibold", color: "input-placeholder-text-default" };
@@ -341,9 +341,9 @@ export default importAllResult.forwardRef((stickerId) => {
     combined = intl8.string(stickerId(1212).t.QTK0TJ);
   }
   obj19.children = combined;
-  items5[1] = callback(stickerId(4127).Text, obj19);
+  items5[1] = callback(stickerId(4161).Text, obj19);
   obj16.children = items5;
-  items4[3] = c17(stickerId(4661).PressableHighlight, obj16);
+  items4[3] = c17(stickerId(4695).PressableHighlight, obj16);
   const obj20 = { ref: ref1 };
   const intl9 = stickerId(1212).intl;
   obj20.label = intl9.string(stickerId(1212).t["0VRh6n"]);
@@ -366,7 +366,7 @@ export default importAllResult.forwardRef((stickerId) => {
   obj20.isClearable = true;
   obj20.returnKeyType = "next";
   obj20.submitBehavior = "submit";
-  items4[4] = callback(stickerId(6670).TextInput, obj20);
+  items4[4] = callback(stickerId(6706).TextInput, obj20);
   const obj21 = { ref: ref2, maxLength: 100 };
   const intl11 = stickerId(1212).intl;
   obj21.label = intl11.string(stickerId(1212).t.uGccej);
@@ -374,7 +374,7 @@ export default importAllResult.forwardRef((stickerId) => {
   obj21.placeholder = intl12.string(stickerId(1212).t.zwR0fa);
   obj21.onChange = tmp8;
   obj21.onFocus = onFocus;
-  items4[5] = callback(stickerId(7585).TextArea, obj21);
+  items4[5] = callback(stickerId(7621).TextArea, obj21);
   obj22 = {
     onPress: function handleSave() {
       return _handleSave(...arguments);
@@ -389,9 +389,9 @@ export default importAllResult.forwardRef((stickerId) => {
   obj22.variant = str6;
   obj22.disabled = !hasUnsavedChanges(false);
   obj22.loading = false;
-  items4[6] = callback(stickerId(4544).Button, obj22);
+  items4[6] = callback(stickerId(4578).Button, obj22);
   obj8.children = items4;
-  items3[1] = c17(stickerId(4542).Stack, obj8);
+  items3[1] = c17(stickerId(4576).Stack, obj8);
   obj.children = items3;
   return c17(closure_7, obj);
 });

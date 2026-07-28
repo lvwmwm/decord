@@ -1,10 +1,10 @@
-// Module ID: 16508
-// Function ID: 128646
+// Module ID: 16548
+// Function ID: 128807
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [57, 31, 16494, 14156, 33, 16498, 1212, 16488, 2]
+// Dependencies: [57, 31, 16534, 14200, 33, 16538, 1212, 16528, 2]
 // Exports: default
 
-// Module 16508 (GuildRoleSubscriptionGroupGatingModal)
+// Module 16548 (GuildRoleSubscriptionGroupGatingModal)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -27,6 +27,6 @@ export default function GuildRoleSubscriptionGroupGatingModal(arg0) {
   obj.canProceedToNextStep = true;
   obj.nextStep = constants.GROUP;
   const merged = Object.assign(arg0);
-  obj["children"] = jsx(importDefault(16488), { isFullServerGating: tmp2, onChange: tmp3 });
-  return jsx(importDefault(16498), {});
+  obj["children"] = jsx(importDefault(16528), { isFullServerGating: tmp2, onChange: tmp3 });
+  return jsx(importDefault(16538), {});
 };

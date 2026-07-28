@@ -1,10 +1,10 @@
-// Module ID: 13649
-// Function ID: 104879
+// Module ID: 13693
+// Function ID: 105052
 // Name: getDisplayNameStylesFontName
 // Dependencies: [1864, 2557, 2]
 // Exports: default
 
-// Module 13649 (getDisplayNameStylesFontName)
+// Module 13693 (getDisplayNameStylesFontName)
 const obj = {};
 obj[require("DisplayNameFont").DisplayNameFont.DEFAULT] = require("messagesProxy").ZEL6mz;
 obj[require("DisplayNameFont").DisplayNameFont.CHERRY_BOMB] = require("messagesProxy").rN7cuX;

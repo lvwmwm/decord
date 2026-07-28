@@ -1,10 +1,10 @@
-// Module ID: 15315
-// Function ID: 116835
+// Module ID: 15355
+// Function ID: 116994
 // Name: ICYMIHeader
-// Dependencies: [31, 27, 33, 15249, 689, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 15289, 689, 4161, 1212, 2]
 // Exports: default
 
-// Module 15315 (ICYMIHeader)
+// Module 15355 (ICYMIHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function ICYMIHeader() {
   obj = { style: tmp.text, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["jnXV/V"]);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 };

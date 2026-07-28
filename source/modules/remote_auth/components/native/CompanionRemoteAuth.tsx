@@ -1,10 +1,10 @@
-// Module ID: 14831
-// Function ID: 113125
+// Module ID: 14875
+// Function ID: 113298
 // Name: renderSteps
-// Dependencies: [31, 27, 653, 33, 4131, 14832, 5584, 4127, 1212, 4544, 1273, 3970, 1456, 4365, 675, 14833, 14837, 9147, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 14876, 5619, 4161, 1212, 4578, 1273, 4004, 1456, 4399, 675, 14877, 14881, 9191, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 14831 (renderSteps)
+// Module 14875 (renderSteps)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -19,9 +19,9 @@ let closure_9;
 const require = arg1;
 function renderSteps(state, avatar, callback1, context) {
   const step = state.step;
-  if (require(14832) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
-    if (require(14832) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (require(14832) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
+  if (require(14876) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
+    if (require(14876) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (require(14876) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         let obj = {};
         obj = { style: avatar.avatar, user, size: require(1273) /* Button */.AvatarSizes.LARGE, guildId: context };
@@ -29,40 +29,40 @@ function renderSteps(state, avatar, callback1, context) {
         obj = { variant: "heading-lg/bold" };
         const intl = require(1212) /* getSystemLocale */.intl;
         obj.children = intl.string(require(1212) /* getSystemLocale */.t.apGCUT);
-        items[1] = callback(require(4127) /* Text */.Text, obj);
+        items[1] = callback(require(4161) /* Text */.Text, obj);
         const obj1 = { style: avatar.statusText, variant: "text-md/medium", color: "text-muted" };
         const intl2 = require(1212) /* getSystemLocale */.intl;
         const obj2 = {};
-        let obj5 = importDefault(3970);
+        let obj5 = importDefault(4004);
         obj2.username = obj5.getUserTag(user);
         obj1.children = intl2.format(require(1212) /* getSystemLocale */.t.Cbl5JK, obj2);
-        items[2] = callback(require(4127) /* Text */.Text, obj1);
+        items[2] = callback(require(4161) /* Text */.Text, obj1);
         const obj3 = { style: avatar.buttonContainer };
         const obj4 = { size: "lg", variant: "tertiary" };
         const intl3 = require(1212) /* getSystemLocale */.intl;
         obj4.text = intl3.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
         obj4.onPress = callback1;
-        obj3.children = callback(require(4544) /* Button */.Button, obj4);
+        obj3.children = callback(require(4578) /* Button */.Button, obj4);
         items[3] = callback(View, obj3);
         obj.children = items;
         return callback2(closure_8, obj);
       } else {
-        return callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {});
+        return callback(require(5619) /* ActivityIndicator */.ActivityIndicator, {});
       }
     }
   }
   obj5 = {};
-  const items1 = [callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {}), , ];
+  const items1 = [callback(require(5619) /* ActivityIndicator */.ActivityIndicator, {}), , ];
   const obj6 = { style: avatar.statusText, variant: "text-md/medium", color: "text-muted" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl4.string(require(1212) /* getSystemLocale */.t["7LkwqE"]);
-  items1[1] = callback(require(4127) /* Text */.Text, obj6);
+  items1[1] = callback(require(4161) /* Text */.Text, obj6);
   const obj7 = { style: avatar.buttonContainer };
   const obj8 = { size: "lg", variant: "tertiary" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj8.text = intl5.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj8.onPress = callback1;
-  obj7.children = callback(require(4544) /* Button */.Button, obj8);
+  obj7.children = callback(require(4578) /* Button */.Button, obj8);
   items1[2] = callback(View, obj7);
   obj5.children = items1;
   return callback2(closure_8, obj5);
@@ -76,7 +76,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   let tmp = callback3();
   let obj = navigation(1456);
   navigation = obj.useNavigation();
-  const context = React.useContext(fingerprint(4365));
+  const context = React.useContext(fingerprint(4399));
   const callback = React.useCallback((arg0) => {
     let obj = fingerprint(outer1_2[14]);
     obj = { source: outer1_6.QR_CODE, login_source: "companion_remote_auth", is_new_user: false, login_method: "quest_remote_auth" };
@@ -87,13 +87,13 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj.login_instance_id = tmp;
     obj.track(outer1_5.LOGIN_SUCCESSFUL, obj);
   }, []);
-  const state = navigation(14833).useAuthWebsocket(callback, true).state;
+  const state = navigation(14877).useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(14832).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(14876).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -109,10 +109,10 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   obj = {};
-  const obj2 = navigation(14833);
+  const obj2 = navigation(14877);
   const intl = navigation(1212).intl;
   obj.headerText = intl.string(navigation(1212).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };
   obj.children = callback(View, obj);
-  return callback(fingerprint(9147), obj);
+  return callback(fingerprint(9191), obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 5985
-// Function ID: 53256
+// Module ID: 6019
+// Function ID: 53375
 // Name: ThermalState
 // Dependencies: [2]
 
-// Module 5985 (ThermalState)
+// Module 6019 (ThermalState)
 let obj = { NOMINAL: "NOMINAL", FAIR: "FAIR", SERIOUS: "SERIOUS", CRITICAL: "CRITICAL", UNKNOWN: "UNKNOWN" };
 obj = { thermalState: null, batteryLevel: 1, isLowPowerMode: false };
 obj.thermalState = obj.UNKNOWN;

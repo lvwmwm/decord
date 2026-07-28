@@ -1,10 +1,10 @@
-// Module ID: 11532
-// Function ID: 89815
+// Module ID: 11571
+// Function ID: 89966
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [31, 1838, 3759, 4019, 653, 4042, 566, 4061, 4060, 4022, 8245, 2]
+// Dependencies: [31, 1838, 3793, 4053, 653, 4076, 566, 4095, 4094, 4056, 8283, 2]
 // Exports: default
 
-// Module 11532 (useGuildPowerupNewPerkMarketingVersion)
+// Module 11571 (useGuildPowerupNewPerkMarketingVersion)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,8 +23,8 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
   const _require = guildId;
   const dependencyMap = arg1;
-  const gameServerEnabled = _require(4042).useGameServerEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
-  let obj = _require(4042);
+  const gameServerEnabled = _require(4076).useGameServerEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
+  let obj = _require(4076);
   const items = [stateFromStores];
   stateFromStores = _require(566).useStateFromStores(items, () => {
     const guild = stateFromStores.getGuild(closure_0);
@@ -36,13 +36,13 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
     return hasItem;
   });
   const obj2 = _require(566);
-  const serverThemeEnabled = _require(4061).useServerThemeEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
-  const obj3 = _require(4061);
+  const serverThemeEnabled = _require(4095).useServerThemeEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
+  const obj3 = _require(4095);
   let serverThemeUserEnabled = serverThemeEnabled;
   if (serverThemeEnabled) {
     serverThemeUserEnabled = obj4.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
   }
-  obj4 = _require(4060);
+  obj4 = _require(4094);
   const items1 = [serverThemeUserEnabled, stateFromStores];
   const stateFromStores1 = _require(566).useStateFromStores(items1, () => serverThemeUserEnabled.can(outer1_8.MANAGE_GUILD, stateFromStores.getGuild(closure_0)));
   const items2 = [arg1, gameServerEnabled, stateFromStores, serverThemeUserEnabled, guildId, stateFromStores1];

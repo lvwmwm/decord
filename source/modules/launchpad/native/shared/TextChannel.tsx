@@ -1,9 +1,9 @@
-// Module ID: 15737
-// Function ID: 121367
-// Dependencies: [31, 27, 5040, 1922, 1348, 1277, 4327, 33, 4131, 15729, 689, 14931, 5996, 566, 4321, 9065, 14268, 7668, 4550, 15738, 4575, 11171, 10220, 3809, 15740, 7952, 15124, 15730, 4661, 15741, 15742, 15733, 15736, 2]
+// Module ID: 15776
+// Function ID: 121523
+// Dependencies: [31, 27, 5074, 1922, 1348, 1277, 4361, 33, 4165, 15768, 689, 14975, 6030, 566, 4355, 9109, 14312, 7704, 4584, 15777, 4609, 11209, 10260, 3843, 15779, 7989, 15164, 15769, 4695, 15780, 15781, 15772, 15775, 2]
 
-// Module 15737
-import importAllResult from "module_15733";
+// Module 15776
+import importAllResult from "module_15772";
 import { View } from "items";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ const require = arg1;
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 let closure_12 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { flex: 1, borderRadius: importDefault(15729)().container.borderRadius, marginBottom: 1 };
+  obj = { flex: 1, borderRadius: importDefault(15768)().container.borderRadius, marginBottom: 1 };
   obj.pressable = obj;
   obj = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_MUTED, borderRadius: importDefault(689).radii.md };
   obj.selectedBorder = obj;
@@ -53,23 +53,23 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
   let arr4;
   let dependencyMap;
   const isForumLikeChannelResult = channel.isForumLikeChannel();
-  let obj = channel(14931);
+  let obj = channel(14975);
   const channelUnreadBadgeState = obj.useChannelUnreadBadgeState(channel, flag);
   ({ newChannel, unread, resolvedUnreadSetting, mentionCount } = channelUnreadBadgeState);
   ({ optInEnabled, isMentionLowImportance } = channelUnreadBadgeState);
   const tmp3 = callback2(flag, unread);
-  let obj1 = channel(5996);
+  let obj1 = channel(6030);
   let obj2 = channel(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj2.useStateFromStores(items, () => outer1_5.getNewThreadCount(channel.guild_id, channel.id));
   let obj3 = channel(566);
   const items1 = [closure_7];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => outer1_7.getChannel(channel.parent_id));
-  const tmp6 = arr4(4321)(stateFromStores1);
+  const tmp6 = arr4(4355)(stateFromStores1);
   if (null != tmp6) {
     const tmp7 = tmp6;
   }
-  let obj4 = channel(9065);
+  let obj4 = channel(9109);
   const unreadThreadsCountForParent = obj4.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   obj = {};
   let tmp10 = unread;
@@ -77,26 +77,26 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     tmp10 = !flag;
   }
   obj.unread = tmp10;
-  const tmp9Result = arr4(14268)(channel, obj);
-  let obj6 = channel(7668);
+  const tmp9Result = arr4(14312)(channel, obj);
+  let obj6 = channel(7704);
   const isChannelSpoilerGated = obj6.useIsChannelSpoilerGated(channel);
-  let obj7 = channel(4550);
+  let obj7 = channel(4584);
   const fontScale = obj7.useFontScale();
   let obj8 = channel(566);
   const items2 = [closure_6];
   const stateFromStores2 = obj8.useStateFromStores(items2, () => outer1_6.locale);
-  const tmp15 = arr4(15738)();
-  const tmp9 = arr4(14268);
-  ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(4575)(channel.id));
-  arr4 = arr4(11171)(channel);
+  const tmp15 = arr4(15777)();
+  const tmp9 = arr4(14312);
+  ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(4609)(channel.id));
+  arr4 = arr4(11209)(channel);
   if (null != tmp9Result) {
     if (!isChannelSpoilerGated) {
-      obj = { channel, message: tmp9Result, color: "text-muted", muted: flag, layout: channel(3809).ChannelListLayoutTypes.COMPACT };
-      let result = callback(channel(10220).ChannelRowPreview, obj);
+      obj = { channel, message: tmp9Result, color: "text-muted", muted: flag, layout: channel(3843).ChannelListLayoutTypes.COMPACT };
+      let result = callback(channel(10260).ChannelRowPreview, obj);
     }
     dependencyMap = tmp24;
     const items3 = [arr4.length > 0, arr4];
-    const isActivitiesInTextEnabled = channel(7952).useIsActivitiesInTextEnabled(channel.id);
+    const isActivitiesInTextEnabled = channel(7989).useIsActivitiesInTextEnabled(channel.id);
     const memo = importAllResult.useMemo(() => {
       let tmp = null;
       if (_undefined) {
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
       }
       return tmp;
     }, items3);
-    const obj13 = channel(7952);
+    const obj13 = channel(7989);
     obj1 = {};
     const items4 = [tmp3.pressable, ];
     let rowSelected;
@@ -117,23 +117,23 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     obj1.underlayColor = tmp15;
     obj2 = { color: tmp15 };
     obj1.androidRippleConfig = getThemedRippleConfig(obj2);
-    const tmp28 = arr4(15730);
+    const tmp28 = arr4(15769);
     const tmp29 = closure_11;
-    const merged = Object.assign(channel(15741).useTextChannelPressEvents(channel, flag2));
-    const obj16 = channel(15741);
+    const merged = Object.assign(channel(15780).useTextChannelPressEvents(channel, flag2));
+    const obj16 = channel(15780);
     obj3 = { channel, unread, mentionCount };
-    const merged1 = Object.assign(channel(15742).getChannelAccessibilityProps(obj3));
+    const merged1 = Object.assign(channel(15781).getChannelAccessibilityProps(obj3));
     if (selected) {
       obj4 = { style: tmp3.selectedBorder, pointerEvents: "none" };
       selected = callback(View, obj4);
     }
     const items5 = [selected, ];
     const obj5 = { channel, channelCategoryName: tmp7, subtitle: result, hasActiveThreads: obj1.useHasActiveThreads(channel).hasActiveThreads };
-    const obj17 = channel(15742);
+    const obj17 = channel(15781);
     obj6 = { unread, resolvedUnreadSetting, muted: flag };
-    obj5.unreadBadge = callback(arr4(15733), obj6);
+    obj5.unreadBadge = callback(arr4(15772), obj6);
     obj7 = {};
-    const tmp42 = arr4(15742);
+    const tmp42 = arr4(15781);
     if (newChannel) {
       newChannel = optInEnabled;
     }
@@ -161,12 +161,12 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     }
     obj7.newPostCount = tmp47;
     obj7.locale = stateFromStores2;
-    obj5.mentionBadge = arr4(15736)(obj7);
+    obj5.mentionBadge = arr4(15775)(obj7);
     obj5.unread = unread;
     obj5.resolvedUnreadSetting = resolvedUnreadSetting;
     obj5.mentionCount = mentionCount;
     obj5.muted = flag;
-    obj5.channelName = arr4(4321)(channel);
+    obj5.channelName = arr4(4355)(channel);
     obj5.fontScale = fontScale;
     obj5.isSubscriptionGated = isSubscriptionGated;
     obj5.needSubscriptionToAccess = needSubscriptionToAccess;
@@ -178,11 +178,11 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     obj5.end = tmp50;
     items5[1] = tmp42(obj5);
     obj1["children"] = items5;
-    return tmp28(tmp29(channel(4661).PressableHighlight, obj1));
+    return tmp28(tmp29(channel(4695).PressableHighlight, obj1));
   }
-  const tmp16 = arr4(4575)(channel.id);
+  const tmp16 = arr4(4609)(channel.id);
   obj8 = { subtitle: channel.subtitle, muted: flag, channelId: channel.id, guildId: channel.guild_id };
-  result = channel(15740).renderChannelSubtitle(obj8);
+  result = channel(15779).renderChannelSubtitle(obj8);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/shared/TextChannel.tsx");
 

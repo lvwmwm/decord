@@ -1,10 +1,10 @@
-// Module ID: 6015
-// Function ID: 53748
+// Module ID: 6049
+// Function ID: 53867
 // Name: getForumPostReadStates
-// Dependencies: [1348, 1838, 4143, 6016, 1355, 1212, 1357, 2]
+// Dependencies: [1348, 1838, 4177, 6050, 1355, 1212, 1357, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 6015 (getForumPostReadStates)
+// Module 6049 (getForumPostReadStates)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";

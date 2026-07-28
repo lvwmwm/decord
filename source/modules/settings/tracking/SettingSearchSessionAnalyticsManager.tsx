@@ -1,9 +1,9 @@
-// Module ID: 6450
-// Function ID: 57918
+// Module ID: 6486
+// Function ID: 58007
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [6, 7, 491, 6451, 2]
+// Dependencies: [6, 7, 491, 6487, 2]
 
-// Module 6450 (SettingSearchSessionAnalyticsManager)
+// Module 6486 (SettingSearchSessionAnalyticsManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

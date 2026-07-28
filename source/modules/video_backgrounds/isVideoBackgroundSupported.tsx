@@ -1,10 +1,10 @@
-// Module ID: 8782
-// Function ID: 69582
+// Module ID: 8826
+// Function ID: 69733
 // Name: isVideoBackgroundSupported
-// Dependencies: [4178, 4192, 2]
+// Dependencies: [4212, 4226, 2]
 // Exports: default
 
-// Module 8782 (isVideoBackgroundSupported)
+// Module 8826 (isVideoBackgroundSupported)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Features } from "DesktopSources";
 

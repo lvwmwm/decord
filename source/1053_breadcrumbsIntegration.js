@@ -1,5 +1,5 @@
 // Module ID: 1053
-// Function ID: 11285
+// Function ID: 11289
 // Name: breadcrumbsIntegration
 // Dependencies: [794, 1009, 1048, 1004]
 

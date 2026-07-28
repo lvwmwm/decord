@@ -1,10 +1,10 @@
-// Module ID: 8202
-// Function ID: 65731
+// Module ID: 8240
+// Function ID: 65841
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1353, 1908, 3759, 8203, 566, 8204, 2]
+// Dependencies: [1353, 1908, 3793, 8241, 566, 8242, 2]
 // Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType
 
-// Module 8202 (_createForOfIteratorHelperLoose)
+// Module 8240 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
@@ -113,7 +113,7 @@ function getEventChannelsByType(id, channelTypeFromEntity) {
         let channel = iter2.value.channel;
         let tmp3 = require;
         let tmp4 = dependencyMap;
-        let obj2 = require(8204) /* canManageResource */;
+        let obj2 = require(8242) /* canManageResource */;
         let manageResourcePermissions = obj2.getManageResourcePermissions(channel);
         let tmp6 = manageResourcePermissions.canCreateGuildEvent || manageResourcePermissions.canManageAllEvents;
         if (channel.type === channelTypeFromEntity) {

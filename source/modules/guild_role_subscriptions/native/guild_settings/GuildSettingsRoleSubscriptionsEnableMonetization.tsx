@@ -1,10 +1,10 @@
-// Module ID: 16483
-// Function ID: 128474
+// Module ID: 16523
+// Function ID: 128635
 // Name: GuildSubscriptionEnableMonetization
-// Dependencies: [31, 1838, 33, 566, 16445, 15331, 1212, 2]
+// Dependencies: [31, 1838, 33, 566, 16485, 15371, 1212, 2]
 // Exports: default
 
-// Module 16483 (GuildSubscriptionEnableMonetization)
+// Module 16523 (GuildSubscriptionEnableMonetization)
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { jsx } from "jsxProd";
@@ -17,15 +17,15 @@ export default function GuildSubscriptionEnableMonetization(guildId) {
   let obj = guildId(566);
   const items = [_createForOfIteratorHelperLoose];
   if (null == obj.useStateFromStores(items, () => outer1_3.getGuild(guildId))) {
-    let tmp4 = jsx(importDefault(16445), {});
+    let tmp4 = jsx(importDefault(16485), {});
   } else {
     obj = { brightTitle: true };
     const intl = guildId(1212).intl;
     obj.title = intl.string(guildId(1212).t.KeeWp0);
     const intl2 = guildId(1212).intl;
     obj.description = intl2.string(guildId(1212).t["tJLG+L"]);
-    tmp4 = jsx(importDefault(15331), { brightTitle: true });
-    const tmp8 = importDefault(15331);
+    tmp4 = jsx(importDefault(15371), { brightTitle: true });
+    const tmp8 = importDefault(15371);
   }
   return tmp4;
 };

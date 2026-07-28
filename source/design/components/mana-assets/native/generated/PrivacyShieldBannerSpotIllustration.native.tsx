@@ -1,10 +1,10 @@
-// Module ID: 7340
-// Function ID: 60246
+// Module ID: 7376
+// Function ID: 60335
 // Name: PrivacyShieldBannerSpotIllustration
-// Dependencies: [33, 5085, 7341, 2]
+// Dependencies: [33, 5119, 7377, 2]
 // Exports: PrivacyShieldBannerSpotIllustration
 
-// Module 7340 (PrivacyShieldBannerSpotIllustration)
+// Module 7376 (PrivacyShieldBannerSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldBannerSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const PrivacyShieldBannerSpotIllustration = function PrivacyShieldBannerS
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7341) };
+  obj = { uri: importDefault(7377) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const PrivacyShieldBannerSpotIllustration = function PrivacyShieldBannerS
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

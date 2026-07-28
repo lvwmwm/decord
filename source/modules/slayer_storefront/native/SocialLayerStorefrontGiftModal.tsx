@@ -1,10 +1,10 @@
-// Module ID: 9704
-// Function ID: 75607
+// Module ID: 9744
+// Function ID: 75736
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [31, 4176, 653, 33, 566, 5462, 5482, 477, 6445, 4560, 675, 9692, 3790, 8704, 1212, 8696, 6608, 8705, 9705, 9706, 2]
+// Dependencies: [31, 4210, 653, 33, 566, 5497, 5517, 477, 6481, 4594, 675, 9732, 3824, 8748, 1212, 8740, 6644, 8749, 9745, 9746, 2]
 // Exports: default
 
-// Module 9704 (SocialLayerStorefrontGiftModal)
+// Module 9744 (SocialLayerStorefrontGiftModal)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

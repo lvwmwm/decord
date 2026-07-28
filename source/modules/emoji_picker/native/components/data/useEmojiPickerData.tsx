@@ -1,10 +1,10 @@
-// Module ID: 9311
-// Function ID: 72849
+// Module ID: 9355
+// Function ID: 73000
 // Name: useEmojiPickerData
-// Dependencies: [31, 4992, 4996, 9271, 566, 9312, 9313, 9314, 9316, 2]
+// Dependencies: [31, 5026, 5030, 9315, 566, 9356, 9357, 9358, 9360, 2]
 // Exports: default
 
-// Module 9311 (useEmojiPickerData)
+// Module 9355 (useEmojiPickerData)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { LoadState } from "_isNativeReflectConstruct";

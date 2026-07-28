@@ -1,9 +1,9 @@
-// Module ID: 3922
-// Function ID: 32398
+// Module ID: 3956
+// Function ID: 32500
 // Name: CheckpointIntroRive
-// Dependencies: [29, 31, 33, 3860, 3923, 3911, 2]
+// Dependencies: [29, 31, 33, 3894, 3957, 3945, 2]
 
-// Module 3922 (CheckpointIntroRive)
+// Module 3956 (CheckpointIntroRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -19,8 +19,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3860) /* useObservedValue */;
+    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3894) /* useObservedValue */;
     let Subtitle;
     if (null != dataBinding) {
       Subtitle = dataBinding.Subtitle;
@@ -29,8 +29,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Subtitle1 = onDataBindingChange.Subtitle;
     }
-    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
-    const obj2 = require(3860) /* useObservedValue */;
+    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
+    const obj2 = require(3894) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
       prop = dataBinding["StartButton Pressed"];
@@ -39,8 +39,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop1 = onDataBindingChange["StartButton Pressed"];
     }
-    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
-    const obj3 = require(3860) /* useObservedValue */;
+    const booleanBinding1 = require(3894) /* useObservedValue */.useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
+    const obj3 = require(3894) /* useObservedValue */;
     let StartButton;
     if (null != dataBinding) {
       StartButton = dataBinding.StartButton;
@@ -49,7 +49,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       StartButton1 = onDataBindingChange.StartButton;
     }
-    const stringBinding1 = require(3860) /* useObservedValue */.useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
+    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
     return null;
   },
   "Start Button": function StartButtonBindings(reducedMotionEnabled) {
@@ -58,8 +58,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3860) /* useObservedValue */;
+    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3894) /* useObservedValue */;
     let Subtitle;
     if (null != dataBinding) {
       Subtitle = dataBinding.Subtitle;
@@ -68,8 +68,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Subtitle1 = onDataBindingChange.Subtitle;
     }
-    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
-    const obj2 = require(3860) /* useObservedValue */;
+    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
+    const obj2 = require(3894) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
       prop = dataBinding["StartButton Pressed"];
@@ -78,8 +78,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop1 = onDataBindingChange["StartButton Pressed"];
     }
-    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
-    const obj3 = require(3860) /* useObservedValue */;
+    const booleanBinding1 = require(3894) /* useObservedValue */.useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
+    const obj3 = require(3894) /* useObservedValue */;
     let StartButton;
     if (null != dataBinding) {
       StartButton = dataBinding.StartButton;
@@ -88,7 +88,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       StartButton1 = onDataBindingChange.StartButton;
     }
-    const stringBinding1 = require(3860) /* useObservedValue */.useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
+    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
     return null;
   }
 };
@@ -128,7 +128,7 @@ const forwardRefResult = importAllResult.forwardRef(function CheckpointIntroRive
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointIntroRive.tsx");
 

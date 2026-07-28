@@ -1,10 +1,10 @@
-// Module ID: 12949
-// Function ID: 100505
+// Module ID: 12993
+// Function ID: 100678
 // Name: _createTwoWayLink
-// Dependencies: [5, 31, 12948, 4939, 8875, 44, 4940, 8888, 2]
+// Dependencies: [5, 31, 12992, 4973, 8919, 44, 4974, 8932, 2]
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 12949 (_createTwoWayLink)
+// Module 12993 (_createTwoWayLink)
 import invariant from "invariant";
 import result from "result";
 

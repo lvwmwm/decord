@@ -1,10 +1,10 @@
-// Module ID: 12574
-// Function ID: 97361
+// Module ID: 12617
+// Function ID: 97531
 // Name: PerkText
-// Dependencies: [31, 27, 4018, 33, 4131, 689, 666, 4127, 12575, 11517, 11542, 1212, 2231, 12576, 2]
+// Dependencies: [31, 27, 4052, 33, 4165, 689, 666, 4161, 12618, 11556, 11581, 1212, 2231, 12619, 2]
 // Exports: default
 
-// Module 12574 (PerkText)
+// Module 12617 (PerkText)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 const require = arg1;
 function PerkText(powerup) {
   const obj = { color: "text-overlay-light", variant: "text-sm/semibold", children: powerup.powerup.title };
-  return jsx(require(4127) /* Text */.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: powerup.powerup.title });
+  return jsx(require(4161) /* Text */.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: powerup.powerup.title });
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_12 };
@@ -33,7 +33,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function GuildPowerupsMarketingHeader(guild) {
   guild = guild.guild;
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(12575)(guild.id);
+  const arr = importDefault(12618)(guild.id);
   const items = [guild.id];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guild.id)) {
@@ -41,7 +41,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj = guild(outer1_2[9]);
     }
   }, items);
-  if (importDefault(11542)(guild.id)) {
+  if (importDefault(11581)(guild.id)) {
     let length;
     if (null != arr) {
       length = arr.length;
@@ -59,7 +59,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str3 = "";
         if (0 !== arr.length) {
-          let first = importDefault(12576)(arr);
+          let first = importDefault(12619)(arr);
           if (1 === first.length) {
             const obj1 = {};
             first = first[0];
@@ -78,7 +78,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       }
       obj.perks = str3;
       obj.children = intl.format(importDefault(2231)["7lwpzR"], obj);
-      obj.children = jsx(guild(4127).Text, {});
+      obj.children = jsx(guild(4161).Text, {});
       return <View />;
     }
   }

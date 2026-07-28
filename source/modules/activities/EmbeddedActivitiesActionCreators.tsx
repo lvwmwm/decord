@@ -1,10 +1,10 @@
-// Module ID: 5668
-// Function ID: 48496
+// Module ID: 5678
+// Function ID: 48352
 // Name: _runPrimaryAppCommandOrJoinEmbeddedActivity
-// Dependencies: [5, 5669, 4168, 4144, 4311, 4154, 1194, 1348, 1838, 3759, 1850, 4147, 1347, 4156, 5660, 653, 4157, 1345, 5969, 10443, 5987, 10571, 10576, 10575, 10586, 686, 10896, 10578, 4031, 4357, 5664, 7952, 11233, 1882, 11143, 10585, 7957, 675, 10582, 11075, 10580, 4471, 1212, 10402, 10592, 480, 4943, 3749, 10449, 4324, 507, 1327, 6636, 5685, 4141, 5914, 1336, 1334, 2]
+// Dependencies: [5, 5679, 4202, 4178, 4345, 4188, 1194, 1348, 1838, 3793, 1850, 4181, 1347, 4190, 5670, 653, 4191, 1345, 6003, 10481, 6021, 10609, 10614, 10613, 10624, 686, 10934, 10616, 4065, 4391, 5674, 7989, 11271, 1882, 11181, 10623, 7994, 675, 10620, 11113, 10618, 4505, 1212, 10442, 10630, 480, 4977, 3783, 10487, 4358, 507, 1327, 6672, 5695, 4175, 5948, 1336, 1334, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, fetchDeveloperApplications, fetchShelf, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 5668 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
+// Module 5678 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
 import _callSuper from "_callSuper";
 import { getOrFetchApplicationCommandIndexForTarget as closure_4 } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -549,7 +549,7 @@ function stopEmbeddedActivity(showFeedback) {
   obj.instanceId = launchId;
   obj.showFeedback = flag;
   obj.dispatch(obj);
-  const embeddedActivityLocationChannelId = applicationId(3749).getEmbeddedActivityLocationChannelId(_location);
+  const embeddedActivityLocationChannelId = applicationId(3783).getEmbeddedActivityLocationChannelId(_location);
   if (null != embeddedActivityLocationChannelId) {
     selectedParticipantId = selectedParticipantId.getSelectedParticipantId(embeddedActivityLocationChannelId);
     currentUser = currentUser.getCurrentUser();
@@ -568,10 +568,10 @@ function stopEmbeddedActivity(showFeedback) {
           }
           obj.instanceId = compositeInstanceId;
           if (selectedParticipantId === obj4.getEmbeddedActivityParticipantId(obj)) {
-            const participant = importDefault(4324).selectParticipant(embeddedActivityLocationChannelId, null);
-            const obj6 = importDefault(4324);
+            const participant = importDefault(4358).selectParticipant(embeddedActivityLocationChannelId, null);
+            const obj6 = importDefault(4358);
           }
-          obj4 = applicationId(10449);
+          obj4 = applicationId(10487);
         }
       }
     }

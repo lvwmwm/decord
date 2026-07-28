@@ -1,10 +1,10 @@
-// Module ID: 16544
-// Function ID: 128893
+// Module ID: 16584
+// Function ID: 129054
 // Name: GuildSettingsRoleSubscriptionEmojisInner
-// Dependencies: [31, 1838, 33, 22, 4997, 16321, 16545, 1212, 16489, 566, 4099, 16546, 1935, 16499, 2]
+// Dependencies: [31, 1838, 33, 22, 5031, 16360, 16585, 1212, 16529, 566, 4133, 16586, 1935, 16539, 2]
 // Exports: default
 
-// Module 16544 (GuildSettingsRoleSubscriptionEmojisInner)
+// Module 16584 (GuildSettingsRoleSubscriptionEmojisInner)
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import importDefaultResult from "apply";
 const require = arg1;
 function GuildSettingsRoleSubscriptionEmojisInner(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(16489);
+  let obj = guildId(16529);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const items = [_createForOfIteratorHelperLoose];
   const stateFromStores = guildId(566).useStateFromStores(items, () => outer1_3.getGuild(guildId));
@@ -21,7 +21,7 @@ function GuildSettingsRoleSubscriptionEmojisInner(guildId) {
     return null;
   } else {
     const intl = guildId(1212).intl;
-    obj = { maxSlots: stateFromStores(16545)(stateFromStores) };
+    obj = { maxSlots: stateFromStores(16585)(stateFromStores) };
     obj = { guild: stateFromStores };
     obj.headerDescription = intl.formatToPlainString(guildId(1212).t.H9Jxp6, obj);
     obj.computeEmojiItems = closure_5;
@@ -55,7 +55,7 @@ function GuildSettingsRoleSubscriptionEmojisInner(guildId) {
       return rejectResult;
     };
     obj.disabled = roleSubscriptionSettingsDisabled;
-    return jsx(guildId(16321).ManageEmojisModal, { guild: stateFromStores });
+    return jsx(guildId(16360).ManageEmojisModal, { guild: stateFromStores });
   }
   const obj2 = guildId(566);
 }
@@ -65,11 +65,11 @@ let closure_5 = require("apply").memoize((arr) => {
   if (0 === found.length) {
     return [];
   } else {
-    const mapped = found.map(_require(16321).computeEmojiItem);
+    const mapped = found.map(_require(16360).computeEmojiItem);
     const reversed = mapped.reverse();
-    const tmp4 = importDefault(16545)(arg1);
+    const tmp4 = importDefault(16585)(arg1);
     const intl = _require(1212).intl;
-    const items = [_require(16321).computeSectionItem(intl.string(_require(1212).t.sMOuuS), reversed.length, tmp4)];
+    const items = [_require(16360).computeSectionItem(intl.string(_require(1212).t.sMOuuS), reversed.length, tmp4)];
     HermesBuiltin.arraySpread(reversed, 1);
     return items;
   }
@@ -79,5 +79,5 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subs
 export default function GuildSettingsRoleSubscriptionEmojis(guildId) {
   guildId = guildId.guildId;
   const obj = { guildId, children: <GuildSettingsRoleSubscriptionEmojisInner guildId={guildId} /> };
-  return jsx(importDefault(16499), { guildId, children: <GuildSettingsRoleSubscriptionEmojisInner guildId={guildId} /> });
+  return jsx(importDefault(16539), { guildId, children: <GuildSettingsRoleSubscriptionEmojisInner guildId={guildId} /> });
 };

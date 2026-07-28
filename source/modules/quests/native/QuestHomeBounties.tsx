@@ -1,9 +1,9 @@
-// Module ID: 14027
-// Function ID: 107276
+// Module ID: 14071
+// Function ID: 107449
 // Name: EmptyState
-// Dependencies: [57, 31, 27, 5931, 4977, 1345, 33, 689, 14028, 4131, 10904, 1212, 6727, 4127, 14025, 1334, 8379, 686, 14029, 4100, 5949, 5959, 4980, 13968, 5582, 9406, 9407, 9408, 5960, 14041, 10908, 6619, 14042, 10428, 566, 14045, 2]
+// Dependencies: [57, 31, 27, 5965, 5011, 1345, 33, 689, 14072, 4165, 10942, 1212, 6763, 4161, 14069, 1334, 8417, 686, 14073, 4134, 5983, 5993, 5014, 14012, 5617, 8421, 8422, 8426, 5994, 14085, 10946, 6655, 14086, 10468, 566, 14089, 2]
 
-// Module 14027 (EmptyState)
+// Module 14071 (EmptyState)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useModalDismissGuardRefreshControl";
 import { View } from "AdUserActionType";
@@ -19,7 +19,7 @@ const require = arg1;
 function EmptyState(reason) {
   reason = reason.reason;
   const tmp = callback4();
-  let obj = require(10904) /* useTrackQuestEventWithImpression */;
+  let obj = require(10942) /* useTrackQuestEventWithImpression */;
   const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(reason);
   if (reason === constants.COMPLETED) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -34,10 +34,10 @@ function EmptyState(reason) {
     ReqPds = require(1212) /* getSystemLocale */.t.ReqPds;
   }
   obj = { style: tmp.emptyState };
-  const items = [callback2(require(6727) /* AccountAgeTier10LargeBadge */.BountiesPosterIllocon, { size: 32 }), ];
+  const items = [callback2(require(6763) /* AccountAgeTier10LargeBadge */.BountiesPosterIllocon, { size: 32 }), ];
   obj = { style: tmp.emptyStateText };
   const obj1 = { variant: "text-sm/semibold", color: "text-default", children: stringResult };
-  const items1 = [callback2(require(4127) /* Text */.Text, obj1), ];
+  const items1 = [callback2(require(4161) /* Text */.Text, obj1), ];
   const obj2 = { variant: "text-xs/medium", color: "text-muted" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl3.format(ReqPds, {
@@ -45,7 +45,7 @@ function EmptyState(reason) {
       outer1_1(outer1_2[14])();
     }
   });
-  items1[1] = callback2(require(4127) /* Text */.Text, obj2);
+  items1[1] = callback2(require(4161) /* Text */.Text, obj2);
   obj.children = items1;
   items[1] = callback3(View, obj);
   obj.children = items;
@@ -308,7 +308,7 @@ function QuestHomeBountiesCarousel(bounties) {
         return callback(ref(first[8]), { bounty: item, index, isActive: index === outer1_4, isModalVisible: outer1_6, onPress: outer1_17 });
       }
     };
-    return closure_9(bounties(first[30]).QuestContentImpressionTrackerNative, obj, item.id);
+    return closure_9(bounties(first[30]).BillableAdPlacementImpressionTrackerNative, obj, item.id);
   }, items6);
   const items8 = [isInView, first1, first2];
   const callback9 = first1.useCallback((arg0) => {
@@ -365,7 +365,7 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   if (showOrbShopPlaceholderCarousel === undefined) {
     showOrbShopPlaceholderCarousel = false;
   }
-  let obj = require(10428) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10468) /* _createForOfIteratorHelperLoose */;
   const questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
   const tmp = callback4();
   (function useBountiesNux(arg0) {
@@ -417,19 +417,19 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
     tmp5 = obtainableOrbRewards > 0;
   }
   if (tmp5) {
-    tmp5 = orbShopProducts.length >= require(14029) /* _createForOfIteratorHelperLoose */.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-    const tmp8 = orbShopProducts.length >= require(14029) /* _createForOfIteratorHelperLoose */.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    tmp5 = orbShopProducts.length >= require(14073) /* _createForOfIteratorHelperLoose */.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    const tmp8 = orbShopProducts.length >= require(14073) /* _createForOfIteratorHelperLoose */.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
   }
   if (!tmp3) {
     if (!stateFromStores) {
       if (verticalScrollEnabled) {
         obj = { style: tmp.container };
         obj = { bounties: questHomeBounties };
-        let items1 = [callback2(importDefault(14045), obj), ];
+        let items1 = [callback2(importDefault(14089), obj), ];
         let tmp17 = null;
         if (tmp5) {
           obj1 = { orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel };
-          tmp17 = callback2(importDefault(14042), obj1);
+          tmp17 = callback2(importDefault(14086), obj1);
         }
         items1[1] = tmp17;
         obj.children = items1;
@@ -450,8 +450,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
       tmp3 = stateFromStores;
     }
     obj4.isEmptyOrCompleted = tmp3;
-    let tmp23Result = tmp23(importDefault(14045), obj4);
-    const tmp28 = importDefault(14045);
+    let tmp23Result = tmp23(importDefault(14089), obj4);
+    const tmp28 = importDefault(14089);
   } else {
     const obj5 = { reason: tmp3 ? closure_7.EMPTY : closure_7.COMPLETED };
     tmp23Result = tmp23(EmptyState, obj5);

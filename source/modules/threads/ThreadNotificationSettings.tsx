@@ -1,10 +1,10 @@
-// Module ID: 10191
-// Function ID: 78848
+// Module ID: 10231
+// Function ID: 78977
 // Name: computeThreadNotificationSetting
-// Dependencies: [1348, 4326, 3761, 1211, 653, 1360, 566, 2]
+// Dependencies: [1348, 4360, 3795, 1211, 653, 1360, 566, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10191 (computeThreadNotificationSetting)
+// Module 10231 (computeThreadNotificationSetting)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

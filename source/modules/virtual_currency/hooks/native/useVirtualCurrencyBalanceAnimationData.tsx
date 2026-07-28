@@ -1,10 +1,10 @@
-// Module ID: 9744
-// Function ID: 75866
+// Module ID: 9784
+// Function ID: 75995
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [57, 31, 4123, 566, 8063, 2]
+// Dependencies: [57, 31, 4157, 566, 8101, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 9744 (useVirtualCurrencyBalanceAnimationData)
+// Module 9784 (useVirtualCurrencyBalanceAnimationData)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

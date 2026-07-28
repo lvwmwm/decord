@@ -1,10 +1,10 @@
-// Module ID: 8324
-// Function ID: 66833
+// Module ID: 8362
+// Function ID: 66943
 // Name: useDisplayNameStylesEffectDefaultColors
-// Dependencies: [31, 1862, 665, 3835, 689, 1863, 2]
+// Dependencies: [31, 1862, 665, 3869, 689, 1863, 2]
 // Exports: default
 
-// Module 8324 (useDisplayNameStylesEffectDefaultColors)
+// Module 8362 (useDisplayNameStylesEffectDefaultColors)
 import result from "result";
 import items3 from "items3";
 
@@ -17,7 +17,7 @@ const result = require("pad2").fileFinishedImporting("modules/display_name_style
 
 export default function useDisplayNameStylesEffectDefaultColors() {
   let obj = require(665) /* pad2 */;
-  const hex2intResult = obj.hex2int(require(3835) /* map */.useToken(importDefault(689).colors.TEXT_DEFAULT));
+  const hex2intResult = obj.hex2int(require(3869) /* map */.useToken(importDefault(689).colors.TEXT_DEFAULT));
   require = hex2intResult;
   let items = [hex2intResult];
   return React.useMemo(() => {

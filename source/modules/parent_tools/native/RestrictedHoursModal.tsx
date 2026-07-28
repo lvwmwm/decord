@@ -1,10 +1,10 @@
-// Module ID: 16039
-// Function ID: 123868
+// Module ID: 16078
+// Function ID: 124024
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 5584, 1557, 16040, 566, 3992, 4132, 1212, 2199, 6725, 16041, 3843, 4127, 5517, 16042, 5588, 16038, 4541, 11060, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4165, 689, 5619, 1557, 16079, 566, 4026, 4166, 1212, 2199, 6761, 16080, 3877, 4161, 5552, 16081, 5623, 16077, 4575, 11098, 2]
 // Exports: default
 
-// Module 16039 (RestrictedHoursLogoutBlockingLayer)
+// Module 16078 (RestrictedHoursLogoutBlockingLayer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function RestrictedHoursLogoutBlockingLayer(visible) {
   if (visible.visible) {
     let obj = { style: tmp.logoutBlockingLayer, pointerEvents: "auto", accessibilityLiveRegion: "polite" };
     obj = { size: "large" };
-    obj.children = callback2(require(5584) /* ActivityIndicator */.ActivityIndicator, obj);
+    obj.children = callback2(require(5619) /* ActivityIndicator */.ActivityIndicator, obj);
     tmp2 = callback2(closure_5, obj);
   }
   return tmp2;
@@ -196,7 +196,7 @@ let closure_14 = { code: "function RestrictedHoursModalTsx3(){const{contentOpaci
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {
-  const tmp = importDefault(16042)();
+  const tmp = importDefault(16081)();
   const require = tmp;
   importDefault = React.useRef(false);
   const dependencyMap = React.useRef(true);
@@ -215,15 +215,15 @@ export default function RestrictedHoursModal() {
       current = ref.current;
     }
     if (!current) {
-      const result = tmp(16038).closeRestrictedHoursModal();
-      const obj = tmp(16038);
+      const result = tmp(16077).closeRestrictedHoursModal();
+      const obj = tmp(16077);
     }
   }, items);
-  importDefault(4541)(() => true);
+  importDefault(4575)(() => true);
   const tmp4 = (function useScreens(result, arg1) {
     let closure_1 = arg1;
     const items = [result, arg1];
-    return result(5517).useNavigatorScreens(() => {
+    return result(5552).useNavigatorScreens(() => {
       const obj = {
         headerShown: false,
         gestureEnabled: false,
@@ -237,21 +237,21 @@ export default function RestrictedHoursModal() {
     if (!ref.current) {
       ref.current = true;
       callback(true);
-      const obj = ref(5588);
-      ref(5588).logout("restricted_hours").finally(() => {
+      const obj = ref(5623);
+      ref(5623).logout("restricted_hours").finally(() => {
         if (outer1_2.current) {
           outer1_1.current = false;
           outer1_3(false);
         }
       });
-      const logoutResult = ref(5588).logout("restricted_hours");
+      const logoutResult = ref(5623).logout("restricted_hours");
     }
   }, []), tmp3[0]);
-  return callback2(require(11060) /* Modal */.Modal, {
+  return callback2(require(11098) /* Modal */.Modal, {
     screens: (function useScreens(result, arg1) {
       let closure_1 = arg1;
       const items = [result, arg1];
-      return result(5517).useNavigatorScreens(() => {
+      return result(5552).useNavigatorScreens(() => {
         const obj = {
           headerShown: false,
           gestureEnabled: false,
@@ -265,14 +265,14 @@ export default function RestrictedHoursModal() {
       if (!ref.current) {
         ref.current = true;
         callback(true);
-        const obj = ref(5588);
-        ref(5588).logout("restricted_hours").finally(() => {
+        const obj = ref(5623);
+        ref(5623).logout("restricted_hours").finally(() => {
           if (outer1_2.current) {
             outer1_1.current = false;
             outer1_3(false);
           }
         });
-        const logoutResult = ref(5588).logout("restricted_hours");
+        const logoutResult = ref(5623).logout("restricted_hours");
       }
     }, []), tmp3[0]),
     initialRouteName: constants.MAIN

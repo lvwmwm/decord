@@ -1,10 +1,10 @@
-// Module ID: 4576
-// Function ID: 40131
+// Module ID: 4610
+// Function ID: 40246
 // Name: isChannelTypeMentionable
 // Dependencies: [1352, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 4576 (isChannelTypeMentionable)
+// Module 4610 (isChannelTypeMentionable)
 import _callSuper from "_callSuper";
 
 ({ isGuildSelectableChannelType: closure_0, isGuildVocalChannelType: closure_1 } = _callSuper);

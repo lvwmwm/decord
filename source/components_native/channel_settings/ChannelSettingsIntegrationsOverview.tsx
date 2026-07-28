@@ -1,10 +1,10 @@
-// Module ID: 15591
-// Function ID: 120191
+// Module ID: 15630
+// Function ID: 120347
 // Name: LinkedLobbyFormSection
-// Dependencies: [31, 1348, 653, 33, 1456, 5468, 5501, 1212, 5164, 1273, 1392, 4131, 689, 566, 7575, 4542, 15488, 15592, 2]
+// Dependencies: [31, 1348, 653, 33, 1456, 5503, 5536, 1212, 5198, 1273, 1392, 4165, 689, 566, 7611, 4576, 15527, 15631, 2]
 // Exports: default
 
-// Module 15591 (LinkedLobbyFormSection)
+// Module 15630 (LinkedLobbyFormSection)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelSettingsSections } from "ME";
@@ -18,7 +18,7 @@ function LinkedLobbyFormSection(channel) {
   channel = channel.channel;
   let obj = channel(1456);
   const importDefault = obj.useNavigation();
-  let obj1 = channel(5468);
+  let obj1 = channel(5503);
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (null != linkedLobby) {
@@ -41,8 +41,8 @@ function LinkedLobbyFormSection(channel) {
     obj.onPress = function onPress() {
 
     };
-    obj.children = callback(channel(5164).TableRow, obj);
-    tmp3 = callback(channel(5501).TableRowGroup, obj);
+    obj.children = callback(channel(5198).TableRow, obj);
+    tmp3 = callback(channel(5536).TableRowGroup, obj);
     const obj2 = {};
     const obj6 = importDefault(1392);
   }
@@ -79,25 +79,25 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj3.label = intl.string(require(1212) /* getSystemLocale */.t.jp25Id);
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj3.subLabel = intl2.string(require(1212) /* getSystemLocale */.t.mKIOkI);
-      obj3.icon = callback(require(15488) /* WebhookIcon */.WebhookIcon, {});
+      obj3.icon = callback(require(15527) /* WebhookIcon */.WebhookIcon, {});
       obj3.arrow = true;
       obj3.onPress = function onPress() {
         return arr.push(outer1_4.WEBHOOKS);
       };
-      const items1 = [callback(require(5164) /* TableRowInner */.TableRow, obj3), ];
+      const items1 = [callback(require(5198) /* TableRowInner */.TableRow, obj3), ];
       const obj4 = {};
       const intl3 = require(1212) /* getSystemLocale */.intl;
       obj4.label = intl3.string(require(1212) /* getSystemLocale */.t.OrV60r);
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj4.subLabel = intl4.string(require(1212) /* getSystemLocale */.t.rQREJl);
-      obj4.icon = callback(require(15592) /* ChannelsFollowedIcon */.ChannelsFollowedIcon, {});
+      obj4.icon = callback(require(15631) /* ChannelsFollowedIcon */.ChannelsFollowedIcon, {});
       obj4.arrow = true;
       obj4.onPress = function onPress() {
         return arr.push(outer1_4.CHANNELS_FOLLOWED);
       };
-      items1[1] = callback(require(5164) /* TableRowInner */.TableRow, obj4);
+      items1[1] = callback(require(5198) /* TableRowInner */.TableRow, obj4);
       obj2.children = items1;
-      canManageWebhooks = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj2);
+      canManageWebhooks = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj2);
     }
     const items2 = [canManageWebhooks, ];
     if (canUnlinkLobby) {
@@ -109,8 +109,8 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
     }
     items2[1] = canUnlinkLobby;
     obj.children = items2;
-    obj.children = callback2(require(4542) /* Stack */.Stack, obj);
-    tmp4Result = callback(require(7575) /* Form */.Form, obj);
+    obj.children = callback2(require(4576) /* Stack */.Stack, obj);
+    tmp4Result = callback(require(7611) /* Form */.Form, obj);
     const tmp4 = callback;
     const tmp7 = callback2;
   }

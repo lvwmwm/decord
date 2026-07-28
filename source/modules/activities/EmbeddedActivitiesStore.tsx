@@ -1,7 +1,7 @@
 // Module ID: 1347
-// Function ID: 15837
+// Function ID: 15841
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 15, 17, 18, 6, 7, 1194, 1348, 1907, 1850, 4156, 5660, 653, 10452, 10453, 3749, 5661, 13056, 1207, 10545, 686, 10402, 7956, 477, 1882, 5676, 566, 2]
+// Dependencies: [57, 15, 17, 18, 6, 7, 1194, 1348, 1907, 1850, 4190, 5670, 653, 10490, 10491, 3783, 5671, 13100, 1207, 10583, 686, 10442, 7993, 477, 1882, 5686, 566, 2]
 
 // Module 1347 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
@@ -141,9 +141,9 @@ function updateEmbeddedActivities(instance) {
   participants = instance.participants;
   const applicationId = obj.applicationId;
   ({ launchId, compositeInstanceId, location: _location, participants } = obj);
-  let tmp = importDefault(5661)(applicationId);
+  let tmp = importDefault(5671)(applicationId);
   if (null != tmp) {
-    let embeddedActivityLocationChannelId = applicationId(3749).getEmbeddedActivityLocationChannelId(_location);
+    let embeddedActivityLocationChannelId = applicationId(3783).getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {
       let value = map2.get(embeddedActivityLocationChannelId);
       let items;
@@ -167,7 +167,7 @@ function updateEmbeddedActivities(instance) {
     if (null != found1) {
       const sessionId = found1.sessionId;
     }
-    const obj14 = applicationId(3749);
+    const obj14 = applicationId(3783);
     const value1 = map.get(applicationId);
     let tmp15 = null;
     if (null != embeddedActivityLocationChannelId) {
@@ -235,15 +235,15 @@ function updateEmbeddedActivities(instance) {
             }
             getOrCreateBucket(map3, _location.id).upsert(applicationId, _location.id, tmp44);
             const obj9 = getOrCreateBucket(map3, _location.id);
-            const embeddedActivityLocationChannelId1 = applicationId(3749).getEmbeddedActivityLocationChannelId(_location);
+            const embeddedActivityLocationChannelId1 = applicationId(3783).getEmbeddedActivityLocationChannelId(_location);
             if (null != embeddedActivityLocationChannelId1) {
               getOrCreateBucket(map2, embeddedActivityLocationChannelId1).upsert(applicationId, _location.id, tmp44);
               const obj11 = getOrCreateBucket(map2, embeddedActivityLocationChannelId1);
-              const obj12 = applicationId(3749);
-              getOrCreateBucket(map1, getNormalizedGuildId(applicationId(3749).getEmbeddedActivityLocationGuildId(_location))).upsert(applicationId, _location.id, tmp44);
-              const obj13 = getOrCreateBucket(map1, getNormalizedGuildId(applicationId(3749).getEmbeddedActivityLocationGuildId(_location)));
+              const obj12 = applicationId(3783);
+              getOrCreateBucket(map1, getNormalizedGuildId(applicationId(3783).getEmbeddedActivityLocationGuildId(_location))).upsert(applicationId, _location.id, tmp44);
+              const obj13 = getOrCreateBucket(map1, getNormalizedGuildId(applicationId(3783).getEmbeddedActivityLocationGuildId(_location)));
             }
-            const obj10 = applicationId(3749);
+            const obj10 = applicationId(3783);
           } else {
             const _Array = Array;
             const arr = Array.from(value1.userIds);
@@ -1041,7 +1041,7 @@ obj = {
     let launchParams;
     ({ componentId, commandOrigin, launchParams, inviterUserId } = channelId);
     const result = map4.set(getLaunchStatesKey(channelId.channelId, channelId.applicationId), { isLaunching: true, componentId, inviterUserId, launchParams });
-    if (commandOrigin === require(5676) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON) {
+    if (commandOrigin === require(5686) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON) {
       let RESIZABLE = FocusedActivityLayouts.NO_CHAT;
     } else {
       RESIZABLE = FocusedActivityLayouts.RESIZABLE;
@@ -1248,7 +1248,7 @@ obj = {
   },
   CHANNEL_SELECT: function handleChannelSelect(arg0) {
     if (null != c34) {
-      const embeddedActivityLocationChannelId = require(3749) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(c34);
+      const embeddedActivityLocationChannelId = require(3783) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(c34);
       let tmp6 = null != embeddedActivityLocationChannelId && embeddedActivityLocationChannelId !== tmp;
       if (tmp6) {
         tmp6 = PIP === ActivityPanelModes.PANEL;
@@ -1256,7 +1256,7 @@ obj = {
       if (tmp6) {
         PIP = ActivityPanelModes.PIP;
       }
-      const obj = require(3749) /* getEmbeddedActivityLocationChannelId */;
+      const obj = require(3783) /* getEmbeddedActivityLocationChannelId */;
     }
   },
   POPOUT_WINDOW_CLOSE: function handlePopoutWindowClose(key) {

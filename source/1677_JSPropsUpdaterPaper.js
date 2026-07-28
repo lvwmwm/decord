@@ -1,5 +1,5 @@
 // Module ID: 1677
-// Function ID: 18588
+// Function ID: 18592
 // Name: JSPropsUpdaterPaper
 // Dependencies: [6, 7, 27, 1585, 1589]
 

@@ -1,9 +1,9 @@
-// Module ID: 4680
-// Function ID: 40781
+// Module ID: 4714
+// Function ID: 40896
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 6, 7, 4681, 4345, 653, 675, 4682, 1212, 2]
+// Dependencies: [5, 6, 7, 4715, 4379, 653, 675, 4716, 1212, 2]
 
-// Module 4680 (NativePermissionBaseUtils)
+// Module 4714 (NativePermissionBaseUtils)
 import ME from "ME";
 import expandLocation from "expandLocation";
 import NativePermissionActionCreators from "NativePermissionActionCreators";

@@ -1,19 +1,19 @@
-// Module ID: 9234
-// Function ID: 72375
+// Module ID: 9278
+// Function ID: 72526
 // Name: uid
-// Dependencies: [4339, 5450, 2]
+// Dependencies: [4373, 5485, 2]
 // Exports: UID
 
-// Module 9234 (uid)
+// Module 9278 (uid)
 function uid() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "uid_";
   }
-  return importDefault(4339)(str);
+  return importDefault(4373)(str);
 }
 function useUID() {
-  return importDefault(5450)(() => outer1_2());
+  return importDefault(5485)(() => outer1_2());
 }
 const result = require("set").fileFinishedImporting("modules/core/web/UID.tsx");
 

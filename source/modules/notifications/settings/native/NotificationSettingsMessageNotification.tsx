@@ -1,10 +1,10 @@
-// Module ID: 10258
-// Function ID: 79349
+// Module ID: 10298
+// Function ID: 79478
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [31, 27, 33, 4131, 689, 10259, 4127, 1212, 4661, 10260, 10257, 4099, 10262, 1935, 10251, 10264, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 10299, 4161, 1212, 4695, 10300, 10297, 4133, 10302, 1935, 10291, 10304, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10258 (NotificationSettingsMessageNotification)
+// Module 10298 (NotificationSettingsMessageNotification)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -101,7 +101,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
   let obj = {
     context: "guild",
     style: style.style,
-    setting: _require(10257).useGuildPresetSettings(style.guildId).notification,
+    setting: _require(10297).useGuildPresetSettings(style.guildId).notification,
     onCustomize() {
       let obj = outer1_1(outer1_2[11]);
       obj = { guildId: style.guildId };
@@ -115,7 +115,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
   let obj = {
     context: "channel",
     style: style.style,
-    setting: _require(10251).useChannelPresetSettings(style.channel).notification,
+    setting: _require(10291).useChannelPresetSettings(style.channel).notification,
     onCustomize() {
       let obj = outer1_1(outer1_2[11]);
       obj = { channel: style.channel };

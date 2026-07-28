@@ -1,10 +1,10 @@
-// Module ID: 8239
-// Function ID: 66072
+// Module ID: 8277
+// Function ID: 66182
 // Name: _toPropertyKey
-// Dependencies: [29, 57, 31, 27, 1918, 1911, 1850, 6661, 482, 33, 4131, 689, 3764, 5159, 566, 4119, 8215, 1273, 1212, 8223, 3844, 5189, 8227, 5048, 4127, 8234, 2]
+// Dependencies: [29, 57, 31, 27, 1918, 1911, 1850, 6697, 482, 33, 4165, 689, 3798, 5193, 566, 4153, 8253, 1273, 1212, 8261, 3878, 5223, 8265, 5082, 4161, 8272, 2]
 // Exports: default
 
-// Module 8239 (_toPropertyKey)
+// Module 8277 (_toPropertyKey)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -88,7 +88,7 @@ export default function AddMembersBody(pendingAdditions) {
   pendingAdditions = pendingAdditions.pendingAdditions;
   ({ setPendingAdditions: importAll, permission } = pendingAdditions);
   if (permission === undefined) {
-    permission = importAll(3764).NONE;
+    permission = importAll(3798).NONE;
   }
   ({ inputDesc, inActionSheet } = pendingAdditions);
   let dependencyMap;
@@ -121,7 +121,7 @@ export default function AddMembersBody(pendingAdditions) {
   const tmp6 = callback(str.useState(""), 2);
   str = tmp6[0];
   closure_7 = tmp6[1];
-  let obj2 = importAll(3764);
+  let obj2 = importAll(3798);
   let canEveryoneRoleResult = obj2.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
   let obj3 = guild(566);
   const items1 = [_isNativeReflectConstruct];
@@ -129,16 +129,16 @@ export default function AddMembersBody(pendingAdditions) {
   if (first) {
     let items2 = [];
   } else {
-    let obj4 = importAll(8215);
+    let obj4 = importAll(8253);
     const rolesRowsWithPermissionDisabled = obj4.getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery);
     items2 = rolesRowsWithPermissionDisabled;
     if (tmp17) {
-      let obj5 = importAll(8215);
+      let obj5 = importAll(8253);
       items2 = obj5.getNoRolesRow();
     }
     tmp17 = 0 === rolesRowsWithPermissionDisabled.length && "" === str.trim() && 1 === stateFromStores.length;
   }
-  let obj6 = importAll(8215);
+  let obj6 = importAll(8253);
   const membersRows = obj6.getMembersRows(stateFromStoresArray, channel, guild, permission, filterByQuery);
   const items3 = [];
   obj = {};
@@ -170,12 +170,12 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }, items4);
   if (inActionSheet) {
-    let BottomSheetScrollView = guild(5189).BottomSheetScrollView;
+    let BottomSheetScrollView = guild(5223).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = c8;
   }
   if (inActionSheet) {
-    let BottomSheetSectionList = guild(5189).BottomSheetSectionList;
+    let BottomSheetSectionList = guild(5223).BottomSheetSectionList;
   } else {
     BottomSheetSectionList = getQuery;
   }
@@ -200,13 +200,13 @@ export default function AddMembersBody(pendingAdditions) {
     });
   };
   obj3.autoFocus = true;
-  obj2.children = callback2(pendingAdditions(8227), obj3);
+  obj2.children = callback2(pendingAdditions(8265), obj3);
   const items5 = [callback2(closure_7, obj2), , , ];
   let tmp32 = null;
   if (null != inputDesc) {
     obj4 = { style: tmp3.inputDescContainer };
     obj5 = { style: tmp3.inputDescText, variant: "text-xs/medium", color: "text-default", children: inputDesc };
-    obj4.children = callback2(guild(4127).Text, obj5);
+    obj4.children = callback2(guild(4161).Text, obj5);
     tmp32 = callback2(closure_7, obj4);
   }
   items5[1] = tmp32;
@@ -223,7 +223,7 @@ export default function AddMembersBody(pendingAdditions) {
     if (0 === items2.length) {
       if (0 === membersRows.length) {
         const obj8 = {};
-        const obj9 = { Illustration: guild(8234).NoResultsAlt };
+        const obj9 = { Illustration: guild(8272).NoResultsAlt };
         ({ emptyState: obj20.style, emptyStateText: obj20.bodyStyle } = tmp3);
         const intl5 = guild(1212).intl;
         const obj10 = { query: str };
@@ -239,8 +239,8 @@ export default function AddMembersBody(pendingAdditions) {
   const obj11 = {};
   tmp29 = closure_18;
   tmp30 = closure_17;
-  const tmp31 = pendingAdditions(8227);
-  obj11.contentContainerStyle = { paddingHorizontal: pendingAdditions(689).space.PX_16, paddingBottom: pendingAdditions(689).space.PX_16 + pendingAdditions(5159)(obj).insets.bottom };
+  const tmp31 = pendingAdditions(8265);
+  obj11.contentContainerStyle = { paddingHorizontal: pendingAdditions(689).space.PX_16, paddingBottom: pendingAdditions(689).space.PX_16 + pendingAdditions(5193)(obj).insets.bottom };
   obj11.renderItem = function renderItem(item) {
     let index;
     let section;

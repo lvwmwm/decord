@@ -1,10 +1,10 @@
-// Module ID: 6137
-// Function ID: 55056
+// Module ID: 6171
+// Function ID: 55175
 // Name: usePremiumUpsellConfig
-// Dependencies: [31, 1850, 653, 1852, 33, 6138, 1212, 6139, 6140, 6141, 6142, 6143, 6144, 4472, 9299, 1935, 3777, 6188, 9254, 3990, 675, 4099, 9253, 2]
+// Dependencies: [31, 1850, 653, 1852, 33, 6172, 1212, 6173, 6174, 6175, 6176, 6177, 6178, 4506, 9343, 1935, 3811, 6222, 9298, 4024, 675, 4133, 9297, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 6137 (usePremiumUpsellConfig)
+// Module 6171 (usePremiumUpsellConfig)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -21,7 +21,7 @@ function usePremiumUpsellConfig(initialUpsellKey, analyticsLocations2, analytics
   const _require = initialUpsellKey;
   let closure_1 = analyticsLocations2;
   const dependencyMap = analyticsLocation;
-  let obj = _require(6188);
+  let obj = _require(6222);
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   const items = [constants.GLOBAL_EMOJI, constants.UPLOAD];
   const tmp2 = null != premiumTrialOffer && new Set(items).has(initialUpsellKey);
@@ -220,7 +220,7 @@ export default {
   usePremiumUpsellConfig
 };
 export const getUpsellItems = function getUpsellItems() {
-  let obj = { key: constants.GLOBAL_EMOJI, image: importDefault(6138) };
+  let obj = { key: constants.GLOBAL_EMOJI, image: importDefault(6172) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.activeTitle = intl.string(require(1212) /* getSystemLocale */.t.gKtr8N);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -228,7 +228,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl3.format(require(1212) /* getSystemLocale */.t.rf7Ixp, {});
   const items = [obj, , , , , ];
-  obj = { key: constants.ANIMATED_EMOJI, image: importDefault(6139) };
+  obj = { key: constants.ANIMATED_EMOJI, image: importDefault(6173) };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj.activeTitle = intl4.string(require(1212) /* getSystemLocale */.t.F6rmyq);
   const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -236,7 +236,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl6.format(require(1212) /* getSystemLocale */.t.JxTzzb, {});
   items[1] = obj;
-  obj = { key: constants.ANIMATED_AVATAR, image: importDefault(6140) };
+  obj = { key: constants.ANIMATED_AVATAR, image: importDefault(6174) };
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj.activeTitle = intl7.string(require(1212) /* getSystemLocale */.t["tQh+gF"]);
   const intl8 = require(1212) /* getSystemLocale */.intl;
@@ -244,7 +244,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl9 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl9.format(require(1212) /* getSystemLocale */.t["Tso/Fn"], {});
   items[2] = obj;
-  const obj1 = { key: constants.UPLOAD, image: importDefault(6141) };
+  const obj1 = { key: constants.UPLOAD, image: importDefault(6175) };
   const intl10 = require(1212) /* getSystemLocale */.intl;
   obj1.activeTitle = intl10.string(require(1212) /* getSystemLocale */.t["1EOZqw"]);
   const intl11 = require(1212) /* getSystemLocale */.intl;
@@ -257,7 +257,7 @@ export const getUpsellItems = function getUpsellItems() {
   obj2.maxUploadPremium = intl14.string(require(1212) /* getSystemLocale */.t.EaBfeq);
   obj1.description = intl12.format(require(1212) /* getSystemLocale */.t.DUT5IC, obj2);
   items[3] = obj1;
-  const obj3 = { key: constants.BADGE, image: importDefault(6142) };
+  const obj3 = { key: constants.BADGE, image: importDefault(6176) };
   const intl15 = require(1212) /* getSystemLocale */.intl;
   obj3.activeTitle = intl15.string(require(1212) /* getSystemLocale */.t["602BK4"]);
   const intl16 = require(1212) /* getSystemLocale */.intl;
@@ -265,7 +265,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl17 = require(1212) /* getSystemLocale */.intl;
   obj3.description = intl17.format(require(1212) /* getSystemLocale */.t["p7i+li"], {});
   items[4] = obj3;
-  const obj4 = { key: constants.APP_ICONS, image: importDefault(6143) };
+  const obj4 = { key: constants.APP_ICONS, image: importDefault(6177) };
   const intl18 = require(1212) /* getSystemLocale */.intl;
   obj4.activeTitle = intl18.string(require(1212) /* getSystemLocale */.t["1B1Cyn"]);
   const intl19 = require(1212) /* getSystemLocale */.intl;

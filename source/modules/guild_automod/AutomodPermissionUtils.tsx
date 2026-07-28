@@ -1,10 +1,10 @@
-// Module ID: 3765
-// Function ID: 28855
+// Module ID: 3799
+// Function ID: 28957
 // Name: getAutomodQuarantinedProfileFlags
-// Dependencies: [1918, 3747, 1360, 566, 2]
+// Dependencies: [1918, 3781, 1360, 566, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodReason, useCurrentUserAutomodQuaratinedProfile
 
-// Module 3765 (getAutomodQuarantinedProfileFlags)
+// Module 3799 (getAutomodQuarantinedProfileFlags)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildMemberFlags } from "GuildMemberFlags";
 

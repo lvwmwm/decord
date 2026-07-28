@@ -1,9 +1,9 @@
-// Module ID: 10813
-// Function ID: 83871
+// Module ID: 10851
+// Function ID: 83992
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 4809, 10814, 653, 1198, 10815, 6306, 2]
+// Dependencies: [6, 7, 4843, 10852, 653, 1198, 10853, 6342, 2]
 
-// Module 10813 (_createForOfIteratorHelperLoose)
+// Module 10851 (_createForOfIteratorHelperLoose)
 import convertRouteToNavigation from "convertRouteToNavigation";
 import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

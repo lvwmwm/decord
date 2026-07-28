@@ -1,5 +1,5 @@
 // Module ID: 1849
-// Function ID: 20280
+// Function ID: 20284
 // Name: setTimeout
 // Dependencies: [1847, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback

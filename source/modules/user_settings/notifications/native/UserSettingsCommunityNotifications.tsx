@@ -1,10 +1,10 @@
-// Module ID: 14414
-// Function ID: 110219
+// Module ID: 14458
+// Function ID: 110392
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [31, 10183, 33, 4131, 566, 21, 7575, 4542, 5501, 5502, 1212, 1331, 2]
+// Dependencies: [31, 10223, 33, 4165, 566, 21, 7611, 4576, 5536, 5537, 1212, 1331, 2]
 // Exports: default
 
-// Module 14414 (UserSettingsCommunityNotifications)
+// Module 14458 (UserSettingsCommunityNotifications)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -56,8 +56,8 @@ export default function UserSettingsCommunityNotifications() {
           return outer1_5(stateFromStores(outer1_2[8]).TableRowGroup, obj, arg0);
         })
     };
-    obj.children = callback(stateFromStores(4542).Stack, obj);
-    tmp3 = callback(stateFromStores(7575).Form, obj);
+    obj.children = callback(stateFromStores(4576).Stack, obj);
+    tmp3 = callback(stateFromStores(7611).Form, obj);
   }
   return tmp3;
 };

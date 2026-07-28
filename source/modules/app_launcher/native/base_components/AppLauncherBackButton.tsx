@@ -1,10 +1,10 @@
-// Module ID: 11243
-// Function ID: 87475
+// Module ID: 11281
+// Function ID: 87594
 // Name: AppLauncherBackButton
-// Dependencies: [31, 33, 1457, 6625, 5092, 5120, 1212, 2]
+// Dependencies: [31, 33, 1457, 6661, 5126, 5154, 1212, 2]
 // Exports: default
 
-// Module 11243 (AppLauncherBackButton)
+// Module 11281 (AppLauncherBackButton)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -17,9 +17,9 @@ export default function AppLauncherBackButton(onPress) {
   const canGoBackResult = navigation.canGoBack();
   obj = { size: "sm", variant: "secondary-overlay" };
   if (canGoBackResult) {
-    let tmp5 = 5092;
+    let tmp5 = 5126;
   } else {
-    tmp5 = 5120;
+    tmp5 = 5154;
   }
   obj.icon = importDefault(tmp5);
   obj.onPress = onPress.onPress;
@@ -27,6 +27,6 @@ export default function AppLauncherBackButton(onPress) {
   const t = require(1212) /* getSystemLocale */.t;
   obj.accessibilityLabel = intl.string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq);
   obj.maxFontSizeMultiplier = 1.5;
-  return jsx(require(6625) /* IconButton */.IconButton, { size: "sm", variant: "secondary-overlay" });
+  return jsx(require(6661) /* IconButton */.IconButton, { size: "sm", variant: "secondary-overlay" });
 };
 export const BACK_BUTTON_SIZE = 32;

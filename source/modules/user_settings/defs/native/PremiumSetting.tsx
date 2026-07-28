@@ -1,9 +1,9 @@
-// Module ID: 13946
-// Function ID: 106695
+// Module ID: 13990
+// Function ID: 106868
 // Name: route
-// Dependencies: [31, 1850, 3783, 653, 33, 12379, 3777, 1212, 6234, 6299, 13947, 10059, 6570, 13949, 2]
+// Dependencies: [31, 1850, 3817, 653, 33, 12422, 3811, 1212, 6270, 6335, 13991, 10099, 6606, 13993, 2]
 
-// Module 13946 (route)
+// Module 13990 (route)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -13,10 +13,10 @@ import createToggle from "createToggle";
 const require = arg1;
 createToggle = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = require(12379) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const obj = require(12379) /* apexExperiment */;
+    const mobileNitroManageSubscriptionsSettingsExperiment = require(12422) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const obj = require(12422) /* apexExperiment */;
     currentUser = currentUser.getCurrentUser();
-    const result = require(3777) /* _createForOfIteratorHelperLoose */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
+    const result = require(3811) /* _createForOfIteratorHelperLoose */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
     const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
     if (result) {
@@ -42,14 +42,14 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(13947), {});
+    return jsx(importDefault(13991), {});
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(13949) /* PremiumScreen */.default;
+    return require(13993) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 10192
-// Function ID: 78852
+// Module ID: 10232
+// Function ID: 78981
 // Name: getFocusedChannelId
-// Dependencies: [57, 31, 4144, 10193, 4343, 3984, 3982, 3983, 3985, 2]
+// Dependencies: [57, 31, 4178, 10233, 4377, 4018, 4016, 4017, 4019, 2]
 // Exports: isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10192 (getFocusedChannelId)
+// Module 10232 (getFocusedChannelId)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -14,19 +14,19 @@ import withEqualityFn from "withEqualityFn";
 
 const require = arg1;
 function getFocusedChannelId() {
-  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
-  const obj = require(3983) /* getRootNavigationRef */;
-  const isChatLockedOpen = require(3985) /* useChatLayout */.getChatLayout().isChatLockedOpen;
+  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+  const obj = require(4017) /* getRootNavigationRef */;
+  const isChatLockedOpen = require(4019) /* useChatLayout */.getChatLayout().isChatLockedOpen;
   let tmp2 = null;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const currentRoute = rootNavigationRef.getCurrentRoute();
-      const coerceChannelRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
+      const coerceChannelRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
       if (tmp2 != coerceChannelRouteResult) {
         return coerceChannelRouteResult.params.channelId;
       } else {
         if (isChatLockedOpen) {
-          const coerceGuildsRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
+          const coerceGuildsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
           if (tmp2 != coerceGuildsRouteResult) {
             const params = coerceGuildsRouteResult.params;
             let channelId;
@@ -35,19 +35,19 @@ function getFocusedChannelId() {
             }
             return channelId;
           }
-          const obj5 = require(3982) /* _createForOfIteratorHelperLoose */;
+          const obj5 = require(4016) /* _createForOfIteratorHelperLoose */;
         }
         return channelId2;
       }
-      const obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
+      const obj4 = require(4016) /* _createForOfIteratorHelperLoose */;
     }
   }
   if (tmp2 !== c9) {
     return c9;
   } else {
-    const tmp30 = importDefault(3984)();
+    const tmp30 = importDefault(4018)();
     let num6 = 6;
-    let num4 = require(3982) /* _createForOfIteratorHelperLoose */;
+    let num4 = require(4016) /* _createForOfIteratorHelperLoose */;
     let tmp11;
     if (tmp2 != tmp30) {
       const routes = tmp30.routes;
@@ -158,7 +158,7 @@ export { isChannelFocused };
 export const useIsChannelFocused = function useIsChannelFocused() {
   const tmp = callback(React.useState(() => outer1_11()), 2);
   let closure_0 = tmp[1];
-  const items = [importDefault(3985)()];
+  const items = [importDefault(4019)()];
   const effect = React.useEffect(() => {
     callback(outer1_11());
   }, items);

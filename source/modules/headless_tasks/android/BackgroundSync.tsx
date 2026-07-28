@@ -1,9 +1,9 @@
-// Module ID: 16690
-// Function ID: 130129
+// Module ID: 16730
+// Function ID: 130290
 // Name: resolved
-// Dependencies: [4809, 1194, 6271, 3, 1899, 16066, 2]
+// Dependencies: [4843, 1194, 6307, 3, 1899, 16105, 2]
 
-// Module 16690 (resolved)
+// Module 16730 (resolved)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

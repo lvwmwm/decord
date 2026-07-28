@@ -1,10 +1,10 @@
-// Module ID: 13660
-// Function ID: 104941
+// Module ID: 13704
+// Function ID: 105114
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [57, 31, 27, 5510, 1345, 482, 33, 689, 4131, 8632, 8379, 1334, 7882, 7983, 1877, 4099, 13661, 1935, 1212, 13652, 5584, 1273, 8626, 7904, 2]
+// Dependencies: [57, 31, 27, 5545, 1345, 482, 33, 689, 4165, 8676, 8417, 1334, 7918, 8021, 1877, 4133, 13705, 1935, 1212, 13696, 5619, 1273, 8670, 7940, 2]
 // Exports: default
 
-// Module 13660 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13704 (COLLECTIBLES_PREVIEW_SIZE)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -35,13 +35,13 @@ export default function UserProfileFrameEditButton(arg0) {
   ({ pendingProfileFrame, guildId } = arg0);
   let userProfileFrame;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = user(8632);
+  let obj = user(8676);
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop("UserProfileFrameEditButton");
-  let obj1 = user(8379);
+  let obj1 = user(8417);
   const items = [user(1334).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
   const tmp3 = userProfileFrame(obj1.useSelectedDismissibleContent(items), 2);
   const dependencyMap = tmp4;
-  let obj2 = user(7882);
+  let obj2 = user(7918);
   obj = { pendingValue: pendingProfileFrame };
   let profileFrame;
   if (null != displayProfile) {
@@ -61,7 +61,7 @@ export default function UserProfileFrameEditButton(arg0) {
   obj.guildValue = profileFrame1;
   obj.guildId = guildId;
   const profilePreviewValue = obj2.getProfilePreviewValue(obj);
-  let obj4 = user(7983);
+  let obj4 = user(8021);
   let skuId;
   if (null != profilePreviewValue) {
     skuId = profilePreviewValue.skuId;
@@ -78,7 +78,7 @@ export default function UserProfileFrameEditButton(arg0) {
   if (type === user(1877).CollectiblesItemType.PROFILE_FRAME) {
     const first1 = product.items[0];
   }
-  let obj5 = user(7882);
+  let obj5 = user(7918);
   userProfileFrame = obj5.useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
@@ -109,7 +109,7 @@ export default function UserProfileFrameEditButton(arg0) {
       const intl6 = user(1212).intl;
       obj1.buttonText = intl6.string(user(1212).t.MKDeyL);
       obj1.onPress = NOOP;
-      obj1.leading = jsx(user(5584).ActivityIndicator, { animating: true, size: "large" });
+      obj1.leading = jsx(user(5619).ActivityIndicator, { animating: true, size: "large" });
       obj1.loading = true;
       obj1.disabled = true;
       obj1.hideArrow = true;
@@ -136,16 +136,16 @@ export default function UserProfileFrameEditButton(arg0) {
       if (null != first1) {
         const obj6 = { style: tmp.previewContainer };
         const obj7 = { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH };
-        obj6.children = jsx(guildId(8626), { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH });
+        obj6.children = jsx(guildId(8670), { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH });
         let tmp35 = <View style={tmp.previewContainer} />;
-        const tmp40 = guildId(8626);
+        const tmp40 = guildId(8670);
       } else {
-        const obj8 = { source: guildId(7904), style: tmp.noneIcon };
-        tmp35 = jsx(user(1273).Icon, { source: guildId(7904), style: tmp.noneIcon });
+        const obj8 = { source: guildId(7940), style: tmp.noneIcon };
+        tmp35 = jsx(user(1273).Icon, { source: guildId(7940), style: tmp.noneIcon });
       }
       obj2.leading = tmp35;
     }
-    return jsx(user(13652).UserProfileEditFormButton, obj2);
+    return jsx(user(13696).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

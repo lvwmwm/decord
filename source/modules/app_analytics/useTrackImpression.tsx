@@ -1,10 +1,10 @@
-// Module ID: 8364
-// Function ID: 66920
+// Module ID: 8402
+// Function ID: 67030
 // Name: trackImpression
-// Dependencies: [31, 1348, 1907, 3948, 676, 480, 675, 686, 4325, 636, 4339, 4560, 2]
+// Dependencies: [31, 1348, 1907, 3982, 676, 480, 675, 686, 4359, 636, 4373, 4594, 2]
 // Exports: default
 
-// Module 8364 (trackImpression)
+// Module 8402 (trackImpression)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -54,9 +54,9 @@ function trackImpression(type, arg1, arg2) {
   }
   obj = { impression_type: type, location: callback3() };
   const obj2 = require(675) /* expandLocation */;
-  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id));
-  const obj4 = require(4325) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
+  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id));
+  const obj4 = require(4359) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
   const merged2 = Object.assign(properties);
   const result = obj2.expandEventProperties(obj);
   if (flag) {
@@ -96,7 +96,7 @@ export default function useTrackImpression(arg0) {
     }
     obj = {};
     const merged = Object.assign(obj);
-    obj["sequenceId"] = obj(4339)("impression_");
+    obj["sequenceId"] = obj(4373)("impression_");
     outer1_13(obj, obj.disableTrack);
     return () => {
       if (null != obj) {
@@ -106,7 +106,7 @@ export default function useTrackImpression(arg0) {
   }
   React = React.useRef(undefined);
   _isNativeReflectConstruct = React.useRef(undefined);
-  obj(4560)(() => {
+  obj(4594)(() => {
     if (obj.trackOnInitialLoad) {
       return trackImpressionEffect();
     }

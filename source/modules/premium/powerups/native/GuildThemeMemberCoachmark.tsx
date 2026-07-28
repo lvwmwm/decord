@@ -1,10 +1,10 @@
-// Module ID: 15069
-// Function ID: 114761
+// Module ID: 15109
+// Function ID: 114919
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [31, 4123, 4018, 4019, 1345, 33, 4131, 689, 566, 4022, 11549, 15070, 4038, 4967, 1212, 2231, 11552, 8368, 2]
+// Dependencies: [31, 4157, 4052, 4053, 1345, 33, 4165, 689, 566, 4056, 11588, 15110, 4072, 5001, 1212, 2231, 11591, 8406, 2]
 // Exports: default
 
-// Module 15069 (GuildThemeMemberCoachmark)
+// Module 15109 (GuildThemeMemberCoachmark)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -43,11 +43,11 @@ export default function GuildThemeMemberCoachmark(guildId) {
   const items2 = [guildPowerupBannerImage];
   const stateFromStores1 = guildId(566).useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
   const obj2 = guildId(566);
-  guildPowerupBannerImage = guildId(11549).getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
+  guildPowerupBannerImage = guildId(11588).getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (null == guildPowerupBannerImage) {
-    guildPowerupBannerImage = markAsDismissed(15070);
+    guildPowerupBannerImage = markAsDismissed(15110);
   }
-  const diff = callback - markAsDismissed(4038)(guildId).available;
+  const diff = callback - markAsDismissed(4072)(guildId).available;
   c5 = diff;
   const items3 = [markAsDismissed];
   callback = stateFromStores1.useCallback(() => {
@@ -78,7 +78,7 @@ export default function GuildThemeMemberCoachmark(guildId) {
     obj.onButtonPress = callback1;
     return obj;
   }, items5);
-  const obj3 = guildId(11549);
-  const coachmark = guildId(8368).useCoachmark(guildId.targetRef, memo);
+  const obj3 = guildId(11588);
+  const coachmark = guildId(8406).useCoachmark(guildId.targetRef, memo);
   return null;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10319
-// Function ID: 79761
+// Module ID: 10359
+// Function ID: 79890
 // Name: ThemeDarkIcon
-// Dependencies: [31, 33, 689, 3834, 10320, 2]
+// Dependencies: [31, 33, 689, 3868, 10360, 2]
 // Exports: ThemeDarkIcon
 
-// Module 10319 (ThemeDarkIcon)
+// Module 10359 (ThemeDarkIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ThemeDarkIcon = function ThemeDarkIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10320) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10360) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10320) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(10360) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

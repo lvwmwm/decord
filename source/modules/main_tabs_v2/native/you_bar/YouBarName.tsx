@@ -1,9 +1,9 @@
-// Module ID: 15186
-// Function ID: 115638
+// Module ID: 15226
+// Function ID: 115797
 // Name: Username
-// Dependencies: [31, 27, 4811, 33, 4131, 689, 8318, 8330, 566, 8018, 8998, 9017, 4127, 3970, 2]
+// Dependencies: [31, 27, 4845, 33, 4165, 689, 8356, 8368, 566, 8056, 9042, 9061, 4161, 4004, 2]
 
-// Module 15186 (Username)
+// Module 15226 (Username)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function Username(arg0) {
   obj = { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75 };
   const items1 = [{ flexShrink: 1 }];
   obj.style = items1;
-  const items2 = [callback(importDefault(8318), obj), callback(require(8330) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" })];
+  const items2 = [callback(importDefault(8356), obj), callback(require(8368) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" })];
   obj.children = items2;
   return callback2(View, obj);
 }
@@ -43,9 +43,9 @@ const memoResult = require("result").memo(function YouName(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getStatus());
-  let obj1 = require(8018) /* _activityFromSetting */;
+  let obj1 = require(8056) /* _activityFromSetting */;
   const customStatusActivity = obj1.useCustomStatusActivity();
-  let obj2 = require(8998) /* useGameMentionsAsPlainText */;
+  let obj2 = require(9042) /* useGameMentionsAsPlainText */;
   let state;
   if (null != customStatusActivity) {
     state = customStatusActivity.state;
@@ -61,16 +61,16 @@ const memoResult = require("result").memo(function YouName(arg0) {
   let tmp11 = null;
   if (null != emoji) {
     obj1 = { size: 16, style: tmp.statusEmoji, emoji: customStatusActivity.emoji };
-    tmp11 = callback(importDefault(9017), obj1);
+    tmp11 = callback(importDefault(9061), obj1);
   }
   const items2 = [tmp11, ];
   obj2 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText };
   if (null == gameMentionsAsPlainText) {
-    gameMentionsAsPlainText = require(3970) /* conceal */.humanizeStatus(stateFromStores);
-    const obj8 = require(3970) /* conceal */;
+    gameMentionsAsPlainText = require(4004) /* conceal */.humanizeStatus(stateFromStores);
+    const obj8 = require(4004) /* conceal */;
   }
   obj2.children = gameMentionsAsPlainText;
-  items2[1] = callback(require(4127) /* Text */.Text, obj2);
+  items2[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items2;
   items1[1] = closure_6(View, obj);
   obj.children = items1;

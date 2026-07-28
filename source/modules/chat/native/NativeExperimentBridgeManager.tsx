@@ -1,9 +1,9 @@
-// Module ID: 16582
-// Function ID: 129374
+// Module ID: 16622
+// Function ID: 129535
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1922, 1194, 477, 16583, 4807, 16584, 675, 16585, 507, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 27, 1922, 1194, 477, 16623, 4841, 16624, 675, 16625, 507, 5112, 2]
 
-// Module 16582 (_isNativeReflectConstruct)
+// Module 16622 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -30,8 +30,8 @@ function syncYYTextReplacementExperiment() {
     const NSUserDefaultsBridge = NativeModules.NSUserDefaultsBridge;
     if (!tmp3) {
       obj = { location: "NativeExperimentBridgeManager" };
-      const result = NSUserDefaultsBridge.setShouldEnableYYTextReplacement(require(16583) /* shouldEnableYYTextReplacement */.shouldEnableYYTextReplacement(obj));
-      const obj2 = require(16583) /* shouldEnableYYTextReplacement */;
+      const result = NSUserDefaultsBridge.setShouldEnableYYTextReplacement(require(16623) /* shouldEnableYYTextReplacement */.shouldEnableYYTextReplacement(obj));
+      const obj2 = require(16623) /* shouldEnableYYTextReplacement */;
     }
     tmp3 = null == NSUserDefaultsBridge || null == NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
   }
@@ -40,8 +40,8 @@ function updateIOSExperiments() {
   syncYYTextReplacementExperiment();
   const NSUserDefaultsBridge = NativeModules.NSUserDefaultsBridge;
   if (!tmp2) {
-    const result = NSUserDefaultsBridge.setShouldFixPushNotificationRawPayload(require(4807) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */.isIOSPushNotificationRawPayloadFixExperimentEnabled());
-    const obj = require(4807) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
+    const result = NSUserDefaultsBridge.setShouldFixPushNotificationRawPayload(require(4841) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */.isIOSPushNotificationRawPayloadFixExperimentEnabled());
+    const obj = require(4841) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
   }
   if (obj2.getConfig({ location: "NativeExperimentBridgeManager" }).enabled) {
     const RNVVideo = NativeModules.RNVVideo;
@@ -57,7 +57,7 @@ function updateIOSExperiments() {
 function updateAndroidExperiments() {
   let obj = { "X-Super-Properties": importDefault(675).getSuperPropertiesBase64(), "X-Fingerprint": store.getFingerprint(), "X-Installation-ID": store.getInstallationForTracking(), "X-Discord-Locale": locale.locale };
   const obj2 = importDefault(675);
-  const config = importDefault(16585).getConfig({ location: "NativeExperimentBridgeManager" });
+  const config = importDefault(16625).getConfig({ location: "NativeExperimentBridgeManager" });
   const NativeCacheModule = NativeModules.NativeCacheModule;
   if (null != NativeCacheModule) {
     const _JSON = JSON;

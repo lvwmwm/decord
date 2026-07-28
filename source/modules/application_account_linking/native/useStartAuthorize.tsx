@@ -1,10 +1,10 @@
-// Module ID: 5465
-// Function ID: 46730
+// Module ID: 5500
+// Function ID: 46857
 // Name: useStartAuthorize
-// Dependencies: [5, 31, 5466, 653, 5467, 5469, 3828, 675, 5471, 2]
+// Dependencies: [5, 31, 5501, 653, 5502, 5504, 3862, 675, 5506, 2]
 // Exports: default
 
-// Module 5465 (useStartAuthorize)
+// Module 5500 (useStartAuthorize)
 import useAuthorizedAppsTokens from "useAuthorizedAppsTokens";
 import result from "result";
 import { AuthorizeFlow } from "AuthorizeFlow";
@@ -22,7 +22,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   }
   let authorizationApp;
   const debug = obj.debug;
-  authorizationApp = authorizationApp(5467).useAuthorizationApp(getOfficialApplicationId);
+  authorizationApp = authorizationApp(5502).useAuthorizationApp(getOfficialApplicationId);
   let prop;
   if (null != authorizationApp) {
     prop = authorizationApp.connectionEntrypointUrl;
@@ -31,7 +31,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   if (null != prop) {
     WEB = AuthorizeFlow.WEB;
   }
-  const obj2 = authorizationApp(5467);
+  const obj2 = authorizationApp(5502);
   const tmp = undefined !== debug && debug;
   let parentId;
   if (null != authorizationApp) {
@@ -44,7 +44,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     }
     parentId = id;
   }
-  const authorizedAppsToken = authorizationApp(5469).useAuthorizedAppsToken(parentId);
+  const authorizedAppsToken = authorizationApp(5504).useAuthorizedAppsToken(parentId);
   ({ token, fetched } = authorizedAppsToken);
   const items = [authorizationApp];
   obj = { fetched };

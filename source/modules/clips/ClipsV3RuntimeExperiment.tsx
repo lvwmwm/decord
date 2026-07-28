@@ -1,10 +1,10 @@
-// Module ID: 4670
-// Function ID: 40556
+// Module ID: 4704
+// Function ID: 40671
 // Name: isClipsV3Enabled
 // Dependencies: [1428, 2]
 // Exports: getClipsRuntime, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled
 
-// Module 4670 (isClipsV3Enabled)
+// Module 4704 (isClipsV3Enabled)
 import ApexExperiment from "ApexExperiment";
 
 function isClipsV3Enabled(location) {

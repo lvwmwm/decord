@@ -1,9 +1,9 @@
-// Module ID: 4164
-// Function ID: 35230
+// Module ID: 4198
+// Function ID: 35332
 // Name: CachedEntriesMap
 // Dependencies: [6, 7, 1917, 2]
 
-// Module 4164 (CachedEntriesMap)
+// Module 4198 (CachedEntriesMap)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

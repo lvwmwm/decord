@@ -1,10 +1,10 @@
-// Module ID: 15051
-// Function ID: 114674
+// Module ID: 11857
+// Function ID: 91843
 // Name: AddFavoriteChannelModal
-// Dependencies: [5, 57, 31, 27, 1386, 8745, 33, 4131, 689, 10152, 15052, 10156, 6106, 1327, 10151, 1450, 477, 9842, 1212, 2945, 4663, 9843, 9864, 15053, 9832, 4338, 2]
+// Dependencies: [5, 57, 31, 27, 1386, 8789, 33, 4165, 689, 10194, 11858, 10198, 6140, 1327, 10193, 1450, 477, 9882, 1212, 2945, 4697, 9883, 9904, 11859, 9872, 4372, 2]
 // Exports: openAddFavoriteChannelModal
 
-// Module 15051 (AddFavoriteChannelModal)
+// Module 11857 (AddFavoriteChannelModal)
 import UserRowModes from "UserRowModes";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -17,29 +17,30 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 let closure_10;
 let closure_9;
 const require = arg1;
-function AddFavoriteChannelModal(source) {
-  source = source.source;
+function AddFavoriteChannelModal(parentId) {
+  parentId = parentId.parentId;
+  const source = parentId.source;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = source(first[9]);
-  const notifyFavoriteAdded = obj.useFavoriteAdded().notifyFavoriteAdded;
+  let obj = parentId(notifyFavoriteAdded[9]);
+  notifyFavoriteAdded = obj.useFavoriteAdded().notifyFavoriteAdded;
   const items = [source];
-  const effect = React.useEffect(() => {
-    const result = source(first[11]).trackFavoritesGuildAddModalOpened(source);
+  const effect = height.useEffect(() => {
+    const result = parentId(notifyFavoriteAdded[11]).trackFavoritesGuildAddModalOpened(source);
   }, items);
-  const tmp4 = height(React.useState([]), 2);
-  first = tmp4[0];
-  let callback = tmp4[1];
+  const tmp4 = callback(height.useState([]), 2);
+  const first = tmp4[0];
+  callback = tmp4[1];
   const items1 = [];
   // CreateGeneratorClosureLongIndex (0x67)
-  callback = React.useCallback((arg0) => {
+  callback = height.useCallback((arg0) => {
     callback(arg0);
   }, items1);
-  const items2 = [notifyFavoriteAdded, first];
-  const callback1 = React.useCallback(callback(items1), items2);
-  height = notifyFavoriteAdded(first[15])({ ignoreKeyboard: true }).height;
+  const items2 = [notifyFavoriteAdded, parentId, first];
+  const callback1 = height.useCallback(first(items1), items2);
+  height = source(notifyFavoriteAdded[15])({ ignoreKeyboard: true }).height;
   const items3 = [height];
   obj = {
-    style: React.useMemo(() => {
+    style: height.useMemo(() => {
       const obj = {};
       let str = "100%";
       if (obj2.isAndroid()) {
@@ -50,26 +51,26 @@ function AddFavoriteChannelModal(source) {
     }, items3)
   };
   obj = {};
-  const tmp2 = notifyFavoriteAdded(first[10])();
-  const intl = source(first[18]).intl;
-  obj.title = intl.string(notifyFavoriteAdded(first[19]).Rp35U1);
+  const tmp2 = source(notifyFavoriteAdded[10])();
+  const intl = parentId(notifyFavoriteAdded[18]).intl;
+  obj.title = intl.string(source(notifyFavoriteAdded[19]).Rp35U1);
   obj.onClose = closeAddFavoriteChannelModal;
-  const items4 = [callback2(notifyFavoriteAdded(first[17]), obj), ];
+  const items4 = [callback2(source(notifyFavoriteAdded[17]), obj), ];
   const obj1 = { style: tmp.container };
-  const items5 = [callback2(notifyFavoriteAdded(first[20]), { absolute: true }), callback2(notifyFavoriteAdded(first[21]), { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp2, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 }), ];
+  const items5 = [callback2(source(notifyFavoriteAdded[20]), { absolute: true }), callback2(source(notifyFavoriteAdded[21]), { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp2, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 }), ];
   const obj3 = { isVisible: first.length > 0, floatingBackgroundColor: tmp.container.backgroundColor };
   const obj2 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp2, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
-  const tmp7 = notifyFavoriteAdded(first[17]);
-  obj3.text = source(first[23]).getFavoritesAddButtonLabel(first.length);
+  const tmp7 = source(notifyFavoriteAdded[17]);
+  obj3.text = parentId(notifyFavoriteAdded[23]).getFavoritesAddButtonLabel(first.length);
   obj3.onPress = callback1;
-  items5[2] = callback2(source(first[22]).ModalFloatingAction, obj3);
+  items5[2] = callback2(parentId(notifyFavoriteAdded[22]).ModalFloatingAction, obj3);
   obj1.children = items5;
   items4[1] = callback3(View, obj1);
   obj.children = items4;
   return callback3(View, obj);
 }
 function closeAddFavoriteChannelModal() {
-  importDefault(4338).popWithKey(c12);
+  importDefault(4372).popWithKey(c12);
 }
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -80,7 +81,10 @@ let c12 = "add-favorite-channel-modal";
 let result = require("result").fileFinishedImporting("modules/favorites/native/AddFavoriteChannelModal.tsx");
 
 export const ADD_FAVORITE_CHANNEL_MODAL_KEY = "add-favorite-channel-modal";
-export const openAddFavoriteChannelModal = function openAddFavoriteChannelModal(source) {
-  importDefault(9832)(Promise.resolve({ default: AddFavoriteChannelModal }), { source: source.source }, c12);
+export const openAddFavoriteChannelModal = function openAddFavoriteChannelModal(arg0) {
+  let parentId;
+  let source;
+  ({ parentId, source } = arg0);
+  importDefault(9872)(Promise.resolve({ default: AddFavoriteChannelModal }), { parentId, source }, c12);
 };
 export { closeAddFavoriteChannelModal };

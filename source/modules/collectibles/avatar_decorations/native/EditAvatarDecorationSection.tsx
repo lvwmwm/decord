@@ -1,9 +1,9 @@
-// Module ID: 7901
-// Function ID: 62967
+// Module ID: 7937
+// Function ID: 63058
 // Name: memoResult1
-// Dependencies: [31, 27, 5775, 1393, 33, 4131, 7902, 7900, 7903, 5482, 7908, 2]
+// Dependencies: [31, 27, 5785, 1393, 33, 4165, 7938, 7936, 7939, 5517, 7944, 2]
 
-// Module 7901 (memoResult1)
+// Module 7937 (memoResult1)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ const memoResult = importAllResult.memo((size) => {
   let obj = {};
   obj = { style: tmp.row };
   const items1 = [...items, null, null];
-  const substr = items1.slice(0, require(7902) /* useCollectibleListLayout */.ROW_SIZE);
+  const substr = items1.slice(0, require(7938) /* useCollectibleListLayout */.ROW_SIZE);
   obj.children = substr.map((avatarDecoration) => {
     if (avatarDecoration === outer1_0(outer1_2[7]).NONE_ITEM) {
       let obj = { size, onPress: callback, isSelected: null == closure_0, asDefault: null != closure_2 };
@@ -83,8 +83,8 @@ const memoResult1 = importAllResult.memo((avatarDecoration) => {
   }, items);
   let obj = { skuId: avatarDecoration.skuId, isSelected, onPress: callback, size: avatarDecoration.size, isTryItOut: flag, accessibilityLabel: avatarDecoration.label };
   obj = { avatarDecoration, size: AVATAR_DECORATION_SIZE, animate: isSelected };
-  obj.children = callback(setSelectedAvatarDecoration(7908), obj);
-  return callback(avatarDecoration(7903).EditCollectiblesListItemProduct, obj);
+  obj.children = callback(setSelectedAvatarDecoration(7944), obj);
+  return callback(avatarDecoration(7939).EditCollectiblesListItemProduct, obj);
 });
 memoResult1.displayName = "EditAvatarDecorationItem";
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/avatar_decorations/native/EditAvatarDecorationSection.tsx");

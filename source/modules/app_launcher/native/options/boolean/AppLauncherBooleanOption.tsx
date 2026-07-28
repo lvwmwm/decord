@@ -1,10 +1,10 @@
-// Module ID: 11292
-// Function ID: 87816
+// Module ID: 11330
+// Function ID: 87935
 // Name: AppLauncherBooleanOption
-// Dependencies: [57, 31, 33, 4131, 689, 7575, 2]
+// Dependencies: [57, 31, 33, 4165, 689, 7611, 2]
 // Exports: default
 
-// Module 11292 (AppLauncherBooleanOption)
+// Module 11330 (AppLauncherBooleanOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -47,5 +47,5 @@ export default function AppLauncherBooleanOption(arg0) {
     callback2(!first);
     callback(!first);
   };
-  return jsx(require(7575) /* Form */.FormCheckboxRow, { start: true, end: true });
+  return jsx(require(7611) /* Form */.FormCheckboxRow, { start: true, end: true });
 };

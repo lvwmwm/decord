@@ -1,9 +1,9 @@
-// Module ID: 8743
-// Function ID: 69179
+// Module ID: 8787
+// Function ID: 69330
 // Name: GiftCustomMessage
-// Dependencies: [31, 27, 1852, 33, 4131, 689, 1212, 7585, 8736, 2]
+// Dependencies: [31, 27, 1852, 33, 4165, 689, 1212, 7621, 8780, 2]
 
-// Module 8743 (GiftCustomMessage)
+// Module 8787 (GiftCustomMessage)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { CUSTOM_GIFT_MESSAGE_MAX_LENGTH as closure_4 } from "GuildFeatures";
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let onFocusMessage;
   let setMessagePosition;
   ({ onFocusMessage, setMessagePosition } = arg0);
-  let obj = require(8736) /* importDefaultResult1 */;
+  let obj = require(8780) /* importDefaultResult1 */;
   const nativeGiftContext = obj.useNativeGiftContext();
   obj = { onFocusMessage, setMessagePosition, customGiftMessage: nativeGiftContext.customGiftMessage, setCustomGiftMessage: nativeGiftContext.setCustomGiftMessage };
   return <GiftCustomMessage onFocusMessage={onFocusMessage} setMessagePosition={setMessagePosition} customGiftMessage={nativeGiftContext.customGiftMessage} setCustomGiftMessage={nativeGiftContext.setCustomGiftMessage} />;

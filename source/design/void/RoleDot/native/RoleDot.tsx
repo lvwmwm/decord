@@ -1,10 +1,10 @@
-// Module ID: 13099
-// Function ID: 101133
+// Module ID: 13143
+// Function ID: 101306
 // Name: RoleDot
-// Dependencies: [31, 27, 33, 4131, 689, 477, 4550, 4572, 4555, 1327, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 477, 4584, 4606, 4589, 1327, 2]
 // Exports: RoleDot
 
-// Module 13099 (RoleDot)
+// Module 13143 (RoleDot)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export const RoleDot = function RoleDot(background) {
   }
   ({ containerStyles, guildId } = background);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4550) /* getFontScale */;
+  let obj = require(4584) /* getFontScale */;
   const fontScale = obj.useFontScale();
   if (null == color) {
     if (null == colors) {
@@ -106,8 +106,8 @@ export const RoleDot = function RoleDot(background) {
         obj6.end = { x: 1, y: 0 };
         const items6 = [tmp.dot, obj.dot];
         obj6.style = items6;
-        let tmp16Result = callback(importDefault(4555), obj6);
-        const tmp23 = importDefault(4555);
+        let tmp16Result = callback(importDefault(4589), obj6);
+        const tmp23 = importDefault(4589);
       }
       items4[1] = tmp16Result;
       obj2.children = items4;

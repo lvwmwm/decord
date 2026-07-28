@@ -1,13 +1,13 @@
-// Module ID: 12175
-// Function ID: 95314
+// Module ID: 12218
+// Function ID: 95484
 // Name: _callSuper
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 4131, 689, 12176, 4534, 3843, 12190, 8316, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 4165, 689, 12219, 4568, 3877, 12233, 8354, 2]
 
-// Module 12175 (_callSuper)
+// Module 12218 (_callSuper)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import getActivityIndicator from "get ActivityIndicator";
-import module_8316 from "module_8316";
+import module_8354 from "module_8354";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
 import importAllResult from "result";
@@ -32,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return module_8316(arg0, constructResult);
+  return module_8354(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {

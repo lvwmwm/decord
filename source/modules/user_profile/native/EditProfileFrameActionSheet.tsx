@@ -1,10 +1,10 @@
-// Module ID: 13661
-// Function ID: 104944
+// Module ID: 13705
+// Function ID: 105117
 // Name: EditProfileFrameInner
-// Dependencies: [57, 31, 27, 5786, 5777, 653, 33, 4131, 689, 7922, 7892, 5462, 5482, 675, 7880, 5187, 4127, 1212, 7893, 7896, 566, 13662, 7882, 7923, 13663, 7913, 7914, 7894, 8677, 4555, 2]
+// Dependencies: [57, 31, 27, 5796, 5787, 653, 33, 4165, 689, 7958, 7928, 5497, 5517, 675, 7916, 5221, 4161, 1212, 7929, 7932, 566, 13706, 7918, 7959, 13707, 7949, 7950, 7930, 8721, 4589, 2]
 // Exports: default
 
-// Module 13661 (EditProfileFrameInner)
+// Module 13705 (EditProfileFrameInner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "useCollectiblesData";
@@ -114,7 +114,7 @@ function ProfileFrameSectionPreview(arg0) {
   let user;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = purchase(7894)(previewSkuId);
+  const tmp2 = purchase(7930)(previewSkuId);
   const product = tmp2.product;
   const require = product;
   purchase = tmp2.purchase;
@@ -138,11 +138,11 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp6;
   }, items);
-  const items1 = [callback(purchase(8677), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(8721), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 } };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj.colors = items2;
-  items1[1] = callback(purchase(4555), obj);
+  items1[1] = callback(purchase(4589), obj);
   obj.children = items1;
   return callback2(View, obj);
 }

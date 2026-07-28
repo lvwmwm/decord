@@ -1,9 +1,9 @@
-// Module ID: 11378
-// Function ID: 88413
+// Module ID: 11416
+// Function ID: 88532
 // Name: ActionChannelInfo
-// Dependencies: [57, 31, 27, 4123, 4992, 1348, 1918, 653, 1853, 33, 4131, 689, 624, 4321, 4127, 1212, 1273, 10928, 5085, 1392, 3772, 11379, 11377, 3992, 4132, 11380, 4661, 1198, 6627, 5605, 2]
+// Dependencies: [57, 31, 27, 4157, 5026, 1348, 1918, 653, 1853, 33, 4165, 689, 624, 4355, 4161, 1212, 1273, 10966, 5119, 1392, 3806, 11417, 11415, 4026, 4166, 11418, 4695, 1198, 6663, 5640, 2]
 
-// Module 11378 (ActionChannelInfo)
+// Module 11416 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "shouldNavigate";
@@ -39,14 +39,14 @@ function ActionChannelInfo(action) {
     const obj2 = { channelName: tmp2 };
     obj1.children = intl.format(action(1212).t.MkzlDL, obj2);
   }
-  return closure_12(action(4127).Text, obj1);
+  return closure_12(action(4161).Text, obj1);
 }
 function ChannelActionEmoji(emoji) {
   emoji = emoji.emoji;
   let id;
   const tmp = callback3();
   let obj = { style: tmp.emojiPlaceholder };
-  obj = { size: id(1273).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(10928) };
+  obj = { size: id(1273).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(10966) };
   obj.children = callback(id(1273).Icon, obj);
   const tmp2 = callback(View, obj);
   id = undefined;
@@ -69,7 +69,7 @@ function ChannelActionEmoji(emoji) {
   if (null != stateFromStores) {
     obj = { style: tmp.emoji };
     const obj1 = {};
-    const tmp12 = importDefault(5085);
+    const tmp12 = importDefault(5119);
     obj2 = {};
     ({ id: obj8.id, animated: obj8.animated } = stateFromStores);
     obj2.size = EMOJI_URL_BASE_SIZE;
@@ -81,13 +81,13 @@ function ChannelActionEmoji(emoji) {
   } else {
     tmp8 = tmp2;
     if (null != name) {
-      const obj9 = importDefault(3772);
+      const obj9 = importDefault(3806);
       tmp8 = tmp2;
       if (null != obj9.getByName(obj10.convertSurrogateToName(name, false))) {
         const obj3 = { style: tmp.textEmoji, variant: "heading-lg/normal", children: name };
-        tmp8 = callback(id(4127).Text, obj3);
+        tmp8 = callback(id(4161).Text, obj3);
       }
-      obj10 = importDefault(3772);
+      obj10 = importDefault(3806);
     }
   }
   return tmp8;
@@ -361,7 +361,7 @@ let closure_16 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_17 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(5605);
+  let obj = channel(5640);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [closure_9];
   const stateFromStores = channel(624).useStateFromStores(items, () => {
@@ -391,7 +391,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11379) /* useMemberActionsForChannel */;
+  let obj = require(11417) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -399,11 +399,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11379) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11417) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (null != channelAction) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11377) /* _createForOfIteratorHelperLoose */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11415) /* _createForOfIteratorHelperLoose */.NewMemberActionTypes.VIEW) {
     obj = { channel };
     let tmp5 = callback(closure_18, obj);
   } else {

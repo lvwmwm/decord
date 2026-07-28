@@ -1,10 +1,10 @@
-// Module ID: 8040
-// Function ID: 63949
+// Module ID: 8078
+// Function ID: 64059
 // Name: ProfileBanner
-// Dependencies: [31, 27, 653, 33, 4131, 665, 5085, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 665, 5119, 2]
 // Exports: default
 
-// Module 8040 (ProfileBanner)
+// Module 8078 (ProfileBanner)
 import "result";
 import { View } from "get ActivityIndicator";
 import { BANNER_HEIGHT } from "ME";
@@ -36,7 +36,7 @@ export default function ProfileBanner(bannerHeight) {
   let tmp4 = null;
   if (null != bannerSource) {
     obj = { style: tmp.image, source: bannerSource };
-    tmp4 = jsx(importDefault(5085), { style: tmp.image, source: bannerSource });
+    tmp4 = jsx(importDefault(5119), { style: tmp.image, source: bannerSource });
   }
   obj.children = tmp4;
   return <View style={items} />;

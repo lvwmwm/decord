@@ -1,9 +1,9 @@
-// Module ID: 11089
-// Function ID: 86127
+// Module ID: 11127
+// Function ID: 86250
 // Name: ChatInput
-// Dependencies: [5, 57, 31, 27, 6039, 11090, 9504, 5912, 11091, 4469, 5913, 3759, 4468, 9242, 11093, 653, 1455, 1853, 1552, 33, 4131, 689, 477, 1324, 3942, 3835, 11094, 11095, 566, 5996, 5462, 6020, 11097, 3992, 3997, 7952, 11099, 11100, 11101, 5604, 1207, 1556, 4675, 6134, 4666, 491, 4100, 675, 1555, 4325, 5668, 11146, 11308, 9610, 3990, 1819, 11309, 9269, 9232, 11329, 9627, 6130, 11332, 11333, 3790, 11349, 11350, 11351, 11352, 11358, 11359, 665, 11360, 11361, 11365, 11367, 11374, 11378, 11381, 11420, 11422, 11441, 10325, 11454, 11456, 11457, 11289, 11458, 2]
+// Dependencies: [5, 57, 31, 27, 6073, 11128, 9544, 5946, 11129, 4503, 5947, 3793, 4502, 9286, 11131, 653, 1455, 1853, 1552, 33, 4165, 689, 477, 1324, 3976, 3869, 11132, 11133, 566, 6030, 5497, 6054, 11135, 4026, 4031, 7989, 11137, 11138, 11139, 5639, 1207, 1556, 4709, 6168, 4700, 491, 4134, 675, 1555, 4359, 5678, 11184, 11346, 9650, 4024, 1819, 11347, 9313, 9276, 11367, 9667, 6164, 11370, 11371, 3824, 11387, 11388, 11389, 11390, 11396, 11397, 665, 11398, 11399, 11403, 11405, 11412, 11416, 11419, 11458, 11460, 11479, 10365, 11492, 11494, 11495, 11327, 11496, 2]
 
-// Module 11089 (ChatInput)
+// Module 11127 (ChatInput)
 import INITIAL_STATE from "INITIAL_STATE";
 import toggleGuildExpandedState from "toggleGuildExpandedState";
 import importAllResult from "_createForOfIteratorHelperLoose";
@@ -24,7 +24,7 @@ import ME from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import { EmojiInteractionPoint } from "set";
 import DRAG_HANDLE from "DRAG_HANDLE";
-import jsxProd from "module_3992";
+import jsxProd from "module_4026";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_18;

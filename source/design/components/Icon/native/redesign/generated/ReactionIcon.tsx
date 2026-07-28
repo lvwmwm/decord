@@ -1,10 +1,10 @@
-// Module ID: 6519
-// Function ID: 58274
+// Module ID: 6555
+// Function ID: 58363
 // Name: ReactionIcon
-// Dependencies: [31, 33, 689, 3834, 6520, 2]
+// Dependencies: [31, 33, 689, 3868, 6556, 2]
 // Exports: ReactionIcon
 
-// Module 6519 (ReactionIcon)
+// Module 6555 (ReactionIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ReactionIcon = function ReactionIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(6520) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6556) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6520) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6556) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

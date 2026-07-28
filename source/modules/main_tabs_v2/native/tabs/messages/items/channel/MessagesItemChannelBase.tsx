@@ -1,12 +1,12 @@
-// Module ID: 14958
-// Function ID: 114049
+// Module ID: 15002
+// Function ID: 114222
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [57, 31, 27, 4218, 4143, 3768, 1907, 4326, 1850, 653, 33, 4131, 689, 566, 1324, 14959, 9020, 477, 4141, 4139, 9029, 4661, 8254, 8008, 14960, 3809, 7910, 14961, 7917, 14962, 2]
+// Dependencies: [57, 31, 27, 4252, 4177, 3802, 1907, 4360, 1850, 653, 33, 4165, 689, 566, 1324, 15003, 9064, 477, 4175, 4173, 9073, 4695, 8292, 8046, 15004, 3843, 7946, 15005, 7953, 15006, 2]
 
-// Module 14958 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15002 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
-import { View } from "module_14961";
+import { View } from "module_15005";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";

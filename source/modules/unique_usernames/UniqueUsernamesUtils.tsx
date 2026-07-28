@@ -1,18 +1,18 @@
-// Module ID: 13730
-// Function ID: 105419
+// Module ID: 13774
+// Function ID: 105592
 // Name: formatUsernameLiveCheckValidation
-// Dependencies: [4330, 13725, 1212, 2]
+// Dependencies: [4364, 13769, 1212, 2]
 // Exports: formatUsernameLiveCheckValidation
 
-// Module 13730 (formatUsernameLiveCheckValidation)
+// Module 13774 (formatUsernameLiveCheckValidation)
 const result = require("getSystemLocale").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesUtils.tsx");
 
 export const formatUsernameLiveCheckValidation = function formatUsernameLiveCheckValidation(stateFromStores) {
-  const match = require(4330) /* n */.match(stateFromStores);
-  const str = require(4330) /* n */;
+  const match = require(4364) /* n */.match(stateFromStores);
+  const str = require(4364) /* n */;
   let obj = {};
-  const P = require(4330) /* n */.P;
-  obj.error = P.not(require(4330) /* n */.P.nullish);
+  const P = require(4364) /* n */.P;
+  obj.error = P.not(require(4364) /* n */.P.nullish);
   const withResult = match.with({ rateLimited: true }, () => {
     const obj = { type: outer1_0(outer1_1[1]).NameValidationState.RATE_LIMIT };
     const intl = outer1_0(outer1_1[2]).intl;
@@ -36,7 +36,7 @@ export const formatUsernameLiveCheckValidation = function formatUsernameLiveChec
     obj.message = intl.string(outer1_0(outer1_1[2]).t.PgfBSx);
     return obj;
   });
-  obj = { error: require(4330) /* n */.P.nullish };
+  obj = { error: require(4364) /* n */.P.nullish };
   const withResult3 = match.with({ rateLimited: true }, () => {
     const obj = { type: outer1_0(outer1_1[1]).NameValidationState.RATE_LIMIT };
     const intl = outer1_0(outer1_1[2]).intl;

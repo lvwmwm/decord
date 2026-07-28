@@ -1,5 +1,5 @@
 // Module ID: 776
-// Function ID: 8863
+// Function ID: 8867
 // Name: getMatchData
 // Dependencies: [601, 700]
 

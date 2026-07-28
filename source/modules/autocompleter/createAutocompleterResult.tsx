@@ -1,10 +1,10 @@
-// Module ID: 6120
-// Function ID: 54950
+// Module ID: 6154
+// Function ID: 55069
 // Name: HeaderRecord
-// Dependencies: [5044, 2]
+// Dependencies: [5078, 2]
 // Exports: createHeaderResult
 
-// Module 6120 (HeaderRecord)
+// Module 6154 (HeaderRecord)
 import HeaderRecord from "HeaderRecord";
 
 ({ HeaderRecord: closure_0, AutocompleterResultTypes: closure_1 } = HeaderRecord);

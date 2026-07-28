@@ -1,9 +1,9 @@
-// Module ID: 8790
-// Function ID: 69614
+// Module ID: 8834
+// Function ID: 69765
 // Name: closeActionSheet
-// Dependencies: [31, 27, 4145, 8767, 1348, 4146, 8789, 653, 33, 4131, 4099, 624, 8791, 8792, 1212, 7596, 7595, 5170, 8763, 8860, 8861, 8862, 3947, 1334, 8985, 5187, 5186, 5515, 2]
+// Dependencies: [31, 27, 4179, 8811, 1348, 4180, 8833, 653, 33, 4165, 4133, 624, 8835, 8836, 1212, 7632, 7631, 5204, 8807, 8904, 8905, 8906, 3981, 1334, 9029, 5221, 5220, 5550, 2]
 
-// Module 8790 (closeActionSheet)
+// Module 8834 (closeActionSheet)
 import importAllResult from "result";
 import { ScrollView } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ let closure_11;
 let closure_12;
 const require = arg1;
 function closeActionSheet() {
-  importDefault(4099).hideActionSheet(closure_9);
+  importDefault(4133).hideActionSheet(closure_9);
 }
 function VoicePanelAudioPhoneOutputSection() {
   let obj = availableDevices(624);
@@ -64,15 +64,15 @@ function VoicePanelAudioPhoneOutputSection() {
           return outer1_11(availableDevices(outer1_2[16]).TableRadioRow, obj, deviceId.deviceId);
         })
     };
-    obj.children = callback(availableDevices(7596).TableRadioGroup, obj);
-    tmp3 = callback(availableDevices(8792).VoicePanelFormSection, obj);
+    obj.children = callback(availableDevices(7632).TableRadioGroup, obj);
+    tmp3 = callback(availableDevices(8836).VoicePanelFormSection, obj);
   }
   return tmp3;
 }
 function VoicePanelAudioConsoleSection(channel) {
   channel = channel.channel;
-  arr = arr(8860)();
-  const dependencyMap = arr(8861)();
+  arr = arr(8904)();
+  const dependencyMap = arr(8905)();
   let obj = channel(624);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => tmp6.getAwaitingRemoteSessionInfo());
@@ -124,7 +124,7 @@ function VoicePanelAudioConsoleSection(channel) {
     }
   }, items3);
   const obj2 = channel(624);
-  const tmp6 = !channel(3947).useIsDismissibleContentDismissed_UNSAFE(channel(1334).DismissibleContent.DONUT_MOBILE_NUX);
+  const tmp6 = !channel(3981).useIsDismissibleContentDismissed_UNSAFE(channel(1334).DismissibleContent.DONUT_MOBILE_NUX);
   _isNativeReflectConstruct = tmp6;
   const items4 = [arr, tmp6];
   const effect = stateFromStores.useEffect(() => {
@@ -175,8 +175,8 @@ function VoicePanelAudioConsoleSection(channel) {
       return tmp5;
     });
     obj.children = mapped.filter((arg0) => Boolean(arg0));
-    obj.children = callback(channel(7596).TableRadioGroup, obj);
-    tmp8 = callback(channel(8792).VoicePanelFormSection, obj);
+    obj.children = callback(channel(7632).TableRadioGroup, obj);
+    tmp8 = callback(channel(8836).VoicePanelFormSection, obj);
   }
   return tmp8;
 }
@@ -195,7 +195,7 @@ const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionShee
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t.iwxPM3);
-    obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+    obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
     const obj1 = {};
     const obj2 = {};
     if (isConnectedToVoiceChannel) {
@@ -205,10 +205,10 @@ const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionShee
     const obj3 = { channel: stateFromStores };
     items1[1] = callback(VoicePanelAudioConsoleSection, obj3);
     obj2.children = items1;
-    obj1.children = closure_12(importDefault(5515), obj2);
+    obj1.children = closure_12(importDefault(5550), obj2);
     obj.children = callback(ScrollView, obj1);
-    tmp3Result = callback(require(5187) /* Background */.BottomSheet, obj);
-    const tmp11 = importDefault(5515);
+    tmp3Result = callback(require(5221) /* Background */.BottomSheet, obj);
+    const tmp11 = importDefault(5550);
     const tmp3 = callback;
     const tmp7 = callback;
     const tmp8 = ScrollView;

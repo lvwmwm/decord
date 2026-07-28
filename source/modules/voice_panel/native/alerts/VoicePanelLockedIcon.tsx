@@ -1,10 +1,10 @@
-// Module ID: 15935
-// Function ID: 123156
+// Module ID: 15974
+// Function ID: 123312
 // Name: VoicePanelLockedIcon
-// Dependencies: [31, 33, 4131, 689, 5515, 1273, 15936, 2]
+// Dependencies: [31, 33, 4165, 689, 5550, 1273, 15975, 2]
 // Exports: default
 
-// Module 15935 (VoicePanelLockedIcon)
+// Module 15974 (VoicePanelLockedIcon)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -20,7 +20,7 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 export default function VoicePanelLockedIcon() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { style: tmp.icon, source: importDefault(15936), size: require(1273) /* Button */.IconSizes.LARGE };
-  obj.children = jsx(require(1273) /* Button */.Icon, { style: tmp.icon, source: importDefault(15936), size: require(1273) /* Button */.IconSizes.LARGE });
-  return jsx(importDefault(5515), { style: tmp.icon, source: importDefault(15936), size: require(1273) /* Button */.IconSizes.LARGE });
+  obj = { style: tmp.icon, source: importDefault(15975), size: require(1273) /* Button */.IconSizes.LARGE };
+  obj.children = jsx(require(1273) /* Button */.Icon, { style: tmp.icon, source: importDefault(15975), size: require(1273) /* Button */.IconSizes.LARGE });
+  return jsx(importDefault(5550), { style: tmp.icon, source: importDefault(15975), size: require(1273) /* Button */.IconSizes.LARGE });
 };

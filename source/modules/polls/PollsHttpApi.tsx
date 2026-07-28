@@ -1,10 +1,10 @@
-// Module ID: 9901
-// Function ID: 76711
+// Module ID: 9941
+// Function ID: 76840
 // Name: _submitPollVote
-// Dependencies: [5, 653, 507, 4030, 2]
+// Dependencies: [5, 653, 507, 4064, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 9901 (_submitPollVote)
+// Module 9941 (_submitPollVote)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

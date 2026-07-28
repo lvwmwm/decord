@@ -1,9 +1,9 @@
-// Module ID: 9751
-// Function ID: 75897
+// Module ID: 9791
+// Function ID: 76026
 // Name: BalanceCounter
-// Dependencies: [57, 31, 33, 3992, 3850, 4543, 9752, 4127, 2]
+// Dependencies: [57, 31, 33, 4026, 3884, 4577, 9792, 4161, 2]
 
-// Module 9751 (BalanceCounter)
+// Module 9791 (BalanceCounter)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_8 from "result";
@@ -35,7 +35,7 @@ class BalanceCounter {
     tmp = null;
     ({ onValueReached, style } = global);
     closure_2 = useRef(null);
-    obj = require("module_3992");
+    obj = require("module_4026");
     sharedValue = require("_slicedToArray");
     _slicedToArray = sharedValue;
     c4 = useRef(null);
@@ -99,7 +99,7 @@ class BalanceCounter {
         ref.current = duration;
       }
     }, items);
-    tmp11 = require("module_3992");
+    tmp11 = require("module_4026");
     class F {
       constructor() {
         if (c8) {
@@ -110,10 +110,10 @@ class BalanceCounter {
           tmp3 = value;
           tmp4 = outer1_2;
           num = 3;
-          obj = require("module_3992");
+          obj = require("module_4026");
           tmp5 = closure_6;
           tmp6 = obj.runOnJS(closure_6)(str);
-          obj2 = require("module_3992");
+          obj2 = require("module_4026");
           tmp7 = closure_7;
           runOnJSResult = obj2.runOnJS(closure_7);
           tmp8Result = runOnJSResult(str.toString().length);
@@ -121,7 +121,7 @@ class BalanceCounter {
         return {};
       }
     }
-    obj = { isAnimating: first1, animatedValue: sharedValue, runOnJS: require("module_3992").runOnJS, setDisplayValue: tmp4, setMaxDigits: tmp6 };
+    obj = { isAnimating: first1, animatedValue: sharedValue, runOnJS: require("module_4026").runOnJS, setDisplayValue: tmp4, setMaxDigits: tmp6 };
     F.__closure = obj;
     F.__workletHash = 4408542396979;
     F.__initData = clearAnimationTimeout;
@@ -142,7 +142,7 @@ class BalanceCounter {
       obj3.style = style;
       obj3.children = require("_slicedToArray");
       obj1.children = c9(require("Text").Text, obj3);
-      tmp = c9(require("module_3992").View, obj1);
+      tmp = c9(require("module_4026").View, obj1);
     }
     return tmp;
   }

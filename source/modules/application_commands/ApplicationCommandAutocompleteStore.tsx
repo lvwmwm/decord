@@ -1,9 +1,9 @@
-// Module ID: 6038
-// Function ID: 54152
+// Module ID: 6072
+// Function ID: 54271
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6039, 653, 477, 1882, 4325, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 6073, 653, 477, 1882, 4359, 566, 686, 2]
 
-// Module 6038 (_isNativeReflectConstruct)
+// Module 6072 (_isNativeReflectConstruct)
 import ME from "ME";
 import closure_3 from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -272,7 +272,7 @@ set = {
         num2 = time - value.getTime();
       }
       let obj = { duration_ms: num2, error: false, num_options: mapped.length };
-      _require(4325).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+      _require(4359).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
       map2.delete(nonce);
       const optionNameToAutocompleteQueries2 = tmp31.optionNameToAutocompleteQueries;
       const value1 = optionNameToAutocompleteQueries2.get(value.name);
@@ -308,7 +308,7 @@ set = {
           num = time - value.getTime();
         }
         const obj = { duration_ms: num, error: true };
-        require(4325) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+        require(4359) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
         map2.delete(nonce);
         getOrCreateChannelState(value.channelId).lastErrored = true;
         return true;

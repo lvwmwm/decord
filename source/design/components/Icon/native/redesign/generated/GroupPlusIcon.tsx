@@ -1,10 +1,10 @@
-// Module ID: 10159
-// Function ID: 78598
+// Module ID: 10201
+// Function ID: 78730
 // Name: GroupPlusIcon
-// Dependencies: [31, 33, 689, 3834, 10160, 2]
+// Dependencies: [31, 33, 689, 3868, 10202, 2]
 // Exports: GroupPlusIcon
 
-// Module 10159 (GroupPlusIcon)
+// Module 10201 (GroupPlusIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const GroupPlusIcon = function GroupPlusIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10160) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10202) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10160) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(10202) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,9 +1,9 @@
-// Module ID: 5451
-// Function ID: 46608
+// Module ID: 5486
+// Function ID: 46735
 // Name: LayerContextManager
 // Dependencies: [6, 7, 31, 2]
 
-// Module 5451 (LayerContextManager)
+// Module 5486 (LayerContextManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import importAllResult from "result";

@@ -1,10 +1,10 @@
-// Module ID: 12425
-// Function ID: 96418
+// Module ID: 12468
+// Function ID: 96588
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1850, 1852, 566, 8334, 4560, 7923, 2]
+// Dependencies: [1850, 1852, 566, 8372, 4594, 7959, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 12425 (useMaybeFetchTieredTenureBadgeData)
+// Module 12468 (useMaybeFetchTieredTenureBadgeData)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -15,8 +15,8 @@ export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTe
   const items = [_isNativeReflectConstruct];
   _require = _require(566).useStateFromStores(items, () => outer1_3.getCurrentUser());
   const obj = _require(566);
-  const importDefault = _require(8334).useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  importDefault(4560)(() => {
+  const importDefault = _require(8372).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  importDefault(4594)(() => {
     let id;
     if (null != user) {
       id = user.id;

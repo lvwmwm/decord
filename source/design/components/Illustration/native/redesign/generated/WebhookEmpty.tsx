@@ -1,17 +1,17 @@
-// Module ID: 15599
-// Function ID: 120264
+// Module ID: 15638
+// Function ID: 120420
 // Name: getWebhookEmptySource
-// Dependencies: [31, 27, 33, 6481, 15600, 15601, 15602, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 15639, 15640, 15641, 4011, 2]
 // Exports: WebhookEmpty
 
-// Module 15599 (getWebhookEmptySource)
+// Module 15638 (getWebhookEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getWebhookEmptySource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getWebhookEmptySource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useWebhookEmptySource() {
-  return getWebhookEmptySource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getWebhookEmptySource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
 

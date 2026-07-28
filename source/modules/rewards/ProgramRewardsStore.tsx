@@ -1,9 +1,9 @@
-// Module ID: 12711
-// Function ID: 98880
+// Module ID: 12754
+// Function ID: 99050
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1850, 12712, 3375, 3403, 3358, 12713, 664, 12716, 566, 686, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1850, 12755, 3409, 3437, 3392, 12756, 664, 12759, 566, 686, 2]
 
-// Module 12711 (_isNativeReflectConstruct)
+// Module 12754 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import NetworkTtlCache from "NetworkTtlCache";
@@ -128,7 +128,7 @@ function updateTtl() {
         } else {
           let tmp4 = importDefault;
           let tmp5 = dependencyMap;
-          let tmp6 = importDefault(3375)(date1, 10);
+          let tmp6 = importDefault(3409)(date1, 10);
           if (date >= tmp6) {
             break;
           } else if (date >= date1) {
@@ -138,20 +138,20 @@ function updateTtl() {
             obj = {};
             let tmp12 = closure_13;
             obj.state = closure_13.LESS_THAN_24H_BEFORE_REWARD;
-            obj.msUntilReward = importDefault(3403)(tmp6, date);
+            obj.msUntilReward = importDefault(3437)(tmp6, date);
             obj1 = obj;
           } else {
             let tmp7 = importDefault;
             let tmp8 = dependencyMap;
             let tmp9 = tmp6;
-            if (date >= importDefault(3358)(date1, -1)) {
+            if (date >= importDefault(3392)(date1, -1)) {
               let tmp28 = importDefault;
               let tmp29 = dependencyMap;
               let num5 = 9;
               obj1 = {};
               let tmp30 = closure_13;
               obj1.state = closure_13.LESS_THAN_24H_BEFORE_REWARD;
-              obj1.msUntilReward = importDefault(3403)(tmp6, date);
+              obj1.msUntilReward = importDefault(3437)(tmp6, date);
             }
           }
         }

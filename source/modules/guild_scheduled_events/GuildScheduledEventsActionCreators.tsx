@@ -1,8 +1,8 @@
-// Module ID: 8146
-// Function ID: 65022
-// Dependencies: [5, 1194, 5751, 1354, 653, 507, 4945, 1198, 8147, 4370, 686, 8152, 21, 2]
+// Module ID: 8184
+// Function ID: 65132
+// Dependencies: [5, 1194, 5761, 1354, 653, 507, 4979, 1198, 8185, 4404, 686, 8190, 21, 2]
 
-// Module 8146
+// Module 8184
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -34,8 +34,8 @@ export default {
     return HTTP.patch(obj);
   },
   joinVoiceEvent(arg0, channelId) {
-    const voiceChannel = importDefault(4945).selectVoiceChannel(channelId);
-    const obj = importDefault(4945);
+    const voiceChannel = importDefault(4979).selectVoiceChannel(channelId);
+    const obj = importDefault(4979);
     require(1198) /* shouldNavigate */.transitionTo(closure_11.CHANNEL(arg0, channelId));
   },
   saveEvent(arg0, entityType) {
@@ -56,18 +56,18 @@ export default {
     ({ privacyLevel: obj2.privacy_level, scheduledStartTime: obj2.scheduled_start_time, scheduledEndTime: obj2.scheduled_end_time, entityType: obj2.entity_type } = entityType);
     obj.channel_id = channelId;
     obj.entity_metadata = entityMetadata;
-    obj.recurrence_rule = require(8147) /* recurrenceRuleToServer */.recurrenceRuleToServer(entityType.recurrenceRule);
+    obj.recurrence_rule = require(8185) /* recurrenceRuleToServer */.recurrenceRuleToServer(entityType.recurrenceRule);
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     obj = { url: closure_10.GUILD_EVENT(arg2, arg0), body: obj };
-    const obj3 = require(8147) /* recurrenceRuleToServer */;
+    const obj3 = require(8185) /* recurrenceRuleToServer */;
     obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return HTTP.patch(obj);
   },
   createGuildEvent(first, id) {
-    let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: require(8147) /* recurrenceRuleToServer */.recurrenceRuleToServer(first.recurrenceRule) };
+    let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: require(8185) /* recurrenceRuleToServer */.recurrenceRuleToServer(first.recurrenceRule) };
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     obj = { url: closure_10.GUILD_EVENTS_FOR_GUILD(id), body: obj };
-    const obj2 = require(8147) /* recurrenceRuleToServer */;
+    const obj2 = require(8185) /* recurrenceRuleToServer */;
     obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return HTTP.post(obj);
   },

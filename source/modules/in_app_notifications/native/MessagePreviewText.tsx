@@ -1,10 +1,10 @@
-// Module ID: 10218
-// Function ID: 79108
+// Module ID: 10258
+// Function ID: 79237
 // Name: NativeMessagePreviewContent
-// Dependencies: [31, 27, 1348, 10201, 33, 4131, 478, 689, 10219, 10220, 10200, 4127, 5085, 10234, 4361, 10239, 10240, 670, 5856, 1212, 3809, 2]
+// Dependencies: [31, 27, 1348, 10241, 33, 4165, 478, 689, 10259, 10260, 10240, 4161, 5119, 10274, 4395, 10279, 10280, 670, 5866, 1212, 3843, 2]
 // Exports: default
 
-// Module 10218 (NativeMessagePreviewContent)
+// Module 10258 (NativeMessagePreviewContent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,9 +27,9 @@ function NativeMessagePreviewContent(arg0) {
   let maxHeight;
   let message;
   ({ message, lineClamp, maxHeight } = arg0);
-  const tmp = importDefault(10219)();
+  const tmp = importDefault(10259)();
   ({ gradientColors, gradientStyles } = tmp);
-  return callback(View, { children: callback(require(10220) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
+  return callback(View, { children: callback(require(10260) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
 }
 class SystemMessageText {
   constructor(arg0) {
@@ -55,7 +55,7 @@ function EmbedMediaThumbnail(media) {
       num = result;
     }
   }
-  obj = { style: items, children: callback(importDefault(5085), obj) };
+  obj = { style: items, children: callback(importDefault(5119), obj) };
   items = [tmp.embedMediaContainer, ];
   obj = { aspectRatio: num };
   items[1] = obj;
@@ -104,13 +104,13 @@ function EmbedCard(embed) {
   let tmp12 = null != name;
   if (tmp12) {
     const obj2 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
-    tmp12 = callback(require(4127) /* Text */.Text, obj2);
+    tmp12 = callback(require(4161) /* Text */.Text, obj2);
   }
   const items2 = [tmp12, , , ];
   let tmp16 = null != name1;
   if (tmp16) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
-    tmp16 = callback(require(4127) /* Text */.Text, obj3);
+    tmp16 = callback(require(4161) /* Text */.Text, obj3);
   }
   items2[1] = tmp16;
   let tmp21Result = null != rawTitle;
@@ -125,14 +125,14 @@ function EmbedCard(embed) {
     }
     obj4.lineClamp = num5;
     obj4.children = rawTitle;
-    tmp21Result = callback(require(4127) /* Text */.Text, obj4);
+    tmp21Result = callback(require(4161) /* Text */.Text, obj4);
     const tmp21 = callback;
   }
   items2[2] = tmp21Result;
   let tmp24 = null != embed.rawDescription;
   if (tmp24) {
     const obj5 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
-    tmp24 = callback(require(4127) /* Text */.Text, obj5);
+    tmp24 = callback(require(4161) /* Text */.Text, obj5);
   }
   items2[3] = tmp24;
   obj1.children = items2;
@@ -179,18 +179,18 @@ export default function MessagePreviewText(message) {
   if (showMessageAuthor === undefined) {
     showMessageAuthor = false;
   }
-  let obj = message(10234);
+  let obj = message(10274);
   const previewableMedia = obj.usePreviewableMedia(message);
-  let obj1 = message(4361);
+  let obj1 = message(4395);
   let tmp = null;
   if (showMessageAuthor) {
     tmp = message;
   }
   const nullableMessageAuthor = obj1.useNullableMessageAuthor(tmp);
-  let obj2 = message(10239);
+  let obj2 = message(10279);
   const previewableMediaText = obj2.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
   ({ text, secondaryText } = previewableMediaText);
-  let obj3 = message(10240);
+  let obj3 = message(10280);
   const getInitialMessagePreview = obj3.useGetInitialMessagePreview({ message });
   const items = [message.embeds];
   const memo = React.useMemo(() => {
@@ -213,10 +213,10 @@ export default function MessagePreviewText(message) {
     items1[1] = callback(EmbedCard, obj2);
     obj.children = items1;
     tmp64 = callback2(View, obj);
-  } else if (importDefault(5856)(message)) {
+  } else if (importDefault(5866)(message)) {
     let tmp41 = previewableMedia.length > 0;
     if (tmp41) {
-      tmp41 = previewableMedia[0].type === message(10234).PreviewableMediaTypes.GIF;
+      tmp41 = previewableMedia[0].type === message(10274).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -235,10 +235,10 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       channel = channel.getChannel(message.channel_id);
-      message(10200);
+      message(10240);
       if (null != channel) {
-        const obj6 = { channel, message, color: "text-default", layout: message(3809).ChannelListLayoutTypes.COZY, variant: tmp34, muted: false, lineClamp };
-        return callback(message(10220).ChannelRowPreview, obj6);
+        const obj6 = { channel, message, color: "text-default", layout: message(3843).ChannelListLayoutTypes.COZY, variant: tmp34, muted: false, lineClamp };
+        return callback(message(10260).ChannelRowPreview, obj6);
       }
     }
     const obj7 = { message: getInitialMessagePreview, lineClamp, maxHeight };
@@ -252,7 +252,7 @@ export default function MessagePreviewText(message) {
         let tmp24 = null !== secondaryText;
         if (tmp24) {
           const obj10 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: closure_7, children: secondaryText };
-          tmp24 = callback(message(4127).Text, obj10);
+          tmp24 = callback(message(4161).Text, obj10);
         }
         items2[1] = tmp24;
         obj8.children = items2;
@@ -272,7 +272,7 @@ export default function MessagePreviewText(message) {
       const obj13 = { text: formatResult1 };
       const items3 = [callback(SystemMessageText, obj13), ];
       const obj14 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp: closure_7, children: message.poll.question.text };
-      items3[1] = callback(message(4127).Text, obj14);
+      items3[1] = callback(message(4161).Text, obj14);
       obj12.children = items3;
       return callback2(View, obj12);
     } else {

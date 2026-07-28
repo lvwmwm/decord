@@ -1,10 +1,10 @@
-// Module ID: 7384
-// Function ID: 60312
+// Module ID: 7420
+// Function ID: 60401
 // Name: ServerBannerDefaultExample
-// Dependencies: [33, 5085, 7385, 2]
+// Dependencies: [33, 5119, 7421, 2]
 // Exports: ServerBannerDefaultExample
 
-// Module 7384 (ServerBannerDefaultExample)
+// Module 7420 (ServerBannerDefaultExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerDefaultExample.native.tsx");
@@ -27,7 +27,7 @@ export const ServerBannerDefaultExample = function ServerBannerDefaultExample(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7385) };
+  obj = { uri: importDefault(7421) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerBannerDefaultExample = function ServerBannerDefaultExample(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

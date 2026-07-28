@@ -1,10 +1,10 @@
-// Module ID: 16023
-// Function ID: 123765
+// Module ID: 16062
+// Function ID: 123921
 // Name: I18nLink
-// Dependencies: [31, 653, 33, 3850, 3835, 689, 3828, 3830, 1273, 2]
+// Dependencies: [31, 653, 33, 3884, 3869, 689, 3862, 3864, 1273, 2]
 // Exports: default
 
-// Module 16023 (I18nLink)
+// Module 16062 (I18nLink)
 import result from "result";
 import { jsx } from "jsxProd";
 

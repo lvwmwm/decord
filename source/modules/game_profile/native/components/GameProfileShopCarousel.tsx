@@ -1,10 +1,10 @@
-// Module ID: 8591
-// Function ID: 68243
+// Module ID: 8635
+// Function ID: 68390
 // Name: HorizontalSpacing
-// Dependencies: [31, 27, 5770, 33, 4131, 689, 8592, 11853, 11854, 624, 8418, 5769, 5482, 4127, 1212, 4544, 5512, 6619, 2]
+// Dependencies: [31, 27, 5780, 33, 4165, 689, 8636, 11896, 11897, 624, 8462, 5779, 5517, 4161, 1212, 4578, 5547, 6655, 2]
 // Exports: default
 
-// Module 8591 (HorizontalSpacing)
+// Module 8635 (HorizontalSpacing)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,7 +16,7 @@ let closure_7;
 const require = arg1;
 function HorizontalSpacing() {
   let obj = {};
-  obj = { width: require(8592) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP };
+  obj = { width: require(8636) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP };
   obj.style = obj;
   return callback(View, obj);
 }
@@ -27,9 +27,9 @@ function GameProfileShopCarouselContent(trackAction) {
   trackAction = trackAction.trackAction;
   let tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = closeModal(11853);
+  let obj = closeModal(11896);
   const gameProfileShopCollection = obj.useGameProfileShopCollection(collectionId);
-  let obj1 = closeModal(11854);
+  let obj1 = closeModal(11897);
   const fetchCollectiblesProducts = obj1.useFetchCollectiblesProducts(gameProfileShopCollection);
   let obj2 = closeModal(624);
   let items = [_isNativeReflectConstruct];
@@ -45,14 +45,14 @@ function GameProfileShopCarouselContent(trackAction) {
     obj1 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary" };
     const intl = closeModal(1212).intl;
     obj1.children = intl.string(closeModal(1212).t["5DYPT8"]);
-    const items2 = [callback(closeModal(4127).Text, obj1), ];
+    const items2 = [callback(closeModal(4161).Text, obj1), ];
     obj2 = { text: null, variant: "tertiary", size: "sm", icon: null, iconPosition: "end" };
     const intl2 = closeModal(1212).intl;
     obj2.text = intl2.string(closeModal(1212).t.budhsM);
     const obj3 = { size: "sm" };
-    obj2.icon = callback(closeModal(5512).ChevronSmallRightIcon, obj3);
+    obj2.icon = callback(closeModal(5547).ChevronSmallRightIcon, obj3);
     obj2.onPress = tmp4;
-    items2[1] = callback(closeModal(4544).Button, obj2);
+    items2[1] = callback(closeModal(4578).Button, obj2);
     obj.children = items2;
     const items3 = [callback2(View, obj), ];
     const obj4 = {
@@ -67,13 +67,13 @@ function GameProfileShopCarouselContent(trackAction) {
             hideWishlistButton: true,
             hidePrice: true,
             onPress() {
-              outer1_1(closeModal(8418).GameProfileTrackActionActions.DiscordCollectiblesShop);
+              outer1_1(closeModal(8462).GameProfileTrackActionActions.DiscordCollectiblesShop);
               item();
-              let obj = closeModal(5769);
+              let obj = closeModal(5779);
               obj = {};
-              const items = [trackAction(5482).GAME_PROFILE];
+              const items = [trackAction(5517).GAME_PROFILE];
               obj.analyticsLocations = items;
-              obj.analyticsSource = trackAction(5482).GAME_PROFILE;
+              obj.analyticsSource = trackAction(5517).GAME_PROFILE;
               obj.initialProductSkuId = item.skuId;
               obj.openCollectiblesShop(obj);
             }
@@ -85,9 +85,9 @@ function GameProfileShopCarouselContent(trackAction) {
       ListHeaderComponent: HorizontalSpacing,
       ListFooterComponent: HorizontalSpacing,
       decelerationRate: "fast",
-      snapToInterval: closeModal(8592).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(8592).COLLECTIBLES_SHOP_CARD_GAP
+      snapToInterval: closeModal(8636).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(8636).COLLECTIBLES_SHOP_CARD_GAP
     };
-    items3[1] = callback(closeModal(6619).FlashList, obj4, collectionId);
+    items3[1] = callback(closeModal(6655).FlashList, obj4, collectionId);
     obj.children = items3;
     tmp5 = callback2(View, obj);
   }

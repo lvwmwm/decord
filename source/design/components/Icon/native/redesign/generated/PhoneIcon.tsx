@@ -1,10 +1,10 @@
-// Module ID: 11052
-// Function ID: 85964
+// Module ID: 11090
+// Function ID: 86087
 // Name: PhoneIcon
-// Dependencies: [31, 33, 689, 3834, 11053, 2]
+// Dependencies: [31, 33, 689, 3868, 11091, 2]
 // Exports: PhoneIcon
 
-// Module 11052 (PhoneIcon)
+// Module 11090 (PhoneIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PhoneIcon = function PhoneIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11053) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11091) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11053) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(11091) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,8 +1,8 @@
-// Module ID: 15575
-// Function ID: 119959
-// Dependencies: [31, 27, 33, 4131, 10130, 2]
+// Module ID: 15614
+// Function ID: 120115
+// Dependencies: [31, 27, 33, 4165, 10170, 2]
 
-// Module 15575
+// Module 15614
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,10 +28,10 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
   }, items);
   if ("invite" === item.type) {
     obj = { invite: item.data };
-    let tmp7 = jsx(str(10130), { invite: item.data });
+    let tmp7 = jsx(str(10170), { invite: item.data });
   } else {
     obj = { channel: item.data };
-    tmp7 = jsx(onMeasured(10130).LinkedChannelInvite, { channel: item.data });
+    tmp7 = jsx(onMeasured(10170).LinkedChannelInvite, { channel: item.data });
   }
   obj.children = tmp7;
   return <View style={null} onLayout={null} pointerEvents="none" importantForAccessibility="no-hide-descendants" accessibilityElementsHidden accessible={false} />;

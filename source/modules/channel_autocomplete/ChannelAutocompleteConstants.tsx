@@ -1,10 +1,10 @@
-// Module ID: 4568
-// Function ID: 40062
+// Module ID: 4602
+// Function ID: 40176
 // Name: regExp
 // Dependencies: [2]
-// Exports: extractGameMentionIds, formatGameMentionRaw
+// Exports: extractGameMentionIds, formatGameMentionRaw, formatGameMentionToken
 
-// Module 4568 (regExp)
+// Module 4602 (regExp)
 let closure_0 = [];
 const tmp2 = /^<@\$(\d+)>/;
 const regExp = new RegExp(tmp2.source.replace(/^\^/, ""), "g");
@@ -20,6 +20,9 @@ export const COMMAND_SENTINEL = "/";
 export const GAME_MENTION_INPUT_PREFIX = "@game:";
 export const formatGameMentionRaw = function formatGameMentionRaw(arg0) {
   return "<@$" + arg0 + ">";
+};
+export const formatGameMentionToken = function formatGameMentionToken(arg0) {
+  return "$" + arg0;
 };
 export const GAME_MENTION_RAW_RE = tmp2;
 export const GAME_MENTION_RAW_RE_GLOBAL = regExp;

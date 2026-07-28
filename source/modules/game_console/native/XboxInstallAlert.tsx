@@ -1,10 +1,10 @@
-// Module ID: 8984
-// Function ID: 70797
+// Module ID: 9028
+// Function ID: 70948
 // Name: XboxInstallAlert
-// Dependencies: [31, 8877, 33, 4131, 689, 4562, 1212, 1273, 8967, 477, 3828, 2]
+// Dependencies: [31, 8921, 33, 4165, 689, 4596, 1212, 1273, 9011, 477, 3862, 2]
 // Exports: default
 
-// Module 8984 (XboxInstallAlert)
+// Module 9028 (XboxInstallAlert)
 import "result";
 import XBOX_URL_BASE from "XBOX_URL_BASE";
 import { jsx } from "jsxProd";
@@ -47,5 +47,5 @@ export default function XboxInstallAlert(arg0) {
       openURL(outer1_4);
     }
   };
-  return jsx(importDefault(4562), {});
+  return jsx(importDefault(4596), {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 16655
-// Function ID: 129946
+// Module ID: 16695
+// Function ID: 130107
 // Name: _handleIncomingURL
-// Dependencies: [5, 1348, 4203, 6271, 653, 3, 5703, 16654, 4342, 675, 12921, 4112, 4117, 490, 6636, 16656, 2]
+// Dependencies: [5, 1348, 4237, 6307, 653, 3, 5713, 16694, 4376, 675, 12965, 4146, 4151, 490, 6672, 16696, 2]
 // Exports: default
 
-// Module 16655 (_handleIncomingURL)
+// Module 16695 (_handleIncomingURL)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

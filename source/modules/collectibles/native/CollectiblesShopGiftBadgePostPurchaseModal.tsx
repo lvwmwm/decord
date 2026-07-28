@@ -1,10 +1,10 @@
-// Module ID: 11834
-// Function ID: 91745
+// Module ID: 11877
+// Function ID: 91915
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 4338, 5769, 5482, 6725, 1212, 5119, 4127, 2295, 9762, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1557, 4372, 5779, 5517, 6761, 1212, 5153, 4161, 2295, 9802, 2]
 // Exports: default
 
-// Module 11834 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11877 (CollectiblesShopGiftBadgePostPurchaseModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,14 +47,14 @@ export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgre
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.style = tmp.closeButton;
-  obj.children = callback(require(5119) /* XSmallIcon */.XSmallIcon, { size: "md", style: tmp.closeIcon });
+  obj.children = callback(require(5153) /* XSmallIcon */.XSmallIcon, { size: "md", style: tmp.closeIcon });
   let items = [callback(closure_4, obj), ];
   const obj2 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(importDefault(2295).roVAey);
-  items[1] = callback(require(4127) /* Text */.Text, obj2);
+  items[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback2(closure_5, obj), callback(importDefault(9762), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
+  const items1 = [callback2(closure_5, obj), callback(importDefault(9802), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
   obj.children = items1;
-  return callback2(require(6725) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(6761) /* ModalScreen */.ModalScreen, obj);
 };

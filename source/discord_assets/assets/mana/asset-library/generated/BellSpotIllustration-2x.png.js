@@ -1,9 +1,9 @@
-// Module ID: 6821
-// Function ID: 59468
+// Module ID: 6857
+// Function ID: 59557
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6821 (metadata)
+// Module 6857 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BellSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/92b508bf804f591d06af6759638a2af67494082b89563c559a5233bb2b010edd.png";

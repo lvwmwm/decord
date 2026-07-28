@@ -1,22 +1,22 @@
-// Module ID: 15932
-// Function ID: 123139
+// Module ID: 15971
+// Function ID: 123295
 // Name: AnimatedButtonWrapper
-// Dependencies: [31, 27, 9976, 33, 4131, 689, 3992, 15847, 477, 4543, 4132, 2]
+// Dependencies: [31, 27, 10016, 33, 4165, 689, 4026, 15886, 477, 4577, 4166, 2]
 // Exports: default
 
-// Module 15932 (AnimatedButtonWrapper)
+// Module 15971 (AnimatedButtonWrapper)
 import result from "result";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 const require = arg1;
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").modules.button.BORDER_RADIUS_LG };
 _createForOfIteratorHelperLoose.pressableWrapper = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_7 = require("module_3992").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_7 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let closure_8 = { code: "function VoicePanelAnimatedButtonWrapperTsx1(values){const{offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};}" };
 let closure_9 = { code: "function VoicePanelAnimatedButtonWrapperTsx2(values){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
 let result = require("VoicePanelModes").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelAnimatedButtonWrapper.tsx");

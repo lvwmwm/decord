@@ -1,9 +1,9 @@
-// Module ID: 4960
-// Function ID: 42641
+// Module ID: 4994
+// Function ID: 42756
 // Name: GuildMemberRequestState
-// Dependencies: [6, 7, 4016, 22, 2]
+// Dependencies: [6, 7, 4050, 22, 2]
 
-// Module 4960 (GuildMemberRequestState)
+// Module 4994 (GuildMemberRequestState)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

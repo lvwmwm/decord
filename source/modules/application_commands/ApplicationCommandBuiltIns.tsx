@@ -1,10 +1,10 @@
-// Module ID: 5682
-// Function ID: 48799
+// Module ID: 5692
+// Function ID: 48655
 // Name: getOptionValue
-// Dependencies: [5, 1348, 3759, 1850, 4567, 653, 5683, 1920, 4124, 5676, 1212, 5684, 1882, 3804, 6129, 6130, 5996, 6131, 669, 6133, 5685, 5914, 5049, 3970, 664, 10964, 3713, 4141, 44, 5627, 12546, 2]
+// Dependencies: [5, 1348, 3793, 1850, 4601, 653, 5693, 1920, 4158, 5686, 1212, 5694, 1882, 3838, 6163, 6164, 6030, 6165, 669, 6167, 5695, 5948, 5083, 4004, 664, 11002, 3747, 4175, 44, 5662, 12589, 2]
 // Exports: getBuiltInCommands
 
-// Module 5682 (getOptionValue)
+// Module 5692 (getOptionValue)
 import importDefaultResult from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -224,7 +224,7 @@ obj7.predicate = function predicate(channel) {
   channel = channel.channel;
   let setting = null != channel && !channel.isPrivate();
   if (setting) {
-    const EnableTTSCommand = require(3804) /* explicitContentFromProto */.EnableTTSCommand;
+    const EnableTTSCommand = require(3838) /* explicitContentFromProto */.EnableTTSCommand;
     setting = EnableTTSCommand.getSetting();
   }
   if (setting) {
@@ -390,7 +390,7 @@ obj13.execute = function execute(arr) {
       if (null != tmp3) {
         str3 = tmp3;
       }
-      const obj = importDefault(6129);
+      const obj = importDefault(6163);
       const id = guild.id;
       const id2 = channel.id;
       if (!str3) {
@@ -450,7 +450,7 @@ Object.defineProperty(obj17, "displayDescription", {
   },
   set: undefined
 });
-Object.defineProperty(obj17, "maxLength", { get: () => require(6130) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj17, "maxLength", { get: () => require(6164) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
 obj17.required = true;
 items8[1] = obj17;
 obj15.options = items8;
@@ -458,8 +458,8 @@ obj15.predicate = function predicate(channel) {
   channel = channel.channel;
   let canStartPublicThread = null != channel;
   if (canStartPublicThread) {
-    canStartPublicThread = require(5996) /* useCanStartPublicThread */.computeCanStartPublicThread(channel);
-    const obj = require(5996) /* useCanStartPublicThread */;
+    canStartPublicThread = require(6030) /* useCanStartPublicThread */.computeCanStartPublicThread(channel);
+    const obj = require(6030) /* useCanStartPublicThread */;
   }
   return canStartPublicThread;
 };
@@ -993,7 +993,7 @@ Object.defineProperty(obj31, "displayDescription", {
   set: undefined
 });
 obj31.required = true;
-Object.defineProperty(obj31, "maxLength", { get: () => require(6130) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj31, "maxLength", { get: () => require(6164) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
 items12[1] = obj31;
 obj29.options = items12;
 obj29.execute = function execute(arr, channel) {
@@ -1096,8 +1096,8 @@ obj32.execute = function execute(arr, channel) {
     }
     const NumberResult = Number(num);
     const NumberResult1 = Number(num2);
-    require(5627) /* startDiceRoll */.startDiceRoll(channel.id, NumberResult, NumberResult1);
-    const obj = require(5627) /* startDiceRoll */;
+    require(5662) /* startDiceRoll */.startDiceRoll(channel.id, NumberResult, NumberResult1);
+    const obj = require(5662) /* startDiceRoll */;
   }
 };
 items[sum10 + 1] = obj32;

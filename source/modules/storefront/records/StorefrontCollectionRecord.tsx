@@ -1,9 +1,9 @@
-// Module ID: 5789
-// Function ID: 50948
+// Module ID: 5799
+// Function ID: 50804
 // Name: StorefrontCollectionRecord
-// Dependencies: [6, 7, 5790, 5783, 5791, 2]
+// Dependencies: [6, 7, 5800, 5793, 5801, 2]
 
-// Module 5789 (StorefrontCollectionRecord)
+// Module 5799 (StorefrontCollectionRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

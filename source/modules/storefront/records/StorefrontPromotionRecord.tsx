@@ -1,9 +1,9 @@
-// Module ID: 8616
-// Function ID: 68511
+// Module ID: 8660
+// Function ID: 68662
 // Name: _isNativeReflectConstruct
 // Dependencies: [57, 6, 7, 15, 17, 18, 1859, 2]
 
-// Module 8616 (_isNativeReflectConstruct)
+// Module 8660 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import Record from "Record";
 import set from "set";
@@ -87,30 +87,24 @@ function parseCollectiblesTenantMetadata(collectibles) {
       tmp3 = header_text;
     }
     obj1.headerText = tmp3;
-    const body_text = collectibles.reward.storefront.nagbar.body_text;
     let tmp4;
-    if (null != body_text) {
-      tmp4 = body_text;
-    }
-    obj1.bodyText = tmp4;
-    let tmp5;
     if (null != collectibles.reward.storefront.nagbar.cta) {
       const obj2 = {};
       const text = collectibles.reward.storefront.nagbar.cta.text;
-      let tmp6;
+      let tmp5;
       if (null != text) {
-        tmp6 = text;
+        tmp5 = text;
       }
-      obj2.text = tmp6;
-      tmp5 = obj2;
+      obj2.text = tmp5;
+      tmp4 = obj2;
     }
-    obj1.cta = tmp5;
+    obj1.cta = tmp4;
     const help_center_id = collectibles.reward.storefront.nagbar.help_center_id;
-    let tmp7;
+    let tmp6;
     if (null != help_center_id) {
-      tmp7 = help_center_id;
+      tmp6 = help_center_id;
     }
-    obj1.helpCenterId = tmp7;
+    obj1.helpCenterId = tmp6;
     obj.nagbar = obj1;
     obj.storefront = obj;
     tmp2 = obj;

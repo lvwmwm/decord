@@ -1,10 +1,10 @@
-// Module ID: 5186
-// Function ID: 45033
+// Module ID: 5220
+// Function ID: 45148
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1450, 3835, 1324, 4127, 5088, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 1450, 3869, 1324, 4161, 5122, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5186 (RedesignBottomSheetTitleHeaderBase)
+// Module 5220 (RedesignBottomSheetTitleHeaderBase)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -69,7 +69,7 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   ({ title, leading, trailing, onTitleTextLayout } = subtitle);
   const tmp = callback4();
   const tmp2 = callback6();
-  let obj = _require(3835);
+  let obj = _require(3869);
   const result = (importDefault(1450)().width - 2 * obj.useToken(importDefault(689).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL)) / 4;
   const tmp4 = callback(React.useState(undefined), 2);
   const first = tmp4[0];
@@ -115,7 +115,7 @@ function Title(arg0) {
   }
   const obj = { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: callback4().title };
   const merged = Object.assign(arg0);
-  return callback2(require(4127) /* Text */.Text, obj);
+  return callback2(require(4161) /* Text */.Text, obj);
 }
 function Subtitle(children) {
   const tmp2 = importDefault(1324)("BottomSheetTitleHeader");
@@ -128,7 +128,7 @@ function Subtitle(children) {
     str2 = "text-sm/medium";
   }
   const obj = { variant: str2, color: str, lineClamp: 1, style: callback4().subtitle, children: children.children };
-  return callback2(require(4127) /* Text */.Text, obj);
+  return callback2(require(4161) /* Text */.Text, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let closure_8 = _createForOfIteratorHelperLoose.createStyles(() => {
@@ -158,7 +158,7 @@ export const BottomSheetTitleHeader = function BottomSheetTitleHeader(arg0) {
   ({ leading, trailing } = arg0);
   const tmp2 = callback(React.useState(false), 2);
   let closure_0 = tmp2[1];
-  const tmp3 = importDefault(5088)("sheet");
+  const tmp3 = importDefault(5122)("sheet");
   if (null != leading) {
     if (tmp2[0]) {
       let obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 16558
-// Function ID: 129035
+// Module ID: 16598
+// Function ID: 129196
 // Name: AdvancedInstantInviteScreen
-// Dependencies: [57, 31, 1348, 8287, 1838, 3759, 653, 33, 4131, 689, 1456, 566, 44, 22, 16559, 8293, 4471, 1212, 4560, 686, 6695, 7575, 16560, 8288, 480, 5087, 5517, 2]
+// Dependencies: [57, 31, 1348, 8325, 1838, 3793, 653, 33, 4165, 689, 1456, 566, 44, 22, 16599, 8331, 4505, 1212, 4594, 686, 6731, 7611, 16600, 8326, 480, 5121, 5552, 2]
 // Exports: default
 
-// Module 16558 (AdvancedInstantInviteScreen)
+// Module 16598 (AdvancedInstantInviteScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -80,7 +80,7 @@ function AdvancedInstantInviteScreen() {
     }
   }, items1);
   let obj3 = navigation(22);
-  const unmountEffect = navigation(4560).useUnmountEffect(() => {
+  const unmountEffect = navigation(4594).useUnmountEffect(() => {
     channel(tmp8[19]).wait(channel(tmp8[15]).resetSettings);
   });
   const items2 = [channel];
@@ -111,7 +111,7 @@ function AdvancedInstantInviteScreen() {
           const obj = { onPress: outer1_3 };
           const intl = navigation(1212).intl;
           obj.text = intl.string(navigation(1212).t["R3BPH+"]);
-          tmp = outer2_11(navigation(6695).HeaderActionButton, obj);
+          tmp = outer2_11(navigation(6731).HeaderActionButton, obj);
         }
         return tmp;
       }
@@ -144,16 +144,16 @@ function AdvancedInstantInviteScreen() {
   }, []);
   obj = { contentContainerStyle: tmp.formContainer };
   obj = { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses };
-  let obj4 = navigation(4560);
-  obj.maxUsesOptions = channel(8288).getMaxUsesOptions;
+  let obj4 = navigation(4594);
+  obj.maxUsesOptions = channel(8326).getMaxUsesOptions;
   ({ temporary: obj6.temporary, flags: obj6.flags, roleIds: obj6.roleIds } = settings);
   obj.onChangeMaxAge = callback2;
   obj.onChangeMaxUses = callback1;
   obj.onChangeTemporary = callback3;
   obj.onChangeFlags = callback4;
   obj.onChangeRoleIds = callback5;
-  obj.children = jsx(channel(16560), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
-  return jsx(navigation(7575).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
+  obj.children = jsx(channel(16600), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
+  return jsx(navigation(7611).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
 }
 ({ InviteModalScenes: closure_9, Permissions: closure_10 } = ME);
 _createForOfIteratorHelperLoose = {};
@@ -177,5 +177,5 @@ export default function InviteSettingsModal() {
     obj[outer2_9.ADVANCED] = obj;
     return obj;
   })(), []);
-  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
+  return jsx(require(5552) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
 };

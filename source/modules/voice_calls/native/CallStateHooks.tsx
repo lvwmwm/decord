@@ -1,10 +1,10 @@
-// Module ID: 12787
-// Function ID: 99525
+// Module ID: 12830
+// Function ID: 99695
 // Name: id
-// Dependencies: [4144, 1194, 4810, 4203, 653, 4149, 566, 8861, 2]
+// Dependencies: [4178, 1194, 4844, 4237, 653, 4183, 566, 8905, 2]
 // Exports: default
 
-// Module 12787 (id)
+// Module 12830 (id)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -66,7 +66,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(8861)();
+  const tmp3 = id(8905)();
   dependencyMap = tmp3;
   const items2 = [getRTCConnectionId];
   stateFromStores = require(566) /* initialize */.useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);

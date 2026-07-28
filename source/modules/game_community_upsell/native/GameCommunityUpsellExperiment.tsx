@@ -1,9 +1,9 @@
-// Module ID: 12700
-// Function ID: 98680
+// Module ID: 12743
+// Function ID: 98850
 // Name: GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT
 // Dependencies: [1428, 2]
 
-// Module 12700 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
+// Module 12743 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-02-game-community-upsell-multi", kind: "user", defaultConfig: { enabled: false, visualVariant: "one-column" }, variations: { [1]: { enabled: true, visualVariant: "one-column" }, [2]: { enabled: true, visualVariant: "two-column" } } };

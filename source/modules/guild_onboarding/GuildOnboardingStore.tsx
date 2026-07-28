@@ -1,9 +1,9 @@
-// Module ID: 5055
-// Function ID: 43757
+// Module ID: 5089
+// Function ID: 43872
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 653, 1841, 566, 686, 2]
 
-// Module 5055 (_isNativeReflectConstruct)
+// Module 5089 (_isNativeReflectConstruct)
 import isFavoritesGuildId from "isFavoritesGuildId";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

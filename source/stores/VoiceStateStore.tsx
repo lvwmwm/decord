@@ -1,9 +1,9 @@
-// Module ID: 4147
-// Function ID: 34893
+// Module ID: 4181
+// Function ID: 34995
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 4148, 653, 4149, 22, 1553, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 4182, 653, 4183, 22, 1553, 566, 686, 2]
 
-// Module 4147 (_isNativeReflectConstruct)
+// Module 4181 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -298,8 +298,8 @@ let tmp4 = ((Store) => {
   };
   items[5] = {
     key: "getVoiceState",
-    value(closure_0) {
-      return this.getVoiceStates(closure_0)[arg1];
+    value(arg0, arg1) {
+      return this.getVoiceStates(arg0)[arg1];
     }
   };
   items[6] = {

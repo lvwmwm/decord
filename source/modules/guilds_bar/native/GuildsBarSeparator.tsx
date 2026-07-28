@@ -1,8 +1,8 @@
-// Module ID: 14932
-// Function ID: 113875
-// Dependencies: [31, 33, 4131, 689, 3835, 14861, 3992, 4543, 7620, 2]
+// Module ID: 14976
+// Function ID: 114048
+// Dependencies: [31, 33, 4165, 689, 3869, 14905, 4026, 4577, 7656, 2]
 
-// Module 14932
+// Module 14976
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -14,9 +14,9 @@ obj.separator = obj;
 let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_6 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guildItemSize,panelX,HOME_DRAWER_FLING_PHYSICS}=this.__closure;return{maxWidth:withSpring(Math.max(guildItemSize,panelX.get()+guildItemSize),HOME_DRAWER_FLING_PHYSICS)};}" };
 const memoResult = importAllResult.memo(function GuildsBarSeparator() {
-  let obj = token(3835);
+  let obj = token(3869);
   token = obj.useToken(panelX(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  panelX = importAllResult.useContext(token(14861).HomeDrawerStateContext).panelX;
+  panelX = importAllResult.useContext(token(14905).HomeDrawerStateContext).panelX;
   const tmp = callback();
   const fn = function l() {
     const obj = {};
@@ -24,13 +24,13 @@ const memoResult = importAllResult.memo(function GuildsBarSeparator() {
     obj.maxWidth = token(outer1_2[7]).withSpring(bound, token(outer1_2[5]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: token(4543).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14861).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: token(4577).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14905).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_6;
-  const animatedStyle = token(3992).useAnimatedStyle(fn);
+  const animatedStyle = token(4026).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelX(7620), { style });
+  return jsx(panelX(7656), { style });
 });
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
 

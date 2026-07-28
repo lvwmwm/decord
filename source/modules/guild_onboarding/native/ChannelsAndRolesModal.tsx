@@ -1,10 +1,10 @@
-// Module ID: 9930
-// Function ID: 76810
+// Module ID: 9970
+// Function ID: 76939
 // Name: ChannelsAndRolesScreen
-// Dependencies: [57, 31, 27, 1838, 5060, 33, 4131, 689, 624, 9931, 8162, 1212, 8687, 9932, 9938, 9040, 2]
+// Dependencies: [57, 31, 27, 1838, 5094, 33, 4165, 689, 624, 9971, 8200, 1212, 8731, 9972, 9978, 9084, 2]
 // Exports: default
 
-// Module 9930 (ChannelsAndRolesScreen)
+// Module 9970 (ChannelsAndRolesScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -89,7 +89,7 @@ export default function ChannelsAndRolesModal(arg0) {
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(closure_0));
   obj = { screenKey: "channelAndRolesModal" };
-  const tmp2 = importDefault(9931)(stateFromStores);
+  const tmp2 = importDefault(9971)(stateFromStores);
   const tmp3 = closure_8;
   const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
@@ -103,5 +103,5 @@ export default function ChannelsAndRolesModal(arg0) {
   obj.render = function render() {
     return outer1_8(outer1_11, { guildId: closure_0, defaultTab: closure_1 });
   };
-  return tmp3(importDefault(9040), obj);
+  return tmp3(importDefault(9084), obj);
 };

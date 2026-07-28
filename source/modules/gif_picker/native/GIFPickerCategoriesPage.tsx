@@ -1,8 +1,8 @@
-// Module ID: 9552
-// Function ID: 74523
-// Dependencies: [31, 27, 9532, 33, 4131, 9539, 689, 9529, 566, 9533, 9553, 9330, 8755, 9173, 5162, 1212, 2]
+// Module ID: 9592
+// Function ID: 74652
+// Dependencies: [31, 27, 9572, 33, 4165, 9579, 689, 9569, 566, 9573, 9593, 9374, 8799, 9217, 5196, 1212, 2]
 
-// Module 9552
+// Module 9592
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -12,9 +12,9 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 const require = arg1;
 let closure_7 = _createForOfIteratorHelperLoose.createStyles((height) => {
   let obj = {};
-  obj = { height, flexDirection: "row", gap: require(9539) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingBottom: require(9539) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING };
+  obj = { height, flexDirection: "row", gap: require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingBottom: require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING };
   obj.item = obj;
-  obj = { backgroundColor: importDefault(689).colors.BORDER_SUBTLE, height: height - require(9539) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, borderRadius: importDefault(689).radii.xs, flex: 1 };
+  obj = { backgroundColor: importDefault(689).colors.BORDER_SUBTLE, height: height - require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, borderRadius: importDefault(689).radii.xs, flex: 1 };
   obj.placeholder = obj;
   return obj;
 });

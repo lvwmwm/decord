@@ -1,10 +1,10 @@
-// Module ID: 16398
-// Function ID: 127944
+// Module ID: 16437
+// Function ID: 128100
 // Name: GuildSettingsRoleEditPermission
-// Dependencies: [57, 31, 27, 1391, 3759, 1850, 653, 33, 4131, 689, 3764, 44, 4127, 1212, 4099, 16399, 1935, 15583, 16396, 9171, 675, 483, 15587, 5502, 5501, 1273, 8234, 2]
+// Dependencies: [57, 31, 27, 1391, 3793, 1850, 653, 33, 4165, 689, 3798, 44, 4161, 1212, 4133, 16438, 1935, 15622, 16435, 9215, 675, 483, 15626, 5537, 5536, 1273, 8272, 2]
 // Exports: default
 
-// Module 16398 (GuildSettingsRoleEditPermission)
+// Module 16437 (GuildSettingsRoleEditPermission)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "set";
@@ -56,10 +56,10 @@ export default function GuildSettingsRoleEditPermission(guild) {
   currentUser = currentUser.getCurrentUser();
   highestRole = undefined;
   if (null != currentUser) {
-    let obj = importAll(3764);
+    let obj = importAll(3798);
     highestRole = obj.getHighestRole(guild, currentUser.id);
   }
-  let obj1 = importAll(3764);
+  let obj1 = importAll(3798);
   let id;
   if (null != currentUser) {
     id = currentUser.id;
@@ -72,7 +72,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   [c9, c10] = callback(highestRole.useState(false), 2);
   role(44)(null != guild, "Guild cannot be null");
   let tmp12 = isGuildOwner(guild, currentUser);
-  let obj2 = importAll(3764);
+  let obj2 = importAll(3798);
   obj = { permission: constants.ADMINISTRATOR, user: currentUser, context: guild };
   const tmp10 = callback(highestRole.useState(false), 2);
   currentUser = highestRole.useRef(false);
@@ -96,13 +96,13 @@ export default function GuildSettingsRoleEditPermission(guild) {
         }
     };
     obj1.children = intl.format(guild(1212).t.ZhSOBy, obj2);
-    tmp12 = callback2(guild(4127).Text, obj1);
+    tmp12 = callback2(guild(4161).Text, obj1);
   }
   obj.children = tmp12;
   canResult = obj2.can(obj);
   const tmp14 = callback2;
   const tmp15 = c6;
-  let obj7 = role(15583);
+  let obj7 = role(15622);
   const guildPermissionSpec = obj7.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
@@ -117,12 +117,12 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   let obj3 = {};
-  const items = [callback2(role(16396), { role }), , , ];
+  const items = [callback2(role(16435), { role }), , , ];
   const tmp14Result = callback2(c6, obj);
   const tmp21 = mapped1.length > 0;
   const tmp22 = closure_16;
   const tmp23 = closure_15;
-  items[1] = callback2(c6, { children: callback2(guild(9171).SearchField, obj5) });
+  items[1] = callback2(c6, { children: callback2(guild(9215).SearchField, obj5) });
   items[2] = tmp14Result;
   if (tmp21) {
     const obj6 = {
@@ -199,7 +199,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     let tmp24Result = tmp24(closure_8, obj6);
   } else {
-    obj7 = { Illustration: guild(8234).NoResultsAlt };
+    obj7 = { Illustration: guild(8272).NoResultsAlt };
     ({ emptyState: obj12.style, emptyStateText: obj12.bodyStyle } = tmp);
     const intl2 = guild(1212).intl;
     const obj8 = { query: first };

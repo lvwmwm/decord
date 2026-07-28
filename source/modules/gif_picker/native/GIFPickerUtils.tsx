@@ -1,10 +1,10 @@
-// Module ID: 9539
-// Function ID: 74465
+// Module ID: 9579
+// Function ID: 74594
 // Name: transformFavoriteGifUrl
-// Dependencies: [31, 653, 1443, 9538, 9540, 1212, 2]
+// Dependencies: [31, 653, 1443, 9578, 9580, 1212, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 9539 (transformFavoriteGifUrl)
+// Module 9579 (transformFavoriteGifUrl)
 import result from "result";
 
 const require = arg1;
@@ -29,9 +29,9 @@ function transformFavoriteGifUrl(outer1_0) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      const obj2 = require(9538) /* isAttachmentUrl */;
+      const obj2 = require(9578) /* isAttachmentUrl */;
     }
-    obj6 = require(9538) /* isAttachmentUrl */;
+    obj6 = require(9578) /* isAttachmentUrl */;
   }
   if (regex.test(arg1)) {
     const match = regex3.exec(arg1);
@@ -58,7 +58,7 @@ let result = require("isOriginalContentTypeDifferent").fileFinishedImporting("mo
 
 export const GIF_HEADER_HEIGHT = 56;
 export const useFavoriteGIFsMobile = function useFavoriteGIFsMobile() {
-  let obj = sortedFavoriteGIFs(9540);
+  let obj = sortedFavoriteGIFs(9580);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   obj = {

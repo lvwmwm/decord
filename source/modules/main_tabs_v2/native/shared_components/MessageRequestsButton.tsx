@@ -1,10 +1,10 @@
-// Module ID: 14955
-// Function ID: 114037
+// Module ID: 14999
+// Function ID: 114210
 // Name: useMessageRequestCounts
-// Dependencies: [31, 27, 5602, 5603, 33, 4131, 566, 14956, 4544, 1212, 6625, 10064, 11777, 2]
+// Dependencies: [31, 27, 5637, 5638, 33, 4165, 566, 15000, 4578, 1212, 6661, 10104, 11816, 2]
 // Exports: default
 
-// Module 14955 (useMessageRequestCounts)
+// Module 14999 (useMessageRequestCounts)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items);
-  return callback(ref(14956).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15000).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = _createForOfIteratorHelperLoose.createStyles({ buttonContainer: { position: "relative" } });
@@ -73,25 +73,25 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj1.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp26 = callback(require(4544) /* Button */.Button, obj1);
+      let tmp26 = callback(require(4578) /* Button */.Button, obj1);
     } else {
       const obj2 = { variant: "secondary", size: "sm", icon: callback(MessageRequestAnimation, {}) };
       const intl3 = require(1212) /* getSystemLocale */.intl;
       obj2.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp26 = callback(require(6625) /* IconButton */.IconButton, obj2);
+      tmp26 = callback(require(6661) /* IconButton */.IconButton, obj2);
     }
     const items = [tmp26, ];
     let tmp27 = str > 0;
     if (tmp27) {
       const obj3 = { badgePosition: "right" };
-      tmp27 = callback(require(10064) /* ButtonBadge */.ButtonBadge, obj3);
+      tmp27 = callback(require(10104) /* ButtonBadge */.ButtonBadge, obj3);
     }
     items[1] = tmp27;
     obj.children = items;
     return closure_8(View, obj);
   } else {
-    obj = { source: importDefault(11777), IconComponent: MessageRequestAnimation };
+    obj = { source: importDefault(11816), IconComponent: MessageRequestAnimation };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.e7GWjQ);
     let str1;
@@ -102,7 +102,7 @@ export default function MessageRequestsButton(alternateVariant) {
     obj.badge = str > 0;
     obj.badgePosition = "right";
     const merged3 = Object.assign(merged);
-    return callback(importDefault(10064), obj);
+    return callback(importDefault(10104), obj);
   }
   tmp3 = callback2();
 };

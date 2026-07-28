@@ -1,10 +1,10 @@
-// Module ID: 8695
-// Function ID: 69004
+// Module ID: 8739
+// Function ID: 69155
 // Name: VariantOption
-// Dependencies: [31, 27, 33, 4131, 689, 8642, 4661, 1212, 8660, 5153, 5781, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 8686, 4695, 1212, 8704, 5187, 5791, 4161, 2]
 // Exports: default
 
-// Module 8695 (VariantOption)
+// Module 8739 (VariantOption)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function VariantOption(onSelect) {
   let variant;
   ({ variant, isSelected } = onSelect);
   const tmp = callback2(isSelected);
-  let obj = require(8642) /* getProductPurchaseState */;
+  let obj = require(8686) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   obj = { accessibilityRole: "button" };
   if (isPurchased) {
@@ -41,14 +41,14 @@ function VariantOption(onSelect) {
   }
   obj1.children = isPurchased;
   obj.children = callback(View, obj1);
-  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
 }
 function VariantCheckmark(variant) {
   const obj = {};
   const colors = importDefault(689).colors;
-  obj.color = importDefault(8660)(variant.variant) ? colors.BLACK : colors.WHITE;
+  obj.color = importDefault(8704)(variant.variant) ? colors.BLACK : colors.WHITE;
   obj.size = "md";
-  return closure_4(require(5153) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
+  return closure_4(require(5187) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -78,7 +78,7 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   ({ product, selectedVariantIndex } = onVariantSelect);
   onVariantSelect = onVariantSelect.onVariantSelect;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = selectedVariantIndex(5781);
+  let obj = selectedVariantIndex(5791);
   let tmp3Result = null;
   if (obj.getIsVariantProduct(product)) {
     obj = { style: tmp.container };
@@ -86,11 +86,11 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
     const obj1 = { variant: "text-md/bold", color: "mobile-text-heading-primary" };
     const intl = selectedVariantIndex(1212).intl;
     obj1.children = intl.string(selectedVariantIndex(1212).t.wbgaj6);
-    const items = [callback(selectedVariantIndex(4127).Text, obj1), ];
+    const items = [callback(selectedVariantIndex(4161).Text, obj1), ];
     let tmp9 = product.variants.length > selectedVariantIndex;
     if (tmp9) {
       const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: tmp.text, children: product.variants[selectedVariantIndex].variantLabel };
-      tmp9 = callback(selectedVariantIndex(4127).Text, obj2);
+      tmp9 = callback(selectedVariantIndex(4161).Text, obj2);
     }
     items[1] = tmp9;
     obj.children = items;

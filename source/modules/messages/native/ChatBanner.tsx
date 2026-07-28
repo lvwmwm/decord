@@ -1,10 +1,10 @@
-// Module ID: 10398
-// Function ID: 80227
+// Module ID: 10438
+// Function ID: 80356
 // Name: OptInChannelBanner
-// Dependencies: [31, 27, 4809, 4143, 10399, 653, 33, 4131, 689, 10400, 10401, 566, 21, 1324, 675, 4325, 5073, 4127, 1212, 4544, 5996, 6024, 4661, 5070, 7695, 2]
+// Dependencies: [31, 27, 4843, 4177, 10439, 653, 33, 4165, 689, 10440, 10441, 566, 21, 1324, 675, 4359, 5107, 4161, 1212, 4578, 6030, 6058, 4695, 5104, 7731, 2]
 // Exports: default
 
-// Module 10398 (OptInChannelBanner)
+// Module 10438 (OptInChannelBanner)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -102,7 +102,7 @@ function ArchivedLockedThreadChatBanner(channel) {
     obj["banner_type"] = "thread";
     obj.track(outer1_10.CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(5996);
+  let obj = channel(6030);
   let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   obj = { style: tmp.threadBannerContainer };
   obj = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default" };
@@ -115,7 +115,7 @@ function ArchivedLockedThreadChatBanner(channel) {
     stringResult = string(t.rEeodK);
   }
   obj.children = stringResult;
-  const items1 = [callback(channel(4127).Text, obj), ];
+  const items1 = [callback(channel(4161).Text, obj), ];
   if (canUnarchiveThread) {
     const obj1 = { style: tmp.threadBannerButton };
     const obj2 = { variant: "secondary", size: "sm" };
@@ -133,7 +133,7 @@ function ArchivedLockedThreadChatBanner(channel) {
       const obj4 = channel(outer1_2[15]);
       outer1_1(outer1_2[21]).unarchiveThread(channel, false);
     };
-    obj1.children = callback(channel(4544).Button, obj2);
+    obj1.children = callback(channel(4578).Button, obj2);
     canUnarchiveThread = callback(closure_4, obj1);
   }
   items1[1] = canUnarchiveThread;
@@ -153,7 +153,7 @@ function LockedThreadChatBanner(channel) {
     obj["banner_type"] = "thread";
     obj.track(outer1_10.CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(5996);
+  let obj = channel(6030);
   let isThreadModerator = obj.useIsThreadModerator(channel);
   obj = { style: tmp.threadBannerContainer };
   obj = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default" };
@@ -166,7 +166,7 @@ function LockedThreadChatBanner(channel) {
     stringResult = string(t["V/JF2N"]);
   }
   obj.children = stringResult;
-  const items1 = [callback(channel(4127).Text, obj), ];
+  const items1 = [callback(channel(4161).Text, obj), ];
   if (isThreadModerator) {
     const obj1 = { style: tmp.threadBannerButton };
     const obj2 = { variant: "secondary", size: "sm" };
@@ -184,7 +184,7 @@ function LockedThreadChatBanner(channel) {
       const obj4 = channel(outer1_2[15]);
       outer1_1(outer1_2[21]).unlockThread(channel);
     };
-    obj1.children = callback(channel(4544).Button, obj2);
+    obj1.children = callback(channel(4578).Button, obj2);
     isThreadModerator = callback(closure_4, obj1);
   }
   items1[1] = isThreadModerator;
@@ -213,9 +213,9 @@ function NewMessagesChatBar(channel) {
       const intl2 = channel(dependencyMap[num2]).intl;
       const obj1 = { count: unreadCount, timestamp: channel.oldestUnreadTimestamp };
       obj.children = intl2.format(estimated.isEstimated(channel.id) ? t.wvtbbG : t["BctFH/"], obj1);
-      handleScrollToNewMessages = callback(channel(4127).Text, obj);
+      handleScrollToNewMessages = callback(channel(4161).Text, obj);
       obj.children = handleScrollToNewMessages;
-      const items1 = [callback(channel(4661).PressableOpacity, obj), ];
+      const items1 = [callback(channel(4695).PressableOpacity, obj), ];
       const obj2 = { style: intl.newMessageBarCloseButton, accessibilityRole: "button" };
       intl = channel(dependencyMap[num2]).intl;
       obj2.accessibilityLabel = intl.string(channel(dependencyMap[num2]).t.e6RscS);
@@ -226,8 +226,8 @@ function NewMessagesChatBar(channel) {
       };
       num2 = callback;
       const obj3 = { size: "sm", color: importDefault(689).colors.WHITE };
-      obj2.children = callback(channel(7695).XSmallBoldIcon, obj3);
-      items1[1] = callback(channel(4661).PressableOpacity, obj2);
+      obj2.children = callback(channel(7731).XSmallBoldIcon, obj3);
+      items1[1] = callback(channel(4695).PressableOpacity, obj2);
       t.children = items1;
       callback2(closure_4, t);
       const tmp7 = estimated.isEstimated(channel.id) ? t.wvtbbG : t["BctFH/"];
@@ -262,7 +262,7 @@ export default function ChatBanner(channel) {
   let oldestUnreadTimestamp;
   let unreadCount;
   channel = channel.channel;
-  let obj = importDefault(10401)();
+  let obj = importDefault(10441)();
   let obj1 = channel(566);
   const items = [closure_6];
   const items1 = [channel.id];

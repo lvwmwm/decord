@@ -1,11 +1,11 @@
 // Module ID: 12323
-// Function ID: 95977
+// Function ID: 95973
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12323 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/media_channel/native/images", width: 284, height: 189, scales: [2, 3], hash: "8c2bdea51e6ab077ef729f3b6fe02c7a", name: "asset_blurred_media_post_preview", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 50, height: 50, scales: [1, 2, 3], hash: "6e2864dc237547922e1825f7b5583cf2", name: "img_premium_basic_icon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

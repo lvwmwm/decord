@@ -1,5 +1,5 @@
 // Module ID: 1836
-// Function ID: 20065
+// Function ID: 20069
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isServerNSFWLevelEnabled

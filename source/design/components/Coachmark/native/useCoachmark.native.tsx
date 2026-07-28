@@ -1,10 +1,10 @@
-// Module ID: 8368
-// Function ID: 66939
+// Module ID: 8406
+// Function ID: 67049
 // Name: useCoachmark
-// Dependencies: [31, 33, 491, 8369, 5451, 8376, 2]
+// Dependencies: [31, 33, 491, 8407, 5486, 8414, 2]
 // Exports: useCoachmark
 
-// Module 8368 (useCoachmark)
+// Module 8406 (useCoachmark)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export const useCoachmark = function useCoachmark(targetRef, memo) {
       context.add(arg0, outer2_3(outer2_0(outer2_1[5]).AnimatedCoachmark, obj));
     }, items);
   })(memo);
-  return require(8369) /* useTooltipHelper */.useTooltipHelper(ref, targetRef, tmp2);
+  return require(8407) /* useTooltipHelper */.useTooltipHelper(ref, targetRef, tmp2);
 };

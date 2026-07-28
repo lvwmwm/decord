@@ -1,10 +1,10 @@
-// Module ID: 9493
-// Function ID: 74074
+// Module ID: 9533
+// Function ID: 74203
 // Name: hasForLaterPremiumType
 // Dependencies: [1850, 1852, 1873, 2]
 // Exports: default
 
-// Module 9493 (hasForLaterPremiumType)
+// Module 9533 (hasForLaterPremiumType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 

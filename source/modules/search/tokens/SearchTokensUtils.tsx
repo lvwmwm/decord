@@ -1,10 +1,10 @@
-// Module ID: 10046
-// Function ID: 77843
+// Module ID: 10086
+// Function ID: 77972
 // Name: ANSWER_IN_REGEX
-// Dependencies: [4119, 2]
+// Dependencies: [4153, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 10046 (ANSWER_IN_REGEX)
+// Module 10086 (ANSWER_IN_REGEX)
 const result = require("set").fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");
 
 export const ANSWER_IN_REGEX = /(?:\s*#?((?:"(\\\\|\\"|[^\\"])*")|(?:[^\s]+)))/i;

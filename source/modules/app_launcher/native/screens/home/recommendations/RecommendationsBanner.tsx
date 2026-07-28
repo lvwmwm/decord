@@ -1,8 +1,8 @@
-// Module ID: 11203
-// Function ID: 87212
-// Dependencies: [31, 27, 1858, 653, 33, 4131, 10862, 11195, 10608, 5085, 7922, 8039, 1392, 7850, 2]
+// Module ID: 11241
+// Function ID: 87331
+// Dependencies: [31, 27, 1858, 653, 33, 4165, 10900, 11233, 10646, 5119, 7958, 8077, 1392, 7886, 2]
 
-// Module 11203
+// Module 11241
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,11 +18,11 @@ let closure_9 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: {
 let closure_10 = importAllResult.memo((applicationId) => {
   let imageSource;
   let imageStyle;
-  let obj = heroMediaDimensions(10862);
-  let obj1 = heroMediaDimensions(11195);
+  let obj = heroMediaDimensions(10900);
+  let obj1 = heroMediaDimensions(11233);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
-  const tmp2 = importDefault(10608)(obj);
+  const tmp2 = importDefault(10646)(obj);
   importDefault = tmp2;
   let items = [heroMediaDimensions, tmp2];
   const memo = importAllResult.useMemo(() => {
@@ -41,7 +41,7 @@ let closure_10 = importAllResult.memo((applicationId) => {
   ({ imageStyle, imageSource } = memo);
   if (null != imageSource) {
     obj = { style: imageStyle, source: imageSource, resizeMode: "cover" };
-    let tmp6 = jsx(importDefault(5085), { style: imageStyle, source: imageSource, resizeMode: "cover" });
+    let tmp6 = jsx(importDefault(5119), { style: imageStyle, source: imageSource, resizeMode: "cover" });
   } else {
     obj1 = { style: imageStyle };
     tmp6 = <View style={imageStyle} />;
@@ -57,12 +57,12 @@ let closure_11 = importAllResult.memo((applicationBot) => {
   if (null == id) {
     id = closure_7;
   }
-  const tmp = importDefault(7922);
-  const obj = { displayProfile: importDefault(7922)(id) };
-  const tmpResult = importDefault(7922)(id);
-  const tmp4 = importDefault(8039);
+  const tmp = importDefault(7958);
+  const obj = { displayProfile: importDefault(7958)(id) };
+  const tmpResult = importDefault(7958)(id);
+  const tmp4 = importDefault(8077);
   obj.user = new _isNativeReflectConstruct(applicationBot);
-  return <tmp4 displayProfile={importDefault(7922)(id)} />;
+  return <tmp4 displayProfile={importDefault(7958)(id)} />;
 });
 const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   let applicationBot;
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   const tmp = callback();
   let obj = importDefault(1392);
   const applicationIconSource = obj.getApplicationIconSource({ id: applicationId, icon: applicationIcon, bot: applicationBot, botIconFirst: true });
-  importDefault(7850);
+  importDefault(7886);
   if ("number" !== typeof applicationIconSource) {
     let uri;
     if (null != applicationIconSource) {
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
     const obj1 = { uri: overrideImageUrl };
     obj.source = obj1;
     obj.resizeMode = "cover";
-    obj.children = jsx(importDefault(5085), { style: tmp.image });
+    obj.children = jsx(importDefault(5119), { style: tmp.image });
     let tmp10 = <View style={tmp.image} />;
   } else if (applicationEmbedded) {
     const obj2 = { applicationId };

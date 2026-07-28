@@ -1,10 +1,10 @@
-// Module ID: 10473
-// Function ID: 81250
+// Module ID: 10511
+// Function ID: 81371
 // Name: doRectanglesIntersectWorklet
-// Dependencies: [10175, 686, 2]
+// Dependencies: [10215, 686, 2]
 // Exports: setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 10473 (doRectanglesIntersectWorklet)
+// Module 10511 (doRectanglesIntersectWorklet)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 
 let closure_2;

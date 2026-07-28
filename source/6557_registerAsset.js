@@ -1,11 +1,11 @@
 // Module ID: 6557
-// Function ID: 58365
+// Function ID: 58366
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6557 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5e2fd14b31cdd1bad77d12d7b0ab7334", name: "AppsIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 314, height: 195, scales: [2, 3], hash: "f774e43fd38da2d8b6e5bdabed98e8b8", name: "img_tier_0_marketing_emojis", type: "png" };
 
 export default registerAsset.registerAsset(obj);

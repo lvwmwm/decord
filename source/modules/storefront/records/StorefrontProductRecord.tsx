@@ -1,9 +1,9 @@
-// Module ID: 5791
-// Function ID: 50962
+// Module ID: 5801
+// Function ID: 50818
 // Name: StorefrontProductRecord
-// Dependencies: [6, 7, 5790, 4170, 2]
+// Dependencies: [6, 7, 5800, 4204, 2]
 
-// Module 5791 (StorefrontProductRecord)
+// Module 5801 (StorefrontProductRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ let tmp2 = (() => {
   class StorefrontProductRecord {
     constructor(arg0) {
       tmp = StorefrontProductRecord(this, StorefrontProductRecord);
-      ({ id: this.id, skuIds: this.skuIds, name: this.name, summary: this.summary, options: this.options, createdAt: this.createdAt, updatedAt: this.updatedAt, skus: this.skus, primaryCollectionId: this.primaryCollectionId, primaryCollectionStyles: this.primaryCollectionStyles, primaryCollectionPdpBgUrl: this.primaryCollectionPdpBgUrl, primaryCollectionWillUnpublishAt: this.primaryCollectionWillUnpublishAt } = arg0);
+      ({ id: this.id, skuIds: this.skuIds, name: this.name, summary: this.summary, options: this.options, createdAt: this.createdAt, updatedAt: this.updatedAt, skus: this.skus, primaryCollectionId: this.primaryCollectionId, primaryCollectionStyles: this.primaryCollectionStyles, primaryCollectionPdpBgUrl: this.primaryCollectionPdpBgUrl, primaryCollectionWillUnpublishAt: this.primaryCollectionWillUnpublishAt, gameApplicationId: this.gameApplicationId } = arg0);
       return;
     }
   }
@@ -51,6 +51,15 @@ let tmp2 = (() => {
           date2 = new Date(tenant_metadata.collectibles.primary_collection_will_unpublish_at);
         }
         obj["primaryCollectionWillUnpublishAt"] = date2;
+        const guild_monetization = tenant_metadata.guild_monetization;
+        let game_application_id;
+        if (null != guild_monetization) {
+          const game_server = guild_monetization.game_server;
+          if (null != game_server) {
+            game_application_id = game_server.game_application_id;
+          }
+        }
+        obj["gameApplicationId"] = game_application_id;
         tmp2 = new tmp2(obj);
         return tmp2;
       }

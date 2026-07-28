@@ -1,10 +1,10 @@
-// Module ID: 8454
-// Function ID: 67382
+// Module ID: 8498
+// Function ID: 67529
 // Name: calculateSteamReviewScoreDescription
-// Dependencies: [4165, 2]
+// Dependencies: [4199, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 8454 (calculateSteamReviewScoreDescription)
+// Module 8498 (calculateSteamReviewScoreDescription)
 const result = require("set").fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");
 
 export const calculateSteamReviewScoreDescription = function calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating) {
@@ -29,31 +29,31 @@ export const calculateSteamReviewScoreDescription = function calculateSteamRevie
       if (ratingCount >= 10) {
         if (rating >= 80) {
           if (ratingCount < num2) {
-            let VERY_POSITIVE = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.POSITIVE;
+            let VERY_POSITIVE = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.POSITIVE;
           } else {
             if (ratingCount >= num4) {
               if (rating >= 95) {
-                VERY_POSITIVE = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE;
+                VERY_POSITIVE = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE;
               }
             }
-            VERY_POSITIVE = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_POSITIVE;
+            VERY_POSITIVE = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_POSITIVE;
           }
         } else if (rating >= 70) {
-          let NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_POSITIVE;
+          let NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_POSITIVE;
         } else if (rating >= 40) {
-          NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MIXED;
+          NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MIXED;
         } else if (rating >= 20) {
-          NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_NEGATIVE;
+          NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_NEGATIVE;
         } else if (ratingCount < num) {
-          NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NEGATIVE;
+          NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NEGATIVE;
         } else if (ratingCount < num3) {
-          NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_NEGATIVE;
+          NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_NEGATIVE;
         } else {
-          NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE;
+          NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE;
         }
       }
       return NO_USER_REVIEWS;
     }
   }
-  NO_USER_REVIEWS = require(4165) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NO_USER_REVIEWS;
+  NO_USER_REVIEWS = require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NO_USER_REVIEWS;
 };

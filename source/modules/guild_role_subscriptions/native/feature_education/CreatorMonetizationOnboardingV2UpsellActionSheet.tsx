@@ -1,10 +1,10 @@
-// Module ID: 15141
-// Function ID: 115229
+// Module ID: 15181
+// Function ID: 115388
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [31, 27, 653, 1345, 33, 4131, 5187, 4127, 1212, 5085, 15142, 4544, 8242, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 4165, 5221, 4161, 1212, 5119, 15182, 4578, 8280, 2]
 // Exports: default
 
-// Module 15141 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 15181 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
@@ -34,13 +34,13 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["v+Jm6X"]);
-  const items = [callback(require(4127) /* Text */.Text, obj), , , , ];
+  const items = [callback(require(4161) /* Text */.Text, obj), , , , ];
   const obj1 = { style: tmp.description, accessibilityRole: "text", variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.kUUFbG);
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.image, resizeMode: "contain", source: importDefault(15142) };
-  items[2] = callback(importDefault(5085), obj2);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.image, resizeMode: "contain", source: importDefault(15182) };
+  items[2] = callback(importDefault(5119), obj2);
   const obj3 = {
     onPress() {
       callback(outer1_5.UNKNOWN);
@@ -49,7 +49,7 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
   };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.OgQQbG);
-  items[3] = callback(require(4544) /* Button */.Button, obj3);
+  items[3] = callback(require(4578) /* Button */.Button, obj3);
   const obj4 = { style: tmp.dismissButton };
   const obj5 = {
     onPress() {
@@ -59,9 +59,9 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj5.text = intl4.string(require(1212) /* getSystemLocale */.t.WAI6xu);
   obj5.variant = "secondary";
-  obj4.children = callback(require(4544) /* Button */.Button, obj5);
+  obj4.children = callback(require(4578) /* Button */.Button, obj5);
   items[4] = callback(View, obj4);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

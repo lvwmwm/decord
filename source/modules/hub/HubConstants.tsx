@@ -1,9 +1,9 @@
-// Module ID: 11757
-// Function ID: 91329
+// Module ID: 11796
+// Function ID: 91480
 // Name: HubEmailConnectionSteps
 // Dependencies: [2]
 
-// Module 11757 (HubEmailConnectionSteps)
+// Module 11796 (HubEmailConnectionSteps)
 const result = require("set").fileFinishedImporting("modules/hub/HubConstants.tsx");
 
 export const HubEmailConnectionSteps = { STUDENT_PROMPT: "STUDENT_PROMPT", VERIFY_EMAIL: "VERIFY_EMAIL", VERIFY_PIN: "VERIFY_PIN", SELECT_SCHOOL: "SELECT_SCHOOL", SELECT_SCHOOL_SEARCH: "SELECT_SCHOOL_SEARCH", SUBMIT_SCHOOL: "SUBMIT_SCHOOL", EMAIL_CONFIRMATION: "EMAIL_CONFIRMATION", EMAIL_WAITLIST: "EMAIL_WAITLIST" };

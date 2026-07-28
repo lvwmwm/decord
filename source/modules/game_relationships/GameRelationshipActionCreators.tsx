@@ -1,9 +1,9 @@
-// Module ID: 8989
-// Function ID: 70824
+// Module ID: 9033
+// Function ID: 70975
 // Name: showRequestFailedAlert
-// Dependencies: [5, 653, 4030, 4471, 1212, 507, 3977, 2]
+// Dependencies: [5, 653, 4064, 4505, 1212, 507, 4011, 2]
 
-// Module 8989 (showRequestFailedAlert)
+// Module 9033 (showRequestFailedAlert)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -11,7 +11,7 @@ let closure_4;
 let closure_5;
 const require = arg1;
 function showRequestFailedAlert(arg0) {
-  const aPIError = new require(4030) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4064) /* V6OrEarlierAPIError */.APIError(arg0);
   let anyErrorMessage = aPIError.getAnyErrorMessage();
   const obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -21,7 +21,7 @@ function showRequestFailedAlert(arg0) {
     anyErrorMessage = intl2.string(require(1212) /* getSystemLocale */.t.fEptJP);
   }
   obj.body = anyErrorMessage;
-  importDefault(4471).show(obj);
+  importDefault(4505).show(obj);
 }
 function deleteGameRelationship() {
   return _deleteGameRelationship(...arguments);

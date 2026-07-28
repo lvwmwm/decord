@@ -1,10 +1,10 @@
-// Module ID: 15779
-// Function ID: 121676
+// Module ID: 15818
+// Function ID: 121832
 // Name: Loading
-// Dependencies: [57, 31, 27, 11741, 10026, 653, 5969, 482, 33, 4131, 689, 8296, 5462, 5482, 4099, 8297, 8288, 10419, 566, 10025, 5187, 5186, 1212, 1273, 12163, 9171, 15780, 2]
+// Dependencies: [57, 31, 27, 11780, 10066, 653, 6003, 482, 33, 4165, 689, 8334, 5497, 5517, 4133, 8335, 8326, 10459, 566, 10065, 5221, 5220, 1212, 1273, 12206, 9215, 15819, 2]
 // Exports: default
 
-// Module 15779 (Loading)
+// Module 15818 (Loading)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -33,7 +33,7 @@ function Loading() {
     let tmp3 = importDefault;
     let tmp4 = dependencyMap;
     let obj = { row: num };
-    let arr = items.push(callback3(importDefault(8296), obj, num));
+    let arr = items.push(callback3(importDefault(8334), obj, num));
     num = num + 1;
   } while (num < 10);
   obj = {};
@@ -61,7 +61,7 @@ export default function ActivityInviteSheet(activity) {
   let tmp10;
   activity = activity.activity;
   const tmp = _createForOfIteratorHelperLoose();
-  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).ACTIVITY_INVITE_SHEET).analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)(analyticsLocations(5517).ACTIVITY_INVITE_SHEET).analyticsLocations;
   let tmp3 = callback(React.useState(null), 2);
   const first = tmp3[0];
   const dependencyMap = tmp3[1];
@@ -87,10 +87,10 @@ export default function ActivityInviteSheet(activity) {
   }, items);
   const items2 = [activity];
   const callback1 = React.useCallback((userId) => {
-    let obj = analyticsLocations(4099);
+    let obj = analyticsLocations(4133);
     obj.hideActionSheet();
     obj = { userId, sourceAnalyticsLocations: analyticsLocations };
-    analyticsLocations(8297)(obj);
+    analyticsLocations(8335)(obj);
   }, items1);
   callback2 = React.useCallback((item) => {
     const activity = item;
@@ -107,17 +107,17 @@ export default function ActivityInviteSheet(activity) {
       }
       if (null != id) {
         outer1_6(id, tmp.item.id, outer1_10.SENDING);
-        if (tmp.type === activity(8288).RowTypes.CHANNEL) {
-          let obj = { channelId: item.item.id, type: outer1_9.JOIN, activity, location: analyticsLocations(5482).ACTIVITY_INVITE_SHEET };
-          const obj3 = analyticsLocations(10419);
-          const sendActivityInviteResult = analyticsLocations(10419).sendActivityInvite(obj);
-          analyticsLocations(10419).sendActivityInvite(obj).then(markInviteSent).catch((arg0) => {
+        if (tmp.type === activity(8326).RowTypes.CHANNEL) {
+          let obj = { channelId: item.item.id, type: outer1_9.JOIN, activity, location: analyticsLocations(5517).ACTIVITY_INVITE_SHEET };
+          const obj3 = analyticsLocations(10459);
+          const sendActivityInviteResult = analyticsLocations(10459).sendActivityInvite(obj);
+          analyticsLocations(10459).sendActivityInvite(obj).then(markInviteSent).catch((arg0) => {
             outer1_2(String(arg0));
           });
-          const nextPromise = analyticsLocations(10419).sendActivityInvite(obj).then(markInviteSent);
-        } else if (tmp.type === activity(8288).RowTypes.DM) {
-          obj = analyticsLocations(10419);
-          obj = { userId: tmp.item.id, type: outer1_9.JOIN, activity, location: analyticsLocations(5482).ACTIVITY_INVITE_SHEET };
+          const nextPromise = analyticsLocations(10459).sendActivityInvite(obj).then(markInviteSent);
+        } else if (tmp.type === activity(8326).RowTypes.DM) {
+          obj = analyticsLocations(10459);
+          obj = { userId: tmp.item.id, type: outer1_9.JOIN, activity, location: analyticsLocations(5517).ACTIVITY_INVITE_SHEET };
           const result = obj.sendActivityInviteUser(obj);
           result.then(markInviteSent).catch((arg0) => outer1_2(String(arg0)));
           const nextPromise1 = result.then(markInviteSent);
@@ -128,11 +128,11 @@ export default function ActivityInviteSheet(activity) {
   let obj = activity(566);
   const items3 = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items3, () => outer1_8.getInviteSuggestionRows());
-  const tmp2 = analyticsLocations(5462);
+  const tmp2 = analyticsLocations(5497);
   [tmp10, result] = callback(React.useState(false), 2);
   const effect = React.useEffect(() => {
     callback(true);
-    let obj = activity(10025);
+    let obj = activity(10065);
     obj = { omitUserIds: new Set(), inviteTargetType: outer1_11.EMBEDDED_APPLICATION };
     const inviteSuggestions = obj.loadInviteSuggestions(obj);
     const set = new Set();
@@ -153,9 +153,9 @@ export default function ActivityInviteSheet(activity) {
   const obj1 = {};
   const intl = activity(1212).intl;
   obj1.title = intl.string(activity(1212).t["OzOM/q"]);
-  obj.header = callback3(activity(5186).BottomSheetTitleHeader, obj1);
+  obj.header = callback3(activity(5220).BottomSheetTitleHeader, obj1);
   if (null != first) {
-    const obj2 = { style: tmp.emptyState, Illustration: activity(12163).AppCrash, title: first };
+    const obj2 = { style: tmp.emptyState, Illustration: activity(12206).AppCrash, title: first };
     let tmp17Result = callback3(activity(1273).EmptyState, obj2);
   } else if (tmp12) {
     tmp17Result = callback3(Loading, {});
@@ -163,10 +163,10 @@ export default function ActivityInviteSheet(activity) {
     let obj3 = {};
     const obj4 = {};
     const obj5 = { style: tmp.searchAndShareContainer };
-    const obj6 = { size: "md", isRound: true, onChange: activity(10025).searchInviteSuggestions };
+    const obj6 = { size: "md", isRound: true, onChange: activity(10065).searchInviteSuggestions };
     const intl2 = activity(1212).intl;
     obj6.placeholder = intl2.string(activity(1212).t.iI1gMg);
-    obj5.children = callback3(activity(9171).SearchField, obj6);
+    obj5.children = callback3(activity(9215).SearchField, obj6);
     obj4.children = callback3(View, obj5);
     const items4 = [callback3(View, obj4), ];
     if (tmp13) {
@@ -176,7 +176,7 @@ export default function ActivityInviteSheet(activity) {
       let tmp24Result = tmp24(activity(1273).EmptyState, obj7);
     } else {
       const obj8 = { data: stateFromStores, error: first, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp24Result = tmp24(analyticsLocations(15780), obj8);
+      tmp24Result = tmp24(analyticsLocations(15819), obj8);
     }
     items4[1] = tmp24Result;
     obj3.children = items4;
@@ -185,6 +185,6 @@ export default function ActivityInviteSheet(activity) {
     const tmp18 = closure_14;
   }
   obj.children = tmp17Result;
-  obj.children = callback3(activity(5187).BottomSheet, obj);
-  return callback3(activity(5462).AnalyticsLocationProvider, obj);
+  obj.children = callback3(activity(5221).BottomSheet, obj);
+  return callback3(activity(5497).AnalyticsLocationProvider, obj);
 };

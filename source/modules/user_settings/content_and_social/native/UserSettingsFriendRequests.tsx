@@ -1,10 +1,10 @@
-// Module ID: 15534
-// Function ID: 119514
+// Module ID: 15573
+// Function ID: 119670
 // Name: UserSettingsFriendRequests
-// Dependencies: [31, 27, 653, 33, 3804, 6449, 5501, 1212, 5502, 1360, 2]
+// Dependencies: [31, 27, 653, 33, 3838, 6485, 5536, 1212, 5537, 1360, 2]
 // Exports: default
 
-// Module 15534 (UserSettingsFriendRequests)
+// Module 15573 (UserSettingsFriendRequests)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -20,7 +20,7 @@ const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/user_settings/content_and_social/native/UserSettingsFriendRequests.tsx");
 
 export default function UserSettingsFriendRequests() {
-  let FriendSourceFlagsSetting = setting(3804).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(3838).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items);
@@ -42,7 +42,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(tmp3);
   };
-  const items1 = [callback(setting(5502).TableSwitchRow, obj), , ];
+  const items1 = [callback(setting(5537).TableSwitchRow, obj), , ];
   const obj1 = {};
   const intl3 = setting(1212).intl;
   obj1.label = intl3.string(setting(1212).t.IqlCSq);
@@ -57,7 +57,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[1] = callback(setting(5502).TableSwitchRow, obj1);
+  items1[1] = callback(setting(5537).TableSwitchRow, obj1);
   const obj2 = {};
   const intl4 = setting(1212).intl;
   obj2.label = intl4.string(setting(1212).t.mozb8f);
@@ -72,8 +72,8 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[2] = callback(setting(5502).TableSwitchRow, obj2);
+  items1[2] = callback(setting(5537).TableSwitchRow, obj2);
   obj.children = items1;
-  obj.children = callback2(setting(5501).TableRowGroup, obj);
+  obj.children = callback2(setting(5536).TableRowGroup, obj);
   return callback(View, obj);
 };

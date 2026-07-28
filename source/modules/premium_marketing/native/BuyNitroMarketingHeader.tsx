@@ -1,10 +1,10 @@
-// Module ID: 6620
-// Function ID: 58565
+// Module ID: 6656
+// Function ID: 58654
 // Name: BuyNitroMarketingHeader
-// Dependencies: [31, 27, 6173, 33, 689, 4131, 3992, 4134, 4132, 4067, 6621, 477, 6622, 6618, 668, 5085, 6175, 6193, 4555, 1212, 6624, 4127, 6625, 6627, 2]
+// Dependencies: [31, 27, 6207, 33, 689, 4165, 4026, 4168, 4166, 4101, 6657, 477, 6658, 6654, 668, 5119, 6209, 6228, 4589, 1212, 6660, 4161, 6661, 6663, 2]
 // Exports: default
 
-// Module 6620 (BuyNitroMarketingHeader)
+// Module 6656 (BuyNitroMarketingHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -111,7 +111,7 @@ export default function BuyNitroMarketingHeader(arg0) {
   let topInset;
   let wumpusFloatStyle;
   ({ topInset, onBackPress, selectedTier } = arg0);
-  const tmp2 = importDefault(4067)() === require(6621) /* items */.ThemeTypes.LIGHT;
+  const tmp2 = importDefault(4101)() === require(6657) /* items */.ThemeTypes.LIGHT;
   let tmp3 = tmp2;
   if (tmp2) {
     let obj = require(477) /* set */;
@@ -119,7 +119,7 @@ export default function BuyNitroMarketingHeader(arg0) {
   }
   const tmp6 = callback3(topInset, tmp2, tmp3);
   const color = tmp6.background.color;
-  const tmp = importDefault(4067)();
+  const tmp = importDefault(4101)();
   obj = { style: tmp6.banner };
   ({ wumpusFloatStyle, cloudsPulseStyle } = (function useAnimatedStyles() {
     let obj = outer1_0(outer1_2[6]);
@@ -174,7 +174,7 @@ export default function BuyNitroMarketingHeader(arg0) {
   let isAndroidResult = obj2.isAndroid();
   if (isAndroidResult) {
     obj = { barStyle: "light-content" };
-    isAndroidResult = callback(importDefault(6622), obj);
+    isAndroidResult = callback(importDefault(6658), obj);
   }
   let items = [isAndroidResult, , , , , , ];
   let obj1 = { selectedTier, nitroColors: Gradients.PREMIUM_TIER_2, basicColors: Gradients.PREMIUM_TIER_0 };
@@ -232,23 +232,23 @@ export default function BuyNitroMarketingHeader(arg0) {
   obj1.start = require(668) /* keys */.HorizontalGradient.START;
   obj1.end = require(668) /* keys */.HorizontalGradient.END;
   obj1.style = tmp6.background;
-  items[1] = callback(importDefault(6618), obj1);
+  items[1] = callback(importDefault(6654), obj1);
   obj2 = { style: items1 };
   items1 = [tmp6.clouds, cloudsPulseStyle];
   let obj3 = {};
-  const tmp14 = importDefault(6618);
-  obj3.source = importDefault(6175);
+  const tmp14 = importDefault(6654);
+  obj3.source = importDefault(6209);
   obj3.resizeMode = "contain";
-  obj2.children = callback(importDefault(5085), obj3);
-  items[2] = callback(importDefault(3992).View, obj2);
+  obj2.children = callback(importDefault(5119), obj3);
+  items[2] = callback(importDefault(4026).View, obj2);
   let obj4 = { style: items2 };
   items2 = [tmp6.wumpus, wumpusFloatStyle];
   let obj5 = { style: tmp6.wumpusImage };
-  const tmp15 = importDefault(5085);
-  obj5.source = importDefault(6193);
+  const tmp15 = importDefault(5119);
+  obj5.source = importDefault(6228);
   obj5.resizeMode = "contain";
-  obj4.children = callback(importDefault(5085), obj5);
-  items[3] = callback(importDefault(3992).View, obj4);
+  obj4.children = callback(importDefault(5119), obj5);
+  items[3] = callback(importDefault(4026).View, obj4);
   let tmp17 = !tmp2;
   if (!tmp2) {
     const obj6 = { style: tmp6.fade };
@@ -257,31 +257,31 @@ export default function BuyNitroMarketingHeader(arg0) {
     obj6.colors = items3;
     obj6.start = require(668) /* keys */.VerticalGradient.START;
     obj6.end = require(668) /* keys */.VerticalGradient.END;
-    tmp17 = callback(importDefault(4555), obj6);
-    const tmp21 = importDefault(4555);
+    tmp17 = callback(importDefault(4589), obj6);
+    const tmp21 = importDefault(4589);
   }
   items[4] = tmp17;
   let obj7 = { style: tmp6.content };
   let obj8 = { accessible: true, accessibilityRole: "header", accessibilityLabel: null, source: null, resizeMode: "contain" };
-  const tmp16 = importDefault(5085);
+  const tmp16 = importDefault(5119);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj8.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lpNrPu);
-  obj8.source = importDefault(6624);
-  const items4 = [callback(importDefault(5085), obj8), ];
+  obj8.source = importDefault(6660);
+  const items4 = [callback(importDefault(5119), obj8), ];
   const obj9 = { variant: "text-md/medium", color: "text-overlay-light" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj9.children = intl2.string(require(1212) /* getSystemLocale */.t.SD5MJW);
-  items4[1] = callback(require(4127) /* Text */.Text, obj9);
+  items4[1] = callback(require(4161) /* Text */.Text, obj9);
   obj7.children = items4;
   items[5] = callback2(closure_5, obj7);
   const obj10 = { style: tmp6.backButton };
   const obj11 = { variant: "secondary-overlay" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj11.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  obj11.icon = importDefault(6627);
+  obj11.icon = importDefault(6663);
   obj11.size = "md";
   obj11.onPress = onBackPress;
-  obj10.children = callback(require(6625) /* IconButton */.IconButton, obj11);
+  obj10.children = callback(require(6661) /* IconButton */.IconButton, obj11);
   items[6] = callback(closure_5, obj10);
   obj.children = items;
   return tmp8(tmp9, obj);

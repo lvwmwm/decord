@@ -1,9 +1,9 @@
-// Module ID: 5037
-// Function ID: 43403
+// Module ID: 5071
+// Function ID: 43518
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 1838, 4800, 3772, 1842, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 1838, 4834, 3806, 1842, 2]
 
-// Module 5037 (_isNativeReflectConstruct)
+// Module 5071 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import TypeTag from "TypeTag";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -125,12 +125,12 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(guildId, tags) {
   const items = [];
-  let obj = { type: items(4800).StickerMetadataTypes.STICKER_NAME };
+  let obj = { type: items(4834).StickerMetadataTypes.STICKER_NAME };
   const trimmed = tags.name.trim();
   obj.value = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
-    obj = { type: items(4800).StickerMetadataTypes.TAG };
+    obj = { type: items(4834).StickerMetadataTypes.TAG };
     const trimmed1 = str.trim();
     obj.value = trimmed1.toLocaleLowerCase();
     items.push(obj);
@@ -143,18 +143,18 @@ function deriveStickerMetadata(guildId, tags) {
         tmp3 = "" !== toLocaleLowerCaseResult;
       }
       if (tmp3) {
-        obj = { type: items(4800).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
+        obj = { type: items(4834).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
         items.push(obj);
       }
       const str3 = guild.name;
     }
-    const byName = importDefault(3772).getByName(str);
+    const byName = importDefault(3806).getByName(str);
     if (null != byName) {
-      const obj1 = { type: items(4800).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
+      const obj1 = { type: items(4834).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
       items.push(obj1);
       byName.forEachDiversity((surrogates) => items.push({ type: items(outer1_2[9]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
     }
-    const obj5 = importDefault(3772);
+    const obj5 = importDefault(3806);
   }
   return items;
 }

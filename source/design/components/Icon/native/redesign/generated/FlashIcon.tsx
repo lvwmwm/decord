@@ -1,10 +1,10 @@
-// Module ID: 11937
-// Function ID: 92363
+// Module ID: 11980
+// Function ID: 92533
 // Name: FlashIcon
-// Dependencies: [31, 33, 689, 3834, 11938, 2]
+// Dependencies: [31, 33, 689, 3868, 11981, 2]
 // Exports: FlashIcon
 
-// Module 11937 (FlashIcon)
+// Module 11980 (FlashIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const FlashIcon = function FlashIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11938) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11981) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11938) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(11981) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

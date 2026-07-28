@@ -1,10 +1,10 @@
-// Module ID: 14563
-// Function ID: 111170
+// Module ID: 14607
+// Function ID: 111343
 // Name: ListEdgeSpacer
-// Dependencies: [31, 27, 33, 4131, 689, 14545, 5462, 5482, 14035, 14037, 8595, 8592, 8670, 4127, 5449, 6619, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 14589, 5497, 5517, 14079, 14081, 8639, 8636, 8714, 4161, 5484, 6655, 2]
 // Exports: default
 
-// Module 14563 (ListEdgeSpacer)
+// Module 14607 (ListEdgeSpacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,12 +40,12 @@ export default function _default(block) {
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = block(14545);
-  const tmp3 = preferVCPrice(14035)();
+  let obj = block(14589);
+  const tmp3 = preferVCPrice(14079)();
   const dependencyMap = tmp3;
   const items = [block.rankedSkuIds, tmp3];
   const memo = React.useMemo(() => tmp3(block.rankedSkuIds), items);
-  let obj1 = block(14037);
+  let obj1 = block(14081);
   const filteredAndSortedProducts = obj1.useFilteredAndSortedProducts({ products: memo });
   const items1 = [preferVCPrice];
   const callback = React.useCallback((arg0) => {
@@ -59,7 +59,7 @@ export default function _default(block) {
   }, items1);
   let tmp22Result = null;
   if (0 !== filteredAndSortedProducts.length) {
-    obj = { value: tmp2(preferVCPrice(5482).COLLECTIBLES_SHOP_SHELF).analyticsLocations };
+    obj = { value: tmp2(preferVCPrice(5517).COLLECTIBLES_SHOP_SHELF).analyticsLocations };
     obj = { style: tmp.container };
     let tmp10 = null != block.mobileBackgroundImage;
     if (tmp10) {
@@ -70,18 +70,18 @@ export default function _default(block) {
     }
     const items2 = [tmp10, , ];
     const obj3 = { style: tmp.header };
-    const items3 = [callback(preferVCPrice(8670), { location: "FramesProductShelfBlock", tooltipPosition: "bottom" }), ];
+    const items3 = [callback(preferVCPrice(8714), { location: "FramesProductShelfBlock", tooltipPosition: "bottom" }), ];
     const obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: block.title };
-    items3[1] = callback(block(4127).Text, obj4);
+    items3[1] = callback(block(4161).Text, obj4);
     obj3.children = items3;
     items2[1] = callback2(closure_5, obj3);
     const obj5 = {};
-    const obj6 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.title, data: filteredAndSortedProducts, keyExtractor: tmp6, onScroll: obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback, decelerationRate: "fast", snapToInterval: block(8592).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
-    obj5.children = callback(block(6619).FlashList, obj6);
-    items2[2] = callback(block(5449).LayerScope, obj5);
+    const obj6 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.title, data: filteredAndSortedProducts, keyExtractor: tmp6, onScroll: obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback, decelerationRate: "fast", snapToInterval: block(8636).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
+    obj5.children = callback(block(6655).FlashList, obj6);
+    items2[2] = callback(block(5484).LayerScope, obj5);
     obj.children = items2;
     obj.children = callback2(closure_5, obj);
-    tmp22Result = callback(block(5462).AnalyticsLocationProvider, obj);
+    tmp22Result = callback(block(5497).AnalyticsLocationProvider, obj);
     const tmp22 = callback;
     const tmp25 = callback2;
     const tmp26 = closure_5;

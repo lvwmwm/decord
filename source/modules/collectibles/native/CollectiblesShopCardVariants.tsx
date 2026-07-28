@@ -1,9 +1,9 @@
-// Module ID: 8659
-// Function ID: 68785
+// Module ID: 8703
+// Function ID: 68936
 // Name: VariantOption
-// Dependencies: [31, 27, 33, 4131, 689, 8642, 8660, 5153, 8661, 8593, 5781, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 8686, 8704, 5187, 8705, 8637, 5791, 2]
 
-// Module 8659 (VariantOption)
+// Module 8703 (VariantOption)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -16,7 +16,7 @@ const require = arg1;
 function VariantOption(variant) {
   variant = variant.variant;
   const tmp = callback3(variant.isSelected);
-  let obj = require(8642) /* getProductPurchaseState */;
+  let obj = require(8686) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   obj = { style: items };
   items = [tmp.variantOption, { zIndex: variant.zIndex }];
@@ -33,9 +33,9 @@ function VariantOption(variant) {
 function VariantCheckmark(variant) {
   const obj = {};
   const colors = importDefault(689).colors;
-  obj.color = importDefault(8660)(variant.variant) ? colors.BLACK : colors.WHITE;
+  obj.color = importDefault(8704)(variant.variant) ? colors.BLACK : colors.WHITE;
   obj.size = "xxs";
-  return closure_4(require(5153) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
+  return closure_4(require(5187) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
 }
 function VariantOverflowOption(isSelected) {
   const tmp = callback3(isSelected.isSelected);
@@ -45,7 +45,7 @@ function VariantOverflowOption(isSelected) {
   items1 = [, ];
   ({ variantOptionInner: arr2[0], variantOverflowInner: arr2[1] } = tmp);
   obj = { color: importDefault(689).colors.WHITE, size: "xxs" };
-  obj.children = callback(require(8661) /* PlusSmallIcon */.PlusSmallIcon, obj);
+  obj.children = callback(require(8705) /* PlusSmallIcon */.PlusSmallIcon, obj);
   obj.children = callback(View, obj);
   return callback(View, obj);
 }
@@ -71,7 +71,7 @@ let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
 });
 const memoResult = require("result").memo(function CardProductVariants(product) {
   product = product.product;
-  let obj = defaultVariantIndex(8593);
+  let obj = defaultVariantIndex(8637);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const tmp = callback2();
   if (obj2.getIsVariantProduct(product)) {
@@ -101,7 +101,7 @@ const memoResult = require("result").memo(function CardProductVariants(product) 
   } else {
     return null;
   }
-  obj2 = defaultVariantIndex(5781);
+  obj2 = defaultVariantIndex(5791);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 11360
-// Function ID: 88287
+// Module ID: 11398
+// Function ID: 88406
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [31, 27, 33, 4529, 477, 1212, 2]
+// Dependencies: [31, 27, 33, 4563, 477, 1212, 2]
 
-// Module 11360 (ChatInputAccessibilityDivider)
+// Module 11398 (ChatInputAccessibilityDivider)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -13,7 +13,7 @@ let closure_3;
 const require = arg1;
 ({ StyleSheet: closure_2, View: closure_3 } = get_ActivityIndicator);
 const memoResult = require("result").memo(() => {
-  let obj = require(4529) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj = require(4563) /* SCREEN_READER_ENABLED_GETTER */;
   let tmp = null;
   if (obj.useIsScreenReaderEnabled()) {
     tmp = null;

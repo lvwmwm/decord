@@ -1,10 +1,10 @@
-// Module ID: 11934
-// Function ID: 92346
+// Module ID: 11977
+// Function ID: 92516
 // Name: ActiveTimestamp
-// Dependencies: [31, 27, 1922, 33, 4131, 689, 11932, 7853, 4127, 566, 8867, 10853, 11935, 1212, 11937, 11939, 11882, 9909, 6592, 664, 2]
+// Dependencies: [31, 27, 1922, 33, 4165, 689, 11975, 7889, 4161, 566, 8911, 10891, 11978, 1212, 11980, 11982, 11925, 9949, 6628, 664, 2]
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 11934 (ActiveTimestamp)
+// Module 11977 (ActiveTimestamp)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ class ActiveTimestamp {
 }
 function ContentTimestamp(entry) {
   entry = entry.entry;
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   const tmp = _createForOfIteratorHelperLoose();
   require(566) /* initialize */;
   [][0] = _isNativeReflectConstruct;
@@ -40,9 +40,9 @@ function ContentTimestamp(entry) {
     obj = { entry };
     let tmp5Result = tmp5(ActiveTimestamp, obj);
   } else {
-    obj = { variant: "text-sm/medium", style: tmp.text, children: require(7853) /* calculateTimestampDurations */.formatEndedTimestamp(entry, tmp4) };
-    tmp5Result = tmp5(require(4127) /* Text */.Text, obj);
-    const obj3 = require(7853) /* calculateTimestampDurations */;
+    obj = { variant: "text-sm/medium", style: tmp.text, children: require(7889) /* calculateTimestampDurations */.formatEndedTimestamp(entry, tmp4) };
+    tmp5Result = tmp5(require(4161) /* Text */.Text, obj);
+    const obj3 = require(7889) /* calculateTimestampDurations */;
   }
   return tmp5Result;
 }
@@ -56,7 +56,7 @@ function BaseBadge(arg0) {
   obj = { style: tmp.icon, color: iconColor };
   const items = [callback(Icon, obj), ];
   obj = { variant: "text-sm/medium", style: tmp.text, children: text };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
@@ -73,27 +73,27 @@ export { ActiveTimestamp };
 export const GameTimestampBadge = function GameTimestampBadge(entry) {
   entry = entry.entry;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   const colors = importDefault(689).colors;
   obj = { style: tmp.badgeContainer };
   const isEntryActiveResult = obj.isEntryActive(entry);
   obj = { style: tmp.icon, color: obj.isEntryActive(entry) ? colors.STATUS_POSITIVE : colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };
-  const items = [callback(require(8867) /* GameControllerIcon */.GameControllerIcon, obj), callback(ContentTimestamp, { entry })];
+  const items = [callback(require(8911) /* GameControllerIcon */.GameControllerIcon, obj), callback(ContentTimestamp, { entry })];
   obj.children = items;
   return callback2(View, obj);
 };
 export const MarathonBadge = function MarathonBadge(entry) {
   entry = entry.entry;
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   if (obj.isEntryMarathon(entry)) {
-    const obj2 = require(7853) /* calculateTimestampDurations */;
+    const obj2 = require(7889) /* calculateTimestampDurations */;
     const colors = importDefault(689).colors;
-    const isEntryActiveResult = require(7853) /* calculateTimestampDurations */.isEntryActive(entry);
-    const tmp7 = require(7853) /* calculateTimestampDurations */.isEntryActive(entry) ? colors.STATUS_POSITIVE : colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
-    const text = require(7853) /* calculateTimestampDurations */.getMarathonDescription(entry).text;
+    const isEntryActiveResult = require(7889) /* calculateTimestampDurations */.isEntryActive(entry);
+    const tmp7 = require(7889) /* calculateTimestampDurations */.isEntryActive(entry) ? colors.STATUS_POSITIVE : colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
+    const text = require(7889) /* calculateTimestampDurations */.getMarathonDescription(entry).text;
     let tmp10 = null;
     if (null != text) {
-      obj = { Icon: require(10853) /* TimerIcon */.TimerIcon, iconColor: tmp7, text };
+      obj = { Icon: require(10891) /* TimerIcon */.TimerIcon, iconColor: tmp7, text };
       tmp10 = callback(BaseBadge, obj);
     }
     return tmp10;
@@ -102,10 +102,10 @@ export const MarathonBadge = function MarathonBadge(entry) {
   }
 };
 export const NewGameBadge = function NewGameBadge(entry) {
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   let tmp = null;
   if (obj.isEntryNew(entry.entry)) {
-    obj = { Icon: require(11935) /* NewUserIcon */.NewUserIcon };
+    obj = { Icon: require(11978) /* NewUserIcon */.NewUserIcon };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.text = intl.string(require(1212) /* getSystemLocale */.t.keY6mW);
     obj.iconColor = importDefault(689).colors.STATUS_POSITIVE;
@@ -114,13 +114,13 @@ export const NewGameBadge = function NewGameBadge(entry) {
   return tmp;
 };
 export const StreakBadge = function StreakBadge(entry) {
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   const streakCount = obj.getStreakCount(entry.entry);
   let tmp2 = null;
   if (null != streakCount) {
     tmp2 = null;
     if (streakCount >= 2) {
-      obj = { Icon: require(11937) /* FlashIcon */.FlashIcon };
+      obj = { Icon: require(11980) /* FlashIcon */.FlashIcon };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj = { days: streakCount };
       obj.text = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["Klie/P"], obj);
@@ -131,13 +131,13 @@ export const StreakBadge = function StreakBadge(entry) {
   return tmp2;
 };
 export const TrendingBadge = function TrendingBadge(entry) {
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   const trendingType = obj.getTrendingType(entry.entry);
   let tmp2 = null;
   if (null != trendingType) {
     tmp2 = null;
-    if (trendingType !== require(11939) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
-      obj = { Icon: require(11882) /* FireIcon */.FireIcon };
+    if (trendingType !== require(11982) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+      obj = { Icon: require(11925) /* FireIcon */.FireIcon };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.text = intl.string(require(1212) /* getSystemLocale */.t.TsWCdW);
       obj.iconColor = importDefault(689).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
@@ -147,10 +147,10 @@ export const TrendingBadge = function TrendingBadge(entry) {
   return tmp2;
 };
 export const ResurrectedBadge = function ResurrectedBadge(entry) {
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   let tmp = null;
   if (null != obj.getResurrectedEntryLastPlayTime(entry.entry)) {
-    obj = { Icon: require(9909) /* RetryIcon */.RetryIcon };
+    obj = { Icon: require(9949) /* RetryIcon */.RetryIcon };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.text = intl.string(require(1212) /* getSystemLocale */.t.adnLsB);
     obj.iconColor = importDefault(689).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
@@ -159,12 +159,12 @@ export const ResurrectedBadge = function ResurrectedBadge(entry) {
   return tmp;
 };
 export const TopGameBadge = function TopGameBadge(entry) {
-  let obj = require(7853) /* calculateTimestampDurations */;
+  let obj = require(7889) /* calculateTimestampDurations */;
   const entryDuration = obj.getEntryDuration(entry.entry);
   if (null == entryDuration) {
     return null;
   } else {
-    obj = { Icon: require(6592) /* TrophyIcon */.TrophyIcon };
+    obj = { Icon: require(6628) /* TrophyIcon */.TrophyIcon };
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     const items = [intl.string(require(1212) /* getSystemLocale */.t["/50eHi"]), ": ", ];
@@ -183,7 +183,7 @@ export const CustomStatusTimestampBadge = function CustomStatusTimestampBadge(en
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.badgeContainer };
   obj = { style: tmp.icon, color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  const items = [callback(require(10853) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
+  const items = [callback(require(10891) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
   obj.children = items;
   return callback2(View, obj);
 };

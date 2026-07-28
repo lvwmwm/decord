@@ -1,10 +1,10 @@
-// Module ID: 10360
-// Function ID: 80001
+// Module ID: 10400
+// Function ID: 80130
 // Name: isKeyboardOverlappingAppEntry
-// Dependencies: [31, 1553, 477, 1569, 1570, 1453, 1571, 3992, 1819, 2]
+// Dependencies: [31, 1553, 477, 1569, 1570, 1453, 1571, 4026, 1819, 2]
 // Exports: default
 
-// Module 10360 (isKeyboardOverlappingAppEntry)
+// Module 10400 (isKeyboardOverlappingAppEntry)
 import result from "result";
 import isMetaQuest from "isMetaQuest";
 

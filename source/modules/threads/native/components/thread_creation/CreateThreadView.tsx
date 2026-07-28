@@ -1,9 +1,9 @@
-// Module ID: 15382
-// Function ID: 117272
+// Module ID: 15422
+// Function ID: 117431
 // Name: CreateThreadViewInner
-// Dependencies: [5, 57, 31, 27, 4469, 5918, 653, 33, 4131, 689, 6131, 6036, 5462, 5482, 1557, 5159, 4663, 4632, 15383, 5502, 1212, 15385, 11366, 11089, 11671, 10362, 1457, 675, 4325, 1198, 9507, 15384, 3990, 2]
+// Dependencies: [5, 57, 31, 27, 4503, 5952, 653, 33, 4165, 689, 6165, 6070, 5497, 5517, 1557, 5193, 4697, 4666, 15423, 5537, 1212, 15425, 11404, 11127, 11710, 10402, 1457, 675, 4359, 1198, 9547, 15424, 4024, 2]
 
-// Module 15382 (CreateThreadViewInner)
+// Module 15422 (CreateThreadViewInner)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "formSubmitError";
@@ -26,7 +26,7 @@ function CreateThreadViewInner(screenIndex) {
   let threadSettingsDraft = screenIndex.threadSettingsDraft;
   let parentChannel = screenIndex.parentChannel;
   const tmp = callback4();
-  let obj = threadSettingsDraft(6131);
+  let obj = threadSettingsDraft(6165);
   const privateThreadMode = obj.usePrivateThreadMode(parentChannel);
   let items = [parentChannel.id];
   const effect = importAllResult.useEffect(() => () => {
@@ -104,14 +104,14 @@ function CreateThreadViewInner(screenIndex) {
       };
     })(), items1);
   })(obj);
-  const tmp6 = parentChannel(5462);
+  const tmp6 = parentChannel(5497);
   const tmp7 = parentChannel(1557)();
   const ref = importAllResult.useRef(null);
   const ref1 = importAllResult.useRef(null);
-  obj = { value: tmp6(parentChannel(5482).CREATE_THREAD).analyticsLocations };
-  let items1 = [callback2(parentChannel(4663), { absolute: true }), ];
+  obj = { value: tmp6(parentChannel(5517).CREATE_THREAD).analyticsLocations };
+  let items1 = [callback2(parentChannel(4697), { absolute: true }), ];
   let obj1 = { style: items2 };
-  items2 = [tmp.container, { marginBottom: parentChannel(5159)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - tmp7.bottom }];
+  items2 = [tmp.container, { marginBottom: parentChannel(5193)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - tmp7.bottom }];
   const items3 = [callback2(closure_6, { style: tmp.expander }), , , , ];
   let obj3 = { style: tmp.containerContent };
   const obj4 = { style: tmp.options };
@@ -122,20 +122,20 @@ function CreateThreadViewInner(screenIndex) {
   const tmp12 = callback3;
   const tmp13 = callback3;
   const tmp14 = closure_6;
-  const items4 = [callback2(closure_6, { style: tmp.threadIconContainer, children: callback2(threadSettingsDraft(4632).ThreadIcon, { size: "lg" }) }), callback2(parentChannel(15383), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp4[0], optional: tmp11 }), ];
+  const items4 = [callback2(closure_6, { style: tmp.threadIconContainer, children: callback2(threadSettingsDraft(4666).ThreadIcon, { size: "lg" }) }), callback2(parentChannel(15423), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp4[0], optional: tmp11 }), ];
   let tmp21 = null;
   if (!isForumLikeChannelResult) {
     tmp21 = null;
     if (null == threadSettingsDraft.parentMessageId) {
       tmp21 = null;
-      if (privateThreadMode !== threadSettingsDraft(6131).PrivateThreadMode.Disabled) {
+      if (privateThreadMode !== threadSettingsDraft(6165).PrivateThreadMode.Disabled) {
         const obj7 = { style: tmp.optionPrivateThread };
-        const obj8 = { start: true, end: true, disabled: privateThreadMode !== threadSettingsDraft(6131).PrivateThreadMode.Enabled };
+        const obj8 = { start: true, end: true, disabled: privateThreadMode !== threadSettingsDraft(6165).PrivateThreadMode.Enabled };
         const intl = threadSettingsDraft(1212).intl;
         obj8.label = intl.string(threadSettingsDraft(1212).t.F1zyvU);
         const intl2 = threadSettingsDraft(1212).intl;
         obj8.subLabel = intl2.string(threadSettingsDraft(1212).t.Wy5RIQ);
-        obj8.value = threadSettingsDraft(6131).getIsPrivate(threadSettingsDraft, privateThreadMode);
+        obj8.value = threadSettingsDraft(6165).getIsPrivate(threadSettingsDraft, privateThreadMode);
         obj8.onValueChange = function onValueChange(isPrivate) {
           const parentChannelId = threadSettingsDraft.parentChannelId;
           if (null != parentChannelId) {
@@ -144,9 +144,9 @@ function CreateThreadViewInner(screenIndex) {
             obj.changeThreadSettings(parentChannelId, obj);
           }
         };
-        obj7.children = callback2(threadSettingsDraft(5502).TableSwitchRow, obj8);
+        obj7.children = callback2(threadSettingsDraft(5537).TableSwitchRow, obj8);
         tmp21 = callback2(closure_6, obj7);
-        const obj19 = threadSettingsDraft(6131);
+        const obj19 = threadSettingsDraft(6165);
       }
     }
   }
@@ -159,7 +159,7 @@ function CreateThreadViewInner(screenIndex) {
     const obj10 = { style: tmp.border };
     const items6 = [callback2(closure_6, obj10), ];
     const obj11 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items6[1] = callback2(threadSettingsDraft(15385).ThreadCreationStarterMessage, obj11);
+    items6[1] = callback2(threadSettingsDraft(15425).ThreadCreationStarterMessage, obj11);
     obj9.children = items6;
     tmp24 = callback3(closure_6, obj9);
   }
@@ -171,16 +171,16 @@ function CreateThreadViewInner(screenIndex) {
   if (parentChannel.rateLimitPerUser > 0) {
     const obj12 = { style: tmp.typingWrapper };
     const obj13 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
-    obj12.children = callback2(parentChannel(11366), obj13);
+    obj12.children = callback2(parentChannel(11404), obj13);
     tmp32 = callback2(closure_6, obj12);
   }
   items3[2] = tmp32;
-  items3[3] = callback2(parentChannel(11089), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp5 });
-  items3[4] = callback2(parentChannel(11671), { channelId: parentChannel.id });
+  items3[3] = callback2(parentChannel(11127), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp5 });
+  items3[4] = callback2(parentChannel(11710), { channelId: parentChannel.id });
   obj1.children = items3;
   items1[1] = tmp13(tmp14, obj1);
   obj.children = items1;
-  return tmp12(threadSettingsDraft(5462).AnalyticsLocationProvider, obj);
+  return tmp12(threadSettingsDraft(5497).AnalyticsLocationProvider, obj);
 }
 ({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
 ({ AbortCodes: closure_10, AnalyticEvents: closure_11, NOOP: closure_12 } = ME);
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let channelId;
   let screenIndex;
   ({ channelId, screenIndex } = arg0);
-  const tmp = importDefault(10362)(channelId);
+  const tmp = importDefault(10402)(channelId);
   let tmp2 = null;
   if (null != tmp) {
     const obj = { parentChannel: tmp.parentChannel, screenIndex, threadSettingsDraft: tmp.threadSettingsDraft };

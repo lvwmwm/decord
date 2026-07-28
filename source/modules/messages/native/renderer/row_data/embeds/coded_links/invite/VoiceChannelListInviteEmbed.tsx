@@ -1,10 +1,10 @@
-// Module ID: 9434
-// Function ID: 73628
+// Module ID: 9474
+// Function ID: 73756
 // Name: resolveVoiceChannelListInviteEmbedData
-// Dependencies: [27, 4123, 9435, 1391, 1348, 1918, 1838, 3759, 3768, 1850, 4147, 4204, 9436, 653, 5969, 9437, 7666, 7670, 1392, 3970, 3942, 4321, 1212, 9438, 2]
+// Dependencies: [27, 4157, 9475, 1391, 1348, 1918, 1838, 3793, 3802, 1850, 4181, 4238, 9476, 653, 6003, 9477, 7702, 7706, 1392, 4004, 3976, 4355, 1212, 9478, 2]
 // Exports: canShowVoiceChannelListInviteEmbed, createVoiceChannelListInviteEmbed
 
-// Module 9434 (resolveVoiceChannelListInviteEmbedData)
+// Module 9474 (resolveVoiceChannelListInviteEmbedData)
 import { processColor } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ function resolveVoiceChannelListInviteEmbedData(guild) {
     if (null == guild) {
       return null;
     } else {
-      let channel = importDefault(9437)(guild).channel;
+      let channel = importDefault(9477)(guild).channel;
       if (null != channel) {
         if (channel.isGuildVocal()) {
           channel = channel.getChannel(channel.id);
@@ -59,10 +59,10 @@ export const createVoiceChannelListInviteEmbed = function createVoiceChannelList
   } else {
     const guild = tmp.guild;
     const channel = tmp.channel;
-    ({ colors, baseColors } = displayNameStylesEnabled(7666)(closure_2));
+    ({ colors, baseColors } = displayNameStylesEnabled(7702)(closure_2));
     let assetUriForEmbed;
     if (null != guild.icon) {
-      let obj = guild(7670);
+      let obj = guild(7706);
       assetUriForEmbed = obj.getAssetUriForEmbed(getGuildIconSource(guild, 128, false));
     }
     voiceStatesForChannelAlt = voiceStatesForChannelAlt.getVoiceStatesForChannelAlt(channel.id, guild.id);
@@ -134,8 +134,8 @@ export const createVoiceChannelListInviteEmbed = function createVoiceChannelList
     currentClientVoiceChannelId = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(guild.id);
     const merged = Object.assign(baseColors);
     const tmp21 = processColor;
-    const tmp40 = displayNameStylesEnabled(7666)(closure_2);
-    const embedScrollGradientBackground = guild(3942).getEmbedScrollGradientBackground();
+    const tmp40 = displayNameStylesEnabled(7702)(closure_2);
+    const embedScrollGradientBackground = guild(3976).getEmbedScrollGradientBackground();
     let tmp25;
     if (null != embedScrollGradientBackground) {
       tmp25 = embedScrollGradientBackground;
@@ -150,16 +150,16 @@ export const createVoiceChannelListInviteEmbed = function createVoiceChannelList
     obj["guildName"] = guild.name;
     obj["guildIcon"] = assetUriForEmbed;
     obj["headerText"] = "";
-    const obj3 = guild(3942);
-    obj["titleText"] = guild(4321).computeChannelName(channel, closure_12, closure_11);
+    const obj3 = guild(3976);
+    obj["titleText"] = guild(4355).computeChannelName(channel, closure_12, closure_11);
     obj["titleColor"] = voiceStatesForChannelAlt.length > 0 ? colors.voiceActiveColor : colors.voiceMutedColor;
     const intl = guild(1212).intl;
     obj["acceptLabelText"] = intl.string(guild(1212).t.gpqgah);
     obj["acceptLabelColor"] = colors.acceptLabelGreenColor;
     obj["acceptLabelBackgroundColor"] = colors.acceptLabelGreenBackgroundColor;
-    let obj4 = guild(4321);
+    let obj4 = guild(4355);
     const items1 = [closure_8];
-    obj["canBeAccepted"] = displayNameStylesEnabled(9438).canAcceptInvite(items1, invite);
+    obj["canBeAccepted"] = displayNameStylesEnabled(9478).canAcceptInvite(items1, invite);
     obj["embedCanBeTapped"] = true;
     obj["type"] = InviteTypes.GUILD;
     obj["voiceUsers"] = mapped;
@@ -167,7 +167,7 @@ export const createVoiceChannelListInviteEmbed = function createVoiceChannelList
     const intl2 = guild(1212).intl;
     obj["emptyStateText"] = intl2.string(guild(1212).t.zSqdrS);
     const intl3 = guild(1212).intl;
-    const obj5 = displayNameStylesEnabled(9438);
+    const obj5 = displayNameStylesEnabled(9478);
     obj["streamingLabel"] = intl3.string(guild(1212).t.dI3q4h).toUpperCase();
     obj["voiceHeaderBackgroundColor"] = colors.voiceHeaderBackgroundColor;
     obj["reducedMotion"] = _isNativeReflectConstruct.useReducedMotion;

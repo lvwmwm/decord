@@ -1,10 +1,10 @@
-// Module ID: 14218
-// Function ID: 109397
+// Module ID: 14262
+// Function ID: 109570
 // Name: ThemeLightIcon
-// Dependencies: [31, 33, 689, 3834, 14219, 2]
+// Dependencies: [31, 33, 689, 3868, 14263, 2]
 // Exports: ThemeLightIcon
 
-// Module 14218 (ThemeLightIcon)
+// Module 14262 (ThemeLightIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ThemeLightIcon = function ThemeLightIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14219) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14263) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(14219) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(14263) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,11 +1,11 @@
 // Module ID: 8340
-// Function ID: 66875
+// Function ID: 66827
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 8340 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 58.333333333333336, height: 58.333333333333336, scales: [3], hash: "99ffc81e67285d18182e87dbce7ba5f1", name: "asset_silver_badge_small", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "14a4fdad987e2761599ba055042fdafa", name: "EyeSlashIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

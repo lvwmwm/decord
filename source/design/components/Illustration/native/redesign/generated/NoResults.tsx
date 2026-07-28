@@ -1,17 +1,17 @@
-// Module ID: 8307
-// Function ID: 66761
+// Module ID: 8345
+// Function ID: 66871
 // Name: getNoResultsSource
-// Dependencies: [31, 27, 33, 6481, 8308, 8309, 8310, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 8346, 8347, 8348, 4011, 2]
 // Exports: NoResults
 
-// Module 8307 (getNoResultsSource)
+// Module 8345 (getNoResultsSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getNoResultsSource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getNoResultsSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useNoResultsSource() {
-  return getNoResultsSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getNoResultsSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResults.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 7194
-// Function ID: 60027
+// Module ID: 7230
+// Function ID: 60116
 // Name: LanternSpotIllustration
-// Dependencies: [33, 5085, 7195, 2]
+// Dependencies: [33, 5119, 7231, 2]
 // Exports: LanternSpotIllustration
 
-// Module 7194 (LanternSpotIllustration)
+// Module 7230 (LanternSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LanternSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const LanternSpotIllustration = function LanternSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7195) };
+  obj = { uri: importDefault(7231) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const LanternSpotIllustration = function LanternSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

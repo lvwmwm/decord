@@ -1,9 +1,9 @@
-// Module ID: 9620
-// Function ID: 75054
+// Module ID: 9660
+// Function ID: 75183
 // Name: NativeModules
-// Dependencies: [57, 31, 27, 1451, 1552, 5188, 4345, 33, 4131, 689, 3992, 9621, 9624, 1453, 1557, 1450, 5084, 5189, 9379, 4688, 22, 9625, 9631, 9633, 9329, 9634, 4684, 7619, 1212, 2]
+// Dependencies: [57, 31, 27, 1451, 1552, 5222, 4379, 33, 4165, 689, 4026, 9661, 9664, 1453, 1557, 1450, 5118, 5223, 9423, 4722, 22, 9665, 9671, 9673, 9373, 9674, 4718, 7655, 1212, 2]
 
-// Module 9620 (NativeModules)
+// Module 9660 (NativeModules)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "_isNativeReflectConstruct";

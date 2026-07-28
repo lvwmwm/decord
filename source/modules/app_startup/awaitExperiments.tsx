@@ -1,10 +1,10 @@
-// Module ID: 13177
-// Function ID: 101513
+// Module ID: 13221
+// Function ID: 101686
 // Name: future
-// Dependencies: [5672, 2]
+// Dependencies: [5682, 2]
 // Exports: beginLoadedExperimentsTimeout, getPromise, onExperimentsLoaded
 
-// Module 13177 (future)
+// Module 13221 (future)
 const future = new require("Future").Future();
 let c1 = null;
 const result = require("set").fileFinishedImporting("modules/app_startup/awaitExperiments.tsx");

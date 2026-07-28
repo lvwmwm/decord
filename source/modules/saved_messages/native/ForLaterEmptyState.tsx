@@ -1,10 +1,10 @@
-// Module ID: 9891
-// Function ID: 76615
+// Module ID: 9931
+// Function ID: 76744
 // Name: ForLaterEmptyState
-// Dependencies: [27, 33, 4131, 9892, 4127, 1212, 9490, 2]
+// Dependencies: [27, 33, 4165, 9932, 4161, 1212, 9530, 2]
 // Exports: ForLaterEmptyState
 
-// Module 9891 (ForLaterEmptyState)
+// Module 9931 (ForLaterEmptyState)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,27 +24,27 @@ export const ForLaterEmptyState = function ForLaterEmptyState(type) {
   const tmp = callback2();
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer };
   obj = { style: tmp.container };
-  obj = { source: importDefault(9892), style: tmp.image };
+  obj = { source: importDefault(9932), style: tmp.image };
   const items = [callback(closure_4, obj), ];
   const obj1 = { style: tmp.textContainer };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text };
   const intl = require(1212) /* getSystemLocale */.intl;
-  if (type === require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
+  if (type === require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
     let erEf2g = require(1212) /* getSystemLocale */.t.AE4yja;
   } else {
     erEf2g = require(1212) /* getSystemLocale */.t.erEf2g;
   }
   obj2.children = intl.string(erEf2g);
-  const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", style: tmp.text };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  if (type === require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
+  if (type === require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
     w1o_75 = require(1212) /* getSystemLocale */.t.iBFuNE;
   } else {
     w1o_75 = require(1212) /* getSystemLocale */.t["w1o+75"];
   }
   obj3.children = intl2.string(w1o_75);
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj1.children = items1;
   items[1] = closure_7(closure_3, obj1);
   obj.children = items;

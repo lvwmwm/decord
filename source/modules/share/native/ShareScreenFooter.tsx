@@ -1,10 +1,10 @@
-// Module ID: 12976
-// Function ID: 100661
+// Module ID: 13020
+// Function ID: 100834
 // Name: ShareScreenFooter
-// Dependencies: [31, 33, 9854, 9855, 4544, 9863, 2]
+// Dependencies: [31, 33, 9894, 9895, 4578, 9903, 2]
 // Exports: default
 
-// Module 12976 (ShareScreenFooter)
+// Module 13020 (ShareScreenFooter)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -32,7 +32,7 @@ export default function ShareScreenFooter(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  let obj = require(9854) /* useShareChatInputActions */;
+  let obj = require(9894) /* useShareChatInputActions */;
   const shareChatInputActions = obj.useShareChatInputActions(setText, undefined, appEntryKey);
   ({ textInputRef, isInputFocused, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
   obj = { preview };
@@ -48,9 +48,9 @@ export default function ShareScreenFooter(arg0) {
   }
   obj.onPress = tmp5;
   obj.loading = isSending;
-  obj.sendButton = jsx(require(4544) /* Button */.Button, { variant: "primary", size: "md", text: sendLabel });
+  obj.sendButton = jsx(require(4578) /* Button */.Button, { variant: "primary", size: "md", text: sendLabel });
   const obj1 = { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled };
-  obj.chatInput = jsx(importDefault(9863), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
+  obj.chatInput = jsx(importDefault(9903), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
   obj.avoidKeyboard = isInputFocused;
-  return jsx(importDefault(9855), { variant: "primary", size: "md", text: sendLabel });
+  return jsx(importDefault(9895), { variant: "primary", size: "md", text: sendLabel });
 };

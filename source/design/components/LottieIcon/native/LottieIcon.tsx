@@ -1,9 +1,9 @@
-// Module ID: 9747
-// Function ID: 75883
+// Module ID: 9787
+// Function ID: 76012
 // Name: LottieIcon
-// Dependencies: [31, 27, 33, 689, 5511, 3850, 3835, 5454, 2]
+// Dependencies: [31, 27, 33, 689, 5546, 3884, 3869, 5489, 2]
 
-// Module 9747 (LottieIcon)
+// Module 9787 (LottieIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

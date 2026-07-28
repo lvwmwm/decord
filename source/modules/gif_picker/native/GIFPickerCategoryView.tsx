@@ -1,10 +1,10 @@
-// Module ID: 9553
-// Function ID: 74531
+// Module ID: 9593
+// Function ID: 74660
 // Name: GIFPickerCategoryView
-// Dependencies: [31, 27, 653, 33, 4131, 689, 1212, 8231, 5085, 9554, 9351, 4127, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 1212, 8269, 5119, 9594, 9395, 4161, 2]
 // Exports: default
 
-// Module 9553 (GIFPickerCategoryView)
+// Module 9593 (GIFPickerCategoryView)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,23 +54,23 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   let obj = { categoryName: item.name };
   const formatToPlainStringResult = intl.formatToPlainString(onSelectCategory(1212).t["j+63pw"], obj);
   obj = { style: tmp.container, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult };
-  const merged = Object.assign(item(8231)(callback, formatToPlainStringResult));
+  const merged = Object.assign(item(8269)(callback, formatToPlainStringResult));
   obj = { style: tmp.gifImage, source: obj1 };
-  const items1 = [callback(item(5085), obj), callback(closure_4, { style: tmp.gifOverlay }), ];
+  const items1 = [callback(item(5119), obj), callback(closure_4, { style: tmp.gifOverlay }), ];
   const obj3 = { style: tmp.categoryName, accessible: false };
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj4 = { size: "sm", style: tmp.categoryNameIcon, color: item(689).colors.WHITE };
-    let tmp9 = callback(onSelectCategory(9554).AnalyticsIcon, obj4);
+    let tmp9 = callback(onSelectCategory(9594).AnalyticsIcon, obj4);
   } else {
     tmp9 = null;
     if (item.type === GIFPickerResultTypes.FAVORITES) {
       const obj5 = { size: "sm", style: tmp.categoryNameIcon, color: item(689).colors.WHITE };
-      tmp9 = callback(onSelectCategory(9351).StarIcon, obj5);
+      tmp9 = callback(onSelectCategory(9395).StarIcon, obj5);
     }
   }
   const items2 = [tmp9, ];
   const obj6 = { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name };
-  items2[1] = callback(onSelectCategory(4127).Text, obj6);
+  items2[1] = callback(onSelectCategory(4161).Text, obj6);
   obj3.children = items2;
   items1[2] = closure_8(closure_4, obj3);
   obj["children"] = items1;

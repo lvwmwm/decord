@@ -1,10 +1,10 @@
-// Module ID: 15068
-// Function ID: 114755
+// Module ID: 15108
+// Function ID: 114913
 // Name: BoostProgressBarCoachmark
-// Dependencies: [31, 27, 1345, 33, 4131, 8242, 1212, 2231, 3843, 8368, 2]
+// Dependencies: [31, 27, 1345, 33, 4165, 8280, 1212, 2231, 3877, 8406, 2]
 // Exports: default
 
-// Module 15068 (BoostProgressBarCoachmark)
+// Module 15108 (BoostProgressBarCoachmark)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -46,6 +46,6 @@ export default function BoostProgressBarCoachmark(guild) {
     obj.onButtonPress = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(8368).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(8406).useCoachmark(guild.targetRef, memo);
   return null;
 };

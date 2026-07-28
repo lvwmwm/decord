@@ -1,9 +1,9 @@
-// Module ID: 5951
-// Function ID: 52945
+// Module ID: 5985
+// Function ID: 53064
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 1850, 4046, 1857, 1856, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 1850, 4080, 1857, 1856, 566, 686, 2]
 
-// Module 5951 (_isNativeReflectConstruct)
+// Module 5985 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ExperimentBuckets from "ExperimentBuckets";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

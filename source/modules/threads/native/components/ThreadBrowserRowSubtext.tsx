@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 118023
+// Module ID: 15507
+// Function ID: 118179
 // Name: MessageContent
-// Dependencies: [31, 27, 4123, 1918, 1850, 6014, 653, 482, 33, 4131, 689, 566, 6040, 4572, 5049, 4127, 1212, 3970, 6018, 4361, 21, 1273, 7817, 7685, 3995, 2]
+// Dependencies: [31, 27, 4157, 1918, 1850, 6048, 653, 482, 33, 4165, 689, 566, 6074, 4606, 5083, 4161, 1212, 4004, 6052, 4395, 21, 1273, 7853, 7721, 4029, 2]
 // Exports: ThreadSubtext
 
-// Module 15468 (MessageContent)
+// Module 15507 (MessageContent)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ function MessageContent(arg0) {
   let message;
   let thread;
   ({ thread, message } = arg0);
-  let obj = message(6018);
+  let obj = message(6052);
   const items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
   let obj1 = message(566);
@@ -41,14 +41,14 @@ function MessageContent(arg0) {
   const items2 = [_isNativeReflectConstruct];
   const importDefault = message(566).useStateFromStores(items2, () => roleStyle.roleStyle);
   const obj3 = message(566);
-  ({ nick: dependencyMap, colorString: closure_3, colorStrings: View } = importDefault(4361)(message));
-  let tmp4 = importDefault(4361)(message);
+  ({ nick: dependencyMap, colorString: closure_3, colorStrings: View } = importDefault(4395)(message));
+  let tmp4 = importDefault(4395)(message);
   const extractTimestampResult = importDefault(21).extractTimestamp(message.id);
   const obj4 = importDefault(21);
-  const timestampString = message(6040).getTimestampString(extractTimestampResult);
-  const obj5 = message(6040);
-  const timestampAccessibilityLabel = message(6040).getTimestampAccessibilityLabel(extractTimestampResult);
-  _isNativeReflectConstruct = importDefault(4572)(thread.guild_id, stateFromStores.id);
+  const timestampString = message(6074).getTimestampString(extractTimestampResult);
+  const obj5 = message(6074);
+  const timestampAccessibilityLabel = message(6074).getTimestampAccessibilityLabel(extractTimestampResult);
+  _isNativeReflectConstruct = importDefault(4606)(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel };
   obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default" };
   const intl = message(1212).intl;
@@ -84,7 +84,7 @@ function MessageContent(arg0) {
     }
   };
   obj.children = intl.format(message(1212).t.M79KAH, obj1);
-  obj.children = callback(message(4127).Text, obj);
+  obj.children = callback(message(4161).Text, obj);
   return callback(SubstringRow, obj);
 }
 function SubstringRow(arg0) {
@@ -98,7 +98,7 @@ function SubstringRow(arg0) {
   if (null == user) {
     let obj = { style: tmp.row };
     obj = { style: tmp.timestamp, accessibilityLabel, variant: "text-sm/medium", color: "text-muted", children: ` ${timestamp}` };
-    obj.children = callback(require(4127) /* Text */.Text, obj);
+    obj.children = callback(require(4161) /* Text */.Text, obj);
     let tmp7 = callback(View, obj);
   } else {
     obj = { style: tmp.row };
@@ -108,7 +108,7 @@ function SubstringRow(arg0) {
     const obj2 = { style: tmp.timestamp, accessibilityLabel, variant: "text-sm/medium", color: "text-muted" };
     const _HermesInternal = HermesInternal;
     obj2.children = "" + timestamp;
-    items[2] = callback(require(4127) /* Text */.Text, obj2);
+    items[2] = callback(require(4161) /* Text */.Text, obj2);
     obj.children = items;
     tmp7 = callback2(View, obj);
   }
@@ -136,7 +136,7 @@ function Username(usernameColor) {
     }
     return username;
   }, items);
-  let obj = usernameColor(7685);
+  let obj = usernameColor(7721);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
   let tmp3 = !shouldShowRoleDot;
   if (tmp3) {
@@ -148,7 +148,7 @@ function Username(usernameColor) {
     shouldShowRoleDot = callback(usernameColor(1273).RoleDot, obj);
   }
   const items1 = [shouldShowRoleDot, ];
-  const obj1 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", experimental_useNativeText: !usernameColor(3995).isFabric() };
+  const obj1 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", experimental_useNativeText: !usernameColor(4029).isFabric() };
   let tmp10;
   if (tmp3) {
     tmp10 = processColorStringsArray;
@@ -156,7 +156,7 @@ function Username(usernameColor) {
   obj1.gradientColors = tmp10;
   obj1.style = memo;
   obj1.children = nickname;
-  items1[1] = callback(usernameColor(4127).Text, obj1);
+  items1[1] = callback(usernameColor(4161).Text, obj1);
   obj.children = items1;
   return closure_10(closure_11, obj);
 }
@@ -273,7 +273,7 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
   const items = [closure_8];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(6040).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(6074).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -282,9 +282,9 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
       }
     }
   }
-  const obj2 = id(6040);
-  const timestampString = id(6040).getTimestampString(lastMessageTimestamp);
-  const obj4 = id(6040);
-  obj = { thread, timestamp: timestampString, accessibilityLabel: id(6040).getTimestampAccessibilityLabel(lastMessageTimestamp) };
+  const obj2 = id(6074);
+  const timestampString = id(6074).getTimestampString(lastMessageTimestamp);
+  const obj4 = id(6074);
+  obj = { thread, timestamp: timestampString, accessibilityLabel: id(6074).getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4707
-// Function ID: 40964
+// Module ID: 4741
+// Function ID: 41079
 // Name: MessageAttachmentUploadTarget
-// Dependencies: [6, 7, 1348, 653, 4671, 4667, 4708, 4710, 2]
+// Dependencies: [6, 7, 1348, 653, 4705, 4701, 4742, 4744, 2]
 // Exports: getUploadTarget
 
-// Module 4707 (MessageAttachmentUploadTarget)
+// Module 4741 (MessageAttachmentUploadTarget)
 import GuildProductAttachmentUploadTarget from "GuildProductAttachmentUploadTarget";
 import ICYMIAttachmentUploadTarget from "ICYMIAttachmentUploadTarget";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -73,12 +73,12 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/u
 export const UploadTargets = obj;
 export const getUploadTarget = function getUploadTarget(target) {
   if (obj.GUILD_PRODUCT_ATTACHMENT === target) {
-    let tmp17 = importDefault(4708);
+    let tmp17 = importDefault(4742);
     const prototype3 = tmp17.prototype;
     tmp17 = new tmp17();
     return tmp17;
   } else if (obj.GRAVITY_ATTACHMENT === target) {
-    let tmp10 = importDefault(4710);
+    let tmp10 = importDefault(4744);
     const prototype2 = tmp10.prototype;
     tmp10 = new tmp10();
     return tmp10;

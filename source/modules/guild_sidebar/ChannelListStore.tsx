@@ -1,9 +1,9 @@
-// Module ID: 5750
-// Function ID: 49915
+// Module ID: 5760
+// Function ID: 49771
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1347, 1909, 5751, 5040, 3761, 1316, 1194, 5077, 1348, 5752, 4163, 3759, 4143, 1907, 4326, 662, 5753, 22, 1327, 3749, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1347, 1909, 5761, 5074, 3795, 1316, 1194, 5111, 1348, 5762, 4197, 3793, 4177, 1907, 4360, 662, 5763, 22, 1327, 3783, 21, 566, 686, 2]
 
-// Module 5750 (_isNativeReflectConstruct)
+// Module 5760 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -329,9 +329,9 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3749) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3749) /* getEmbeddedActivityLocationChannelId */;
-    return importDefaultResult.updateSubtitles(embeddedActivityLocationGuildId, require(3749) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3783) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3783) /* getEmbeddedActivityLocationChannelId */;
+    return importDefaultResult.updateSubtitles(embeddedActivityLocationGuildId, require(3783) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     handleRecomputeAllSubtitles();

@@ -1,9 +1,9 @@
-// Module ID: 8219
-// Function ID: 65916
+// Module ID: 8257
+// Function ID: 66026
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 561, 5128, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 561, 5162, 566, 686, 2]
 
-// Module 8219 (_isNativeReflectConstruct)
+// Module 8257 (_isNativeReflectConstruct)
 import Backoff from "Backoff";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -58,7 +58,7 @@ function handleInviteResolveOrCreate(invite) {
   const profile = invite.invite.profile;
   if (null != profile) {
     const value = map.get(profile.id);
-    const guildProfileFromServer = require(5128) /* _createForOfIteratorHelperLoose */.buildGuildProfileFromServer(profile);
+    const guildProfileFromServer = require(5162) /* _createForOfIteratorHelperLoose */.buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
       const merged = Object.assign(obj);
@@ -76,7 +76,7 @@ function handleInviteResolveOrCreate(invite) {
       obj["fetchStatus"] = obj.FETCHED;
       const result1 = map.set(profile.id, obj);
     }
-    const obj3 = require(5128) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(5162) /* _createForOfIteratorHelperLoose */;
   }
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };

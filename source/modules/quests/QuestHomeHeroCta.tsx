@@ -1,10 +1,10 @@
-// Module ID: 9430
-// Function ID: 73575
+// Module ID: 9470
+// Function ID: 73703
 // Name: questHomeHeroCtaFromServer
 // Dependencies: [2]
 // Exports: questHomeHeroCtaFromServer
 
-// Module 9430 (questHomeHeroCtaFromServer)
+// Module 9470 (questHomeHeroCtaFromServer)
 const result = require("set").fileFinishedImporting("modules/quests/QuestHomeHeroCta.tsx");
 
 export const questHomeHeroCtaFromServer = function questHomeHeroCtaFromServer(cta) {

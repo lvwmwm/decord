@@ -1,10 +1,10 @@
-// Module ID: 12507
-// Function ID: 96830
+// Module ID: 12550
+// Function ID: 97000
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 57, 31, 27, 6164, 1838, 3782, 3783, 5619, 12508, 1852, 653, 6173, 4114, 33, 4131, 5053, 4974, 689, 4542, 6727, 4127, 1212, 3777, 12509, 12510, 12511, 12512, 12513, 12514, 6570, 3835, 566, 12515, 6194, 4067, 1273, 6478, 6479, 5164, 12516, 5584, 5217, 3977, 478, 6195, 6238, 4472, 12517, 1935, 5501, 4555, 12519, 5622, 3792, 4338, 6269, 6245, 5462, 6244, 5450, 4560, 6239, 6196, 1456, 6234, 6490, 5482, 6198, 4452, 6301, 6454, 6495, 675, 6445, 6608, 2]
+// Dependencies: [5, 57, 31, 27, 6198, 1838, 3816, 3817, 5654, 12551, 1852, 653, 6207, 4148, 33, 4165, 5087, 5008, 689, 4576, 6763, 4161, 1212, 3811, 12552, 12553, 12554, 12555, 12556, 12557, 6606, 3869, 566, 12558, 6229, 4101, 1273, 6514, 6515, 5198, 12559, 5619, 5251, 4011, 478, 6230, 6274, 4506, 12560, 1935, 5536, 4589, 12562, 5657, 3826, 4372, 6305, 6281, 5497, 6280, 5485, 4594, 6275, 6231, 1456, 6270, 6526, 5517, 6233, 4486, 6337, 6490, 6531, 675, 6481, 6644, 2]
 // Exports: default
 
-// Module 12507 (BoostPurchaseNitroBanner)
+// Module 12550 (BoostPurchaseNitroBanner)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import getHeaderBackground from "getHeaderBackground";
 import importAllResult from "map";
@@ -51,7 +51,7 @@ const require = arg1;
 function BoostPurchaseNitroBanner() {
   const tmp = callback5();
   let obj = { align: "center", spacing: importDefault(689).space.PX_12, style: tmp.nitroBanner };
-  const items = [callback3(require(6727) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
+  const items = [callback3(require(6763) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
   obj = { align: "center", spacing: importDefault(689).space.PX_4 };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.nitroBannerText };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -59,17 +59,17 @@ function BoostPurchaseNitroBanner() {
   const obj2 = { variant: "text-md/semibold", color: "text-feedback-positive" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.RmVM19, { percentageOff: closure_16 });
-  obj1.discount = callback3(require(4127) /* Text */.Text, obj2, "discount");
+  obj1.discount = callback3(require(4161) /* Text */.Text, obj2, "discount");
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.jbrHpT, obj1);
-  const items1 = [callback3(require(4127) /* Text */.Text, obj), ];
+  const items1 = [callback3(require(4161) /* Text */.Text, obj), ];
   const obj4 = { variant: "text-sm/medium", color: "text-muted", style: tmp.nitroBannerText };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl3.format(require(1212) /* getSystemLocale */.t.HYpETY, { boostCount: closure_17 });
-  items1[1] = callback3(require(4127) /* Text */.Text, obj4);
+  items1[1] = callback3(require(4161) /* Text */.Text, obj4);
   obj.children = items1;
-  items[1] = callback4(require(4542) /* Stack */.Stack, obj);
+  items[1] = callback4(require(4576) /* Stack */.Stack, obj);
   obj.children = items;
-  return callback4(require(4542) /* Stack */.Stack, obj);
+  return callback4(require(4576) /* Stack */.Stack, obj);
 }
 function getPlanDescription(premiumTier) {
   let flag = arg1;
@@ -81,8 +81,8 @@ function getPlanDescription(premiumTier) {
     let obj = { numSubscriptions: premiumTier.numPremiumGuild };
     let formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.gDsyB9, obj);
   } else if (0 === premiumTier.numPremiumGuild) {
-    formatToPlainStringResult = require(3777) /* _createForOfIteratorHelperLoose */.getPremiumTypeDisplayName(premiumTier.premiumTier);
-    const obj3 = require(3777) /* _createForOfIteratorHelperLoose */;
+    formatToPlainStringResult = require(3811) /* _createForOfIteratorHelperLoose */.getPremiumTypeDisplayName(premiumTier.premiumTier);
+    const obj3 = require(3811) /* _createForOfIteratorHelperLoose */;
   } else {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl2.formatToPlainString;
@@ -108,7 +108,7 @@ function BoostDeltaPriceTrailing(arg0) {
   ({ price, interval } = arg0);
   let obj = { direction: "horizontal", align: "center", spacing: importDefault(689).space.PX_4 };
   obj = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_POSITIVE };
-  const items = [callback3(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+  const items = [callback3(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
   obj = { variant: "text-sm/medium", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   if (interval === constants.MONTH) {
@@ -117,10 +117,10 @@ function BoostDeltaPriceTrailing(arg0) {
     rS8FA_ = require(1212) /* getSystemLocale */.t["rS8FA+"];
   }
   const obj2 = { variant: "text-sm/semibold", color: "text-feedback-positive", children: price };
-  obj.children = intl.format(rS8FA_, { price: callback3(require(4127) /* Text */.Text, obj2, "price") });
-  items[1] = callback3(require(4127) /* Text */.Text, obj);
+  obj.children = intl.format(rS8FA_, { price: callback3(require(4161) /* Text */.Text, obj2, "price") });
+  items[1] = callback3(require(4161) /* Text */.Text, obj);
   obj.children = items;
-  return closure_33(require(4542) /* Stack */.Stack, obj);
+  return closure_33(require(4576) /* Stack */.Stack, obj);
 }
 function PlanRow(plan) {
   let importDefault;
@@ -438,7 +438,7 @@ function PlanSection(showBoostOnlyLabels) {
   }, plan.productId));
   if (shouldShowModernBoostFlow) {
     obj = { title: showBoostOnlyLabels.label, hasIcons: true, children: mapped };
-    let tmp5Result = tmp5(shouldShowModernBoostFlow(5501).TableRowGroup, obj);
+    let tmp5Result = tmp5(shouldShowModernBoostFlow(5536).TableRowGroup, obj);
   } else {
     obj = { children: mapped };
     tmp5Result = tmp5(closure_7, obj);
@@ -458,21 +458,21 @@ function CurrentPlanRow(subscription) {
   const tmp = callback5();
   if (subscription.showCurrentPlan) {
     if (null != subscription) {
-      productIdFromSubscription = subscription(6195).getProductIdFromSubscription(subscription, true);
-      let obj4 = subscription(6195);
-      const premiumBundledItemsFromProductId = subscription(6195).getPremiumBundledItemsFromProductId(productIdFromSubscription);
+      productIdFromSubscription = subscription(6230).getProductIdFromSubscription(subscription, true);
+      let obj4 = subscription(6230);
+      const premiumBundledItemsFromProductId = subscription(6230).getPremiumBundledItemsFromProductId(productIdFromSubscription);
       const premiumTier = premiumBundledItemsFromProductId.premiumTier;
       if (null != premiumTier) {
         let PREMIUM_GUILD = callback2(premiumTier);
       } else {
         PREMIUM_GUILD = constants7.PREMIUM_GUILD;
       }
-      let obj = subscription(6195);
+      let obj = subscription(6230);
       toggledIntervalProduct = obj.getToggledIntervalProduct(productIdFromSubscription);
       obj = { style: tmp.currentPlanGradient, colors: PREMIUM_GUILD, start: constants4.START, end: constants4.END };
       obj = { plan: premiumBundledItemsFromProductId, subscription };
       let tmp15 = null == toggledIntervalProduct;
-      const obj5 = subscription(6195);
+      const obj5 = subscription(6230);
       const tmp8 = closure_32;
       if (tmp15) {
         tmp15 = subscription.status !== constants6.CANCELED;
@@ -534,7 +534,7 @@ function CurrentPlanRow(subscription) {
       };
       obj.style = tmp.currentPlanRow;
       obj.children = closure_32(PlanRow, obj);
-      return tmp8(importDefault(4555), obj);
+      return tmp8(importDefault(4589), obj);
     }
   }
   return null;
@@ -717,7 +717,7 @@ obj.nitroBannerText = { textAlign: "center" };
 let obj8 = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.recommendedText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_35 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_36 = { [importDefault(12512)]: "imgWumpusNitro", [importDefault(12514)]: "imgWumpusNitroBoost", [importDefault(12511)]: "imgWumpusNitroClassic", [importDefault(12513)]: "imgWumpusNitroClassicBoost", [importDefault(12510)]: "imgWumpusNitroTier0", [importDefault(12509)]: "imgBoost" };
+let closure_36 = { [importDefault(12555)]: "imgWumpusNitro", [importDefault(12557)]: "imgWumpusNitroBoost", [importDefault(12554)]: "imgWumpusNitroClassic", [importDefault(12556)]: "imgWumpusNitroClassicBoost", [importDefault(12553)]: "imgWumpusNitroTier0", [importDefault(12552)]: "imgBoost" };
 items = [
   {
     id: "premium",

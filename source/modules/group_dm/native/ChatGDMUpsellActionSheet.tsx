@@ -1,10 +1,10 @@
-// Module ID: 10851
-// Function ID: 84369
+// Module ID: 10889
+// Function ID: 84490
 // Name: ChatGDMUpsellActionSheet
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 3947, 1334, 4099, 5187, 5085, 10852, 4544, 1212, 5189, 4127, 10853, 4075, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1557, 3981, 1334, 4133, 5221, 5119, 10890, 4578, 1212, 5223, 4161, 10891, 4109, 2]
 // Exports: default
 
-// Module 10851 (ChatGDMUpsellActionSheet)
+// Module 10889 (ChatGDMUpsellActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,18 +45,18 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   }, items);
   let obj = { showGradient: true, scrollable: true, startExpanded: true };
   obj = { style: tmp.titleImage };
-  obj = { source: importDefault(10852), resizeMode: "contain" };
-  obj.children = callback(importDefault(5085), obj);
+  obj = { source: importDefault(10890), resizeMode: "contain" };
+  obj.children = callback(importDefault(5119), obj);
   obj.header = callback(View, obj);
   const obj1 = { style: items1 };
   items1 = [tmp.footer, ];
-  const tmp3 = importDefault(5085);
+  const tmp3 = importDefault(5119);
   items1[1] = { padding: 16, paddingBottom: importDefault(1557)().bottom + 16 };
   const obj3 = {};
   const intl = onClick(1212).intl;
   obj3.text = intl.string(onClick(1212).t["3PatSz"]);
   obj3.onPress = callback;
-  const items2 = [callback(onClick(4544).Button, obj3), ];
+  const items2 = [callback(onClick(4578).Button, obj3), ];
   const obj4 = { style: tmp.button };
   const obj5 = {};
   const intl2 = onClick(1212).intl;
@@ -65,7 +65,7 @@ export default function ChatGDMUpsellActionSheet(onClick) {
     outer1_1(outer1_2[8]).hideActionSheet();
   };
   obj5.variant = "tertiary";
-  obj4.children = callback(onClick(4544).Button, obj5);
+  obj4.children = callback(onClick(4578).Button, obj5);
   items2[1] = callback(View, obj4);
   obj1.children = items2;
   obj.footer = callback2(View, obj1);
@@ -73,33 +73,33 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   const obj7 = { style: tmp.title, variant: "heading-lg/extrabold", accessibilityRole: "header" };
   const intl3 = onClick(1212).intl;
   obj7.children = intl3.string(onClick(1212).t["bkqux/"]);
-  const items3 = [callback(onClick(4127).Text, obj7), , ];
+  const items3 = [callback(onClick(4161).Text, obj7), , ];
   const obj8 = { style: tmp.body, variant: "text-md/medium", color: "text-muted" };
   const intl4 = onClick(1212).intl;
   obj8.children = intl4.string(onClick(1212).t.N6TdqN);
-  items3[1] = callback(onClick(4127).Text, obj8);
+  items3[1] = callback(onClick(4161).Text, obj8);
   const obj9 = { style: tmp.noticeContainer };
   const obj10 = { style: tmp.innerContainer };
   const obj2 = { padding: 16, paddingBottom: importDefault(1557)().bottom + 16 };
-  const items4 = [callback(View, { style: tmp.item, children: callback(onClick(10853).TimerIcon, { size: "sm" }) }), ];
+  const items4 = [callback(View, { style: tmp.item, children: callback(onClick(10891).TimerIcon, { size: "sm" }) }), ];
   const obj12 = { style: tmp.text, variant: "text-sm/medium", color: "text-default" };
   const intl5 = onClick(1212).intl;
   obj12.children = intl5.string(onClick(1212).t.Fq3DJb);
-  items4[1] = callback(onClick(4127).Text, obj12);
+  items4[1] = callback(onClick(4161).Text, obj12);
   obj10.children = items4;
   const items5 = [callback2(View, obj10), ];
   const obj13 = { style: tmp.secondInnerContainer };
-  const obj11 = { style: tmp.item, children: callback(onClick(10853).TimerIcon, { size: "sm" }) };
-  const items6 = [callback(View, { style: tmp.item, children: callback(onClick(4075).LinkIcon, { size: "sm" }) }), ];
+  const obj11 = { style: tmp.item, children: callback(onClick(10891).TimerIcon, { size: "sm" }) };
+  const items6 = [callback(View, { style: tmp.item, children: callback(onClick(4109).LinkIcon, { size: "sm" }) }), ];
   const obj15 = { style: tmp.text, variant: "text-sm/medium", color: "text-default" };
   const intl6 = onClick(1212).intl;
   obj15.children = intl6.string(onClick(1212).t.XKbf2G);
-  items6[1] = callback(onClick(4127).Text, obj15);
+  items6[1] = callback(onClick(4161).Text, obj15);
   obj13.children = items6;
   items5[1] = callback2(View, obj13);
   obj9.children = items5;
   items3[2] = callback2(View, obj9);
   obj6.children = items3;
-  obj.children = callback2(onClick(5189).BottomSheetScrollView, obj6);
-  return callback(onClick(5187).BottomSheet, obj);
+  obj.children = callback2(onClick(5223).BottomSheetScrollView, obj6);
+  return callback(onClick(5221).BottomSheet, obj);
 };

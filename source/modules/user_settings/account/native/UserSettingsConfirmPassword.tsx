@@ -1,10 +1,10 @@
-// Module ID: 9161
-// Function ID: 71894
+// Module ID: 9205
+// Function ID: 72045
 // Name: UserSettingsConfirmPasswordWrapped
-// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4131, 689, 6273, 566, 6449, 4030, 1184, 1212, 9162, 4127, 8927, 8931, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4165, 689, 6309, 566, 6485, 4064, 1184, 1212, 9206, 4161, 8971, 8975, 4578, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9161 (UserSettingsConfirmPasswordWrapped)
+// Module 9205 (UserSettingsConfirmPasswordWrapped)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -83,18 +83,18 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     obj.style = items1;
     let tmp13 = null;
     if (!hideUnverifiedBanner) {
-      tmp13 = callback(importDefault(9162), {});
+      tmp13 = callback(importDefault(9206), {});
     }
     const items2 = [tmp13, ];
     obj = { style: tmp.container };
     const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t["x+d9t3"]);
-    const items3 = [callback(require(4127) /* Text */.Text, obj1), , , , ];
+    const items3 = [callback(require(4161) /* Text */.Text, obj1), , , , ];
     obj2 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.vaZmAx);
-    items3[1] = callback(require(4127) /* Text */.Text, obj2);
+    items3[1] = callback(require(4161) /* Text */.Text, obj2);
     const obj3 = { style: null, textStyle: null, label: null, textContentType: "password", keyboardType: "default", secureTextEntry: true };
     ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
     const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -110,13 +110,13 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     obj3.returnKeyType = "done";
     obj3.autoCapitalize = "none";
     obj3.autoFocus = true;
-    items3[2] = callback(importDefault(8927), obj3);
+    items3[2] = callback(importDefault(8971), obj3);
     let tmp25 = null;
     if (null != obj1) {
       tmp25 = null;
       if (null == obj1.getFieldMessage("password")) {
         const obj4 = { style: tmp.hint, children: obj1.message };
-        tmp25 = callback(importDefault(8931), obj4);
+        tmp25 = callback(importDefault(8975), obj4);
       }
     }
     items3[3] = tmp25;
@@ -129,7 +129,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
       first = parentLoading;
     }
     obj6.loading = first;
-    obj5.children = callback(require(4544) /* Button */.Button, obj6);
+    obj5.children = callback(require(4578) /* Button */.Button, obj6);
     items3[4] = callback(_handleSubmit, obj5);
     obj.children = items3;
     items2[1] = closure_11(_handleSubmit, obj);
@@ -140,7 +140,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     const tmp17 = closure_11;
     const tmp18 = _handleSubmit;
     const tmp19 = callback;
-    const tmp23 = importDefault(8927);
+    const tmp23 = importDefault(8971);
     const tmp30 = _handleSubmit;
   }
   return tmp11Result;
@@ -150,7 +150,7 @@ let result = require("result").fileFinishedImporting("modules/user_settings/acco
 
 export default forwardRefResult;
 export const UserSettingsConfirmPasswordWrapped = function UserSettingsConfirmPasswordWrapped() {
-  let obj = require(6273) /* useSettingNavigationRoute */;
+  let obj = require(6309) /* useSettingNavigationRoute */;
   obj = {};
   const merged = Object.assign(obj.useSettingNavigationRoute().params);
   return callback(closure_13, obj);

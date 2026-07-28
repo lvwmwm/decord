@@ -1,10 +1,10 @@
-// Module ID: 10459
-// Function ID: 81165
+// Module ID: 10497
+// Function ID: 81286
 // Name: useShouldForcePipOrientation
-// Dependencies: [1347, 4144, 1194, 4156, 4149, 10460, 566, 10449, 8105, 2]
+// Dependencies: [1347, 4178, 1194, 4190, 4183, 10498, 566, 10487, 8143, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10459 (useShouldForcePipOrientation)
+// Module 10497 (useShouldForcePipOrientation)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   let activityLockOrientation;
   let focusedEmbeddedActivityParticipant;
   channel = channel.channel;
-  const tmp = importDefault(10460)(channel.id);
+  const tmp = importDefault(10498)(channel.id);
   const items = [_isNativeReflectConstruct, id];
   const stateFromStores = channel(566).useStateFromStores(items, () => {
     const participant = outer1_4.getParticipant(channel.id, outer1_5.getId());
@@ -84,16 +84,16 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != tmp6) {
     if (callback(tmp6)) {
       if (null == stateFromStores) {
-        return channel(8105).OrientationType.LANDSCAPE;
+        return channel(8143).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    let LANDSCAPE = channel(8105).OrientationType.LANDSCAPE;
+    let LANDSCAPE = channel(8143).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === OrientationLockState.PORTRAIT) {
-      LANDSCAPE = channel(8105).OrientationType.PORTRAIT;
+      LANDSCAPE = channel(8143).OrientationType.PORTRAIT;
     }
   }
 };

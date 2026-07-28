@@ -1,10 +1,10 @@
-// Module ID: 8943
-// Function ID: 70631
+// Module ID: 8987
+// Function ID: 70782
 // Name: SettingsIcon
-// Dependencies: [31, 33, 689, 3834, 8944, 2]
+// Dependencies: [31, 33, 689, 3868, 8988, 2]
 // Exports: SettingsIcon
 
-// Module 8943 (SettingsIcon)
+// Module 8987 (SettingsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const SettingsIcon = function SettingsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8944) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8988) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8944) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8988) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10007
-// Function ID: 77429
+// Module ID: 10047
+// Function ID: 77558
 // Name: _addDirectoryGuildEntry
-// Dependencies: [5, 9994, 9996, 653, 574, 686, 507, 4943, 480, 2]
+// Dependencies: [5, 10034, 10036, 653, 574, 686, 507, 4977, 480, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 10007 (_addDirectoryGuildEntry)
+// Module 10047 (_addDirectoryGuildEntry)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DirectoryEntryCategories } from "DirectoryEntryTypes";
@@ -58,7 +58,7 @@ export const addDirectoryGuildEntry = function addDirectoryGuildEntry(directoryC
   return _addDirectoryGuildEntry(...arguments);
 };
 export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(channelId, guildId) {
-  let obj = importDefault(4943);
+  let obj = importDefault(4977);
   obj = { url: Endpoints.DIRECTORY_CHANNEL_ENTRY(channelId, guildId) };
   obj = { event: require(480) /* isThrottled */.NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
   obj.trackedActionData = obj;

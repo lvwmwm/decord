@@ -1,9 +1,9 @@
-// Module ID: 4992
-// Function ID: 43028
+// Module ID: 5026
+// Function ID: 43143
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 5, 6, 7, 4045, 4993, 1922, 1316, 1918, 1350, 1911, 1838, 4971, 1850, 4994, 4995, 1853, 653, 4996, 662, 3772, 4997, 21, 22, 664, 1883, 1902, 20, 4998, 686, 4215, 44, 4119, 1327, 4999, 5000, 5032, 3750, 3713, 5034, 3776, 3775, 566, 2]
+// Dependencies: [15, 17, 18, 57, 5, 6, 7, 4079, 5027, 1922, 1316, 1918, 1350, 1911, 1838, 5005, 1850, 5028, 5029, 1853, 653, 5030, 662, 3806, 5031, 21, 22, 664, 1883, 1902, 20, 5032, 686, 4249, 44, 4153, 1327, 5033, 5034, 5066, 3784, 3747, 5068, 3810, 3809, 566, 2]
 
-// Module 4992 (_isNativeReflectConstruct)
+// Module 5026 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -234,9 +234,9 @@ function updateGuildEmoji(guildId) {
     const currentUser = authStore.getCurrentUser();
     if (null != currentUser) {
       const prototype = ctor.prototype;
-      const tmp14 = new ctor(guildId, currentUser.id, guildEmojis, require(5032) /* compareVersions */.canUseRoleSubscriptionIAP(guildId));
+      const tmp14 = new ctor(guildId, currentUser.id, guildEmojis, require(5066) /* compareVersions */.canUseRoleSubscriptionIAP(guildId));
       closure_37[guildId] = tmp14;
-      const obj = require(5032) /* compareVersions */;
+      const obj = require(5066) /* compareVersions */;
       tmp8 = closure_37;
     }
   }
@@ -252,7 +252,7 @@ function handleUserSettingsProtoStoreChange() {
     }
   }
   if (null != value) {
-    let obj = importDefault(3772);
+    let obj = importDefault(3806);
     const result = obj.setDefaultDiversitySurrogate(value);
   }
   tmp8.reset();
@@ -378,7 +378,7 @@ function handleRoleUpdate(guildId) {
       updateGuildEmoji(guildId);
       rebuildEmojis();
     }
-    obj = require(3750) /* isSubscriptionRole */;
+    obj = require(3784) /* isSubscriptionRole */;
   }
   return false;
 }
@@ -1101,7 +1101,7 @@ tmp8._lastInstance = null;
 let merged = Object.assign(createBaseEmojiFrecencyOptions(tmp8.resetFrequentlyUsed));
 importDefaultResult2 = new importDefaultResult2({});
 let closure_42 = (function createEmojiReactionFrecency(resetFrequentlyUsedReactionEmojis) {
-  let tmp = importDefault(4215);
+  let tmp = importDefault(4249);
   const obj = {};
   const merged = Object.assign(createBaseEmojiFrecencyOptions(resetFrequentlyUsedReactionEmojis));
   obj["computeFrecency"] = function computeFrecency(arg0, score, maxTotalUse) {
@@ -1695,9 +1695,9 @@ tmp12 = new tmp12(require("dispatcher"), {
           trackUsage(items1);
         }
       }
-      obj = importDefault(3772);
-      emoji = obj.getByName(importDefault(3772).convertSurrogateToName(optimistic.emoji.name, false));
-      const obj2 = importDefault(3772);
+      obj = importDefault(3806);
+      emoji = obj.getByName(importDefault(3806).convertSurrogateToName(optimistic.emoji.name, false));
+      const obj2 = importDefault(3806);
     } else {
       return false;
     }
@@ -1706,7 +1706,7 @@ tmp12 = new tmp12(require("dispatcher"), {
     trackUsage(emojiUsed.emojiUsed);
   },
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
-    const obj = importDefault(5000);
+    const obj = importDefault(5034);
     obj.setEmojiLocale(locale.locale);
     if (settings.settings.type === UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
       if (settings.wasSaved) {
@@ -1721,9 +1721,9 @@ tmp12 = new tmp12(require("dispatcher"), {
   TOP_EMOJIS_FETCH_SUCCESS: function handleTopEmojisLoaded(topEmojisMetadata) {
     topEmojisMetadata = topEmojisMetadata.topEmojisMetadata;
     const obj = { emojiIds: topEmojisMetadata.map((emojiId) => emojiId.emojiId) };
-    const tmp = importDefault(3713);
-    const tmpResult = importDefault(3713)(importDefault(3713)());
-    obj.topEmojisTTL = importDefault(3713)(importDefault(3713)()).add(1, "days").valueOf();
+    const tmp = importDefault(3747);
+    const tmpResult = importDefault(3747)(importDefault(3747)());
+    obj.topEmojisTTL = importDefault(3747)(importDefault(3747)()).add(1, "days").valueOf();
     const result = map.set(topEmojisMetadata.guildId, obj);
   },
   TOGGLE_GUILD_EXPANDED_STATE: function toggleGuildExpandedState(guildId) {

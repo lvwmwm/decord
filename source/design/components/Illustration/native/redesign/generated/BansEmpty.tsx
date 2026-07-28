@@ -1,17 +1,17 @@
-// Module ID: 16416
-// Function ID: 128159
+// Module ID: 16456
+// Function ID: 128320
 // Name: getBansEmptySource
-// Dependencies: [31, 27, 33, 6481, 16417, 16418, 16419, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 16457, 16458, 16459, 4011, 2]
 // Exports: BansEmpty
 
-// Module 16416 (getBansEmptySource)
+// Module 16456 (getBansEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getBansEmptySource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getBansEmptySource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useBansEmptySource() {
-  return getBansEmptySource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getBansEmptySource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/BansEmpty.tsx");
 

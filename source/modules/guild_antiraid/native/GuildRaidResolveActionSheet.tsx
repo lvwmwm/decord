@@ -1,10 +1,10 @@
-// Module ID: 10989
-// Function ID: 85423
+// Module ID: 11027
+// Function ID: 85546
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [57, 31, 27, 653, 6659, 33, 4131, 689, 1212, 5746, 4099, 5498, 5585, 4127, 7575, 1273, 4544, 4325, 10959, 6664, 2]
+// Dependencies: [57, 31, 27, 653, 6695, 33, 4165, 689, 1212, 5756, 4133, 5533, 5620, 4161, 7611, 1273, 4578, 4359, 10997, 6700, 2]
 // Exports: default
 
-// Module 10989 (GuildRaidResolveActionSheet)
+// Module 11027 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -49,22 +49,22 @@ export default function GuildRaidResolveActionSheet(arg0) {
   let obj = {};
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.yeaXw5);
-  obj.value = require(5746) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY;
+  obj.value = require(5756) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY;
   let items = [obj, , , ];
   obj = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl2.string(require(1212) /* getSystemLocale */.t["o++3B8"]);
-  obj.value = require(5746) /* Feedback */.RaidResolutionType.DM_SPAM;
+  obj.value = require(5756) /* Feedback */.RaidResolutionType.DM_SPAM;
   items[1] = obj;
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.UfHAwZ);
-  obj.value = require(5746) /* Feedback */.RaidResolutionType.JOIN_RAID;
+  obj.value = require(5756) /* Feedback */.RaidResolutionType.JOIN_RAID;
   items[2] = obj;
   let obj1 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl4.string(require(1212) /* getSystemLocale */.t.K3UWeR);
-  obj1.value = require(5746) /* Feedback */.RaidResolutionType.OTHER;
+  obj1.value = require(5756) /* Feedback */.RaidResolutionType.OTHER;
   items[3] = obj1;
   let obj2 = {};
   let obj3 = { style: tmp.container };
@@ -72,11 +72,11 @@ export default function GuildRaidResolveActionSheet(arg0) {
   let obj4 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl5.string(require(1212) /* getSystemLocale */.t["1zmw/H"]);
-  const items1 = [handleClose(require(4127) /* Text */.Text, obj4), , , , ];
+  const items1 = [handleClose(require(4161) /* Text */.Text, obj4), , , , ];
   const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default" };
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl6.string(require(1212) /* getSystemLocale */.t.nF79oO);
-  items1[1] = handleClose(require(4127) /* Text */.Text, obj5);
+  items1[1] = handleClose(require(4161) /* Text */.Text, obj5);
   items1[2] = items.map((value) => {
     value = value.value;
     let closure_0 = value;
@@ -85,7 +85,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       style: tmp.option,
       onPress() {
         (function onCheckboxChange(closure_0) {
-          outer2_4(outer2_3.includes(closure_0) ? ((arr) => arr.filter(/* F85431 */ function() { ... })) : ((arg0) => {
+          outer2_4(outer2_3.includes(closure_0) ? ((arr) => arr.filter(/* F85554 */ function() { ... })) : ((arg0) => {
             const items = [...arg0, closure_0];
             return items;
           }));
@@ -128,14 +128,14 @@ export default function GuildRaidResolveActionSheet(arg0) {
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj6.text = intl7.string(require(1212) /* getSystemLocale */.t.Gh3A0O);
   obj6.size = "md";
-  items1[3] = handleClose(require(4544) /* Button */.Button, obj6);
+  items1[3] = handleClose(require(4578) /* Button */.Button, obj6);
   const obj7 = { onPress: handleClose };
   const intl8 = require(1212) /* getSystemLocale */.intl;
   obj7.text = intl8.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj7.variant = "secondary";
   obj7.size = "md";
-  items1[4] = handleClose(require(4544) /* Button */.Button, obj7);
+  items1[4] = handleClose(require(4578) /* Button */.Button, obj7);
   obj3.children = items1;
-  obj2.children = callback2(importDefault(5585), obj3);
-  return handleClose(require(5498) /* ActionSheet */.ActionSheet, obj2);
+  obj2.children = callback2(importDefault(5620), obj3);
+  return handleClose(require(5533) /* ActionSheet */.ActionSheet, obj2);
 };

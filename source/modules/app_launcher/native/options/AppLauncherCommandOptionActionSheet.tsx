@@ -1,10 +1,10 @@
-// Module ID: 11281
-// Function ID: 87754
+// Module ID: 11319
+// Function ID: 87873
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [31, 27, 1455, 33, 4131, 689, 5187, 5186, 5499, 4099, 1273, 2]
+// Dependencies: [31, 27, 1455, 33, 4165, 689, 5221, 5220, 5534, 4133, 1273, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11281 (AppLauncherCommandOptionActionSheet)
+// Module 11319 (AppLauncherCommandOptionActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -48,7 +48,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   obj = { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper };
   const obj1 = {
     style: { alignSelf: "flex-start" },
-    children: jsx(merged(5499).ActionSheetCloseButton, {
+    children: jsx(merged(5534).ActionSheetCloseButton, {
       onPress() {
         outer1_1(outer1_2[9]).hideActionSheet();
         if (null != merged.onDismiss) {
@@ -57,7 +57,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
       }
     })
   };
-  obj.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(5499).ActionSheetCloseButton, {
+  obj.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(5534).ActionSheetCloseButton, {
     onPress() {
       outer1_1(outer1_2[9]).hideActionSheet();
       if (null != merged.onDismiss) {
@@ -67,8 +67,8 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   })}</View>;
   ({ displayName: obj3.title, displayDescription: obj3.subtitle } = option);
   obj.trailing = jsx(merged(1273).Spacer, { size: 24 });
-  obj["header"] = jsx(merged(5186).BottomSheetTitleHeader, { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper });
+  obj["header"] = jsx(merged(5220).BottomSheetTitleHeader, { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper });
   const items = [tmp3.contentContainer, contentContainerStyles];
   obj["children"] = <View style={items}>{children}</View>;
-  return jsx(merged(5187).BottomSheet, { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper }, option.name);
+  return jsx(merged(5221).BottomSheet, { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper }, option.name);
 };

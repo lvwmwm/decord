@@ -1,17 +1,17 @@
-// Module ID: 8584
-// Function ID: 68208
+// Module ID: 8628
+// Function ID: 68355
 // Name: maybeCreateMessageRecordFromSnapshot
-// Dependencies: [5856, 2]
+// Dependencies: [5866, 2]
 // Exports: default
 
-// Module 8584 (maybeCreateMessageRecordFromSnapshot)
+// Module 8628 (maybeCreateMessageRecordFromSnapshot)
 const result = require("set").fileFinishedImporting("modules/forwarding/maybeCreateMessageRecordFromSnapshot.tsx");
 
 export default function maybeCreateMessageRecordFromSnapshot(merge) {
   let tmp = arg1;
   if (null == arg1) {
     let first;
-    if (importDefault(5856)(merge)) {
+    if (importDefault(5866)(merge)) {
       first = merge.messageSnapshots[0];
     }
     tmp = first;

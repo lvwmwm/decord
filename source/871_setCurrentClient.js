@@ -1,5 +1,5 @@
 // Module ID: 871
-// Function ID: 9696
+// Function ID: 9700
 // Name: setCurrentClient
 // Dependencies: [800, 801, 825]
 

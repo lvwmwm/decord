@@ -1,10 +1,10 @@
-// Module ID: 12472
-// Function ID: 96746
+// Module ID: 12515
+// Function ID: 96916
 // Name: getTierIcon
-// Dependencies: [31, 27, 653, 33, 4131, 689, 12473, 12477, 12478, 12479, 4038, 4023, 11622, 4127, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 12516, 12520, 12521, 12522, 4072, 4057, 11661, 4161, 2]
 // Exports: default
 
-// Module 12472 (getTierIcon)
+// Module 12515 (getTierIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -23,15 +23,15 @@ function getTierIcon(theme, premiumTier) {
     if (premiumTier.premiumTier !== closure_6.NONE) {
       premiumTier = premiumTier.premiumTier;
       if (closure_6.TIER_1 === premiumTier) {
-        return importDefault(12477);
+        return importDefault(12520);
       } else if (closure_6.TIER_2 === premiumTier) {
-        return importDefault(12478);
+        return importDefault(12521);
       } else if (closure_6.TIER_3 === premiumTier) {
-        return importDefault(12479);
+        return importDefault(12522);
       }
     }
   }
-  return require(12473) /* getTier048PxSource */.getTier048PxSource(theme);
+  return require(12516) /* getTier048PxSource */.getTier048PxSource(theme);
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_5, BoostedGuildTiers: closure_6 } = ME);
@@ -50,7 +50,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
   let theme;
   ({ guild, theme } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  importDefault(4038);
+  importDefault(4072);
   if (null != guild) {
     const id = guild.id;
   }
@@ -60,7 +60,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     obj.children = callback(closure_4, obj);
     return callback(closure_3, obj);
   } else {
-    const nextGuildTierFromGuild = require(4023) /* _createForOfIteratorHelperLoose */.getNextGuildTierFromGuild(guild.id);
+    const nextGuildTierFromGuild = require(4057) /* _createForOfIteratorHelperLoose */.getNextGuildTierFromGuild(guild.id);
     let tmp5 = null;
     if (null != nextGuildTierFromGuild) {
       tmp5 = table[nextGuildTierFromGuild];
@@ -75,16 +75,16 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     obj = { style: tmp.guildTierProgressCircle, percent: num2 };
     const obj1 = { style: tmp.guildTierBackground };
     const obj2 = {};
-    const obj8 = require(4023) /* _createForOfIteratorHelperLoose */;
+    const obj8 = require(4057) /* _createForOfIteratorHelperLoose */;
     obj2.source = getTierIcon(theme, guild);
     obj2.style = tmp.guildTierIcon;
     obj2.accessibilityElementsHidden = true;
     obj2.importantForAccessibility = "no";
     const items = [callback(closure_4, obj2), ];
     const obj3 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active" };
-    const tmp9 = importDefault(11622);
-    obj3.children = require(4023) /* _createForOfIteratorHelperLoose */.getTierName(guild.premiumTier);
-    items[1] = callback(require(4127) /* Text */.Text, obj3);
+    const tmp9 = importDefault(11661);
+    obj3.children = require(4057) /* _createForOfIteratorHelperLoose */.getTierName(guild.premiumTier);
+    items[1] = callback(require(4161) /* Text */.Text, obj3);
     obj1.children = items;
     obj.children = callback2(closure_3, obj1);
     return callback(tmp9, obj);

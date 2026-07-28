@@ -1,20 +1,20 @@
-// Module ID: 5503
-// Function ID: 46933
+// Module ID: 5538
+// Function ID: 47060
 // Name: FormSwitch
-// Dependencies: [57, 31, 27, 33, 3992, 4131, 689, 4546, 3850, 1324, 4543, 4547, 3835, 5504, 5505, 4100, 4101, 2]
+// Dependencies: [57, 31, 27, 33, 4026, 4165, 689, 4580, 3884, 1324, 4577, 4581, 3869, 5539, 5540, 4134, 4135, 2]
 // Exports: FormSwitch
 
-// Module 5503 (FormSwitch)
+// Module 5538 (FormSwitch)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 import getIconSize from "getIconSize";
-import importDefaultResult1 from "module_3992";
+import importDefaultResult1 from "module_4026";
 
 let require = arg1;
-let closure_6 = require("module_3992").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_6 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let obj = {};
 obj = { width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_WIDTH, height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_HEIGHT, padding: require("_createForOfIteratorHelperLoose").space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1 };
 obj.switch = obj;

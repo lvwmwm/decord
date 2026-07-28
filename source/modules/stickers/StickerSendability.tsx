@@ -1,10 +1,10 @@
-// Module ID: 9559
-// Function ID: 74636
+// Module ID: 9599
+// Function ID: 74765
 // Name: getStickerSendability
-// Dependencies: [1918, 5038, 653, 3777, 4467, 3764, 2]
+// Dependencies: [1918, 5072, 653, 3811, 4501, 3798, 2]
 // Exports: isSendableSticker
 
-// Module 9559 (getStickerSendability)
+// Module 9599 (getStickerSendability)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
@@ -14,8 +14,8 @@ function getStickerSendability(stickerById, currentUser, channel) {
   if (null == currentUser) {
     return obj.NONSENDABLE;
   } else {
-    const result = importDefault(3777).canUseCustomStickersEverywhere(currentUser);
-    const obj4 = importDefault(3777);
+    const result = importDefault(3811).canUseCustomStickersEverywhere(currentUser);
+    const obj4 = importDefault(3811);
     if (obj5.isStandardSticker(stickerById)) {
       if (null == stickerPack.getStickerPack(stickerById.pack_id)) {
         let SENDABLE2 = obj.NONSENDABLE;
@@ -23,7 +23,7 @@ function getStickerSendability(stickerById, currentUser, channel) {
         SENDABLE2 = obj.SENDABLE;
       }
     } else {
-      obj = require(4467) /* getStickerPackPreviewSticker */;
+      obj = require(4501) /* getStickerPackPreviewSticker */;
       if (obj.isGuildSticker(stickerById)) {
         if (null != channel) {
           if (null == selfMember.getSelfMember(stickerById.guild_id)) {
@@ -39,7 +39,7 @@ function getStickerSendability(stickerById, currentUser, channel) {
               if (!obj2.can(obj)) {
                 const NONSENDABLE = obj.NONSENDABLE;
               }
-              obj2 = importAll(3764);
+              obj2 = importAll(3798);
             }
           } else {
             SENDABLE_WITH_BOOSTED_GUILD = obj.SENDABLE_WITH_BOOSTED_GUILD;
@@ -48,7 +48,7 @@ function getStickerSendability(stickerById, currentUser, channel) {
       }
       return obj.NONSENDABLE;
     }
-    obj5 = require(4467) /* getStickerPackPreviewSticker */;
+    obj5 = require(4501) /* getStickerPackPreviewSticker */;
   }
 }
 let obj = { SENDABLE: 0, [0]: "SENDABLE", SENDABLE_WITH_PREMIUM: 1, [1]: "SENDABLE_WITH_PREMIUM", NONSENDABLE: 2, [2]: "NONSENDABLE", SENDABLE_WITH_BOOSTED_GUILD: 3, [3]: "SENDABLE_WITH_BOOSTED_GUILD" };

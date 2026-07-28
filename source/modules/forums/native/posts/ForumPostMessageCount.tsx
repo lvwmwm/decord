@@ -1,10 +1,10 @@
-// Module ID: 11133
-// Function ID: 86590
+// Module ID: 11171
+// Function ID: 86709
 // Name: num2
-// Dependencies: [31, 27, 33, 4131, 689, 477, 9065, 1212, 4630, 4127, 10315, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 477, 9109, 1212, 4664, 4161, 10355, 2]
 // Exports: default
 
-// Module 11133 (num2)
+// Module 11171 (num2)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,7 +47,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(9065) /* sortForumPostReactionsByPopularityDesc */;
+  let obj = require(9109) /* sortForumPostReactionsByPopularityDesc */;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -65,13 +65,13 @@ export default function ForumPostMessageCount(hasUnreads) {
     str2 = "interactive-text-default";
   }
   obj.color = str2;
-  const items1 = [closure_4(require(4630) /* ChatIcon */.ChatIcon, obj), , ];
+  const items1 = [closure_4(require(4664) /* ChatIcon */.ChatIcon, obj), , ];
   if (isMaxMessageCount) {
     const obj1 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    let tmp6Result = tmp6(require(4127) /* Text */.Text, obj1);
+    let tmp6Result = tmp6(require(4161) /* Text */.Text, obj1);
   } else {
     const obj2 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
-    tmp6Result = tmp6(importDefault(10315), obj2);
+    tmp6Result = tmp6(importDefault(10355), obj2);
   }
   items1[1] = tmp6Result;
   let tmp12 = null != unreadCount;
@@ -81,7 +81,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     const obj4 = { count: unreadCount };
     const items2 = ["(", intl2.format(require(1212) /* getSystemLocale */.t.z3PEth, obj4), ")"];
     obj3.children = items2;
-    tmp12 = callback(require(4127) /* Text */.Text, obj3);
+    tmp12 = callback(require(4161) /* Text */.Text, obj3);
   }
   items1[2] = tmp12;
   obj.children = items1;

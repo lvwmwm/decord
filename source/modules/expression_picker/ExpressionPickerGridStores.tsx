@@ -1,10 +1,10 @@
-// Module ID: 9273
-// Function ID: 72661
+// Module ID: 9317
+// Function ID: 72812
 // Name: createStore
-// Dependencies: [677, 4000, 682, 2]
+// Dependencies: [677, 4034, 682, 2]
 // Exports: default
 
-// Module 9273 (createStore)
+// Module 9317 (createStore)
 function createStore() {
   function getState() {
     return withEqualityFnResult.getState();

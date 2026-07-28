@@ -1,10 +1,10 @@
-// Module ID: 15139
-// Function ID: 115225
+// Module ID: 15179
+// Function ID: 115384
 // Name: GenericUpsellActionSheet
-// Dependencies: [31, 27, 1345, 33, 4131, 689, 7892, 5187, 5085, 5446, 4127, 1273, 4544, 2]
+// Dependencies: [31, 27, 1345, 33, 4165, 689, 7928, 5221, 5119, 5481, 4161, 1273, 4578, 2]
 // Exports: default
 
-// Module 15139 (GenericUpsellActionSheet)
+// Module 15179 (GenericUpsellActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -34,7 +34,7 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(7892);
+  let obj = markAsDismissed(7928);
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = {
@@ -46,17 +46,17 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
     handleDisabled: true
   };
   obj = {};
-  const items = [callback(importDefault(5085), { source: imageSource, style: tmp.image }), callback(markAsDismissed(5446).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
+  const items = [callback(importDefault(5119), { source: imageSource, style: tmp.image }), callback(markAsDismissed(5481).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
   obj.children = items;
   obj.header = callback2(View, obj);
   const obj2 = { style: tmp.content };
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header };
-  const items1 = [callback(markAsDismissed(4127).Text, obj3), callback(markAsDismissed(1273).Spacer, { size: 12 }), , ];
+  const items1 = [callback(markAsDismissed(4161).Text, obj3), callback(markAsDismissed(1273).Spacer, { size: 12 }), , ];
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body };
-  items1[2] = callback(markAsDismissed(4127).Text, obj4);
+  items1[2] = callback(markAsDismissed(4161).Text, obj4);
   const obj5 = { variant: "primary", grow: true, onPress: onCTAPress, text: cta };
-  items1[3] = callback(markAsDismissed(4544).Button, obj5);
+  items1[3] = callback(markAsDismissed(4578).Button, obj5);
   obj2.children = items1;
   obj.children = callback2(View, obj2);
-  return callback(markAsDismissed(5187).BottomSheet, obj);
+  return callback(markAsDismissed(5221).BottomSheet, obj);
 };

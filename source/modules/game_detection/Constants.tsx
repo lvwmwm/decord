@@ -1,9 +1,9 @@
-// Module ID: 11878
-// Function ID: 91968
+// Module ID: 11921
+// Function ID: 92138
 // Name: detectableCDNUrl
 // Dependencies: [653, 2]
 
-// Module 11878 (detectableCDNUrl)
+// Module 11921 (detectableCDNUrl)
 import { Endpoints } from "ME";
 
 function detectableCDNUrl(arg0, GAMES_DETECTABLE) {

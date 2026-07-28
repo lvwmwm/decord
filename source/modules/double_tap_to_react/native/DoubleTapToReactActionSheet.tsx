@@ -1,10 +1,10 @@
-// Module ID: 11418
-// Function ID: 88729
+// Module ID: 11456
+// Function ID: 88848
 // Name: EmojiConfetti
-// Dependencies: [5, 57, 31, 27, 4123, 4992, 653, 1853, 33, 4131, 477, 689, 3992, 4132, 4560, 566, 4543, 3804, 3772, 7691, 1392, 5150, 675, 5482, 9281, 4099, 5498, 4127, 1212, 11382, 11419, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 4157, 5026, 653, 1853, 33, 4165, 477, 689, 4026, 4166, 4594, 566, 4577, 3838, 3806, 7727, 1392, 5184, 675, 5517, 9325, 4133, 5533, 4161, 1212, 11420, 11457, 4578, 2]
 // Exports: default
 
-// Module 11418 (EmojiConfetti)
+// Module 11456 (EmojiConfetti)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -31,15 +31,15 @@ function EmojiConfetti(children) {
   const top = children.top;
   ({ bottom, left } = children);
   ({ right, leading: dependencyMap } = children);
-  const sharedValue = top(3992).useSharedValue(0);
-  let obj = top(3992);
-  const sharedValue1 = top(3992).useSharedValue(0);
-  let obj2 = top(3992);
-  const sharedValue2 = top(3992).useSharedValue(0.2);
-  let obj3 = top(3992);
-  const sharedValue3 = top(3992).useSharedValue(0);
-  let obj4 = top(3992);
-  const mountLayoutEffect = top(4560).useMountLayoutEffect(() => {
+  const sharedValue = top(4026).useSharedValue(0);
+  let obj = top(4026);
+  const sharedValue1 = top(4026).useSharedValue(0);
+  let obj2 = top(4026);
+  const sharedValue2 = top(4026).useSharedValue(0.2);
+  let obj3 = top(4026);
+  const sharedValue3 = top(4026).useSharedValue(0);
+  let obj4 = top(4026);
+  const mountLayoutEffect = top(4594).useMountLayoutEffect(() => {
     let opacityValue;
     let positionValue;
     let rotationValue;
@@ -86,7 +86,7 @@ function EmojiConfetti(children) {
     const withTimingResult5 = top(outer1_2[13]).withTiming(1, { duration: 360 });
     const result5 = opacityValue.set(obj17.withSequence(withTimingResult4, withTimingResult5, top(outer1_2[13]).withTiming(0, { duration: 240 })));
   });
-  const obj5 = top(4560);
+  const obj5 = top(4594);
   const fn = function f() {
     let obj = { position: "absolute" };
     obj = { scale: sharedValue2.get() };
@@ -117,8 +117,8 @@ function EmojiConfetti(children) {
   fn.__closure = { sizeValue: sharedValue2, left, rotationValue: sharedValue1, top, positionValue: sharedValue, opacityValue: sharedValue3 };
   fn.__workletHash = 1455873119263;
   fn.__initData = closure_14;
-  const style = top(3992).useAnimatedStyle(fn);
-  return callback3(left(3992).View, { style, children: children.emojiComponent });
+  const style = top(4026).useAnimatedStyle(fn);
+  return callback3(left(4026).View, { style, children: children.emojiComponent });
 }
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;

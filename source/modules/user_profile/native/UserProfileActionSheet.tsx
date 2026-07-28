@@ -1,9 +1,9 @@
-// Module ID: 8303
-// Function ID: 66718
+// Module ID: 8341
+// Function ID: 66828
 // Name: UseAnimatedPosition
-// Dependencies: [57, 31, 27, 1348, 1918, 1850, 7877, 5510, 653, 5188, 33, 4131, 5189, 3992, 1557, 566, 7922, 5462, 5482, 7892, 3804, 8045, 4664, 8020, 8304, 8035, 8026, 8004, 8015, 8305, 1450, 5084, 8034, 4067, 3835, 689, 8300, 8306, 5656, 1905, 7923, 675, 3983, 4099, 8297, 1456, 5187, 1273, 8307, 1212, 3843, 8311, 477, 6554, 8313, 11896, 11986, 7997, 5446, 12161, 1282, 2]
+// Dependencies: [57, 31, 27, 1348, 1918, 1850, 7913, 5545, 653, 5222, 33, 4165, 5223, 4026, 1557, 566, 7958, 5497, 5517, 7928, 3838, 8083, 4698, 8058, 8342, 8073, 8064, 8042, 8053, 8343, 1450, 5118, 8072, 4101, 3869, 689, 8338, 8344, 7960, 1905, 7959, 675, 4017, 4133, 8335, 1456, 5221, 1273, 8345, 1212, 3877, 8349, 477, 6590, 8351, 11939, 12029, 8035, 5481, 12204, 1282, 2]
 
-// Module 8303 (UseAnimatedPosition)
+// Module 8341 (UseAnimatedPosition)
 import usePreloadProfileEffect from "usePreloadProfileEffect";
 import importAllResult from "NAV_BAR_HEIGHT";
 import get_ActivityIndicator from "useProfileEffect";
@@ -27,8 +27,8 @@ let closure_6;
 const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
-  const animatedPosition2 = animatedPosition(5189).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5189);
+  const animatedPosition2 = animatedPosition(5223).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(5223);
   const fn = function n() {
     return animatedPosition2.get();
   };
@@ -41,7 +41,7 @@ function UseAnimatedPosition(animatedPosition) {
   fn2.__closure = { animatedPosition };
   fn2.__workletHash = 15360670503044;
   fn2.__initData = closure_20;
-  const animatedReaction = animatedPosition(3992).useAnimatedReaction(fn, fn2);
+  const animatedReaction = animatedPosition(4026).useAnimatedReaction(fn, fn2);
   return null;
 }
 function ActionSheetAlignedView(children) {
@@ -139,9 +139,9 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
     showUserProfileActionSheetWithParams();
   }
   let fetchStartedAt = analyticsLocations();
-  let obj = userId(3992);
+  let obj = userId(4026);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = userId(3992);
+  let obj1 = userId(4026);
   sharedValue1 = obj1.useSharedValue(-1);
   top = channelId(1557)().top;
   let obj2 = userId(566);
@@ -175,18 +175,18 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   if (flag) {
     tmp10 = guild_id;
   }
-  const tmp8Result = channelId(7922)(id, tmp10);
+  const tmp8Result = channelId(7958)(id, tmp10);
   callback3 = tmp8Result;
   const items4 = [];
-  const tmp8 = channelId(7922);
-  const tmp12 = channelId(5462);
-  items4[HermesBuiltin.arraySpread(prop, 0)] = channelId(5482).USER_PROFILE_ACTION_SHEET;
+  const tmp8 = channelId(7958);
+  const tmp12 = channelId(5497);
+  items4[HermesBuiltin.arraySpread(prop, 0)] = channelId(5517).USER_PROFILE_ACTION_SHEET;
   analyticsLocations = tmp12(items4).analyticsLocations;
-  let obj5 = userId(7892);
+  let obj5 = userId(7928);
   const bottomSheetRef = obj5.useBottomSheetRef();
   const bottomSheetClose = bottomSheetRef.bottomSheetClose;
   ref = importAllResult.useRef(null);
-  let obj6 = userId(3992);
+  let obj6 = userId(4026);
   sharedValue2 = obj6.useSharedValue(0);
   const items5 = [sharedValue2];
   const memo = importAllResult.useMemo(() => (function buildBottomSheeetScrollEventsHandlers(sharedValue2) {
@@ -220,7 +220,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       return obj;
     };
   })(sharedValue2), items5);
-  let obj7 = userId(3992);
+  let obj7 = userId(4026);
   class W {
     constructor() {
       obj = {};
@@ -251,7 +251,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   callback = importAllResult.useCallback((nativeEvent) => {
     callback2(Math.floor(nativeEvent.nativeEvent.layout.width));
   }, []);
-  const ProfileVisibility = userId(3804).ProfileVisibility;
+  const ProfileVisibility = userId(3838).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   let obj8 = userId(566);
   const items6 = [sharedValue];
@@ -259,7 +259,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   pendingAvatarDecoration = stateFromStoresObject.pendingAvatarDecoration;
   pendingProfileEffect = stateFromStoresObject.pendingProfileEffect;
   pendingProfileFrame = stateFromStoresObject.pendingProfileFrame;
-  let obj9 = userId(8045);
+  let obj9 = userId(8083);
   obj = { layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, guildId: guild_id, channelId, messageId, roleId, showGuildProfile: flag };
   createUserProfileAnalyticsContext = obj9.useCreateUserProfileAnalyticsContext(obj);
   if (isPreviewingChanges) {
@@ -269,17 +269,17 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         skuId = pendingProfileFrame.skuId;
       }
     }
-    let obj11 = userId(4664);
+    let obj11 = userId(4698);
     const isScreenLandscape = obj11.useIsScreenLandscape();
     let tmp33;
     if (!isScreenLandscape) {
       tmp33 = skuId;
     }
-    const tmp32Result = channelId(8020)(tmp33, "UserProfileActionSheet");
+    const tmp32Result = channelId(8058)(tmp33, "UserProfileActionSheet");
     c29 = tmp32Result;
     obj = {};
     let tmp38;
-    const tmp32 = channelId(8020);
+    const tmp32 = channelId(8058);
     if (!isScreenLandscape) {
       tmp38 = skuId;
     }
@@ -287,7 +287,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
     obj.openedAt = openedAt;
     obj.context = createUserProfileAnalyticsContext;
     obj.analyticsLocations = analyticsLocations;
-    channelId(8304)(obj);
+    channelId(8342)(obj);
     const items7 = [tmp32Result, sharedValue, top, sharedValue1, first1];
     const memo1 = importAllResult.useMemo(() => {
       let tmp = null;
@@ -315,13 +315,13 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         pendingThemeColors = stateFromStoresObject.pendingThemeColors;
       }
       obj1.pendingThemeColors = pendingThemeColors;
-      const tmp49Result = channelId(8015)(obj1);
+      const tmp49Result = channelId(8053)(obj1);
       const theme = tmp49Result.theme;
       ({ primaryColor, secondaryColor } = tmp49Result);
-      const tmp49 = channelId(8015);
+      const tmp49 = channelId(8053);
       const size = channelId(1450)();
       width = size.width;
-      const diff = size.height - userId(5084).NAV_BAR_HEIGHT_MULTILINE - top;
+      const diff = size.height - userId(5118).NAV_BAR_HEIGHT_MULTILINE - top;
       const items8 = [isPreviewingChanges, tmp32Result, width];
       const memo2 = importAllResult.useMemo(() => {
         if (isPreviewingChanges) {
@@ -333,11 +333,11 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         }
         return 0;
       }, items8);
-      const tmp55 = channelId(8305)(guild_id);
-      let obj14 = userId(3835);
+      const tmp55 = channelId(8343)(guild_id);
+      let obj14 = userId(3869);
       const token = obj14.useToken(channelId(689).colors.INTERACTIVE_TEXT_HOVER, theme);
       obj2 = { userId, user: stateFromStores, channelId, guildId: guild_id, displayProfile: tmp8Result, guildMember: stateFromStores2 };
-      const tmp62 = channelId(8300)(obj2);
+      const tmp62 = channelId(8338)(obj2);
       c31 = tmp62;
       const items9 = [stateFromStores, channelId];
       closure_32 = importAllResult.useMemo(() => {
@@ -510,13 +510,13 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj6 = {};
         obj7 = { marginTop: 42 };
         obj6.style = obj7;
-        obj6.Illustration = userId(8307).NoResults;
+        obj6.Illustration = userId(8345).NoResults;
         const intl2 = userId(1212).intl;
         obj6.body = intl2.string(userId(1212).t.eAn6z2);
         obj5.children = stateFromStores2(userId(1273).EmptyState, obj6);
-        obj4.children = stateFromStores2(userId(5187).BottomSheet, obj5);
-        obj3.children = fetchStartedAt(userId(8045).UserProfileAnalyticsProvider, obj4);
-        fetchStartedAt = fetchStartedAt(userId(5462).AnalyticsLocationProvider, obj3);
+        obj4.children = stateFromStores2(userId(5221).BottomSheet, obj5);
+        obj3.children = fetchStartedAt(userId(8083).UserProfileAnalyticsProvider, obj4);
+        fetchStartedAt = fetchStartedAt(userId(5497).AnalyticsLocationProvider, obj3);
       } else {
         fetchStartedAt = userId;
         fetchStartedAt = dependencyMap;
@@ -549,7 +549,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         }
         const items16 = [tmp81, , , ];
         const obj13 = { gradientHeight: diff, bannerHeight: tmp55 };
-        items16[1] = stateFromStores2(channelId(8311), obj13);
+        items16[1] = stateFromStores2(channelId(8349), obj13);
         obj14 = { scrollsToTop: false, style: fetchStartedAt.container };
         const obj15 = {};
         let str2;
@@ -629,14 +629,14 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           obj18.style = items18;
           obj18.pointerEvents = "none";
           const obj20 = { skuId: tmp44Result.skuId, bannerAdjustment: 0 };
-          obj18.children = stateFromStores2(channelId(7997), obj20);
-          tmp95 = stateFromStores2(channelId(3992).View, obj18);
+          obj18.children = stateFromStores2(channelId(8035), obj20);
+          tmp95 = stateFromStores2(channelId(4026).View, obj18);
         }
         items17[1] = tmp95;
         obj17.children = items17;
         obj16.children = callback3(closure_6, obj17);
         obj14.children = stateFromStores2(closure_6, obj16);
-        items16[2] = stateFromStores2(userId(5189).BottomSheetScrollView, obj14);
+        items16[2] = stateFromStores2(userId(5223).BottomSheetScrollView, obj14);
         fetchStartedAt = null == tmp32Result;
         if (fetchStartedAt) {
           fetchStartedAt = stateFromStores2;
@@ -646,11 +646,11 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           obj22 = { backgroundColor: token };
           obj21.tabStyle = obj22;
           obj21.onPress = bottomSheetClose;
-          fetchStartedAt = stateFromStores2(userId(5446).ActionSheetHeaderBar, obj21);
+          fetchStartedAt = stateFromStores2(userId(5481).ActionSheetHeaderBar, obj21);
         }
         items16[3] = fetchStartedAt;
         obj11.children = items16;
-        const items19 = [callback3(userId(5187).BottomSheet, obj11), , ];
+        const items19 = [callback3(userId(5221).BottomSheet, obj11), , ];
         fetchStartedAt = null != tmp32Result;
         if (fetchStartedAt) {
           fetchStartedAt = callback3;
@@ -663,8 +663,8 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           fetchStartedAt = sharedValue1;
           obj24.profileThemeType = sharedValue1.ACTION_SHEET;
           fetchStartedAt = userId;
-          fetchStartedAt = channelId(8035);
-          obj24.frameOrder = userId(8026).ProfileFrameLayerOrder.FRONT;
+          fetchStartedAt = channelId(8073);
+          obj24.frameOrder = userId(8064).ProfileFrameLayerOrder.FRONT;
           obj24.containerWidth = first1;
           const items20 = [stateFromStores2(fetchStartedAt, obj24), ];
           fetchStartedAt = stateFromStores2;
@@ -672,7 +672,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           const obj26 = { backgroundColor: token };
           obj25.tabStyle = obj26;
           obj25.onPress = bottomSheetClose;
-          items20[1] = stateFromStores2(userId(5446).ActionSheetHeaderBar, obj25);
+          items20[1] = stateFromStores2(userId(5481).ActionSheetHeaderBar, obj25);
           obj23.children = items20;
           fetchStartedAt = callback3(pendingAvatarDecoration, obj23);
         }
@@ -680,9 +680,9 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         if (!isPreviewingChanges) {
           items19[2] = isPreviewingChanges;
           obj10.children = items19;
-          obj9.children = fetchStartedAt(userId(8045).UserProfileAnalyticsProvider, obj10);
-          obj8.children = fetchStartedAt(userId(5462).AnalyticsLocationProvider, obj9);
-          fetchStartedAt = fetchStartedAt(userId(3843).ThemeContextProvider, obj8);
+          obj9.children = fetchStartedAt(userId(8083).UserProfileAnalyticsProvider, obj10);
+          obj8.children = fetchStartedAt(userId(5497).AnalyticsLocationProvider, obj9);
+          fetchStartedAt = fetchStartedAt(userId(3877).ThemeContextProvider, obj8);
         } else {
           fetchStartedAt = userId;
           fetchStartedAt = dependencyMap;
@@ -702,9 +702,9 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           }
           obj28.text = intl.string(wSnI_0);
           obj28.isExpanded = true;
-          obj28 = fetchStartedAt(userId(12161).ActionSheetBackdropToast, obj28);
+          obj28 = fetchStartedAt(userId(12204).ActionSheetBackdropToast, obj28);
           obj27.children = obj28;
-          fetchStartedAt = fetchStartedAt(userId(3843).ThemeContextProvider, obj27);
+          fetchStartedAt = fetchStartedAt(userId(3877).ThemeContextProvider, obj27);
         }
         const tmp78 = callback3;
         const tmp87 = stateFromStores2;
@@ -719,7 +719,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         skuId2 = profileEffect.skuId;
       }
     }
-    const tmp37 = channelId(8304);
+    const tmp37 = channelId(8342);
   }
   if (null != tmp8Result) {
     const profileFrame = tmp8Result.profileFrame;

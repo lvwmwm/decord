@@ -1,9 +1,9 @@
-// Module ID: 10283
-// Function ID: 79476
+// Module ID: 10323
+// Function ID: 79605
 // Name: zustandStore
-// Dependencies: [3999, 2]
+// Dependencies: [4033, 2]
 
-// Module 10283 (zustandStore)
+// Module 10323 (zustandStore)
 const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ isReportOpen: false }));
 const result = require("set").fileFinishedImporting("modules/bug_reporter/BugReportStore.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 7896
-// Function ID: 62938
+// Module ID: 7932
+// Function ID: 63029
 // Name: useFetchPurchases
-// Dependencies: [57, 31, 4045, 5786, 624, 5769, 7897, 2]
+// Dependencies: [57, 31, 4079, 5796, 624, 5779, 7933, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 7896 (useFetchPurchases)
+// Module 7932 (useFetchPurchases)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,7 +100,7 @@ function useFetchCollectiblesCategoriesAndPurchases(paymentGateway) {
     countryCode = paymentGateway.countryCode;
   }
   obj.countryCode = countryCode;
-  const tmp2Result = importDefault(7897)(obj, arg1);
+  const tmp2Result = importDefault(7933)(obj, arg1);
   const isFetching = tmp2Result.isFetching;
   let stalePurchasesOK;
   ({ categories, fetchCategoriesError, refreshCategories } = tmp2Result);

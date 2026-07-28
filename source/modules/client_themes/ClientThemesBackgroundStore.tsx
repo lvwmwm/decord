@@ -1,9 +1,9 @@
-// Module ID: 3943
-// Function ID: 32500
+// Module ID: 3977
+// Function ID: 32602
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1279, 1278, 1280, 1316, 1352, 1348, 1850, 3944, 1281, 1324, 3947, 1334, 3970, 3777, 3804, 1323, 3973, 3974, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1279, 1278, 1280, 1316, 1352, 1348, 1850, 3978, 1281, 1324, 3981, 1334, 4004, 3811, 3838, 1323, 4007, 4008, 566, 686, 2]
 
-// Module 3943 (_isNativeReflectConstruct)
+// Module 3977 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed";
@@ -39,17 +39,17 @@ function reset() {
   let c20 = false;
 }
 function handleUserStoreChange() {
-  const tmp = !importDefault(3777).canUseClientThemes(currentUser.getCurrentUser());
+  const tmp = !importDefault(3811).canUseClientThemes(currentUser.getCurrentUser());
   if (tmp === c19) {
     return false;
   } else {
     c19 = tmp;
   }
-  const obj = importDefault(3777);
+  const obj = importDefault(3811);
 }
 function handleSelectivelySyncedStoreChange() {
   if (closure_8.shouldSync("appearance")) {
-    const ClientThemeSettings = require(3804) /* explicitContentFromProto */.ClientThemeSettings;
+    const ClientThemeSettings = require(3838) /* explicitContentFromProto */.ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     if (null == backgroundGradientPresetId) {
       if (null == c17) {
@@ -74,7 +74,7 @@ function handleSameAsDeviceThemeToggle() {
 }
 function handleUserSettingsProtoStoreUpdate() {
   if (closure_8.shouldSync("appearance")) {
-    const ClientThemeSettings = require(3804) /* explicitContentFromProto */.ClientThemeSettings;
+    const ClientThemeSettings = require(3838) /* explicitContentFromProto */.ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     let result = useSystemTheme.useSystemTheme !== SystemThemeState.ON;
     if (!result) {
@@ -84,8 +84,8 @@ function handleUserSettingsProtoStoreUpdate() {
       result = sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
     }
     if (!result) {
-      require(3973) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);
-      const obj = require(3973) /* setSystemTheme */;
+      require(4007) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);
+      const obj = require(4007) /* setSystemTheme */;
     }
     if (null != backgroundGradientPresetId) {
       let id;
@@ -275,9 +275,9 @@ tmp2 = new tmp2(require("dispatcher"), {
               let c20 = true;
             }
           }
-          obj = require(3970) /* conceal */;
+          obj = require(4004) /* conceal */;
         }
-        obj2 = require(3947) /* UNSAFE_isDismissibleContentDismissed */;
+        obj2 = require(3981) /* UNSAFE_isDismissibleContentDismissed */;
       }
     }
   },

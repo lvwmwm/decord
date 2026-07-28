@@ -1,10 +1,10 @@
-// Module ID: 4966
-// Function ID: 42690
+// Module ID: 5000
+// Function ID: 42805
 // Name: ButtonGroup
-// Dependencies: [31, 33, 4131, 4542, 2]
+// Dependencies: [31, 33, 4165, 4576, 2]
 // Exports: ButtonGroup
 
-// Module 4966 (ButtonGroup)
+// Module 5000 (ButtonGroup)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -34,5 +34,5 @@ export const ButtonGroup = function ButtonGroup(Text, arg1) {
   const items = [callback().container, style];
   obj["style"] = items;
   obj["children"] = children;
-  return jsx(require(4542) /* Stack */.Stack, {});
+  return jsx(require(4576) /* Stack */.Stack, {});
 };

@@ -1,8 +1,8 @@
-// Module ID: 12962
-// Function ID: 100555
-// Dependencies: [4045, 1391, 1212, 566, 12557, 12558, 3752, 2]
+// Module ID: 13006
+// Function ID: 100728
+// Dependencies: [4079, 1391, 1212, 566, 12600, 12601, 3786, 2]
 
-// Module 12962
+// Module 13006
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isGuildOwner } from "isGuildOwner";
 

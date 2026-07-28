@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 113860
+// Module ID: 14974
+// Function ID: 114033
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [31, 27, 1352, 3768, 4326, 1850, 482, 33, 4131, 566, 4321, 14931, 14268, 14904, 10166, 4127, 10220, 3809, 14894, 3988, 3985, 2]
+// Dependencies: [31, 27, 1352, 3802, 4360, 1850, 482, 33, 4165, 566, 4355, 14975, 14312, 14948, 10206, 4161, 10260, 3843, 14938, 4022, 4019, 2]
 // Exports: default
 
-// Module 14930 (HomeDrawerDMExpandedChildren)
+// Module 14974 (HomeDrawerDMExpandedChildren)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { isMultiUserDM } from "_callSuper";
@@ -30,8 +30,8 @@ function HomeDrawerDMExpandedChildren(channel) {
     let tmp = null;
     if (null != channel) {
       if (stateFromStores1(channel.type)) {
-        let channelName = channel(4321).computeChannelName(channel, outer1_8, memo);
-        const obj = channel(4321);
+        let channelName = channel(4355).computeChannelName(channel, outer1_8, memo);
+        const obj = channel(4355);
       } else {
         channelName = null;
       }
@@ -40,9 +40,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp;
   });
   const obj2 = channel(566);
-  const tmp3 = importDefault(14268)(channel, { unread: channel(14931).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14312)(channel, { unread: channel(14975).useBaseChannelUnreadBadgeState(channel, false).unread });
   const View = tmp3;
-  const obj3 = channel(14931);
+  const obj3 = channel(14975);
   const items2 = [closure_7];
   const stateFromStores1 = channel(566).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -71,33 +71,33 @@ function HomeDrawerDMExpandedChildren(channel) {
     if (null != memo) {
       if (memo.isMuted) {
         if (null == memo) {
-          const BellSlashIcon = channel(10166).BellSlashIcon;
+          const BellSlashIcon = channel(10206).BellSlashIcon;
         }
-        const BellZIcon = channel(14904).BellZIcon;
+        const BellZIcon = channel(14948).BellZIcon;
       }
     }
     let obj = { style: tmp.title };
     obj = { variant: "text-md/medium", style: tmp.titleText, lineClamp: 1, color: "text-default", children: stateFromStores };
-    const items = [outer1_10(channel(4127).Text, obj), outer1_10(outer1_9, { size: "xs" })];
+    const items = [outer1_10(channel(4161).Text, obj), outer1_10(outer1_9, { size: "xs" })];
     obj.children = items;
     return outer1_11(closure_4, obj);
   }, items4);
   const subtitle = stateFromStores.useMemo(() => {
     let tmp = null;
     if (null != closure_4) {
-      const obj = { channel, message: closure_4, variant: "text-xs/medium", color: "text-strong", layout: channel(3809).ChannelListLayoutTypes.COZY, muted: memo.isMuted };
-      tmp = outer1_10(channel(10220).ChannelRowPreview, obj);
+      const obj = { channel, message: closure_4, variant: "text-xs/medium", color: "text-strong", layout: channel(3843).ChannelListLayoutTypes.COZY, muted: memo.isMuted };
+      tmp = outer1_10(channel(10260).ChannelRowPreview, obj);
     }
     return tmp;
   }, items5);
-  return callback(channel(14894).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(14938).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 let closure_12 = _createForOfIteratorHelperLoose.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 const result = require("_callSuper").fileFinishedImporting("modules/home_drawer/native/HomeDrawerDM.tsx");
 
 export default function HomeDrawerDMExpandedChildrenWrapper(channel) {
-  const MobileHomeDrawerExperiment = require(3988) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4022) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   let tmp2 = null;
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;

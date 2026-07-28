@@ -1,10 +1,10 @@
-// Module ID: 5926
-// Function ID: 52633
+// Module ID: 5960
+// Function ID: 52752
 // Name: trackingConfigWithDefaults
-// Dependencies: [1194, 5920, 2]
+// Dependencies: [1194, 5954, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 5926 (trackingConfigWithDefaults)
+// Module 5960 (trackingConfigWithDefaults)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { LinkType } from "LinkType";
 

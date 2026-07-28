@@ -1,10 +1,10 @@
-// Module ID: 7986
-// Function ID: 63651
+// Module ID: 8024
+// Function ID: 63761
 // Name: _fetchDefaultSoundsFromApi2
-// Dependencies: [5, 4579, 4580, 653, 662, 507, 4586, 686, 5824, 4031, 7987, 675, 1331, 22, 4471, 1212, 6632, 2]
+// Dependencies: [5, 4613, 4614, 653, 662, 507, 4620, 686, 5834, 4065, 8025, 675, 1331, 22, 4505, 1212, 6668, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7986 (_fetchDefaultSoundsFromApi2)
+// Module 8024 (_fetchDefaultSoundsFromApi2)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
@@ -49,7 +49,7 @@ function _maybeFetchDefaultSounds() {
   }
 }
 function _maybeFetchGuildSoundboardSounds() {
-  let obj = require(7987) /* _getGuildIdsToFetchSoundsFor */;
+  let obj = require(8025) /* _getGuildIdsToFetchSoundsFor */;
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();

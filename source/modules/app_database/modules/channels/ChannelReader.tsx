@@ -1,5 +1,5 @@
 // Module ID: 1903
-// Function ID: 21367
+// Function ID: 21371
 // Name: ChannelReader
 // Dependencies: [5, 6, 7, 3, 1883, 2]
 

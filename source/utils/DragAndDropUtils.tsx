@@ -1,10 +1,10 @@
-// Module ID: 11449
-// Function ID: 89064
+// Module ID: 11487
+// Function ID: 89183
 // Name: calculatePositionDeltas
 // Dependencies: [3, 22, 2]
 // Exports: getPositionUpdates
 
-// Module 11449 (calculatePositionDeltas)
+// Module 11487 (calculatePositionDeltas)
 import importDefaultResult from "timestamp";
 
 function calculatePositionDeltas(arg0) {

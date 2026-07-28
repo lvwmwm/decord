@@ -1,10 +1,10 @@
-// Module ID: 5675
-// Function ID: 48757
+// Module ID: 5685
+// Function ID: 48613
 // Name: toPermissionKey
-// Dependencies: [57, 1882, 5676, 2]
+// Dependencies: [57, 1882, 5686, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions
 
-// Module 5675 (toPermissionKey)
+// Module 5685 (toPermissionKey)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -36,11 +36,11 @@ export const commandName = function commandName(arg0, arg1) {
   return text;
 };
 export const commandPermissionChannels = function commandPermissionChannels(arg0) {
-  const items = [require(5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
+  const items = [require(5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
   return commandPermissions(arg0, items);
 };
 export const commandPermissionMembersRoles = function commandPermissionMembersRoles(arg0) {
-  const items = [require(5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
+  const items = [require(5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
   return commandPermissions(arg0, items);
 };
 export { toPermissionKey };

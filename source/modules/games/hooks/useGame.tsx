@@ -1,10 +1,10 @@
-// Module ID: 5639
-// Function ID: 48244
+// Module ID: 5888
+// Function ID: 51759
 // Name: importDefaultResult1
-// Dependencies: [5, 31, 4152, 653, 566, 664, 5640, 2]
+// Dependencies: [5, 31, 4186, 653, 566, 664, 5889, 2]
 // Exports: useGames
 
-// Module 5639 (importDefaultResult1)
+// Module 5888 (importDefaultResult1)
 import result from "result";
 import importDefaultResult1 from "_isNativeReflectConstruct";
 import initialize from "initialize";

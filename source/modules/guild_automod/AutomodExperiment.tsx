@@ -1,9 +1,9 @@
-// Module ID: 10206
-// Function ID: 78980
+// Module ID: 10246
+// Function ID: 79109
 // Name: items
-// Dependencies: [4043, 2]
+// Dependencies: [4077, 2]
 
-// Module 10206 (items)
+// Module 10246 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2022-12_mention_raid_limit", label: "Automod Mention Raid Limit", defaultConfig: { enabled: false } };

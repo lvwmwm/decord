@@ -1,10 +1,10 @@
-// Module ID: 11029
-// Function ID: 85803
+// Module ID: 11067
+// Function ID: 85926
 // Name: AppealIngestionPolicySummary
-// Dependencies: [31, 27, 33, 4131, 689, 6698, 3975, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 6734, 4009, 4161, 1212, 2]
 // Exports: default
 
-// Module 11029 (AppealIngestionPolicySummary)
+// Module 11067 (AppealIngestionPolicySummary)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,19 +25,19 @@ const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/nati
 export default function AppealIngestionPolicySummary(classification) {
   classification = classification.classification;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6698) /* parseMessageEmbedForProps */;
+  let obj = require(6734) /* parseMessageEmbedForProps */;
   let description;
   if (null != classification) {
     description = classification.description;
   }
-  let obj1 = require(3975) /* hexToRgb */;
+  let obj1 = require(4009) /* hexToRgb */;
   obj = { style: tmp.policy };
   const capitalizeTextResult = obj.capitalizeText(description);
   obj = { style: tmp.sectionTitle, variant: "text-sm/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.xsdcxh);
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
-  obj1 = { style: items1, children: callback(require(4127) /* Text */.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) };
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
+  obj1 = { style: items1, children: callback(require(4161) /* Text */.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) };
   items1 = [tmp.userContainer, { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) }];
   items[1] = callback(View, obj1);
   obj.children = items;

@@ -1,9 +1,9 @@
-// Module ID: 13541
-// Function ID: 104238
+// Module ID: 13585
+// Function ID: 104411
 // Name: GestureWrapper
-// Dependencies: [57, 31, 27, 10193, 1348, 1907, 653, 1355, 33, 4131, 689, 3992, 4664, 13542, 4341, 1207, 1185, 3983, 4479, 5580, 13544, 13545, 3982, 1198, 4067, 675, 3984, 13546, 5586, 1457, 1327, 13547, 477, 10834, 13548, 13556, 3907, 13558, 1453, 10601, 10807, 10813, 13559, 4002, 13560, 13562, 13564, 13565, 13566, 14775, 14783, 14784, 1184, 2]
+// Dependencies: [57, 31, 27, 10233, 1348, 1907, 653, 1355, 33, 4165, 689, 4026, 4698, 13586, 4375, 1207, 1185, 4017, 4513, 5615, 13588, 13589, 4016, 1198, 4101, 675, 4018, 13590, 5621, 1457, 1327, 13591, 477, 10872, 13592, 13600, 3941, 13602, 1453, 10639, 10845, 10851, 13603, 4036, 13604, 13606, 13608, 13609, 13610, 14819, 14827, 14828, 1184, 2]
 
-// Module 13541 (GestureWrapper)
+// Module 13585 (GestureWrapper)
 import _slicedToArray from "_slicedToArray";
 import useRequestGatewaySocket from "useRequestGatewaySocket";
 import { NativeModules } from "timestamp";
@@ -14,7 +14,7 @@ import ME from "ME";
 import { isStaticChannelRoute } from "set";
 import jsxProd from "setLevels";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import module_3992 from "module_3992";
+import module_4026 from "module_4026";
 import enableScreens from "enableScreens";
 import designConfig from "designConfig";
 import importDefaultResult from "isNonEmptyString";
@@ -28,7 +28,7 @@ const require = arg1;
 function GestureWrapper(children) {
   const tmp = _createForOfIteratorHelperLoose();
   const global = tmp;
-  isScreenLandscape = isScreenLandscape(4664).useIsScreenLandscape();
+  isScreenLandscape = isScreenLandscape(4698).useIsScreenLandscape();
   let items = [isScreenLandscape, tmp];
   const style = React.useMemo(() => {
     const items = [tmp.flex, ];
@@ -39,15 +39,15 @@ function GestureWrapper(children) {
     items[1] = rootBackgroundColor;
     return items;
   }, items);
-  return callback2(importDefault(13542), { style, children: children.children });
+  return callback2(importDefault(13586), { style, children: children.children });
 }
 function handleNavigationOnReady() {
-  importDefault(4341).flush();
+  importDefault(4375).flush();
   const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
   ComponentDispatch.dispatch(constants.NAVIGATOR_READY);
   const routingInstrumentation = require(1185) /* _maybeBackfillMissingBreadcrumbsFromTelemetryRing */.routingInstrumentation;
-  const obj = importDefault(4341);
-  const result = routingInstrumentation.registerNavigationContainer(require(3983) /* getRootNavigationRef */.getRootNavigationRef());
+  const obj = importDefault(4375);
+  const result = routingInstrumentation.registerNavigationContainer(require(4017) /* getRootNavigationRef */.getRootNavigationRef());
   callback();
 }
 function AppNavigationContainer(children) {
@@ -118,11 +118,11 @@ function AppNavigationContainer(children) {
       };
     }
   }, []);
-  let obj = _require(5586);
-  const navigationTheme = obj.useNavigationTheme(importDefault(4067)());
+  let obj = _require(5621);
+  const navigationTheme = obj.useNavigationTheme(importDefault(4101)());
   obj = { theme: navigationTheme };
-  let tmp = importDefault(4067)();
-  obj.ref = _require(3983).getRootNavigationRef();
+  let tmp = importDefault(4101)();
+  obj.ref = _require(4017).getRootNavigationRef();
   obj.onReady = handleNavigationOnReady;
   obj.onStateChange = callback;
   obj.initialState = memo;
@@ -130,8 +130,8 @@ function AppNavigationContainer(children) {
   return callback2(_require(1457).NavigationContainer, obj);
 }
 function ShareNavigationContainer(children) {
-  const tmp = importDefault(4067)();
-  const theme = require(5586) /* useNavigationTheme */.useNavigationTheme(tmp);
+  const tmp = importDefault(4101)();
+  const theme = require(5621) /* useNavigationTheme */.useNavigationTheme(tmp);
   return callback2(require(1457) /* Link */.NavigationContainer, { theme, children: children.children });
 }
 function AppNavigationContainerOrEmpty(arg0) {
@@ -155,9 +155,9 @@ _createForOfIteratorHelperLoose = { flex: { flex: 1 } };
 _createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ANDROID_NAVIGATION_BAR_BACKGROUND };
 _createForOfIteratorHelperLoose.rootBackgroundColor = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = module_3992.configureReanimatedLogger({ level: require("module_3992").ReanimatedLogLevel.error, strict: false });
+let result = module_4026.configureReanimatedLogger({ level: require("module_4026").ReanimatedLogLevel.error, strict: false });
 enableScreens = enableScreens.enableFreeze();
-let obj1 = { level: require("module_3992").ReanimatedLogLevel.error, strict: false };
+let obj1 = { level: require("module_4026").ReanimatedLogLevel.error, strict: false };
 designConfig.setDesignConfig({ useTrackNavigatorScreenImpression: require("useTrackNavigatorScreenImpression").useTrackNavigatorScreenImpression });
 let c17 = false;
 let closure_18 = { code: "function AppContainerTsx1(){const{RNScreensTurboModule}=this.__closure;global.RNScreensTurboModule=RNScreensTurboModule;}" };
@@ -165,7 +165,7 @@ let obj2 = { useTrackNavigatorScreenImpression: require("useTrackNavigatorScreen
 const result1 = require("isNonEmptyString").profiledRootComponent(function AppContainer(children) {
   children = children.children;
   const appEntryKey = children.appEntryKey;
-  const requestGatewaySocket = appEntryKey(13547).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+  const requestGatewaySocket = appEntryKey(13591).useRequestGatewaySocket("AppContainer:" + appEntryKey);
   const effect = React.useEffect(() => {
     if (!outer1_17) {
       const RNScreensTurboModule = children.RNScreensTurboModule;

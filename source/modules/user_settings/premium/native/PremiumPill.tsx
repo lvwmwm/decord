@@ -1,10 +1,10 @@
-// Module ID: 6179
-// Function ID: 55506
+// Module ID: 6213
+// Function ID: 55625
 // Name: PremiumPill
-// Dependencies: [31, 27, 33, 4131, 689, 4067, 6180, 6187, 1212, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4101, 6214, 6221, 1212, 4161, 2]
 // Exports: PremiumPill
 
-// Module 6179 (PremiumPill)
+// Module 6213 (PremiumPill)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

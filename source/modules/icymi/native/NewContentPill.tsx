@@ -1,10 +1,10 @@
-// Module ID: 15318
-// Function ID: 116850
+// Module ID: 15358
+// Function ID: 117009
 // Name: CutoutGuildIcon
-// Dependencies: [57, 31, 27, 1838, 8108, 33, 4131, 689, 7909, 5513, 566, 4067, 6104, 8122, 3992, 4543, 1459, 4661, 14016, 4127, 1212, 3977, 2]
+// Dependencies: [57, 31, 27, 1838, 8146, 33, 4165, 689, 7945, 5548, 566, 4101, 6138, 8160, 4026, 4577, 1459, 4695, 14060, 4161, 1212, 4011, 2]
 // Exports: default
 
-// Module 15318 (CutoutGuildIcon)
+// Module 15358 (CutoutGuildIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,15 +23,15 @@ function CutoutGuildIcon(guild) {
   obj = {};
   obj = { shape: null, x: 18, y: -4, width: 32, height: 32 };
   const tmp = _createForOfIteratorHelperLoose();
-  obj.shape = require(7909) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj.shape = require(7945) /* SolidCutout */.CutoutShape.RoundedRect;
   obj.cornerRadius = importDefault(689).radii.md;
   const items = [obj];
   obj.cutouts = items;
   const obj1 = { guild: guild.guild };
-  const tmp2 = importDefault(7909);
-  obj1.size = require(5513) /* makeSizeStyle */.GuildIconSizes.XSMALL;
+  const tmp2 = importDefault(7945);
+  obj1.size = require(5548) /* makeSizeStyle */.GuildIconSizes.XSMALL;
   obj1.style = tmp.guildIconBG;
-  obj.children = callback(importDefault(5513), obj1);
+  obj.children = callback(importDefault(5548), obj1);
   obj.children = callback(tmp2, obj);
   return callback(closure_6, obj);
 }

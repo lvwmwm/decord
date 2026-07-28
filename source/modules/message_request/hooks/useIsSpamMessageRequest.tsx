@@ -1,10 +1,10 @@
-// Module ID: 10368
-// Function ID: 80037
+// Module ID: 10408
+// Function ID: 80166
 // Name: useIsSpamMessageRequest
-// Dependencies: [5603, 566, 2]
+// Dependencies: [5638, 566, 2]
 // Exports: useIsSpamMessageRequest
 
-// Module 10368 (useIsSpamMessageRequest)
+// Module 10408 (useIsSpamMessageRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

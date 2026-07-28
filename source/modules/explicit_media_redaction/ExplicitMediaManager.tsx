@@ -1,9 +1,9 @@
-// Module ID: 5845
-// Function ID: 51419
+// Module ID: 5855
+// Function ID: 51275
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5829, 1194, 5846, 1348, 4350, 1907, 3948, 5848, 653, 662, 5834, 5849, 5850, 5852, 686, 5857, 5839, 5844, 5858, 5859, 21, 4352, 4292, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 5839, 1194, 5856, 1348, 4384, 1907, 3982, 5858, 653, 662, 5844, 5859, 5860, 5862, 686, 5867, 5849, 5854, 5868, 5869, 21, 4386, 4326, 5112, 2]
 
-// Module 5845 (_isNativeReflectConstruct)
+// Module 5855 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import timeoutAttachmentsAndEmbedsForMessage from "timeoutAttachmentsAndEmbedsForMessage";
@@ -91,7 +91,7 @@ function maybeCancelTimeout(message, UPDATE) {
 }
 function sendForScanning(found1, arg1) {
   if (0 !== found1.length) {
-    const obj = require(5857) /* reportFalsePositive */;
+    const obj = require(5867) /* reportFalsePositive */;
     if (arg1) {
       const result = obj.sendMultiChannelMessagesForScanning(found1);
     } else {
@@ -444,7 +444,7 @@ function handleMessageUpdate(message) {
       if (obj7.getChannelIdAndAuthorIdFromMessage(message).authorId !== store.getId()) {
         if (null == message.embeds) {
           if (null == message.attachments) {
-            let obj = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
+            let obj = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
             if (!obj.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
@@ -465,7 +465,7 @@ function handleMessageUpdate(message) {
             if (!obj2.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
-            obj2 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
+            obj2 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
           }
         }
         if (!obj3.hasUnscannedMedia(message)) {
@@ -483,12 +483,12 @@ function handleMessageUpdate(message) {
           }
           let hasUnscannedMediaResult = null == message;
           if (!hasUnscannedMediaResult) {
-            const obj4 = require(5849) /* _createForOfIteratorHelperLoose */;
-            hasUnscannedMediaResult = obj4.hasUnscannedMedia(require(4352) /* createMinimalMessageRecord */.updateMessageRecord(message, message));
-            const obj5 = require(4352) /* createMinimalMessageRecord */;
+            const obj4 = require(5859) /* _createForOfIteratorHelperLoose */;
+            hasUnscannedMediaResult = obj4.hasUnscannedMedia(require(4386) /* createMinimalMessageRecord */.updateMessageRecord(message, message));
+            const obj5 = require(4386) /* createMinimalMessageRecord */;
           }
           if (!hasUnscannedMediaResult) {
-            maybeCancelTimeout(message, require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.TimeoutCancelSource.UPDATE);
+            maybeCancelTimeout(message, require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.TimeoutCancelSource.UPDATE);
           }
         }
         const channelId = store4.getChannelId();
@@ -506,7 +506,7 @@ function handleMessageUpdate(message) {
         }
         return tmp28;
       }
-      obj7 = require(5849) /* _createForOfIteratorHelperLoose */;
+      obj7 = require(5859) /* _createForOfIteratorHelperLoose */;
     }
   }
   return false;
@@ -552,7 +552,7 @@ function handleMessageCreate(optimistic) {
           obj.jitter = tmp3;
           return processMessagesFromAction(items, obj);
         }
-        obj2 = require(5849) /* _createForOfIteratorHelperLoose */;
+        obj2 = require(5859) /* _createForOfIteratorHelperLoose */;
       }
     }
   }

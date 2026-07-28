@@ -1,5 +1,5 @@
 // Module ID: 809
-// Function ID: 9079
+// Function ID: 9083
 // Name: isMatchingPattern
 // Dependencies: [804, 810]
 

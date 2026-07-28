@@ -1,9 +1,9 @@
-// Module ID: 16375
-// Function ID: 127647
+// Module ID: 16414
+// Function ID: 127803
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1388, 16376, 1912, 1911, 8243, 16370, 653, 16377, 11449, 4572, 1327, 483, 3764, 665, 1914, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1388, 16415, 1912, 1911, 8281, 16409, 653, 16416, 11487, 4606, 1327, 483, 3798, 665, 1914, 22, 566, 686, 2]
 
-// Module 16375 (_isNativeReflectConstruct)
+// Module 16414 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
@@ -50,7 +50,7 @@ function clearConfigurationEdit(id) {
 function calculatePositionDeltas() {
   if (null != user) {
     if (null != closure_30) {
-      let obj = importDefault(11449);
+      let obj = importDefault(11487);
       obj = {
         oldOrdering: store.getSortedRoles(user.id),
         newOrdering: closure_30,
@@ -499,7 +499,7 @@ obj = {
     const tmp = _getRole(id.id);
     let tmp2 = null != tmp;
     if (tmp2) {
-      const obj = { permissions: importAll(3764).NONE };
+      const obj = { permissions: importAll(3798).NONE };
       tmp2 = updateRole(tmp, obj);
     }
     return tmp2;

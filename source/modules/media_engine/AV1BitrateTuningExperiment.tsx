@@ -1,9 +1,9 @@
-// Module ID: 12807
-// Function ID: 99704
+// Module ID: 12850
+// Function ID: 99874
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12807 (apexExperiment)
+// Module 12850 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-05-av1-bitrate-tuning", kind: "user", defaultConfig: { bitrate: 3500000 }, variations: { [1]: { bitrate: 3000000 }, [2]: { bitrate: 2500000 } } };

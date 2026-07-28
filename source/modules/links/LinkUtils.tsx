@@ -1,10 +1,10 @@
-// Module ID: 4322
-// Function ID: 37872
+// Module ID: 4356
+// Function ID: 37986
 // Name: canViewChannel
-// Dependencies: [1348, 1838, 3759, 653, 1355, 4119, 2]
+// Dependencies: [1348, 1838, 3793, 653, 1355, 4153, 2]
 // Exports: isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4322 (canViewChannel)
+// Module 4356 (canViewChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function canViewChannel(isPrivate) {
 }
 ME = ME.ME;
 const Permissions = ME.Permissions;
-const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4119).escape(arg0));
+const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4153).escape(arg0));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");

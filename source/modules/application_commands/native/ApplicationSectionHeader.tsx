@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 88894
+// Module ID: 11470
+// Function ID: 89013
 // Name: ApplicationSectionHeader
-// Dependencies: [31, 27, 1918, 33, 4131, 689, 566, 11329, 1212, 5085, 4127, 2]
+// Dependencies: [31, 27, 1918, 33, 4165, 689, 566, 11367, 1212, 5119, 4161, 2]
 // Exports: default
 
-// Module 11432 (ApplicationSectionHeader)
+// Module 11470 (ApplicationSectionHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  let obj1 = section(11329);
+  let obj1 = section(11367);
   const applicationCommandsIconSource = obj1.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (null != stateFromStores) {
@@ -58,11 +58,11 @@ export default function ApplicationSectionHeader(section) {
   let tmp7 = null != applicationCommandsIconSource;
   if (tmp7) {
     obj1 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp7 = callback(guildId(5085), obj1);
+    tmp7 = callback(guildId(5119), obj1);
   }
   const items1 = [tmp7, ];
   const obj2 = { variant: "eyebrow", color: "interactive-text-default", children: name };
-  items1[1] = callback(section(4127).Text, obj2);
+  items1[1] = callback(section(4161).Text, obj2);
   obj.children = items1;
   return closure_6(View, obj);
 };

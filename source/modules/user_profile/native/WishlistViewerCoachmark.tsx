@@ -1,10 +1,10 @@
-// Module ID: 12159
-// Function ID: 95233
+// Module ID: 12202
+// Function ID: 95403
 // Name: CoachmarkImage
-// Dependencies: [31, 27, 1345, 33, 4131, 12160, 1212, 8368, 2]
+// Dependencies: [31, 27, 1345, 33, 4165, 12203, 1212, 8406, 2]
 // Exports: default
 
-// Module 12159 (CoachmarkImage)
+// Module 12202 (CoachmarkImage)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -18,11 +18,11 @@ function CoachmarkImage() {
   const tmp = callback();
   let obj = { style: tmp.imageContainer };
   obj = {};
-  obj = { uri: importDefault(12160) };
+  obj = { uri: importDefault(12203) };
   obj.source = obj;
   obj.style = tmp.image;
-  obj.children = <closure_5 uri={importDefault(12160)} />;
-  return <closure_4 uri={importDefault(12160)} />;
+  obj.children = <closure_5 uri={importDefault(12203)} />;
+  return <closure_4 uri={importDefault(12203)} />;
 }
 ({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
 let closure_8 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });

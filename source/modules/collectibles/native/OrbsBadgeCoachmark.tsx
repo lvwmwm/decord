@@ -1,10 +1,10 @@
-// Module ID: 8366
-// Function ID: 66931
+// Module ID: 8404
+// Function ID: 67041
 // Name: OrbsBadgeCoachmarkImg
-// Dependencies: [31, 27, 33, 4131, 8367, 1212, 3983, 8368, 2]
+// Dependencies: [31, 27, 33, 4165, 8405, 1212, 4017, 8406, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 8366 (OrbsBadgeCoachmarkImg)
+// Module 8404 (OrbsBadgeCoachmarkImg)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,11 +17,11 @@ function OrbsBadgeCoachmarkImg() {
   const tmp = callback();
   let obj = { style: tmp.coachmarkImageContainer };
   obj = {};
-  obj = { uri: importDefault(8367) };
+  obj = { uri: importDefault(8405) };
   obj.source = obj;
   obj.style = tmp.coachmarkImage;
-  obj.children = <closure_5 uri={importDefault(8367)} />;
-  return <closure_4 uri={importDefault(8367)} />;
+  obj.children = <closure_5 uri={importDefault(8405)} />;
+  return <closure_4 uri={importDefault(8405)} />;
 }
 ({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
 let closure_7 = _createForOfIteratorHelperLoose.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 80, height: 80 }, coachmarkDescription: { marginBottom: -10 } });
@@ -31,7 +31,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
   let obj = Object.create(null);
   obj.badgeRef = 0;
   const merged = Object.assign(badgeRef, obj);
-  obj = require(8368) /* useCoachmark */;
+  obj = require(8406) /* useCoachmark */;
   const coachmark = obj.useCoachmark(badgeRef.badgeRef, merged);
   return null;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10478
-// Function ID: 81307
+// Module ID: 10516
+// Function ID: 81428
 // Name: isWatchTogetherApplication
-// Dependencies: [4156, 2]
+// Dependencies: [4190, 2]
 // Exports: default
 
-// Module 10478 (isWatchTogetherApplication)
+// Module 10516 (isWatchTogetherApplication)
 import items3 from "items3";
 
 ({ WATCH_YOUTUBE_DEV_APP_ID: closure_0, WATCH_YOUTUBE_PROD_APP_ID: closure_1, WATCH_YOUTUBE_QA_APP_ID: closure_2 } = items3);

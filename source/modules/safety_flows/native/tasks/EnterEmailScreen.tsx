@@ -1,10 +1,10 @@
-// Module ID: 16635
-// Function ID: 129758
+// Module ID: 16675
+// Function ID: 129919
 // Name: EnterEmailScreen
-// Dependencies: [57, 31, 33, 1456, 16636, 1212, 2461, 16627, 4542, 6670, 2]
+// Dependencies: [57, 31, 33, 1456, 16676, 1212, 2461, 16667, 4576, 6706, 2]
 // Exports: default
 
-// Module 16635 (EnterEmailScreen)
+// Module 16675 (EnterEmailScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export default function EnterEmailScreen() {
   obj.onAction = function onAction() {
     arr = arr.push(arr(outer1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
-  obj = { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
-  obj.children = jsx(_require(4542).Stack, { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
-  return jsx(importDefault(16636), { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  obj = { children: jsx(_require(6706).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
+  obj.children = jsx(_require(4576).Stack, { children: jsx(_require(6706).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  return jsx(importDefault(16676), { children: jsx(_require(6706).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
 };

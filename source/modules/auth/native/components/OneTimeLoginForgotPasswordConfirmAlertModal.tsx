@@ -1,10 +1,10 @@
-// Module ID: 9127
-// Function ID: 71739
+// Module ID: 9171
+// Function ID: 71890
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [31, 33, 4476, 1212, 4476, 2]
+// Dependencies: [31, 33, 4510, 1212, 4510, 2]
 // Exports: default
 
-// Module 9127 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 9171 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function OneTimeLoginForgotPasswordConfirmAlertModal() {
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-  obj.children = jsx(require(4476) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
-  obj.actions = jsx(require(4476) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4476) /* getAlertModalItemKey */.AlertModal, {});
+  obj.children = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
+  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, {});
 };

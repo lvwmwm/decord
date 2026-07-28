@@ -1,9 +1,9 @@
-// Module ID: 14154
-// Function ID: 108845
+// Module ID: 14198
+// Function ID: 109018
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4046, 6240, 2]
+// Dependencies: [4080, 6276, 2]
 
-// Module 14154 (commonTriggerPointConfiguration)
+// Module 14198 (commonTriggerPointConfiguration)
 const commonTriggerPointConfiguration = new require("CommonTriggerPointConfiguration").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.QUEST_BAR_RENDERED, { location: "quest bar rendered" });
 const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/QuestBarRenderedTriggerPoint.tsx");
 

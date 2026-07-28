@@ -1,10 +1,10 @@
-// Module ID: 10601
-// Function ID: 82650
+// Module ID: 10639
+// Function ID: 82771
 // Name: context
-// Dependencies: [57, 31, 27, 33, 4131, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 2]
 // Exports: WebViewContextProvider
 
-// Module 10601 (context)
+// Module 10639 (context)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";

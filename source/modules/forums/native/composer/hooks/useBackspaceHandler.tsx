@@ -1,10 +1,10 @@
-// Module ID: 9516
-// Function ID: 74296
+// Module ID: 9556
+// Function ID: 74425
 // Name: useBackspaceHandler
 // Dependencies: [31, 2]
 // Exports: useBackspaceHandler
 
-// Module 9516 (useBackspaceHandler)
+// Module 9556 (useBackspaceHandler)
 import result from "result";
 
 const re1 = /((\ud83c[\udde6-\uddff]){2}|([#*0-9]\u20e3)|(\u00a9|\u00ae|[\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])((\ud83c[\udffb-\udfff])?(\ud83e[\uddb0-\uddb3])?(\ufe0f?\u200d([\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])\ufe0f?)?)*)/g;

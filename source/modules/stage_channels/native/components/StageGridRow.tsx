@@ -1,8 +1,8 @@
-// Module ID: 10784
-// Function ID: 83690
-// Dependencies: [31, 27, 33, 4131, 10777, 4958, 4664, 10785, 10776, 2]
+// Module ID: 10822
+// Function ID: 83811
+// Dependencies: [31, 27, 33, 4165, 10815, 4992, 4698, 10823, 10814, 2]
 
-// Module 10784
+// Module 10822
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -16,18 +16,18 @@ const memoResult = require("result").memo((row) => {
   ({ channel: require, participants } = row);
   let THIRD;
   const tmp = callback();
-  let obj = require(4664) /* getIsScreenLandscape */;
+  let obj = require(4698) /* getIsScreenLandscape */;
   let containerLandscape = obj.useIsScreenLandscape();
   let num = 3;
   if (0 === row.row) {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = require(10777) /* StageTileSize */.StageTileSize.FULL;
+    THIRD = require(10815) /* StageTileSize */.StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = require(10777) /* StageTileSize */.StageTileSize.HALF;
+    THIRD = require(10815) /* StageTileSize */.StageTileSize.HALF;
   } else {
-    THIRD = require(10777) /* StageTileSize */.StageTileSize.THIRD;
+    THIRD = require(10815) /* StageTileSize */.StageTileSize.THIRD;
   }
   obj = {};
   const items = [tmp.container, ];

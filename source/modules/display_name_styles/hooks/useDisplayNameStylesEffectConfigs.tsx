@@ -1,10 +1,10 @@
-// Module ID: 8323
-// Function ID: 66830
+// Module ID: 8361
+// Function ID: 66940
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
-// Dependencies: [31, 1863, 2557, 8324, 1212, 1864, 2]
+// Dependencies: [31, 1863, 2557, 8362, 1212, 1864, 2]
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 8323 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+// Module 8361 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
 import result from "result";
 
 const require = arg1;
@@ -22,7 +22,7 @@ const result = require("messagesProxy").fileFinishedImporting("modules/display_n
 export const DISPLAY_NAME_STYLES_EFFECT_NAMES = obj;
 export const useDisplayNameStylesEffectConfig = function useDisplayNameStylesEffectConfig(effectId) {
   let closure_0 = effectId;
-  const tmp = importDefault(8324)()[effectId];
+  const tmp = importDefault(8362)()[effectId];
   importDefault = tmp;
   const items = [effectId, tmp];
   return React.useMemo(() => {

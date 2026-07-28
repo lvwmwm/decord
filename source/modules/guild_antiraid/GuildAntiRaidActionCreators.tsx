@@ -1,10 +1,10 @@
-// Module ID: 10959
-// Function ID: 85159
+// Module ID: 10997
+// Function ID: 85282
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1838, 7739, 653, 675, 4325, 8242, 3713, 507, 10207, 2]
+// Dependencies: [5, 1838, 7775, 653, 675, 4359, 8280, 3747, 507, 10247, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 10959 (_setGuildRaidAlerts)
+// Module 10997 (_setGuildRaidAlerts)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";
@@ -45,11 +45,11 @@ export const trackReportRaidViewed = function trackReportRaidViewed(outer1_1, ou
   if (0 !== items.length) {
     let obj = importDefault(675);
     obj = {};
-    const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(outer1_1));
+    const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(outer1_1));
     obj["guild_id"] = outer1_1;
     obj["raid_types"] = items;
     obj.track(constants.GUILD_RAID_REPORTED, obj);
-    const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
   }
 };
 export const setGuildRaidAlerts = function setGuildRaidAlerts() {

@@ -1,10 +1,10 @@
-// Module ID: 10763
-// Function ID: 83521
+// Module ID: 10801
+// Function ID: 83642
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [1194, 1907, 4955, 566, 2]
+// Dependencies: [1194, 1907, 4989, 566, 2]
 // Exports: default
 
-// Module 10763 (useMyCurrentStageChannelRole)
+// Module 10801 (useMyCurrentStageChannelRole)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

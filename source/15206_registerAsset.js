@@ -1,11 +1,11 @@
 // Module ID: 15206
-// Function ID: 115752
+// Function ID: 115578
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15206 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/notifications/images", width: 24, height: 24, scales: [1], hash: "0ca8431ba26e114a3e93aa8dc5cdf521", name: "ic_bell_on", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/age_gate/native/images", width: 86, height: 64, scales: [2, 3], hash: "acf69ce5e27634f2a502d3973927bbad", name: "nsfw_gate_lock", type: "png" };
 
 export default registerAsset.registerAsset(obj);

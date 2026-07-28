@@ -1,9 +1,9 @@
-// Module ID: 4958
-// Function ID: 42588
+// Module ID: 4992
+// Function ID: 42703
 // Name: sortKey
-// Dependencies: [6, 7, 4150, 1348, 4959, 1918, 3768, 1850, 4147, 4204, 4955, 1353, 4961, 4315, 3755, 4320, 4962, 4195, 2]
+// Dependencies: [6, 7, 4184, 1348, 4993, 1918, 3802, 1850, 4181, 4238, 4989, 1353, 4995, 4349, 3789, 4354, 4996, 4229, 2]
 
-// Module 4958 (sortKey)
+// Module 4992 (sortKey)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -52,7 +52,7 @@ function sortKey(speaker) {
     num = position;
   }
   const combined = "" + num;
-  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(4961)(userNick, user);
+  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(4995)(userNick, user);
 }
 function requestToSpeakSortKey(user) {
   user = user.user;
@@ -67,9 +67,9 @@ function requestToSpeakSortKey(user) {
   return id;
 }
 function isRequestedToSpeakAll(rtsState) {
-  let tmp = rtsState === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK;
+  let tmp = rtsState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK;
   if (!tmp) {
-    tmp = rtsState === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    tmp = rtsState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   }
   return tmp;
 }
@@ -86,7 +86,7 @@ function getParticipantIndex(arg0) {
   if (isRequestedToSpeakAll(rtsState)) {
     items.push(obj.ALL_REQUESTED_TO_SPEAK);
   }
-  if (rtsState === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK) {
+  if (rtsState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK) {
     items.push(obj.REQUESTED_TO_SPEAK_ONLY);
   }
   if (speaker) {

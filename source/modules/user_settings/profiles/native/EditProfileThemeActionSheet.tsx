@@ -1,10 +1,10 @@
-// Module ID: 13654
-// Function ID: 104906
+// Module ID: 13698
+// Function ID: 105079
 // Name: EditProfileThemeActionSheet
-// Dependencies: [31, 33, 4131, 689, 5498, 5186, 1212, 1273, 5501, 5164, 4099, 2]
+// Dependencies: [31, 33, 4165, 689, 5533, 5220, 1212, 1273, 5536, 5198, 4133, 2]
 // Exports: default
 
-// Module 13654 (EditProfileThemeActionSheet)
+// Module 13698 (EditProfileThemeActionSheet)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -31,7 +31,7 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
   obj = { style: tmp.nitroWheel };
   obj.trailing = callback(onResetTheme(1273).NitroWheel, obj);
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [callback(onResetTheme(5186).BottomSheetTitleHeader, obj), ];
+  const items = [callback(onResetTheme(5220).BottomSheetTitleHeader, obj), ];
   const obj1 = { hasIcons: false };
   const obj2 = {};
   const intl2 = onResetTheme(1212).intl;
@@ -42,8 +42,8 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
     onResetTheme();
     outer1_1(outer1_2[10]).hideActionSheet();
   };
-  obj1.children = callback(onResetTheme(5164).TableRow, obj2);
-  items[1] = callback(onResetTheme(5501).TableRowGroup, obj1);
+  obj1.children = callback(onResetTheme(5198).TableRow, obj2);
+  items[1] = callback(onResetTheme(5536).TableRowGroup, obj1);
   obj.children = items;
-  return callback2(onResetTheme(5498).ActionSheet, obj);
+  return callback2(onResetTheme(5533).ActionSheet, obj);
 };

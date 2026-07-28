@@ -1,10 +1,10 @@
-// Module ID: 6603
-// Function ID: 58439
+// Module ID: 6639
+// Function ID: 58528
 // Name: BuyNitroPurchaseButton
-// Dependencies: [57, 31, 27, 5619, 1852, 33, 4131, 5482, 6497, 1212, 477, 6604, 5450, 6238, 6511, 566, 5462, 4472, 4544, 6605, 6606, 2]
+// Dependencies: [57, 31, 27, 5654, 1852, 33, 4165, 5517, 6533, 1212, 477, 6640, 5485, 6274, 6547, 566, 5497, 4506, 4578, 6641, 6642, 2]
 // Exports: default
 
-// Module 6603 (BuyNitroPurchaseButton)
+// Module 6639 (BuyNitroPurchaseButton)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

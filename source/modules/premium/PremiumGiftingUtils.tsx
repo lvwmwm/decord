@@ -1,10 +1,10 @@
-// Module ID: 7798
-// Function ID: 61937
+// Module ID: 7834
+// Function ID: 62027
 // Name: _sendGiftMessage
-// Dependencies: [5, 1348, 4124, 4141, 44, 4367, 5685, 5914, 2]
+// Dependencies: [5, 1348, 4158, 4175, 44, 4401, 5695, 5948, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 7798 (_sendGiftMessage)
+// Module 7834 (_sendGiftMessage)
 import unambiguousRegex from "unambiguousRegex";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";

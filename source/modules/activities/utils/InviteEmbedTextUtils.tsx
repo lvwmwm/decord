@@ -1,10 +1,10 @@
-// Module ID: 12311
-// Function ID: 95934
+// Module ID: 12354
+// Function ID: 96104
 // Name: getRequestToStreamText
-// Dependencies: [1850, 653, 1212, 2653, 4320, 2]
+// Dependencies: [1850, 653, 1212, 2653, 4354, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText
 
-// Module 12311 (getRequestToStreamText)
+// Module 12354 (getRequestToStreamText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActivityActionTypes } from "ME";
 
@@ -15,9 +15,9 @@ function getRequestToStreamText(author, guild_id, id) {
     let stringResult = intl2.string(importDefault(2653)["8B3U5O"]);
   } else {
     const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { username: require(4320) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author) };
+    const obj = { username: require(4354) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author) };
     stringResult = intl.formatToPlainString(importDefault(2653)["d/qbC0"], obj);
-    const obj2 = require(4320) /* getNickname */;
+    const obj2 = require(4354) /* getNickname */;
   }
   return stringResult;
 }

@@ -1,10 +1,10 @@
-// Module ID: 9863
-// Function ID: 76439
+// Module ID: 9903
+// Function ID: 76568
 // Name: ShareChatInput
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 477, 6130, 7584, 1212, 4661, 6519, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 477, 6164, 7620, 1212, 4695, 6555, 2]
 // Exports: default
 
-// Module 9863 (ShareChatInput)
+// Module 9903 (ShareChatInput)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -74,8 +74,8 @@ export default function ShareChatInput(onFocus) {
   }
   items2[1] = focused;
   obj.style = items2;
-  obj = { ref: inputRef, maxLength: onBlur(6130)() };
-  const tmp2 = onBlur(6130)();
+  obj = { ref: inputRef, maxLength: onBlur(6164)() };
+  const tmp2 = onBlur(6164)();
   const tmp6 = closure_7;
   const tmp7 = View;
   const intl = onFocus(1212).intl;
@@ -96,7 +96,7 @@ export default function ShareChatInput(onFocus) {
   obj.textAlignVertical = "center";
   obj.inputTextStyle = tmp.chatText;
   obj.editable = !flag;
-  const items3 = [callback2(onBlur(7584), obj), ];
+  const items3 = [callback2(onBlur(7620), obj), ];
   obj = {};
   const intl3 = onFocus(1212).intl;
   obj.accessibilityLabel = intl3.string(onFocus(1212).t.iZ7Mz9);
@@ -104,8 +104,8 @@ export default function ShareChatInput(onFocus) {
   obj.onPress = onPressEmoji;
   obj.style = tmp.emojiButton;
   obj.disabled = flag;
-  obj.children = callback2(onFocus(6519).ReactionIcon, { size: "md" });
-  items3[1] = callback2(onFocus(4661).PressableOpacity, obj);
+  obj.children = callback2(onFocus(6555).ReactionIcon, { size: "md" });
+  items3[1] = callback2(onFocus(4695).PressableOpacity, obj);
   obj.children = items3;
   return tmp6(tmp7, obj);
 };

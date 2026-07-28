@@ -1,10 +1,10 @@
-// Module ID: 6034
-// Function ID: 54120
+// Module ID: 6068
+// Function ID: 54239
 // Name: trackChannelOpenedClickstream
-// Dependencies: [1348, 653, 1355, 5696, 2]
+// Dependencies: [1348, 653, 1355, 5706, 2]
 // Exports: default
 
-// Module 6034 (trackChannelOpenedClickstream)
+// Module 6068 (trackChannelOpenedClickstream)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -28,7 +28,7 @@ export default function trackChannelOpenedClickstream(channelId) {
                   if (StaticChannelRoute.MEMBER_SAFETY !== channelId) {
                     if (StaticChannelRoute.GUILD_ONBOARDING !== channelId) {
                       if (StaticChannelRoute.GUILD_BOOSTS !== channelId) {
-                        let obj = require(5696) /* _createForOfIteratorHelperLoose */;
+                        let obj = require(5706) /* _createForOfIteratorHelperLoose */;
                         obj = { channel_id: channelId };
                         channel = channel.getChannel(channelId);
                         let type;

@@ -1,10 +1,10 @@
-// Module ID: 5712
-// Function ID: 49543
+// Module ID: 5722
+// Function ID: 49399
 // Name: isReadableChannel
-// Dependencies: [1352, 1348, 3759, 653, 2]
+// Dependencies: [1352, 1348, 3793, 653, 2]
 // Exports: isReadableChannelId
 
-// Module 5712 (isReadableChannel)
+// Module 5722 (isReadableChannel)
 import { isTextChannel } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

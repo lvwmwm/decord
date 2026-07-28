@@ -1,9 +1,9 @@
-// Module ID: 6115
-// Function ID: 54810
+// Module ID: 6149
+// Function ID: 54929
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [15, 17, 18, 6, 7, 1352, 1858, 1348, 1918, 3768, 1850, 653, 3970, 1360, 491, 22, 21, 6116, 1327, 1184, 5078, 2]
+// Dependencies: [15, 17, 18, 6, 7, 1352, 1858, 1348, 1918, 3802, 1850, 653, 4004, 1360, 491, 22, 21, 6150, 1327, 1184, 5112, 2]
 
-// Module 6115 (_createForOfIteratorHelperLoose)
+// Module 6149 (_createForOfIteratorHelperLoose)
 import apply from "apply";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";

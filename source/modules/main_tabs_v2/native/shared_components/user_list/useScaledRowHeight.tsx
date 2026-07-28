@@ -1,16 +1,16 @@
-// Module ID: 8759
-// Function ID: 69313
+// Module ID: 8803
+// Function ID: 69464
 // Name: useScaledRowHeightData
-// Dependencies: [4550, 3835, 689, 2]
+// Dependencies: [4584, 3869, 689, 2]
 // Exports: default
 
-// Module 8759 (useScaledRowHeightData)
+// Module 8803 (useScaledRowHeightData)
 function useScaledRowHeightData() {
-  let obj = require(4550) /* getFontScale */;
+  let obj = require(4584) /* getFontScale */;
   const fontScale = obj.useFontScale();
-  const token = require(3835) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_HEIGHT);
-  const obj2 = require(3835) /* map */;
-  const token1 = require(3835) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
+  const token = require(3869) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_HEIGHT);
+  const obj2 = require(3869) /* map */;
+  const token1 = require(3869) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   const result = fontScale * token1;
   obj = { rowHeight: token + Math.max(result - token1, 0), rowContentHeight: result };
   return obj;

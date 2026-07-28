@@ -1,9 +1,9 @@
-// Module ID: 4309
-// Function ID: 37712
+// Module ID: 4343
+// Function ID: 37826
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 27, 4150, 1348, 1907, 653, 4156, 3, 4016, 3804, 686, 507, 4195, 4310, 4180, 44, 4324, 1450, 10683, 10632, 1212, 4531, 2]
+// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 27, 4184, 1348, 1907, 653, 4190, 3, 4050, 3838, 686, 507, 4229, 4344, 4214, 44, 4358, 1450, 10721, 10670, 1212, 4565, 2]
 
-// Module 4309 (_isNativeReflectConstruct)
+// Module 4343 (_isNativeReflectConstruct)
 import _classPrivateFieldKey from "_classPrivateFieldKey";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

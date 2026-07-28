@@ -1,9 +1,9 @@
-// Module ID: 9980
-// Function ID: 77258
+// Module ID: 10020
+// Function ID: 77387
 // Name: u
-// Dependencies: [3992, 2]
+// Dependencies: [4026, 2]
 
-// Module 9980 (u)
+// Module 10020 (u)
 let fn = function u(get) {
   if (globalThis._WORKLET) {
     const value = get.get();
@@ -21,15 +21,15 @@ let fn = function u(get) {
       break;
     }
   } else {
-    obj = require(3992);
+    obj = require(4026);
     obj.runOnUI(fn)(get, arg1);
   }
 };
-let obj = { runOnUI: require("module_3992").runOnUI, updateSharedValueIfChanged: undefined };
+let obj = { runOnUI: require("module_4026").runOnUI, updateSharedValueIfChanged: undefined };
 fn.__closure = obj;
 fn.__workletHash = 6367316923455;
 fn.__initData = { code: "function updateSharedValueIfChangedNativeTsx2(sharedValue,value){const{runOnUI,updateSharedValueIfChanged}=this.__closure;if(!_WORKLET){runOnUI(updateSharedValueIfChanged)(sharedValue,value);}else{const _sharedValue=sharedValue.get();const newValue={..._sharedValue,...value};for(const key in newValue){if(_sharedValue[key]!==newValue[key]){sharedValue.set(newValue);break;}}}}" };
-obj = { runOnUI: require("module_3992").runOnUI };
+obj = { runOnUI: require("module_4026").runOnUI };
 fn.__closure = obj;
 fn.__workletHash = 13662114226774;
 fn.__initData = { code: "function updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1(sharedValue,value){const updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1=this._recur;const{runOnUI}=this.__closure;if(!_WORKLET){runOnUI(updateSharedValueIfChanged_updateSharedValueIfChangedNativeTsx1)(sharedValue,value);}else{const _sharedValue=sharedValue.get();const newValue={..._sharedValue,...value};for(const key in newValue){if(_sharedValue[key]!==newValue[key]){sharedValue.set(newValue);break;}}}}" };
@@ -52,11 +52,11 @@ const tmp2 = (() => {
       const obj = fn(outer1_1[0]);
     }
   };
-  let obj = { runOnUI: fn(3992).runOnUI, updateSharedValueArrayIfChanged: undefined };
+  let obj = { runOnUI: fn(4026).runOnUI, updateSharedValueArrayIfChanged: undefined };
   fn.__closure = obj;
   fn.__workletHash = 10682766507787;
   fn.__initData = closure_4;
-  obj = { runOnUI: fn(3992).runOnUI };
+  obj = { runOnUI: fn(4026).runOnUI };
   fn.__closure = obj;
   fn.__workletHash = 13887777879519;
   fn.__initData = closure_3;

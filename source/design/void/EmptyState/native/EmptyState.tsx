@@ -1,10 +1,10 @@
-// Module ID: 13102
-// Function ID: 101139
+// Module ID: 13146
+// Function ID: 101312
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4131, 689, 3977, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4011, 4161, 2]
 // Exports: default
 
-// Module 13102 (EmptyState)
+// Module 13146 (EmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function EmptyState(Illustration) {
   let children;
   let title;
   const tmp = _createForOfIteratorHelperLoose();
-  require(3977) /* AccessibilityAnnouncer */;
+  require(4011) /* AccessibilityAnnouncer */;
   if (null != Illustration.Illustration) {
     let obj = { accessible: false, importantForAccessibility: "no", accessibilityRole: "none", resizeMode: "contain" };
     const items = [tmp.emptyImage, Illustration.imageStyle];
@@ -42,7 +42,7 @@ export default function EmptyState(Illustration) {
     tmp6Result = null;
     if (tmp4) {
       obj = { resizeMode: "contain" };
-      let obj1 = require(3977) /* AccessibilityAnnouncer */;
+      let obj1 = require(4011) /* AccessibilityAnnouncer */;
       obj.source = obj1.isThemeLight(tmp3) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj.style = items1;
@@ -63,7 +63,7 @@ export default function EmptyState(Illustration) {
     const items4 = [tmp.emptyTitle, tmp11];
     obj1.style = items4;
     obj1.children = title;
-    tmp14 = callback(require(4127) /* Text */.Text, obj1);
+    tmp14 = callback(require(4161) /* Text */.Text, obj1);
   }
   items3[1] = tmp14;
   let tmp18 = null;
@@ -72,7 +72,7 @@ export default function EmptyState(Illustration) {
     const items5 = [tmp.emptyBody, bodyStyle];
     obj2.style = items5;
     obj2.children = body;
-    tmp18 = callback(require(4127) /* Text */.Text, obj2);
+    tmp18 = callback(require(4161) /* Text */.Text, obj2);
   }
   items3[2] = tmp18;
   items3[3] = children;

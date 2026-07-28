@@ -1,10 +1,10 @@
-// Module ID: 12115
-// Function ID: 94921
+// Module ID: 12158
+// Function ID: 95091
 // Name: usePrivacyNoticeContentTypes
-// Dependencies: [57, 31, 27, 653, 1345, 33, 4131, 689, 1282, 1212, 12116, 7649, 3804, 1334, 8379, 4127, 6554, 4087, 4661, 5119, 2]
+// Dependencies: [57, 31, 27, 653, 1345, 33, 4165, 689, 1282, 1212, 12159, 7685, 3838, 1334, 8417, 4161, 6590, 4121, 4695, 5153, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12115 (usePrivacyNoticeContentTypes)
+// Module 12158 (usePrivacyNoticeContentTypes)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -46,10 +46,10 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/u
 
 export default function UserProfilePrivacyNotice() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(8379);
+  let obj = _require(8417);
   const tmp3 = callback(obj.useSelectedDismissibleContent(usePrivacyNoticeContentTypes()), 2);
   _require = tmp3[1];
-  const ProfileVisibility = _require(3804).ProfileVisibility;
+  const ProfileVisibility = _require(3838).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   callback = React.useCallback((children) => {
     let obj = {
@@ -76,13 +76,13 @@ export default function UserProfilePrivacyNotice() {
       dqQ7AN = _require(1212).t.dqQ7AN;
     }
     obj = { style: tmp.container };
-    obj = { style: tmp.icon, children: callback2(_require(4087).CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
+    obj = { style: tmp.icon, children: callback2(_require(4121).CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     const items = [callback2(View, obj), , ];
     const obj1 = { style: tmp.text, variant: "text-sm/normal", color: "text-default" };
     const intl = _require(1212).intl;
     const obj2 = { privacySettingsLink: callback };
     obj1.children = intl.format(dqQ7AN, obj2);
-    items[1] = callback2(_require(4127).Text, obj1);
+    items[1] = callback2(_require(4161).Text, obj1);
     const obj3 = { accessibilityRole: "button" };
     const intl2 = _require(1212).intl;
     obj3.accessibilityLabel = intl2.string(_require(1212).t.WAI6xu);
@@ -90,8 +90,8 @@ export default function UserProfilePrivacyNotice() {
       return callback(outer1_6.USER_DISMISS);
     };
     obj3.style = tmp.closeButton;
-    obj3.children = callback2(_require(5119).XSmallIcon, { size: "xs", color: "icon-feedback-info" });
-    items[2] = callback2(_require(4661).PressableOpacity, obj3);
+    obj3.children = callback2(_require(5153).XSmallIcon, { size: "xs", color: "icon-feedback-info" });
+    items[2] = callback2(_require(4695).PressableOpacity, obj3);
     obj.children = items;
     return callback3(View, obj);
   }
@@ -99,5 +99,5 @@ export default function UserProfilePrivacyNotice() {
 };
 export const useIsPrivacyNoticeVisible = function useIsPrivacyNoticeVisible() {
   const tmp = usePrivacyNoticeContentTypes();
-  return callback(require(8379) /* useSelectedDismissibleContent */.useSelectedDismissibleContent(tmp), 1)[0] === require(1334) /* DismissibleContent */.DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE;
+  return callback(require(8417) /* useSelectedDismissibleContent */.useSelectedDismissibleContent(tmp), 1)[0] === require(1334) /* DismissibleContent */.DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE;
 };

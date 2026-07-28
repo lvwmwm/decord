@@ -1,10 +1,10 @@
-// Module ID: 5125
-// Function ID: 44450
+// Module ID: 5159
+// Function ID: 44565
 // Name: TableRowDivider
-// Dependencies: [31, 27, 5126, 33, 4131, 689, 4974, 1324, 3835, 2]
+// Dependencies: [31, 27, 5160, 33, 4165, 689, 5008, 1324, 3869, 2]
 // Exports: TableRowDivider
 
-// Module 5125 (TableRowDivider)
+// Module 5159 (TableRowDivider)
 import "result";
 import { View } from "get ActivityIndicator";
 import { getTableDividerWidth } from "TABLE_ROW_HEIGHT";
@@ -33,7 +33,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) 
   if (arg1) {
     let DIVIDER_BACKGROUND = importDefault(689).colors.BORDER_SUBTLE;
   } else {
-    DIVIDER_BACKGROUND = require(4974) /* result */.DIVIDER_BACKGROUND;
+    DIVIDER_BACKGROUND = require(5008) /* result */.DIVIDER_BACKGROUND;
   }
   obj.backgroundColor = DIVIDER_BACKGROUND;
   obj.divider = obj;
@@ -46,7 +46,7 @@ export const TableRowDivider = function TableRowDivider(adjustSpacingForIcon) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const tmp2 = callback(flag, importDefault(1324)("TableRowDivider"), obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_DIVIDER_PADDING));
   obj = { style: tmp2.container, children: <View {...obj} /> };
   obj = { style: tmp2.divider };

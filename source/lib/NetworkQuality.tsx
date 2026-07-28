@@ -1,9 +1,9 @@
-// Module ID: 12810
-// Function ID: 99756
+// Module ID: 12853
+// Function ID: 99926
 // Name: round
-// Dependencies: [6, 7, 4223, 653, 4207, 2]
+// Dependencies: [6, 7, 4257, 653, 4241, 2]
 
-// Module 12810 (round)
+// Module 12853 (round)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

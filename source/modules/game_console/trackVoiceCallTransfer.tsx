@@ -1,10 +1,10 @@
-// Module ID: 8977
-// Function ID: 70761
+// Module ID: 9021
+// Function ID: 70912
 // Name: trackVoiceCallTransfer
-// Dependencies: [1348, 4203, 4146, 653, 675, 2]
+// Dependencies: [1348, 4237, 4180, 653, 675, 2]
 // Exports: default
 
-// Module 8977 (trackVoiceCallTransfer)
+// Module 9021 (trackVoiceCallTransfer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

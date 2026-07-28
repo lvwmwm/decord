@@ -1,10 +1,10 @@
-// Module ID: 8895
-// Function ID: 70443
+// Module ID: 8939
+// Function ID: 70594
 // Name: MoreHorizontalIcon
-// Dependencies: [31, 33, 689, 3834, 8896, 2]
+// Dependencies: [31, 33, 689, 3868, 8940, 2]
 // Exports: MoreHorizontalIcon
 
-// Module 8895 (MoreHorizontalIcon)
+// Module 8939 (MoreHorizontalIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MoreHorizontalIcon = function MoreHorizontalIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8896) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8940) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8896) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8940) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

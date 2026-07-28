@@ -1,10 +1,10 @@
-// Module ID: 10830
-// Function ID: 83966
+// Module ID: 10868
+// Function ID: 84087
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 31, 4168, 4156, 10831, 5656, 5463, 7850, 44, 7856, 1882, 7847, 5856, 2]
+// Dependencies: [57, 5, 31, 4202, 4190, 10869, 7960, 5498, 7886, 44, 7892, 1882, 7883, 5866, 2]
 // Exports: default
 
-// Module 10830 (_createForOfIteratorHelperLoose)
+// Module 10868 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import result from "result";
@@ -136,7 +136,7 @@ function isMessageRenderable(components) {
       if (value.type === require(1882) /* PermissionOverwriteType */.ComponentType.CONTENT_INVENTORY_ENTRY) {
         let tmp4 = require;
         let tmp5 = dependencyMap;
-        let obj = require(7847) /* getMissingIconURL */;
+        let obj = require(7883) /* getMissingIconURL */;
         obj = {};
         obj = { contentInventoryEntry: value.contentInventoryEntry };
         obj.component = obj;
@@ -170,7 +170,7 @@ export default function useLoadMessageContentEntries(arg0) {
   const tmp7 = first(first1.useState(new Set()), 2);
   first1 = tmp7[0];
   let _isNativeReflectConstruct = tmp7[1];
-  let obj = _require(7850);
+  let obj = _require(7886);
   const colorStore = obj.useColorStore((palette) => palette.palette);
   const callback = first1.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)

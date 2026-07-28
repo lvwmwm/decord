@@ -1,10 +1,10 @@
-// Module ID: 9146
-// Function ID: 71824
+// Module ID: 9190
+// Function ID: 71975
 // Name: EyeSlashIcon
-// Dependencies: [31, 33, 689, 3834, 8302, 2]
+// Dependencies: [31, 33, 689, 3868, 8340, 2]
 // Exports: EyeSlashIcon
 
-// Module 9146 (EyeSlashIcon)
+// Module 9190 (EyeSlashIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const EyeSlashIcon = function EyeSlashIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8302) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8340) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8302) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8340) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

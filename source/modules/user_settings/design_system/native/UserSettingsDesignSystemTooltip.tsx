@@ -1,10 +1,10 @@
-// Module ID: 14513
-// Function ID: 110854
+// Module ID: 14557
+// Function ID: 111027
 // Name: useCanRotate
-// Dependencies: [57, 31, 27, 33, 4131, 8105, 8369, 4544, 5502, 4127, 5121, 5449, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 8143, 8407, 4578, 5537, 4161, 5155, 5484, 2]
 // Exports: default
 
-// Module 14513 (useCanRotate)
+// Module 14557 (useCanRotate)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -60,10 +60,10 @@ function Content() {
     };
     return obj;
   }, items);
-  let obj = first(8369);
+  let obj = first(8407);
   const tooltip = obj.useTooltip(ref, memo);
   obj = {};
-  obj = { style: tmp.container, children: callback2(first(4544).Button, obj1) };
+  obj = { style: tmp.container, children: callback2(first(4578).Button, obj1) };
   obj1 = {
     ref,
     onPress() {
@@ -73,7 +73,7 @@ function Content() {
     text: str,
     size: "md"
   };
-  const items1 = [callback2(View, obj), callback2(first(5502).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), callback2(first(5502).TableSwitchRow, { label: "Enable Bottom Position", value: first1, onValueChange: tmp7[1] }), callback2(TooltipNote, {})];
+  const items1 = [callback2(View, obj), callback2(first(5537).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), callback2(first(5537).TableSwitchRow, { label: "Enable Bottom Position", value: first1, onValueChange: tmp7[1] }), callback2(TooltipNote, {})];
   obj.children = items1;
   return callback3(closure_6, obj);
 }
@@ -94,8 +94,8 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/use
 export default function UserSettingsDesignSystemTooltip() {
   let obj = { style: callback4().flex, bottom: true };
   obj = { children: callback2(Content, {}) };
-  obj.children = callback2(require(5449) /* Layer */.LayerScope, obj);
-  return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj.children = callback2(require(5484) /* Layer */.LayerScope, obj);
+  return callback2(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };
 export { useCanRotate };
 export { TooltipNote };

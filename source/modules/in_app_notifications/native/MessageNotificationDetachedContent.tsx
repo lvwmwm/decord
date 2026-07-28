@@ -1,10 +1,10 @@
-// Module ID: 10322
-// Function ID: 79768
+// Module ID: 10362
+// Function ID: 79897
 // Name: MessageNotificationDetachedContent
-// Dependencies: [31, 27, 10201, 33, 4131, 10241, 1212, 3992, 4132, 10323, 10324, 2]
+// Dependencies: [31, 27, 10241, 33, 4165, 10281, 1212, 4026, 4166, 10363, 10364, 2]
 // Exports: MessageNotificationDetachedContent
 
-// Module 10322 (MessageNotificationDetachedContent)
+// Module 10362 (MessageNotificationDetachedContent)
 import result from "result";
 import { Keyboard } from "get ActivityIndicator";
 import { DEFAULT_ANIMATION_TIMING } from "set";

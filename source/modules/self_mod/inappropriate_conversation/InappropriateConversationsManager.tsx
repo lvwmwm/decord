@@ -1,9 +1,9 @@
-// Module ID: 16574
-// Function ID: 129244
+// Module ID: 16614
+// Function ID: 129405
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 10210, 4271, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 10250, 4305, 5112, 2]
 
-// Module 16574 (_isNativeReflectConstruct)
+// Module 16614 (_isNativeReflectConstruct)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
 import clamp from "clamp";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -27,7 +27,7 @@ function fade(arg0, arg1) {
   const rounded2 = Math.round(100 * closure_8);
   if (rounded <= 0) {
     closure_8 = (rounded2 + rounded) / 100;
-    closure_7.volume = importDefault(4271)(closure_8, 0, 0.5);
+    closure_7.volume = importDefault(4305)(closure_8, 0, 0.5);
   }
   clearInterval(c10);
   let tmp9 = 0 === rounded1;

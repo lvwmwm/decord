@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 90003
+// Module ID: 11610
+// Function ID: 90154
 // Name: ModalType
 // Dependencies: [31, 653, 675, 2]
 // Exports: useLogPowerupModalOpened
 
-// Module 11571 (ModalType)
+// Module 11610 (ModalType)
 import result from "result";
 import { AnalyticEvents } from "ME";
 

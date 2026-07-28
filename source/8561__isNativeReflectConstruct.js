@@ -1,18 +1,17 @@
 // Module ID: 8561
-// Function ID: 68032
+// Function ID: 67933
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 8562, 33, 8471, 8478, 8479, 8485, 8564, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8562, 8545, 8546]
 
 // Module 8561 (_isNativeReflectConstruct)
-import closure_3 from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
 import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
-import tmp4 from "_isNativeReflectConstruct";
+import tmp3 from "_isNativeReflectConstruct";
 
 const require = arg1;
 function _isNativeReflectConstruct() {
@@ -24,6 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp4.displayName = "Text";
+tmp3.displayName = "FeFlood";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { floodColor: "black", floodOpacity: 1 });
 
-export default tmp4;
+export default tmp3;

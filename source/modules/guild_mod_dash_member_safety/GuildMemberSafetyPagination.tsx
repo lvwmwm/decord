@@ -1,10 +1,10 @@
-// Module ID: 5749
-// Function ID: 49892
+// Module ID: 5759
+// Function ID: 49748
 // Name: createDefaultMemberSafetyPaginationState
-// Dependencies: [57, 6, 7, 1918, 5725, 2]
+// Dependencies: [57, 6, 7, 1918, 5735, 2]
 // Exports: getSearchChunkLimit
 
-// Module 5749 (createDefaultMemberSafetyPaginationState)
+// Module 5759 (createDefaultMemberSafetyPaginationState)
 import _slicedToArray from "_slicedToArray";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -12,7 +12,7 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function createDefaultMemberSafetyPaginationState() {
-  const obj = { pageSize: items[0], currentPage: 1, continuationToken: null, sort: require(5725) /* result */.OrderBy.ORDER_BY_UNSPECIFIED, elasticSearchCursor: null };
+  const obj = { pageSize: items[0], currentPage: 1, continuationToken: null, sort: require(5735) /* result */.OrderBy.ORDER_BY_UNSPECIFIED, elasticSearchCursor: null };
   return obj;
 }
 let items = [12, 25, 50, 100];

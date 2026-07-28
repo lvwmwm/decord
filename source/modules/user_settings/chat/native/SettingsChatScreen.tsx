@@ -1,10 +1,10 @@
-// Module ID: 14353
-// Function ID: 109959
+// Module ID: 14397
+// Function ID: 110132
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [31, 27, 1850, 3783, 7697, 653, 33, 4131, 689, 1456, 624, 3777, 4127, 1212, 5166, 1273, 9569, 6448, 10059, 13613, 2]
+// Dependencies: [31, 27, 1850, 3817, 7733, 653, 33, 4165, 689, 1456, 624, 3811, 4161, 1212, 5200, 1273, 9609, 6484, 10099, 13657, 2]
 // Exports: default
 
-// Module 14353 (VideoUploadQualityNitroUpsell)
+// Module 14397 (VideoUploadQualityNitroUpsell)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,13 +32,13 @@ function VideoUploadQualityNitroUpsell() {
   obj = { variant: "text-xs/normal", color: "text-muted" };
   const intl = _require(1212).intl;
   obj.children = intl.format(_require(1212).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
-  const items1 = [callback(_require(4127).Text, obj), ];
+  const items1 = [callback(_require(4161).Text, obj), ];
   let tmp5 = !stateFromStores;
   if (tmp5) {
     obj1 = { style: tmp.card };
     const obj2 = { border: "none", shadow: "none" };
     const obj3 = { style: tmp.cardContent };
-    const obj4 = { style: tmp.cardIcon, source: importDefault(9569), size: _require(1273).Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.PRIMARY_400 };
+    const obj4 = { style: tmp.cardIcon, source: importDefault(9609), size: _require(1273).Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.PRIMARY_400 };
     const items2 = [callback(_require(1273).Icon, obj4), ];
     const obj5 = { variant: "text-sm/medium", color: "text-muted" };
     const intl2 = _require(1212).intl;
@@ -49,10 +49,10 @@ function VideoUploadQualityNitroUpsell() {
         }
     };
     obj5.children = intl2.format(_require(1212).t.uW1zul, obj6);
-    items2[1] = callback(_require(4127).Text, obj5);
+    items2[1] = callback(_require(4161).Text, obj5);
     obj3.children = items2;
     obj2.children = callback2(View, obj3);
-    obj1.children = callback(_require(5166).Card, obj2);
+    obj1.children = callback(_require(5200).Card, obj2);
     tmp5 = callback(View, obj1);
   }
   items1[1] = tmp5;
@@ -161,5 +161,5 @@ export default function SettingsChatScreen(route) {
     obj.scrollTarget = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(importDefault(13613), { node });
+  return callback(importDefault(13657), { node });
 };

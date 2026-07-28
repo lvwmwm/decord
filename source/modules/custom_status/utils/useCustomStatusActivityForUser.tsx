@@ -1,10 +1,10 @@
-// Module ID: 11897
-// Function ID: 92080
+// Module ID: 11940
+// Function ID: 92250
 // Name: useCustomStatusActivityForUser
-// Dependencies: [1194, 4218, 653, 566, 8018, 2]
+// Dependencies: [1194, 4252, 653, 566, 8056, 2]
 // Exports: default
 
-// Module 11897 (useCustomStatusActivityForUser)
+// Module 11940 (useCustomStatusActivityForUser)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ActivityTypes } from "ME";
@@ -17,8 +17,8 @@ export default function useCustomStatusActivityForUser(arg0) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getId() === closure_0);
   const obj = _require(566);
-  const customStatusActivity = _require(8018).useCustomStatusActivity();
-  const obj2 = _require(8018);
+  const customStatusActivity = _require(8056).useCustomStatusActivity();
+  const obj2 = _require(8056);
   const items1 = [closure_3];
   let stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_3.findActivity(closure_0, (type) => type.type === outer2_4.CUSTOM_STATUS));
   if (stateFromStores) {

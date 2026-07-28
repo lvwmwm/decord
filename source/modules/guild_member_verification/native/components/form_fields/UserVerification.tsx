@@ -1,10 +1,10 @@
-// Module ID: 9107
-// Function ID: 71594
+// Module ID: 9151
+// Function ID: 71745
 // Name: UserVerification
-// Dependencies: [31, 33, 4131, 3951, 9108, 4127, 1212, 2]
+// Dependencies: [31, 33, 4165, 3985, 9152, 4161, 1212, 2]
 // Exports: default
 
-// Module 9107 (UserVerification)
+// Module 9151 (UserVerification)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -26,17 +26,17 @@ export default function UserVerification(arg0) {
   } else {
     const platform = field.platform;
     let obj = {};
-    let tmp7 = platform === require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE;
+    let tmp7 = platform === require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE;
     if (tmp7) {
-      obj = { passesVerification: verification[require(undefined, 3951) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE], platform: require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE };
-      tmp7 = callback(importDefault(9108), obj);
-      const tmp5 = importDefault(9108);
+      obj = { passesVerification: verification[require(undefined, 3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE], platform: require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE };
+      tmp7 = callback(importDefault(9152), obj);
+      const tmp5 = importDefault(9152);
     }
     const items = [tmp7, , ];
-    obj = { passesVerification: verification[require(undefined, 3951) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL], platform: require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL };
-    items[1] = callback(importDefault(9108), obj);
+    obj = { passesVerification: verification[require(undefined, 3985) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL], platform: require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL };
+    items[1] = callback(importDefault(9152), obj);
     const obj1 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default" };
-    if (platform === require(3951) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE) {
+    if (platform === require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["jMh+TY"]);
     } else {
@@ -44,7 +44,7 @@ export default function UserVerification(arg0) {
       stringResult = intl.string(require(1212) /* getSystemLocale */.t.Vgv9ip);
     }
     obj1.children = stringResult;
-    items[2] = callback(require(4127) /* Text */.Text, obj1);
+    items[2] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items;
     return closure_5(closure_4, obj);
   }

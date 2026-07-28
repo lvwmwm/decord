@@ -1,10 +1,10 @@
-// Module ID: 11194
-// Function ID: 87095
+// Module ID: 11232
+// Function ID: 87214
 // Name: AppRowLabel
-// Dependencies: [57, 31, 27, 1347, 5669, 4130, 11185, 3759, 11156, 1455, 653, 1345, 33, 689, 11189, 4131, 4127, 1212, 11168, 7953, 10221, 3809, 5164, 11163, 1392, 9851, 11195, 10608, 566, 5676, 11196, 5085, 8174, 11197, 11172, 1557, 11198, 8056, 8759, 10862, 1450, 7955, 5668, 11200, 11199, 11201, 11202, 11204, 11205, 11164, 5674, 11206, 22, 4325, 5582, 11208, 11209, 8364, 480, 3947, 1334, 11210, 11211, 11213, 9171, 11215, 1327, 11221, 11222, 11224, 11227, 11228, 11190, 11229, 11151, 11230, 11234, 7952, 11183, 7967, 11235, 11219, 11236, 1360, 11237, 11238, 2]
+// Dependencies: [57, 31, 27, 1347, 5679, 4164, 11223, 3793, 11194, 1455, 653, 1345, 33, 689, 11227, 4165, 4161, 1212, 11206, 7990, 10261, 3843, 5198, 11201, 1392, 9891, 11233, 10646, 566, 5686, 11234, 5119, 8212, 11235, 11210, 1557, 11236, 8094, 8803, 10900, 1450, 7992, 5678, 11238, 11237, 11239, 11240, 11242, 11243, 11202, 5684, 11244, 22, 4359, 5617, 11246, 11247, 8402, 480, 3981, 1334, 11248, 11249, 11251, 9215, 11253, 1327, 11259, 11260, 11262, 11265, 11266, 11228, 11267, 11189, 11268, 11272, 7989, 11221, 8005, 11273, 11257, 11274, 1360, 11275, 11276, 2]
 // Exports: default
 
-// Module 11194 (AppRowLabel)
+// Module 11232 (AppRowLabel)
 import trackImpression from "trackImpression";
 import preload from "preload";
 import get_ActivityIndicator from "useEmbeddedActivityBackground";
@@ -34,18 +34,18 @@ function AppRowLabel(renderedName) {
   if (renderedName.showsPromoted) {
     let obj = { style: tmp.appRowLabelWithPromotedContainer };
     obj = { style: tmp.appRowLabelWithPromotedTextContainer, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
-    const items = [callback2(require(4127) /* Text */.Text, obj), ];
+    const items = [callback2(require(4161) /* Text */.Text, obj), ];
     const obj1 = { style: tmp.promotedLabel };
     const obj2 = { variant: "text-xxs/semibold", color: "text-muted" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj2.children = intl.string(require(1212) /* getSystemLocale */.t["/eVltv"]);
-    obj1.children = callback2(require(4127) /* Text */.Text, obj2);
+    obj1.children = callback2(require(4161) /* Text */.Text, obj2);
     items[1] = callback2(View, obj1);
     obj.children = items;
     let tmp5 = callback3(View, obj);
   } else {
     obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
-    tmp5 = callback2(require(4127) /* Text */.Text, obj);
+    tmp5 = callback2(require(4161) /* Text */.Text, obj);
   }
   return tmp5;
 }
@@ -141,7 +141,7 @@ function AppRow(isLastRow) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(11163) /* handleApplicationSelected */;
+  let obj = require(11201) /* handleApplicationSelected */;
   obj = { application: section.application, iconSource: obj.getAppLauncherIconSource(section.application), onPress: isLastRow.onPress, isFirstRow, isLastRow: flag };
   return callback2(BaseAppRow, obj);
 }
@@ -169,7 +169,7 @@ function ActivityRow(section) {
   let tmp3 = null != applicationIconSource;
   if (tmp3) {
     obj = { iconSource: applicationIconSource };
-    tmp3 = callback2(onPress(11168), obj);
+    tmp3 = callback2(onPress(11206), obj);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -190,7 +190,7 @@ function ActivityRow(section) {
     onPress(section);
   }, items1);
   const obj1 = { icon: tmp3, label: section.application.name, subLabel: memo, subLabelLineClamp: 1, start: flag, end: flag2, arrow: true, onPress: callback };
-  return callback2(section(5164).TableRow, obj1);
+  return callback2(section(5198).TableRow, obj1);
 }
 function ActivityItemTuple(arg0) {
   let containerWidth;
@@ -495,13 +495,13 @@ function RecommendationSectionHeader(arg0) {
   items[1] = tmp3;
   obj.style = items;
   obj.children = children;
-  return closure_19(require(4127) /* Text */.Text, obj);
+  return closure_19(require(4161) /* Text */.Text, obj);
 }
 function getRecommendationItemsWithViewAll(arr, sectionName, section) {
   let COLLAPSED_LIST_ITEM_MAX = arg3;
   const _require = sectionName;
   if (arg3 === undefined) {
-    COLLAPSED_LIST_ITEM_MAX = _require(11219).COLLAPSED_LIST_ITEM_MAX;
+    COLLAPSED_LIST_ITEM_MAX = _require(11257).COLLAPSED_LIST_ITEM_MAX;
   }
   const importDefault = tmp;
   let bound;
@@ -514,7 +514,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section) {
     bound = Math.min(length, COLLAPSED_LIST_ITEM_MAX);
     dependencyMap = tmp13;
     items = [];
-    let obj = { type: _require(11199).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section, sectionName, numItems: length, numVisibleItems: bound };
+    let obj = { type: _require(11237).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section, sectionName, numItems: length, numVisibleItems: bound };
     items.push(obj);
     const substr = arr.slice(0, bound);
     const item = substr.forEach((application, sectionPosition) => {
@@ -530,7 +530,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section) {
       items.push(obj);
     });
     if (bound < length) {
-      obj = { type: _require(11199).AppLauncherHomeListItemType.VIEW_ALL, applications: arr.map((application) => application.application) };
+      obj = { type: _require(11237).AppLauncherHomeListItemType.VIEW_ALL, applications: arr.map((application) => application.application) };
       const _Set = Set;
       const set = new Set();
       obj.promotedApplicationIds = arr.reduce((add, showsPromoted) => {

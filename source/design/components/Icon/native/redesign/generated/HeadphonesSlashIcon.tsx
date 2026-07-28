@@ -1,10 +1,10 @@
-// Module ID: 8797
-// Function ID: 69658
+// Module ID: 8841
+// Function ID: 69809
 // Name: HeadphonesSlashIcon
-// Dependencies: [31, 33, 689, 3834, 8798, 2]
+// Dependencies: [31, 33, 689, 3868, 8842, 2]
 // Exports: HeadphonesSlashIcon
 
-// Module 8797 (HeadphonesSlashIcon)
+// Module 8841 (HeadphonesSlashIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const HeadphonesSlashIcon = function HeadphonesSlashIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8798) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8842) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8798) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8842) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

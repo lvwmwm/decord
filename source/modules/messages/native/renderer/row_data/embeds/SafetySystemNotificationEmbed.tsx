@@ -1,10 +1,10 @@
-// Module ID: 12325
-// Function ID: 95982
+// Module ID: 12368
+// Function ID: 96152
 // Name: createSafetySystemNotificationEmbed
-// Dependencies: [27, 653, 3713, 7571, 4601, 6698, 7670, 1212, 2]
+// Dependencies: [27, 653, 3747, 7607, 4635, 6734, 7706, 1212, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 12325 (createSafetySystemNotificationEmbed)
+// Module 12368 (createSafetySystemNotificationEmbed)
 import { Image } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 
@@ -25,7 +25,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
           type = first1.type;
         }
         if (type === MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION) {
-          let obj = require(6698) /* parseMessageEmbedForProps */;
+          let obj = require(6734) /* parseMessageEmbedForProps */;
           const parseMessageForPropsResult = obj.parseMessageForProps(message);
           if (null != parseMessageForPropsResult) {
             let tmp9;
@@ -33,13 +33,13 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (null != parseMessageForPropsResult.ctas) {
               let mapCtaToNativeDataResult;
               if (null != parseMessageForPropsResult.ctas[0]) {
-                mapCtaToNativeDataResult = require(6698) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[0], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
-                const obj2 = require(6698) /* parseMessageEmbedForProps */;
+                mapCtaToNativeDataResult = require(6734) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[0], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
+                const obj2 = require(6734) /* parseMessageEmbedForProps */;
               }
               let mapCtaToNativeDataResult1;
               if (null != parseMessageForPropsResult.ctas[1]) {
-                mapCtaToNativeDataResult1 = require(6698) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
-                const obj3 = require(6698) /* parseMessageEmbedForProps */;
+                mapCtaToNativeDataResult1 = require(6734) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
+                const obj3 = require(6734) /* parseMessageEmbedForProps */;
               }
               tmp10 = mapCtaToNativeDataResult1;
               tmp9 = mapCtaToNativeDataResult;
@@ -53,11 +53,11 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             }
             obj.titleText = str2;
             if ("danger" === parseMessageForPropsResult.icon) {
-              let tmp22 = 7571;
+              let tmp22 = 7607;
             } else {
-              tmp22 = 4601;
+              tmp22 = 4635;
             }
-            obj.titleIcon = require(7670) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(tmp22)));
+            obj.titleIcon = require(7706) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(tmp22)));
             const intl = require(1212) /* getSystemLocale */.intl;
             obj = {};
             const timestamp = parseMessageForPropsResult.timestamp;
@@ -65,10 +65,10 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (null != timestamp) {
               num8 = timestamp;
             }
-            const obj5 = require(7670) /* frozen */;
+            const obj5 = require(7706) /* frozen */;
             const tmp20 = importDefault;
-            const obj7 = importDefault(3713)();
-            obj.daysAgo = obj7.diff(importDefault(3713).unix(num8), "days");
+            const obj7 = importDefault(3747)();
+            obj.daysAgo = obj7.diff(importDefault(3747).unix(num8), "days");
             obj.subtitleText = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.eevFb6, obj);
             const body = parseMessageForPropsResult.body;
             if (null != body) {

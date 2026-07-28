@@ -1,9 +1,9 @@
-// Module ID: 9321
-// Function ID: 72885
+// Module ID: 9365
+// Function ID: 73036
 // Name: useEmojiPickerPremiumSearchUpsellViewed
-// Dependencies: [31, 27, 1850, 653, 1852, 33, 4131, 689, 675, 3777, 4099, 9253, 9254, 1273, 9322, 4127, 1212, 4661, 2]
+// Dependencies: [31, 27, 1850, 653, 1852, 33, 4165, 689, 675, 3811, 4133, 9297, 9298, 1273, 9366, 4161, 1212, 4695, 2]
 
-// Module 9321 (useEmojiPickerPremiumSearchUpsellViewed)
+// Module 9365 (useEmojiPickerPremiumSearchUpsellViewed)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -84,19 +84,19 @@ const memoResult = importAllResult.memo((useTier0UpsellContent) => {
   const tmp = callback2();
   useEmojiPickerPremiumSearchUpsellViewed(useTier0UpsellContent);
   let obj = { style: tmp.premiumSearchUpsellContent };
-  obj = { style: tmp.nitroIcon, source: importDefault(9322), disableColor: true, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj = { style: tmp.nitroIcon, source: importDefault(9366), disableColor: true, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { lineClamp: 2, variant: "text-sm/medium", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
   if (useTier0UpsellContent.useTier0UpsellContent) {
-    const obj1 = { planName: tmp7(3777).getTierDisplayNameByPlanId(PREMIUM_MONTH_TIER_0.PREMIUM_MONTH_TIER_0) };
+    const obj1 = { planName: tmp7(3811).getTierDisplayNameByPlanId(PREMIUM_MONTH_TIER_0.PREMIUM_MONTH_TIER_0) };
     let formatToPlainStringResult = intl.formatToPlainString(tmp7(1212).t.kWBwlJ, obj1);
-    const tmp7Result = tmp7(3777);
+    const tmp7Result = tmp7(3811);
   } else {
     formatToPlainStringResult = intl.string(tmp7(1212).t["5t3lw+"]);
   }
   obj.children = formatToPlainStringResult;
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   const tmp2 = useEmojiPickerPremiumSearchUpsellClick(useTier0UpsellContent);
   const tmp4 = closure_13;
@@ -114,12 +114,12 @@ const memoResult = importAllResult.memo((useTier0UpsellContent) => {
     stringResult = string(t.pj0XBN);
   }
   obj3.children = stringResult;
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
   obj2.children = items1;
   const tmp12 = closure_13;
   const tmp13 = callback;
   const tmp4Result = closure_13(View, obj);
-  return callback(View, { style: tmp.container, collapsable: false, children: closure_13(require(4661) /* PressableBase */.PressableOpacity, obj2) });
+  return callback(View, { style: tmp.container, collapsable: false, children: closure_13(require(4695) /* PressableBase */.PressableOpacity, obj2) });
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerPremiumSearchUpsell.tsx");
 

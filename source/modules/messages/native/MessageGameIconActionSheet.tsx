@@ -1,10 +1,10 @@
-// Module ID: 10946
-// Function ID: 85041
+// Module ID: 10984
+// Function ID: 85164
 // Name: MessageGameIconActionSheet
-// Dependencies: [31, 27, 4168, 653, 33, 4131, 477, 689, 566, 5187, 1273, 4127, 1212, 1921, 2]
+// Dependencies: [31, 27, 4202, 653, 33, 4165, 477, 689, 566, 5221, 1273, 4161, 1212, 1921, 2]
 // Exports: default
 
-// Module 10946 (MessageGameIconActionSheet)
+// Module 10984 (MessageGameIconActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -61,7 +61,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     const items1 = [callback(applicationId(1273).Icon, obj2), ];
     const obj4 = { style: tmp.gameDescriptionWrapper };
     const obj5 = { style: tmp.timestamp, variant: "text-xs/medium", color: "text-muted", children: applicationId.messageTimestamp };
-    const items2 = [callback(applicationId(4127).Text, obj5), ];
+    const items2 = [callback(applicationId(4161).Text, obj5), ];
     const obj6 = { variant: "text-sm/medium" };
     const intl = applicationId(1212).intl;
     const obj7 = { applicationName: stateFromStores.name };
@@ -70,13 +70,13 @@ export default function MessageGameIconActionSheet(applicationId) {
     const obj8 = { helpdeskArticle: importDefault(1921).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
     items3[2] = intl2.format(applicationId(1212).t.BPDKoA, obj8);
     obj6.children = items3;
-    items2[1] = callback2(applicationId(4127).Text, obj6);
+    items2[1] = callback2(applicationId(4161).Text, obj6);
     obj4.children = items2;
     items1[1] = callback2(View, obj4);
     obj1.children = items1;
     obj.children = callback2(View, obj1);
     obj.children = callback(View, obj);
-    tmp3Result = tmp3(applicationId(5187).BottomSheet, obj);
+    tmp3Result = tmp3(applicationId(5221).BottomSheet, obj);
     const obj13 = importDefault(1921);
     const tmp7 = callback2;
   }

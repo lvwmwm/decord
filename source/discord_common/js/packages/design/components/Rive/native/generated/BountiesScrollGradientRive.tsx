@@ -1,9 +1,9 @@
-// Module ID: 3912
-// Function ID: 32353
+// Module ID: 3946
+// Function ID: 32455
 // Name: BountiesScrollGradientRive
-// Dependencies: [29, 31, 33, 3860, 3913, 3911, 2]
+// Dependencies: [29, 31, 33, 3894, 3947, 3945, 2]
 
-// Module 3912 (BountiesScrollGradientRive)
+// Module 3946 (BountiesScrollGradientRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -25,16 +25,16 @@ let closure_8 = importAllResult.forwardRef(function BountiesScrollGradientRiveIn
   if (undefined !== defaultViewModelInstance) {
     tmp = defaultViewModelInstance;
   }
-  const obj = { ref, src: importDefault(3913), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine };
+  const obj = { ref, src: importDefault(3947), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine };
   const merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(require(3860) /* useObservedValue */.BaseRive, { ref, src: importDefault(3913), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
+  return jsx(require(3894) /* useObservedValue */.BaseRive, { ref, src: importDefault(3947), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
 });
 const forwardRefResult = importAllResult.forwardRef(function BountiesScrollGradientRiveWithBoundary(fallback, ref) {
   let obj = { fallback: fallback.fallback };
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_8 ref={arg1} />;
-  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollGradientRive.tsx");
 

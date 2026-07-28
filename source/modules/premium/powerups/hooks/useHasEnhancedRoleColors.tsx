@@ -1,10 +1,10 @@
-// Module ID: 4572
-// Function ID: 40100
+// Module ID: 4606
+// Function ID: 40215
 // Name: useHasEnhancedRoleColors
 // Dependencies: [1838, 653, 566, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 4572 (useHasEnhancedRoleColors)
+// Module 4606 (useHasEnhancedRoleColors)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

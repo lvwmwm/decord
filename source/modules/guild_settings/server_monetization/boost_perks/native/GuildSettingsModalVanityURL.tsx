@@ -1,10 +1,10 @@
-// Module ID: 16407
-// Function ID: 128068
+// Module ID: 16447
+// Function ID: 128229
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 16408, 1838, 8243, 653, 33, 4131, 689, 16409, 5087, 6695, 1212, 5992, 4127, 16283, 6670, 16410, 1456, 566, 5448, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 16448, 1838, 8281, 653, 33, 4165, 689, 16449, 5121, 6731, 1212, 6026, 4161, 16322, 6706, 16450, 1456, 566, 5483, 2]
 // Exports: default
 
-// Module 16407 (_isNativeReflectConstruct)
+// Module 16447 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import HeaderBackImage from "HeaderBackImage";
@@ -279,7 +279,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   if (null != stateFromStores) {
     obj = {};
     obj = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting: tmp6, errorDetails: tmp7, navigation, styles: tmp, contentContainerStyle: guildId.contentContainerStyle };
-    const items3 = [callback3(closure_18, obj), callback3(guildId(5448).NavScrim, {})];
+    const items3 = [callback3(closure_18, obj), callback3(guildId(5483).NavScrim, {})];
     obj.children = items3;
     tmp8 = callback4(closure_16, obj);
   }

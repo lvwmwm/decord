@@ -1,10 +1,10 @@
-// Module ID: 8805
-// Function ID: 69669
+// Module ID: 8849
+// Function ID: 69820
 // Name: useIsUserSecureFramesVerified
-// Dependencies: [1194, 4203, 8806, 8843, 566, 8846, 4195, 2]
+// Dependencies: [1194, 4237, 8850, 8887, 566, 8890, 4229, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
-// Module 8805 (useIsUserSecureFramesVerified)
+// Module 8849 (useIsUserSecureFramesVerified)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

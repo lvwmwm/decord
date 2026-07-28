@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 87863
+// Module ID: 11337
+// Function ID: 87982
 // Name: AppLauncherUserOption
-// Dependencies: [57, 31, 4123, 33, 4131, 689, 566, 11291, 1820, 4099, 11300, 1935, 11300, 1273, 11294, 6717, 11297, 4127, 2]
+// Dependencies: [57, 31, 4157, 33, 4165, 689, 566, 11329, 1820, 4133, 11338, 1935, 11338, 1273, 11332, 6753, 11335, 4161, 2]
 // Exports: default
 
-// Module 11299 (AppLauncherUserOption)
+// Module 11337 (AppLauncherUserOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,22 +86,22 @@ export default function AppLauncherUserOption(option) {
     obj = { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 };
     let tmp15 = jsx(option(1273).Avatar, { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 });
   } else {
-    const obj1 = { icon: jsx(option(6717).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
-    tmp15 = jsx(importDefault(11294), { icon: jsx(option(6717).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
-    const tmp13 = importDefault(11294);
+    const obj1 = { icon: jsx(option(6753).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
+    tmp15 = jsx(importDefault(11332), { icon: jsx(option(6753).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
+    const tmp13 = importDefault(11332);
   }
   obj.leading = tmp15;
   if (null != tmp6) {
     let obj2 = { guildId: guild_id, user: tmp6 };
-    let tmp19 = jsx(importDefault(11297), { guildId: guild_id, user: tmp6 });
+    let tmp19 = jsx(importDefault(11335), { guildId: guild_id, user: tmp6 });
   } else {
     tmp19 = null;
     if (null != first) {
       const obj3 = { variant: "text-md/medium", color: "text-default", children: first };
-      tmp19 = jsx(option(4127).Text, { variant: "text-md/medium", color: "text-default", children: first });
+      tmp19 = jsx(option(4161).Text, { variant: "text-md/medium", color: "text-default", children: first });
     }
   }
   obj.selectedItemName = tmp19;
   obj.autoFocus = autoFocus;
-  return tmp7(importDefault(11291), obj);
+  return tmp7(importDefault(11329), obj);
 };

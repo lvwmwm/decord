@@ -1,9 +1,9 @@
-// Module ID: 11902
-// Function ID: 92116
+// Module ID: 11945
+// Function ID: 92286
 // Name: getClampedMaxLines
-// Dependencies: [57, 31, 27, 5510, 1853, 33, 4131, 689, 3804, 5085, 1392, 477, 4127, 5150, 8045, 8998, 9849, 4099, 11903, 5482, 1212, 4661, 11246, 2]
+// Dependencies: [57, 31, 27, 5545, 1853, 33, 4165, 689, 3838, 5119, 1392, 477, 4161, 5184, 8083, 9042, 9889, 4133, 11946, 5517, 1212, 4695, 11284, 2]
 
-// Module 11902 (getClampedMaxLines)
+// Module 11945 (getClampedMaxLines)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -28,13 +28,13 @@ function EmojiImage(id) {
   if (animated === undefined) {
     animated = false;
   }
-  const AnimateEmoji = require(3804) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3838) /* explicitContentFromProto */.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj = { style: items };
   items = [{ height: size, width: size }, id.style];
   obj = {};
   const tmp2 = closure_8;
-  const tmp3 = importDefault(5085);
+  const tmp3 = importDefault(5119);
   obj = { id: id.emojiId };
   const obj3 = importDefault(1392);
   obj.animated = Boolean(animated) && setting;
@@ -99,7 +99,7 @@ function TextStatusContent(arg0) {
     }
     const items2 = [tmp14, text];
     obj.children = items2;
-    return callback3(require(4127) /* Text */.Text, obj);
+    return callback3(require(4161) /* Text */.Text, obj);
   } else {
     obj1 = require(477) /* set */;
     const obj9 = {};
@@ -116,7 +116,7 @@ function EmojiOnlyStatusContent(arg0) {
   let emoji;
   let size;
   ({ emoji, size } = arg0);
-  const AnimateEmoji = require(3804) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3838) /* explicitContentFromProto */.AnimateEmoji;
   let id;
   const setting = AnimateEmoji.useSetting();
   if (null != emoji) {
@@ -150,7 +150,7 @@ function EmojiOnlyStatusContent(arg0) {
     str = name;
   }
   obj1.name = str;
-  obj.children = tmp13(importDefault(5150), obj1);
+  obj.children = tmp13(importDefault(5184), obj1);
   return tmp11(tmp12, obj);
 }
 ({ PixelRatio: closure_5, View: closure_6 } = get_ActivityIndicator);
@@ -182,7 +182,7 @@ let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   return obj;
 });
 let closure_12 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_13 = { [arg1(5510).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_13 = { [arg1(5545).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_14 = _createForOfIteratorHelperLoose.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   let customStatusActivity;
@@ -246,9 +246,9 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   const textVariant = tmp3.textVariant;
   const emojiOnlyEmojiSize = tmp3.emojiOnlyEmojiSize;
   ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical } = tmp3);
-  obj = _require(8045);
+  obj = _require(8083);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj1 = _require(8998);
+  let obj1 = _require(9042);
   if (undefined === previewText) {
     let state;
     if (null != customStatusActivity) {
@@ -328,7 +328,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   obj = { top: statusBubblePaddingVertical, bottom: statusBubblePaddingVertical, left: statusBubblePaddingHorizontal, right: statusBubblePaddingHorizontal };
   const ref = textVariant.useRef(null);
   const imperativeHandle = textVariant.useImperativeHandle(arg1, () => ref.current);
-  let obj4 = _require(9849);
+  let obj4 = _require(9889);
   const scaledTextLineHeight = obj4.useScaledTextLineHeight(textVariant);
   if (!tmp7) {
     if (!tmp15) {
@@ -433,14 +433,14 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
         tmp59 = obj10;
       }
       obj9.style = tmp59;
-      obj8.children = callback2(_require(11246).CirclePlusIcon, obj9);
+      obj8.children = callback2(_require(11284).CirclePlusIcon, obj9);
       const items8 = [callback2(trackUserProfileAction, obj8), , ];
       const obj11 = { style: tmp2.addStatusIconSpacer };
       items8[1] = callback2(trackUserProfileAction, obj11);
       items8[2] = stringResult;
       obj6.children = items8;
-      obj4.children = tmp43(_require(4127).Text, obj6);
-      let tmp26Result = tmp37(_require(4661).PressableOpacity, obj4);
+      obj4.children = tmp43(_require(4161).Text, obj6);
+      let tmp26Result = tmp37(_require(4695).PressableOpacity, obj4);
       obj21 = _require(477);
       const tmp55 = trackUserProfileAction;
     } else {
@@ -464,7 +464,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
     obj13.onPress = handlePressAddOrEditStatus;
     obj13.hitSlop = obj;
     obj13.children = renderStatusContent();
-    tmp26Result = callback2(_require(4661).PressableOpacity, obj13);
+    tmp26Result = callback2(_require(4695).PressableOpacity, obj13);
   } else {
     if (null != onPressTruncatedStatus) {
       if (tmp16[0]) {
@@ -490,7 +490,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
           obj14.onPress = onPressTruncatedStatus;
           obj14.hitSlop = obj;
           obj14.children = renderStatusContent();
-          tmp26Result = callback2(_require(4661).PressableOpacity, obj14);
+          tmp26Result = callback2(_require(4695).PressableOpacity, obj14);
           const tmp26 = callback2;
         }
       }

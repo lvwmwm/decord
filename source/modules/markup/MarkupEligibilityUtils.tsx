@@ -1,10 +1,10 @@
-// Module ID: 7804
-// Function ID: 61951
+// Module ID: 7840
+// Function ID: 62041
 // Name: isMessageNewerThanImprovedMarkdownEpoch
 // Dependencies: [21, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 7804 (isMessageNewerThanImprovedMarkdownEpoch)
+// Module 7840 (isMessageNewerThanImprovedMarkdownEpoch)
 const result = require("set").fileFinishedImporting("modules/markup/MarkupEligibilityUtils.tsx");
 
 export const isMessageNewerThanImprovedMarkdownEpoch = function isMessageNewerThanImprovedMarkdownEpoch(timestamp) {

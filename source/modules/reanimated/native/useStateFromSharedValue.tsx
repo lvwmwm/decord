@@ -1,10 +1,10 @@
-// Module ID: 8056
-// Function ID: 64102
+// Module ID: 8094
+// Function ID: 64212
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 682, 3992, 2]
+// Dependencies: [57, 31, 682, 4026, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8056 (_createForOfIteratorHelperLoose)
+// Module 8094 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -127,12 +127,12 @@ function useListenerSubscription(activeIndex, result) {
     listeners.add(dependencyMap);
     if (1 === value.listeners.size) {
       const result = outer1_5.set(activeIndex, value);
-      let obj = activeIndex(3992);
+      let obj = activeIndex(4026);
       let fn = function s(arg0, arg1, addListener) {
         let closure_0 = arg1;
         addListener.addListener(arg0, (arg0) => callback(table[3]).runOnJS(callback)(arg0));
       };
-      obj = { runOnJS: activeIndex(3992).runOnJS };
+      obj = { runOnJS: activeIndex(4026).runOnJS };
       fn.__closure = obj;
       fn.__workletHash = 568027628003;
       fn.__initData = outer1_6;

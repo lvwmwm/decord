@@ -1,9 +1,9 @@
-// Module ID: 5829
-// Function ID: 51202
+// Module ID: 5839
+// Function ID: 51058
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 5830, 1348, 4350, 653, 1362, 4352, 5834, 566, 686, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 5840, 1348, 4384, 653, 1362, 4386, 5844, 566, 686, 2]
 
-// Module 5829 (_isNativeReflectConstruct)
+// Module 5839 (_isNativeReflectConstruct)
 import closure_3 from "set";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -129,14 +129,14 @@ function processMessage(message) {
           let obj = {};
           obj.state = obj.LOADED;
           ({ channel_id, id } = referenced_message);
-          obj.message = require(4352) /* createMinimalMessageRecord */.createMessageRecord(referenced_message);
+          obj.message = require(4386) /* createMinimalMessageRecord */.createMessageRecord(referenced_message);
           const result = tmp4.set(channel_id, id, obj);
           flag2 = true;
           if (message.type === constants.THREAD_STARTER_MESSAGE) {
             processMessage(referenced_message);
             flag2 = true;
           }
-          const obj4 = require(4352) /* createMinimalMessageRecord */;
+          const obj4 = require(4386) /* createMinimalMessageRecord */;
         } else {
           obj = {};
           obj.state = obj.DELETED;
@@ -525,7 +525,7 @@ obj = {
         if (value.state === obj.LOADED) {
           obj = {};
           obj.state = obj.LOADED;
-          obj.message = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj.message = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = tmp4.set(channelId, messageId, obj);
         }
       }
@@ -564,7 +564,7 @@ obj = {
         if (value.state === obj.LOADED) {
           obj = {};
           obj.state = obj.LOADED;
-          obj.message = require(4352) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
+          obj.message = require(4386) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
           const result = tmp4.set(channel_id, id, obj);
         }
       }

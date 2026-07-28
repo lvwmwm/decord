@@ -1,10 +1,10 @@
-// Module ID: 7878
-// Function ID: 62825
+// Module ID: 7914
+// Function ID: 62915
 // Name: ANALYTICS_NAME
 // Dependencies: [653, 664, 1212, 1387, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 7878 (ANALYTICS_NAME)
+// Module 7914 (ANALYTICS_NAME)
 import { NOTIFICATIONS_INBOX } from "ME";
 
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };

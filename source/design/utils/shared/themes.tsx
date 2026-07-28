@@ -1,10 +1,10 @@
-// Module ID: 3841
-// Function ID: 32027
+// Module ID: 3875
+// Function ID: 32129
 // Name: isThemeLight
 // Dependencies: [482, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 3841 (isThemeLight)
+// Module 3875 (isThemeLight)
 import { ThemeTypes } from "sum";
 
 const result = require("set").fileFinishedImporting("design/utils/shared/themes.tsx");

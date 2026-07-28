@@ -1,10 +1,10 @@
-// Module ID: 16367
-// Function ID: 127490
+// Module ID: 16406
+// Function ID: 127646
 // Name: GuildSettingsModalSecurity
-// Dependencies: [31, 27, 1391, 1838, 1850, 8243, 653, 33, 4131, 689, 566, 8242, 4127, 1212, 4544, 13758, 5448, 2]
+// Dependencies: [31, 27, 1391, 1838, 1850, 8281, 653, 33, 4165, 689, 566, 8280, 4161, 1212, 4578, 13802, 5483, 2]
 // Exports: default
 
-// Module 16367 (GuildSettingsModalSecurity)
+// Module 16406 (GuildSettingsModalSecurity)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "isGuildOwner";
@@ -78,7 +78,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   const obj2 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary" };
   const intl = guildId(1212).intl;
   obj2.children = intl.string(guildId(1212).t.Wi9LEV);
-  const items4 = [callback2(guildId(4127).Text, obj2), , ];
+  const items4 = [callback2(guildId(4161).Text, obj2), , ];
   const obj3 = { style: tmp.button };
   const obj4 = {};
   const intl2 = guildId(1212).intl;
@@ -98,7 +98,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   obj4.variant = str;
   obj4.onPress = callback;
   obj4.shrink = true;
-  obj3.children = callback2(guildId(4544).Button, obj4);
+  obj3.children = callback2(guildId(4578).Button, obj4);
   items4[1] = callback2(closure_4, obj3);
   let tmp17 = null;
   if (null != stateFromStores) {
@@ -108,24 +108,24 @@ export default function GuildSettingsModalSecurity(guildId) {
       const obj5 = { variant: "text-sm/normal", color: "text-feedback-critical" };
       const intl3 = guildId(1212).intl;
       obj5.children = intl3.string(guildId(1212).t["KG1V/E"]);
-      tmp17 = callback2(guildId(4127).Text, obj5);
+      tmp17 = callback2(guildId(4161).Text, obj5);
     }
   }
   items4[2] = tmp17;
   obj1.children = items4;
   const items5 = [callback3(closure_4, obj1), ];
   const obj6 = { style: tmp.center };
-  const items6 = [callback2(closure_5, { source: stateFromStores(13758), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [callback2(closure_5, { source: stateFromStores(13802), style: tmp.image, resizeMode: "contain" }), ];
   const obj8 = { style: tmp.infoWrapper };
   const obj9 = { variant: "text-sm/medium", color: "text-muted" };
   const intl4 = guildId(1212).intl;
   obj9.children = intl4.format(guildId(1212).t["FK0+iX"], {});
-  obj8.children = callback2(guildId(4127).Text, obj9);
+  obj8.children = callback2(guildId(4161).Text, obj9);
   items6[1] = callback2(closure_4, obj8);
   obj6.children = items6;
   items5[1] = callback3(closure_4, obj6);
   obj.children = items5;
-  const items7 = [callback3(closure_4, obj), callback2(guildId(5448).NavScrim, {})];
+  const items7 = [callback3(closure_4, obj), callback2(guildId(5483).NavScrim, {})];
   obj.children = items7;
   return callback3(closure_14, obj);
 };

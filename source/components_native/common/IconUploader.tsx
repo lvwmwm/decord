@@ -1,10 +1,10 @@
-// Module ID: 10126
-// Function ID: 78390
+// Module ID: 10166
+// Function ID: 78519
 // Name: IconUploader
-// Dependencies: [5, 31, 27, 653, 33, 4131, 4675, 5513, 1392, 10127, 4661, 1212, 2]
+// Dependencies: [5, 31, 27, 653, 33, 4165, 4709, 5548, 1392, 10167, 4695, 1212, 2]
 // Exports: default
 
-// Module 10126 (IconUploader)
+// Module 10166 (IconUploader)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -60,9 +60,9 @@ export default function IconUploader(disabled) {
   }
   if ("guild" === str) {
     if (!tmp8) {
-      obj = { style: iconStyle, icon: fnResult, value: name, size: require(5513) /* makeSizeStyle */.GuildIconSizes.XLARGE, animate: true };
-      let tmp7 = callback(importDefault(5513), obj);
-      const tmp12 = importDefault(5513);
+      obj = { style: iconStyle, icon: fnResult, value: name, size: require(5548) /* makeSizeStyle */.GuildIconSizes.XLARGE, animate: true };
+      let tmp7 = callback(importDefault(5548), obj);
+      const tmp12 = importDefault(5548);
     }
     tmp8 = null == icon && null == name;
   } else {
@@ -77,7 +77,7 @@ export default function IconUploader(disabled) {
   const items1 = [tmp7, ];
   let tmp16 = null;
   if (!flag) {
-    const obj2 = { style: tmp.uploadIcon, source: importDefault(10127) };
+    const obj2 = { style: tmp.uploadIcon, source: importDefault(10167) };
     tmp16 = callback(closure_6, obj2);
   }
   items1[1] = tmp16;
@@ -93,7 +93,7 @@ export default function IconUploader(disabled) {
       return _handleChangeIcon(...arguments);
     };
     obj4.children = tmp14Result;
-    obj3.children = callback(require(4661) /* PressableBase */.PressableOpacity, obj4);
+    obj3.children = callback(require(4695) /* PressableBase */.PressableOpacity, obj4);
     tmp22 = callback(closure_5, obj3);
   }
   return tmp22;

@@ -1,10 +1,10 @@
-// Module ID: 8130
-// Function ID: 64854
+// Module ID: 8168
+// Function ID: 64964
 // Name: isValidImageAttachment
-// Dependencies: [31, 6014, 1348, 4350, 1850, 653, 4318, 3804, 1360, 1443, 1327, 4354, 1882, 4359, 21, 2]
+// Dependencies: [31, 6048, 1348, 4384, 1850, 653, 4352, 3838, 1360, 1443, 1327, 4388, 1882, 4393, 21, 2]
 // Exports: getEmbedColor, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostMediaThumbnail
 
-// Module 8130 (isValidImageAttachment)
+// Module 8168 (isValidImageAttachment)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -22,7 +22,7 @@ function isValidImageAttachment(filename) {
     return false;
   } else {
     ({ height, width } = filename);
-    let tmp3 = require(4318) /* urlMatchesFileExtension */.isImageFile(filename.filename) && null != height;
+    let tmp3 = require(4352) /* urlMatchesFileExtension */.isImageFile(filename.filename) && null != height;
     if (tmp3) {
       tmp3 = height > 0;
     }
@@ -40,8 +40,8 @@ function isValidVideoAttachment(filename) {
   if (tmp) {
     let isVideoFileResult = null != filename;
     if (isVideoFileResult) {
-      isVideoFileResult = require(4318) /* urlMatchesFileExtension */.isVideoFile(filename.filename);
-      const obj = require(4318) /* urlMatchesFileExtension */;
+      isVideoFileResult = require(4352) /* urlMatchesFileExtension */.isVideoFile(filename.filename);
+      const obj = require(4352) /* urlMatchesFileExtension */;
     }
     if (isVideoFileResult) {
       isVideoFileResult = null != filename.proxy_url;
@@ -60,7 +60,7 @@ function isMediaAttachment(arg0) {
 function getForumPostMedia(attachments, InlineAttachmentMedia) {
   let setting = InlineAttachmentMedia;
   if (InlineAttachmentMedia === undefined) {
-    InlineAttachmentMedia = require(3804) /* explicitContentFromProto */.InlineAttachmentMedia;
+    InlineAttachmentMedia = require(3838) /* explicitContentFromProto */.InlineAttachmentMedia;
     setting = InlineAttachmentMedia.getSetting();
   }
   if (setting) {
@@ -150,14 +150,14 @@ function getForumPostMedia(attachments, InlineAttachmentMedia) {
   }
 }
 function useForumPostMedia(firstMessage) {
-  const InlineAttachmentMedia = require(3804) /* explicitContentFromProto */.InlineAttachmentMedia;
+  const InlineAttachmentMedia = require(3838) /* explicitContentFromProto */.InlineAttachmentMedia;
   return getForumPostMedia(firstMessage, InlineAttachmentMedia.useSetting());
 }
 function useForumPostEmbeds(embeds, hasSpoilerEmbeds) {
   const _require = hasSpoilerEmbeds;
-  const InlineEmbedMedia = _require(3804).InlineEmbedMedia;
+  const InlineEmbedMedia = _require(3838).InlineEmbedMedia;
   const setting = InlineEmbedMedia.useSetting();
-  const RenderEmbeds = _require(3804).RenderEmbeds;
+  const RenderEmbeds = _require(3838).RenderEmbeds;
   if (null == embeds) {
     return [];
   } else {
@@ -234,7 +234,7 @@ function useForumPostEmbeds(embeds, hasSpoilerEmbeds) {
   }
 }
 function useForumPostComponentsMedia(components) {
-  const InlineEmbedMedia = require(3804) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = require(3838) /* explicitContentFromProto */.InlineEmbedMedia;
   if (null == components) {
     return [];
   } else {
@@ -242,10 +242,10 @@ function useForumPostComponentsMedia(components) {
     if (tmp) {
       if (null != components) {
         const _Array = Array;
-        const obj = require(4354) /* _createForOfIteratorHelperLoose */;
-        const flattenComponentsResult = require(4354) /* _createForOfIteratorHelperLoose */.flattenComponents(components);
-        const arr = Array.from(require(4354) /* _createForOfIteratorHelperLoose */.flattenComponents(components).values());
-        let found = Array.from(require(4354) /* _createForOfIteratorHelperLoose */.flattenComponents(components).values()).flatMap((type) => {
+        const obj = require(4388) /* _createForOfIteratorHelperLoose */;
+        const flattenComponentsResult = require(4388) /* _createForOfIteratorHelperLoose */.flattenComponents(components);
+        const arr = Array.from(require(4388) /* _createForOfIteratorHelperLoose */.flattenComponents(components).values());
+        let found = Array.from(require(4388) /* _createForOfIteratorHelperLoose */.flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (outer1_0(outer1_2[12]).ComponentType.THUMBNAIL === type) {
             let spoiler = type.spoiler;
@@ -268,7 +268,7 @@ function useForumPostComponentsMedia(components) {
             return null;
           }
         }).filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-        const flatMapResult = Array.from(require(4354) /* _createForOfIteratorHelperLoose */.flattenComponents(components).values()).flatMap((type) => {
+        const flatMapResult = Array.from(require(4388) /* _createForOfIteratorHelperLoose */.flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (outer1_0(outer1_2[12]).ComponentType.THUMBNAIL === type) {
             let spoiler = type.spoiler;
@@ -299,7 +299,7 @@ function useForumPostComponentsMedia(components) {
 }
 function unfurledMediaToForumPostMediaAttachment(width, spoiler) {
   let height;
-  let obj = require(4359) /* toContentScanMetadata */;
+  let obj = require(4393) /* toContentScanMetadata */;
   const unfurledMediaItemType = obj.getUnfurledMediaItemType(width);
   let tmp2 = null;
   if ("INVALID" !== unfurledMediaItemType) {
@@ -325,7 +325,7 @@ function unfurledMediaToForumPostMediaAttachment(width, spoiler) {
     }
     obj.contentScanVersion = version;
     obj.flags = 0;
-    obj.srcIsAnimated = require(1360) /* hasFlag */.hasFlag(width.flags, require(4359) /* toContentScanMetadata */.UnfurledMediaItemFlags.IS_ANIMATED);
+    obj.srcIsAnimated = require(1360) /* hasFlag */.hasFlag(width.flags, require(4393) /* toContentScanMetadata */.UnfurledMediaItemFlags.IS_ANIMATED);
     obj.isVideo = "VIDEO" === unfurledMediaItemType;
     obj.mediaIndex = 0;
     obj.srcUnfurledMediaItem = width;

@@ -1,10 +1,10 @@
-// Module ID: 15254
-// Function ID: 116101
+// Module ID: 15294
+// Function ID: 116260
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 5750, 1348, 1838, 4326, 8108, 33, 4131, 689, 566, 4321, 8122, 1212, 4099, 15255, 1935, 4594, 5164, 1273, 10247, 4127, 5753, 1557, 15256, 8330, 6619, 2]
+// Dependencies: [57, 31, 27, 5760, 1348, 1838, 4360, 8146, 33, 4165, 689, 566, 4355, 8160, 1212, 4133, 15295, 1935, 4628, 5198, 1273, 10287, 4161, 5763, 1557, 15296, 8368, 6655, 2]
 // Exports: default
 
-// Module 15254 (_createForOfIteratorHelperLoose)
+// Module 15294 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "useModalDismissGuardRefreshControl";
@@ -234,9 +234,9 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   let obj1 = navigation(566);
   const items2 = [closure_10];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_10.getCustomGuildScore(guildId));
-  const numberToCustomScoreResult = navigation(8122).numberToCustomScore(stateFromStores1);
+  const numberToCustomScoreResult = navigation(8160).numberToCustomScore(stateFromStores1);
   React = numberToCustomScoreResult;
-  let obj3 = navigation(8122);
+  let obj3 = navigation(8160);
   const items3 = [_isNativeReflectConstruct];
   guildChannels = navigation(566).useStateFromStoresObject(items3, () => outer1_6.getGuild(guildId)).guildChannels;
   const items4 = [numberToCustomScoreResult, guildChannels];
@@ -455,6 +455,6 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   obj.renderItem = callback;
   obj.data = memo;
   obj.keyExtractor = keyExtractor;
-  obj.children = callback(navigation(6619).AnimatedFlashList, obj);
+  obj.children = callback(navigation(6655).AnimatedFlashList, obj);
   return callback(guildChannels, obj);
 };

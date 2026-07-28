@@ -1,9 +1,9 @@
-// Module ID: 10477
-// Function ID: 81289
+// Module ID: 10515
+// Function ID: 81410
 // Name: areParticipantsEqual
-// Dependencies: [57, 31, 27, 1347, 4144, 1194, 4178, 1907, 4953, 10456, 10174, 4149, 33, 4131, 1273, 689, 10179, 22, 10448, 10478, 566, 4324, 10479, 10482, 10492, 9981, 10508, 10539, 10444, 10609, 3835, 7850, 8284, 10463, 10459, 10462, 1450, 477, 8105, 2]
+// Dependencies: [57, 31, 27, 1347, 4178, 1194, 4212, 1907, 4987, 10494, 10214, 4183, 33, 4165, 1273, 689, 10219, 22, 10486, 10516, 566, 4358, 10517, 10520, 10530, 10021, 10546, 10577, 10482, 10647, 3869, 7886, 8322, 10501, 10497, 10500, 1450, 477, 8143, 2]
 
-// Module 10477 (areParticipantsEqual)
+// Module 10515 (areParticipantsEqual)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "hasFetchedColors";
 import get_ActivityIndicator from "ActivityTileInner";
@@ -271,7 +271,7 @@ let closure_21 = importAllResult.memo((channel) => {
     }
     const obj4 = outer1_0(outer1_2[29]);
   })(obj);
-  let obj2 = require(3835) /* map */;
+  let obj2 = require(3869) /* map */;
   const token = obj2.useToken(importDefault(689).unsafe_rawColors.PRIMARY_800);
   if (null != tmp5) {
     const user = tmp5.user;
@@ -296,15 +296,15 @@ let closure_21 = importAllResult.memo((channel) => {
     obj.style = items1;
     if (tmp10) {
       if (!tmp4) {
-        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10492) /* resetIOSScrollZoom */.ResizeMode.COVER };
-        let tmp18 = callback3(importDefault(10508), obj2);
-        const tmp16 = importDefault(10508);
+        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10530) /* resetIOSScrollZoom */.ResizeMode.COVER };
+        let tmp18 = callback3(importDefault(10546), obj2);
+        const tmp16 = importDefault(10546);
       }
       let items2 = [tmp18, ];
       let tmp22 = null;
       if (tmp3) {
         let obj3 = { style: tmp.thermalAlertIconContainer };
-        let obj4 = { style: tmp.thermalAlertIcon, source: importDefault(8284), color: tmp.thermalAlertIcon.color };
+        let obj4 = { style: tmp.thermalAlertIcon, source: importDefault(8322), color: tmp.thermalAlertIcon.color };
         obj3.children = callback3(require(1273) /* Button */.Icon, obj4);
         tmp22 = callback3(closure_5, obj3);
       }
@@ -326,13 +326,13 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10463) /* useIsViewingActivity */;
+  let obj = require(10501) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10459) /* useShouldForcePipOrientation */;
+  let obj2 = require(10497) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp4 = importDefault(10462)(obj);
+  const tmp4 = importDefault(10500)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background };
   obj2 = { activeOpacity: 0.7 };
   const obj3 = {};

@@ -1,5 +1,5 @@
 // Module ID: 1765
-// Function ID: 19693
+// Function ID: 19697
 // Name: finishScreenTransition
 // Dependencies: [1766, 1770]
 

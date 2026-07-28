@@ -1,9 +1,9 @@
-// Module ID: 15128
-// Function ID: 115166
+// Module ID: 15168
+// Function ID: 115325
 // Name: getStageChannelAccessibilityProps
-// Dependencies: [31, 27, 5752, 3759, 4143, 4326, 4204, 1353, 653, 10223, 33, 1212, 4131, 689, 566, 4951, 15129, 4964, 4958, 4620, 9073, 1820, 6653, 9029, 4321, 10178, 15027, 15119, 15032, 2]
+// Dependencies: [31, 27, 5762, 3793, 4177, 4360, 4238, 1353, 653, 10263, 33, 1212, 4165, 689, 566, 4985, 15169, 4998, 4992, 4654, 9117, 1820, 6689, 9073, 4355, 10218, 15071, 15159, 15076, 2]
 
-// Module 15128 (getStageChannelAccessibilityProps)
+// Module 15168 (getStageChannelAccessibilityProps)
 import importAllResult from "result";
 import { View } from "LimitAndDurationInfo";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -67,12 +67,12 @@ const memoResult = importAllResult.memo((channel) => {
   }, items1);
   ({ stageInstance, hasUnread, hasMedia, collapsed } = stateFromStoresObject);
   ({ resolvedUnreadSetting, voiceStates, locked } = stateFromStoresObject);
-  let arr3 = importDefault(15129)(channel.guild_id)[channel.id];
+  let arr3 = importDefault(15169)(channel.guild_id)[channel.id];
   if (null == arr3) {
     arr3 = NO_VOICE_STATES;
   }
-  let obj1 = channel(4964);
-  const stageParticipantsCount = obj1.useStageParticipantsCount(channel.id, channel(4958).StageChannelParticipantNamedIndex.AUDIENCE);
+  let obj1 = channel(4998);
+  const stageParticipantsCount = obj1.useStageParticipantsCount(channel.id, channel(4992).StageChannelParticipantNamedIndex.AUDIENCE);
   const items2 = [channel];
   const sum = stageParticipantsCount + arr3.length;
   const items3 = [channel.id];
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo((channel) => {
   const callback1 = importAllResult.useCallback(() => {
     const result = channel(outer1_3[23]).openChannelLongPressActionSheet(channel.id);
   }, items3);
-  let obj2 = channel(10178);
+  let obj2 = channel(10218);
   let topic;
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   if (null != stageInstance) {
@@ -99,7 +99,7 @@ const memoResult = importAllResult.memo((channel) => {
   }
   obj = {};
   const tmp10 = jsx;
-  const tmp7 = importDefault(4321)(channel, false);
+  const tmp7 = importDefault(4355)(channel, false);
   const merged = Object.assign(getStageChannelAccessibilityProps({ channel, channelName: tmp7, userCount: sum }));
   obj["onPress"] = callback;
   obj["onLongPress"] = callback1;
@@ -115,7 +115,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj["resolvedUnreadSetting"] = resolvedUnreadSetting;
   obj["subtitle"] = topic;
   obj = { channel, isChannelSelected: selected, isChannelCollapsed: collapsed };
-  const tmp11 = importDefault(15027);
+  const tmp11 = importDefault(15071);
   const tmp13 = jsx;
   if (!hasMedia) {
     let tmp15 = channel.userLimit > 0;
@@ -126,12 +126,12 @@ const memoResult = importAllResult.memo((channel) => {
   }
   obj.enableConnectedUserLimit = hasMedia;
   obj.voiceStates = voiceStates;
-  obj["channelInfo"] = tmp13(importDefault(15119), obj);
+  obj["channelInfo"] = tmp13(importDefault(15159), obj);
   let tmp17 = arr3.length > 0;
   if (tmp17) {
     obj1 = { style: tmp.voiceStates };
     obj2 = { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount };
-    obj1.children = jsx(importDefault(15032), { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount });
+    obj1.children = jsx(importDefault(15076), { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount });
     tmp17 = <View style={tmp.voiceStates} />;
   }
   obj["children"] = tmp17;

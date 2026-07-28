@@ -1,10 +1,10 @@
-// Module ID: 11733
-// Function ID: 91089
+// Module ID: 11772
+// Function ID: 91240
 // Name: onCreateGuild
-// Dependencies: [5, 31, 27, 3952, 653, 11734, 9155, 33, 5049, 11504, 10864, 11735, 11783, 675, 480, 5087, 11710, 1198, 11737, 11739, 10024, 1212, 11747, 11748, 11784, 11765, 5517, 2]
+// Dependencies: [5, 31, 27, 3986, 653, 11773, 9199, 33, 5083, 11542, 10902, 11774, 11822, 675, 480, 5121, 11749, 1198, 11776, 11778, 10064, 1212, 11786, 11787, 11823, 11804, 5552, 2]
 // Exports: default
 
-// Module 11733 (onCreateGuild)
+// Module 11772 (onCreateGuild)
 import GuildTemplateId from "GuildTemplateId";
 import result from "result";
 import { Keyboard } from "set";
@@ -44,7 +44,7 @@ function getScreens() {
       return null;
     }
   };
-  let obj2 = require(5087) /* HeaderBackImage */;
+  let obj2 = require(5121) /* HeaderBackImage */;
   obj.headerLeft = obj2.getHeaderCloseButton(() => {
     outer1_0(outer1_2[16]).trackNUFStep(outer1_13.STEP_GUILD_TEMPLATE, outer1_13.STEP_FRIEND_LIST, { skip: true });
     const obj = outer1_0(outer1_2[16]);
@@ -205,5 +205,5 @@ export default function NUFGuildTemplates() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
   obj.initialRouteName = constants.GUILD_TEMPLATES;
-  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: React.useMemo(() => outer1_19(), []), onWillFocus: Keyboard.dismiss });
+  return jsx(require(5552) /* NavigationStack */.Navigator, { screens: React.useMemo(() => outer1_19(), []), onWillFocus: Keyboard.dismiss });
 };

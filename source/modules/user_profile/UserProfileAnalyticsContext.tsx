@@ -1,10 +1,10 @@
-// Module ID: 8045
-// Function ID: 63961
+// Module ID: 8083
+// Function ID: 64071
 // Name: UserProfileAnalyticsProvider
-// Dependencies: [31, 33, 5462, 8046, 491, 2]
+// Dependencies: [31, 33, 5497, 8084, 491, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8045 (UserProfileAnalyticsProvider)
+// Module 8083 (UserProfileAnalyticsProvider)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 
@@ -32,7 +32,7 @@ export const UserProfileAnalyticsProvider = (children) => {
     ref1.current = openedAt;
     ref.current = undefined;
   }
-  obj = { analyticsLocations: importDefault(5462)().analyticsLocations, value };
+  obj = { analyticsLocations: importDefault(5497)().analyticsLocations, value };
   closure_6 = isLoaded.useRef(obj);
   const effect = isLoaded.useEffect(() => {
     closure_6.current = obj;
@@ -104,7 +104,7 @@ export const useCreateUserProfileAnalyticsContext = function useCreateUserProfil
 };
 export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsContext() {
   const context = importAllResult.useContext(closure_5);
-  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
   const items = [context, analyticsLocations];
   const items1 = [context, analyticsLocations];
   const items2 = [context, analyticsLocations];

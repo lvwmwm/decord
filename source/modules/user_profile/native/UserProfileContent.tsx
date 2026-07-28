@@ -1,9 +1,9 @@
-// Module ID: 11986
-// Function ID: 92620
+// Module ID: 12029
+// Function ID: 92790
 // Name: CustomStatusBubble
-// Dependencies: [57, 31, 27, 8606, 1838, 3768, 1850, 7877, 5630, 8043, 5510, 653, 5188, 1345, 33, 8017, 566, 4099, 11912, 1935, 11906, 11902, 8045, 5462, 8850, 3970, 6625, 11987, 1212, 11650, 11988, 4071, 8033, 4320, 5490, 3831, 8317, 9738, 11920, 4544, 9034, 689, 5666, 11990, 11991, 8305, 8314, 1557, 11989, 12107, 12108, 6018, 11897, 7890, 8015, 8019, 1324, 8605, 7829, 12109, 12104, 12110, 12111, 12112, 12113, 11657, 12114, 11922, 12119, 11891, 5485, 11974, 12120, 11977, 12125, 12132, 8162, 8042, 8315, 12139, 3992, 12140, 12149, 12150, 12154, 12155, 5449, 11646, 8685, 12159, 2]
+// Dependencies: [57, 31, 27, 8650, 1838, 3802, 1850, 7913, 5878, 8081, 5545, 653, 5222, 1345, 33, 8055, 566, 4133, 11955, 1935, 11949, 11945, 8083, 5497, 8894, 4004, 6661, 12030, 1212, 11689, 12031, 4105, 8071, 4354, 5525, 3865, 8355, 9778, 11963, 4578, 9078, 689, 5676, 12033, 12034, 8343, 8352, 1557, 12032, 12150, 12151, 6052, 11940, 7926, 8053, 8057, 1324, 8649, 7865, 12152, 12147, 12153, 12154, 12155, 12156, 11696, 12157, 11965, 12162, 11934, 5520, 12017, 12163, 12020, 12168, 12175, 8200, 8080, 8353, 12182, 4026, 12183, 12192, 12193, 12197, 12198, 5484, 11685, 8729, 12202, 2]
 
-// Module 11986 (CustomStatusBubble)
+// Module 12029 (CustomStatusBubble)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "UserPlatformIcon";
 import get_ActivityIndicator from "UserCheckIcon";
@@ -214,19 +214,19 @@ class PrimaryInfo {
 }
 function EditSection(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(8045);
+  let obj = guildId(8083);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = guildId(566);
   const items = [closure_8];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_8.getGuild(guildId));
-  const dependencyMap = trackUserProfileAction(9738)();
-  let _createForOfIteratorHelperLoose = trackUserProfileAction(9738)({ guild: stateFromStores });
-  obj = { style: trackUserProfileAction(8017)().primaryButtons, maxWidth: ACTION_SHEET_MAX_WIDTH };
-  const tmp = trackUserProfileAction(8017)();
+  const dependencyMap = trackUserProfileAction(9778)();
+  let _createForOfIteratorHelperLoose = trackUserProfileAction(9778)({ guild: stateFromStores });
+  obj = { style: trackUserProfileAction(8055)().primaryButtons, maxWidth: ACTION_SHEET_MAX_WIDTH };
+  const tmp = trackUserProfileAction(8055)();
   const tmp3 = callback;
   obj = { variant: "primary" };
   obj1 = { size: "sm", color: trackUserProfileAction(689).colors.WHITE };
-  obj.icon = callback(guildId(9034).PencilIcon, obj1);
+  obj.icon = callback(guildId(9078).PencilIcon, obj1);
   if (null != stateFromStores) {
     const intl2 = guildId(1212).intl;
     let stringResult = intl2.string(guildId(1212).t.HmFaFB);
@@ -237,30 +237,30 @@ function EditSection(guildId) {
   obj.text = stringResult;
   obj.onPress = function onPress() {
     trackUserProfileAction({ action: "EDIT_PROFILE" });
-    trackUserProfileAction(4099).hideActionSheet();
-    trackUserProfileAction(5666)();
+    trackUserProfileAction(4133).hideActionSheet();
+    trackUserProfileAction(5676)();
     dependencyMap();
   };
   obj.grow = true;
-  obj.primaryButton = callback(guildId(4544).Button, obj);
+  obj.primaryButton = callback(guildId(4578).Button, obj);
   let tmp11;
   if (null != stateFromStores) {
     const obj2 = { variant: "primary" };
     const obj3 = { size: "sm", color: trackUserProfileAction(689).colors.WHITE };
-    obj2.icon = callback(guildId(9034).PencilIcon, obj3);
+    obj2.icon = callback(guildId(9078).PencilIcon, obj3);
     const intl3 = guildId(1212).intl;
     obj2.text = intl3.string(guildId(1212).t["PKQB/H"]);
     obj2.onPress = function onPress() {
       trackUserProfileAction({ action: "EDIT_GUILD_PROFILE" });
-      trackUserProfileAction(4099).hideActionSheet();
-      trackUserProfileAction(5666)();
+      trackUserProfileAction(4133).hideActionSheet();
+      trackUserProfileAction(5676)();
       callback();
     };
     obj2.grow = true;
-    tmp11 = callback(guildId(4544).Button, obj2);
+    tmp11 = callback(guildId(4578).Button, obj2);
   }
   obj.secondaryButton = tmp11;
-  return tmp3(trackUserProfileAction(11920), obj);
+  return tmp3(trackUserProfileAction(11963), obj);
 }
 function UserProfileWidgetsBoardContainer(isCurrentUser) {
   let containerBackground;
@@ -268,13 +268,13 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   let userId;
   isCurrentUser = isCurrentUser.isCurrentUser;
   ({ userId, isVisible, containerBackground } = isCurrentUser);
-  const tmp = importDefault(8017)();
+  const tmp = importDefault(8055)();
   const items = [tmp.card, { backgroundColor: containerBackground }];
   const obj = { style: tmp.profileContent };
   if (isCurrentUser) {
-    isCurrentUser = callback(importDefault(11990), {});
+    isCurrentUser = callback(importDefault(12033), {});
   }
-  const items1 = [isCurrentUser, callback(importDefault(11991), { userId, isVisible, cardStyle: items })];
+  const items1 = [isCurrentUser, callback(importDefault(12034), { userId, isVisible, cardStyle: items })];
   obj.children = items1;
   return closure_20(closure_6, obj);
 }

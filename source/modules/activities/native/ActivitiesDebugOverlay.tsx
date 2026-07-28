@@ -1,10 +1,10 @@
-// Module ID: 15897
-// Function ID: 122783
+// Module ID: 15936
+// Function ID: 122939
 // Name: ActivitiesDebugOverlay
-// Dependencies: [31, 27, 33, 4131, 3975, 689, 10567, 1557, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 4009, 689, 10605, 1557, 4161, 2]
 // Exports: default
 
-// Module 15897 (ActivitiesDebugOverlay)
+// Module 15936 (ActivitiesDebugOverlay)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,20 +25,20 @@ const result = require("jsxProd").fileFinishedImporting("modules/activities/nati
 
 export default function ActivitiesDebugOverlay() {
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(10567)();
+  const tmp2 = importDefault(10605)();
   let str = "";
   let str2 = "text-overlay-light";
-  if (require(10567) /* _getThermalState */.ThermalStates.UNHANDLED !== tmp2) {
+  if (require(10605) /* _getThermalState */.ThermalStates.UNHANDLED !== tmp2) {
     str = "nominal";
     str2 = "text-feedback-positive";
-    if (require(10567) /* _getThermalState */.ThermalStates.NOMINAL !== tmp2) {
+    if (require(10605) /* _getThermalState */.ThermalStates.NOMINAL !== tmp2) {
       str = "fair";
       str2 = "text-feedback-warning";
-      if (require(10567) /* _getThermalState */.ThermalStates.FAIR !== tmp2) {
+      if (require(10605) /* _getThermalState */.ThermalStates.FAIR !== tmp2) {
         str = "serious";
         str2 = "text-feedback-critical";
-        if (require(10567) /* _getThermalState */.ThermalStates.SERIOUS !== tmp2) {
-          if (require(10567) /* _getThermalState */.ThermalStates.CRITICAL === tmp2) {
+        if (require(10605) /* _getThermalState */.ThermalStates.SERIOUS !== tmp2) {
+          if (require(10605) /* _getThermalState */.ThermalStates.CRITICAL === tmp2) {
             str = "critical";
             str2 = "text-feedback-critical";
           }
@@ -53,9 +53,9 @@ export default function ActivitiesDebugOverlay() {
   items[1] = obj;
   obj = { style: tmp.row };
   const obj1 = { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] };
-  const items1 = [callback(require(4127) /* Text */.Text, obj1), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
   const obj2 = { variant: "text-md/normal", color: str2, children: str };
-  items1[1] = callback2(require(4127) /* Text */.Text, obj2);
+  items1[1] = callback2(require(4161) /* Text */.Text, obj2);
   obj.children = items1;
   obj.children = callback(View, obj);
   return callback2(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 13050
-// Function ID: 100966
+// Module ID: 13094
+// Function ID: 101139
 // Name: _openActivityDMLauncher
-// Dependencies: [5, 1455, 5463, 4141, 12213, 10581, 5482, 5676, 3990, 1555, 2]
+// Dependencies: [5, 1455, 5498, 4175, 12256, 10619, 5517, 5686, 4024, 1555, 2]
 // Exports: default
 
-// Module 13050 (_openActivityDMLauncher)
+// Module 13094 (_openActivityDMLauncher)
 import _handleUsePrimaryEntryPointAppCommand from "_handleUsePrimaryEntryPointAppCommand";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 

@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 96189
+// Module ID: 12416
+// Function ID: 96359
 // Name: BuyNitroMarketingFooter
-// Dependencies: [31, 27, 33, 4131, 689, 5217, 6603, 5482, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5251, 6639, 5517, 2]
 // Exports: default
 
-// Module 12373 (BuyNitroMarketingFooter)
+// Module 12416 (BuyNitroMarketingFooter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -41,12 +41,12 @@ export default function BuyNitroMarketingFooter(arg0) {
   obj = { style: _createForOfIteratorHelperLoose().footer, collapsable: false };
   obj = {};
   const tmp = _createForOfIteratorHelperLoose();
-  obj.location = importDefault(5482).PREMIUM_MARKETING_FOOTER;
+  obj.location = importDefault(5517).PREMIUM_MARKETING_FOOTER;
   obj.planSelection = planSelection;
   obj.applicationId = applicationId;
   obj.onPaymentSuccess = onPaymentSuccess;
   obj.onPaymentDismiss = onPaymentDismiss;
-  obj.children = jsx(importDefault(6603), {});
+  obj.children = jsx(importDefault(6639), {});
   obj.children = <closure_4 />;
-  return jsx(require(5217) /* Directions */.GestureDetector, {});
+  return jsx(require(5251) /* Directions */.GestureDetector, {});
 };

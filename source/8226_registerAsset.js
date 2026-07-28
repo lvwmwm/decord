@@ -1,11 +1,11 @@
 // Module ID: 8226
-// Function ID: 66000
+// Function ID: 65761
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 8226 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "571b1cf067821ef4949e09c037a195b6", name: "ic_person_shield", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "60c832d89b9f9ddf8ba9ba1f90955760", name: "ic-location", type: "png" };
 
 export default registerAsset.registerAsset(obj);

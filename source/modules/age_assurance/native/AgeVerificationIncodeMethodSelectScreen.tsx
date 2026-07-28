@@ -1,10 +1,10 @@
-// Module ID: 6696
-// Function ID: 59104
+// Module ID: 6732
+// Function ID: 59193
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 57, 31, 27, 1278, 6691, 6693, 33, 4131, 689, 6697, 5584, 4542, 4127, 1212, 2717, 5501, 5164, 2]
+// Dependencies: [5, 57, 31, 27, 1278, 6727, 6729, 33, 4165, 689, 6733, 5619, 4576, 4161, 1212, 2717, 5536, 5198, 2]
 // Exports: default
 
-// Module 6696 (AgeVerificationIncodeMethodSelectScreen)
+// Module 6732 (AgeVerificationIncodeMethodSelectScreen)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -66,7 +66,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
   let obj = {};
   if (tmp2) {
     obj.style = tmp5.loadingOverlay;
-    obj.children = callback2(onMethodSelected(5584).ActivityIndicator, {});
+    obj.children = callback2(onMethodSelected(5619).ActivityIndicator, {});
     let tmp21 = obj;
   } else {
     obj.style = tmp5.container;
@@ -74,16 +74,16 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     obj = { variant: "heading-lg/bold", color: "text-strong" };
     const intl = onMethodSelected(1212).intl;
     obj.children = intl.string(trustedOrigin(2717).eZvwAe);
-    const items1 = [callback2(onMethodSelected(4127).Heading, obj), , , ];
+    const items1 = [callback2(onMethodSelected(4161).Heading, obj), , , ];
     const obj1 = { variant: "text-md/normal", color: "text-muted" };
     const intl2 = onMethodSelected(1212).intl;
     obj1.children = intl2.string(trustedOrigin(2717)["5yWXmT"]);
-    items1[1] = callback2(onMethodSelected(4127).Text, obj1);
+    items1[1] = callback2(onMethodSelected(4161).Text, obj1);
     if (tmp4) {
       const obj2 = { variant: "text-sm/medium", color: "text-feedback-critical" };
       const intl3 = onMethodSelected(1212).intl;
       obj2.children = intl3.string(onMethodSelected(1212).t.c6kn6F);
-      tmp4 = callback2(onMethodSelected(4127).Text, obj2);
+      tmp4 = callback2(onMethodSelected(4161).Text, obj2);
     }
     items1[2] = tmp4;
     const obj3 = { hasIcons: false };
@@ -95,7 +95,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     obj4.onPress = function onPress() {
       callback(outer1_8.FACIAL_AGE_ESTIMATION);
     };
-    const items2 = [callback2(onMethodSelected(5164).TableRow, obj4), ];
+    const items2 = [callback2(onMethodSelected(5198).TableRow, obj4), ];
     const obj5 = { arrow: true };
     const intl6 = onMethodSelected(1212).intl;
     obj5.label = intl6.string(trustedOrigin(2717)["NeVlw/"]);
@@ -104,11 +104,11 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     obj5.onPress = function onPress() {
       callback(outer1_8.ID_VERIFICATION);
     };
-    items2[1] = callback2(onMethodSelected(5164).TableRow, obj5);
+    items2[1] = callback2(onMethodSelected(5198).TableRow, obj5);
     obj3.children = items2;
-    items1[3] = callback3(onMethodSelected(5501).TableRowGroup, obj3);
+    items1[3] = callback3(onMethodSelected(5536).TableRowGroup, obj3);
     obj.children = items1;
-    obj.children = callback3(onMethodSelected(4542).Stack, obj);
+    obj.children = callback3(onMethodSelected(4576).Stack, obj);
     tmp21 = obj;
     const tmp8 = callback3;
   }

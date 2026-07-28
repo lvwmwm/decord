@@ -1,5 +1,5 @@
 // Module ID: 829
-// Function ID: 9249
+// Function ID: 9253
 // Name: TRACING_DEFAULTS
 // Dependencies: [65, 830, 825, 831, 832, 833, 796, 815, 835, 821, 816, 817, 801, 800, 836, 842]
 // Exports: startIdleSpan

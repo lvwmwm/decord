@@ -1,10 +1,10 @@
-// Module ID: 7672
-// Function ID: 61435
+// Module ID: 7708
+// Function ID: 61525
 // Name: createDefaultReaction
-// Dependencies: [653, 7670, 4084, 7673, 1184, 4076, 1212, 1921, 7674, 7675, 7676, 1392, 3770, 3776, 2]
+// Dependencies: [653, 7706, 4118, 7709, 1184, 4110, 1212, 1921, 7710, 7711, 7712, 1392, 3804, 3810, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 7672 (createDefaultReaction)
+// Module 7708 (createDefaultReaction)
 import { HelpdeskArticles } from "ME";
 
 let result = require("registerAsset").fileFinishedImporting("modules/messages/native/renderer/row_data/ForumPostActions.tsx");
@@ -15,7 +15,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
   let emojiId;
   let emojiName;
   ({ defaultReactionEmoji, customGuildEmoji } = arg0);
-  let obj = require(7676) /* apexExperiment */;
+  let obj = require(7712) /* apexExperiment */;
   const result = obj.shouldSkipAccessibilityLabels();
   let tmp2;
   if (null != defaultReactionEmoji) {
@@ -33,8 +33,8 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
         let accessibleEmojiDisplayName = str2;
         if (!result) {
           const obj1 = { id: emojiId, name: str2, animated: customGuildEmoji.animated };
-          accessibleEmojiDisplayName = require(3770) /* getReactionEmojiName */.getAccessibleEmojiDisplayName(false, 0, obj1);
-          const obj9 = require(3770) /* getReactionEmojiName */;
+          accessibleEmojiDisplayName = require(3804) /* getReactionEmojiName */.getAccessibleEmojiDisplayName(false, 0, obj1);
+          const obj9 = require(3804) /* getReactionEmojiName */;
         }
         obj.displayName = accessibleEmojiDisplayName;
         tmp2 = obj;
@@ -47,11 +47,11 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
         str = emojiName;
       }
       let obj2 = { id: undefined, name: emojiName, animated: false };
-      obj2 = importDefault(3776);
+      obj2 = importDefault(3810);
       obj2.src = obj2.getURL(emojiName);
       let accessibleEmojiDisplayName1 = str;
       if (!result) {
-        let obj3 = require(3770) /* getReactionEmojiName */;
+        let obj3 = require(3804) /* getReactionEmojiName */;
         obj3 = { id: undefined, name: str, animated: false };
         accessibleEmojiDisplayName1 = obj3.getAccessibleEmojiDisplayName(false, 0, obj3);
       }
@@ -73,16 +73,16 @@ export const createForumPostActions = function createForumPostActions(arg0) {
   let showMediaPostSharePrompt;
   ({ isFollowing, defaultReaction } = arg0);
   ({ hasReactions, showMediaPostSharePrompt } = arg0);
-  const getAssetUriForEmbed = require(7670) /* frozen */.getAssetUriForEmbed;
+  const getAssetUriForEmbed = require(7706) /* frozen */.getAssetUriForEmbed;
   if (isFollowing) {
-    let assetUriForEmbed = getAssetUriForEmbed(tmp3(4084));
+    let assetUriForEmbed = getAssetUriForEmbed(tmp3(4118));
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp3(7673));
+    assetUriForEmbed = getAssetUriForEmbed(tmp3(7709));
   }
   if (null != assetUriForEmbed) {
-    let obj1 = require(7670) /* frozen */;
+    let obj1 = require(7706) /* frozen */;
     let stringResult;
-    const assetUriForEmbed1 = obj1.getAssetUriForEmbed(importDefault(4076));
+    const assetUriForEmbed1 = obj1.getAssetUriForEmbed(importDefault(4110));
     if (!hasReactions) {
       let emoji;
       if (null != defaultReaction) {
@@ -106,11 +106,11 @@ export const createForumPostActions = function createForumPostActions(arg0) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj.cta = intl4.string(require(1212) /* getSystemLocale */.t.C5UQC9);
       const obj6 = importDefault(1921);
-      obj.icon = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(7674));
-      const obj7 = require(7670) /* frozen */;
-      obj.closeIcon = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(7675));
+      obj.icon = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7710));
+      const obj7 = require(7706) /* frozen */;
+      obj.closeIcon = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7711));
       tmp18 = obj;
-      const obj8 = require(7670) /* frozen */;
+      const obj8 = require(7706) /* frozen */;
     }
     const obj2 = { numDisplayedReactions: 3, isFollowing, followIcon: assetUriForEmbed };
     const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -134,9 +134,9 @@ export const createForumPostActions = function createForumPostActions(arg0) {
     obj = importDefault(1184);
     let strResult = dependencyMap;
     if (isFollowing) {
-      let tmp7 = 4084;
+      let tmp7 = 4118;
     } else {
-      tmp7 = 7673;
+      tmp7 = 7709;
     }
     strResult = str(tmp7);
     const _HermesInternal = HermesInternal;

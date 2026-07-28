@@ -1,9 +1,9 @@
-// Module ID: 13984
-// Function ID: 107054
+// Module ID: 14028
+// Function ID: 107227
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [31, 33, 4131, 689, 666, 4661, 4534, 2]
+// Dependencies: [31, 33, 4165, 689, 666, 4695, 4568, 2]
 
-// Module 13984 (VideoQuestPlayerControlButton)
+// Module 14028 (VideoQuestPlayerControlButton)
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
@@ -40,8 +40,8 @@ const memoResult = importAllResult.memo((arg0) => {
   obj.style = items;
   const merged1 = Object.assign(merged);
   obj = { style: tmp3.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children };
-  obj["children"] = jsx(importDefault(4534), { style: tmp3.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
-  return jsx(require(4661) /* PressableBase */.PressableOpacity, { style: tmp3.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
+  obj["children"] = jsx(importDefault(4568), { style: tmp3.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
+  return jsx(require(4695) /* PressableBase */.PressableOpacity, { style: tmp3.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
 });
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayerControlButton.tsx");
 

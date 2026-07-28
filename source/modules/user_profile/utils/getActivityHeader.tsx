@@ -1,10 +1,10 @@
-// Module ID: 11940
-// Function ID: 92367
+// Module ID: 11983
+// Function ID: 92537
 // Name: getActivityHeader
-// Dependencies: [653, 11941, 11942, 1212, 11944, 11945, 9012, 2]
+// Dependencies: [653, 11984, 11985, 1212, 11987, 11988, 9056, 2]
 // Exports: default
 
-// Module 11940 (getActivityHeader)
+// Module 11983 (getActivityHeader)
 import ME from "ME";
 
 let closure_3;
@@ -13,8 +13,8 @@ let closure_4;
 const result = require("PlatformTypes").fileFinishedImporting("modules/user_profile/utils/getActivityHeader.tsx");
 
 export default function getActivityHeader(session_id) {
-  const tmp = importDefault(11941)(session_id.session_id);
-  const tmp2 = importDefault(11942)(session_id);
+  const tmp = importDefault(11984)(session_id.session_id);
+  const tmp2 = importDefault(11985)(session_id);
   if (null != tmp2) {
     const icon = tmp2.icon;
   }
@@ -164,7 +164,7 @@ export default function getActivityHeader(session_id) {
       obj11.platformLabel = str;
       return obj11;
     }
-    tmp74 = importDefault(11945)(tmp, session_id);
+    tmp74 = importDefault(11988)(tmp, session_id);
   }
   if (session_id.type === constants.PLAYING) {
     const obj13 = {};
@@ -250,7 +250,7 @@ export default function getActivityHeader(session_id) {
         }
       }
     }
-    obj29 = require(9012) /* unpackStageChannelParty */;
+    obj29 = require(9056) /* unpackStageChannelParty */;
   }
   return obj;
 };

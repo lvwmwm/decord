@@ -1,10 +1,10 @@
-// Module ID: 11009
-// Function ID: 85567
+// Module ID: 11047
+// Function ID: 85690
 // Name: ClassificationHeader
-// Dependencies: [31, 27, 1922, 11010, 6699, 653, 33, 4131, 689, 4127, 6700, 1212, 566, 8278, 3828, 8960, 4544, 11015, 11017, 675, 5121, 11018, 6698, 11022, 5839, 5844, 11024, 2]
+// Dependencies: [31, 27, 1922, 11048, 6735, 653, 33, 4165, 689, 4161, 6736, 1212, 566, 8316, 3862, 9004, 4578, 11053, 11055, 675, 5155, 11056, 6734, 11060, 5849, 5854, 11062, 2]
 // Exports: default
 
-// Module 11009 (ClassificationHeader)
+// Module 11047 (ClassificationHeader)
 import result from "result";
 import get_ActivityIndicator from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -71,7 +71,7 @@ function ClassificationHeader(classificationTypeText) {
     }
   }, items);
   obj = { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo };
-  obj.children = callback(classificationTypeText(4127).Text, obj);
+  obj.children = callback(classificationTypeText(4161).Text, obj);
   return callback(closure_4, obj);
 }
 function ClassificationActionsTaken(arg0) {
@@ -88,7 +88,7 @@ function ClassificationActionsTaken(arg0) {
     obj = { variant: "eyebrow", color: "text-muted" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t["O2nYk+"]);
-    const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+    const items1 = [callback(require(4161) /* Text */.Text, obj), ];
     const obj1 = {};
     const items2 = [tmp2.actionsTaken];
     obj1.style = items2;
@@ -97,14 +97,14 @@ function ClassificationActionsTaken(arg0) {
     if (null != classificationExpiration) {
       const obj2 = { style: tmp2.classificationActionDescription };
       const obj3 = { variant: "text-xs/normal", children: [" ", "\u2022"] };
-      const items4 = [callback2(require(4127) /* Text */.Text, obj3), ];
+      const items4 = [callback2(require(4161) /* Text */.Text, obj3), ];
       const obj4 = { variant: "text-xs/normal" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       const obj5 = {};
       const obj6 = { dateStyle: "medium" };
       obj5.expirationDate = classificationExpiration.toLocaleDateString(stateFromStores, obj6);
       obj4.children = intl2.format(require(1212) /* getSystemLocale */.t.TByIjT, obj5);
-      items4[1] = callback(require(4127) /* Text */.Text, obj4);
+      items4[1] = callback(require(4161) /* Text */.Text, obj4);
       obj2.children = items4;
       tmp11 = callback2(closure_4, obj2, "expiration");
     }
@@ -147,11 +147,11 @@ function ClassificationGuidance(arg0) {
   obj = { variant: "eyebrow", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["977iei"]);
-  const items = [callback(require(4127) /* Text */.Text, obj), , , ];
+  const items = [callback(require(4161) /* Text */.Text, obj), , , ];
   obj = { variant: "text-sm/normal" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.format(require(1212) /* getSystemLocale */.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   items[2] = callback(ClassificationPolicyCard, { classificationTypeText, policyExplainerLink });
   items[3] = appealComponent;
   obj.children = items;
@@ -170,23 +170,23 @@ function ClassificationPolicyCard(classificationDescription) {
   items = [tmp.classificationPolicyCard];
   obj = { style: tmp.classificationPolicyCardIcon };
   const obj1 = { size: "sm", color: importDefault(689).colors.TEXT_LINK };
-  obj.children = callback(policyExplainerLink(8960).ShieldIcon, obj1);
+  obj.children = callback(policyExplainerLink(9004).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent };
   const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
   const intl = policyExplainerLink(1212).intl;
   obj3.children = intl.format(policyExplainerLink(1212).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
-  obj2.children = callback(policyExplainerLink(4127).Text, obj3);
+  obj2.children = callback(policyExplainerLink(4161).Text, obj3);
   items1[1] = callback(closure_4, obj2);
   obj.children = items1;
-  obj.children = callback2(importDefault(8278), obj);
+  obj.children = callback2(importDefault(8316), obj);
   return callback(closure_4, obj);
 }
 function AppealStatus() {
   const obj = { variant: "text-md/normal", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["I2H0/E"]);
-  return callback(require(4127) /* Text */.Text, obj);
+  return callback(require(4161) /* Text */.Text, obj);
 }
 function LetUsKnow(arg0) {
   const _require = arg0;
@@ -199,7 +199,7 @@ function LetUsKnow(arg0) {
     }
   };
   obj.children = intl.format(_require(1212).t.IFxUaT, obj);
-  return callback(_require(4127).Text, obj);
+  return callback(_require(4161).Text, obj);
 }
 function AppealFooter(hasBeenAppealed) {
   let obj = { style: _createForOfIteratorHelperLoose().letUsKnowContainer };
@@ -219,7 +219,7 @@ function ClassificationDetailFooter(onClose) {
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.elrEjL);
   obj.onPress = onClose.onClose;
   obj.grow = true;
-  obj.children = callback(require(4544) /* Button */.Button, obj);
+  obj.children = callback(require(4578) /* Button */.Button, obj);
   return callback(closure_4, obj);
 }
 ({ View: closure_4, ActivityIndicator: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);

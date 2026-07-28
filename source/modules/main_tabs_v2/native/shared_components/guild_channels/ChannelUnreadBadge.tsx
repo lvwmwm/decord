@@ -1,8 +1,8 @@
-// Module ID: 14960
-// Function ID: 114069
-// Dependencies: [31, 27, 10223, 4327, 33, 4131, 10224, 4550, 9056, 2]
+// Module ID: 15004
+// Function ID: 114242
+// Dependencies: [31, 27, 10263, 4361, 33, 4165, 10264, 4584, 9100, 2]
 
-// Module 14960
+// Module 15004
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -25,9 +25,9 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     flag = false;
   }
   const tmp = callback();
-  let obj = require(10224) /* getLayoutStyles */;
+  let obj = require(10264) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
-  require(4550) /* getFontScale */;
+  require(4584) /* getFontScale */;
   let tmp6Result = null;
   if (unread) {
     obj = {};
@@ -39,16 +39,16 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     items[1] = unreadBadgePanel;
     const unreadBadge = layoutStyles.unreadBadge;
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = require(10224) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = require(10264) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
     obj.style = items;
     obj = { classic: flag };
-    const obj3 = require(10224) /* getLayoutStyles */;
+    const obj3 = require(10264) /* getLayoutStyles */;
     const tmp11 = jsx;
     const tmp6 = jsx;
     const tmp7 = View;
     const _Math = Math;
     let num2 = 1;
-    obj.size = require(9056) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
+    obj.size = require(9100) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
     const obj1 = {};
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       num2 = MUTED_OPACITY_CONTENT;
@@ -56,9 +56,9 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     obj1.opacity = num2;
     const items1 = [obj1];
     obj.badgeStyle = items1;
-    obj.children = tmp11(importDefault(9056), obj);
+    obj.children = tmp11(importDefault(9100), obj);
     tmp6Result = tmp6(tmp7, obj);
-    const tmp13 = importDefault(9056);
+    const tmp13 = importDefault(9100);
   }
   return tmp6Result;
 });

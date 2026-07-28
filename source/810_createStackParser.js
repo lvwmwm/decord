@@ -1,5 +1,5 @@
 // Module ID: 810
-// Function ID: 9086
+// Function ID: 9090
 // Name: createStackParser
 // Dependencies: [65]
 // Exports: getFramesFromEvent, getFunctionName, getVueInternalName, normalizeStackTracePath, stackParserFromStackParserOptions

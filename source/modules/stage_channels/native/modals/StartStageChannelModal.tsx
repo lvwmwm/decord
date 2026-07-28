@@ -1,9 +1,9 @@
-// Module ID: 8277
-// Function ID: 66471
+// Module ID: 8315
+// Function ID: 66581
 // Name: closeModal
-// Dependencies: [5, 57, 31, 27, 1353, 4948, 653, 1354, 33, 4131, 689, 4338, 4661, 1212, 1273, 7675, 6667, 5513, 566, 5596, 7575, 4127, 8278, 8279, 8280, 4560, 675, 1820, 6658, 5599, 4030, 8281, 8282, 6689, 4544, 5121, 5585, 2]
+// Dependencies: [5, 57, 31, 27, 1353, 4982, 653, 1354, 33, 4165, 689, 4372, 4695, 1212, 1273, 7711, 6703, 5548, 566, 5631, 7611, 4161, 8316, 8317, 8318, 4594, 675, 1820, 6694, 5634, 4064, 8319, 8320, 6725, 4578, 5155, 5620, 2]
 
-// Module 8277 (closeModal)
+// Module 8315 (closeModal)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "FormHeader";
@@ -23,7 +23,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function closeModal() {
-  importDefault(4338).popWithKey(closure_11);
+  importDefault(4372).popWithKey(closure_11);
 }
 function NavigationBar(guild) {
   let tmp2 = null;
@@ -36,9 +36,9 @@ function NavigationBar(guild) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
     obj.onPress = closeModal;
-    obj = { source: importDefault(7675) };
+    obj = { source: importDefault(7711) };
     obj.children = callback2(require(1273) /* Button */.Icon, obj);
-    obj.children = callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
+    obj.children = callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -46,11 +46,11 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(6667), {});
+    let tmp7 = callback2(importDefault(6703), {});
   } else {
-    const obj = { style: tmp.guildIcon, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE, guild };
-    tmp7 = callback2(importDefault(5513), obj);
-    const tmp5 = importDefault(5513);
+    const obj = { style: tmp.guildIcon, size: require(5548) /* makeSizeStyle */.GuildIconSizes.LARGE, guild };
+    tmp7 = callback2(importDefault(5548), obj);
+    const tmp5 = importDefault(5548);
   }
   return tmp7;
 }

@@ -1,10 +1,10 @@
-// Module ID: 5874
-// Function ID: 51923
+// Module ID: 5908
+// Function ID: 52042
 // Name: getRelativeTimestamp
-// Dependencies: [5875, 3804, 21, 5873, 2]
+// Dependencies: [5909, 3838, 21, 5907, 2]
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem
 
-// Module 5874 (getRelativeTimestamp)
+// Module 5908 (getRelativeTimestamp)
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/notification_center/NotificationCenterUtils.tsx");
 
 export const getRelativeTimestamp = function getRelativeTimestamp(extractTimestampResult, flag) {
@@ -12,14 +12,14 @@ export const getRelativeTimestamp = function getRelativeTimestamp(extractTimesta
     flag = true;
   }
   const obj = { since: extractTimestampResult };
-  const tmp2 = require(5875) /* getDurationString */;
+  const tmp2 = require(5909) /* getDurationString */;
   obj.getFormatter = flag ? tmp2.getAbbreviatedFormatter : tmp2.getFullFormatter;
-  return importDefault(5875)(obj);
+  return importDefault(5909)(obj);
 };
 export const isRemoteAcked = function isRemoteAcked(addResult, items2) {
   let acked = addResult.acked;
   if (!acked) {
-    let tmp3 = items2 !== require(3804) /* explicitContentFromProto */.NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET;
+    let tmp3 = items2 !== require(3838) /* explicitContentFromProto */.NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET;
     if (tmp3) {
       tmp3 = importDefault(21).compare(items2, addResult.id) >= 0;
       const obj = importDefault(21);
@@ -31,13 +31,13 @@ export const isRemoteAcked = function isRemoteAcked(addResult, items2) {
 export const incomingFriendRequestLocalItem = function incomingFriendRequestLocalItem(user, since, origin_application_id) {
   let obj = importDefault(21);
   const fromTimestampResult = obj.fromTimestamp(new Date(since).getTime());
-  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5873) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, id: fromTimestampResult, applicationId: origin_application_id };
+  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5907) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, id: fromTimestampResult, applicationId: origin_application_id };
   return obj;
 };
 export const incomingGameFriendRequestLocalItem = function incomingGameFriendRequestLocalItem(user, since, applicationId) {
   let obj = importDefault(21);
   const fromTimestampResult = obj.fromTimestamp(new Date(since).getTime());
-  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_game_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5873) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, id: fromTimestampResult, applicationId };
+  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_game_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5907) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, id: fromTimestampResult, applicationId };
   return obj;
 };
 export const mobileNativeUpdateAvailableLocalItem = function mobileNativeUpdateAvailableLocalItem(newBuild) {
@@ -45,14 +45,14 @@ export const mobileNativeUpdateAvailableLocalItem = function mobileNativeUpdateA
   const obj2 = importDefault(21);
   obj.id = obj2.fromTimestamp(new Date().getTime());
   obj.local_id = "mobile_update_available_" + newBuild.build;
-  obj.type = require(5873) /* NotificationCenterScenes */.NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE;
+  obj.type = require(5907) /* NotificationCenterScenes */.NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE;
   obj.deeplink = newBuild.urls.install.toString();
   return obj;
 };
 export const isMentionItem = function isMentionItem(addResult) {
-  let tmp = addResult.type === require(5873) /* NotificationCenterScenes */.NotificationCenterItems.RECENT_MENTION;
+  let tmp = addResult.type === require(5907) /* NotificationCenterScenes */.NotificationCenterItems.RECENT_MENTION;
   if (!tmp) {
-    tmp = addResult.type === require(5873) /* NotificationCenterScenes */.NotificationCenterItems.REPLY_MENTION;
+    tmp = addResult.type === require(5907) /* NotificationCenterScenes */.NotificationCenterItems.REPLY_MENTION;
   }
   return tmp;
 };

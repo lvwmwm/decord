@@ -1,10 +1,10 @@
-// Module ID: 8306
-// Function ID: 66758
+// Module ID: 8344
+// Function ID: 66868
 // Name: shouldDisableUserPresenceInChannel
 // Dependencies: [1348, 2]
 // Exports: shouldDisableUserPresenceInChannel
 
-// Module 8306 (shouldDisableUserPresenceInChannel)
+// Module 8344 (shouldDisableUserPresenceInChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");

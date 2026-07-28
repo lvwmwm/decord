@@ -1,11 +1,11 @@
 // Module ID: 10381
-// Function ID: 80094
+// Function ID: 80036
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 10381 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/self_mod/stranger_danger/images", width: 21, height: 20, scales: [1, 2, 3], hash: "4ea1c192cad9acc1fe190c6de3d2e5ff", name: "ic_thumbsdown", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/channel_following/light", width: 280, height: 120, scales: [2, 3], hash: "822095525bba6121eeb33373acfc6100", name: "channel_following_success_1", type: "png" };
 
 export default registerAsset.registerAsset(obj);

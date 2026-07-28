@@ -1,10 +1,10 @@
-// Module ID: 6000
-// Function ID: 53394
+// Module ID: 6034
+// Function ID: 53513
 // Name: isModeratorReportOrPostChannelId
-// Dependencies: [6001, 1348, 1838, 4350, 1850, 6008, 6009, 5763, 5762, 6010, 483, 3764, 5838, 5849, 5850, 6011, 2]
+// Dependencies: [6035, 1348, 1838, 4384, 1850, 6042, 6043, 5773, 5772, 6044, 483, 3798, 5848, 5859, 5860, 6045, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 6000 (isModeratorReportOrPostChannelId)
+// Module 6034 (isModeratorReportOrPostChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -55,9 +55,9 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
       if (null == guild) {
         return false;
       } else {
-        let tmp8 = importDefault(5763)(guild);
+        let tmp8 = importDefault(5773)(guild);
         if (tmp8) {
-          tmp8 = null != importDefault(5762)(guild);
+          tmp8 = null != importDefault(5772)(guild);
         }
         return tmp8;
       }
@@ -65,7 +65,7 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
   } else {
     return false;
   }
-  obj = require(6009) /* canReportUser */;
+  obj = require(6043) /* canReportUser */;
 };
 export const canAccessReportsChannel = function canAccessReportsChannel(guildId) {
   let tmp = arg1;
@@ -73,7 +73,7 @@ export const canAccessReportsChannel = function canAccessReportsChannel(guildId)
     const items = [_createForOfIteratorHelperLoose, closure_8];
     tmp = items;
   }
-  let obj = require(6010) /* getContextForPermission */;
+  let obj = require(6044) /* getContextForPermission */;
   const contextForPermission = obj.getContextForPermission(guildId, tmp);
   if (null == contextForPermission) {
     return false;
@@ -81,17 +81,17 @@ export const canAccessReportsChannel = function canAccessReportsChannel(guildId)
     const guild = contextForPermission.guild;
     let tmp7 = null == guild;
     if (!tmp7) {
-      tmp7 = !importDefault(5763)(guild);
+      tmp7 = !importDefault(5773)(guild);
     }
     if (!tmp7) {
-      tmp7 = null == importDefault(5762)(guild);
+      tmp7 = null == importDefault(5772)(guild);
     }
     let hasAnyResult = !tmp7;
     if (!tmp7) {
       const obj2 = importAll(483);
       obj = { user: contextForPermission.user, context: guild, checkElevated: false };
-      hasAnyResult = obj2.hasAny(importAll(3764).computePermissions(obj), ReportToModPermissions);
-      const obj3 = importAll(3764);
+      hasAnyResult = obj2.hasAny(importAll(3798).computePermissions(obj), ReportToModPermissions);
+      const obj3 = importAll(3798);
     }
     return hasAnyResult;
   }
@@ -100,7 +100,7 @@ export const getReportToModChannelId = function getReportToModChannelId(guildId)
   const guild = store2.getGuild(guildId);
   let tmp2 = null;
   if (null != guild) {
-    tmp2 = importDefault(5762)(guild);
+    tmp2 = importDefault(5772)(guild);
   }
   return tmp2;
 };
@@ -124,8 +124,8 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
         const firstMessage = message.firstMessage;
         let tmp4 = !message.loaded || null == firstMessage;
         if (!tmp4) {
-          tmp4 = !require(5849) /* _createForOfIteratorHelperLoose */.messageHasObscurableMediaForBitmask(firstMessage, require(5850) /* ContentHarmType */.ContentHarmTypeBitMask.EXPLICIT);
-          const obj = require(5849) /* _createForOfIteratorHelperLoose */;
+          tmp4 = !require(5859) /* _createForOfIteratorHelperLoose */.messageHasObscurableMediaForBitmask(firstMessage, require(5860) /* ContentHarmType */.ContentHarmTypeBitMask.EXPLICIT);
+          const obj = require(5859) /* _createForOfIteratorHelperLoose */;
         }
         return tmp4;
       } else {
@@ -134,7 +134,7 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
     } else {
       return true;
     }
-    obj2 = require(5838) /* isCurrentUserTeen */;
+    obj2 = require(5848) /* isCurrentUserTeen */;
   }
 };
 export const isModeratorReportThreadStarterMessage = function isModeratorReportThreadStarterMessage(isFirstMessageInForumPost, channel) {

@@ -1,11 +1,11 @@
 // Module ID: 9195
-// Function ID: 72094
+// Function ID: 71988
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9195 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "cb57655a680893ff0ad8eb9c16157cda", name: "EnvelopeIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/auth/native/images", width: 480, height: 413, scales: [2, 3], hash: "b25b2e24db6c14f15201cb7533aed65e", name: "register-background-dark", type: "png" };
 
 export default registerAsset.registerAsset(obj);

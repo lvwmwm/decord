@@ -1,9 +1,9 @@
-// Module ID: 15704
-// Function ID: 121105
+// Module ID: 15743
+// Function ID: 121261
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 15704 (apexExperiment)
+// Module 15743 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-09-premium-trial-offer-action-sheet-ks", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

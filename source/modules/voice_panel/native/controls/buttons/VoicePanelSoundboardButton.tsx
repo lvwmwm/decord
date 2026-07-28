@@ -1,10 +1,10 @@
-// Module ID: 15945
-// Function ID: 123192
+// Module ID: 15984
+// Function ID: 123348
 // Name: SoundboardButton
-// Dependencies: [31, 33, 4131, 689, 9975, 15931, 15946, 15932, 1212, 5515, 6575, 2]
+// Dependencies: [31, 33, 4165, 689, 10015, 15970, 15985, 15971, 1212, 5550, 6611, 2]
 // Exports: default
 
-// Module 15945 (SoundboardButton)
+// Module 15984 (SoundboardButton)
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,10 +28,10 @@ export default function SoundboardButton(arg0) {
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(15931) /* useVoicePanelButtonStyles */;
+  let obj = require(15970) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp3 = importDefault(15946);
-  ({ disabled, handlePress, visible } = importDefault(15946)(React.useContext(importDefault(9975)).channelId, require(15946) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const tmp3 = importDefault(15985);
+  ({ disabled, handlePress, visible } = importDefault(15985)(React.useContext(importDefault(10015)).channelId, require(15985) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
   if (disabled) {
     let color = importDefault(689).colors.ICON_MUTED;
   } else {
@@ -47,15 +47,15 @@ export default function SoundboardButton(arg0) {
     const obj1 = { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor };
     items[1] = obj1;
     obj.style = items;
-    const items1 = [callback(importDefault(5515), obj), ];
+    const items1 = [callback(importDefault(5550), obj), ];
     const obj2 = { style: tmp.iconContainer };
-    const tmp11 = importDefault(15932);
+    const tmp11 = importDefault(15971);
     const obj3 = { color };
-    obj2.children = callback(require(6575) /* SoundboardIcon */.SoundboardIcon, obj3);
-    items1[1] = callback(importDefault(5515), obj2);
+    obj2.children = callback(require(6611) /* SoundboardIcon */.SoundboardIcon, obj3);
+    items1[1] = callback(importDefault(5550), obj2);
     obj.children = items1;
     tmp7 = callback2(tmp11, obj);
-    const tmp14 = importDefault(5515);
+    const tmp14 = importDefault(5550);
   }
   return tmp7;
 };

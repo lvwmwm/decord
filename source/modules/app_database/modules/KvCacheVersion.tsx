@@ -1,9 +1,9 @@
-// Module ID: 5887
-// Function ID: 52221
+// Module ID: 5921
+// Function ID: 52340
 // Name: KvCacheVersion
 // Dependencies: [5, 6, 7, 476, 3, 1883, 2]
 
-// Module 5887 (KvCacheVersion)
+// Module 5921 (KvCacheVersion)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
 import _defineProperties from "_defineProperties";

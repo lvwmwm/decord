@@ -1,10 +1,10 @@
-// Module ID: 11095
-// Function ID: 86224
+// Module ID: 11133
+// Function ID: 86347
 // Name: useTypingUserIds
-// Dependencies: [3768, 11096, 1850, 566, 2]
+// Dependencies: [3802, 11134, 1850, 566, 2]
 // Exports: useTypingUserIds
 
-// Module 11095 (useTypingUserIds)
+// Module 11133 (useTypingUserIds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

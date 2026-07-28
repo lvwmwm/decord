@@ -1,10 +1,10 @@
-// Module ID: 15620
-// Function ID: 120436
+// Module ID: 15659
+// Function ID: 120592
 // Name: ContextMenuCommandNavigator
-// Dependencies: [31, 27, 33, 9041, 4131, 689, 5703, 5517, 1557, 9050, 1212, 15621, 15623, 2]
+// Dependencies: [31, 27, 33, 9085, 4165, 689, 5713, 5552, 1557, 9094, 1212, 15660, 15662, 2]
 // Exports: default
 
-// Module 15620 (ContextMenuCommandNavigator)
+// Module 15659 (ContextMenuCommandNavigator)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,11 +16,9 @@ let closure_6;
 let require = arg1;
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-createNativeStackNavigator = {};
-createNativeStackNavigator = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-createNativeStackNavigator.container = createNativeStackNavigator;
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-createNativeStackNavigator.content = _createForOfIteratorHelperLoose;
+createNativeStackNavigator = { container: { flex: 1 } };
+createNativeStackNavigator = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createNativeStackNavigator.content = createNativeStackNavigator;
 createNativeStackNavigator = _createForOfIteratorHelperLoose.createStyles(createNativeStackNavigator);
 const result = require("jsxProd").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandNavigator.tsx");
 
@@ -30,7 +28,7 @@ export default function ContextMenuCommandNavigator() {
   const tmp = createNativeStackNavigator();
   const require = tmp;
   const layoutEffect = React.useLayoutEffect(() => tmp(outer1_2[6]).trackAppUIViewed(), []);
-  let obj = require(5517) /* NavigationStack */;
+  let obj = require(5552) /* NavigationStack */;
   const importDefault = obj.useAccessibilityNativeStackOptions();
   const rect = importDefault(1557)();
   obj = { style: items };

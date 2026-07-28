@@ -1,10 +1,10 @@
-// Module ID: 15163
-// Function ID: 115376
+// Module ID: 15203
+// Function ID: 115535
 // Name: trackImpressionForCard
-// Dependencies: [31, 27, 14651, 653, 9051, 33, 4131, 689, 8364, 480, 1457, 566, 5462, 5482, 15164, 6619, 1557, 8756, 12700, 4127, 1212, 15160, 675, 9050, 9058, 2]
+// Dependencies: [31, 27, 14695, 653, 9095, 33, 4165, 689, 8402, 480, 1457, 566, 5497, 5517, 15204, 6655, 1557, 8800, 12743, 4161, 1212, 15200, 675, 9094, 9102, 2]
 // Exports: default
 
-// Module 15163 (trackImpressionForCard)
+// Module 15203 (trackImpressionForCard)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ const require = arg1;
 function trackImpressionForCard(current, guild_id, game_id, variant, location_stack) {
   current = current.current;
   current.add(guild_id.id);
-  let obj = require(8364) /* trackImpression */;
+  let obj = require(8402) /* trackImpression */;
   obj = { type: require(480) /* isThrottled */.ImpressionTypes.PANE, name: require(480) /* isThrottled */.ImpressionNames.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD, properties: obj };
   obj = { game_id, guild_id: guild_id.id, location_stack, variant };
   obj.trackImpression(obj);
@@ -93,7 +93,7 @@ class OneColumnGuildUpsellList {
       return outer1_9(stateFromStoresObject(outer1_3[14]), obj, item.id);
     }, items1);
     tmp5 = useOnViewableItemsChanged(stateFromStoresObject, "one-column", tmp3(require("QUICK_SWITCHER").GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations);
-    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f115392, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
+    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f115551, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
     return jsx(require("useModalDismissGuardRefreshControl").FlashList, obj);
   }
 }
@@ -198,7 +198,7 @@ class TwoColumnGuildUpsellList {
       obj.children = items;
       return outer1_10(outer1_5, obj);
     }, items2);
-    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f115392, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback1 };
+    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f115551, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback1 };
     return jsx(require("useModalDismissGuardRefreshControl").FlashList, obj);
   }
 }
@@ -224,11 +224,11 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
   let bottom;
   let top;
   ({ top, bottom } = importDefault(1557)());
-  let obj = gradientTop(8756);
+  let obj = gradientTop(8800);
   gradientTop = obj.useGradientTop();
   const tmp3 = callback3(bottom, top);
   importDefault = tmp3;
-  const GameCommunityUpsellMultiExperiment = gradientTop(12700).GameCommunityUpsellMultiExperiment;
+  const GameCommunityUpsellMultiExperiment = gradientTop(12743).GameCommunityUpsellMultiExperiment;
   const visualVariant = GameCommunityUpsellMultiExperiment.useConfig({ location: "GameCommunityMultiGuildUpsellModal" }).visualVariant;
   let obj1 = gradientTop(566);
   let items = [_isNativeReflectConstruct];
@@ -254,15 +254,15 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
   }, items3);
   obj = { style: tmp3.container };
   obj = { style: memo };
-  obj1 = { source: importDefault(9058), onPress: onClose.onClose };
+  obj1 = { source: importDefault(9102), onPress: onClose.onClose };
   let intl = gradientTop(1212).intl;
   obj1.accessibilityLabel = intl.string(gradientTop(1212).t.cpT0Cq);
-  const items4 = [callback(gradientTop(9050).HeaderIconButton, obj1), , ];
+  const items4 = [callback(gradientTop(9094).HeaderIconButton, obj1), , ];
   const obj2 = { style: tmp3.headerTitle };
   const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1 };
   const intl2 = gradientTop(1212).intl;
   obj3.children = intl2.string(gradientTop(1212).t["fs+2Kn"]);
-  obj2.children = callback(gradientTop(4127).Text, obj3);
+  obj2.children = callback(gradientTop(4161).Text, obj3);
   items4[1] = callback(View, obj2);
   items4[2] = callback(View, { style: { width: 40 } });
   obj.children = items4;

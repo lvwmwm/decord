@@ -1,10 +1,10 @@
-// Module ID: 13098
-// Function ID: 101131
+// Module ID: 13142
+// Function ID: 101304
 // Name: LiveTag
-// Dependencies: [31, 27, 33, 4131, 689, 477, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 477, 4161, 1212, 2]
 // Exports: default
 
-// Module 13098 (LiveTag)
+// Module 13142 (LiveTag)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -40,6 +40,6 @@ export default function LiveTag(arg0) {
   obj.allowFontScaling = allowFontScaling;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.dI3q4h).toUpperCase();
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/bold", style: null, lineClamp: 1 });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/bold", style: null, lineClamp: 1 });
   return <View variant="text-xs/bold" style={null} lineClamp={1} />;
 };

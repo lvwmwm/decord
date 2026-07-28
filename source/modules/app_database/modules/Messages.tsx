@@ -1,9 +1,9 @@
-// Module ID: 5705
-// Function ID: 49396
+// Module ID: 5715
+// Function ID: 49252
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 6, 7, 4809, 1348, 5706, 3, 4808, 1883, 5712, 5715, 1884, 2]
+// Dependencies: [5, 57, 6, 7, 4843, 1348, 5716, 3, 4842, 1883, 5722, 5725, 1884, 2]
 
-// Module 5705 (_createForOfIteratorHelperLoose)
+// Module 5715 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -243,7 +243,7 @@ let tmp5 = (() => {
           const tmp14 = new outer2_11(tmp9);
           return tmp14;
         }
-        obj = callback(5712);
+        obj = callback(5722);
       }
     }
     return new outer2_11([]);
@@ -264,7 +264,7 @@ let tmp5 = (() => {
         if (obj.isReadableChannelId(optimistic.channelId)) {
           self.upsertOne(optimistic.guildId, optimistic.channelId, optimistic.message, arg1);
         }
-        obj = callback(5712);
+        obj = callback(5722);
       }
     }
   };
@@ -275,8 +275,8 @@ let tmp5 = (() => {
       const self = this;
       let isReadableChannelIdResult = null != message.message.id && null != message.message.channel_id;
       if (isReadableChannelIdResult) {
-        isReadableChannelIdResult = callback(5712).isReadableChannelId(message.message.channel_id);
-        const obj = callback(5712);
+        isReadableChannelIdResult = callback(5722).isReadableChannelId(message.message.channel_id);
+        const obj = callback(5722);
       }
       if (isReadableChannelIdResult) {
         if (outer1_14(message.message)) {
@@ -299,7 +299,7 @@ let tmp5 = (() => {
           let value = iter.value;
           let tmp2 = callback;
           let tmp3 = dependencyMap;
-          let obj = callback(5712);
+          let obj = callback(5722);
           if (obj.isReadableChannelId(value.channel_id)) {
             let tmp4 = self;
             let tmp5 = value;
@@ -330,7 +330,7 @@ let tmp5 = (() => {
           }
           self.upsertMany(basicChannel.guild_id, channelId.channelId, channelId.messages, arg1);
         }
-        obj = callback(5712);
+        obj = callback(5722);
       }
     }
   };
@@ -388,7 +388,7 @@ let tmp5 = (() => {
     value(arg0, arg1, arg2, arg3) {
       const obj = callback2(1883);
       const result = outer1_7.lastTimeConnectedChanged();
-      const KvMessage = callback(5715).KvMessage;
+      const KvMessage = callback(5725).KvMessage;
       const messagesTransactionResult = callback2(1883).messagesTransaction(arg3);
       messagesTransactionResult.put(arg0, arg1, KvMessage.fromMessage(arg0, arg1, arg2, result), callback(1884).ConflictOptions.Skip);
     }
@@ -398,7 +398,7 @@ let tmp5 = (() => {
     value(items, limit) {
       const messagesTransactionResult = callback2(1883).messagesTransaction(arg3);
       const result = outer1_7.lastTimeConnectedChanged();
-      const KvMessage = callback(5715).KvMessage;
+      const KvMessage = callback(5725).KvMessage;
       const obj = callback2(1883);
       messagesTransactionResult.put(items, limit, KvMessage.fromMessage(items, limit, arg2, result), callback(1884).ConflictOptions.Replace);
       messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
@@ -416,7 +416,7 @@ let tmp5 = (() => {
         do {
           let tmp3 = callback;
           let tmp4 = dependencyMap;
-          let KvMessage = callback(5715).KvMessage;
+          let KvMessage = callback(5725).KvMessage;
           let tmp5 = KvMessage;
           let tmp6 = items;
           let tmp7 = limit;
@@ -457,7 +457,7 @@ let tmp5 = (() => {
       const tmp6 = yield messagesResult.get(arg0, arg1, arg2.id);
       const result = outer2_7.lastTimeConnectedChanged();
       if (null != tmp6) {
-        const KvMessage = callback(5715).KvMessage;
+        const KvMessage = callback(5725).KvMessage;
         obj = {};
         const merged = Object.assign(tmp6.message);
         const merged1 = Object.assign(arg2);

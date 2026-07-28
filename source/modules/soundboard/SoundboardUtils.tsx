@@ -1,10 +1,10 @@
-// Module ID: 10714
-// Function ID: 83314
+// Module ID: 10752
+// Function ID: 83435
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1316, 1352, 3759, 1850, 4579, 4580, 653, 1314, 3804, 3777, 10715, 7986, 4586, 10716, 686, 10719, 10720, 10721, 624, 3970, 1334, 1331, 675, 4325, 2]
+// Dependencies: [5, 1316, 1352, 3793, 1850, 4613, 4614, 653, 1314, 3838, 3811, 10753, 8024, 4620, 10754, 686, 10757, 10758, 10759, 624, 4004, 1334, 1331, 675, 4359, 2]
 // Exports: getAmplitudinalSoundboardVolume, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 10714 (hasPermissionToPlaySound)
+// Module 10752 (hasPermissionToPlaySound)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "_callSuper";
@@ -46,7 +46,7 @@ function canUseSoundboardSound(currentUser, sound, channel) {
   if (arg3 === undefined) {
     flag = true;
   }
-  let result = importDefault(3777).canUseSoundboardEverywhere(currentUser);
+  let result = importDefault(3811).canUseSoundboardEverywhere(currentUser);
   if (!result) {
     let guild_id;
     if (null != channel) {
@@ -67,7 +67,7 @@ function canUseSoundboardSound(currentUser, sound, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(10715) /* getMuteStates */;
+  let obj = require(10753) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   return !muteStates.mute && !muteStates.suppress;
@@ -115,7 +115,7 @@ let result = require("_callSuper").fileFinishedImporting("modules/soundboard/Sou
 
 export const getAmplitudinalSoundboardVolume = function getAmplitudinalSoundboardVolume() {
   let volume;
-  const SoundboardSettings = require(3804) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(3838) /* explicitContentFromProto */.SoundboardSettings;
   const setting = SoundboardSettings.getSetting();
   if (null != setting) {
     volume = setting.volume;
@@ -130,10 +130,10 @@ export { hasPermissionToPlaySound };
 export { canUseSoundboardSound };
 export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
-  let obj = require(7986) /* _fetchDefaultSoundsFromApi2 */;
-  obj.playSoundLocally(channelId, soundId, require(4586) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(10716) /* _getCancellationSlowConnection */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(10716) /* _getCancellationSlowConnection */;
+  let obj = require(8024) /* _fetchDefaultSoundsFromApi2 */;
+  obj.playSoundLocally(channelId, soundId, require(4620) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
+  const result = require(10754) /* _getCancellationSlowConnection */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(10754) /* _getCancellationSlowConnection */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(686).dispatch(obj);
 };
@@ -151,13 +151,13 @@ export const useSoundBoardDismissContentTypes = function useSoundBoardDismissCon
   const items1 = [];
   if (!flag) {
     if (!hasSetAnyCustomJoinSound()) {
-      const result = require(3970) /* conceal */.ageEligibleForPremiumUpsell(stateFromStores);
-      const obj2 = require(3970) /* conceal */;
-      const obj3 = importDefault(3777);
+      const result = require(4004) /* conceal */.ageEligibleForPremiumUpsell(stateFromStores);
+      const obj2 = require(4004) /* conceal */;
+      const obj3 = importDefault(3811);
       if (tmp7) {
         items1.push(require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL);
       }
-      tmp7 = importDefault(3777).canUseCustomCallSounds(stateFromStores) || result;
+      tmp7 = importDefault(3811).canUseCustomCallSounds(stateFromStores) || result;
     }
   }
   return items1;
@@ -175,11 +175,11 @@ export const updateCustomJoinSound = function updateCustomJoinSound(arg0, arg1, 
   let closure_1 = arg1;
   const dependencyMap = arg2;
   const result = _require(1331).updateUserGuildSettings(arg0, (joinSound) => {
-    const AnalyticsSoundSource = callback(4586).AnalyticsSoundSource;
+    const AnalyticsSoundSource = callback(4620).AnalyticsSoundSource;
     if (null != joinSound.joinSound) {
-      let ADDED = callback(4586).AnalyticsChangeType.UPDATED;
+      let ADDED = callback(4620).AnalyticsChangeType.UPDATED;
     } else {
-      ADDED = callback(4586).AnalyticsChangeType.ADDED;
+      ADDED = callback(4620).AnalyticsChangeType.ADDED;
     }
     let obj = { soundId: closure_1.soundId };
     if (closure_1.guildId === outer1_10) {
@@ -189,7 +189,7 @@ export const updateCustomJoinSound = function updateCustomJoinSound(arg0, arg1, 
     }
     obj.guildId = guildId;
     joinSound.joinSound = obj;
-    obj = { guildId: callback, changeType: ADDED, soundSource: closure_1.guildId === outer1_10 ? AnalyticsSoundSource.DEFAULT : AnalyticsSoundSource.CUSTOM, soundType: callback(4586).AnalyticsSoundType.ENTRY, location: dependencyMap };
+    obj = { guildId: callback, changeType: ADDED, soundSource: closure_1.guildId === outer1_10 ? AnalyticsSoundSource.DEFAULT : AnalyticsSoundSource.CUSTOM, soundType: callback(4620).AnalyticsSoundType.ENTRY, location: dependencyMap };
     outer1_19(obj);
   }, _require(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
@@ -198,7 +198,7 @@ export const trackCustomCallSoundExternallyDeleted = function trackCustomCallSou
 };
 export const trackSoundFavorited = function trackSoundFavorited(location) {
   const sound = location.sound;
-  let obj = importDefault(4325);
+  let obj = importDefault(4359);
   obj = { location: location.location, expression_type: ExpressionPickerViewType.SOUNDBOARD, expression_id: sound.soundId, expression_name: sound.name, expression_guild_id: sound.guildId };
   obj.trackWithMetadata(constants2.EXPRESSION_FAVORITED, obj);
 };

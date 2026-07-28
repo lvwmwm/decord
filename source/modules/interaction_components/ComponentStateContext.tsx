@@ -1,10 +1,10 @@
-// Module ID: 7832
-// Function ID: 62480
+// Module ID: 7868
+// Function ID: 62570
 // Name: isInteractionComponent
-// Dependencies: [57, 31, 7662, 3760, 1348, 1918, 4947, 1850, 7833, 33, 1882, 4360, 4358, 566, 7699, 5996, 7835, 7836, 686, 4560, 4354, 2]
+// Dependencies: [57, 31, 7698, 3794, 1348, 1918, 4981, 1850, 7869, 33, 1882, 4394, 4392, 566, 7735, 6030, 7871, 7872, 686, 4594, 4388, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 7832 (isInteractionComponent)
+// Module 7868 (isInteractionComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,10 +44,10 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   if (shouldDisableInteractiveComponents === undefined) {
     flag = false;
   }
-  let LOADING = require(4360) /* ActionComponentState */.ActionComponentState.NORMAL;
+  let LOADING = require(4394) /* ActionComponentState */.ActionComponentState.NORMAL;
   let tmp = null != interaction;
   if (tmp) {
-    tmp = interaction.state !== require(4358) /* InteractionState */.InteractionState.FAILED;
+    tmp = interaction.state !== require(4392) /* InteractionState */.InteractionState.FAILED;
   }
   let DISABLED = LOADING;
   if (!tmp) {
@@ -55,16 +55,16 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
       flag = isInteractionComponent(id);
     }
     if (flag) {
-      DISABLED = require(4360) /* ActionComponentState */.ActionComponentState.DISABLED;
+      DISABLED = require(4394) /* ActionComponentState */.ActionComponentState.DISABLED;
     }
     return DISABLED;
   } else {
     if (interaction.data.interactionType !== require(1882) /* PermissionOverwriteType */.InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
-        LOADING = require(4360) /* ActionComponentState */.ActionComponentState.DISABLED;
+        LOADING = require(4394) /* ActionComponentState */.ActionComponentState.DISABLED;
       }
     }
-    LOADING = require(4360) /* ActionComponentState */.ActionComponentState.LOADING;
+    LOADING = require(4394) /* ActionComponentState */.ActionComponentState.LOADING;
   }
 }
 function getApplicationWidgetContainerId(applicationId) {
@@ -130,11 +130,11 @@ function useShouldDisableInteractiveComponents(channel_id) {
   if (null != channel) {
     guild_id = channel.guild_id;
   }
-  const obj5 = channel(7699);
-  const isThreadModerator = channel(5996).useIsThreadModerator(channel);
-  const obj6 = channel(5996);
+  const obj5 = channel(7735);
+  const isThreadModerator = channel(6030).useIsThreadModerator(channel);
+  const obj6 = channel(6030);
   let tmp7 = !stateFromStores;
-  const canUnarchiveThread = channel(5996).useCanUnarchiveThread(channel);
+  const canUnarchiveThread = channel(6030).useCanUnarchiveThread(channel);
   if (!tmp7) {
     tmp7 = stateFromStores1;
   }
@@ -282,7 +282,7 @@ function useComponentStateForModal(customId, id) {
     }
     return tmp;
   }, items1);
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     if (null == stateFromStores) {
       callback(closure_2);
     }
@@ -298,7 +298,7 @@ function useComponentStateForModal(customId, id) {
   obj.state = tmp6;
   obj.executeStateUpdate = callback;
   obj.isDisabled = false;
-  obj.visualState = _require(4360).ActionComponentState.NORMAL;
+  obj.visualState = _require(4394).ActionComponentState.NORMAL;
   obj.error = tmp3.error;
   return obj;
 }

@@ -1,10 +1,10 @@
-// Module ID: 16279
-// Function ID: 126449
+// Module ID: 16318
+// Function ID: 126605
 // Name: ModerationIcon
-// Dependencies: [31, 33, 689, 3834, 16280, 2]
+// Dependencies: [31, 33, 689, 3868, 16319, 2]
 // Exports: ModerationIcon
 
-// Module 16279 (ModerationIcon)
+// Module 16318 (ModerationIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ModerationIcon = function ModerationIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(16280) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(16319) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(16280) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(16319) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

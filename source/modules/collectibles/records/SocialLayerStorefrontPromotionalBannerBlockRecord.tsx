@@ -1,9 +1,9 @@
-// Module ID: 5813
-// Function ID: 51049
+// Module ID: 5823
+// Function ID: 50905
 // Name: SocialLayerStorefrontPromotionalBannerBlockRecord
-// Dependencies: [6, 7, 5801, 2]
+// Dependencies: [6, 7, 5811, 2]
 
-// Module 5813 (SocialLayerStorefrontPromotionalBannerBlockRecord)
+// Module 5823 (SocialLayerStorefrontPromotionalBannerBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

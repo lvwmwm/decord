@@ -1,10 +1,10 @@
-// Module ID: 7246
-// Function ID: 60105
+// Module ID: 7282
+// Function ID: 60194
 // Name: NitroFileUploadSpotIllustration
-// Dependencies: [33, 5085, 7247, 2]
+// Dependencies: [33, 5119, 7283, 2]
 // Exports: NitroFileUploadSpotIllustration
 
-// Module 7246 (NitroFileUploadSpotIllustration)
+// Module 7282 (NitroFileUploadSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroFileUploadSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const NitroFileUploadSpotIllustration = function NitroFileUploadSpotIllus
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7247) };
+  obj = { uri: importDefault(7283) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const NitroFileUploadSpotIllustration = function NitroFileUploadSpotIllus
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

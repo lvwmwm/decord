@@ -1,10 +1,10 @@
-// Module ID: 11650
-// Function ID: 90405
+// Module ID: 11689
+// Function ID: 90556
 // Name: confirmCancelFriendRequest
-// Dependencies: [31, 33, 4473, 11651, 11652, 11653, 11654, 11655, 11656, 2]
+// Dependencies: [31, 33, 4507, 11690, 11691, 11692, 11693, 11694, 11695, 2]
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmThreadRemove, confirmVideoUnstableConnection
 
-// Module 11650 (confirmCancelFriendRequest)
+// Module 11689 (confirmCancelFriendRequest)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -12,34 +12,34 @@ const require = arg1;
 const result = require("useAlertStore").fileFinishedImporting("modules/user_profile/native/UserProfileAlertUtils.tsx");
 
 export const confirmCancelFriendRequest = function confirmCancelFriendRequest(arg0) {
-  let obj = require(4473) /* useAlertStore */;
+  let obj = require(4507) /* useAlertStore */;
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openAlert("cancel-friend-request", jsx(importDefault(11651), {}));
+  obj.openAlert("cancel-friend-request", jsx(importDefault(11690), {}));
 };
 export const confirmRemoveFriend = function confirmRemoveFriend(arg0) {
-  let obj = require(4473) /* useAlertStore */;
+  let obj = require(4507) /* useAlertStore */;
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openAlert("remove-friend", jsx(importDefault(11652), {}));
+  obj.openAlert("remove-friend", jsx(importDefault(11691), {}));
 };
 export const confirmRemoveGameFriend = function confirmRemoveGameFriend(arg0) {
-  let obj = require(4473) /* useAlertStore */;
+  let obj = require(4507) /* useAlertStore */;
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openAlert("remove-game-friend", jsx(importDefault(11653), {}));
+  obj.openAlert("remove-game-friend", jsx(importDefault(11692), {}));
 };
 export const confirmVideoUnstableConnection = function confirmVideoUnstableConnection(onConfirm) {
-  let obj = require(4473) /* useAlertStore */;
+  let obj = require(4507) /* useAlertStore */;
   obj = { onConfirm };
-  obj.openAlert("video-unstable-connection", jsx(importDefault(11654), { onConfirm }));
+  obj.openAlert("video-unstable-connection", jsx(importDefault(11693), { onConfirm }));
 };
 export const alertUserReported = function alertUserReported() {
-  require(4473) /* useAlertStore */.openAlert("user-reported", jsx(importDefault(11655), {}));
+  require(4507) /* useAlertStore */.openAlert("user-reported", jsx(importDefault(11694), {}));
 };
 export const confirmThreadRemove = function confirmThreadRemove(arg0) {
-  let obj = require(4473) /* useAlertStore */;
+  let obj = require(4507) /* useAlertStore */;
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openAlert("thread-remove", jsx(importDefault(11656), {}));
+  obj.openAlert("thread-remove", jsx(importDefault(11695), {}));
 };

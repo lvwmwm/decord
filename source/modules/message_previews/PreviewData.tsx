@@ -1,9 +1,9 @@
-// Module ID: 12705
-// Function ID: 98746
+// Module ID: 12748
+// Function ID: 98916
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 3769, 4143, 4352, 21, 2]
+// Dependencies: [6, 7, 3803, 4177, 4386, 21, 2]
 
-// Module 12705 (_createForOfIteratorHelperLoose)
+// Module 12748 (_createForOfIteratorHelperLoose)
 import set from "set";
 import _defineProperties from "_defineProperties";
 import _callSuper from "_callSuper";

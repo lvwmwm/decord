@@ -1,10 +1,10 @@
-// Module ID: 11727
-// Function ID: 91039
+// Module ID: 11766
+// Function ID: 91190
 // Name: ContactSyncInviteFriends
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 5085, 11728, 4127, 1212, 4544, 675, 3970, 8134, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4165, 689, 566, 5119, 11767, 4161, 1212, 4578, 675, 4004, 8172, 2]
 // Exports: default
 
-// Module 11727 (ContactSyncInviteFriends)
+// Module 11766 (ContactSyncInviteFriends)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,16 +33,16 @@ export default function ContactSyncInviteFriends() {
   _require = obj.useStateFromStores(items, () => outer1_4.getCurrentUser());
   obj = {};
   obj = { style: tmp.container };
-  const obj1 = { style: tmp.art, source: importDefault(11728) };
-  const items1 = [callback(importDefault(5085), obj1), , ];
+  const obj1 = { style: tmp.art, source: importDefault(11767) };
+  const items1 = [callback(importDefault(5119), obj1), , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   let intl = _require(1212).intl;
   obj2.children = intl.string(_require(1212).t.ZxBpLf);
-  items1[1] = callback(_require(4127).Text, obj2);
+  items1[1] = callback(_require(4161).Text, obj2);
   const obj3 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default" };
   const intl2 = _require(1212).intl;
   obj3.children = intl2.string(_require(1212).t["fXtCJ+"]);
-  items1[2] = callback(_require(4127).Text, obj3);
+  items1[2] = callback(_require(4161).Text, obj3);
   obj.children = items1;
   const items2 = [callback2(View, obj), ];
   let obj4 = { style: tmp.button };
@@ -64,7 +64,7 @@ export default function ContactSyncInviteFriends() {
     const formatToPlainStringResult = intl.formatToPlainString(callback(outer1_2[11]).t["6E9a1J"], obj);
     callback(outer1_2[15]).showShareActionSheet({ message: formatToPlainStringResult }, outer1_6.CONTACT_SYNC_MODAL);
   };
-  obj4.children = callback(_require(4544).Button, obj5);
+  obj4.children = callback(_require(4578).Button, obj5);
   items2[1] = callback(View, obj4);
   obj.children = items2;
   return callback2(closure_9, obj);

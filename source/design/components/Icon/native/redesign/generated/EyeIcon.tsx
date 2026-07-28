@@ -1,10 +1,10 @@
-// Module ID: 8665
-// Function ID: 68818
+// Module ID: 8709
+// Function ID: 68969
 // Name: EyeIcon
-// Dependencies: [31, 33, 689, 3834, 8666, 2]
+// Dependencies: [31, 33, 689, 3868, 8710, 2]
 // Exports: EyeIcon
 
-// Module 8665 (EyeIcon)
+// Module 8709 (EyeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const EyeIcon = function EyeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8666) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8710) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8666) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8710) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

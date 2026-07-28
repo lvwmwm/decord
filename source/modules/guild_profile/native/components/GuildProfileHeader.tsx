@@ -1,10 +1,10 @@
-// Module ID: 8392
-// Function ID: 67115
+// Module ID: 8436
+// Function ID: 67262
 // Name: styles
-// Dependencies: [31, 27, 1922, 1194, 1918, 8393, 33, 4131, 689, 566, 5970, 21, 1387, 8394, 8395, 3832, 4099, 6633, 5513, 4127, 4661, 8396, 1212, 2]
+// Dependencies: [31, 27, 1922, 1194, 1918, 8437, 33, 4165, 689, 566, 6004, 21, 1387, 8438, 8439, 3866, 4133, 6669, 5548, 4161, 4695, 8440, 1212, 2]
 // Exports: default
 
-// Module 8392 (styles)
+// Module 8436 (styles)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

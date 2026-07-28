@@ -1,10 +1,10 @@
-// Module ID: 8276
-// Function ID: 66465
+// Module ID: 8314
+// Function ID: 66575
 // Name: _navigateToEvent
-// Dependencies: [5, 1348, 4203, 3948, 1354, 653, 44, 6653, 6658, 4945, 1198, 2]
+// Dependencies: [5, 1348, 4237, 3982, 1354, 653, 44, 6689, 6694, 4979, 1198, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 8276 (_navigateToEvent)
+// Module 8314 (_navigateToEvent)
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";

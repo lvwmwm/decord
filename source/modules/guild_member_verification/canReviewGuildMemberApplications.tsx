@@ -1,10 +1,10 @@
-// Module ID: 12561
-// Function ID: 97279
+// Module ID: 12604
+// Function ID: 97449
 // Name: canReviewGuildMemberApplications
-// Dependencies: [1838, 3759, 653, 566, 4621, 2]
+// Dependencies: [1838, 3793, 653, 566, 4655, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 12561 (canReviewGuildMemberApplications)
+// Module 12604 (canReviewGuildMemberApplications)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -41,8 +41,8 @@ export const useCanReviewGuildMemberApplications = function useCanReviewGuildMem
     hasItem = _isNativeReflectConstruct.can(constants2.KICK_MEMBERS, stateFromStores);
   }
   if (hasItem) {
-    hasItem = _require(4621).guildHasVerificationGate(stateFromStores);
-    const obj2 = _require(4621);
+    hasItem = _require(4655).guildHasVerificationGate(stateFromStores);
+    const obj2 = _require(4655);
   }
   return hasItem;
 };

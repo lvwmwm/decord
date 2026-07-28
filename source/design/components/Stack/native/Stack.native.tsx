@@ -1,10 +1,10 @@
-// Module ID: 4542
-// Function ID: 39854
+// Module ID: 4576
+// Function ID: 39968
 // Name: Stack
-// Dependencies: [31, 27, 33, 4131, 2]
+// Dependencies: [31, 27, 33, 4165, 2]
 // Exports: Stack
 
-// Module 4542 (Stack)
+// Module 4576 (Stack)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

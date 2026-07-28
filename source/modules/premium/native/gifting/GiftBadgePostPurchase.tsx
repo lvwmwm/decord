@@ -1,10 +1,10 @@
-// Module ID: 9762
-// Function ID: 75930
+// Module ID: 9802
+// Function ID: 76059
 // Name: PostPurchaseFooter
-// Dependencies: [31, 27, 8047, 9763, 1345, 33, 4131, 689, 1557, 4338, 3983, 4544, 8700, 1212, 2295, 9764, 4127, 4100, 4101, 9644, 9765, 3947, 1334, 566, 8044, 2]
+// Dependencies: [31, 27, 8085, 9803, 1345, 33, 4165, 689, 1557, 4372, 4017, 4578, 8744, 1212, 2295, 9804, 4161, 4134, 4135, 9684, 9805, 3981, 1334, 566, 8082, 2]
 // Exports: default
 
-// Module 9762 (PostPurchaseFooter)
+// Module 9802 (PostPurchaseFooter)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,16 +38,16 @@ function PostPurchaseFooter(onSendGift) {
   }, []);
   obj = { grow: true, variant: "primary" };
   obj = { size: "sm", color: importDefault(689).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  obj.icon = callback4(onSendGift(8700).GiftIcon, obj);
+  obj.icon = callback4(onSendGift(8744).GiftIcon, obj);
   const intl = onSendGift(1212).intl;
   obj.text = intl.string(importDefault(2295).g86YiI);
   obj.onPress = callback;
-  const items1 = [callback4(onSendGift(4544).Button, obj), ];
+  const items1 = [callback4(onSendGift(4578).Button, obj), ];
   const obj1 = { grow: true, variant: "secondary" };
   const intl2 = onSendGift(1212).intl;
   obj1.text = intl2.string(importDefault(2295)["sa/cfM"]);
   obj1.onPress = callback1;
-  items1[1] = callback4(onSendGift(4544).Button, obj1);
+  items1[1] = callback4(onSendGift(4578).Button, obj1);
   obj.children = items1;
   return callback5(View, obj);
 }
@@ -63,12 +63,12 @@ function InProgressScreen(arg0) {
   const tmp = callback6(importDefault(1557)().bottom);
   let obj = { style: tmp.screenContainer };
   obj = { style: tmp.content };
-  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9764), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
+  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9804), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection };
-  const items1 = [callback4(require(4127) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), ];
+  const items1 = [callback4(require(4161) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), ];
   const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description };
-  items1[1] = callback4(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback4(require(4161) /* Text */.Text, obj3);
   obj1.children = items1;
   items[1] = callback5(View, obj1);
   obj.children = items;
@@ -95,12 +95,12 @@ function LevelUpScreen(arg0) {
   let tmp9 = null != newTier.simple_icon_url;
   if (tmp9) {
     const obj1 = { icon: newTier.simple_icon_url, size: 140 };
-    tmp9 = callback4(importDefault(9644), obj1);
+    tmp9 = callback4(importDefault(9684), obj1);
   }
   obj.children = tmp9;
   const items = [callback4(View, obj), ];
   const obj2 = { style: tmp.levelUpBody };
-  const items1 = [callback4(importDefault(9765), { progress: simulatedProgress, currentTier, newTier, style: tmp.levelUpProgress }), ];
+  const items1 = [callback4(importDefault(9805), { progress: simulatedProgress, currentTier, newTier, style: tmp.levelUpProgress }), ];
   const obj4 = { style: tmp.messageSection };
   const obj5 = { variant: "heading-xxl/bold", style: tmp.centerText };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -113,7 +113,7 @@ function LevelUpScreen(arg0) {
   }
   obj6.tierName = str2;
   obj5.children = intl.format(importDefault(2295).k8MmO8, obj6);
-  const items2 = [callback4(require(4127) /* Text */.Text, obj5), ];
+  const items2 = [callback4(require(4161) /* Text */.Text, obj5), ];
   let tmp19Result = null != nextTier && null != giftsToNextTier;
   if (tmp19Result) {
     tmp19Result = giftsToNextTier > 0;
@@ -128,7 +128,7 @@ function LevelUpScreen(arg0) {
     }
     obj8.nextTierName = str;
     obj7.children = intl2.format(importDefault(2295)["6QVlxw"], obj8);
-    tmp19Result = callback4(require(4127) /* Text */.Text, obj7);
+    tmp19Result = callback4(require(4161) /* Text */.Text, obj7);
     const tmp19 = callback4;
   }
   items2[1] = tmp19Result;

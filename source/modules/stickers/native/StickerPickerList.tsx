@@ -1,8 +1,8 @@
-// Module ID: 9588
-// Function ID: 74790
-// Dependencies: [57, 31, 27, 5036, 9561, 9525, 33, 4131, 689, 1273, 9589, 4127, 1212, 4800, 9330, 9286, 566, 9590, 9572, 22, 8755, 9591, 9173, 5162, 2]
+// Module ID: 9628
+// Function ID: 74919
+// Dependencies: [57, 31, 27, 5070, 9601, 9565, 33, 4165, 689, 1273, 9629, 4161, 1212, 4834, 9374, 9330, 566, 9630, 9612, 22, 8799, 9631, 9217, 5196, 2]
 
-// Module 9588
+// Module 9628
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -34,12 +34,12 @@ let closure_14 = importAllResult.memo((height) => {
   const tmp = callback3();
   let obj = { style: items };
   items = [tmp.nsfwContainer, { height: height.height }];
-  obj = { source: importDefault(9589), size: require(1273) /* Button */.Icon.Sizes.SMALL };
+  obj = { source: importDefault(9629), size: require(1273) /* Button */.Icon.Sizes.SMALL };
   const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.uy25Qz);
-  items1[1] = callback(require(4127) /* Text */.Text, obj);
+  items1[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items1;
   return callback2(View, obj);
 });
@@ -52,7 +52,7 @@ let closure_15 = importAllResult.memo((arg0) => {
   const items = [callback3().section, sectionStyle, { height }];
   obj.style = items;
   obj = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-  obj.children = callback(require(4127) /* Text */.Text, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
   return callback(View, obj);
 });
 let closure_16 = importAllResult.memo((height) => {

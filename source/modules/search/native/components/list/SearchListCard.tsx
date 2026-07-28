@@ -1,10 +1,10 @@
-// Module ID: 15431
-// Function ID: 117758
+// Module ID: 15471
+// Function ID: 117917
 // Name: SearchListContentAuthor
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 4127, 3970, 4321, 9026, 4646, 1212, 4594, 5166, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1273, 4161, 4004, 4355, 9070, 4680, 1212, 4628, 5200, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15431 (SearchListContentAuthor)
+// Module 15471 (SearchListContentAuthor)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,21 +41,21 @@ function SearchListPrivateChannel(channel) {
     obj.style = tmp.channel;
     obj = { style: tmp.gdmIcon };
     obj = { channel, size: require(1273) /* Button */.AvatarSizes.SIZE_16 };
-    obj.children = callback(importDefault(9026), obj);
+    obj.children = callback(importDefault(9070), obj);
     const items = [callback(View, obj), ];
     const obj1 = { style: tmp.channelName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp2 };
-    items[1] = callback(require(4127) /* Text */.Text, obj1);
+    items[1] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items;
     let tmp3Result = tmp3(tmp4, obj);
-    const tmp15 = importDefault(9026);
+    const tmp15 = importDefault(9070);
   } else {
     obj.style = tmp.privateChannelIcon;
     const obj2 = { style: tmp.icon, size: "xs", color: "interactive-text-default" };
-    const items1 = [callback(require(4646) /* ForumIcon */.ForumIcon, obj2), ];
+    const items1 = [callback(require(4680) /* ForumIcon */.ForumIcon, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1 };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj3.children = intl.string(require(1212) /* getSystemLocale */.t.ACgJhM);
-    items1[1] = callback(require(4127) /* Text */.Text, obj3);
+    items1[1] = callback(require(4161) /* Text */.Text, obj3);
     obj.children = items1;
     tmp3Result = tmp3(tmp4, obj);
   }
@@ -114,7 +114,7 @@ export const SearchListCardContainer = function SearchListCardContainer(arg0) {
   const items = [_createForOfIteratorHelperLoose().container, containerStyle];
   obj.style = items;
   obj.children = children;
-  return callback(require(5166) /* getCardBackgroundToken */.Card, obj);
+  return callback(require(5200) /* getCardBackgroundToken */.Card, obj);
 };
 export const SearchListCardThumbnail = function SearchListCardThumbnail(children) {
   return callback(View, { style: _createForOfIteratorHelperLoose().thumbnail, children: children.thumbnail });
@@ -127,13 +127,13 @@ export const SearchListCardContent = function SearchListCardContent(arg0) {
   let tmp3 = label;
   if ("string" === typeof label) {
     obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: label };
-    tmp3 = callback(require(4127) /* Text */.Text, obj);
+    tmp3 = callback(require(4161) /* Text */.Text, obj);
   }
   const items = [tmp3, ];
   let tmp7 = subLabel;
   if ("string" === typeof subLabel) {
     obj = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: subLabel };
-    tmp7 = callback(require(4127) /* Text */.Text, obj);
+    tmp7 = callback(require(4161) /* Text */.Text, obj);
   }
   items[1] = tmp7;
   obj.children = items;

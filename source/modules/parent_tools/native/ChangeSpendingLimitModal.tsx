@@ -1,10 +1,10 @@
-// Module ID: 13873
-// Function ID: 106266
+// Module ID: 13917
+// Function ID: 106439
 // Name: renderMonthlySpendLine
-// Dependencies: [5, 31, 27, 33, 4131, 689, 7570, 4127, 1212, 2199, 13874, 3832, 4092, 4338, 3831, 5616, 6725, 6726, 4542, 6670, 11058, 4966, 4544, 5087, 11060, 2]
+// Dependencies: [5, 31, 27, 33, 4165, 689, 7606, 4161, 1212, 2199, 13918, 3866, 4126, 4372, 3865, 5651, 6761, 6762, 4576, 6706, 11096, 5000, 4578, 5121, 11098, 2]
 // Exports: default
 
-// Module 13873 (renderMonthlySpendLine)
+// Module 13917 (renderMonthlySpendLine)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, 
   } else if (isOverspending) {
     let obj = { style: formatToPlainStringResult.warningRow };
     obj = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_WARNING };
-    const items = [callback(require(7570) /* WarningIcon */.WarningIcon, obj), ];
+    const items = [callback(require(7606) /* WarningIcon */.WarningIcon, obj), ];
     const obj1 = { variant: "text-sm/normal", style: formatToPlainStringResult.warningText };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { amount: tmp };
@@ -30,7 +30,7 @@ function renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, 
     obj2.date = renewalDate;
     formatToPlainStringResult = intl2.formatToPlainString(importDefault(2199).Tk6x4X, obj2);
     obj1.children = formatToPlainStringResult;
-    items[1] = callback(require(4127) /* Text */.Text, obj1);
+    items[1] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items;
     let tmp8 = callback2(View, obj);
   } else {
@@ -38,7 +38,7 @@ function renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, 
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj3 = { amount: tmp };
     obj.children = intl.formatToPlainString(importDefault(2199).pfAlRY, obj3);
-    tmp8 = callback(require(4127) /* Text */.Text, obj);
+    tmp8 = callback(require(4161) /* Text */.Text, obj);
   }
 }
 function ChangeSpendingLimitScreen(teenId) {
@@ -63,7 +63,7 @@ function ChangeSpendingLimitScreen(teenId) {
     return obj(...arguments);
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(13874);
+  let obj = _require(13918);
   const changeSpendingLimitFormState = obj.useChangeSpendingLimitFormState(teenId.teenId);
   ({ amountInput, isOverspending, isSubmitting, renewalDate, monthlySpend, save: c0 } = changeSpendingLimitFormState);
   let formatPriceResult = null;
@@ -71,7 +71,7 @@ function ChangeSpendingLimitScreen(teenId) {
   if (null != monthlySpend) {
     formatPriceResult = null;
     if (monthlySpend > 0) {
-      let obj1 = _require(5616);
+      let obj1 = _require(5651);
       formatPriceResult = obj1.formatPrice(monthlySpend, tmp3);
     }
   }
@@ -81,12 +81,12 @@ function ChangeSpendingLimitScreen(teenId) {
   const obj2 = { variant: "text-sm/normal" };
   const intl = _require(1212).intl;
   obj2.children = intl.string(_handleSave(2199).IFguF2);
-  const items = [callback(_require(4127).Text, obj2), ];
+  const items = [callback(_require(4161).Text, obj2), ];
   const obj3 = { spacing: _handleSave(689).space.PX_8 };
   const obj4 = { variant: "text-sm/semibold", color: "text-subtle" };
   const intl2 = _require(1212).intl;
   obj4.children = intl2.string(_handleSave(2199)["1fHSu2"]);
-  const items1 = [callback(_require(4127).Text, obj4), , ];
+  const items1 = [callback(_require(4161).Text, obj4), , ];
   const obj5 = {};
   const obj6 = {};
   const intl3 = _require(1212).intl;
@@ -106,7 +106,7 @@ function ChangeSpendingLimitScreen(teenId) {
   }
   obj6.keyboardType = str;
   obj6.isClearable = true;
-  const items2 = [callback(_require(6670).TextInput, obj6), ];
+  const items2 = [callback(_require(6706).TextInput, obj6), ];
   let tmp16 = null;
   if (isOverspending) {
     const obj7 = { style: tmp.warningOverlay, pointerEvents: "none" };
@@ -117,10 +117,10 @@ function ChangeSpendingLimitScreen(teenId) {
   items1[1] = closure_7(View, obj5);
   items1[2] = renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, tmp);
   obj3.children = items1;
-  items[1] = closure_7(_require(4542).Stack, obj3);
+  items[1] = closure_7(_require(4576).Stack, obj3);
   obj1.children = items;
-  obj.children = closure_7(_require(4542).Stack, obj1);
-  const items3 = [callback(_require(6726).ModalContent, obj), ];
+  obj.children = closure_7(_require(4576).Stack, obj1);
+  const items3 = [callback(_require(6762).ModalContent, obj), ];
   const obj8 = {};
   const obj9 = {};
   if (isClearingCap) {
@@ -139,17 +139,17 @@ function ChangeSpendingLimitScreen(teenId) {
     obj11.disabled = !canSave || isSubmitting;
     obj11.loading = isSubmitting;
   }
-  const items4 = [callback(_require(4544).Button, obj11), ];
+  const items4 = [callback(_require(4578).Button, obj11), ];
   const obj12 = { variant: "tertiary" };
   const intl7 = _require(1212).intl;
   obj12.text = intl7.string(_require(1212).t["ETE/oC"]);
-  obj12.onPress = _handleSave(4338).pop;
-  items4[1] = callback(_require(4544).Button, obj12);
+  obj12.onPress = _handleSave(4372).pop;
+  items4[1] = callback(_require(4578).Button, obj12);
   obj9.children = items4;
-  obj8.children = closure_7(_require(4966).ButtonGroup, obj9);
-  items3[1] = callback(_require(11058).ModalFooter, obj8);
+  obj8.children = closure_7(_require(5000).ButtonGroup, obj9);
+  items3[1] = callback(_require(11096).ModalFooter, obj8);
   obj.children = items3;
-  return closure_7(_require(6725).ModalScreen, obj);
+  return closure_7(_require(6761).ModalScreen, obj);
 }
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -193,5 +193,5 @@ export default function ChangeSpendingLimitModal(teenId) {
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo };
   let intl = teenId(1212).intl;
   obj.headerBackTitle = intl.string(teenId(1212).t["13/7kX"]);
-  return callback(teenId(11060).Modal, obj);
+  return callback(teenId(11098).Modal, obj);
 };

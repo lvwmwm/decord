@@ -1,5 +1,5 @@
 // Module ID: 966
-// Function ID: 10446
+// Function ID: 10450
 // Name: replaceExports
 // Dependencies: []
 

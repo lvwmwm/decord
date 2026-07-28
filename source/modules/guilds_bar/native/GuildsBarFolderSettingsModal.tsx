@@ -1,10 +1,10 @@
-// Module ID: 14876
-// Function ID: 113502
+// Module ID: 14920
+// Function ID: 113675
 // Name: GuildFolderSettingsScene
-// Dependencies: [57, 31, 4971, 14877, 33, 6152, 7575, 1212, 1273, 14878, 5087, 566, 14875, 5517, 2]
+// Dependencies: [57, 31, 5005, 14921, 33, 6186, 7611, 1212, 1273, 14922, 5121, 566, 14919, 5552, 2]
 // Exports: default
 
-// Module 14876 (GuildFolderSettingsScene)
+// Module 14920 (GuildFolderSettingsScene)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,15 +30,15 @@ function GuildFolderSettingsScene(arg0) {
   obj.value = name;
   obj.onChange = onNameChange;
   obj.clearButtonVisibility = require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  obj.children = callback(require(7575) /* Form */.FormInput, obj);
-  const items = [callback(require(7575) /* Form */.FormSection, obj), ];
+  obj.children = callback(require(7611) /* Form */.FormInput, obj);
+  const items = [callback(require(7611) /* Form */.FormSection, obj), ];
   const obj1 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.title = intl3.string(require(1212) /* getSystemLocale */.t.xpurRF);
-  obj1.children = callback(importDefault(14878), { color, onChange: onColorChange });
-  items[1] = callback(require(7575) /* Form */.FormSection, obj1);
+  obj1.children = callback(importDefault(14922), { color, onChange: onColorChange });
+  items[1] = callback(require(7611) /* Form */.FormSection, obj1);
   obj.children = items;
-  return callback2(require(7575) /* Form */.Form, obj);
+  return callback2(require(7611) /* Form */.Form, obj);
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
@@ -98,10 +98,10 @@ export default function GuildFolderSettingsModal(folderId) {
         return tmp;
       }));
     })(folderId, first, first1);
-    const result = folderId(14875).hideGuildsBarFolderModal();
+    const result = folderId(14919).hideGuildsBarFolderModal();
   }, items2);
   callback1 = React.useCallback(() => {
-    const result = folderId(14875).hideGuildsBarFolderModal();
+    const result = folderId(14919).hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, first, first !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
   const screens = React.useMemo(() => (function getScreens(arg0, c5, callback, callback1) {
@@ -115,11 +115,11 @@ export default function GuildFolderSettingsModal(folderId) {
     };
     const intl = folderId(1212).intl;
     obj.title = intl.string(folderId(1212).t.Dx7im5);
-    obj.headerLeft = folderId(5087).getHeaderCloseButton(callback1);
+    obj.headerLeft = folderId(5121).getHeaderCloseButton(callback1);
     if (c5) {
       const intl2 = folderId(1212).intl;
-      let fn = folderId(5087).getHeaderTextButton(intl2.string(folderId(1212).t["R3BPH+"]), callback);
-      const obj4 = folderId(5087);
+      let fn = folderId(5121).getHeaderTextButton(intl2.string(folderId(1212).t["R3BPH+"]), callback);
+      const obj4 = folderId(5121);
     } else {
       fn = () => null;
     }
@@ -136,5 +136,5 @@ export default function GuildFolderSettingsModal(folderId) {
       return outer1_4(arg0);
     }
   }, c5, callback, callback1), items3);
-  return callback1(folderId(5517).Navigator, { screens, initialRouteName: "Folder Settings" });
+  return callback1(folderId(5552).Navigator, { screens, initialRouteName: "Folder Settings" });
 };

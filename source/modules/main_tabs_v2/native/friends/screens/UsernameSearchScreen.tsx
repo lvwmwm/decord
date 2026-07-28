@@ -1,10 +1,10 @@
-// Module ID: 15531
-// Function ID: 119498
+// Module ID: 15570
+// Function ID: 119654
 // Name: UsernameSearchScreen
-// Dependencies: [31, 27, 653, 33, 4131, 689, 675, 5159, 4529, 8756, 477, 5585, 4663, 12926, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 675, 5193, 4563, 8800, 477, 5620, 4697, 12970, 1212, 2]
 // Exports: default
 
-// Module 15531 (UsernameSearchScreen)
+// Module 15570 (UsernameSearchScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -44,7 +44,7 @@ export default function UsernameSearchScreen(navigation) {
     obj = { friend_add_type: outer1_7.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(outer1_6.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(5159)().insets;
+  const insets = ref(5193)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -60,7 +60,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(8756);
+  let obj = navigation(8800);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj1 = navigation(477);
   let prop = null;
@@ -76,10 +76,10 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: tmp.background };
   obj = { style: items1 };
   items1 = [tmp.content, clientThemesOverride];
-  const items2 = [callback(ref(4663), { absolute: true }), ];
+  const items2 = [callback(ref(4697), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled" };
   const items3 = [tmp.container, prop, ];
-  const tmp7 = ref(5585);
+  const tmp7 = ref(5620);
   items3[2] = { paddingBottom: insets.bottom + ref(689).space.PX_16 };
   obj1.contentContainerStyle = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false };
@@ -88,7 +88,7 @@ export default function UsernameSearchScreen(navigation) {
   obj3.headerText = intl.string(navigation(1212).t.YEOwDM);
   obj3.headerTextStyle = tmp.headerText;
   obj3.ref = ref;
-  obj1.children = callback(ref(12926), obj3);
+  obj1.children = callback(ref(12970), obj3);
   items2[1] = callback(closure_4, obj1);
   obj.children = items2;
   obj.children = callback2(tmp7, obj);

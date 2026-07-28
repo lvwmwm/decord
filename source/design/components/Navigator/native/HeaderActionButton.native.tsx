@@ -1,9 +1,9 @@
-// Module ID: 6695
-// Function ID: 59102
+// Module ID: 6731
+// Function ID: 59191
 // Name: HeaderActionButton
-// Dependencies: [31, 1277, 33, 4131, 689, 4127, 4548, 4546, 4661, 2]
+// Dependencies: [31, 1277, 33, 4165, 689, 4161, 4582, 4580, 4695, 2]
 
-// Module 6695 (HeaderActionButton)
+// Module 6731 (HeaderActionButton)
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -45,15 +45,15 @@ const forwardRefResult = require("result").forwardRef((arg0, ref) => {
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;
     obj.style = items;
-    obj.maxFontSizeMultiplier = require(4548) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    obj.maxFontSizeMultiplier = require(4582) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
     obj.children = text;
-    let tmp2 = callback(require(4127) /* Text */.Text, obj);
+    let tmp2 = callback(require(4161) /* Text */.Text, obj);
   } else if (null != IconComponent) {
     obj = { size: IconComponentSize };
     tmp2 = callback(IconComponent, obj);
   } else if (null != source) {
     obj = { source, style: imageStyle, size: iconSize };
-    tmp2 = callback(importDefault(4546), obj);
+    tmp2 = callback(importDefault(4580), obj);
   }
   const obj1 = { ref };
   if (null != accessibilityLabel) {
@@ -81,7 +81,7 @@ const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   obj1.disabled = disabled;
   const items2 = [tmp2, icon];
   obj1.children = items2;
-  return closure_5(require(4661) /* PressableBase */.PressableOpacity, obj1);
+  return closure_5(require(4695) /* PressableBase */.PressableOpacity, obj1);
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 

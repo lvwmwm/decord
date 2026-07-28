@@ -1,10 +1,10 @@
-// Module ID: 7564
-// Function ID: 60617
+// Module ID: 7600
+// Function ID: 60706
 // Name: GetStartedScreen
-// Dependencies: [5, 31, 27, 653, 6699, 33, 4131, 689, 4348, 6692, 7560, 1212, 6690, 477, 6727, 4127, 5501, 5164, 1921, 2]
+// Dependencies: [5, 31, 27, 653, 6735, 33, 4165, 689, 4382, 6728, 7596, 1212, 6726, 477, 6763, 4161, 5536, 5198, 1921, 2]
 // Exports: default
 
-// Module 7564 (GetStartedScreen)
+// Module 7600 (GetStartedScreen)
 import closure_3 from "jsxProd";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

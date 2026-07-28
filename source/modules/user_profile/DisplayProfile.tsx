@@ -1,9 +1,9 @@
-// Module ID: 7925
-// Function ID: 63079
+// Module ID: 7962
+// Function ID: 63188
 // Name: _getStringFieldDefault
-// Dependencies: [6, 7, 1852, 5632, 3777, 1392, 7882, 2]
+// Dependencies: [6, 7, 1852, 5880, 3811, 1392, 7918, 2]
 
-// Module 7925 (_getStringFieldDefault)
+// Module 7962 (_getStringFieldDefault)
 import getProfilePreviewValue from "getProfilePreviewValue";
 import set from "set";
 import { PremiumTypes } from "GuildFeatures";

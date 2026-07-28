@@ -1,9 +1,9 @@
-// Module ID: 14200
-// Function ID: 109262
+// Module ID: 14244
+// Function ID: 109435
 // Name: toggle
-// Dependencies: [4178, 7697, 566, 8770, 10059, 1212, 2]
+// Dependencies: [4212, 7733, 566, 8814, 10099, 1212, 2]
 
-// Module 14200 (toggle)
+// Module 14244 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -20,7 +20,7 @@ createToggle = {
   },
   onValueChange: function onAutoVoiceSensitivitySettingValueChange(autoThreshold) {
     mode = mode.getMode();
-    let obj = importDefault(8770);
+    let obj = importDefault(8814);
     obj = { autoThreshold };
     obj.setMode(mode, obj);
   },

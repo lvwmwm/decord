@@ -1,10 +1,10 @@
-// Module ID: 12761
-// Function ID: 99408
+// Module ID: 12804
+// Function ID: 99578
 // Name: NUFActionSheetTemplate
-// Dependencies: [31, 27, 33, 4131, 4127, 4544, 2]
+// Dependencies: [31, 27, 33, 4165, 4161, 4578, 2]
 // Exports: default
 
-// Module 12761 (NUFActionSheetTemplate)
+// Module 12804 (NUFActionSheetTemplate)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,9 +29,9 @@ export default function NUFActionSheetTemplate(arg0) {
   obj = { style: tmp.illustration, children: illustration };
   const items = [callback(View, obj), , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/bold", children: title };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
-  items[2] = callback(require(4127) /* Text */.Text, { style: tmp.description, variant: "text-md/medium", children: description });
-  items[3] = callback(require(4544) /* Button */.Button, { text: CTALabel, onPress: onCTAPress, grow: true });
+  items[1] = callback(require(4161) /* Text */.Text, obj);
+  items[2] = callback(require(4161) /* Text */.Text, { style: tmp.description, variant: "text-md/medium", children: description });
+  items[3] = callback(require(4578) /* Button */.Button, { text: CTALabel, onPress: onCTAPress, grow: true });
   obj.children = items;
   return callback2(View, obj);
 };

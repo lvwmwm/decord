@@ -1,10 +1,10 @@
-// Module ID: 13838
-// Function ID: 106089
+// Module ID: 13882
+// Function ID: 106262
 // Name: FamilyCenterActivityPage
-// Dependencies: [31, 27, 33, 4131, 689, 6200, 5121, 13839, 13841, 13851, 11050, 13855, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 6235, 5155, 13883, 13885, 13895, 11088, 13899, 2]
 // Exports: default
 
-// Module 13838 (FamilyCenterActivityPage)
+// Module 13882 (FamilyCenterActivityPage)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,25 +28,25 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityPage() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6200) /* useUserIdsForLinkStatus */;
+  let obj = require(6235) /* useUserIdsForLinkStatus */;
   obj = { style: tmp.scrollView };
   const activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { bottom: true };
   const obj1 = { style: tmp.container };
-  const items = [callback(importDefault(13839), {}), ];
+  const items = [callback(importDefault(13883), {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj2 = {};
-    const items1 = [callback(importDefault(13841), {}), callback(importDefault(13851), {}), ];
-    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11050), {}) };
+    const items1 = [callback(importDefault(13885), {}), callback(importDefault(13895), {}), ];
+    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11088), {}) };
     items1[2] = callback(closure_3, obj3);
     obj2.children = items1;
     let tmp9 = callback2(closure_6, obj2);
   } else {
-    tmp9 = callback(importDefault(13855), {});
+    tmp9 = callback(importDefault(13899), {});
   }
   items[1] = tmp9;
   obj1.children = items;
   obj.children = callback2(closure_3, obj1);
-  obj.children = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj.children = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   return callback(closure_4, obj);
 };

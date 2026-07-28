@@ -1,5 +1,5 @@
 // Module ID: 933
-// Function ID: 10130
+// Function ID: 10134
 // Name: convertPromptToMessages
 // Dependencies: [77, 934, 935, 932, 936]
 // Exports: _INTERNAL_cleanupToolCallSpan, _INTERNAL_getSpanForToolCallId, accumulateTokensForParent, applyAccumulatedTokens, convertAvailableToolsToJsonString, getSpanOpFromName, requestMessagesFromPrompt

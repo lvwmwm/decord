@@ -1,10 +1,10 @@
-// Module ID: 12331
-// Function ID: 95994
+// Module ID: 12374
+// Function ID: 96164
 // Name: WidgetPreview
-// Dependencies: [31, 27, 33, 4131, 689, 8017, 5632, 4127, 1212, 11991, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 8055, 5880, 4161, 1212, 12034, 2]
 // Exports: default
 
-// Module 12331 (WidgetPreview)
+// Module 12374 (WidgetPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function WidgetPreview(widget) {
   widget = widget.widget;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(5632) /* items */;
+  let obj = require(5880) /* items */;
   let tmp3 = null;
   if (obj.isGameWidget(widget)) {
     tmp3 = null;
@@ -32,11 +32,11 @@ export default function WidgetPreview(widget) {
       obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.children = intl.string(require(1212) /* getSystemLocale */.t.SpsnDY).toUpperCase();
-      const items = [callback(require(4127) /* Text */.Text, obj), ];
+      const items = [callback(require(4161) /* Text */.Text, obj), ];
       const obj1 = { userId: widget.userId, widget, disableInteraction: true };
       const items1 = [tmp2.card, tmp.card];
       obj1.cardStyle = items1;
-      items[1] = callback(require(11991) /* useGamePress */.WidgetSection, obj1);
+      items[1] = callback(require(12034) /* useGamePress */.WidgetSection, obj1);
       obj.children = items;
       tmp3 = callback2(View, obj);
       const str = intl.string(require(1212) /* getSystemLocale */.t.SpsnDY);

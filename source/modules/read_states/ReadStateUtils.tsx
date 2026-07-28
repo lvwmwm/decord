@@ -1,10 +1,10 @@
-// Module ID: 6123
-// Function ID: 54956
+// Module ID: 6157
+// Function ID: 55075
 // Name: getHasImportantUnread
-// Dependencies: [4143, 4326, 4327, 566, 2]
+// Dependencies: [4177, 4360, 4361, 566, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 6123 (getHasImportantUnread)
+// Module 6157 (getHasImportantUnread)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { UnreadSetting } from "ReadStateTypes";

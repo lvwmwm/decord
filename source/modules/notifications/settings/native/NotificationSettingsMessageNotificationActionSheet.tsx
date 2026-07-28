@@ -1,10 +1,10 @@
-// Module ID: 10263
-// Function ID: 79368
+// Module ID: 10303
+// Function ID: 79497
 // Name: NotificationSettingsMessageNotificationActionSheet
-// Dependencies: [31, 27, 653, 33, 4131, 689, 5187, 10260, 4127, 1212, 7596, 7595, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 5221, 10300, 4161, 1212, 7632, 7631, 2]
 // Exports: default
 
-// Module 10263 (NotificationSettingsMessageNotificationActionSheet)
+// Module 10303 (NotificationSettingsMessageNotificationActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserNotificationSettings } from "ME";
@@ -30,13 +30,13 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   let obj = { startExpanded: true, backgroundStyles: tmp.sheet };
   obj = { style: tmp.header };
   obj = { notificationSetting: defaultValue.value };
-  obj.children = callback(importDefault(10260), obj);
+  obj.children = callback(importDefault(10300), obj);
   const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content };
   const obj2 = { variant: "text-sm/semibold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t["1m22ZB"]);
-  const items1 = [callback(require(4127) /* Text */.Text, obj2), callback(require(4127) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted" }), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj2), callback(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted" }), ];
   const obj3 = { style: tmp.form };
   const obj4 = { defaultValue: defaultValue.value, onChange: defaultValue.onChange, hasIcons: false };
   const obj5 = {};
@@ -44,22 +44,22 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   obj5.label = intl2.string(require(1212) /* getSystemLocale */.t["HVah/3"]);
   obj5.value = UserNotificationSettings.ALL_MESSAGES;
   obj5.subLabel = defaultValue.allMessagesSubLabel;
-  const items2 = [callback(require(7595) /* TableRadioRow */.TableRadioRow, obj5), , ];
+  const items2 = [callback(require(7631) /* TableRadioRow */.TableRadioRow, obj5), , ];
   const obj6 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.label = intl3.string(require(1212) /* getSystemLocale */.t["tu+ZWJ"]);
   obj6.value = UserNotificationSettings.ONLY_MENTIONS;
-  items2[1] = callback(require(7595) /* TableRadioRow */.TableRadioRow, obj6);
+  items2[1] = callback(require(7631) /* TableRadioRow */.TableRadioRow, obj6);
   const obj7 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj7.label = intl4.string(require(1212) /* getSystemLocale */.t.X4wWUi);
   obj7.value = UserNotificationSettings.NO_MESSAGES;
-  items2[2] = callback(require(7595) /* TableRadioRow */.TableRadioRow, obj7);
+  items2[2] = callback(require(7631) /* TableRadioRow */.TableRadioRow, obj7);
   obj4.children = items2;
-  obj3.children = callback2(require(7596) /* context */.TableRadioGroup, obj4);
+  obj3.children = callback2(require(7632) /* context */.TableRadioGroup, obj4);
   items1[2] = callback(View, obj3);
   obj1.children = items1;
   items[1] = callback2(View, obj1);
   obj.children = items;
-  return callback2(require(5187) /* Background */.BottomSheet, obj);
+  return callback2(require(5221) /* Background */.BottomSheet, obj);
 };

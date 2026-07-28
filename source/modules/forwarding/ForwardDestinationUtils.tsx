@@ -1,10 +1,10 @@
-// Module ID: 6105
-// Function ID: 54584
+// Module ID: 6139
+// Function ID: 54703
 // Name: messageHasCheckpoint
-// Dependencies: [31, 5036, 1352, 1348, 3759, 3768, 1850, 653, 6106, 1327, 566, 669, 4467, 1882, 4346, 1212, 4465, 3970, 4321, 2]
+// Dependencies: [31, 5070, 1352, 1348, 3793, 3802, 1850, 653, 6140, 1327, 566, 669, 4501, 1882, 4380, 1212, 4499, 5953, 4004, 4355, 2]
 // Exports: getDestinationIsUnavailable, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 6105 (messageHasCheckpoint)
+// Module 6139 (messageHasCheckpoint)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -33,11 +33,8 @@ function isRatelimitedInChannel(channel, outer2_6) {
     tmp = channel.rateLimitPerUser > 0;
   }
   if (tmp) {
-    let canResult = outer2_6.can(constants2.MANAGE_CHANNELS, channel);
-    if (!canResult) {
-      canResult = outer2_6.can(constants2.MANAGE_MESSAGES, channel);
-    }
-    tmp = !canResult;
+    tmp = !require(5953) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer2_6);
+    const obj = require(5953) /* canBypassSlowmodeHelper */;
   }
   return tmp;
 }
@@ -46,7 +43,7 @@ function isRatelimitedInChannel(channel, outer2_6) {
 const result = require("_callSuper").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(6106).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(6140).getChannelIdFromDestinationId);
   found = mapped.find(found(1327).isNotNullish);
   const items = [closure_8];
   const items1 = [found];
@@ -77,10 +74,10 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
       tmp4 = messageHasCheckpoint(stateFromStores.messageSnapshots[0].message);
     }
     if (null != stateFromStores1) {
-      let obj = _require(4346);
+      let obj = _require(4380);
       if (obj.isChannelOrGuildNSFW(stateFromStores1)) {
         if (tmp) {
-          let obj1 = _require(4346);
+          let obj1 = _require(4380);
         }
         obj = {};
         const intl = _require(1212).intl;
@@ -101,7 +98,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const messageSnapshots = stateFromStores.messageSnapshots;
           }
           if (stateFromStores.embeds.length > 0) {
-            let obj4 = _require(4465);
+            let obj4 = _require(4499);
             if (!obj4.canEmbedLinks(type, closure_9)) {
               if (!obj6.shouldStripEmbeds(stateFromStores)) {
                 obj1 = {};
@@ -109,7 +106,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 obj1.label = intl3.string(_require(1212).t.Wr4RIX);
                 return obj1;
               }
-              obj6 = _require(4465);
+              obj6 = _require(4499);
             }
           } else {
             const messageSnapshots2 = stateFromStores.messageSnapshots;
@@ -121,11 +118,11 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               obj2.label = intl4.string(_require(1212).t.Wr4RIX);
               return obj2;
             }
-            obj8 = _require(4465);
+            obj8 = _require(4499);
           }
           const items = [];
           const messageSnapshots3 = stateFromStores.messageSnapshots;
-          let arraySpreadResult = HermesBuiltin.arraySpread(_require(4467).getMessageStickers(stateFromStores), 0);
+          let arraySpreadResult = HermesBuiltin.arraySpread(_require(4501).getMessageStickers(stateFromStores), 0);
           arraySpreadResult = HermesBuiltin.arraySpread(messageSnapshots3.flatMap((message) => type(outer1_2[12]).getMessageStickers(message.message)), arraySpreadResult);
           if (items.length > 0) {
             if (!closure_9.can(constants2.USE_EXTERNAL_STICKERS, type)) {
@@ -159,7 +156,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           } else {
             const messageSnapshots4 = stateFromStores.messageSnapshots;
           }
-          const obj10 = _require(4467);
+          const obj10 = _require(4501);
         }
       }
     }
@@ -179,8 +176,8 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         if (null != user) {
           let nickname = outer2_10.getNickname(user.id);
           if (null == nickname) {
-            nickname = outer2_1(outer2_2[17]).getName(user);
-            const obj2 = outer2_1(outer2_2[17]);
+            nickname = outer2_1(outer2_2[18]).getName(user);
+            const obj2 = outer2_1(outer2_2[18]);
           }
           tmp13 = nickname;
         }
@@ -189,7 +186,7 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         const channel = outer2_8.getChannel(id);
         let channelName = null;
         if (null != channel) {
-          const obj = callback(outer2_2[18]);
+          const obj = callback(outer2_2[19]);
           channelName = obj.computeChannelName(channel, outer2_11, outer2_10, true);
         }
         return channelName;
@@ -216,5 +213,5 @@ export const useDestinationNamesWithSlowmode = function useDestinationNamesWithS
   const obj = _require(566);
   const items2 = [closure_11, closure_10];
   const items3 = [stateFromStoresArray];
-  return _require(566).useStateFromStoresArray(items2, () => stateFromStoresArray.map((channel) => callback(outer2_2[18]).computeChannelName(channel, outer2_11, outer2_10, true)), items3);
+  return _require(566).useStateFromStoresArray(items2, () => stateFromStoresArray.map((channel) => callback(outer2_2[19]).computeChannelName(channel, outer2_11, outer2_10, true)), items3);
 };

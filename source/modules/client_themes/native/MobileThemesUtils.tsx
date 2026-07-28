@@ -1,10 +1,10 @@
-// Module ID: 4064
-// Function ID: 33851
+// Module ID: 4098
+// Function ID: 33953
 // Name: getCustomThemesName
-// Dependencies: [1278, 4065, 1322, 3944, 1212, 2397, 3945, 4066, 566, 1324, 2]
+// Dependencies: [1278, 4099, 1322, 3978, 1212, 2397, 3979, 4100, 566, 1324, 2]
 // Exports: getAllMobileThemes, useAllMobileThemes
 
-// Module 4064 (getCustomThemesName)
+// Module 4098 (getCustomThemesName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -22,18 +22,18 @@ function getCustomBackgroundGradient() {
   customThemeDisplaySettings = customThemeDisplaySettings.getCustomThemeDisplaySettings();
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
-    const obj = { type: require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
+    const obj = { type: require(3979) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
     ({ baseTheme: obj.theme, customTheme: obj.customThemeSettings } = customThemeDisplaySettings);
     tmp2 = obj;
   }
   return tmp2;
 }
 function useCustomBackgroundGradient(base_theme) {
-  let obj = require(4066) /* useCustomThemeDisplaySettings */;
+  let obj = require(4100) /* useCustomThemeDisplaySettings */;
   const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(base_theme);
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
-    obj = { type: require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
+    obj = { type: require(3979) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
     ({ baseTheme: obj2.theme, customTheme: obj2.customThemeSettings } = customThemeDisplaySettings);
     tmp2 = obj;
   }

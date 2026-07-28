@@ -1,10 +1,10 @@
-// Module ID: 12302
-// Function ID: 95866
+// Module ID: 12345
+// Function ID: 96036
 // Name: buildBaseEmbedProps
-// Dependencies: [27, 1278, 5932, 4977, 653, 5969, 477, 1212, 5955, 10905, 4980, 3977, 9415, 1553, 12303, 5930, 5949, 5953, 7666, 2]
+// Dependencies: [27, 1278, 5966, 5011, 653, 6003, 477, 1212, 5989, 10943, 5014, 4011, 9455, 1553, 12346, 5964, 5983, 5987, 7702, 2]
 // Exports: createQuestsEmbed
 
-// Module 12302 (buildBaseEmbedProps)
+// Module 12345 (buildBaseEmbedProps)
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -55,18 +55,18 @@ function buildSupportedOnMobileEmbedBodyText(quest) {
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["ge+AJp"], obj);
   } else {
     let tmp;
-    const questTaskDetails = require(5955) /* _createForOfIteratorHelperLoose */.getQuestTaskDetails(quest);
-    const obj3 = require(5955) /* _createForOfIteratorHelperLoose */;
-    const thirdPartyTaskDetails = require(5955) /* _createForOfIteratorHelperLoose */.getThirdPartyTaskDetails(quest);
-    const obj4 = require(5955) /* _createForOfIteratorHelperLoose */;
-    obj = { quest, taskDetails: questTaskDetails, location: constants.EMBED_MOBILE, sourceQuestContent: require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_EMBED_MOBILE };
+    const questTaskDetails = require(5989) /* _createForOfIteratorHelperLoose */.getQuestTaskDetails(quest);
+    const obj3 = require(5989) /* _createForOfIteratorHelperLoose */;
+    const thirdPartyTaskDetails = require(5989) /* _createForOfIteratorHelperLoose */.getThirdPartyTaskDetails(quest);
+    const obj4 = require(5989) /* _createForOfIteratorHelperLoose */;
+    obj = { quest, taskDetails: questTaskDetails, location: constants.EMBED_MOBILE, sourceQuestContent: require(5014) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_EMBED_MOBILE };
     if (null != thirdPartyTaskDetails) {
       tmp = thirdPartyTaskDetails;
     }
     obj.thirdPartyTaskDetails = tmp;
     obj.withoutMarkdown = true;
     obj.currentUser = quest.currentUser;
-    return require(10905) /* formatWithOrWithoutMarkdown */.getQuestsInstructionsToWinReward(obj);
+    return require(10943) /* formatWithOrWithoutMarkdown */.getQuestsInstructionsToWinReward(obj);
   }
   date = new Date();
 }
@@ -85,7 +85,7 @@ function buildQuestsEmbedProps(currentUser) {
     const intl9 = require(1212) /* getSystemLocale */.intl;
     obj.bodyText = intl9.string(require(1212) /* getSystemLocale */.t.CXEb9p);
     obj.themeColors = themeColors;
-    obj.thumbnailUrl = Image.resolveAssetSource(importDefault(12303)).uri;
+    obj.thumbnailUrl = Image.resolveAssetSource(importDefault(12346)).uri;
     const merged = Object.assign(buildBaseEmbedProps(obj));
     const intl10 = require(1212) /* getSystemLocale */.intl;
     obj["acceptLabelText"] = intl10.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
@@ -93,7 +93,7 @@ function buildQuestsEmbedProps(currentUser) {
     obj["acceptLabelColor"] = themeColors.colors.acceptLabelGreenColor;
     return obj;
   } else {
-    let obj1 = require(5930) /* _createForOfIteratorHelperLoose */;
+    let obj1 = require(5964) /* _createForOfIteratorHelperLoose */;
     const result = obj1.findQuestOrReplacement(questId, closure_5.quests, closure_5.excludedQuests);
     const excludedQuests = closure_5.excludedQuests;
     const value = excludedQuests.get(questId);
@@ -106,7 +106,7 @@ function buildQuestsEmbedProps(currentUser) {
     }
     if (null == result) {
       if (null != value) {
-        const result1 = require(5949) /* assignBillingSessionId */.trackQuestEmbedFallbackViewed(questId, constants2.EXCLUDED_QUEST);
+        const result1 = require(5983) /* assignBillingSessionId */.trackQuestEmbedFallbackViewed(questId, constants2.EXCLUDED_QUEST);
         let obj2 = {};
         const intl6 = require(1212) /* getSystemLocale */.intl;
         obj2.titleText = intl6.string(require(1212) /* getSystemLocale */.t.Dd6Daw);
@@ -114,20 +114,20 @@ function buildQuestsEmbedProps(currentUser) {
         obj2.bodyText = intl7.string(require(1212) /* getSystemLocale */.t.ii4mJo);
         obj2.themeColors = themeColors;
         questId = Image.resolveAssetSource;
-        obj2.thumbnailUrl = questId(importDefault(12303)).uri;
+        obj2.thumbnailUrl = questId(importDefault(12346)).uri;
         let tmp53 = buildBaseEmbedProps(obj2);
-        const obj13 = require(5949) /* assignBillingSessionId */;
+        const obj13 = require(5983) /* assignBillingSessionId */;
       } else {
-        const result2 = require(5949) /* assignBillingSessionId */.trackQuestEmbedFallbackViewed(questId, constants2.UNKNOWN_QUEST);
+        const result2 = require(5983) /* assignBillingSessionId */.trackQuestEmbedFallbackViewed(questId, constants2.UNKNOWN_QUEST);
         const obj3 = {};
         const intl11 = require(1212) /* getSystemLocale */.intl;
         obj3.titleText = intl11.string(require(1212) /* getSystemLocale */.t["rxf+nx"]);
         const intl12 = require(1212) /* getSystemLocale */.intl;
         obj3.bodyText = intl12.string(require(1212) /* getSystemLocale */.t.Ow5AQI);
         obj3.themeColors = themeColors;
-        obj3.thumbnailUrl = Image.resolveAssetSource(importDefault(12303)).uri;
+        obj3.thumbnailUrl = Image.resolveAssetSource(importDefault(12346)).uri;
         tmp53 = buildBaseEmbedProps(obj3);
-        const obj19 = require(5949) /* assignBillingSessionId */;
+        const obj19 = require(5983) /* assignBillingSessionId */;
       }
     } else {
       if (obj18.isShareableQuest(result.config)) {
@@ -141,7 +141,7 @@ function buildQuestsEmbedProps(currentUser) {
         const _Date = Date;
         const date = new Date();
         const tmp24 = quest.config.expiresAt < date.toISOString();
-        let obj6 = require(3977) /* AccessibilityAnnouncer */;
+        let obj6 = require(4011) /* AccessibilityAnnouncer */;
         const obj5 = {};
         obj6 = {};
         const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -154,7 +154,7 @@ function buildQuestsEmbedProps(currentUser) {
         const tmp19 = null != enrolledAt;
         const tmp29 = obj6.isThemeDark(state.getState().theme) ? ThemeTypes.DARK : ThemeTypes.LIGHT;
         const tmp31 = null != closure_5.questEnrollmentBlockedUntil;
-        obj6.thumbnailUrl = require(9415) /* resolveAsset */.getQuestAsset(quest, require(9415) /* resolveAsset */.QuestAssetType.GAME_TILE, tmp29).url;
+        obj6.thumbnailUrl = require(9455) /* resolveAsset */.getQuestAsset(quest, require(9455) /* resolveAsset */.QuestAssetType.GAME_TILE, tmp29).url;
         const merged1 = Object.assign(buildBaseEmbedProps(obj6));
         if (!tmp19) {
           if (!tmp24) {
@@ -181,9 +181,9 @@ function buildQuestsEmbedProps(currentUser) {
         } else {
           string2Result = string2(hvVgAZ["th2+0j"]);
         }
-        const obj12 = require(9415) /* resolveAsset */;
+        const obj12 = require(9455) /* resolveAsset */;
       } else {
-        obj2 = require(5949) /* assignBillingSessionId */;
+        obj2 = require(5983) /* assignBillingSessionId */;
         const result3 = obj2.trackQuestEmbedFallbackViewed(questId, constants2.NOT_SHAREABLE_QUEST);
         const obj9 = {};
         const intl = require(1212) /* getSystemLocale */.intl;
@@ -191,10 +191,10 @@ function buildQuestsEmbedProps(currentUser) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         obj9.bodyText = intl2.string(require(1212) /* getSystemLocale */.t.NXrP3N);
         obj9.themeColors = themeColors;
-        obj9.thumbnailUrl = Image.resolveAssetSource(importDefault(12303)).uri;
+        obj9.thumbnailUrl = Image.resolveAssetSource(importDefault(12346)).uri;
         tmp17 = buildBaseEmbedProps(obj9);
       }
-      obj18 = require(5953) /* _createForOfIteratorHelperLoose */;
+      obj18 = require(5987) /* _createForOfIteratorHelperLoose */;
     }
   }
 }
@@ -205,5 +205,5 @@ export const createQuestsEmbed = function createQuestsEmbed(questId) {
   let currentUser;
   let theme;
   ({ theme, currentUser } = questId);
-  return buildQuestsEmbedProps({ questId: questId.questId, themeColors: importDefault(7666)(theme), currentUser });
+  return buildQuestsEmbedProps({ questId: questId.questId, themeColors: importDefault(7702)(theme), currentUser });
 };

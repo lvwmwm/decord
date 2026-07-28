@@ -1,10 +1,10 @@
-// Module ID: 15057
-// Function ID: 114699
+// Module ID: 15097
+// Function ID: 114857
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getMobileBoostProgressBarEnabled, useMobileBoostProgressBarEnabled
 
-// Module 15057 (apexExperiment)
+// Module 15097 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-mobile-boost-progress-bar", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

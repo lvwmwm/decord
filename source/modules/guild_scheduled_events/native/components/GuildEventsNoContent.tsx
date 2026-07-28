@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 66391
+// Module ID: 8301
+// Function ID: 66501
 // Name: GuildEventsNoContent
-// Dependencies: [31, 27, 3759, 653, 482, 33, 4131, 5053, 689, 566, 6667, 8264, 8265, 4127, 1212, 8242, 2]
+// Dependencies: [31, 27, 3793, 653, 482, 33, 4165, 5087, 689, 566, 6703, 8302, 8303, 4161, 1212, 8280, 2]
 // Exports: default
 
-// Module 8263 (GuildEventsNoContent)
+// Module 8301 (GuildEventsNoContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,16 +38,16 @@ export default function GuildEventsNoContent(guild) {
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container };
-  obj = { icon: onClose(8264), IconComponent: guild(8265).CalendarIcon };
-  const items2 = [callback(onClose(6667), obj), , , ];
+  obj = { icon: onClose(8302), IconComponent: guild(8303).CalendarIcon };
+  const items2 = [callback(onClose(6703), obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = guild(1212).intl;
   obj1.children = intl.string(guild(1212).t["WgZ+3D"]);
-  items2[1] = callback(guild(4127).Text, obj1);
+  items2[1] = callback(guild(4161).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default" };
   const intl2 = guild(1212).intl;
   obj2.children = intl2.string(guild(1212).t["v/S/PG"]);
-  items2[2] = callback(guild(4127).Text, obj2);
+  items2[2] = callback(guild(4161).Text, obj2);
   if (stateFromStores) {
     const obj3 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default" };
     const intl3 = guild(1212).intl;
@@ -58,7 +58,7 @@ export default function GuildEventsNoContent(guild) {
         }
     };
     obj3.children = intl3.format(guild(1212).t["K+DH2o"], obj4);
-    stateFromStores = callback(guild(4127).Text, obj3);
+    stateFromStores = callback(guild(4161).Text, obj3);
   }
   items2[3] = stateFromStores;
   obj.children = items2;

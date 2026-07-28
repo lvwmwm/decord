@@ -1,10 +1,10 @@
-// Module ID: 15034
-// Function ID: 114597
+// Module ID: 15078
+// Function ID: 114772
 // Name: getVoiceUserHeight
-// Dependencies: [31, 27, 4123, 33, 1273, 9849, 4131, 689, 10224, 566, 3992, 4132, 1392, 15035, 8799, 8801, 8795, 8797, 6580, 6557, 8985, 2]
+// Dependencies: [31, 27, 4157, 33, 1273, 9889, 4165, 689, 10264, 566, 4026, 4166, 1392, 15079, 8843, 8845, 8839, 8841, 6616, 6593, 9029, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15034 (getVoiceUserHeight)
+// Module 15078 (getVoiceUserHeight)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
   let obj = require(566) /* initialize */;
   const items = [stateFromStores];
   stateFromStores = obj.useStateFromStores(items, () => !stateFromStores.useReducedMotion);
-  require(3992);
+  require(4026);
   const fn = function c() {
     let obj = {};
     if (ringing) {
@@ -87,7 +87,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
       return obj;
     }
   };
-  obj = { ringing, shouldAnimate: stateFromStores, PULSE_ENDING_OPACITY: 0.4, withRepeat: require(3992).withRepeat, withSequence: require(3992).withSequence, withDelay: require(3992).withDelay, INNER_PULSE_DELAY: 100, withTiming: require(4132) /* withTiming */.withTiming, PULSE_DURATION: 250, Easing: require(3992).Easing, PULSE_STARTING_OPACITY: 0.1, FADE_DURATION: 500 };
+  obj = { ringing, shouldAnimate: stateFromStores, PULSE_ENDING_OPACITY: 0.4, withRepeat: require(4026).withRepeat, withSequence: require(4026).withSequence, withDelay: require(4026).withDelay, INNER_PULSE_DELAY: 100, withTiming: require(4166) /* withTiming */.withTiming, PULSE_DURATION: 250, Easing: require(4026).Easing, PULSE_STARTING_OPACITY: 0.1, FADE_DURATION: 500 };
   fn.__closure = obj;
   fn.__workletHash = 9430639809025;
   fn.__initData = closure_9;
@@ -110,7 +110,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
     const items2 = [callback(require(1273) /* Button */.Avatar, obj3), , , , , , , ];
     let obj4 = { variant: "text-sm/medium", color: "redesign-channel-name-muted-text" };
     const merged = Object.assign(arg0);
-    items2[1] = callback(importDefault(15035), obj4);
+    items2[1] = callback(importDefault(15079), obj4);
     if (disabled) {
       items2[2] = null;
       if (disabled) {
@@ -120,13 +120,13 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
           tmp39 = null;
           if (!disabled) {
             let obj5 = { size: "custom", color: "redesign-channel-name-muted-text", style: tmp.voiceStateIcon };
-            tmp39 = callback(require(6580) /* VideoIcon */.VideoIcon, obj5);
+            tmp39 = callback(require(6616) /* VideoIcon */.VideoIcon, obj5);
           }
         }
         items2[4] = tmp39;
         let tmp43 = null;
         if (isInEmbeddedActivity) {
-          const obj6 = { source: importDefault(6557), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: tmp.legacyVoiceStateIcon };
+          const obj6 = { source: importDefault(6593), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: tmp.legacyVoiceStateIcon };
           tmp43 = callback(require(1273) /* Button */.Icon, obj6);
         }
         items2[5] = tmp43;
@@ -134,9 +134,9 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         if (null != platform) {
           str = platform;
         }
-        let consoleIconForVoicePlatform = importDefault(8985)(str);
+        let consoleIconForVoicePlatform = importDefault(9029)(str);
         if (null == consoleIconForVoicePlatform) {
-          let obj12 = require(8985) /* PlatformTypes */;
+          let obj12 = require(9029) /* PlatformTypes */;
           consoleIconForVoicePlatform = obj12.getConsoleIconForVoicePlatform(voicePlatform);
         }
         let tmp54 = null;
@@ -152,32 +152,32 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         }
         items2[7] = tmp58;
         obj2.children = items2;
-        tmp5Result = tmp5(importDefault(3992).View, obj2);
-        const tmp50 = importDefault(8985);
+        tmp5Result = tmp5(importDefault(4026).View, obj2);
+        const tmp50 = importDefault(9029);
       } else if (serverDeaf) {
         const obj9 = { style: tmp.voiceStateIcon, color: "text-feedback-critical", size: "custom" };
-        let tmp31 = callback(require(8795) /* HeadphonesDenyIcon */.HeadphonesDenyIcon, obj9);
+        let tmp31 = callback(require(8839) /* HeadphonesDenyIcon */.HeadphonesDenyIcon, obj9);
       } else {
         tmp31 = null;
         if (deaf) {
           const obj10 = { style: tmp.voiceStateIcon, size: "custom", color: "redesign-channel-name-muted-text" };
-          tmp31 = callback(require(8797) /* HeadphonesSlashIcon */.HeadphonesSlashIcon, obj10);
+          tmp31 = callback(require(8841) /* HeadphonesSlashIcon */.HeadphonesSlashIcon, obj10);
         }
       }
     } else if (serverMute) {
       const obj11 = { style: tmp.voiceStateIcon, color: "text-feedback-critical", size: "custom" };
-      let tmp19 = callback(require(8799) /* MicrophoneDenyIcon */.MicrophoneDenyIcon, obj11);
+      let tmp19 = callback(require(8843) /* MicrophoneDenyIcon */.MicrophoneDenyIcon, obj11);
     } else if (localMute) {
       obj12 = { style: tmp.voiceStateIcon, size: "custom", color: "redesign-channel-name-muted-text" };
-      tmp19 = callback(require(8799) /* MicrophoneDenyIcon */.MicrophoneDenyIcon, obj12);
+      tmp19 = callback(require(8843) /* MicrophoneDenyIcon */.MicrophoneDenyIcon, obj12);
     } else {
       tmp19 = null;
       if (mute) {
         const obj13 = { style: tmp.voiceStateIcon, size: "custom", color: "redesign-channel-name-muted-text" };
-        tmp19 = callback(require(8801) /* MicrophoneSlashIcon */.MicrophoneSlashIcon, obj13);
+        tmp19 = callback(require(8845) /* MicrophoneSlashIcon */.MicrophoneSlashIcon, obj13);
       }
     }
-    const tmp13 = importDefault(15035);
+    const tmp13 = importDefault(15079);
     tmp5 = closure_6;
   }
   return tmp5Result;
@@ -186,6 +186,6 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default memoResult;
 export const getVoiceUserHeight = function getVoiceUserHeight(fontScale) {
-  const obj = require(9849) /* scaleLineHeight */;
-  return Math.max(require(9849) /* scaleLineHeight */.scaleTextLineHeight("text-sm/medium", fontScale), require(1273) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
+  const obj = require(9889) /* scaleLineHeight */;
+  return Math.max(require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-sm/medium", fontScale), require(1273) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
 };

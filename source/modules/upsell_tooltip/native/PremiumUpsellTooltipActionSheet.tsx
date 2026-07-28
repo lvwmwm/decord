@@ -1,10 +1,10 @@
-// Module ID: 9267
-// Function ID: 72587
+// Module ID: 9311
+// Function ID: 72738
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [31, 27, 1345, 33, 4131, 689, 3947, 5187, 1273, 4127, 4544, 4099, 2]
+// Dependencies: [31, 27, 1345, 33, 4165, 689, 3981, 5221, 1273, 4161, 4578, 4133, 2]
 // Exports: default
 
-// Module 9267 (PremiumUpsellTooltipActionSheet)
+// Module 9311 (PremiumUpsellTooltipActionSheet)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -82,14 +82,14 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   const obj1 = { style: tmp.header };
   const items2 = [callback(require(1273) /* Button */.NitroWheel, { style: tmp.nitroWheel }), ];
   const obj3 = { variant: "heading-xl/bold", style: tmp.title, color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  items2[1] = callback(require(4127) /* Text */.Text, obj3);
+  items2[1] = callback(require(4161) /* Text */.Text, obj3);
   obj1.children = items2;
   items1[1] = callback2(handleDismiss, obj1);
   const obj4 = { style: null, variant: "text-md/medium", color: "text-default" };
   const items3 = [tmp.description, descriptionStyle];
   obj4.style = items3;
   obj4.children = description;
-  items1[2] = callback(require(4127) /* Text */.Text, obj4);
+  items1[2] = callback(require(4161) /* Text */.Text, obj4);
   const obj5 = { style: tmp.buttonContainer };
   const obj6 = {
     variant: "active",
@@ -106,7 +106,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   }
   obj6.icon = primaryButtonIconResult;
   obj6.size = "lg";
-  const items4 = [callback(require(4544) /* Button */.Button, obj6), ];
+  const items4 = [callback(require(4578) /* Button */.Button, obj6), ];
   let tmp13 = null;
   if (null != secondaryButtonText) {
     const obj7 = {
@@ -121,12 +121,12 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
         },
       size: "lg"
     };
-    tmp13 = callback(require(4544) /* Button */.Button, obj7);
+    tmp13 = callback(require(4578) /* Button */.Button, obj7);
   }
   items4[1] = tmp13;
   obj5.children = items4;
   items1[3] = callback2(handleDismiss, obj5);
   obj.children = items1;
   obj["children"] = callback2(handleDismiss, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

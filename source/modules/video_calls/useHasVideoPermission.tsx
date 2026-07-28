@@ -1,10 +1,10 @@
-// Module ID: 10679
-// Function ID: 83166
+// Module ID: 10717
+// Function ID: 83287
 // Name: useHasVideoPermission
-// Dependencies: [1838, 3759, 566, 5957, 2]
+// Dependencies: [1838, 3793, 566, 5991, 2]
 // Exports: default, getVideoPermission
 
-// Module 10679 (useHasVideoPermission)
+// Module 10717 (useHasVideoPermission)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -31,7 +31,7 @@ export default function useHasVideoPermission(arg0) {
 export const getVideoPermission = function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
-    const obj = require(5957) /* _createForOfIteratorHelperLoose */;
+    const obj = require(5991) /* _createForOfIteratorHelperLoose */;
     isPrivateResult = obj.canStreamInChannel(channel, _createForOfIteratorHelperLoose, _isNativeReflectConstruct, false);
   }
   return isPrivateResult;

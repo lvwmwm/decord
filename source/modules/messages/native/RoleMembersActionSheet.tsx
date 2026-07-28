@@ -1,10 +1,10 @@
-// Module ID: 10844
-// Function ID: 84310
+// Module ID: 10882
+// Function ID: 84431
 // Name: RoleMembersActionSheet
-// Dependencies: [31, 27, 4123, 6003, 1911, 33, 4131, 689, 21, 5149, 566, 5147, 1273, 4127, 5187, 10845, 2]
+// Dependencies: [31, 27, 4157, 6037, 1911, 33, 4165, 689, 21, 5183, 566, 5181, 1273, 4161, 5221, 10883, 2]
 // Exports: default
 
-// Module 10844 (RoleMembersActionSheet)
+// Module 10882 (RoleMembersActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -58,7 +58,7 @@ export default function RoleMembersActionSheet(guildId) {
   c4 = tmp4;
   let obj2 = guildId(566);
   const result = roleId(21).castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp8 = roleId(5147)(guildId);
+  const tmp8 = roleId(5181)(guildId);
   let tmp9 = null;
   if (roleId !== result) {
     let tmp10;
@@ -82,9 +82,9 @@ export default function RoleMembersActionSheet(guildId) {
     }
     obj.channelId = channelId;
     obj.roleId = roleId;
-    obj.children = closure_8(roleId(10845), obj);
-    tmp14Result = tmp14(guildId(5187).BottomSheet, obj);
-    const tmp18 = roleId(10845);
+    obj.children = closure_8(roleId(10883), obj);
+    tmp14Result = tmp14(guildId(5221).BottomSheet, obj);
+    const tmp18 = roleId(10883);
   }
   return tmp14Result;
 };

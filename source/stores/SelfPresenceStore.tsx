@@ -1,9 +1,9 @@
-// Module ID: 4811
-// Function ID: 41976
+// Module ID: 4845
+// Function ID: 42091
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4812, 1316, 4163, 4944, 4166, 10408, 4218, 4146, 653, 4175, 3804, 1360, 9011, 636, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4846, 1316, 4197, 4978, 4200, 10448, 4252, 4180, 653, 4209, 3838, 1360, 9055, 636, 22, 566, 686, 2]
 
-// Module 4811 (_isNativeReflectConstruct)
+// Module 4845 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import explicitContentFromProto from "explicitContentFromProto";
@@ -152,7 +152,7 @@ function filterPlayingActivities(arg0) {
   }
 }
 function shouldShowApplicationActivity(application_id) {
-  return require(4175) /* convertToTransitionState */.shouldShareApplicationActivity(application_id, closure_12);
+  return require(4209) /* convertToTransitionState */.shouldShareApplicationActivity(application_id, closure_12);
 }
 function shouldShowActivity(flags) {
   flags = flags.flags;
@@ -165,7 +165,7 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9011)(flags)) {
+      if (importDefault(9055)(flags)) {
         let shouldShowActivityResult = closure_8.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;
@@ -182,7 +182,7 @@ function shouldShowActivity(flags) {
         if (1 === searchGamesByNameResult.length) {
           setting = shouldShowApplicationActivity(searchGamesByNameResult[0]);
         } else {
-          const ShowCurrentGame = require(3804) /* explicitContentFromProto */.ShowCurrentGame;
+          const ShowCurrentGame = require(3838) /* explicitContentFromProto */.ShowCurrentGame;
           setting = ShowCurrentGame.getSetting();
         }
       }
@@ -212,7 +212,7 @@ function handleUpdate() {
   } else if (c21) {
     IDLE = StatusTypes.INVISIBLE;
   } else {
-    const StatusSetting = require(3804) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = require(3838) /* explicitContentFromProto */.StatusSetting;
     let ONLINE = StatusSetting.getSetting();
     if (ONLINE === StatusTypes.UNKNOWN) {
       ONLINE = StatusTypes.ONLINE;

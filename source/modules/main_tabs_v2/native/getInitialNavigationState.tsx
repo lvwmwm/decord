@@ -1,10 +1,10 @@
-// Module ID: 3984
-// Function ID: 33086
+// Module ID: 4018
+// Function ID: 33188
 // Name: wrapRouteForRootNavigator
-// Dependencies: [57, 1194, 3952, 1907, 653, 3, 3985, 1198, 3953, 3966, 3988, 2]
+// Dependencies: [57, 1194, 3986, 1907, 653, 3, 4019, 1198, 3987, 4000, 4022, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState
 
-// Module 3984 (wrapRouteForRootNavigator)
+// Module 4018 (wrapRouteForRootNavigator)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ function getInitialGuildState(closure_6, channelId, flag2, flag) {
   if (null != channelId) {
     tmp3 = channelId;
   }
-  let obj = require(3985) /* useChatLayout */;
+  let obj = require(4019) /* useChatLayout */;
   const isChatLockedOpen = obj.getChatLayout().isChatLockedOpen;
   if (flag2) {
     if (null != tmp3) {
@@ -82,21 +82,21 @@ function computeInitialNavigationStateWithoutLogging() {
   if (null != token.getToken()) {
     let obj3 = require(1198) /* shouldNavigate */;
     const _location = obj3.getHistory().location;
-    let obj4 = require(3953) /* matchPath */;
+    let obj4 = require(3987) /* matchPath */;
     let obj = {};
-    const RouteParam = require(3966) /* isPseudoGuildId */.RouteParam;
-    const RouteParam2 = require(3966) /* isPseudoGuildId */.RouteParam;
+    const RouteParam = require(4000) /* isPseudoGuildId */.RouteParam;
+    const RouteParam2 = require(4000) /* isPseudoGuildId */.RouteParam;
     obj = { optional: true };
     obj.path = closure_7.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(obj), ":messageId?");
     let matchPathResult = obj4.matchPath(_location.pathname, obj);
-    const MobileHomeDrawerExperiment = require(3988) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+    const MobileHomeDrawerExperiment = require(4022) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
     const obj1 = { location: "app-start" };
     const tmp6 = MobileHomeDrawerExperiment.getConfig(obj1).landOnHome && null == matchPathResult;
     if (null == matchPathResult) {
-      let obj8 = require(3953) /* matchPath */;
+      let obj8 = require(3987) /* matchPath */;
       const obj2 = {};
-      const RouteParam3 = require(3966) /* isPseudoGuildId */.RouteParam;
-      const RouteParam4 = require(3966) /* isPseudoGuildId */.RouteParam;
+      const RouteParam3 = require(4000) /* isPseudoGuildId */.RouteParam;
+      const RouteParam4 = require(4000) /* isPseudoGuildId */.RouteParam;
       obj3 = { optional: true };
       obj2.path = closure_7.CHANNEL(RouteParam3.guildId(), RouteParam4.channelId(obj3), ":messageId?");
       matchPathResult = obj8.matchPath(lastNonVoiceRoute.lastNonVoiceRoute, obj2);

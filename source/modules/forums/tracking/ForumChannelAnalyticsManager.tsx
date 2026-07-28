@@ -1,9 +1,9 @@
-// Module ID: 6031
-// Function ID: 54095
+// Module ID: 6065
+// Function ID: 54214
 // Name: ForumChannelAnalyticsManager
 // Dependencies: [7, 6, 1348, 2]
 
-// Module 6031 (ForumChannelAnalyticsManager)
+// Module 6065 (ForumChannelAnalyticsManager)
 import _classCallCheck from "_classCallCheck";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_defineProperties";

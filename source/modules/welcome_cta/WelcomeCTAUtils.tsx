@@ -1,10 +1,10 @@
-// Module ID: 7724
-// Function ID: 61648
+// Module ID: 7760
+// Function ID: 61738
 // Name: pickHelloSticker
-// Dependencies: [1850, 7725, 653, 21, 5685, 675, 2]
+// Dependencies: [1850, 7761, 653, 21, 5695, 675, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7724 (pickHelloSticker)
+// Module 7760 (pickHelloSticker)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { WELCOME_STICKERS } from "items";
 import { AnalyticEvents } from "ME";
@@ -39,10 +39,10 @@ export const pickWelcomeSticker = function pickWelcomeSticker(id) {
   return WELCOME_STICKERS[(num + obj2.extractTimestamp(obj2, id)) % WELCOME_STICKERS.length];
 };
 export const handleWelcomeCtaClicked = function handleWelcomeCtaClicked(messageChannel, message, stickerId) {
-  let obj = importDefault(5685);
+  let obj = importDefault(5695);
   obj = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
-  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(5685).getSendMessageOptionsForReply(obj));
-  const obj2 = importDefault(5685);
+  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(5695).getSendMessageOptionsForReply(obj));
+  const obj2 = importDefault(5695);
   obj = { is_reply: true, sticker_id: stickerId, target_user: message.author.id };
   const currentUser = authStore.getCurrentUser();
   let id;

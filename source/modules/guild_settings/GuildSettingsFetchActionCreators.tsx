@@ -1,10 +1,10 @@
-// Module ID: 8249
-// Function ID: 66263
+// Module ID: 8287
+// Function ID: 66373
 // Name: _fetchGuildIntegrationsApplications
-// Dependencies: [5, 4154, 1858, 653, 507, 686, 2]
+// Dependencies: [5, 4188, 1858, 653, 507, 686, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 8249 (_fetchGuildIntegrationsApplications)
+// Module 8287 (_fetchGuildIntegrationsApplications)
 import dispatcher from "dispatcher";
 import { BasicApplicationRecord } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

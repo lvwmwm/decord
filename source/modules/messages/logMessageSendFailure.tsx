@@ -1,10 +1,10 @@
-// Module ID: 6102
-// Function ID: 54572
+// Module ID: 6136
+// Function ID: 54691
 // Name: getAttachmentMimeTypes
-// Dependencies: [653, 4325, 2]
+// Dependencies: [653, 4359, 2]
 // Exports: logMessageSendFailure
 
-// Module 6102 (getAttachmentMimeTypes)
+// Module 6136 (getAttachmentMimeTypes)
 import { AnalyticEvents } from "ME";
 
 function getAttachmentMimeTypes(fileItems) {
@@ -35,7 +35,7 @@ export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   if (null != failureCode) {
     tmp3 = failureCode;
   }
-  let obj = require(4325) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4359) /* _createForOfIteratorHelperLoose */;
   obj = { failure_code: tmp3, error_message: tmp2, attachment_mimetypes: items };
   obj.trackWithMetadata(AnalyticEvents.SEND_MESSAGE_FAILURE, obj);
 };

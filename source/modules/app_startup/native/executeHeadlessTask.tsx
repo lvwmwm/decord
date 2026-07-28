@@ -1,10 +1,10 @@
-// Module ID: 16689
-// Function ID: 130124
+// Module ID: 16729
+// Function ID: 130285
 // Name: _executeHeadlessTask
-// Dependencies: [5, 27, 1194, 15973, 653, 3, 1184, 652, 25, 14, 12662, 675, 480, 4016, 2]
+// Dependencies: [5, 27, 1194, 16012, 653, 3, 1184, 652, 25, 14, 12705, 675, 480, 4050, 2]
 // Exports: default
 
-// Module 16689 (_executeHeadlessTask)
+// Module 16729 (_executeHeadlessTask)
 import timestamp from "timestamp";
 import { AppState } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

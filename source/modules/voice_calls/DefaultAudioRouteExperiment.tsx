@@ -1,9 +1,9 @@
-// Module ID: 15873
-// Function ID: 122544
+// Module ID: 15912
+// Function ID: 122700
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 15873 (apexExperiment)
+// Module 15912 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-02-default-audio-route", kind: "user", defaultConfig: { defaultSpeakerForGuildCall: false, defaultSpeakerForDMCall: false }, variations: { [1]: { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: false }, [2]: { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: true } } };

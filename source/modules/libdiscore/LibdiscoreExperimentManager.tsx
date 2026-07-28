@@ -1,9 +1,9 @@
-// Module ID: 16621
-// Function ID: 129624
+// Module ID: 16661
+// Function ID: 129785
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1188, 1845, 1842, 620, 1428, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1188, 1845, 1842, 620, 1428, 5112, 2]
 
-// Module 16621 (_isNativeReflectConstruct)
+// Module 16661 (_isNativeReflectConstruct)
 import isBlockedDomain from "isBlockedDomain";
 import _callSuper from "_callSuper";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

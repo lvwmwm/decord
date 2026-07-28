@@ -1,10 +1,10 @@
-// Module ID: 10611
-// Function ID: 82690
+// Module ID: 10649
+// Function ID: 82811
 // Name: useTrackActivityPip
-// Dependencies: [31, 10456, 653, 624, 8063, 10541, 675, 2]
+// Dependencies: [31, 10494, 653, 624, 8101, 10579, 675, 2]
 // Exports: default
 
-// Module 10611 (useTrackActivityPip)
+// Module 10649 (useTrackActivityPip)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -16,9 +16,9 @@ export default function useTrackActivityPip(arg0) {
   const _require = arg0;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => outer1_4.isPipEnabledWhileFocusedOnActivityOrStream());
-  let tmp2 = stateFromStores(8063)(stateFromStores);
+  let tmp2 = stateFromStores(8101)(stateFromStores);
   const dependencyMap = tmp2;
-  const tmp3 = stateFromStores(10541)();
+  const tmp3 = stateFromStores(10579)();
   const React = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = React.useEffect(() => {

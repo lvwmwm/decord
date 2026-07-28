@@ -1,10 +1,10 @@
-// Module ID: 15417
-// Function ID: 117661
+// Module ID: 15457
+// Function ID: 117820
 // Name: GroupDMRow
-// Dependencies: [31, 33, 4321, 9026, 1273, 9027, 4127, 15416, 2]
+// Dependencies: [31, 33, 4355, 9070, 1273, 9071, 4161, 15456, 2]
 // Exports: default
 
-// Module 15417 (GroupDMRow)
+// Module 15457 (GroupDMRow)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -18,19 +18,19 @@ export default function GroupDMRow(channel) {
   channel = channel.channel;
   const onPress = channel.onPress;
   ({ trailing, onAccessibilityAction, accessibilityActions } = channel);
-  const tmp = onPress(4321)(channel);
+  const tmp = onPress(4355)(channel);
   const items = [channel.id, onPress];
   const callback = React.useCallback(() => {
     onPress(channel.id);
   }, items);
   let obj = { size: channel(1273).AvatarSizes.LARGE_48, channel };
-  const tmp3 = onPress(9026);
-  const tmp4 = jsx(onPress(9026), { size: channel(1273).AvatarSizes.LARGE_48, channel });
-  const recipientsLabel = channel(9027).useRecipientsLabel(channel);
+  const tmp3 = onPress(9070);
+  const tmp4 = jsx(onPress(9070), { size: channel(1273).AvatarSizes.LARGE_48, channel });
+  const recipientsLabel = channel(9071).useRecipientsLabel(channel);
   let tmp6;
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp6 = jsx(channel(4127).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+    tmp6 = jsx(channel(4161).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
   }
   obj = {};
   let str = "";
@@ -49,5 +49,5 @@ export default function GroupDMRow(channel) {
   obj.trailing = trailing;
   obj.accessibilityActions = accessibilityActions;
   obj.onAccessibilityAction = onAccessibilityAction;
-  return jsx(channel(15416).SearchListRow, {});
+  return jsx(channel(15456).SearchListRow, {});
 };

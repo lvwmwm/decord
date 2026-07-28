@@ -1,10 +1,10 @@
-// Module ID: 8987
-// Function ID: 70805
+// Module ID: 9031
+// Function ID: 70956
 // Name: isVideoMode
-// Dependencies: [4150, 1348, 4178, 1907, 4147, 566, 2]
+// Dependencies: [4184, 1348, 4212, 1907, 4181, 566, 2]
 // Exports: default
 
-// Module 8987 (isVideoMode)
+// Module 9031 (isVideoMode)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

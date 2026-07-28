@@ -1,10 +1,10 @@
-// Module ID: 14055
-// Function ID: 107613
+// Module ID: 14099
+// Function ID: 107786
 // Name: roundToNearestPixel
-// Dependencies: [27, 14056, 664, 4543, 2]
+// Dependencies: [27, 14100, 664, 4577, 2]
 // Exports: isSoftDismissed
 
-// Module 14055 (roundToNearestPixel)
+// Module 14099 (roundToNearestPixel)
 import { PixelRatio } from "get ActivityIndicator";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 
@@ -81,7 +81,7 @@ const tmp8 = (() => {
     obj.animations = obj;
     return obj;
   }
-  dimensionsLayoutTransition.__closure = { withSpring: require(4543) /* withSpring */.withSpring, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
+  dimensionsLayoutTransition.__closure = { withSpring: require(4577) /* withSpring */.withSpring, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   dimensionsLayoutTransition.__workletHash = 4497154070776;
   dimensionsLayoutTransition.__initData = closure_13;
   return dimensionsLayoutTransition;

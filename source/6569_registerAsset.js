@@ -1,11 +1,11 @@
 // Module ID: 6569
-// Function ID: 58381
+// Function ID: 58411
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6569 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium_marketing/native/images", width: 300, height: 180, scales: [2, 3], hash: "1e5063c49fcc72c328279886065f1480", name: "img_super_reactions", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BrandInvertedIcon", width: 60, height: 60, scales: [2, 3], hash: "d3530007d60b5d4f6a3d08cddf26f42c", name: "BrandInvertedIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

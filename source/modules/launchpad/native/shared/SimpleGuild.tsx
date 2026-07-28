@@ -1,10 +1,10 @@
-// Module ID: 15722
-// Function ID: 121301
+// Module ID: 15761
+// Function ID: 121457
 // Name: SimpleGuild
-// Dependencies: [31, 27, 1391, 5868, 1838, 653, 33, 4131, 5513, 15723, 566, 15724, 15726, 1212, 14921, 4630, 689, 15725, 2]
+// Dependencies: [31, 27, 1391, 5902, 1838, 653, 33, 4165, 5548, 15762, 566, 15763, 15765, 1212, 14965, 4664, 689, 15764, 2]
 // Exports: default
 
-// Module 15722 (SimpleGuild)
+// Module 15761 (SimpleGuild)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { getGuildIconSource } from "isGuildOwner";

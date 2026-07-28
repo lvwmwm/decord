@@ -1,10 +1,10 @@
-// Module ID: 11202
-// Function ID: 87209
+// Module ID: 11240
+// Function ID: 87328
 // Name: RecommendationsBannerCard
-// Dependencies: [31, 27, 653, 33, 4131, 689, 7953, 7923, 1392, 11194, 4661, 11203, 1882, 11197, 4127, 1212, 11168, 5171, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 7990, 7959, 1392, 11232, 4695, 11241, 1882, 11235, 4161, 1212, 11206, 5205, 2]
 // Exports: default
 
-// Module 11202 (RecommendationsBannerCard)
+// Module 11240 (RecommendationsBannerCard)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -48,10 +48,10 @@ export default function RecommendationsBannerCard(application) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   if (!showsPromoted) {
-    let obj = application(7953);
+    let obj = application(7990);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  let obj1 = application(7953);
+  let obj1 = application(7990);
   const shelfBadgeTypeIfActive = obj1.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -76,7 +76,7 @@ export default function RecommendationsBannerCard(application) {
   const applicationIconSource = obj2.getApplicationIconSource(obj);
   if (isLandscape) {
     obj = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    let tmp9Result = callback(application(11194).BaseAppRow, obj);
+    let tmp9Result = callback(application(11232).BaseAppRow, obj);
   } else {
     obj1 = {};
     const items1 = [tmp.container, , ];
@@ -96,7 +96,7 @@ export default function RecommendationsBannerCard(application) {
     obj1.onPress = onPress;
     const obj3 = { style: tmp.banner };
     const obj4 = { applicationBot: application.bot };
-    let obj8 = application(7953);
+    let obj8 = application(7990);
     obj4.applicationEmbedded = obj8.isEmbeddedApp(application);
     ({ id: obj8.applicationId, icon } = application);
     let tmp19;
@@ -105,17 +105,17 @@ export default function RecommendationsBannerCard(application) {
     }
     obj4.applicationIcon = tmp19;
     obj4.overrideImageUrl = application.overrideImageUrl;
-    const items2 = [callback(importDefault(11203), obj4), ];
+    const items2 = [callback(importDefault(11241), obj4), ];
     if (showsPromoted) {
       const obj5 = { style: tmp.notifsContainer };
       const obj6 = { labelType: shelfBadgeTypeIfActive, replacementStyles: tmp.badge };
-      const items3 = [callback(importDefault(11197), obj6), ];
+      const items3 = [callback(importDefault(11235), obj6), ];
       if (showsPromoted) {
         const obj7 = { style: tmp.promotedLabelWrapper };
         obj8 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary" };
         const intl = application(1212).intl;
         obj8.children = intl.string(application(1212).t["/eVltv"]);
-        obj7.children = callback(application(4127).Text, obj8);
+        obj7.children = callback(application(4161).Text, obj8);
         showsPromoted = callback(View, obj7);
       }
       items3[1] = showsPromoted;
@@ -133,25 +133,25 @@ export default function RecommendationsBannerCard(application) {
     let tmp34 = null != applicationIconSource;
     if (tmp34) {
       const obj10 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp34 = callback(importDefault(11168), obj10);
+      tmp34 = callback(importDefault(11206), obj10);
     }
     const items5 = [tmp34, , ];
     const obj11 = { style: tmp.appDetails };
     const obj12 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    const items6 = [callback(application(4127).Text, obj12), ];
+    const items6 = [callback(application(4161).Text, obj12), ];
     const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = callback(application(4127).Text, obj13);
+    items6[1] = callback(application(4161).Text, obj13);
     obj11.children = items6;
     items5[1] = callback2(View, obj11);
-    items5[2] = callback(application(5171).TableRowArrow, {});
+    items5[2] = callback(application(5205).TableRowArrow, {});
     obj9.children = items5;
     items4[1] = callback2(View, obj9);
     obj1.children = items4;
-    tmp9Result = callback2(application(4661).PressableOpacity, obj1);
+    tmp9Result = callback2(application(4695).PressableOpacity, obj1);
     const tmp12 = callback2;
     const tmp13 = View;
     const tmp14 = callback;
-    const tmp17 = importDefault(11203);
+    const tmp17 = importDefault(11241);
     const tmp32 = callback2;
     const tmp33 = View;
     const tmp9 = callback2;

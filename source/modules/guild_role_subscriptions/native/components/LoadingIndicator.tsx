@@ -1,10 +1,10 @@
-// Module ID: 14166
-// Function ID: 108967
+// Module ID: 14210
+// Function ID: 109140
 // Name: LoadingIndicator
-// Dependencies: [31, 27, 33, 4131, 2]
+// Dependencies: [31, 27, 33, 4165, 2]
 // Exports: default
 
-// Module 14166 (LoadingIndicator)
+// Module 14210 (LoadingIndicator)
 import "result";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 112967
+// Module ID: 14852
+// Function ID: 113140
 // Name: useFocusRefOnNavigation
-// Dependencies: [31, 1457, 5582, 2]
+// Dependencies: [31, 1457, 5617, 2]
 // Exports: default
 
-// Module 14808 (useFocusRefOnNavigation)
+// Module 14852 (useFocusRefOnNavigation)
 import result from "result";
 
 const require = arg1;

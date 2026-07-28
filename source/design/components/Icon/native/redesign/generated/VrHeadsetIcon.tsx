@@ -1,10 +1,10 @@
-// Module ID: 13917
-// Function ID: 106538
+// Module ID: 13961
+// Function ID: 106711
 // Name: VrHeadsetIcon
-// Dependencies: [31, 33, 689, 3834, 13918, 2]
+// Dependencies: [31, 33, 689, 3868, 13962, 2]
 // Exports: VrHeadsetIcon
 
-// Module 13917 (VrHeadsetIcon)
+// Module 13961 (VrHeadsetIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const VrHeadsetIcon = function VrHeadsetIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13918) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13962) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13918) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(13962) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

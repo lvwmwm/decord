@@ -1,10 +1,10 @@
-// Module ID: 10710
-// Function ID: 83304
+// Module ID: 10748
+// Function ID: 83425
 // Name: VolumeSlider
-// Dependencies: [31, 27, 4192, 33, 477, 4131, 689, 3835, 10711, 7600, 4581, 1212, 4659, 2]
+// Dependencies: [31, 27, 4226, 33, 477, 4165, 689, 3869, 10749, 7636, 4615, 1212, 4693, 2]
 // Exports: default
 
-// Module 10710 (VolumeSlider)
+// Module 10748 (VolumeSlider)
 import "result";
 import { View } from "get ActivityIndicator";
 import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources";
@@ -44,7 +44,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(maxTrackTintColor, obj);
   const tmp5 = callback2();
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   let token = obj1.useToken(importDefault(689).colors.BACKGROUND_BRAND);
   const minTrackColor = merged.minTrackColor;
   if (null != minTrackColor) {
@@ -53,13 +53,13 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: items };
   items = [tmp5.volumerSlider, maxTrackTintColor.style];
   obj = { style: tmp5.leftIcon };
-  const items1 = [callback(require(10711) /* VoiceXIcon */.VoiceXIcon, obj), , ];
+  const items1 = [callback(require(10749) /* VoiceXIcon */.VoiceXIcon, obj), , ];
   obj1 = { style: tmp5.volumerSliderNative };
-  const tmp10 = importDefault(7600);
+  const tmp10 = importDefault(7636);
   const tmp7 = closure_6;
   const tmp8 = View;
   const tmp9 = callback;
-  obj1.value = require(4581) /* perceptualToAmplitude */.amplitudeToPerceptual(value);
+  obj1.value = require(4615) /* perceptualToAmplitude */.amplitudeToPerceptual(value);
   obj1.minimumValue = 0;
   obj1.maximumValue = maxVolume;
   obj1.minimumTrackTintColor = token;
@@ -79,7 +79,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   }
   obj1.onResponderGrant = onResponderGrant;
   items1[1] = tmp9(tmp10, obj1);
-  items1[2] = callback(require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp5.rightIcon });
+  items1[2] = callback(require(4693) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp5.rightIcon });
   obj.children = items1;
   return tmp7(tmp8, obj);
 };

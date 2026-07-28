@@ -1,5 +1,5 @@
 // Module ID: 1742
-// Function ID: 19518
+// Function ID: 19522
 // Name: FrameCallbackRegistryJS
 // Dependencies: [6, 7, 1743, 1626]
 

@@ -1,10 +1,10 @@
-// Module ID: 15959
-// Function ID: 123296
+// Module ID: 15998
+// Function ID: 123452
 // Name: voiceSettings
-// Dependencies: [31, 4217, 653, 33, 1212, 15960, 6554, 4099, 4324, 4472, 15957, 1935, 15961, 4195, 15962, 8286, 3982, 10733, 7631, 12, 3832, 8134, 2]
+// Dependencies: [31, 4251, 653, 33, 1212, 15999, 6590, 4133, 4358, 4506, 15996, 1935, 16000, 4229, 16001, 8324, 4016, 10771, 7667, 12, 3866, 8172, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 15959 (voiceSettings)
+// Module 15998 (voiceSettings)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -22,7 +22,7 @@ export const voiceSettings = function voiceSettings() {
   let obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.NiTd0e);
-  obj.icon = importDefault(15960);
+  obj.icon = importDefault(15999);
   obj.onPress = function onPress() {
     let obj = outer1_0(outer1_2[6]);
     obj = { screen: outer1_4.VOICE };
@@ -46,7 +46,7 @@ export const videoParticipantsHidden = function videoParticipantsHidden(arg0, ar
 export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = importDefault(4472);
+  let obj = importDefault(4506);
   obj = {
     importer() {
       return callback(outer1_2[11])(outer1_2[10], outer1_2.paths).then((arg0) => {
@@ -79,7 +79,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
   let obj = {};
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.KHGhHf);
-  obj.icon = importDefault(15961);
+  obj.icon = importDefault(16000);
   obj.onPress = function onPress() {
     let obj = stream(outer1_2[13]);
     const encodeStreamKeyResult = obj.encodeStreamKey(stream);
@@ -100,32 +100,32 @@ export const invite = function invite(isPrivate) {
   const importDefault = arg1;
   const dependencyMap = arg2;
   function onPress() {
-    let obj = isPrivate(8286);
+    let obj = isPrivate(8324);
     obj = { source: outer1_6.VOICE_CHANNEL };
     return obj.showInstantInviteActionSheet(isPrivate, obj);
   }
   if (null != arg1) {
     onPress = function onPress() {
-      let obj = isPrivate(8286);
+      let obj = isPrivate(8324);
       obj = { source: outer1_6.STREAM, stream: closure_1 };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     };
   } else if (null != arg2) {
     onPress = function onPress() {
-      let obj = isPrivate(8286);
+      let obj = isPrivate(8324);
       obj = { source: outer1_6.ACTIVITY_INVITE, targetApplicationId: dependencyMap };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     };
   }
   if (isPrivate.isPrivate()) {
     onPress = function onPress() {
-      return isPrivate(3982).navigateToNewGroupDM(isPrivate.id, outer1_5.CHANNEL_CALL);
+      return isPrivate(4016).navigateToNewGroupDM(isPrivate.id, outer1_5.CHANNEL_CALL);
     };
   }
   let obj = {};
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.VINpSK);
-  obj.icon = importDefault(10733);
+  obj.icon = importDefault(10771);
   obj.onPress = onPress;
   return obj;
 };
@@ -134,7 +134,7 @@ export const rtcDebugPanel = function rtcDebugPanel(arg0) {
   const obj = {};
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.X8bCMe);
-  obj.icon = importDefault(7631);
+  obj.icon = importDefault(7667);
   obj.onPress = function onPress() {
     callback();
     outer1_1(outer1_2[7]).hideActionSheet();
@@ -145,7 +145,7 @@ export const shareActivityLogs = function shareActivityLogs() {
   let obj = {};
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.iQzQs3);
-  obj.icon = importDefault(7631);
+  obj.icon = importDefault(7667);
   obj.onPress = function onPress() {
     let obj = outer1_0(outer1_2[19]);
     const items = [outer1_7];

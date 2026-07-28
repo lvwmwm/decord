@@ -1,8 +1,8 @@
-// Module ID: 11142
-// Function ID: 86619
-// Dependencies: [57, 31, 4123, 33, 4131, 689, 566, 3992, 4132, 5166, 2]
+// Module ID: 11180
+// Function ID: 86738
+// Dependencies: [57, 31, 4157, 33, 4165, 689, 566, 4026, 4166, 5200, 2]
 
-// Module 11142
+// Module 11180
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo(() => {
     obj.timingConfig = obj;
     return obj;
   }), 1)[0].timingConfig;
-  let obj1 = stateFromStores(3992);
+  let obj1 = stateFromStores(4026);
   const fn = function _() {
     const obj = {};
     if (stateFromStores) {
@@ -45,15 +45,15 @@ const memoResult = importAllResult.memo(() => {
     }
     return tmp5;
   };
-  obj = { reducedMotion: stateFromStores, ROW_OPACITY_END: 0.55, withDelay: stateFromStores(3992).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(3992).withRepeat, withSequence: stateFromStores(3992).withSequence, withTiming: stateFromStores(4132).withTiming, timingConfig };
+  obj = { reducedMotion: stateFromStores, ROW_OPACITY_END: 0.55, withDelay: stateFromStores(4026).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4026).withRepeat, withSequence: stateFromStores(4026).withSequence, withTiming: stateFromStores(4166).withTiming, timingConfig };
   fn.__closure = obj;
   fn.__workletHash = 9488742940898;
   fn.__initData = closure_8;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { style: animatedStyle, pointerEvents: "none" };
   obj1 = { variant: "secondary", style: callback2().postPlaceholder };
-  obj.children = jsx(stateFromStores(5166).Card, { variant: "secondary", style: callback2().postPlaceholder });
-  return jsx(timingConfig(3992).View, { style: animatedStyle, pointerEvents: "none" });
+  obj.children = jsx(stateFromStores(5200).Card, { variant: "secondary", style: callback2().postPlaceholder });
+  return jsx(timingConfig(4026).View, { style: animatedStyle, pointerEvents: "none" });
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");
 

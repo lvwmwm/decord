@@ -1,10 +1,10 @@
-// Module ID: 5968
-// Function ID: 53089
+// Module ID: 6002
+// Function ID: 53208
 // Name: isGroupDMInvite
-// Dependencies: [5751, 1352, 5969, 5970, 2]
+// Dependencies: [5761, 1352, 6003, 6004, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isRoleSubscriptionInvite, isStreamInvite
 
-// Module 5968 (isGroupDMInvite)
+// Module 6002 (isGroupDMInvite)
 import { isEventUpcoming } from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import InviteSendStates from "InviteSendStates";
@@ -88,7 +88,7 @@ export const getGuildInviteExtendedType = function getGuildInviteExtendedType(in
   } else if (isEmbeddedApplicationInvite(invite)) {
     PROFILE = obj.APPLICATION;
   } else {
-    obj = require(5970) /* getEstablishedDate */;
+    obj = require(6004) /* getEstablishedDate */;
     if (obj.guildInviteCanEmbedProfile(invite)) {
       PROFILE = obj.PROFILE;
     } else {

@@ -1,10 +1,10 @@
-// Module ID: 13035
-// Function ID: 100857
+// Module ID: 13079
+// Function ID: 101030
 // Name: ReportModal
-// Dependencies: [57, 31, 27, 13036, 33, 4131, 689, 1557, 4127, 3828, 1212, 5501, 9024, 4544, 5087, 10959, 5517, 2]
+// Dependencies: [57, 31, 27, 13080, 33, 4165, 689, 1557, 4161, 3862, 1212, 5536, 9068, 4578, 5121, 10997, 5552, 2]
 // Exports: default
 
-// Module 13035 (ReportModal)
+// Module 13079 (ReportModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,7 +36,7 @@ function ReportModal(onSubmit) {
   obj = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.Hg8Ee7, { onClick: callback });
-  const items1 = [callback2(require(4127) /* Text */.Text, obj), , ];
+  const items1 = [callback2(require(4161) /* Text */.Text, obj), , ];
   obj = { style: tmp.formBody };
   const obj1 = {
     hasIcons: false,
@@ -54,7 +54,7 @@ function ReportModal(onSubmit) {
       return outer1_9(outer1_0(tmp[12]).TableCheckboxRow, obj, arg0);
     })
   };
-  obj.children = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj1);
+  obj.children = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj1);
   items1[1] = callback2(View, obj);
   const obj2 = { style: items2 };
   items2 = [tmp.submitButtonContainer, { paddingBottom: importDefault(1557)().bottom + 16 }];
@@ -62,7 +62,7 @@ function ReportModal(onSubmit) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.text = intl2.string(require(1212) /* getSystemLocale */.t.geKm7t);
   obj4.onPress = onSubmit.onSubmit;
-  obj2.children = callback2(require(4544) /* Button */.Button, obj4);
+  obj2.children = callback2(require(4578) /* Button */.Button, obj4);
   items1[2] = callback2(View, obj2);
   obj.children = items1;
   return callback3(View, obj);

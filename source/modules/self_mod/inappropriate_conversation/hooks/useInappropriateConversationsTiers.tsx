@@ -1,10 +1,10 @@
-// Module ID: 11816
-// Function ID: 91685
+// Module ID: 11855
+// Function ID: 91836
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1850, 9031, 10069, 566, 10371, 2]
+// Dependencies: [1850, 9075, 10109, 566, 10411, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 11816 (useInappropriateConversationsTiers)
+// Module 11855 (useInappropriateConversationsTiers)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 
@@ -12,12 +12,12 @@ const require = arg1;
 const result = require("InappropriateConversationExperiment").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
 
 export const useInappropriateConversationsTiers = function useInappropriateConversationsTiers(channel) {
-  let obj = require(10069) /* InappropriateConversationExperiment */;
+  let obj = require(10109) /* InappropriateConversationExperiment */;
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning({ location: "context-menu-item" });
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
   const obj2 = require(566) /* initialize */;
-  const inappropriateConversationBannerForChannel = require(10371) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
+  const inappropriateConversationBannerForChannel = require(10411) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
   let isStaffResult;
   if (null != stateFromStores) {
     isStaffResult = stateFromStores.isStaff();

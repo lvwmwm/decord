@@ -1,10 +1,10 @@
-// Module ID: 15263
-// Function ID: 116148
+// Module ID: 15303
+// Function ID: 116307
 // Name: ICYMIInfoModal
-// Dependencies: [31, 33, 5517, 15264, 5087, 15265, 480, 4338, 6695, 1212, 8132, 15273, 15281, 11060, 13150, 2]
+// Dependencies: [31, 33, 5552, 15304, 5121, 15305, 480, 4372, 6731, 1212, 8170, 15313, 15321, 11098, 13194, 2]
 // Exports: default
 
-// Module 15263 (ICYMIInfoModal)
+// Module 15303 (ICYMIInfoModal)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -85,11 +85,11 @@ export default function ICYMIInfoModal(extendedOnboarding) {
   let items = [extendedOnboarding, skipIntro];
   if (extendedOnboarding) {
     let obj = { screens: tmp, steps: tmp2 };
-    let ICYMIInfoScreens = extendedOnboarding(15264).ICYMIInfoScreens;
+    let ICYMIInfoScreens = extendedOnboarding(15304).ICYMIInfoScreens;
     obj.initialRouteName = skipIntro ? ICYMIInfoScreens.TOPICS_CLOUD : ICYMIInfoScreens.DEFAULT;
-    tmp3(tmp4(13150).StepModal, obj);
+    tmp3(tmp4(13194).StepModal, obj);
   } else {
-    obj = { screens: tmp, initialRouteName: tmp4(15264).ICYMIInfoScreens.DEFAULT };
-    return tmp3(tmp4(11060).Modal, obj);
+    obj = { screens: tmp, initialRouteName: tmp4(15304).ICYMIInfoScreens.DEFAULT };
+    return tmp3(tmp4(11098).Modal, obj);
   }
 };

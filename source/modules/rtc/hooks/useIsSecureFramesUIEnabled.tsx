@@ -1,10 +1,10 @@
-// Module ID: 8843
-// Function ID: 70048
+// Module ID: 8887
+// Function ID: 70199
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [1348, 4203, 8826, 566, 2]
+// Dependencies: [1348, 4237, 8870, 566, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 8843 (useIsSecureFramesUIEnabled)
+// Module 8887 (useIsSecureFramesUIEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";

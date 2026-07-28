@@ -1,8 +1,8 @@
-// Module ID: 12228
-// Function ID: 95533
-// Dependencies: [31, 33, 12229, 1935, 4473, 2]
+// Module ID: 12271
+// Function ID: 95703
+// Dependencies: [31, 33, 12272, 1935, 4507, 2]
 
-// Module 12228
+// Module 12271
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -18,6 +18,6 @@ export default {
     onCancel = onCancel.onCancel;
     ({ url, trustUrl, onConfirm, isProtocol } = onCancel);
     const lazyResult = React.lazy(() => outer1_0(outer1_1[3])(outer1_1[2], outer1_1.paths));
-    require(4473) /* useAlertStore */.openAlert("masked-link", <lazyResult url={url} trustUrl={trustUrl} onConfirm={onConfirm} onCancel={onCancel} isProtocol={isProtocol} />, onCancel);
+    require(4507) /* useAlertStore */.openAlert("masked-link", <lazyResult url={url} trustUrl={trustUrl} onConfirm={onConfirm} onCancel={onCancel} isProtocol={isProtocol} />, onCancel);
   }
 };

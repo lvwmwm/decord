@@ -1,10 +1,10 @@
-// Module ID: 10900
-// Function ID: 84639
+// Module ID: 10938
+// Function ID: 84760
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 10898, 4099, 10428, 9420, 5937, 1212, 566, 5187, 4542, 10901, 4127, 2]
+// Dependencies: [31, 27, 1850, 33, 4165, 689, 10936, 4133, 10468, 9460, 5971, 1212, 566, 5221, 4576, 10939, 4161, 2]
 // Exports: default
 
-// Module 10900 (QuestRewardDetailsBottomSheet)
+// Module 10938 (QuestRewardDetailsBottomSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,38 +38,38 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(566);
   const items2 = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items2, () => outer1_5.getCurrentUser());
-  let obj1 = quest(9420);
+  let obj1 = quest(9460);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { startExpanded: true };
   obj = { direction: "vertical", spacing: memo(689).space.PX_16, style: tmp.wrapper };
   obj1 = { align: "center", direction: "horizontal", spacing: memo(689).space.PX_16 };
   const obj2 = { quest, height: 56, width: 56, withAnimation: true };
-  const items3 = [callback(memo(10901), obj2), ];
+  const items3 = [callback(memo(10939), obj2), ];
   const obj3 = { direction: "vertical", spacing: memo(689).space.PX_4, style: tmp.rewardDetailsCopy };
   const obj4 = { variant: "eyebrow", color: "text-subtle" };
   let intl = quest(1212).intl;
   obj4.children = intl.string(quest(1212).t["jyYgZ+"]);
-  const items4 = [callback(quest(4127).Text, obj4), ];
+  const items4 = [callback(quest(4161).Text, obj4), ];
   const obj5 = { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName };
-  items4[1] = callback(quest(4127).Text, obj5);
+  items4[1] = callback(quest(4161).Text, obj5);
   obj3.children = items4;
-  items3[1] = callback2(quest(4542).Stack, obj3);
+  items3[1] = callback2(quest(4576).Stack, obj3);
   obj1.children = items3;
-  const items5 = [callback2(quest(4542).Stack, obj1), ];
+  const items5 = [callback2(quest(4576).Stack, obj1), ];
   let tmp8 = null != memo1;
   if (tmp8) {
     const obj6 = {};
     const obj7 = { style: tmp.separator };
     const items6 = [callback(View, obj7), ];
     const obj8 = { variant: "text-md/normal", color: "text-subtle", children: memo1 };
-    items6[1] = callback(quest(4127).Text, obj8);
+    items6[1] = callback(quest(4161).Text, obj8);
     obj6.children = items6;
     tmp8 = callback2(closure_8, obj6);
   }
   items5[1] = tmp8;
   obj.children = items5;
-  obj.children = callback2(quest(4542).Stack, obj);
-  return callback(quest(5187).BottomSheet, obj);
+  obj.children = callback2(quest(4576).Stack, obj);
+  return callback(quest(5221).BottomSheet, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -87,7 +87,7 @@ export default function QuestRewardDetailsBottomSheetConnected(questId) {
     const obj = outer1_0(outer1_2[6]);
     outer1_1(outer1_2[7]).hideActionSheet();
   }, []);
-  let obj = require(10428) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10468) /* _createForOfIteratorHelperLoose */;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {

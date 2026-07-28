@@ -1,10 +1,10 @@
-// Module ID: 10361
-// Function ID: 80014
+// Module ID: 10401
+// Function ID: 80143
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [31, 4809, 3760, 1348, 4178, 4203, 653, 1355, 4131, 689, 10362, 4575, 3997, 624, 1555, 477, 1324, 3835, 8756, 2]
+// Dependencies: [31, 4843, 3794, 1348, 4212, 4237, 653, 1355, 4165, 689, 10402, 4609, 4031, 624, 1555, 477, 1324, 3869, 8800, 2]
 // Exports: default
 
-// Module 10361 (useChannelSafeAreaBottomStyles)
+// Module 10401 (useChannelSafeAreaBottomStyles)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,10 +33,10 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
   let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const refreshToken = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(gradientBottom(689).modules.mobile.CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND, obj.useMobileVisualRefreshConfig({ location: "useChannelSafeAreaBottomStyles" }).chatInputFloating);
   let obj2 = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
-  const tmp2 = callback(require(3835) /* map */.useToken(refreshToken));
+  const tmp2 = callback(require(3869) /* map */.useToken(refreshToken));
   require = tmp2;
-  let obj3 = require(3835) /* map */;
-  gradientBottom = require(8756) /* useGradientBottom */.useGradientBottom();
+  let obj3 = require(3869) /* map */;
+  gradientBottom = require(8800) /* useGradientBottom */.useGradientBottom();
   const tmp4 = (function useChannelSafeAreaBottomType(arg0) {
     let closure_1 = null != gradientBottom(tmp4[10])(arg0);
     const needSubscriptionToAccess = gradientBottom(tmp4[11])(arg0).needSubscriptionToAccess;

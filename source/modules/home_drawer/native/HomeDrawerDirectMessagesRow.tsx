@@ -1,10 +1,10 @@
-// Module ID: 14898
-// Function ID: 113673
+// Module ID: 14942
+// Function ID: 113846
 // Name: HomeDrawerDMsRow
-// Dependencies: [31, 27, 4218, 3768, 653, 33, 4131, 689, 566, 4127, 1212, 14894, 3988, 3985, 2]
+// Dependencies: [31, 27, 4252, 3802, 653, 33, 4165, 689, 566, 4161, 1212, 14938, 4022, 4019, 2]
 // Exports: default
 
-// Module 14898 (HomeDrawerDMsRow)
+// Module 14942 (HomeDrawerDMsRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ function HomeDrawerDMsRow() {
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj2 = { numFriends: stateFromStores };
     obj1.children = intl.format(require(1212) /* getSystemLocale */.t.N5UIKr, obj2);
-    items1[1] = callback(require(4127) /* Text */.Text, obj1);
+    items1[1] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items1;
     tmp3 = callback2(View, obj);
   }
@@ -41,9 +41,9 @@ function HomeDrawerDMsRow() {
   const obj4 = { variant: "text-md/medium", color: "text-default", lineClamp: 1 };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.YUU0RF);
-  obj3.title = callback(require(4127) /* Text */.Text, obj4);
+  obj3.title = callback(require(4161) /* Text */.Text, obj4);
   obj3.subtitle = tmp3;
-  return callback(require(14894) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
+  return callback(require(14938) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 _createForOfIteratorHelperLoose = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 } };
@@ -53,7 +53,7 @@ _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/home_drawer/native/HomeDrawerDirectMessagesRow.tsx");
 
 export default function HomeDrawerDMsRowWrapper() {
-  const MobileHomeDrawerExperiment = require(3988) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4022) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   let tmp2 = null;
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;

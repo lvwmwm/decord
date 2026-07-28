@@ -1,10 +1,10 @@
-// Module ID: 13960
-// Function ID: 106744
+// Module ID: 14004
+// Function ID: 106917
 // Name: QuestsIcon
-// Dependencies: [31, 33, 689, 3834, 13961, 2]
+// Dependencies: [31, 33, 689, 3868, 14005, 2]
 // Exports: QuestsIcon
 
-// Module 13960 (QuestsIcon)
+// Module 14004 (QuestsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const QuestsIcon = function QuestsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13961) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14005) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13961) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(14005) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

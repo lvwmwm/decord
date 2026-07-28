@@ -1,9 +1,9 @@
-// Module ID: 12800
-// Function ID: 99631
+// Module ID: 12843
+// Function ID: 99801
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 683, 4192, 664, 561, 3, 4207, 477, 44, 4298, 2]
+// Dependencies: [6, 7, 15, 17, 18, 683, 4226, 664, 561, 3, 4241, 477, 44, 4332, 2]
 
-// Module 12800 (_isNativeReflectConstruct)
+// Module 12843 (_isNativeReflectConstruct)
 import closure_3 from "DesktopSources";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

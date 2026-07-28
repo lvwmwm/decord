@@ -1,10 +1,10 @@
-// Module ID: 8002
-// Function ID: 63773
+// Module ID: 8040
+// Function ID: 63883
 // Name: allowableMinInterval
-// Dependencies: [31, 44, 4560, 2]
+// Dependencies: [31, 44, 4594, 2]
 // Exports: default
 
-// Module 8002 (allowableMinInterval)
+// Module 8040 (allowableMinInterval)
 import result from "result";
 
 const result = require("useMountLayoutEffect").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");

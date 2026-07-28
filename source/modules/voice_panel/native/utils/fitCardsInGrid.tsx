@@ -1,10 +1,10 @@
-// Module ID: 9983
-// Function ID: 77269
+// Module ID: 10023
+// Function ID: 77398
 // Name: isNewLayoutBetter
 // Dependencies: [2]
 // Exports: default
 
-// Module 9983 (isNewLayoutBetter)
+// Module 10023 (isNewLayoutBetter)
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {
   if (0 !== unusedSpace2.unusedSpace) {
     if (unusedSpace.unusedSpace !== unusedSpace2.unusedSpace) {

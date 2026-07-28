@@ -1,10 +1,10 @@
-// Module ID: 7899
-// Function ID: 62954
+// Module ID: 7935
+// Function ID: 63045
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [57, 31, 4045, 5770, 655, 566, 5819, 5769, 2]
+// Dependencies: [57, 31, 4079, 5780, 655, 566, 5829, 5779, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 7899 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 7935 (useMaybeFetchCollectiblesCategoriesShared)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

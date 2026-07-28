@@ -1,10 +1,10 @@
-// Module ID: 9194
-// Function ID: 72092
+// Module ID: 9238
+// Function ID: 72243
 // Name: EnvelopeIcon
-// Dependencies: [31, 33, 689, 3834, 9195, 2]
+// Dependencies: [31, 33, 689, 3868, 9239, 2]
 // Exports: EnvelopeIcon
 
-// Module 9194 (EnvelopeIcon)
+// Module 9238 (EnvelopeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const EnvelopeIcon = function EnvelopeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9195) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9239) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9195) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9239) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12423
-// Function ID: 96408
+// Module ID: 12466
+// Function ID: 96578
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 12423 (apexExperiment)
+// Module 12466 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-02-gift-cards", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

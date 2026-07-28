@@ -1,10 +1,10 @@
-// Module ID: 7668
-// Function ID: 61409
+// Module ID: 7704
+// Function ID: 61499
 // Name: getSpoilerGatingChannelId
-// Dependencies: [1348, 7669, 566, 2]
+// Dependencies: [1348, 7705, 566, 2]
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 7668 (getSpoilerGatingChannelId)
+// Module 7704 (getSpoilerGatingChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

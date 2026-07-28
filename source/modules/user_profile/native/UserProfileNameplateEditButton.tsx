@@ -1,10 +1,10 @@
-// Module ID: 13664
-// Function ID: 104968
+// Module ID: 13708
+// Function ID: 105141
 // Name: UserProfileNameplateEditButton
-// Dependencies: [31, 27, 1918, 5510, 482, 33, 4131, 689, 566, 7882, 13665, 4099, 13666, 1935, 13652, 1212, 8008, 1273, 7904, 2]
+// Dependencies: [31, 27, 1918, 5545, 482, 33, 4165, 689, 566, 7918, 13709, 4133, 13710, 1935, 13696, 1212, 8046, 1273, 7940, 2]
 // Exports: default
 
-// Module 13664 (UserProfileNameplateEditButton)
+// Module 13708 (UserProfileNameplateEditButton)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ export default function UserProfileNameplateEditButton(user) {
     }
     return member;
   });
-  let obj1 = user(7882);
+  let obj1 = user(7918);
   obj = { pendingValue: pendingNameplate };
   const collectibles = user.collectibles;
   nameplate = undefined;
@@ -64,7 +64,7 @@ export default function UserProfileNameplateEditButton(user) {
   obj.guildValue = nameplate1;
   obj.guildId = guildId;
   const profilePreviewValue = obj1.getProfilePreviewValue(obj);
-  let obj3 = user(13665);
+  let obj3 = user(13709);
   let skuId;
   if (null != profilePreviewValue) {
     skuId = profilePreviewValue.skuId;
@@ -101,7 +101,7 @@ export default function UserProfileNameplateEditButton(user) {
     obj.loading = true;
     obj.disabled = true;
     obj.hideArrow = true;
-    return jsx(user(13652).UserProfileEditFormButton, {});
+    return jsx(user(13696).UserProfileEditFormButton, {});
   } else {
     let name;
     if (null != nameplateProduct) {
@@ -132,15 +132,15 @@ export default function UserProfileNameplateEditButton(user) {
         if (null != nameplateProduct) {
           const obj4 = { style: tmp.previewContainer };
           const obj5 = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true };
-          obj4.children = jsx(guildId(8008), { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true });
+          obj4.children = jsx(guildId(8046), { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true });
           let tmp24 = <closure_5 style={tmp.previewContainer} />;
         }
         obj2.leading = tmp24;
-        return tmp17(user(13652).UserProfileEditFormButton, obj2);
+        return tmp17(user(13696).UserProfileEditFormButton, obj2);
       }
     }
-    const obj6 = { source: guildId(7904), style: tmp.noneIcon };
-    tmp24 = jsx(user(1273).Icon, { source: guildId(7904), style: tmp.noneIcon });
+    const obj6 = { source: guildId(7940), style: tmp.noneIcon };
+    tmp24 = jsx(user(1273).Icon, { source: guildId(7940), style: tmp.noneIcon });
     tmp17 = jsx;
   }
 };

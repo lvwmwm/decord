@@ -1,10 +1,10 @@
-// Module ID: 7498
-// Function ID: 60483
+// Module ID: 7534
+// Function ID: 60572
 // Name: StudyGroupsSpotIllustration
-// Dependencies: [33, 5085, 7499, 2]
+// Dependencies: [33, 5119, 7535, 2]
 // Exports: StudyGroupsSpotIllustration
 
-// Module 7498 (StudyGroupsSpotIllustration)
+// Module 7534 (StudyGroupsSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/StudyGroupsSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const StudyGroupsSpotIllustration = function StudyGroupsSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7499) };
+  obj = { uri: importDefault(7535) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const StudyGroupsSpotIllustration = function StudyGroupsSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

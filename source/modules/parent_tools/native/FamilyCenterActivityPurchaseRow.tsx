@@ -1,10 +1,10 @@
-// Module ID: 13867
-// Function ID: 106226
+// Module ID: 13911
+// Function ID: 106399
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [31, 27, 33, 4131, 689, 7894, 13868, 5616, 13869, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 7930, 13912, 5651, 13913, 4161, 2]
 // Exports: default
 
-// Module 13867 (FamilyCenterActivityPurchaseRow)
+// Module 13911 (FamilyCenterActivityPurchaseRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const product = importDefault(7894)(skuId).product;
-  let obj = require(13868) /* getCollectibleTypeName */;
+  const product = importDefault(7930)(skuId).product;
+  let obj = require(13912) /* getCollectibleTypeName */;
   let tmp2 = null;
   if (null != product) {
     tmp2 = product;
@@ -51,7 +51,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const obj7 = require(5616) /* formatSingleCurrencyPrice */;
+    const obj7 = require(5651) /* formatSingleCurrencyPrice */;
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -59,7 +59,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj = { style: tmp.container };
     obj = { displayName };
     let tmp12 = null;
-    const formatPriceResult = require(5616) /* formatSingleCurrencyPrice */.formatPrice(total, currency);
+    const formatPriceResult = require(5651) /* formatSingleCurrencyPrice */.formatPrice(total, currency);
     const tmp6 = callback2;
     const tmp7 = View;
     const tmp8 = callback;
@@ -69,12 +69,12 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.product = tmp12;
     obj.isSubscription = isSubscription;
     obj.subscriptionPlanId = subscriptionPlanId;
-    const items = [tmp8(importDefault(13869), obj), ];
+    const items = [tmp8(importDefault(13913), obj), ];
     const obj1 = { style: tmp.textContainer };
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
-    const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
+    const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: formatPriceResult };
-    items1[1] = callback(require(4127) /* Text */.Text, obj3);
+    items1[1] = callback(require(4161) /* Text */.Text, obj3);
     obj1.children = items1;
     items[1] = callback2(View, obj1);
     obj.children = items;

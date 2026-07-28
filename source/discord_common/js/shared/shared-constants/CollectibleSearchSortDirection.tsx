@@ -1,5 +1,5 @@
 // Module ID: 659
-// Function ID: 8027
+// Function ID: 8031
 // Name: CollectibleSearchSortDirection
 // Dependencies: [2]
 

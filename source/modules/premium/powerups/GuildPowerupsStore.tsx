@@ -1,9 +1,9 @@
-// Module ID: 4018
-// Function ID: 33422
+// Module ID: 4052
+// Function ID: 33524
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1838, 4019, 653, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1838, 4053, 653, 566, 686, 2]
 
-// Module 4018 (_isNativeReflectConstruct)
+// Module 4052 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_1 from "BoostedGuildTiers";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

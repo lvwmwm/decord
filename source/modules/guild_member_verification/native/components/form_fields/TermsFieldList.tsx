@@ -1,10 +1,10 @@
-// Module ID: 5124
-// Function ID: 44446
+// Module ID: 5158
+// Function ID: 44561
 // Name: TermsFieldListItem
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 4121, 1212, 5125, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 4155, 1212, 5159, 2]
 // Exports: default
 
-// Module 5124 (TermsFieldListItem)
+// Module 5158 (TermsFieldListItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,9 +22,9 @@ function TermsFieldListItem(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.termsRow };
   obj = { style: tmp.termsRowNumber, variant: "text-sm/medium", color: "text-muted", children: "" + rowNumber + "." };
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
-  obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(4121).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
+  obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(4155).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
@@ -53,7 +53,7 @@ export default function TermsFieldList(rules) {
   const intl = rules(1212).intl;
   obj.children = intl.string(rules(1212).t.prJqwT);
   let items = [
-    callback(rules(4127).Text, obj),
+    callback(rules(4161).Text, obj),
     rules.map((rule) => {
       let obj = {};
       obj = {};

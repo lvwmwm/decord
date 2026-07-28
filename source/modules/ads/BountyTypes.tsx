@@ -1,10 +1,10 @@
-// Module ID: 10824
-// Function ID: 83946
+// Module ID: 10862
+// Function ID: 84067
 // Name: bountyCtaFromServer
-// Dependencies: [9415, 2]
+// Dependencies: [9455, 2]
 // Exports: bountyFromServer
 
-// Module 10824 (bountyCtaFromServer)
+// Module 10862 (bountyCtaFromServer)
 function bountyCtaFromServer(cta) {
   let obj = { url: cta.url, buttonLabel: cta.button_label };
   let tmp;
@@ -25,13 +25,13 @@ const result = require("set").fileFinishedImporting("modules/ads/BountyTypes.tsx
 
 export { bountyCtaFromServer };
 export const bountyFromServer = function bountyFromServer(creative_content) {
-  const obj = { id: creative_content.id, advertiserName: creative_content.advertiser_name, productName: creative_content.product_name, productIcon: require(9415) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.product_icon) };
-  const obj2 = require(9415) /* resolveAsset */;
-  obj.videoPreview = require(9415) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.video_preview);
-  const obj3 = require(9415) /* resolveAsset */;
-  obj.imagePreview = require(9415) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.image_preview);
-  const obj4 = require(9415) /* resolveAsset */;
-  obj.videoHls = require(9415) /* resolveAsset */.resolveAdCreativeCdnUrl(creative_content.video_hls);
+  const obj = { id: creative_content.id, advertiserName: creative_content.advertiser_name, productName: creative_content.product_name, productIcon: require(9455) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.product_icon) };
+  const obj2 = require(9455) /* resolveAsset */;
+  obj.videoPreview = require(9455) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.video_preview);
+  const obj3 = require(9455) /* resolveAsset */;
+  obj.imagePreview = require(9455) /* resolveAsset */.resolveOptionalAdCreativeCdnUrl(creative_content.image_preview);
+  const obj4 = require(9455) /* resolveAsset */;
+  obj.videoHls = require(9455) /* resolveAsset */.resolveAdCreativeCdnUrl(creative_content.video_hls);
   obj.cta = bountyCtaFromServer(creative_content.cta);
   const reward_timer_seconds = creative_content.reward_timer_seconds;
   let num = 15;

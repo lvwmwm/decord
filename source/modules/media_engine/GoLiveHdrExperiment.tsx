@@ -1,10 +1,10 @@
-// Module ID: 12824
-// Function ID: 99913
+// Module ID: 12867
+// Function ID: 100083
 // Name: HdrCaptureMode
 // Dependencies: [1428, 2]
 // Exports: getGoLiveHdrConfig
 
-// Module 12824 (HdrCaptureMode)
+// Module 12867 (HdrCaptureMode)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { Never: "never", Always: "always", PermittedDevicesOnly: "permittedDevicesOnly" };

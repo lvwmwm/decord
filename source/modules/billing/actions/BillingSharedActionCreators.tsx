@@ -1,10 +1,10 @@
-// Module ID: 4453
-// Function ID: 39115
+// Module ID: 4487
+// Function ID: 39229
 // Name: _validatePaymentSourceBillingAddress
-// Dependencies: [5, 3781, 4454, 653, 507, 3799, 686, 1212, 675, 4030, 3792, 2]
+// Dependencies: [5, 3815, 4488, 653, 507, 3833, 686, 1212, 675, 4064, 3826, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 4453 (_validatePaymentSourceBillingAddress)
+// Module 4487 (_validatePaymentSourceBillingAddress)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import { StripeErrorTypes } from "StripeErrorTypes";
@@ -100,14 +100,14 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
       obj3.track(constants.PAYMENT_SOURCE_CREATION_FAILED, obj);
       flag = false;
     }
-    const BillingError2 = require(4030) /* V6OrEarlierAPIError */.BillingError;
+    const BillingError2 = require(4064) /* V6OrEarlierAPIError */.BillingError;
     const prototype3 = BillingError2.prototype;
     let billingError2 = new BillingError2(combined);
     let flag2 = flag;
     let tmp13 = obj;
   } else {
     const obj1 = {};
-    const BillingError = require(4030) /* V6OrEarlierAPIError */.BillingError;
+    const BillingError = require(4064) /* V6OrEarlierAPIError */.BillingError;
     let tmp6 = message;
     if ("string" === typeof message) {
       tmp6 = stringResult;
@@ -137,8 +137,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     const merged2 = Object.assign(tmp13);
     const merged3 = Object.assign(obj.extra);
     obj3["extra"] = obj4;
-    const result = require(3792) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj3);
-    const obj8 = require(3792) /* _createGatewayCheckoutContext */;
+    const result = require(3826) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj3);
+    const obj8 = require(3826) /* _createGatewayCheckoutContext */;
   }
   return error1;
 };

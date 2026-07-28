@@ -1,10 +1,10 @@
-// Module ID: 5626
-// Function ID: 48035
+// Module ID: 5661
+// Function ID: 48162
 // Name: _safeTransitionTo
-// Dependencies: [5, 1838, 653, 4322, 5627, 1198, 5628, 4472, 1212, 6000, 2299, 11749, 2]
+// Dependencies: [5, 1838, 653, 4356, 5662, 1198, 5663, 4506, 1212, 6034, 2299, 11788, 2]
 // Exports: default
 
-// Module 5626 (_safeTransitionTo)
+// Module 5661 (_safeTransitionTo)
 import shouldNavigate from "shouldNavigate";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { Routes } from "ME";

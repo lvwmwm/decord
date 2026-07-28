@@ -1,9 +1,9 @@
-// Module ID: 14585
-// Function ID: 111303
+// Module ID: 14629
+// Function ID: 111476
 // Name: toggle
-// Dependencies: [7697, 3804, 14584, 13790, 10059, 1212, 2]
+// Dependencies: [7733, 3838, 14628, 13834, 10099, 1212, 2]
 
-// Module 14585 (toggle)
+// Module 14629 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,19 +13,19 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: function useDataToSupportQuests3PSettingValue() {
-    const Quests3PDataOptedOut = require(3804) /* explicitContentFromProto */.Quests3PDataOptedOut;
+    const Quests3PDataOptedOut = require(3838) /* explicitContentFromProto */.Quests3PDataOptedOut;
     return !Quests3PDataOptedOut.useSetting();
   },
   onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
-    const Quests3PDataOptedOut = require(3804) /* explicitContentFromProto */.Quests3PDataOptedOut;
+    const Quests3PDataOptedOut = require(3838) /* explicitContentFromProto */.Quests3PDataOptedOut;
     Quests3PDataOptedOut.updateSetting(!arg0);
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14584) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const DropsOptedOut = require(3804) /* explicitContentFromProto */.DropsOptedOut;
+    let adPersonalizationTogglesDisabled = require(14628) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    const DropsOptedOut = require(3838) /* explicitContentFromProto */.DropsOptedOut;
     const setting = DropsOptedOut.useSetting();
-    const obj = require(14584) /* useAdPersonalizationTogglesDisabled */;
-    const isParentallyControlled = require(13790) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    const obj = require(14628) /* useAdPersonalizationTogglesDisabled */;
+    const isParentallyControlled = require(13834) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = setting;
     }
@@ -42,19 +42,19 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: function useDataToSupportQuests3PSettingValue() {
-    const Quests3PDataOptedOut = require(3804) /* explicitContentFromProto */.Quests3PDataOptedOut;
+    const Quests3PDataOptedOut = require(3838) /* explicitContentFromProto */.Quests3PDataOptedOut;
     return !Quests3PDataOptedOut.useSetting();
   },
   onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
-    const Quests3PDataOptedOut = require(3804) /* explicitContentFromProto */.Quests3PDataOptedOut;
+    const Quests3PDataOptedOut = require(3838) /* explicitContentFromProto */.Quests3PDataOptedOut;
     Quests3PDataOptedOut.updateSetting(!arg0);
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14584) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const DropsOptedOut = require(3804) /* explicitContentFromProto */.DropsOptedOut;
+    let adPersonalizationTogglesDisabled = require(14628) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    const DropsOptedOut = require(3838) /* explicitContentFromProto */.DropsOptedOut;
     const setting = DropsOptedOut.useSetting();
-    const obj = require(14584) /* useAdPersonalizationTogglesDisabled */;
-    const isParentallyControlled = require(13790) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    const obj = require(14628) /* useAdPersonalizationTogglesDisabled */;
+    const isParentallyControlled = require(13834) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = setting;
     }

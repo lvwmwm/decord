@@ -1,10 +1,10 @@
-// Module ID: 6238
-// Function ID: 56164
+// Module ID: 6274
+// Function ID: 56253
 // Name: getBaseAnalyticsFields
-// Dependencies: [653, 491, 3777, 675, 2]
+// Dependencies: [653, 491, 3811, 675, 2]
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted
 
-// Module 6238 (getBaseAnalyticsFields)
+// Module 6274 (getBaseAnalyticsFields)
 import ME from "ME";
 
 let closure_3;
@@ -25,13 +25,13 @@ function getBaseAnalyticsFields(subscription) {
   obj.subscription_type = type;
   let tmp3;
   if (null != subscription) {
-    const premiumPlanItem = require(3777) /* _createForOfIteratorHelperLoose */.getPremiumPlanItem(subscription);
+    const premiumPlanItem = require(3811) /* _createForOfIteratorHelperLoose */.getPremiumPlanItem(subscription);
     let id1;
     if (null != premiumPlanItem) {
       id1 = premiumPlanItem.id;
     }
     tmp3 = id1;
-    const obj2 = require(3777) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(3811) /* _createForOfIteratorHelperLoose */;
   }
   obj.subscription_plan_id = tmp3;
   let paymentGatewayPlanId;

@@ -1,9 +1,9 @@
-// Module ID: 5704
-// Function ID: 49312
+// Module ID: 5714
+// Function ID: 49168
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 5, 4809, 1194, 1907, 3948, 653, 3, 587, 1904, 5705, 5716, 14, 20, 1903, 5717, 5718, 5719, 5720, 5721, 5877, 5898, 566, 686, 1902, 5883, 5889, 5887, 5881, 1842, 5899, 477, 1328, 5901, 1899, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 5, 4843, 1194, 1907, 3982, 653, 3, 587, 1904, 5715, 5726, 14, 20, 1903, 5727, 5728, 5729, 5730, 5731, 5911, 5932, 566, 686, 1902, 5917, 5923, 5921, 5915, 1842, 5933, 477, 1328, 5935, 1899, 2]
 
-// Module 5704 (_isNativeReflectConstruct)
+// Module 5714 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

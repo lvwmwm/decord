@@ -1,10 +1,10 @@
-// Module ID: 10451
-// Function ID: 81074
+// Module ID: 10489
+// Function ID: 81195
 // Name: _checkIsSpeaking
-// Dependencies: [4579, 1907, 4953, 4147, 566, 2]
+// Dependencies: [4613, 1907, 4987, 4181, 566, 2]
 // Exports: default, getIsSpeaking
 
-// Module 10451 (_checkIsSpeaking)
+// Module 10489 (_checkIsSpeaking)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

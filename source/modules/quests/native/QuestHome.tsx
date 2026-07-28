@@ -1,9 +1,9 @@
-// Module ID: 13967
-// Function ID: 106796
+// Module ID: 14011
+// Function ID: 106969
 // Name: EmptyStateNoQuestsAvailable
-// Dependencies: [57, 31, 27, 4123, 10899, 5932, 5954, 4977, 653, 33, 4131, 689, 566, 1456, 13968, 686, 9205, 9212, 14023, 4544, 1212, 4338, 6554, 10428, 10819, 4127, 4661, 14025, 4087, 14027, 10429, 1557, 5930, 9401, 5960, 3832, 9104, 675, 8364, 480, 14049, 12218, 14050, 1457, 4980, 5953, 14031, 14042, 10908, 14051, 14126, 6619, 2]
+// Dependencies: [57, 31, 27, 4157, 10937, 5966, 5988, 5011, 653, 33, 4165, 689, 566, 1456, 14012, 686, 9249, 9256, 14067, 4578, 1212, 4372, 6590, 10468, 10857, 4161, 4695, 14069, 4121, 14071, 10469, 1557, 5964, 9445, 5994, 3866, 9148, 675, 8402, 480, 14093, 12261, 14094, 1457, 5014, 5987, 14075, 14086, 10946, 14095, 14170, 6655, 2]
 
-// Module 13967 (EmptyStateNoQuestsAvailable)
+// Module 14011 (EmptyStateNoQuestsAvailable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useSafeAreaInsets";
 import get_ActivityIndicator from "openBountiesNuxPromoSheet";
@@ -34,8 +34,8 @@ function EmptyStateNoQuestsAvailable() {
   const intl = navigation(1212).intl;
   obj.text = intl.string(navigation(1212).t["/g10LC"]);
   obj.onPress = callback;
-  obj.action = callback(navigation(4544).Button, obj);
-  return callback(importDefault(14023), obj);
+  obj.action = callback(navigation(4578).Button, obj);
+  return callback(importDefault(14067), obj);
 }
 function EmptyStateFiltered(onClearFilters) {
   let obj = {};
@@ -43,12 +43,12 @@ function EmptyStateFiltered(onClearFilters) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.urZl31);
   obj.onPress = onClearFilters.onClearFilters;
-  obj.action = callback(require(4544) /* Button */.Button, obj);
+  obj.action = callback(require(4578) /* Button */.Button, obj);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.title = intl2.string(require(1212) /* getSystemLocale */.t.PBfFnx);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.subtitle = intl3.string(require(1212) /* getSystemLocale */.t.nwdKFC);
-  return callback(importDefault(14023), obj);
+  return callback(importDefault(14067), obj);
 }
 function HeaderPreviewButton() {
   const callback = importAllResult.useCallback(() => {
@@ -57,14 +57,14 @@ function HeaderPreviewButton() {
     obj = { screen: outer1_13.QUEST_PREVIEW_TOOL_2 };
     outer1_0(outer1_2[22]).openUserSettings(obj);
   }, []);
-  let obj = require(10428) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10468) /* _createForOfIteratorHelperLoose */;
   let tmp3 = null;
   if (obj.useShouldShowPreviewToolTab()) {
     obj = { style: tmp.previewButton };
     obj = { grow: true, onPress: callback, variant: "primary" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.text = intl.string(require(1212) /* getSystemLocale */.t.tx5Ax5);
-    obj.children = callback(require(4544) /* Button */.Button, obj);
+    obj.children = callback(require(4578) /* Button */.Button, obj);
     tmp3 = callback(closure_5, obj);
   }
   return tmp3;
@@ -75,7 +75,7 @@ function HeaderWithBounties(arg0) {
   let showOrbShopPlaceholderCarousel;
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel } = arg0);
   const tmp = callback3();
-  let obj = require(10819) /* useBountiesExperience */;
+  let obj = require(10857) /* useBountiesExperience */;
   const verticalScrollEnabled = obj.useBountiesExperience(QuestsExperimentLocations.QUEST_HOME_MOBILE).verticalScrollEnabled;
   obj = {};
   const items = [callback(HeaderPreviewButton, {}), , , ];
@@ -88,26 +88,26 @@ function HeaderWithBounties(arg0) {
     const obj1 = { variant: "text-lg/semibold", color: "text-strong" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.qetVDw);
-    const items2 = [callback(require(4127) /* Text */.Text, obj1), ];
-    const obj2 = { onPress: importDefault(14025), hitSlop: 14 };
+    const items2 = [callback(require(4161) /* Text */.Text, obj1), ];
+    const obj2 = { onPress: importDefault(14069), hitSlop: 14 };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2["aria-label"] = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
     obj2.accessibilityRole = "button";
     const obj3 = { size: "xs", color: importDefault(689).colors.ICON_SUBTLE };
-    obj2.children = callback(require(4087) /* CircleInformationIcon */.CircleInformationIcon, obj3);
-    items2[1] = callback(require(4661) /* PressableBase */.PressableOpacity, obj2);
+    obj2.children = callback(require(4121) /* CircleInformationIcon */.CircleInformationIcon, obj3);
+    items2[1] = callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
     obj.children = items2;
     tmp4 = callback2(closure_5, obj);
   }
   items[1] = tmp4;
-  items[2] = callback(importDefault(14027), { verticalScrollEnabled, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  items[2] = callback(importDefault(14071), { verticalScrollEnabled, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
   const obj4 = { style: items3 };
   items3 = [, ];
   ({ sectionHeader: arr4[0], sectionHeaderWithTag: arr4[1] } = tmp);
   const obj5 = { variant: "text-lg/semibold", color: "text-strong" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl3.string(require(1212) /* getSystemLocale */.t.JALI2K);
-  obj4.children = callback(require(4127) /* Text */.Text, obj5);
+  obj4.children = callback(require(4161) /* Text */.Text, obj5);
   items[3] = callback(closure_5, obj4);
   obj.children = items;
   return callback2(closure_16, obj);

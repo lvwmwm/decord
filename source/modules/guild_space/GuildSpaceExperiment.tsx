@@ -1,10 +1,10 @@
-// Module ID: 5608
-// Function ID: 47696
+// Module ID: 5643
+// Function ID: 47823
 // Name: items
-// Dependencies: [4043, 2]
+// Dependencies: [4077, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 5608 (items)
+// Module 5643 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false } };

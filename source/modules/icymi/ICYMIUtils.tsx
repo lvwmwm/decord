@@ -1,10 +1,10 @@
-// Module ID: 8122
-// Function ID: 64744
+// Module ID: 8160
+// Function ID: 64854
 // Name: generateHydrationId
-// Dependencies: [5, 5751, 1352, 1348, 1838, 4350, 4143, 8108, 8121, 653, 6104, 8123, 4352, 21, 566, 8124, 8128, 7848, 8129, 8130, 1212, 5070, 1935, 653, 2]
+// Dependencies: [5, 5761, 1352, 1348, 1838, 4384, 4177, 8146, 8159, 653, 6138, 8161, 4386, 21, 566, 8162, 8166, 7884, 8167, 8168, 1212, 5104, 1935, 653, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 8122 (generateHydrationId)
+// Module 8160 (generateHydrationId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { ThreadChannelRecord } from "_callSuper";
@@ -131,9 +131,9 @@ let result = require("_callSuper").fileFinishedImporting("modules/icymi/ICYMIUti
 export { generateHydrationId };
 export const ICYMICustomScore = obj;
 export const isGuildItem = function isGuildItem(type) {
-  let tmp = type.type === require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+  let tmp = type.type === require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
   if (!tmp) {
-    tmp = type.type === require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT;
+    tmp = type.type === require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT;
   }
   return tmp;
 };
@@ -179,7 +179,7 @@ export const createGravityMessageFromServer = function createGravityMessageFromS
   const obj = {};
   const merged = Object.assign(arg1);
   let fromServerResult;
-  obj["message"] = require(4352) /* createMinimalMessageRecord */.createMessageRecord(message.message);
+  obj["message"] = require(4386) /* createMinimalMessageRecord */.createMessageRecord(message.message);
   if (null != message.thread_channel) {
     fromServerResult = ThreadChannelRecord.fromServer(message.thread_channel, message.guild_id);
   }
@@ -243,11 +243,11 @@ export const useICYMIMessage = function useICYMIMessage(id, before_message_id) {
   }, items1);
 };
 export const icymiEnabled = function icymiEnabled(customScores) {
-  return require(8124) /* apexExperiment */.getICYMIEnabled(customScores);
+  return require(8162) /* apexExperiment */.getICYMIEnabled(customScores);
 };
 export const customStatusToContentInventoryEntry = function customStatusToContentInventoryEntry(data) {
-  let obj = { id: data.id, type: require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS };
-  obj = { id: data.id, author_id: data.data.user_id, author_type: require(8128) /* ContentInventoryAuthorType */.ContentInventoryAuthorType.USER, traits: [], participants: [], content_type: require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS };
+  let obj = { id: data.id, type: require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS };
+  obj = { id: data.id, author_id: data.data.user_id, author_type: require(8166) /* ContentInventoryAuthorType */.ContentInventoryAuthorType.USER, traits: [], participants: [], content_type: require(7884) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS };
   obj = { type: "custom_status_extra" };
   const text = data.data.text;
   let str = "";
@@ -308,7 +308,7 @@ export const getViewableFeedItemsArray = function getViewableFeedItemsArray(view
       if (null != tmp3) {
         let tmp4 = id;
         let tmp5 = dependencyMap;
-        let NON_ELIGIBLE_SCROLL_ITEMS = id(8129).NON_ELIGIBLE_SCROLL_ITEMS;
+        let NON_ELIGIBLE_SCROLL_ITEMS = id(8167).NON_ELIGIBLE_SCROLL_ITEMS;
         if (!NON_ELIGIBLE_SCROLL_ITEMS.has(tmp3.item.data.kind)) {
           break;
         }
@@ -401,7 +401,7 @@ export const itemToType = function itemToType(item) {
       return "guild_event";
     } else if ("contentInventory" === kind) {
       let str8 = "hotwheels_gaming_activity";
-      if (item.data.content.content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS) {
+      if (item.data.content.content_type === require(7884) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS) {
         str8 = "hotwheels_custom_status";
       }
       return str8;
@@ -418,9 +418,9 @@ export const itemToType = function itemToType(item) {
 };
 export const determineContentType = function determineContentType(channel, message) {
   if (channel.type === constants.GUILD_ANNOUNCEMENT) {
-    return require(6104) /* MessageEmbedTypes */.ContentType.ANNOUNCEMENT;
+    return require(6138) /* MessageEmbedTypes */.ContentType.ANNOUNCEMENT;
   } else if (channel.type === constants.GUILD_FORUM) {
-    return require(6104) /* MessageEmbedTypes */.ContentType.FORUM_POST;
+    return require(6138) /* MessageEmbedTypes */.ContentType.FORUM_POST;
   } else {
     if (null != message.reactions) {
       const reactions = message.reactions;
@@ -443,25 +443,25 @@ export const determineContentType = function determineContentType(channel, messa
       });
       if (0 !== mapped.length) {
         if (mapped.reduce((arg0, arg1) => arg0 + arg1) > 10) {
-          return require(6104) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE;
+          return require(6138) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE;
         }
       }
     }
     if (message.attachments.length > 0) {
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        let IMAGE = tmp7(6104).ContentType.IMAGE;
+        let IMAGE = tmp7(6138).ContentType.IMAGE;
       } else {
-        const result = tmp7(8130).isValidVideoAttachment(message.attachments[0]);
-        const ContentType = require(6104) /* MessageEmbedTypes */.ContentType;
+        const result = tmp7(8168).isValidVideoAttachment(message.attachments[0]);
+        const ContentType = require(6138) /* MessageEmbedTypes */.ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
-        const tmp7Result = tmp7(8130);
+        const tmp7Result = tmp7(8168);
       }
-      obj = require(8130) /* isValidImageAttachment */;
+      obj = require(8168) /* isValidImageAttachment */;
     } else {
       if (message.embeds.length > 0) {
-        let INTERESTING = require(6104) /* MessageEmbedTypes */.ContentType.LINK;
+        let INTERESTING = require(6138) /* MessageEmbedTypes */.ContentType.LINK;
       } else {
-        INTERESTING = require(6104) /* MessageEmbedTypes */.ContentType.INTERESTING;
+        INTERESTING = require(6138) /* MessageEmbedTypes */.ContentType.INTERESTING;
       }
       return INTERESTING;
     }
@@ -472,31 +472,31 @@ export const contentTypeToText = function contentTypeToText(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  if (require(6104) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE === arg0) {
+  if (require(6138) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE === arg0) {
     const intl10 = require(1212) /* getSystemLocale */.intl;
     return intl10.string(require(1212) /* getSystemLocale */.t["H/2+cl"]);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.IMAGE === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.IMAGE === arg0) {
     const intl9 = require(1212) /* getSystemLocale */.intl;
     return intl9.string(require(1212) /* getSystemLocale */.t.gmOWAo);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.VIDEO === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.VIDEO === arg0) {
     const intl8 = require(1212) /* getSystemLocale */.intl;
     return intl8.string(require(1212) /* getSystemLocale */.t.swhcPM);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.LINK === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.LINK === arg0) {
     const intl7 = require(1212) /* getSystemLocale */.intl;
     return intl7.string(require(1212) /* getSystemLocale */.t.oj5yvD);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.THREAD === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.THREAD === arg0) {
     const intl6 = require(1212) /* getSystemLocale */.intl;
     return intl6.string(require(1212) /* getSystemLocale */.t.DwLrLK);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.FORUM_POST === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.FORUM_POST === arg0) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     return intl5.string(require(1212) /* getSystemLocale */.t["Q9/6BS"]);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.CHANGED_STATUS === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.CHANGED_STATUS === arg0) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     return intl4.string(require(1212) /* getSystemLocale */.t.TGrUmi);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.INTERESTING === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.INTERESTING === arg0) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t["TahE/i"]);
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.ANNOUNCEMENT === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.ANNOUNCEMENT === arg0) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const string = intl2.string;
     const t = require(1212) /* getSystemLocale */.t;
@@ -506,7 +506,7 @@ export const contentTypeToText = function contentTypeToText(arg0) {
       stringResult = string(t["2ih63V"]);
     }
     return stringResult;
-  } else if (require(6104) /* MessageEmbedTypes */.ContentType.FILE === arg0) {
+  } else if (require(6138) /* MessageEmbedTypes */.ContentType.FILE === arg0) {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.pYrnTY);
   }

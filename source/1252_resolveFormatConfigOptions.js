@@ -1,5 +1,5 @@
 // Module ID: 1252
-// Function ID: 14099
+// Function ID: 14103
 // Name: resolveFormatConfigOptions
 // Dependencies: []
 

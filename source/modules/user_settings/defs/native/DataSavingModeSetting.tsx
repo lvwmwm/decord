@@ -1,9 +1,9 @@
-// Module ID: 14359
-// Function ID: 109998
+// Module ID: 14403
+// Function ID: 110171
 // Name: toggle
-// Dependencies: [1280, 7697, 566, 14357, 3804, 10059, 1212, 2]
+// Dependencies: [1280, 7733, 566, 14401, 3838, 10099, 1212, 2]
 
-// Module 14359 (toggle)
+// Module 14403 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -19,9 +19,9 @@ createToggle = {
     return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.dataSavingMode);
   },
   onValueChange: function onDataSavingModeSettingValueChange(dataSavingMode) {
-    let obj = require(14357) /* trackSettingsUpdated */;
+    let obj = require(14401) /* trackSettingsUpdated */;
     obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality };
-    const ViewImageDescriptions = require(3804) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = require(3838) /* explicitContentFromProto */.ViewImageDescriptions;
     obj.viewImageDescriptions = ViewImageDescriptions.getSetting();
     obj.lowQualityImageMode = _isNativeReflectConstruct.lowQualityImageMode;
     obj.dataSavingMode = dataSavingMode;

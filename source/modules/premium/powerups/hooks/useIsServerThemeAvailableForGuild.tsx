@@ -1,10 +1,10 @@
-// Module ID: 12982
-// Function ID: 100730
+// Module ID: 13026
+// Function ID: 100903
 // Name: useIsServerThemeAvailableForGuild
-// Dependencies: [4061, 4013, 2]
+// Dependencies: [4095, 4047, 2]
 // Exports: default
 
-// Module 12982 (useIsServerThemeAvailableForGuild)
+// Module 13026 (useIsServerThemeAvailableForGuild)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useIsServerThemeAvailableForGuild.tsx");
 
 export default function useIsServerThemeAvailableForGuild(guildId, GuildThemeNuxTrigger) {
@@ -12,7 +12,7 @@ export default function useIsServerThemeAvailableForGuild(guildId, GuildThemeNux
   if (null != guildId) {
     tmp = guildId;
   }
-  const serverThemeEnabled = require(4061) /* items */.useServerThemeEnabled(tmp, GuildThemeNuxTrigger);
-  const obj = require(4061) /* items */;
-  return null != require(4013) /* resolveRenderableGuildThemeSettings */.useEnabledGuildThemeForGuildId(guildId, GuildThemeNuxTrigger);
+  const serverThemeEnabled = require(4095) /* items */.useServerThemeEnabled(tmp, GuildThemeNuxTrigger);
+  const obj = require(4095) /* items */;
+  return null != require(4047) /* resolveRenderableGuildThemeSettings */.useEnabledGuildThemeForGuildId(guildId, GuildThemeNuxTrigger);
 };

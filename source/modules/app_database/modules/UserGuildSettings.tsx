@@ -1,9 +1,9 @@
-// Module ID: 5719
-// Function ID: 49608
+// Module ID: 5729
+// Function ID: 49464
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 4326, 3, 1883, 22, 2]
+// Dependencies: [5, 6, 7, 4360, 3, 1883, 22, 2]
 
-// Module 5719 (_createForOfIteratorHelperLoose)
+// Module 5729 (_createForOfIteratorHelperLoose)
 import closure_2 from "_isNativeReflectConstruct";
 import apply from "apply";
 import set from "set";

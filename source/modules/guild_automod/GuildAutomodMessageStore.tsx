@@ -1,9 +1,9 @@
-// Module ID: 7660
-// Function ID: 61312
+// Module ID: 7696
+// Function ID: 61402
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4350, 653, 6093, 6126, 4352, 5736, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4384, 653, 6127, 6160, 4386, 5746, 21, 566, 686, 2]
 
-// Module 7660 (_isNativeReflectConstruct)
+// Module 7696 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "ME";
 import set from "set";
@@ -34,11 +34,11 @@ function removeFailedMessage(id) {
 }
 function handleMessageSendFailedAutomod(messageData) {
   messageData = messageData.messageData;
-  let obj = require(6093) /* _isNativeReflectConstruct */;
+  let obj = require(6127) /* _isNativeReflectConstruct */;
   const failedMessageId = obj.getFailedMessageId(messageData);
-  obj = { id: failedMessageId, isBlockedEdit: require(6093) /* _isNativeReflectConstruct */.isMessageDataEdit(messageData), messageData };
-  const obj3 = require(6093) /* _isNativeReflectConstruct */;
-  obj.errorMessage = require(6126) /* _callSuper */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
+  obj = { id: failedMessageId, isBlockedEdit: require(6127) /* _isNativeReflectConstruct */.isMessageDataEdit(messageData), messageData };
+  const obj3 = require(6127) /* _isNativeReflectConstruct */;
+  obj.errorMessage = require(6160) /* _callSuper */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
   closure_13[failedMessageId] = obj;
   closure_14 = closure_14 + 1;
   return true;
@@ -196,19 +196,19 @@ tmp3 = new tmp3(require("dispatcher"), {
     } else if (message.type !== constants2.AUTO_MODERATION_ACTION) {
       return false;
     } else {
-      const messageRecord = require(4352) /* createMinimalMessageRecord */.createMessageRecord(message);
-      const obj2 = require(4352) /* createMinimalMessageRecord */;
-      const tmp10 = !require(5736) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(messageRecord);
+      const messageRecord = require(4386) /* createMinimalMessageRecord */.createMessageRecord(message);
+      const obj2 = require(4386) /* createMinimalMessageRecord */;
+      const tmp10 = !require(5746) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(messageRecord);
       let tmp5 = !tmp10;
       if (!tmp10) {
-        const tmp3 = !require(5736) /* getEmbedFieldFromMessage */.isAutomodNotification(messageRecord);
+        const tmp3 = !require(5746) /* getEmbedFieldFromMessage */.isAutomodNotification(messageRecord);
         let flag = !tmp3;
         if (!tmp3) {
           closure_16[guildId] = messageRecord.id;
           flag = true;
         }
         tmp5 = flag;
-        const obj = require(5736) /* getEmbedFieldFromMessage */;
+        const obj = require(5746) /* getEmbedFieldFromMessage */;
       }
       return tmp5;
     }

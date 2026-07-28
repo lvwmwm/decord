@@ -1,10 +1,10 @@
-// Module ID: 10442
-// Function ID: 80973
+// Module ID: 10480
+// Function ID: 81094
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 31, 5658, 1347, 5659, 5463, 566, 10443, 5665, 10444, 10818, 2]
+// Dependencies: [5, 31, 5668, 1347, 5669, 5498, 566, 10481, 5675, 10482, 10856, 2]
 // Exports: default
 
-// Module 10442 (useRefocusOrLaunchActivity)
+// Module 10480 (useRefocusOrLaunchActivity)
 import fetchApplication from "fetchApplication";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

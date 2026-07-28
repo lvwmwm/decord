@@ -1,9 +1,9 @@
-// Module ID: 12795
-// Function ID: 99555
+// Module ID: 12838
+// Function ID: 99725
 // Name: StateHistory
-// Dependencies: [6, 7, 653, 4207, 22, 12796, 2]
+// Dependencies: [6, 7, 653, 4241, 22, 12839, 2]
 
-// Module 12795 (StateHistory)
+// Module 12838 (StateHistory)
 import set from "set";
 import _defineProperties from "_defineProperties";
 import { RTCConnectionStates } from "ME";

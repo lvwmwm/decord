@@ -1,9 +1,9 @@
-// Module ID: 5683
-// Function ID: 48923
+// Module ID: 5693
+// Function ID: 48779
 // Name: ROLL_DURATION_MS
 // Dependencies: [2]
 
-// Module 5683 (ROLL_DURATION_MS)
+// Module 5693 (ROLL_DURATION_MS)
 import set from "set";
 
 const items = [4, 6, 8, 10, 12, 20];

@@ -1,10 +1,10 @@
-// Module ID: 10237
-// Function ID: 79210
+// Module ID: 10277
+// Function ID: 79339
 // Name: FileIcon
-// Dependencies: [31, 33, 689, 3834, 10238, 2]
+// Dependencies: [31, 33, 689, 3868, 10278, 2]
 // Exports: FileIcon
 
-// Module 10237 (FileIcon)
+// Module 10277 (FileIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const FileIcon = function FileIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10238) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10278) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10238) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(10278) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

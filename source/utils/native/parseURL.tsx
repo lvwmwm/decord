@@ -1,10 +1,10 @@
-// Module ID: 4112
-// Function ID: 34029
+// Module ID: 4146
+// Function ID: 34131
 // Name: parseQuery
-// Dependencies: [57, 653, 655, 4113, 4114, 1440, 3830, 1445, 4115, 4120, 12218, 4367, 12919, 1443, 4322, 8881, 6497, 1553, 477, 8833, 675, 490, 12920, 2]
+// Dependencies: [57, 653, 655, 4147, 4148, 1440, 3864, 1445, 4149, 4154, 12261, 4401, 12963, 1443, 4356, 8925, 6533, 1553, 477, 8877, 675, 490, 12964, 2]
 // Exports: default
 
-// Module 4112 (parseQuery)
+// Module 4146 (parseQuery)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 import items from "items";
@@ -87,7 +87,7 @@ export default function parseURL(target) {
   function isValidUUID(shareId) {
     return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(shareId);
   }
-  let obj = importDefault(3830);
+  let obj = importDefault(3864);
   let sanitizeUrlResult = obj.sanitizeUrl(target);
   if (null == sanitizeUrlResult) {
     obj = {};
@@ -112,13 +112,13 @@ export default function parseURL(target) {
     const sanitizeUrlResultResult = sanitizeUrlResult(str);
     ({ fingerprint, attemptId, installationId, referrer_id, sort, filter } = sanitizeUrlResultResult);
     ({ username, custom_id, link_id } = sanitizeUrlResultResult);
-    let obj1 = isValidUUID(4115);
+    let obj1 = isValidUUID(4149);
     const findCodedLinkResult = obj1.findCodedLink(sanitizeUrlResult);
     if (null != findCodedLinkResult) {
       const type = findCodedLinkResult.type;
       sanitizeUrlResult = isValidUUID;
       sanitizeUrlResult = dependencyMap;
-      if (isValidUUID(4120).CodedLinkType.INVITE === type) {
+      if (isValidUUID(4154).CodedLinkType.INVITE === type) {
         obj = { fingerprint, attemptId, installationId };
         obj = {};
         sanitizeUrlResult = closure_7;
@@ -131,7 +131,7 @@ export default function parseURL(target) {
       } else {
         sanitizeUrlResult = isValidUUID;
         sanitizeUrlResult = dependencyMap;
-        if (isValidUUID(4120).CodedLinkType.TEMPLATE === type) {
+        if (isValidUUID(4154).CodedLinkType.TEMPLATE === type) {
           obj = { fingerprint, attemptId, installationId };
           obj = {};
           sanitizeUrlResult = closure_7;
@@ -142,25 +142,25 @@ export default function parseURL(target) {
         } else {
           sanitizeUrlResult = isValidUUID;
           sanitizeUrlResult = dependencyMap;
-          if (isValidUUID(4120).CodedLinkType.BUILD_OVERRIDE !== type) {
+          if (isValidUUID(4154).CodedLinkType.BUILD_OVERRIDE !== type) {
             sanitizeUrlResult = isValidUUID;
             sanitizeUrlResult = dependencyMap;
-            if (isValidUUID(4120).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+            if (isValidUUID(4154).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
               sanitizeUrlResult = isValidUUID;
               sanitizeUrlResult = dependencyMap;
-              if (isValidUUID(4120).CodedLinkType.EXPERIMENT !== type) {
+              if (isValidUUID(4154).CodedLinkType.EXPERIMENT !== type) {
                 sanitizeUrlResult = isValidUUID;
                 sanitizeUrlResult = dependencyMap;
-                if (isValidUUID(4120).CodedLinkType.EVENT !== type) {
+                if (isValidUUID(4154).CodedLinkType.EVENT !== type) {
                   sanitizeUrlResult = isValidUUID;
                   sanitizeUrlResult = dependencyMap;
-                  if (isValidUUID(4120).CodedLinkType.CHANNEL_LINK !== type) {
+                  if (isValidUUID(4154).CodedLinkType.CHANNEL_LINK !== type) {
                     sanitizeUrlResult = isValidUUID;
                     sanitizeUrlResult = dependencyMap;
-                    if (isValidUUID(4120).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+                    if (isValidUUID(4154).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
                       sanitizeUrlResult = isValidUUID;
                       sanitizeUrlResult = dependencyMap;
-                      if (isValidUUID(4120).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+                      if (isValidUUID(4154).CodedLinkType.ACTIVITY_BOOKMARK === type) {
                         obj1 = { fingerprint, attemptId, installationId };
                         let obj2 = { type: closure_7.ACTIVITY, applicationId: findCodedLinkResult.code, customId: custom_id, referrerId: referrer_id, linkId: link_id, isDeepLink: flag };
                         obj1.payload = obj2;
@@ -168,25 +168,25 @@ export default function parseURL(target) {
                       } else {
                         sanitizeUrlResult = isValidUUID;
                         sanitizeUrlResult = dependencyMap;
-                        if (isValidUUID(4120).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                        if (isValidUUID(4154).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
                           sanitizeUrlResult = isValidUUID;
                           sanitizeUrlResult = dependencyMap;
-                          if (isValidUUID(4120).CodedLinkType.GUILD_PRODUCT !== type) {
+                          if (isValidUUID(4154).CodedLinkType.GUILD_PRODUCT !== type) {
                             sanitizeUrlResult = isValidUUID;
                             sanitizeUrlResult = dependencyMap;
-                            if (isValidUUID(4120).CodedLinkType.SERVER_SHOP !== type) {
+                            if (isValidUUID(4154).CodedLinkType.SERVER_SHOP !== type) {
                               sanitizeUrlResult = isValidUUID;
                               sanitizeUrlResult = dependencyMap;
-                              if (isValidUUID(4120).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                              if (isValidUUID(4154).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
                                 sanitizeUrlResult = isValidUUID;
                                 sanitizeUrlResult = dependencyMap;
-                                if (isValidUUID(4120).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                                if (isValidUUID(4154).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
                                   sanitizeUrlResult = isValidUUID;
                                   sanitizeUrlResult = dependencyMap;
-                                  if (isValidUUID(4120).CodedLinkType.QUESTS_EMBED !== type) {
+                                  if (isValidUUID(4154).CodedLinkType.QUESTS_EMBED !== type) {
                                     sanitizeUrlResult = isValidUUID;
                                     sanitizeUrlResult = dependencyMap;
-                                    if (isValidUUID(4120).CodedLinkType.GAME_PROFILE === type) {
+                                    if (isValidUUID(4154).CodedLinkType.GAME_PROFILE === type) {
                                       const obj3 = { fingerprint, attemptId, installationId };
                                       const obj4 = { type: closure_7.GAME_PROFILE, gameId: findCodedLinkResult.code };
                                       obj3.payload = obj4;
@@ -194,17 +194,17 @@ export default function parseURL(target) {
                                     } else {
                                       sanitizeUrlResult = isValidUUID;
                                       sanitizeUrlResult = dependencyMap;
-                                      if (isValidUUID(4120).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                      if (isValidUUID(4154).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
                                         sanitizeUrlResult = isValidUUID;
                                         sanitizeUrlResult = dependencyMap;
-                                        if (isValidUUID(4120).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                        if (isValidUUID(4154).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
                                           sanitizeUrlResult = isValidUUID;
                                           sanitizeUrlResult = dependencyMap;
-                                          if (isValidUUID(4120).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                          if (isValidUUID(4154).CodedLinkType.APP_OAUTH2_LINK !== type) {
                                             sanitizeUrlResult = isValidUUID;
                                             sanitizeUrlResult = dependencyMap;
-                                            if (isValidUUID(4120).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                              obj2 = isValidUUID(12218);
+                                            if (isValidUUID(4154).CodedLinkType.COLLECTIBLES_SHOP === type) {
+                                              obj2 = isValidUUID(12261);
                                               const tmp12 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                               if (obj2.isVirtualCurrencyEnabled().enabled) {
                                                 if (tmp11 === constants2.ORBS) {
@@ -255,7 +255,7 @@ export default function parseURL(target) {
         }
       }
     }
-    const findGiftCodesResult = isValidUUID(4367).findGiftCodes(sanitizeUrlResult);
+    const findGiftCodesResult = isValidUUID(4401).findGiftCodes(sanitizeUrlResult);
     if (findGiftCodesResult.length > 0) {
       let obj9 = { fingerprint, attemptId, installationId };
       let obj10 = {};
@@ -267,7 +267,7 @@ export default function parseURL(target) {
     } else {
       sanitizeUrlResult = isValidUUID;
       sanitizeUrlResult = dependencyMap;
-      obj = isValidUUID(12919);
+      obj = isValidUUID(12963);
       const result = obj.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -327,7 +327,7 @@ export default function parseURL(target) {
       if (null != pathname) {
         sanitizeUrlResult = isValidUUID;
         sanitizeUrlResult = dependencyMap;
-        obj = isValidUUID(4322);
+        obj = isValidUUID(4356);
         sanitizeUrlResult = obj.tryParseDiceRollLink(pathname);
         if (null != sanitizeUrlResult) {
           const obj19 = { fingerprint, attemptId, installationId };
@@ -340,7 +340,7 @@ export default function parseURL(target) {
         } else {
           sanitizeUrlResult = isValidUUID;
           sanitizeUrlResult = dependencyMap;
-          obj = isValidUUID(4322);
+          obj = isValidUUID(4356);
           sanitizeUrlResult = obj.tryParseChannelPath(pathname);
           if (null != sanitizeUrlResult) {
             sanitizeUrlResult = parseQuery;
@@ -447,7 +447,7 @@ export default function parseURL(target) {
                   }
                 }
                 if (null != pathname.match(closure_16)) {
-                  obj12 = isValidUUID(8881);
+                  obj12 = isValidUUID(8925);
                   let tmp33 = str13;
                   if (null != query) {
                     tmp33 = query;
@@ -585,7 +585,7 @@ export default function parseURL(target) {
                         const obj54 = { type: closure_7.ACCOUNT_STANDING, pathname };
                         tmp37 = obj54;
                       } else if ("mobile-web-redirect-checkout" === sanitizeUrlResult) {
-                        obj25 = isValidUUID(6497);
+                        obj25 = isValidUUID(6533);
                         let result2 = obj25.isMobileWebRedirectCheckoutEnabled();
                         if (result2) {
                           obj26 = isValidUUID(1553);
@@ -667,7 +667,7 @@ export default function parseURL(target) {
                         if (null != userId) {
                           tmp37 = null;
                           if (null != fingerprint2) {
-                            obj18 = isValidUUID(8833);
+                            obj18 = isValidUUID(8877);
                             const obj59 = { location: "parseUrl" };
                             tmp37 = null;
                             if (obj18.getSecureFramesDeeplinkExperiment(obj59).enabled) {
@@ -720,7 +720,7 @@ export default function parseURL(target) {
                   }
                   sanitizeUrlResult = isValidUUID;
                   sanitizeUrlResult = dependencyMap;
-                  obj41 = isValidUUID(4322);
+                  obj41 = isValidUUID(4356);
                   sanitizeUrlResult = obj41.tryParseEventDetailsPath(pathname);
                   if (null != sanitizeUrlResult) {
                     const obj67 = { fingerprint, attemptId, installationId };
@@ -832,9 +832,9 @@ export default function parseURL(target) {
                             sanitizeUrlResult = importDefault;
                             sanitizeUrlResult = dependencyMap;
                             sanitizeUrlResult = closure_5;
-                            obj78.settingsSection = importDefault(12920)(closure_5, 655);
+                            obj78.settingsSection = importDefault(12964)(closure_5, 655);
                             sanitizeUrlResult = closure_6;
-                            obj78.settingsSubsection = importDefault(12920)(closure_6, 4113);
+                            obj78.settingsSubsection = importDefault(12964)(closure_6, 4147);
                             obj77.payload = obj78;
                             return obj77;
                           } else {
@@ -855,9 +855,9 @@ export default function parseURL(target) {
                               sanitizeUrlResult = importDefault;
                               sanitizeUrlResult = dependencyMap;
                               sanitizeUrlResult = closure_5;
-                              obj80.settingsSection = importDefault(12920)(closure_5, 653);
+                              obj80.settingsSection = importDefault(12964)(closure_5, 653);
                               sanitizeUrlResult = closure_6;
-                              obj80.settingsSubsection = importDefault(12920)(closure_6, 655);
+                              obj80.settingsSubsection = importDefault(12964)(closure_6, 655);
                               obj80.feature = sanitizeUrlResult(sanitizeUrlResult).feature;
                               obj79.payload = obj80;
                               return obj79;

@@ -1,9 +1,9 @@
-// Module ID: 12907
-// Function ID: 100267
+// Module ID: 12951
+// Function ID: 100440
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 44, 5134, 566, 686, 675, 1935, 2]
+// Dependencies: [6, 7, 15, 17, 18, 44, 5168, 566, 686, 675, 1935, 2]
 
-// Module 12907 (_isNativeReflectConstruct)
+// Module 12951 (_isNativeReflectConstruct)
 import getWindowId from "getWindowId";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

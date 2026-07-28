@@ -1,10 +1,10 @@
-// Module ID: 15523
-// Function ID: 119366
+// Module ID: 15562
+// Function ID: 119522
 // Name: handleOneRecipientInDM
-// Dependencies: [57, 5, 31, 27, 1348, 12742, 4203, 1850, 8745, 653, 33, 4131, 689, 4141, 4342, 8849, 10817, 4099, 566, 15513, 675, 3832, 1212, 9050, 8757, 12169, 6636, 5992, 1273, 8746, 2]
+// Dependencies: [57, 5, 31, 27, 1348, 12785, 4237, 1850, 8789, 653, 33, 4165, 689, 4175, 4376, 8893, 10855, 4133, 566, 15552, 675, 3866, 1212, 9094, 8801, 12212, 6672, 6026, 1273, 8790, 2]
 // Exports: default
 
-// Module 15523 (handleOneRecipientInDM)
+// Module 15562 (handleOneRecipientInDM)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";

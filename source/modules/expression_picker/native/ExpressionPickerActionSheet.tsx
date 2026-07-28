@@ -1,10 +1,10 @@
-// Module ID: 9524
-// Function ID: 74334
+// Module ID: 9564
+// Function ID: 74463
 // Name: ExpressionPickerActionSheet
-// Dependencies: [31, 1348, 5188, 9525, 33, 3992, 3997, 1555, 566, 9526, 4099, 1450, 1557, 5084, 477, 9284, 5187, 9527, 2]
+// Dependencies: [31, 1348, 5222, 9565, 33, 4026, 4031, 1555, 566, 9566, 4133, 1450, 1557, 5118, 477, 9328, 5221, 9567, 2]
 // Exports: default
 
-// Module 9524 (ExpressionPickerActionSheet)
+// Module 9564 (ExpressionPickerActionSheet)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -35,21 +35,21 @@ export default function ExpressionPickerActionSheet(arg0) {
   }
   let tmp = null;
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
-  let obj = require(3992);
+  let obj = require(4026);
   const sharedValue = obj.useSharedValue(-1);
-  let obj1 = require(3997) /* getKeyboardContextForType */;
+  let obj1 = require(4031) /* getKeyboardContextForType */;
   const keyboardContextForType = obj1.useKeyboardContextForType(require(1555) /* KeyboardTypes */.KeyboardTypes.EXPRESSION);
   let obj2 = require(566) /* initialize */;
   const items = [dismissSheet];
   const stateFromStores = obj2.useStateFromStores(items, () => dismissSheet.getChannel(closure_0));
   const height = importDefault(1450)({ ignoreKeyboard: true }).height;
-  const diff = height - require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1557)().top;
+  const diff = height - require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1557)().top;
   if (undefined !== stateFromStores) {
     obj = {};
     let isIOSResult = require(477) /* set */.isIOS();
     if (isIOSResult) {
       obj = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = callback(importDefault(9284), obj);
+      isIOSResult = callback(importDefault(9328), obj);
     }
     const items1 = [isIOSResult, ];
     obj1 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss };
@@ -76,8 +76,8 @@ export default function ExpressionPickerActionSheet(arg0) {
       stickerFormats: STICKER_FORMATS,
       height: diff
     };
-    obj1.children = callback(importDefault(9527), obj2);
-    items1[1] = callback(require(5187) /* Background */.BottomSheet, obj1);
+    obj1.children = callback(importDefault(9567), obj2);
+    items1[1] = callback(require(5221) /* Background */.BottomSheet, obj1);
     obj.children = items1;
     tmp = closure_9(closure_8, obj);
     const obj8 = require(477) /* set */;

@@ -1,9 +1,9 @@
-// Module ID: 8850
-// Function ID: 70079
+// Module ID: 8894
+// Function ID: 70230
 // Name: showAlert
-// Dependencies: [57, 1850, 653, 8851, 5132, 4471, 5051, 1212, 8852, 8853, 8854, 507, 3970, 3977, 686, 8855, 6664, 2]
+// Dependencies: [57, 1850, 653, 8895, 5166, 4505, 5085, 1212, 8896, 8897, 8898, 507, 4004, 4011, 686, 8899, 6700, 2]
 
-// Module 8850 (showAlert)
+// Module 8894 (showAlert)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -14,9 +14,9 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function showAlert(merged, arg1, arg2) {
-  require(5132) /* open */.closeContextMenu();
-  const obj = require(5132) /* open */;
-  importDefault(4471).show(merged);
+  require(5166) /* open */.closeContextMenu();
+  const obj = require(5166) /* open */;
+  importDefault(4505).show(merged);
 }
 function handleRelationshipAddError(arg0, arg1, substr) {
   let body;
@@ -54,15 +54,15 @@ function handleRelationshipAddError(arg0, arg1, substr) {
       }
     }
     if (num === constants.USER_QUARANTINED) {
-      require(5132) /* open */.closeContextMenu();
-      importDefault(5051)();
-      const obj3 = require(5132) /* open */;
+      require(5166) /* open */.closeContextMenu();
+      importDefault(5085)();
+      const obj3 = require(5166) /* open */;
     } else {
       if (!obj5.isLimitedAccessErrorCode(status, num)) {
         if (num !== constants.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              obj = require(8854) /* validateDiscordTag */;
+              obj = require(8898) /* validateDiscordTag */;
               if (!num) {
                 num = 0;
               }
@@ -81,7 +81,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
           }
         }
       }
-      obj5 = require(8853) /* isLimitedAccessErrorCode */;
+      obj5 = require(8897) /* isLimitedAccessErrorCode */;
     }
   }
   throw arg0;
@@ -221,7 +221,7 @@ obj = {
     }, () => outer1_1(outer1_3[14]).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
   },
   confirmClearPendingRelationships(arg0) {
-    importDefault(8855)(arg0);
+    importDefault(8899)(arg0);
   },
   clearPendingRelationships() {
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;

@@ -1,8 +1,8 @@
-// Module ID: 14896
-// Function ID: 113667
-// Dependencies: [31, 3948, 653, 33, 14897, 1324, 14882, 566, 14884, 689, 1212, 14898, 4630, 2]
+// Module ID: 14940
+// Function ID: 113840
+// Dependencies: [31, 3982, 653, 33, 14941, 1324, 14926, 566, 14928, 689, 1212, 14942, 4664, 2]
 
-// Module 14896
+// Module 14940
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ME } from "ME";
 import { jsx } from "jsxProd";
@@ -11,13 +11,13 @@ import importAllResult from "result";
 const require = arg1;
 let closure_6 = {
   onPress() {
-    importDefault(14897)(ME);
+    importDefault(14941)(ME);
   }
 };
 const memoResult = require("result").memo(function GuildsBarMessages() {
   let badge;
   let cutouts;
-  let obj = require(14882) /* UnreadIndicator */;
+  let obj = require(14926) /* UnreadIndicator */;
   const tmp = importDefault(1324)("GuildsBarMessages");
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const items = [_isNativeReflectConstruct];
@@ -30,11 +30,11 @@ const memoResult = require("result").memo(function GuildsBarMessages() {
     return tmp2;
   });
   const obj2 = require(566) /* initialize */;
-  ({ badge, cutouts } = importDefault(14884)({ mentionCount: 0 }));
+  ({ badge, cutouts } = importDefault(14928)({ mentionCount: 0 }));
   const colors = importDefault(689).colors;
   obj = { selected: stateFromStores };
   let tmp8 = !tmp;
-  const tmp4 = importDefault(14884)({ mentionCount: 0 });
+  const tmp4 = importDefault(14928)({ mentionCount: 0 });
   const tmp5 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
   const tmp6 = jsx;
   if (tmp8) {
@@ -49,9 +49,9 @@ const memoResult = require("result").memo(function GuildsBarMessages() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.YUU0RF);
   obj.externalChildren = badge;
-  obj.expandedChildren = jsx(importDefault(14898), {});
-  obj.children = jsx(require(4630) /* ChatIcon */.ChatIcon, { color: tmp5 });
-  return tmp6(importDefault(14882), obj);
+  obj.expandedChildren = jsx(importDefault(14942), {});
+  obj.children = jsx(require(4664) /* ChatIcon */.ChatIcon, { color: tmp5 });
+  return tmp6(importDefault(14926), obj);
 });
 const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 8385
-// Function ID: 67082
+// Module ID: 8429
+// Function ID: 67229
 // Name: GuildProfileActionSheet
-// Dependencies: [57, 31, 27, 3760, 8219, 8386, 653, 33, 4131, 689, 1450, 4067, 8220, 566, 3835, 7892, 5462, 5482, 6634, 8221, 8387, 4544, 1212, 11888, 8388, 11889, 666, 5187, 4555, 5189, 5446, 2]
+// Dependencies: [57, 31, 27, 3794, 8257, 8430, 653, 33, 4165, 689, 1450, 4101, 8258, 566, 3869, 7928, 5497, 5517, 6670, 8259, 8431, 4578, 1212, 11931, 8432, 11932, 666, 5221, 4589, 5223, 5481, 2]
 // Exports: default
 
-// Module 8385 (GuildProfileActionSheet)
+// Module 8429 (GuildProfileActionSheet)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "Background";

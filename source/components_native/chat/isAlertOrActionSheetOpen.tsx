@@ -1,10 +1,10 @@
-// Module ID: 9447
-// Function ID: 73751
+// Module ID: 9487
+// Function ID: 73879
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [3824, 9448, 4473, 2]
+// Dependencies: [3858, 9488, 4507, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 9447 (isAlertOrActionSheetOpen)
+// Module 9487 (isAlertOrActionSheetOpen)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -21,7 +21,7 @@ export const isAlertOrActionSheetOpen = function isAlertOrActionSheetOpen(select
     obj2 = closure_3;
   }
   let tmp = null != obj.getContent();
-  const useAlertStore = require(4473) /* useAlertStore */.useAlertStore;
+  const useAlertStore = require(4507) /* useAlertStore */.useAlertStore;
   const tmp2 = null != obj2.getAlert();
   if (!tmp) {
     tmp = tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 14986
-// Function ID: 114270
+// Module ID: 15030
+// Function ID: 114443
 // Name: isActivityTemporaryCustomStatus
 // Dependencies: [653, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 14986 (isActivityTemporaryCustomStatus)
+// Module 15030 (isActivityTemporaryCustomStatus)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/custom_status/utils/isActivityTemporaryCustomStatus.tsx");

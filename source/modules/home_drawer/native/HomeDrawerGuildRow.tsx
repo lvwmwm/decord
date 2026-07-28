@@ -1,10 +1,10 @@
-// Module ID: 14903
-// Function ID: 113708
+// Module ID: 14947
+// Function ID: 113881
 // Name: GuildRowWrapper
-// Dependencies: [31, 27, 3761, 1352, 1348, 1908, 5868, 1838, 4143, 3768, 4326, 1850, 653, 4327, 33, 4131, 566, 3988, 3985, 14904, 10166, 4127, 14906, 14907, 4321, 21, 14908, 14910, 11135, 14911, 14912, 14913, 14915, 14916, 14894, 2]
+// Dependencies: [31, 27, 3795, 1352, 1348, 1908, 5902, 1838, 4177, 3802, 4360, 1850, 653, 4361, 33, 4165, 566, 4022, 4019, 14948, 10206, 4161, 14950, 14951, 4355, 21, 14952, 14954, 11173, 14955, 14956, 14957, 14959, 14960, 14938, 2]
 // Exports: default
 
-// Module 14903 (GuildRowWrapper)
+// Module 14947 (GuildRowWrapper)
 import MentionSubtitle from "MentionSubtitle";
 import { View } from "areHomeDrawerGuildTypingStatesEqual";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -315,7 +315,7 @@ export default function HomeDrawerGuildRow(guildId) {
   let obj = guildId(566);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(3988).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4022).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

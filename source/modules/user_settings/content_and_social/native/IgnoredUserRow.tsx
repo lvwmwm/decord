@@ -1,21 +1,21 @@
-// Module ID: 13775
-// Function ID: 105657
+// Module ID: 13819
+// Function ID: 105830
 // Name: handleUnignoreUser
-// Dependencies: [31, 1850, 33, 8850, 5462, 5164, 1273, 1212, 8297, 4544, 566, 2]
+// Dependencies: [31, 1850, 33, 8894, 5497, 5198, 1273, 1212, 8335, 4578, 566, 2]
 // Exports: default
 
-// Module 13775 (handleUnignoreUser)
+// Module 13819 (handleUnignoreUser)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function handleUnignoreUser(id) {
-  importDefault(8850).unignoreUser(id, "ignored-users-list-mobile");
+  importDefault(8894).unignoreUser(id, "ignored-users-list-mobile");
 }
 function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button" };
   obj = { source: userRecord.getAvatarSource(undefined), size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.icon = jsx(userRecord(1273).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 });
@@ -60,8 +60,8 @@ function IgnoredUserRow(userRecord) {
   obj1.onPress = function onPress() {
     outer1_5(userRecord.id);
   };
-  obj.trailing = jsx(userRecord(4544).Button, { size: "sm", variant: "secondary" });
-  return jsx(userRecord(5164).TableRow, { name: "unignore" });
+  obj.trailing = jsx(userRecord(4578).Button, { size: "sm", variant: "secondary" });
+  return jsx(userRecord(5198).TableRow, { name: "unignore" });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUserRow.tsx");
 

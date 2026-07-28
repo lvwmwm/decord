@@ -1,10 +1,10 @@
-// Module ID: 15805
-// Function ID: 121962
+// Module ID: 15844
+// Function ID: 122118
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 31, 1348, 1907, 653, 3749, 10402, 10592, 10444, 1207, 2]
+// Dependencies: [5, 31, 1348, 1907, 653, 3783, 10442, 10630, 10482, 1207, 2]
 // Exports: default
 
-// Module 15805 (useTransitionToConnectedActivityInVoice)
+// Module 15844 (useTransitionToConnectedActivityInVoice)
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

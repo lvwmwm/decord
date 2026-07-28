@@ -1,10 +1,10 @@
-// Module ID: 15388
-// Function ID: 117355
+// Module ID: 15428
+// Function ID: 117514
 // Name: inBoundingBox
-// Dependencies: [31, 3992, 11390, 1557, 477, 5217, 2]
+// Dependencies: [31, 4026, 11428, 1557, 477, 5251, 2]
 // Exports: useSearchSuggestionsGesture
 
-// Module 15388 (inBoundingBox)
+// Module 15428 (inBoundingBox)
 import result from "result";
 
 const require = arg1;

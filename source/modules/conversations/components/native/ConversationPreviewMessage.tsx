@@ -1,10 +1,10 @@
-// Module ID: 9221
-// Function ID: 72297
+// Module ID: 9265
+// Function ID: 72448
 // Name: modifyRow
-// Dependencies: [31, 27, 4123, 1918, 33, 7654, 7846, 4131, 689, 566, 4320, 7685, 3804, 3801, 1273, 4127, 9222, 2]
+// Dependencies: [31, 27, 4157, 1918, 33, 7690, 7882, 4165, 689, 566, 4354, 7721, 3838, 3835, 1273, 4161, 9266, 2]
 // Exports: default
 
-// Module 9221 (modifyRow)
+// Module 9265 (modifyRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function modifyRow(arg0) {
-  arg0.contextType = require(7846) /* MediaGalleryItemType */.MessageContextType.SEARCH;
+  arg0.contextType = require(7882) /* MediaGalleryItemType */.MessageContextType.SEARCH;
   arg0.renderContentOnly = true;
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

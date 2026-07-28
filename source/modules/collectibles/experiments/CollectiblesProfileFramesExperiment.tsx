@@ -1,10 +1,10 @@
-// Module ID: 8031
-// Function ID: 63907
+// Module ID: 8069
+// Function ID: 64017
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useIsProfileFramesEnabled
 
-// Module 8031 (apexExperiment)
+// Module 8069 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-collectibles-profile-frames", kind: "user", defaultConfig: { enableProfileFrames: false }, variations: { [0]: { enableProfileFrames: false }, [1]: { enableProfileFrames: true } } };

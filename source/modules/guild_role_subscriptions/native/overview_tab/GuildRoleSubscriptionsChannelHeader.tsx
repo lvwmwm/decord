@@ -1,8 +1,8 @@
-// Module ID: 10076
-// Function ID: 78100
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 10077, 4127, 1212, 2]
+// Module ID: 10116
+// Function ID: 78229
+// Dependencies: [31, 27, 33, 4165, 689, 1273, 10117, 4161, 1212, 2]
 
-// Module 10076
+// Module 10116
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,12 +18,12 @@ obj.header = obj;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(function GuildRoleSubscriptionsChannelHeader() {
   let obj = { style: callback3().header };
-  obj = { source: importDefault(10077), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
+  obj = { source: importDefault(10117), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 });

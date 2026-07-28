@@ -1,10 +1,10 @@
-// Module ID: 13683
-// Function ID: 105089
+// Module ID: 13727
+// Function ID: 105262
 // Name: EditGuildIdentityAvatar
-// Dependencies: [31, 1918, 1850, 653, 1852, 33, 4131, 566, 5462, 5482, 7876, 13643, 7890, 3777, 7882, 6137, 4099, 13644, 1935, 13645, 13645, 7874, 4661, 1212, 7915, 13646, 2]
+// Dependencies: [31, 1918, 1850, 653, 1852, 33, 4165, 566, 5497, 5517, 7912, 13687, 7926, 3811, 7918, 6171, 4133, 13688, 1935, 13689, 13689, 7910, 4695, 1212, 7951, 13690, 2]
 // Exports: default
 
-// Module 13683 (EditGuildIdentityAvatar)
+// Module 13727 (EditGuildIdentityAvatar)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

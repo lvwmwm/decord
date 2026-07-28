@@ -1,9 +1,9 @@
-// Module ID: 11373
-// Function ID: 88361
+// Module ID: 11411
+// Function ID: 88480
 // Name: StyleSheet
-// Dependencies: [31, 27, 33, 4131, 477, 3992, 4543, 4067, 7620, 4533, 3977, 5515, 2]
+// Dependencies: [31, 27, 33, 4165, 477, 4026, 4577, 4101, 7656, 4567, 4011, 5550, 2]
 
-// Module 11373 (StyleSheet)
+// Module 11411 (StyleSheet)
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -31,7 +31,7 @@ export default require("result").memo(function HeaderGlassBlur(shown) {
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   const tmp = callback2();
-  let obj = shown(3992);
+  let obj = shown(4026);
   const fn = function k() {
     const obj = {};
     let num = 0;
@@ -50,7 +50,7 @@ export default require("result").memo(function HeaderGlassBlur(shown) {
   fn.__workletHash = 3451055086565;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = shown(3992);
+  let obj2 = shown(4026);
   const fn2 = function p() {
     const obj = {};
     let num = 0;
@@ -60,19 +60,19 @@ export default require("result").memo(function HeaderGlassBlur(shown) {
     obj.blurAmount = shown(outer1_2[6]).withSpring(num);
     return obj;
   };
-  obj = { withSpring: shown(4543).withSpring, shown };
+  obj = { withSpring: shown(4577).withSpring, shown };
   fn2.__closure = obj;
   fn2.__workletHash = 5642055202507;
   fn2.__initData = closure_9;
   const animatedProps = obj2.useAnimatedProps(fn2);
-  const tmp4 = importDefault(4067)();
+  const tmp4 = importDefault(4101)();
   const obj1 = { style: items };
   items = [tmp.blur, style, animatedStyle];
   obj2 = { blurStyle: "ultra-thin" };
   const tmp5 = closure_5;
-  const tmp6 = importDefault(7620);
+  const tmp6 = importDefault(7656);
   const tmp7 = callback;
-  const tmp8 = importDefault(4533);
+  const tmp8 = importDefault(4567);
   let str = "light";
   if (obj7.isThemeDark(tmp4)) {
     str = "dark";
@@ -83,15 +83,15 @@ export default require("result").memo(function HeaderGlassBlur(shown) {
   obj2.animatedProps = animatedProps;
   const items2 = [tmp7(tmp8, obj2), ];
   const obj3 = { style: tmp.strokeContainer };
-  obj7 = shown(3977);
+  obj7 = shown(4011);
   const tmp9 = closure_5;
-  const items3 = [callback(importDefault(5515), { style: tmp.stroke }), ];
+  const items3 = [callback(importDefault(5550), { style: tmp.stroke }), ];
   const obj5 = {};
   const obj4 = { style: tmp.stroke };
-  const tmp10 = importDefault(5515);
+  const tmp10 = importDefault(5550);
   const tmp11 = callback;
-  const tmp12 = importDefault(5515);
-  obj5.style = shown(3977).isThemeDark(tmp4) ? tmp.strokeAlt : tmp.strokeAltLight;
+  const tmp12 = importDefault(5550);
+  obj5.style = shown(4011).isThemeDark(tmp4) ? tmp.strokeAlt : tmp.strokeAltLight;
   items3[1] = tmp11(tmp12, obj5);
   obj3.children = items3;
   items2[1] = tmp9(tmp10, obj3);

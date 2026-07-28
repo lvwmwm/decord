@@ -1,5 +1,5 @@
 // Module ID: 1828
-// Function ID: 20031
+// Function ID: 20035
 // Name: parseAvatarDecorationData
 // Dependencies: [1829, 22, 2]
 // Exports: hasGlobalDefaultAvatarDecoration, isEqualAvatarDecoration

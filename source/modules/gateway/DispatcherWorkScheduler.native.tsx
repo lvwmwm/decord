@@ -1,10 +1,10 @@
-// Module ID: 12637
-// Function ID: 97764
+// Module ID: 12680
+// Function ID: 97934
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 12636, 653, 686, 12638, 2]
+// Dependencies: [6, 7, 15, 17, 18, 12679, 653, 686, 12681, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 12637 (_isNativeReflectConstruct)
+// Module 12680 (_isNativeReflectConstruct)
 import ME from "ME";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

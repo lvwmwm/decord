@@ -1,10 +1,10 @@
-// Module ID: 16222
-// Function ID: 125768
+// Module ID: 16261
+// Function ID: 125924
 // Name: ConnectGuardianShareScreen
-// Dependencies: [31, 27, 5765, 33, 4131, 689, 1212, 2199, 3831, 4338, 11048, 624, 13846, 6725, 6726, 4542, 4127, 13847, 5584, 5087, 11060, 2]
+// Dependencies: [31, 27, 5775, 33, 4165, 689, 1212, 2199, 3865, 4372, 11086, 624, 13890, 6761, 6762, 4576, 4161, 13891, 5619, 5121, 11098, 2]
 // Exports: default
 
-// Module 16222 (ConnectGuardianShareScreen)
+// Module 16261 (ConnectGuardianShareScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ function ConnectGuardianShareScreen() {
     let arr = outer1_1(outer1_2[9]);
     arr = arr.pop();
   }, []);
-  let obj1 = getLinkCode(11048);
+  let obj1 = getLinkCode(11086);
   getLinkCode = obj1.useFamilyCenterActions({ onError: callback }).getLinkCode;
   let obj2 = getLinkCode(624);
   const items = [_isNativeReflectConstruct];
@@ -35,7 +35,7 @@ function ConnectGuardianShareScreen() {
   const effect = React.useEffect(() => {
     getLinkCode();
   }, []);
-  importDefault(13846)(importDefault(4338).pop);
+  importDefault(13890)(importDefault(4372).pop);
   obj = {};
   obj = {};
   obj1 = { spacing: importDefault(689).space.PX_40 };
@@ -43,37 +43,37 @@ function ConnectGuardianShareScreen() {
   obj3 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
   let intl = getLinkCode(1212).intl;
   obj3.children = intl.string(importDefault(2199).ITlV6p);
-  const items2 = [callback(getLinkCode(4127).Text, obj3), ];
+  const items2 = [callback(getLinkCode(4161).Text, obj3), ];
   const obj4 = { style: tmp.body, variant: "text-sm/medium", color: "text-muted" };
   const intl2 = getLinkCode(1212).intl;
   obj4.children = intl2.format(importDefault(2199).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
-  items2[1] = callback(getLinkCode(4127).Text, obj4);
+  items2[1] = callback(getLinkCode(4161).Text, obj4);
   obj2.children = items2;
-  const items3 = [callback2(getLinkCode(4542).Stack, obj2), ];
+  const items3 = [callback2(getLinkCode(4576).Stack, obj2), ];
   const obj5 = { spacing: importDefault(689).space.PX_24, style: tmp.cardSection };
   const obj6 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl3 = getLinkCode(1212).intl;
   obj6.children = intl3.string(importDefault(2199).pojgfk);
-  const items4 = [callback(getLinkCode(4127).Text, obj6), ];
+  const items4 = [callback(getLinkCode(4161).Text, obj6), ];
   if (null != stateFromStores) {
     if (null != stateFromStores1) {
       const obj7 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      let tmp13 = callback(getLinkCode(13847).ConnectGuardianCard, obj7);
+      let tmp13 = callback(getLinkCode(13891).ConnectGuardianCard, obj7);
     }
     items4[1] = tmp13;
     obj5.children = items4;
-    items3[1] = tmp12(getLinkCode(4542).Stack, obj5);
+    items3[1] = tmp12(getLinkCode(4576).Stack, obj5);
     obj1.children = items3;
-    obj.children = tmp11(getLinkCode(4542).Stack, obj1);
-    obj.children = tmp10(getLinkCode(6726).ModalContent, obj);
-    return tmp9(getLinkCode(6725).ModalScreen, obj);
+    obj.children = tmp11(getLinkCode(4576).Stack, obj1);
+    obj.children = tmp10(getLinkCode(6762).ModalContent, obj);
+    return tmp9(getLinkCode(6761).ModalScreen, obj);
   }
   tmp10 = callback;
   tmp11 = callback2;
   tmp12 = callback2;
-  const tmp7 = importDefault(13846);
+  const tmp7 = importDefault(13890);
   tmp9 = callback;
-  tmp13 = callback(View, { style: tmp.loading, children: callback(getLinkCode(5584).ActivityIndicator, {}) });
+  tmp13 = callback(View, { style: tmp.loading, children: callback(getLinkCode(5619).ActivityIndicator, {}) });
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = { title: { textAlign: "center" }, body: { textAlign: "center" }, qrLabel: { textAlign: "center" }, cardSection: { alignItems: "center" } };
@@ -101,5 +101,5 @@ export default function ConnectGuardianShareModal() {
   let obj = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: memo };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(11060) /* Modal */.Modal, obj);
+  return callback(require(11098) /* Modal */.Modal, obj);
 };

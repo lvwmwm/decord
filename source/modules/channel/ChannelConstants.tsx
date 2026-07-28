@@ -1,5 +1,5 @@
 // Module ID: 1355
-// Function ID: 16284
+// Function ID: 16288
 // Name: set
 // Dependencies: [2]
 // Exports: buildGuildStaticChannelId, isGuildHomeChannel, isStaticChannelRoute

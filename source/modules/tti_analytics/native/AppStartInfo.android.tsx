@@ -1,9 +1,9 @@
-// Module ID: 5904
-// Function ID: 52387
+// Module ID: 5938
+// Function ID: 52506
 // Name: AppStartInfo
-// Dependencies: [57, 5, 5905, 3989, 2]
+// Dependencies: [57, 5, 5939, 4023, 2]
 
-// Module 5904 (AppStartInfo)
+// Module 5938 (AppStartInfo)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 
@@ -12,7 +12,7 @@ const result = require("enforcing").fileFinishedImporting("modules/tti_analytics
 
 export const AppStartInfo = {
   getAppUIViewed() {
-    const mainActivityCreationTime = importDefault(5905).getMainActivityCreationTime();
+    const mainActivityCreationTime = importDefault(5939).getMainActivityCreationTime();
     let tmp2 = null != mainActivityCreationTime;
     if (tmp2) {
       let flag = !tmp4;

@@ -1,10 +1,10 @@
-// Module ID: 5782
-// Function ID: 50827
+// Module ID: 5792
+// Function ID: 50683
 // Name: getPriceForCollectiblesProduct
-// Dependencies: [5775, 1875, 5776, 5777, 5783, 655, 653, 482, 3777, 1866, 1868, 5784, 5616, 477, 1877, 22, 1212, 5781, 2]
+// Dependencies: [5785, 1875, 5786, 5787, 5793, 655, 653, 482, 3811, 1866, 1868, 5794, 5651, 477, 1877, 22, 1212, 5791, 2]
 // Exports: canActionOnProduct, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getProductDiscount, getProductTypeNameForLogging, getProfileEffects, getProfileFrames, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 5782 (getPriceForCollectiblesProduct)
+// Module 5792 (getPriceForCollectiblesProduct)
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
 import { isNameplateRecord } from "_isNativeReflectConstruct";
 import { isProfileEffectRecord } from "_isNativeReflectConstruct";
@@ -225,7 +225,7 @@ export const getAnalyticsShopDiscountSource = function getAnalyticsShopDiscountS
   return tmp;
 };
 export const getShopDiscountSource = function getShopDiscountSource(currentUser) {
-  const obj = importDefault(3777);
+  const obj = importDefault(3811);
   if (obj.canUseShopDiscounts(currentUser)) {
     if (obj2.canUseCollectibles(currentUser)) {
       return obj.NITRO;
@@ -252,9 +252,9 @@ export const getShopDiscountSource = function getShopDiscountSource(currentUser)
           }
         }
       }
-      obj5 = require(5784) /* apexExperiment */;
+      obj5 = require(5794) /* apexExperiment */;
     }
-    obj2 = importDefault(3777);
+    obj2 = importDefault(3811);
   } else {
     return null;
   }
@@ -295,8 +295,8 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
     if (null != tmp) {
       currency = tmp.currency;
     }
-    str = require(5616) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
-    const obj = require(5616) /* formatSingleCurrencyPrice */;
+    str = require(5651) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
+    const obj = require(5651) /* formatSingleCurrencyPrice */;
   }
   return str;
 };

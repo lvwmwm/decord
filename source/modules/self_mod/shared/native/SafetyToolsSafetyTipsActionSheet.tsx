@@ -1,10 +1,10 @@
-// Module ID: 10117
-// Function ID: 78348
+// Module ID: 10157
+// Function ID: 78477
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [31, 27, 10098, 33, 4131, 689, 10105, 1212, 10118, 4127, 2]
+// Dependencies: [31, 27, 10138, 33, 4165, 689, 10145, 1212, 10158, 4161, 2]
 // Exports: default
 
-// Module 10117 (SafetyToolsSafetyTipsActionSheet)
+// Module 10157 (SafetyToolsSafetyTipsActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { getInappropriateConversationsSafetyTips as closure_4 } from "LOCATION_CONTEXT_MOBILE";
@@ -33,10 +33,10 @@ export default function SafetyToolsSafetyTipsActionSheet(arg0) {
   obj.onClose = onClose;
   obj = { style: tmp.safetyTipsContainer };
   obj = {};
-  const tmp2 = importDefault(10105);
+  const tmp2 = importDefault(10145);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(require(1212) /* getSystemLocale */.t.DJMZX6);
-  const tmp3 = importDefault(10118);
+  const tmp3 = importDefault(10158);
   obj.safetyTips = callback().map((children) => outer1_5(outer1_0(outer1_2[9]).Text, { variant: "text-sm/medium", children }, arg1));
   obj.children = <tmp3 />;
   obj.children = <View />;

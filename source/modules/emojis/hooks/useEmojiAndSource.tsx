@@ -1,10 +1,10 @@
-// Module ID: 9348
-// Function ID: 73021
+// Module ID: 9392
+// Function ID: 73172
 // Name: useEmojiAndSource
-// Dependencies: [5, 57, 31, 1838, 4992, 5514, 653, 3775, 624, 2]
+// Dependencies: [5, 57, 31, 1838, 5026, 5549, 653, 3809, 624, 2]
 // Exports: useEmojiAndSource
 
-// Module 9348 (useEmojiAndSource)
+// Module 9392 (useEmojiAndSource)
 import closure_2 from "_callSuper";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

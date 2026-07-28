@@ -1,10 +1,10 @@
-// Module ID: 10587
-// Function ID: 82547
+// Module ID: 10625
+// Function ID: 82668
 // Name: confirmActivityChangeModal
-// Dependencies: [3768, 1850, 4321, 4471, 1212, 1832, 2]
+// Dependencies: [3802, 1850, 4355, 4505, 1212, 1832, 2]
 // Exports: default
 
-// Module 10587 (confirmActivityChangeModal)
+// Module 10625 (confirmActivityChangeModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -14,7 +14,7 @@ const result = require("computeDefaultGroupDmNameFromUserIds").fileFinishedImpor
 export default function confirmActivityChangeModal(name, channel, onConfirm, onCancel) {
   let str = "";
   if (null != channel) {
-    let obj = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+    let obj = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
     str = obj.computeChannelName(channel, closure_4, _isNativeReflectConstruct);
   }
   obj = {};
@@ -37,7 +37,7 @@ export default function confirmActivityChangeModal(name, channel, onConfirm, onC
     name = intl5.string(require(1212) /* getSystemLocale */.t.G99XFs);
   }
   obj.currentApplicationName = name;
-  const obj2 = importDefault(4471);
+  const obj2 = importDefault(4505);
   if (obj5.isNullOrEmpty(str)) {
     const intl6 = require(1212) /* getSystemLocale */.intl;
     str = intl6.string(require(1212) /* getSystemLocale */.t.OGUjmt);

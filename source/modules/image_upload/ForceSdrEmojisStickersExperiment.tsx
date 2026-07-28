@@ -1,5 +1,5 @@
 // Module ID: 1826
-// Function ID: 20024
+// Function ID: 20028
 // Name: getForceSdrEmojisStickersConfig
 // Dependencies: [1428, 2]
 // Exports: getForceSdrEmojisStickersConfig

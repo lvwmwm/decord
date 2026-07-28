@@ -1,10 +1,10 @@
-// Module ID: 6689
-// Function ID: 59042
+// Module ID: 6725
+// Function ID: 59131
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [31, 27, 653, 33, 4131, 689, 4348, 1212, 4127, 3822, 1921, 6690, 6692, 4087, 7570, 1273, 4956, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 4382, 1212, 4161, 3856, 1921, 6726, 6728, 4121, 7606, 1273, 4990, 2]
 // Exports: default
 
-// Module 6689 (StageChannelAgeVerificationNoticeContent)
+// Module 6725 (StageChannelAgeVerificationNoticeContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -18,7 +18,7 @@ const require = arg1;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   let closure_1 = _createForOfIteratorHelperLoose();
-  let obj = onConfirmPress(4348);
+  let obj = onConfirmPress(4382);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1212).intl;
   const format = intl.format;
@@ -70,21 +70,21 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
 function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4348) /* isReactiveCheckEnabled */;
+  let obj = require(4382) /* isReactiveCheckEnabled */;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   if (onConfirmPress.noBackground) {
     obj = { style: tmp.noticeContainer };
     let Text = callback;
     let tmp12 = require;
     if (isVerifiedTeen) {
-      let WarningIcon = tmp12(4087).CircleInformationIcon;
+      let WarningIcon = tmp12(4121).CircleInformationIcon;
     } else {
-      WarningIcon = tmp12(7570).WarningIcon;
+      WarningIcon = tmp12(7606).WarningIcon;
     }
     obj = { size: "refresh_sm", color: importDefault(689).colors.TEXT_DEFAULT, style: tmp.icon };
     const items = [Text(WarningIcon, obj), ];
     tmp12 = callback;
-    Text = require(4127) /* Text */.Text;
+    Text = require(4161) /* Text */.Text;
     const obj1 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.contentText };
     tmp = StageChannelAgeVerificationNoticeContent;
     const obj2 = { onConfirmPress };
@@ -129,7 +129,7 @@ export default function StageChannelAgeVerificationNotice(arg0) {
   ({ divider, channelId } = arg0);
   ({ noBackground, onConfirmPress, style } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4956) /* useIsStageSpeakingDisabledForCurrentUser */;
+  let obj = require(4990) /* useIsStageSpeakingDisabledForCurrentUser */;
   let tmp2;
   if (null != channelId) {
     tmp2 = channelId;

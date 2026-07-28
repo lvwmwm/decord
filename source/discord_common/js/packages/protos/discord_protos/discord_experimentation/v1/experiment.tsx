@@ -1,9 +1,9 @@
-// Module ID: 7822
-// Function ID: 62099
+// Module ID: 7858
+// Function ID: 62189
 // Name: _callSuper
-// Dependencies: [57, 6, 7, 15, 17, 18, 1312, 1313, 7823, 1284, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1312, 1313, 7859, 1284, 2]
 
-// Module 7822 (_callSuper)
+// Module 7858 (_callSuper)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -211,18 +211,9 @@ let tmp2 = ((MessageType) => {
       if (null == arg3) {
         obj = self.create();
       }
-      const sum = pos.pos + arg1;
-      if (pos.pos < sum) {
-        obj.eligibilityPersistence = pos.int32();
-        while (true) {
-          do {
-            let tmp3 = tmp8;
-            let tmp4 = tmp9;
-            let tmp5 = tmp10;
-            let tmp6 = tmp11;
-            let tmp7 = tmp12;
-          } while (pos.pos >= sum);
-        }
+      if (pos.pos < pos.pos + arg1) {
+        [r10031, r10032] = outer1_2(pos.tag(), 2);
+        const tmp3 = outer1_2(pos.tag(), 2);
       }
       return obj;
     }

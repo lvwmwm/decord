@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 86753
+// Module ID: 11200
+// Function ID: 86872
 // Name: ApplicationsImage
-// Dependencies: [31, 27, 33, 4131, 689, 11163, 5085, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 11201, 5119, 2]
 // Exports: default
 
-// Module 11162 (ApplicationsImage)
+// Module 11200 (ApplicationsImage)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,23 +35,23 @@ export default function ApplicationsImage(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let appLauncherIconSource = null;
   if (null != firstApplication) {
-    let obj = require(11163) /* handleApplicationSelected */;
+    let obj = require(11201) /* handleApplicationSelected */;
     appLauncherIconSource = obj.getAppLauncherIconSource(firstApplication);
   }
   let appLauncherIconSource1 = null;
   if (null != secondApplication) {
-    let obj1 = require(11163) /* handleApplicationSelected */;
+    let obj1 = require(11201) /* handleApplicationSelected */;
     appLauncherIconSource1 = obj1.getAppLauncherIconSource(secondApplication);
   }
   let tmp8 = null != appLauncherIconSource;
   if (tmp8) {
     obj = { style: tmp.appIcon, source: appLauncherIconSource };
-    tmp8 = callback(importDefault(5085), obj);
+    tmp8 = callback(importDefault(5119), obj);
   }
   let tmp12 = null != appLauncherIconSource1;
   if (tmp12) {
     obj = { style: tmp.appIcon, source: appLauncherIconSource1 };
-    tmp12 = callback(importDefault(5085), obj);
+    tmp12 = callback(importDefault(5119), obj);
   }
   obj1 = {};
   const obj2 = { style: items };

@@ -1,9 +1,9 @@
-// Module ID: 4039
-// Function ID: 33620
+// Module ID: 4073
+// Function ID: 33722
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4040, 4041, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4074, 4075, 566, 686, 2]
 
-// Module 4039 (_isNativeReflectConstruct)
+// Module 4073 (_isNativeReflectConstruct)
 import gameServerResponseToInstance from "gameServerResponseToInstance";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -41,16 +41,18 @@ function handleGameServerInstanceCreated(arg0) {
   let gameServer;
   let guildId;
   ({ guildId, gameServer } = arg0);
-  const tmp = getStateForGuild(guildId);
-  let obj = {};
-  const merged = Object.assign(obj);
-  obj = {};
-  const merged1 = Object.assign(tmp);
-  obj = {};
-  const merged2 = Object.assign(tmp.instances);
-  obj[gameServer.id] = importDefault(4041)(gameServer);
-  obj["instances"] = obj;
-  obj[guildId] = obj;
+  if (null != guildId) {
+    const tmp2 = getStateForGuild(guildId);
+    let obj = {};
+    const merged = Object.assign(obj);
+    obj = {};
+    const merged1 = Object.assign(tmp2);
+    obj = {};
+    const merged2 = Object.assign(tmp2.instances);
+    obj[gameServer.id] = importDefault(4075)(gameServer);
+    obj["instances"] = obj;
+    obj[guildId] = obj;
+  }
 }
 function handleGameServerEntitlementsChanged(guildId, entitlements) {
   let obj = {};
@@ -306,12 +308,16 @@ tmp2 = new tmp2(require("dispatcher"), {
     let gameServerId;
     let guildId;
     ({ guildId, gameServerId } = arg0);
-    delete tmp[tmp2];
-    let obj = {};
-    const merged = Object.assign(obj);
-    obj = {};
-    const merged1 = Object.assign(getStateForGuild(guildId));
-    obj[guildId] = obj;
+    if (null != guildId) {
+      const tmp4 = getStateForGuild(guildId);
+      const instances = tmp4.instances;
+      delete tmp[tmp2];
+      let obj = {};
+      const merged = Object.assign(obj);
+      obj = {};
+      const merged1 = Object.assign(tmp4);
+      obj[guildId] = obj;
+    }
   },
   GUILD_POWERUP_ENTITLEMENTS_CREATE: function handleGameServerEntitlementCreated(arg0) {
     let entitlements;

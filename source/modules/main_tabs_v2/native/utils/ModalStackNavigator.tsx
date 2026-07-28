@@ -1,8 +1,8 @@
-// Module ID: 9040
-// Function ID: 71084
-// Dependencies: [31, 33, 9041, 5517, 9050, 10123, 477, 2]
+// Module ID: 9084
+// Function ID: 71235
+// Dependencies: [31, 33, 9085, 5552, 9094, 10163, 477, 2]
 
-// Module 9040
+// Module 9084
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "result";
@@ -14,7 +14,7 @@ const memoResult = require("result").memo(function ModalStackNavigator(children)
   let require;
   let screenKey;
   ({ screenKey, title: require, titleIcon: importDefault } = children);
-  let obj = require(5517) /* NavigationStack */;
+  let obj = require(5552) /* NavigationStack */;
   const dependencyMap = obj.useAccessibilityNativeStackOptions();
   obj = {
     initialRouteName: screenKey,
@@ -28,11 +28,11 @@ const memoResult = require("result").memo(function ModalStackNavigator(children)
           const merged1 = Object.assign(merged);
           return outer2_3(outer2_0(table[4]).GenericHeaderTitle, obj);
         },
-        headerLeft: outer1_0(9050).getRenderModalCloseImage(navigation.navigation),
+        headerLeft: outer1_0(9094).getRenderModalCloseImage(navigation.navigation),
         headerTitleAlign: "center"
       };
       let merged = Object.assign(dependencyMap);
-      let merged1 = Object.assign(outer1_1(10123)());
+      let merged1 = Object.assign(outer1_1(10163)());
       return obj;
     },
     children: <createNativeStackNavigator.Screen {...obj} />

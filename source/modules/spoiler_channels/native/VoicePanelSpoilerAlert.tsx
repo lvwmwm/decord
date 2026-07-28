@@ -1,10 +1,10 @@
-// Module ID: 12358
-// Function ID: 96108
+// Module ID: 12401
+// Function ID: 96278
 // Name: VoicePanelSpoilerAlert
-// Dependencies: [31, 33, 4476, 4476, 1212, 5049, 4945, 2]
+// Dependencies: [31, 33, 4510, 4510, 1212, 5083, 4979, 2]
 // Exports: default
 
-// Module 12358 (VoicePanelSpoilerAlert)
+// Module 12401 (VoicePanelSpoilerAlert)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -16,7 +16,7 @@ const result = require("getAlertModalItemKey").fileFinishedImporting("modules/sp
 
 export default function VoicePanelSpoilerAlert(channelId) {
   channelId = channelId.channelId;
-  let obj = channelId(4476);
+  let obj = channelId(4510);
   let closure_1 = obj.useDismissModalCallback();
   obj = {};
   const intl = channelId(1212).intl;
@@ -35,7 +35,7 @@ export default function VoicePanelSpoilerAlert(channelId) {
   };
   const intl3 = channelId(1212).intl;
   obj1.text = intl3.string(channelId(1212).t.p89ACt);
-  const items = [callback(channelId(4476).AlertActionButton, obj1, "confirm"), ];
+  const items = [callback(channelId(4510).AlertActionButton, obj1, "confirm"), ];
   const obj2 = {
     variant: "secondary",
     onPress() {
@@ -44,9 +44,9 @@ export default function VoicePanelSpoilerAlert(channelId) {
   };
   const intl4 = channelId(1212).intl;
   obj2.text = intl4.string(channelId(1212).t["/g10LC"]);
-  items[1] = callback(channelId(4476).AlertActionButton, obj2, "cancel");
+  items[1] = callback(channelId(4510).AlertActionButton, obj2, "cancel");
   obj.children = items;
-  obj.actions = callback2(channelId(4476).AlertActions, obj);
-  return callback(channelId(4476).AlertModal, obj);
+  obj.actions = callback2(channelId(4510).AlertActions, obj);
+  return callback(channelId(4510).AlertModal, obj);
 };
 export const VOICE_PANEL_SPOILER_KEY = "voice-panel-spoiler";

@@ -1,5 +1,5 @@
 // Module ID: 901
-// Function ID: 9902
+// Function ID: 9906
 // Name: markAsInstrumented
 // Dependencies: [57, 65, 77, 830, 842, 816, 817, 845, 804, 807, 884, 800, 801, 863]
 

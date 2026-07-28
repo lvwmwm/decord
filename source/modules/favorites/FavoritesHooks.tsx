@@ -1,10 +1,10 @@
-// Module ID: 10152
-// Function ID: 78550
+// Module ID: 10194
+// Function ID: 78682
 // Name: computeFavoritesAccess
-// Dependencies: [3948, 1850, 1351, 10153, 1386, 1852, 10154, 10155, 566, 1873, 21, 1282, 1841, 2]
+// Dependencies: [3982, 1850, 1351, 10195, 1386, 1852, 10196, 10197, 566, 1873, 21, 1282, 1841, 2]
 // Exports: getFavoritesAccess, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories
 
-// Module 10152 (computeFavoritesAccess)
+// Module 10194 (computeFavoritesAccess)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ function computeFavoritesAccess(hasHigherPrivileges) {
   } else {
     num = 0;
     if (isFreemium) {
-      num = require(10154) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(10196) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -45,7 +45,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   if (FavoritesGuildChannelList === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(10155) /* useFavoritesGuildConfig */;
+  let obj = require(10197) /* useFavoritesGuildConfig */;
   obj = { location: str };
   const favoritesGuildConfig = obj.useFavoritesGuildConfig(obj);
   const isFreemium = favoritesGuildConfig.isFreemium;
@@ -122,7 +122,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
-  let obj = require(10155) /* useFavoritesGuildConfig */;
+  let obj = require(10197) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   const isFreemium = favoritesGuildConfig.isFreemium;
   obj = { isExperimentEnabled: favoritesGuildConfig.enabled, hasHigherPrivileges: favoritesGuildConfig.hasHigherPrivileges };

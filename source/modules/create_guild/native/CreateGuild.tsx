@@ -1,10 +1,10 @@
-// Module ID: 10027
-// Function ID: 77553
+// Module ID: 10067
+// Function ID: 77682
 // Name: CreateGuild
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 4529, 4540, 4542, 4127, 1212, 10028, 6670, 5502, 4544, 8931, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4165, 689, 4563, 4574, 4576, 4161, 1212, 10068, 6706, 5537, 4578, 8975, 2]
 // Exports: default
 
-// Module 10027 (CreateGuild)
+// Module 10067 (CreateGuild)
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -49,7 +49,7 @@ export default function CreateGuild(arg0) {
   currentUser = currentUser.getCurrentUser();
   const tmp2 = null == currentUser || !currentUser.isStaff();
   let tmp3 = !tmp2;
-  let obj1 = isScreenReaderEnabled(4529);
+  let obj1 = isScreenReaderEnabled(4563);
   isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   ref = React.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -72,15 +72,15 @@ export default function CreateGuild(arg0) {
     customTitle = intl.string(isScreenReaderEnabled(1212).t.XioBx6);
   }
   obj1.children = customTitle;
-  const items1 = [callback(isScreenReaderEnabled(4127).Text, obj1), , , , , , , ];
+  const items1 = [callback(isScreenReaderEnabled(4161).Text, obj1), , , , , , , ];
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   if (null == customDescription) {
     const intl2 = isScreenReaderEnabled(1212).intl;
     customDescription = intl2.string(isScreenReaderEnabled(1212).t["/k/L/j"]);
   }
   obj2.children = customDescription;
-  items1[1] = callback(isScreenReaderEnabled(4127).Text, obj2);
-  items1[2] = callback(ref(10028), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
+  items1[1] = callback(isScreenReaderEnabled(4161).Text, obj2);
+  items1[2] = callback(ref(10068), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
   const obj4 = { isClearable: true };
   const intl3 = isScreenReaderEnabled(1212).intl;
   obj4.label = intl3.string(isScreenReaderEnabled(1212).t.dBih7e);
@@ -97,18 +97,18 @@ export default function CreateGuild(arg0) {
   obj4.autoFocus = autoFocus;
   obj4.autoCorrect = false;
   obj4.returnKeyType = "done";
-  items1[3] = callback(isScreenReaderEnabled(6670).TextInput, obj4);
+  items1[3] = callback(isScreenReaderEnabled(6706).TextInput, obj4);
   if (!tmp2) {
     const obj5 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only" };
     const intl4 = isScreenReaderEnabled(1212).intl;
     obj5.subLabel = intl4.string(isScreenReaderEnabled(1212).t.edQ5va);
-    tmp3 = callback(isScreenReaderEnabled(5502).TableSwitchRow, obj5);
+    tmp3 = callback(isScreenReaderEnabled(5537).TableSwitchRow, obj5);
   }
   items1[4] = tmp3;
   const obj6 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted" };
   const intl5 = isScreenReaderEnabled(1212).intl;
   obj6.children = intl5.format(isScreenReaderEnabled(1212).t["2bprXx"], { guidelinesURL: MarketingURLs.GUIDELINES });
-  items1[5] = callback(isScreenReaderEnabled(4127).Text, obj6);
+  items1[5] = callback(isScreenReaderEnabled(4161).Text, obj6);
   const obj8 = { disabled: "" === guild.name, size: "md", grow: true };
   if (null == customButtonLabel) {
     const intl6 = isScreenReaderEnabled(1212).intl;
@@ -117,7 +117,7 @@ export default function CreateGuild(arg0) {
   obj8.text = customButtonLabel;
   obj8.onPress = onCreate;
   obj8.loading = submitting;
-  items1[6] = callback(isScreenReaderEnabled(4544).Button, obj8);
+  items1[6] = callback(isScreenReaderEnabled(4578).Button, obj8);
   let firstFieldErrorMessage1;
   if (null != error) {
     firstFieldErrorMessage1 = error.getFirstFieldErrorMessage("name");
@@ -142,14 +142,14 @@ export default function CreateGuild(arg0) {
           message2 = error.message;
         }
         obj9.children = message2;
-        tmp27Result = callback(ref(8931), obj9);
+        tmp27Result = callback(ref(8975), obj9);
         const tmp27 = callback;
-        const tmp30 = ref(8931);
+        const tmp30 = ref(8975);
       }
     }
   }
   items1[7] = tmp27Result;
   obj.children = items1;
-  obj.children = closure_8(isScreenReaderEnabled(4542).Stack, obj);
+  obj.children = closure_8(isScreenReaderEnabled(4576).Stack, obj);
   return callback(ScrollView, obj);
 };

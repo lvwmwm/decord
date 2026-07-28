@@ -1,9 +1,9 @@
-// Module ID: 16141
-// Function ID: 125050
+// Module ID: 16180
+// Function ID: 125206
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5, 4168, 7662, 653, 1882, 16142, 1935, 675, 1842, 1184, 16153, 16156, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 5, 4202, 7698, 653, 1882, 16181, 1935, 675, 1842, 1184, 16192, 16195, 5112, 2]
 
-// Module 16141 (_isNativeReflectConstruct)
+// Module 16180 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _openInteractionIframeModal from "_openInteractionIframeModal";

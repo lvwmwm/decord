@@ -1,9 +1,9 @@
-// Module ID: 10798
-// Function ID: 83756
+// Module ID: 10836
+// Function ID: 83877
 // Name: RaisedHandIcon
-// Dependencies: [31, 27, 1918, 33, 4131, 689, 4315, 1273, 7614, 1450, 566, 4958, 4320, 5217, 1212, 6653, 10780, 3977, 10799, 2]
+// Dependencies: [31, 27, 1918, 33, 4165, 689, 4349, 1273, 7650, 1450, 566, 4992, 4354, 5251, 1212, 6689, 10818, 4011, 10837, 2]
 
-// Module 10798 (RaisedHandIcon)
+// Module 10836 (RaisedHandIcon)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -15,7 +15,7 @@ let closure_6;
 const require = arg1;
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
-  let activeBackground = rtsState.rtsState === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  let activeBackground = rtsState.rtsState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   let obj = {};
   const items = [tmp.raisedHandContainer, ];
@@ -24,7 +24,7 @@ function RaisedHandIcon(rtsState) {
   }
   items[1] = activeBackground;
   obj.style = items;
-  obj = { style: tmp.raisedHand, source: importDefault(7614), color: activeBackground ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_800 };
+  obj = { style: tmp.raisedHand, source: importDefault(7650), color: activeBackground ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_800 };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
   return callback(View, obj);
 }

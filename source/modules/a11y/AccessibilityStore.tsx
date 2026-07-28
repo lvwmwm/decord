@@ -1,9 +1,9 @@
-// Module ID: 4123
-// Function ID: 34220
+// Module ID: 4157
+// Function ID: 34322
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 1278, 1316, 653, 4124, 4125, 3804, 566, 587, 3977, 686, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 1278, 1316, 653, 4158, 4159, 3838, 566, 587, 4011, 686, 2]
 
-// Module 4123 (_isNativeReflectConstruct)
+// Module 4157 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ function maybeApplyNoTextColorForLightCustomTheme() {
       tmp3 = theme.theme !== ThemeTypes.LIGHT;
     }
     if (!tmp3) {
-      const ClientThemeSettings = require(3804) /* explicitContentFromProto */.ClientThemeSettings;
+      const ClientThemeSettings = require(3838) /* explicitContentFromProto */.ClientThemeSettings;
       const setting = ClientThemeSettings.getSetting();
       let tmp10 = null != setting.backgroundGradientPresetId;
       if (!tmp10) {
@@ -495,7 +495,7 @@ let items = [
   (saturation) => {
     const obj = {};
     const merged = Object.assign(saturation);
-    obj["alwaysShowLinkDecorations"] = saturation.saturation <= require(3977) /* AccessibilityAnnouncer */.LOW_SATURATION_THRESHOLD;
+    obj["alwaysShowLinkDecorations"] = saturation.saturation <= require(4011) /* AccessibilityAnnouncer */.LOW_SATURATION_THRESHOLD;
     return obj;
   },
   (arg0) => {
@@ -554,7 +554,7 @@ tmp4 = new tmp4(require("dispatcher"), {
           obj = {};
           const merged = Object.assign(obj);
           obj.zoom = zoom.zoom;
-          importDefault(4125).setZoomFactor(obj.zoom);
+          importDefault(4159).setZoomFactor(obj.zoom);
         }
       }
     }
@@ -573,8 +573,8 @@ tmp4 = new tmp4(require("dispatcher"), {
     }
     if (obj.zoom !== Accessibility.ZOOM_DEFAULT) {
       obj.zoom = Accessibility.ZOOM_DEFAULT;
-      importDefault(4125).setZoomFactor(obj.zoom);
-      const obj2 = importDefault(4125);
+      importDefault(4159).setZoomFactor(obj.zoom);
+      const obj2 = importDefault(4159);
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: function handleEnableKeyboardMode() {

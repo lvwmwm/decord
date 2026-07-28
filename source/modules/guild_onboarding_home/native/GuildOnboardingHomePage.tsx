@@ -1,10 +1,10 @@
-// Module ID: 15347
-// Function ID: 117033
+// Module ID: 15387
+// Function ID: 117192
 // Name: GuildOnboardingHomePage
-// Dependencies: [31, 4045, 4334, 4335, 653, 33, 3992, 566, 5606, 11376, 675, 4325, 5049, 15348, 15349, 15354, 15358, 15359, 15362, 5605, 2]
+// Dependencies: [31, 4079, 4368, 4369, 653, 33, 4026, 566, 5641, 11414, 675, 4359, 5083, 15388, 15389, 15394, 15398, 15399, 15402, 5640, 2]
 // Exports: default
 
-// Module 15347 (GuildOnboardingHomePage)
+// Module 15387 (GuildOnboardingHomePage)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,12 +20,12 @@ const require = arg1;
 function GuildOnboardingHomePage(guildId) {
   guildId = guildId.guildId;
   let dependencyMap;
-  let obj = guildId(3992);
+  let obj = guildId(4026);
   const sharedValue = obj.useSharedValue(-999);
   let obj1 = guildId(566);
   const items = [closure_5];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getSettings(guildId));
-  const tmp3 = stateFromStores(5606)(guildId);
+  const tmp3 = stateFromStores(5641)(guildId);
   let tmp4 = !tmp3;
   if (tmp4) {
     let length;
@@ -96,25 +96,25 @@ function GuildOnboardingHomePage(guildId) {
   } else {
     obj = { guildId, scrollValue: sharedValue };
     obj = { guildId, hideDescription: tmp3 };
-    const items3 = [callback(stateFromStores(15349), obj), ];
+    const items3 = [callback(stateFromStores(15389), obj), ];
     if (tmp3) {
       obj1 = {};
       let obj2 = { guildId };
-      const items4 = [callback(stateFromStores(15354), obj2), , ];
+      const items4 = [callback(stateFromStores(15394), obj2), , ];
       let obj3 = { guildId };
-      items4[1] = callback(stateFromStores(15358), obj3);
+      items4[1] = callback(stateFromStores(15398), obj3);
       const obj4 = { guildId };
-      items4[2] = callback(stateFromStores(15359), obj4);
+      items4[2] = callback(stateFromStores(15399), obj4);
       obj1.children = items4;
       let tmp17 = callback2(closure_10, obj1);
     } else {
       let obj5 = { guildId };
-      tmp17 = callback(stateFromStores(15362), obj5);
+      tmp17 = callback(stateFromStores(15402), obj5);
     }
     items3[1] = tmp17;
     obj.children = items3;
-    callback2(stateFromStores(15348), obj);
-    const tmp12 = stateFromStores(15348);
+    callback2(stateFromStores(15388), obj);
+    const tmp12 = stateFromStores(15388);
     const tmp9 = callback2;
   }
 }

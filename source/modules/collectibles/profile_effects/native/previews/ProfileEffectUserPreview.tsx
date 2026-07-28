@@ -1,10 +1,10 @@
-// Module ID: 8013
-// Function ID: 63810
+// Module ID: 8051
+// Function ID: 63920
 // Name: ProfileEffectUserPreview
-// Dependencies: [31, 33, 8014, 1212, 2]
+// Dependencies: [31, 33, 8052, 1212, 2]
 // Exports: default
 
-// Module 8013 (ProfileEffectUserPreview)
+// Module 8051 (ProfileEffectUserPreview)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -27,5 +27,5 @@ export default function ProfileEffectUserPreview(profileEffect) {
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8014), { profileEffectOverride: profileEffect });
+  return jsx(importDefault(8052), { profileEffectOverride: profileEffect });
 };

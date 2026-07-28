@@ -1,10 +1,10 @@
-// Module ID: 8394
-// Function ID: 67123
+// Module ID: 8438
+// Function ID: 67270
 // Name: isPremiumGuild
 // Dependencies: [653, 1387, 2]
 // Exports: getGuildTraits, isDiscoverableGuild
 
-// Module 8394 (isPremiumGuild)
+// Module 8438 (isPremiumGuild)
 import ME from "ME";
 
 let closure_2;

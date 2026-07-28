@@ -1,10 +1,10 @@
-// Module ID: 13680
-// Function ID: 105059
+// Module ID: 13724
+// Function ID: 105232
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [57, 31, 27, 1838, 4971, 33, 4131, 4360, 1212, 4099, 10950, 5513, 4320, 1273, 4127, 4975, 2]
+// Dependencies: [57, 31, 27, 1838, 5005, 33, 4165, 4394, 1212, 4133, 10988, 5548, 4354, 1273, 4161, 5009, 2]
 // Exports: default
 
-// Module 13680 (GuildSelectComponentActionSheet)
+// Module 13724 (GuildSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -33,7 +33,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   const dependencyMap = tmp;
   const tmp2 = first(first1.useState(""), 2);
   first = tmp2[0];
-  let obj = { type: require(4360) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
+  let obj = { type: require(4394) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
   const tmp4 = first(first1.useState(obj), 2);
   first1 = tmp4[0];
   let closure_5 = tmp4[1];
@@ -128,5 +128,5 @@ export default function GuildSelectComponentActionSheet(arg0) {
     allowEmpty: false,
     expanded: true
   };
-  return callback(importDefault(10950), obj);
+  return callback(importDefault(10988), obj);
 };

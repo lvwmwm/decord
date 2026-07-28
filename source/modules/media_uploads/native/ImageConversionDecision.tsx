@@ -1,10 +1,10 @@
-// Module ID: 4696
-// Function ID: 40909
+// Module ID: 4730
+// Function ID: 41024
 // Name: isPhotoKitAsset
-// Dependencies: [477, 4697, 2]
+// Dependencies: [477, 4731, 2]
 // Exports: shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 4696 (isPhotoKitAsset)
+// Module 4730 (isPhotoKitAsset)
 function isPhotoKitAsset(uri, filename) {
   let tmp = null != uri.match(/^ph:\/\//i);
   if (tmp) {
@@ -80,15 +80,15 @@ export const shouldConvertToJPG = function shouldConvertToJPG(uri, filename, isL
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const supportedExtensions = importDefault(4697).getSupportedExtensions();
+              const supportedExtensions = importDefault(4731).getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
                   return true;
                 }
               }
-              const obj3 = importDefault(4697);
+              const obj3 = importDefault(4731);
             }
-            obj2 = importDefault(4697);
+            obj2 = importDefault(4731);
           }
           return false;
         }

@@ -1,10 +1,10 @@
-// Module ID: 10801
-// Function ID: 83777
+// Module ID: 10839
+// Function ID: 83898
 // Name: throttleStateFn
 // Dependencies: [31, 22, 2]
 // Exports: useThrottledState
 
-// Module 10801 (throttleStateFn)
+// Module 10839 (throttleStateFn)
 import result from "result";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 16364
-// Function ID: 127417
+// Module ID: 16403
+// Function ID: 127573
 // Name: areTypesInSameSection
-// Dependencies: [1352, 653, 11449, 5072, 2]
+// Dependencies: [1352, 653, 11487, 5106, 2]
 // Exports: getDnDUpdates, getDropData
 
-// Module 16364 (areTypesInSameSection)
+// Module 16403 (areTypesInSameSection)
 import _callSuper from "_callSuper";
 import { ChannelTypes } from "ME";
 
@@ -333,24 +333,24 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
     if (items.length > 0) {
       tmp10 = items;
     }
-    const tmp9Result = importDefault(5072)(tmp10, channels, (channel) => callback(channel.channel.type));
+    const tmp9Result = importDefault(5106)(tmp10, channels, (channel) => callback(channel.channel.type));
     callback = getChannelPosition(localChannel, tmp9Result);
     closure_3 = getChannelPosition(localChannel2, tmp9Result);
     const updates1 = generateUpdates(tmp9Result);
-    const tmp9 = importDefault(5072);
+    const tmp9 = importDefault(5106);
   }
   if (localChannel.isGuildVocal()) {
     if (items.length > 0) {
       _categories = items;
     }
-    const tmp16Result = importDefault(5072)(_categories, channels, (channel) => {
+    const tmp16Result = importDefault(5106)(_categories, channels, (channel) => {
       channel = channel.channel;
       return channel.isGuildVocal();
     });
     callback = getChannelPosition(localChannel, tmp16Result);
     closure_3 = getChannelPosition(localChannel2, tmp16Result);
     const updates2 = generateUpdates(tmp16Result);
-    const tmp16 = importDefault(5072);
+    const tmp16 = importDefault(5106);
   }
   let tmp20 = localChannel.parent_id !== parentId;
   if (tmp20) {

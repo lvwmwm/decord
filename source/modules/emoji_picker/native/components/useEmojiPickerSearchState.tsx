@@ -1,10 +1,10 @@
-// Module ID: 9279
-// Function ID: 72701
+// Module ID: 9323
+// Function ID: 72852
 // Name: useEmojiPickerSearchState
-// Dependencies: [57, 31, 4992, 682, 1331, 2]
+// Dependencies: [57, 31, 5026, 682, 1331, 2]
 // Exports: default
 
-// Module 9279 (useEmojiPickerSearchState)
+// Module 9323 (useEmojiPickerSearchState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

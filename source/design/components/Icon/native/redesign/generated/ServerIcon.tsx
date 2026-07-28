@@ -1,10 +1,10 @@
-// Module ID: 8936
-// Function ID: 70605
+// Module ID: 8980
+// Function ID: 70756
 // Name: ServerIcon
-// Dependencies: [31, 33, 689, 3834, 8937, 2]
+// Dependencies: [31, 33, 689, 3868, 8981, 2]
 // Exports: ServerIcon
 
-// Module 8936 (ServerIcon)
+// Module 8980 (ServerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ServerIcon = function ServerIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8937) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8981) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8937) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8981) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

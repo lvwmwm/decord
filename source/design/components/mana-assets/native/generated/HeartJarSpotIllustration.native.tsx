@@ -1,10 +1,10 @@
-// Module ID: 7180
-// Function ID: 60006
+// Module ID: 7216
+// Function ID: 60095
 // Name: HeartJarSpotIllustration
-// Dependencies: [33, 5085, 7181, 2]
+// Dependencies: [33, 5119, 7217, 2]
 // Exports: HeartJarSpotIllustration
 
-// Module 7180 (HeartJarSpotIllustration)
+// Module 7216 (HeartJarSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeartJarSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const HeartJarSpotIllustration = function HeartJarSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7181) };
+  obj = { uri: importDefault(7217) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const HeartJarSpotIllustration = function HeartJarSpotIllustration(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

@@ -1,9 +1,9 @@
-// Module ID: 13522
-// Function ID: 104009
+// Module ID: 13566
+// Function ID: 104182
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 13522 (enforcing)
+// Module 13566 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMobileVoiceOverlayModule");

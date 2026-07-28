@@ -1,10 +1,10 @@
-// Module ID: 12930
-// Function ID: 100415
+// Module ID: 12974
+// Function ID: 100588
 // Name: isMidjourneyOnboardingFlow
-// Dependencies: [1838, 3948, 12931, 566, 2]
+// Dependencies: [1838, 3982, 12975, 566, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, useIsMidjourneyOnboardingFlow
 
-// Module 12930 (isMidjourneyOnboardingFlow)
+// Module 12974 (isMidjourneyOnboardingFlow)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import MIDJOURNEY_GUILD_ID from "MIDJOURNEY_GUILD_ID";

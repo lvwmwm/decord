@@ -1,10 +1,10 @@
-// Module ID: 15675
-// Function ID: 120807
+// Module ID: 15714
+// Function ID: 120963
 // Name: MobileSurvey
-// Dependencies: [5, 31, 9206, 653, 33, 4131, 566, 675, 9207, 4562, 1212, 3828, 1273, 689, 8967, 2]
+// Dependencies: [5, 31, 9250, 653, 33, 4165, 566, 675, 9251, 4596, 1212, 3862, 1273, 689, 9011, 2]
 // Exports: default
 
-// Module 15675 (MobileSurvey)
+// Module 15714 (MobileSurvey)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -55,8 +55,8 @@ export default function MobileSurvey() {
       const obj = { style: lib.confirmIcon, color: stateFromStores(outer1_2[13]).unsafe_rawColors.WHITE, size: lib(outer1_2[12]).Icon.Sizes.SMALL, source: stateFromStores(outer1_2[14]) };
       return outer1_7(lib(outer1_2[12]).Icon, obj);
     };
-    tmp3 = jsx(stateFromStores(4562), {});
-    const tmp7 = stateFromStores(4562);
+    tmp3 = jsx(stateFromStores(4596), {});
+    const tmp7 = stateFromStores(4596);
   }
   return tmp3;
 };

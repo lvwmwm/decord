@@ -1,9 +1,9 @@
-// Module ID: 13067
-// Function ID: 101026
+// Module ID: 13111
+// Function ID: 101199
 // Name: GradientBorder
-// Dependencies: [31, 27, 653, 33, 4330, 689, 4555, 2]
+// Dependencies: [31, 27, 653, 33, 4364, 689, 4589, 2]
 
-// Module 13067 (GradientBorder)
+// Module 13111 (GradientBorder)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

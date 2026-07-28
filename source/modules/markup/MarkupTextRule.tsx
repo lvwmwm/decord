@@ -1,10 +1,10 @@
-// Module ID: 4573
-// Function ID: 40107
+// Module ID: 4607
+// Function ID: 40222
 // Name: textRegexp
-// Dependencies: [3830, 2]
+// Dependencies: [3864, 2]
 // Exports: textMarkupPatternWithExclusions
 
-// Module 4573 (textRegexp)
+// Module 4607 (textRegexp)
 import t from "t";
 
 const tmp2 = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/;

@@ -1,5 +1,5 @@
 // Module ID: 1516
-// Function ID: 17424
+// Function ID: 17428
 // Name: shouldPreventRemove
 // Dependencies: [77, 31, 1478, 1483]
 // Exports: default

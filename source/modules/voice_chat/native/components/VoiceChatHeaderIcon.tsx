@@ -1,10 +1,10 @@
-// Module ID: 10732
-// Function ID: 83406
+// Module ID: 10770
+// Function ID: 83527
 // Name: VoiceChatCallScreenHeaderIconInner
-// Dependencies: [31, 27, 4143, 653, 33, 4131, 689, 5084, 566, 10660, 22, 3843, 4661, 1273, 2]
+// Dependencies: [31, 27, 4177, 653, 33, 4165, 689, 5118, 566, 10698, 22, 3877, 4695, 1273, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10732 (VoiceChatCallScreenHeaderIconInner)
+// Module 10770 (VoiceChatCallScreenHeaderIconInner)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ function VoiceChatCallScreenHeaderIconInner(onPress) {
   }
   obj.onPress = noop;
   obj.children = children;
-  obj.children = closure_6(importDefault(10660), obj);
+  obj.children = closure_6(importDefault(10698), obj);
   return closure_6(View, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -63,7 +63,7 @@ export default function VoiceChatHeaderIcon(disabled) {
   obj = { source, color: tmp.badge.backgroundColor, size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
   const items1 = [callback(require(1273) /* Button */.Icon, obj), children];
   obj.children = items1;
-  return closure_7(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return closure_7(require(4695) /* PressableBase */.PressableOpacity, obj);
 };
 export const useVoiceChatMentions = function useVoiceChatMentions(arg0) {
   const _require = arg0;
@@ -76,5 +76,5 @@ export const VoiceChatCallScreenHeaderIcon = function VoiceChatCallScreenHeaderI
   obj = {};
   const merged = Object.assign(arg0);
   obj.children = callback(VoiceChatCallScreenHeaderIconInner, obj);
-  return callback(require(3843) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(3877) /* ManaContext */.ThemeContextProvider, obj);
 };

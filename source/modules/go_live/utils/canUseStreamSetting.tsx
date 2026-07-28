@@ -1,10 +1,10 @@
-// Module ID: 10689
-// Function ID: 83225
+// Module ID: 10727
+// Function ID: 83346
 // Name: canUseStreamSetting
-// Dependencies: [1852, 3777, 4023, 2]
+// Dependencies: [1852, 3811, 4057, 2]
 // Exports: default
 
-// Module 10689 (canUseStreamSetting)
+// Module 10727 (canUseStreamSetting)
 import { StreamQualities } from "GuildFeatures";
 
 let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
@@ -15,11 +15,11 @@ export default function canUseStreamSetting(quality, user, premiumTier) {
     if (null != quality.quality) {
       quality = quality.quality;
       if (StreamQualities.HIGH_STREAMING_QUALITY === quality) {
-        flag = importDefault(3777).canStreamQuality(importDefault(3777).StreamQuality.HIGH, user);
-        const obj2 = importDefault(3777);
+        flag = importDefault(3811).canStreamQuality(importDefault(3811).StreamQuality.HIGH, user);
+        const obj2 = importDefault(3811);
       } else if (StreamQualities.MID_STREAMING_QUALITY === quality) {
-        flag = importDefault(3777).canStreamQuality(importDefault(3777).StreamQuality.MID, user);
-        const obj = importDefault(3777);
+        flag = importDefault(3811).canStreamQuality(importDefault(3811).StreamQuality.MID, user);
+        const obj = importDefault(3811);
       } else {
         const quality2 = quality.quality;
         flag = false;
@@ -29,8 +29,8 @@ export default function canUseStreamSetting(quality, user, premiumTier) {
     if (null != quality.guildPremiumTier) {
       let result = flag;
       if (!flag) {
-        result = require(4023) /* _createForOfIteratorHelperLoose */.isGuildBoostedAtLeast(premiumTier, quality.guildPremiumTier);
-        const obj3 = require(4023) /* _createForOfIteratorHelperLoose */;
+        result = require(4057) /* _createForOfIteratorHelperLoose */.isGuildBoostedAtLeast(premiumTier, quality.guildPremiumTier);
+        const obj3 = require(4057) /* _createForOfIteratorHelperLoose */;
       }
       tmp7 = result;
     }

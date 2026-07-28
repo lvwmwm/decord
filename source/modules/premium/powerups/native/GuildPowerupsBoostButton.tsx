@@ -1,10 +1,10 @@
-// Module ID: 11616
-// Function ID: 90209
+// Module ID: 11655
+// Function ID: 90360
 // Name: GuildPowerupsBoostButton
-// Dependencies: [31, 1838, 1850, 4024, 653, 33, 566, 5820, 1868, 4967, 11617, 2]
+// Dependencies: [31, 1838, 1850, 4058, 653, 33, 566, 5830, 1868, 5001, 11656, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 11616 (GuildPowerupsBoostButton)
+// Module 11655 (GuildPowerupsBoostButton)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildI
   const items1 = [closure_6];
   const stateFromStores1 = guildId(566).useStateFromStores(items1, () => outer1_6.boostSlots);
   const obj2 = guildId(566);
-  const tmp3 = stateFromStores1(5820)({ forceFetch: true });
+  const tmp3 = stateFromStores1(5830)({ forceFetch: true });
   const items2 = [_isNativeReflectConstruct];
   const stateFromStores2 = guildId(566).useStateFromStores(items2, () => outer1_5.getCurrentUser());
   if (null != stateFromStores2) {
@@ -39,7 +39,7 @@ export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildI
   let tmp9 = null;
   if (null != stateFromStores) {
     obj = { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED };
-    tmp9 = jsx(stateFromStores1(11617), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED });
+    tmp9 = jsx(stateFromStores1(11656), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED });
   }
   return tmp9;
 };

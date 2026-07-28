@@ -1,10 +1,10 @@
-// Module ID: 16147
-// Function ID: 125108
+// Module ID: 16186
+// Function ID: 125264
 // Name: LabelLayoutComponent
-// Dependencies: [31, 27, 33, 7832, 1882, 6671, 2]
+// Dependencies: [31, 27, 33, 7868, 1882, 6707, 2]
 // Exports: default
 
-// Module 16147 (LabelLayoutComponent)
+// Module 16186 (LabelLayoutComponent)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export default function LabelLayoutComponent(arg0) {
   let renderComponent;
   ({ component, renderComponent } = arg0);
   ({ label, description } = arg0);
-  let obj = require(7832) /* isInteractionComponent */;
+  let obj = require(7868) /* isInteractionComponent */;
   const componentError = obj.useComponentError(component);
   if (component.type === require(1882) /* PermissionOverwriteType */.ComponentType.CHECKBOX) {
     let renderComponentResult = renderComponent(component, "label-child");
@@ -30,7 +30,7 @@ export default function LabelLayoutComponent(arg0) {
     obj.style = obj1;
     obj.children = renderComponent(component, "label-child");
     obj.children = <View />;
-    renderComponentResult = jsx(require(6671) /* Input */.Input, {});
+    renderComponentResult = jsx(require(6707) /* Input */.Input, {});
   }
   return renderComponentResult;
 };

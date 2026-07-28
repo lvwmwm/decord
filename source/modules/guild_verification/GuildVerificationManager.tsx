@@ -1,11 +1,11 @@
-// Module ID: 16130
-// Function ID: 124985
+// Module ID: 16169
+// Function ID: 125141
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 12359, 1360, 6652, 12360, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 653, 12402, 1360, 6688, 12403, 5112, 2]
 
-// Module 16130 (_isNativeReflectConstruct)
+// Module 16169 (_isNativeReflectConstruct)
 import hasFlag from "hasFlag";
-import module_12359 from "module_12359";
+import module_12402 from "module_12402";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -34,17 +34,17 @@ function handleInviteData(invite) {
       const features = guild.features;
       if (null != features) {
         if (features.includes(GuildFeatures.HUB)) {
-          importDefault(12359).onOpenHubInvite(invite.invite);
-          const obj5 = importDefault(12359);
+          importDefault(12402).onOpenHubInvite(invite.invite);
+          const obj5 = importDefault(12402);
         }
       }
     }
   }
   let new_member = invite.invite.new_member;
   if (new_member) {
-    let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(6652) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(6688) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(6652) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(6688) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
       const obj2 = require(1360) /* hasFlag */;
     }
     new_member = !hasFlagResult;
@@ -54,12 +54,12 @@ function handleInviteData(invite) {
     new_member = null != guild;
   }
   if (new_member) {
-    new_member = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
-    const obj3 = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */;
+    new_member = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
+    const obj3 = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
   if (new_member) {
-    const result = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
-    const obj4 = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */;
+    const result = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
+    const obj4 = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
 }
 tmp2 = new tmp2();

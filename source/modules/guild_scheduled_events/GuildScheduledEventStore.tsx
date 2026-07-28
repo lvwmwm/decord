@@ -1,10 +1,10 @@
-// Module ID: 5751
-// Function ID: 49967
+// Module ID: 5761
+// Function ID: 49823
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1918, 1354, 3755, 22, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1918, 1354, 3789, 22, 21, 566, 686, 2]
 // Exports: eventScheduledToStartWithin, isGuildEventEnded, scheduledEventSort
 
-// Module 5751 (_isNativeReflectConstruct)
+// Module 5761 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "GUILD_EVENT_MAX_NAME_LENGTH";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

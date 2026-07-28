@@ -1,5 +1,5 @@
 // Module ID: 1804
-// Function ID: 19932
+// Function ID: 19936
 // Name: Background
 // Dependencies: [31, 33]
 // Exports: default

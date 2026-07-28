@@ -1,10 +1,10 @@
-// Module ID: 15308
-// Function ID: 116774
+// Module ID: 15348
+// Function ID: 116933
 // Name: UploadPlaceholder
-// Dependencies: [57, 31, 27, 1850, 8108, 33, 689, 4131, 15249, 1273, 9810, 4127, 1212, 8756, 3975, 566, 4362, 8321, 8998, 9017, 477, 4661, 4090, 9034, 9911, 6519, 21, 664, 15305, 3970, 5874, 15309, 7909, 2]
+// Dependencies: [57, 31, 27, 1850, 8146, 33, 689, 4165, 15289, 1273, 9850, 4161, 1212, 8800, 4009, 566, 4396, 8359, 9042, 9061, 477, 4695, 4124, 9078, 9951, 6555, 21, 664, 15345, 4004, 5908, 15349, 7945, 2]
 // Exports: default
 
-// Module 15308 (UploadPlaceholder)
+// Module 15348 (UploadPlaceholder)
 import _slicedToArray from "_slicedToArray";
 import SeparatorDot from "SeparatorDot";
 import { View } from "set";
@@ -20,12 +20,12 @@ let closure_9;
 const require = arg1;
 function UploadPlaceholder() {
   let obj = { style: callback3(false).uploadContainer };
-  obj = { source: importDefault(9810), size: require(1273) /* Button */.IconSizes.SMALL };
+  obj = { source: importDefault(9850), size: require(1273) /* Button */.IconSizes.SMALL };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "text-md/normal", color: "text-strong" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["3UB9ad"]);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }

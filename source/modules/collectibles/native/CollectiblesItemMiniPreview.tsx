@@ -1,9 +1,9 @@
-// Module ID: 8675
-// Function ID: 68875
+// Module ID: 8719
+// Function ID: 69026
 // Name: PX_8
-// Dependencies: [31, 27, 5775, 1875, 5776, 5777, 8036, 7977, 33, 689, 4131, 8005, 8626, 5085, 8627, 7997, 1874, 8008, 2]
+// Dependencies: [31, 27, 5785, 1875, 5786, 5787, 8074, 8015, 33, 689, 4165, 8043, 8670, 5119, 8671, 8035, 1874, 8046, 2]
 
-// Module 8675 (PX_8)
+// Module 8719 (PX_8)
 import { View } from "get ActivityIndicator";
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
 import { isNameplateRecord } from "_isNativeReflectConstruct";
@@ -38,26 +38,26 @@ const memoResult = importAllResult.memo(function CollectiblesItemMiniPreview(arg
   if (isAvatarDecorationRecord(item)) {
     let obj = { style: items };
     obj = { item, size: 0.75 * size };
-    obj.children = callback(importDefault(8005), obj);
+    obj.children = callback(importDefault(8043), obj);
     return callback(View, obj);
   } else if (isProfileFrameRecord(item)) {
     const obj1 = { style: items };
     const obj2 = { style: tmp.framePreview };
     const obj3 = { profileFrame: item, previewWidth: size * closure_8, previewHeight: size - 2 * PX_8, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    obj2.children = callback(importDefault(8626), obj3);
+    obj2.children = callback(importDefault(8670), obj3);
     obj1.children = callback(View, obj2);
     return callback(View, obj1);
   } else if (isProfileEffectRecord(item)) {
     const obj4 = { style: items };
     const obj5 = { style: tmp.profileEffect, accessible: false, importantForAccessibility: "no" };
     const obj6 = {};
-    const obj7 = { uri: importDefault(8627) };
+    const obj7 = { uri: importDefault(8671) };
     obj6.source = obj7;
     obj6.style = tmp.sampleProfile;
     obj6.resizeMode = "cover";
-    const items1 = [callback(importDefault(5085), obj6), ];
+    const items1 = [callback(importDefault(5119), obj6), ];
     const obj8 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };
-    items1[1] = callback(importDefault(7997), obj8);
+    items1[1] = callback(importDefault(8035), obj8);
     obj5.children = items1;
     obj4.children = callback2(View, obj5);
     return callback(View, obj4);
@@ -69,7 +69,7 @@ const memoResult = importAllResult.memo(function CollectiblesItemMiniPreview(arg
     const obj10 = { style: tmp.nameplateStrip };
     const nameplateData = obj.getNameplateData(item);
     const obj11 = { nameplate: nameplateData, fullOpacity: true, style: tmp.nameplate };
-    obj10.children = callback(importDefault(8008), obj11);
+    obj10.children = callback(importDefault(8046), obj11);
     obj9.children = callback(View, obj10);
     return callback(View, obj9);
   } else {

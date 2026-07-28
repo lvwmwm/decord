@@ -1,10 +1,10 @@
-// Module ID: 8390
-// Function ID: 67110
+// Module ID: 8434
+// Function ID: 67257
 // Name: useProfilePrimaryColor
-// Dependencies: [57, 4123, 1392, 7850, 5780, 2]
+// Dependencies: [57, 4157, 1392, 7886, 5790, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 8390 (useProfilePrimaryColor)
+// Module 8434 (useProfilePrimaryColor)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -24,7 +24,7 @@ export const useProfilePrimaryColor = function useProfilePrimaryColor(guildProfi
     }
   }
   let brandColorPrimary;
-  brandColorPrimary = importDefault(7850)(guildIconURL, token);
+  brandColorPrimary = importDefault(7886)(guildIconURL, token);
   if (null != guildProfile) {
     brandColorPrimary = guildProfile.brandColorPrimary;
   }
@@ -52,8 +52,8 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
     if (null == guildIconURL) {
       return null;
     } else {
-      require(7850) /* hasFetchedColors */.maybeFetchColors(guildIconURL);
-      const useColorStore = require(7850) /* hasFetchedColors */.useColorStore;
+      require(7886) /* hasFetchedColors */.maybeFetchColors(guildIconURL);
+      const useColorStore = require(7886) /* hasFetchedColors */.useColorStore;
       const tmp20 = useColorStore.getState().palette[guildIconURL];
       let first;
       if (null != tmp20) {
@@ -64,18 +64,18 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         [tmp4, tmp5, tmp6] = callback(first, 3);
         obj = { r: tmp4, g: tmp5, b: tmp6 };
         const tmp3 = callback(first, 3);
-        const obj2 = importDefault(5780)(obj);
-        ({ h, s, l } = importDefault(5780)(obj).toHsl());
+        const obj2 = importDefault(5790)(obj);
+        ({ h, s, l } = importDefault(5790)(obj).toHsl());
         if (_isNativeReflectConstruct.desaturateUserColors) {
           num3 = _isNativeReflectConstruct.saturation;
         }
         obj = { h, s: s * num3, l };
-        const toHslResult = importDefault(5780)(obj).toHsl();
-        return importDefault(5780)(obj).toHexString();
+        const toHslResult = importDefault(5790)(obj).toHsl();
+        return importDefault(5790)(obj).toHexString();
       } else {
         return null;
       }
-      const obj7 = require(7850) /* hasFetchedColors */;
+      const obj7 = require(7886) /* hasFetchedColors */;
     }
     const obj5 = importDefault(1392);
   }

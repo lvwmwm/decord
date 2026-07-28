@@ -1,10 +1,10 @@
-// Module ID: 5736
-// Function ID: 49833
+// Module ID: 5746
+// Function ID: 49689
 // Name: getEmbedFieldFromMessage
-// Dependencies: [57, 31, 1348, 3759, 3768, 1850, 653, 5737, 5738, 5739, 1212, 5740, 5741, 5742, 4321, 5743, 5744, 5745, 566, 5746, 2]
+// Dependencies: [57, 31, 1348, 3793, 3802, 1850, 653, 5747, 5748, 5749, 1212, 5750, 5751, 5752, 4355, 5753, 5754, 5755, 566, 5756, 2]
 // Exports: default, extractAutomodNotificationFields, getActionHeaderText, getActionHeaderTextMobile, getQuarantineReasonString, getRaidAlertResolveCTAText, getUserIdOfAutomodAction, isAutomodMessageRecord, isAutomodNotification, useAutomodAlertActions
 
-// Module 5736 (getEmbedFieldFromMessage)
+// Module 5746 (getEmbedFieldFromMessage)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -70,61 +70,61 @@ function getMessageContentFromEmbed(embeds) {
   return str;
 }
 function getDecisionOutcomeFromMessage(message) {
-  const tmp = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.DECISION_OUTCOME);
+  const tmp = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.DECISION_OUTCOME);
   return null != tmp ? tmp : undefined;
 }
 function getQuarantineTypeFromMessage(message) {
-  const tmp = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER);
+  const tmp = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER);
   return null != tmp ? tmp : undefined;
 }
 function getQuarantineActionFromMessage(message) {
-  const tmp = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER_ACTION);
+  const tmp = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER_ACTION);
   return null != tmp ? tmp : undefined;
 }
 function getProfileUpdateTypeFromMessage(message) {
-  const tmp = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.BLOCK_PROFILE_UPDATE_TYPE);
+  const tmp = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.BLOCK_PROFILE_UPDATE_TYPE);
   return null != tmp ? tmp : undefined;
 }
 function getQuarantineEventFromMessage(message) {
-  const tmp = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_EVENT);
+  const tmp = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_EVENT);
   return null != tmp ? tmp : undefined;
 }
 function _getUserProfileRuleHeaderText(arg0, arg1, arg2) {
-  if (require(5738) /* AutomodQuarantineUserActionMessageEmbedKeys */.AutomodQuarantineUserActionMessageEmbedKeys.BLOCK_PROFILE_UPDATE === arg1) {
-    if (require(5739) /* AutomodBlockProfileUpdateMessageEmbedKeys */.AutomodBlockProfileUpdateMessageEmbedKeys.NICKNAME_UPDATE === arg0) {
+  if (require(5748) /* AutomodQuarantineUserActionMessageEmbedKeys */.AutomodQuarantineUserActionMessageEmbedKeys.BLOCK_PROFILE_UPDATE === arg1) {
+    if (require(5749) /* AutomodBlockProfileUpdateMessageEmbedKeys */.AutomodBlockProfileUpdateMessageEmbedKeys.NICKNAME_UPDATE === arg0) {
       const intl6 = require(1212) /* getSystemLocale */.intl;
       let stringResult = intl6.string(require(1212) /* getSystemLocale */.t.t98DPb);
-    } else if (require(5739) /* AutomodBlockProfileUpdateMessageEmbedKeys */.AutomodBlockProfileUpdateMessageEmbedKeys.NICKNAME_RESET === arg0) {
+    } else if (require(5749) /* AutomodBlockProfileUpdateMessageEmbedKeys */.AutomodBlockProfileUpdateMessageEmbedKeys.NICKNAME_RESET === arg0) {
       const intl5 = require(1212) /* getSystemLocale */.intl;
       stringResult = intl5.string(require(1212) /* getSystemLocale */.t["7u/rlU"]);
     }
     return stringResult;
-  } else if (require(5738) /* AutomodQuarantineUserActionMessageEmbedKeys */.AutomodQuarantineUserActionMessageEmbedKeys.QUARANTINE_USER === arg1) {
-    if (require(5740) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.MESSAGE_SEND === arg2) {
+  } else if (require(5748) /* AutomodQuarantineUserActionMessageEmbedKeys */.AutomodQuarantineUserActionMessageEmbedKeys.QUARANTINE_USER === arg1) {
+    if (require(5750) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.MESSAGE_SEND === arg2) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       let stringResult1 = intl4.string(require(1212) /* getSystemLocale */.t.PmSMMS);
-    } else if (require(5740) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.GUILD_JOIN === arg2) {
+    } else if (require(5750) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.GUILD_JOIN === arg2) {
       const intl3 = require(1212) /* getSystemLocale */.intl;
       stringResult1 = intl3.string(require(1212) /* getSystemLocale */.t.m9wWzo);
-    } else if (require(5740) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.USERNAME_UPDATE === arg2) {
+    } else if (require(5750) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.USERNAME_UPDATE === arg2) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.KNSkC6);
-    } else if (require(5740) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.CLAN_TAG_UPDATE === arg2) {
+    } else if (require(5750) /* AutomodQuarantineEventMessageEmbedKeys */.AutomodQuarantineEventMessageEmbedKeys.CLAN_TAG_UPDATE === arg2) {
       const intl7 = require(1212) /* getSystemLocale */.intl;
       stringResult1 = intl7.string(require(1212) /* getSystemLocale */.t.qV4K6j);
     }
     return stringResult1;
-  } else if (require(5738) /* AutomodQuarantineUserActionMessageEmbedKeys */.AutomodQuarantineUserActionMessageEmbedKeys.BLOCK_GUEST_JOIN === arg1) {
+  } else if (require(5748) /* AutomodQuarantineUserActionMessageEmbedKeys */.AutomodQuarantineUserActionMessageEmbedKeys.BLOCK_GUEST_JOIN === arg1) {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.MrYeyS);
   }
 }
 function extractAutomodMessageFields(message) {
   let tmp;
-  const tmp2 = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.CHANNEL_ID);
-  let obj = require(5745) /* AutomodAlertActionType */;
-  const result = obj.parseAlertActionsExecution(getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.ALERT_ACTIONS_EXECUTION));
-  obj = { content: getMessageContentFromEmbed(message), ruleName: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.RULE_NAME), decisionId: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.DECISION_ID), keyword: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.KEYWORD), keywordMatchedContent: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.KEYWORD_MATCHED_CONTENT), flaggedMessageId: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.FLAGGED_MESSAGE_ID), timeoutDuration: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.TIMEOUT_DURATION), quarantineType: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER), quarantineAction: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER_ACTION), decisionReason: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.DECISION_REASON), applicationName: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.APPLICATION_NAME), interactionUserId: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.INTERACTION_USER_ID), interactionCallbackType: getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE), embedChannel: channel.getChannel(tmp2), embedChannelId: tmp2 };
+  const tmp2 = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.CHANNEL_ID);
+  let obj = require(5755) /* AutomodAlertActionType */;
+  const result = obj.parseAlertActionsExecution(getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.ALERT_ACTIONS_EXECUTION));
+  obj = { content: getMessageContentFromEmbed(message), ruleName: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.RULE_NAME), decisionId: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.DECISION_ID), keyword: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.KEYWORD), keywordMatchedContent: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.KEYWORD_MATCHED_CONTENT), flaggedMessageId: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.FLAGGED_MESSAGE_ID), timeoutDuration: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.TIMEOUT_DURATION), quarantineType: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER), quarantineAction: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.QUARANTINE_USER_ACTION), decisionReason: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.DECISION_REASON), applicationName: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.APPLICATION_NAME), interactionUserId: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.INTERACTION_USER_ID), interactionCallbackType: getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE), embedChannel: channel.getChannel(tmp2), embedChannelId: tmp2 };
   if (null != result) {
     tmp = result;
   }
@@ -170,12 +170,12 @@ export const getActionHeaderTextMobile = function getActionHeaderTextMobile(mess
   }
   const tmp6 = getDecisionOutcomeFromMessage(message);
   tmp3 = getQuarantineEventFromMessage(message);
-  const tmp8 = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.APPLICATION_NAME);
+  const tmp8 = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.APPLICATION_NAME);
   if (null != tmp8) {
     let username2 = user.getUser(interactionUserId);
-    if (tmp7 === require(5741) /* AutomodInteractionCallbackTypeEmbedKeys */.AutomodInteractionCallbackTypeEmbedKeys.MODAL) {
+    if (tmp7 === require(5751) /* AutomodInteractionCallbackTypeEmbedKeys */.AutomodInteractionCallbackTypeEmbedKeys.MODAL) {
       if (null != username2) {
-        if (tmp6 !== require(5742) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+        if (tmp6 !== require(5752) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
           const intl6 = require(1212) /* getSystemLocale */.intl;
           let obj = { applicationName: tmp8 };
           username2 = username2.username;
@@ -190,7 +190,7 @@ export const getActionHeaderTextMobile = function getActionHeaderTextMobile(mess
         }
       }
     }
-    if (tmp6 !== require(5742) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+    if (tmp6 !== require(5752) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       const obj1 = { applicationName: tmp8, integrationOwner: username.username };
       let formatToPlainStringResult1 = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t["0Kmtr7"], obj1);
@@ -201,7 +201,7 @@ export const getActionHeaderTextMobile = function getActionHeaderTextMobile(mess
     }
     return formatToPlainStringResult1;
   } else {
-    if (tmp6 !== require(5742) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+    if (tmp6 !== require(5752) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Oo38tv);
     } else {
@@ -210,7 +210,7 @@ export const getActionHeaderTextMobile = function getActionHeaderTextMobile(mess
     }
     return stringResult;
   }
-  tmp7 = getEmbedFieldFromMessage(message, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE);
+  tmp7 = getEmbedFieldFromMessage(message, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE);
 };
 export const getActionHeaderText = function getActionHeaderText(embeds, channel, arg2, integrationOwnerHook, interactionUserHook) {
   let tmp = arg2;
@@ -218,7 +218,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
     tmp = closure_10;
   }
   if (null != channel) {
-    let obj = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+    let obj = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
     let channelName = obj.computeChannelName(channel, closure_7, closure_6);
   } else {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -229,7 +229,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
   const tmp11 = getQuarantineEventFromMessage(embeds);
   const tmp13 = getDecisionOutcomeFromMessage(embeds);
   const tmp12 = getQuarantineTypeFromMessage(embeds);
-  const tmp15 = getEmbedFieldFromMessage(embeds, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.APPLICATION_NAME);
+  const tmp15 = getEmbedFieldFromMessage(embeds, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.APPLICATION_NAME);
   if (null != tmp12) {
     const tmp17 = _getUserProfileRuleHeaderText(tmp9, tmp10, tmp11);
     if (null != tmp17) {
@@ -241,13 +241,13 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
   } else {
     tmp19 = tmp;
   }
-  const tmp20 = getEmbedFieldFromMessage(embeds, require(5737) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.VOICE_CHANNEL_STATUS_OUTCOME);
+  const tmp20 = getEmbedFieldFromMessage(embeds, require(5747) /* AutomodMessageEmbedKeys */.AutomodMessageEmbedKeys.VOICE_CHANNEL_STATUS_OUTCOME);
   if (null == tmp20) {
     if (null != null) {
       return null;
     } else {
       if (null == tmp15) {
-        if (tmp13 !== require(5742) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+        if (tmp13 !== require(5752) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
           const intl4 = require(1212) /* getSystemLocale */.intl;
           obj = { channelName, channelHook: tmp19 };
           let formatResult = intl4.format(require(1212) /* getSystemLocale */.t.IZg0VQ, obj);
@@ -257,8 +257,8 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
           formatResult = intl3.format(require(1212) /* getSystemLocale */.t.lOIOSK, obj);
         }
       }
-      if (tmp14 !== require(5741) /* AutomodInteractionCallbackTypeEmbedKeys */.AutomodInteractionCallbackTypeEmbedKeys.MODAL) {
-        if (tmp13 !== require(5742) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+      if (tmp14 !== require(5751) /* AutomodInteractionCallbackTypeEmbedKeys */.AutomodInteractionCallbackTypeEmbedKeys.MODAL) {
+        if (tmp13 !== require(5752) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
           const intl6 = require(1212) /* getSystemLocale */.intl;
           const obj1 = { applicationName: tmp15, channelName, channelHook: tmp19, integrationOwnerHook };
           let formatResult1 = intl6.format(require(1212) /* getSystemLocale */.t.AXQufN, obj1);
@@ -268,7 +268,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
           formatResult1 = intl5.format(require(1212) /* getSystemLocale */.t.s3tjMN, obj2);
         }
       }
-      if (tmp13 !== require(5742) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+      if (tmp13 !== require(5752) /* AutomodDecisionOutcomeEmbedKeys */.AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
         const intl8 = require(1212) /* getSystemLocale */.intl;
         const obj3 = { applicationName: tmp15, interactionUserHook, integrationOwnerHook };
         let formatResult2 = intl8.format(require(1212) /* getSystemLocale */.t["4xL9Sk"], obj3);
@@ -290,16 +290,16 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
   }
 };
 export const getQuarantineReasonString = function getQuarantineReasonString(quarantineType) {
-  if (require(5743) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.NICKNAME === quarantineType) {
+  if (require(5753) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.NICKNAME === quarantineType) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     return intl5.string(require(1212) /* getSystemLocale */.t["fkBQa/"]);
-  } else if (require(5743) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.USERNAME === quarantineType) {
+  } else if (require(5753) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.USERNAME === quarantineType) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     return intl4.string(require(1212) /* getSystemLocale */.t.pJQVnr);
-  } else if (require(5743) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.GLOBAL_NAME === quarantineType) {
+  } else if (require(5753) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.GLOBAL_NAME === quarantineType) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t.V9eJ85);
-  } else if (require(5743) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.CLAN_TAG === quarantineType) {
+  } else if (require(5753) /* AutomodQuarantineUserMessageEmbedKeys */.AutomodQuarantineUserMessageEmbedKeys.CLAN_TAG === quarantineType) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(require(1212) /* getSystemLocale */.t.Rtum01);
   } else {
@@ -308,14 +308,14 @@ export const getQuarantineReasonString = function getQuarantineReasonString(quar
   }
 };
 export const extractAutomodNotificationFields = function extractAutomodNotificationFields(message) {
-  const tmp = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.NOTIFICATION_TYPE);
-  const tmp2 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.JOIN_ATTEMPTS);
-  const tmp3 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.RAID_DATETIME);
-  const tmp4 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.DMS_SENT);
-  const tmp5 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.RAID_TYPE);
-  const tmp6 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.RESOLVED_REASON);
-  const tmp7 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.DECISION_ID);
-  const tmp8 = getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
+  const tmp = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.NOTIFICATION_TYPE);
+  const tmp2 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.JOIN_ATTEMPTS);
+  const tmp3 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.RAID_DATETIME);
+  const tmp4 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.DMS_SENT);
+  const tmp5 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.RAID_TYPE);
+  const tmp6 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.RESOLVED_REASON);
+  const tmp7 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.DECISION_ID);
+  const tmp8 = getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
   const obj = {};
   let tmp9 = null;
   if (null != tmp) {
@@ -384,13 +384,13 @@ export const getRaidAlertResolveCTAText = function getRaidAlertResolveCTAText(re
   if (null == resolvedReason) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     return intl5.string(require(1212) /* getSystemLocale */.t.Gh3A0O);
-  } else if (require(5746) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY === resolvedReason) {
+  } else if (require(5756) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY === resolvedReason) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     return intl4.string(require(1212) /* getSystemLocale */.t["riQ+HH"]);
-  } else if (require(5746) /* Feedback */.RaidResolutionType.DM_SPAM === resolvedReason) {
+  } else if (require(5756) /* Feedback */.RaidResolutionType.DM_SPAM === resolvedReason) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t.j5V0ij);
-  } else if (require(5746) /* Feedback */.RaidResolutionType.JOIN_RAID === resolvedReason) {
+  } else if (require(5756) /* Feedback */.RaidResolutionType.JOIN_RAID === resolvedReason) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(require(1212) /* getSystemLocale */.t.qhaRbG);
   } else {
@@ -399,5 +399,5 @@ export const getRaidAlertResolveCTAText = function getRaidAlertResolveCTAText(re
   }
 };
 export const getUserIdOfAutomodAction = function getUserIdOfAutomodAction(message) {
-  return getEmbedFieldFromMessage(message, require(5744) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.ACTION_BY_USER_ID);
+  return getEmbedFieldFromMessage(message, require(5754) /* AutomodNotificationEmbedKeys */.AutomodNotificationEmbedKeys.ACTION_BY_USER_ID);
 };

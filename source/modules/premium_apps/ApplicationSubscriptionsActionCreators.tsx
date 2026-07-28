@@ -1,10 +1,10 @@
-// Module ID: 13485
-// Function ID: 103686
+// Module ID: 13529
+// Function ID: 103859
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 653, 686, 10583, 6244, 2]
+// Dependencies: [5, 653, 686, 10621, 6280, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13485 (_createForOfIteratorHelperLoose)
+// Module 13529 (_createForOfIteratorHelperLoose)
 import set from "set";
 import ME from "ME";
 

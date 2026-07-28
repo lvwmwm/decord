@@ -1,10 +1,10 @@
-// Module ID: 11604
-// Function ID: 90166
+// Module ID: 11643
+// Function ID: 90317
 // Name: useGameServerPerk
-// Dependencies: [31, 4039, 4019, 4020, 4042, 566, 11605, 1212, 2621, 11606, 2]
+// Dependencies: [31, 4073, 4053, 4054, 4076, 566, 11644, 1212, 2621, 11645, 2]
 // Exports: default
 
-// Module 11604 (useGameServerPerk)
+// Module 11643 (useGameServerPerk)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildPowerupType } from "BoostedGuildTiers";

@@ -1,10 +1,10 @@
-// Module ID: 4041
-// Function ID: 33659
+// Module ID: 4075
+// Function ID: 33761
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 4041 (gameServerResponseToInstance)
+// Module 4075 (gameServerResponseToInstance)
 const result = require("set").fileFinishedImporting("modules/premium/game_server/utils/gameServerResponseToInstance.tsx");
 
 export default function gameServerResponseToInstance(id) {
@@ -15,6 +15,6 @@ export default function gameServerResponseToInstance(id) {
     num = players_count;
   }
   obj.onlineConnectionsCount = num;
-  ({ max_players_count: obj.maxConnectionsCount, ip: obj.serverIP, port: obj.port, entitlement_id: obj.entitlementId, provider_type: obj.providerType, provider_url: obj.gameServerPanelUrl, status: obj.status, game_id: obj.gameId, game_config: obj.gameConfig } = id);
+  ({ max_players_count: obj.maxConnectionsCount, ip: obj.serverIP, port: obj.port, entitlement_id: obj.entitlementId, subscription_id: obj.subscriptionId, provider_type: obj.providerType, provider_url: obj.gameServerPanelUrl, status: obj.status, game_id: obj.gameId, game_config: obj.gameConfig } = id);
   return obj;
 };

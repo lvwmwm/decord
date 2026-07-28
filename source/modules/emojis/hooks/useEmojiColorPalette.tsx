@@ -1,10 +1,10 @@
-// Module ID: 9388
-// Function ID: 73203
+// Module ID: 9432
+// Function ID: 73354
 // Name: useEmojiColorPalette
-// Dependencies: [4123, 1278, 566, 3977, 7681, 2]
+// Dependencies: [4157, 1278, 566, 4011, 7717, 2]
 // Exports: useEmojiColorPalette
 
-// Module 9388 (useEmojiColorPalette)
+// Module 9432 (useEmojiColorPalette)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -18,5 +18,5 @@ export const useEmojiColorPalette = function useEmojiColorPalette(burst_colors) 
   const items1 = [closure_3];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_0(outer1_1[3]).isThemeDark(outer1_3.theme));
   const obj2 = require(566) /* initialize */;
-  return require(7681) /* buildPlatformedThemedEmojiColorPalette */.buildEmojiColorPalette(burst_colors, stateFromStores, stateFromStores1);
+  return require(7717) /* buildPlatformedThemedEmojiColorPalette */.buildEmojiColorPalette(burst_colors, stateFromStores, stateFromStores1);
 };

@@ -1,16 +1,16 @@
-// Module ID: 11798
-// Function ID: 91535
+// Module ID: 11837
+// Function ID: 91686
 // Name: useGradientAnimatedStyle
-// Dependencies: [31, 653, 33, 3992, 4555, 4131, 4543, 2]
+// Dependencies: [31, 653, 33, 4026, 4589, 4165, 4577, 2]
 // Exports: default
 
-// Module 11798 (useGradientAnimatedStyle)
+// Module 11837 (useGradientAnimatedStyle)
 import result from "result";
 import { HorizontalGradient } from "ME";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let closure_4;
 let closure_5;
@@ -18,7 +18,7 @@ let closure_6;
 const require = arg1;
 function useGradientAnimatedStyle(visible) {
   const _require = visible;
-  let obj = _require(3992);
+  let obj = _require(4026);
   const fn = function s() {
     const obj = {};
     let num = 0;
@@ -28,7 +28,7 @@ function useGradientAnimatedStyle(visible) {
     obj.opacity = visible(outer1_1[6]).withSpring(num, outer1_8);
     return obj;
   };
-  obj = { withSpring: _require(4543).withSpring, visible, SPRING_CONFIG: closure_8 };
+  obj = { withSpring: _require(4577).withSpring, visible, SPRING_CONFIG: closure_8 };
   fn.__closure = obj;
   fn.__workletHash = 14959306962615;
   fn.__initData = closure_10;

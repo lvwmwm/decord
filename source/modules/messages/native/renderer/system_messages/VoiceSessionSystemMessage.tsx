@@ -1,19 +1,19 @@
-// Module ID: 7786
-// Function ID: 61839
+// Module ID: 7822
+// Function ID: 61929
 // Name: getMessageContent
-// Dependencies: [1348, 7702, 7684, 7787, 1212, 7686, 7687, 2]
+// Dependencies: [1348, 7738, 7720, 7823, 1212, 7722, 7723, 2]
 // Exports: createVoiceSessionSystemMessage
 
-// Module 7786 (getMessageContent)
+// Module 7822 (getMessageContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function getMessageContent(channel_id, roleStyle) {
   const _require = channel.getChannel(channel_id.channel_id);
-  const tmp = importDefault(7702)(channel_id);
-  let obj = _require(7684);
+  const tmp = importDefault(7738)(channel_id);
+  let obj = _require(7720);
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(channel_id);
-  let obj1 = _require(7787);
+  let obj1 = _require(7823);
   const sortedVoiceSessionParticipants = obj1.getSortedVoiceSessionParticipants(channel_id);
   const mapped = sortedVoiceSessionParticipants.map((user) => {
     const obj = { user, messageAuthor: callback(outer1_2[2]).getUserAuthorWithProcessedColor(user, callback) };
@@ -23,13 +23,13 @@ function getMessageContent(channel_id, roleStyle) {
     const intl = _require(1212).intl;
     obj = { username: messageAuthorWithProcessedColor.nick };
     obj = { message: channel_id, author: messageAuthorWithProcessedColor, roleStyle };
-    obj.usernameOnClick = importDefault(7686)(obj);
+    obj.usernameOnClick = importDefault(7722)(obj);
     let formatToPartsResult = intl.formatToParts(_require(1212).t.HzBfIN, obj);
   } else {
     const intl2 = _require(1212).intl;
     obj1 = { userCount: mapped.length + 1, username: messageAuthorWithProcessedColor.nick };
     const obj2 = { message: channel_id, author: messageAuthorWithProcessedColor, roleStyle };
-    obj1.usernameOnClick = importDefault(7686)(obj2);
+    obj1.usernameOnClick = importDefault(7722)(obj2);
     const first = mapped[0];
     let nick;
     if (null != first) {
@@ -39,7 +39,7 @@ function getMessageContent(channel_id, roleStyle) {
     let tmp4;
     if (null != mapped[0]) {
       const obj3 = { userId: mapped[0].user.id, message: channel_id, author: mapped[0].messageAuthor, roleStyle };
-      tmp4 = importDefault(7686)(obj3);
+      tmp4 = importDefault(7722)(obj3);
     }
     obj1.username2OnClick = tmp4;
     let nick1;
@@ -50,7 +50,7 @@ function getMessageContent(channel_id, roleStyle) {
     let tmp9;
     if (null != mapped[1]) {
       const obj4 = { userId: mapped[1].user.id, message: channel_id, author: mapped[1].messageAuthor, roleStyle };
-      tmp9 = importDefault(7686)(obj4);
+      tmp9 = importDefault(7722)(obj4);
     }
     obj1.username3OnClick = tmp9;
     obj1.otherCount = mapped.length - 1;
@@ -62,6 +62,6 @@ function getMessageContent(channel_id, roleStyle) {
 const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/VoiceSessionSystemMessage.tsx");
 
 export const createVoiceSessionSystemMessage = function createVoiceSessionSystemMessage(message) {
-  const merged = Object.assign(importDefault(7687)(message));
+  const merged = Object.assign(importDefault(7723)(message));
   return { content: getMessageContent(message.message, message.roleStyle) };
 };

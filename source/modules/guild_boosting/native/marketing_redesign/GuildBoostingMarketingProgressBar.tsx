@@ -1,10 +1,10 @@
-// Module ID: 12580
-// Function ID: 97379
+// Module ID: 12623
+// Function ID: 97549
 // Name: BoostedGuildTiers
-// Dependencies: [57, 31, 27, 4123, 653, 33, 4131, 12581, 689, 4067, 624, 3992, 4023, 4543, 4555, 3977, 2]
+// Dependencies: [57, 31, 27, 4157, 653, 33, 4165, 12624, 689, 4101, 624, 4026, 4057, 4577, 4589, 4011, 2]
 // Exports: default
 
-// Module 12580 (BoostedGuildTiers)
+// Module 12623 (BoostedGuildTiers)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 13634
-// Function ID: 104789
+// Module ID: 13678
+// Function ID: 104962
 // Name: HSVColorPicker
-// Dependencies: [31, 27, 33, 4131, 3992, 13635, 13636, 2]
+// Dependencies: [31, 27, 33, 4165, 4026, 13679, 13680, 2]
 // Exports: default
 
-// Module 13634 (HSVColorPicker)
+// Module 13678 (HSVColorPicker)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,16 +32,16 @@ export default function HSVColorPicker(arg0) {
   let value;
   ({ hue, saturation, value, onPanUpdate, onPanFinalize } = arg0);
   ({ saturationValuePickerStyle, saturationValueColorBoxStyle, saturationValueColorBoxInnerStyle, saturationValueSelectorStyle, huePickerStyle, hueColorBarInnerStyle, hueSliderStyle } = arg0);
-  let obj = require(3992);
+  let obj = require(4026);
   let sharedValue = obj.useSharedValue(0);
-  let obj1 = require(3992);
+  let obj1 = require(4026);
   let sharedValue1 = obj1.useSharedValue(1);
   const tmp = callback();
-  let sharedValue2 = require(3992).useSharedValue(1);
+  let sharedValue2 = require(4026).useSharedValue(1);
   obj = { style: tmp.hsvColorPicker };
   obj = {};
   let tmp9 = sharedValue;
-  const obj3 = require(3992);
+  const obj3 = require(4026);
   const tmp5 = closure_5;
   const tmp6 = View;
   const tmp7 = closure_4;
@@ -63,10 +63,10 @@ export default function HSVColorPicker(arg0) {
   obj.selectorStyle = saturationValueSelectorStyle;
   obj.onPanUpdate = onPanUpdate;
   obj.onPanFinalize = onPanFinalize;
-  const items = [tmp7(importDefault(13635), obj), ];
+  const items = [tmp7(importDefault(13679), obj), ];
   obj1 = {};
   const tmp10 = closure_4;
-  const tmp8 = importDefault(13635);
+  const tmp8 = importDefault(13679);
   if (null != hue) {
     sharedValue = hue;
   }
@@ -76,7 +76,7 @@ export default function HSVColorPicker(arg0) {
   obj1.sliderStyle = hueSliderStyle;
   obj1.onPanUpdate = onPanUpdate;
   obj1.onPanFinalize = onPanFinalize;
-  items[1] = tmp10(importDefault(13636), obj1);
+  items[1] = tmp10(importDefault(13680), obj1);
   obj.children = items;
   return tmp5(tmp6, obj);
 };

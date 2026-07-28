@@ -1,10 +1,10 @@
-// Module ID: 13650
-// Function ID: 104881
+// Module ID: 13694
+// Function ID: 105054
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [27, 33, 4131, 689, 1863, 13651, 4555, 665, 2]
+// Dependencies: [27, 33, 4165, 689, 1863, 13695, 4589, 665, 2]
 // Exports: default
 
-// Module 13650 (DisplayNameStylesColorSwatch)
+// Module 13694 (DisplayNameStylesColorSwatch)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -26,13 +26,13 @@ export default function DisplayNameStylesColorSwatch(colors) {
       ({ colorSwatch: arr3[0], gummySwatch: arr3[1] } = tmp);
       obj.style = items;
       obj = { colors };
-      obj.children = jsx(importDefault(13651), { colors });
+      obj.children = jsx(importDefault(13695), { colors });
       return <View colors={colors} />;
     }
   }
   if (colors.length >= 2) {
     const obj1 = { colors: colors.map((color) => outer1_0(outer1_2[7]).int2hex(color)), start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: tmp.colorSwatch };
-    return jsx(importDefault(4555), { colors: colors.map((color) => outer1_0(outer1_2[7]).int2hex(color)), start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: tmp.colorSwatch });
+    return jsx(importDefault(4589), { colors: colors.map((color) => outer1_0(outer1_2[7]).int2hex(color)), start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: tmp.colorSwatch });
   } else {
     let str = "#000000";
     if (colors.length > 0) {

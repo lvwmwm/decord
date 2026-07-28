@@ -1,10 +1,10 @@
-// Module ID: 12756
-// Function ID: 99366
+// Module ID: 12799
+// Function ID: 99536
 // Name: _resetAgeVerification
 // Dependencies: [5, 653, 507, 686, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 12756 (_resetAgeVerification)
+// Module 12799 (_resetAgeVerification)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

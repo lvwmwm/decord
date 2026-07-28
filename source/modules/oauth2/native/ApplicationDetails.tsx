@@ -1,10 +1,10 @@
-// Module ID: 8951
-// Function ID: 70675
+// Module ID: 8995
+// Function ID: 70826
 // Name: ApplicationDetailsEntry
-// Dependencies: [31, 27, 33, 4131, 689, 8884, 8952, 8954, 21, 8882, 4075, 1212, 4653, 8886, 8956, 4095, 8112, 8958, 8960, 4127, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 8928, 8996, 8998, 21, 8926, 4109, 1212, 4687, 8930, 9000, 4129, 8150, 9002, 9004, 4161, 2]
 // Exports: default
 
-// Module 8951 (ApplicationDetailsEntry)
+// Module 8995 (ApplicationDetailsEntry)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function ApplicationDetailsEntry(iconComponent) {
   }
   const items = [iconComponentResult, ];
   obj = { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: iconComponent.text };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return closure_5(View, obj);
 }
@@ -47,7 +47,7 @@ export default function ApplicationDetails(arg0) {
   ({ isEmbeddedFlow, connectedAccount } = arg0);
   let obj = importDefault(21);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj1 = require(8882) /* items */;
+  let obj1 = require(8926) /* items */;
   let joined = null;
   const securityMessage = obj1.getSecurityMessage(scopes);
   if (null != redirectUri) {
@@ -75,7 +75,7 @@ export default function ApplicationDetails(arg0) {
       let tmp16 = require;
       let tmp17 = dependencyMap;
       let num3 = 10;
-      obj.iconComponent = require(4075) /* LinkIcon */.LinkIcon;
+      obj.iconComponent = require(4109) /* LinkIcon */.LinkIcon;
       let num4 = 11;
       let intl = require(1212) /* getSystemLocale */.intl;
       obj1 = { origin: joined };
@@ -90,9 +90,9 @@ export default function ApplicationDetails(arg0) {
     let tmp20 = require;
     let tmp21 = dependencyMap;
     let num5 = 12;
-    obj2.iconComponent = require(4653) /* LockIcon */.LockIcon;
+    obj2.iconComponent = require(4687) /* LockIcon */.LockIcon;
     let num6 = 13;
-    let obj7 = require(8886) /* getApplicationDetailsText */;
+    let obj7 = require(8930) /* getApplicationDetailsText */;
     obj2.text = obj7.getApplicationDetailsText(application);
     items[1] = callback(ApplicationDetailsEntry, obj2);
     let tmp22 = null;
@@ -103,7 +103,7 @@ export default function ApplicationDetails(arg0) {
       let tmp25 = require;
       let tmp26 = dependencyMap;
       let num7 = 14;
-      obj3.iconComponent = require(8956) /* HammerIcon */.HammerIcon;
+      obj3.iconComponent = require(9000) /* HammerIcon */.HammerIcon;
       let num8 = 11;
       let intl2 = require(1212) /* getSystemLocale */.intl;
       obj3.text = intl2.string(require(1212) /* getSystemLocale */.t["8qui3M"]);
@@ -116,7 +116,7 @@ export default function ApplicationDetails(arg0) {
     let tmp29 = require;
     let tmp30 = dependencyMap;
     let num9 = 15;
-    obj4.iconComponent = require(4095) /* ClockIcon */.ClockIcon;
+    obj4.iconComponent = require(4129) /* ClockIcon */.ClockIcon;
     let num10 = 11;
     let intl3 = require(1212) /* getSystemLocale */.intl;
     let obj5 = { date };
@@ -124,7 +124,7 @@ export default function ApplicationDetails(arg0) {
     items[3] = callback(ApplicationDetailsEntry, obj4);
     let num11 = 16;
     let tmp31 = null;
-    if (scopes.includes(require(8112) /* set */.OAuth2Scopes.BOT)) {
+    if (scopes.includes(require(8150) /* set */.OAuth2Scopes.BOT)) {
       tmp31 = null;
       if (null != approximateGuildCount) {
         let tmp32 = callback;
@@ -133,7 +133,7 @@ export default function ApplicationDetails(arg0) {
         let tmp34 = require;
         let tmp35 = dependencyMap;
         let num12 = 17;
-        obj6.iconComponent = require(8958) /* RobotIcon */.RobotIcon;
+        obj6.iconComponent = require(9002) /* RobotIcon */.RobotIcon;
         let intl4 = require(1212) /* getSystemLocale */.intl;
         obj7 = { guildCount: approximateGuildCount };
         obj6.text = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.UHGHSP, obj7);
@@ -147,7 +147,7 @@ export default function ApplicationDetails(arg0) {
     let tmp38 = require;
     let tmp39 = dependencyMap;
     let num13 = 18;
-    obj8.iconComponent = require(8960) /* ShieldIcon */.ShieldIcon;
+    obj8.iconComponent = require(9004) /* ShieldIcon */.ShieldIcon;
     obj8.text = securityMessage;
     items[5] = callback(ApplicationDetailsEntry, obj8);
     let mapped = null;

@@ -1,25 +1,25 @@
-// Module ID: 14848
-// Function ID: 113259
+// Module ID: 14892
+// Function ID: 113432
 // Name: convertPortraitToLandscapeScreens
-// Dependencies: [3983, 3982, 1461, 491, 2]
+// Dependencies: [4017, 4016, 1461, 491, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 14848 (convertPortraitToLandscapeScreens)
+// Module 14892 (convertPortraitToLandscapeScreens)
 const result = require("CommonActions").fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
 
 export const convertPortraitToLandscapeScreens = function convertPortraitToLandscapeScreens() {
-  let obj = require(3983) /* getRootNavigationRef */;
+  let obj = require(4017) /* getRootNavigationRef */;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      const coerceMainRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceMainRoute(state.routes[0]);
+      const coerceMainRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 !== state2.index) {
             if (null != obj3.coerceChannelRoute(state2.routes[1])) {
-              const coerceTabsRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceTabsRoute(state2.routes[0]);
+              const coerceTabsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceTabsRoute(state2.routes[0]);
               if (null != coerceTabsRouteResult) {
                 const state3 = coerceTabsRouteResult.state;
                 let tmp2;
@@ -50,34 +50,34 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   obj["index"] = items1.length - 1;
                   store.dispatch(CommonActions.reset(obj));
                 }
-                obj5 = require(3982) /* _createForOfIteratorHelperLoose */;
+                obj5 = require(4016) /* _createForOfIteratorHelperLoose */;
               }
-              const obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
+              const obj4 = require(4016) /* _createForOfIteratorHelperLoose */;
             }
-            obj3 = require(3982) /* _createForOfIteratorHelperLoose */;
+            obj3 = require(4016) /* _createForOfIteratorHelperLoose */;
           }
         }
       }
-      const obj2 = require(3982) /* _createForOfIteratorHelperLoose */;
+      const obj2 = require(4016) /* _createForOfIteratorHelperLoose */;
     }
   }
 };
 export const convertLandscapeToPortraitScreens = function convertLandscapeToPortraitScreens() {
-  let obj = require(3983) /* getRootNavigationRef */;
+  let obj = require(4017) /* getRootNavigationRef */;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      const coerceMainRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceMainRoute(state.routes[0]);
+      const coerceMainRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 === state.index) {
             if (0 !== state2.index) {
-              const obj7 = require(3982) /* _createForOfIteratorHelperLoose */;
+              const obj7 = require(4016) /* _createForOfIteratorHelperLoose */;
             }
           }
-          let obj1 = require(3982) /* _createForOfIteratorHelperLoose */;
+          let obj1 = require(4016) /* _createForOfIteratorHelperLoose */;
           const coerceTabsRouteResult = obj1.coerceTabsRoute(state2.routes[0]);
           if (null != coerceTabsRouteResult) {
             const state3 = coerceTabsRouteResult.state;
@@ -90,7 +90,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               }
               tmp5 = state3.routes[index];
             }
-            const coerceGuildsRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(tmp5);
+            const coerceGuildsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(tmp5);
             if (null != coerceGuildsRouteResult) {
               obj = {};
               const merged = Object.assign(state2);
@@ -137,11 +137,11 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               obj2["index"] = items1.length - 1;
               store.dispatch(CommonActions.reset(obj2));
             }
-            const obj8 = require(3982) /* _createForOfIteratorHelperLoose */;
+            const obj8 = require(4016) /* _createForOfIteratorHelperLoose */;
           }
         }
       }
-      const obj6 = require(3982) /* _createForOfIteratorHelperLoose */;
+      const obj6 = require(4016) /* _createForOfIteratorHelperLoose */;
     }
   }
 };

@@ -1,8 +1,8 @@
-// Module ID: 15383
-// Function ID: 117284
-// Dependencies: [31, 1348, 653, 33, 15384, 6036, 6132, 566, 6131, 1212, 6670, 5122, 2]
+// Module ID: 15423
+// Function ID: 117443
+// Dependencies: [31, 1348, 653, 33, 15424, 6070, 6166, 566, 6165, 1212, 6706, 5156, 2]
 
-// Module 15383
+// Module 15423
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MAX_CHANNEL_NAME_LENGTH } from "ME";
@@ -14,7 +14,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const threadSettingsDraft = chatInputRef.threadSettingsDraft;
   const optional = chatInputRef.optional;
   const dependencyMap = ref;
-  let obj = chatInputRef(15384);
+  let obj = chatInputRef(15424);
   obj = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];
@@ -69,8 +69,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const stateFromStores = chatInputRef(566).useStateFromStores(items4, () => outer1_4.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    str = chatInputRef(6131).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
-    const obj4 = chatInputRef(6131);
+    str = chatInputRef(6165).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+    const obj4 = chatInputRef(6165);
   }
   const intl = chatInputRef(1212).intl;
   const string = intl.string;
@@ -80,7 +80,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   } else {
     stringResult = string(t.j3XWjD);
   }
-  obj = { defaultValue: threadSettingsDraft(5122)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult };
+  obj = { defaultValue: threadSettingsDraft(5156)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult };
   let stringResult1;
   if (!optional) {
     const intl2 = chatInputRef(1212).intl;
@@ -102,7 +102,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   obj.ref = ref;
   obj.returnKeyType = "next";
   obj.textContentType = "none";
-  return jsx(chatInputRef(6670).TextInput, { defaultValue: threadSettingsDraft(5122)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult });
+  return jsx(chatInputRef(6706).TextInput, { defaultValue: threadSettingsDraft(5156)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult });
 }));
 const result = require("ME").fileFinishedImporting("modules/threads/native/components/thread_creation/ThreadCreationTitleInput.tsx");
 

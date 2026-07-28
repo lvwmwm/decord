@@ -1,9 +1,9 @@
-// Module ID: 16615
-// Function ID: 129561
+// Module ID: 16655
+// Function ID: 129722
 // Name: AVErrorCameraSendLowFPSDefinition
-// Dependencies: [1194, 4178, 4203, 664, 16601, 8784, 16598, 2]
+// Dependencies: [1194, 4212, 4237, 664, 16641, 8828, 16638, 2]
 
-// Module 16615 (AVErrorCameraSendLowFPSDefinition)
+// Module 16655 (AVErrorCameraSendLowFPSDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -30,14 +30,14 @@ export const AVErrorCameraSendLowFPSDefinition = {
           }
         }
         if (rTCConnection.hasActiveRemoteWants()) {
-          const accumulatedStatsWithMinDatapoints = require(16601) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, store.getId());
+          const accumulatedStatsWithMinDatapoints = require(16641) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, store.getId());
           let tmp9 = null;
           if (null != accumulatedStatsWithMinDatapoints) {
             if (accumulatedStatsWithMinDatapoints.short.frameRate < 10) {
-              const obj = { type: require(8784) /* validateUniqueErrorCodes */.AVError.CAMERA_SEND_LOW_FPS, userId: store.getId() };
-              const merged = Object.assign(require(16598) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+              const obj = { type: require(8828) /* validateUniqueErrorCodes */.AVError.CAMERA_SEND_LOW_FPS, userId: store.getId() };
+              const merged = Object.assign(require(16638) /* getCommonErrorContext */.getVoiceChannelErrorContext());
               const items = [obj];
-              const obj4 = require(16598) /* getCommonErrorContext */;
+              const obj4 = require(16638) /* getCommonErrorContext */;
               const tmp10 = items;
             }
             tmp9 = tmp10;

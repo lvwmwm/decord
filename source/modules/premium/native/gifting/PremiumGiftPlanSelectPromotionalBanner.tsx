@@ -1,8 +1,8 @@
-// Module ID: 9649
-// Function ID: 75222
-// Dependencies: [31, 27, 33, 4131, 689, 6223, 9646, 4555, 5085, 4127, 1212, 9650, 2]
+// Module ID: 9689
+// Function ID: 75351
+// Dependencies: [31, 27, 33, 4165, 689, 6259, 9686, 4589, 5119, 4161, 1212, 9690, 2]
 
-// Module 9649
+// Module 9689
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,10 +33,10 @@ const memoResult = require("result").memo(function PremiumGiftPlanSelectPromotio
   ({ claimableRewards, isSelected, onLayout } = giftPlanSelectionCardBannerComponent);
   const tmp = callback3();
   const gradient = giftPlanSelectionCardBannerComponent.gradient;
-  let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(6223) /* _isNativeReflectConstruct */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
-  let obj = require(9646) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(6259) /* _isNativeReflectConstruct */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
+  let obj = require(9686) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.mobileBannerAsset);
-  let obj1 = require(9646) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj1 = require(9686) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl1 = obj1.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.avatarAsset, true);
   obj = { style: tmp.gradient, useAngle: true };
   let angle;
@@ -63,18 +63,18 @@ const memoResult = require("result").memo(function PremiumGiftPlanSelectPromotio
     obj = { style: tmp.bannerImage, resizeMode: "cover" };
     obj1 = { uri: themeAndReducedMotionAwareAssetUrl };
     obj.source = obj1;
-    tmp7 = callback(importDefault(5085), obj);
+    tmp7 = callback(importDefault(5119), obj);
   }
   const items = [tmp7, , ];
   const obj2 = { style: tmp.content };
   const obj3 = { style: tmp.heading, variant: "text-md/bold", color: "text-overlay-light" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t.OEtqpm);
-  const items1 = [callback(require(4127) /* Text */.Text, obj3), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj3), ];
   const obj4 = { style: tmp.subheading, variant: "text-md/medium", color: "text-overlay-light" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["2h5M+X"], { availableCount: claimableRewards.length });
-  items1[1] = callback(require(4127) /* Text */.Text, obj4);
+  items1[1] = callback(require(4161) /* Text */.Text, obj4);
   obj2.children = items1;
   items[1] = callback2(View, obj2);
   let tmp12Result = null != themeAndReducedMotionAwareAssetUrl1;
@@ -95,16 +95,16 @@ const memoResult = require("result").memo(function PremiumGiftPlanSelectPromotio
     items3[1] = logoLargeTilted;
     obj7.promoRotatingStyle = items3;
     obj7.rotatingAvatarImageUrl = themeAndReducedMotionAwareAssetUrl1;
-    obj6.children = callback(importDefault(9650), obj7);
+    obj6.children = callback(importDefault(9690), obj7);
     tmp12Result = callback(View, obj6);
     const tmp12 = callback;
     const tmp13 = View;
     const tmp14 = callback;
-    const tmp17 = importDefault(9650);
+    const tmp17 = importDefault(9690);
   }
   items[2] = tmp12Result;
   obj.children = items;
-  return callback2(importDefault(4555), obj);
+  return callback2(importDefault(4589), obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelectPromotionalBanner.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10355
-// Function ID: 79973
+// Module ID: 10395
+// Function ID: 80102
 // Name: apexExperiment
 // Dependencies: [1428, 477, 2]
 // Exports: isAnimatedAndroidKeyboard
 
-// Module 10355 (apexExperiment)
+// Module 10395 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-08-animated-keyboard-android", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

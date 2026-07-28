@@ -1,9 +1,9 @@
-// Module ID: 5036
-// Function ID: 43372
+// Module ID: 5070
+// Function ID: 43487
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 1350, 1838, 5037, 5038, 1883, 1902, 20, 5039, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 1350, 1838, 5071, 5072, 1883, 1902, 20, 5073, 686, 566, 2]
 
-// Module 5036 (_isNativeReflectConstruct)
+// Module 5070 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import initialize from "initialize";

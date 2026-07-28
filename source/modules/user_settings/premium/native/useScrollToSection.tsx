@@ -1,10 +1,10 @@
-// Module ID: 12402
-// Function ID: 96271
+// Module ID: 12445
+// Function ID: 96441
 // Name: useScrollToSection
 // Dependencies: [31, 2]
 // Exports: default
 
-// Module 12402 (useScrollToSection)
+// Module 12445 (useScrollToSection)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/useScrollToSection.tsx");

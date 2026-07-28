@@ -1,10 +1,10 @@
-// Module ID: 14798
-// Function ID: 112878
+// Module ID: 14842
+// Function ID: 113051
 // Name: trackRegTransition
-// Dependencies: [31, 4116, 8291, 14790, 14791, 653, 33, 675, 14788, 5094, 2]
+// Dependencies: [31, 4150, 8329, 14834, 14835, 653, 33, 675, 14832, 5128, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 14798 (trackRegTransition)
+// Module 14842 (trackRegTransition)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -162,7 +162,7 @@ export function getTrackRegTransition(closure_0) {
 export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
   let dependencyMap;
   let importDefault;
-  _require = React.useContext(_require(14788).TrackRegistrationContext);
+  _require = React.useContext(_require(14832).TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
   let obj = {};
   const merged = Object.assign(arg0);
@@ -174,7 +174,7 @@ export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
       callback2();
     }
   };
-  return jsx(_require(5094).HeaderBackButton, {});
+  return jsx(_require(5128).HeaderBackButton, {});
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

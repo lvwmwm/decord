@@ -1,9 +1,9 @@
-// Module ID: 5965
-// Function ID: 53083
+// Module ID: 5999
+// Function ID: 53202
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 5965 (enforcing)
+// Module 5999 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAdsModule");

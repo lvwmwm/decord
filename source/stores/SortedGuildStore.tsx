@@ -1,9 +1,9 @@
-// Module ID: 4971
-// Function ID: 42719
+// Module ID: 5005
+// Function ID: 42834
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3949, 3760, 1316, 4972, 4470, 1918, 1838, 1196, 4326, 1850, 4973, 636, 44, 1327, 1917, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3983, 3794, 1316, 5006, 4504, 1918, 1838, 1196, 4360, 1850, 5007, 636, 44, 1327, 1917, 2]
 
-// Module 4971 (_isNativeReflectConstruct)
+// Module 5005 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import randomFolderId from "randomFolderId";
@@ -141,12 +141,12 @@ function insertUnsortedGuilds(arg0, arg1) {
 function convertNodeToGuildFolder(type) {
   let children;
   type = type.type;
-  if (require(4973) /* randomFolderId */.GuildsNodeType.FOLDER === type) {
+  if (require(5007) /* randomFolderId */.GuildsNodeType.FOLDER === type) {
     let obj = {};
     ({ id: obj2.folderId, name: obj2.folderName, color: obj2.folderColor, expanded: obj2.expanded, children } = type);
     obj.guildIds = children.map((id) => id.id);
     return obj;
-  } else if (require(4973) /* randomFolderId */.GuildsNodeType.GUILD === type) {
+  } else if (require(5007) /* randomFolderId */.GuildsNodeType.GUILD === type) {
     obj = { folderId: undefined };
     const items = [type.id];
     obj.guildIds = items;
@@ -160,7 +160,7 @@ function rebuildTree(arg0, arg1) {
   let done;
   let iter5;
   let iter9;
-  let guildsTree = new require(4973) /* randomFolderId */.GuildsTree();
+  let guildsTree = new require(5007) /* randomFolderId */.GuildsTree();
   if (0 === arg0.length) {
     if (arg1.length > 0) {
       const tmp19 = _createForOfIteratorHelperLoose(arg1);
@@ -170,7 +170,7 @@ function rebuildTree(arg0, arg1) {
           let tmp20 = guildsTree;
           let tmp21 = require;
           let tmp22 = dependencyMap;
-          let obj3 = require(4973) /* randomFolderId */;
+          let obj3 = require(5007) /* randomFolderId */;
           let addNodeResult = guildsTree.addNode(obj3.createGuildNode(iter6.value));
           let iter7 = tmp19();
           iter6 = iter7;
@@ -185,7 +185,7 @@ function rebuildTree(arg0, arg1) {
         let value = iter8.value;
         let tmp28 = require;
         let tmp29 = dependencyMap;
-        let tmp30 = value.type === require(4973) /* randomFolderId */.GuildsNodeType.GUILD;
+        let tmp30 = value.type === require(5007) /* randomFolderId */.GuildsNodeType.GUILD;
         if (tmp30) {
           let tmp31 = closure_9;
           let isLurkingResult = closure_9.isLurking(value.id);
@@ -218,7 +218,7 @@ function rebuildTree(arg0, arg1) {
       let element = values[num];
       let tmp41 = require;
       let tmp42 = dependencyMap;
-      let tmp43 = element.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER && 0 === element.children.length;
+      let tmp43 = element.type === require(5007) /* randomFolderId */.GuildsNodeType.FOLDER && 0 === element.children.length;
       if (tmp43) {
         let tmp44 = guildsTree;
         let removeNodeResult1 = guildsTree.removeNode(element);
@@ -248,7 +248,7 @@ function rebuildTree(arg0, arg1) {
           let tmp14 = guildsTree;
           let tmp15 = require;
           let tmp16 = dependencyMap;
-          let obj2 = require(4973) /* randomFolderId */;
+          let obj2 = require(5007) /* randomFolderId */;
           let addNodeResult1 = guildsTree.addNode(obj2.createGuildNode(value.guildIds[0]));
           tmp7 = tmp4;
           tmp8 = tmp5;
@@ -256,7 +256,7 @@ function rebuildTree(arg0, arg1) {
         } else {
           let tmp54 = require;
           let tmp55 = dependencyMap;
-          let obj4 = require(4973) /* randomFolderId */;
+          let obj4 = require(5007) /* randomFolderId */;
           let tmp56 = closure_11;
           let folderNode = obj4.createFolderNode(value, undefined, closure_11.isFolderExpanded(value.folderId));
           let tmp58 = guildsTree;
@@ -272,7 +272,7 @@ function rebuildTree(arg0, arg1) {
             let tmp10 = guildsTree;
             let tmp11 = require;
             let tmp12 = dependencyMap;
-            let obj = require(4973) /* randomFolderId */;
+            let obj = require(5007) /* randomFolderId */;
             let addNodeResult3 = guildsTree.addNode(obj.createGuildNode(iter4.value), folderNode);
             let iter3 = tmp61();
             iter4 = iter3;
@@ -336,7 +336,7 @@ function handleMoveById(sourceId) {
     if (null != node1) {
       let tmp5 = combine;
       if (combine) {
-        tmp5 = node.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER;
+        tmp5 = node.type === require(5007) /* randomFolderId */.GuildsNodeType.FOLDER;
       }
       const _HermesInternal = HermesInternal;
       importDefault(44)(!tmp5, "[SORTED GUILDS] Can't combine a folder " + node.id + " with another guilds list item");
@@ -352,10 +352,10 @@ function handleMoveById(sourceId) {
       const tmp13 = !tmp12;
       const tmp17 = importDefault(44);
       const _HermesInternal3 = HermesInternal;
-      tmp17(!(node.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER && null != node1.parentId), "[SORTED GUILDS] Can't move a folder " + node.id + " to inside of another folder " + node1.parentId);
+      tmp17(!(node.type === require(5007) /* randomFolderId */.GuildsNodeType.FOLDER && null != node1.parentId), "[SORTED GUILDS] Can't move a folder " + node.id + " to inside of another folder " + node1.parentId);
       if (combine) {
         let convertToFolderResult = node1;
-        if (node1.type !== require(4973) /* randomFolderId */.GuildsNodeType.FOLDER) {
+        if (node1.type !== require(5007) /* randomFolderId */.GuildsNodeType.FOLDER) {
           convertToFolderResult = guildsTree.convertToFolder(node1);
         }
         guildsTree.moveInto(node, convertToFolderResult, moveToBelow);
@@ -451,7 +451,7 @@ function handleGuildFolderDeleteLocal(targetId) {
   const element = guildsTree.getNode(targetId.targetId);
   let tmp = null != element;
   if (tmp) {
-    const tmp4 = element.type === element(4973).GuildsNodeType.FOLDER;
+    const tmp4 = element.type === element(5007).GuildsNodeType.FOLDER;
     if (tmp4) {
       const children = element.children;
       const mapped = children.map((id) => id.id);
@@ -499,7 +499,7 @@ function handleGuildFolderExpand(folderId) {
   const node = guildsTree.getNode(folderId);
   const isFolderExpandedResult = closure_11.isFolderExpanded(folderId);
   if (null != node) {
-    if (node.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER) {
+    if (node.type === require(5007) /* randomFolderId */.GuildsNodeType.FOLDER) {
       if (node.expanded !== isFolderExpandedResult) {
         setNodeExpanded(node, isFolderExpandedResult);
       }
@@ -511,7 +511,7 @@ function handleFolderExpanded(expanded) {
   expanded = expanded.expanded;
   const node = guildsTree.getNode(expanded.folderId);
   if (null != node) {
-    if (node.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER) {
+    if (node.type === require(5007) /* randomFolderId */.GuildsNodeType.FOLDER) {
       if (node.expanded !== expanded) {
         setNodeExpanded(node, expanded);
       }
@@ -528,7 +528,7 @@ function handleCollapseAll() {
       let value = iter.value;
       let tmp2 = require;
       let tmp3 = dependencyMap;
-      let tmp4 = value.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER && value.expanded;
+      let tmp4 = value.type === require(5007) /* randomFolderId */.GuildsNodeType.FOLDER && value.expanded;
       if (tmp4) {
         let tmp5 = setNodeExpanded;
         let tmp6 = setNodeExpanded(value, false);

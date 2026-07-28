@@ -1,10 +1,10 @@
-// Module ID: 15512
-// Function ID: 119255
+// Module ID: 15551
+// Function ID: 119411
 // Name: useOnMessageSend
 // Dependencies: [31, 653, 686, 2]
 // Exports: default
 
-// Module 15512 (useOnMessageSend)
+// Module 15551 (useOnMessageSend)
 import result from "result";
 import { MessageStates } from "ME";
 

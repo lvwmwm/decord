@@ -1,10 +1,10 @@
-// Module ID: 9477
-// Function ID: 73893
+// Module ID: 9517
+// Function ID: 74021
 // Name: trackOpen
-// Dependencies: [31, 9455, 653, 33, 1212, 675, 9478, 9458, 4099, 9480, 1935, 2]
+// Dependencies: [31, 9495, 653, 33, 1212, 675, 9518, 9498, 4133, 9520, 1935, 2]
 // Exports: default
 
-// Module 9477 (trackOpen)
+// Module 9517 (trackOpen)
 import "result";
 import { NotificationUserFeedbackReasons as closure_3 } from "NotificationUserFeedbackReasons";
 import { AnalyticEvents } from "ME";
@@ -47,8 +47,7 @@ export default function NotificationSurveyActionSheet(arg0) {
     let reason;
     ({ rating, reason } = arg0);
     if (null != rating) {
-      let obj = outer1_1(outer1_2[5]);
-      obj = {};
+      let obj = {};
       let value = null;
       if (null != reason) {
         value = reason.value;
@@ -58,15 +57,17 @@ export default function NotificationSurveyActionSheet(arg0) {
       obj.notification_type = closure_0;
       obj.location = closure_1;
       obj.message_id = closure_2;
-      obj.track(outer1_4.NOTIFICATION_REPORT_SUBMITTED, obj);
+      outer1_1(outer1_2[5]).track(outer1_4.NOTIFICATION_REPORT_SUBMITTED, obj);
+      obj = outer1_0(outer1_2[7]);
+      obj.handleSurveyCleanup();
+      const obj4 = outer1_1(outer1_2[5]);
+      obj = {};
+      const obj2 = outer1_1(outer1_2[8]);
+      const intl = outer1_0(outer1_2[4]).intl;
+      obj.header = intl.string(outer1_0(outer1_2[4]).t.wGioO1);
+      obj2.openLazy(outer1_0(outer1_2[10])(outer1_2[9], outer1_2.paths), "UserFeedbackSurvey", obj);
+      const tmp10 = outer1_0(outer1_2[10])(outer1_2[9], outer1_2.paths);
     }
-    outer1_0(outer1_2[7]).handleSurveyCleanup();
-    const obj3 = outer1_0(outer1_2[7]);
-    obj = {};
-    const obj4 = outer1_1(outer1_2[8]);
-    const intl = outer1_0(outer1_2[4]).intl;
-    obj.header = intl.string(outer1_0(outer1_2[4]).t.wGioO1);
-    obj4.openLazy(outer1_0(outer1_2[10])(outer1_2[9], outer1_2.paths), "UserFeedbackSurvey", obj);
   };
-  return jsx(importDefault(9478), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true });
+  return jsx(importDefault(9518), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true });
 };

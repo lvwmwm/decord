@@ -1,10 +1,10 @@
-// Module ID: 15871
-// Function ID: 122526
+// Module ID: 15910
+// Function ID: 122682
 // Name: useConsoleVoiceUpsellStore
 // Dependencies: [621, 682, 2]
 // Exports: setShowConsoleVoiceSparkles, setVoiceUpsellDismissed
 
-// Module 15871 (useConsoleVoiceUpsellStore)
+// Module 15910 (useConsoleVoiceUpsellStore)
 import keys from "keys";
 
 let closure_2 = Object.freeze({ voiceUpsellDismissed: false, showSparkles: false });

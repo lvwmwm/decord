@@ -1,9 +1,9 @@
-// Module ID: 6217
-// Function ID: 55906
+// Module ID: 6253
+// Function ID: 56022
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 6213, 1284, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 6248, 1284, 2]
 
-// Module 6217 (_isNativeReflectConstruct)
+// Module 6253 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _callSuper from "_callSuper";
 import module_1284 from "module_1284";

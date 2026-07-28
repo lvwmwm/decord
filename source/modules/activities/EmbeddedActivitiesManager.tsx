@@ -1,10 +1,10 @@
-// Module ID: 10568
-// Function ID: 82345
+// Module ID: 10606
+// Function ID: 82466
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 5, 4144, 1352, 1194, 1348, 4203, 1907, 1850, 10569, 1347, 653, 7956, 477, 507, 3749, 10570, 10565, 675, 10571, 10576, 10575, 4324, 491, 1832, 5677, 10402, 5661, 10577, 5463, 10471, 1212, 10543, 5668, 10579, 10581, 1882, 5482, 1207, 686, 4531, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 4178, 1352, 1194, 1348, 4237, 1907, 1850, 10607, 1347, 653, 7993, 477, 507, 3783, 10608, 10603, 675, 10609, 10614, 10613, 4358, 491, 1832, 5687, 10442, 5671, 10615, 5498, 10509, 1212, 10581, 5678, 10617, 10619, 1882, 5517, 1207, 686, 4565, 2]
 // Exports: getActiveAnalyticsSessionIDs, trackFrameSessionEnd, trackFrameSessionStart
 
-// Module 10568 (_createForOfIteratorHelperLoose)
+// Module 10606 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_5 from "ME";
@@ -124,8 +124,8 @@ function getShelfItemTrackingProperties(activity) {
     activity = activity.activity;
     if (null != activity) {
       const obj2 = require(477) /* set */;
-      release_phase = activity.client_platform_config[importDefault(7956)(undefined, obj2.getOS(obj2))].release_phase;
-      const tmp4 = importDefault(7956);
+      release_phase = activity.client_platform_config[importDefault(7993)(undefined, obj2.getOS(obj2))].release_phase;
+      const tmp4 = importDefault(7993);
     }
   }
   obj.releasePhase = release_phase;
@@ -188,15 +188,15 @@ function handleOpenEmbeddedActivity(applicationId) {
   let participants;
   applicationId = applicationId.applicationId;
   ({ isStart, participants, embeddedActivity, location: _location, inviterUserId } = applicationId);
-  let obj = applicationId(10571);
+  let obj = applicationId(10609);
   obj.leaveCurrentFrame();
-  let obj1 = applicationId(10576);
+  let obj1 = applicationId(10614);
   if (obj1.tryLaunchAsFrame({ applicationId })) {
     obj = { isStart, inviterUserId };
-    const obj15 = applicationId(10575);
-    obj.channelId = applicationId(3749).getEmbeddedActivityLocationChannelId(_location);
-    const obj17 = applicationId(3749);
-    obj.guildId = applicationId(3749).getEmbeddedActivityLocationGuildId(_location);
+    const obj15 = applicationId(10613);
+    obj.channelId = applicationId(3783).getEmbeddedActivityLocationChannelId(_location);
+    const obj17 = applicationId(3783);
+    obj.guildId = applicationId(3783).getEmbeddedActivityLocationGuildId(_location);
     obj.locationKind = _location.kind;
     ({ launchId: obj16.launchId, compositeInstanceId: obj16.compositeInstanceId } = embeddedActivity);
     let num12 = 1;
@@ -205,13 +205,13 @@ function handleOpenEmbeddedActivity(applicationId) {
     }
     obj.activitiesInfraVersion = num12;
     const result = obj15.stashPendingFrameLaunch(applicationId, obj);
-    const obj18 = applicationId(3749);
+    const obj18 = applicationId(3783);
   } else {
     const importDefault = id.getId();
     const found = participants.find((userId) => userId.userId === closure_1);
-    let obj2 = applicationId(3749);
+    let obj2 = applicationId(3783);
     const embeddedActivityLocationChannelId = obj2.getEmbeddedActivityLocationChannelId(_location);
-    let obj3 = applicationId(3749);
+    let obj3 = applicationId(3783);
     const embeddedActivityLocationGuildId = obj3.getEmbeddedActivityLocationGuildId(_location);
     const channel = store.getChannel(embeddedActivityLocationChannelId);
     let isFirstActivityInChannel = isStart;
@@ -228,8 +228,8 @@ function handleOpenEmbeddedActivity(applicationId) {
       isFirstActivityInChannel = null == found;
     }
     if (isFirstActivityInChannel) {
-      const participant = importDefault(4324).selectParticipant(channel.id, null);
-      const obj6 = importDefault(4324);
+      const participant = importDefault(4358).selectParticipant(channel.id, null);
+      const obj6 = importDefault(4358);
     }
     if (null != found) {
       const mediaSessionId = store2.getMediaSessionId();
@@ -261,9 +261,9 @@ function handleOpenEmbeddedActivity(applicationId) {
             const shelfActivities = store4.getShelfActivities(embeddedActivityLocationGuildId);
             const shelfOrder = store3.getState().shelfOrder;
             obj = { applicationId, activityConfigs: shelfActivities };
-            const tmp65 = importDefault(10570)(obj);
+            const tmp65 = importDefault(10608)(obj);
             const sum = 1 + shelfOrder.findIndex((arg0) => arg0 === applicationId);
-            const rawThermalState = importDefault(10565).getRawThermalState();
+            const rawThermalState = importDefault(10603).getRawThermalState();
             if (null != mediaSessionId) {
               const items = [mediaSessionId];
               let items1 = items;
@@ -272,7 +272,7 @@ function handleOpenEmbeddedActivity(applicationId) {
             }
             obj1 = { activitySessionId: compositeInstanceId, activityUserSessionId: v4Result, launchId: embeddedActivity.launchId, mediaSessionIds: items1, activitiesInfraVersion: num5 };
             closure_23[applicationId] = obj1;
-            const obj20 = importDefault(10565);
+            const obj20 = importDefault(10603);
             let isNullOrEmptyResult = applicationId(1832).isNullOrEmpty(found.nonce);
             if (!isNullOrEmptyResult) {
               let nonce;
@@ -323,8 +323,8 @@ function handleOpenEmbeddedActivity(applicationId) {
             obj2.source = source;
             let commandContextType = null;
             if (null != channel) {
-              commandContextType = applicationId(5677).computeCommandContextType(channel, applicationId);
-              const obj12 = applicationId(5677);
+              commandContextType = applicationId(5687).computeCommandContextType(channel, applicationId);
+              const obj12 = applicationId(5687);
             }
             obj2.command_context_type = commandContextType;
             obj2.invite_inviter_id = inviterUserId;
@@ -396,7 +396,7 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
   let launchId;
   let locationKind;
   const _require = applicationId;
-  let obj = _require(10575);
+  let obj = _require(10613);
   const result = obj.consumePendingFrameLaunch(applicationId);
   if (null != result) {
     ({ isStart, channelId, guildId, locationKind, launchId, compositeInstanceId, activitiesInfraVersion } = result);
@@ -425,10 +425,10 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
       const shelfActivities = store4.getShelfActivities(guildId);
       const shelfOrder = store3.getState().shelfOrder;
       obj = { applicationId, activityConfigs: shelfActivities };
-      const tmp15 = importDefault(10570)(obj);
+      const tmp15 = importDefault(10608)(obj);
       const sum = 1 + shelfOrder.findIndex((arg0) => arg0 === closure_0);
-      const rawThermalState = importDefault(10565).getRawThermalState();
-      const obj5 = importDefault(10565);
+      const rawThermalState = importDefault(10603).getRawThermalState();
+      const obj5 = importDefault(10603);
       obj1 = { channel_id: channelId, guild_id: guildId, media_session_id: items1[0], activity_session_id: compositeInstanceId, application_id: applicationId };
       let locations;
       if (null != dependencyMap2[applicationId]) {
@@ -470,8 +470,8 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
       obj1.source = source;
       let commandContextType = null;
       if (null != channel) {
-        commandContextType = _require(5677).computeCommandContextType(channel, applicationId);
-        const obj8 = _require(5677);
+        commandContextType = _require(5687).computeCommandContextType(channel, applicationId);
+        const obj8 = _require(5687);
       }
       obj1.command_context_type = commandContextType;
       obj1.invite_inviter_id = result.inviterUserId;
@@ -545,14 +545,14 @@ export const trackFrameSessionEnd = function trackFrameSessionEnd(applicationId)
       }
       const shelfActivities = store4.getShelfActivities(tmp6);
       let obj = { applicationId, activityConfigs: shelfActivities };
-      const tmp13 = importDefault(10570)(obj);
-      const rawThermalState = importDefault(10565).getRawThermalState();
+      const tmp13 = importDefault(10608)(obj);
+      const rawThermalState = importDefault(10603).getRawThermalState();
       let diff = null;
       if (null != tmp3.connectedSince) {
         const _Date = Date;
         diff = Date.now() - tmp3.connectedSince;
       }
-      const obj2 = importDefault(10565);
+      const obj2 = importDefault(10603);
       obj = { channel_id: tmp5, guild_id: tmp6, media_session_id: tmp3.mediaSessionIds[0], activity_session_id: tmp3.activitySessionId, application_id: applicationId, duration_ms: diff, user_premium_tier: currentUser.premiumType, raw_thermal_state: rawThermalState, release_phase: getShelfItemTrackingProperties(tmp13).releasePhase };
       let shelf_rank;
       if (null != tmp13) {

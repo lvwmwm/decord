@@ -1,10 +1,10 @@
-// Module ID: 9085
-// Function ID: 71473
+// Module ID: 9129
+// Function ID: 71624
 // Name: ClipboardListIcon
-// Dependencies: [31, 33, 689, 3834, 9086, 2]
+// Dependencies: [31, 33, 689, 3868, 9130, 2]
 // Exports: ClipboardListIcon
 
-// Module 9085 (ClipboardListIcon)
+// Module 9129 (ClipboardListIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ClipboardListIcon = function ClipboardListIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9086) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9130) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9086) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9130) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

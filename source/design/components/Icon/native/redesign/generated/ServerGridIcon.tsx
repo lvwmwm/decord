@@ -1,10 +1,10 @@
-// Module ID: 6584
-// Function ID: 58401
+// Module ID: 6620
+// Function ID: 58490
 // Name: ServerGridIcon
-// Dependencies: [31, 33, 689, 3834, 6585, 2]
+// Dependencies: [31, 33, 689, 3868, 6621, 2]
 // Exports: ServerGridIcon
 
-// Module 6584 (ServerGridIcon)
+// Module 6620 (ServerGridIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ServerGridIcon = function ServerGridIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(6585) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6621) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6585) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6621) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

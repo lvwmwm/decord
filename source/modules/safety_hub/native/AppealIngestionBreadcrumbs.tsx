@@ -1,10 +1,10 @@
-// Module ID: 11034
-// Function ID: 85829
+// Module ID: 11072
+// Function ID: 85952
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
 // Exports: default
 
-// Module 11034 (AppealIngestionBreadcrumbs)
+// Module 11072 (AppealIngestionBreadcrumbs)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export default function AppealIngestionBreadcrumbs(reasons) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.eQg0Ck);
     let items = [
-      callback(require(4127) /* Text */.Text, obj),
+      callback(require(4161) /* Text */.Text, obj),
       reasons.map((children) => {
           let obj = { style: tmp.breadCrumbItemContainer };
           obj = { style: tmp.breadCrumbBar };

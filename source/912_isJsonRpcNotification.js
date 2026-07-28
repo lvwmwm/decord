@@ -1,5 +1,5 @@
 // Module ID: 912
-// Function ID: 10006
+// Function ID: 10010
 // Name: isJsonRpcNotification
 // Dependencies: [800, 801]
 

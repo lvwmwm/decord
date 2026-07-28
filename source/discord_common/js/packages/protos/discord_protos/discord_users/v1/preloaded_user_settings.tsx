@@ -1,5 +1,5 @@
 // Module ID: 1282
-// Function ID: 14502
+// Function ID: 14506
 // Name: _callSuper
 // Dependencies: [57, 6, 7, 15, 17, 18, 1283, 1284, 1312, 1313, 2]
 
@@ -213,15 +213,21 @@ let tmp2 = ((MessageType) => {
   let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
-    value(pos) {
+    value(pos, arg1, binaryReadOptionsResult2) {
       let obj = arg3;
       const self = this;
       if (null == arg3) {
         obj = self.create();
       }
-      if (pos.pos < pos.pos + arg1) {
-        [r10026, r10027] = outer1_2(pos.tag(), 2);
-        const tmp3 = outer1_2(pos.tag(), 2);
+      const sum = pos.pos + arg1;
+      if (pos.pos < sum) {
+        obj.appVersionSettings = outer1_81.internalBinaryRead(pos, pos.uint32(), binaryReadOptionsResult2, obj.appVersionSettings);
+        while (true) {
+          do {
+            let tmp3 = tmp9;
+            let tmp4 = tmp10;
+          } while (pos.pos >= sum);
+        }
       }
       return obj;
     }

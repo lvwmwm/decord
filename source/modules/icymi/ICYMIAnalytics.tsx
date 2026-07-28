@@ -1,9 +1,9 @@
-// Module ID: 8132
-// Function ID: 64880
+// Module ID: 8170
+// Function ID: 64990
 // Name: listItemToType
-// Dependencies: [8108, 653, 7848, 6104, 675, 2]
+// Dependencies: [8146, 653, 7884, 6138, 675, 2]
 
-// Module 8132 (listItemToType)
+// Module 8170 (listItemToType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -27,7 +27,7 @@ function listItemToType(data) {
       return "guild_event";
     } else if ("contentInventory" === kind) {
       let str8 = "hotwheels_gaming_activity";
-      if (data.data.content.content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS) {
+      if (data.data.content.content_type === require(7884) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS) {
         str8 = "hotwheels_custom_status";
       }
       return str8;
@@ -44,19 +44,19 @@ function listItemToType(data) {
 }
 function dehydratedItemToType(type) {
   type = type.type;
-  if (require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE === type) {
+  if (require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE === type) {
     let str5 = "message";
     if (type.data.channel_type === constants.GUILD_ANNOUNCEMENT) {
       str5 = "announcement";
     }
     return str5;
-  } else if (require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.ACTIVITY === type) {
+  } else if (require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.ACTIVITY === type) {
     return "hotwheels_gaming_activity";
-  } else if (require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS === type) {
+  } else if (require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS === type) {
     return "hotwheels_custom_status";
-  } else if (require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT === type) {
+  } else if (require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT === type) {
     return "guild_event";
-  } else if (require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+  } else if (require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
     return "recommended_guilds";
   }
 }

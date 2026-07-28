@@ -1,10 +1,10 @@
-// Module ID: 11875
-// Function ID: 91934
+// Module ID: 11918
+// Function ID: 92104
 // Name: GameProfileReportButton
-// Dependencies: [31, 33, 4099, 8418, 4338, 11876, 1935, 11876, 4544, 1212, 2]
+// Dependencies: [31, 33, 4133, 8462, 4372, 11919, 1935, 11919, 4578, 1212, 2]
 // Exports: default
 
-// Module 11875 (GameProfileReportButton)
+// Module 11918 (GameProfileReportButton)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -27,5 +27,5 @@ export default function GameProfileReportButton(applicationId) {
   const intl = applicationId(1212).intl;
   obj.text = intl.string(applicationId(1212).t.qP2cXd);
   obj.onPress = callback;
-  return jsx(applicationId(4544).Button, { variant: "secondary", size: "md" });
+  return jsx(applicationId(4578).Button, { variant: "secondary", size: "md" });
 };

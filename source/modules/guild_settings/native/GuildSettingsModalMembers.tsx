@@ -1,11 +1,11 @@
-// Module ID: 15368
-// Function ID: 117139
+// Module ID: 15408
+// Function ID: 117298
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1194, 4052, 1918, 1911, 1838, 3759, 1850, 8243, 653, 33, 6111, 4131, 689, 1456, 10146, 4320, 3970, 1212, 10141, 1557, 566, 6010, 8215, 9231, 15369, 6695, 8272, 5049, 8242, 21, 3844, 9171, 6619, 1273, 8307, 5448, 2]
+// Dependencies: [57, 31, 27, 1194, 4086, 1918, 1911, 1838, 3793, 1850, 8281, 653, 33, 6145, 4165, 689, 1456, 10186, 4354, 4004, 1212, 10181, 1557, 566, 6044, 8253, 9275, 15409, 6731, 8310, 5083, 8280, 21, 3878, 9215, 6655, 1273, 8345, 5483, 2]
 
-// Module 15368 (_createForOfIteratorHelperLoose)
+// Module 15408 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_8242";
+import importAllResult from "module_8280";
 import { View } from "showMembersManagementActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -135,11 +135,11 @@ let closure_20 = importAllResult.memo((guild) => {
     let formatToPlainStringResult;
     if (found.length > 0) {
       user = user.getUser(guildMember.userId);
-      let obj1 = guildMember(4320);
+      let obj1 = guildMember(4354);
       let nickname = obj1.getNickname(guild.id, undefined, user);
       if (null == nickname) {
-        nickname = guildMember(3970).getGlobalName(user);
-        const obj3 = guildMember(3970);
+        nickname = guildMember(4004).getGlobalName(user);
+        const obj3 = guildMember(4004);
       }
       if (null == nickname) {
         let username;
@@ -172,7 +172,7 @@ let closure_20 = importAllResult.memo((guild) => {
     obj.arrow = true;
     obj.start = start;
     obj.end = end;
-    return callback(guildMember(10141), obj);
+    return callback(guildMember(10181), obj);
   }
   tmp = callback2();
 });

@@ -1,9 +1,9 @@
-// Module ID: 5078
-// Function ID: 44199
+// Module ID: 5112
+// Function ID: 44314
 // Name: AutomaticLifecycleManager
 // Dependencies: [6, 7, 686, 2]
 
-// Module 5078 (AutomaticLifecycleManager)
+// Module 5112 (AutomaticLifecycleManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

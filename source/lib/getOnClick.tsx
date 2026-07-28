@@ -1,10 +1,10 @@
-// Module ID: 8145
-// Function ID: 64987
+// Module ID: 8183
+// Function ID: 65097
 // Name: openInviteModal
-// Dependencies: [57, 5, 4168, 5751, 5611, 1194, 1918, 1838, 4116, 4350, 1907, 3948, 4971, 653, 655, 5612, 686, 4117, 6636, 8146, 1935, 5049, 5626, 8155, 4115, 4120, 5922, 3822, 675, 10546, 11074, 12213, 5668, 4141, 10581, 12217, 9692, 10429, 1443, 10898, 4982, 12218, 5769, 4325, 4322, 12219, 12221, 2]
+// Dependencies: [57, 5, 4202, 5761, 5646, 1194, 1918, 1838, 4150, 4384, 1907, 3982, 5005, 653, 655, 5647, 686, 4151, 6672, 8184, 1935, 5083, 5661, 8193, 4149, 4154, 5956, 3856, 675, 10584, 11112, 12256, 5678, 4175, 10619, 12260, 9732, 10469, 1443, 10936, 5016, 12261, 5779, 4359, 4356, 12262, 12264, 2]
 // Exports: default
 
-// Module 8145 (openInviteModal)
+// Module 8183 (openInviteModal)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -127,7 +127,7 @@ export default function getOnClick(outer1_0) {
   let c3;
   pathname = undefined;
   let obj;
-  obj = _require(4115);
+  obj = _require(4149);
   const findCodedLinkResult = obj.findCodedLink(outer1_0);
   c3 = findCodedLinkResult;
   if (null != findCodedLinkResult) {
@@ -175,7 +175,7 @@ export default function getOnClick(outer1_0) {
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
         if (null != preventDefault) {
           preventDefault.preventDefault();
@@ -287,7 +287,7 @@ export default function getOnClick(outer1_0) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
         if (null != preventDefault) {
           preventDefault.preventDefault();
@@ -303,7 +303,7 @@ export default function getOnClick(outer1_0) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
         if (null != preventDefault) {
           preventDefault.preventDefault();
@@ -316,7 +316,7 @@ export default function getOnClick(outer1_0) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
         if (null != preventDefault) {
           preventDefault.preventDefault();
@@ -329,7 +329,7 @@ export default function getOnClick(outer1_0) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.QUESTS_EMBED) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.QUESTS_EMBED) {
       if (obj2.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (null != preventDefault) {
@@ -375,11 +375,11 @@ export default function getOnClick(outer1_0) {
           return true;
         };
       }
-      obj2 = _require(10429);
+      obj2 = _require(10469);
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
         if (null != preventDefault) {
           preventDefault.preventDefault();
@@ -465,7 +465,7 @@ export default function getOnClick(outer1_0) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4120).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === _require(4154).CodedLinkType.APP_OAUTH2_LINK) {
       let fn = (preventDefault) => {
         if (null != preventDefault) {
           preventDefault.preventDefault();
@@ -480,7 +480,7 @@ export default function getOnClick(outer1_0) {
     return fn;
   }
   const obj5 = importDefault(1443);
-  let result = _require(4322).tryParseEventDetailsPath(pathname);
+  let result = _require(4356).tryParseEventDetailsPath(pathname);
   if (!tmp.skipExtensionCheck) {
     if (null != obj9.isSuspiciousDownload(outer1_0)) {
       fn = (preventDefault) => {
@@ -491,6 +491,6 @@ export default function getOnClick(outer1_0) {
         return true;
       };
     }
-    obj9 = _require(12219);
+    obj9 = _require(12262);
   }
 };

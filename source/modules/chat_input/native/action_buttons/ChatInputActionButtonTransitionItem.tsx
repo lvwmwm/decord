@@ -1,10 +1,10 @@
-// Module ID: 11344
-// Function ID: 88144
+// Module ID: 11382
+// Function ID: 88263
 // Name: interactivityProps
-// Dependencies: [31, 27, 11093, 33, 4477, 3992, 4132, 11345, 2]
+// Dependencies: [31, 27, 11131, 33, 4511, 4026, 4166, 11383, 2]
 // Exports: default
 
-// Module 11344 (interactivityProps)
+// Module 11382 (interactivityProps)
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta";
@@ -81,14 +81,14 @@ function BounceTransitionItem(state) {
   let isInteractive;
   state = state.state;
   ({ cleanup, bounceEnterDelayMs, children } = state);
-  let obj = { visible: state !== require(4477) /* _createForOfIteratorHelperLoose */.TransitionStates.YEETED, initiallyVisible: state !== require(4477) /* _createForOfIteratorHelperLoose */.TransitionStates.ENTERED, enterDelayMs: bounceEnterDelayMs, onExitComplete: cleanup, interactiveDuringEnter: true };
-  const tmp = importDefault(11345);
-  ({ animatedStyle, isInteractive } = importDefault(11345)(obj));
+  let obj = { visible: state !== require(4511) /* _createForOfIteratorHelperLoose */.TransitionStates.YEETED, initiallyVisible: state !== require(4511) /* _createForOfIteratorHelperLoose */.TransitionStates.ENTERED, enterDelayMs: bounceEnterDelayMs, onExitComplete: cleanup, interactiveDuringEnter: true };
+  const tmp = importDefault(11383);
+  ({ animatedStyle, isInteractive } = importDefault(11383)(obj));
   obj = { style: items };
   items = [closure_6.transitionItemCentered, animatedStyle];
   const merged = Object.assign(interactivityProps(isInteractive));
   obj["children"] = children;
-  return jsx(importDefault(3992).View, { style: items });
+  return jsx(importDefault(4026).View, { style: items });
 }
 const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };

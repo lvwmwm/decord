@@ -1,8 +1,8 @@
-// Module ID: 14895
-// Function ID: 113658
-// Dependencies: [31, 3948, 653, 33, 14882, 10922, 566, 14874, 3992, 4100, 5049, 1212, 14881, 11930, 2]
+// Module ID: 14939
+// Function ID: 113831
+// Dependencies: [31, 3982, 653, 33, 14926, 10960, 566, 14918, 4026, 4134, 5083, 1212, 14925, 11973, 2]
 
-// Module 14895
+// Module 14939
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -16,8 +16,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   let onAccessibilityAction;
   id = id.id;
   ({ expanded, childNodes } = id);
-  let obj = id(14882);
-  importDefault = importDefault(10922)();
+  let obj = id(14926);
+  importDefault = importDefault(10960)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [_isNativeReflectConstruct];
   const items1 = [id];
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   ({ accessibilityActions, onAccessibilityAction } = memo);
   const obj2 = id(566);
   const items2 = [id];
-  const sharedValue = id(3992).useSharedValue("" + id);
+  const sharedValue = id(4026).useSharedValue("" + id);
   const memo1 = importAllResult.useMemo(() => ({
     onPress() {
       const result = id(outer2_2[9]).triggerHapticFeedback(id(outer2_2[9]).HapticFeedbackTypes.IMPACT_LIGHT);
@@ -55,7 +55,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
     }
   }), items2);
   obj = {};
-  const obj3 = id(3992);
+  const obj3 = id(4026);
   const tmp6 = jsx;
   obj.id = "" + id;
   obj.accessibilityActions = accessibilityActions;
@@ -74,11 +74,11 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   let tmp8 = null;
   if (expanded) {
     obj = { folderId: id, totalItems: childNodes.length };
-    tmp8 = jsx(id(14881).GuildsBarGuildFolderBG, { folderId: id, totalItems: childNodes.length });
+    tmp8 = jsx(id(14925).GuildsBarGuildFolderBG, { folderId: id, totalItems: childNodes.length });
   }
   obj.externalChildren = tmp8;
-  obj.children = jsx(id(11930).HourglassIcon, {});
-  return tmp6(importDefault(14882), obj);
+  obj.children = jsx(id(11973).HourglassIcon, {});
+  return tmp6(importDefault(14926), obj);
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 6514
-// Function ID: 58231
+// Module ID: 6550
+// Function ID: 58320
 // Name: usePremiumPlanPrice
-// Dependencies: [31, 3782, 3783, 5619, 482, 566, 6445, 6515, 6516, 5622, 477, 5450, 561, 6244, 5616, 2]
+// Dependencies: [31, 3816, 3817, 5654, 482, 566, 6481, 6551, 6552, 5657, 477, 5485, 561, 6280, 5651, 2]
 // Exports: default
 
-// Module 6514 (usePremiumPlanPrice)
+// Module 6550 (usePremiumPlanPrice)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

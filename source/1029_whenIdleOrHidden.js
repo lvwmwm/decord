@@ -1,5 +1,5 @@
 // Module ID: 1029
-// Function ID: 11105
+// Function ID: 11109
 // Name: whenIdleOrHidden
 // Dependencies: [1015, 1024, 1017]
 

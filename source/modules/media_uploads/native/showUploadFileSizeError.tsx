@@ -1,10 +1,10 @@
-// Module ID: 6136
-// Function ID: 55053
+// Module ID: 6170
+// Function ID: 55172
 // Name: showUploadFileSizeError
-// Dependencies: [1280, 1850, 653, 4124, 1852, 1873, 6102, 4712, 4325, 4667, 4675, 6137, 668, 5482, 1212, 4026, 4471, 2]
+// Dependencies: [1280, 1850, 653, 4158, 1852, 1873, 6136, 4746, 4359, 4701, 4709, 6171, 668, 5517, 1212, 4060, 4505, 2]
 // Exports: default
 
-// Module 6136 (showUploadFileSizeError)
+// Module 6170 (showUploadFileSizeError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -34,7 +34,7 @@ export default function showUploadFileSizeError(arg0) {
   let obj = items(1873);
   const isPremiumExactlyResult = obj.isPremiumExactly(currentUser, closure_8.TIER_2);
   if (null != file.items) {
-    let obj1 = items(6102);
+    let obj1 = items(6136);
     let attachmentMimeTypes = obj1.getAttachmentMimeTypes(file.items);
   } else {
     attachmentMimeTypes = [];
@@ -53,16 +53,16 @@ export default function showUploadFileSizeError(arg0) {
       items1.push(postCompressionSize.preCompressionSize);
     });
   }
-  let obj2 = items(4712);
+  let obj2 = items(4746);
   const kestrelConfig = obj2.getKestrelConfig({ location: "native.showUploadFileSizeError" });
-  let obj3 = items(4325);
+  let obj3 = items(4359);
   obj = { user_individual_file_size_limit: maxSize, num_attachments: file.attachmentsCount, pre_compression_file_sizes: items1, pre_compression_aggregate_file_size: file.totalPreCompressionSize, post_compression_file_sizes: items, post_compression_aggregate_file_size: file.totalPostCompressionSize, attachment_mimetypes: attachmentMimeTypes };
   let ERROR_SOURCE_UNKNOWN = errorReason;
   if (null == errorReason) {
     ERROR_SOURCE_UNKNOWN = FileUploadErrorTypes.ERROR_SOURCE_UNKNOWN;
   }
   obj.error_type = ERROR_SOURCE_UNKNOWN;
-  let obj5 = items(4712);
+  let obj5 = items(4746);
   obj.kestrel_variant = obj5.getKestrelVariantName(kestrelConfig);
   obj3.trackWithMetadata(constants.FILE_SIZE_LIMIT_EXCEEDED, obj);
   let num2 = 0;
@@ -91,7 +91,7 @@ export default function showUploadFileSizeError(arg0) {
     tmp21 = num2 > table[closure_8.TIER_2].fileSize;
   }
   if (!tmp21) {
-    tmp21 = num2 > items(4667).MAX_TOTAL_ATTACHMENT_SIZE;
+    tmp21 = num2 > items(4701).MAX_TOTAL_ATTACHMENT_SIZE;
   }
   if (!tmp21) {
     tmp21 = tmp19;
@@ -99,9 +99,9 @@ export default function showUploadFileSizeError(arg0) {
   if (!tmp21) {
     tmp21 = errorReason === FileUploadErrorTypes.ERROR_SOURCE_UNKNOWN;
   }
-  let obj6 = items(4325);
+  let obj6 = items(4359);
   obj = { alert_type: tmp21 ? tmp27.OVER_MAX_SIZE : tmp27.NITRO_UPSELL, num_attachments: file.attachmentsCount, total_attachment_size: file.currentSize, has_image: file.hasImage, has_video: file.hasVideo, is_premium: isPremiumExactlyResult };
-  let obj8 = items(4675);
+  let obj8 = items(4709);
   obj.image_compression_quality = obj8.getImageCompressionQuality();
   obj.image_compression_setting_enabled = dataSavingMode.dataSavingMode;
   obj6.trackWithMetadata(constants.FILE_UPLOAD_ALERT_VIEWED, obj);
@@ -125,33 +125,33 @@ export default function showUploadFileSizeError(arg0) {
       const t = items(1212).t;
       if (tmp19) {
         obj1 = {};
-        let tmp41Result = tmp41(4026);
+        let tmp41Result = tmp41(4060);
         obj2 = { useKibibytes: true };
-        obj1.maxSize = tmp41Result.formatSize(tmp41(4667).MAX_TOTAL_ATTACHMENT_SIZE / tmp41(4026).BYTE_IN_KB, obj2);
+        obj1.maxSize = tmp41Result.formatSize(tmp41(4701).MAX_TOTAL_ATTACHMENT_SIZE / tmp41(4060).BYTE_IN_KB, obj2);
         stringResult1 = formatToPlainString(t.tUOJdH, obj1);
       } else {
         obj3 = {};
-        tmp41Result = tmp41(4026);
+        tmp41Result = tmp41(4060);
         const obj4 = { useKibibytes: true };
-        obj3.maxSize = tmp41Result.formatSize(maxSize / tmp41(4026).BYTE_IN_KB, obj4);
+        obj3.maxSize = tmp41Result.formatSize(maxSize / tmp41(4060).BYTE_IN_KB, obj4);
         stringResult1 = formatToPlainString(t.fxEKdS, obj3);
       }
     }
     obj5 = { title: stringResult, body: stringResult1 };
-    items1(4471).show(obj5);
-    const obj20 = items1(4471);
+    items1(4505).show(obj5);
+    const obj20 = items1(4505);
   } else {
     obj6 = { initialUpsellKey: items(668).UpsellTypes.UPLOAD };
     const obj7 = { section: constants2.FILE_UPLOAD_POPOUT };
     obj6.analyticsLocation = obj7;
     const items4 = [];
     arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
-    items4[arraySpreadResult] = items1(5482).FILE_UPLOAD_POPOUT;
+    items4[arraySpreadResult] = items1(5517).FILE_UPLOAD_POPOUT;
     const sum = arraySpreadResult + 1;
     obj6.analyticsLocations = items4;
     obj8 = { type: constants3.UPLOAD_ERROR_UPSELL };
     obj6.analyticsProperties = obj8;
     obj6.largestFileSize = num2;
-    const result = items1(6137).handleShowUpsellAlert(obj6);
+    const result = items1(6171).handleShowUpsellAlert(obj6);
   }
 };

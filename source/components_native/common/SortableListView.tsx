@@ -1,9 +1,9 @@
-// Module ID: 15178
-// Function ID: 115530
+// Module ID: 15218
+// Function ID: 115689
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 5161, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 5195, 2]
 
-// Module 15178 (_isNativeReflectConstruct)
+// Module 15218 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_3 from "jsxProd";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -425,7 +425,7 @@ const tmp4 = ((Component) => {
       obj1 = { dx: tmp2Result.state.pan.x, dy: tmp2Result.state.pan.y };
       items1 = [null];
       items1[1] = obj1;
-      f115557 = outer1_9.event(items1, { useNativeDriver: false });
+      f115716 = outer1_9.event(items1, { useNativeDriver: false });
       obj2 = {
         onStartShouldSetPanResponder() {
               return true;

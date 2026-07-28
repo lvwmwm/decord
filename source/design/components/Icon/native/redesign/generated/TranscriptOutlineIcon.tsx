@@ -1,10 +1,10 @@
-// Module ID: 13982
-// Function ID: 107051
+// Module ID: 14026
+// Function ID: 107224
 // Name: TranscriptOutlineIcon
-// Dependencies: [31, 33, 689, 3834, 13983, 2]
+// Dependencies: [31, 33, 689, 3868, 14027, 2]
 // Exports: TranscriptOutlineIcon
 
-// Module 13982 (TranscriptOutlineIcon)
+// Module 14026 (TranscriptOutlineIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TranscriptOutlineIcon = function TranscriptOutlineIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13983) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14027) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13983) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(14027) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

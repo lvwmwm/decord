@@ -1,8 +1,8 @@
-// Module ID: 11384
-// Function ID: 88466
-// Dependencies: [31, 27, 3759, 4147, 653, 33, 4131, 689, 477, 8757, 4067, 3977, 10178, 624, 4964, 4958, 4951, 11385, 4127, 1212, 4544, 4655, 4659, 2]
+// Module ID: 11422
+// Function ID: 88585
+// Dependencies: [31, 27, 3793, 4181, 653, 33, 4165, 689, 477, 8801, 4101, 4011, 10218, 624, 4998, 4992, 4985, 11423, 4161, 1212, 4578, 4689, 4693, 2]
 
-// Module 11384
+// Module 11422
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -67,19 +67,19 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (small === undefined) {
     small = false;
   }
-  const tmp = voiceStates(8757)();
-  let obj = channel(3977);
-  let intl = callback(tmp, obj.isThemeLight(voiceStates(4067)()));
-  let obj1 = channel(10178);
+  const tmp = voiceStates(8801)();
+  let obj = channel(4011);
+  let intl = callback(tmp, obj.isThemeLight(voiceStates(4101)()));
+  let obj1 = channel(10218);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
   let obj2 = channel(624);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj2.useStateFromStores(items, () => !outer1_6.can(outer1_9.CONNECT, channel));
-  let obj3 = channel(4964);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(4958).StageChannelParticipantNamedIndex.AUDIENCE);
+  let obj3 = channel(4998);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(4992).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  let obj4 = channel(4951);
-  const tmp2 = voiceStates(4067)();
+  let obj4 = channel(4985);
+  const tmp2 = voiceStates(4101)();
   let obj5 = channel(624);
   const items1 = [closure_7];
   const stateFromStores1 = obj5.useStateFromStores(items1, () => outer1_7.hasVideo(channel.id));
@@ -102,10 +102,10 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   }
   tmp7 = obj4.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   obj = { channel, video: tmp12 };
-  const connectedUserLimit = channel(11385).useConnectedUserLimit(obj);
-  const obj7 = channel(11385);
+  const connectedUserLimit = channel(11423).useConnectedUserLimit(obj);
+  const obj7 = channel(11423);
   obj = { channel, video: tmp12, userCount: num };
-  let connectedUserLimitFormatted = channel(11385).useConnectedUserLimitFormatted(obj);
+  let connectedUserLimitFormatted = channel(11423).useConnectedUserLimitFormatted(obj);
   let tmp15 = !stateFromStores && !isConnectedToVoiceChannel && tmp10 != connectedUserLimitFormatted && num > 0;
   if (tmp15) {
     tmp15 = num >= connectedUserLimit / 2 + 1;
@@ -123,7 +123,7 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
       connectedUserLimitFormatted = intl.string(channel(1212).t.VJlc0S);
     }
     obj3.children = connectedUserLimitFormatted;
-    obj2.children = tmp16(channel(4127).Text, obj3);
+    obj2.children = tmp16(channel(4161).Text, obj3);
     obj1.children = tmp16(closure_4, obj2);
     let tmp16Result = tmp16(closure_5, obj1);
     const tmp30 = closure_5;
@@ -140,9 +140,9 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
           const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
           let tmp26 = channel;
           if (isGuildStageVoiceResult) {
-            let VoiceNormalIcon = tmp26(4655).StageIcon;
+            let VoiceNormalIcon = tmp26(4689).StageIcon;
           } else {
-            VoiceNormalIcon = tmp26(4659).VoiceNormalIcon;
+            VoiceNormalIcon = tmp26(4693).VoiceNormalIcon;
           }
           tmp26 = jsx;
           obj5 = { size: "xs", style: items3 };

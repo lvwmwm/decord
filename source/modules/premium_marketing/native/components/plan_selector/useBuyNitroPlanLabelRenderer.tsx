@@ -1,10 +1,10 @@
-// Module ID: 12368
-// Function ID: 96159
+// Module ID: 12411
+// Function ID: 96329
 // Name: useBuyNitroPlanLabelRenderer
-// Dependencies: [31, 27, 1922, 1852, 33, 4131, 689, 3835, 1212, 1827, 4127, 3777, 2]
+// Dependencies: [31, 27, 1922, 1852, 33, 4165, 689, 3869, 1212, 1827, 4161, 3811, 2]
 // Exports: useBuyNitroPlanLabelRenderer
 
-// Module 12368 (useBuyNitroPlanLabelRenderer)
+// Module 12411 (useBuyNitroPlanLabelRenderer)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

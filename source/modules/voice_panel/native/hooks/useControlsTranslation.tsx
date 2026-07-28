@@ -1,10 +1,10 @@
-// Module ID: 15927
-// Function ID: 123094
+// Module ID: 15966
+// Function ID: 123250
 // Name: useControlsTranslation
-// Dependencies: [31, 9976, 9979, 9975, 3992, 4543, 2]
+// Dependencies: [31, 10016, 10019, 10015, 4026, 4577, 2]
 // Exports: default
 
-// Module 15927 (useControlsTranslation)
+// Module 15966 (useControlsTranslation)
 import result from "result";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { CALL_TILE_GUTTER } from "CARD_SIZE";

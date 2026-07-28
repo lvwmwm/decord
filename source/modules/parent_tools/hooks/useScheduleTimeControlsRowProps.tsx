@@ -1,10 +1,10 @@
-// Module ID: 13876
-// Function ID: 106293
+// Module ID: 13920
+// Function ID: 106466
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [33, 4127, 1212, 2199, 2]
+// Dependencies: [33, 4161, 1212, 2199, 2]
 // Exports: default
 
-// Module 13876 (useScheduleTimeControlsRowProps)
+// Module 13920 (useScheduleTimeControlsRowProps)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
@@ -15,7 +15,7 @@ export default function useScheduleTimeControlsRowProps(arr) {
     obj = { variant: "text-xs/medium", color: "text-muted" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(importDefault(2199).fOBIZH);
-    obj.subLabel = jsx(require(4127) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted" });
+    obj.subLabel = jsx(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted" });
     obj.trailing = undefined;
     return obj;
   } else {
@@ -33,7 +33,7 @@ export default function useScheduleTimeControlsRowProps(arr) {
       stringResult = string(tmp14["4z9fN+"]);
     }
     obj2.children = stringResult;
-    obj.trailing = jsx(require(4127) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted" });
+    obj.trailing = jsx(require(4161) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted" });
     return obj;
   }
 };

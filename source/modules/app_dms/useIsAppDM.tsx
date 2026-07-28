@@ -1,10 +1,10 @@
-// Module ID: 11260
-// Function ID: 87536
+// Module ID: 11298
+// Function ID: 87655
 // Name: useIsAppDM
 // Dependencies: [1850, 624, 2]
 // Exports: default
 
-// Module 11260 (useIsAppDM)
+// Module 11298 (useIsAppDM)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

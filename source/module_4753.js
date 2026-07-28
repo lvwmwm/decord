@@ -1,0 +1,43 @@
+// Module ID: 4753
+// Function ID: 41180
+// Dependencies: [4754, 4766, 4774]
+
+// Module 4753
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let fn = self;
+  if (self) {
+    fn = self.__exportStar;
+  }
+  if (!fn) {
+    fn = (obj, exports) => {
+      for (const key10007 in arg0) {
+        let tmp4 = key10007;
+        let callResult = "default" === key10007;
+        if (!callResult) {
+          let _Object = Object;
+          callResult = hasOwnProperty.call(arg1, key10007);
+        }
+        if (callResult) {
+          continue;
+        } else {
+          let tmp2 = self2;
+          let tmp3 = self2(arg1, arg0, key10007);
+          continue;
+        }
+        continue;
+      }
+    };
+  }
+  const _Object2 = Object;
+  let obj = { value: true };
+  fn(require("FILE_TYPES_REQUIRED_ADDITIONAL_CHECK"), exports);
+  fn(require("module_4766"), exports);
+  fn(require("module_4774"), exports);
+} else {
+  let _Object = Object;
+}

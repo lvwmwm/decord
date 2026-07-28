@@ -1,9 +1,9 @@
-// Module ID: 4206
-// Function ID: 36466
+// Module ID: 4240
+// Function ID: 36576
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4178, 1850, 4192, 4207, 4215, 566, 22, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4212, 1850, 4226, 4241, 4249, 566, 22, 686, 2]
 
-// Module 4206 (_isNativeReflectConstruct)
+// Module 4240 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "DesktopSources";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

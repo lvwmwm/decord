@@ -1,10 +1,10 @@
-// Module ID: 15488
-// Function ID: 119020
+// Module ID: 15527
+// Function ID: 119176
 // Name: WebhookIcon
-// Dependencies: [31, 33, 689, 3834, 15489, 2]
+// Dependencies: [31, 33, 689, 3868, 15528, 2]
 // Exports: WebhookIcon
 
-// Module 15488 (WebhookIcon)
+// Module 15527 (WebhookIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const WebhookIcon = function WebhookIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(15489) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(15528) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(15489) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(15528) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

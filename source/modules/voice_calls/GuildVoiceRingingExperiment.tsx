@@ -1,9 +1,9 @@
-// Module ID: 8848
-// Function ID: 70070
+// Module ID: 8892
+// Function ID: 70221
 // Name: items
-// Dependencies: [4046, 4043, 2]
+// Dependencies: [4080, 4077, 2]
 
-// Module 8848 (items)
+// Module 8892 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2024-12_guild_voice_channel_ringing", label: "Guild Voice Ringing", defaultConfig: { enabled: false }, commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL };

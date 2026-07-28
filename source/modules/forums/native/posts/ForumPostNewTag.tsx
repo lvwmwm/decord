@@ -1,10 +1,10 @@
-// Module ID: 11130
-// Function ID: 86584
+// Module ID: 11168
+// Function ID: 86703
 // Name: ForumPostNewTag
-// Dependencies: [31, 33, 4131, 689, 1273, 2]
+// Dependencies: [31, 33, 4165, 689, 1273, 2]
 // Exports: default
 
-// Module 11130 (ForumPostNewTag)
+// Module 11168 (ForumPostNewTag)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

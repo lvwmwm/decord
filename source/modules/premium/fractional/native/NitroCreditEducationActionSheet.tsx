@@ -1,10 +1,10 @@
-// Module ID: 12483
-// Function ID: 96770
+// Module ID: 12526
+// Function ID: 96940
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [27, 653, 33, 4131, 689, 5187, 6673, 4127, 1212, 1921, 2]
+// Dependencies: [27, 653, 33, 4165, 689, 5221, 6709, 4161, 1212, 1921, 2]
 // Exports: default
 
-// Module 12483 (NitroCreditEducationActionSheet)
+// Module 12526 (NitroCreditEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -27,20 +27,20 @@ export default function NitroCreditEducationActionSheet(aboutText) {
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.aboutContainer };
-  const items = [callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
+  const items = [callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
   const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText.aboutText };
-  items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4127) /* Text */.Text, obj3) });
+  items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4161) /* Text */.Text, obj3) });
   obj.children = items;
   const items1 = [callback2(View, obj), ];
   const obj4 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText };
   const intl = require(1212) /* getSystemLocale */.intl;
   const obj5 = {};
   const obj1 = { size: "lg", style: tmp.warningIcon };
-  const obj2 = { style: tmp.aboutTextContainer, children: callback(require(4127) /* Text */.Text, obj3) };
+  const obj2 = { style: tmp.aboutTextContainer, children: callback(require(4161) /* Text */.Text, obj3) };
   obj5.helpCenterLink = importDefault(1921).getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT);
   obj4.children = intl.format(require(1212) /* getSystemLocale */.t.bg3jBj, obj5);
-  items1[1] = callback(require(4127) /* Text */.Text, obj4);
+  items1[1] = callback(require(4161) /* Text */.Text, obj4);
   obj.children = items1;
   obj.children = callback2(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

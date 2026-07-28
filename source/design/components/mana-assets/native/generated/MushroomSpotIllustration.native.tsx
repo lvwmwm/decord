@@ -1,10 +1,10 @@
-// Module ID: 7228
-// Function ID: 60078
+// Module ID: 7264
+// Function ID: 60167
 // Name: MushroomSpotIllustration
-// Dependencies: [33, 5085, 7229, 2]
+// Dependencies: [33, 5119, 7265, 2]
 // Exports: MushroomSpotIllustration
 
-// Module 7228 (MushroomSpotIllustration)
+// Module 7264 (MushroomSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const MushroomSpotIllustration = function MushroomSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7229) };
+  obj = { uri: importDefault(7265) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const MushroomSpotIllustration = function MushroomSpotIllustration(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

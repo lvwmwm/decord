@@ -1,10 +1,10 @@
-// Module ID: 10330
-// Function ID: 79850
+// Module ID: 10370
+// Function ID: 79979
 // Name: useCanCurrentUserSpeakInChannel
-// Dependencies: [1194, 566, 4315, 2]
+// Dependencies: [1194, 566, 4349, 2]
 // Exports: default
 
-// Module 10330 (useCanCurrentUserSpeakInChannel)
+// Module 10370 (useCanCurrentUserSpeakInChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -14,5 +14,5 @@ export default function useCanCurrentUserSpeakInChannel(arg0) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getId());
   const obj = require(566) /* initialize */;
-  return importDefault(4315)(stateFromStores, arg0) === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+  return importDefault(4349)(stateFromStores, arg0) === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
 };

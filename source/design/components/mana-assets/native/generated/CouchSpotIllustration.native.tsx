@@ -1,10 +1,10 @@
-// Module ID: 6894
-// Function ID: 59577
+// Module ID: 6930
+// Function ID: 59666
 // Name: CouchSpotIllustration
-// Dependencies: [33, 5085, 6895, 2]
+// Dependencies: [33, 5119, 6931, 2]
 // Exports: CouchSpotIllustration
 
-// Module 6894 (CouchSpotIllustration)
+// Module 6930 (CouchSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CouchSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const CouchSpotIllustration = function CouchSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6895) };
+  obj = { uri: importDefault(6931) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const CouchSpotIllustration = function CouchSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

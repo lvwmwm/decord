@@ -1,10 +1,10 @@
-// Module ID: 10125
-// Function ID: 78381
+// Module ID: 10165
+// Function ID: 78510
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [31, 27, 3977, 477, 4529, 2]
+// Dependencies: [31, 27, 4011, 477, 4563, 2]
 // Exports: default
 
-// Module 10125 (useAnnounceAsyncCompletion)
+// Module 10165 (useAnnounceAsyncCompletion)
 import result from "result";
 import { AccessibilityInfo } from "get ActivityIndicator";
 

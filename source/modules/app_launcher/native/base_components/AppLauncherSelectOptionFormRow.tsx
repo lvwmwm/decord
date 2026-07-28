@@ -1,10 +1,10 @@
-// Module ID: 11291
-// Function ID: 87812
+// Module ID: 11329
+// Function ID: 87931
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [31, 33, 4131, 689, 11284, 7575, 4127, 1273, 5173, 2]
+// Dependencies: [31, 33, 4165, 689, 11322, 7611, 4161, 1273, 5207, 2]
 // Exports: default
 
-// Module 11291 (AppLauncherSelectOptionFormRow)
+// Module 11329 (AppLauncherSelectOptionFormRow)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   ({ style, option, autoFocus } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  let obj1 = require(11284) /* useAnimationDelayedAutoFocus */;
+  let obj1 = require(11322) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
   obj = { start: true, end: true };
   const items = [_createForOfIteratorHelperLoose().formRow, style];
@@ -46,7 +46,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   obj.color = str2;
   obj.lineClamp = 1;
   obj.children = option.displayName;
-  obj.label = jsx(require(4127) /* Text */.Text, {});
+  obj.label = jsx(require(4161) /* Text */.Text, {});
   if (selected) {
     let fn = () => {
       const obj = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: closure_0 };
@@ -62,8 +62,8 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
     }
   }
   obj.subLabel = fn;
-  obj1 = { source: unselectedSubLabel(5173), size: require(1273) /* Button */.IconSizes.SMALL_20 };
-  obj.trailing = jsx(require(1273) /* Button */.Icon, { source: unselectedSubLabel(5173), size: require(1273) /* Button */.IconSizes.SMALL_20 });
+  obj1 = { source: unselectedSubLabel(5207), size: require(1273) /* Button */.IconSizes.SMALL_20 };
+  obj.trailing = jsx(require(1273) /* Button */.Icon, { source: unselectedSubLabel(5207), size: require(1273) /* Button */.IconSizes.SMALL_20 });
   const merged1 = Object.assign(merged);
-  return jsx(require(7575) /* Form */.FormRow, {});
+  return jsx(require(7611) /* Form */.FormRow, {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 10832
-// Function ID: 84054
+// Module ID: 10870
+// Function ID: 84175
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4168, 4176, 653, 5969, 7666, 1212, 10833, 5613, 5609, 3105, 7829, 6515, 4120, 6631, 478, 566, 1327, 5468, 2]
+// Dependencies: [57, 31, 4202, 4210, 653, 6003, 7702, 1212, 10871, 5648, 5644, 3137, 7865, 6551, 4154, 6667, 478, 566, 1327, 5503, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10832 (_createForOfIteratorHelperLoose)
+// Module 10870 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,7 +100,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(7666)(theme.theme));
+  ({ colors, baseColors } = importDefault(7702)(theme.theme));
   const value = closure_6.get(skuId);
   let applicationId;
   if (null != value) {
@@ -109,7 +109,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   const application = _isNativeReflectConstruct.getApplication(applicationId);
   const isFetchingResult = closure_6.isFetching(skuId);
   let result = null != applicationId;
-  const tmp = importDefault(7666)(theme.theme);
+  const tmp = importDefault(7702)(theme.theme);
   if (result) {
     result = _isNativeReflectConstruct.isFetchingApplication(applicationId);
   }
@@ -131,11 +131,11 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (importDefault(10833)(application)) {
+        if (importDefault(10871)(application)) {
           if ("guild" !== guildOrApplication.type) {
-            const result2 = require(5613) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
-            const obj2 = require(5613) /* transformStorefrontSKUPricesServer */;
-            const str4 = require(5609) /* _createForOfIteratorHelperLoose */.getCardImageURL(value);
+            const result2 = require(5648) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
+            const obj2 = require(5648) /* transformStorefrontSKUPricesServer */;
+            const str4 = require(5644) /* _createForOfIteratorHelperLoose */.getCardImageURL(value);
             str = undefined;
             if (null != str4) {
               str = str4.toString();
@@ -163,7 +163,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             if (result2) {
               let stringResult = string(require(1212) /* getSystemLocale */.t.boqtTA);
             } else {
-              stringResult = string(importDefault(3105).BKf0MM);
+              stringResult = string(importDefault(3137).BKf0MM);
             }
             obj["acceptLabelText"] = stringResult;
             let prop;

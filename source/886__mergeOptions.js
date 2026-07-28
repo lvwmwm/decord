@@ -1,5 +1,5 @@
 // Module ID: 886
-// Function ID: 9801
+// Function ID: 9805
 // Name: _mergeOptions
 // Dependencies: [65, 863, 800, 801, 807, 864, 809]
 

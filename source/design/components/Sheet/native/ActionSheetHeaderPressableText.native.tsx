@@ -1,10 +1,10 @@
-// Module ID: 8192
-// Function ID: 65669
+// Module ID: 8230
+// Function ID: 65779
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [33, 4131, 1324, 4661, 4127, 2]
+// Dependencies: [33, 4165, 1324, 4695, 4161, 2]
 // Exports: ActionSheetHeaderPressableText
 
-// Module 8192 (ActionSheetHeaderPressableText)
+// Module 8230 (ActionSheetHeaderPressableText)
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -26,6 +26,6 @@ export const ActionSheetHeaderPressableText = function ActionSheetHeaderPressabl
   }
   obj.accessibilityLabel = tmp3;
   obj = { variant: str, color: "text-brand", children: label };
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: str, color: "text-brand", children: label });
-  return jsx(require(4661) /* PressableBase */.PressableOpacity, { variant: str, color: "text-brand", children: label });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: str, color: "text-brand", children: label });
+  return jsx(require(4695) /* PressableBase */.PressableOpacity, { variant: str, color: "text-brand", children: label });
 };

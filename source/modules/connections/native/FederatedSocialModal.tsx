@@ -1,10 +1,10 @@
-// Module ID: 8933
-// Function ID: 70587
+// Module ID: 8977
+// Function ID: 70738
 // Name: FederatedSocialModal
-// Dependencies: [5, 57, 31, 653, 33, 4131, 4815, 1212, 4939, 3828, 8934, 5121, 4127, 8927, 1273, 4544, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 653, 33, 4165, 4849, 1212, 4973, 3862, 8978, 5155, 4161, 8971, 1273, 4578, 5121, 5552, 2]
 // Exports: default
 
-// Module 8933 (FederatedSocialModal)
+// Module 8977 (FederatedSocialModal)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -21,7 +21,7 @@ const result = require("result").fileFinishedImporting("modules/connections/nati
 
 export default function FederatedSocialModal(platformType) {
   const _require = platformType;
-  let screens = importDefault(4815);
+  let screens = importDefault(4849);
   let value = screens.get(platformType.platformType);
   let name;
   if (null != value) {
@@ -36,7 +36,7 @@ export default function FederatedSocialModal(platformType) {
   let intl2 = _require(1212).intl;
   let obj1 = { serviceName: name };
   obj.headerTitle = intl2.formatToPlainString(_require(1212).t["ImMhq+"], obj1);
-  obj.headerLeft = _require(5087).getHeaderBackButton(platformType.onClose);
+  obj.headerLeft = _require(5121).getHeaderBackButton(platformType.onClose);
   obj.render = function render() {
     return (function FederatedSocialModalScreen(closure_0) {
       let closure_1;
@@ -104,5 +104,5 @@ export default function FederatedSocialModal(platformType) {
     })(closure_0);
   };
   screens.root = obj;
-  return callback(_require(5517).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(5552).Navigator, { initialRouteName: "root", screens });
 };

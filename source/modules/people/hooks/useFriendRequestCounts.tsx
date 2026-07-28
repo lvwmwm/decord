@@ -1,10 +1,10 @@
-// Module ID: 15506
-// Function ID: 119184
+// Module ID: 15545
+// Function ID: 119340
 // Name: getIncomingFriendRequestCount
-// Dependencies: [57, 5891, 3768, 566, 2]
+// Dependencies: [57, 5925, 3802, 566, 2]
 // Exports: getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 15506 (getIncomingFriendRequestCount)
+// Module 15545 (getIncomingFriendRequestCount)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

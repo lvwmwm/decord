@@ -1,10 +1,10 @@
-// Module ID: 15354
-// Function ID: 117062
+// Module ID: 15394
+// Function ID: 117221
 // Name: ResourcesRow
-// Dependencies: [31, 27, 15355, 33, 4131, 689, 15356, 11376, 4099, 15357, 1935, 4661, 4127, 1212, 2]
+// Dependencies: [31, 27, 15395, 33, 4165, 689, 15396, 11414, 4133, 15397, 1935, 4695, 4161, 1212, 2]
 // Exports: default
 
-// Module 15354 (ResourcesRow)
+// Module 15394 (ResourcesRow)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
@@ -25,7 +25,7 @@ export default function ResourcesRow(guildId) {
   guildId = guildId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  const arr = importDefault(15356)(guildId);
+  const arr = importDefault(15396)(guildId);
   let obj = { horizontal: true, style: tmp.container };
   const substr = arr.slice(0, 2);
   const items = [
@@ -57,8 +57,8 @@ export default function ResourcesRow(guildId) {
     const intl = guildId(1212).intl;
     const obj1 = { count: arr.length - 2 };
     obj.children = intl.format(guildId(1212).t.F6iMs4, obj1);
-    obj.children = callback(guildId(4127).Text, obj);
-    tmp5 = callback(guildId(4661).PressableOpacity, obj);
+    obj.children = callback(guildId(4161).Text, obj);
+    tmp5 = callback(guildId(4695).PressableOpacity, obj);
   }
   items[1] = tmp5;
   obj.children = items;

@@ -1,10 +1,10 @@
-// Module ID: 4175
-// Function ID: 35425
+// Module ID: 4209
+// Function ID: 35528
 // Name: convertToTransitionState
-// Dependencies: [57, 1850, 4176, 653, 3804, 2]
+// Dependencies: [57, 1850, 4210, 653, 3838, 2]
 // Exports: calculateProgressPercentage, convertComboId, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4175 (convertToTransitionState)
+// Module 4209 (convertToTransitionState)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -38,9 +38,9 @@ export const convertComboId = function convertComboId(str) {
   return { applicationId: tmp[0], branchId: tmp[1] };
 };
 export const shouldShareApplicationActivity = function shouldShareApplicationActivity(applicationId, closure_12) {
-  const ShowCurrentGame = require(3804) /* explicitContentFromProto */.ShowCurrentGame;
+  const ShowCurrentGame = require(3838) /* explicitContentFromProto */.ShowCurrentGame;
   if (ShowCurrentGame.getSetting()) {
-    const StatusSetting = require(3804) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = require(3838) /* explicitContentFromProto */.StatusSetting;
     if (StatusSetting.getSetting() !== constants3.INVISIBLE) {
       const activeLibraryApplication = closure_12.getActiveLibraryApplication(applicationId);
       let tmp6 = null == activeLibraryApplication;

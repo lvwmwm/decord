@@ -1,10 +1,10 @@
-// Module ID: 5735
-// Function ID: 49829
+// Module ID: 5745
+// Function ID: 49685
 // Name: isSpammer
-// Dependencies: [1850, 653, 5736, 2]
+// Dependencies: [1850, 653, 5746, 2]
 // Exports: isSpam, isSpamSupported
 
-// Module 5735 (isSpammer)
+// Module 5745 (isSpammer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -33,8 +33,8 @@ export { isSpammer };
 export const isSpam = function isSpam(author) {
   let tmp = isSpammer(author.author.id);
   if (tmp) {
-    tmp = !require(5736) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(author);
-    const obj = require(5736) /* getEmbedFieldFromMessage */;
+    tmp = !require(5746) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(author);
+    const obj = require(5746) /* getEmbedFieldFromMessage */;
   }
   return tmp;
 };

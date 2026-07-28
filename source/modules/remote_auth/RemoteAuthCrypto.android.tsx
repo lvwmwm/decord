@@ -1,9 +1,9 @@
-// Module ID: 14834
-// Function ID: 113163
+// Module ID: 14878
+// Function ID: 113336
 // Name: AndroidRemoteAuthCrypto
-// Dependencies: [5, 6, 7, 14835, 2]
+// Dependencies: [5, 6, 7, 14879, 2]
 
-// Module 14834 (AndroidRemoteAuthCrypto)
+// Module 14878 (AndroidRemoteAuthCrypto)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -26,14 +26,14 @@ let tmp2 = (() => {
   obj = {
     key: "serializePublicKey",
     value() {
-      return callback(14835).getEncodedPublicKey();
+      return callback(14879).getEncodedPublicKey();
     }
   };
   items[1] = obj;
   obj = {
     key: "publicKeyFingerprint",
     value() {
-      return callback(14835).getPublicKeyFingerprint();
+      return callback(14879).getPublicKeyFingerprint();
     }
   };
   items[2] = obj;
@@ -54,7 +54,7 @@ let tmp2 = (() => {
   items[5] = {
     key: "release",
     value() {
-      callback(14835).releaseKeyPair();
+      callback(14879).releaseKeyPair();
     }
   };
   return callback2(AndroidRemoteAuthCrypto, items);

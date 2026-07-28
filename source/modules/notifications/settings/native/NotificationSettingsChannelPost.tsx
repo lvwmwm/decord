@@ -1,10 +1,10 @@
-// Module ID: 10271
-// Function ID: 79393
+// Module ID: 10311
+// Function ID: 79522
 // Name: NotificationSettingsChannelPost
-// Dependencies: [31, 27, 4326, 33, 566, 5501, 1212, 9024, 5079, 2]
+// Dependencies: [31, 27, 4360, 33, 566, 5536, 1212, 9068, 5113, 2]
 // Exports: NotificationSettingsChannelPost
 
-// Module 10271 (NotificationSettingsChannelPost)
+// Module 10311 (NotificationSettingsChannelPost)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ export const NotificationSettingsChannelPost = function NotificationSettingsChan
   obj1.onPress = function onPress() {
     const result = outer1_1(outer1_2[8]).setForumThreadsCreated(channel.channel, !newForumThreadsCreated);
   };
-  obj.children = jsx(_require(9024).TableCheckboxRow, {});
-  obj.children = jsx(_require(5501).TableRowGroup, {});
+  obj.children = jsx(_require(9068).TableCheckboxRow, {});
+  obj.children = jsx(_require(5536).TableRowGroup, {});
   return <newForumThreadsCreated />;
 };

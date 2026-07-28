@@ -1,10 +1,10 @@
-// Module ID: 7990
-// Function ID: 63704
+// Module ID: 8028
+// Function ID: 63814
 // Name: WarningBox
-// Dependencies: [31, 27, 33, 4131, 7991, 4127, 1212, 7993, 3105, 2]
+// Dependencies: [31, 27, 33, 4165, 8029, 4161, 1212, 8031, 3137, 2]
 // Exports: default
 
-// Module 7990 (WarningBox)
+// Module 8028 (WarningBox)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,7 +26,7 @@ function WarningBox(application) {
   } else {
     let obj = {};
     let tmp8 = dependencyMap;
-    obj.look = require(7993) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj.look = require(8031) /* InfoBox */.InfoBoxLooks.WARNING;
     obj.style = tmp.warningBox;
     const intl = require(1212) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
@@ -37,7 +37,7 @@ function WarningBox(application) {
         name = application.name;
       }
       obj.applicationName = name;
-      obj.children = intl.formatToPlainString(importDefault(3105).BMMo2K, obj);
+      obj.children = intl.formatToPlainString(importDefault(3137).BMMo2K, obj);
       let tmp9 = obj;
     } else if (canStartAuthorization) {
       obj = { skuName: sku.name };
@@ -52,9 +52,9 @@ function WarningBox(application) {
       obj.children = intl.format(tmp7(1212).t["3T0cpx"], {});
       tmp9 = obj;
     }
-    closure_4(importDefault(7993), tmp9);
+    closure_4(importDefault(8031), tmp9);
     const tmp3 = closure_4;
-    const tmp6 = importDefault(7993);
+    const tmp6 = importDefault(8031);
   }
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
@@ -78,7 +78,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
   if (null != sku) {
     let obj = { style: tmp.container };
     obj = { sku };
-    const items = [callback(importDefault(7991), obj), , ];
+    const items = [callback(importDefault(8029), obj), , ];
     obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: tmp.text };
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj1 = { sender, skuName: sku.name };
@@ -88,7 +88,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     }
     obj1.applicationName = name;
     obj.children = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["2tBYtA"], obj1);
-    items[1] = callback(require(4127) /* Text */.Text, obj);
+    items[1] = callback(require(4161) /* Text */.Text, obj);
     const obj2 = { canStartAuthorization, hasAccountLinked, mobileAccountLinkingDisabled, sku, application };
     items[2] = callback(WarningBox, obj2);
     obj.children = items;

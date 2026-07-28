@@ -1,5 +1,5 @@
 // Module ID: 1652
-// Function ID: 18380
+// Function ID: 18384
 // Name: BaseAnimationBuilder
 // Dependencies: [1653, 1666, 1667]
 

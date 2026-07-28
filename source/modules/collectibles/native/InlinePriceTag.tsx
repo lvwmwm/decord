@@ -1,10 +1,10 @@
-// Module ID: 8691
-// Function ID: 68986
+// Module ID: 8735
+// Function ID: 69137
 // Name: PriceTag
-// Dependencies: [31, 27, 5619, 655, 653, 33, 4131, 689, 4127, 1877, 5781, 5782, 8637, 1212, 8596, 3777, 8692, 8693, 8648, 8694, 566, 8632, 8657, 477, 6596, 6570, 2]
+// Dependencies: [31, 27, 5654, 655, 653, 33, 4165, 689, 4161, 1877, 5791, 5792, 8681, 1212, 8640, 3811, 8736, 8737, 8692, 8738, 566, 8676, 8701, 477, 6632, 6606, 2]
 // Exports: default
 
-// Module 8691 (PriceTag)
+// Module 8735 (PriceTag)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,7 +44,7 @@ function PriceTag(color) {
   obj.color = str;
   obj.accessibilityLabel = color.accessibilityLabel;
   obj.children = priceFormatted;
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_10, obj);
 }
@@ -63,14 +63,14 @@ function OrbsPriceTag(arg0) {
   } else {
     let result = product.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
     if (result) {
-      let obj = require(5781) /* getProductOrbPrice */;
+      let obj = require(5791) /* getProductOrbPrice */;
       result = obj.isOrbsExclusiveProduct(product);
     }
-    let obj1 = require(5782) /* getPriceForCollectiblesProduct */;
+    let obj1 = require(5792) /* getPriceForCollectiblesProduct */;
     const productDiscount = obj1.getProductDiscount(product, eligibleForShopDiscount, constants2.DISCORD_ORB);
     ({ original, discountPercentage } = productDiscount);
     if (result) {
-      result = discountPercentage >= require(5782) /* getPriceForCollectiblesProduct */.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+      result = discountPercentage >= require(5792) /* getPriceForCollectiblesProduct */.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
     }
     obj = {};
     const items = [tmp.priceTagRow, ];
@@ -87,7 +87,7 @@ function OrbsPriceTag(arg0) {
     if (result) {
       obj = { priceFormatted: original.toString(), variant: "text-md/medium", style: tmp.strikedOrbPrice };
       obj1 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      obj.icon = callback(require(8637) /* OrbsIcon */.OrbsIcon, obj1);
+      obj.icon = callback(require(8681) /* OrbsIcon */.OrbsIcon, obj1);
       const intl = require(1212) /* getSystemLocale */.intl;
       const obj2 = { orbAmount: original.toString() };
       obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.QfcKZ5, obj2);
@@ -98,7 +98,7 @@ function OrbsPriceTag(arg0) {
     let tmp21;
     if (!result) {
       const obj4 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      tmp21 = callback(require(8637) /* OrbsIcon */.OrbsIcon, obj4);
+      tmp21 = callback(require(8681) /* OrbsIcon */.OrbsIcon, obj4);
     }
     obj3.icon = tmp21;
     const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -128,12 +128,12 @@ function OrbsPriceTag(arg0) {
 function BundleDiscountV2(discountPercentage) {
   discountPercentage = discountPercentage.discountPercentage;
   let tmp2 = null;
-  if (discountPercentage >= require(5782) /* getPriceForCollectiblesProduct */.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
+  if (discountPercentage >= require(5792) /* getPriceForCollectiblesProduct */.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
     let obj = { style: tmp.discount };
     obj = { variant: "text-md/normal", color: "text-feedback-positive" };
     const items = ["-", discountPercentage, "%"];
     obj.children = items;
-    obj.children = callback2(require(4127) /* Text */.Text, obj);
+    obj.children = callback2(require(4161) /* Text */.Text, obj);
     tmp2 = callback(closure_4, obj);
   }
   return tmp2;
@@ -173,27 +173,27 @@ export default function InlinePriceTag(arg0) {
   ({ product, onTrackPress: require } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  let obj = require(8596) /* useCurrentUser */;
+  let obj = require(8640) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(5782) /* getPriceForCollectiblesProduct */;
+  let obj1 = require(5792) /* getPriceForCollectiblesProduct */;
   const shopDiscountSource = obj1.getShopDiscountSource(currentUser);
-  let obj2 = importDefault(3777);
+  let obj2 = importDefault(3811);
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
-  const dependencyMap = importDefault(8692)(constants.SHOP_PRODUCT_DETAILS);
-  let obj3 = require(8693) /* useProductDisableState */;
+  const dependencyMap = importDefault(8736)(constants.SHOP_PRODUCT_DETAILS);
+  let obj3 = require(8737) /* useProductDisableState */;
   const isDisabled = obj3.useProductDisableState(product.skuId).isDisabled;
-  let obj4 = require(8648) /* _createForOfIteratorHelperLoose */;
+  let obj4 = require(8692) /* _createForOfIteratorHelperLoose */;
   const formattedPriceForCollectiblesProduct = obj4.getFormattedPriceForCollectiblesProduct(product, false, true);
-  let obj5 = require(8694) /* useVirtualCurrencyData */;
+  let obj5 = require(8738) /* useVirtualCurrencyData */;
   const virtualCurrencyData = obj5.useVirtualCurrencyData(product, canUseShopDiscountsResult);
   let obj6 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj6.useStateFromStores(items, () => outer1_5.isFetchingGoogleSkus());
-  let obj7 = require(8632) /* isUserPaidTier2 */;
+  let obj7 = require(8676) /* isUserPaidTier2 */;
   const isProfileFramesEarlyAccessPhase = obj7.useIsProfileFramesEarlyAccessPhase("InlinePriceTag");
   if (stateFromStores) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return callback(require(8657) /* CollectiblesShopPricePlaceholder */.CollectiblesShopPricePlaceholder, {});
+      return callback(require(8701) /* CollectiblesShopPricePlaceholder */.CollectiblesShopPricePlaceholder, {});
     }
   }
   if (null == formattedPriceForCollectiblesProduct) {
@@ -208,9 +208,9 @@ export default function InlinePriceTag(arg0) {
     if (!canUseShopDiscountsResult) {
       tmp11 = tmp9;
     }
-    let obj8 = require(8648) /* _createForOfIteratorHelperLoose */;
+    let obj8 = require(8692) /* _createForOfIteratorHelperLoose */;
     const formattedPriceForCollectiblesProduct1 = obj8.getFormattedPriceForCollectiblesProduct(product, true, true);
-    let obj9 = require(5782) /* getPriceForCollectiblesProduct */;
+    let obj9 = require(5792) /* getPriceForCollectiblesProduct */;
     obj = { style: tmp.container };
     obj1 = { style: tmp.priceTagColumn };
     obj2 = { style: tmp.priceTagRow };
@@ -251,7 +251,7 @@ export default function InlinePriceTag(arg0) {
         const items3 = [, ];
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj8.style = items3;
-        const items4 = [callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj8), ];
+        const items4 = [callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj8), ];
         obj9 = { variant: "text-md/normal", color: "interactive-text-default" };
         let androidTextPadding;
         if (obj26.isAndroid()) {
@@ -262,11 +262,11 @@ export default function InlinePriceTag(arg0) {
         const obj10 = {
           price: formattedPriceForCollectiblesProduct1,
           subscribeNowHook(children) {
-                  return outer1_9(outer1_0(4127).Text, { variant: "text-md/normal", style: tmp.underline, children }, arg1);
+                  return outer1_9(outer1_0(4161).Text, { variant: "text-md/normal", style: tmp.underline, children }, arg1);
                 }
         };
         obj9.children = intl3.format(require(1212) /* getSystemLocale */.t.Kxw2LT, obj10);
-        items4[1] = callback(require(4127) /* Text */.Text, obj9);
+        items4[1] = callback(require(4161) /* Text */.Text, obj9);
         obj7.children = items4;
         obj6.children = closure_11(closure_3, obj7);
         tmp45Result = callback(closure_4, obj6);
@@ -298,14 +298,14 @@ export default function InlinePriceTag(arg0) {
         androidTextPadding1 = tmp.androidTextPadding;
       }
       obj12.style = androidTextPadding1;
-      if (shopDiscountSource === require(5782) /* getPriceForCollectiblesProduct */.ShopDiscountSource.THIRDPARTY) {
+      if (shopDiscountSource === require(5792) /* getPriceForCollectiblesProduct */.ShopDiscountSource.THIRDPARTY) {
         const obj14 = { color: str2 };
         str2 = tmp.nitroIcon;
         obj14.style = str2;
-        let tmp39 = callback(require(6596) /* TagIcon */.TagIcon, obj14);
+        let tmp39 = callback(require(6632) /* TagIcon */.TagIcon, obj14);
       } else {
         const obj15 = { color: str2, style: tmp.nitroIcon };
-        tmp39 = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj15);
+        tmp39 = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj15);
       }
       obj12.icon = tmp39;
       callback(PriceTag, obj12);

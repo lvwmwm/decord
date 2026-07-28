@@ -1,9 +1,9 @@
-// Module ID: 12926
-// Function ID: 100393
+// Module ID: 12970
+// Function ID: 100566
 // Name: getDefaultTextState
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1212, 4127, 6676, 12927, 8854, 8850, 3831, 675, 3844, 7585, 4544, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 1212, 4161, 6712, 12971, 8898, 8894, 3865, 675, 3878, 7621, 4578, 2]
 
-// Module 12926 (getDefaultTextState)
+// Module 12970 (getDefaultTextState)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -31,7 +31,7 @@ function ErrorMessage(errorMessage) {
   ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = callback2());
   obj.style = items;
   obj.children = errorMessage.errorMessage;
-  return callback(require(4127) /* Text */.Text, obj);
+  return callback(require(4161) /* Text */.Text, obj);
 }
 ({ View: closure_5, Keyboard: closure_6 } = get_ActivityIndicator);
 ({ PLACEHOLDER_TAG: closure_7, AnalyticEvents: closure_8 } = ME);
@@ -90,7 +90,7 @@ let closure_15 = importAllResult.forwardRef((headerTextStyle, ref) => {
   items[2] = headerTextStyle.headerTextStyle;
   obj.style = items;
   obj.children = headerText;
-  const items1 = [callback(require(4127) /* Text */.Text, obj), , ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj), , ];
   obj = { ref, value: textState.validatedText };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.qRaqel);
@@ -119,7 +119,7 @@ let closure_15 = importAllResult.forwardRef((headerTextStyle, ref) => {
     str2 = "error";
   }
   obj.status = str2;
-  items1[1] = callback(require(6676) /* TextField */.TextField, obj);
+  items1[1] = callback(require(6712) /* TextField */.TextField, obj);
   let tmp10 = null;
   if (null != message) {
     const obj1 = { errorMessage: message };
@@ -162,7 +162,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         substr = trimmed.substring(1);
         tmp2 = substr;
       }
-      obj = sourcePage(8854);
+      obj = sourcePage(8898);
       const validateDiscordTagResult = obj.validateDiscordTag(tmp2);
       if (null != validateDiscordTagResult) {
         obj = { status: outer1_13.ERROR, field: outer1_14.DISCORD_TAG, message: validateDiscordTagResult };
@@ -173,14 +173,14 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         const obj2 = { discordTag: tmp2 };
         const obj3 = { location: "Search - Add Friend Search" };
         obj2.context = obj3;
-        obj2.errorUxConfig = sourcePage(8850).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
+        obj2.errorUxConfig = sourcePage(8894).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
         let tmp9;
         if (trimmed1.length > 0) {
           tmp9 = trimmed1;
         }
         obj2.note = tmp9;
-        const obj5 = ref(8850);
-        ref(8850).sendRequest(obj2).then(() => {
+        const obj5 = ref(8894);
+        ref(8894).sendRequest(obj2).then(() => {
           outer1_4(outer2_16());
           outer1_8("");
           let obj = { status: outer2_13.SUCCESS };
@@ -188,7 +188,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
           obj = { discordTag: substr };
           obj.message = intl.format(sourcePage(1212).t.Rtl1Ep, obj);
           outer1_6(obj);
-          const result = sourcePage(3831).presentAddedFriendToast();
+          const result = sourcePage(3865).presentAddedFriendToast();
           closure_6.dismiss();
         }, (body) => {
           let note;
@@ -219,8 +219,8 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
             if (null != code) {
               num2 = code;
             }
-            obj.message = sourcePage(8854).humanizeAbortCode(num2, substr);
-            obj = sourcePage(8854);
+            obj.message = sourcePage(8898).humanizeAbortCode(num2, substr);
+            obj = sourcePage(8898);
             let code1;
             if (null != body) {
               const body3 = body.body;
@@ -233,11 +233,11 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
             }
             obj.a11yMessage = obj.humanizeAbortCodeForA11y(num, substr);
             outer1_6(obj);
-            const obj4 = sourcePage(8854);
+            const obj4 = sourcePage(8898);
             const tmp15 = outer1_6;
           }
         });
-        const sendRequestResult = ref(8850).sendRequest(obj2);
+        const sendRequestResult = ref(8894).sendRequest(obj2);
       }
     }
   }
@@ -255,7 +255,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp6 = first(importAllResult.useState(""), 2);
   first2 = tmp6[0];
   closure_8 = tmp6[1];
-  let obj1 = importDefault(12927);
+  let obj1 = importDefault(12971);
   const enabled = obj1.useConfig({ location: "AddFriendbyId" }).enabled;
   const items = [first1];
   const items1 = [first1];
@@ -308,7 +308,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       tmp = null != first1.a11yMessage;
     }
     if (tmp) {
-      const AccessibilityAnnouncer = sourcePage(3844).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = sourcePage(3878).AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce(first1.a11yMessage);
     }
   }, items3);
@@ -349,7 +349,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj3.onPress = handleSubmitEditing;
     obj3.loading = first1.status === constants.LOADING;
     obj3.grow = false;
-    items6[2] = callback(sourcePage(4544).Button, obj3);
+    items6[2] = callback(sourcePage(4578).Button, obj3);
     obj.children = items6;
     return tmp12(closure_11, obj);
   } else {
@@ -361,7 +361,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj5.style = items7;
     let intl = sourcePage(1212).intl;
     obj5.children = intl.string(sourcePage(1212).t.Yi6Mpu);
-    const items8 = [callback(sourcePage(4127).Text, obj5), , ];
+    const items8 = [callback(sourcePage(4161).Text, obj5), , ];
     const obj6 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1 };
     let str2;
     if (first1.field === constants2.MESSAGE) {
@@ -370,12 +370,12 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       }
     }
     obj6.status = str2;
-    items8[1] = callback(sourcePage(7585).TextArea, obj6);
+    items8[1] = callback(sourcePage(7621).TextArea, obj6);
     if (first1.status !== constants.ERROR) {
       const obj7 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted" };
       let intl2 = sourcePage(1212).intl;
       obj7.children = intl2.string(sourcePage(1212).t.UtfQNw);
-      let tmp28 = callback(sourcePage(4127).Text, obj7);
+      let tmp28 = callback(sourcePage(4161).Text, obj7);
       items8[2] = tmp28;
       obj4.children = items8;
       tmp15(tmp16, obj4);

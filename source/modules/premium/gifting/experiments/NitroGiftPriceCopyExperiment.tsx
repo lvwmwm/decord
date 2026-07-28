@@ -1,9 +1,9 @@
-// Module ID: 8737
-// Function ID: 69152
+// Module ID: 8781
+// Function ID: 69303
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 8737 (apexExperiment)
+// Module 8781 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-nitro-gifting-price-copy-tweaks", kind: "user", defaultConfig: { showGiftPrice: true, useNewCopy: false, monthlyDefaultSelected: false }, variations: { [1]: { showGiftPrice: false, useNewCopy: false, monthlyDefaultSelected: false }, [2]: { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: false }, [3]: { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: true } } };

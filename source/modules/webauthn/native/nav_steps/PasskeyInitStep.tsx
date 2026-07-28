@@ -1,10 +1,10 @@
-// Module ID: 13698
-// Function ID: 105180
+// Module ID: 13742
+// Function ID: 105353
 // Name: CredentialList
-// Dependencies: [57, 31, 27, 13686, 13687, 33, 4131, 689, 566, 13688, 4127, 1212, 4966, 6625, 4090, 4099, 13699, 1935, 9034, 5501, 5164, 13701, 1456, 5592, 9131, 6695, 7575, 2]
+// Dependencies: [57, 31, 27, 13730, 13731, 33, 4165, 689, 566, 13732, 4161, 1212, 5000, 6661, 4124, 4133, 13743, 1935, 9078, 5536, 5198, 13745, 1456, 5627, 9175, 6731, 7611, 2]
 // Exports: default
 
-// Module 13698 (CredentialList)
+// Module 13742 (CredentialList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "set";
@@ -28,7 +28,7 @@ function CredentialList(navigation) {
     let obj = { style: _undefined.iconButtonGroup };
     obj = { variant: "secondary" };
     obj = { color: _undefined(689).colors.TEXT_FEEDBACK_CRITICAL };
-    obj.icon = outer1_9(navigation(4090).TrashIcon, obj);
+    obj.icon = outer1_9(navigation(4124).TrashIcon, obj);
     const intl = navigation(1212).intl;
     obj.accessibilityLabel = intl.string(navigation(1212).t.N86XcP);
     obj.size = "sm";
@@ -39,8 +39,8 @@ function CredentialList(navigation) {
       obj = { credential: closure_0, deleting: outer1_2, setDeleting: outer1_3 };
       return obj.openLazy(navigation(paths[17])(paths[16], paths.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj);
     };
-    const items = [outer1_9(navigation(6625).IconButton, obj), ];
-    const obj1 = { variant: "secondary", icon: outer1_9(navigation(9034).PencilIcon, {}) };
+    const items = [outer1_9(navigation(6661).IconButton, obj), ];
+    const obj1 = { variant: "secondary", icon: outer1_9(navigation(9078).PencilIcon, {}) };
     const intl2 = navigation(1212).intl;
     obj1.accessibilityLabel = intl2.string(navigation(1212).t.bt75uw);
     obj1.size = "sm";
@@ -49,9 +49,9 @@ function CredentialList(navigation) {
     obj1.onPress = function onPress() {
       label.push(outer2_8.EDIT, { credential: label });
     };
-    items[1] = outer1_9(navigation(6625).IconButton, obj1);
+    items[1] = outer1_9(navigation(6661).IconButton, obj1);
     obj.children = items;
-    return outer1_10(navigation(4966).ButtonGroup, obj);
+    return outer1_10(navigation(5000).ButtonGroup, obj);
   }
   let obj = navigation(566);
   let items = [_isNativeReflectConstruct];
@@ -63,12 +63,12 @@ function CredentialList(navigation) {
   callback = tmp2[1];
   if (0 === credentials.length) {
     obj = { style: tmp.upsellContainer };
-    obj = { source: importDefault(13688), style: tmp.keychainImage };
+    obj = { source: importDefault(13732), style: tmp.keychainImage };
     const items1 = [callback2(closure_5, obj), ];
     let obj1 = { variant: "text-md/normal", style: tmp.upsellText };
     let intl2 = navigation(1212).intl;
     obj1.children = intl2.string(navigation(1212).t.FSNwFW);
-    items1[1] = callback2(navigation(4127).Text, obj1);
+    items1[1] = callback2(navigation(4161).Text, obj1);
     obj.children = items1;
     return callback3(closure_6, obj);
   } else {
@@ -81,14 +81,14 @@ function CredentialList(navigation) {
       let formatResult = null;
       if (null != label.last_used) {
         const intl = navigation(1212).intl;
-        obj = { lastUsed: navigation(13701).formatDate(label.last_used) };
+        obj = { lastUsed: navigation(13745).formatDate(label.last_used) };
         formatResult = intl.format(navigation(1212).t["7JgxF5"], obj);
-        const obj3 = navigation(13701);
+        const obj3 = navigation(13745);
       }
       obj.subLabel = formatResult;
-      return outer1_9(navigation(5164).TableRow, obj, label.id);
+      return outer1_9(navigation(5198).TableRow, obj, label.id);
     });
-    return callback2(navigation(5501).TableRowGroup, obj2);
+    return callback2(navigation(5536).TableRowGroup, obj2);
   }
 }
 ({ Image: closure_5, View: closure_6 } = get_ActivityIndicator);
@@ -147,6 +147,6 @@ export default function PasskeyInitStep(arg0) {
     obj1 = { navigation };
     obj.children = callback2(CredentialList, obj1);
     obj.children = callback2(closure_6, obj);
-    return callback2(navigation(7575).Form, obj);
+    return callback2(navigation(7611).Form, obj);
   }
 };

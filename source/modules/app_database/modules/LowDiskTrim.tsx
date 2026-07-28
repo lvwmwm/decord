@@ -1,9 +1,9 @@
-// Module ID: 5888
-// Function ID: 52238
+// Module ID: 5922
+// Function ID: 52357
 // Name: LowDiskTrim
-// Dependencies: [6, 7, 5707, 1883, 2]
+// Dependencies: [6, 7, 5717, 1883, 2]
 
-// Module 5888 (LowDiskTrim)
+// Module 5922 (LowDiskTrim)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

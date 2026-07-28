@@ -1,10 +1,10 @@
-// Module ID: 12306
-// Function ID: 95882
+// Module ID: 12349
+// Function ID: 96052
 // Name: getPresenceActivity
-// Dependencies: [4168, 4812, 12307, 1858, 1194, 12308, 10408, 4350, 4218, 4811, 1850, 10407, 653, 8113, 5463, 12309, 1212, 11072, 12310, 10884, 10889, 7856, 12311, 10885, 11961, 10891, 10888, 12312, 10443, 7953, 10883, 7853, 11076, 12313, 12314, 10892, 10893, 12315, 12316, 12319, 2653, 2]
+// Dependencies: [4202, 4846, 12350, 1858, 1194, 12351, 10448, 4384, 4252, 4845, 1850, 10447, 653, 8151, 5498, 12352, 1212, 11110, 12353, 10922, 10927, 7892, 12354, 10923, 12004, 10929, 10926, 12355, 10481, 7990, 10921, 7889, 11114, 12356, 12357, 10930, 10931, 12358, 12359, 12362, 2653, 2]
 // Exports: createActivityRichPresenceInviteEmbed
 
-// Module 12306 (getPresenceActivity)
+// Module 12349 (getPresenceActivity)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SpotifyApplication } from "_isNativeReflectConstruct";
@@ -63,7 +63,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
   let message;
   let remoteJoinPlatform2;
   const _require = id;
-  let obj = _require(12310);
+  let obj = _require(12353);
   let applicationFromMessage = obj.getApplicationFromMessage(application);
   application = application.application;
   id = undefined;
@@ -79,7 +79,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
     tmp5 = false === _isNativeReflectConstruct.isFetchingApplication(id);
   }
   if (tmp5) {
-    let obj1 = _require(5463);
+    let obj1 = _require(5498);
     const application1 = obj1.fetchApplication(id, false);
   }
   if (null != application) {
@@ -98,22 +98,22 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
       if (null != applicationFromMessage.icon) {
         applicationFromMessage = _require;
         applicationFromMessage = dependencyMap;
-        applicationFromMessage = _require(11076).getAppIconSrc(applicationFromMessage.id, applicationFromMessage.icon, applicationFromMessage.bot);
-        const obj41 = _require(11076);
+        applicationFromMessage = _require(11114).getAppIconSrc(applicationFromMessage.id, applicationFromMessage.icon, applicationFromMessage.bot);
+        const obj41 = _require(11114);
       }
       applicationFromMessage = undefined;
       applicationFromMessage = _require;
       applicationFromMessage = dependencyMap;
       applicationFromMessage = getPresenceActivity;
       applicationFromMessage = store2;
-      applicationFromMessage = _require(11076).getAppGradientColors(applicationFromMessage);
+      applicationFromMessage = _require(11114).getAppGradientColors(applicationFromMessage);
       applicationFromMessage = importDefault;
       applicationFromMessage = getPresenceActivity(application, id, store2.getId());
-      applicationFromMessage = importDefault(10884)(applicationFromMessage, application, applicationFromMessage.id);
-      const obj42 = _require(11076);
+      applicationFromMessage = importDefault(10922)(applicationFromMessage, application, applicationFromMessage.id);
+      const obj42 = _require(11114);
       applicationFromMessage = store2;
-      applicationFromMessage = _require(12311).getRequestToStreamText(application, id, store2.getId());
-      applicationFromMessage = importDefault(12319)(application);
+      applicationFromMessage = _require(12354).getRequestToStreamText(application, id, store2.getId());
+      applicationFromMessage = importDefault(12362)(application);
       obj = {};
       applicationFromMessage = obj;
       obj.displayType = applicationFromMessage ? applicationFromMessage.ACTIVE : applicationFromMessage.DEAD;
@@ -142,11 +142,11 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
     } else {
       applicationFromMessage = importDefault;
       applicationFromMessage = dependencyMap;
-      applicationFromMessage = !importDefault(10884)(tmp11, application, applicationFromMessage.id);
+      applicationFromMessage = !importDefault(10922)(tmp11, application, applicationFromMessage.id);
       applicationFromMessage = _require;
       const activity5 = application.activity;
       let name_override;
-      applicationFromMessage = _require(10889).getIsAskToJoin(application);
+      applicationFromMessage = _require(10927).getIsAskToJoin(application);
       if (null != activity5) {
         name_override = activity5.name_override;
       }
@@ -160,10 +160,10 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
       }
       let assetImage = null;
       if (null != icon_override) {
-        let obj2 = _require(7856);
+        let obj2 = _require(7892);
         assetImage = obj2.getAssetImage(applicationFromMessage.id, application.activity.icon_override);
       }
-      let obj3 = _require(12311);
+      let obj3 = _require(12354);
       const activity3 = application.activity;
       let type1;
       if (null != activity3) {
@@ -178,14 +178,14 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
           }
           let items = Array.from(party);
         }
-        let obj4 = _require(10885);
+        let obj4 = _require(10923);
         let length = obj4.getPartySize(tmp11).maxPartySize;
-        let obj5 = _require(11961);
+        let obj5 = _require(12004);
         const currentActivityGamePlatform = obj5.getCurrentActivityGamePlatform();
-        const tmp31 = importDefault(10891)(closure_9, closure_12, applicationFromMessage.id);
-        let obj6 = _require(10888);
+        const tmp31 = importDefault(10929)(closure_9, closure_12, applicationFromMessage.id);
+        let obj6 = _require(10926);
         const isInParty = obj6.getIsInParty(tmp31, tmp11);
-        let obj7 = _require(12312);
+        let obj7 = _require(12355);
         let _Set = Set;
         let supported_platforms;
         const canSendInvite = obj7.getCanSendInvite(tmp11, application, applicationFromMessage, id1);
@@ -198,10 +198,10 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
         let prototype = _Set.prototype;
         _Set = new _Set(supported_platforms);
         const hasItem = _Set.has(currentActivityGamePlatform);
-        let obj9 = _require(10443);
-        let obj10 = _require(7953);
+        let obj9 = _require(10481);
+        let obj10 = _require(7990);
         const canLaunchFrameResult = obj9.canLaunchFrame(applicationFromMessage);
-        let obj11 = _require(10883);
+        let obj11 = _require(10921);
         obj = { presenceActivity: tmp11, currentUserPresenceActivity: tmp31, currentUserId: id1, message: application, application: applicationFromMessage, isEmbeddedApplication: obj10.isEmbeddedApp(applicationFromMessage), isFrameApplication: canLaunchFrameResult, isGameLaunchable: hasItem };
         const canJoin = obj11.getCanJoin(obj);
         const remoteJoinPlatform = canJoin.remoteJoinPlatform;
@@ -238,7 +238,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
         }
         let str2 = "";
         if (null != start) {
-          let obj13 = _require(7853);
+          let obj13 = _require(7889);
           obj1 = { start, end };
           const _Date = Date;
           str2 = obj13.formatActiveTimestamp(obj1, Date.now());
@@ -246,7 +246,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
         if (null == assetImage) {
           let appIconSrc = null;
           if (null != applicationFromMessage.icon) {
-            let obj15 = _require(11076);
+            let obj15 = _require(11114);
             appIconSrc = obj15.getAppIconSrc(applicationFromMessage.id, applicationFromMessage.icon, applicationFromMessage.bot);
           }
           assetImage = appIconSrc;
@@ -285,7 +285,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
               } else {
                 applicationFromMessage = importDefault;
                 applicationFromMessage = dependencyMap;
-                applicationFromMessage = importDefault(12313)(tmp11, applicationFromMessage.id);
+                applicationFromMessage = importDefault(12356)(tmp11, applicationFromMessage.id);
                 applicationFromMessage = undefined;
                 const author = application.author;
                 applicationFromMessage = store;
@@ -369,13 +369,13 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
             if (null != applicationFromMessage) {
               applicationFromMessage = _require;
               applicationFromMessage = dependencyMap;
-              const obj30 = _require(12314);
+              const obj30 = _require(12357);
               applicationFromMessage = obj30;
               applicationFromMessage = tmp11;
               if (obj30.isMostRecentDeadEndInvite(application.id, applicationFromMessage, applicationFromMessage.id, tmp11)) {
                 applicationFromMessage = _require;
                 applicationFromMessage = dependencyMap;
-                const obj31 = _require(12311);
+                const obj31 = _require(12354);
                 applicationFromMessage = obj31;
                 applicationFromMessage = application;
                 applicationFromMessage = name_override;
@@ -424,7 +424,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
             }
             return String(avatarURL);
           });
-          let obj16 = _require(12311);
+          let obj16 = _require(12354);
           obj5 = { maxPartySize: length, partySize: items.length };
           const activity4 = application.activity;
           let type2;
@@ -441,16 +441,16 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
           if (tmp67) {
             tmp68 = details;
           }
-          obj6 = { canJoin: canJoin.canJoin, remoteJoinPlatform, canSendInvite, isInParty, message: application, currentUserId: id1, applicationName: name_override, isAskToJoin: applicationFromMessage, supportsRemoteJoin: _require(10892).getSupportsRemoteJoin(tmp11) };
-          const obj20 = _require(10892);
+          obj6 = { canJoin: canJoin.canJoin, remoteJoinPlatform, canSendInvite, isInParty, message: application, currentUserId: id1, applicationName: name_override, isAskToJoin: applicationFromMessage, supportsRemoteJoin: _require(10930).getSupportsRemoteJoin(tmp11) };
+          const obj20 = _require(10930);
           tmp67 = null != details && "" !== details;
-          obj6.canPromptAuth = _require(10893).getShouldShowAppAuthPrompt(applicationFromMessage);
+          obj6.canPromptAuth = _require(10931).getShouldShowAppAuthPrompt(applicationFromMessage);
           ({ remoteJoinPlatform: remoteJoinPlatform2, message } = obj6);
           if (obj6.canJoin) {
             let remoteJoinFooterLabel;
             if (null != remoteJoinPlatform2) {
-              remoteJoinFooterLabel = _require(12309).getRemoteJoinFooterLabel(remoteJoinPlatform2);
-              const obj28 = _require(12309);
+              remoteJoinFooterLabel = _require(12352).getRemoteJoinFooterLabel(remoteJoinPlatform2);
+              const obj28 = _require(12352);
             }
             obj7 = {};
             const intl6 = _require(1212).intl;
@@ -507,13 +507,13 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
           flag10 = false;
           tmp99 = assetImage;
           name = name_override;
-          const obj21 = _require(10893);
+          const obj21 = _require(10931);
         }
         items = [];
         if (null != remoteJoinPlatform) {
           applicationFromMessage = _require;
           applicationFromMessage = dependencyMap;
-          applicationFromMessage = _require(12315).ACTIVITY_GAME_PLATFORM_TO_ICON_KEY[remoteJoinPlatform];
+          applicationFromMessage = _require(12358).ACTIVITY_GAME_PLATFORM_TO_ICON_KEY[remoteJoinPlatform];
           applicationFromMessage = items;
           if (null != applicationFromMessage) {
             applicationFromMessage = items.push(applicationFromMessage);
@@ -530,8 +530,8 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
           obj14.platforms = applicationFromMessage;
           obj14.currentPlatform = currentActivityGamePlatform;
           obj14.isGameLaunchable = hasItem;
-          applicationFromMessage = _require(12315).getJoinFromSupportedPlatformsIconKeys(obj14);
-          const obj35 = _require(12315);
+          applicationFromMessage = _require(12358).getJoinFromSupportedPlatformsIconKeys(obj14);
+          const obj35 = _require(12358);
         }
         applicationFromMessage = undefined;
         if (null != tmp99) {
@@ -541,12 +541,12 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
         applicationFromMessage = dependencyMap;
         const isEmbeddedAppResult = obj10.isEmbeddedApp(applicationFromMessage);
         const tmp50 = closure_18;
-        applicationFromMessage = _require(11076).getAppGradientColors(applicationFromMessage);
-        const obj37 = _require(11076);
+        applicationFromMessage = _require(11114).getAppGradientColors(applicationFromMessage);
+        const obj37 = _require(11114);
         obj15 = { messageId: application.id, presenceActivity: tmp11, application: applicationFromMessage };
         obj16 = {};
         applicationFromMessage = obj;
-        applicationFromMessage = _require(12316).getPresenceActivityInviteCoverImageURL(obj15);
+        applicationFromMessage = _require(12359).getPresenceActivityInviteCoverImageURL(obj15);
         if (flag10) {
           let DEAD_COMPACT = applicationFromMessage.DEAD_COMPACT;
         } else {
@@ -576,7 +576,7 @@ function createRichPresenceDisplayActivityInviteEmbed(application, id) {
         return obj16;
       }
       items = [];
-      const obj45 = _require(10889);
+      const obj45 = _require(10927);
     }
   }
 }
@@ -591,7 +591,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
     if (null != message.activity) {
       if (null != channel) {
         currentUser = currentUser.getCurrentUser();
-        let obj = require(11072) /* getContentClassificationVisibility */;
+        let obj = require(11110) /* getContentClassificationVisibility */;
         const application = message.application;
         let prop;
         if (null != application) {
@@ -602,11 +602,11 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
           nsfwAllowed = currentUser.nsfwAllowed;
         }
         const contentClassificationVisibility = obj.getContentClassificationVisibility(prop, channel, nsfwAllowed);
-        if (require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
+        if (require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
           return createRichPresenceDisplayActivityInviteEmbed(message, channel);
         } else {
-          if (require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE !== contentClassificationVisibility) {
-            if (require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_CHANNEL_RESTRICTION !== contentClassificationVisibility) {
+          if (require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE !== contentClassificationVisibility) {
+            if (require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_CHANNEL_RESTRICTION !== contentClassificationVisibility) {
               return null;
             }
           }
@@ -614,7 +614,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
           obj.displayType = obj.BLOCKED;
           const intl = require(1212) /* getSystemLocale */.intl;
           obj.headerText = intl.string(require(1212) /* getSystemLocale */.t.pkq6Vq);
-          if (contentClassificationVisibility === require(11072) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE) {
+          if (contentClassificationVisibility === require(11110) /* getContentClassificationVisibility */.ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = require(1212) /* getSystemLocale */.intl;
             let stringResult = intl3.string(require(1212) /* getSystemLocale */.t.GhU4yl);
           } else {

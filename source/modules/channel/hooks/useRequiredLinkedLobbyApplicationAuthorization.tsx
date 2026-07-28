@@ -1,10 +1,10 @@
-// Module ID: 11461
-// Function ID: 89229
+// Module ID: 11499
+// Function ID: 89353
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [31, 4168, 5067, 566, 5470, 5463, 2]
+// Dependencies: [31, 4202, 5101, 566, 5505, 5498, 2]
 // Exports: default
 
-// Module 11461 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 11499 (useRequiredLinkedLobbyApplicationAuthorization)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

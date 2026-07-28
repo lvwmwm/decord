@@ -1,10 +1,10 @@
-// Module ID: 15970
-// Function ID: 123368
+// Module ID: 16009
+// Function ID: 123524
 // Name: convertMsToSecs
-// Dependencies: [57, 31, 27, 1348, 4350, 3768, 1850, 653, 15840, 33, 4131, 689, 3835, 566, 4321, 7934, 4127, 15971, 4555, 5685, 5626, 3992, 4132, 1212, 8174, 5091, 4085, 675, 13523, 3746, 15968, 8067, 8065, 14018, 2]
+// Dependencies: [57, 31, 27, 1348, 4384, 3802, 1850, 653, 15879, 33, 4165, 689, 3869, 566, 4355, 7971, 4161, 16010, 4589, 5695, 5661, 4026, 4166, 1212, 8212, 5125, 4119, 675, 13567, 3780, 16007, 8105, 8103, 14062, 2]
 // Exports: default
 
-// Module 15970 (convertMsToSecs)
+// Module 16009 (convertMsToSecs)
 import _slicedToArray from "_slicedToArray";
 import PauseIcon from "PauseIcon";
 import get_ActivityIndicator from "expandLocation";
@@ -40,7 +40,7 @@ function MediaInfo(message) {
   const activeMediaPlayerSource = message.activeMediaPlayerSource;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = message(3835);
+  let obj = message(3869);
   const token = obj.useToken(first(689).colors.BACKGROUND_SURFACE_HIGH);
   let obj1 = message(566);
   const items = [_isNativeReflectConstruct, closure_11, closure_10];
@@ -53,7 +53,7 @@ function MediaInfo(message) {
     const channel = outer1_8.getChannel(channel_id);
     let channelName = null;
     if (null != channel) {
-      const obj = message(4321);
+      const obj = message(4355);
       channelName = obj.computeChannelName(channel, outer1_11, outer1_10, true, true);
     }
     return channelName;
@@ -79,7 +79,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = first(7934)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = first(7971)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -92,7 +92,7 @@ function MediaInfo(message) {
                 },
           children: str2
         };
-        const tmp15 = callback(message(4127).Text, obj);
+        const tmp15 = callback(message(4161).Text, obj);
         obj = {
           accessibilityElementsHidden: isControlVisible,
           style: tmp.infoContent,
@@ -107,12 +107,12 @@ function MediaInfo(message) {
           const obj3 = { flex: 1 };
           obj2.style = obj3;
           const obj4 = { spacing: 20, speed: 0.2, children: tmp15 };
-          const items3 = [callback(message(15971).Marquee, obj4), ];
+          const items3 = [callback(message(16010).Marquee, obj4), ];
           const obj5 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1] };
           const items4 = [token, `${tmp2}CC`, `${tmp2}00`, `${tmp2}00`, `${tmp2}CC`, token];
           obj5.colors = items4;
           obj5.style = tmp.infoContainerGradient;
-          items3[1] = callback(first(4555), obj5);
+          items3[1] = callback(first(4589), obj5);
           obj2.children = items3;
           tmp20 = callback2(closure_7, obj2);
         }
@@ -120,7 +120,7 @@ function MediaInfo(message) {
         let tmp28 = null != stateFromStores;
         if (tmp28) {
           const obj6 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: stateFromStores };
-          tmp28 = callback(message(4127).Text, obj6);
+          tmp28 = callback(message(4161).Text, obj6);
         }
         items5[1] = tmp28;
         obj1.children = items5;
@@ -154,7 +154,7 @@ function PiPControls(message) {
       }
     }
   }, items);
-  let obj = message(3992);
+  let obj = message(4026);
   const fn = function u() {
     const obj = {};
     let num = 0;
@@ -164,7 +164,7 @@ function PiPControls(message) {
     obj.opacity = message(outer1_2[22]).withTiming(num, { duration: 200 });
     return obj;
   };
-  obj = { withTiming: message(4132).withTiming, visible };
+  obj = { withTiming: message(4166).withTiming, visible };
   fn.__closure = obj;
   fn.__workletHash = 3641278982291;
   fn.__initData = closure_18;
@@ -187,21 +187,21 @@ function PiPControls(message) {
   }
   obj = { style: items1 };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback(message(8174).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items2 = [callback(message(8212).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button" };
   items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
   obj1.accessibilityLabel = stringResult;
-  obj1.children = callback(message(5091).ArrowLargeLeftIcon, { size: "sm" });
+  obj1.children = callback(message(5125).ArrowLargeLeftIcon, { size: "sm" });
   items2[1] = callback(closure_6, obj1);
   const obj2 = { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button" };
   items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
   obj2.accessibilityLabel = string2Result;
-  obj2.children = callback(message(4085).XLargeIcon, { size: "sm" });
+  obj2.children = callback(message(4119).XLargeIcon, { size: "sm" });
   items2[2] = callback(closure_6, obj2);
   obj.children = items2;
-  return callback2(visible(3992).View, obj);
+  return callback2(visible(4026).View, obj);
 }
 ({ Easing: closure_5, StyleSheet, TouchableOpacity: closure_6, View: closure_7 } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_12, MessageFlags: closure_13, Routes: closure_14 } = ME);

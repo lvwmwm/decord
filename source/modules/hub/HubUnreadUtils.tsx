@@ -1,10 +1,10 @@
-// Module ID: 15106
-// Function ID: 115036
+// Module ID: 15146
+// Function ID: 115194
 // Name: useHubUnreadCount
-// Dependencies: [10003, 4143, 566, 21, 9995, 2]
+// Dependencies: [10043, 4177, 566, 21, 10035, 2]
 // Exports: useHubUnreadCount
 
-// Module 15106 (useHubUnreadCount)
+// Module 15146 (useHubUnreadCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

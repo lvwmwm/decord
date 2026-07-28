@@ -1,8 +1,8 @@
-// Module ID: 13499
-// Function ID: 103793
-// Dependencies: [5932, 653, 8112, 10559, 5955, 10554, 675, 686, 10440, 2]
+// Module ID: 13543
+// Function ID: 103966
+// Dependencies: [5966, 653, 8150, 10597, 5989, 10592, 675, 686, 10478, 2]
 
-// Module 13499
+// Module 13543
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -17,12 +17,12 @@ obj = {
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
-    let obj = require(10559) /* recurseReplaceContentTree */;
+    let obj = require(10597) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    const obj2 = require(10559) /* recurseReplaceContentTree */;
+    const obj2 = require(10597) /* recurseReplaceContentTree */;
     const quest = store.getQuest(quest_id);
-    const validateApplicationResult = require(10559) /* recurseReplaceContentTree */.validateApplication(socket.application);
-    const activityApplicationId = require(5955) /* _createForOfIteratorHelperLoose */.getActivityApplicationId(quest);
+    const validateApplicationResult = require(10597) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const activityApplicationId = require(5989) /* _createForOfIteratorHelperLoose */.getActivityApplicationId(quest);
     if (null != quest) {
       if (null != activityApplicationId) {
         if (activityApplicationId === validateApplicationResult) {
@@ -47,7 +47,7 @@ obj = {
         }
       }
     }
-    let tmp8 = importDefault(10554);
+    let tmp8 = importDefault(10592);
     obj = { errorCode: constants.INVALID_COMMAND };
     tmp8 = new tmp8(obj, "Quest not found: " + quest_id);
     throw tmp8;
@@ -59,12 +59,12 @@ obj = {
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
-    let obj = require(10559) /* recurseReplaceContentTree */;
+    let obj = require(10597) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = require(10559) /* recurseReplaceContentTree */;
+    let obj1 = require(10597) /* recurseReplaceContentTree */;
     const validateApplicationResult = obj1.validateApplication(socket.application);
     const quest = store.getQuest(quest_id);
-    let obj2 = require(5955) /* _createForOfIteratorHelperLoose */;
+    let obj2 = require(5989) /* _createForOfIteratorHelperLoose */;
     const playActivityApplicationId = obj2.getPlayActivityApplicationId(quest);
     if (null != quest) {
       if (null != playActivityApplicationId) {
@@ -75,7 +75,7 @@ obj = {
             enrolledAt = userStatus.enrolledAt;
           }
           if (null == enrolledAt) {
-            let tmp13 = importDefault(10554);
+            let tmp13 = importDefault(10592);
             obj = { errorCode: constants.INVALID_COMMAND };
             const prototype = tmp13.prototype;
             tmp13 = new tmp13(obj, "User is not enrolled in quest");
@@ -92,7 +92,7 @@ obj = {
         }
       }
     }
-    let tmp20 = importDefault(10554);
+    let tmp20 = importDefault(10592);
     obj3 = { errorCode: constants.INVALID_COMMAND };
     tmp20 = new tmp20(obj3, "Quest not found: " + quest_id);
     throw tmp20;
@@ -103,13 +103,13 @@ obj[RPCCommands.GET_QUEST] = {
   scope: require("set").OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
-    let obj = require(10559) /* recurseReplaceContentTree */;
+    let obj = require(10597) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    const obj2 = require(10559) /* recurseReplaceContentTree */;
-    const validateApplicationResult = require(10559) /* recurseReplaceContentTree */.validateApplication(socket.application);
-    const eligibleQuestsForApplicationId = require(10440) /* _createForOfIteratorHelperLoose */.getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
+    const obj2 = require(10597) /* recurseReplaceContentTree */;
+    const validateApplicationResult = require(10597) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const eligibleQuestsForApplicationId = require(10478) /* _createForOfIteratorHelperLoose */.getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
     if (0 === eligibleQuestsForApplicationId.length) {
-      let tmp5 = importDefault(10554);
+      let tmp5 = importDefault(10592);
       obj = { errorCode: constants.INVALID_COMMAND };
       let prototype = tmp5.prototype;
       tmp5 = new tmp5(obj, "No eligible quests found");
@@ -162,20 +162,20 @@ obj[RPCCommands.GET_QUEST] = {
         return num;
       })[0];
     }
-    const obj3 = require(10440) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(10478) /* _createForOfIteratorHelperLoose */;
   }
 };
 let obj1 = {
   scope: require("set").OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
-    let obj = require(10559) /* recurseReplaceContentTree */;
+    let obj = require(10597) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    const obj2 = require(10559) /* recurseReplaceContentTree */;
-    const validateApplicationResult = require(10559) /* recurseReplaceContentTree */.validateApplication(socket.application);
-    const eligibleQuestsForApplicationId = require(10440) /* _createForOfIteratorHelperLoose */.getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
+    const obj2 = require(10597) /* recurseReplaceContentTree */;
+    const validateApplicationResult = require(10597) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const eligibleQuestsForApplicationId = require(10478) /* _createForOfIteratorHelperLoose */.getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
     if (0 === eligibleQuestsForApplicationId.length) {
-      let tmp5 = importDefault(10554);
+      let tmp5 = importDefault(10592);
       obj = { errorCode: constants.INVALID_COMMAND };
       let prototype = tmp5.prototype;
       tmp5 = new tmp5(obj, "No eligible quests found");
@@ -228,7 +228,7 @@ let obj1 = {
         return num;
       })[0];
     }
-    const obj3 = require(10440) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(10478) /* _createForOfIteratorHelperLoose */;
   }
 };
 let result = require("set").fileFinishedImporting("modules/rpc/server/commands/quests.tsx");

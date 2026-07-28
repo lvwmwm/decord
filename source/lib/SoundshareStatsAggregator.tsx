@@ -1,9 +1,9 @@
-// Module ID: 4225
-// Function ID: 36891
+// Module ID: 4259
+// Function ID: 37001
 // Name: SoundshareStatsAggregator
 // Dependencies: [6, 7, 2]
 
-// Module 4225 (SoundshareStatsAggregator)
+// Module 4259 (SoundshareStatsAggregator)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

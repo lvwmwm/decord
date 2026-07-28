@@ -1,9 +1,9 @@
-// Module ID: 14317
-// Function ID: 109913
+// Module ID: 14361
+// Function ID: 110086
 // Name: handleLanguageChange
-// Dependencies: [5, 31, 27, 1923, 1922, 33, 4131, 689, 6152, 566, 5121, 7596, 1212, 7595, 14318, 2]
+// Dependencies: [5, 31, 27, 1923, 1922, 33, 4165, 689, 6186, 566, 5155, 7632, 1212, 7631, 14362, 2]
 
-// Module 14317 (handleLanguageChange)
+// Module 14361 (handleLanguageChange)
 import jsxProd from "jsxProd";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setAppLocale } from "_setAppLocale";
@@ -50,8 +50,8 @@ const memoResult = require("result").memo(function UserSettingsLocale() {
     obj.icon = outer1_8(outer1_4, obj);
     return outer1_8(tmp(outer1_2[13]).TableRadioRow, obj, name);
   });
-  obj.children = jsx(require(7596) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true });
-  obj.children = jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
+  obj.children = jsx(require(7632) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true });
+  obj.children = jsx(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
   return <closure_5 bottom />;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");

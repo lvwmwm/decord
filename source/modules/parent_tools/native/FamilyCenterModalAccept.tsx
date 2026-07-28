@@ -1,10 +1,10 @@
-// Module ID: 13891
-// Function ID: 106347
+// Module ID: 13935
+// Function ID: 106520
 // Name: FamilyCenterModalAcceptScreen
-// Dependencies: [31, 27, 33, 4131, 689, 4338, 3831, 1212, 11048, 6725, 6726, 13888, 4076, 4127, 2199, 13858, 11050, 11058, 4966, 4544, 5087, 11060, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4372, 3865, 1212, 11086, 6761, 6762, 13932, 4110, 4161, 2199, 13902, 11088, 11096, 5000, 4578, 5121, 11098, 2]
 // Exports: default
 
-// Module 13891 (FamilyCenterModalAcceptScreen)
+// Module 13935 (FamilyCenterModalAcceptScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function FamilyCenterModalAcceptScreen(otherUser) {
     const intl = otherUser(outer1_2[7]).intl;
     otherUser(outer1_2[6]).presentFailedToast(intl.string(otherUser(outer1_2[7]).t.R0RpRX));
   }, []);
-  let obj = otherUser(11048);
+  let obj = otherUser(11086);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   const acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const isAcceptLoading = familyCenterActions.isAcceptLoading;
@@ -35,38 +35,38 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   obj = {};
   obj = {};
   const obj1 = { style: tmp.header };
-  const obj2 = { otherUser, iconSrc: acceptLinkRequest(4076), iconStyles: tmp.icon };
-  const items1 = [callback(acceptLinkRequest(13888), obj2), , ];
+  const obj2 = { otherUser, iconSrc: acceptLinkRequest(4110), iconStyles: tmp.icon };
+  const items1 = [callback(acceptLinkRequest(13932), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold" };
   let intl = otherUser(1212).intl;
   obj3.children = intl.string(acceptLinkRequest(2199).rlNJwZ);
-  items1[1] = callback(otherUser(4127).Text, obj3);
-  items1[2] = callback(acceptLinkRequest(13858), { user: otherUser });
+  items1[1] = callback(otherUser(4161).Text, obj3);
+  items1[2] = callback(acceptLinkRequest(13902), { user: otherUser });
   obj1.children = items1;
-  const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11050), {}), ];
+  const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11088), {}), ];
   const obj4 = { style: tmp.disclaimer, variant: "text-xs/normal", color: "text-default" };
   const intl2 = otherUser(1212).intl;
   obj4.children = intl2.format(acceptLinkRequest(2199).snlFqR, { username: otherUser.username });
-  items2[2] = callback(otherUser(4127).Text, obj4);
+  items2[2] = callback(otherUser(4161).Text, obj4);
   obj.children = items2;
-  const items3 = [callback2(otherUser(6726).ModalContent, obj), ];
+  const items3 = [callback2(otherUser(6762).ModalContent, obj), ];
   const obj6 = {};
   const obj7 = {};
   const obj8 = { variant: "primary", disabled: isAcceptLoading, loading: isAcceptLoading };
   const intl3 = otherUser(1212).intl;
   obj8.text = intl3.string(acceptLinkRequest(2199)["wI/jo3"]);
   obj8.onPress = callback2;
-  const items4 = [callback(otherUser(4544).Button, obj8), ];
+  const items4 = [callback(otherUser(4578).Button, obj8), ];
   const obj9 = { variant: "tertiary" };
   const intl4 = otherUser(1212).intl;
   obj9.text = intl4.string(otherUser(1212).t["ETE/oC"]);
-  obj9.onPress = acceptLinkRequest(4338).pop;
-  items4[1] = callback(otherUser(4544).Button, obj9);
+  obj9.onPress = acceptLinkRequest(4372).pop;
+  items4[1] = callback(otherUser(4578).Button, obj9);
   obj7.children = items4;
-  obj6.children = callback2(otherUser(4966).ButtonGroup, obj7);
-  items3[1] = callback(otherUser(11058).ModalFooter, obj6);
+  obj6.children = callback2(otherUser(5000).ButtonGroup, obj7);
+  items3[1] = callback(otherUser(11096).ModalFooter, obj6);
   obj.children = items3;
-  return callback2(otherUser(6725).ModalScreen, obj);
+  return callback2(otherUser(6761).ModalScreen, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -104,5 +104,5 @@ export default function FamilyCenterModalAccept(otherUser) {
   let obj = { initialRouteName: "ACCEPT", screens: memo };
   const intl = otherUser(1212).intl;
   obj.headerBackTitle = intl.string(otherUser(1212).t["13/7kX"]);
-  return callback(otherUser(11060).Modal, obj);
+  return callback(otherUser(11098).Modal, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8210
-// Function ID: 65790
+// Module ID: 8248
+// Function ID: 65900
 // Name: ChannelTypeRow
-// Dependencies: [57, 31, 27, 1352, 1391, 1348, 1838, 3759, 3768, 1850, 653, 6661, 33, 4131, 689, 4639, 4646, 4659, 4655, 4652, 4645, 4637, 4644, 4656, 4654, 4651, 1212, 4127, 1921, 3849, 5164, 7597, 7575, 1273, 5159, 566, 44, 4321, 4949, 8211, 1456, 8212, 4325, 5087, 8214, 6695, 8215, 22, 4313, 4542, 6671, 6676, 5501, 8218, 5502, 4653, 8222, 480, 8238, 5450, 5517, 2]
+// Dependencies: [57, 31, 27, 1352, 1391, 1348, 1838, 3793, 3802, 1850, 653, 6697, 33, 4165, 689, 4673, 4680, 4693, 4689, 4686, 4679, 4671, 4678, 4690, 4688, 4685, 1212, 4161, 1921, 3883, 5198, 7633, 7611, 1273, 5193, 566, 44, 4355, 4983, 8249, 1456, 8250, 4359, 5121, 8252, 6731, 8253, 22, 4347, 4576, 6707, 6712, 5536, 8256, 5537, 4687, 8260, 480, 8276, 5485, 5552, 2]
 // Exports: default
 
-// Module 8210 (ChannelTypeRow)
+// Module 8248 (ChannelTypeRow)
 import isThrottled from "isThrottled";
 import FormRadio from "FormRadio";
 import get_ActivityIndicator from "Text";
@@ -141,7 +141,7 @@ class CreateChannel {
     useState = undefined;
     c12 = undefined;
     c13 = undefined;
-    f65796 = undefined;
+    f65906 = undefined;
     c15 = undefined;
     c16 = undefined;
     updateName = function updateName(arg0, arg1) {
@@ -182,7 +182,7 @@ class CreateChannel {
     c6 = canResult;
     canResult1 = c12.can(updateName.CONNECT, stateFromStores);
     c7 = canResult1;
-    currentUser = f65796.getCurrentUser();
+    currentUser = f65906.getCurrentUser();
     tmp9 = require("invariant")(null != currentUser, "CreateChannel: user cannot be undefined");
     tmp10 = require("computeDefaultGroupDmNameFromUserIds")(stateFromStores1);
     str = "";
@@ -215,7 +215,7 @@ class CreateChannel {
     c13 = first2;
     tmp23 = tmp21[1];
     tmp24 = tmp21[2];
-    f65796 = tmp24;
+    f65906 = tmp24;
     tmp25 = guildId(onChannelCreated.useState(false), 2);
     first3 = tmp25[0];
     c15 = first3;
@@ -349,12 +349,12 @@ class CreateChannel {
       intl3 = require("getSystemLocale").intl;
       obj4 = {};
       obj11 = require("computeDefaultGroupDmNameFromUserIds");
-      tmp42 = f65796;
+      tmp42 = f65906;
       tmp43 = c13;
       flag = true;
       tmp44 = obj11;
       tmp45 = stateFromStores1;
-      obj4.name = obj11.computeChannelName(stateFromStores1, f65796, c13, true);
+      obj4.name = obj11.computeChannelName(stateFromStores1, f65906, c13, true);
       stringResult1 = intl3.format(require("getSystemLocale").t.s2ZzZZ, obj4);
     }
     obj3.description = stringResult1;
@@ -809,7 +809,7 @@ export default function CreateChannelModal(arg0) {
   let initialStack;
   let screens;
   const _require = arg0;
-  ({ screens, initialStack } = importDefault(5450)(() => {
+  ({ screens, initialStack } = importDefault(5485)(() => {
     let obj = { name: outer1_27.CREATE_CHANNEL };
     obj = {};
     let merged = Object.assign(callback);
@@ -849,6 +849,6 @@ export default function CreateChannelModal(arg0) {
     obj.initialStack = items;
     return obj;
   }));
-  return callback(_require(5517).Navigator, { screens, initialRouteStack });
+  return callback(_require(5552).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

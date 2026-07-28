@@ -1,10 +1,10 @@
-// Module ID: 14396
-// Function ID: 110147
+// Module ID: 14440
+// Function ID: 110320
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isEligibleForFriendOnlineNotifications, useFriendOnlineNotificationExperiment
 
-// Module 14396 (apexExperiment)
+// Module 14440 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-03-friend-is-online-v3", defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } };

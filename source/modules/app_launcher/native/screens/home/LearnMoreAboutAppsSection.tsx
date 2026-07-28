@@ -1,10 +1,10 @@
-// Module ID: 11206
-// Function ID: 87221
+// Module ID: 11244
+// Function ID: 87340
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [31, 27, 653, 33, 4131, 689, 3828, 1921, 1212, 11207, 7955, 4127, 4661, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 3862, 1921, 1212, 11245, 7992, 4161, 4695, 2]
 // Exports: default
 
-// Module 11206 (LearnMoreAboutAppsSection)
+// Module 11244 (LearnMoreAboutAppsSection)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -40,24 +40,24 @@ export default function LearnMoreAboutAppsSection(visible) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   let obj = { sectionName: null, numItems: 1, numVisibleItems: 1 };
   const formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
-  obj.sectionName = require(7955) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
+  obj.sectionName = require(7992) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
   obj.viewed = visible.visible;
   obj = { style: tmp.container };
   obj = { style: tmp.divider };
   const items = [callback(View, obj), , , , , ];
   const obj1 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: stringResult };
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   const obj2 = { variant: "text-xs/normal", color: "text-default", style: tmp.body, children: stringResult1 };
-  items[2] = callback(require(4127) /* Text */.Text, obj2);
+  items[2] = callback(require(4161) /* Text */.Text, obj2);
   items[3] = callback(View, { style: tmp.divider });
   const obj4 = { style: tmp.linkButton, onPress: callback, accessibilityRole: "link", accessibilityLabel: formatToPlainStringResult };
   const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl4.string(require(1212) /* getSystemLocale */.t.Ye51oT);
-  obj4.children = callback(require(4127) /* Text */.Text, obj5);
-  items[4] = callback(require(4661) /* PressableBase */.PressableHighlight, obj4);
+  obj4.children = callback(require(4161) /* Text */.Text, obj5);
+  items[4] = callback(require(4695) /* PressableBase */.PressableHighlight, obj4);
   items[5] = callback(View, { style: tmp.divider });
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(importDefault(11207), obj);
+  return callback(importDefault(11245), obj);
 };

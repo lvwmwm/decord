@@ -1,10 +1,10 @@
-// Module ID: 10982
-// Function ID: 85404
+// Module ID: 11020
+// Function ID: 85527
 // Name: ClockWarningIcon
-// Dependencies: [31, 33, 689, 3834, 10983, 2]
+// Dependencies: [31, 33, 689, 3868, 11021, 2]
 // Exports: ClockWarningIcon
 
-// Module 10982 (ClockWarningIcon)
+// Module 11020 (ClockWarningIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ClockWarningIcon = function ClockWarningIcon(qXtNtS) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(qXtNtS, obj);
-  obj = { source: require(10983) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: qXtNtS.style };
+  obj = { source: require(11021) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: qXtNtS.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10983) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: qXtNtS.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(11021) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: qXtNtS.style });
 };

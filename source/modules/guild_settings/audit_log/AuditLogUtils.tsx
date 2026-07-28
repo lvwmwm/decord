@@ -1,10 +1,10 @@
-// Module ID: 16298
-// Function ID: 126655
+// Module ID: 16337
+// Function ID: 126811
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4992, 5059, 4334, 1353, 5036, 16297, 1348, 1911, 3768, 1850, 16296, 653, 1355, 10991, 1354, 3, 4207, 1212, 6652, 21, 16299, 483, 1360, 4321, 1882, 24, 665, 8288, 16300, 3801, 3713, 2]
+// Dependencies: [5026, 5093, 4368, 1353, 5070, 16336, 1348, 1911, 3802, 1850, 16335, 653, 1355, 11029, 1354, 3, 4241, 1212, 6688, 21, 16338, 483, 1360, 4355, 1882, 24, 665, 8326, 16339, 3835, 3747, 2]
 // Exports: checkChangesToRender, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, transformLogs
 
-// Module 16298 (_createForOfIteratorHelperLoose)
+// Module 16337 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -805,19 +805,19 @@ class ACTION_FILTER_ITEMS {
   }
 }
 let obj = {
-  [arg1(4207).TimeUnits.SECONDS]: (seconds) => {
+  [arg1(4241).TimeUnits.SECONDS]: (seconds) => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.geSp4K, { seconds });
   },
-  [arg1(4207).TimeUnits.MINUTES]: (minutes) => {
+  [arg1(4241).TimeUnits.MINUTES]: (minutes) => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iXLF9W, { minutes });
   },
-  [arg1(4207).TimeUnits.HOURS]: (hours) => {
+  [arg1(4241).TimeUnits.HOURS]: (hours) => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.xCjYxK, { hours });
   },
-  [arg1(4207).TimeUnits.DAYS]: (days) => {
+  [arg1(4241).TimeUnits.DAYS]: (days) => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["k2UNz+"], { days });
   }
@@ -1243,12 +1243,12 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
       const _Math = Math;
       const rounded = Math.round(diff / 1000 / 60);
       const obj2 = importDefault(21);
-      const timeAndUnit = require(4207) /* sleep */.getTimeAndUnit(rounded, items);
+      const timeAndUnit = require(4241) /* sleep */.getTimeAndUnit(rounded, items);
       if (null != timeAndUnit.unit) {
         if (null != timeAndUnit.time) {
           if (timeAndUnit.unit in obj) {
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === require(4207) /* sleep */.TimeUnits.SECONDS) {
+            if (unit2 === require(4241) /* sleep */.TimeUnits.SECONDS) {
               const _Math2 = Math;
               time = Math.round(diff / 1000);
             } else {
@@ -1773,9 +1773,9 @@ export const getChangeTitle = function getChangeTitle(log) {
                                                                                                                                             const newValue = found2.newValue;
                                                                                                                                             found = require;
                                                                                                                                             found = dependencyMap;
-                                                                                                                                            if (require(16299) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+                                                                                                                                            if (require(16338) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
                                                                                                                                               return require(1212) /* getSystemLocale */.t["PyEa+J"];
-                                                                                                                                            } else if (require(16299) /* set */.GuildFeedItemTypes.FORUM_POST === newValue) {
+                                                                                                                                            } else if (require(16338) /* set */.GuildFeedItemTypes.FORUM_POST === newValue) {
                                                                                                                                               return require(1212) /* getSystemLocale */.t.hCuAb1;
                                                                                                                                             } else {
                                                                                                                                               return require(1212) /* getSystemLocale */.t["UZ+U3A"];

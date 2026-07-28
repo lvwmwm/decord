@@ -1,10 +1,10 @@
-// Module ID: 16032
-// Function ID: 123818
+// Module ID: 16071
+// Function ID: 123974
 // Name: CaptchaModal
-// Dependencies: [31, 27, 14790, 14791, 33, 4131, 9125, 1508, 16033, 5187, 4542, 6727, 4127, 1212, 4544, 9403, 16034, 14798, 2]
+// Dependencies: [31, 27, 14834, 14835, 33, 4165, 9169, 1508, 16072, 5221, 4576, 6763, 4161, 1212, 4578, 9446, 16073, 14842, 2]
 // Exports: default
 
-// Module 16032 (CaptchaModal)
+// Module 16071 (CaptchaModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -49,7 +49,7 @@ export default function CaptchaModal(arg0) {
   let require;
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: result, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
-  let tmp = callback2(onReject(9125)());
+  let tmp = callback2(onReject(9169)());
   const tmp2 = onReject(1508)();
   let closure_8 = tmp2;
   const items = [tmp2];
@@ -68,13 +68,13 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  const callback = onReject(16033)({ onReject, analyticsType: memo });
+  const callback = onReject(16072)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     outer1_4.dismiss();
   }, []);
   let obj = { startHeight: 900, startExpanded: true };
   obj = { style: tmp.contentContainer, spacing: 12 };
-  const items1 = [callback(require(6727) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const items1 = [callback(require(6763) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   obj = {};
   const obj1 = { variant: "heading-xl/bold", accessibilityRole: "header" };
   if (null == headerText) {
@@ -82,14 +82,14 @@ export default function CaptchaModal(arg0) {
     headerText = intl.string(require(1212) /* getSystemLocale */.t.FpoiHe);
   }
   obj1.children = headerText;
-  const items2 = [callback(require(4127) /* Text */.Text, obj1), ];
+  const items2 = [callback(require(4161) /* Text */.Text, obj1), ];
   let obj2 = { variant: "text-md/medium", color: "text-subtle", style: tmp.description };
   if (null == bodyText) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     bodyText = intl2.string(require(1212) /* getSystemLocale */.t["/CidxO"]);
   }
   obj2.children = bodyText;
-  items2[1] = callback(require(4127) /* Text */.Text, obj2);
+  items2[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items2;
   items1[1] = closure_10(closure_5, obj);
   let obj3 = {
@@ -130,8 +130,8 @@ export default function CaptchaModal(arg0) {
   };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-  items1[2] = callback(require(4544) /* Button */.Button, obj3);
+  items1[2] = callback(require(4578) /* Button */.Button, obj3);
   obj.children = items1;
-  obj.children = closure_10(require(4542) /* Stack */.Stack, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  obj.children = closure_10(require(4576) /* Stack */.Stack, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

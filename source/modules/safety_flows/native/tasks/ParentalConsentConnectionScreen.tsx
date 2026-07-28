@@ -1,10 +1,10 @@
-// Module ID: 16642
-// Function ID: 129793
+// Module ID: 16682
+// Function ID: 129954
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 57, 31, 27, 5765, 1850, 5766, 33, 4131, 689, 16633, 16632, 11048, 4560, 16223, 13846, 6200, 566, 13844, 16643, 16627, 3832, 1212, 2461, 4099, 13845, 1935, 16636, 11058, 4542, 16644, 9865, 16645, 4127, 2199, 13847, 2]
+// Dependencies: [5, 57, 31, 27, 5775, 1850, 5776, 33, 4165, 689, 16673, 16672, 11086, 4594, 16262, 13890, 6235, 566, 13888, 16683, 16667, 3866, 1212, 2461, 4133, 13889, 1935, 16676, 11096, 4576, 16684, 9905, 16685, 4161, 2199, 13891, 2]
 // Exports: default
 
-// Module 16642 (ParentalConsentConnectionScreen)
+// Module 16682 (ParentalConsentConnectionScreen)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import ModalActionButton from "ModalActionButton";

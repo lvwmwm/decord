@@ -1,9 +1,9 @@
-// Module ID: 4278
-// Function ID: 37439
+// Module ID: 4312
+// Function ID: 37551
 // Name: WantsVideoQuality
-// Dependencies: [7, 6, 4192, 4279, 2]
+// Dependencies: [7, 6, 4226, 4313, 2]
 
-// Module 4278 (WantsVideoQuality)
+// Module 4312 (WantsVideoQuality)
 import importDefaultResult from "_defineProperties";
 import _classCallCheck from "_classCallCheck";
 import DesktopSources from "DesktopSources";
@@ -34,20 +34,20 @@ class WantsVideoQuality {
     }
     tmp2 = undefined;
     if (null != global.capture) {
-      tmp3 = f37441;
-      prototype = f37441.prototype;
+      tmp3 = f37553;
+      prototype = f37553.prototype;
       tmp4 = new.target;
       tmp5 = new.target;
-      tmp2 = new f37441(global.capture);
+      tmp2 = new f37553(global.capture);
     }
     self.capture = tmp2;
     tmp6 = undefined;
     if (null != global.encode) {
-      tmp7 = f37441;
-      prototype2 = f37441.prototype;
+      tmp7 = f37553;
+      prototype2 = f37553.prototype;
       tmp8 = new.target;
       tmp9 = new.target;
-      tmp6 = new f37441(global.encode);
+      tmp6 = new f37553(global.encode);
     }
     self.encode = tmp6;
     ({ bitrateMin: self.bitrateMin, bitrateMax: self.bitrateMax, bitrateTarget: self.bitrateTarget, localWant: self.localWant } = global);

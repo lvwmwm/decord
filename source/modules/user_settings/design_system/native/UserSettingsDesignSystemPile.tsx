@@ -1,10 +1,10 @@
-// Module ID: 14523
-// Function ID: 110933
+// Module ID: 14567
+// Function ID: 111106
 // Name: SampleCard
-// Dependencies: [31, 27, 33, 4131, 1273, 5513, 4542, 5166, 4127, 11953, 1395, 13153, 11648, 9869, 11649, 7909, 2]
+// Dependencies: [31, 27, 33, 4165, 1273, 5548, 4576, 5200, 4161, 11996, 1395, 13197, 11687, 9909, 11688, 7945, 2]
 // Exports: default
 
-// Module 14523 (SampleCard)
+// Module 14567 (SampleCard)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -20,9 +20,9 @@ function SampleCard(arg0) {
   let noScroll;
   let title;
   ({ title, noScroll, children } = arg0);
-  const tmp2 = callback(require(4542) /* Stack */.Stack, { spacing: 16, children });
+  const tmp2 = callback(require(4576) /* Stack */.Stack, { spacing: 16, children });
   let obj = { style: callback3().card };
-  const items = [callback(require(4127) /* Text */.Text, { variant: "text-lg/bold", children: title }), ];
+  const items = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: title }), ];
   let tmp4 = tmp2;
   if (!noScroll) {
     obj = { horizontal: true, children: tmp2 };
@@ -30,7 +30,7 @@ function SampleCard(arg0) {
   }
   items[1] = tmp4;
   obj.children = items;
-  return closure_6(require(5166) /* getCardBackgroundToken */.Card, obj);
+  return closure_6(require(5200) /* getCardBackgroundToken */.Card, obj);
 }
 ({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
@@ -177,7 +177,7 @@ export default function UserSettingsDesignSystemPile() {
   });
   const obj5 = { title: "Weird Piles", noScroll: true };
   const obj6 = { variant: "text-md/medium", color: "text-subtle", children: ["These examples explore the edge cases of the underlying ", "<Pile>", " component and aren't recommended uses."] };
-  items1 = [callback2(require(4127) /* Text */.Text, obj6), ];
+  items1 = [callback2(require(4161) /* Text */.Text, obj6), ];
   let items2 = [[1, 1], [0.5, 0.5], [null, 0.5], [0.5, null], [0, 0.5], [0.5, 0], [0, 0]];
   items1[1] = items2.map((arg0) => {
     let tmp;

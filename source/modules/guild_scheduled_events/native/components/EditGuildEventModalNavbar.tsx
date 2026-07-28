@@ -1,10 +1,10 @@
-// Module ID: 8170
-// Function ID: 65587
+// Module ID: 8208
+// Function ID: 65697
 // Name: EditGuildEventModalNavbar
-// Dependencies: [57, 31, 27, 33, 4131, 8147, 1327, 5121, 4127, 1212, 6695, 7640, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 8185, 1327, 5155, 4161, 1212, 6731, 7676, 2]
 // Exports: default
 
-// Module 8170 (EditGuildEventModalNavbar)
+// Module 8208 (EditGuildEventModalNavbar)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -23,11 +23,11 @@ export default function EditGuildEventModalNavbar(screen) {
   let tmp9;
   screen = screen.screen;
   const tmp = callback4();
-  if (require(8147) /* recurrenceRuleToServer */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+  if (require(8185) /* recurrenceRuleToServer */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (require(8147) /* recurrenceRuleToServer */.EditGuildEventScreens.DETAILS === screen) {
+  } else if (require(8185) /* recurrenceRuleToServer */.EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (require(8147) /* recurrenceRuleToServer */.EditGuildEventScreens.PREVIEW === screen) {
+  } else if (require(8185) /* recurrenceRuleToServer */.EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
     let obj = require(1327) /* isDiscordFrontendDevelopment */;
@@ -40,16 +40,16 @@ export default function EditGuildEventModalNavbar(screen) {
   const obj1 = { style: tmp.headerTitle, variant: "text-xs/bold", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t["42HaFY"], { step: tmp8, total: tmp9 });
-  items1[1] = callback2(require(4127) /* Text */.Text, obj1);
+  items1[1] = callback2(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonContainer };
   const obj3 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj3.onPress = screen.onClose;
-  obj3.source = importDefault(7640);
+  obj3.source = importDefault(7676);
   obj3.style = tmp.rightButton;
-  obj2.children = callback2(require(6695) /* HeaderActionButton */.HeaderActionButton, obj3);
+  obj2.children = callback2(require(6731) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);
   obj.children = items1;
-  return callback3(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback3(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

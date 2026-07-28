@@ -1,8 +1,8 @@
-// Module ID: 8227
-// Function ID: 66001
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 3992, 4543, 4547, 5109, 4555, 6678, 4550, 6684, 6686, 3840, 6688, 5450, 5189, 8228, 8229, 1212, 8230, 3844, 6683, 8232, 2]
+// Module ID: 8265
+// Function ID: 66111
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 4026, 4577, 4581, 5143, 4589, 6714, 4584, 6720, 6722, 3874, 6724, 5485, 5223, 8266, 8267, 1212, 8268, 3878, 6719, 8270, 2]
 
-// Module 8227
+// Module 8265
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "set";
@@ -31,7 +31,7 @@ let closure_10 = _createForOfIteratorHelperLoose.createStyles(() => {
   obj.inputInner = obj2;
   obj.horizontalInputInner = { flexWrap: "nowrap" };
   const obj3 = { flex: 1, minHeight: importDefault(689).space.PX_24, minWidth: importDefault(689).space.PX_48, color: importDefault(689).colors.TEXT_DEFAULT };
-  const merged = Object.assign(require(4127) /* Text */.TextStyleSheet["text-sm/medium"]);
+  const merged = Object.assign(require(4161) /* Text */.TextStyleSheet["text-sm/medium"]);
   obj3["paddingVertical"] = 0;
   obj3["marginVertical"] = 2;
   obj.searchInput = obj3;
@@ -120,9 +120,9 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   let ref1;
   c17 = undefined;
   let tmp = callback();
-  let obj = tags(4550);
+  let obj = tags(4584);
   const bound = Math.min(2, obj.useFontScale());
-  let result = tags(6684).InputHeights.MD * bound;
+  let result = tags(6720).InputHeights.MD * bound;
   let tmp4 = (function useTagListInputState(ref, onChangeText) {
     let clearProps;
     let clearState;
@@ -236,19 +236,19 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   inputUpdate = tmp4.inputUpdate;
   const clearButton = tmp4.clearButton;
   closure_7 = inputRef.useRef({ start: 0, end: 0 });
-  let obj1 = tags(6686);
+  let obj1 = tags(6722);
   const keyboardBlurring = obj1.useKeyboardBlurring(inputRef);
-  let obj2 = tags(3840);
+  let obj2 = tags(3874);
   const focus = obj2.useFocus();
   focusProps = focus.focusProps;
-  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(6688)({ onFocus, onBlur }));
+  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(6724)({ onFocus, onBlur }));
   ref = inputRef.useRef(null);
   const tmp9 = autoClearInputOnTagAdd(inputRef.useState(null), 2);
   closure_12 = tmp9[0];
   closure_13 = tmp9[1];
   const tmp10 = autoClearInputOnTagAdd(inputRef.useState(false), 2);
   closure_14 = tmp10[1];
-  const tmp11 = focusOnAdd(5450)(tags);
+  const tmp11 = focusOnAdd(5485)(tags);
   c15 = tmp11;
   ref1 = inputRef.useRef(tags);
   let items = [focusOnAdd, inputUpdate, ref1, tags, inputRef, inputValueRef, autoClearInputOnTagAdd];
@@ -298,17 +298,17 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     }
   }, items1);
   if (inActionSheet) {
-    let BottomSheetScrollView = tags(5189).BottomSheetScrollView;
+    let BottomSheetScrollView = tags(5223).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = inputUpdate;
   }
   if (inActionSheet) {
-    let BottomSheetTextInput = tags(8228).BottomSheetTextInput;
+    let BottomSheetTextInput = tags(8266).BottomSheetTextInput;
   } else {
-    BottomSheetTextInput = focusOnAdd(8229);
+    BottomSheetTextInput = focusOnAdd(8267);
   }
   const result1 = 33 * bound;
-  const tmp7 = focusOnAdd(6688)({ onFocus, onBlur });
+  const tmp7 = focusOnAdd(6724)({ onFocus, onBlur });
   [tmp23, c17] = autoClearInputOnTagAdd(inputRef.useState(0), 2);
   callback = inputRef.useCallback((nativeEvent) => {
     _undefined4(nativeEvent.nativeEvent.layout.width);
@@ -596,7 +596,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   const obj6 = { size: "sm", isDisabled: disabled, isFocused: focus.isFocused };
   if (null == icon) {
     const obj7 = { style: tmp.iconLeft, size: "xs", color: "interactive-text-default" };
-    icon = focusProps(tags(8232).MagnifyingGlassIcon, obj7);
+    icon = focusProps(tags(8270).MagnifyingGlassIcon, obj7);
   }
   const items8 = [icon, obj4.wrap(focusProps(BottomSheetScrollView, obj)), ];
   if (null == footer) {
@@ -609,7 +609,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   }
   items8[2] = footer;
   obj6.children = items8;
-  obj5.children = c9(tags(6683).InputFieldContainer, obj6);
+  obj5.children = c9(tags(6719).InputFieldContainer, obj6);
   return focusProps(inputValueRef, obj5);
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/TagListInput/native/TagListInput.native.tsx");

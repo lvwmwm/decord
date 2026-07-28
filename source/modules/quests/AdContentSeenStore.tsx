@@ -1,9 +1,9 @@
-// Module ID: 14046
-// Function ID: 107506
+// Module ID: 14090
+// Function ID: 107679
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 5932, 5960, 5930, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 5966, 5994, 5964, 566, 686, 2]
 
-// Module 14046 (_isNativeReflectConstruct)
+// Module 14090 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import AdCreativeType from "AdCreativeType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -118,7 +118,7 @@ function syncWithQuestStore() {
   let tmp4;
   let tmp5;
   const quests = store.quests;
-  const obj = getOrCreateSet(require(5960) /* AdCreativeType */.AdCreativeType.QUEST);
+  const obj = getOrCreateSet(require(5994) /* AdCreativeType */.AdCreativeType.QUEST);
   const tmp = _createForOfIteratorHelperLoose(quests);
   const iter = tmp();
   let iter2 = iter;
@@ -133,7 +133,7 @@ function syncWithQuestStore() {
       if (!hasItem) {
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        let obj2 = require(5930) /* _createForOfIteratorHelperLoose */;
+        let obj2 = require(5964) /* _createForOfIteratorHelperLoose */;
         hasItem = obj2.isQuestExpired(tmp5);
       }
       if (!hasItem) {
@@ -171,7 +171,7 @@ function syncWithQuestStore() {
           if (!isQuestExpiredResult) {
             let tmp18 = require;
             let tmp19 = dependencyMap;
-            let obj3 = require(5930) /* _createForOfIteratorHelperLoose */;
+            let obj3 = require(5964) /* _createForOfIteratorHelperLoose */;
             isQuestExpiredResult = obj3.isQuestExpired(value);
           }
           if (isQuestExpiredResult) {
@@ -185,7 +185,7 @@ function syncWithQuestStore() {
       }
     }
   }
-  const obj4 = getOrCreateSet(require(5960) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
+  const obj4 = getOrCreateSet(require(5994) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
   let tmp21 = tmp13;
   if (null != store.getLastFetchedQuestHomeHero()) {
     tmp21 = tmp13;

@@ -1,10 +1,10 @@
-// Module ID: 11001
-// Function ID: 85521
+// Module ID: 11039
+// Function ID: 85644
 // Name: ForumOriginalPoster
-// Dependencies: [31, 27, 33, 4131, 689, 4974, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5008, 4161, 1212, 2]
 // Exports: getForumOriginalPoster
 
-// Module 11001 (ForumOriginalPoster)
+// Module 11039 (ForumOriginalPoster)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

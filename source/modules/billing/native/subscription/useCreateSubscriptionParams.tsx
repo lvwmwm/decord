@@ -1,10 +1,10 @@
-// Module ID: 6611
-// Function ID: 58527
+// Module ID: 6647
+// Function ID: 58616
 // Name: useCreateSubscriptionParams
-// Dependencies: [31, 6612, 491, 2]
+// Dependencies: [31, 6648, 491, 2]
 // Exports: default
 
-// Module 6611 (useCreateSubscriptionParams)
+// Module 6647 (useCreateSubscriptionParams)
 import result from "result";
 
 const require = arg1;
@@ -13,7 +13,7 @@ const result = require("v1").fileFinishedImporting("modules/billing/native/subsc
 export default function useCreateSubscriptionParams(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let tmp = importDefault(6612)();
+  let tmp = importDefault(6648)();
   const dependencyMap = tmp;
   let items = [arg0, arg1, tmp];
   return React.useMemo(() => {

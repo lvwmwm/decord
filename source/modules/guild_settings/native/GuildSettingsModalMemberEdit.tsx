@@ -1,16 +1,16 @@
-// Module ID: 10965
-// Function ID: 85225
+// Module ID: 11003
+// Function ID: 85348
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4123, 1391, 1912, 1918, 1911, 1838, 3759, 1850, 10966, 653, 33, 4131, 689, 3764, 22, 9024, 1273, 4127, 5164, 1212, 5501, 10967, 10968, 3831, 10973, 6695, 5087, 3970, 8328, 3748, 7575, 4542, 6670, 3843, 1456, 566, 44, 10964, 6018, 5448, 10978, 10980, 5450, 5517, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4157, 1391, 1912, 1918, 1911, 1838, 3793, 1850, 11004, 653, 33, 4165, 689, 3798, 22, 9068, 1273, 4161, 5198, 1212, 5536, 11005, 11006, 3865, 11011, 6731, 5121, 4004, 8366, 3782, 7611, 4576, 6706, 3877, 1456, 566, 44, 11002, 6052, 5483, 11016, 11018, 5485, 5552, 2]
 // Exports: default
 
-// Module 10965 (_callSuper)
+// Module 11003 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import closure_7 from "jsxProd";
 import closure_8 from "_createForOfIteratorHelperLoose";
-import importAllResult from "module_10973";
+import importAllResult from "module_11011";
 import get_ActivityIndicator from "TableRowGroupTitle";
 import closure_11 from "_isNativeReflectConstruct";
 import isGuildOwner from "isGuildOwner";
@@ -156,7 +156,7 @@ class GuildSettingsModalMemberEditScene {
           tmp12 = Fragment;
           obj = {};
           tmp13 = jsx;
-          tmp14 = f85250;
+          tmp14 = f85373;
           obj1 = {};
           tmp15 = obj1;
           tmp16 = stateFromStoresObject1;
@@ -180,7 +180,7 @@ class GuildSettingsModalMemberEditScene {
           str9 = "contentContainerStyle";
           obj1["contentContainerStyle"] = contentContainerStyle;
           items6 = [, ];
-          items6[0] = jsx(f85250, obj1);
+          items6[0] = jsx(f85373, obj1);
           tmp18 = jsx;
           tmp19 = guildId;
           tmp20 = closure_3;
@@ -734,7 +734,7 @@ export default function MemberModalEdit(onClose) {
   onClose = onClose.onClose;
   const onRemove = onClose.onRemove;
   ({ guildId, userId } = onClose);
-  const tmp = onRemove(5450)(guildId);
+  const tmp = onRemove(5485)(guildId);
   const importAll = tmp;
   const items = [onClose, onRemove, tmp];
   const memo = importAllResult.useMemo(() => (function getScreens(closure_2, onClose, onRemove) {
@@ -779,6 +779,6 @@ export default function MemberModalEdit(onClose) {
   let obj = { screens: memo, initialRouteName: constants.MEMBER_EDIT, initialRouteStack: items1 };
   obj = { name: constants.MEMBER_EDIT, params: { userId } };
   items1 = [obj];
-  return callback4(onClose(5517).Navigator, obj);
+  return callback4(onClose(5552).Navigator, obj);
 };
 export { GuildSettingsModalMemberEditScene };

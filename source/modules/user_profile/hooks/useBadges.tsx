@@ -1,10 +1,10 @@
-// Module ID: 8033
-// Function ID: 63912
+// Module ID: 8071
+// Function ID: 64022
 // Name: useBadges
-// Dependencies: [3971, 1850, 3804, 624, 1212, 2]
+// Dependencies: [4005, 1850, 3838, 624, 1212, 2]
 // Exports: default
 
-// Module 8033 (useBadges)
+// Module 8071 (useBadges)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
 
 export default function useBadges(getBadges) {
-  const LegacyUsernameDisabled = require(3804) /* explicitContentFromProto */.LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = require(3838) /* explicitContentFromProto */.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();
   if (undefined !== arg1) {
     setting = arg1;

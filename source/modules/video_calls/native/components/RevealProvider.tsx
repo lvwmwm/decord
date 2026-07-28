@@ -1,10 +1,10 @@
-// Module ID: 10447
-// Function ID: 81011
+// Module ID: 10485
+// Function ID: 81132
 // Name: useRevealProviderValue
-// Dependencies: [31, 3824, 4145, 10174, 33, 566, 10176, 10448, 477, 4067, 6622, 10454, 2]
+// Dependencies: [31, 3858, 4179, 10214, 33, 566, 10216, 10486, 477, 4101, 6658, 10492, 2]
 // Exports: default
 
-// Module 10447 (useRevealProviderValue)
+// Module 10485 (useRevealProviderValue)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ function useRevealProviderValue(arg0, channel) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => null != outer1_4.getKey());
   const obj = require(566) /* initialize */;
-  const tmp3 = importDefault(10176)(channel);
+  const tmp3 = importDefault(10216)(channel);
   const tmp4 = callback2();
   const items1 = [closure_5];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => null != outer1_5.getAwaitingRemoteSessionInfo());
@@ -44,7 +44,7 @@ function useRevealProviderValue(arg0, channel) {
     tmp = stateFromStores1;
   }
   require = tmp;
-  const tmp6 = importDefault(10448)(channel.id);
+  const tmp6 = importDefault(10486)(channel.id);
   const tmp8 = !require(477) /* set */.isIOS();
   let tmp9 = !tmp8;
   if (!tmp8) {
@@ -102,19 +102,19 @@ export default function RevealProvider(showStatus) {
   obj.hidden = tmp8;
   obj.animated = true;
   obj.barStyle = str;
-  const items1 = [closure_10(importDefault(6622), obj), children, ];
+  const items1 = [closure_10(importDefault(6658), obj), children, ];
   obj = {};
   let tmp11 = !reveal;
   const tmp5 = closure_11;
   const tmp6 = closure_10;
-  const tmp7 = importDefault(6622);
+  const tmp7 = importDefault(6658);
   const tmp9 = closure_10;
   if (tmp11) {
     tmp11 = !prefersDeferringSystemGestures;
   }
   obj.prefersHidden = tmp11;
   obj.prefersDeferringSystemGestures = prefersDeferringSystemGestures;
-  items1[2] = tmp9(importDefault(10454), obj);
+  items1[2] = tmp9(importDefault(10492), obj);
   obj.children = items1;
   return tmp5(context.Provider, obj);
 };

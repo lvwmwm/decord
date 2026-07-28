@@ -1,9 +1,9 @@
-// Module ID: 16315
-// Function ID: 127017
+// Module ID: 16354
+// Function ID: 127173
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1858, 3768, 1850, 653, 33, 4131, 689, 1395, 1392, 4815, 3977, 5468, 4127, 16298, 1212, 3970, 1273, 1387, 4321, 4313, 3713, 1327, 665, 9604, 5150, 5166, 16307, 4661, 4099, 8297, 13637, 3843, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1858, 3802, 1850, 653, 33, 4165, 689, 1395, 1392, 4849, 4011, 5503, 4161, 16337, 1212, 4004, 1273, 1387, 4355, 4347, 3747, 1327, 665, 9644, 5184, 5200, 16346, 4695, 4133, 8335, 13681, 3877, 566, 2]
 
-// Module 16315 (_isNativeReflectConstruct)
+// Module 16354 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ensureAvatarSource from "ensureAvatarSource";
@@ -43,14 +43,14 @@ function getUserAvatarSource(arg0, action, guildId) {
       if (action.action !== constants.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
         if (action.action !== constants.AUTO_MODERATION_QUARANTINE_USER) {
           if (null != action.options.integration_type) {
-            const value = importDefault(4815).get(action.options.integration_type);
+            const value = importDefault(4849).get(action.options.integration_type);
             if (null != value) {
               const icon = value.icon;
-              const obj2 = require(3977) /* AccessibilityAnnouncer */;
-              const tmp9 = require(3977) /* AccessibilityAnnouncer */.isThemeDark(arg0) ? icon.darkPNG : icon.lightPNG;
+              const obj2 = require(4011) /* AccessibilityAnnouncer */;
+              const tmp9 = require(4011) /* AccessibilityAnnouncer */.isThemeDark(arg0) ? icon.darkPNG : icon.lightPNG;
               return require(1392) /* getAvatarURL */.makeSource(tmp9);
             }
-            const obj = importDefault(4815);
+            const obj = importDefault(4849);
           }
           let tmp4;
           if (null != guildId) {
@@ -71,12 +71,12 @@ function getUserAvatarSource(arg0, action, guildId) {
   return obj4.ensureAvatarSource(obj5.makeSource(require(1395) /* ensureAvatarSource */.getAutomodAvatarURL()));
 }
 function ApplicationHook(applicationId) {
-  let obj = require(5468) /* useGetOrFetchApplications */;
+  let obj = require(5503) /* useGetOrFetchApplications */;
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId);
   let tmp2 = null;
   if (null != getOrFetchApplication) {
     obj = { variant: "text-md/normal", color: "text-default", children: getOrFetchApplication.name };
-    tmp2 = callback3(require(4127) /* Text */.Text, obj);
+    tmp2 = callback3(require(4161) /* Text */.Text, obj);
   }
   return tmp2;
 }

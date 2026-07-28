@@ -1,10 +1,10 @@
-// Module ID: 7599
-// Function ID: 60800
+// Module ID: 7635
+// Function ID: 60889
 // Name: FormSliderRow
-// Dependencies: [31, 27, 33, 4131, 5163, 5166, 4127, 7600, 5157, 2]
+// Dependencies: [31, 27, 33, 4165, 5197, 5200, 4161, 7636, 5191, 2]
 // Exports: default
 
-// Module 7599 (FormSliderRow)
+// Module 7635 (FormSliderRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,32 +26,32 @@ export default function FormSliderRow(arg0) {
   obj.label = 0;
   obj.trailing = 0;
   const merged = Object.assign(arg0, obj);
-  const context = React.useContext(require(5163) /* context */.RedesignCompatContext);
+  const context = React.useContext(require(5197) /* context */.RedesignCompatContext);
   const tmp4 = callback2();
   if (context) {
     obj = {};
     const obj1 = { style: tmp4.labels };
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: label };
-    const items = [callback(require(4127) /* Text */.Text, obj2), trailing];
+    const items = [callback(require(4161) /* Text */.Text, obj2), trailing];
     obj1.children = items;
     const items1 = [tmp5(View, obj1), ];
     const obj3 = {};
     const merged1 = Object.assign(merged);
     obj3["style"] = tmp4.slider;
-    items1[1] = callback(importDefault(7600), obj3);
+    items1[1] = callback(importDefault(7636), obj3);
     obj.children = items1;
-    let tmp5Result = tmp5(require(5166) /* getCardBackgroundToken */.Card, obj);
-    const tmp20 = importDefault(7600);
+    let tmp5Result = tmp5(require(5200) /* getCardBackgroundToken */.Card, obj);
+    const tmp20 = importDefault(7636);
   } else {
     obj = {};
     const obj4 = { label, trailing };
-    const items2 = [callback(importDefault(5157), obj4), ];
+    const items2 = [callback(importDefault(5191), obj4), ];
     const obj5 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(importDefault(7600), obj5);
+    items2[1] = callback(importDefault(7636), obj5);
     obj.children = items2;
     tmp5Result = tmp5(closure_7, obj);
-    const tmp10 = importDefault(7600);
+    const tmp10 = importDefault(7636);
   }
   return tmp5Result;
 };

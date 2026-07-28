@@ -1,10 +1,10 @@
-// Module ID: 16310
-// Function ID: 127011
+// Module ID: 16349
+// Function ID: 127167
 // Name: HomeIcon
-// Dependencies: [31, 33, 689, 3834, 16311, 2]
+// Dependencies: [31, 33, 689, 3868, 16350, 2]
 // Exports: HomeIcon
 
-// Module 16310 (HomeIcon)
+// Module 16349 (HomeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const HomeIcon = function HomeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(16311) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(16350) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(16311) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(16350) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

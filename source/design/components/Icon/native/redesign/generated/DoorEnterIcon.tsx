@@ -1,10 +1,10 @@
-// Module ID: 6578
-// Function ID: 58393
+// Module ID: 6614
+// Function ID: 58482
 // Name: DoorEnterIcon
-// Dependencies: [31, 33, 689, 3834, 6579, 2]
+// Dependencies: [31, 33, 689, 3868, 6615, 2]
 // Exports: DoorEnterIcon
 
-// Module 6578 (DoorEnterIcon)
+// Module 6614 (DoorEnterIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const DoorEnterIcon = function DoorEnterIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(6579) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6615) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6579) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6615) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

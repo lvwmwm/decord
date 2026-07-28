@@ -1,10 +1,10 @@
-// Module ID: 14871
-// Function ID: 113466
+// Module ID: 14915
+// Function ID: 113639
 // Name: withEqualityFn
-// Dependencies: [4971, 677, 3992, 682, 1184, 3744, 2]
+// Dependencies: [5005, 677, 4026, 682, 1184, 3778, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 14871 (withEqualityFn)
+// Module 14915 (withEqualityFn)
 import { GuildsNodeType } from "_isNativeReflectConstruct";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
@@ -13,15 +13,15 @@ let c5 = -1;
 const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   let closure_1 = arg1;
-  let obj = { dragSpecs: undefined, overSpecs: undefined, dropSpecs: undefined, dragRegion: _require(3992).makeMutable({ min: 0, max: 0 }) };
-  const obj2 = _require(3992);
-  obj.gestureState = _require(3992).makeMutable(obj);
-  const obj3 = _require(3992);
-  obj.dragDropInProgress = _require(3992).makeMutable(false);
-  const obj4 = _require(3992);
-  obj.listInsets = _require(3992).makeMutable({ start: 0, end: 0 });
-  let obj5 = _require(3992);
-  obj.scrollPosition = _require(3992).makeMutable(0);
+  let obj = { dragSpecs: undefined, overSpecs: undefined, dropSpecs: undefined, dragRegion: _require(4026).makeMutable({ min: 0, max: 0 }) };
+  const obj2 = _require(4026);
+  obj.gestureState = _require(4026).makeMutable(obj);
+  const obj3 = _require(4026);
+  obj.dragDropInProgress = _require(4026).makeMutable(false);
+  const obj4 = _require(4026);
+  obj.listInsets = _require(4026).makeMutable({ start: 0, end: 0 });
+  let obj5 = _require(4026);
+  obj.scrollPosition = _require(4026).makeMutable(0);
   obj.windowSize = 0;
   obj.setStateShallow = function setStateShallow(obj) {
     const callback = obj;
@@ -106,7 +106,7 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
   };
   return obj;
 });
-let result = require("module_3992").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
+let result = require("module_4026").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
 
 export default withEqualityFn;
 export const INITIAL_GESTURE_STATE = obj;
@@ -210,7 +210,7 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     obj.itemSize = num;
     obj.dragDropInProgress = dragDropInProgress;
     return obj;
-  }, _require(3744).shallow);
+  }, _require(3778).shallow);
 };
 export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
   let closure_0 = arg0;

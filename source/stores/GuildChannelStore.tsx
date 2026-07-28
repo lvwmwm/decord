@@ -1,7 +1,7 @@
 // Module ID: 1908
-// Function ID: 21433
+// Function ID: 21437
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1909, 1351, 3758, 1352, 1194, 1348, 1918, 1838, 3759, 3768, 1850, 653, 1841, 22, 4321, 483, 3764, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1909, 1351, 3792, 1352, 1194, 1348, 1918, 1838, 3793, 3802, 1850, 653, 1841, 22, 4355, 483, 3798, 566, 686, 2]
 
 // Module 1908 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -301,7 +301,7 @@ function handleGuildRoleUpdate(guildId) {
 function hasElevatedPermissions(id) {
   let obj = importAll(483);
   obj = { user: id, context: arg1, checkElevated: false };
-  return obj.hasAny(importAll(3764).computePermissions(obj), closure_25);
+  return obj.hasAny(importAll(3798).computePermissions(obj), closure_25);
 }
 function updateSelectedVoiceChannel(getGuildId) {
   let closure_32 = arg1;

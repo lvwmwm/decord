@@ -1,10 +1,10 @@
-// Module ID: 15030
-// Function ID: 114576
+// Module ID: 15074
+// Function ID: 114751
 // Name: ConnectedUserLimit
-// Dependencies: [31, 33, 8769, 15031, 2]
+// Dependencies: [31, 33, 8813, 15075, 2]
 // Exports: ConnectedUserLimit
 
-// Module 15030 (ConnectedUserLimit)
+// Module 15074 (ConnectedUserLimit)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ export const ConnectedUserLimit = function ConnectedUserLimit(userCount) {
   let channel;
   let video;
   ({ channel, video } = userCount);
-  const limit = importDefault(8769)(channel).limit;
+  const limit = importDefault(8813)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -35,5 +35,5 @@ export const ConnectedUserLimit = function ConnectedUserLimit(userCount) {
     const tmp2 = num < 0 || limit < num;
   }
   const obj = { users: userCount.userCount, total: tmp, videoLimit: flag };
-  return jsx(importDefault(15031), { users: userCount.userCount, total: tmp, videoLimit: flag });
+  return jsx(importDefault(15075), { users: userCount.userCount, total: tmp, videoLimit: flag });
 };

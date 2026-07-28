@@ -1,9 +1,9 @@
-// Module ID: 14474
-// Function ID: 110601
+// Module ID: 14518
+// Function ID: 110774
 // Name: useExperimentOverrideActiveCount
-// Dependencies: [4045, 1188, 33, 13568, 566, 13569, 13808, 10059, 13579, 2]
+// Dependencies: [4079, 1188, 33, 13612, 566, 13613, 13852, 10099, 13623, 2]
 
-// Module 14474 (useExperimentOverrideActiveCount)
+// Module 14518 (useExperimentOverrideActiveCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -25,15 +25,15 @@ createToggle = {
   IconComponent: require("BeakerIcon").BeakerIcon,
   useDescription: function useExperimentOverrideActiveDescription() {
     const obj = { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() };
-    return jsx(require(13569) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() });
+    return jsx(require(13613) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() });
   },
   usePredicate: function useHasExperimentOverrideActive() {
-    const staffOrDeveloperSettingPredicate = require(13808) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
-    const obj = require(13808) /* useStaffOrDeveloperSettingPredicate */;
+    const staffOrDeveloperSettingPredicate = require(13852) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13852) /* useStaffOrDeveloperSettingPredicate */;
     return useExperimentOverrideActiveCount() > 0 && staffOrDeveloperSettingPredicate;
   },
   onPress: function handleExperimentOverrideActivePress() {
-    require(13568) /* navigateToDevTools */.navigateToDevTools({ screenKey: "experiments" });
+    require(13612) /* navigateToDevTools */.navigateToDevTools({ screenKey: "experiments" });
   },
   withArrow: true
 };

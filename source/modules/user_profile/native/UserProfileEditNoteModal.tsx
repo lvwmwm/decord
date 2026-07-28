@@ -1,15 +1,15 @@
-// Module ID: 11983
-// Function ID: 92604
+// Module ID: 12026
+// Function ID: 92774
 // Name: UserProfileEditNoteModal
-// Dependencies: [31, 33, 4338, 5517, 478, 1212, 4127, 5087, 11984, 2]
+// Dependencies: [31, 33, 4372, 5552, 478, 1212, 4161, 5121, 12027, 2]
 // Exports: default
 
-// Module 11983 (UserProfileEditNoteModal)
+// Module 12026 (UserProfileEditNoteModal)
 import "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4338").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
+const result = require("module_4372").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
   let dependencyMap;
@@ -44,11 +44,11 @@ export default function UserProfileEditNoteModal(arg0) {
   };
   obj3 = require(478) /* isWindows */;
   const tmp = handleClose;
-  obj1.headerLeft = require(5087) /* HeaderBackImage */.getHeaderCloseButton(handleClose);
+  obj1.headerLeft = require(5121) /* HeaderBackImage */.getHeaderCloseButton(handleClose);
   obj1.render = function render() {
     return handleClose(outer1_0(outer1_2[8]).default, { userId: closure_0, onSave: closure_1, onClose: handleClose });
   };
   obj.root = obj1;
   obj.screens = obj;
-  return tmp(require(5517) /* NavigationStack */.Navigator, obj);
+  return tmp(require(5552) /* NavigationStack */.Navigator, obj);
 };

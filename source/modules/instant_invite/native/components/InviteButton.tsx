@@ -1,8 +1,8 @@
-// Module ID: 11744
-// Function ID: 91222
-// Dependencies: [31, 27, 5969, 33, 4131, 1212, 4544, 2]
+// Module ID: 11783
+// Function ID: 91373
+// Dependencies: [31, 27, 6003, 33, 4165, 1212, 4578, 2]
 
-// Module 11744
+// Module 11783
 import { View } from "get ActivityIndicator";
 import { InviteSendStates } from "InviteSendStates";
 import { jsx } from "jsxProd";
@@ -47,7 +47,7 @@ const memoResult = require("result").memo(function InviteButton(onPressSend) {
   }
   obj.disabled = disabled;
   obj.grow = true;
-  obj.children = jsx(require(4544) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPressSend.onPressSend });
+  obj.children = jsx(require(4578) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPressSend.onPressSend });
   return <View accessibilityRole="none" size="sm" variant="secondary" text={stringResult1} onPress={arg0.onPressSend} />;
 });
 const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");

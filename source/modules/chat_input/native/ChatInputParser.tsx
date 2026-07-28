@@ -1,10 +1,10 @@
-// Module ID: 11108
-// Function ID: 86394
+// Module ID: 11146
+// Function ID: 86513
 // Name: ChatInputParser
 // Dependencies: [6, 7, 27, 22, 2]
 // Exports: convertToNativeStyle
 
-// Module 11108 (ChatInputParser)
+// Module 11146 (ChatInputParser)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { processColor } from "get ActivityIndicator";

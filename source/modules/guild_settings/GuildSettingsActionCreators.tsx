@@ -1,8 +1,8 @@
-// Module ID: 8242
-// Function ID: 66100
-// Dependencies: [5, 1910, 3760, 1194, 1918, 1838, 8243, 653, 3, 686, 507, 7629, 8250, 7888, 7885, 4943, 480, 3946, 1212, 1198, 5065, 2]
+// Module ID: 8280
+// Function ID: 66210
+// Dependencies: [5, 1910, 3794, 1194, 1918, 1838, 8281, 653, 3, 686, 507, 7665, 8288, 7924, 7921, 4977, 480, 3980, 1212, 1198, 5099, 2]
 
-// Module 8242
+// Module 8280
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -205,7 +205,7 @@ let obj = {
     const merged = Object.assign(tmp);
     let toServerGuildProfileResult = profile;
     if (null != profile) {
-      let obj3 = _require(8250);
+      let obj3 = _require(8288);
       toServerGuildProfileResult = obj3.toServerGuildProfile(profile);
     }
     obj["profile"] = toServerGuildProfileResult;
@@ -215,7 +215,7 @@ let obj = {
     obj(686).dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const pendingOriginalMd5s = store.getPendingOriginalMd5s();
     const obj5 = obj(686);
-    const obj6 = obj(7888);
+    const obj6 = obj(7924);
     const headersForMd5 = obj6.buildHeadersForMd5({ [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_ICON]: pendingOriginalMd5s.icon, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_BANNER]: pendingOriginalMd5s.banner, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_INVITE_SPLASH]: pendingOriginalMd5s.splash, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_DISCOVERY_SPLASH]: pendingOriginalMd5s.discoverySplash });
     const HTTP = _require(507).HTTP;
     const obj2 = { url: closure_10.GUILD(id), query: obj3, body: obj, headers: headersForMd5, oldFormErrors: true };
@@ -270,7 +270,7 @@ let obj = {
     if (tmp2 === undefined) {
       tmp2 = null;
     }
-    let obj = importDefault(4943);
+    let obj = importDefault(4977);
     obj = { url: closure_10.GUILD(id), body: obj, oldFormErrors: true };
     obj = { owner_id: id2, code: tmp2 };
     const obj2 = { guild_id: id, verification_type: tmp };
@@ -284,7 +284,7 @@ let obj = {
     if (arg1 === undefined) {
       flag = false;
     }
-    let obj = importDefault(4943);
+    let obj = importDefault(4977);
     obj = { url: closure_10.GUILD_PINCODE(id), oldFormErrors: true };
     obj = { event: require(480) /* isThrottled */.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP_SEND_CODE, properties: obj1 };
     obj1 = { guild_id: id, is_resend: flag };

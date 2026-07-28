@@ -1,10 +1,10 @@
-// Module ID: 16589
-// Function ID: 129411
+// Module ID: 16629
+// Function ID: 129572
 // Name: _fetchBasicGuild
-// Dependencies: [5, 1838, 7679, 653, 686, 507, 2]
+// Dependencies: [5, 1838, 7715, 653, 686, 507, 2]
 // Exports: fetchBasicGuild
 
-// Module 16589 (_fetchBasicGuild)
+// Module 16629 (_fetchBasicGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";

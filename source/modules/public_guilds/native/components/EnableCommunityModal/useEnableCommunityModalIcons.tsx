@@ -1,10 +1,10 @@
-// Module ID: 16431
-// Function ID: 128252
+// Module ID: 16471
+// Function ID: 128413
 // Name: EnableCommunityModalIcons
-// Dependencies: [57, 6, 7, 31, 482, 3977, 16432, 16433, 16434, 16438, 16439, 7640, 4067, 2]
+// Dependencies: [57, 6, 7, 31, 482, 4011, 16472, 16473, 16474, 16478, 16479, 7676, 4101, 2]
 // Exports: default
 
-// Module 16431 (EnableCommunityModalIcons)
+// Module 16471 (EnableCommunityModalIcons)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import closure_5 from "registerAsset";
@@ -63,6 +63,6 @@ let closure_8 = (() => {
 const result = require("_defineProperties").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
 
 export default function useEnableCommunityModalIcons() {
-  let closure_0 = importDefault(4067)();
+  let closure_0 = importDefault(4101)();
   return callback(React.useState(() => new outer1_8(closure_0)), 1)[0];
 };

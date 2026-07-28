@@ -1,10 +1,10 @@
-// Module ID: 14741
-// Function ID: 112385
+// Module ID: 14785
+// Function ID: 112558
 // Name: Select
-// Dependencies: [57, 31, 27, 1907, 33, 4131, 689, 4354, 1882, 7832, 5166, 4127, 14742, 14745, 4544, 4542, 14746, 686, 2]
+// Dependencies: [57, 31, 27, 1907, 33, 4165, 689, 4388, 1882, 7868, 5200, 4161, 14786, 14789, 4578, 4576, 14790, 686, 2]
 // Exports: default
 
-// Module 14741 (Select)
+// Module 14785 (Select)
 import importDefaultResult from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -32,21 +32,21 @@ function Select(children) {
   obj["maxValues"] = num;
   obj["type"] = type;
   obj["id"] = String(type);
-  let obj1 = _require(7832);
+  let obj1 = _require(7868);
   let state = obj1.useComponentState(obj).state;
   obj = { style: { gap: 8 } };
-  const items = [callback(_require(4127).Text, { variant: "heading-lg/medium", children: children.title }), , , ];
+  const items = [callback(_require(4161).Text, { variant: "heading-lg/medium", children: children.title }), , , ];
   if (obj.type === _require(1882).ComponentType.STRING_SELECT) {
     obj = {};
     const merged1 = Object.assign(obj);
-    let tmp12 = callback(importDefault(14742), obj);
-    const tmp16 = importDefault(14742);
+    let tmp12 = callback(importDefault(14786), obj);
+    const tmp16 = importDefault(14786);
   } else {
     obj1 = {};
     const merged2 = Object.assign(obj);
     obj1["type"] = obj.type;
-    tmp12 = callback(importDefault(14745), obj1);
-    const tmp8 = importDefault(14745);
+    tmp12 = callback(importDefault(14789), obj1);
+    const tmp8 = importDefault(14789);
   }
   items[1] = tmp12;
   type = undefined;
@@ -63,10 +63,10 @@ function Select(children) {
     }
     state = ["Selected values: ", mapped.join(", ")];
     obj2.children = state;
-    closure_8(_require(4127).Text, obj2);
+    closure_8(_require(4161).Text, obj2);
     const tmp24 = closure_8;
   } else {
-    items[2] = callback(_require(4127).Text, { variant: "text-md/normal", children: "Nothing selected" });
+    items[2] = callback(_require(4161).Text, { variant: "text-md/normal", children: "Nothing selected" });
     const obj3 = {};
     let str4 = "off";
     if (first) {
@@ -78,9 +78,9 @@ function Select(children) {
       return callback((arg0) => !arg0);
     };
     obj3.size = "sm";
-    items[3] = callback(_require(4544).Button, obj3);
+    items[3] = callback(_require(4578).Button, obj3);
     obj.children = items;
-    return closure_8(_require(5166).Card, obj);
+    return closure_8(_require(5200).Card, obj);
   }
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -109,14 +109,14 @@ export default function DevToolsComponentsTestingScreen() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 16 };
-  const items = [callback(require(4127) /* Text */.Text, { variant: "text-md/normal", children: "Test screen for embedding native components in RN" }), , ];
+  const items = [callback(require(4161) /* Text */.Text, { variant: "text-md/normal", children: "Test screen for embedding native components in RN" }), , ];
   obj = {};
   const obj1 = { customId: "modal", channelId: channelId.getChannelId(), components: closure_10 };
   obj.modal = obj1;
   const merged = Object.assign(closure_12);
-  const items1 = [callback(importDefault(14746), {}), , , , , ];
+  const items1 = [callback(importDefault(14790), {}), , , , , ];
   const obj2 = {};
-  const tmp2 = importDefault(14746);
+  const tmp2 = importDefault(14790);
   items1[1] = callback(Select, { title: "String Select", type: require(1882) /* PermissionOverwriteType */.ComponentType.STRING_SELECT });
   const obj3 = { title: "String Select", type: require(1882) /* PermissionOverwriteType */.ComponentType.STRING_SELECT };
   items1[2] = callback(Select, { title: "User Select", type: require(1882) /* PermissionOverwriteType */.ComponentType.USER_SELECT });
@@ -127,14 +127,14 @@ export default function DevToolsComponentsTestingScreen() {
   const obj6 = { title: "Mentionable Select", type: require(1882) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT };
   items1[5] = callback(Select, { title: "Channel Select", type: require(1882) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT });
   obj.children = items1;
-  items[1] = callback2(require(7832) /* isInteractionComponent */.ComponentStateContextProvider, obj);
-  items[2] = callback(require(4544) /* Button */.Button, {
+  items[1] = callback2(require(7868) /* isInteractionComponent */.ComponentStateContextProvider, obj);
+  items[2] = callback(require(4578) /* Button */.Button, {
     onPress() {
       return outer1_1(outer1_2[17]).dispatch({ type: "CLEAR_INTERACTION_MODAL_STATE", customId: "modal" });
     },
     text: "Reset Modal State"
   });
   obj.children = items;
-  obj.children = callback2(require(4542) /* Stack */.Stack, obj);
+  obj.children = callback2(require(4576) /* Stack */.Stack, obj);
   return callback(ScrollView, obj);
 };

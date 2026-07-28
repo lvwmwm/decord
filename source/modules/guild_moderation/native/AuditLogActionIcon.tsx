@@ -1,10 +1,10 @@
-// Module ID: 16307
-// Function ID: 127005
+// Module ID: 16346
+// Function ID: 127161
 // Name: AuditIcons
-// Dependencies: [31, 27, 16297, 653, 33, 4131, 689, 16308, 16281, 6519, 4087, 13920, 4075, 9373, 4647, 15488, 4655, 8265, 4632, 6572, 10860, 6575, 16310, 9758, 4630, 8958, 16312, 16313, 16314, 1273, 2]
+// Dependencies: [31, 27, 16336, 653, 33, 4165, 689, 16347, 16320, 6555, 4121, 13964, 4109, 9417, 4681, 15527, 4689, 8303, 4666, 6608, 10898, 6611, 16349, 9798, 4664, 9002, 16351, 16352, 16353, 1273, 2]
 // Exports: default
 
-// Module 16307 (AuditIcons)
+// Module 16346 (AuditIcons)
 import "result";
 import { View } from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,17 +42,17 @@ function AuditIcons(action) {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(action);
   if (constants.CREATE === tmp2) {
-    let tmp5 = importDefault(16312);
+    let tmp5 = importDefault(16351);
   } else if (constants.UPDATE === tmp2) {
-    tmp5 = importDefault(16313);
+    tmp5 = importDefault(16352);
   } else {
     tmp5 = null;
     if (constants.DELETE === tmp2) {
-      tmp5 = importDefault(16314);
+      tmp5 = importDefault(16353);
     }
   }
   if (action === constants2.MESSAGE_DELETE) {
-    let RobotIcon = require(4630) /* ChatIcon */.ChatIcon;
+    let RobotIcon = require(4664) /* ChatIcon */.ChatIcon;
   } else {
     if (action !== constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
       if (action !== constants2.AUTO_MODERATION_FLAG_TO_CHANNEL) {
@@ -63,7 +63,7 @@ function AuditIcons(action) {
         }
       }
     }
-    RobotIcon = require(8958) /* RobotIcon */.RobotIcon;
+    RobotIcon = require(9002) /* RobotIcon */.RobotIcon;
   }
   let obj = { style: tmp.actionImageContainer };
   obj = { size: "custom", style: tmp.iconComponent };

@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 65961
+// Module ID: 8260
+// Function ID: 66071
 // Name: _toPropertyKey
-// Dependencies: [5, 29, 57, 31, 27, 1918, 1911, 1838, 1850, 6661, 482, 33, 4131, 689, 3764, 5159, 4119, 566, 8215, 3844, 1212, 1273, 4127, 8223, 5189, 6619, 8227, 5048, 8234, 4321, 4313, 8216, 3831, 4099, 5187, 5186, 4544, 2]
+// Dependencies: [5, 29, 57, 31, 27, 1918, 1911, 1838, 1850, 6697, 482, 33, 4165, 689, 3798, 5193, 4153, 566, 8253, 3878, 1212, 1273, 4161, 8261, 5223, 6655, 8265, 5082, 8272, 4355, 4347, 8254, 3865, 4133, 5221, 5220, 4578, 2]
 // Exports: default
 
-// Module 8222 (_toPropertyKey)
+// Module 8260 (_toPropertyKey)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
 import _slicedToArray from "_slicedToArray";
@@ -222,7 +222,7 @@ class AddMembersBody {
     tmp39 = jsxs;
     tmp40 = Fragment;
     obj5 = {};
-    tmp41 = require("module_8227");
+    tmp41 = require("module_8265");
     intl5 = require("getSystemLocale").intl;
     obj5.accessibilityLabel = intl5.string(require("getSystemLocale").t["5h0QOP"]);
     intl6 = require("getSystemLocale").intl;
@@ -417,7 +417,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return outer1_12.getGuild(guildId);
   });
-  const tmp5 = first(4321)(channel, true);
+  const tmp5 = first(4355)(channel, true);
   let str = "";
   if (null != tmp5) {
     str = tmp5;
@@ -444,12 +444,12 @@ export default function AddMembersActionSheet(channel) {
         let obj4 = obj1;
       }
       obj.trailing = tmp20(tmp21, obj4);
-      obj.header = tmp19(channel(5186).BottomSheetTitleHeader, obj);
+      obj.header = tmp19(channel(5220).BottomSheetTitleHeader, obj);
       const obj2 = { style: tmp.container };
       const obj3 = { channel, guild: stateFromStores, permission: channel.accessPermissions, pendingAdditions: first, setPendingAdditions: tmp2[1], inActionSheet: true };
       obj2.children = callback2(AddMembersBody, obj3);
       obj.children = callback2(closure_8, obj2);
-      return tmp16(channel(5187).BottomSheet, obj);
+      return tmp16(channel(5221).BottomSheet, obj);
     }
     obj4 = { size: "sm" };
     const intl = channel(1212).intl;

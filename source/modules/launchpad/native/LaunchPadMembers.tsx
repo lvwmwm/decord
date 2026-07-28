@@ -1,8 +1,8 @@
-// Module ID: 15747
-// Function ID: 121437
-// Dependencies: [31, 27, 1348, 1907, 33, 4131, 624, 11301, 15451, 10845, 4127, 1212, 2]
+// Module ID: 15786
+// Function ID: 121593
+// Dependencies: [31, 27, 1348, 1907, 33, 4165, 624, 11339, 15490, 10883, 4161, 1212, 2]
 
-// Module 15747
+// Module 15786
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ const memoResult = require("result").memo(function LaunchPadMembers() {
   if ("private" === stateFromStoresObject.type) {
     obj = { style: tmp.wrapper };
     obj = { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 };
-    obj.children = jsx(importDefault(11301), { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj.children = jsx(importDefault(11339), { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     let tmp7 = <View channelId={stateFromStoresObject.channelId} listStyleOverride={tmp.listStyle} disableBottomSafeZone insetEnd={20} />;
   } else if ("thread" === stateFromStoresObject.type) {
     const obj1 = { style: tmp.wrapper };
@@ -55,7 +55,7 @@ const memoResult = require("result").memo(function LaunchPadMembers() {
     obj2.listStyleOverride = tmp.listStyle;
     obj2.disableBottomSafeZone = true;
     obj2.insetEnd = 20;
-    obj1.children = jsx(importDefault(15451), {}, stateFromStoresObject.channelId);
+    obj1.children = jsx(importDefault(15490), {}, stateFromStoresObject.channelId);
     tmp7 = <View style={tmp.wrapper} />;
   } else if ("guild" === stateFromStoresObject.type) {
     const obj3 = { style: tmp.wrapper };
@@ -64,14 +64,14 @@ const memoResult = require("result").memo(function LaunchPadMembers() {
     obj4.listStyleOverride = tmp.listStyle;
     obj4.disableBottomSafeZone = true;
     obj4.insetEnd = 20;
-    obj3.children = jsx(importDefault(10845), {}, stateFromStoresObject.channelId);
+    obj3.children = jsx(importDefault(10883), {}, stateFromStoresObject.channelId);
     tmp7 = <View style={tmp.wrapper} />;
   } else {
     const obj5 = { style: tmp.emptyWrapper };
     const obj6 = { style: tmp.emptyText, variant: "text-md/semibold" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj6.children = intl.string(require(1212) /* getSystemLocale */.t["+7wtJq"]);
-    obj5.children = jsx(require(4127) /* Text */.Text, { style: tmp.emptyText, variant: "text-md/semibold" });
+    obj5.children = jsx(require(4161) /* Text */.Text, { style: tmp.emptyText, variant: "text-md/semibold" });
     tmp7 = <View style={tmp.emptyWrapper} />;
   }
   return tmp7;

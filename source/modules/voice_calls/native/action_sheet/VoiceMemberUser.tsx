@@ -1,9 +1,9 @@
-// Module ID: 12778
-// Function ID: 99488
+// Module ID: 12821
+// Function ID: 99658
 // Name: StreamingUserRow
-// Dependencies: [31, 27, 1278, 1194, 4810, 1348, 1918, 4178, 4218, 653, 33, 4131, 689, 10451, 566, 3977, 12779, 12780, 1273, 12781, 12782, 12783, 12784, 8284, 4127, 1212, 7575, 5971, 10787, 3982, 4342, 4099, 4661, 8849, 4320, 8847, 3970, 2]
+// Dependencies: [31, 27, 1278, 1194, 4844, 1348, 1918, 4212, 4252, 653, 33, 4165, 689, 10489, 566, 4011, 12822, 12823, 1273, 12824, 12825, 12826, 12827, 8322, 4161, 1212, 7611, 6005, 10825, 4016, 4376, 4133, 4695, 8893, 4354, 8891, 4004, 2]
 
-// Module 12778 (StreamingUserRow)
+// Module 12821 (StreamingUserRow)
 import importAllResult from "showActionSheet";
 import get_ActivityIndicator from "_findPlayingActivity";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
 import { Fonts } from "ME";
-import jsxProd from "module_8849";
+import jsxProd from "module_8893";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -50,7 +50,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj2.style = labelCallScreen;
-    obj1["subLabel"] = closure_11(user(7575).FormSubLabel, obj2);
+    obj1["subLabel"] = closure_11(user(7611).FormSubLabel, obj2);
     const items1 = [closure_11(closure_16, obj1), ];
     let tmp24Result = user.id !== store.getId();
     if (tmp24Result) {
@@ -76,12 +76,12 @@ function StreamingUserRow(user) {
           const obj4 = user(outer1_2[30]);
         }
       };
-      obj3.children = closure_11(channel(10787), obj4);
+      obj3.children = closure_11(channel(10825), obj4);
       tmp24Result = closure_11(closure_3, obj3);
       const tmp24 = closure_11;
       const tmp25 = closure_3;
       const tmp26 = closure_11;
-      const tmp29 = channel(10787);
+      const tmp29 = channel(10825);
     }
     items1[1] = tmp24Result;
     obj.children = items1;
@@ -111,7 +111,7 @@ function RingButton(channelId) {
       tmp6Result.children = intl.string(channelId(1212).t.bHa9kN);
       tmp6Result = closure_11(channelId(1273).LegacyText, tmp6Result);
       tmp6Result.children = tmp6Result;
-      closure_11(channelId(4661).PressableOpacity, tmp6Result);
+      closure_11(channelId(4695).PressableOpacity, tmp6Result);
       const tmp3 = closure_11;
       const tmp6 = closure_11;
     }
@@ -141,7 +141,7 @@ function StopRingButton(channelId) {
       tmp6Result.children = intl.string(channelId(1212).t.ygslb0);
       tmp6Result = closure_11(channelId(1273).LegacyText, tmp6Result);
       tmp6Result.children = tmp6Result;
-      closure_11(channelId(4661).PressableOpacity, tmp6Result);
+      closure_11(channelId(4695).PressableOpacity, tmp6Result);
       const tmp3 = closure_11;
       const tmp6 = closure_11;
     }
@@ -295,7 +295,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1.guildId = guild_id;
   obj1.size = user(1273).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1.speaking = channel(10451)(obj);
+  obj1.speaking = channel(10489)(obj);
   obj.leading = callback(user(1273).Avatar, obj1);
   let tmp20Result = null;
   if (flag) {
@@ -304,7 +304,7 @@ let closure_16 = importAllResult.memo((user) => {
       obj2 = { style: tmp3.row };
       let tmp22 = null;
       if (user.isSpectating) {
-        obj3 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12784), style: tmp14 };
+        obj3 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12827), style: tmp14 };
         tmp22 = callback(user(1273).Icon, obj3);
       }
       const items3 = [
@@ -329,7 +329,7 @@ let closure_16 = importAllResult.memo((user) => {
       ];
       let tmp27 = null;
       if (tmp9) {
-        obj4 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12781), style: tmp14 };
+        obj4 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12824), style: tmp14 };
         tmp27 = callback(user(1273).Icon, obj4);
       }
       items3[2] = tmp27;
@@ -345,10 +345,10 @@ let closure_16 = importAllResult.memo((user) => {
         tmp20Result = tmp20(tmp21, obj2);
       } else {
         if (localVideoDisabled) {
-          const obj6 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12782), style: tmp3.voiceStatusIconMargin, disableColor: true };
+          const obj6 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12825), style: tmp3.voiceStatusIconMargin, disableColor: true };
           let obj7 = obj6;
         } else {
-          obj7 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12783), style: tmp14 };
+          obj7 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12826), style: tmp14 };
         }
         callback(user(1273).Icon, obj7);
         const tmp33 = callback;
@@ -370,7 +370,7 @@ let closure_16 = importAllResult.memo((user) => {
     const intl = user(1212).intl;
     const items5 = ["\u00A0", intl.string(user(1212).t["pFO/Ph"])];
     obj11.children = items5;
-    items4[1] = callback2(user(4127).Text, obj11);
+    items4[1] = callback2(user(4161).Text, obj11);
     obj10.children = items4;
     tmp51 = callback2(closure_13, obj10);
   }
@@ -380,15 +380,15 @@ let closure_16 = importAllResult.memo((user) => {
     labelCallScreen = tmp4.labelCallScreen;
   }
   obj9.style = labelCallScreen;
-  obj8["label"] = callback(user(7575).FormRow.Label, obj9);
+  obj8["label"] = callback(user(7611).FormRow.Label, obj9);
   if (localVideoAutoDisabled) {
     const obj12 = { style: tmp3.autoDisabledVideo };
-    const obj13 = { source: channel(8284), size: user(1273).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj13 = { source: channel(8322), size: user(1273).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const items6 = [callback(user(1273).Icon, obj13), ];
     const obj14 = { variant: "text-xs/medium", color: "text-default", style: tmp3.autoDisabledVideoLabel };
     const intl3 = user(1212).intl;
     obj14.children = intl3.string(user(1212).t.m2Hyj0);
-    items6[1] = callback(user(4127).Text, obj14);
+    items6[1] = callback(user(4161).Text, obj14);
     obj12.children = items6;
     let stringResult = callback2(c3, obj12);
   } else {
@@ -399,7 +399,7 @@ let closure_16 = importAllResult.memo((user) => {
     }
   }
   obj8["subLabel"] = stringResult;
-  return callback(user(7575).FormRow, obj8);
+  return callback(user(7611).FormRow, obj8);
 });
 let obj5 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
@@ -420,9 +420,9 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     }
     return hasItem;
   }, items1);
-  let obj1 = id2(4320);
+  let obj1 = id2(4354);
   const name = obj1.getName(id2.guild_id, id2.id, id);
-  let obj2 = id(8847);
+  let obj2 = id(8891);
   obj = {
     onPress() {
       return callback(id);
@@ -435,14 +435,14 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj.style = labelCallScreen;
-  obj.label = callback(id(7575).FormRow.Label, obj);
+  obj.label = callback(id(7611).FormRow.Label, obj);
   obj1 = { user: id, guildId: id2.guild_id, size: id(1273).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.leading = callback(id(1273).Avatar, obj1);
   if (!canRing) {
     obj.trailing = null;
     obj2 = {};
     const merged = Object.assign(obj);
-    return callback(id(7575).FormRow, obj2);
+    return callback(id(7611).FormRow, obj2);
   } else {
     const obj3 = {};
     id2 = id2.id;
@@ -465,7 +465,7 @@ const memoResult1 = importAllResult.memo(function VoiceMemberUser(voiceState) {
     }
     return outer1_7.getChannel(channelId);
   });
-  let name = importDefault(3970).useName(voiceState.user);
+  let name = importDefault(4004).useName(voiceState.user);
   if (null != voiceState) {
     if (voiceState.selfStream) {
       obj = {};

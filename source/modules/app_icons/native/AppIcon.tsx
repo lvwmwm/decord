@@ -1,10 +1,10 @@
-// Module ID: 14420
-// Function ID: 110253
+// Module ID: 14464
+// Function ID: 110426
 // Name: AppIcon
-// Dependencies: [31, 27, 6526, 33, 4131, 689, 4067, 3977, 2]
+// Dependencies: [31, 27, 6562, 33, 4165, 689, 4101, 4011, 2]
 // Exports: default
 
-// Module 14420 (AppIcon)
+// Module 14464 (AppIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getIconById } from "getDefaultIcon";
@@ -28,8 +28,8 @@ export default function AppIcon(size) {
     num = 56;
   }
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(4067)();
-  let obj = require(3977) /* AccessibilityAnnouncer */;
+  const tmp2 = importDefault(4101)();
+  let obj = require(4011) /* AccessibilityAnnouncer */;
   let num2 = 1;
   if (obj.isThemeDark(tmp2)) {
     num2 = 0;

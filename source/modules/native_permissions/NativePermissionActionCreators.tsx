@@ -1,9 +1,9 @@
-// Module ID: 4682
-// Function ID: 40803
+// Module ID: 4716
+// Function ID: 40918
 // Name: NativePermissionActionCreators
 // Dependencies: [6, 7, 686, 2]
 
-// Module 4682 (NativePermissionActionCreators)
+// Module 4716 (NativePermissionActionCreators)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

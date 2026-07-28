@@ -1,10 +1,10 @@
-// Module ID: 11858
-// Function ID: 91904
+// Module ID: 11901
+// Function ID: 92074
 // Name: GameUpdatePlatformIcon
-// Dependencies: [31, 33, 8115, 11859, 8441, 11861, 11863, 9140, 11865, 2]
+// Dependencies: [31, 33, 8153, 11902, 8485, 11904, 11906, 9184, 11908, 2]
 // Exports: GameUpdatePlatformIcon
 
-// Module 11858 (GameUpdatePlatformIcon)
+// Module 11901 (GameUpdatePlatformIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -19,24 +19,24 @@ export const GameUpdatePlatformIcon = function GameUpdatePlatformIcon(color) {
     size = "xs";
   }
   color = color.color;
-  if (require(8115) /* PlatformType */.PlatformType.DESKTOP === platform) {
+  if (require(8153) /* PlatformType */.PlatformType.DESKTOP === platform) {
     let obj = { size, color };
-    return jsx(require(11859) /* ScreenIcon */.ScreenIcon, { size, color });
-  } else if (require(8115) /* PlatformType */.PlatformType.XBOX === platform) {
+    return jsx(require(11902) /* ScreenIcon */.ScreenIcon, { size, color });
+  } else if (require(8153) /* PlatformType */.PlatformType.XBOX === platform) {
     obj = { size, color };
-    return jsx(require(8441) /* XboxNeutralIcon */.XboxNeutralIcon, { size, color });
-  } else if (require(8115) /* PlatformType */.PlatformType.PLAYSTATION === platform) {
+    return jsx(require(8485) /* XboxNeutralIcon */.XboxNeutralIcon, { size, color });
+  } else if (require(8153) /* PlatformType */.PlatformType.PLAYSTATION === platform) {
     const obj1 = { size, color };
-    return jsx(require(11861) /* PlaystationNeutralIcon */.PlaystationNeutralIcon, { size, color });
-  } else if (require(8115) /* PlatformType */.PlatformType.NINTENDO === platform) {
+    return jsx(require(11904) /* PlaystationNeutralIcon */.PlaystationNeutralIcon, { size, color });
+  } else if (require(8153) /* PlatformType */.PlatformType.NINTENDO === platform) {
     const obj2 = { size, color };
-    return jsx(require(11863) /* NintendoSwitchNeutralIcon */.NintendoSwitchNeutralIcon, { size, color });
-  } else if (require(8115) /* PlatformType */.PlatformType.ANDROID === platform) {
+    return jsx(require(11906) /* NintendoSwitchNeutralIcon */.NintendoSwitchNeutralIcon, { size, color });
+  } else if (require(8153) /* PlatformType */.PlatformType.ANDROID === platform) {
     const obj3 = { size, color };
-    return jsx(require(9140) /* MobilePhoneIcon */.MobilePhoneIcon, { size, color });
-  } else if (require(8115) /* PlatformType */.PlatformType.IOS === platform) {
+    return jsx(require(9184) /* MobilePhoneIcon */.MobilePhoneIcon, { size, color });
+  } else if (require(8153) /* PlatformType */.PlatformType.IOS === platform) {
     obj = { size, color };
-    return jsx(require(11865) /* AppleNeutralIcon */.AppleNeutralIcon, { size, color });
+    return jsx(require(11908) /* AppleNeutralIcon */.AppleNeutralIcon, { size, color });
   } else {
     return null;
   }

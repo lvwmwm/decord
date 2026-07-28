@@ -1,9 +1,9 @@
-// Module ID: 11454
-// Function ID: 89097
+// Module ID: 11492
+// Function ID: 89216
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 6038, 6039, 4152, 6108, 5913, 1850, 4568, 4131, 689, 22, 5639, 566, 8419, 11109, 11107, 7962, 1882, 11455, 11108, 2]
+// Dependencies: [57, 31, 6072, 6073, 4186, 6142, 5947, 1850, 4602, 4165, 689, 11146, 22, 5888, 566, 8463, 11147, 11145, 7999, 1882, 11493, 2]
 
-// Module 11454 (_createForOfIteratorHelperLoose)
+// Module 11492 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -98,6 +98,30 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
+function toCommandStyles(arg0) {
+  let closure_0 = arg0;
+  return {
+    commandOption() {
+      return lib(outer1_3[11]).convertToNativeStyle(lib.commandOption);
+    },
+    commandErrorOption() {
+      return lib(outer1_3[11]).convertToNativeStyle(lib.commandErrorOption);
+    },
+    gameMention() {
+      return lib(outer1_3[11]).convertToNativeStyle(lib.gameMention);
+    },
+    autocomplete(arg0) {
+      if (null == arg0) {
+        let autocomplete = lib.autocomplete;
+      } else {
+        autocomplete = {};
+        const merged = Object.assign(lib.autocomplete);
+        autocomplete["color"] = arg0;
+      }
+      return lib(outer1_3[11]).convertToNativeStyle(autocomplete);
+    }
+  };
+}
 function areResolvedGamesEqual(size, size2) {
   if (size === size2) {
     return true;
@@ -138,21 +162,21 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
   const commandsDisabled = chatInputRef.commandsDisabled;
   let tmp = callback();
   callback = tmp;
-  const applicationCommandOptionValueParser = chatInputRef(commandsDisabled[15]).useApplicationCommandOptionValueParser({ channel });
-  let obj = chatInputRef(commandsDisabled[15]);
+  const applicationCommandOptionValueParser = chatInputRef(commandsDisabled[16]).useApplicationCommandOptionValueParser({ channel });
+  let obj = chatInputRef(commandsDisabled[16]);
   let items = [stateFromStores1];
-  const stateFromStores = chatInputRef(commandsDisabled[13]).useStateFromStores(items, () => stateFromStores1.getActiveCommand(channel.id));
-  const obj2 = chatInputRef(commandsDisabled[13]);
+  const stateFromStores = chatInputRef(commandsDisabled[14]).useStateFromStores(items, () => stateFromStores1.getActiveCommand(channel.id));
+  const obj2 = chatInputRef(commandsDisabled[14]);
   let items1 = [stateFromStores];
-  stateFromStores1 = chatInputRef(commandsDisabled[13]).useStateFromStores(items1, () => stateFromStores.getLastResponseNonce(channel.id));
-  let obj3 = chatInputRef(commandsDisabled[13]);
-  let text = chatInputRef(commandsDisabled[16]).getTextBeforeFirstOption(chatInputStateRef.current.text).text;
+  stateFromStores1 = chatInputRef(commandsDisabled[14]).useStateFromStores(items1, () => stateFromStores.getLastResponseNonce(channel.id));
+  const obj3 = chatInputRef(commandsDisabled[14]);
+  let text = chatInputRef(commandsDisabled[17]).getTextBeforeFirstOption(chatInputStateRef.current.text).text;
   let substr = text.slice(1);
   const ref = applicationCommandOptionValueParser.useRef(substr.trimEnd());
   const tmp6 = callback(applicationCommandOptionValueParser.useState(ref.current), 2);
   let closure_9 = tmp6[1];
-  let obj4 = chatInputRef(commandsDisabled[16]);
-  const commands = channel(commandsDisabled[17]).useCachedResults({ type: "channel", channel }, chatInputRef(commandsDisabled[18]).ApplicationCommandType.CHAT, tmp6[0]).commands;
+  let obj4 = chatInputRef(commandsDisabled[17]);
+  const commands = channel(commandsDisabled[18]).useCachedResults({ type: "channel", channel }, chatInputRef(commandsDisabled[19]).ApplicationCommandType.CHAT, tmp6[0]).commands;
   let closure_11 = applicationCommandOptionValueParser.useRef(undefined);
   let tmp7 = (function useResolveComposerGameMentions(id) {
     let closure_0 = id;
@@ -171,14 +195,14 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
       });
     }, []);
     const memo = applicationCommandOptionValueParser.useMemo(() => first.filter((arg0) => null == gameById.getGameById(arg0)), items);
-    let obj = chatInputRef(commandsDisabled[12]);
+    let obj = chatInputRef(commandsDisabled[13]);
     const games = obj.useGames(memo);
     const items1 = [ref, closure_11, commands, closure_9];
     const items2 = [first, id];
     obj = {
       syncRawGameMentionIdsFromText: callback,
       rawGameMentionIds: first,
-      resolvedGameMentions: chatInputRef(commandsDisabled[13]).useStateFromStores(items1, () => {
+      resolvedGameMentions: chatInputRef(commandsDisabled[14]).useStateFromStores(items1, () => {
         let iter3;
         let media;
         if (0 === first.length) {
@@ -224,7 +248,7 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
                 } else {
                   let tmp35 = chatInputRef;
                   let tmp36 = commandsDisabled;
-                  let obj4 = chatInputRef(commandsDisabled[14]);
+                  let obj4 = chatInputRef(commandsDisabled[15]);
                   let tmp37 = game;
                   tmp16 = tmp11;
                   tmp17 = tmp12;
@@ -269,7 +293,7 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
           }
           return tmp30;
         }
-      }, items2, outer1_18)
+      }, items2, outer1_19)
     };
     return obj;
   })(channel.id);
@@ -287,46 +311,23 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
     ({ editId, focused, selectionStart, selectionEnd } = current);
     syncRawGameMentionIdsFromText(text);
     let obj = { activeCommand: stateFromStores, channel, commandsDisabled, editId, focused, lastCommandAutocompleteResponseNonce: stateFromStores1, queryCommands: commands, selectionStart, selectionEnd, text };
-    if (null == ref.current) {
-      let tmp7 = chatInputStateRef(commandsDisabled[19]);
+    if (null == closure_11.current) {
+      let tmp7 = chatInputStateRef(commandsDisabled[20]);
       obj = {};
       obj.props = obj;
       obj.ref = chatInputRef;
       obj.optionValueParser = applicationCommandOptionValueParser;
-      obj = {
-        commandOption() {
-            return chatInputRef(commandsDisabled[20]).convertToNativeStyle(outer1_4.commandOption);
-          },
-        commandErrorOption() {
-            return chatInputRef(commandsDisabled[20]).convertToNativeStyle(outer1_4.commandErrorOption);
-          },
-        gameMention() {
-            return chatInputRef(commandsDisabled[20]).convertToNativeStyle(outer1_4.gameMention);
-          },
-        autocomplete(arg0) {
-            if (null == arg0) {
-              let convertToNativeStyleResult = chatInputRef(commandsDisabled[20]).convertToNativeStyle(outer1_4.autocomplete);
-              const obj3 = chatInputRef(commandsDisabled[20]);
-            } else {
-              let obj = chatInputRef(commandsDisabled[20]);
-              obj = {};
-              const merged = Object.assign(outer1_4.autocomplete);
-              obj["color"] = arg0;
-              convertToNativeStyleResult = obj.convertToNativeStyle(obj);
-            }
-            return convertToNativeStyleResult;
-          }
-      };
-      obj.styles = obj;
+      obj.styles = outer1_18(_slicedToArray);
       const prototype = tmp7.prototype;
       tmp7 = new tmp7(obj);
-      ref.current = tmp7;
+      closure_11.current = tmp7;
     } else {
-      const current2 = ref.current;
-      const obj1 = { newState: obj };
-      const result = current2.updateApplicationCommandManagerState(obj1);
+      const current2 = closure_11.current;
+      obj = {};
+      obj.newState = obj;
+      const result = current2.updateApplicationCommandManagerState(obj);
     }
-    text = chatInputRef(commandsDisabled[16]).getTextBeforeFirstOption(text).text;
+    text = chatInputRef(commandsDisabled[17]).getTextBeforeFirstOption(text).text;
     const substr = text.slice(1);
     const trimEndResult = substr.trimEnd();
     if (ref.current !== trimEndResult) {
@@ -338,10 +339,17 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
   const effect = applicationCommandOptionValueParser.useEffect(() => {
     callback();
   }, items3);
-  const items4 = [resolvedGameMentions, rawGameMentionIds, chatInputRef, chatInputStateRef, callback];
+  const items4 = [tmp];
   const effect1 = applicationCommandOptionValueParser.useEffect(() => {
+    const current = closure_11.current;
+    if (null != current) {
+      current.updateStyles(outer1_18(_slicedToArray));
+    }
+  }, items4);
+  const items5 = [resolvedGameMentions, rawGameMentionIds, chatInputRef, chatInputStateRef, callback];
+  const effect2 = applicationCommandOptionValueParser.useEffect(() => {
     let done;
-    const current = ref.current;
+    const current = closure_11.current;
     if (null != resolvedGameMentions) {
       if (0 !== rawGameMentionIds.length) {
         if (null != current) {
@@ -377,7 +385,7 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef) => {
         }
       }
     }
-  }, items4);
+  }, items5);
   const imperativeHandle = applicationCommandOptionValueParser.useImperativeHandle(arg1, () => ({
     getApplicationCommandManager() {
       return outer1_11.current;

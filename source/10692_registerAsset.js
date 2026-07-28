@@ -1,11 +1,11 @@
 // Module ID: 10692
-// Function ID: 83230
+// Function ID: 83202
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 10692 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "623eff85d27fd4ffd7a4c28c327682e8", name: "SpeedometerIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e535ea871b8155df08d1e92a6b532c6c", name: "GroupArrowDownIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

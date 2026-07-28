@@ -1,10 +1,10 @@
-// Module ID: 5070
-// Function ID: 44036
+// Module ID: 5104
+// Function ID: 44151
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5040, 1352, 1348, 5071, 1850, 653, 686, 21, 2]
+// Dependencies: [5074, 1352, 1348, 5105, 1850, 653, 686, 21, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck
 
-// Module 5070 (_createForOfIteratorHelperLoose)
+// Module 5104 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isReadableType } from "_callSuper";
 import closure_4 from "_isNativeReflectConstruct";

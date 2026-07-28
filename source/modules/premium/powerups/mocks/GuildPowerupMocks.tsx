@@ -1,9 +1,9 @@
-// Module ID: 11518
-// Function ID: 89722
+// Module ID: 11557
+// Function ID: 89873
 // Name: items
-// Dependencies: [4019, 2]
+// Dependencies: [4053, 2]
 
-// Module 11518 (items)
+// Module 11557 (items)
 import { GuildPowerupType } from "BoostedGuildTiers";
 
 let obj = { type: GuildPowerupType.LEVEL, skuId: "1", title: "Lorem ipsum", cost: 1, dependencies: [] };

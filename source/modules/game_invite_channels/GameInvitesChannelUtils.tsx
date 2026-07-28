@@ -1,10 +1,10 @@
-// Module ID: 5998
-// Function ID: 53360
+// Module ID: 6032
+// Function ID: 53479
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 31, 1348, 1838, 653, 566, 5999, 6012, 5463, 6018, 5973, 2]
+// Dependencies: [29, 31, 1348, 1838, 653, 566, 6033, 6046, 5498, 6052, 6007, 2]
 // Exports: canInviteToActivity, useFirstMessage, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useSubscribeToGameInvitePostAuthors
 
-// Module 5998 (_createForOfIteratorHelperLoose)
+// Module 6032 (_createForOfIteratorHelperLoose)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -158,7 +158,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export const GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME = "No Mic";
 export { useIsGameInvitesPost };
 export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoiceEnabled(channel) {
-  const appliedTags = require(5999) /* useAvailableTags */.useAppliedTags(channel);
+  const appliedTags = require(6033) /* useAvailableTags */.useAppliedTags(channel);
   const tmp = !useIsGameInvitesPost(channel);
   let tmp2 = !tmp;
   if (!tmp) {
@@ -167,14 +167,14 @@ export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoice
   return tmp2;
 };
 export const useFirstMessage = function useFirstMessage(stateFromStores, enabled) {
-  let obj = require(6012) /* _shouldRequestFirstMessage */;
+  let obj = require(6046) /* _shouldRequestFirstMessage */;
   obj = { enabled, allowArchived: true };
   return obj.useFirstForumPostMessage(stateFromStores, obj);
 };
 export { useGameInvitesChannelApplicationId };
 export const useGameInvitesChannelOfficialApplication = function useGameInvitesChannelOfficialApplication(arg0) {
   const tmp = useGameInvitesChannelApplicationId(arg0);
-  application = application(5463).useApplication(tmp);
+  application = application(5498).useApplication(tmp);
   const items = [application];
   return useMemo(() => {
     const merged = Object.assign(outer1_4(application, outer1_3));
@@ -229,12 +229,12 @@ export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameIn
     }
     return obj;
   }, items2);
-  const subscribeGuildMembers = _require(6018).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
+  const subscribeGuildMembers = _require(6052).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
 };
 export const canInviteToActivity = function canInviteToActivity(type) {
   let tmp = type.type === constants2.PLAYING;
   if (tmp) {
-    tmp = importDefault(5973)(type, constants.JOIN);
+    tmp = importDefault(6007)(type, constants.JOIN);
   }
   return tmp;
 };

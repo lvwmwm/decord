@@ -1,10 +1,10 @@
-// Module ID: 5605
-// Function ID: 47681
+// Module ID: 5640
+// Function ID: 47808
 // Name: canSeeOnboardingHomeInPreview
-// Dependencies: [1910, 1348, 1838, 4334, 653, 1355, 5606, 624, 1841, 5066, 4336, 2]
+// Dependencies: [1910, 1348, 1838, 4368, 653, 1355, 5641, 624, 1841, 5100, 4370, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 5605 (canSeeOnboardingHomeInPreview)
+// Module 5640 (canSeeOnboardingHomeInPreview)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -54,7 +54,7 @@ let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("m
 
 export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id) {
   const _require = guild_id;
-  const tmp = importDefault(5606)(guild_id);
+  const tmp = importDefault(5641)(guild_id);
   importDefault = tmp;
   const items = [closure_4, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [guild_id, tmp];
@@ -101,7 +101,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(guildId) {
         if (tmp2) {
           return canSeeOnboardingHomeInPreview(guild);
         } else {
-          let result = require(5066) /* _createForOfIteratorHelperLoose */.isGuildOnboardingSettingsAvailable(guildId);
+          let result = require(5100) /* _createForOfIteratorHelperLoose */.isGuildOnboardingSettingsAvailable(guildId);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);

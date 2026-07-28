@@ -1,10 +1,10 @@
-// Module ID: 5081
-// Function ID: 44226
+// Module ID: 5115
+// Function ID: 44341
 // Name: headerTitle
-// Dependencies: [31, 5082, 1348, 1838, 1907, 5059, 5056, 653, 33, 1198, 5083, 5087, 5459, 5066, 5483, 5123, 566, 5064, 5127, 5517, 1212, 2]
+// Dependencies: [31, 5116, 1348, 1838, 1907, 5093, 5090, 653, 33, 1198, 5117, 5121, 5494, 5100, 5518, 5157, 566, 5098, 5161, 5552, 1212, 2]
 // Exports: default
 
-// Module 5081 (headerTitle)
+// Module 5115 (headerTitle)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -67,7 +67,7 @@ function getScreens(guildId) {
     fullscreen: true,
     headerTitle,
     headerRight,
-    headerLeft: guildId(5087).getHeaderCloseButton(() => {
+    headerLeft: guildId(5121).getHeaderCloseButton(() => {
       if (closure_8) {
         let channel = outer1_5.getChannel(outer1_7.getLastSelectedChannelId());
         if (null == channel) {

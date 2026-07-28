@@ -1,19 +1,19 @@
-// Module ID: 7754
-// Function ID: 61719
+// Module ID: 7790
+// Function ID: 61809
 // Name: createPrivateChannelIntegrationSystemMessage
-// Dependencies: [653, 7684, 7686, 7719, 7687, 2]
+// Dependencies: [653, 7720, 7722, 7755, 7723, 2]
 // Exports: createPrivateChannelIntegrationSystemMessage
 
-// Module 7754 (createPrivateChannelIntegrationSystemMessage)
+// Module 7790 (createPrivateChannelIntegrationSystemMessage)
 import { MessageTypes } from "ME";
 
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/PrivateChannelIntegrationSystemMessage.tsx");
 
 export const createPrivateChannelIntegrationSystemMessage = function createPrivateChannelIntegrationSystemMessage(roleStyle, type) {
   const message = roleStyle.message;
-  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp2 = importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  const tmp2 = importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
   const application = message.application;
   let bot;
   if (null != application) {
@@ -25,14 +25,14 @@ export const createPrivateChannelIntegrationSystemMessage = function createPriva
   obj = {};
   if (type === MessageTypes.PRIVATE_CHANNEL_INTEGRATION_ADDED) {
     const obj1 = { application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp2, applicationNameOnClick: tmp4 };
-    let privateChannelIntegrationAddedSystemMessageASTContent = require(7719) /* getPrivateChannelIntegrationAddedSystemMessageContent */.getPrivateChannelIntegrationAddedSystemMessageASTContent(obj1);
-    const obj6 = require(7719) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
+    let privateChannelIntegrationAddedSystemMessageASTContent = require(7755) /* getPrivateChannelIntegrationAddedSystemMessageContent */.getPrivateChannelIntegrationAddedSystemMessageASTContent(obj1);
+    const obj6 = require(7755) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
   } else {
     const obj2 = { application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp2, applicationNameOnClick: tmp4 };
-    privateChannelIntegrationAddedSystemMessageASTContent = require(7719) /* getPrivateChannelIntegrationAddedSystemMessageContent */.getPrivateChannelIntegrationRemovedSystemMessageASTContent(obj2);
-    const obj4 = require(7719) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
+    privateChannelIntegrationAddedSystemMessageASTContent = require(7755) /* getPrivateChannelIntegrationAddedSystemMessageContent */.getPrivateChannelIntegrationRemovedSystemMessageASTContent(obj2);
+    const obj4 = require(7755) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
   }
   obj.content = privateChannelIntegrationAddedSystemMessageASTContent;
-  const merged = Object.assign(importDefault(7687)(roleStyle));
+  const merged = Object.assign(importDefault(7723)(roleStyle));
   return obj;
 };

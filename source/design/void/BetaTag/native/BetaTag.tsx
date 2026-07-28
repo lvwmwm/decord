@@ -1,10 +1,10 @@
-// Module ID: 12542
-// Function ID: 97060
+// Module ID: 12585
+// Function ID: 97230
 // Name: BetaTag
-// Dependencies: [31, 27, 6173, 33, 4131, 689, 4555, 668, 4127, 1212, 2]
+// Dependencies: [31, 27, 6207, 33, 4165, 689, 4589, 668, 4161, 1212, 2]
 // Exports: default
 
-// Module 12542 (BetaTag)
+// Module 12585 (BetaTag)
 import "result";
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -51,9 +51,9 @@ export default function BetaTag(gradient) {
     obj.style = items1;
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.children = intl2.string(require(1212) /* getSystemLocale */.t.oW0eUd);
-    obj.children = tmp4(require(4127) /* Text */.Text, obj);
-    let tmp4Result = tmp4(importDefault(4555), obj);
-    const tmp11 = importDefault(4555);
+    obj.children = tmp4(require(4161) /* Text */.Text, obj);
+    let tmp4Result = tmp4(importDefault(4589), obj);
+    const tmp11 = importDefault(4589);
   } else {
     obj = {};
     const items2 = [tmp2.container, style];
@@ -63,7 +63,7 @@ export default function BetaTag(gradient) {
     obj1.style = items3;
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.oW0eUd);
-    obj.children = tmp4(require(4127) /* Text */.Text, obj1);
+    obj.children = tmp4(require(4161) /* Text */.Text, obj1);
     tmp4Result = tmp4(View, obj);
   }
   return tmp4Result;

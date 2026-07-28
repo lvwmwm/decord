@@ -1,10 +1,10 @@
-// Module ID: 10693
-// Function ID: 83231
+// Module ID: 10731
+// Function ID: 83352
 // Name: ImageSparkleIcon
-// Dependencies: [31, 33, 689, 3834, 10694, 2]
+// Dependencies: [31, 33, 689, 3868, 10732, 2]
 // Exports: ImageSparkleIcon
 
-// Module 10693 (ImageSparkleIcon)
+// Module 10731 (ImageSparkleIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ImageSparkleIcon = function ImageSparkleIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10694) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10732) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10694) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(10732) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

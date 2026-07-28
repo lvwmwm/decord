@@ -1,7 +1,7 @@
 // Module ID: 1921
-// Function ID: 21734
+// Function ID: 21738
 // Name: wrapURL
-// Dependencies: [1922, 653, 3743, 477, 2]
+// Dependencies: [1922, 653, 3777, 477, 2]
 
 // Module 1921 (wrapURL)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ export default {
     return wrapURL("/hc/" + getLocale() + "/articles/" + MEDIA_CHANNEL, "https://creator-support.discord.com");
   },
   getTwitterURL() {
-    return importDefault(3743)(LocalizedLinks.TWITTER);
+    return importDefault(3777)(LocalizedLinks.TWITTER);
   },
   getCommunityURL() {
     return wrapURL("/hc/" + getLocale());

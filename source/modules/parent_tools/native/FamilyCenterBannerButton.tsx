@@ -1,10 +1,10 @@
-// Module ID: 13842
-// Function ID: 106100
+// Module ID: 13886
+// Function ID: 106273
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [31, 27, 1850, 5765, 5766, 653, 4345, 33, 4131, 689, 6200, 3831, 1212, 11048, 624, 13843, 675, 13844, 4099, 13845, 1935, 4542, 4544, 12231, 2199, 13848, 4338, 1443, 11045, 1553, 4676, 12939, 2]
+// Dependencies: [31, 27, 1850, 5775, 5776, 653, 4379, 33, 4165, 689, 6235, 3865, 1212, 11086, 624, 13887, 675, 13888, 4133, 13889, 1935, 4576, 4578, 12274, 2199, 13892, 4372, 1443, 11083, 1553, 4710, 12983, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 13842 (FamilyCenterTeenQRCodeButtonInner)
+// Module 13886 (FamilyCenterTeenQRCodeButtonInner)
 import DCDQRScanner from "DCDQRScanner";
 import { View } from "isOriginalContentTypeDifferent";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -157,7 +157,7 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     }
     return tmp2;
   }
-  let obj = handleQrCodeScanSucess(6200);
+  let obj = handleQrCodeScanSucess(6235);
   if (obj.useHasMaxConnections()) {
     return null;
   } else {

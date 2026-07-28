@@ -1,21 +1,21 @@
-// Module ID: 3793
-// Function ID: 29567
+// Module ID: 3827
+// Function ID: 29669
 // Name: getBraintreeSDK
-// Dependencies: [3794, 653, 3795, 3798, 1935, 3798, 2]
+// Dependencies: [3828, 653, 3829, 3832, 1935, 3832, 2]
 // Exports: collectDeviceData
 
-// Module 3793 (getBraintreeSDK)
+// Module 3827 (getBraintreeSDK)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PaymentSettings } from "ME";
 
 const require = arg1;
 function getBraintreeSDK() {
-  let obj = require(3795);
+  let obj = require(3829);
   obj = {
     createPromise() {
       return outer1_0(outer1_1[4])(outer1_1[3], outer1_1.paths);
     },
-    webpackId: 3798
+    webpackId: 3832
   };
   return obj.importWithRetry(obj).then((arg0) => arg0.default);
 }
@@ -28,7 +28,7 @@ function getDeviceData(arg0) {
     return obj.then((deviceData) => deviceData.deviceData).catch(() => null);
   });
 }
-const result = require("module_3795").fileFinishedImporting("utils/BraintreeUtils.tsx");
+const result = require("module_3829").fileFinishedImporting("utils/BraintreeUtils.tsx");
 
 export { getBraintreeSDK };
 export const collectDeviceData = function collectDeviceData() {

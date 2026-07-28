@@ -1,5 +1,5 @@
 // Module ID: 1665
-// Function ID: 18461
+// Function ID: 18465
 // Name: checkIfConfigIsValid
 // Dependencies: [65, 57, 1586]
 

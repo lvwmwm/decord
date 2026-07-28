@@ -1,10 +1,10 @@
-// Module ID: 15221
-// Function ID: 115945
+// Module ID: 15261
+// Function ID: 116104
 // Name: escapeMarkdown
-// Dependencies: [5751, 1838, 3768, 1850, 653, 1212, 3970, 5873, 1832, 44, 2]
+// Dependencies: [5761, 1838, 3802, 1850, 653, 1212, 4004, 5907, 1832, 44, 2]
 // Exports: default
 
-// Module 15221 (escapeMarkdown)
+// Module 15261 (escapeMarkdown)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isGuildEventEnded } from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -58,7 +58,7 @@ export default function getNotificationCenterItemBody(arg0) {
   if (null == id) {
     id = closure_8;
   }
-  let obj = applicationId(3970);
+  let obj = applicationId(4004);
   const other_user2 = item.other_user;
   let id1;
   if (null != other_user2) {
@@ -67,7 +67,7 @@ export default function getNotificationCenterItemBody(arg0) {
   const tmp2Result = escapeMarkdown(obj.getName(authStore.getUser(id1)));
   applicationId = item.applicationId;
   const type = item.type;
-  if (renderApplication(5873).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED === type) {
+  if (renderApplication(5907).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED === type) {
     let other_users = item.other_users;
     let id2;
     if (null != other_users) {
@@ -76,9 +76,9 @@ export default function getNotificationCenterItemBody(arg0) {
         id2 = first.id;
       }
     }
-    const obj12 = applicationId(3970);
+    const obj12 = applicationId(4004);
     const tmp54 = escapeMarkdown;
-    const tmp54Result = escapeMarkdown(applicationId(3970).getName(authStore.getUser(id2)));
+    const tmp54Result = escapeMarkdown(applicationId(4004).getName(authStore.getUser(id2)));
     const tmp61 = escapeMarkdown;
     const other_users2 = item.other_users;
     let id3;
@@ -89,7 +89,7 @@ export default function getNotificationCenterItemBody(arg0) {
     }
     other_users = item.other_users;
     let length;
-    const obj13 = applicationId(3970);
+    const obj13 = applicationId(4004);
     if (null != other_users) {
       length = other_users.length;
     }
@@ -99,9 +99,9 @@ export default function getNotificationCenterItemBody(arg0) {
     }
     const bound = Math.max(num15 - 2, 0);
     const intl6 = renderApplication(1212).intl;
-    obj = { user: tmp54Result, user2: tmp61(applicationId(3970).getName(authStore.getUser(id3))), count: bound };
+    obj = { user: tmp54Result, user2: tmp61(applicationId(4004).getName(authStore.getUser(id3))), count: bound };
     return intl6.format(renderApplication(1212).t.g5xyIC, obj);
-  } else if (renderApplication(5873).NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE === type) {
+  } else if (renderApplication(5907).NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE === type) {
     let arr;
     if (null != item.local_id) {
       const parts = str6.split("_");
@@ -113,7 +113,7 @@ export default function getNotificationCenterItemBody(arg0) {
     }
     const _HermesInternal3 = HermesInternal;
     return "Update to build " + str8 + " available!";
-  } else if (renderApplication(5873).NotificationCenterItems.FRIEND_SUGGESTION_CREATED === type) {
+  } else if (renderApplication(5907).NotificationCenterItems.FRIEND_SUGGESTION_CREATED === type) {
     if (relationshipType.getRelationshipType(id) === constants.PENDING_OUTGOING) {
       const intl5 = renderApplication(1212).intl;
       obj = { user: tmp2Result };
@@ -126,7 +126,7 @@ export default function getNotificationCenterItemBody(arg0) {
       }
     }
     return str5;
-  } else if (renderApplication(5873).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED === type) {
+  } else if (renderApplication(5907).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED === type) {
     const guild_scheduled_event_id = item.guild_scheduled_event_id;
     let guildScheduledEvent = null;
     if (null != guild_scheduled_event_id) {
@@ -168,16 +168,16 @@ export default function getNotificationCenterItemBody(arg0) {
     formatResult = str4;
     const tmp37 = isGuildEventEnded;
     tmp37Result = isGuildEventEnded(tmp38);
-  } else if (renderApplication(5873).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS === type) {
+  } else if (renderApplication(5907).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS === type) {
     const obj2 = { username: tmp2Result, applicationId, renderApplication, withApplication: renderApplication(1212).t["9Dgf1L"], withDefault: renderApplication(1212).t.uIomXw };
     return getFriendRequestItemBody(obj2);
-  } else if (renderApplication(5873).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED === type) {
+  } else if (renderApplication(5907).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED === type) {
     const obj3 = { username: tmp2Result, applicationId, renderApplication, withApplication: renderApplication(1212).t.nnC1q9, withDefault: renderApplication(1212).t["5Uzkdp"] };
     return getFriendRequestItemBody(obj3);
-  } else if (renderApplication(5873).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED === type) {
+  } else if (renderApplication(5907).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED === type) {
     const obj4 = { username: tmp2Result, applicationId, renderApplication, withApplication: renderApplication(1212).t.jXlYiF, withDefault: renderApplication(1212).t.McYRBk };
     return getFriendRequestItemBody(obj4);
-  } else if (renderApplication(5873).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED === type) {
+  } else if (renderApplication(5907).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED === type) {
     const _HermesInternal2 = HermesInternal;
     applicationId(44)(null != applicationId, "Expected application id for " + item.type);
     const intl3 = renderApplication(1212).intl;
@@ -188,7 +188,7 @@ export default function getNotificationCenterItemBody(arg0) {
         }
     };
     return intl3.format(renderApplication(1212).t["BB/0vn"], obj5);
-  } else if (renderApplication(5873).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS === type) {
+  } else if (renderApplication(5907).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS === type) {
     const _HermesInternal = HermesInternal;
     applicationId(44)(null != applicationId, "Expected application id for " + item.type);
     const intl2 = renderApplication(1212).intl;
@@ -199,7 +199,7 @@ export default function getNotificationCenterItemBody(arg0) {
         }
     };
     return intl2.format(renderApplication(1212).t["7cqOLI"], obj6);
-  } else if (renderApplication(5873).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED === type) {
+  } else if (renderApplication(5907).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED === type) {
     if (null == applicationId) {
       let body2 = item.body;
     } else {

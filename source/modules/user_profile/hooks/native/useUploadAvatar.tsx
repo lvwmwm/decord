@@ -1,10 +1,10 @@
-// Module ID: 13643
-// Function ID: 104850
+// Module ID: 13687
+// Function ID: 105023
 // Name: useUploadAvatar
-// Dependencies: [5, 31, 1850, 653, 1852, 624, 6137, 4099, 4675, 3777, 7890, 7883, 7880, 7882, 2]
+// Dependencies: [5, 31, 1850, 653, 1852, 624, 6171, 4133, 4709, 3811, 7926, 7919, 7916, 7918, 2]
 // Exports: default
 
-// Module 13643 (useUploadAvatar)
+// Module 13687 (useUploadAvatar)
 import defaultAreStatesEqual from "defaultAreStatesEqual";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

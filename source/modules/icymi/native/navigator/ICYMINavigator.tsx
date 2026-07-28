@@ -1,10 +1,10 @@
-// Module ID: 15246
-// Function ID: 116025
+// Module ID: 15286
+// Function ID: 116184
 // Name: ICYMINavigator
-// Dependencies: [33, 9041, 5517, 15247, 15198, 2]
+// Dependencies: [33, 9085, 5552, 15287, 15238, 2]
 // Exports: default
 
-// Module 15246 (ICYMINavigator)
+// Module 15286 (ICYMINavigator)
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 
@@ -15,7 +15,7 @@ createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigat
 const result = require("NavigationStack").fileFinishedImporting("modules/icymi/native/navigator/ICYMINavigator.tsx");
 
 export default function ICYMINavigator() {
-  let obj = _require(5517);
+  let obj = _require(5552);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {

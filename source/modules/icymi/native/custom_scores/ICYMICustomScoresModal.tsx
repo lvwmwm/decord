@@ -1,10 +1,10 @@
-// Module ID: 15252
-// Function ID: 116083
+// Module ID: 15292
+// Function ID: 116242
 // Name: ICYMICustomScoresModal
-// Dependencies: [31, 33, 9041, 4131, 689, 5517, 9050, 1212, 10123, 15253, 15254, 2]
+// Dependencies: [31, 33, 9085, 4165, 689, 5552, 9094, 1212, 10163, 15293, 15294, 2]
 // Exports: default
 
-// Module 15252 (ICYMICustomScoresModal)
+// Module 15292 (ICYMICustomScoresModal)
 import "result";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -23,7 +23,7 @@ const result = require("createNativeStackNavigator").fileFinishedImporting("modu
 
 export default function ICYMICustomScoresModal() {
   const _require = createNativeStackNavigator();
-  let obj = _require(5517);
+  let obj = _require(5552);
   let closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {

@@ -1,10 +1,10 @@
-// Module ID: 15119
-// Function ID: 115096
+// Module ID: 15159
+// Function ID: 115254
 // Name: LimitAndDurationInfo
-// Dependencies: [31, 5757, 1838, 3759, 4143, 4147, 653, 33, 4131, 566, 11171, 5761, 9065, 15120, 15121, 4314, 1273, 15123, 15124, 15029, 4951, 11385, 15030, 15125, 11934, 2]
+// Dependencies: [31, 5767, 1838, 3793, 4177, 4181, 653, 33, 4165, 566, 11209, 5771, 9109, 15160, 15161, 4348, 1273, 15163, 15164, 15073, 4985, 11423, 15074, 15165, 11977, 2]
 // Exports: default
 
-// Module 15119 (LimitAndDurationInfo)
+// Module 15159 (LimitAndDurationInfo)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -51,7 +51,7 @@ function LimitAndDurationInfo(channel) {
     }
     obj.video = hasVideo;
     obj.channel = channel;
-    let tmp4Result = tmp4(channel(15030).ConnectedUserLimit, obj);
+    let tmp4Result = tmp4(channel(15074).ConnectedUserLimit, obj);
   } else {
     const obj1 = { channel };
     tmp4Result = tmp4(DurationInfo, obj1);
@@ -59,7 +59,7 @@ function LimitAndDurationInfo(channel) {
   return tmp4Result;
 }
 function DurationInfo(channel) {
-  let obj = require(15125) /* useStartTime */;
+  let obj = require(15165) /* useStartTime */;
   const startTime = obj.useStartTime(channel.channel);
   let tmp3 = null;
   if (null != startTime) {
@@ -67,7 +67,7 @@ function DurationInfo(channel) {
     obj = { start: startTime };
     obj.entry = obj;
     obj.style = tmp.activeTimestamp;
-    tmp3 = jsx(require(11934) /* ActiveTimestamp */.ActiveTimestamp, { start: startTime });
+    tmp3 = jsx(require(11977) /* ActiveTimestamp */.ActiveTimestamp, { start: startTime });
   }
   return tmp3;
 }
@@ -93,13 +93,13 @@ export default function ChannelInfo(channel) {
   const items = [closure_4, closure_6, _isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: outer1_4.getGuild(channel.guild_id), mentionsCount: outer1_6.getMentionCount(channel.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(channel.id), isNewChannel: outer1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
-  const tmp2 = importDefault(11171)(channel);
-  let obj1 = channel(5761);
+  const tmp2 = importDefault(11209)(channel);
+  let obj1 = channel(5771);
   const optInEnabledForGuild = obj1.useOptInEnabledForGuild(channel.guild_id);
-  let obj2 = channel(9065);
+  let obj2 = channel(9109);
   const unreadThreadsCountForParent = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   obj = { mentionsCount, isNewChannel, postsWithUnreadsCount: unreadThreadsCountForParent, muted };
-  if (importDefault(15120)(obj)) {
+  if (importDefault(15160)(obj)) {
     obj = { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance };
     if (isNewChannel) {
       isNewChannel = optInEnabledForGuild;
@@ -111,7 +111,7 @@ export default function ChannelInfo(channel) {
     }
     obj.postsWithUnreadsCount = tmp28;
     obj.muted = muted;
-    return jsx(importDefault(15121), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance });
+    return jsx(importDefault(15161), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance });
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -125,7 +125,7 @@ export default function ChannelInfo(channel) {
             if (obj5.hasStream(voiceStates)) {
               return jsx(channel(1273).LiveTag, {});
             }
-            obj5 = channel(4314);
+            obj5 = channel(4348);
           }
         }
       }
@@ -134,16 +134,16 @@ export default function ChannelInfo(channel) {
       if (enableActivities) {
         if (obj6.showChannelItemEmbeddedActivities(tmp2)) {
           obj1 = { embeddedApps: tmp2, muted };
-          return jsx(importDefault(15124), { embeddedApps: tmp2, muted });
+          return jsx(importDefault(15164), { embeddedApps: tmp2, muted });
         }
-        obj6 = channel(15123);
+        obj6 = channel(15163);
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
           obj2 = { locked: needSubscriptionToAccess };
-          return jsx(importDefault(15029), { locked: needSubscriptionToAccess });
+          return jsx(importDefault(15073), { locked: needSubscriptionToAccess });
         }
       }
     }

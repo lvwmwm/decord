@@ -1,10 +1,10 @@
-// Module ID: 6966
-// Function ID: 59685
+// Module ID: 7002
+// Function ID: 59774
 // Name: ExperimentalGiftEnvelopeIllocon
-// Dependencies: [33, 5085, 6967, 2]
+// Dependencies: [33, 5119, 7003, 2]
 // Exports: ExperimentalGiftEnvelopeIllocon
 
-// Module 6966 (ExperimentalGiftEnvelopeIllocon)
+// Module 7002 (ExperimentalGiftEnvelopeIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelope
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6967) };
+  obj = { uri: importDefault(7003) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelope
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num, height: num });
+  return jsx(importDefault(5119), { width: num, height: num });
 };

@@ -1,10 +1,10 @@
-// Module ID: 14843
-// Function ID: 113224
+// Module ID: 14887
+// Function ID: 113397
 // Name: RedesignNotificationModal
-// Dependencies: [31, 27, 11442, 11443, 653, 33, 4131, 689, 11444, 675, 11445, 11715, 14844, 1212, 2]
+// Dependencies: [31, 27, 11480, 11481, 653, 33, 4165, 689, 11482, 675, 11483, 11754, 14888, 1212, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 14843 (RedesignNotificationModal)
+// Module 14887 (RedesignNotificationModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PermissionStateType } from "_isNativeReflectConstruct";

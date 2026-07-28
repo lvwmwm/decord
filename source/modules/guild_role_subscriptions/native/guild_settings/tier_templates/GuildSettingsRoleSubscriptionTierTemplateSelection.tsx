@@ -1,10 +1,10 @@
-// Module ID: 16547
-// Function ID: 128913
+// Module ID: 16587
+// Function ID: 129074
 // Name: TierTemplatesRenderer
-// Dependencies: [57, 31, 27, 14185, 16494, 653, 33, 4131, 689, 4127, 16548, 624, 14163, 14164, 11315, 16554, 1557, 1456, 675, 4325, 16504, 9034, 1212, 5087, 8364, 480, 16489, 1273, 2]
+// Dependencies: [57, 31, 27, 14229, 16534, 653, 33, 4165, 689, 4161, 16588, 624, 14207, 14208, 11353, 16594, 1557, 1456, 675, 4359, 16544, 9078, 1212, 5121, 8402, 480, 16529, 1273, 2]
 // Exports: default
 
-// Module 16547 (TierTemplatesRenderer)
+// Module 16587 (TierTemplatesRenderer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "Button";
@@ -37,7 +37,7 @@ function TierTemplatesRenderer(groupListingId) {
     obj = { variant: "text-xs/normal", color: "text-feedback-critical" };
     const items = ["Error: ", error.message];
     obj.children = items;
-    tmp3 = callback2(guildId(4127).Text, obj);
+    tmp3 = callback2(guildId(4161).Text, obj);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -54,7 +54,7 @@ function TierTemplatesRenderer(groupListingId) {
           return outer1_14(outer1_8, { style });
         };
         obj.decelerationRate = "fast";
-        obj.snapToInterval = guildId(16548).CARD_WIDTH + c16;
+        obj.snapToInterval = guildId(16588).CARD_WIDTH + c16;
         obj.renderItem = function renderItem(item) {
           return outer1_14(groupListingId(outer1_3[10]), { template: item.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId });
         };
@@ -209,5 +209,5 @@ export default function GuildSettingsRoleSubscriptionTierTemplateSelection(guild
   obj = {};
   const merged = Object.assign(guildId);
   obj.children = callback(GuildSettingsRoleSubscriptionTierTemplateSelectionComponent, obj);
-  return callback(require(14164) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  return callback(require(14208) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

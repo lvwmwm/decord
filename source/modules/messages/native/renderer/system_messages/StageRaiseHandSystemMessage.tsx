@@ -1,10 +1,10 @@
-// Module ID: 7752
-// Function ID: 61714
+// Module ID: 7788
+// Function ID: 61804
 // Name: createRequestToSpeakEphemeralIndication
-// Dependencies: [4952, 1348, 3759, 653, 1212, 1921, 7684, 21, 4315, 7686, 7687, 2]
+// Dependencies: [4986, 1348, 3793, 653, 1212, 1921, 7720, 21, 4349, 7722, 7723, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7752 (createRequestToSpeakEphemeralIndication)
+// Module 7788 (createRequestToSpeakEphemeralIndication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const canResult = closure_5.can(constants4.MUTE_MEMBERS, channel.getChannel(message.channel_id));
   participant = participant.getParticipant(message.channel_id, message.author.id);
@@ -61,19 +61,19 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (null != participant) {
       rtsState = participant.rtsState;
     }
-    tmp7 = rtsState === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    tmp7 = rtsState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (tmp7) {
     tmp7 = tmp6;
   }
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.M87x7Y, obj);
   obj.showInviteToSpeakButton = tmp7;
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.buttonLabel = intl2.string(require(1212) /* getSystemLocale */.t.f0T7hI);
   obj.ephemeralIndication = createRequestToSpeakEphemeralIndication(message);
-  const merged = Object.assign(importDefault(7687)(roleStyle));
+  const merged = Object.assign(importDefault(7723)(roleStyle));
   return obj;
 };

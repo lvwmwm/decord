@@ -1,10 +1,10 @@
-// Module ID: 14269
-// Function ID: 109580
+// Module ID: 14313
+// Function ID: 109753
 // Name: useLatestChannelMessage
-// Dependencies: [57, 31, 12704, 566, 14270, 2]
+// Dependencies: [57, 31, 12747, 566, 14314, 2]
 // Exports: default
 
-// Module 14269 (useLatestChannelMessage)
+// Module 14313 (useLatestChannelMessage)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

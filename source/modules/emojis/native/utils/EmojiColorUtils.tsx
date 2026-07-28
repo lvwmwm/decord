@@ -1,10 +1,10 @@
-// Module ID: 14999
-// Function ID: 114359
+// Module ID: 15043
+// Function ID: 114532
 // Name: _getEmojiCacheKey
 // Dependencies: [5, 27, 1362, 2]
 // Exports: getEmojiDominantColors
 
-// Module 14999 (_getEmojiCacheKey)
+// Module 15043 (_getEmojiCacheKey)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 import importDefaultResult from "priv";

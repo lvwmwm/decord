@@ -1,10 +1,10 @@
-// Module ID: 11904
-// Function ID: 92132
+// Module ID: 11947
+// Function ID: 92302
 // Name: ClearInputButton
-// Dependencies: [57, 31, 27, 1850, 11905, 653, 1853, 33, 4131, 689, 4661, 1212, 1273, 8930, 11906, 675, 8018, 566, 11907, 11908, 3977, 11910, 4540, 9268, 5159, 9786, 9039, 3990, 11911, 9050, 5087, 4127, 9017, 7584, 5501, 5164, 4099, 11914, 1935, 11916, 4090, 478, 1571, 4338, 5517, 2]
+// Dependencies: [57, 31, 27, 1850, 11948, 653, 1853, 33, 4165, 689, 4695, 1212, 1273, 8974, 11949, 675, 8056, 566, 11950, 11951, 4011, 11953, 4574, 9312, 5193, 9826, 9083, 4024, 11954, 9094, 5121, 4161, 9061, 7620, 5536, 5198, 4133, 11957, 1935, 11959, 4124, 478, 1571, 4372, 5552, 2]
 // Exports: default
 
-// Module 11904 (ClearInputButton)
+// Module 11947 (ClearInputButton)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import get_ActivityIndicator from "getHighestActiveScreenIndex";
@@ -12,7 +12,7 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { STATUS_MAX_LENGTH } from "StatusTypes";
 import ME from "ME";
 import { EmojiIntention } from "set";
-import jsxProd from "module_7584";
+import jsxProd from "module_7620";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_10;
@@ -29,9 +29,9 @@ function ClearInputButton(onPress) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.VkKicb);
   obj.onPress = onPress.onPress;
   obj.hitSlop = { top: 8, bottom: 8, right: 8 };
-  obj = { source: importDefault(8930), style: _createForOfIteratorHelperLoose().closeIcon, size: require(1273) /* Button */.Icon.Sizes.SMALL };
+  obj = { source: importDefault(8974), style: _createForOfIteratorHelperLoose().closeIcon, size: require(1273) /* Button */.Icon.Sizes.SMALL };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
-  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
 }
 function EditCustomStatusWithPreview(navigation) {
   navigation = navigation.navigation;
@@ -377,5 +377,5 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     tmp3 = obj;
   }
   obj.headerStyle = tmp3;
-  return tmp2(analyticsLocations(5517).Navigator, obj);
+  return tmp2(analyticsLocations(5552).Navigator, obj);
 };

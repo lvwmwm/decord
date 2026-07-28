@@ -1,10 +1,10 @@
-// Module ID: 4361
-// Function ID: 38688
+// Module ID: 4395
+// Function ID: 38802
 // Name: useNullableMessageAuthor
-// Dependencies: [1348, 1918, 1911, 1838, 3768, 1850, 44, 566, 3970, 4362, 2]
+// Dependencies: [1348, 1918, 1911, 1838, 3802, 1850, 44, 566, 4004, 4396, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4361 (useNullableMessageAuthor)
+// Module 4395 (useNullableMessageAuthor)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -228,7 +228,7 @@ function computeMessageAuthor(channel) {
   let str = "???";
   if (null != user) {
     if (null == userName) {
-      let obj = importDefault(3970);
+      let obj = importDefault(4004);
       userName = obj.getName(user);
     }
     str = userName;

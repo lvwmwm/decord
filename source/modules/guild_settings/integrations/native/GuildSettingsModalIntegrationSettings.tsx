@@ -1,10 +1,10 @@
-// Module ID: 16355
-// Function ID: 127303
+// Module ID: 16394
+// Function ID: 127459
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1911, 8243, 33, 16356, 1212, 4131, 689, 7595, 4661, 5164, 16357, 5501, 5502, 8242, 4127, 4815, 1392, 3977, 7575, 4542, 3713, 7596, 16358, 5448, 3843, 566, 4067, 16320, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1911, 8281, 33, 16395, 1212, 4165, 689, 7631, 4695, 5198, 16396, 5536, 5537, 8280, 4161, 4849, 1392, 4011, 7611, 4576, 3747, 7632, 16397, 5483, 3877, 566, 4101, 16359, 2]
 // Exports: default
 
-// Module 16355 (_isNativeReflectConstruct)
+// Module 16394 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import PressableBase from "PressableBase";
@@ -35,7 +35,7 @@ function _isNativeReflectConstruct() {
 function GraceOption(option) {
   const iter = option.option;
   const onPress = option.onPress;
-  return callback3(iter(7595).TableRadioRow, {
+  return callback3(iter(7631).TableRadioRow, {
     value: iter.value,
     label: iter.label,
     legacyCompat_onPress() {
@@ -52,9 +52,9 @@ function ForceSyncIcon(isSyncing) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["+Josox"]);
     obj.onPress = tmp;
-    obj = { source: importDefault(16357) };
-    obj.children = callback3(require(5164) /* TableRowInner */.TableRow.Icon, obj);
-    tmp2Result = tmp2(require(4661) /* PressableBase */.PressableOpacity, obj);
+    obj = { source: importDefault(16396) };
+    obj.children = callback3(require(5198) /* TableRowInner */.TableRow.Icon, obj);
+    tmp2Result = tmp2(require(4695) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp2Result;
 }
@@ -70,8 +70,8 @@ function TwitchEmoticonsRow(integration) {
   obj.value = Boolean(integration.enable_emoticons);
   obj.onValueChange = integration.onPress;
   obj.disabled = integration.syncing;
-  obj.children = callback3(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
-  return callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj.children = callback3(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback3(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ Image: closure_8, ActivityIndicator: closure_9 } = get_ActivityIndicator);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);

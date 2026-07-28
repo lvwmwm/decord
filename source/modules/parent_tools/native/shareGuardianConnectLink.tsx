@@ -1,10 +1,10 @@
-// Module ID: 13844
-// Function ID: 106119
+// Module ID: 13888
+// Function ID: 106292
 // Name: shareGuardianConnectLink
-// Dependencies: [5766, 8134, 1212, 2199, 2]
+// Dependencies: [5776, 8172, 1212, 2199, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 13844 (shareGuardianConnectLink)
+// Module 13888 (shareGuardianConnectLink)
 import { FAMILY_CENTER_REQUEST_QR_CODE_URL as closure_3 } from "items";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
@@ -14,7 +14,7 @@ export const shareGuardianConnectLink = function shareGuardianConnectLink(stateF
   if (null == username) {
     username = stateFromStores.username;
   }
-  let obj = require(8134) /* showShareActionSheet */;
+  let obj = require(8172) /* showShareActionSheet */;
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { username, url: callback(stateFromStores.id, linkCode) };

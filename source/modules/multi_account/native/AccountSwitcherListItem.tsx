@@ -1,10 +1,10 @@
-// Module ID: 14796
-// Function ID: 112871
+// Module ID: 14840
+// Function ID: 113044
 // Name: AccountStatusIcon
-// Dependencies: [31, 27, 1858, 3971, 1850, 11446, 33, 4131, 566, 4092, 689, 4087, 4127, 1212, 4661, 3849, 1273, 3970, 2]
+// Dependencies: [31, 27, 1858, 4005, 1850, 11484, 33, 4165, 566, 4126, 689, 4121, 4161, 1212, 4695, 3883, 1273, 4004, 2]
 // Exports: default
 
-// Module 14796 (AccountStatusIcon)
+// Module 14840 (AccountStatusIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -94,14 +94,14 @@ export default function AccountSwitcherListItem(arg0) {
       obj = { variant: "text-sm/semibold", color: "text-brand" };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.children = intl.string(require(1212) /* getSystemLocale */.t.seV8yt);
-      let tmp6 = callback(require(4127) /* Text */.Text, obj);
+      let tmp6 = callback(require(4161) /* Text */.Text, obj);
     }
     if (null == onPressUser) {
       let PressableOpacity = closure_3;
     } else {
-      PressableOpacity = require(4661) /* PressableBase */.PressableOpacity;
+      PressableOpacity = require(4695) /* PressableBase */.PressableOpacity;
     }
-    let obj4 = require(3849) /* useCheckboxA11yNative */;
+    let obj4 = require(3883) /* useCheckboxA11yNative */;
     obj = { selected: tmp5 };
     const radioA11yNative = obj4.useRadioA11yNative(obj);
     obj1 = {};
@@ -129,14 +129,14 @@ export default function AccountSwitcherListItem(arg0) {
       str2 = "never";
     }
     obj7.identifiable = str2;
-    obj6.children = importDefault(3970).getUserTag(obj2, obj7);
-    const items4 = [callback(require(4127) /* Text */.Text, obj6), ];
+    obj6.children = importDefault(4004).getUserTag(obj2, obj7);
+    const items4 = [callback(require(4161) /* Text */.Text, obj6), ];
     let tmp29 = !stateFromStores && !obj2.hasUniqueUsername();
     if (tmp29) {
       const obj8 = { variant: "text-md/normal", color: "text-muted" };
       const _HermesInternal = HermesInternal;
       obj8.children = "#" + obj2.discriminator;
-      tmp29 = callback(require(4127) /* Text */.Text, obj8);
+      tmp29 = callback(require(4161) /* Text */.Text, obj8);
     }
     items4[1] = tmp29;
     obj5.children = items4;
@@ -158,7 +158,7 @@ export default function AccountSwitcherListItem(arg0) {
     const obj10 = { variant: "text-sm/semibold", color: "text-feedback-critical" };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj10.children = intl3.string(require(1212) /* getSystemLocale */.t.tYX2ps);
-    tmp6 = callback(require(4127) /* Text */.Text, obj10);
+    tmp6 = callback(require(4161) /* Text */.Text, obj10);
   }
 };
 export { AccountStatusIcon };

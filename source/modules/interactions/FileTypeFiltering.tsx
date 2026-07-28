@@ -1,10 +1,10 @@
-// Module ID: 11273
-// Function ID: 87661
+// Module ID: 11311
+// Function ID: 87780
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1922, 477, 1212, 566, 4471, 2]
+// Dependencies: [57, 31, 1922, 477, 1212, 566, 4505, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering
 
-// Module 11273 (_createForOfIteratorHelperLoose)
+// Module 11311 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -226,7 +226,7 @@ function validateFilenamesForExtensions(arr) {
   });
 }
 function showInvalidFileTypeAlertForTypes(types) {
-  let obj = importDefault(4471);
+  let obj = importDefault(4505);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.azO1Pe);

@@ -1,9 +1,9 @@
-// Module ID: 13802
-// Function ID: 105833
+// Module ID: 13846
+// Function ID: 106006
 // Name: radio
-// Dependencies: [31, 7697, 13803, 3804, 10059, 1212, 13805, 2]
+// Dependencies: [31, 7733, 13847, 3838, 10099, 1212, 13849, 2]
 
-// Module 13802 (radio)
+// Module 13846 (radio)
 import result from "result";
 import createToggle from "createToggle";
 
@@ -22,7 +22,7 @@ createToggle = {
   },
   useValue: require("useDerivedDmSpamFilterSettingValue").useDerivedDmSpamFilterSettingValue,
   onValueChange: function onDmSpamFilterSettingValueChange(arg0) {
-    const DmSpamFilterV2 = require(3804) /* explicitContentFromProto */.DmSpamFilterV2;
+    const DmSpamFilterV2 = require(3838) /* explicitContentFromProto */.DmSpamFilterV2;
     DmSpamFilterV2.updateSetting(Number(arg0));
   },
   useSearchTerms() {

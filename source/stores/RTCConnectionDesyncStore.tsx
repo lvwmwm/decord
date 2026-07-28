@@ -1,9 +1,9 @@
-// Module ID: 12744
-// Function ID: 99276
+// Module ID: 12787
+// Function ID: 99446
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4148, 1348, 4203, 1850, 4147, 4204, 653, 4149, 4164, 4320, 9018, 4228, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4182, 1348, 4237, 1850, 4181, 4238, 653, 4183, 4198, 4354, 9062, 4262, 566, 686, 2]
 
-// Module 12744 (_isNativeReflectConstruct)
+// Module 12787 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getAvatarDecoration from "getAvatarDecoration";
@@ -41,10 +41,10 @@ function upsert(id, closure_2, channelId) {
     tmp3 = closure_14;
   }
   const result = importDefaultResult.set(id.id, makeSortedVoiceState(tmp, tmp3, id.id));
-  obj = { type: ParticipantTypes.USER, user: id, id: id.id, streamId: null, voiceState: tmp, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: importDefault(4320).getName(closure_2, channelId, id) };
-  const obj3 = importDefault(4320);
+  obj = { type: ParticipantTypes.USER, user: id, id: id.id, streamId: null, voiceState: tmp, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: importDefault(4354).getName(closure_2, channelId, id) };
+  const obj3 = importDefault(4354);
   const tmp2 = makeSortedVoiceState;
-  obj.userAvatarDecoration = require(9018) /* getAvatarDecoration */.getAvatarDecoration(id, closure_2);
+  obj.userAvatarDecoration = require(9062) /* getAvatarDecoration */.getAvatarDecoration(id, closure_2);
   obj.localVideoDisabled = false;
   obj.isPoppedOut = false;
   const result1 = importDefaultResult1.set(id.id, obj);
@@ -164,7 +164,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     let context;
     let state;
     ({ state, context } = arg0);
-    let tmp = context === require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
+    let tmp = context === require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
     if (tmp) {
       if (state === constants.DISCONNECTED) {
         handleReset();
@@ -196,7 +196,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     let require;
     let userIds;
     ({ userIds, guildId: require, channelId: importDefault } = context);
-    let reduced = context.context === require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
+    let reduced = context.context === require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
     if (reduced) {
       reduced = userIds.reduce((arg0, arg1) => {
         if (null != outer1_12.getVoiceStateForChannel(closure_1, arg1)) {
@@ -220,7 +220,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     let context;
     let userId;
     ({ userId, context } = arg0);
-    let tmp = context === require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
+    let tmp = context === require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
     if (tmp) {
       tmp = deleteUserDesyncData(userId);
     }

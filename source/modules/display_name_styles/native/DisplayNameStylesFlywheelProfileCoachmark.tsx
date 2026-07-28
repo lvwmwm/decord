@@ -1,10 +1,10 @@
-// Module ID: 15559
-// Function ID: 119737
+// Module ID: 15598
+// Function ID: 119893
 // Name: CoachmarkImage
-// Dependencies: [31, 27, 1850, 1345, 33, 4131, 689, 566, 3777, 1212, 2557, 8368, 6727, 1273, 2]
+// Dependencies: [31, 27, 1850, 1345, 33, 4165, 689, 566, 3811, 1212, 2557, 8406, 6763, 1273, 2]
 // Exports: default
 
-// Module 15559 (CoachmarkImage)
+// Module 15598 (CoachmarkImage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ const require = arg1;
 function CoachmarkImage() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.coachmarkImageContainer };
-  const items = [callback(require(6727) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
+  const items = [callback(require(6763) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
   obj = { style: tmp.betaTag };
   items[1] = callback(require(1273) /* Button */.BetaTag, obj);
   obj.children = items;
@@ -41,7 +41,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = visible(566).useStateFromStores(items, () => outer1_5.getCurrentUser());
   const obj = visible(566);
-  const result = markAsDismissed(3777).canUsePremiumProfileCustomization(stateFromStores);
+  const result = markAsDismissed(3811).canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1212).intl;
   const string = intl.string;
   const tmp3 = markAsDismissed(2557);
@@ -75,7 +75,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return outer2_7(outer2_10, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(3777);
-  const coachmark = visible(8368).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(3811);
+  const coachmark = visible(8406).useCoachmark(visible.targetRef, memo);
   return null;
 };

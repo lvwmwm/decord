@@ -1,7 +1,7 @@
 // Module ID: 1277
-// Function ID: 14412
+// Function ID: 14416
 // Name: semanticColor
-// Dependencies: [1278, 477, 689, 4111, 3977, 2]
+// Dependencies: [1278, 477, 689, 4145, 4011, 2]
 // Exports: getThemedRippleConfig
 
 // Module 1277 (semanticColor)
@@ -53,8 +53,8 @@ export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
         return frozen;
       }
     } else {
-      require(3977) /* AccessibilityAnnouncer */.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
-      const obj2 = require(3977) /* AccessibilityAnnouncer */;
+      require(4011) /* AccessibilityAnnouncer */.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
+      const obj2 = require(4011) /* AccessibilityAnnouncer */;
     }
   } else {
     return closure_6;

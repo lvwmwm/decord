@@ -1,8 +1,8 @@
-// Module ID: 11366
-// Function ID: 88324
-// Dependencies: [31, 5918, 33, 4131, 689, 566, 5919, 3832, 10853, 4661, 4127, 2]
+// Module ID: 11404
+// Function ID: 88443
+// Dependencies: [31, 5952, 33, 4165, 689, 566, 5953, 3866, 10891, 4695, 4161, 2]
 
-// Module 11366
+// Module 11404
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ const memoResult = importAllResult.memo(function SlowModeIndicator(channel) {
   const items = [canBypassSlowmode];
   const stateFromStores = obj.useStateFromStores(items, () => canBypassSlowmode.getSlowmodeCooldownGuess(channel.id, slowmodeType));
   let obj1 = channel(slowmodeType[6]);
-  canBypassSlowmode = obj1.useCanBypassSlowmode(channel, slowmodeType);
+  canBypassSlowmode = obj1.useCanBypassSlowmode(channel);
   const items1 = [hasTypingText, canBypassSlowmode, stateFromStores];
   const items2 = [channel.rateLimitPerUser];
   const memo = stateFromStores.useMemo(() => {

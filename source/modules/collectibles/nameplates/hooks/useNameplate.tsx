@@ -1,10 +1,10 @@
-// Module ID: 9020
-// Function ID: 70930
+// Module ID: 9064
+// Function ID: 71081
 // Name: useNameplate
 // Dependencies: [31, 1918, 566, 1874, 2]
 // Exports: useNameplate
 
-// Module 9020 (useNameplate)
+// Module 9064 (useNameplate)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,10 +1,10 @@
-// Module ID: 8778
-// Function ID: 69546
+// Module ID: 8822
+// Function ID: 69697
 // Name: _fetchVideoFilterAssets
-// Dependencies: [5, 4178, 1850, 653, 507, 686, 8779, 8780, 8777, 1331, 2]
+// Dependencies: [5, 4212, 1850, 653, 507, 686, 8823, 8824, 8821, 1331, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 8778 (_fetchVideoFilterAssets)
+// Module 8822 (_fetchVideoFilterAssets)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

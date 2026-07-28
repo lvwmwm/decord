@@ -1,9 +1,9 @@
-// Module ID: 16595
-// Function ID: 129473
+// Module ID: 16635
+// Function ID: 129634
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 4150, 1907, 4147, 10484, 3, 16596, 8784, 686, 16616, 5078, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 4184, 1907, 4181, 10522, 3, 16636, 8828, 686, 16656, 5112, 2]
 
-// Module 16595 (_isNativeReflectConstruct)
+// Module 16635 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -125,7 +125,7 @@ function setDifference(arg0, has) {
 }
 function makeErrorKey(type) {
   let errorContextKey;
-  const obj = require(16596) /* ErrorDefinitions */.ErrorDefinitions[type.type];
+  const obj = require(16636) /* ErrorDefinitions */.ErrorDefinitions[type.type];
   if (null != obj) {
     errorContextKey = obj.makeErrorContextKey(type);
   }

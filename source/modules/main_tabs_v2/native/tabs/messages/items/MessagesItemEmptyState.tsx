@@ -1,9 +1,9 @@
-// Module ID: 15016
-// Function ID: 114455
+// Module ID: 15060
+// Function ID: 114628
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [31, 27, 33, 4131, 689, 3983, 15017, 4127, 1212, 4544, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4017, 15061, 4161, 1212, 4578, 2]
 
-// Module 15016 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 15060 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,24 +46,24 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       obj2.navigate("friends", obj);
     }
   }, []);
-  obj.source = importDefault(15017);
+  obj.source = importDefault(15061);
   obj.style = tmp.image;
   obj.children = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
   const obj1 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2 };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t["8JZof8"]);
-  items[1] = callback(require(4127) /* Text */.Heading, obj1);
+  items[1] = callback(require(4161) /* Text */.Heading, obj1);
   let obj2 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2 };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["qm+H7x"]);
-  items[2] = callback(require(4127) /* Text */.Text, obj2);
+  items[2] = callback(require(4161) /* Text */.Text, obj2);
   const obj3 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.zIJnA6);
   obj3.onPress = callback;
   obj3.size = "lg";
-  items[3] = callback(require(4544) /* Button */.Button, obj3);
+  items[3] = callback(require(4578) /* Button */.Button, obj3);
   obj.children = items;
   return callback2(closure_5, obj);
 });

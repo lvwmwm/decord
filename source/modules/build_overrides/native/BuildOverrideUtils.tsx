@@ -1,11 +1,11 @@
-// Module ID: 10918
-// Function ID: 84805
+// Module ID: 10956
+// Function ID: 84928
 // Name: setBuildOverrideForBranch
-// Dependencies: [5, 10404, 477, 10919, 10920, 4472, 4047, 2]
+// Dependencies: [5, 10444, 477, 10957, 10958, 4506, 4081, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 10918 (setBuildOverrideForBranch)
-import module_4472 from "module_4472";
+// Module 10956 (setBuildOverrideForBranch)
+import module_4506 from "module_4506";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
 import set from "set";
@@ -53,7 +53,7 @@ export const setBuildOverrideForId = function setBuildOverrideForId(id) {
 };
 export { setBuildOverride };
 export const refreshBuildOverride = function refreshBuildOverride() {
-  const result = importDefault(10920).checkForUpdateAndReload();
+  const result = importDefault(10958).checkForUpdateAndReload();
 };
 export { clearBuildOverride };
 export const toggleOverride = function toggleOverride(code) {

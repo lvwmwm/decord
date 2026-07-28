@@ -1,10 +1,10 @@
-// Module ID: 10073
-// Function ID: 78084
+// Module ID: 10113
+// Function ID: 78213
 // Name: items
-// Dependencies: [31, 5669, 4168, 5630, 4154, 1850, 653, 1882, 566, 7923, 686, 5468, 2]
+// Dependencies: [31, 5679, 4202, 5878, 4188, 1850, 653, 1882, 566, 7959, 686, 5503, 2]
 // Exports: default
 
-// Module 10073 (items)
+// Module 10113 (items)
 import result from "result";
 import { useQueryState } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -138,7 +138,7 @@ export default function useAppDMChatInputState(context) {
   if (null == memo1) {
     tmp15 = tmp4;
   }
-  let getOrFetchApplication = channel(5468).useGetOrFetchApplication(tmp15);
+  let getOrFetchApplication = channel(5503).useGetOrFetchApplication(tmp15);
   obj1 = {};
   if (null != memo1) {
     getOrFetchApplication = memo1;

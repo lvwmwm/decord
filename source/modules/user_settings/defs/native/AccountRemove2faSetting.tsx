@@ -1,9 +1,9 @@
-// Module ID: 13759
-// Function ID: 105561
+// Module ID: 13803
+// Function ID: 105734
 // Name: pressable
-// Dependencies: [7697, 13760, 4471, 1212, 13710, 10059, 13711, 2]
+// Dependencies: [7733, 13804, 4505, 1212, 13754, 10099, 13755, 2]
 
-// Module 13759 (pressable)
+// Module 13803 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,7 +13,7 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function remove2FA() {
-    let obj = importDefault(4471);
+    let obj = importDefault(4505);
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["D+aE7g"]);
@@ -27,7 +27,7 @@ const pressable = createToggle.createPressable({
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(13760) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(13804) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled
@@ -39,7 +39,7 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function remove2FA() {
-    let obj = importDefault(4471);
+    let obj = importDefault(4505);
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["D+aE7g"]);
@@ -53,7 +53,7 @@ let obj = {
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(13760) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(13804) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled

@@ -1,10 +1,10 @@
-// Module ID: 14978
-// Function ID: 114159
+// Module ID: 15022
+// Function ID: 114332
 // Name: HappeningNowItem
-// Dependencies: [31, 27, 14245, 33, 1324, 689, 4131, 3835, 14979, 2]
+// Dependencies: [31, 27, 14289, 33, 1324, 689, 4165, 3869, 15023, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 14978 (HappeningNowItem)
+// Module 15022 (HappeningNowItem)
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { jsx } from "jsxProd";
@@ -28,8 +28,8 @@ let closure_7 = _createForOfIteratorHelperLoose.createStyles((height) => {
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemHappeningNow.tsx");
 
 export default require("result").memo(function MessagesItemHappeningNow(listRef) {
-  let obj = require(3835) /* map */;
-  obj = { style: callback(closure_4 + obj.useToken(importDefault(689).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: jsx(importDefault(14979), obj) };
+  let obj = require(3869) /* map */;
+  obj = { style: callback(closure_4 + obj.useToken(importDefault(689).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: jsx(importDefault(15023), obj) };
   obj = { cards: set, listRef: listRef.listRef };
   return <View cards={set} listRef={arg0.listRef} />;
 });

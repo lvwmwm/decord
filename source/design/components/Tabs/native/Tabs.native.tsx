@@ -1,16 +1,16 @@
-// Module ID: 11646
-// Function ID: 90371
+// Module ID: 11685
+// Function ID: 90522
 // Name: defaultCountFormatter
-// Dependencies: [31, 27, 1922, 33, 3992, 4131, 689, 4543, 9379, 11647, 5217, 477, 2]
+// Dependencies: [31, 27, 1922, 33, 4026, 4165, 689, 4577, 9423, 11686, 5251, 477, 2]
 // Exports: Tabs
 
-// Module 11646 (defaultCountFormatter)
+// Module 11685 (defaultCountFormatter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let closure_6;
 let closure_7;
@@ -20,7 +20,7 @@ function defaultCountFormatter(toLocaleString) {
 }
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = require("module_3992").createAnimatedComponent(get_ActivityIndicator.ScrollView);
+let closure_8 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.ScrollView);
 let closure_9 = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
 let closure_10 = _createForOfIteratorHelperLoose.createStyles((gap) => {
   let obj = {};

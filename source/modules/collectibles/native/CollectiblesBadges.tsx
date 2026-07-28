@@ -1,10 +1,10 @@
-// Module ID: 7906
-// Function ID: 62986
+// Module ID: 7942
+// Function ID: 63077
 // Name: NewBadge
-// Dependencies: [31, 27, 1852, 33, 4131, 689, 4127, 1212, 7907, 4653, 6570, 2]
+// Dependencies: [31, 27, 1852, 33, 4165, 689, 4161, 1212, 7943, 4687, 6606, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 7906 (NewBadge)
+// Module 7942 (NewBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -42,7 +42,7 @@ export const NewBadge = function NewBadge(style) {
   obj = { variant: "text-sm/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-  obj.children = callback(require(4127) /* Text */.Text, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
   return callback(View, obj);
 };
 export const LockBadge = function LockBadge(isNew) {
@@ -57,20 +57,20 @@ export const LockBadge = function LockBadge(isNew) {
     const items = [tmp.newLockIconBadge, style];
     obj.style = items;
     obj = { size: "xxs", color: importDefault(689).colors.WHITE };
-    const items1 = [callback(require(4653) /* LockIcon */.LockIcon, obj), ];
+    const items1 = [callback(require(4687) /* LockIcon */.LockIcon, obj), ];
     const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    items1[1] = callback(require(4127) /* Text */.Text, obj1);
+    items1[1] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items1;
-    let tmp7 = callback2(importDefault(7907), obj);
-    const tmp11 = importDefault(7907);
+    let tmp7 = callback2(importDefault(7943), obj);
+    const tmp11 = importDefault(7943);
   } else {
     obj = {};
     const items2 = [tmp.lockIconBadge, style];
     obj.style = items2;
     const obj2 = { size: "sm", color: importDefault(689).colors.WHITE };
-    obj.children = callback(require(4653) /* LockIcon */.LockIcon, obj2);
+    obj.children = callback(require(4687) /* LockIcon */.LockIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;
@@ -87,20 +87,20 @@ export const PremiumBadge = function PremiumBadge(isNew) {
     const items = [tmp.newLockIconBadge, style];
     obj.style = items;
     obj = { size: "xxs", color: importDefault(689).colors.WHITE };
-    const items1 = [callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+    const items1 = [callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
     const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    items1[1] = callback(require(4127) /* Text */.Text, obj1);
+    items1[1] = callback(require(4161) /* Text */.Text, obj1);
     obj.children = items1;
-    let tmp7 = callback2(importDefault(7907), obj);
-    const tmp11 = importDefault(7907);
+    let tmp7 = callback2(importDefault(7943), obj);
+    const tmp11 = importDefault(7943);
   } else {
     obj = {};
     const items2 = [tmp.lockIconBadge, style];
     obj.style = items2;
     const obj2 = { size: "sm", color: importDefault(689).colors.WHITE };
-    obj.children = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj2);
+    obj.children = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;
@@ -112,7 +112,7 @@ export const LimitedTimeBadge = function LimitedTimeBadge(style) {
   obj = { variant: "text-xs/bold", color: "text-overlay-dark", style: tmp.badgeTextUppercase };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["h/uBCR"]);
-  obj.children = callback(require(4127) /* Text */.Text, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
   return callback(View, obj);
 };
 export const IconBadgePill = function IconBadgePill(isDark) {
@@ -155,7 +155,7 @@ export const IconTextBadge = function IconTextBadge(isDark) {
   obj.color = str2;
   obj.style = tmp.badgeTextUppercase;
   obj.children = label;
-  items1[1] = closure_5(require(4127) /* Text */.Text, obj);
+  items1[1] = closure_5(require(4161) /* Text */.Text, obj);
   obj.children = items1;
   return closure_6(View, obj);
 };

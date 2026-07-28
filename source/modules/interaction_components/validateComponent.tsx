@@ -1,10 +1,10 @@
-// Module ID: 7835
-// Function ID: 62541
+// Module ID: 7871
+// Function ID: 62631
 // Name: validateSelect
-// Dependencies: [1882, 4354, 1212, 44, 2]
+// Dependencies: [1882, 4388, 1212, 44, 2]
 // Exports: default
 
-// Module 7835 (validateSelect)
+// Module 7871 (validateSelect)
 function validateSelect(type, type2, modal) {
   let length;
   let maxValues;
@@ -14,7 +14,7 @@ function validateSelect(type, type2, modal) {
   ({ minValues, maxValues } = type);
   if (null == type2) {
     {
-      let obj = require(4354) /* _createForOfIteratorHelperLoose */;
+      let obj = require(4388) /* _createForOfIteratorHelperLoose */;
       obj = { minValues, required: tmp };
       let stringResult = null;
       if (!obj.canSelectBeEmpty(obj, modal)) {

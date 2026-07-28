@@ -1,9 +1,9 @@
-// Module ID: 11925
-// Function ID: 92302
+// Module ID: 11968
+// Function ID: 92472
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4218, 8109, 653, 7848, 7853, 8128, 8114, 8110, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4252, 8147, 653, 7884, 7889, 8166, 8152, 8148, 22, 566, 686, 2]
 
-// Module 11925 (_isNativeReflectConstruct)
+// Module 11968 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import dispatcher from "dispatcher";
@@ -112,7 +112,7 @@ function getMatchingActivity(closure_0) {
   if (!obj.isEntryExpired(closure_0)) {
     let found;
     if (obj2.isEntryActive(closure_0)) {
-      if (closure_0.author_type === _require(8128).ContentInventoryAuthorType.USER) {
+      if (closure_0.author_type === _require(8166).ContentInventoryAuthorType.USER) {
         activities = activities.getActivities(closure_0.author_id);
         found = activities.find((type) => {
           if (type.type === outer1_10.PLAYING) {
@@ -136,7 +136,7 @@ function getMatchingActivity(closure_0) {
       }
     }
     tmp = found;
-    obj2 = _require(7853);
+    obj2 = _require(7889);
   }
   return tmp;
 }

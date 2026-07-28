@@ -1,5 +1,5 @@
 // Module ID: 1906
-// Function ID: 21387
+// Function ID: 21391
 // Name: CHANGELOG_MODAL_KEY
 // Dependencies: [2]
 

@@ -1,9 +1,9 @@
-// Module ID: 15161
-// Function ID: 115367
+// Module ID: 15201
+// Function ID: 115526
 // Name: handleJoinGuild
-// Dependencies: [57, 31, 27, 1194, 1838, 3948, 653, 33, 4131, 689, 4127, 11735, 15162, 1212, 4542, 4544, 1457, 624, 8364, 480, 1841, 3984, 4664, 14061, 2]
+// Dependencies: [57, 31, 27, 1194, 1838, 3982, 653, 33, 4165, 689, 4161, 11774, 15202, 1212, 4576, 4578, 1457, 624, 8402, 480, 1841, 4018, 4698, 14105, 2]
 
-// Module 15161 (handleJoinGuild)
+// Module 15201 (handleJoinGuild)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,10 +23,10 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(11735).openGuildJoinServerScreen();
+  const result = importDefault(11774).openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(11735).openCreateGuildModal();
+  importDefault(11774).openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }
   importDefault = tmp4;
   obj = { type: navigation(480).ImpressionTypes.VIEW, name: navigation(480).ImpressionNames.GUILDS_EMPTY_NUX };
-  importDefault(8364)(obj);
+  importDefault(8402)(obj);
   const items1 = [tmp4, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != c1) {
@@ -161,9 +161,9 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
       }
     }
   }, items1);
-  let obj3 = navigation(4664);
+  let obj3 = navigation(4698);
   const isScreenLandscape = obj3.useIsScreenLandscape();
-  navigation(14061);
+  navigation(14105);
   let tmp12Result = null;
   if (stateFromStores) {
     obj = {};
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
     obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
     const intl = navigation(1212).intl;
     obj3.children = intl.string(navigation(1212).t["7hB4kg"]);
-    obj2.children = callback(navigation(4127).Text, obj3);
+    obj2.children = callback(navigation(4161).Text, obj3);
     obj1.children = callback(closure_6, obj2);
     const items3 = [callback(closure_6, obj1), ];
     const obj4 = {};

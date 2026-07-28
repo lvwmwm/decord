@@ -1,10 +1,10 @@
-// Module ID: 8920
-// Function ID: 70531
+// Module ID: 8964
+// Function ID: 70682
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [31, 8917, 653, 8111, 33, 4131, 1456, 8874, 8921, 1212, 2]
+// Dependencies: [31, 8961, 653, 8149, 33, 4165, 1456, 8918, 8965, 1212, 2]
 // Exports: default
 
-// Module 8920 (CrunchyrollLinkPreConnect)
+// Module 8964 (CrunchyrollLinkPreConnect)
 import result from "result";
 import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
 import { PlatformTypes } from "ME";
@@ -27,11 +27,11 @@ export default function CrunchyrollLinkPreConnect() {
   const callback1 = React.useCallback(() => {
     navigation.push(outer1_4.ERROR);
   }, items1);
-  obj = { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: importDefault(8921), imgStyle: callback().image };
+  obj = { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: importDefault(8965), imgStyle: callback().image };
   const intl = navigation(1212).intl;
   obj.title = intl.string(navigation(1212).t.siPkNp);
   const intl2 = navigation(1212).intl;
   obj.body = intl2.string(navigation(1212).t.oS4NEH);
   obj.redirectDestination = closure_6;
-  return jsx(navigation(8874).TwoWayLinkPreConnect, { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: importDefault(8921), imgStyle: callback().image });
+  return jsx(navigation(8918).TwoWayLinkPreConnect, { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: importDefault(8965), imgStyle: callback().image });
 };

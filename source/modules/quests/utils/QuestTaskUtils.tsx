@@ -1,10 +1,10 @@
-// Module ID: 5955
-// Function ID: 52983
+// Module ID: 5989
+// Function ID: 53102
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5932, 4984, 22, 664, 5930, 1327, 2]
+// Dependencies: [5966, 5018, 22, 664, 5964, 1327, 2]
 // Exports: formatWatchTaskRemainingTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasSomeFirstPartyTasks, hasStreamOnDesktopTask, isDesktopOnlyPlayQuest, isVideoQuestForMobilePlatformOnly
 
-// Module 5955 (_createForOfIteratorHelperLoose)
+// Module 5989 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -142,10 +142,10 @@ function getApplicationIdsByTaskTypes(value, items) {
   }
 }
 function hasPlayOnDesktopTask(arg0) {
-  return null != arg0.quest.config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP];
+  return null != arg0.quest.config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP];
 }
 function hasPlayActivityTask(quest) {
-  return null != quest.config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
+  return null != quest.config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
 }
 function shouldUsePlayOnDesktopTask(quest) {
   let tmp = null != quest;
@@ -164,7 +164,7 @@ function hasSomeFirstPartyTasks(items) {
 }
 function isInGameQuest(quest) {
   const _require = quest;
-  return Array.from(_require(4984).FirstPartyQuestTaskTypesSets.IN_GAME).some((arg0) => null != quest.config.taskConfigV2.tasks[arg0]);
+  return Array.from(_require(5018).FirstPartyQuestTaskTypesSets.IN_GAME).some((arg0) => null != quest.config.taskConfigV2.tasks[arg0]);
 }
 function isConsoleQuest(quest) {
   return callback(quest);
@@ -197,9 +197,9 @@ function hasUnsavedProgress(userStatus, PLAY_ON_PLAYSTATION) {
 function isQuestProgressingOnConsole(closure_0) {
   let tmp = null != closure_0.userStatus;
   if (tmp) {
-    let tmp5 = hasUnsavedProgress(closure_0.userStatus, require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX);
+    let tmp5 = hasUnsavedProgress(closure_0.userStatus, require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX);
     if (!tmp5) {
-      tmp5 = hasUnsavedProgress(closure_0.userStatus, require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION);
+      tmp5 = hasUnsavedProgress(closure_0.userStatus, require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION);
     }
     tmp = tmp5;
   }
@@ -210,7 +210,7 @@ function _isPlayOnDesktopTaskType(type) {
   if (null != type) {
     type = type.type;
   }
-  return type === require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP;
+  return type === require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP;
 }
 function _computePercentComplete(target, arg1) {
   let num = 0;
@@ -306,7 +306,7 @@ function _getTaskDetailsForType(arg0) {
   let taskType;
   ({ quest, taskType, includeTaskTypes } = arg0);
   if (includeTaskTypes === undefined) {
-    includeTaskTypes = includeTaskTypes(4984).FirstPartyQuestTaskTypesSets.ALL;
+    includeTaskTypes = includeTaskTypes(5018).FirstPartyQuestTaskTypesSets.ALL;
   }
   const taskConfigV2 = quest.config.taskConfigV2;
   let tmp3 = taskType;
@@ -322,10 +322,10 @@ function _getTaskDetailsForType(arg0) {
   }
   let tmp7 = taskConfigV2.tasks[tmp3];
   if (null == tmp7) {
-    tmp7 = taskConfigV2.tasks[includeTaskTypes(undefined, 4984).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
+    tmp7 = taskConfigV2.tasks[includeTaskTypes(undefined, 5018).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
   }
   if (null == tmp7) {
-    let obj1 = includeTaskTypes(5930);
+    let obj1 = includeTaskTypes(5964);
     const _Error = Error;
     const _HermesInternal = HermesInternal;
     const error = new Error("Quest " + quest.id + " has no task matching the include filters");
@@ -363,7 +363,7 @@ function _getTaskDetailsForType(arg0) {
   }
 }
 function _parseFirstPartyTaskType(arg0) {
-  const ALL = require(4984) /* set */.FirstPartyQuestTaskTypesSets.ALL;
+  const ALL = require(5018) /* set */.FirstPartyQuestTaskTypesSets.ALL;
   let tmp = null;
   if (ALL.has(arg0)) {
     tmp = arg0;
@@ -371,8 +371,8 @@ function _parseFirstPartyTaskType(arg0) {
   return tmp;
 }
 function getDefaultWatchVideoTask(config) {
-  let tmp = config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO];
-  const tmp2 = config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  let tmp = config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO];
+  const tmp2 = config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   if (null == tmp) {
     if (null != tmp2) {
       tmp = tmp2;
@@ -389,7 +389,7 @@ function getDefaultWatchVideoTask(config) {
 }
 function _getQuestTaskDetails(quest, includeTaskTypes) {
   if (isInGameQuest(quest)) {
-    let obj = { progressSeconds: 0, targetSeconds: 1, targetMinutes: 1, percentComplete: 0, taskType: require(4984) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+    let obj = { progressSeconds: 0, targetSeconds: 1, targetMinutes: 1, percentComplete: 0, taskType: require(5018) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
     let tmp6Result = obj;
   } else if (callback(quest)) {
     obj = { quest };
@@ -508,7 +508,7 @@ function _getQuestTaskDetails(quest, includeTaskTypes) {
         return outer1_22(obj);
       })(obj);
     } else {
-      const FirstPartyQuestTaskTypesSets = require(4984) /* set */.FirstPartyQuestTaskTypesSets;
+      const FirstPartyQuestTaskTypesSets = require(5018) /* set */.FirstPartyQuestTaskTypesSets;
       const tmp20 = isQuestProgressingOnConsole(quest);
     }
   } else if (result3(quest)) {
@@ -522,11 +522,11 @@ function _getQuestTaskDetails(quest, includeTaskTypes) {
     tmp6Result = _getTaskDetailsForType(obj1);
     const tmp13 = _getTaskDetailsForType;
   } else if (shouldUsePlayOnDesktopTask(quest)) {
-    const obj2 = { quest, taskType: require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
+    const obj2 = { quest, taskType: require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
     tmp6Result = _getTaskDetailsForType(obj2);
   } else {
     obj = { quest };
-    const FirstPartyQuestTaskTypes = require(4984) /* set */.FirstPartyQuestTaskTypes;
+    const FirstPartyQuestTaskTypes = require(5018) /* set */.FirstPartyQuestTaskTypes;
     if (tmp5) {
       obj.taskType = FirstPartyQuestTaskTypes.PLAY_ACTIVITY;
       tmp6Result = tmp6(obj);
@@ -540,8 +540,8 @@ function _getQuestTaskDetails(quest, includeTaskTypes) {
 }
 function getDefaultInGameTask(config) {
   const tasks = config.taskConfigV2.tasks;
-  const tmp = tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY];
-  let tmp2 = tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
+  const tmp = tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY];
+  let tmp2 = tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
   if (null != tmp) {
     tmp2 = tmp;
   }
@@ -583,12 +583,12 @@ export const getAllApplicationIds = function getAllApplicationIds(quest) {
   }
 };
 export const getDesktopApplicationIds = function getDesktopApplicationIds(value) {
-  const items = [require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP];
+  const items = [require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP];
   return getApplicationIdsByTaskTypes(value, items);
 };
 export const getConsoleApplicationId = function getConsoleApplicationId(consoleApplicationId) {
   let first;
-  const items = [require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX, require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION];
+  const items = [require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX, require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION];
   const tmp2 = getApplicationIdsByTaskTypes(consoleApplicationId, items);
   if (null != tmp2) {
     first = tmp2[0];
@@ -597,7 +597,7 @@ export const getConsoleApplicationId = function getConsoleApplicationId(consoleA
 };
 export const getPlayActivityApplicationId = function getPlayActivityApplicationId(quest) {
   let first;
-  const items = [require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
+  const items = [require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
   const tmp2 = getApplicationIdsByTaskTypes(quest, items);
   if (null != tmp2) {
     first = tmp2[0];
@@ -606,7 +606,7 @@ export const getPlayActivityApplicationId = function getPlayActivityApplicationI
 };
 export const getInGameApplicationId = function getInGameApplicationId(quest) {
   let first;
-  const items = [require(4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
+  const items = [require(5018) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
   const tmp2 = getApplicationIdsByTaskTypes(quest, items);
   if (null != tmp2) {
     first = tmp2[0];
@@ -615,7 +615,7 @@ export const getInGameApplicationId = function getInGameApplicationId(quest) {
 };
 export const getActivityApplicationId = function getActivityApplicationId(quest) {
   let first;
-  const items = [require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY, require(4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY];
+  const items = [require(5018) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY, require(5018) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY];
   const tmp2 = getApplicationIdsByTaskTypes(quest, items);
   if (null != tmp2) {
     first = tmp2[0];
@@ -624,7 +624,7 @@ export const getActivityApplicationId = function getActivityApplicationId(quest)
 };
 export const getStreamingApplicationId = function getStreamingApplicationId(value) {
   let first;
-  const items = [require(4984) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
+  const items = [require(5018) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
   const tmp2 = getApplicationIdsByTaskTypes(value, items);
   if (null != tmp2) {
     first = tmp2[0];
@@ -633,13 +633,13 @@ export const getStreamingApplicationId = function getStreamingApplicationId(valu
 };
 export { hasPlayOnDesktopTask };
 export const hasStreamOnDesktopTask = function hasStreamOnDesktopTask(arg0) {
-  return null != arg0.quest.config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
+  return null != arg0.quest.config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
 };
 export const hasAchievementActivityTask = function hasAchievementActivityTask(quest) {
-  return null != quest.config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY];
+  return null != quest.config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY];
 };
 export const hasAchievementInGameTask = function hasAchievementInGameTask(quest) {
-  return null != quest.config.taskConfigV2.tasks[require(undefined, 4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
+  return null != quest.config.taskConfigV2.tasks[require(undefined, 5018) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME];
 };
 export { hasPlayActivityTask };
 export { shouldUsePlayOnDesktopTask };
@@ -680,7 +680,7 @@ export const getQuestTaskDetails = function getQuestTaskDetails(closure_0, DESKT
     let obj = { quest: closure_0 };
     let tmp3 = _getTaskDetailsForType(obj);
     if (null == tmp3) {
-      obj = { progressSeconds: 0, targetSeconds: 1, targetMinutes: 1, percentComplete: 0, taskType: require(4984) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+      obj = { progressSeconds: 0, targetSeconds: 1, targetMinutes: 1, percentComplete: 0, taskType: require(5018) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
       tmp3 = obj;
     }
     return tmp3;

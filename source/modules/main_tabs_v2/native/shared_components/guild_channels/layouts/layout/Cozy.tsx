@@ -1,9 +1,9 @@
-// Module ID: 10228
-// Function ID: 79170
+// Module ID: 10268
+// Function ID: 79299
 // Name: items
-// Dependencies: [10226, 10227, 689, 1273, 5513, 5472, 2]
+// Dependencies: [10266, 10267, 689, 1273, 5548, 5507, 2]
 
-// Module 10228 (items)
+// Module 10268 (items)
 import importDefaultResult from "isObject";
 
 let obj = { layout: { margin: { marginVertical: 2 }, marginPanels: { marginVertical: 2 }, marginThread: { marginVertical: 2, marginLeft: 76 } } };

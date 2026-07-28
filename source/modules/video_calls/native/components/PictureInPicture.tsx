@@ -1,9 +1,9 @@
-// Module ID: 10458
-// Function ID: 81158
+// Module ID: 10496
+// Function ID: 81279
 // Name: PictureInPicturePositions
-// Dependencies: [57, 31, 27, 10174, 653, 33, 4131, 1273, 10459, 1450, 5159, 10462, 3992, 4543, 10463, 10464, 5217, 477, 2]
+// Dependencies: [57, 31, 27, 10214, 653, 33, 4165, 1273, 10497, 1450, 5193, 10500, 4026, 4577, 10501, 10502, 5251, 477, 2]
 
-// Module 10458 (PictureInPicturePositions)
+// Module 10496 (PictureInPicturePositions)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

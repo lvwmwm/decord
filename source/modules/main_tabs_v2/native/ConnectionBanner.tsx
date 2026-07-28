@@ -1,10 +1,10 @@
-// Module ID: 15193
-// Function ID: 115675
+// Module ID: 15233
+// Function ID: 115834
 // Name: getBannerLabel
-// Dependencies: [57, 31, 27, 12675, 14059, 653, 33, 4131, 689, 1212, 3835, 15194, 15196, 4127, 666, 3992, 5109, 4555, 566, 675, 14058, 4543, 12676, 2]
+// Dependencies: [57, 31, 27, 12718, 14103, 653, 33, 4165, 689, 1212, 3869, 15234, 15236, 4161, 666, 4026, 5143, 4589, 566, 675, 14102, 4577, 12719, 2]
 // Exports: default
 
-// Module 15193 (getBannerLabel)
+// Module 15233 (getBannerLabel)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -35,7 +35,7 @@ function getBannerLabel(state) {
 function ConnectionBannerIcon(state) {
   state = state.state;
   const tmp = _createForOfIteratorHelperLoose();
-  require(3835) /* map */;
+  require(3869) /* map */;
   if (constants.WAITING_FOR_NETWORK === state) {
     let obj = { style: tmp.leadingSlot };
     obj = { size: "small", color: tmp3, style: tmp.spinner };
@@ -44,12 +44,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj1 = { style: tmp.leadingSlot };
     const obj2 = { size: "xs", color: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT };
-    obj1.children = callback2(require(15194) /* ConnectionUnknownIcon */.ConnectionUnknownIcon, obj2);
+    obj1.children = callback2(require(15234) /* ConnectionUnknownIcon */.ConnectionUnknownIcon, obj2);
     return callback2(closure_6, obj1);
   } else if (constants.BACK_ONLINE === state) {
     obj = { style: tmp.leadingSlot };
     const obj3 = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = callback2(require(15196) /* ConnectionFineIcon */.ConnectionFineIcon, obj3);
+    obj.children = callback2(require(15236) /* ConnectionFineIcon */.ConnectionFineIcon, obj3);
     return callback2(closure_6, obj);
   }
 }
@@ -64,13 +64,13 @@ function ConnectionBannerContent(state) {
   }
   obj.color = str;
   obj.children = getBannerLabel(state);
-  items[1] = callback2(require(4127) /* Text */.Text, obj);
+  items[1] = callback2(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return closure_13(closure_6, obj);
 }
 function BackOnlineGlow(opacity) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = token(3835);
+  let obj = token(3869);
   token = obj.useToken(importDefault(689).colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = React.useMemo(() => {
@@ -86,9 +86,9 @@ function BackOnlineGlow(opacity) {
   }, items);
   obj = { style: items1, pointerEvents: "none" };
   items1 = [tmp.glow, { opacity: opacity.progress }];
-  obj = { style: tmp.glow, maskElement: callback2(importDefault(4555), { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 }), children: callback2(importDefault(4555), { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 }) };
-  obj.children = callback2(importDefault(5109), obj);
-  return callback2(importDefault(3992).View, obj);
+  obj = { style: tmp.glow, maskElement: callback2(importDefault(4589), { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 }), children: callback2(importDefault(4589), { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 }) };
+  obj.children = callback2(importDefault(5143), obj);
+  return callback2(importDefault(4026).View, obj);
 }
 function ConnectionBannerInner() {
   let obj = require(sharedValue[20]);
@@ -202,7 +202,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/mai
 export default function ConnectionBanner() {
   let hidden;
   let timeoutMs;
-  const config = importDefault(12676).useConfig({ location: "ConnectionBanner" });
+  const config = importDefault(12719).useConfig({ location: "ConnectionBanner" });
   ({ hidden, timeoutMs } = config);
   (function useConnectivityIndicatorAnalytics(hidden) {
     let closure_0 = hidden;

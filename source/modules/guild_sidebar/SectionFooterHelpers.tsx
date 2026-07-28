@@ -1,10 +1,10 @@
-// Module ID: 15132
-// Function ID: 115191
+// Module ID: 15172
+// Function ID: 115350
 // Name: isSectionFooterWithDivider
-// Dependencies: [5077, 3759, 5760, 653, 5753, 1841, 2]
+// Dependencies: [5111, 3793, 5770, 653, 5763, 1841, 2]
 // Exports: getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 15132 (isSectionFooterWithDivider)
+// Module 15172 (isSectionFooterWithDivider)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";
@@ -12,7 +12,7 @@ import { Permissions } from "ME";
 
 const require = arg1;
 function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled, section) {
-  if (section === require(5753) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS) {
+  if (section === require(5763) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS) {
     const guildActionSection = getGuildActionSection.getGuildActionSection();
     const rows = guildActionSection.getRows();
     let isEmptyResult = 1 === rows.length;
@@ -29,18 +29,18 @@ function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled,
   }
   let tmp4 = !tmp;
   if (tmp4) {
-    const tmp7 = section === require(5753) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS;
+    const tmp7 = section === require(5763) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS;
     if (tmp7) {
       tmp4 = tmp7;
     } else {
       if (obj3.isFavoritesGuildId(getGuildActionSection.id)) {
         let tmp12 = section !== getGuildActionSection.getSections(false).length - 1;
       } else {
-        tmp12 = section === require(5753) /* _superPropGet */.SECTION_INDEX_FAVORITES;
+        tmp12 = section === require(5763) /* _superPropGet */.SECTION_INDEX_FAVORITES;
         if (!tmp12) {
           let tmp15 = !tmp14;
           if (!!optInChannelsEnabled) {
-            let tmp18 = section !== require(5753) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp18 = section !== require(5763) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp18) {
               let flag2 = section === getGuildActionSection.recentsSectionNumber;
               if (!flag2) {
@@ -60,12 +60,12 @@ function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled,
   return tmp4;
 }
 function isSectionFooterVoiceSummaryEligible(recentsSectionNumber, section) {
-  let tmp = section === require(5753) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS;
+  let tmp = section === require(5763) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS;
   if (!tmp) {
-    tmp = section === require(5753) /* _superPropGet */.SECTION_INDEX_FAVORITES;
+    tmp = section === require(5763) /* _superPropGet */.SECTION_INDEX_FAVORITES;
   }
   if (!tmp) {
-    tmp = section === require(5753) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+    tmp = section === require(5763) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
   }
   if (!tmp) {
     tmp = section === recentsSectionNumber.recentsSectionNumber;

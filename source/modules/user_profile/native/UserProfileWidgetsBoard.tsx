@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 92687
+// Module ID: 12034
+// Function ID: 92857
 // Name: useGamePress
-// Dependencies: [57, 31, 27, 1194, 8043, 33, 4131, 689, 8407, 8418, 8045, 11992, 4127, 11996, 1832, 11997, 566, 1324, 22, 5631, 1212, 5509, 5634, 11999, 5650, 12000, 12104, 2]
+// Dependencies: [57, 31, 27, 1194, 8081, 33, 4165, 689, 8451, 8462, 8083, 12035, 4161, 12039, 1832, 12040, 566, 1324, 22, 5879, 1212, 5544, 5882, 12042, 5899, 12043, 12147, 2]
 // Exports: default
 
-// Module 11991 (useGamePress)
+// Module 12034 (useGamePress)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "set";
@@ -21,17 +21,17 @@ let closure_6;
 let closure_7;
 let require = arg1;
 function useGamePress(userId, applicationId) {
-  const obj = { location: "UserProfileWidgetsBoard", applicationId, source: require(8418) /* GameProfileEmbedAction */.GameProfileSources.UserProfile, sourceUserId: userId, trackEntryPointImpression: true };
-  return importDefault(8407)(obj);
+  const obj = { location: "UserProfileWidgetsBoard", applicationId, source: require(8462) /* GameProfileEmbedAction */.GameProfileSources.UserProfile, sourceUserId: userId, trackEntryPointImpression: true };
+  return importDefault(8451)(obj);
 }
 function WidgetRenderer(isFirstWidget) {
   let cardStyle;
   let userId;
   let widget;
   ({ userId, widget, cardStyle } = isFirstWidget);
-  if (widget instanceof require(5650) /* ApplicationWidget */.ApplicationWidget) {
+  if (widget instanceof require(5899) /* ApplicationWidget */.ApplicationWidget) {
     let obj = { userId, widget, cardStyle, isFirstWidget: isFirstWidget.isFirstWidget };
-    let tmpResult = tmp(importDefault(12000), obj);
+    let tmpResult = tmp(importDefault(12043), obj);
   } else {
     obj = { userId, widget, cardStyle };
     tmpResult = tmp(closure_20, obj);
@@ -136,7 +136,7 @@ let closure_17 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  const tmp2 = importDefault(11996)(game.applicationId);
+  const tmp2 = importDefault(12039)(game.applicationId);
   const gameName = tmp2.gameName;
   let tmp3;
   if (!disableInteraction) {
@@ -173,7 +173,7 @@ let closure_17 = importAllResult.memo((game) => {
     accessibilityLabel: gameName
   };
   const obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName };
-  obj1.children = callback2(_require(4127).Text, obj2);
+  obj1.children = callback2(_require(4161).Text, obj2);
   const items2 = [callback2(closure_6, obj1), , ];
   let obj5 = _require(1832);
   let trimmed;
@@ -184,9 +184,9 @@ let closure_17 = importAllResult.memo((game) => {
   if (tmp7) {
     const obj3 = { style: tmp.comment };
     const obj4 = { size: "xxs", color: importDefault(689).colors.TEXT_MUTED };
-    const items3 = [callback2(_require(11997).QuoteIcon, obj4), ];
+    const items3 = [callback2(_require(12040).QuoteIcon, obj4), ];
     obj5 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
-    items3[1] = callback2(_require(4127).Text, obj5);
+    items3[1] = callback2(_require(4161).Text, obj5);
     obj3.children = items3;
     tmp7 = callback3(closure_7, obj3);
   }
@@ -205,7 +205,7 @@ let closure_18 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  const tmp2 = importDefault(11996)(game.applicationId);
+  const tmp2 = importDefault(12039)(game.applicationId);
   const gameName = tmp2.gameName;
   let tmp3;
   if (!disableInteraction) {
@@ -242,7 +242,7 @@ let closure_18 = importAllResult.memo((game) => {
     accessibilityLabel: gameName
   };
   const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName };
-  obj1.children = callback2(_require(4127).Text, obj2);
+  obj1.children = callback2(_require(4161).Text, obj2);
   const items2 = [callback2(closure_6, obj1), callback2(closure_16, { tags: game.tags })];
   obj.children = items2;
   items1[1] = callback3(closure_7, obj);
@@ -259,7 +259,7 @@ let closure_19 = importAllResult.memo((game) => {
   let c0;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ coverImageUrl, gameName } = importDefault(11996)(game.applicationId));
+  ({ coverImageUrl, gameName } = importDefault(12039)(game.applicationId));
   let tmp3;
   if (!disableInteraction) {
     tmp3 = useGamePress(userId, game.applicationId);
@@ -451,7 +451,7 @@ export default function UserProfileWidgetsBoard(userId) {
     flag = true;
   }
   const cardStyle = userId.cardStyle;
-  let obj = userId(12104);
+  let obj = userId(12147);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
   (function useTrackUserProfileWidgetsView(flag, arg1) {
     let closure_0 = flag;

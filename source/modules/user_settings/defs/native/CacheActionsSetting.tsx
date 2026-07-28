@@ -1,9 +1,9 @@
-// Module ID: 14461
-// Function ID: 110549
+// Module ID: 14505
+// Function ID: 110722
 // Name: handleCacheActionPress
-// Dependencies: [5, 4809, 33, 4099, 3832, 4087, 1212, 566, 3804, 5498, 5186, 5500, 13609, 14462, 14463, 10059, 2]
+// Dependencies: [5, 4843, 33, 4133, 3866, 4121, 1212, 566, 3838, 5533, 5220, 5535, 13653, 14506, 14507, 10099, 2]
 
-// Module 14461 (handleCacheActionPress)
+// Module 14505 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -13,7 +13,7 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function handleCacheActionPress(key) {
-  let obj = importDefault(3832);
+  let obj = importDefault(3866);
   obj = {
     key,
     icon() {
@@ -22,23 +22,23 @@ function handleCacheActionPress(key) {
     content: key
   };
   obj.open(obj);
-  importDefault(4099).hideActionSheet(CacheActionsActionSheet);
+  importDefault(4133).hideActionSheet(CacheActionsActionSheet);
 }
 function CacheActionsActionSheet() {
   let obj = {};
   obj = {};
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.ZVZVwR);
-  obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback2(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true };
-  const obj1 = { icon: callback2(require(13609) /* FileUpIcon */.FileUpIcon, {}) };
+  const obj1 = { icon: callback2(require(13653) /* FileUpIcon */.FileUpIcon, {}) };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl2.string(require(1212) /* getSystemLocale */.t["/GUaXh"]);
   obj1.label = stringResult;
   // CreateGeneratorClosureLongIndex (0x67)
   obj1.onPress = callback(stringResult);
-  const items = [callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
-  const obj2 = { variant: "danger", icon: callback2(require(14463) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" }) };
+  const items = [callback2(require(5535) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
+  const obj2 = { variant: "danger", icon: callback2(require(14507) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" }) };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.tgwiMO);
   obj2.onPress = function onPress() {
@@ -46,10 +46,10 @@ function CacheActionsActionSheet() {
     const intl = outer1_0(outer1_2[6]).intl;
     outer1_8(intl.string(outer1_0(outer1_2[6]).t["23xR5w"]));
   };
-  items[1] = callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
+  items[1] = callback2(require(5535) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
   obj.children = items;
-  obj.children = callback3(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback2(require(5498) /* ActionSheet */.ActionSheet, obj);
+  obj.children = callback3(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback2(require(5533) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";
@@ -61,14 +61,14 @@ createToggle = {
   parent: null,
   IconComponent: require("FileWarningIcon").FileWarningIcon,
   onPress: function handleCacheActionsPress() {
-    let obj = importDefault(4099);
+    let obj = importDefault(4133);
     obj = { default: CacheActionsActionSheet };
     obj.openLazy(Promise.resolve(obj), CacheActionsActionSheet);
   },
   usePredicate: function useCacheActionsPredicate() {
     const items = [_isNativeReflectConstruct];
     const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.isConnected());
-    const DeveloperMode = require(3804) /* explicitContentFromProto */.DeveloperMode;
+    const DeveloperMode = require(3838) /* explicitContentFromProto */.DeveloperMode;
     const obj = require(566) /* initialize */;
     return DeveloperMode.useSetting() && stateFromStores;
   },

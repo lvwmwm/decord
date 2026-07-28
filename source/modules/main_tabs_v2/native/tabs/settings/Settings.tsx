@@ -1,10 +1,10 @@
-// Module ID: 15655
-// Function ID: 120651
+// Module ID: 15694
+// Function ID: 120807
 // Name: Settings
-// Dependencies: [31, 27, 33, 4131, 689, 15542, 1557, 6504, 4111, 3992, 15656, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 15581, 1557, 6540, 4145, 4026, 15695, 2]
 // Exports: default
 
-// Module 15655 (Settings)
+// Module 15694 (Settings)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

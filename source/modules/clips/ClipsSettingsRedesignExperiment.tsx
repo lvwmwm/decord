@@ -1,10 +1,10 @@
-// Module ID: 4194
-// Function ID: 36081
+// Module ID: 4228
+// Function ID: 36185
 // Name: useIsClipsSettingsRedesignEnabled
-// Dependencies: [4184, 1428, 4189, 566, 2]
+// Dependencies: [4218, 1428, 4223, 566, 2]
 // Exports: isClipsSettingsRedesignEnabled, useDisabledWhenAutoclippingOff
 
-// Module 4194 (useIsClipsSettingsRedesignEnabled)
+// Module 4228 (useIsClipsSettingsRedesignEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ApexExperiment from "ApexExperiment";
 

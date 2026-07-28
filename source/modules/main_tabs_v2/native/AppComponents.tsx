@@ -1,9 +1,9 @@
-// Module ID: 15751
-// Function ID: 121454
+// Module ID: 15790
+// Function ID: 121610
 // Name: jsx
-// Dependencies: [33, 15514, 477, 3982, 15319, 15661, 4001, 15678, 10181, 13143, 4476, 3845, 15752, 15758, 15791, 15803, 15966, 2]
+// Dependencies: [33, 15553, 477, 4016, 15359, 15700, 4035, 15717, 10221, 13187, 4510, 3879, 15791, 15797, 15830, 15842, 16005, 2]
 
-// Module 15751 (jsx)
+// Module 15790 (jsx)
 import jsxProd from "jsxProd";
 import set from "set";
 import importDefaultResult from "jsx";
@@ -32,7 +32,7 @@ if (set.isAndroid()) {
   jsxResult = jsx(require("updateAccessibilityAnnouncerLiveRegionMessage").AccessibilityAnnouncerLiveRegion, {});
 }
 obj = { lockKeys: ["external-pip"] };
-const items1 = [jsx(require("module_15758"), {}), jsx(require("module_15791"), {}), jsx(require("VoicePanel"), {}), jsx(require("module_15966"), {})];
+const items1 = [jsx(require("module_15797"), {}), jsx(require("module_15830"), {}), jsx(require("VoicePanel"), {}), jsx(require("module_16005"), {})];
 obj.children = items1;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/AppComponents.tsx");
 

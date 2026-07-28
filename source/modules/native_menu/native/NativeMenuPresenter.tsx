@@ -1,10 +1,10 @@
-// Module ID: 15666
-// Function ID: 120744
+// Module ID: 15705
+// Function ID: 120900
 // Name: MenuContainer
-// Dependencies: [31, 9504, 566, 9627, 4541, 2]
+// Dependencies: [31, 9544, 566, 9667, 4575, 2]
 // Exports: default
 
-// Module 15666 (MenuContainer)
+// Module 15705 (MenuContainer)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -24,7 +24,7 @@ export default function MenuContainer() {
     }
     return null != key;
   }, items1);
-  importDefault(4541)(callback);
+  importDefault(4575)(callback);
   let tmp4 = null;
   if (null != key) {
     tmp4 = null;

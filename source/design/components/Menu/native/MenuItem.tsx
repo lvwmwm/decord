@@ -1,9 +1,9 @@
-// Module ID: 13108
-// Function ID: 101161
+// Module ID: 13152
+// Function ID: 101334
 // Name: MenuItem
-// Dependencies: [31, 33, 4131, 13106, 4546, 5157, 5177, 2]
+// Dependencies: [31, 33, 4165, 13150, 4580, 5191, 5211, 2]
 
-// Module 13108 (MenuItem)
+// Module 13152 (MenuItem)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13106).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13150).MenuContext).menuClose;
   if (null != IconComponent) {
     let obj = { size: "sm" };
     let tmp2 = <IconComponent size="sm" />;
@@ -36,7 +36,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     tmp2 = null;
     if (null != iconSource) {
       obj = { source: iconSource, style: tmp.formIcon };
-      tmp2 = jsx(menuClose(4546), { source: iconSource, style: tmp.formIcon });
+      tmp2 = jsx(menuClose(4580), { source: iconSource, style: tmp.formIcon });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled };
@@ -59,14 +59,14 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   let tmp11 = label;
   if ("string" === typeof label) {
     const obj1 = { text: label, style: tmp.formLabel };
-    tmp11 = jsx(menuClose(5177), { text: label, style: tmp.formLabel });
+    tmp11 = jsx(menuClose(5211), { text: label, style: tmp.formLabel });
   }
   obj.label = tmp11;
   obj.onPress = function onPress() {
     action();
     menuClose();
   };
-  return jsx(menuClose(5157), { ref, style, accessibilityRole: "menuitem", disabled });
+  return jsx(menuClose(5191), { ref, style, accessibilityRole: "menuitem", disabled });
 });
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 

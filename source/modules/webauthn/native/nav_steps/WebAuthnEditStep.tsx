@@ -1,10 +1,10 @@
-// Module ID: 13703
-// Function ID: 105224
+// Module ID: 13747
+// Function ID: 105397
 // Name: EditCredentialModal
-// Dependencies: [57, 31, 33, 4131, 689, 1456, 5087, 7575, 1212, 1273, 4544, 5592, 3832, 9628, 4092, 2]
+// Dependencies: [57, 31, 33, 4165, 689, 1456, 5121, 7611, 1212, 1273, 4578, 5627, 3866, 9668, 4126, 2]
 // Exports: default
 
-// Module 13703 (EditCredentialModal)
+// Module 13747 (EditCredentialModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function EditCredentialModal(credential) {
   const items = [navigation];
   const layoutEffect = React.useLayoutEffect(() => {
     const obj = {
-      headerLeft: credential(5087).getHeaderBackButton(() => {
+      headerLeft: credential(5121).getHeaderBackButton(() => {
         outer1_1.pop();
       })
     };
@@ -54,31 +54,31 @@ export default function EditCredentialModal(credential) {
   obj.showBorder = true;
   obj.required = true;
   obj.large = true;
-  const items1 = [callback(credential(7575).FormInput, obj), callback(credential(7575).FormDivider, {}), ];
+  const items1 = [callback(credential(7611).FormInput, obj), callback(credential(7611).FormDivider, {}), ];
   const obj1 = {
     onPress() {
       dependencyMap(true);
       callback(null);
-      const result = credential(5592).editWebAuthnCredential(credential.id, first1);
-      let obj = credential(5592);
+      const result = credential(5627).editWebAuthnCredential(credential.id, first1);
+      let obj = credential(5627);
       const nextPromise = result.then(() => {
-        let obj = navigation(3832);
+        let obj = navigation(3866);
         obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY" };
         const intl = credential(1212).intl;
         obj.content = intl.string(credential(1212).t.IV13mH);
-        obj.icon = navigation(9628);
-        obj.IconComponent = credential(4092).CircleCheckIcon;
+        obj.icon = navigation(9668);
+        obj.IconComponent = credential(4126).CircleCheckIcon;
         obj.iconColor = "status-positive";
         obj.open(obj);
         outer1_1.popToTop();
       });
       result.then(() => {
-        let obj = navigation(3832);
+        let obj = navigation(3866);
         obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY" };
         const intl = credential(1212).intl;
         obj.content = intl.string(credential(1212).t.IV13mH);
-        obj.icon = navigation(9628);
-        obj.IconComponent = credential(4092).CircleCheckIcon;
+        obj.icon = navigation(9668);
+        obj.IconComponent = credential(4126).CircleCheckIcon;
         obj.iconColor = "status-positive";
         obj.open(obj);
         outer1_1.popToTop();
@@ -99,7 +99,7 @@ export default function EditCredentialModal(credential) {
   const intl2 = credential(1212).intl;
   obj1.text = intl2.string(credential(1212).t["7asiR3"]);
   obj1.grow = true;
-  items1[2] = callback(credential(4544).Button, obj1);
+  items1[2] = callback(credential(4578).Button, obj1);
   obj.children = items1;
-  return closure_6(credential(7575).Form, obj);
+  return closure_6(credential(7611).Form, obj);
 };

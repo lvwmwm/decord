@@ -1,10 +1,10 @@
-// Module ID: 14279
-// Function ID: 109670
+// Module ID: 14323
+// Function ID: 109843
 // Name: getAccessibilitySettingScreen
-// Dependencies: [31, 3805, 7697, 653, 33, 1212, 1921, 2557, 6554, 5582, 14280, 1456, 624, 10059, 13613, 2]
+// Dependencies: [31, 3839, 7733, 653, 33, 1212, 1921, 2557, 6590, 5617, 14324, 1456, 624, 10099, 13657, 2]
 // Exports: default
 
-// Module 14279 (getAccessibilitySettingScreen)
+// Module 14323 (getAccessibilitySettingScreen)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MobileSetting } from "MobileSetting";
@@ -96,7 +96,7 @@ function getAccessibilitySettingScreen(arg0) {
   items10 = [MobileSetting.AUTOPLAY_GIF];
   let tmp = null != gifAutoPlayOverrideReason;
   if (tmp) {
-    tmp = importDefault(14280)(gifAutoPlayOverrideReason);
+    tmp = importDefault(14324)(gifAutoPlayOverrideReason);
   }
   obj11.subLabel = tmp;
   items1[9] = obj11;
@@ -104,7 +104,7 @@ function getAccessibilitySettingScreen(arg0) {
   items11 = [MobileSetting.ANIMATE_EMOJI];
   let tmp4 = null != animateEmojiOverrideReason;
   if (tmp4) {
-    tmp4 = importDefault(14280)(animateEmojiOverrideReason);
+    tmp4 = importDefault(14324)(animateEmojiOverrideReason);
   }
   obj12.subLabel = tmp4;
   items1[10] = obj12;
@@ -112,7 +112,7 @@ function getAccessibilitySettingScreen(arg0) {
   items12 = [MobileSetting.ANIMATE_STICKERS];
   let tmp7 = null != animateStickersOverrideReason;
   if (tmp7) {
-    tmp7 = importDefault(14280)(animateStickersOverrideReason);
+    tmp7 = importDefault(14324)(animateStickersOverrideReason);
   }
   obj13.subLabel = tmp7;
   items1[11] = obj13;

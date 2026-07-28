@@ -1,9 +1,9 @@
-// Module ID: 8121
-// Function ID: 64726
+// Module ID: 8159
+// Function ID: 64836
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 664, 6104, 8122, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 664, 6138, 8160, 566, 686, 2]
 
-// Module 8121 (_isNativeReflectConstruct)
+// Module 8159 (_isNativeReflectConstruct)
 import MessageEmbedTypes from "MessageEmbedTypes";
 import generateHydrationId from "generateHydrationId";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -204,7 +204,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         let tmp3 = require;
         let tmp4 = dependencyMap;
         let tmp5 = tmp2;
-        if (value.type === require(6104) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+        if (value.type === require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
           let tmp11 = closure_8;
           let result = null != closure_8.readIdToTimestampMap[value.id];
           if (!result) {
@@ -219,7 +219,7 @@ tmp2 = new tmp2(require("dispatcher"), {
           if (!result) {
             let tmp8 = require;
             let tmp9 = dependencyMap;
-            let obj = require(8122) /* generateHydrationId */;
+            let obj = require(8160) /* generateHydrationId */;
             result = obj.isItemUnreadInChannel(value.data.channel_id, value.data.message_id);
           }
           tmp5 = tmp2;

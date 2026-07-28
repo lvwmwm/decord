@@ -1,10 +1,10 @@
-// Module ID: 13568
-// Function ID: 104379
+// Module ID: 13612
+// Function ID: 104552
 // Name: navigateToDevTools
-// Dependencies: [31, 27, 33, 9041, 5517, 9050, 13569, 8956, 4127, 689, 13571, 4099, 4338, 2]
+// Dependencies: [31, 27, 33, 9085, 5552, 9094, 13613, 9000, 4161, 689, 13615, 4133, 4372, 2]
 // Exports: navigateToDevTools
 
-// Module 13568 (navigateToDevTools)
+// Module 13612 (navigateToDevTools)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -17,7 +17,7 @@ const require = arg1;
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 let closure_7 = require("result").memo((screenKey) => {
   screenKey = screenKey.screenKey;
-  let obj = _require(5517);
+  let obj = _require(5552);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {};
   let str = "home";
@@ -43,7 +43,7 @@ let closure_7 = require("result").memo((screenKey) => {
   };
   obj = {
     name: "home",
-    component: importDefault(13569),
+    component: importDefault(13613),
     options() {
       return {
         headerTitle() {
@@ -61,8 +61,8 @@ let closure_7 = require("result").memo((screenKey) => {
     }
   };
   let items = [callback(createNativeStackNavigator.Screen, obj), ];
-  let merged = Object.assign(_require(13571).DevToolsScreens);
-  let merged1 = Object.assign(_require(13571).PerformanceTestingScreens);
+  let merged = Object.assign(_require(13615).DevToolsScreens);
+  let merged1 = Object.assign(_require(13615).PerformanceTestingScreens);
   const entries = Object.entries({});
   items[1] = entries.map((arg0) => {
     let tmp;
@@ -85,7 +85,7 @@ export const navigateToDevTools = function navigateToDevTools(arg0) {
   if (arg0 === undefined) {
     obj = {};
   }
-  importDefault(4099).hideActionSheet();
-  const obj2 = importDefault(4099);
-  importDefault(4338).pushLazy(() => Promise.resolve(outer1_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
+  importDefault(4133).hideActionSheet();
+  const obj2 = importDefault(4133);
+  importDefault(4372).pushLazy(() => Promise.resolve(outer1_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
 };

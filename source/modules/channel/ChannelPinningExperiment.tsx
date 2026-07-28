@@ -1,10 +1,10 @@
-// Module ID: 11815
-// Function ID: 91683
+// Module ID: 11854
+// Function ID: 91834
 // Name: useCanPinChannelsInGuild
-// Dependencies: [1428, 5761, 2]
+// Dependencies: [1428, 5771, 2]
 // Exports: useCanPinChannelsInGuild
 
-// Module 11815 (useCanPinChannelsInGuild)
+// Module 11854 (useCanPinChannelsInGuild)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { name: "2026-04-channel-pinning", kind: "user", defaultConfig: { canPinEverywhere: false }, variations: { [1]: { canPinEverywhere: true } } };
@@ -12,7 +12,7 @@ let closure_2 = ApexExperiment.createApexExperiment(obj);
 const result = require("set").fileFinishedImporting("modules/channel/ChannelPinningExperiment.tsx");
 
 export const useCanPinChannelsInGuild = function useCanPinChannelsInGuild(guild_id) {
-  let obj = require(5761) /* useOptInEnabledForGuild */;
+  let obj = require(5771) /* useOptInEnabledForGuild */;
   const optInEnabledForGuild = obj.useOptInEnabledForGuild(guild_id);
   const canPinEverywhere = closure_2.useConfig({ location: "useCanPinChannelsInGuild" }).canPinEverywhere;
   obj = {};

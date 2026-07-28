@@ -1,10 +1,10 @@
-// Module ID: 6505
-// Function ID: 58130
+// Module ID: 6541
+// Function ID: 58219
 // Name: useBuyNitroMarketingLifecycleHooks
-// Dependencies: [31, 6171, 1345, 4131, 689, 6506, 6510, 3947, 1334, 1336, 6511, 2]
+// Dependencies: [31, 6205, 1345, 4165, 689, 6542, 6546, 3981, 1334, 1336, 6547, 2]
 // Exports: useBuyNitroMarketingLifecycleHooks
 
-// Module 6505 (useBuyNitroMarketingLifecycleHooks)
+// Module 6541 (useBuyNitroMarketingLifecycleHooks)
 import result from "result";
 import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -38,7 +38,7 @@ export const useBuyNitroMarketingLifecycleHooks = function useBuyNitroMarketingL
         tmp = "premiumTab" === promotionMarketingComponent.properties.properties.oneofKind;
       }
       if (tmp) {
-        let obj = promotionMarketingComponent(3947);
+        let obj = promotionMarketingComponent(3981);
         tmp = !obj.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(initialLoadCompleted(1334).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, promotionMarketingComponent.promotionId).isDismissed;
       }
       if (tmp) {
@@ -52,9 +52,9 @@ export const useBuyNitroMarketingLifecycleHooks = function useBuyNitroMarketingL
     let BuyNitroPurchaseLock = nativeStackNavigation(tmp[10]).BuyNitroPurchaseLock;
     BuyNitroPurchaseLock.end();
     return () => {
-      const BuyNitroPurchaseLock = callback(6511).BuyNitroPurchaseLock;
+      const BuyNitroPurchaseLock = callback(6547).BuyNitroPurchaseLock;
       BuyNitroPurchaseLock.end();
-      const BuyNitroPurchaseLock2 = callback(6511).BuyNitroPurchaseLock;
+      const BuyNitroPurchaseLock2 = callback(6547).BuyNitroPurchaseLock;
       const result = BuyNitroPurchaseLock2.setInitialLoadComplete(false);
     };
   }, []);

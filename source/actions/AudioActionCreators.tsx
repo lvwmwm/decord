@@ -1,9 +1,9 @@
-// Module ID: 8770
-// Function ID: 69426
+// Module ID: 8814
+// Function ID: 69577
 // Name: getInputDeviceName
-// Dependencies: [5, 4202, 1348, 4178, 4203, 1907, 1850, 653, 8771, 4192, 3, 675, 574, 686, 8772, 8774, 8775, 8783, 2]
+// Dependencies: [5, 4236, 1348, 4212, 4237, 1907, 1850, 653, 8815, 4226, 3, 675, 574, 686, 8816, 8818, 8819, 8827, 2]
 
-// Module 8770 (getInputDeviceName)
+// Module 8814 (getInputDeviceName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -242,7 +242,7 @@ obj = {
     if (STREAM === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = require(8772) /* snapVolumeToDefault */;
+    let obj = require(8816) /* snapVolumeToDefault */;
     const snapVolumeToDefaultResult = obj.snapVolumeToDefault(volume, DEFAULT);
     obj = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId: closure_0, volume: snapVolumeToDefaultResult };
     importDefault(686).dispatch(obj);
@@ -260,7 +260,7 @@ obj = {
   setSpatialAudio(arg0, arg1) {
     if (!callback3()) {
       const audioMixerSettings = store3.getAudioMixerSettings();
-      importDefault(8774)("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
+      importDefault(8818)("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
       let obj = importDefault(686);
       obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT };
       obj = {};
@@ -481,17 +481,17 @@ obj = {
       if (null != activeInputProfile) {
         tmp7 = activeInputProfile;
       }
-      importDefault(8774)("active_input_profile", inputProfile, tmp7, analyticsLocations);
-      const tmp3 = importDefault(8774);
+      importDefault(8818)("active_input_profile", inputProfile, tmp7, analyticsLocations);
+      const tmp3 = importDefault(8818);
       obj = { type: "AUDIO_SET_ACTIVE_INPUT_PROFILE", inputProfile };
       importDefault(686).dispatch(obj);
       const obj2 = importDefault(686);
     }
   },
-  setEchoCancellation(echoCancellation, location) {
+  setEchoCancellation(closure_0, location) {
     if (!callback3()) {
       let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_ECHO_CANCELLATION", enabled: echoCancellation, location };
+      obj = { type: "AUDIO_SET_ECHO_CANCELLATION", enabled: closure_0, location };
       obj.dispatch(obj);
     }
   },
@@ -502,8 +502,8 @@ obj = {
     }
     const analyticsLocations = obj.analyticsLocations;
     if (!callback3()) {
-      importDefault(8774)("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
-      const tmp3 = importDefault(8774);
+      importDefault(8818)("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
+      const tmp3 = importDefault(8818);
       obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION", enabled: sidechainCompression };
       importDefault(686).dispatch(obj);
       const obj2 = importDefault(686);
@@ -516,8 +516,8 @@ obj = {
     }
     const analyticsLocations = obj.analyticsLocations;
     if (!callback3()) {
-      importDefault(8774)("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
-      const tmp3 = importDefault(8774);
+      importDefault(8818)("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
+      const tmp3 = importDefault(8818);
       obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH", strength: sidechainCompressionStrength };
       importDefault(686).dispatch(obj);
       const obj2 = importDefault(686);
@@ -530,10 +530,10 @@ obj = {
       obj.dispatch(obj);
     }
   },
-  setNoiseSuppression(noiseSuppression, location) {
+  setNoiseSuppression(closure_0, location) {
     if (!callback3()) {
       let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: noiseSuppression, location };
+      obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: closure_0, location };
       obj.dispatch(obj);
     }
   },
@@ -561,25 +561,25 @@ obj = {
       attenuateWhileSpeakingOthers = store3.getAttenuateWhileSpeakingOthers();
       if (attenuation !== attenuation) {
         attenuateWhileSpeakingSelf = dependencyMap;
-        importDefault(8774)("global_attenuation_strength", attenuation, attenuation);
+        importDefault(8818)("global_attenuation_strength", attenuation, attenuation);
         let obj = importDefault(686);
         obj = { type: "AUDIO_SET_ATTENUATION", attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers };
         obj.dispatch(obj);
       } else if (attenuateWhileSpeakingSelf === attenuateWhileSpeakingSelf) {
         if (attenuateWhileSpeakingOthers !== attenuateWhileSpeakingOthers) {
-          importDefault(8774)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
+          importDefault(8818)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
         }
       }
-      importDefault(8774)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
+      importDefault(8818)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
     }
   },
   setQoS(enabled) {
     if (!callback3()) {
-      importDefault(8774)("quality_of_service_packets_enabled", enabled, store3.getQoS());
+      importDefault(8818)("quality_of_service_packets_enabled", enabled, store3.getQoS());
       let obj = importDefault(686);
       obj = { type: "AUDIO_SET_QOS", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8774);
+      const tmp3 = importDefault(8818);
     }
   },
   reset() {
@@ -591,11 +591,11 @@ obj = {
   },
   setSilenceWarning(enabled) {
     if (!callback3()) {
-      importDefault(8774)("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
+      importDefault(8818)("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
       let obj = importDefault(686);
       obj = { type: "AUDIO_SET_DISPLAY_SILENCE_WARNING", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8774);
+      const tmp3 = importDefault(8818);
     }
   },
   setDebugLogging(enabled) {
@@ -605,29 +605,29 @@ obj = {
   },
   setVideoHook(enabled) {
     if (!callback3()) {
-      importDefault(8774)("video_hook_enabled", enabled, store3.getVideoHook());
+      importDefault(8818)("video_hook_enabled", enabled, store3.getVideoHook());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_VIDEO_HOOK", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8774);
+      const tmp3 = importDefault(8818);
     }
   },
   setExperimentalSoundshare(enabled) {
     if (!callback3()) {
-      importDefault(8774)("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
+      importDefault(8818)("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8774);
+      const tmp3 = importDefault(8818);
     }
   },
   setUseSystemScreensharePicker(enabled) {
     if (!callback3()) {
-      importDefault(8774)("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
+      importDefault(8818)("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8774);
+      const tmp3 = importDefault(8818);
     }
   },
   setAudioSubsystem(arg0) {
@@ -636,7 +636,7 @@ obj = {
     return callback(tmp)();
   },
   setVideoEnabled(enabled) {
-    let obj = require(8775) /* _getFilterBlob */;
+    let obj = require(8819) /* _getFilterBlob */;
     const result = obj.applyInitialVideoBackgroundOption();
     obj = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled };
     importDefault(686).dispatch(obj);
@@ -647,7 +647,7 @@ obj = {
       qualityOptions = closure_1.qualityOptions;
     }
     if (null != qualityOptions) {
-      let obj = require(8783) /* isPremiumRequirement */;
+      let obj = require(8827) /* isPremiumRequirement */;
       const preset = closure_1.qualityOptions.preset;
       const resolution = closure_1.qualityOptions.resolution;
       const frameRate = closure_1.qualityOptions.frameRate;
@@ -663,11 +663,11 @@ obj = {
   },
   setAecDump(aecDumpEnabled) {
     if (!callback3()) {
-      importDefault(8774)("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
+      importDefault(8818)("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_AEC_DUMP", enabled: aecDumpEnabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8774);
+      const tmp3 = importDefault(8818);
     }
   },
   interact() {

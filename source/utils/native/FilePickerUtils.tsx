@@ -1,10 +1,10 @@
-// Module ID: 9768
-// Function ID: 75959
+// Module ID: 9808
+// Function ID: 76088
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 653, 9769, 477, 4472, 1212, 4325, 2]
+// Dependencies: [5, 653, 9809, 477, 4506, 1212, 4359, 2]
 // Exports: handleDocumentSelection
 
-// Module 9768 (_createForOfIteratorHelperLoose)
+// Module 9808 (_createForOfIteratorHelperLoose)
 import getSystemLocale from "getSystemLocale";
 import { AnalyticEvents } from "ME";
 

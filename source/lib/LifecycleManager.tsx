@@ -1,9 +1,9 @@
-// Module ID: 4531
-// Function ID: 39814
+// Module ID: 4565
+// Function ID: 39928
 // Name: LifecycleManager
 // Dependencies: [6, 7, 2]
 
-// Module 4531 (LifecycleManager)
+// Module 4565 (LifecycleManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

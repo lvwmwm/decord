@@ -1,10 +1,10 @@
-// Module ID: 4657
-// Function ID: 40375
+// Module ID: 4691
+// Function ID: 40490
 // Name: VoiceWarningIcon
-// Dependencies: [31, 33, 689, 3834, 4606, 2]
+// Dependencies: [31, 33, 689, 3868, 4640, 2]
 // Exports: VoiceWarningIcon
 
-// Module 4657 (VoiceWarningIcon)
+// Module 4691 (VoiceWarningIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const VoiceWarningIcon = function VoiceWarningIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4606) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4640) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4606) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4640) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

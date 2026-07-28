@@ -1,9 +1,9 @@
-// Module ID: 4569
-// Function ID: 40066
+// Module ID: 4603
+// Function ID: 40181
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1362, 4570, 4564, 1327, 4115, 1443, 4571, 3830, 22, 2]
+// Dependencies: [57, 1362, 4604, 4598, 1327, 4149, 1443, 4605, 3864, 22, 2]
 
-// Module 4569 (_createForOfIteratorHelperLoose)
+// Module 4603 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importDefaultResult from "priv";
 
@@ -92,9 +92,9 @@ function sanitizeWithCache(outer1_0) {
   if (null != value) {
     return value;
   } else {
-    let obj = require(4570) /* makeMatcher */;
+    let obj = require(4604) /* makeMatcher */;
     const sanitizeWhitespaceResult = obj.sanitizeWhitespace(outer1_0);
-    obj = { whitespaceSanitized: sanitizeWhitespaceResult, fullySanitized: require(4570) /* makeMatcher */.sanitizeUnicodeConfusables(sanitizeWhitespaceResult) };
+    obj = { whitespaceSanitized: sanitizeWhitespaceResult, fullySanitized: require(4604) /* makeMatcher */.sanitizeUnicodeConfusables(sanitizeWhitespaceResult) };
     const result = importDefaultResult.set(outer1_0, obj);
     return obj;
   }
@@ -119,7 +119,7 @@ function validateContentTypes(content, items, items2) {
       } else {
         let tmp3 = require;
         let tmp4 = dependencyMap;
-        if (value.type === require(4564) /* AST_KEY */.AST_KEY.INLINE_CODE) {
+        if (value.type === require(4598) /* AST_KEY */.AST_KEY.INLINE_CODE) {
           items2 = [];
           let tmp5 = items2;
           let tmp6 = items;
@@ -159,58 +159,58 @@ function getRawText(content) {
       let type = value.type;
       let tmp2 = require;
       let tmp3 = dependencyMap;
-      if (require(4564) /* AST_KEY */.AST_KEY.TEXT !== type) {
+      if (require(4598) /* AST_KEY */.AST_KEY.TEXT !== type) {
         let tmp13 = require;
         let tmp14 = dependencyMap;
-        if (require(4564) /* AST_KEY */.AST_KEY.INLINE_CODE !== type) {
+        if (require(4598) /* AST_KEY */.AST_KEY.INLINE_CODE !== type) {
           let tmp15 = require;
           let tmp16 = dependencyMap;
-          if (require(4564) /* AST_KEY */.AST_KEY.CUSTOM_EMOJI === type) {
+          if (require(4598) /* AST_KEY */.AST_KEY.CUSTOM_EMOJI === type) {
             let text = `${value.name}`;
           } else {
             let tmp17 = require;
             let tmp18 = dependencyMap;
-            if (require(4564) /* AST_KEY */.AST_KEY.EMOJI === type) {
+            if (require(4598) /* AST_KEY */.AST_KEY.EMOJI === type) {
               text = `${value.surrogate}`;
             } else {
               let tmp19 = require;
               let tmp20 = dependencyMap;
-              if (require(4564) /* AST_KEY */.AST_KEY.LINE_BREAK === type) {
+              if (require(4598) /* AST_KEY */.AST_KEY.LINE_BREAK === type) {
                 text = `
   `;
               } else {
                 let tmp21 = require;
                 let tmp22 = dependencyMap;
-                if (require(4564) /* AST_KEY */.AST_KEY.STRONG !== type) {
+                if (require(4598) /* AST_KEY */.AST_KEY.STRONG !== type) {
                   let tmp23 = require;
                   let tmp24 = dependencyMap;
-                  if (require(4564) /* AST_KEY */.AST_KEY.ITALICS !== type) {
+                  if (require(4598) /* AST_KEY */.AST_KEY.ITALICS !== type) {
                     let tmp25 = require;
                     let tmp26 = dependencyMap;
-                    if (require(4564) /* AST_KEY */.AST_KEY.UNDERLINE !== type) {
+                    if (require(4598) /* AST_KEY */.AST_KEY.UNDERLINE !== type) {
                       let tmp27 = require;
                       let tmp28 = dependencyMap;
-                      if (require(4564) /* AST_KEY */.AST_KEY.STRIKETHROUGH !== type) {
+                      if (require(4598) /* AST_KEY */.AST_KEY.STRIKETHROUGH !== type) {
                         let tmp29 = require;
                         let tmp30 = dependencyMap;
-                        if (require(4564) /* AST_KEY */.AST_KEY.SPOILER !== type) {
+                        if (require(4598) /* AST_KEY */.AST_KEY.SPOILER !== type) {
                           let tmp31 = require;
                           let tmp32 = dependencyMap;
-                          if (require(4564) /* AST_KEY */.AST_KEY.TIMESTAMP === type) {
+                          if (require(4598) /* AST_KEY */.AST_KEY.TIMESTAMP === type) {
                             text = `<timestamp>`;
                           } else {
                             let tmp33 = require;
                             let tmp34 = dependencyMap;
-                            if (require(4564) /* AST_KEY */.AST_KEY.BLOCK_QUOTE !== type) {
+                            if (require(4598) /* AST_KEY */.AST_KEY.BLOCK_QUOTE !== type) {
                               let tmp35 = require;
                               let tmp36 = dependencyMap;
-                              if (require(4564) /* AST_KEY */.AST_KEY.LIST !== type) {
+                              if (require(4598) /* AST_KEY */.AST_KEY.LIST !== type) {
                                 let tmp4 = require;
                                 let tmp5 = dependencyMap;
-                                if (require(4564) /* AST_KEY */.AST_KEY.HEADING !== type) {
+                                if (require(4598) /* AST_KEY */.AST_KEY.HEADING !== type) {
                                   let tmp6 = require;
                                   let tmp7 = dependencyMap;
-                                  if (require(4564) /* AST_KEY */.AST_KEY.SUBTEXT !== type) {
+                                  if (require(4598) /* AST_KEY */.AST_KEY.SUBTEXT !== type) {
                                     let tmp8 = require;
                                     let tmp9 = dependencyMap;
                                     let obj = require(1327) /* isDiscordFrontendDevelopment */;
@@ -276,7 +276,7 @@ function isSuspiciousUrl(outer1_0) {
     }
     const obj3 = importDefault(1443);
   }
-  obj = require(4115) /* _createForOfIteratorHelperLoose */;
+  obj = require(4149) /* _createForOfIteratorHelperLoose */;
 }
 function punycodeLink(outer1_0) {
   if (isSuspiciousUrl(outer1_0)) {
@@ -298,14 +298,14 @@ function punycodeLink(outer1_0) {
         const error1 = new Error("no hostname");
         throw error1;
       }
-      let obj = importDefault(4571);
+      let obj = importDefault(4605);
       tmp6.hostname = obj.toASCII(tmp6.hostname.toLowerCase());
       tmp6.username = "";
       tmp6.password = "";
-      obj = { target: require(4570) /* makeMatcher */.safelyMakeUrlHumanReadable(tmp6) };
-      const obj2 = require(4570) /* makeMatcher */;
+      obj = { target: require(4604) /* makeMatcher */.safelyMakeUrlHumanReadable(tmp6) };
+      const obj2 = require(4604) /* makeMatcher */;
       const str7 = tmp6.hostname;
-      obj.displayTarget = require(4570) /* makeMatcher */.safelyMakeUrlHumanReadable(tmp6);
+      obj.displayTarget = require(4604) /* makeMatcher */.safelyMakeUrlHumanReadable(tmp6);
       return obj;
     } else {
       const _Error = Error;
@@ -366,7 +366,7 @@ obj["match"] = function match(arr, allowLinks) {
         }
         return null;
       }
-      return importDefault(3830).defaultRules.link.match(arr, allowLinks, arg2);
+      return importDefault(3864).defaultRules.link.match(arr, allowLinks, arg2);
     }
   } else {
     return null;
@@ -392,10 +392,10 @@ obj["parse"] = function parse(arg0, rules, allowEmojiLinks) {
     const trimmed = str3.trim();
     if (0 !== str2.trim().length) {
       if (0 !== trimmed.length) {
-        const tmp38 = punycodeLink(importDefault(3830).unescapeUrl(tmp3));
-        let tmp12 = importDefault(4115)(tmp2).length > 0;
+        const tmp38 = punycodeLink(importDefault(3864).unescapeUrl(tmp3));
+        let tmp12 = importDefault(4149)(tmp2).length > 0;
         if (!tmp12) {
-          tmp12 = importDefault(4115)(tmp4).length > 0;
+          tmp12 = importDefault(4149)(tmp4).length > 0;
         }
         if (null != tmp38) {
           if (!tmp12) {
@@ -408,7 +408,7 @@ obj["parse"] = function parse(arg0, rules, allowEmojiLinks) {
             HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(tmp16, 0));
             items1 = [];
             HermesBuiltin.arraySpread(items5, HermesBuiltin.arraySpread(items4, 0));
-            items2 = [_require(4564).AST_KEY.EMOJI];
+            items2 = [_require(4598).AST_KEY.EMOJI];
             const tmp31 = validateContentTypes(rules(str3, obj), items, items2);
             if (null != tmp31) {
               if (null != validateContentTypes(rules(tmp5Result.fullySanitized, obj), items1)) {
@@ -418,7 +418,7 @@ obj["parse"] = function parse(arg0, rules, allowEmojiLinks) {
                   const obj2 = importDefault(22);
                   const pickResult = importDefault(22).pick(rules.rules, tmp16);
                   obj = {};
-                  obj.content = importDefault(3830).parserFor(pickResult)(tmp7.whitespaceSanitized, obj);
+                  obj.content = importDefault(3864).parserFor(pickResult)(tmp7.whitespaceSanitized, obj);
                   obj.target = tmp38.target;
                   obj.title = tmp5Result.whitespaceSanitized;
                   return obj;

@@ -1,10 +1,10 @@
-// Module ID: 6567
-// Function ID: 58378
+// Module ID: 6603
+// Function ID: 58467
 // Name: SuperReactionIcon
-// Dependencies: [31, 33, 689, 3834, 6568, 2]
+// Dependencies: [31, 33, 689, 3868, 6604, 2]
 // Exports: SuperReactionIcon
 
-// Module 6567 (SuperReactionIcon)
+// Module 6603 (SuperReactionIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const SuperReactionIcon = function SuperReactionIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(6568) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6604) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6568) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6604) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

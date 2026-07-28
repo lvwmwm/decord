@@ -1,10 +1,10 @@
-// Module ID: 13681
-// Function ID: 105075
+// Module ID: 13725
+// Function ID: 105248
 // Name: EditGuildProfileBanner
-// Dependencies: [29, 31, 27, 1918, 5630, 5510, 653, 1852, 33, 3777, 5462, 5482, 13627, 4099, 13628, 1935, 7882, 1212, 7880, 6137, 8017, 13638, 6687, 5159, 689, 9786, 13676, 566, 7922, 8018, 8033, 7890, 13032, 13682, 8015, 8019, 4127, 3843, 13683, 11913, 11902, 8317, 13647, 3970, 13648, 13653, 13655, 13656, 13660, 13664, 13674, 9253, 9254, 2]
+// Dependencies: [29, 31, 27, 1918, 5878, 5545, 653, 1852, 33, 3811, 5497, 5517, 13671, 4133, 13672, 1935, 7918, 1212, 7916, 6171, 8055, 13682, 6723, 5193, 689, 9826, 13720, 566, 7958, 8056, 8071, 7926, 13076, 13726, 8053, 8057, 4161, 3877, 13727, 11956, 11945, 8355, 13691, 4004, 13692, 13697, 13699, 13700, 13704, 13708, 13718, 9297, 9298, 2]
 // Exports: default
 
-// Module 13681 (EditGuildProfileBanner)
+// Module 13725 (EditGuildProfileBanner)
 import _activityFromSetting from "_activityFromSetting";
 import getImageFormat from "getImageFormat";
 import get_ActivityIndicator from "initialize";
@@ -38,12 +38,12 @@ function EditGuildProfileBanner(user) {
   user = user.user;
   ({ guildId: importDefault, guildMemberProfile: dependencyMap, pendingBanner } = user);
   ({ displayProfile, guildMember, pendingAvatarSrc, pendingThemeColors, disabled } = user);
-  let obj = importDefault(3777);
+  let obj = importDefault(3811);
   let result = obj.canUsePremiumGuildMemberProfile(user);
-  const analyticsLocations = importDefault(5462)(importDefault(5482).EDIT_BANNER).analyticsLocations;
+  const analyticsLocations = importDefault(5497)(importDefault(5517).EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations };
   obj = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, showProfilePreviewButton: false };
-  const tmp2 = importDefault(5462);
+  const tmp2 = importDefault(5497);
   const tmp3 = closure_18;
   const tmp4 = closure_18;
   if (result) {
@@ -84,8 +84,8 @@ function EditGuildProfileBanner(user) {
   let intl = user(1212).intl;
   obj.editButtonAccessibilityLabel = intl.string(user(1212).t["95hPAe"]);
   obj.editDisabled = disabled;
-  obj.children = tmp4(importDefault(13627), obj);
-  return tmp3(user(5462).AnalyticsLocationProvider, obj);
+  obj.children = tmp4(importDefault(13671), obj);
+  return tmp3(user(5497).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 ({ ScrollView: closure_6, View: closure_7 } = get_ActivityIndicator);

@@ -1,10 +1,10 @@
-// Module ID: 7759
-// Function ID: 61731
+// Module ID: 7795
+// Function ID: 61821
 // Name: isCrosspost
 // Dependencies: [653, 1360, 2]
 // Exports: default
 
-// Module 7759 (isCrosspost)
+// Module 7795 (isCrosspost)
 import ME from "ME";
 
 let closure_2;

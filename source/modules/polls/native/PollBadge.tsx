@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 117790
+// Module ID: 15475
+// Function ID: 117949
 // Name: PollBadge
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 15436, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1273, 15476, 4161, 1212, 2]
 // Exports: default
 
-// Module 15435 (PollBadge)
+// Module 15475 (PollBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,12 +25,12 @@ export default function PollBadge(style) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
   items = [tmp.container, style.style];
-  obj = { size: require(1273) /* Button */.IconSizes.EXTRA_SMALL_10, source: importDefault(15436) };
+  obj = { size: require(1273) /* Button */.IconSizes.EXTRA_SMALL_10, source: importDefault(15476) };
   const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { style: tmp.text, variant: "text-xs/semibold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.RgIi2B);
-  items1[1] = callback(require(4127) /* Text */.Text, obj);
+  items1[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items1;
   return callback2(View, obj);
 };

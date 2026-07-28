@@ -1,10 +1,10 @@
-// Module ID: 12330
-// Function ID: 95992
+// Module ID: 12373
+// Function ID: 96162
 // Name: UserPreview
-// Dependencies: [31, 27, 33, 4131, 689, 3975, 4127, 1212, 1273, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4009, 4161, 1212, 1273, 2]
 // Exports: default
 
-// Module 12330 (UserPreview)
+// Module 12373 (UserPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,13 +27,13 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function UserPreview(user) {
   user = user.user;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3975) /* hexToRgb */;
+  let obj = require(4009) /* hexToRgb */;
   obj = { style: tmp.container };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.Rsth7z).toUpperCase();
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   const obj1 = { style: items1 };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
   const obj2 = { size: require(1273) /* Button */.AvatarSizes.LARGE_48, user, guildId: undefined };
@@ -42,11 +42,11 @@ export default function UserPreview(user) {
   let tmp5 = null != user.globalName;
   if (tmp5) {
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp5 = callback(require(4127) /* Text */.Text, obj4);
+    tmp5 = callback(require(4161) /* Text */.Text, obj4);
   }
   const items3 = [tmp5, ];
   const obj5 = { color: "text-default", variant: "text-sm/normal", children: user.username };
-  items3[1] = callback(require(4127) /* Text */.Text, obj5);
+  items3[1] = callback(require(4161) /* Text */.Text, obj5);
   obj3.children = items3;
   items2[1] = closure_4(View, obj3);
   obj1.children = items2;

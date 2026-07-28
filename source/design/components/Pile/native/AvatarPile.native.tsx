@@ -1,10 +1,10 @@
-// Module ID: 11953
-// Function ID: 92427
+// Module ID: 11996
+// Function ID: 92597
 // Name: AvatarPile
-// Dependencies: [31, 33, 11954, 9869, 11649, 7909, 9870, 2]
+// Dependencies: [31, 33, 11997, 9909, 11688, 7945, 9910, 2]
 // Exports: AvatarPile
 
-// Module 11953 (AvatarPile)
+// Module 11996 (AvatarPile)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -23,9 +23,9 @@ export const AvatarPile = function AvatarPile(arg0) {
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp2 = require(11954) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+  const tmp2 = require(11997) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
   let num = 3;
-  let obj = { "aria-label": require(11649) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7909) /* SolidCutout */.CutoutShape.Circle, size: tmp2 };
+  let obj = { "aria-label": require(11688) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7945) /* SolidCutout */.CutoutShape.Circle, size: tmp2 };
   if (tmp2 <= 40) {
     num = 2;
   }
@@ -35,9 +35,9 @@ export const AvatarPile = function AvatarPile(arg0) {
   let tmp4 = null != totalCount && countResult < totalCount;
   if (tmp4) {
     obj = { size: tmp2, borderRadius: tmp2 / 2, value: totalCount - countResult };
-    tmp4 = callback(require(9870) /* map */.PileOverflow, obj);
+    tmp4 = callback(require(9910) /* map */.PileOverflow, obj);
   }
   items[1] = tmp4;
   obj.children = items;
-  return closure_4(require(9869) /* Pile */.Pile, obj);
+  return closure_4(require(9909) /* Pile */.Pile, obj);
 };

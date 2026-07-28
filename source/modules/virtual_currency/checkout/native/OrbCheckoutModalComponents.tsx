@@ -1,10 +1,10 @@
-// Module ID: 11837
-// Function ID: 91775
+// Module ID: 11880
+// Function ID: 91945
 // Name: OrbCheckoutErrorCard
-// Dependencies: [31, 27, 33, 4131, 689, 4542, 6673, 4127, 11817, 1212, 11819, 11836, 5623, 4067, 11838, 4544, 3977, 8637, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4576, 6709, 4161, 11860, 1212, 11862, 11879, 5658, 4101, 11881, 4578, 4011, 8681, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 11837 (OrbCheckoutErrorCard)
+// Module 11880 (OrbCheckoutErrorCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,11 +34,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/virtual_currenc
 export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(error) {
   let obj = { style: _createForOfIteratorHelperLoose().errorCard };
   obj = { direction: "horizontal", spacing: 8, align: "flex-start" };
-  const items = [callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), ];
+  const items = [callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: error.error };
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   obj.children = items;
-  obj.children = callback2(require(4542) /* Stack */.Stack, obj);
+  obj.children = callback2(require(4576) /* Stack */.Stack, obj);
   return callback(closure_4, obj);
 };
 export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product) {
@@ -54,13 +54,13 @@ export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product)
     let tmp5 = callback(closure_4, obj);
   } else {
     obj = { product, useOrbPrice: true };
-    tmp5 = callback(importDefault(11817), obj);
+    tmp5 = callback(importDefault(11860), obj);
   }
   const obj1 = { style: tmp.topRowWrapper };
   const obj2 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t.hws7bC);
-  const items1 = [callback(require(4127) /* Text */.Text, obj2), tmp5];
+  const items1 = [callback(require(4161) /* Text */.Text, obj2), tmp5];
   obj1.children = items1;
   return callback2(closure_4, obj1);
 };
@@ -70,40 +70,40 @@ export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSource
   obj = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["zLch/S"]);
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   obj = { style: items1 };
   items1 = [, ];
   ({ rowDetailsContainer: arr2[0], orbPaymentSourceDetails: arr2[1] } = tmp);
   const obj1 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.y0WGqP);
-  const items2 = [callback(require(4127) /* Text */.Text, obj1), callback(importDefault(11819), { orbAmount: orbAmount.orbBalance })];
+  const items2 = [callback(require(4161) /* Text */.Text, obj1), callback(importDefault(11862), { orbAmount: orbAmount.orbBalance })];
   obj.children = items2;
   items[1] = callback2(closure_4, obj);
   obj.children = items;
   return callback2(closure_4, obj);
 };
 export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
-  let obj = skuId(11836);
+  let obj = skuId(11879);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = React.useMemo(() => skuId(outer1_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
   obj = { style: _createForOfIteratorHelperLoose().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo };
-  return callback(skuId(4127).Text, obj);
+  return callback(skuId(4161).Text, obj);
 };
 export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPress) {
   let isRedeeming;
   let orbProductContext;
-  const tmp = importDefault(4067)();
-  let obj = require(11836) /* useOrbCheckoutModalContextProvider */;
+  const tmp = importDefault(4101)();
+  let obj = require(11879) /* useOrbCheckoutModalContextProvider */;
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   ({ isRedeeming, orbProductContext } = orbCheckoutModalContext);
-  const virtualCurrencyBalance = require(11838) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
+  const virtualCurrencyBalance = require(11881) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
   if (null != orbProductContext) {
     const orbPriceAmount = orbProductContext.orbPriceAmount;
   }
   obj = {};
-  const obj2 = require(11838) /* useVirtualCurrencyBalance */;
+  const obj2 = require(11881) /* useVirtualCurrencyBalance */;
   const tmp4 = closure_6;
   let str = "primary";
   if (obj4.isThemeDark(tmp)) {
@@ -114,14 +114,14 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t["zLch/S"]);
   obj = { size: "md" };
-  obj4 = require(3977) /* AccessibilityAnnouncer */;
+  obj4 = require(4011) /* AccessibilityAnnouncer */;
   const tmp5 = closure_6;
   let str2 = "control-primary-text-default";
   if (obj6.isThemeDark(tmp)) {
     str2 = "control-overlay-primary-text-default";
   }
   obj.color = str2;
-  obj.icon = tmp5(require(8637) /* OrbsIcon */.OrbsIcon, obj);
+  obj.icon = tmp5(require(8681) /* OrbsIcon */.OrbsIcon, obj);
   obj.iconPosition = "start";
   obj.loading = isRedeeming;
   obj.onPress = onPress.onPress;
@@ -135,5 +135,5 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
     isRedeeming = virtualCurrencyBalance < orbPriceAmount;
   }
   obj.disabled = isRedeeming;
-  return tmp4(require(4544) /* Button */.Button, obj);
+  return tmp4(require(4578) /* Button */.Button, obj);
 };

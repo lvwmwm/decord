@@ -1,10 +1,10 @@
-// Module ID: 8679
-// Function ID: 68890
+// Module ID: 8723
+// Function ID: 69041
 // Name: NameplateUser
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 7984, 1874, 1212, 4127, 4555, 8596, 7916, 7882, 566, 3970, 4362, 8318, 8319, 1273, 8680, 5164, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 689, 8022, 1874, 1212, 4161, 4589, 8640, 7952, 7918, 566, 4004, 4396, 8356, 8357, 1273, 8724, 5198, 2]
 // Exports: default
 
-// Module 8679 (NameplateUser)
+// Module 8723 (NameplateUser)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -69,7 +69,7 @@ function PlaceholderUser(end) {
   obj.label = user.name;
   obj.start = start;
   obj.end = flag;
-  return callback(require(5164) /* TableRowInner */.TableRow, obj);
+  return callback(require(5198) /* TableRowInner */.TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = { container: { position: "relative", flex: 1, justifyContent: "center", overflow: "hidden" } };
@@ -86,7 +86,7 @@ export default function NameplateProductPreview(product) {
   let firstAvatarDecoration;
   let firstNameplate;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7984) /* ItemsSortingHat */;
+  let obj = require(8022) /* ItemsSortingHat */;
   const shopProductItems = obj.useShopProductItems(product.product);
   ({ firstNameplate, firstAvatarDecoration } = shopProductItems);
   let obj1 = require(1874) /* getNameplateData */;
@@ -106,7 +106,7 @@ export default function NameplateProductPreview(product) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const items1 = [intl2.string(require(1212) /* getSystemLocale */.t["yzW/fZ"]), " \u2014 3"];
     obj3.children = items1;
-    items[1] = callback2(require(4127) /* Text */.Text, obj3);
+    items[1] = callback2(require(4161) /* Text */.Text, obj3);
     const obj4 = { user: nameplateSampleUsers.phibi, start: true };
     items[2] = callback(PlaceholderUser, obj4);
     const obj5 = { previewNameplate: nameplateData, previewAvatarDecoration: firstAvatarDecoration };
@@ -117,7 +117,7 @@ export default function NameplateProductPreview(product) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const items2 = [intl3.string(require(1212) /* getSystemLocale */.t["NG43/6"]), " \u2014 12"];
     obj7.children = items2;
-    items[5] = callback2(require(4127) /* Text */.Text, obj7);
+    items[5] = callback2(require(4161) /* Text */.Text, obj7);
     const obj8 = { user: nameplateSampleUsers.boom, start: true };
     items[6] = callback(PlaceholderUser, obj8);
     obj1.children = items;
@@ -127,16 +127,16 @@ export default function NameplateProductPreview(product) {
     const _HermesInternal = HermesInternal;
     items4[1] = "" + tmp.memberListGradient.color + "00";
     obj9.colors = items4;
-    items3[1] = callback(importDefault(4555), obj9);
+    items3[1] = callback(importDefault(4589), obj9);
     const obj10 = { style: tmp.memberListGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 } };
     const _HermesInternal2 = HermesInternal;
-    const tmp19 = importDefault(4555);
+    const tmp19 = importDefault(4589);
     const items5 = ["" + tmp.memberListGradient.color + "00", tmp.memberListGradient.color];
     obj10.colors = items5;
-    items3[2] = callback(importDefault(4555), obj10);
+    items3[2] = callback(importDefault(4589), obj10);
     obj.children = items3;
     tmp5 = callback2(View, obj);
-    const tmp22 = importDefault(4555);
+    const tmp22 = importDefault(4589);
   }
   return tmp5;
 };

@@ -1,10 +1,10 @@
-// Module ID: 4589
-// Function ID: 40237
+// Module ID: 4623
+// Function ID: 40352
 // Name: staticRouteToTranslation
 // Dependencies: [1911, 1212, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 4589 (staticRouteToTranslation)
+// Module 4623 (staticRouteToTranslation)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;

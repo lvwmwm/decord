@@ -1,10 +1,10 @@
-// Module ID: 16274
-// Function ID: 126318
+// Module ID: 16313
+// Function ID: 126474
 // Name: handleTouch
-// Dependencies: [5, 57, 31, 27, 1342, 653, 33, 4131, 689, 5495, 1212, 5588, 1557, 5093, 4541, 5656, 8364, 480, 4127, 4544, 8278, 8272, 2]
+// Dependencies: [5, 57, 31, 27, 1342, 653, 33, 4165, 689, 5530, 1212, 5623, 1557, 5127, 4575, 7960, 8402, 480, 4161, 4578, 8316, 8310, 2]
 // Exports: default
 
-// Module 16274 (handleTouch)
+// Module 16313 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -26,7 +26,7 @@ function handleTouch() {
   closure_7.dismiss();
 }
 function handleMoreActions() {
-  let obj = require(5495) /* showSimpleActionSheet */;
+  let obj = require(5530) /* showSimpleActionSheet */;
   obj = { key: "NewTermsModalMore", options: null, hasIcons: false };
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -66,11 +66,11 @@ export default function NewTermsModal() {
   const memo = React.useMemo(() => outer1_9.getAction(), []);
   const tmp3 = callback2(React.useState(false), 2);
   importDefault = tmp3[1];
-  let obj = memo(5093);
+  let obj = memo(5127);
   // CreateGeneratorClosureLongIndex (0x67)
-  const dependencyMap = React.useCallback(callback(obj.useNavigatorBackPressHandler(memo(4541).BackPressHandler.minimize)), []);
+  const dependencyMap = React.useCallback(callback(obj.useNavigatorBackPressHandler(memo(4575).BackPressHandler.minimize)), []);
   obj = { type: memo(480).ImpressionTypes.VIEW, name: memo(480).ImpressionNames.USER_AGREEMENTS, properties: { required_action: memo } };
-  importDefault(8364)(obj, {}, []);
+  importDefault(8402)(obj, {}, []);
   let tmp6 = null;
   if (null != memo) {
     obj = {};
@@ -86,36 +86,36 @@ export default function NewTermsModal() {
     const obj3 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold" };
     const intl = memo(1212).intl;
     obj3.children = intl.string(memo(1212).t["7glvXu"]);
-    const items2 = [callback3(memo(4127).Text, obj3), , , , , , ];
+    const items2 = [callback3(memo(4161).Text, obj3), , , , , , ];
     const obj4 = { variant: "text-md/normal", style: tmp.description };
     const intl2 = memo(1212).intl;
     const obj5 = { url: constants.TERMS_SUMMARY };
     obj4.children = intl2.format(memo(1212).t.CN0Hvb, obj5);
-    items2[1] = callback3(memo(4127).Text, obj4);
+    items2[1] = callback3(memo(4161).Text, obj4);
     const obj6 = { variant: "text-md/normal" };
     const intl3 = memo(1212).intl;
     const obj7 = { url: constants.TERMS };
     obj6.children = intl3.format(memo(1212).t.iw0hFi, obj7);
-    items2[2] = callback3(memo(4127).Text, obj6);
+    items2[2] = callback3(memo(4161).Text, obj6);
     const obj8 = { variant: "text-md/normal" };
     const intl4 = memo(1212).intl;
     const obj9 = { url: constants.PAID_TERMS };
     obj8.children = intl4.format(memo(1212).t["36klnD"], obj9);
-    items2[3] = callback3(memo(4127).Text, obj8);
+    items2[3] = callback3(memo(4161).Text, obj8);
     const obj10 = { variant: "text-md/normal" };
     const intl5 = memo(1212).intl;
     const obj11 = { url: constants.PRIVACY };
     obj10.children = intl5.format(memo(1212).t.TquFBF, obj11);
-    items2[4] = callback3(memo(4127).Text, obj10);
+    items2[4] = callback3(memo(4161).Text, obj10);
     const obj12 = { variant: "text-md/normal" };
     const intl6 = memo(1212).intl;
     const obj13 = { url: constants.GUIDELINES };
     obj12.children = intl6.format(memo(1212).t.ia96Tb, obj13);
-    items2[5] = callback3(memo(4127).Text, obj12);
+    items2[5] = callback3(memo(4161).Text, obj12);
     const obj14 = { variant: "text-md/normal", style: tmp.agreementDescription };
     const intl7 = memo(1212).intl;
     obj14.children = intl7.string(memo(1212).t["+USXQE"]);
-    items2[6] = callback3(memo(4127).Text, obj14);
+    items2[6] = callback3(memo(4161).Text, obj14);
     obj2.children = items2;
     const items3 = [callback4(closure_8, obj2), , ];
     const obj15 = { style: tmp.stickyFooter };
@@ -129,23 +129,23 @@ export default function NewTermsModal() {
     };
     const intl8 = memo(1212).intl;
     obj16.text = intl8.string(memo(1212).t["+TBKL1"]);
-    obj15.children = callback3(memo(4544).Button, obj16);
+    obj15.children = callback3(memo(4578).Button, obj16);
     items3[1] = callback3(closure_6, obj15);
     const obj17 = {};
     const items4 = [tmp.navbarRight, ];
     const obj18 = { top };
     items4[1] = obj18;
     obj17.style = items4;
-    obj17.source = importDefault(8272);
+    obj17.source = importDefault(8310);
     obj17.color = tmp.navbarRight.tintColor;
     obj17.onPress = handleMoreActions;
     obj17.accessibilityRole = "button";
     const intl9 = memo(1212).intl;
     obj17.accessibilityLabel = intl9.string(memo(1212).t["UKOtz+"]);
-    items3[2] = callback3(importDefault(8278), obj17);
+    items3[2] = callback3(importDefault(8316), obj17);
     obj.children = items3;
     tmp6 = callback4(closure_6, obj);
-    const tmp16 = importDefault(8278);
+    const tmp16 = importDefault(8316);
   }
   return tmp6;
 };

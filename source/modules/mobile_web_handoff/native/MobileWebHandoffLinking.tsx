@@ -1,9 +1,9 @@
-// Module ID: 11750
-// Function ID: 91271
+// Module ID: 11789
+// Function ID: 91422
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1194, 653, 4338, 11751, 11753, 675, 490, 11754, 1443, 3828, 2]
+// Dependencies: [5, 1194, 653, 4372, 11790, 11792, 675, 490, 11793, 1443, 3862, 2]
 
-// Module 11750 (createHandoffTokenWithLoadingModal)
+// Module 11789 (createHandoffTokenWithLoadingModal)
 import _createHandoffToken from "_createHandoffToken";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

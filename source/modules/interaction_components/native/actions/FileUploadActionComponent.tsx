@@ -1,10 +1,10 @@
-// Module ID: 16148
-// Function ID: 125110
+// Module ID: 16187
+// Function ID: 125266
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 27, 1348, 4469, 653, 33, 4131, 4026, 5164, 13609, 1212, 4354, 4092, 9792, 6625, 5119, 7832, 44, 566, 11273, 4712, 4671, 16149, 1882, 4471, 4675, 11112, 6134, 9611, 1820, 9610, 4673, 4542, 689, 5501, 2]
+// Dependencies: [5, 31, 27, 1348, 4503, 653, 33, 4165, 4060, 5198, 13653, 1212, 4388, 4126, 9832, 6661, 5153, 7868, 44, 566, 11311, 4746, 4705, 16188, 1882, 4505, 4709, 11150, 6168, 9651, 1820, 9650, 4707, 4576, 689, 5536, 2]
 // Exports: default
 
-// Module 16148 (_createForOfIteratorHelperLoose)
+// Module 16187 (_createForOfIteratorHelperLoose)
 import ME from "ME";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import { View } from "_createForOfIteratorHelperLoose";
@@ -104,28 +104,28 @@ function MainAreaCanUpload(arg0) {
   let types;
   ({ minValues, maxValues } = arg0);
   ({ openFilePicker, types, maxSizeBytes } = arg0);
-  let obj = require(4026) /* formatSize */;
+  let obj = require(4060) /* formatSize */;
   obj = { onPress: openFilePicker };
-  obj = { IconComponent: require(13609) /* FileUpIcon */.FileUpIcon };
-  obj.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj);
+  obj = { IconComponent: require(13653) /* FileUpIcon */.FileUpIcon };
+  obj.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.format(require(1212) /* getSystemLocale */.t["/2JwTv"], { maxValues });
-  const formatSizeResult = obj.formatSize(maxSizeBytes / require(4026) /* formatSize */.BYTE_IN_KB, { useKibibytes: true, useSpace: true });
-  obj.subLabel = require(4354) /* _createForOfIteratorHelperLoose */.getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult);
+  const formatSizeResult = obj.formatSize(maxSizeBytes / require(4060) /* formatSize */.BYTE_IN_KB, { useKibibytes: true, useSpace: true });
+  obj.subLabel = require(4388) /* _createForOfIteratorHelperLoose */.getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult);
   obj.start = true;
   obj.end = true;
   obj.arrow = true;
-  return callback(require(5164) /* TableRowInner */.TableRow, obj);
+  return callback(require(5198) /* TableRowInner */.TableRow, obj);
 }
 function MainAreaLimitReached() {
   let obj = { icon: null, label: null, subLabel: null, disabled: true, start: true, end: true };
-  obj = { IconComponent: require(4092) /* CircleCheckIcon */.CircleCheckIcon };
-  obj.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj);
+  obj = { IconComponent: require(4126) /* CircleCheckIcon */.CircleCheckIcon };
+  obj.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t["0PhgpK"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.subLabel = intl2.string(require(1212) /* getSystemLocale */.t.HYg2Hn);
-  return callback(require(5164) /* TableRowInner */.TableRow, obj);
+  return callback(require(5198) /* TableRowInner */.TableRow, obj);
 }
 function File(upload) {
   upload = upload.upload;
@@ -135,9 +135,9 @@ function File(upload) {
   obj = { style: callback2().defaultAttachmentIconWrapper };
   const tmp = callback2();
   const tmp2 = callback;
-  obj.children = callback(upload(9792).AttachmentIcon, { fileName: upload.filename });
+  obj.children = callback(upload(9832).AttachmentIcon, { fileName: upload.filename });
   obj.defaultPreview = callback(View, obj);
-  obj.icon = callback(handleRemoveFile(9792), obj);
+  obj.icon = callback(handleRemoveFile(9832), obj);
   let filename = upload.filename;
   if (null == filename) {
     const intl = upload(1212).intl;
@@ -147,17 +147,17 @@ function File(upload) {
   const obj2 = {
     variant: "tertiary",
     size: "sm",
-    icon: callback(upload(5119).XSmallIcon, { size: "sm" }),
+    icon: callback(upload(5153).XSmallIcon, { size: "sm" }),
     onPress() {
       return handleRemoveFile(upload.id);
     }
   };
   const intl2 = upload(1212).intl;
   obj2.accessibilityLabel = intl2.string(upload(1212).t.N86XcP);
-  obj.trailing = callback(upload(6625).IconButton, obj2);
+  obj.trailing = callback(upload(6661).IconButton, obj2);
   obj.start = true;
   obj.end = true;
-  return tmp2(upload(5164).TableRow, obj);
+  return tmp2(upload(5198).TableRow, obj);
 }
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let closure_11 = _createForOfIteratorHelperLoose.createStyles({ defaultAttachmentIconWrapper: { width: 32, alignItems: "center" } });

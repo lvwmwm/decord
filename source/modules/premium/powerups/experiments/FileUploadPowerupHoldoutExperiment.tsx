@@ -1,9 +1,9 @@
-// Module ID: 4058
-// Function ID: 33837
+// Module ID: 4092
+// Function ID: 33939
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 4058 (apexExperiment)
+// Module 4092 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-03-file-upload-powerup-holdout", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

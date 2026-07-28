@@ -1,12 +1,12 @@
-// Module ID: 10678
-// Function ID: 83137
+// Module ID: 10716
+// Function ID: 83258
 // Name: VideoButton
-// Dependencies: [31, 27, 1347, 4144, 4145, 4150, 1194, 4178, 10456, 4149, 33, 4131, 10465, 10679, 566, 8769, 4951, 10680, 8763, 10474, 10466, 1212, 10682, 10683, 10178, 10699, 10700, 4324, 4310, 4195, 10547, 10701, 5997, 8987, 5462, 5482, 10469, 10702, 10734, 10744, 2]
+// Dependencies: [31, 27, 1347, 4178, 4179, 4184, 1194, 4212, 10494, 4183, 33, 4165, 10503, 10717, 566, 8813, 4985, 10718, 8807, 10512, 10504, 1212, 10720, 10721, 10218, 10737, 10738, 4358, 4344, 4229, 10585, 10739, 6031, 9031, 5497, 5517, 10507, 10740, 10772, 10782, 2]
 // Exports: default
 
-// Module 10678 (VideoButton)
+// Module 10716 (VideoButton)
 import registerAsset from "registerAsset";
-import { View } from "module_4324";
+import { View } from "module_4358";
 import closure_6 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
@@ -161,7 +161,7 @@ class DisconnectStreamButton {
     items = [, ];
     items[0] = View;
     items[1] = c10;
-    f83152 = obj.useStateFromStores(items, () => {
+    f83273 = obj.useStateFromStores(items, () => {
       const selectedParticipant = outer1_7.getSelectedParticipant(channel.id);
       if (null != selectedParticipant) {
         if (selectedParticipant.type !== outer1_13.ACTIVITY) {
@@ -193,7 +193,7 @@ class DisconnectStreamButton {
       tmp5 = closure_3;
       num = 20;
       obj = {};
-      tmp6 = f83152;
+      tmp6 = f83273;
       num2 = 26;
       obj.source = require("registerAsset");
       tmp7 = channel;
@@ -232,15 +232,15 @@ function LeaveActivityButton(isSmallSize) {
     obj.applicationId = applicationId;
     obj.leaveActivity(obj);
   };
-  obj.source = importDefault(10701);
+  obj.source = importDefault(10739);
   obj.isSmallSize = isSmallSize.isSmallSize;
-  return callback(importAll(10466).PrimaryActionButton, obj);
+  return callback(importAll(10504).PrimaryActionButton, obj);
 }
 function useActionBarSecondButtons(channel) {
   channel = channel.channel;
-  let obj = require(10178) /* useIsConnectedToVoiceChannelForId */;
+  let obj = require(10218) /* useIsConnectedToVoiceChannelForId */;
   let isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
-  const tmp2 = importDefault(5997)();
+  const tmp2 = importDefault(6031)();
   obj = {};
   let tmp3 = isConnectedToVoiceChannel;
   if (isConnectedToVoiceChannel) {
@@ -253,7 +253,7 @@ function useActionBarSecondButtons(channel) {
     isActive = !tmp2;
   }
   if (isActive) {
-    isActive = importDefault(10683)(channel).isActive;
+    isActive = importDefault(10721)(channel).isActive;
   }
   obj[obj2.SCREEN_SHARE_END] = isActive;
   if (isConnectedToVoiceChannel) {
@@ -277,7 +277,7 @@ function useActionBarSecondButton(channel) {
 }
 function useActionBarPrimaryButtons(channel) {
   channel = channel.channel;
-  let obj = channel(10178);
+  let obj = channel(10218);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [_isNativeReflectConstruct, closure_10];
   let closure_1 = channel(566).useStateFromStores(items, () => {
@@ -350,14 +350,14 @@ export default function ChannelCallActionBar(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp3 = useActionBarSecondButton({ channel });
   const tmp4 = useActionBarPrimaryButton({ channel });
-  const tmp2 = importDefault(5997)();
-  let obj = require(10469) /* useIsFiveButtonLayout */;
+  const tmp2 = importDefault(6031)();
+  let obj = require(10507) /* useIsFiveButtonLayout */;
   const isFiveButtonLayout = obj.useIsFiveButtonLayout(channel.id);
-  obj = { value: importDefault(5462)(importDefault(5482).CHANNEL_CALL_ACTION_BAR).analyticsLocations };
+  obj = { value: importDefault(5497)(importDefault(5517).CHANNEL_CALL_ACTION_BAR).analyticsLocations };
   obj = { pointerEvents: "box-none", style: isFiveButtonLayout ? tmp.containerForFiveButtonLayout : tmp.container };
   if (shouldShowConnectingScreen) {
     const obj1 = { channel };
-    let tmp10Result = callback(require(10702) /* VoiceSettingsActionSheet */.CallConnectingActionBar, obj1);
+    let tmp10Result = callback(require(10740) /* VoiceSettingsActionSheet */.CallConnectingActionBar, obj1);
   } else {
     const obj2 = {};
     let tmp12 = null;
@@ -381,10 +381,10 @@ export default function ChannelCallActionBar(arg0) {
     }
     items[1] = tmp19;
     const obj6 = { channel, isSmallSize: isFiveButtonLayout };
-    items[2] = callback(require(10734) /* ChannelCallMicButton */.ChannelCallMicButton, obj6);
+    items[2] = callback(require(10772) /* ChannelCallMicButton */.ChannelCallMicButton, obj6);
     if (obj3.END_REMOTE === tmp4) {
       const obj7 = { channel, isSmallSize: isFiveButtonLayout };
-      let tmp30 = callback(require(10744) /* DisconnectRemoteButton */.DisconnectRemoteButton, obj7);
+      let tmp30 = callback(require(10782) /* DisconnectRemoteButton */.DisconnectRemoteButton, obj7);
     } else if (obj3.END_STREAM === tmp4) {
       const obj8 = { channel, isSmallSize: isFiveButtonLayout };
       tmp30 = callback(DisconnectStreamButton, obj8);
@@ -406,7 +406,7 @@ export default function ChannelCallActionBar(arg0) {
   }
   obj.children = tmp10Result;
   obj.children = callback(View, obj);
-  return callback(require(5462) /* mergeLocations */.AnalyticsLocationProvider, obj);
+  return callback(require(5497) /* mergeLocations */.AnalyticsLocationProvider, obj);
 };
 export { VideoButton };
 export { ScreenshareButton };

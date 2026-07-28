@@ -1,10 +1,10 @@
-// Module ID: 4069
-// Function ID: 33889
+// Module ID: 4103
+// Function ID: 33991
 // Name: UserPlusIcon
-// Dependencies: [31, 33, 689, 3834, 4070, 2]
+// Dependencies: [31, 33, 689, 3868, 4104, 2]
 // Exports: UserPlusIcon
 
-// Module 4069 (UserPlusIcon)
+// Module 4103 (UserPlusIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UserPlusIcon = function UserPlusIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4070) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4104) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4070) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4104) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,9 +1,9 @@
-// Module ID: 13559
-// Function ID: 104311
+// Module ID: 13603
+// Function ID: 104484
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 57, 31, 27, 10404, 33, 4131, 566, 10918, 4544, 1212, 1184, 686, 1273, 12163, 4127, 3843, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 57, 31, 27, 10444, 33, 4165, 566, 10956, 4578, 1212, 1184, 686, 1273, 12206, 4161, 3877, 2]
 
-// Module 13559 (_isNativeReflectConstruct)
+// Module 13603 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import getSystemLocale from "getSystemLocale";
@@ -60,7 +60,7 @@ function MaybeClearBuildOverride() {
     obj.onPress = function clearOverride() {
       return _clearOverride(...arguments);
     };
-    return callback4(_require(4544).Button, obj);
+    return callback4(_require(4578).Button, obj);
   }
 }
 ({ NativeModules: closure_11, View: closure_12 } = get_ActivityIndicator);

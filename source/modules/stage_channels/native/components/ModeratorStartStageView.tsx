@@ -1,10 +1,10 @@
-// Module ID: 10618
-// Function ID: 82759
+// Module ID: 10656
+// Function ID: 82880
 // Name: ModeratorStartStageView
-// Dependencies: [57, 31, 1838, 33, 566, 8259, 10619, 8204, 8258, 10620, 8148, 10621, 1212, 10638, 10639, 2]
+// Dependencies: [57, 31, 1838, 33, 566, 8297, 10657, 8242, 8296, 10658, 8186, 10659, 1212, 10676, 10677, 2]
 // Exports: default
 
-// Module 10618 (ModeratorStartStageView)
+// Module 10656 (ModeratorStartStageView)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,13 +24,13 @@ export default function ModeratorStartStageView(channel) {
   const items = [_createForOfIteratorHelperLoose];
   const items1 = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(guild_id), items1);
-  let obj1 = guild_id(8259);
+  let obj1 = guild_id(8297);
   const first = callback(obj1.useGuildChannelScheduledEvents(channel.id), 1)[0];
-  let obj2 = guild_id(8204);
+  let obj2 = guild_id(8242);
   const canManageGuildEventResult = obj2.useManageResourcePermissions(channel).canManageGuildEvent(first);
-  let obj3 = guild_id(10620);
+  let obj3 = guild_id(10658);
   const isLive = obj3.useStageChannelStartEvent(channel.id).isLive;
-  let obj4 = guild_id(8148);
+  let obj4 = guild_id(8186);
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(first);
   if (null != nextRecurrenceIdInEvent) {
     const tmp6 = nextRecurrenceIdInEvent;
@@ -48,28 +48,28 @@ export default function ModeratorStartStageView(channel) {
       tmp15 = null;
       if (null != first) {
         obj1 = { channel, event: first, isLive, guild: stateFromStores, recurrenceId: tmp6 };
-        tmp15 = callback2(guild_id(10638).StartEventPrompt, obj1);
+        tmp15 = callback2(guild_id(10676).StartEventPrompt, obj1);
       }
     }
     const items2 = [tmp15, , , ];
     let tmp19 = null;
-    if (importDefault(10619)(channel.id, true).moderator) {
+    if (importDefault(10657)(channel.id, true).moderator) {
       obj2 = { channel, isLive };
-      tmp19 = callback2(guild_id(10639).StartStagePrompt, obj2);
+      tmp19 = callback2(guild_id(10677).StartStagePrompt, obj2);
     }
     items2[1] = tmp19;
     let tmp23 = null;
     if (tmp4) {
       obj3 = { channel, isLive, guild: stateFromStores };
-      tmp23 = callback2(guild_id(10638).ScheduleEventPrompt, obj3);
+      tmp23 = callback2(guild_id(10676).ScheduleEventPrompt, obj3);
     }
     items2[2] = tmp23;
     obj4 = { onContinue: channel.onSkip };
-    items2[3] = callback2(guild_id(10639).ContinueToStagePrompt, obj4);
+    items2[3] = callback2(guild_id(10677).ContinueToStagePrompt, obj4);
     obj.children = items2;
     obj.children = closure_7(closure_6, obj);
-    tmp8Result = callback2(importDefault(10621), obj);
-    const tmp11 = importDefault(10621);
+    tmp8Result = callback2(importDefault(10659), obj);
+    const tmp11 = importDefault(10659);
     const tmp13 = closure_7;
     const tmp14 = closure_6;
     const tmp8 = callback2;

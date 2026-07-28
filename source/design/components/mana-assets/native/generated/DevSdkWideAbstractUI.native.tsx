@@ -1,10 +1,10 @@
-// Module ID: 6918
-// Function ID: 59613
+// Module ID: 6954
+// Function ID: 59702
 // Name: DevSdkWideAbstractUI
-// Dependencies: [33, 5085, 6919, 2]
+// Dependencies: [33, 5119, 6955, 2]
 // Exports: DevSdkWideAbstractUI
 
-// Module 6918 (DevSdkWideAbstractUI)
+// Module 6954 (DevSdkWideAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevSdkWideAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const DevSdkWideAbstractUI = function DevSdkWideAbstractUI(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6919) };
+  obj = { uri: importDefault(6955) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const DevSdkWideAbstractUI = function DevSdkWideAbstractUI(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

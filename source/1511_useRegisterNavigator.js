@@ -1,5 +1,5 @@
 // Module ID: 1511
-// Function ID: 17401
+// Function ID: 17405
 // Name: useRegisterNavigator
 // Dependencies: [57, 31, 1465, 1482]
 // Exports: default

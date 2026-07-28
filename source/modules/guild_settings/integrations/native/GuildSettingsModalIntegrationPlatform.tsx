@@ -1,10 +1,10 @@
-// Module ID: 16359
-// Function ID: 127329
+// Module ID: 16398
+// Function ID: 127485
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8243, 653, 33, 4131, 689, 8242, 4472, 1212, 4562, 16320, 16360, 4815, 1392, 3977, 5501, 5164, 5502, 3835, 1456, 566, 4067, 5087, 6695, 6554, 1921, 7575, 4542, 4127, 5448, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8281, 653, 33, 4165, 689, 8280, 4506, 1212, 4596, 16359, 16399, 4849, 1392, 4011, 5536, 5198, 5537, 3869, 1456, 566, 4101, 5121, 6731, 6590, 1921, 7611, 4576, 4161, 5483, 2]
 // Exports: default
 
-// Module 16359 (_isNativeReflectConstruct)
+// Module 16398 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -237,7 +237,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     obj = { screen: outer1_15.CONNECTIONS, isRootScreen: true };
     obj.openUserSettings(obj);
   }
-  let obj = platformType(3835);
+  let obj = platformType(3869);
   const token = obj.useToken(closeGuildSettings(689).modules.mobile.TABLE_ROW_PADDING);
   let tmp2 = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp2;
@@ -248,7 +248,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ guild: outer1_11.getGuild(), submitting: outer1_11.isSubmitting(), hasChanges: outer1_11.hasChanges() }));
   const submitting = stateFromStoresObject.submitting;
   ({ hasChanges: closure_5, guild } = stateFromStoresObject);
-  let getPlatformUserUrl = closeGuildSettings(4067)();
+  let getPlatformUserUrl = closeGuildSettings(4101)();
   let obj4 = platformType(566);
   const items1 = [closure_11];
   const stateFromStores = obj4.useStateFromStores(items1, () => outer1_11.getProps().integrations);
@@ -264,7 +264,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
       fn = () => null;
     }
     obj.headerLeft = fn;
-    let obj5 = closeGuildSettings(4815);
+    let obj5 = closeGuildSettings(4849);
     const value = obj5.get(platformType);
     let name;
     if (null != value) {
@@ -321,10 +321,10 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     const items2 = [mapped, ];
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: formatResult };
-    items2[1] = callback3(platformType(4127).Text, obj6);
+    items2[1] = callback3(platformType(4161).Text, obj6);
     obj4.children = items2;
-    obj3.children = closure_17(platformType(4542).Stack, obj4);
-    const items3 = [callback3(platformType(7575).Form, obj3), callback3(platformType(5448).NavScrim, {})];
+    obj3.children = closure_17(platformType(4576).Stack, obj4);
+    const items3 = [callback3(platformType(7611).Form, obj3), callback3(platformType(5483).NavScrim, {})];
     obj2.children = items3;
     return closure_17(closure_18, obj2);
   }

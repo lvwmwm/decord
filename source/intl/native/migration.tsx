@@ -1,10 +1,10 @@
-// Module ID: 13170
-// Function ID: 101498
+// Module ID: 13214
+// Function ID: 101671
 // Name: IntlLink
-// Dependencies: [31, 33, 4131, 689, 3850, 3828, 3830, 1273, 2]
+// Dependencies: [31, 33, 4165, 689, 3884, 3862, 3864, 1273, 2]
 // Exports: IntlLink
 
-// Module 13170 (IntlLink)
+// Module 13214 (IntlLink)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -39,6 +39,6 @@ export const IntlLink = function IntlLink(target) {
       }
     }
   }
-  let obj = { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3850).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: target.children };
-  return jsx(target(1273).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3850).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: target.children });
+  let obj = { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3884).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: target.children };
+  return jsx(target(1273).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3884).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: target.children });
 };

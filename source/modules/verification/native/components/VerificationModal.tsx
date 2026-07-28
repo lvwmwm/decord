@@ -1,10 +1,10 @@
-// Module ID: 16266
-// Function ID: 126235
+// Module ID: 16305
+// Function ID: 126391
 // Name: PhoneThenEmailInterstitial
-// Dependencies: [5, 31, 27, 16267, 1342, 1850, 653, 33, 4131, 1273, 16268, 1212, 4544, 480, 5087, 6695, 8272, 5495, 5588, 16272, 9116, 9121, 9118, 9156, 9166, 9167, 9117, 16273, 9191, 9161, 566, 4099, 3990, 5517, 2]
+// Dependencies: [5, 31, 27, 16306, 1342, 1850, 653, 33, 4165, 1273, 16307, 1212, 4578, 480, 5121, 6731, 8310, 5530, 5623, 16311, 9160, 9165, 9162, 9200, 9210, 9211, 9161, 16312, 9235, 9205, 566, 4133, 4024, 5552, 2]
 // Exports: default
 
-// Module 16266 (PhoneThenEmailInterstitial)
+// Module 16305 (PhoneThenEmailInterstitial)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showActionSheet from "showActionSheet";
 import { View } from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ let closure_9;
 const require = arg1;
 function PhoneThenEmailInterstitial(navigation) {
   navigation = navigation.navigation;
-  let obj = { Illustration: navigation(16268).VerifyPhone };
+  let obj = { Illustration: navigation(16307).VerifyPhone };
   const intl = navigation(1212).intl;
   obj.title = intl.string(navigation(1212).t.KLnLIP);
   const intl2 = navigation(1212).intl;
@@ -42,7 +42,7 @@ function PhoneThenEmailInterstitial(navigation) {
     }
     navigation.push(ENTER_EMAIL);
   };
-  obj.children = jsx(navigation(4544).Button, {});
+  obj.children = jsx(navigation(4578).Button, {});
   obj.children = <View />;
   return jsx(navigation(1273).EmptyState, {});
 }
@@ -201,7 +201,7 @@ export default function VerificationModal() {
   };
   let intl = stateFromStores(1212).intl;
   obj.headerBackTitle = intl.string(stateFromStores(1212).t["13/7kX"]);
-  return jsx(stateFromStores(5517).Navigator, {
+  return jsx(stateFromStores(5552).Navigator, {
     screens: React.useMemo(() => (function getScreens() {
       function impressionProperties(RESEND_EMAIL) {
         return { impression_group: stateFromStores(outer3_2[13]).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: RESEND_EMAIL };

@@ -1,10 +1,10 @@
-// Module ID: 14893
-// Function ID: 113639
+// Module ID: 14937
+// Function ID: 113812
 // Name: Wrapper
-// Dependencies: [31, 27, 5868, 1838, 4971, 4326, 4147, 653, 33, 4131, 566, 10166, 4127, 1212, 14894, 3988, 3985, 2]
+// Dependencies: [31, 27, 5902, 1838, 5005, 4360, 4181, 653, 33, 4165, 566, 10206, 4161, 1212, 14938, 4022, 4019, 2]
 // Exports: default
 
-// Module 14893 (Wrapper)
+// Module 14937 (Wrapper)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -216,7 +216,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(3988).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4022).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

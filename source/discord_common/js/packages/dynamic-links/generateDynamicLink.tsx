@@ -1,10 +1,10 @@
-// Module ID: 12362
-// Function ID: 96123
+// Module ID: 12405
+// Function ID: 96293
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 57, 646, 491, 12363, 2]
+// Dependencies: [29, 57, 646, 491, 12406, 2]
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 12362 (_createForOfIteratorHelperLoose)
+// Module 12405 (_createForOfIteratorHelperLoose)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 
@@ -146,7 +146,7 @@ export default function generateDynamicLink(arg0, arg1) {
     const _encodeURIComponent2 = encodeURIComponent;
     encodeURIComponentResult4 = encodeURIComponent(iosFallbackLink);
   }
-  const combined = "" + "https://discordapp.onelink.me" + "/Hs5r/?deep_link_value=" + encodeURIComponentResult + "&pid=" + utmSource + "&af_force_deeplink=" + str3 + "&af_og_description=" + encodeURIComponent(importDefault(12363)()) + "&af_dp=" + encodeURIComponentResult1;
+  const combined = "" + "https://discordapp.onelink.me" + "/Hs5r/?deep_link_value=" + encodeURIComponentResult + "&pid=" + utmSource + "&af_force_deeplink=" + str3 + "&af_og_description=" + encodeURIComponent(importDefault(12406)()) + "&af_dp=" + encodeURIComponentResult1;
   let sum = combined;
   if (null != encodeURIComponentResult3) {
     const _HermesInternal = HermesInternal;

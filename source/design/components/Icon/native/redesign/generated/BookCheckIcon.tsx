@@ -1,10 +1,10 @@
-// Module ID: 4634
-// Function ID: 40329
+// Module ID: 4668
+// Function ID: 40444
 // Name: BookCheckIcon
-// Dependencies: [31, 33, 689, 3834, 4623, 2]
+// Dependencies: [31, 33, 689, 3868, 4657, 2]
 // Exports: BookCheckIcon
 
-// Module 4634 (BookCheckIcon)
+// Module 4668 (BookCheckIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const BookCheckIcon = function BookCheckIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4623) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4657) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4623) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4657) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

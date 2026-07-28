@@ -1,10 +1,10 @@
-// Module ID: 9001
-// Function ID: 70889
+// Module ID: 9045
+// Function ID: 71040
 // Name: TvIcon
-// Dependencies: [31, 33, 689, 3834, 9002, 2]
+// Dependencies: [31, 33, 689, 3868, 9046, 2]
 // Exports: TvIcon
 
-// Module 9001 (TvIcon)
+// Module 9045 (TvIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TvIcon = function TvIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9002) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9046) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9002) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9046) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

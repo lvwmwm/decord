@@ -1,24 +1,24 @@
-// Module ID: 7677
-// Function ID: 61443
+// Module ID: 7713
+// Function ID: 61533
 // Name: result
-// Dependencies: [4131, 3977, 689, 2]
+// Dependencies: [4165, 4011, 689, 2]
 // Exports: default
 
-// Module 7677 (result)
+// Module 7713 (result)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const result = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3977) /* AccessibilityAnnouncer */;
+  const obj = require(4011) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_630;
+  return require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_630;
 });
 let obj = {};
 const result1 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3977) /* AccessibilityAnnouncer */;
+  const obj = require(4011) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
+  return require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
 });
 obj.textColor = require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG;
 obj.linkColor = require("_createForOfIteratorHelperLoose").colors.TEXT_LINK;

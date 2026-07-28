@@ -1,19 +1,19 @@
-// Module ID: 10938
-// Function ID: 84995
+// Module ID: 10976
+// Function ID: 85118
 // Name: openOAuth2Modal
-// Dependencies: [653, 10615, 675, 8138, 3828, 10939, 483, 4338, 9956, 1935, 8112, 2]
+// Dependencies: [653, 10653, 675, 8176, 3862, 10977, 483, 4372, 9996, 1935, 8150, 2]
 // Exports: installApplication, installPrivateChannelIntegration
 
-// Module 10938 (openOAuth2Modal)
+// Module 10976 (openOAuth2Modal)
 import { AnalyticEvents } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 function openOAuth2Modal(arg0) {
   const _require = arg0;
-  let obj = importDefault(4338);
+  let obj = importDefault(4372);
   obj.popWithKey(closure_5);
   obj = {};
-  const obj2 = importDefault(4338);
+  const obj2 = importDefault(4372);
   const merged = Object.assign(arg0);
   obj["dismissOAuthModal"] = function dismissOAuthModal() {
     if (null != closure_0.dismissOAuthModal) {
@@ -21,7 +21,7 @@ function openOAuth2Modal(arg0) {
     }
     outer1_1(outer1_3[7]).popWithKey(outer1_5);
   };
-  obj2.pushLazy(_require(1935)(9956, dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(_require(1935)(9996, dependencyMap.paths), obj, closure_5);
 }
 const result = require("expandLocation").fileFinishedImporting("utils/native/ApplicationUtils.tsx");
 
@@ -47,7 +47,7 @@ export const installApplication = function installApplication(arg0) {
           outer1_1(outer1_3[4]).openURL(customInstallUrl);
         }
     };
-    return customInstallUrl(8138).handleClick(obj);
+    return customInstallUrl(8176).handleClick(obj);
   } else {
     if (null != integrationTypesConfig) {
       const _Object = Object;
@@ -126,9 +126,9 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   let callback;
   let channelId;
   ({ applicationId, channelId, callback } = arg0);
-  let obj = importDefault(4338);
+  let obj = importDefault(4372);
   obj = { clientId: applicationId };
-  const items = [require(8112) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
+  const items = [require(8150) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
   obj.scopes = items;
   obj.channelId = channelId;
   obj.dismissOAuthModal = function dismissOAuthModal() {
@@ -136,5 +136,5 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   };
   obj.disableGuildSelect = true;
   obj.callback = callback;
-  obj.pushLazy(require(1935) /* maybeLoadBundle */(9956, dependencyMap.paths), obj, closure_5);
+  obj.pushLazy(require(1935) /* maybeLoadBundle */(9996, dependencyMap.paths), obj, closure_5);
 };

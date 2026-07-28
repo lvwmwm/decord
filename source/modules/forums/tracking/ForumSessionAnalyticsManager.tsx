@@ -1,9 +1,9 @@
-// Module ID: 6030
-// Function ID: 54090
+// Module ID: 6064
+// Function ID: 54209
 // Name: createSessionData
 // Dependencies: [6, 7, 491, 2]
 
-// Module 6030 (createSessionData)
+// Module 6064 (createSessionData)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

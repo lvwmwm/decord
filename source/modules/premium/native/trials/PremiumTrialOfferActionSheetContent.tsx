@@ -1,8 +1,8 @@
-// Module ID: 14719
-// Function ID: 112198
-// Dependencies: [31, 27, 33, 4131, 689, 10953, 1212, 8941, 4633, 6727, 4127, 3777, 14720, 4544, 6570, 2]
+// Module ID: 14763
+// Function ID: 112371
+// Dependencies: [31, 27, 33, 4165, 689, 10991, 1212, 8985, 4667, 6763, 4161, 3811, 14764, 4578, 6606, 2]
 
-// Module 14719
+// Module 14763
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,26 +28,26 @@ const memoResult = require("result").memo(function PremiumTrialOfferActionSheetC
   if (null != trialOffer) {
     subscription_trial = trialOffer.subscription_trial;
   }
-  let obj = { IconComponent: require(10953) /* UserIcon */.UserIcon };
+  let obj = { IconComponent: require(10991) /* UserIcon */.UserIcon };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(require(1212) /* getSystemLocale */.t.uVUtPw);
   const items = [obj, , ];
-  obj = { IconComponent: require(8941) /* ChatSmileIcon */.ChatSmileIcon };
+  obj = { IconComponent: require(8985) /* ChatSmileIcon */.ChatSmileIcon };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl3.string(require(1212) /* getSystemLocale */.t["R2IV/Q"]);
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl4.string(require(1212) /* getSystemLocale */.t["3SUJLd"]);
   items[1] = obj;
-  obj = { IconComponent: require(4633) /* FolderIcon */.FolderIcon };
+  obj = { IconComponent: require(4667) /* FolderIcon */.FolderIcon };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl5.string(require(1212) /* getSystemLocale */.t["u/NJKc"]);
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl6.string(require(1212) /* getSystemLocale */.t.i1UuMk);
   items[2] = obj;
   const obj1 = { style: tmp.contentContainer };
-  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(require(6727) /* AccountAgeTier10LargeBadge */.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
+  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
   const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title };
   const intl7 = require(1212) /* getSystemLocale */.intl;
   const obj4 = {};
@@ -57,7 +57,7 @@ const memoResult = require("result").memo(function PremiumTrialOfferActionSheetC
   }
   let displayNameFromSku = null;
   if (null != sku_id) {
-    let obj7 = require(3777) /* _createForOfIteratorHelperLoose */;
+    let obj7 = require(3811) /* _createForOfIteratorHelperLoose */;
     let sku_id1;
     if (null != subscription_trial) {
       sku_id1 = subscription_trial.sku_id;
@@ -67,8 +67,8 @@ const memoResult = require("result").memo(function PremiumTrialOfferActionSheetC
   obj4.displayName = displayNameFromSku;
   obj4.duration = intervalDuration;
   obj3.children = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.q8eMc0, obj4);
-  items1[1] = callback(require(4127) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14720), { perks: items });
+  items1[1] = callback(require(4161) /* Text */.Text, obj3);
+  items1[2] = callback(importDefault(14764), { perks: items });
   const obj5 = { style: tmp.buttonContainer };
   const obj6 = { size: "lg" };
   const intl8 = require(1212) /* getSystemLocale */.intl;
@@ -76,8 +76,8 @@ const memoResult = require("result").memo(function PremiumTrialOfferActionSheetC
   obj6.onPress = onConfirm.onConfirm;
   obj6.grow = true;
   obj7 = { size: "md", color: importDefault(689).unsafe_rawColors.WHITE };
-  obj6.icon = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj7);
-  obj5.children = callback(require(4544) /* Button */.Button, obj6);
+  obj6.icon = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj7);
+  obj5.children = callback(require(4578) /* Button */.Button, obj6);
   items1[3] = callback(View, obj5);
   obj1.children = items1;
   return closure_5(View, obj1);

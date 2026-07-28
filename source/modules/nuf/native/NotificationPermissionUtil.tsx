@@ -1,10 +1,10 @@
-// Module ID: 11444
-// Function ID: 88984
+// Module ID: 11482
+// Function ID: 89103
 // Name: _requestPushNotificationPermission
-// Dependencies: [57, 5, 31, 27, 11442, 11443, 653, 4345, 10634, 675, 11445, 11451, 11452, 566, 2]
+// Dependencies: [57, 5, 31, 27, 11480, 11481, 653, 4379, 10672, 675, 11483, 11489, 11490, 566, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 11444 (_requestPushNotificationPermission)
+// Module 11482 (_requestPushNotificationPermission)
 import _slicedToArray from "_slicedToArray";
 import EventActionType from "EventActionType";
 import result from "result";
@@ -26,8 +26,8 @@ function _enableProvisionalPushNotification() {
   return obj(...arguments);
 }
 function useCanSeePushNotificationNudge() {
-  const isTeenInStrictCountry = _require(11452).useIsTeenInStrictCountry();
-  let obj = _require(11452);
+  const isTeenInStrictCountry = _require(11490).useIsTeenInStrictCountry();
+  let obj = _require(11490);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_7.authorizationStatus);
   const tmp3 = callback(React.useState(false), 2);

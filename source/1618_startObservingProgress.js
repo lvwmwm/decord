@@ -1,5 +1,5 @@
 // Module ID: 1618
-// Function ID: 17971
+// Function ID: 17975
 // Name: startObservingProgress
 // Dependencies: [1585, 1607, 1619, 1621, 1589]
 

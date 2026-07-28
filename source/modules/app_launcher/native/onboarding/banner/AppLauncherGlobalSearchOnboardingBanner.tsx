@@ -1,10 +1,10 @@
-// Module ID: 11227
-// Function ID: 87341
+// Module ID: 11265
+// Function ID: 87460
 // Name: GlobalSearchCoachmark
-// Dependencies: [31, 27, 1455, 1345, 33, 4131, 689, 6556, 8377, 1212, 2]
+// Dependencies: [31, 27, 1455, 1345, 33, 4165, 689, 6592, 8415, 1212, 2]
 // Exports: default
 
-// Module 11227 (GlobalSearchCoachmark)
+// Module 11265 (GlobalSearchCoachmark)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -56,7 +56,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     obj = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     obj.surfaceMeasurements = obj;
     obj.position = "bottom";
-    tmp3 = jsx(markAsDismissed(8377).Coachmark, { x: -140, y: -40, width: diff, height: windowDimensions.height });
+    tmp3 = jsx(markAsDismissed(8415).Coachmark, { x: -140, y: -40, width: diff, height: windowDimensions.height });
   }
   return tmp3;
 };

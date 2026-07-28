@@ -1,10 +1,10 @@
-// Module ID: 13890
-// Function ID: 106340
+// Module ID: 13934
+// Function ID: 106513
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [31, 27, 5766, 33, 4131, 689, 6200, 11051, 1212, 2199, 4127, 6201, 4661, 4338, 13891, 1935, 1273, 10295, 13892, 13889, 13893, 13884, 2]
+// Dependencies: [31, 27, 5776, 33, 4165, 689, 6235, 11089, 1212, 2199, 4161, 6236, 4695, 4372, 13935, 1935, 1273, 10335, 13936, 13933, 13937, 13928, 2]
 // Exports: default
 
-// Module 13890 (FamilyCenterPendingLinkRow)
+// Module 13934 (FamilyCenterPendingLinkRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserLinkStatus } from "items";
@@ -19,7 +19,7 @@ const require = arg1;
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const tmp = callback3();
-  str(6200);
+  str(6235);
   if (undefined === str) {
     return null;
   } else {
@@ -39,9 +39,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj.pushLazy(str(outer1_2[15])(outer1_2[20], outer1_2.paths), obj);
       };
       obj.style = tmp.actionButton;
-      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13889) };
+      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13933) };
       obj.children = callback(str(1273).Icon, obj1);
-      let tmp5Result = callback(str(4661).PressableOpacity, obj);
+      let tmp5Result = callback(str(4695).PressableOpacity, obj);
       const tmp28 = callback;
     } else {
       obj = {};
@@ -66,9 +66,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
         const items = [, ];
         ({ actionButton: arr[0], actionButtonFirst: arr[1] } = tmp);
         obj2.style = items;
-        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10295) };
+        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10335) };
         obj2.children = callback(str(1273).Icon, obj4);
-        tmp9Result = callback(str(4661).PressableOpacity, obj2);
+        tmp9Result = callback(str(4695).PressableOpacity, obj2);
         const tmp9 = callback;
       }
       const items1 = [tmp9Result, ];
@@ -87,9 +87,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj.pushLazy(str(outer1_2[15])(outer1_2[18], outer1_2.paths), obj);
       };
       obj5.style = tmp.actionButton;
-      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13889) };
+      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13933) };
       obj5.children = callback(str(1273).Icon, obj7);
-      items1[1] = callback(str(4661).PressableOpacity, obj5);
+      items1[1] = callback(str(4695).PressableOpacity, obj5);
       obj.children = items1;
       tmp5Result = closure_6(closure_7, obj);
       const tmp18 = callback;
@@ -97,9 +97,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
       const tmp6 = closure_7;
     }
     const obj8 = { otherUser: str, actions: tmp5Result };
-    return callback(importDefault(13884), obj8);
+    return callback(importDefault(13928), obj8);
   }
-  tmp2 = importDefault(6201)();
+  tmp2 = importDefault(6236)();
 }
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = { container: { marginTop: 24 } };
@@ -117,9 +117,9 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterPendingLinks() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6200) /* useUserIdsForLinkStatus */;
+  let obj = require(6235) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11051) /* useAgeSpecificText */;
+  require(11089) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
   intl.formatToPlainString(importDefault(2199).IkAgkG, obj);
@@ -128,7 +128,7 @@ export default function FamilyCenterPendingLinks() {
   if (0 !== usersForLinkStatus.length) {
     obj = { style: tmp.container };
     const obj1 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: tmp4 };
-    const items = [callback(require(4127) /* Text */.Text, obj1), ];
+    const items = [callback(require(4161) /* Text */.Text, obj1), ];
     const obj2 = { style: tmp.content, children: usersForLinkStatus.map((id) => outer1_5(outer1_10, { otherUser: id }, "pending-" + id.id)) };
     items[1] = callback(View, obj2);
     obj.children = items;

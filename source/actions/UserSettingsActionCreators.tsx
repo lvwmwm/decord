@@ -1,10 +1,10 @@
-// Module ID: 6152
-// Function ID: 55097
+// Module ID: 6186
+// Function ID: 55216
 // Name: convertThemeToProto
-// Dependencies: [5, 3943, 1279, 1278, 653, 1281, 1331, 1282, 1313, 686, 3804, 2]
+// Dependencies: [5, 3977, 1279, 1278, 653, 1281, 1331, 1282, 1313, 686, 3838, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 6152 (convertThemeToProto)
+// Module 6186 (convertThemeToProto)
 import closure_3 from "SystemThemeState";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -68,19 +68,19 @@ export default {
       let obj2 = {};
     } else {
       obj2 = {};
-      const InlineAttachmentMedia = require(3804) /* explicitContentFromProto */.InlineAttachmentMedia;
+      const InlineAttachmentMedia = require(3838) /* explicitContentFromProto */.InlineAttachmentMedia;
       obj2.inlineAttachmentMedia = InlineAttachmentMedia.getSetting();
-      const InlineEmbedMedia = require(3804) /* explicitContentFromProto */.InlineEmbedMedia;
+      const InlineEmbedMedia = require(3838) /* explicitContentFromProto */.InlineEmbedMedia;
       obj2.inlineEmbedMedia = InlineEmbedMedia.getSetting();
-      const RenderEmbeds = require(3804) /* explicitContentFromProto */.RenderEmbeds;
+      const RenderEmbeds = require(3838) /* explicitContentFromProto */.RenderEmbeds;
       obj2.renderEmbeds = RenderEmbeds.getSetting();
-      const RenderReactions = require(3804) /* explicitContentFromProto */.RenderReactions;
+      const RenderReactions = require(3838) /* explicitContentFromProto */.RenderReactions;
       obj2.renderReactions = RenderReactions.getSetting();
-      const AnimateEmoji = require(3804) /* explicitContentFromProto */.AnimateEmoji;
+      const AnimateEmoji = require(3838) /* explicitContentFromProto */.AnimateEmoji;
       obj2.animateEmoji = AnimateEmoji.getSetting();
-      const AnimateStickers = require(3804) /* explicitContentFromProto */.AnimateStickers;
+      const AnimateStickers = require(3838) /* explicitContentFromProto */.AnimateStickers;
       obj2.animateStickers = AnimateStickers.getSetting();
-      const GifAutoPlay = require(3804) /* explicitContentFromProto */.GifAutoPlay;
+      const GifAutoPlay = require(3838) /* explicitContentFromProto */.GifAutoPlay;
       obj2.gifAutoPlay = GifAutoPlay.getSetting();
     }
     obj1.settings = obj2;

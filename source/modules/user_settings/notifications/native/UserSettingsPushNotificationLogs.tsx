@@ -1,10 +1,10 @@
-// Module ID: 14460
-// Function ID: 110534
+// Module ID: 14504
+// Function ID: 110707
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 57, 31, 27, 653, 33, 4131, 689, 6684, 587, 10289, 1557, 9171, 4661, 1212, 8134, 10291, 12231, 6619, 4127, 2]
+// Dependencies: [5, 57, 31, 27, 653, 33, 4165, 689, 6720, 587, 10329, 1557, 9215, 4695, 1212, 8172, 10331, 12274, 6655, 4161, 2]
 // Exports: default
 
-// Module 14460 (UserSettingsPushNotificationLogs)
+// Module 14504 (UserSettingsPushNotificationLogs)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -94,14 +94,14 @@ export default function UserSettingsPushNotificationLogs() {
   let obj = { style: tmp10.wrap };
   obj = { style: tmp10.searchWrap };
   obj = { size: "md", placeholder: "Filter (regex)", onChange: tmp2[1], defaultValue: first };
-  let items1 = [callback3(first(9171).SearchField, obj), ];
+  let items1 = [callback3(first(9215).SearchField, obj), ];
   let obj1 = { style: tmp10.shareButton };
   const intl = first(1212).intl;
   obj1.accessibilityLabel = intl.string(first(1212).t.leICvh);
   // CreateGeneratorClosureLongIndex (0x67)
   obj1.onPress = callback(tmp);
-  obj1.children = callback3(first(12231).ShareIcon, {});
-  items1[1] = callback3(first(4661).PressableOpacity, obj1);
+  obj1.children = callback3(first(12274).ShareIcon, {});
+  items1[1] = callback3(first(4695).PressableOpacity, obj1);
   obj.children = items1;
   let items2 = [callback4(View, obj), ];
   const obj2 = {};
@@ -118,18 +118,18 @@ export default function UserSettingsPushNotificationLogs() {
     }
     let obj = { style: tmp10.log };
     obj = { style: tmp10.code, variant: "text-xs/normal", children: new Date(item.receivedTimestamp).toISOString() };
-    const items = [outer1_7(first(4127).Text, obj), ];
+    const items = [outer1_7(first(4161).Text, obj), ];
     obj = { style: tmp10.code, variant: "text-sm/normal" };
     const obj1 = { style: tmp10.code, variant: "text-sm/normal", color: "text-brand" };
     const items1 = [str, "[", item.type, "]", " "];
     obj1.children = items1;
-    const items2 = [outer1_8(first(4127).Text, obj1), item.title, " - ", item.content];
+    const items2 = [outer1_8(first(4161).Text, obj1), item.title, " - ", item.content];
     obj.children = items2;
-    items[1] = outer1_8(first(4127).Text, obj);
+    items[1] = outer1_8(first(4161).Text, obj);
     obj.children = items;
     return outer1_8(outer1_6, obj, item.index);
   };
-  items2[1] = callback3(first(6619).FlashList, obj2);
+  items2[1] = callback3(first(6655).FlashList, obj2);
   obj.children = items2;
   return callback4(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 3748
-// Function ID: 28603
+// Module ID: 3782
+// Function ID: 28705
 // Name: isCommunicationDisabled
 // Dependencies: [2]
 // Exports: isMemberCommunicationDisabled
 
-// Module 3748 (isCommunicationDisabled)
+// Module 3782 (isCommunicationDisabled)
 function isCommunicationDisabled(arg0) {
   let tmp = null != arg0;
   if (tmp) {

@@ -1,9 +1,9 @@
-// Module ID: 13502
-// Function ID: 103804
+// Module ID: 13546
+// Function ID: 103977
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4034, 653, 4345, 8112, 13471, 10554, 8286, 13460, 4676, 4687, 5668, 4031, 2]
+// Dependencies: [5, 4068, 653, 4379, 8150, 13515, 10592, 8324, 13504, 4710, 4721, 5678, 4065, 2]
 
-// Module 13502 (RPC_LOCAL_SCOPE)
+// Module 13546 (RPC_LOCAL_SCOPE)
 import validateOpenInviteDialog from "validateOpenInviteDialog";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -25,10 +25,10 @@ const items = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE, RPC_AUTHENTICAT
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.handler = function handler(socket) {
-  let obj = require(13471) /* validateOpenInviteDialog */;
+  let obj = require(13515) /* validateOpenInviteDialog */;
   const result = obj.validateOpenInviteDialog();
   if (null != result.frame) {
-    let tmp10 = importDefault(10554);
+    let tmp10 = importDefault(10592);
     obj = { errorCode: constants2.UNKNOWN_ERROR };
     const prototype = tmp10.prototype;
     tmp10 = new tmp10(obj, "Cannot support frames (yet)");
@@ -41,7 +41,7 @@ obj.handler = function handler(socket) {
       tmp6 = id;
     }
     obj.targetApplicationId = tmp6;
-    const result1 = require(8286) /* showInstantInviteActionSheet */.showInstantInviteActionSheet(tmp2, obj);
+    const result1 = require(8324) /* showInstantInviteActionSheet */.showInstantInviteActionSheet(tmp2, obj);
   }
 };
 obj[RPCCommands.OPEN_INVITE_DIALOG] = obj;

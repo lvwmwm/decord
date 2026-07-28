@@ -1,9 +1,9 @@
-// Module ID: 16091
-// Function ID: 124494
+// Module ID: 16130
+// Function ID: 124650
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4992, 5036, 1348, 1911, 1838, 4809, 3, 686, 5078, 566, 5884, 1193, 21, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5026, 5070, 1348, 1911, 1838, 4843, 3, 686, 5112, 566, 5918, 1193, 21, 2]
 
-// Module 16091 (_isNativeReflectConstruct)
+// Module 16130 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import GuildsRequiringDeletedIdsSync from "GuildsRequiringDeletedIdsSync";
@@ -108,7 +108,7 @@ function handleDeletedEntityIds(guild_id, arg1) {
   });
 }
 function handleConnectionOpen() {
-  const all = importDefault(5884).getAll();
+  const all = importDefault(5918).getAll();
   all.then((arr) => {
     const item = arr.forEach((arg0) => {
       outer2_18(arg0);

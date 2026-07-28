@@ -1,10 +1,10 @@
-// Module ID: 9347
-// Function ID: 72998
+// Module ID: 9391
+// Function ID: 73149
 // Name: _updateEmoji
-// Dependencies: [5, 4992, 4809, 4470, 653, 662, 1331, 1313, 686, 507, 7888, 3977, 1212, 4031, 3772, 1327, 4999, 22, 4471, 2]
+// Dependencies: [5, 5026, 4843, 4504, 653, 662, 1331, 1313, 686, 507, 7924, 4011, 1212, 4065, 3806, 1327, 5033, 22, 4505, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 9347 (_updateEmoji)
+// Module 9391 (_updateEmoji)
 import closure_3 from "MAX_FAVORITES";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ function dedupeFavoriteEmojis(arr) {
       return customEmojiById;
     });
     const found = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-    obj = importDefault(4999)(found);
+    obj = importDefault(5033)(found);
     const items = [];
     HermesBuiltin.arraySpread(obj.keys(), 0);
     return items;
@@ -47,11 +47,11 @@ function getFavoriteEmojiNameOrId(id) {
     let name = id.id;
     if (null == name) {
       name = undefined;
-      const result = importDefault(3772).convertSurrogateToBase(id.surrogates);
+      const result = importDefault(3806).convertSurrogateToBase(id.surrogates);
       if (null != result) {
         name = result.name;
       }
-      const obj = importDefault(3772);
+      const obj = importDefault(3806);
     }
     if (null == name) {
       name = id.name;
@@ -101,7 +101,7 @@ export const uploadEmoji = function uploadEmoji(guildId) {
   let obj = importDefault(686);
   obj.dispatch({ type: "EMOJI_UPLOAD_START", guildId });
   const HTTP = guildId(507).HTTP;
-  obj = { url: Endpoints.GUILD_EMOJIS(guildId), body: { image, name, roles }, headers: importDefault(7888).buildHeadersForMd5(originalMd5) };
+  obj = { url: Endpoints.GUILD_EMOJIS(guildId), body: { image, name, roles }, headers: importDefault(7924).buildHeadersForMd5(originalMd5) };
   obj = {};
   let page;
   if (null != analyticsLocation) {
@@ -110,7 +110,7 @@ export const uploadEmoji = function uploadEmoji(guildId) {
   obj.client_event_source = page;
   obj.context = obj;
   obj.oldFormErrors = true;
-  const obj3 = importDefault(7888);
+  const obj3 = importDefault(7924);
   obj.rejectWithError = guildId(507).rejectWithMigratedError();
   const obj5 = guildId(507);
   return HTTP.post(obj).then((body) => {

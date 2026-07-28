@@ -1,10 +1,10 @@
-// Module ID: 14415
-// Function ID: 110227
+// Module ID: 14459
+// Function ID: 110400
 // Name: useHighlightNotifications
-// Dependencies: [1838, 7697, 653, 566, 10059, 1212, 14416, 2]
+// Dependencies: [1838, 7733, 653, 566, 10099, 1212, 14460, 2]
 // Exports: useHighlightNotifications
 
-// Module 14415 (useHighlightNotifications)
+// Module 14459 (useHighlightNotifications)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import createToggle from "createToggle";
 
@@ -29,7 +29,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
   getComponent() {
-    return require(14416) /* Row */.default;
+    return require(14460) /* Row */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

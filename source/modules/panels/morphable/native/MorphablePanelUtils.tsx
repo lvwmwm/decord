@@ -1,9 +1,9 @@
-// Module ID: 15771
-// Function ID: 121615
+// Module ID: 15810
+// Function ID: 121771
 // Name: clamp
-// Dependencies: [9977, 2]
+// Dependencies: [10017, 2]
 
-// Module 15771 (clamp)
+// Module 15810 (clamp)
 import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE";
 
 let closure_0;

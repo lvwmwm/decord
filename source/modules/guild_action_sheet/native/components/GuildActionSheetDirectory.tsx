@@ -1,10 +1,10 @@
-// Module ID: 13037
-// Function ID: 100873
+// Module ID: 13081
+// Function ID: 101046
 // Name: GuildActionSheetDirectory
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 5187, 5189, 13038, 12981, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 1557, 5221, 5223, 13082, 13025, 2]
 // Exports: default
 
-// Module 13037 (GuildActionSheetDirectory)
+// Module 13081 (GuildActionSheetDirectory)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -15,7 +15,7 @@ let closure_5;
 const require = arg1;
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 _createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose.actions = { paddingHorizontal: 16, gap: 24 };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
@@ -31,12 +31,12 @@ export default function GuildActionSheetDirectory(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { scrollable: true, startExpanded: expanded };
   obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
-  const items = [callback(importDefault(13038), { guild }), ];
+  const items = [callback(importDefault(13082), { guild }), ];
   obj = { style: tmp.actions };
-  const items1 = [callback(require(12981) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
+  const items1 = [callback(require(13025) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(13025) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
   obj.children = items1;
   items[1] = callback2(View, obj);
   obj.children = items;
-  obj.children = callback2(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  obj.children = callback2(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

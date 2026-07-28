@@ -1,10 +1,10 @@
-// Module ID: 13148
-// Function ID: 101282
+// Module ID: 13192
+// Function ID: 101455
 // Name: useAccessibilityNativeStackFocusTracking
-// Dependencies: [31, 4475, 4474, 2]
+// Dependencies: [31, 4509, 4508, 2]
 // Exports: useAccessibilityNativeStackFocusTracking
 
-// Module 13148 (useAccessibilityNativeStackFocusTracking)
+// Module 13192 (useAccessibilityNativeStackFocusTracking)
 import result from "result";
 
 const result = require("setAccessibilityFocusPrevious").fileFinishedImporting("design/components/Navigator/native/useAccessibilityNativeStackFocusTracking.tsx");

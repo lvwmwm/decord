@@ -1,5 +1,5 @@
 // Module ID: 1738
-// Function ID: 19485
+// Function ID: 19489
 // Name: eulerToQuaternion
 // Dependencies: [31, 1607, 1626, 1589]
 // Exports: useAnimatedSensor

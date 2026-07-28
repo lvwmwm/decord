@@ -1,10 +1,10 @@
-// Module ID: 12554
-// Function ID: 97171
+// Module ID: 12597
+// Function ID: 97341
 // Name: _updateGuildRoleSubscriptionGroupListing
-// Dependencies: [5, 653, 482, 507, 4030, 2]
+// Dependencies: [5, 653, 482, 507, 4064, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 12554 (_updateGuildRoleSubscriptionGroupListing)
+// Module 12597 (_updateGuildRoleSubscriptionGroupListing)
 import set from "set";
 import { Endpoints } from "ME";
 import { PriceTierTypes } from "sum";

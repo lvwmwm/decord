@@ -1,10 +1,10 @@
-// Module ID: 8426
-// Function ID: 67286
+// Module ID: 8470
+// Function ID: 67433
 // Name: getGameProfileStoreWebsiteData
-// Dependencies: [31, 33, 8422, 8427, 8418, 1212, 8429, 8431, 8433, 8435, 8437, 8441, 2]
+// Dependencies: [31, 33, 8466, 8471, 8462, 1212, 8473, 8475, 8477, 8479, 8481, 8485, 2]
 // Exports: default
 
-// Module 8426 (getGameProfileStoreWebsiteData)
+// Module 8470 (getGameProfileStoreWebsiteData)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -13,56 +13,56 @@ const result = require("ThirdPartyGameApplicationWebsiteCategory").fileFinishedI
 
 export default function getGameProfileStoreWebsiteData(category) {
   category = category.category;
-  if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.STEAM === category) {
+  if (require(8466) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.STEAM === category) {
     let obj = {};
     obj = { size: "md" };
-    obj.icon = jsx(require(8427) /* SteamNeutralIcon */.SteamNeutralIcon, { size: "md" });
-    obj.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.SteamStoreLink;
+    obj.icon = jsx(require(8471) /* SteamNeutralIcon */.SteamNeutralIcon, { size: "md" });
+    obj.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.SteamStoreLink;
     const intl7 = require(1212) /* getSystemLocale */.intl;
     obj.title = intl7.string(require(1212) /* getSystemLocale */.t.FsANs4);
     obj.url = category.url;
     return obj;
-  } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.EPICGAMES === category) {
+  } else if (require(8466) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.EPICGAMES === category) {
     const obj1 = {};
     const obj2 = { size: "md" };
-    obj1.icon = jsx(require(8429) /* EpicGamesNeutralIcon */.EpicGamesNeutralIcon, { size: "md" });
-    obj1.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.EpicStoreLink;
+    obj1.icon = jsx(require(8473) /* EpicGamesNeutralIcon */.EpicGamesNeutralIcon, { size: "md" });
+    obj1.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.EpicStoreLink;
     const intl6 = require(1212) /* getSystemLocale */.intl;
     obj1.title = intl6.string(require(1212) /* getSystemLocale */.t.ZbBMHa);
     obj1.url = category.url;
     return obj1;
-  } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.ROBLOX === category) {
+  } else if (require(8466) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.ROBLOX === category) {
     const obj3 = {};
     const obj4 = { size: "md" };
-    obj3.icon = jsx(require(8431) /* RobloxNeutralIcon */.RobloxNeutralIcon, { size: "md" });
-    obj3.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.RobloxStoreLink;
+    obj3.icon = jsx(require(8475) /* RobloxNeutralIcon */.RobloxNeutralIcon, { size: "md" });
+    obj3.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.RobloxStoreLink;
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj3.title = intl5.string(require(1212) /* getSystemLocale */.t["pJ+P+h"]);
     obj3.url = category.url;
     return obj3;
-  } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.BATTLENET === category) {
+  } else if (require(8466) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.BATTLENET === category) {
     const obj5 = {};
     const obj6 = { size: "md" };
-    obj5.icon = jsx(require(8433) /* BattlenetNeutralIcon */.BattlenetNeutralIcon, { size: "md" });
-    obj5.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.BattlenetStoreLink;
+    obj5.icon = jsx(require(8477) /* BattlenetNeutralIcon */.BattlenetNeutralIcon, { size: "md" });
+    obj5.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.BattlenetStoreLink;
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj5.title = intl4.string(require(1212) /* getSystemLocale */.t["A7grp+"]);
     obj5.url = category.url;
     return obj5;
-  } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.RIOT === category) {
+  } else if (require(8466) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.RIOT === category) {
     const obj7 = {};
     const obj8 = { size: "md" };
-    obj7.icon = jsx(require(8435) /* RiotGamesNeutralIcon */.RiotGamesNeutralIcon, { size: "md" });
-    obj7.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.RiotStoreLink;
+    obj7.icon = jsx(require(8479) /* RiotGamesNeutralIcon */.RiotGamesNeutralIcon, { size: "md" });
+    obj7.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.RiotStoreLink;
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj7.title = intl3.string(require(1212) /* getSystemLocale */.t.h6MapL);
     obj7.url = category.url;
     return obj7;
-  } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.MINECRAFT === category) {
+  } else if (require(8466) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.MINECRAFT === category) {
     const obj9 = {};
     const obj10 = { size: "md" };
-    obj9.icon = jsx(require(8437) /* MinecraftNeutralIcon */.MinecraftNeutralIcon, { size: "md" });
-    obj9.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.MinecraftStoreLink;
+    obj9.icon = jsx(require(8481) /* MinecraftNeutralIcon */.MinecraftNeutralIcon, { size: "md" });
+    obj9.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.MinecraftStoreLink;
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj9.title = intl2.string(require(1212) /* getSystemLocale */.t["HZbmO+"]);
     obj9.url = category.url;
@@ -70,8 +70,8 @@ export default function getGameProfileStoreWebsiteData(category) {
   } else if ("XBOX_GAME_PASS" === category) {
     obj = {};
     const obj11 = { size: "md" };
-    obj.icon = jsx(require(8441) /* XboxNeutralIcon */.XboxNeutralIcon, { size: "md" });
-    obj.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.XboxGamePassStoreLink;
+    obj.icon = jsx(require(8485) /* XboxNeutralIcon */.XboxNeutralIcon, { size: "md" });
+    obj.action = require(8462) /* GameProfileEmbedAction */.GameProfileTrackActionActions.XboxGamePassStoreLink;
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["QpN/Iz"]);
     obj.url = category.url;

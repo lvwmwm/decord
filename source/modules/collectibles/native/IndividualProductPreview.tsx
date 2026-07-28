@@ -1,10 +1,10 @@
-// Module ID: 8676
-// Function ID: 68877
+// Module ID: 8720
+// Function ID: 69028
 // Name: ProfilePreviewWrapper
-// Dependencies: [31, 27, 655, 33, 4131, 689, 4555, 8596, 8013, 8677, 8678, 8679, 1877, 656, 8681, 8684, 2]
+// Dependencies: [31, 27, 655, 33, 4165, 689, 4589, 8640, 8051, 8721, 8722, 8723, 1877, 656, 8725, 8728, 2]
 // Exports: IndividualProductPreview
 
-// Module 8676 (ProfilePreviewWrapper)
+// Module 8720 (ProfilePreviewWrapper)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
@@ -39,7 +39,7 @@ function ProfilePreviewWrapper(children) {
   obj = { style: tmp.profilePreviewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 } };
   const items1 = ["" + tmp.profilePreviewGradient.color + "00", tmp.profilePreviewGradient.color];
   obj.colors = items1;
-  items[1] = callback(importDefault(4555), obj);
+  items[1] = callback(importDefault(4589), obj);
   obj.children = items;
   obj.children = callback2(closure_4, obj);
   return callback(closure_3, obj);
@@ -62,11 +62,11 @@ function ProfileFramePreview(arg0) {
   let profileFrame;
   let width;
   ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = require(8596) /* useCurrentUser */;
+  let obj = require(8640) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress };
   const currentUser = obj.useCurrentUser();
   obj = { profileFrame, user: currentUser, maxWidth: width, style: _createForOfIteratorHelperLoose().profilePreview };
-  obj.children = callback(importDefault(8677), obj);
+  obj.children = callback(importDefault(8721), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 class AvatarDecorationPreview {
@@ -135,11 +135,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = callback(require(8681) /* FractionalNitroPreview */.FractionalNitroPreview, {});
+      let tmp5 = callback(require(8725) /* FractionalNitroPreview */.FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = callback(require(8684) /* OrbBadgePreview */.OrbBadgePreview, {});
+        tmp5 = callback(require(8728) /* OrbBadgePreview */.OrbBadgePreview, {});
       }
     }
     return tmp5;

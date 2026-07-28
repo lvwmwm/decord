@@ -1,10 +1,10 @@
-// Module ID: 12519
-// Function ID: 96933
+// Module ID: 12562
+// Function ID: 97103
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getMobileBoostingEnabled, getRecommendedBoostCount, getShouldRemoveYearlyUpsell
 
-// Module 12519 (apexExperiment)
+// Module 12562 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-mobile-boosting-optimizations", kind: "user", defaultConfig: { enabled: false, removeYearlyUpsell: false, recommendedBoostCount: null }, variations: { [0]: { enabled: false, removeYearlyUpsell: false, recommendedBoostCount: null }, [1]: { enabled: true, removeYearlyUpsell: false, recommendedBoostCount: 2 }, [2]: { enabled: true, removeYearlyUpsell: true, recommendedBoostCount: 2 }, [3]: { enabled: true, removeYearlyUpsell: false, recommendedBoostCount: 3 }, [4]: { enabled: true, removeYearlyUpsell: true, recommendedBoostCount: 3 } } };

@@ -1,10 +1,10 @@
-// Module ID: 11209
-// Function ID: 87231
+// Module ID: 11247
+// Function ID: 87350
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [31, 1450, 10862, 11148, 22, 3992, 2]
+// Dependencies: [31, 1450, 10900, 11186, 22, 4026, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11209 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 11247 (useBottomSheetFlashListBottomViewabilityInset)
 import result from "result";
 
 const require = arg1;
@@ -13,13 +13,13 @@ let closure_5 = { code: "function useBottomSheetFlashListBottomViewabilityInsetT
 const result = require("useAppLauncherChatInputRefDummy").fileFinishedImporting("modules/app_launcher/native/hooks/useBottomSheetFlashListBottomViewabilityInset.tsx");
 
 export const useBottomSheetFlashListBottomViewabilityInset = function useBottomSheetFlashListBottomViewabilityInset() {
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(10862).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(10900).AppLauncherContext);
   bottomSheetPosition = undefined;
   if (null != context) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
   const flashListRef = bottomVisibilityInsetRef.useRef(null);
-  const diff = flashListRef(1450)().height - flashListRef(11148)().maximum;
+  const diff = flashListRef(1450)().height - flashListRef(11186)().maximum;
   const dependencyMap = diff;
   bottomVisibilityInsetRef = bottomVisibilityInsetRef.useRef(9999);
   const memo = bottomVisibilityInsetRef.useMemo(() => flashListRef(diff[4]).debounce((current) => {
@@ -29,7 +29,7 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
       current.updateViewableItems();
     }
   }, 200), []);
-  let obj = bottomSheetPosition(3992);
+  let obj = bottomSheetPosition(4026);
   const fn = function u() {
     let value;
     if (null != bottomSheetPosition) {
@@ -48,7 +48,7 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
   const fn2 = function s(arg0) {
     bottomSheetPosition(diff[5]).runOnJS(memo)(arg0 - closure_2);
   };
-  obj = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(3992).runOnJS, handleBottomViewabilityInsetDebounced: memo };
+  obj = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(4026).runOnJS, handleBottomViewabilityInsetDebounced: memo };
   fn2.__closure = obj;
   fn2.__workletHash = 6025307858098;
   fn2.__initData = closure_5;

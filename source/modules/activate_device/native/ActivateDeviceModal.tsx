@@ -1,16 +1,16 @@
-// Module ID: 12945
-// Function ID: 100481
+// Module ID: 12989
+// Function ID: 100654
 // Name: ActivateDeviceModal
-// Dependencies: [31, 33, 12944, 6695, 7640, 1212, 12946, 5517, 2]
+// Dependencies: [31, 33, 12988, 6731, 7676, 1212, 12990, 5552, 2]
 // Exports: default
 
-// Module 12945 (ActivateDeviceModal)
+// Module 12989 (ActivateDeviceModal)
 import result from "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_5 = { ACTIVATE_DEVICE: "activate-device" };
-const result = require("module_12944").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
+const result = require("module_12988").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
 
 export default function ActivateDeviceModal(userCode) {
   userCode = userCode.userCode;
@@ -44,5 +44,5 @@ export default function ActivateDeviceModal(userCode) {
   let obj = { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE };
   let intl = userCode(1212).intl;
   obj.headerBackTitle = intl.string(userCode(1212).t["13/7kX"]);
-  return jsx(userCode(5517).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE });
+  return jsx(userCode(5552).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE });
 };

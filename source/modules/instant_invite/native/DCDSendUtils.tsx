@@ -1,10 +1,10 @@
-// Module ID: 4305
-// Function ID: 37698
+// Module ID: 4339
+// Function ID: 37812
 // Name: sendSMS
-// Dependencies: [27, 477, 4306, 2]
+// Dependencies: [27, 477, 4340, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 4305 (sendSMS)
+// Module 4339 (sendSMS)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 let closure_3;
@@ -23,8 +23,8 @@ export const sendSMS = function sendSMS(body, recipients) {
     if (null == recipients) {
       recipients = [];
     }
-    importDefault(4306).sendSMS(str, recipients);
-    const obj2 = importDefault(4306);
+    importDefault(4340).sendSMS(str, recipients);
+    const obj2 = importDefault(4340);
   } else {
     const DCDSend = closure_4.DCDSend;
     DCDSend.sendSMS(body, recipients);
@@ -46,8 +46,8 @@ export const sendMail = function sendMail(subject, arg1, recipients) {
     if (null == recipients) {
       recipients = [];
     }
-    importDefault(4306).sendMail(str2, str, recipients);
-    const obj2 = importDefault(4306);
+    importDefault(4340).sendMail(str2, str, recipients);
+    const obj2 = importDefault(4340);
   } else {
     const DCDSend = closure_4.DCDSend;
     DCDSend.sendMail(subject, arg1);
@@ -55,8 +55,8 @@ export const sendMail = function sendMail(subject, arg1, recipients) {
 };
 export const canSendSMS = function canSendSMS() {
   if (obj.isAndroid()) {
-    let resolved = Promise.resolve(importDefault(4306).canSendSMS());
-    const obj2 = importDefault(4306);
+    let resolved = Promise.resolve(importDefault(4340).canSendSMS());
+    const obj2 = importDefault(4340);
   } else {
     const DCDSend = closure_4.DCDSend;
     resolved = DCDSend.canSendSMS();
@@ -65,8 +65,8 @@ export const canSendSMS = function canSendSMS() {
 };
 export const canSendMail = function canSendMail() {
   if (obj.isAndroid()) {
-    let resolved = Promise.resolve(importDefault(4306).canSendMail());
-    const obj2 = importDefault(4306);
+    let resolved = Promise.resolve(importDefault(4340).canSendMail());
+    const obj2 = importDefault(4340);
   } else {
     const DCDSend = closure_4.DCDSend;
     resolved = DCDSend.canSendMail();
@@ -76,7 +76,7 @@ export const canSendMail = function canSendMail() {
 export const canOpenUrlScheme = function canOpenUrlScheme(roblox) {
   const _require = roblox;
   if (obj.isAndroid()) {
-    return Promise.resolve(importDefault(4306).canOpenUrlScheme(roblox));
+    return Promise.resolve(importDefault(4340).canOpenUrlScheme(roblox));
   } else {
     const promise = new Promise((arg0) => {
       let closure_0 = arg0;

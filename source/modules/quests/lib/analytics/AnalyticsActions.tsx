@@ -1,10 +1,10 @@
-// Module ID: 5949
-// Function ID: 52895
+// Module ID: 5983
+// Function ID: 53014
 // Name: assignBillingSessionId
-// Dependencies: [5, 5950, 683, 5932, 653, 5693, 5952, 5930, 5953, 5955, 5959, 5960, 4325, 675, 5961, 5909, 477, 491, 5966, 4980, 2]
+// Dependencies: [5, 5984, 683, 5966, 653, 5703, 5986, 5964, 5987, 5989, 5993, 5994, 4359, 675, 5995, 5943, 477, 491, 6000, 5014, 2]
 // Exports: trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAppStoreOverlayEvent, trackBountyAutoScrollDismissed, trackBountyCarouselEmptyStateViewed, trackBountyCarouselScroll, trackBountyVerticalScroll, trackQuestBarOrDockModeChange, trackQuestContentClicked, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 5949 (assignBillingSessionId)
+// Module 5983 (assignBillingSessionId)
 import stopAnalyticsHeartbeat from "stopAnalyticsHeartbeat";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ function assignBillingSessionId(uuid, arg1) {
   let tmp = uuid;
   if (!arg1) {
     uuid = undefined;
-    const activeSessionUnsafe = require(5693) /* stopAnalyticsHeartbeat */.getActiveSessionUnsafe();
+    const activeSessionUnsafe = require(5703) /* stopAnalyticsHeartbeat */.getActiveSessionUnsafe();
     if (null != activeSessionUnsafe) {
       uuid = activeSessionUnsafe.uuid;
     }
@@ -26,18 +26,18 @@ function assignBillingSessionId(uuid, arg1) {
       tmp7 = uuid;
     }
     tmp = tmp7;
-    const obj = require(5693) /* stopAnalyticsHeartbeat */;
+    const obj = require(5703) /* stopAnalyticsHeartbeat */;
   }
   return tmp;
 }
 function getCommonProperties(adContentId, sourceQuestContent, QUEST, shouldExtendSession) {
   let tmp = QUEST;
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession(shouldExtendSession).uuid;
-  const adDecisionData = require(5930) /* _createForOfIteratorHelperLoose */.getAdDecisionData(adContentId, sourceQuestContent);
+  const adDecisionData = require(5964) /* _createForOfIteratorHelperLoose */.getAdDecisionData(adContentId, sourceQuestContent);
   obj = { client_ad_session_id: uuid };
-  const obj2 = require(5930) /* _createForOfIteratorHelperLoose */;
-  obj.billing_session_id = assignBillingSessionId(uuid, require(5930) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(sourceQuestContent));
+  const obj2 = require(5964) /* _createForOfIteratorHelperLoose */;
+  obj.billing_session_id = assignBillingSessionId(uuid, require(5964) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(sourceQuestContent));
   obj.ad_content_id = adContentId;
   const merged = Object.assign(adDecisionData);
   const creative_type = adDecisionData.creative_type;
@@ -48,16 +48,16 @@ function getCommonProperties(adContentId, sourceQuestContent, QUEST, shouldExten
   return obj;
 }
 function getCommonQuestProperties(value, sourceQuestContent, shouldExtendSession) {
-  const obj = { quest_id: value.id, quest_type: require(5953) /* _createForOfIteratorHelperLoose */.getQuestType(value.config) };
-  const obj2 = require(5953) /* _createForOfIteratorHelperLoose */;
-  let allApplicationIds = require(5955) /* _createForOfIteratorHelperLoose */.getAllApplicationIds(value);
+  const obj = { quest_id: value.id, quest_type: require(5987) /* _createForOfIteratorHelperLoose */.getQuestType(value.config) };
+  const obj2 = require(5987) /* _createForOfIteratorHelperLoose */;
+  let allApplicationIds = require(5989) /* _createForOfIteratorHelperLoose */.getAllApplicationIds(value);
   if (null == allApplicationIds) {
     allApplicationIds = [];
   }
   obj.application_ids = allApplicationIds;
-  const obj3 = require(5955) /* _createForOfIteratorHelperLoose */;
-  obj.quest_status = require(5959) /* getQuestContentName */.getQuestStatus(value);
-  const merged = Object.assign(getCommonProperties(value.id, sourceQuestContent, require(5960) /* AdCreativeType */.AdCreativeType.QUEST, shouldExtendSession));
+  const obj3 = require(5989) /* _createForOfIteratorHelperLoose */;
+  obj.quest_status = require(5993) /* getQuestContentName */.getQuestStatus(value);
+  const merged = Object.assign(getCommonProperties(value.id, sourceQuestContent, require(5994) /* AdCreativeType */.AdCreativeType.QUEST, shouldExtendSession));
   return obj;
 }
 function getCommonAdContentProperties(arg0) {
@@ -73,14 +73,14 @@ function getCommonAdContentProperties(arg0) {
   }
   let obj = {};
   const merged = Object.assign(getCommonProperties(adContentId, sourceQuestContent, adCreativeType, shouldExtendSession));
-  const adMetadataSealed = require(5930) /* _createForOfIteratorHelperLoose */.getAdMetadataSealed(sourceQuestContent, adContentId);
+  const adMetadataSealed = require(5964) /* _createForOfIteratorHelperLoose */.getAdMetadataSealed(sourceQuestContent, adContentId);
   let tmp5 = null;
   if (null != adMetadataSealed) {
     tmp5 = adMetadataSealed;
   }
   obj["metadata_sealed"] = tmp5;
-  const obj2 = require(5930) /* _createForOfIteratorHelperLoose */;
-  const adTrafficMetadataSealed = require(5930) /* _createForOfIteratorHelperLoose */.getAdTrafficMetadataSealed(sourceQuestContent, undefined, adContentId);
+  const obj2 = require(5964) /* _createForOfIteratorHelperLoose */;
+  const adTrafficMetadataSealed = require(5964) /* _createForOfIteratorHelperLoose */.getAdTrafficMetadataSealed(sourceQuestContent, undefined, adContentId);
   let tmp7 = null;
   if (null != adTrafficMetadataSealed) {
     tmp7 = adTrafficMetadataSealed;
@@ -90,8 +90,8 @@ function getCommonAdContentProperties(arg0) {
     obj = { quest_id: relatedQuestId };
     let questStatus = null;
     if (null != quest) {
-      questStatus = require(5959) /* getQuestContentName */.getQuestStatus(quest);
-      const obj6 = require(5959) /* getQuestContentName */;
+      questStatus = require(5993) /* getQuestContentName */.getQuestStatus(quest);
+      const obj6 = require(5993) /* getQuestContentName */;
     }
     obj.quest_status = questStatus;
   } else {
@@ -110,7 +110,7 @@ function trackEvent(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult) {
     if (!arg3) {
       const hasItem = set.has(TEXT_AREA_CTA_CLICKED);
       if (flag) {
-        let tmp6Result = tmp6(4325);
+        let tmp6Result = tmp6(4359);
         return tmp6Result.trackWithMetadata(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult, hasItem);
       } else {
         tmp6Result = tmp6(675);
@@ -285,10 +285,10 @@ const result = set.fileFinishedImporting("modules/quests/lib/analytics/Analytics
 
 export { trackQuestEvent };
 export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(closure_0, closure_1, app_id, event, arg4) {
-  let obj = { content_name: require(5959) /* getQuestContentName */.getQuestContentName(closure_1.content) };
+  let obj = { content_name: require(5993) /* getQuestContentName */.getQuestContentName(closure_1.content) };
   ({ ctaContent: obj.cta_name, impressionId: obj.impression_id } = closure_1);
-  const obj2 = require(5959) /* getQuestContentName */;
-  obj.source_content_name = require(5959) /* getQuestContentName */.getQuestContentName(closure_1.sourceQuestContent);
+  const obj2 = require(5993) /* getQuestContentName */;
+  obj.source_content_name = require(5993) /* getQuestContentName */.getQuestContentName(closure_1.sourceQuestContent);
   obj.app_id = app_id;
   obj.content_position = closure_1.position;
   let tmp = event === AnalyticEvents.QUEST_APP_STORE_OVERLAY_CLOSED;
@@ -315,10 +315,10 @@ export const trackAdContentAppStoreOverlayEvent = function trackAdContentAppStor
   let adCreativeType;
   let obj = {};
   ({ adContentId, adCreativeType } = arg0);
-  obj.content_name = require(5959) /* getQuestContentName */.getQuestContentName(closure_2.content);
+  obj.content_name = require(5993) /* getQuestContentName */.getQuestContentName(closure_2.content);
   ({ ctaContent: obj.cta_name, impressionId: obj.impression_id } = closure_2);
-  const obj2 = require(5959) /* getQuestContentName */;
-  obj.source_content_name = require(5959) /* getQuestContentName */.getQuestContentName(closure_2.sourceQuestContent);
+  const obj2 = require(5993) /* getQuestContentName */;
+  obj.source_content_name = require(5993) /* getQuestContentName */.getQuestContentName(closure_2.sourceQuestContent);
   obj.app_id = app_id;
   obj.content_position = closure_2.position;
   obj = { adContentId, adCreativeType, event };
@@ -351,16 +351,16 @@ export const trackBountyCarouselScroll = function trackBountyCarouselScroll(resu
   let scrollingType;
   const questContent = result.questContent;
   ({ scrollingType, scrollingDirection, carouselPosition } = result);
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid };
   const obj2 = importDefault(675);
-  obj.billing_session_id = assignBillingSessionId(uuid, require(5930) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(questContent));
+  obj.billing_session_id = assignBillingSessionId(uuid, require(5964) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(questContent));
   obj.scrolling_type = scrollingType;
   obj.scrolling_direction = scrollingDirection;
   obj.carousel_position = carouselPosition;
-  const obj4 = require(5930) /* _createForOfIteratorHelperLoose */;
-  obj.content_name = require(5959) /* getQuestContentName */.getQuestContentName(questContent);
+  const obj4 = require(5964) /* _createForOfIteratorHelperLoose */;
+  obj.content_name = require(5993) /* getQuestContentName */.getQuestContentName(questContent);
   obj2.track(AnalyticEvents.BOUNTY_CAROUSEL_SCROLL, obj);
 };
 export const trackQuestHomeOrbShopCarouselViewed = function trackQuestHomeOrbShopCarouselViewed(arg0) {
@@ -378,11 +378,11 @@ export const trackQuestHomeOrbShopCarouselScroll = function trackQuestHomeOrbSho
   importDefault(675).track(AnalyticEvents.QUEST_HOME_ORB_SHOP_CAROUSEL_SCROLL, { scrolling_direction: scrollingDirection, carousel_position: carouselPosition, carousel_size: carouselSize });
 };
 export const trackBountyCarouselEmptyStateViewed = function trackBountyCarouselEmptyStateViewed(closure_0) {
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid };
   const obj2 = importDefault(675);
-  obj.billing_session_id = assignBillingSessionId(uuid, require(5930) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_MOBILE_CAROUSEL));
+  obj.billing_session_id = assignBillingSessionId(uuid, require(5964) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(require(5014) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_MOBILE_CAROUSEL));
   obj.reason = closure_0;
   obj2.track(AnalyticEvents.BOUNTY_CAROUSEL_EMPTY_STATE_VIEWED, obj);
 };
@@ -393,7 +393,7 @@ export const trackBountyVerticalScroll = function trackBountyVerticalScroll(resu
   let timeWatchedPreScrollMs;
   let verticalScrollingPosition;
   ({ scrollingType, scrollingDirection, verticalScrollingPosition, scrollSessionId, timeWatchedPreScrollMs } = result);
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: assignBillingSessionId(uuid, false), scrolling_type: scrollingType, scrolling_direction: scrollingDirection, vertical_scrolling_position: verticalScrollingPosition, scroll_session_id: scrollSessionId, time_watched_pre_scroll_ms: timeWatchedPreScrollMs };
   importDefault(675).track(AnalyticEvents.BOUNTY_VERTICAL_SCROLL, obj);
@@ -402,7 +402,7 @@ export const trackBountyAutoScrollDismissed = function trackBountyAutoScrollDism
   let scrollSessionId;
   let verticalScrollingPosition;
   ({ verticalScrollingPosition, scrollSessionId } = arg0);
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: assignBillingSessionId(uuid, false), vertical_scrolling_position: verticalScrollingPosition, scroll_session_id: scrollSessionId };
   importDefault(675).track(AnalyticEvents.BOUNTY_AUTO_SCROLL_DISMISSED, obj);
@@ -416,23 +416,23 @@ export const trackQuestHomeCarouselScroll = function trackQuestHomeCarouselScrol
   let scrollingType;
   questContent = questContent.questContent;
   ({ scrollingType, scrollingDirection, scrollWindowStartIndex, scrollWindowEndIndex, scrollWindowSize, carouselSize } = questContent);
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { scrolling_type: scrollingType, client_ad_session_id: uuid };
   const obj2 = importDefault(675);
-  obj.billing_session_id = assignBillingSessionId(uuid, require(5930) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(questContent));
+  obj.billing_session_id = assignBillingSessionId(uuid, require(5964) /* _createForOfIteratorHelperLoose */.isBillableQuestContent(questContent));
   obj.scrolling_direction = scrollingDirection;
   obj.scroll_window_start_index = scrollWindowStartIndex;
   obj.scroll_window_end_index = scrollWindowEndIndex;
   obj.scroll_window_size = scrollWindowSize;
-  const obj4 = require(5930) /* _createForOfIteratorHelperLoose */;
-  obj.content_name = require(5959) /* getQuestContentName */.getQuestContentName(questContent);
+  const obj4 = require(5964) /* _createForOfIteratorHelperLoose */;
+  obj.content_name = require(5993) /* getQuestContentName */.getQuestContentName(questContent);
   obj.content_id = questContent;
   obj.carousel_size = carouselSize;
   obj2.track(AnalyticEvents.QUEST_HOME_CAROUSEL_SCROLL, obj);
 };
 export const trackQuestHomeSearchEntered = function trackQuestHomeSearchEntered(searchSessionId) {
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: assignBillingSessionId(uuid, false), search_session_id: searchSessionId.searchSessionId };
   importDefault(675).track(AnalyticEvents.QUEST_HOME_SEARCH_ENTERED, obj);
@@ -441,7 +441,7 @@ export const trackQuestHomeSearchClosed = function trackQuestHomeSearchClosed(ar
   let searchSessionDurationMs;
   let searchSessionId;
   ({ searchSessionId, searchSessionDurationMs } = arg0);
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: assignBillingSessionId(uuid, false), search_session_id: searchSessionId, search_session_duration_ms: searchSessionDurationMs };
   importDefault(675).track(AnalyticEvents.QUEST_HOME_SEARCH_CLOSED, obj);
@@ -453,7 +453,7 @@ export const trackQuestHomeSearchQuerySubmitted = function trackQuestHomeSearchQ
   let searchQueryLength;
   let searchSessionId;
   ({ searchSessionId, searchQuery, searchQueryLength, resultsCount, hasResults } = arg0);
-  let obj = require(5952) /* isAdSessionExpired */;
+  let obj = require(5986) /* isAdSessionExpired */;
   const uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: assignBillingSessionId(uuid, false), search_session_id: searchSessionId, search_query: searchQuery, search_query_length: searchQueryLength, results_count: resultsCount, has_results: hasResults };
   importDefault(675).track(AnalyticEvents.QUEST_HOME_SEARCH_QUERY_SUBMITTED, obj);
@@ -465,14 +465,14 @@ export const trackQuestBarOrDockModeChange = function trackQuestBarOrDockModeCha
   let questId;
   let sourceQuestContent;
   ({ questContent, sourceQuestContent, questId, mode, prevMode } = arg0);
-  let obj = require(5959) /* getQuestContentName */;
+  let obj = require(5993) /* getQuestContentName */;
   const contentProperties = obj.getContentProperties(questContent);
   obj = { questId, event: AnalyticEvents.QUEST_BAR_MODE_CHANGED, properties: obj, sourceQuestContent };
   obj = { content_id: contentProperties.content_id, content_name: contentProperties.content_name, mode, previous_mode: prevMode };
   trackQuestEvent(obj);
 };
 export const trackQuestEmbedFallbackViewed = function trackQuestEmbedFallbackViewed(questId, EXCLUDED_QUEST) {
-  let obj = importDefault(4325);
+  let obj = importDefault(4359);
   obj = { quest_id: questId, reason: EXCLUDED_QUEST };
   obj.trackWithMetadata(AnalyticEvents.QUEST_EMBED_FALLBACK_VIEWED, obj);
 };

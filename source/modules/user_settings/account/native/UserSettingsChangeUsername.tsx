@@ -1,10 +1,10 @@
-// Module ID: 13724
-// Function ID: 105364
+// Module ID: 13768
+// Function ID: 105537
 // Name: UsernameStatusMessage
-// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4131, 689, 4330, 13725, 4127, 1212, 1456, 566, 3777, 13726, 6448, 9158, 507, 1457, 9050, 6670, 9162, 8928, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4165, 689, 4364, 13769, 4161, 1212, 1456, 566, 3811, 13770, 6484, 9202, 507, 1457, 9094, 6706, 9206, 8972, 2]
 // Exports: default
 
-// Module 13724 (UsernameStatusMessage)
+// Module 13768 (UsernameStatusMessage)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -21,13 +21,13 @@ let closure_8;
 const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
-  const match = showHint(4330).match(showHint.usernameStatus);
-  let obj = { type: showHint(13725).NameValidationState.ERROR };
-  const P = showHint(4330).P;
+  const match = showHint(4364).match(showHint.usernameStatus);
+  let obj = { type: showHint(13769).NameValidationState.ERROR };
+  const P = showHint(4364).P;
   obj.message = P.select();
-  const str = showHint(4330);
-  obj = { type: showHint(13725).NameValidationState.AVAILABLE };
-  const P2 = showHint(4330).P;
+  const str = showHint(4364);
+  obj = { type: showHint(13769).NameValidationState.AVAILABLE };
+  const P2 = showHint(4364).P;
   obj.message = P2.select();
   const withResult = match.with(obj, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };

@@ -1,10 +1,10 @@
-// Module ID: 8866
-// Function ID: 70172
+// Module ID: 8910
+// Function ID: 70323
 // Name: XboxLinkLanding
-// Dependencies: [31, 8865, 653, 33, 4131, 1212, 4659, 6564, 4647, 8867, 1456, 1921, 8868, 8869, 2]
+// Dependencies: [31, 8909, 653, 33, 4165, 1212, 4693, 6600, 4681, 8911, 1456, 1921, 8912, 8913, 2]
 // Exports: default
 
-// Module 8866 (XboxLinkLanding)
+// Module 8910 (XboxLinkLanding)
 import result from "result";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import ME from "ME";
@@ -61,5 +61,5 @@ export default function XboxLinkLanding() {
   obj.body = intl.format(navigation(1212).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   obj.onNext = callback;
   obj.valueProps = memo;
-  return jsx(navigation(8869).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image });
+  return jsx(navigation(8913).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image });
 };

@@ -1,13 +1,13 @@
-// Module ID: 16368
-// Function ID: 127495
+// Module ID: 16407
+// Function ID: 127651
 // Name: hasSearchQuery
-// Dependencies: [57, 31, 27, 1278, 1912, 1194, 4052, 1911, 1838, 3759, 5148, 16369, 16370, 653, 33, 4131, 689, 5053, 675, 16371, 566, 16276, 8242, 1456, 6504, 3764, 4325, 16372, 16381, 16382, 5501, 1212, 4661, 11266, 4127, 3977, 16383, 16384, 16385, 16386, 5085, 4544, 16387, 6695, 11808, 477, 16379, 5049, 5149, 9171, 7575, 1273, 8226, 15178, 5448, 2]
+// Dependencies: [57, 31, 27, 1278, 1912, 1194, 4086, 1911, 1838, 3793, 5182, 16408, 16409, 653, 33, 4165, 689, 5087, 675, 16410, 566, 16315, 8280, 1456, 6540, 3798, 4359, 16411, 16420, 16421, 5536, 1212, 4695, 11304, 4161, 4011, 16422, 16423, 16424, 16425, 5119, 4578, 16426, 6731, 11847, 477, 16418, 5083, 5183, 9215, 7611, 1273, 8264, 15218, 5483, 2]
 // Exports: default
 
-// Module 16368 (hasSearchQuery)
+// Module 16407 (hasSearchQuery)
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
-import get_ActivityIndicator from "module_16372";
+import get_ActivityIndicator from "module_16411";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
 import closure_9 from "_isNativeReflectConstruct";
@@ -126,7 +126,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   const ref = guild.useRef(null);
   let obj = guildId(1456);
   const navigation = obj.useNavigation();
-  const tmp4 = importDefault(6504)();
+  const tmp4 = importDefault(6540)();
   const dependencyMap = tmp4;
   let obj1 = guildId(566);
   let items = [memberCount];
@@ -201,11 +201,11 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
           if (!tmp) {
             obj.scrollToEnd();
           }
-          guildId(16371).setRoleJustCreated(false);
+          guildId(16410).setRoleJustCreated(false);
         }, 1000);
         return () => {
           clearTimeout(closure_0);
-          guildId(16371).setRoleJustCreated(false);
+          guildId(16410).setRoleJustCreated(false);
         };
       }
     }, items);
@@ -233,10 +233,10 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         tmp = canAccessSettings;
       }
       if (!tmp) {
-        canAccessSettings(16276).terminate();
-        const obj = canAccessSettings(16276);
-        canAccessSettings(8242).close();
-        const obj2 = canAccessSettings(8242);
+        canAccessSettings(16315).terminate();
+        const obj = canAccessSettings(16315);
+        canAccessSettings(8280).close();
+        const obj2 = canAccessSettings(8280);
       }
     }, items1);
   })(guildId);
@@ -557,7 +557,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         const obj = { onPress: outer1_26 };
         const intl = guildId(1212).intl;
         obj.text = intl.string(guildId(1212).t["ETE/oC"]);
-        return hasRoles(guildId(6695).HeaderActionButton, obj);
+        return hasRoles(guildId(6731).HeaderActionButton, obj);
       };
     }
     obj.headerLeft = fn;
@@ -566,14 +566,14 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         const obj = { onPress: outer1_27 };
         const intl = guildId(1212).intl;
         obj.text = intl.string(guildId(1212).t["R3BPH+"]);
-        return hasRoles(guildId(6695).HeaderActionButton, obj);
+        return hasRoles(guildId(6731).HeaderActionButton, obj);
       };
     } else if (hasRoles) {
       fn2 = () => {
-        const obj = { onPress: outer1_23, source: callback(11808) };
+        const obj = { onPress: outer1_23, source: callback(11847) };
         const intl = guildId(1212).intl;
         obj.accessibilityLabel = intl.string(guildId(1212).t.JZZjQK);
-        return hasRoles(guildId(6695).HeaderActionButton, obj);
+        return hasRoles(guildId(6731).HeaderActionButton, obj);
       };
     }
     obj.headerRight = fn2;
@@ -619,7 +619,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   if (!tmp15) {
     obj = { style: tmp.searchWrapper };
     obj1 = { size: "md", onChange: callback };
-    obj.children = hasRoles(guildId(9171).SearchField, obj1);
+    obj.children = hasRoles(guildId(9215).SearchField, obj1);
     tmp34 = hasRoles(guildEveryoneRole, obj);
   }
   const items19 = [tmp34, , , ];
@@ -631,13 +631,13 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     let tmp44 = null;
     if (!hasRoles) {
       let obj4 = {};
-      let obj5 = { style: tmp.emptyRolesIcon, size: guildId(1273).Icon.Sizes.LARGE, source: importDefault(8226) };
+      let obj5 = { style: tmp.emptyRolesIcon, size: guildId(1273).Icon.Sizes.LARGE, source: importDefault(8264) };
       obj4.leading = hasRoles(guildId(1273).Icon, obj5);
       let obj6 = { variant: "text-md/semibold", color: "interactive-text-default" };
       let intl = guildId(1212).intl;
       obj6.children = intl.string(guildId(1212).t.nZfHsf);
-      obj4.label = hasRoles(guildId(4127).Text, obj6);
-      tmp44 = hasRoles(guildId(7575).FormRow, obj4);
+      obj4.label = hasRoles(guildId(4161).Text, obj6);
+      tmp44 = hasRoles(guildId(7611).FormRow, obj4);
     }
     items20[1] = tmp44;
     obj3.children = items20;
@@ -689,9 +689,9 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   obj8.keyboardShouldPersistTaps = "handled";
   obj8.scrollEventThrottle = 16;
   obj8.scrollEnabled = true;
-  obj7.children = hasRoles(importDefault(15178), obj8);
+  obj7.children = hasRoles(importDefault(15218), obj8);
   items19[2] = hasRoles(guildEveryoneRole, obj7);
-  items19[3] = hasRoles(guildId(5448).NavScrim, {});
+  items19[3] = hasRoles(guildId(5483).NavScrim, {});
   obj.children = items19;
   return c22(callback1, obj);
 };

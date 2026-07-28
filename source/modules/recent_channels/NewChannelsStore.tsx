@@ -1,9 +1,9 @@
-// Module ID: 5757
-// Function ID: 50268
+// Module ID: 5767
+// Function ID: 50124
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 1194, 1348, 1908, 1918, 1838, 4143, 4326, 653, 664, 5758, 686, 5070, 21, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1194, 1348, 1908, 1918, 1838, 4177, 4360, 653, 664, 5768, 686, 5104, 21, 566, 2]
 
-// Module 5757 (_isNativeReflectConstruct)
+// Module 5767 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import SidebarType from "SidebarType";
@@ -349,7 +349,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     guildId = guildId.guildId;
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = tmp !== require(5758) /* SidebarType */.SidebarType.VIEW_CHANNEL;
+      tmp2 = tmp !== require(5768) /* SidebarType */.SidebarType.VIEW_CHANNEL;
     }
     if (!tmp2) {
       maybeAckViewedChannel(guildId, guildId.channelId);

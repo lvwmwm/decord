@@ -1,9 +1,9 @@
-// Module ID: 5868
-// Function ID: 51704
+// Module ID: 5902
+// Function ID: 51823
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5869, 5872, 5040, 3761, 1352, 1194, 1348, 1838, 1196, 3759, 4143, 1907, 4326, 1850, 653, 1355, 4327, 5761, 21, 1841, 22, 3766, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5903, 5906, 5074, 3795, 1352, 1194, 1348, 1838, 1196, 3793, 4177, 1907, 4360, 1850, 653, 1355, 4361, 5771, 21, 1841, 22, 3800, 2]
 
-// Module 5868 (_isNativeReflectConstruct)
+// Module 5902 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -218,7 +218,7 @@ function isCountableChannel(channel, mentionCount) {
         } else if (!closure_18.can(channel.accessPermissions, channel)) {
           return false;
         }
-        obj = require(5761) /* useOptInEnabledForGuild */;
+        obj = require(5771) /* useOptInEnabledForGuild */;
       }
       let tmp11 = num > 0;
       if (!tmp11) {
@@ -483,7 +483,7 @@ function recountGuild(guildId) {
     }
     const mutedChannels = store3.getMutedChannels(tmp);
     const channelOverrides = store3.getChannelOverrides(tmp);
-    let obj1 = require(5761) /* useOptInEnabledForGuild */;
+    let obj1 = require(5771) /* useOptInEnabledForGuild */;
     const result = obj1.isOptInEnabledForGuild(tmp);
     const mutableBasicGuildChannelsForGuild = store.getMutableBasicGuildChannelsForGuild(tmp);
     for (const key10030 in mutableBasicGuildChannelsForGuild) {
@@ -868,7 +868,7 @@ function handleThreadMemberUpdate(id) {
   return recountChannels(id.guildId, items);
 }
 function handleThreadMembersUpdate(id) {
-  let result = require(3766) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
+  let result = require(3800) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
   if (result) {
     const items = [id.id];
     result = recountChannels(id.guildId, items);

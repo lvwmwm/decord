@@ -1,9 +1,9 @@
-// Module ID: 14620
-// Function ID: 111490
+// Module ID: 14664
+// Function ID: 111663
 // Name: getTitle
-// Dependencies: [5765, 7697, 13790, 5834, 13794, 1212, 13787, 1282, 10059, 2]
+// Dependencies: [5775, 7733, 13834, 5844, 13838, 1212, 13831, 1282, 10099, 2]
 
-// Module 14620 (getTitle)
+// Module 14664 (getTitle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -16,22 +16,22 @@ createToggle = {
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const parentalControlledExplicitContentSettings = require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
+    const parentalControlledExplicitContentSettings = require(13834) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
     let prop;
     if (null != parentalControlledExplicitContentSettings) {
       prop = parentalControlledExplicitContentSettings.explicitContentFriendDm;
     }
     let tmp3 = null;
     if (null != prop) {
-      tmp3 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(prop)();
-      const obj2 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
+      tmp3 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(prop)();
+      const obj2 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
     return tmp3;
   },
   onPress: function onObscuredContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(13794);
+      let obj = selectedTeenId(13838);
       const intl = selectedTeenId(1212).intl;
       const stringResult = intl.string(selectedTeenId(1212).t.GYpoAq);
       obj = {
@@ -46,8 +46,8 @@ createToggle = {
       obj.currentValue = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
       const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
       obj.excluded = items;
-      const result = selectedTeenId(13787).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(13787);
+      const result = selectedTeenId(13831).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(13831);
     }
   },
   unsearchable: true

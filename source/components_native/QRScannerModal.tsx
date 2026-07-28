@@ -1,10 +1,10 @@
-// Module ID: 12939
-// Function ID: 100461
+// Module ID: 12983
+// Function ID: 100634
 // Name: DCDQRScanner
-// Dependencies: [57, 31, 27, 653, 5766, 33, 477, 12940, 689, 5582, 1557, 1443, 12919, 4338, 12934, 1935, 6554, 11045, 3828, 4472, 1212, 8278, 7675, 1273, 2]
+// Dependencies: [57, 31, 27, 653, 5776, 33, 477, 12984, 689, 5617, 1557, 1443, 12963, 4372, 12978, 1935, 6590, 11083, 3862, 4506, 1212, 8316, 7711, 1273, 2]
 // Exports: default
 
-// Module 12939 (DCDQRScanner)
+// Module 12983 (DCDQRScanner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -124,11 +124,11 @@ export default function QRScannerModal(showHelp) {
   const tmp7 = View;
   let intl = onScanSuccess(1212).intl;
   obj1.accessibilityLabel = intl.string(onScanSuccess(1212).t.cpT0Cq);
-  obj1.source = importDefault(7675);
+  obj1.source = importDefault(7711);
   const items2 = [get_ActivityIndicator.closeButton, { marginTop: top }];
   obj1.style = items2;
-  obj1.onPress = importDefault(4338).pop;
-  items1[1] = callback2(importDefault(8278), obj1);
+  obj1.onPress = importDefault(4372).pop;
+  items1[1] = callback2(importDefault(8316), obj1);
   let tmp16 = null;
   if (tmp) {
     tmp16 = null;

@@ -1,10 +1,10 @@
-// Module ID: 11019
-// Function ID: 85708
+// Module ID: 11057
+// Function ID: 85831
 // Name: ClassificationEvidence
-// Dependencies: [57, 31, 27, 1278, 1850, 11010, 6699, 653, 33, 7654, 4131, 566, 3977, 11020, 11021, 6698, 4318, 8053, 8081, 9984, 9222, 4352, 21, 2]
+// Dependencies: [57, 31, 27, 1278, 1850, 11048, 6735, 653, 33, 7690, 4165, 566, 4011, 11058, 11059, 6734, 4352, 8091, 8119, 10024, 9266, 4386, 21, 2]
 // Exports: default
 
-// Module 11019 (ClassificationEvidence)
+// Module 11057 (ClassificationEvidence)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -51,10 +51,10 @@ export default function ClassificationEvidence(arg0) {
   let obj1 = ref(566);
   const items1 = [id];
   const resolveAssetSource = first2.resolveAssetSource;
-  if (obj1.useStateFromStores(items1, () => ref(3977).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp8(11020));
+  if (obj1.useStateFromStores(items1, () => ref(4011).isThemeLight(id.theme))) {
+    let assetSource = resolveAssetSource(tmp8(11058));
   } else {
-    assetSource = resolveAssetSource(tmp8(11021));
+    assetSource = resolveAssetSource(tmp8(11059));
   }
   let map = arg0.flaggedContent[0];
   const tmp11 = first1(React.useState(map.attachments.length), 2);
@@ -76,10 +76,10 @@ export default function ClassificationEvidence(arg0) {
         str = filename;
       }
       obj["filename"] = str;
-      obj["flags"] = ref(6698).getSpoilerFlagsForAttachment(filename);
+      obj["flags"] = ref(6734).getSpoilerFlagsForAttachment(filename);
       obj["size"] = 0;
       obj["proxy_url"] = filename.url;
-      const obj2 = ref(6698);
+      const obj2 = ref(6734);
       if (obj3.isImageFile(filename.filename)) {
         obj = {};
         const merged1 = Object.assign(obj);
@@ -111,7 +111,7 @@ export default function ClassificationEvidence(arg0) {
           obj["filename"] = outer2_16;
           tmp4 = obj;
         }
-        obj4 = ref(4318);
+        obj4 = ref(4352);
       }
       return tmp4;
     });
@@ -129,7 +129,7 @@ export default function ClassificationEvidence(arg0) {
         url = uri.url;
       }
       obj.videoURI = url;
-      obj2 = ref(4318);
+      obj2 = ref(4352);
       let tmp2;
       if (obj3.isVideoFile(outer1_6.attachments[mediaIndex].filename)) {
         obj = { width: outer2_14, height: outer2_15, uri: outer1_5.uri };
@@ -159,7 +159,7 @@ export default function ClassificationEvidence(arg0) {
       obj.attachmentId = uri.id;
       return obj;
     });
-    let obj = ref(8053);
+    let obj = ref(8091);
     obj = { initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout };
     obj.openMediaModal(obj);
   }, items4);
@@ -212,7 +212,7 @@ export default function ClassificationEvidence(arg0) {
     const items8 = [callback(closure_8, {}), ];
     obj = { style: found.dummyVideoAttachments };
     let attachments = map.attachments;
-    found = attachments.filter((filename) => ref(4318).isVideoFile(filename.filename));
+    found = attachments.filter((filename) => ref(4352).isVideoFile(filename.filename));
     map = found.map;
     obj.children = map((uri) => {
       let closure_0 = uri;
@@ -234,7 +234,7 @@ export default function ClassificationEvidence(arg0) {
         }
       };
       obj = { uri: uri.url };
-      return outer1_18(first(8081), obj, arg1);
+      return outer1_18(first(8119), obj, arg1);
     });
     items8[1] = callback(assetSource, obj);
     obj.children = items8;
@@ -242,13 +242,13 @@ export default function ClassificationEvidence(arg0) {
   } else {
     obj1 = {};
     obj2 = { ref, onTapImage: callback, inverted: false };
-    const items9 = [callback(first(9984), obj2), ];
+    const items9 = [callback(first(10024), obj2), ];
     const obj3 = { rowGenerator: closure_20 };
     const tmp26 = callback;
-    const tmp29 = first(9222);
+    const tmp29 = first(9266);
     let obj4 = { id: map.id };
     const _Date = Date;
-    const obj10 = ref(4352);
+    const obj10 = ref(4386);
     const date = new Date(first(21).extractTimestamp(map.id));
     obj4.timestamp = date.toUTCString();
     obj4.channel_id = "1";

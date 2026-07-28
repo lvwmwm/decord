@@ -1,11 +1,11 @@
 // Module ID: 9841
-// Function ID: 76315
+// Function ID: 76209
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9841 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d25dc6aac0ffe1d35c3be44e5c9ce017", name: "ArrowAngleRightUpIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "4f3507228f76eea58da6db7d8807bb01", name: "ic_file_small_ps", type: "png" };
 
 export default registerAsset.registerAsset(obj);

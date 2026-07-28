@@ -1,10 +1,10 @@
-// Module ID: 6968
-// Function ID: 59688
+// Module ID: 7004
+// Function ID: 59777
 // Name: ExperimentalMarvelRivalsWidgetAbstractUI
-// Dependencies: [33, 5085, 6969, 2]
+// Dependencies: [33, 5119, 7005, 2]
 // Exports: ExperimentalMarvelRivalsWidgetAbstractUI
 
-// Module 6968 (ExperimentalMarvelRivalsWidgetAbstractUI)
+// Module 7004 (ExperimentalMarvelRivalsWidgetAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalMarvelRivalsWidgetAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const ExperimentalMarvelRivalsWidgetAbstractUI = function ExperimentalMar
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6969) };
+  obj = { uri: importDefault(7005) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ExperimentalMarvelRivalsWidgetAbstractUI = function ExperimentalMar
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

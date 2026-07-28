@@ -1,9 +1,9 @@
-// Module ID: 6298
-// Function ID: 56709
+// Module ID: 6334
+// Function ID: 56798
 // Name: items1
 // Dependencies: [2]
 
-// Module 6298 (items1)
+// Module 6334 (items1)
 const result = require("set").fileFinishedImporting("modules/billing/native/iapProducts.tsx");
 let obj = { identifier: "premium_tier_2_premium_guild_5_yearly", price: 274.99, currencySymbol: "$", currencyCode: "usd", priceString: "$274.99", countryCode: "US", downloadable: false, description: "Chat perks and 7 Boosts (Yearly Sub)", title: "Nitro + 5 Boosts (Yearly)", discounts: [] };
 const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];

@@ -1,10 +1,10 @@
-// Module ID: 4047
-// Function ID: 33751
+// Module ID: 4081
+// Function ID: 33853
 // Name: getAPIEndpoint
-// Dependencies: [4048, 653, 1554, 477, 1443, 507, 1445, 4049, 2]
+// Dependencies: [4082, 653, 1554, 477, 1443, 507, 1445, 4083, 2]
 // Exports: getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, probablyHasBuildOverride, validateURL
 
-// Module 4047 (getAPIEndpoint)
+// Module 4081 (getAPIEndpoint)
 import { BUILD_OVERRIDE_COOKIE_NAME as closure_4 } from "BUILD_OVERRIDE_TARGET_NAMES";
 import { PRIMARY_DOMAIN } from "ME";
 import getConstants from "getConstants";
@@ -104,7 +104,7 @@ export const probablyHasBuildOverride = function probablyHasBuildOverride() {
   return -1 !== cookie.indexOf("" + closure_4 + "=");
 };
 export const getBuildOverrideExperiments = function getBuildOverrideExperiments() {
-  let obj = importDefault(4049);
+  let obj = importDefault(4083);
   const tmp = obj.parse(window.document.cookie)[closure_4];
   if (null == tmp) {
     obj = {};

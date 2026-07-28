@@ -1,9 +1,9 @@
-// Module ID: 8988
-// Function ID: 70809
+// Module ID: 9032
+// Function ID: 70960
 // Name: acceptFriendRequest
-// Dependencies: [3768, 653, 8989, 8850, 3810, 3817, 8990, 8991, 686, 2]
+// Dependencies: [3802, 653, 9033, 8894, 3844, 3851, 9034, 9035, 686, 2]
 
-// Module 8988 (acceptFriendRequest)
+// Module 9032 (acceptFriendRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AbortCodes } from "ME";
 
@@ -18,10 +18,10 @@ function acceptFriendRequest(location) {
   }
   if (null != applicationId) {
     let obj = { userId, applicationId };
-    let result = importDefault(8989).acceptGameFriendRequest(obj);
-    const obj4 = importDefault(8989);
+    let result = importDefault(9033).acceptGameFriendRequest(obj);
+    const obj4 = importDefault(9033);
   } else {
-    obj = importDefault(8850);
+    obj = importDefault(8894);
     obj = { userId, confirmStrangerRequest };
     const obj1 = { location: location.location };
     obj.context = obj1;
@@ -59,8 +59,8 @@ function handleFriendRequestAcceptError(body, userId) {
           }
         }
     };
-    const result = _require(8991).openAcceptFriendRequestConfirmModal(obj);
-    const obj5 = _require(8991);
+    const result = _require(9035).openAcceptFriendRequestConfirmModal(obj);
+    const obj5 = _require(9035);
   } else {
     flag = false;
     if (tmp2) {
@@ -82,10 +82,10 @@ export default {
     ({ userId, applicationId } = arg0);
     if (null != applicationId) {
       let obj = { userId, applicationId };
-      importDefault(8989).removeGameFriend(obj);
-      const obj3 = importDefault(8989);
+      importDefault(9033).removeGameFriend(obj);
+      const obj3 = importDefault(9033);
     } else {
-      obj = importDefault(8850);
+      obj = importDefault(8894);
       obj = { location: tmp };
       obj.removeFriend(userId, obj);
     }
@@ -96,10 +96,10 @@ export default {
     ({ userId, applicationId } = arg0);
     if (null != applicationId) {
       let obj = { userId, applicationId };
-      let result = importDefault(8989).cancelGameFriendRequest(obj);
-      const obj3 = importDefault(8989);
+      let result = importDefault(9033).cancelGameFriendRequest(obj);
+      const obj3 = importDefault(9033);
     } else {
-      obj = importDefault(8850);
+      obj = importDefault(8894);
       obj = { location: tmp };
       result = obj.cancelFriendRequest(userId, obj);
     }

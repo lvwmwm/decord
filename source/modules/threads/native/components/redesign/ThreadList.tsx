@@ -1,10 +1,10 @@
-// Module ID: 15466
-// Function ID: 117999
+// Module ID: 15505
+// Function ID: 118155
 // Name: ThreadListSection
-// Dependencies: [31, 27, 33, 4131, 4127, 15467, 3992, 4477, 4543, 4547, 11800, 1357, 1359, 1212, 5164, 7578, 11335, 15469, 15470, 6619, 2]
+// Dependencies: [31, 27, 33, 4165, 4161, 15506, 4026, 4511, 4577, 4581, 11839, 1357, 1359, 1212, 5198, 7614, 11373, 15508, 15509, 6655, 2]
 // Exports: default
 
-// Module 15466 (ThreadListSection)
+// Module 15505 (ThreadListSection)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,7 +16,7 @@ let closure_5;
 const require = arg1;
 function ThreadListSection(title) {
   const obj = { style: callback().section, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() };
-  return jsx(require(4127) /* Text */.Text, { style: callback().section, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() });
+  return jsx(require(4161) /* Text */.Text, { style: callback().section, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() });
 }
 function renderItem(item) {
   item = item.item;
@@ -27,7 +27,7 @@ function renderItem(item) {
   } else if ("thread" === type) {
     obj = {};
     ({ threadId: obj.threadId, onPress: obj.onPress, start: obj.start, end: obj.end } = item);
-    return jsx(importDefault(15467), {});
+    return jsx(importDefault(15506), {});
   }
 }
 function keyExtractor(type) {
@@ -106,26 +106,25 @@ export default function ThreadList(onCreateThreadPress) {
   ({ channel, onThreadPress } = onCreateThreadPress);
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const contentContainerStyle = onCreateThreadPress.contentContainerStyle;
-  const renderScrollComponent = onCreateThreadPress.renderScrollComponent;
-  let tmp = threadIds();
-  let closure_4 = tmp;
+  let tmp = canLoadMore();
+  const React = tmp;
   let obj = onThreadPress(contentContainerStyle[10]);
   const activeThreads = obj.useActiveThreads(channel);
   const joinedThreadIds = activeThreads.joinedThreadIds;
   const unjoinedThreadIds = activeThreads.unjoinedThreadIds;
-  const archivedThreads = onThreadPress(contentContainerStyle[10]).useArchivedThreads(channel, onThreadPress(contentContainerStyle[11]).ThreadSortOrder.LATEST_ACTIVITY, canLoadMore, onThreadPress(contentContainerStyle[12]).ThreadSearchTagSetting.MATCH_SOME);
-  threadIds = archivedThreads.threadIds;
+  const archivedThreads = onThreadPress(contentContainerStyle[10]).useArchivedThreads(channel, onThreadPress(contentContainerStyle[11]).ThreadSortOrder.LATEST_ACTIVITY, loadMore, onThreadPress(contentContainerStyle[12]).ThreadSearchTagSetting.MATCH_SOME);
+  const threadIds = archivedThreads.threadIds;
   canLoadMore = archivedThreads.canLoadMore;
-  const loadMore = archivedThreads.loadMore;
+  loadMore = archivedThreads.loadMore;
   const loading = archivedThreads.loading;
   let items = [loading, canLoadMore, loadMore];
-  const callback = renderScrollComponent.useCallback(() => {
+  const callback = React.useCallback(() => {
     if (tmp) {
       loadMore();
     }
   }, items);
   let items1 = [threadIds, joinedThreadIds, onThreadPress, unjoinedThreadIds];
-  const memo = renderScrollComponent.useMemo(() => {
+  const memo = React.useMemo(() => {
     const items = [];
     if (joinedThreadIds.length > 0) {
       let obj = { type: "section" };
@@ -133,7 +132,7 @@ export default function ThreadList(onCreateThreadPress) {
       obj = { count: joinedThreadIds.length };
       obj.title = intl.formatToPlainString(onThreadPress(contentContainerStyle[13]).t.fcXlhe, obj);
       items.push(obj);
-      const item = joinedThreadIds.forEach((threadId) => items.push({ type: "thread", threadId, start: 0 === arg1, end: arg1 === outer1_5.length - 1, onPress: items }));
+      const item = joinedThreadIds.forEach((threadId) => items.push({ type: "thread", threadId, start: 0 === arg1, end: arg1 === outer1_4.length - 1, onPress: items }));
     }
     if (unjoinedThreadIds.length > 0) {
       obj = { type: "section" };
@@ -141,91 +140,90 @@ export default function ThreadList(onCreateThreadPress) {
       const obj1 = { count: unjoinedThreadIds.length };
       obj.title = intl2.formatToPlainString(onThreadPress(contentContainerStyle[13]).t.GHY7yQ, obj1);
       items.push(obj);
-      const item1 = unjoinedThreadIds.forEach((threadId) => items.push({ type: "thread", threadId, start: 0 === arg1, end: arg1 === outer1_6.length - 1, onPress: items }));
+      const item1 = unjoinedThreadIds.forEach((threadId) => items.push({ type: "thread", threadId, start: 0 === arg1, end: arg1 === outer1_5.length - 1, onPress: items }));
     }
     if (threadIds.length > 0) {
       const obj2 = { type: "section" };
       const intl3 = onThreadPress(contentContainerStyle[13]).intl;
       obj2.title = intl3.string(onThreadPress(contentContainerStyle[13]).t.XsgrjS);
       items.push(obj2);
-      const item2 = threadIds.forEach((threadId) => items.push({ type: "thread", threadId, start: 0 === arg1, end: arg1 === outer1_7.length - 1, onPress: items }));
+      const item2 = threadIds.forEach((threadId) => items.push({ type: "thread", threadId, start: 0 === arg1, end: arg1 === outer1_6.length - 1, onPress: items }));
     }
     return items;
   }, items1);
   let items2 = [memo.length, loading];
   const items3 = [onCreateThreadPress];
-  const memo1 = renderScrollComponent.useMemo(() => {
+  const memo1 = React.useMemo(() => {
     if (loading) {
       if (0 === memo.length) {
-        const items = [callback.LOADING];
+        const items = [memo.LOADING];
         let items2 = items;
       }
       return items2;
     }
     if (0 === memo.length) {
-      const items1 = [callback.EMPTY];
+      const items1 = [memo.EMPTY];
       items2 = items1;
     } else {
-      items2 = [callback.LIST];
+      items2 = [memo.LIST];
     }
   }, items2);
-  const memo2 = renderScrollComponent.useMemo(() => {
+  const memo2 = React.useMemo(() => {
     let tmp = null;
     if (null != onCreateThreadPress) {
       let obj = { icon: null, onPress: null, label: null, start: true, end: true, arrow: true };
       obj = { IconComponent: onThreadPress(contentContainerStyle[16]).ThreadPlusIcon };
-      obj.icon = unjoinedThreadIds(onThreadPress(contentContainerStyle[15]).RowButton.Icon, obj);
+      obj.icon = threadIds(onThreadPress(contentContainerStyle[15]).RowButton.Icon, obj);
       obj.onPress = onCreateThreadPress;
       const intl = onThreadPress(contentContainerStyle[13]).intl;
       obj.label = intl.string(onThreadPress(contentContainerStyle[13]).t.rBIGBL);
-      tmp = unjoinedThreadIds(onThreadPress(contentContainerStyle[14]).TableRow, obj);
+      tmp = threadIds(onThreadPress(contentContainerStyle[14]).TableRow, obj);
     }
     return tmp;
   }, items3);
-  const items4 = [, , , , , , , , , , ];
+  const items4 = [, , , , , , , , , ];
   ({ container: arr6[0], center: arr6[1], header: arr6[2], footer: arr6[3] } = tmp);
   items4[4] = onCreateThreadPress;
   items4[5] = memo;
   items4[6] = memo2;
-  items4[7] = renderScrollComponent;
-  items4[8] = callback;
-  items4[9] = loading;
-  items4[10] = contentContainerStyle;
-  const callback1 = renderScrollComponent.useCallback((arg0, arg1, state, cleanUp) => {
-    if (callback.EMPTY === arg1) {
+  items4[7] = callback;
+  items4[8] = loading;
+  items4[9] = contentContainerStyle;
+  const callback1 = React.useCallback((arg0, arg1, state, cleanUp) => {
+    if (memo.EMPTY === arg1) {
       let obj = { contentContainerStyle: tmp.container, state, cleanUp };
       obj = { onCreateThreadPress };
-      obj.children = unjoinedThreadIds(onCreateThreadPress(contentContainerStyle[17]), obj);
-      return unjoinedThreadIds(outer1_15, obj, arg0);
-    } else if (callback.LOADING === arg1) {
+      obj.children = threadIds(onCreateThreadPress(contentContainerStyle[17]), obj);
+      return threadIds(outer1_15, obj, arg0);
+    } else if (memo.LOADING === arg1) {
       const obj1 = {};
       const items = [, ];
       ({ container: arr[0], center: arr[1] } = tmp);
       obj1.contentContainerStyle = items;
       obj1.state = state;
       obj1.cleanUp = cleanUp;
-      obj1.children = unjoinedThreadIds(onCreateThreadPress(contentContainerStyle[18]), {});
-      return unjoinedThreadIds(outer1_15, obj1, arg0);
-    } else if (callback.LIST === arg1) {
+      obj1.children = threadIds(onCreateThreadPress(contentContainerStyle[18]), {});
+      return threadIds(outer1_15, obj1, arg0);
+    } else if (memo.LIST === arg1) {
       obj = { contentContainerStyle: tmp.container, state, cleanUp };
-      const obj2 = { data: memo, ListHeaderComponent: memo2, ListHeaderComponentStyle: unjoinedThreadIds.header, renderItem: memo2, renderScrollComponent, keyExtractor: outer1_14, onEndReached: callback, onEndReachedThreshold: 0.4 };
+      const obj2 = { data: memo, ListHeaderComponent: memo2, ListHeaderComponentStyle: threadIds.header, renderItem: outer1_13, keyExtractor: outer1_14, onEndReached: callback, onEndReachedThreshold: 0.4 };
       const intl = onThreadPress(contentContainerStyle[13]).intl;
       obj2.accessibilityLabel = intl.string(onThreadPress(contentContainerStyle[13]).t.B2panI);
-      let tmp14;
+      let tmp13;
       if (loading) {
-        tmp14 = onCreateThreadPress(contentContainerStyle[18]);
+        tmp13 = onCreateThreadPress(contentContainerStyle[18]);
       }
-      obj2.ListFooterComponent = tmp14;
+      obj2.ListFooterComponent = tmp13;
       let footer;
       if (loading) {
         footer = tmp.footer;
       }
       obj2.ListFooterComponentStyle = footer;
       obj2.contentContainerStyle = contentContainerStyle;
-      obj.children = unjoinedThreadIds(onThreadPress(contentContainerStyle[19]).AnimatedFlashList, obj2);
-      return unjoinedThreadIds(outer1_15, obj, arg0);
+      obj.children = threadIds(onThreadPress(contentContainerStyle[19]).AnimatedFlashList, obj2);
+      return threadIds(outer1_15, obj, arg0);
     }
   }, items4);
   obj = { items: memo1, renderItem: callback1, getItemKey: getThreadListStateKey };
-  return unjoinedThreadIds(onThreadPress(contentContainerStyle[7]).TransitionGroup, obj);
+  return threadIds(onThreadPress(contentContainerStyle[7]).TransitionGroup, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11534
-// Function ID: 89832
+// Module ID: 11573
+// Function ID: 89983
 // Name: useCanPurchaseBoosts
-// Dependencies: [1850, 1852, 5820, 566, 2]
+// Dependencies: [1850, 1852, 5830, 566, 2]
 // Exports: default
 
-// Module 11534 (useCanPurchaseBoosts)
+// Module 11573 (useCanPurchaseBoosts)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FractionalPremiumStates } from "GuildFeatures";
 
@@ -14,7 +14,7 @@ const result = require("calculateFractionalPremiumInfo").fileFinishedImporting("
 export default function useCanPurchaseBoosts() {
   const items = [_isNativeReflectConstruct];
   const obj = require(566) /* initialize */;
-  return importDefault(5820)().fractionalState === FractionalPremiumStates.NONE && !require(566) /* initialize */.useStateFromStores(items, () => {
+  return importDefault(5830)().fractionalState === FractionalPremiumStates.NONE && !require(566) /* initialize */.useStateFromStores(items, () => {
     const currentUser = outer1_3.getCurrentUser();
     let isPremiumGroupMemberResult;
     if (null != currentUser) {

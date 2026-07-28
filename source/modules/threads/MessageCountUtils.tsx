@@ -1,10 +1,10 @@
-// Module ID: 7667
-// Function ID: 61403
+// Module ID: 7703
+// Function ID: 61493
 // Name: shouldUseOldMaxMessageCount
 // Dependencies: [1211, 21, 1212, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel
 
-// Module 7667 (shouldUseOldMaxMessageCount)
+// Module 7703 (shouldUseOldMaxMessageCount)
 import AbortCodes from "AbortCodes";
 
 let closure_3;

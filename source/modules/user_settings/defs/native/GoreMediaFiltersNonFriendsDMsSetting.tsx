@@ -1,18 +1,18 @@
-// Module ID: 13798
-// Function ID: 105813
+// Module ID: 13842
+// Function ID: 105986
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [7697, 13786, 5834, 5855, 13787, 1212, 10059, 13789, 2]
+// Dependencies: [7733, 13830, 5844, 5865, 13831, 1212, 10099, 13833, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 13798 (useGoreContentNonFriendsDmSettingValue)
+// Module 13842 (useGoreContentNonFriendsDmSettingValue)
 import createToggle from "createToggle";
 
 function useGoreContentNonFriendsDmSettingValue() {
-  const obj = require(13786) /* useExplicitContentSettingOrDefault */;
-  return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
+  const obj = require(13830) /* useExplicitContentSettingOrDefault */;
+  return require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
 }
 function onGoreContentNonFriendsDmOnPress() {
-  let obj = require(5855) /* resolveGoreSettingWithDefaults */;
+  let obj = require(5865) /* resolveGoreSettingWithDefaults */;
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["16/3Bi"]);
@@ -23,7 +23,7 @@ function onGoreContentNonFriendsDmOnPress() {
     return obj.updateGoreContentSetting(obj);
   };
   obj.currentValue = obj.getGoreContentSettingOrDefault().goreContentNonFriendDm;
-  const result = require(13787) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(13831) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 function getTitle() {
   const intl = require(1212) /* getSystemLocale */.intl;

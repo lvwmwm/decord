@@ -1,10 +1,10 @@
-// Module ID: 7623
-// Function ID: 60985
+// Module ID: 7659
+// Function ID: 61075
 // Name: close
-// Dependencies: [31, 27, 4144, 1348, 3759, 1353, 4948, 653, 33, 4131, 689, 4099, 566, 1356, 4956, 5498, 7575, 1212, 1273, 7624, 6654, 7625, 6554, 7626, 7627, 7631, 7632, 7633, 2]
+// Dependencies: [31, 27, 4178, 1348, 3793, 1353, 4982, 653, 33, 4165, 689, 4133, 566, 1356, 4990, 5533, 7611, 1212, 1273, 7660, 6690, 7661, 6590, 7662, 7663, 7667, 7668, 7669, 2]
 // Exports: default
 
-// Module 7623 (close)
+// Module 7659 (close)
 import result from "result";
 import { View } from "_submitHamReportForFirstDM";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -22,7 +22,7 @@ let closure_12;
 let closure_13;
 const require = arg1;
 function close() {
-  importDefault(4099).hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
+  importDefault(4133).hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
 }
 ({ ChannelSettingsSections: closure_10, UserSettingsSections: closure_11 } = ME);
 ({ jsx: closure_12, jsxs: closure_13 } = jsxProd);

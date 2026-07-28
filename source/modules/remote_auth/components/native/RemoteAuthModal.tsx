@@ -1,10 +1,10 @@
-// Module ID: 12934
-// Function ID: 100439
+// Module ID: 12978
+// Function ID: 100612
 // Name: RemoteAuthBody
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1557, 12935, 12933, 5161, 507, 22, 12936, 4127, 1212, 1273, 4966, 4544, 4338, 12937, 12938, 5584, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 1557, 12979, 12977, 5195, 507, 22, 12980, 4161, 1212, 1273, 5000, 4578, 4372, 12981, 12982, 5619, 2]
 // Exports: default
 
-// Module 12934 (RemoteAuthBody)
+// Module 12978 (RemoteAuthBody)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,12 +83,12 @@ function RemoteAuthLogin(arg0) {
     tmp6 = !tmp3[0];
   }
   obj = {};
-  obj = { source: importDefault(12936), style: tmp.mainImage };
+  obj = { source: importDefault(12980), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   const obj1 = { variant: "heading-md/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.jD2pqF);
-  items[1] = callback2(require(4127) /* Text */.Heading, obj1);
+  items[1] = callback2(require(4161) /* Text */.Heading, obj1);
   const obj2 = { style: tmp.warningCaption };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["hcd/kh"]);
@@ -110,7 +110,7 @@ function RemoteAuthLogin(arg0) {
     });
   }, 1000, { leading: true, trailing: false });
   obj4.disabled = tmp6;
-  const items1 = [callback2(require(4544) /* Button */.Button, obj4, "" + tmp6), ];
+  const items1 = [callback2(require(4578) /* Button */.Button, obj4, "" + tmp6), ];
   const obj5 = { variant: "secondary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj5.text = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
@@ -119,63 +119,63 @@ function RemoteAuthLogin(arg0) {
     obj = { url: outer1_8.REMOTE_AUTH_CANCEL, body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { handshake_token: closure_0 };
     HTTP.post(obj);
-    let arr = outer1_1(4338);
+    let arr = outer1_1(4372);
     arr = arr.pop();
   };
-  items1[1] = callback2(require(4544) /* Button */.Button, obj5);
+  items1[1] = callback2(require(4578) /* Button */.Button, obj5);
   obj3.children = items1;
-  items[3] = callback3(require(4966) /* ButtonGroup */.ButtonGroup, obj3);
+  items[3] = callback3(require(5000) /* ButtonGroup */.ButtonGroup, obj3);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthLoginSucceeded() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12937), style: tmp.mainImage };
+  obj = { source: importDefault(12981), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.HbwTOZ);
-  items[1] = callback2(require(4127) /* Text */.Heading, obj);
+  items[1] = callback2(require(4161) /* Text */.Heading, obj);
   const obj1 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.wKknJ0);
-  items[2] = callback2(require(4127) /* Text */.Text, obj1);
+  items[2] = callback2(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonGroup };
   const obj3 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.pYWLA0);
-  obj3.onPress = importDefault(4338).pop;
-  obj2.children = callback2(require(4544) /* Button */.Button, obj3);
-  items[3] = callback2(require(4966) /* ButtonGroup */.ButtonGroup, obj2);
+  obj3.onPress = importDefault(4372).pop;
+  obj2.children = callback2(require(4578) /* Button */.Button, obj3);
+  items[3] = callback2(require(5000) /* ButtonGroup */.ButtonGroup, obj2);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthNotFound() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12938), style: tmp.mainImage };
+  obj = { source: importDefault(12982), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.NShI3Q);
-  items[1] = callback2(require(4127) /* Text */.Heading, obj);
+  items[1] = callback2(require(4161) /* Text */.Heading, obj);
   const obj1 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.Ygezov);
-  items[2] = callback2(require(4127) /* Text */.Text, obj1);
+  items[2] = callback2(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonGroup };
   const obj3 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj3.onPress = importDefault(4338).pop;
-  obj2.children = callback2(require(4544) /* Button */.Button, obj3);
-  items[3] = callback2(require(4966) /* ButtonGroup */.ButtonGroup, obj2);
+  obj3.onPress = importDefault(4372).pop;
+  obj2.children = callback2(require(4578) /* Button */.Button, obj3);
+  items[3] = callback2(require(5000) /* ButtonGroup */.ButtonGroup, obj2);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthLoading() {
-  return callback2(closure_7, { style: _createForOfIteratorHelperLoose().loadingContainer, children: callback2(require(5584) /* ActivityIndicator */.ActivityIndicator, {}) });
+  return callback2(closure_7, { style: _createForOfIteratorHelperLoose().loadingContainer, children: callback2(require(5619) /* ActivityIndicator */.ActivityIndicator, {}) });
 }
 ({ ImageBackground: closure_5, Image: closure_6, View: closure_7 } = get_ActivityIndicator);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
@@ -193,9 +193,9 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/rem
 
 export default function RemoteAuth(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = { source: importDefault(12935) };
+  let obj = { source: importDefault(12979) };
   ({ imageStyle: obj.imageStyle, background: obj.style } = tmp);
-  obj = { style: items, source: importDefault(12933) };
+  obj = { style: items, source: importDefault(12977) };
   items = [tmp.logo, { marginTop: importDefault(1557)().top }];
   const items1 = [callback2(closure_6, obj), ];
   obj = { style: tmp.container };

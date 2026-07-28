@@ -1,9 +1,9 @@
-// Module ID: 13445
-// Function ID: 103278
+// Module ID: 13489
+// Function ID: 103451
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 13445 (apexExperiment)
+// Module 13489 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-declarative-notif-settings", kind: "user", defaultConfig: { enabled: false, clearDeclarative: false }, variations: { [1]: { enabled: true, clearDeclarative: false }, [2]: { enabled: false, clearDeclarative: true } } };

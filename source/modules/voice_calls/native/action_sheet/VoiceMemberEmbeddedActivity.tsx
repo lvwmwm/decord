@@ -1,10 +1,10 @@
-// Module ID: 12777
-// Function ID: 99475
+// Module ID: 12820
+// Function ID: 99645
 // Name: calculateActivityPreviewImageDimensions
-// Dependencies: [57, 31, 27, 1347, 1348, 1850, 1277, 5188, 33, 1273, 4131, 689, 5468, 1327, 566, 3749, 10542, 1450, 6557, 10579, 4661, 1212, 4127, 10607, 4545, 2]
+// Dependencies: [57, 31, 27, 1347, 1348, 1850, 1277, 5222, 33, 1273, 4165, 689, 5503, 1327, 566, 3783, 10580, 1450, 6593, 10617, 4695, 1212, 4161, 10645, 4579, 2]
 // Exports: default
 
-// Module 12777 (calculateActivityPreviewImageDimensions)
+// Module 12820 (calculateActivityPreviewImageDimensions)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";

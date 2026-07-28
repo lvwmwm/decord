@@ -1,10 +1,10 @@
-// Module ID: 10277
-// Function ID: 79448
+// Module ID: 10317
+// Function ID: 79577
 // Name: useProgressAnimation
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 10241, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4026, 10281, 2]
 // Exports: default
 
-// Module 10277 (useProgressAnimation)
+// Module 10317 (useProgressAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -32,7 +32,7 @@ function useProgressAnimation(percent) {
   fn.__closure = { percent, width: first };
   fn.__workletHash = 14879761869068;
   fn.__initData = closure_8;
-  obj.animatedStyles = _require(3992).useAnimatedStyle(fn);
+  obj.animatedStyles = _require(4026).useAnimatedStyle(fn);
   obj.handleLayout = callback;
   return obj;
 }
@@ -53,7 +53,7 @@ function Progress(arg0) {
   items[1] = obj;
   obj.style = items;
   const items1 = [tmp.progress, tmp2.animatedStyles];
-  obj.children = jsx(importDefault(3992).View, { style: items1 });
+  obj.children = jsx(importDefault(4026).View, { style: items1 });
   return <View />;
 }
 function RedesignProgress(arg0) {
@@ -73,10 +73,10 @@ function RedesignProgress(arg0) {
   obj.opacity = num;
   items[1] = obj;
   obj.style = items;
-  obj = { style: tmp.progressTrack, children: jsx(importDefault(3992).View, { style: items1 }) };
+  obj = { style: tmp.progressTrack, children: jsx(importDefault(4026).View, { style: items1 }) };
   items1 = [tmp.progressRedesign, "ALERT" === type ? tmp.progressBarWarning : tmp.progressBarBrand, tmp2.animatedStyles];
-  obj.children = <View style={tmp.progressTrack}>{jsx(importDefault(3992).View, { style: items1 })}</View>;
-  return <View style={tmp.progressTrack}>{jsx(importDefault(3992).View, { style: items1 })}</View>;
+  obj.children = <View style={tmp.progressTrack}>{jsx(importDefault(4026).View, { style: items1 })}</View>;
+  return <View style={tmp.progressTrack}>{jsx(importDefault(4026).View, { style: items1 })}</View>;
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, height: 4 };
@@ -100,7 +100,7 @@ export default function NotificationProgress(percent) {
   let type;
   percent = percent.percent;
   ({ canExpand, type } = percent);
-  let obj = require(10241) /* context */;
+  let obj = require(10281) /* context */;
   const inAppNotificationContext = obj.useInAppNotificationContext();
   if (canExpand) {
     obj = { percent, hideProgress: tmp2, type };

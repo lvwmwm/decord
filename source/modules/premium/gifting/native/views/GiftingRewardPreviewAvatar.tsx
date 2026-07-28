@@ -1,10 +1,10 @@
-// Module ID: 9722
-// Function ID: 75755
+// Module ID: 9762
+// Function ID: 75884
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [31, 4123, 1850, 33, 566, 1273, 2]
+// Dependencies: [31, 4157, 1850, 33, 566, 1273, 2]
 // Exports: default
 
-// Module 9722 (GiftingRewardPreviewAvatar)
+// Module 9762 (GiftingRewardPreviewAvatar)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";

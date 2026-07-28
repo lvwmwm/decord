@@ -1,5 +1,5 @@
 // Module ID: 4518
-// Function ID: 39754
+// Function ID: 39731
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [27, 38, 110, 42]
 
@@ -8,31 +8,12 @@ import { codegenNativeComponent } from "get ActivityIndicator";
 import weakSet from "weakSet";
 import get from "get";
 
-let obj = { uiViewClassName: "RNSTabsHost", directEventTypes: { topNativeFocusChange: { registrationName: "onNativeFocusChange" } } };
-obj = { tabBarHidden: true, nativeContainerBackgroundColor: null, tabBarBackgroundColor: null, tabBarItemTitleFontFamily: true, tabBarItemTitleFontSize: true, tabBarItemTitleFontSizeActive: true, tabBarItemTitleFontWeight: true, tabBarItemTitleFontStyle: true };
+let obj = { uiViewClassName: "RNSScreen", directEventTypes: { topAppear: { registrationName: "onAppear" }, topDisappear: { registrationName: "onDisappear" }, topDismissed: { registrationName: "onDismissed" }, topNativeDismissCancelled: { registrationName: "onNativeDismissCancelled" }, topWillAppear: { registrationName: "onWillAppear" }, topWillDisappear: { registrationName: "onWillDisappear" }, topHeaderHeightChange: { registrationName: "onHeaderHeightChange" }, topTransitionProgress: { registrationName: "onTransitionProgress" }, topGestureCancel: { registrationName: "onGestureCancel" }, topHeaderBackButtonClicked: { registrationName: "onHeaderBackButtonClicked" }, topSheetDetentChanged: { registrationName: "onSheetDetentChanged" } } };
+obj = { screenId: true, sheetAllowedDetents: true, sheetLargestUndimmedDetent: true, sheetGrabberVisible: true, sheetCornerRadius: true, sheetExpandsWhenScrolledToEdge: true, sheetInitialDetent: true, sheetElevation: true, sheetShouldOverflowTopInset: true, sheetDefaultResizeAnimationEnabled: true, customAnimationOnSwipe: true, fullScreenSwipeEnabled: true, fullScreenSwipeShadowEnabled: true, homeIndicatorHidden: true, preventNativeDismiss: true, gestureEnabled: true, statusBarColor: null, statusBarHidden: true, screenOrientation: true, statusBarAnimation: true, statusBarStyle: true, statusBarTranslucent: true, gestureResponseDistance: true, stackPresentation: true, stackAnimation: true, transitionDuration: true, replaceAnimation: true, swipeDirection: true, hideKeyboardOnSwipe: true, activityState: true, navigationBarColor: null, navigationBarTranslucent: true, navigationBarHidden: true, nativeBackButtonDismissalEnabled: true, bottomScrollEdgeEffect: true, leftScrollEdgeEffect: true, rightScrollEdgeEffect: true, topScrollEdgeEffect: true, synchronousShadowStateUpdatesEnabled: true, androidResetScreenShadowStateOnOrientationChangeEnabled: true, ios26AllowInteractionsDuringTransition: true };
 obj = { process: require("processColor").default };
-obj.nativeContainerBackgroundColor = obj;
-obj.tabBarBackgroundColor = { process: require("processColor").default };
-const obj1 = { process: require("processColor").default };
-obj.tabBarItemTitleFontColor = { process: require("processColor").default };
-const obj2 = { process: require("processColor").default };
-obj.tabBarItemTitleFontColorActive = { process: require("processColor").default };
-const obj3 = { process: require("processColor").default };
-obj.tabBarItemIconColor = { process: require("processColor").default };
-const obj4 = { process: require("processColor").default };
-obj.tabBarItemIconColorActive = { process: require("processColor").default };
-const obj5 = { process: require("processColor").default };
-obj.tabBarItemActiveIndicatorColor = { process: require("processColor").default };
-obj.tabBarItemActiveIndicatorEnabled = true;
-const obj6 = { process: require("processColor").default };
-obj.tabBarItemRippleColor = { process: require("processColor").default };
-obj.tabBarItemLabelVisibilityMode = true;
-const obj7 = { process: require("processColor").default };
-obj.tabBarTintColor = { process: require("processColor").default };
-obj.tabBarMinimizeBehavior = true;
-obj.tabBarControllerMode = true;
-obj.controlNavigationStateInJS = true;
-obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onNativeFocusChange: true }));
+obj.statusBarColor = obj;
+obj.navigationBarColor = { process: require("processColor").default };
+obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onAppear: true, onDisappear: true, onDismissed: true, onNativeDismissCancelled: true, onWillAppear: true, onWillDisappear: true, onHeaderHeightChange: true, onTransitionProgress: true, onGestureCancel: true, onHeaderBackButtonClicked: true, onSheetDetentChanged: true }));
 
-export default get.get("RNSTabsHost", () => obj);
+export default get.get("RNSScreen", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

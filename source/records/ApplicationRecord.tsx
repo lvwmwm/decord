@@ -1,9 +1,9 @@
-// Module ID: 4154
-// Function ID: 35111
+// Module ID: 4188
+// Function ID: 35213
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 1859, 4155, 1858, 4156, 4157, 4158, 4159, 1392, 4160, 483, 21, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 4189, 1858, 4190, 4191, 4192, 4193, 1392, 4194, 483, 21, 2]
 
-// Module 4154 (_callSuper)
+// Module 4188 (_callSuper)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import DISCORD_EPOCH from "DISCORD_EPOCH";

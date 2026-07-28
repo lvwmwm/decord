@@ -1,10 +1,10 @@
-// Module ID: 7756
-// Function ID: 61724
+// Module ID: 7792
+// Function ID: 61814
 // Name: getTagProperties
-// Dependencies: [27, 4124, 7757, 1212, 7759, 7761, 2]
+// Dependencies: [27, 4158, 7793, 1212, 7795, 7797, 2]
 // Exports: default
 
-// Module 7756 (getTagProperties)
+// Module 7792 (getTagProperties)
 import { Image } from "get ActivityIndicator";
 import { MessageTagTypes } from "MESSAGE_GROUP_SPACING";
 
@@ -22,10 +22,10 @@ export default function getTagProperties(arg0) {
   ({ channel, colors } = arg0);
   const author = message.author;
   const isVerifiedBotResult = author.isVerifiedBot();
-  let obj = require(7757) /* isPublicSystemMessage */;
+  let obj = require(7793) /* isPublicSystemMessage */;
   if (!obj.isPublicSystemMessage(message)) {
     if (!isSystemDM) {
-      if (importDefault(7759)(message)) {
+      if (importDefault(7795)(message)) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.PuJGuM);
         let SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.BOT_TAG_SERVER_TYPE;
@@ -37,7 +37,7 @@ export default function getTagProperties(arg0) {
           const intl = require(1212) /* getSystemLocale */.intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(importDefault(7761)).uri;
+            uri = Image.resolveAssetSource(importDefault(7797)).uri;
           }
           stringResult = intl.string(require(1212) /* getSystemLocale */.t["9RNkeF"]);
           flag = isVerifiedBotResult;
@@ -72,12 +72,12 @@ export default function getTagProperties(arg0) {
           } else {
             stringResult3 = string(t.qwJHjo);
           }
-          tmp22 = importDefault(7759)(message);
+          tmp22 = importDefault(7795)(message);
         }
       }
       const intl5 = require(1212) /* getSystemLocale */.intl;
       stringResult3 = intl5.string(require(1212) /* getSystemLocale */.t["7s687k"]);
-      obj2 = require(7757) /* isPublicSystemMessage */;
+      obj2 = require(7793) /* isPublicSystemMessage */;
     }
   }
   const intl3 = require(1212) /* getSystemLocale */.intl;

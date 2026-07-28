@@ -1,10 +1,10 @@
-// Module ID: 6714
-// Function ID: 59258
+// Module ID: 6750
+// Function ID: 59347
 // Name: MethodsScreen
-// Dependencies: [5, 57, 31, 27, 653, 33, 1868, 6715, 6717, 6719, 4131, 689, 6698, 6721, 6723, 4348, 6722, 6725, 6726, 4542, 6727, 4127, 6690, 1921, 1212, 2717, 4966, 4544, 5501, 5164, 4338, 5087, 7556, 491, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 653, 33, 1868, 6751, 6753, 6755, 4165, 689, 6734, 6757, 6759, 4382, 6758, 6761, 6762, 4576, 6763, 4161, 6726, 1921, 1212, 2717, 5000, 4578, 5536, 5198, 4372, 5121, 7592, 491, 5552, 2]
 // Exports: default
 
-// Module 6714 (MethodsScreen)
+// Module 6750 (MethodsScreen)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import HeaderBackImage from "HeaderBackImage";
@@ -182,9 +182,9 @@ function MethodErrorScreen() {
   obj = { variant: "text-md/normal", color: "text-default", style: callback3().errorMessage };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(importDefault(2717)["1RD2jW"]);
-  obj.children = callback(require(4127) /* Text */.Text, obj);
-  obj.children = callback(require(6726) /* ModalContent */.ModalContent, obj);
-  return callback(require(6725) /* ModalScreen */.ModalScreen, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
+  obj.children = callback(require(6762) /* ModalContent */.ModalContent, obj);
+  return callback(require(6761) /* ModalScreen */.ModalScreen, obj);
 }
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let obj = {};
@@ -230,7 +230,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
       headerTitle() {
         return null;
       },
-      headerLeft: entryPoint(5087).getHeaderCloseButton(closeModal),
+      headerLeft: entryPoint(5121).getHeaderCloseButton(closeModal),
       render(arg0, navigation) {
         return outer3_8(outer3_13, { entryPoint: closure_1, navigation, onClose: closeModal });
       }
@@ -242,8 +242,8 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
         return null;
       }
     };
-    const obj3 = entryPoint(5087);
-    obj.headerLeft = entryPoint(5087).getHeaderBackButton();
+    const obj3 = entryPoint(5121);
+    obj.headerLeft = entryPoint(5121).getHeaderBackButton();
     obj.render = function render() {
       return outer3_8(onClose(onClose[32]), { onClose: closeModal, modalSessionId: closure_0 });
     };
@@ -254,8 +254,8 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
         return null;
       }
     };
-    const obj5 = entryPoint(5087);
-    obj1.headerLeft = entryPoint(5087).getHeaderBackButton();
+    const obj5 = entryPoint(5121);
+    obj1.headerLeft = entryPoint(5121).getHeaderBackButton();
     obj1.render = function render() {
       return outer3_8(outer3_14, {});
     };
@@ -265,5 +265,5 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   let obj = { screens: memo1, initialRouteName: constants.METHODS };
   const intl = entryPoint(1212).intl;
   obj.headerBackTitle = intl.string(entryPoint(1212).t["13/7kX"]);
-  return callback(entryPoint(5517).Navigator, obj);
+  return callback(entryPoint(5552).Navigator, obj);
 };

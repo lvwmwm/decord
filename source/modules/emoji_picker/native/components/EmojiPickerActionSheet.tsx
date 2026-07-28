@@ -1,10 +1,10 @@
-// Module ID: 9270
-// Function ID: 72597
+// Module ID: 9314
+// Function ID: 72748
 // Name: EmojiPickerActionSheet
-// Dependencies: [57, 31, 27, 1850, 9271, 653, 1853, 33, 4131, 689, 6023, 3992, 9272, 5159, 1557, 477, 5462, 5482, 9279, 4099, 9268, 9280, 4127, 1212, 9171, 9282, 3777, 9245, 1935, 4100, 4101, 9284, 5187, 4002, 9285, 9340, 9362, 2]
+// Dependencies: [57, 31, 27, 1850, 9315, 653, 1853, 33, 4165, 689, 6057, 4026, 9316, 5193, 1557, 477, 5497, 5517, 9323, 4133, 9312, 9324, 4161, 1212, 9215, 9326, 3811, 9289, 1935, 4134, 4135, 9328, 5221, 4036, 9329, 9384, 9406, 2]
 // Exports: default
 
-// Module 9270 (EmojiPickerActionSheet)
+// Module 9314 (EmojiPickerActionSheet)
 import _slicedToArray from "_slicedToArray";
 import PortalKeyboardFooterIOS from "PortalKeyboardFooterIOS";
 import { View } from "items";
@@ -29,7 +29,7 @@ let obj3 = { flexDirection: "column", alignItems: "center", marginBottom: requir
 _createForOfIteratorHelperLoose.headerText = obj3;
 let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
 _createForOfIteratorHelperLoose.headerSpacer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
 _createForOfIteratorHelperLoose.burstReaction = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const obj5 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
@@ -60,7 +60,7 @@ export default function EmojiPickerActionSheet(onClose) {
   let c6;
   let bottom2;
   let handleTextChange;
-  let closure_9;
+  let EmojiIntention;
   let callback;
   let memo1;
   ({ analyticsObject, messageId } = onClose);
@@ -135,7 +135,7 @@ export default function EmojiPickerActionSheet(onClose) {
     obj.paddingBottom = bottom2;
     return obj;
   }, items2);
-  closure_9 = React.useRef(null);
+  EmojiIntention = React.useRef(null);
   callback = React.useRef(flag);
   const callback2 = React.useCallback(() => {
     if (ref.current) {
@@ -246,6 +246,7 @@ export default function EmojiPickerActionSheet(onClose) {
   obj1.contentStyles = items8;
   obj3 = { bottomSheetIndex: sharedValue1, onPressEmoji: callback1 };
   obj9 = onClose(pickerIntention[15]);
+  const tmp35 = callback;
   obj3.onLongPressEmoji = onClose(pickerIntention[35]).openEmojiActionSheet;
   obj3.emojiPickerListRef = ref;
   obj3.categories = emojiCategories;
@@ -258,7 +259,20 @@ export default function EmojiPickerActionSheet(onClose) {
   obj3.insetBottom = sum1;
   obj3.analyticsObject = analyticsObject;
   obj3.messageId = messageId;
-  const items9 = [callback(onPressEmoji(pickerIntention[34]), obj3), callback(onPressEmoji(pickerIntention[36]), { bottomSheetRef: ref1, bottomSheetIndex: sharedValue1, style: memo, categories: emojiCategories, categoryIndexActive: sharedValue, emojiPickerListRef: ref, portalHostName: "EmojiPickerActionSheet", isSearching: null != tmp11.searchResults, onClearSearch: callback3 })];
+  const items9 = [callback(onPressEmoji(pickerIntention[34]), obj3), ];
+  const obj4 = { bottomSheetRef: ref1, bottomSheetIndex: sharedValue1, style: memo, categories: emojiCategories, categoryIndexActive: sharedValue, emojiPickerListRef: ref, portalHostName: "EmojiPickerActionSheet" };
+  const tmp36 = onPressEmoji(pickerIntention[34]);
+  const tmp37 = onPressEmoji(pickerIntention[36]);
+  let str2;
+  if (obj13.isIOS()) {
+    if (pickerIntention === EmojiIntention.STATUS) {
+      str2 = "full";
+    }
+  }
+  obj4.renderAhead = str2;
+  obj4.isSearching = null != tmp11.searchResults;
+  obj4.onClearSearch = callback3;
+  items9[1] = tmp35(tmp37, obj4);
   obj1.children = items9;
   items7[1] = tmp30(onClose(pickerIntention[32]).BottomSheet, obj1);
   obj.children = items7;

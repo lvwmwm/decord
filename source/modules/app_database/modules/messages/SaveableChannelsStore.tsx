@@ -1,9 +1,9 @@
-// Module ID: 5706
-// Function ID: 49445
+// Module ID: 5716
+// Function ID: 49301
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4052, 1196, 1907, 5707, 5708, 5709, 5711, 5712, 5713, 5714, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4086, 1196, 1907, 5717, 5718, 5719, 5721, 5722, 5723, 5724, 2]
 
-// Module 5706 (_createForOfIteratorHelperLoose)
+// Module 5716 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -114,11 +114,11 @@ function handleSelectedChannelStoreChanged() {
 }
 function handleConnectionOpenSupplemental() {
   const result = tmp6.dropUnreachableChannels();
-  tmp6.replaceLru(require(5714) /* _createForOfIteratorHelperLoose */.withFallbacks(extendedMemoryLru, 1250));
+  tmp6.replaceLru(require(5724) /* _createForOfIteratorHelperLoose */.withFallbacks(extendedMemoryLru, 1250));
 }
 function handleChannelUpdate(id) {
   id = id.id;
-  const isReadableChannelResult = require(5712) /* isReadableChannel */.isReadableChannel(id);
+  const isReadableChannelResult = require(5722) /* isReadableChannel */.isReadableChannel(id);
   let tmp2 = isReadableChannelResult;
   if (isReadableChannelResult) {
     tmp2 = id === store.getChannelId();

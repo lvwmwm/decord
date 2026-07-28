@@ -1,10 +1,10 @@
-// Module ID: 8926
-// Function ID: 70545
+// Module ID: 8970
+// Function ID: 70696
 // Name: DomainScreen
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1456, 507, 5121, 4127, 1212, 8927, 8932, 4544, 4338, 5087, 5517, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 1456, 507, 5155, 4161, 1212, 8971, 8976, 4578, 4372, 5121, 5552, 2]
 // Exports: default
 
-// Module 8926 (DomainScreen)
+// Module 8970 (DomainScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -232,28 +232,28 @@ function HTTPProofScreen(proof) {
   obj = { variant: "text-md/normal" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.p4ql7y);
-  const items = [callback2(require(4127) /* Text */.Text, obj), , , , ];
+  const items = [callback2(require(4161) /* Text */.Text, obj), , , , ];
   const obj1 = { style: tmp.dns };
   const obj2 = { variant: "text-md/normal" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.GL3q7k);
-  const items1 = [callback2(require(4127) /* Text */.Text, obj2), , , ];
+  const items1 = [callback2(require(4161) /* Text */.Text, obj2), , , ];
   const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code };
-  let obj6 = require(8932) /* EXAMPLE_DOMAIN */;
+  let obj6 = require(8976) /* EXAMPLE_DOMAIN */;
   obj3.children = obj6.getHttpName(domain);
-  items1[1] = callback2(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback2(require(4161) /* Text */.Text, obj3);
   const obj4 = { variant: "text-md/normal" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl3.string(require(1212) /* getSystemLocale */.t.PVLriT);
-  items1[2] = callback2(require(4127) /* Text */.Text, obj4);
+  items1[2] = callback2(require(4161) /* Text */.Text, obj4);
   const obj5 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof.proof };
-  items1[3] = callback2(require(4127) /* Text */.Text, obj5);
+  items1[3] = callback2(require(4161) /* Text */.Text, obj5);
   obj1.children = items1;
   items[1] = callback3(View, obj1);
   let tmp6 = null != first;
   if (tmp6) {
     obj6 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: first };
-    tmp6 = callback2(require(4127) /* Text */.Text, obj6);
+    tmp6 = callback2(require(4161) /* Text */.Text, obj6);
   }
   items[2] = tmp6;
   const obj7 = { style: tmp.button };
@@ -305,7 +305,7 @@ function HTTPProofScreen(proof) {
       outer1_4(false);
     });
   };
-  obj7.children = callback2(require(4544) /* Button */.Button, obj8);
+  obj7.children = callback2(require(4578) /* Button */.Button, obj8);
   items[3] = callback2(View, obj7);
   const obj9 = { style: tmp.button };
   const obj10 = { variant: "secondary" };
@@ -314,10 +314,10 @@ function HTTPProofScreen(proof) {
   obj10.onPress = function onPress() {
 
   };
-  obj9.children = callback2(require(4544) /* Button */.Button, obj10);
+  obj9.children = callback2(require(4578) /* Button */.Button, obj10);
   items[4] = callback2(View, obj9);
   obj.children = items;
-  return callback3(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback3(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 ({ Endpoints: closure_6, PlatformTypes: closure_7 } = ME);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -343,7 +343,7 @@ export default function DomainVerifyModal(arg0) {
     obj = {};
     const intl = onClose(1212).intl;
     obj.headerTitle = intl.string(onClose(1212).t["7lo8+e"]);
-    let obj2 = onClose(5087);
+    let obj2 = onClose(5121);
     obj.headerLeft = obj2.getHeaderBackButton(onClose);
     obj.render = function render() {
       return outer1_8(outer1_12, { onClose });
@@ -352,7 +352,7 @@ export default function DomainVerifyModal(arg0) {
     obj = {};
     const intl2 = onClose(1212).intl;
     obj.headerTitle = intl2.string(onClose(1212).t["7lo8+e"]);
-    obj.headerLeft = onClose(5087).getHeaderBackButton(onClose);
+    obj.headerLeft = onClose(5121).getHeaderBackButton(onClose);
     obj.render = function render(domain) {
       return outer1_8(outer1_13, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -360,8 +360,8 @@ export default function DomainVerifyModal(arg0) {
     const obj1 = {};
     const intl3 = onClose(1212).intl;
     obj1.headerTitle = intl3.string(onClose(1212).t["7lo8+e"]);
-    const obj5 = onClose(5087);
-    obj1.headerLeft = onClose(5087).getHeaderBackButton(onClose);
+    const obj5 = onClose(5121);
+    obj1.headerLeft = onClose(5121).getHeaderBackButton(onClose);
     obj1.render = function render(domain) {
       return outer1_8(outer1_14, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -369,6 +369,6 @@ export default function DomainVerifyModal(arg0) {
     obj2 = { screens: obj, initialRouteName: constants.DOMAIN };
     const intl4 = onClose(1212).intl;
     obj2.headerBackTitle = intl4.string(onClose(1212).t["13/7kX"]);
-    return callback2(onClose(5517).Navigator, obj2);
+    return callback2(onClose(5552).Navigator, obj2);
   }
 };

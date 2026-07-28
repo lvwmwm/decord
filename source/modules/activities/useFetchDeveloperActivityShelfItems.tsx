@@ -1,10 +1,10 @@
-// Module ID: 11229
-// Function ID: 87348
+// Module ID: 11267
+// Function ID: 87467
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [31, 5663, 10471, 3804, 566, 5668, 2]
+// Dependencies: [31, 5673, 10509, 3838, 566, 5678, 2]
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 11229 (useFetchDeveloperActivityShelfItems)
+// Module 11267 (useFetchDeveloperActivityShelfItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DevShelfFetchState } from "_isNativeReflectConstruct";

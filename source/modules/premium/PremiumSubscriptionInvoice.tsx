@@ -1,10 +1,10 @@
-// Module ID: 6490
-// Function ID: 58016
+// Module ID: 6526
+// Function ID: 58105
 // Name: createSubscriptionInvoicePreview
-// Dependencies: [29, 57, 5, 31, 3786, 653, 3777, 507, 686, 4030, 44, 4370, 2]
+// Dependencies: [29, 57, 5, 31, 3820, 653, 3811, 507, 686, 4064, 44, 4404, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 6490 (createSubscriptionInvoicePreview)
+// Module 6526 (createSubscriptionInvoicePreview)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
@@ -83,6 +83,7 @@ async function _updateSubscriptionInvoicePreview(arg0, arg1) {
     let applyEntitlements;
     let currency;
     let items;
+    let loadId;
     let paymentSourceId;
     let renewal;
     let subscriptionId;
@@ -91,7 +92,7 @@ async function _updateSubscriptionInvoicePreview(arg0, arg1) {
     if (applyEntitlements === undefined) {
       applyEntitlements = false;
     }
-    ({ analyticsLocations, analyticsLocation, userDiscountOfferId } = arg0);
+    ({ analyticsLocations, analyticsLocation, userDiscountOfferId, loadId } = arg0);
     yield undefined;
     let result = items;
     if (null != items) {
@@ -116,6 +117,7 @@ async function _updateSubscriptionInvoicePreview(arg0, arg1) {
     obj.apply_entitlements = applyEntitlements;
     obj.currency = currency;
     obj.user_discount_offer_id = userDiscountOfferId;
+    obj.load_id = loadId;
     const HTTP = outer2_0(outer2_2[7]).HTTP;
     obj = { url: outer2_12.BILLING_SUBSCRIPTION_PREVIEW(subscriptionId), query: { location: analyticsLocation, location_stack: analyticsLocations }, body: obj, oldFormErrors: true, rejectWithError: false };
     const invoiceFromServer = outer2_11.createInvoiceFromServer(yield HTTP.patch(obj).body);

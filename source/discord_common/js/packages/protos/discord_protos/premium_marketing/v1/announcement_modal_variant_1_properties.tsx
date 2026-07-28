@@ -1,9 +1,9 @@
-// Module ID: 6212
-// Function ID: 55789
+// Module ID: 6247
+// Function ID: 55910
 // Name: _callSuper
-// Dependencies: [57, 6, 7, 15, 17, 18, 6213, 6214, 1284, 1313, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 6248, 6249, 1284, 6250, 2]
 
-// Module 6212 (_callSuper)
+// Module 6247 (_callSuper)
 import _slicedToArray from "_slicedToArray";
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,6 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let obj = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", OPEN_MARKETING_PAGE: 1, [1]: "OPEN_MARKETING_PAGE", OPEN_TIER_2_PAYMENT_MODAL: 2, [2]: "OPEN_TIER_2_PAYMENT_MODAL", OPEN_TIER_1_PAYMENT_MODAL: 3, [3]: "OPEN_TIER_1_PAYMENT_MODAL", OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER: 4, [4]: "OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER", OPEN_PLAN_SELECTION_MODAL: 5, [5]: "OPEN_PLAN_SELECTION_MODAL", OPEN_PREMIUM_GROUP_PAYMENT_MODAL: 6, [6]: "OPEN_PREMIUM_GROUP_PAYMENT_MODAL", OPEN_SOCIAL_LAYER_STOREFRONT: 7, [7]: "OPEN_SOCIAL_LAYER_STOREFRONT" };
 let tmp2 = ((MessageType) => {
   class FeatureCard$Type {
     constructor() {
@@ -67,7 +66,7 @@ let tmp2 = ((MessageType) => {
       items[8] = obj2;
       items1 = ["discord_protos.premium_marketing.v1.FeatureCard"];
       items1[1] = items;
-      return outer1_14(this, FeatureCard$Type, items1);
+      return outer1_12(this, FeatureCard$Type, items1);
     }
   }
   callback3(FeatureCard$Type, MessageType);
@@ -269,188 +268,8 @@ let tmp2 = ((MessageType) => {
   return callback(FeatureCard$Type, items);
 })(require("module_1284").MessageType);
 tmp2 = new tmp2();
-let closure_9 = tmp2;
+let closure_8 = tmp2;
 let tmp4 = ((MessageType) => {
-  class SubscriptionButton$Type {
-    constructor() {
-      tmp = outer1_3(this, SubscriptionButton$Type);
-      items = [, , , , ];
-      items[0] = { no: 1, name: "copy", kind: "scalar", T: 9 };
-      obj = { no: 2, name: "button_action", kind: "enum" };
-      obj.T = function T() {
-        const items = ["discord_protos.premium_marketing.v1.ButtonAction", outer2_8, "BUTTON_ACTION_"];
-        return items;
-      };
-      items[1] = obj;
-      items[2] = { no: 3, name: "deeplink_section", kind: "scalar", T: 9 };
-      obj = { no: 4, name: "copy_localized", kind: "message" };
-      obj.T = function T() {
-        return SubscriptionButton$Type(outer2_1[6]).LocalizedString;
-      };
-      items[3] = obj;
-      obj1 = { no: 5, name: "navigable_storefront_application_id", kind: "message" };
-      obj1.T = function T() {
-        return SubscriptionButton$Type(outer2_1[9]).UInt64Value;
-      };
-      items[4] = obj1;
-      items1 = ["discord_protos.premium_marketing.v1.SubscriptionButton"];
-      items1[1] = items;
-      return outer1_14(this, SubscriptionButton$Type, items1);
-    }
-  }
-  callback3(SubscriptionButton$Type, MessageType);
-  let obj = {
-    key: "create",
-    value(arr) {
-      let obj = { copy: "", buttonAction: 0, deeplinkSection: "" };
-      const _Object = Object;
-      obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, SubscriptionButton$Type(outer1_1[8]).MESSAGE_TYPE, obj);
-      if (undefined !== arr) {
-        const result = SubscriptionButton$Type(outer1_1[8]).reflectionMergePartial(this, obj, arr);
-        const obj3 = SubscriptionButton$Type(outer1_1[8]);
-      }
-      return obj;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "internalBinaryRead",
-    value(pos, arg1, readUnknownField) {
-      let tmp7;
-      let tmp8;
-      let obj = arg3;
-      const self = this;
-      if (null == arg3) {
-        obj = self.create();
-      }
-      const sum = pos.pos + arg1;
-      while (pos.pos < sum) {
-        let tmp5 = outer1_2;
-        let tmp6 = outer1_2(pos.tag(), 2);
-        [tmp7, tmp8] = tmp6;
-        if (1 === tmp7) {
-          obj.copy = pos.string();
-          let tmp10 = tmp3;
-          let tmp11 = tmp4;
-        } else if (2 === tmp7) {
-          obj.buttonAction = pos.int32();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (3 === tmp7) {
-          obj.deeplinkSection = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (4 === tmp7) {
-          let tmp31 = SubscriptionButton$Type;
-          let tmp32 = outer1_1;
-          let LocalizedString = SubscriptionButton$Type(outer1_1[6]).LocalizedString;
-          let tmp33 = LocalizedString;
-          let tmp34 = pos;
-          let tmp35 = readUnknownField;
-          obj.copyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.copyLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (5 === tmp7) {
-          let tmp26 = SubscriptionButton$Type;
-          let tmp27 = outer1_1;
-          let UInt64Value = SubscriptionButton$Type(outer1_1[9]).UInt64Value;
-          let tmp28 = UInt64Value;
-          let tmp29 = pos;
-          let tmp30 = readUnknownField;
-          obj.navigableStorefrontApplicationId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.navigableStorefrontApplicationId);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else {
-          readUnknownField = readUnknownField.readUnknownField;
-          if ("throw" === readUnknownField) {
-            let tmp19 = globalThis;
-            let _globalThis = globalThis;
-            let _Error = Error;
-            let _HermesInternal = HermesInternal;
-            let str = "Unknown field ";
-            let str2 = " (wire type ";
-            let str3 = ") for ";
-            let tmp20 = tmp7;
-            let tmp21 = tmp8;
-            let prototype = _Error.prototype;
-            let tmp22 = new.target;
-            let tmp23 = new.target;
-            _Error = new _Error("Unknown field " + tmp7 + " (wire type " + tmp8 + ") for " + self.typeName);
-            let tmp25 = _Error;
-            throw _Error;
-          } else {
-            let skipResult = pos.skip(tmp8);
-            tmp10 = readUnknownField;
-            tmp11 = skipResult;
-            if (false !== readUnknownField) {
-              let onRead = readUnknownField;
-              if (true === readUnknownField) {
-                let tmp12 = SubscriptionButton$Type;
-                let tmp13 = outer1_1;
-                onRead = SubscriptionButton$Type(outer1_1[8]).UnknownFieldHandler.onRead;
-              }
-              let tmp14 = obj;
-              let tmp15 = tmp7;
-              let tmp16 = tmp8;
-              let tmp17 = skipResult;
-              let onReadResult = onRead(self.typeName, obj, tmp7, tmp8, skipResult);
-              tmp10 = readUnknownField;
-              tmp11 = skipResult;
-            }
-          }
-        }
-        tmp3 = tmp10;
-        tmp4 = tmp11;
-      }
-      return obj;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "internalBinaryWrite",
-    value(copy, tag, writeUnknownFields) {
-      if ("" !== copy.copy) {
-        tag.tag(1, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited).string(copy.copy);
-        const tagResult = tag.tag(1, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited);
-      }
-      if (0 !== copy.buttonAction) {
-        tag.tag(2, SubscriptionButton$Type(outer1_1[8]).WireType.Varint).int32(copy.buttonAction);
-        const tagResult1 = tag.tag(2, SubscriptionButton$Type(outer1_1[8]).WireType.Varint);
-      }
-      if ("" !== copy.deeplinkSection) {
-        tag.tag(3, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited).string(copy.deeplinkSection);
-        const tagResult2 = tag.tag(3, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited);
-      }
-      if (copy.copyLocalized) {
-        const LocalizedString = SubscriptionButton$Type(outer1_1[6]).LocalizedString;
-        const tagResult3 = tag.tag(4, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited);
-        const joined = LocalizedString.internalBinaryWrite(copy.copyLocalized, tag.tag(4, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(copy.copyLocalized, tag.tag(4, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (copy.navigableStorefrontApplicationId) {
-        const UInt64Value = SubscriptionButton$Type(outer1_1[9]).UInt64Value;
-        const tagResult4 = tag.tag(5, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited);
-        const joined1 = UInt64Value.internalBinaryWrite(copy.navigableStorefrontApplicationId, tag.tag(5, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = UInt64Value.internalBinaryWrite(copy.navigableStorefrontApplicationId, tag.tag(5, SubscriptionButton$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      let onWrite = writeUnknownFields.writeUnknownFields;
-      if (false !== onWrite) {
-        if (1 == onWrite) {
-          onWrite = SubscriptionButton$Type(outer1_1[8]).UnknownFieldHandler.onWrite;
-        }
-        const self = this;
-        onWrite(this.typeName, copy, tag);
-      }
-      return tag;
-    }
-  };
-  items[2] = obj;
-  return callback(SubscriptionButton$Type, items);
-})(require("module_1284").MessageType);
-tmp4 = new tmp4();
-let closure_10 = tmp4;
-let tmp6 = ((MessageType) => {
   class Variant1Storage$Type {
     constructor() {
       tmp = outer1_3(this, Variant1Storage$Type);
@@ -466,7 +285,7 @@ let tmp6 = ((MessageType) => {
       items[2] = obj1;
       items1 = ["discord_protos.premium_marketing.v1.Variant1Storage"];
       items1[1] = items;
-      return outer1_14(this, Variant1Storage$Type, items1);
+      return outer1_12(this, Variant1Storage$Type, items1);
     }
   }
   callback3(Variant1Storage$Type, MessageType);
@@ -755,9 +574,9 @@ let tmp6 = ((MessageType) => {
   };
   return callback(Variant1Storage$Type, items);
 })(require("module_1284").MessageType);
-tmp6 = new tmp6();
-let closure_11 = tmp6;
-let tmp8 = ((MessageType) => {
+tmp4 = new tmp4();
+let closure_9 = tmp4;
+let tmp6 = ((MessageType) => {
   class Subtitle$Type {
     constructor() {
       tmp = outer1_3(this, Subtitle$Type);
@@ -767,7 +586,7 @@ let tmp8 = ((MessageType) => {
       items[2] = { no: 3, name: "is_default", kind: "scalar", T: 8 };
       items1 = ["discord_protos.premium_marketing.v1.Subtitle"];
       items1[1] = items;
-      return outer1_14(this, Subtitle$Type, items1);
+      return outer1_12(this, Subtitle$Type, items1);
     }
   }
   callback3(Subtitle$Type, MessageType);
@@ -888,9 +707,9 @@ let tmp8 = ((MessageType) => {
   items[2] = obj;
   return callback(Subtitle$Type, items);
 })(require("module_1284").MessageType);
-tmp8 = new tmp8();
-let closure_12 = tmp8;
-let tmp10 = ((MessageType) => {
+tmp6 = new tmp6();
+let closure_10 = tmp6;
+let tmp8 = ((MessageType) => {
   class Disclaimer$Type {
     constructor() {
       tmp = outer1_3(this, Disclaimer$Type);
@@ -908,7 +727,7 @@ let tmp10 = ((MessageType) => {
       items[2] = obj;
       items1 = ["discord_protos.premium_marketing.v1.Disclaimer"];
       items1[1] = items;
-      return outer1_14(this, Disclaimer$Type, items1);
+      return outer1_12(this, Disclaimer$Type, items1);
     }
   }
   callback3(Disclaimer$Type, MessageType);
@@ -1045,9 +864,9 @@ let tmp10 = ((MessageType) => {
   items[2] = obj;
   return callback(Disclaimer$Type, items);
 })(require("module_1284").MessageType);
-tmp10 = new tmp10();
-let closure_13 = tmp10;
-let tmp12 = ((MessageType) => {
+tmp8 = new tmp8();
+let closure_11 = tmp8;
+let tmp10 = ((MessageType) => {
   class AnnouncementModalVariant1Properties$Type {
     constructor() {
       tmp = outer1_3(this, AnnouncementModalVariant1Properties$Type);
@@ -1058,12 +877,12 @@ let tmp12 = ((MessageType) => {
       items[3] = { no: 4, name: "help_article_id", kind: "scalar", T: 9 };
       obj = { no: 5, name: "feature_cards", kind: "message", repeat: 1 };
       obj.T = function T() {
-        return outer2_9;
+        return outer2_8;
       };
       items[4] = obj;
       obj = { no: 6, name: "button", kind: "message" };
       obj.T = function T() {
-        return outer2_10;
+        return AnnouncementModalVariant1Properties$Type(outer2_1[9]).CTAButton;
       };
       items[5] = obj;
       items[6] = { no: 8, name: "hero_art_video_link_light_theme", kind: "scalar", T: 9 };
@@ -1072,17 +891,17 @@ let tmp12 = ((MessageType) => {
       items[9] = { no: 11, name: "modal_top_pill", kind: "scalar", T: 9 };
       obj1 = { no: 13, name: "hero_art_video_subtitles", kind: "message", repeat: 1 };
       obj1.T = function T() {
-        return outer2_12;
+        return outer2_10;
       };
       items[10] = obj1;
       obj2 = { no: 14, name: "storage", kind: "message" };
       obj2.T = function T() {
-        return outer2_11;
+        return outer2_9;
       };
       items[11] = obj2;
       obj3 = { no: 15, name: "disclaimer", kind: "message" };
       obj3.T = function T() {
-        return outer2_13;
+        return outer2_11;
       };
       items[12] = obj3;
       obj4 = { no: 18, name: "help_article", kind: "message" };
@@ -1109,7 +928,7 @@ let tmp12 = ((MessageType) => {
       items[18] = { no: 12, name: "body", kind: "scalar", T: 9 };
       items1 = ["discord_protos.premium_marketing.v1.AnnouncementModalVariant1Properties"];
       items1[1] = items;
-      return outer1_14(this, AnnouncementModalVariant1Properties$Type, items1);
+      return outer1_12(this, AnnouncementModalVariant1Properties$Type, items1);
     }
   }
   callback3(AnnouncementModalVariant1Properties$Type, MessageType);
@@ -1174,20 +993,21 @@ let tmp12 = ((MessageType) => {
       let num9 = 0;
       if (0 < header.featureCards.length) {
         do {
-          let tmp13 = outer1_9;
+          let tmp13 = outer1_8;
           let tmp14 = AnnouncementModalVariant1Properties$Type;
           let tmp15 = outer1_1;
           let tagResult4 = tag.tag(5, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited);
-          let internalBinaryWriteResult = outer1_9.internalBinaryWrite(header.featureCards[num9], tagResult4.fork(), writeUnknownFields);
+          let internalBinaryWriteResult = outer1_8.internalBinaryWrite(header.featureCards[num9], tagResult4.fork(), writeUnknownFields);
           let joined = internalBinaryWriteResult.join();
           num9 = num9 + 1;
           length = header.featureCards.length;
         } while (num9 < length);
       }
       if (header.button) {
+        const CTAButton = AnnouncementModalVariant1Properties$Type(outer1_1[9]).CTAButton;
         const tagResult5 = tag.tag(6, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited);
-        const joined1 = outer1_10.internalBinaryWrite(header.button, tag.tag(6, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = outer1_10.internalBinaryWrite(header.button, tag.tag(6, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const joined1 = CTAButton.internalBinaryWrite(header.button, tag.tag(6, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult1 = CTAButton.internalBinaryWrite(header.button, tag.tag(6, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if ("" !== header.heroArtVideoLinkLightTheme) {
         tag.tag(8, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).string(header.heroArtVideoLinkLightTheme);
@@ -1205,28 +1025,28 @@ let tmp12 = ((MessageType) => {
         tag.tag(11, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).string(header.modalTopPill);
         const tagResult9 = tag.tag(11, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited);
       }
-      let num14 = 0;
+      let num15 = 0;
       if (0 < header.heroArtVideoSubtitles.length) {
         do {
-          let tmp33 = outer1_12;
-          let tmp34 = AnnouncementModalVariant1Properties$Type;
-          let tmp35 = outer1_1;
+          let tmp32 = outer1_10;
+          let tmp33 = AnnouncementModalVariant1Properties$Type;
+          let tmp34 = outer1_1;
           let tagResult10 = tag.tag(13, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited);
-          let internalBinaryWriteResult2 = outer1_12.internalBinaryWrite(header.heroArtVideoSubtitles[num14], tagResult10.fork(), writeUnknownFields);
+          let internalBinaryWriteResult2 = outer1_10.internalBinaryWrite(header.heroArtVideoSubtitles[num15], tagResult10.fork(), writeUnknownFields);
           let joined2 = internalBinaryWriteResult2.join();
-          num14 = num14 + 1;
+          num15 = num15 + 1;
           length2 = header.heroArtVideoSubtitles.length;
-        } while (num14 < length2);
+        } while (num15 < length2);
       }
       if (header.storage) {
         const tagResult11 = tag.tag(14, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited);
-        const joined3 = outer1_11.internalBinaryWrite(header.storage, tag.tag(14, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult3 = outer1_11.internalBinaryWrite(header.storage, tag.tag(14, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const joined3 = outer1_9.internalBinaryWrite(header.storage, tag.tag(14, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult3 = outer1_9.internalBinaryWrite(header.storage, tag.tag(14, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if (header.disclaimer) {
         const tagResult12 = tag.tag(15, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited);
-        const joined4 = outer1_13.internalBinaryWrite(header.disclaimer, tag.tag(15, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult4 = outer1_13.internalBinaryWrite(header.disclaimer, tag.tag(15, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const joined4 = outer1_11.internalBinaryWrite(header.disclaimer, tag.tag(15, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult4 = outer1_11.internalBinaryWrite(header.disclaimer, tag.tag(15, AnnouncementModalVariant1Properties$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if (header.helpArticle) {
         const HelpArticle = AnnouncementModalVariant1Properties$Type(outer1_1[7]).HelpArticle;
@@ -1274,13 +1094,11 @@ let tmp12 = ((MessageType) => {
   items[2] = obj;
   return callback(AnnouncementModalVariant1Properties$Type, items);
 })(require("module_1284").MessageType);
-tmp12 = new tmp12();
+tmp10 = new tmp10();
 let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/announcement_modal_variant_1_properties.tsx");
 
-export const ButtonAction = obj;
 export const FeatureCard = tmp2;
-export const SubscriptionButton = tmp4;
-export const Variant1Storage = tmp6;
-export const Subtitle = tmp8;
-export const Disclaimer = tmp10;
-export const AnnouncementModalVariant1Properties = tmp12;
+export const Variant1Storage = tmp4;
+export const Subtitle = tmp6;
+export const Disclaimer = tmp8;
+export const AnnouncementModalVariant1Properties = tmp10;

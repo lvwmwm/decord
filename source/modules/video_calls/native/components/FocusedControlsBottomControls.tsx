@@ -1,10 +1,10 @@
-// Module ID: 10635
-// Function ID: 82924
+// Module ID: 10673
+// Function ID: 83045
 // Name: FocusedControlsExpanded
-// Dependencies: [57, 31, 27, 10174, 10175, 653, 33, 477, 4131, 689, 5053, 1273, 1557, 3992, 10636, 668, 1212, 5446, 3947, 1334, 4132, 5217, 9542, 1450, 10467, 1207, 3843, 4534, 3977, 10347, 2]
+// Dependencies: [57, 31, 27, 10214, 10215, 653, 33, 477, 4165, 689, 5087, 1273, 1557, 4026, 10674, 668, 1212, 5481, 3981, 1334, 4166, 5251, 9582, 1450, 10505, 1207, 3877, 4568, 4011, 10387, 2]
 // Exports: default
 
-// Module 10635 (FocusedControlsExpanded)
+// Module 10673 (FocusedControlsExpanded)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "getIOSBlurEffect";
@@ -64,9 +64,9 @@ function FocusedControlsExpanded(children) {
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = positionY(10636);
+  let obj = positionY(10674);
   const canShowTooltip = obj.useCanShowTooltip(positionY(668).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(3992);
+  positionY(4026);
   const fn = function o() {
     return { opacity: 1 - Math.min(-1 * positionY.get() / outer1_15, 1) };
   };
@@ -82,7 +82,7 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
     const intl = positionY(1212).intl;
     obj1.label = intl.string(positionY(1212).t.zYzy2i);
     obj.children = callback2(positionY(1273).Tooltip, obj1);
-    tmp5 = callback2(importDefault(3992).View, obj);
+    tmp5 = callback2(importDefault(4026).View, obj);
   }
   return tmp5;
 }
@@ -94,7 +94,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = positionY(3992);
+  let obj = positionY(4026);
   const fn = function _() {
     return { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - outer1_15), 0) };
   };
@@ -105,14 +105,14 @@ function FocusedControlsAboveActionBarView(positionY) {
   obj = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded } };
   const obj1 = { style: tmp.aboveActionBarContainer };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5446).ActionSheetHeaderBar, {}), ];
+  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5481).ActionSheetHeaderBar, {}), ];
   let tmp7 = null != aboveActionBar;
   if (tmp7) {
     const obj2 = {};
     const items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
     obj2.style = items1;
     obj2.children = aboveActionBar;
-    tmp7 = callback2(offsetY(3992).View, obj2);
+    tmp7 = callback2(offsetY(4026).View, obj2);
   }
   items[2] = tmp7;
   obj1.children = items;
@@ -364,7 +364,7 @@ class FocusedControlsBottomDrawer {
     Math = first;
     tmp16 = tmp14[2];
     c9 = tmp16;
-    obj2 = require("module_3992");
+    obj2 = require("module_4026");
     fn = function f() {
       let num = 0;
       if (!reveal) {
@@ -431,7 +431,7 @@ class FocusedControlsBottomDrawer {
         ComponentDispatch.unsubscribe(outer2_12.SELECT_ACTIVITY, handleSelectActivity);
       };
     }, items2);
-    obj4 = require("module_3992");
+    obj4 = require("module_4026");
     class Z {
       constructor() {
         obj = { height: c5 };
@@ -492,9 +492,9 @@ class FocusedControlsBottomDrawer {
     obj6.positionY = first;
     items6[3] = jsx(FocusedControlsExpanded, obj6);
     obj4.children = items6;
-    obj3.children = tmp25(require("module_3992").View, obj4);
+    obj3.children = tmp25(require("module_4026").View, obj4);
     obj2.children = tmp24(require("Directions").GestureDetector, obj3);
-    return tmp23(require("module_3992").View, obj2);
+    return tmp23(require("module_4026").View, obj2);
   }
 }
 ({ View: closure_5, TouchableWithoutFeedback: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
@@ -571,9 +571,9 @@ export default function FocusedControlsBottomControls(omitPTT) {
   const items = [header, actionBar, ];
   let tmp7 = null;
   if (!flag) {
-    obj = { look: _require(10347).CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: closure_8, stopCallback: closure_9 };
-    tmp7 = callback2(importDefault(10347), obj);
-    const tmp11 = importDefault(10347);
+    obj = { look: _require(10387).CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: closure_8, stopCallback: closure_9 };
+    tmp7 = callback2(importDefault(10387), obj);
+    const tmp11 = importDefault(10387);
   }
   items[2] = tmp7;
   obj.children = items;

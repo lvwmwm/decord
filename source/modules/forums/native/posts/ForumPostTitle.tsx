@@ -1,10 +1,10 @@
-// Module ID: 11131
-// Function ID: 86586
+// Module ID: 11169
+// Function ID: 86705
 // Name: ForumPostTitle
-// Dependencies: [31, 33, 4131, 478, 4127, 2]
+// Dependencies: [31, 33, 4165, 478, 4161, 2]
 // Exports: default
 
-// Module 11131 (ForumPostTitle)
+// Module 11169 (ForumPostTitle)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -35,5 +35,5 @@ export default function ForumPostTitle(arg0) {
     str = "mobile-text-heading-primary";
   }
   const obj = { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title };
-  return jsx(require(4127) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title });
+  return jsx(require(4161) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title });
 };

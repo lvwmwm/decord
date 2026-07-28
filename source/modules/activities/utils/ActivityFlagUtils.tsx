@@ -1,18 +1,18 @@
-// Module ID: 10413
-// Function ID: 80498
+// Module ID: 10453
+// Function ID: 80627
 // Name: _computeActivityPartyPrivacyFlags
-// Dependencies: [653, 3804, 587, 1360, 5972, 2]
+// Dependencies: [653, 3838, 587, 1360, 6006, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10413 (_computeActivityPartyPrivacyFlags)
+// Module 10453 (_computeActivityPartyPrivacyFlags)
 import ME from "ME";
 
 let closure_3;
 let closure_4;
 function _computeActivityPartyPrivacyFlags(arg0) {
-  const AllowActivityPartyPrivacyFriends = require(3804) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+  const AllowActivityPartyPrivacyFriends = require(3838) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
   const setting = AllowActivityPartyPrivacyFriends.getSetting();
-  const AllowActivityPartyPrivacyVoiceChannel = require(3804) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+  const AllowActivityPartyPrivacyVoiceChannel = require(3838) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
   const PARTY_PRIVACY_FRIENDS = constants.PARTY_PRIVACY_FRIENDS;
   const setting1 = AllowActivityPartyPrivacyVoiceChannel.getSetting();
   if (setting) {
@@ -91,7 +91,7 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   }
   let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(5972)(remoteApplicationActivity);
+    hasFlagResult = importDefault(6006)(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

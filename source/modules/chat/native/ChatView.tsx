@@ -1,9 +1,9 @@
-// Module ID: 10349
-// Function ID: 79926
-// Dependencies: [31, 27, 4809, 1352, 1348, 4350, 653, 33, 4131, 689, 3990, 566, 1212, 4346, 7668, 5450, 10350, 10351, 5703, 10353, 9484, 5070, 10354, 10366, 10403, 11089, 11498, 477, 11666, 11667, 11367, 11671, 11674, 10834, 11678, 4663, 14, 9290, 11693, 1273, 9971, 9973, 11695, 11799, 2]
+// Module ID: 10389
+// Function ID: 80055
+// Dependencies: [31, 27, 4843, 1352, 1348, 4384, 653, 33, 4165, 689, 4024, 566, 1212, 4380, 7704, 5485, 10390, 10391, 5713, 10393, 9524, 5104, 10394, 10406, 10443, 11127, 11536, 477, 11705, 11706, 11405, 11710, 11713, 10872, 11717, 4697, 14, 9334, 11732, 1273, 10011, 10013, 11734, 11838, 2]
 
-// Module 10349
-import importAllResult from "module_11671";
+// Module 10389
+import importAllResult from "module_11710";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { createChannelRecord } from "_callSuper";
 import closure_6 from "_isNativeReflectConstruct";

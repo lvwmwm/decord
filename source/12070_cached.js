@@ -1,7 +1,7 @@
 // Module ID: 12070
-// Function ID: 93962
+// Function ID: 93665
 // Name: cached
-// Dependencies: [12016]
+// Dependencies: [12059]
 
 // Module 12070 (cached)
 const self = this;
@@ -63,8 +63,8 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "\u5B57\u5143", verb: "\u64C1\u6709" }, file: { unit: "\u4F4D\u5143\u7D44", verb: "\u64C1\u6709" }, array: { unit: "\u9805\u76EE", verb: "\u64C1\u6709" }, set: { unit: "\u9805\u76EE", verb: "\u64C1\u6709" } };
-      let closure_1 = { regex: "\u8F38\u5165", email: "\u90F5\u4EF6\u5730\u5740", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO \u65E5\u671F\u6642\u9593", date: "ISO \u65E5\u671F", time: "ISO \u6642\u9593", duration: "ISO \u671F\u9593", ipv4: "IPv4 \u4F4D\u5740", ipv6: "IPv6 \u4F4D\u5740", cidrv4: "IPv4 \u7BC4\u570D", cidrv6: "IPv6 \u7BC4\u570D", base64: "base64 \u7DE8\u78BC\u5B57\u4E32", base64url: "base64url \u7DE8\u78BC\u5B57\u4E32", json_string: "JSON \u5B57\u4E32", e164: "E.164 \u6578\u503C", jwt: "JWT", template_literal: "\u8F38\u5165" };
+      let closure_0 = { string: { unit: "car\u00E0cters", verb: "contenir" }, file: { unit: "bytes", verb: "contenir" }, array: { unit: "elements", verb: "contenir" }, set: { unit: "elements", verb: "contenir" } };
+      let closure_1 = { regex: "entrada", email: "adre\u00E7a electr\u00F2nica", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data i hora ISO", date: "data ISO", time: "hora ISO", duration: "durada ISO", ipv4: "adre\u00E7a IPv4", ipv6: "adre\u00E7a IPv6", cidrv4: "rang IPv4", cidrv6: "rang IPv6", base64: "cadena codificada en base64", base64url: "cadena codificada en base64url", json_string: "cadena JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
       let closure_2 = { nan: "NaN" };
       return (code) => {
         let minimum;
@@ -76,119 +76,123 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp51 = parsedTypeResult;
+          let tmp53 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp51 = tmp50;
+            tmp53 = tmp52;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "\u7121\u6548\u7684\u8F38\u5165\u503C\uFF1A\u9810\u671F\u70BA instanceof " + code.expected + "\uFF0C\u4F46\u6536\u5230 " + tmp51;
+            let combined = "Tipus inv\u00E0lid: s'esperava instanceof " + code.expected + ", s'ha rebut " + tmp53;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "\u7121\u6548\u7684\u8F38\u5165\u503C\uFF1A\u9810\u671F\u70BA " + expected + "\uFF0C\u4F46\u6536\u5230 " + tmp51;
+            combined = "Tipus inv\u00E0lid: s'esperava " + expected + ", s'ha rebut " + tmp53;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "\u7121\u6548\u7684\u8F38\u5165\u503C\uFF1A\u9810\u671F\u70BA " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Valor inv\u00E0lid: s'esperava " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "\u7121\u6548\u7684\u9078\u9805\uFF1A\u9810\u671F\u70BA\u4EE5\u4E0B\u5176\u4E2D\u4E4B\u4E00 " + closure_2.joinValues(code.values, "|");
+            combined1 = "Opci\u00F3 inv\u00E0lida: s'esperava una de " + closure_2.joinValues(code.values, " o ");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str31 = "<";
+          let str33 = "menys de";
           if (code.inclusive) {
-            str31 = "<=";
+            str33 = "com a m\u00E0xim";
           }
-          const tmp26 = getSizing(code.origin);
+          const tmp28 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str32 = "\u503C";
-          if (tmp26) {
-            if (tmp28) {
-              str32 = origin2;
+          let str34 = "el valor";
+          if (tmp28) {
+            if (tmp30) {
+              str34 = origin2;
             }
             let str = code.maximum.toString();
-            const unit = tmp26.unit;
-            let str37 = "\u500B\u5143\u7D20";
+            const unit = tmp28.unit;
+            let str40 = "elements";
             if (null != unit) {
-              str37 = unit;
+              str40 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "\u6578\u503C\u904E\u5927\uFF1A\u9810\u671F " + str32 + " \u61C9\u70BA " + str31 + str + " " + str37;
-            const str36 = code.maximum;
+            let combined2 = "Massa gran: s'esperava que " + str34 + " contingu\u00E9s " + str33 + " " + str + " " + str40;
+            const str39 = code.maximum;
           } else {
-            let tmp29 = str32;
-            if (tmp28) {
-              tmp29 = origin2;
+            let tmp31 = str34;
+            if (tmp30) {
+              tmp31 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "\u6578\u503C\u904E\u5927\uFF1A\u9810\u671F " + tmp29 + " \u61C9\u70BA " + str31 + code.maximum.toString();
-            const str33 = code.maximum;
+            combined2 = "Massa gran: s'esperava que " + tmp31 + " fos " + str33 + " " + code.maximum.toString();
+            const str35 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str25 = ">";
+          let str24 = "m\u00E9s de";
           if (code.inclusive) {
-            str25 = ">=";
+            str24 = "com a m\u00EDnim";
           }
-          const tmp15 = getSizing(code.origin);
+          const tmp17 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
-          if (tmp15) {
+          if (tmp17) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "\u6578\u503C\u904E\u5C0F\uFF1A\u9810\u671F " + origin + " \u61C9\u70BA " + str25 + str1 + " " + tmp15.unit;
+            let combined3 = "Massa petit: s'esperava que " + origin + " contingu\u00E9s " + str24 + " " + str1 + " " + tmp17.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "\u6578\u503C\u904E\u5C0F\uFF1A\u9810\u671F " + origin + " \u61C9\u70BA " + str25 + str1;
+            combined3 = "Massa petit: s'esperava que " + origin + " fos " + str24 + " " + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u4EE5 \"" + code.prefix + "\" \u958B\u982D";
+            let combined4 = "Format inv\u00E0lid: ha de comen\u00E7ar amb \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u4EE5 \"" + code.suffix + "\" \u7D50\u5C3E";
+            combined4 = "Format inv\u00E0lid: ha d'acabar amb \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u5305\u542B \"" + code.includes + "\"";
+            combined4 = "Format inv\u00E0lid: ha d'incloure \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u7B26\u5408\u683C\u5F0F " + code.pattern;
+            combined4 = "Format inv\u00E0lid: ha de coincidir amb el patr\u00F3 " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684 " + format;
+            combined4 = "Format inv\u00E0lid per a " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "\u7121\u6548\u7684\u6578\u5B57\uFF1A\u5FC5\u9808\u70BA " + code.divisor + " \u7684\u500D\u6578";
+          return "N\u00FAmero inv\u00E0lid: ha de ser m\u00FAltiple de " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str9 = "";
+          let str7 = "";
+          let str8 = "";
           if (code.keys.length > 1) {
-            str9 = "\u5011";
+            str8 = "s";
+          }
+          if (code.keys.length > 1) {
+            str7 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "\u7121\u6CD5\u8B58\u5225\u7684\u9375\u503C" + str9 + "\uFF1A" + closure_2.joinValues(code.keys, "\u3001");
+          return "Clau" + str8 + " no reconeguda" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "" + code.origin + " \u4E2D\u6709\u7121\u6548\u7684\u9375\u503C";
+            return "Clau inv\u00E0lida a " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "" + code.origin + " \u4E2D\u6709\u7121\u6548\u7684\u503C";
+                return "Element inv\u00E0lid a " + code.origin;
               }
             }
-            return "\u7121\u6548\u7684\u8F38\u5165\u503C";
+            return "Entrada inv\u00E0lida";
           }
         }
       };

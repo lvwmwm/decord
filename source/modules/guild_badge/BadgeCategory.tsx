@@ -1,10 +1,10 @@
-// Module ID: 8395
-// Function ID: 67127
+// Module ID: 8439
+// Function ID: 67274
 // Name: BadgeCategory
-// Dependencies: [8394, 2]
+// Dependencies: [8438, 2]
 // Exports: getBadgeCategory
 
-// Module 8395 (BadgeCategory)
+// Module 8439 (BadgeCategory)
 const obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", VERIFIED_AND_PARTNERED: 2, [2]: "VERIFIED_AND_PARTNERED", COMMUNITY: 3, [3]: "COMMUNITY", DISCOVERABLE: 4, [4]: "DISCOVERABLE", STAFF: 5, [5]: "STAFF", NONE: 6, [6]: "NONE" };
 const result = require("set").fileFinishedImporting("modules/guild_badge/BadgeCategory.tsx");
 
@@ -24,7 +24,7 @@ export const getBadgeCategory = function getBadgeCategory(guildTraits) {
       DISCOVERABLE = obj.PARTNERED;
     } else {
       if (guildTraits.community) {
-        if (guildTraits.visibility === require(8394) /* isPremiumGuild */.GuildVisibility.PUBLIC) {
+        if (guildTraits.visibility === require(8438) /* isPremiumGuild */.GuildVisibility.PUBLIC) {
           DISCOVERABLE = obj.DISCOVERABLE;
         }
       }

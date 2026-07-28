@@ -1,13 +1,13 @@
-// Module ID: 9897
-// Function ID: 76676
+// Module ID: 9937
+// Function ID: 76805
 // Name: PollEmoji
-// Dependencies: [57, 5, 31, 27, 4123, 4992, 1348, 4350, 1850, 33, 4131, 689, 566, 1392, 5150, 1212, 4661, 4127, 6020, 5217, 7935, 5462, 9898, 9384, 6023, 4320, 3970, 5164, 1273, 9386, 8297, 3992, 4132, 6619, 4067, 3977, 9899, 9900, 5482, 4099, 5187, 2]
+// Dependencies: [57, 5, 31, 27, 4157, 5026, 1348, 4384, 1850, 33, 4165, 689, 566, 1392, 5184, 1212, 4695, 4161, 6054, 5251, 7972, 5497, 9938, 9428, 6057, 4354, 4004, 5198, 1273, 9430, 8335, 4026, 4166, 6655, 4101, 4011, 9939, 9940, 5517, 4133, 5221, 2]
 // Exports: default
 
-// Module 9897 (PollEmoji)
+// Module 9937 (PollEmoji)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importAllResult from "module_3992";
+import importAllResult from "module_4026";
 import get_ActivityIndicator from "TableRowInner";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ function PollEmoji(emoji) {
     }
   });
   obj = { style: emoji.style, src: stateFromStores, name: emoji.name, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emojiImage };
-  return callback(importDefault(5150), obj);
+  return callback(importDefault(5184), obj);
 }
 function PollVotesHeader(message) {
   message = message.message;
@@ -199,26 +199,26 @@ function NoResults() {
   const tmp = callback3();
   let obj = { style: tmp.noResultsContainer };
   obj = { style: tmp.noResultsImage };
-  const tmp2 = importDefault(4067)();
+  const tmp2 = importDefault(4101)();
   const tmp3 = closure_15;
   const tmp4 = closure_7;
   const tmp5 = callback;
   const tmp6 = closure_6;
   if (obj3.isThemeDark(tmp2)) {
-    let tmp7Result = tmp7(9899);
+    let tmp7Result = tmp7(9939);
   } else {
-    tmp7Result = tmp7(9900);
+    tmp7Result = tmp7(9940);
   }
   obj.source = tmp7Result;
   const items = [tmp5(tmp6, obj), , ];
   obj = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.vhQK3o);
-  items[1] = callback(require(4127) /* Text */.Text, obj);
+  items[1] = callback(require(4161) /* Text */.Text, obj);
   const obj1 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.bwytdh);
-  items[2] = callback(require(4127) /* Text */.Text, obj1);
+  items[2] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   return tmp3(tmp4, obj);
 }
@@ -286,15 +286,15 @@ let closure_17 = importAllResult.forwardRef((answer, ref) => {
   let tmp10 = null;
   if (null != answer.poll_media.text) {
     const obj1 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp10 = callback(answer(4127).Text, obj1);
+    tmp10 = callback(answer(4161).Text, obj1);
   }
   items2[1] = tmp10;
   const obj2 = { variant: "text-sm/semibold", color: str, lineClamp: 1 };
   const items3 = [" ", "(", num.toLocaleString(), ")"];
   obj2.children = items3;
-  items2[2] = callback2(answer(4127).Text, obj2);
+  items2[2] = callback2(answer(4161).Text, obj2);
   obj.children = items2;
-  return callback2(answer(4661).PressableHighlight, obj);
+  return callback2(answer(4695).PressableHighlight, obj);
 });
 let closure_18 = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
 let result = require("result").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");

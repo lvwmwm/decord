@@ -1,10 +1,10 @@
-// Module ID: 4173
-// Function ID: 35414
+// Module ID: 4207
+// Function ID: 35516
 // Name: transformCollectiblesItemAssetsFromServer
 // Dependencies: [1877, 2]
 // Exports: default
 
-// Module 4173 (transformCollectiblesItemAssetsFromServer)
+// Module 4207 (transformCollectiblesItemAssetsFromServer)
 function transformCollectiblesItemAssetsFromServer(assets) {
   if (null != assets) {
     const obj = {};
@@ -115,7 +115,15 @@ const result = require("set").fileFinishedImporting("modules/skus/utils/transfor
 
 export default function transformSKUTenantMetadata(social_layer) {
   if (null != social_layer) {
-    const obj = { socialLayer: transformSlayerSKUTenantMetadataFromServer(social_layer.social_layer), collectibles: transformCollectiblesSKUTenantMetadataFromServer(social_layer.collectibles) };
+    const obj = {};
+    let mapped;
+    obj.socialLayer = transformSlayerSKUTenantMetadataFromServer(social_layer.social_layer);
+    obj.collectibles = transformCollectiblesSKUTenantMetadataFromServer(social_layer.collectibles);
+    const plan_features = social_layer.plan_features;
+    if (null != plan_features) {
+      mapped = plan_features.map((title) => ({ title: title.title, description: title.description }));
+    }
+    obj.gameServerPlanFeatures = mapped;
     return obj;
   }
 };

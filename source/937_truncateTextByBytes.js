@@ -1,5 +1,5 @@
 // Module ID: 937
-// Function ID: 10148
+// Function ID: 10152
 // Name: truncateTextByBytes
 // Dependencies: []
 

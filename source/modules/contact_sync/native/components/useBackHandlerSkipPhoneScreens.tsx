@@ -1,10 +1,10 @@
-// Module ID: 11722
-// Function ID: 91013
+// Module ID: 11761
+// Function ID: 91164
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [27, 11705, 5093, 2]
+// Dependencies: [27, 11744, 5127, 2]
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 11722 (useBackHandlerSkipPhoneScreens)
+// Module 11761 (useBackHandlerSkipPhoneScreens)
 import { NativeModules } from "get ActivityIndicator";
 import { ContactSyncScenes } from "ContactSyncLandingPage";
 
@@ -13,7 +13,7 @@ const result = require("useNavigatorBackPressHandler").fileFinishedImporting("mo
 export default function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  _require(5093).useNavigatorBackPressHandler(() => {
+  _require(5127).useNavigatorBackPressHandler(() => {
     if (null != callback) {
       callback();
     } else {
@@ -31,7 +31,7 @@ export default function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   });
 };
 export const useBackHandlerMinimizeApp = function useBackHandlerMinimizeApp() {
-  require(5093) /* useNavigatorBackPressHandler */.useNavigatorBackPressHandler(() => {
+  require(5127) /* useNavigatorBackPressHandler */.useNavigatorBackPressHandler(() => {
     const MinimizeApp = outer1_2.MinimizeApp;
     MinimizeApp.minimizeApp();
     return true;

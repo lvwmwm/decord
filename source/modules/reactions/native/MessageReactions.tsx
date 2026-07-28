@@ -1,10 +1,10 @@
-// Module ID: 9383
-// Function ID: 73146
+// Module ID: 9427
+// Function ID: 73297
 // Name: MessageReactions
-// Dependencies: [31, 4350, 33, 566, 5462, 5482, 9384, 2]
+// Dependencies: [31, 4384, 33, 566, 5497, 5517, 9428, 2]
 // Exports: default
 
-// Module 9383 (MessageReactions)
+// Module 9427 (MessageReactions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -71,14 +71,14 @@ export default function MessageReactions(emoji) {
     items.push(obj);
   });
   const sorted = items.sort((burst_count, burst_count2) => (burst_count2.burst_count > 0 ? burst_count2.burst_count : burst_count2.count) - (burst_count.burst_count > 0 ? burst_count.burst_count : burst_count.count));
-  obj = { value: importDefault(5462)(importDefault(5482).MESSAGE_REACTIONS).analyticsLocations };
+  obj = { value: importDefault(5497)(importDefault(5517).MESSAGE_REACTIONS).analyticsLocations };
   if (items.length > 0) {
     obj = { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst };
     let merged1 = Object.assign(merged);
-    let tmp11 = jsx(items(9384).MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst });
+    let tmp11 = jsx(items(9428).MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst });
   } else {
-    tmp11 = jsx(items(9384).MessageReactionsEmpty, {});
+    tmp11 = jsx(items(9428).MessageReactionsEmpty, {});
   }
   obj.children = tmp11;
-  return jsx(items(5462).AnalyticsLocationProvider, { value: importDefault(5462)(importDefault(5482).MESSAGE_REACTIONS).analyticsLocations });
+  return jsx(items(5497).AnalyticsLocationProvider, { value: importDefault(5497)(importDefault(5517).MESSAGE_REACTIONS).analyticsLocations });
 };

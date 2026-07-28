@@ -1,8 +1,8 @@
-// Module ID: 15031
-// Function ID: 114578
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 12783, 4127, 2]
+// Module ID: 15075
+// Function ID: 114753
+// Dependencies: [31, 27, 33, 4165, 689, 1273, 12826, 4161, 2]
 
-// Module 15031
+// Module 15075
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,12 +33,12 @@ const memoResult = require("result").memo(function VoiceChannelUserLimit(videoLi
   obj = { style: rect.left };
   let tmp3 = null;
   if (videoLimit.videoLimit) {
-    obj = { source: importDefault(12783), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
+    obj = { source: importDefault(12826), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
     tmp3 = callback(require(1273) /* Button */.Icon, obj);
   }
   const items = [tmp3, ];
   const obj1 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: users.toString().padStart(2, "0") };
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [closure_5(View, obj), callback(View, { style: rect.mid }), ];
   const obj3 = { style: rect.right };
@@ -46,7 +46,7 @@ const memoResult = require("result").memo(function VoiceChannelUserLimit(videoLi
   const obj2 = { style: rect.mid };
   const str = users.toString();
   obj4.children = total.toString().padStart(2, "0");
-  obj3.children = callback(require(4127) /* Text */.Text, obj4);
+  obj3.children = callback(require(4161) /* Text */.Text, obj4);
   items1[2] = callback(View, obj3);
   obj.children = items1;
   return closure_5(View, obj);

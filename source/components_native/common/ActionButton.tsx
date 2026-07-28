@@ -1,10 +1,10 @@
-// Module ID: 9019
-// Function ID: 70928
+// Module ID: 9063
+// Function ID: 71079
 // Name: ActionButton
-// Dependencies: [31, 27, 33, 4549, 6625, 2]
+// Dependencies: [31, 27, 33, 4583, 6661, 2]
 // Exports: default
 
-// Module 9019 (ActionButton)
+// Module 9063 (ActionButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,13 +17,13 @@ export default function ActionButton(style) {
   if ("positive" === style.type) {
     str = "active";
   }
-  let obj = require(4549) /* useProfileThemedButtonStyles */;
+  let obj = require(4583) /* useProfileThemedButtonStyles */;
   obj = { style: style.styles };
   obj = {};
   obj.icon = jsx(style.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" });
   ({ onPress: obj3.onPress, accessibilityLabel: obj3.accessibilityLabel } = style);
   obj.variant = str;
   obj.size = "sm";
-  obj.children = jsx(require(6625) /* IconButton */.IconButton, {});
+  obj.children = jsx(require(6661) /* IconButton */.IconButton, {});
   return <View />;
 };

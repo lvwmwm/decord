@@ -1,9 +1,9 @@
-// Module ID: 12833
-// Function ID: 99929
+// Module ID: 12876
+// Function ID: 100099
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12833 (apexExperiment)
+// Module 12876 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-upscale-small-captured-frames", kind: "user", defaultConfig: { minCaptureWidth: 0, minCaptureHeight: 0 }, variations: { [1]: { minCaptureWidth: 130, minCaptureHeight: 130 } } };

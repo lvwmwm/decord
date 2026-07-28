@@ -1,9 +1,9 @@
-// Module ID: 10065
-// Function ID: 78037
+// Module ID: 10105
+// Function ID: 78166
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [31, 27, 6027, 33, 4131, 1457, 10066, 9050, 4544, 1212, 9067, 566, 9171, 6026, 2]
+// Dependencies: [31, 27, 6061, 33, 4165, 1457, 10106, 9094, 4578, 1212, 9111, 566, 9215, 6060, 2]
 
-// Module 10065 (ForumChannelCloseSearchButton)
+// Module 10105 (ForumChannelCloseSearchButton)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -49,7 +49,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
   let placeholder;
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(10066);
+  let obj = channelId(10106);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let tmp = callback();
   const items = [_isNativeReflectConstruct];
@@ -98,7 +98,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
         }
       };
       obj.grow = false;
-      obj.children = jsx(channelId(9171).SearchField, {
+      obj.children = jsx(channelId(9215).SearchField, {
         size: "sm",
         defaultValue: stateFromStores,
         onChange(query) {

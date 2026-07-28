@@ -1,5 +1,5 @@
 // Module ID: 1878
-// Function ID: 20907
+// Function ID: 20911
 // Name: NAMEPLATE_PALETTES
 // Dependencies: [1879, 2]
 

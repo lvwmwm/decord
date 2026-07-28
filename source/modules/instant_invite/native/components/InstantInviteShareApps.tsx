@@ -1,8 +1,8 @@
-// Module ID: 12169
-// Function ID: 95268
-// Dependencies: [57, 31, 27, 12170, 33, 4131, 689, 4550, 5217, 12200, 6625, 12171, 2]
+// Module ID: 12212
+// Function ID: 95438
+// Dependencies: [57, 31, 27, 12213, 33, 4165, 689, 4584, 5251, 12243, 6661, 12214, 2]
 
-// Module 12169
+// Module 12212
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,13 +23,13 @@ obj.contentContainer = obj;
 let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPressed) {
   onItemPressed = onItemPressed.onItemPressed;
-  let obj = onItemPressed(4550);
+  let obj = onItemPressed(4584);
   let closure_1 = obj.useFontScale();
   const tmp2 = callback(importAllResult.useState(closure_8), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
   const gesture = importAllResult.useMemo(() => {
-    const Gesture = onItemPressed(5217).Gesture;
+    const Gesture = onItemPressed(5251).Gesture;
     return Gesture.Native().disallowInterruption(true);
   }, []);
   const effect = importAllResult.useEffect(() => {
@@ -64,12 +64,12 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
           },
         maxFontSizeMultiplier: 2
       };
-      let tmp3Result = outer1_9(onItemPressed(12200).ImageButton, obj);
+      let tmp3Result = outer1_9(onItemPressed(12243).ImageButton, obj);
     } else {
       const obj1 = { variant: "secondary" };
       if (null == IconComponent) {
         if (null == icon) {
-          icon = callback(12171);
+          icon = callback(12214);
         }
         IconComponent = icon;
       }
@@ -79,14 +79,14 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
         return outer1_0(closure_0);
       };
       obj1.maxFontSizeMultiplier = 2;
-      tmp3Result = outer1_9(onItemPressed(6625).IconButton, obj1);
+      tmp3Result = outer1_9(onItemPressed(6661).IconButton, obj1);
       const tmp3 = outer1_9;
     }
     obj.children = tmp3Result;
     return outer1_9(outer1_5, obj, type.type);
   });
   const children = <closure_6 contentContainerStyle={null} showsHorizontalScrollIndicator={false} horizontal />;
-  return jsx(onItemPressed(5217).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5251).GestureDetector, { gesture, children });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

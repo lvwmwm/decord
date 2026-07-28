@@ -1,5 +1,5 @@
 // Module ID: 1290
-// Function ID: 15092
+// Function ID: 15096
 // Name: varint64read
 // Dependencies: []
 

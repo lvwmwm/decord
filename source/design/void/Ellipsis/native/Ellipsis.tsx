@@ -1,9 +1,9 @@
-// Module ID: 13066
-// Function ID: 101015
+// Module ID: 13110
+// Function ID: 101188
 // Name: AnimatedEllipsisDot
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 3992, 4132, 566, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 689, 4026, 4166, 566, 2]
 
-// Module 13066 (AnimatedEllipsisDot)
+// Module 13110 (AnimatedEllipsisDot)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

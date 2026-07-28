@@ -1,10 +1,10 @@
-// Module ID: 15089
-// Function ID: 114940
+// Module ID: 15129
+// Function ID: 115098
 // Name: fetchUnclaimedGames
-// Dependencies: [5, 15090, 653, 507, 686, 566, 664, 561, 2]
+// Dependencies: [5, 15130, 653, 507, 686, 566, 664, 561, 2]
 // Exports: useHasUnclaimedGames
 
-// Module 15089 (fetchUnclaimedGames)
+// Module 15129 (fetchUnclaimedGames)
 import closure_3 from "initialize";
 import importDefaultResult from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

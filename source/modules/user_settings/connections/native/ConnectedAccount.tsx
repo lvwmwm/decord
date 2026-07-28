@@ -1,9 +1,9 @@
-// Module ID: 13929
-// Function ID: 106597
+// Module ID: 13973
+// Function ID: 106770
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4813, 1838, 653, 4941, 33, 4131, 1273, 689, 5053, 4939, 566, 4544, 1212, 4127, 5513, 4815, 5502, 13930, 7993, 4471, 4562, 8897, 13931, 13934, 4940, 9962, 3828, 1921, 4661, 9628, 13936, 2749, 1392, 3977, 4542, 7640, 5164, 5501, 3843, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4847, 1838, 653, 4975, 33, 4165, 1273, 689, 5087, 4973, 566, 4578, 1212, 4161, 5548, 4849, 5537, 13974, 8031, 4505, 4596, 8941, 13975, 13978, 4974, 10002, 3862, 1921, 4695, 9668, 13980, 2749, 1392, 4011, 4576, 7676, 5198, 5536, 3877, 2]
 
-// Module 13929 (_isNativeReflectConstruct)
+// Module 13973 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -40,7 +40,7 @@ function _isNativeReflectConstruct() {
 }
 function Integration(integration) {
   integration = integration.integration;
-  let obj = integration(4131);
+  let obj = integration(4165);
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
   const tmp2 = callback3(importAllResult.useState(), 2);
   const importDefault = tmp2[1];
@@ -57,25 +57,25 @@ function Integration(integration) {
       obj = { style: legacyClassComponentStyles.integrationErrorText, variant: "text-sm/medium", color: "text-feedback-critical" };
       const intl2 = integration(1212).intl;
       obj.children = intl2.string(integration(1212).t.fEptJP);
-      tmp15 = callback4(integration(4127).Text, obj);
+      tmp15 = callback4(integration(4161).Text, obj);
     }
     obj = { style: legacyClassComponentStyles.integrationContainer };
     obj1 = { style: legacyClassComponentStyles.integrationContainerInternal };
-    obj2 = { guild: integration.guild, size: integration(5513).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
-    const items4 = [callback4(importDefault(5513), obj2), , ];
+    obj2 = { guild: integration.guild, size: integration(5548).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
+    const items4 = [callback4(importDefault(5548), obj2), , ];
     const obj3 = { style: legacyClassComponentStyles.integrationTextRowContainer };
     const obj4 = { lineClamp: 1, variant: "text-sm/medium", children: integration.guild.name };
-    const items5 = [callback4(integration(4127).Text, obj4), ];
+    const items5 = [callback4(integration(4161).Text, obj4), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
     const tmp19 = closure_20;
     const tmp20 = View;
     const tmp21 = closure_20;
     const tmp22 = View;
-    const tmp26 = importDefault(5513);
+    const tmp26 = importDefault(5548);
     const tmp28 = closure_20;
     const tmp29 = View;
     const tmp31 = callback4;
-    const value = importDefault(4815).get(integration.type);
+    const value = importDefault(4849).get(integration.type);
     let platformUserUrl;
     if (null != value) {
       if (null != value.getPlatformUserUrl) {
@@ -83,7 +83,7 @@ function Integration(integration) {
       }
     }
     obj5.children = platformUserUrl;
-    items5[1] = tmp31(integration(4127).Text, obj5);
+    items5[1] = tmp31(integration(4161).Text, obj5);
     obj3.children = items5;
     items4[1] = tmp28(tmp29, obj3);
     items4[2] = tmp5;
@@ -113,7 +113,7 @@ function Integration(integration) {
       stringResult = string(RXvQQu.XpeFYr);
     }
     obj7.text = stringResult;
-    obj7 = callback4(integration(4544).Button, obj7);
+    obj7 = callback4(integration(4578).Button, obj7);
     obj6.children = obj7;
     callback4(View, obj6);
     const tmp6 = callback4;
@@ -127,7 +127,7 @@ function RowSwitch(label) {
   const merged = Object.assign(label, obj);
   obj = { label: label.label };
   const merged1 = Object.assign(merged);
-  return callback4(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback4(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 ({ FRIEND_SYNC_PLATFORM_TYPES: closure_14, ACTIVITY_PLATFORM_TYPES: closure_15, PlatformTypes: closure_16, HelpdeskArticles: closure_17 } = ME);
 ({ jsx: closure_19, jsxs: closure_20 } = jsxProd);

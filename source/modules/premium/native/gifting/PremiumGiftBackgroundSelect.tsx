@@ -1,15 +1,15 @@
-// Module ID: 8709
-// Function ID: 69078
+// Module ID: 8753
+// Function ID: 69229
 // Name: GiftBackgroundSelect
-// Dependencies: [57, 31, 27, 33, 3992, 4131, 689, 1450, 4132, 1273, 8710, 8736, 2]
+// Dependencies: [57, 31, 27, 33, 4026, 4165, 689, 1450, 4166, 1273, 8754, 8780, 2]
 // Exports: default
 
-// Module 8709 (GiftBackgroundSelect)
+// Module 8753 (GiftBackgroundSelect)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let closure_5;
 let closure_6;
@@ -29,7 +29,7 @@ class GiftBackgroundSelect {
     first = tmp2[0];
     c0 = first;
     c1 = tmp2[1];
-    obj = require("module_3992");
+    obj = require("module_4026");
     sharedValue = obj.useSharedValue(false);
     c2 = sharedValue;
     items = [, ];
@@ -38,7 +38,7 @@ class GiftBackgroundSelect {
     effect = result.useEffect(() => {
       const result = sharedValue.set(null != first);
     }, items);
-    obj2 = require("module_3992");
+    obj2 = require("module_4026");
     class N {
       constructor() {
         obj = {};
@@ -98,7 +98,7 @@ class GiftBackgroundSelect {
   }
 }
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = require("module_3992").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
+let closure_8 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
 let obj = {};
 obj = { flex: 1, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
 obj.scrollView = obj;
@@ -108,7 +108,7 @@ let closure_10 = { code: "function PremiumGiftBackgroundSelectTsx1(){const{STAND
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx");
 
 export default function PremiumGiftBackgroundSelect() {
-  let obj = require(8736) /* importDefaultResult1 */;
+  let obj = require(8780) /* importDefaultResult1 */;
   const nativeGiftContext = obj.useNativeGiftContext();
   obj = { giftStyle: nativeGiftContext.giftStyle, setGiftStyle: nativeGiftContext.setGiftStyle };
   return callback2(GiftBackgroundSelect, obj);

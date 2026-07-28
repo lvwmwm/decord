@@ -1,5 +1,5 @@
 // Module ID: 1696
-// Function ID: 18767
+// Function ID: 18771
 // Name: updateLayoutAnimations
 // Dependencies: [1585, 1626]
 

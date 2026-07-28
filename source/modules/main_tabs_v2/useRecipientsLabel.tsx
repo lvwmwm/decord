@@ -1,10 +1,10 @@
-// Module ID: 9027
-// Function ID: 70953
+// Module ID: 9071
+// Function ID: 71104
 // Name: useRecipientsLabel
-// Dependencies: [31, 1850, 1212, 566, 1327, 3970, 2]
+// Dependencies: [31, 1850, 1212, 566, 1327, 4004, 2]
 // Exports: useRecipientsLabel
 
-// Module 9027 (useRecipientsLabel)
+// Module 9071 (useRecipientsLabel)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

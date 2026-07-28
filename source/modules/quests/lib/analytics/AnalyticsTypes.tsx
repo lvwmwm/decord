@@ -1,10 +1,10 @@
-// Module ID: 5959
-// Function ID: 53044
+// Module ID: 5993
+// Function ID: 53163
 // Name: getQuestContentName
-// Dependencies: [4980, 2]
+// Dependencies: [5014, 2]
 // Exports: getContentProperties, getQuestStatus
 
-// Module 5959 (getQuestContentName)
+// Module 5993 (getQuestContentName)
 function getQuestContentName(questContent) {
   let closure_0 = questContent;
   const found = closure_2.find((arg0) => questContent(outer1_1[0]).QuestContent[arg0] === questContent);

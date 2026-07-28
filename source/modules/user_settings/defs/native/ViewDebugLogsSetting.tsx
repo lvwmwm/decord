@@ -1,9 +1,9 @@
-// Module ID: 14453
-// Function ID: 110484
+// Module ID: 14497
+// Function ID: 110657
 // Name: ViewDebugLogsActionSheetRow
-// Dependencies: [31, 27, 33, 4099, 5500, 4338, 9040, 5498, 5186, 1212, 14454, 14456, 4095, 14459, 477, 10169, 14460, 10059, 12916, 3804, 2]
+// Dependencies: [31, 27, 33, 4133, 5535, 4372, 9084, 5533, 5220, 1212, 14498, 14500, 4129, 14503, 477, 10209, 14504, 10099, 12960, 3838, 2]
 
-// Module 14453 (ViewDebugLogsActionSheetRow)
+// Module 14497 (ViewDebugLogsActionSheetRow)
 import { Suspense } from "result";
 import { Keyboard } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ function ViewDebugLogsActionSheetRow(icon) {
   let importDefault;
   const title = icon.title;
   ({ screenKey: importDefault, render: dependencyMap } = icon);
-  return callback(title(5500).ActionSheetRow, {
+  return callback(title(5535).ActionSheetRow, {
     icon: icon.icon,
     label: title,
     onPress() {
@@ -36,9 +36,9 @@ function ViewDebugLogsActionSheet() {
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.BUOCPi);
-  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true };
-  const obj1 = { icon: callback(require(14454) /* WrenchIcon */.WrenchIcon, {}) };
+  const obj1 = { icon: callback(require(14498) /* WrenchIcon */.WrenchIcon, {}) };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.title = intl2.string(require(1212) /* getSystemLocale */.t.XpPGhL);
   obj1.screenKey = "debugLogs";
@@ -46,7 +46,7 @@ function ViewDebugLogsActionSheet() {
     return outer1_5(outer1_1(outer1_2[11]), {});
   };
   const items = [callback(ViewDebugLogsActionSheetRow, obj1), , ];
-  const obj2 = { icon: callback(require(4095) /* ClockIcon */.ClockIcon, {}) };
+  const obj2 = { icon: callback(require(4129) /* ClockIcon */.ClockIcon, {}) };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.title = intl3.string(require(1212) /* getSystemLocale */.t.b0nJvk);
   obj2.screenKey = "startupTiming";
@@ -56,7 +56,7 @@ function ViewDebugLogsActionSheet() {
   items[1] = callback(ViewDebugLogsActionSheetRow, obj2);
   let tmp3 = null;
   if (obj6.isAndroid()) {
-    const obj3 = { icon: callback(require(10169) /* ChannelNotificationIcon */.ChannelNotificationIcon, {}) };
+    const obj3 = { icon: callback(require(10209) /* ChannelNotificationIcon */.ChannelNotificationIcon, {}) };
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj3.title = intl4.string(require(1212) /* getSystemLocale */.t.Ljj0ps);
     obj3.screenKey = "pushNotificationLogs";
@@ -67,8 +67,8 @@ function ViewDebugLogsActionSheet() {
   }
   items[2] = tmp3;
   obj.children = items;
-  obj.children = closure_6(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5498) /* ActionSheet */.ActionSheet, obj);
+  obj.children = closure_6(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5533) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 ViewDebugLogsActionSheet = "ViewDebugLogsActionSheet";
@@ -82,7 +82,7 @@ const pressable = createToggle.createPressable({
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    let obj = importDefault(4099);
+    let obj = importDefault(4133);
     obj = { default: ViewDebugLogsActionSheet };
     obj.openLazy(Promise.resolve(obj), ViewDebugLogsActionSheet);
   },
@@ -98,7 +98,7 @@ let obj = {
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    let obj = importDefault(4099);
+    let obj = importDefault(4133);
     obj = { default: ViewDebugLogsActionSheet };
     obj.openLazy(Promise.resolve(obj), ViewDebugLogsActionSheet);
   },

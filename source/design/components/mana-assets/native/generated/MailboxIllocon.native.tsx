@@ -1,10 +1,10 @@
-// Module ID: 7208
-// Function ID: 60048
+// Module ID: 7244
+// Function ID: 60137
 // Name: MailboxIllocon
-// Dependencies: [33, 5085, 7209, 2]
+// Dependencies: [33, 5119, 7245, 2]
 // Exports: MailboxIllocon
 
-// Module 7208 (MailboxIllocon)
+// Module 7244 (MailboxIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MailboxIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const MailboxIllocon = function MailboxIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7209) };
+  obj = { uri: importDefault(7245) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const MailboxIllocon = function MailboxIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num, height: num });
+  return jsx(importDefault(5119), { width: num, height: num });
 };

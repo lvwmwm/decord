@@ -1,14 +1,14 @@
-// Module ID: 15281
-// Function ID: 116414
+// Module ID: 15321
+// Function ID: 116573
 // Name: SelectedServerIcon
-// Dependencies: [5, 57, 31, 27, 4123, 1838, 15280, 653, 33, 15249, 689, 5513, 8936, 3992, 4132, 9173, 566, 1392, 7909, 5085, 4661, 4127, 4544, 4092, 1212, 1557, 8132, 8123, 3832, 4338, 15264, 6619, 2]
+// Dependencies: [5, 57, 31, 27, 4157, 1838, 15320, 653, 33, 15289, 689, 5548, 8980, 4026, 4166, 9217, 566, 1392, 7945, 5119, 4695, 4161, 4578, 4126, 1212, 1557, 8170, 8161, 3866, 4372, 15304, 6655, 2]
 // Exports: default
 
-// Module 15281 (SelectedServerIcon)
+// Module 15321 (SelectedServerIcon)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl";
-import get_ActivityIndicator from "module_8123";
+import get_ActivityIndicator from "module_8161";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_9 from "_createForOfIteratorHelperLoose";
 import closure_10 from "_isNativeReflectConstruct";
@@ -35,14 +35,14 @@ function SelectedServerIcon(guild) {
   items[2] = null == guild && guild.index >= 3 && tmp.noServerExtraContainer;
   obj.style = items;
   if (null != guild) {
-    obj = { style: tmp.guildIconBorder, guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE };
-    let tmp5 = callback2(importDefault(5513), obj);
-    const tmp13 = importDefault(5513);
+    obj = { style: tmp.guildIconBorder, guild, size: require(5548) /* makeSizeStyle */.GuildIconSizes.LARGE };
+    let tmp5 = callback2(importDefault(5548), obj);
+    const tmp13 = importDefault(5548);
   } else {
     tmp5 = null;
     if (tmp2) {
       obj = { size: "md", color: importDefault(689).colors.ICON_MUTED };
-      tmp5 = callback2(require(8936) /* ServerIcon */.ServerIcon, obj);
+      tmp5 = callback2(require(8980) /* ServerIcon */.ServerIcon, obj);
     }
   }
   obj.children = tmp5;
@@ -78,29 +78,29 @@ function SelectedServersRow(selectedGuilds) {
       dependencyMap(selectedGuilds.length);
     }
   }, items1);
-  let obj = selectedGuilds(3992);
+  let obj = selectedGuilds(4026);
   const fn = function _() {
     const obj = {};
     let num = 0;
     if (selectedGuilds.length > 0) {
       num = 1;
     }
-    obj.opacity = selectedGuilds(4132).withTiming(num);
-    const obj2 = selectedGuilds(4132);
+    obj.opacity = selectedGuilds(4166).withTiming(num);
+    const obj2 = selectedGuilds(4166);
     let num2 = 0;
     if (selectedGuilds.length > 0) {
       num2 = outer1_15;
     }
-    obj.height = selectedGuilds(4132).withTiming(num2);
-    const obj3 = selectedGuilds(4132);
+    obj.height = selectedGuilds(4166).withTiming(num2);
+    const obj3 = selectedGuilds(4166);
     let num3 = 0;
     if (selectedGuilds.length > 0) {
       num3 = first(689).space.PX_24;
     }
-    obj.marginTop = selectedGuilds(4132).withTiming(num3);
+    obj.marginTop = selectedGuilds(4166).withTiming(num3);
     return obj;
   };
-  obj = { withTiming: selectedGuilds(4132).withTiming, selectedGuilds, SELECTED_SERVER_SIZE_WITH_BORDER: c15, tokens: first(689) };
+  obj = { withTiming: selectedGuilds(4166).withTiming, selectedGuilds, SELECTED_SERVER_SIZE_WITH_BORDER: c15, tokens: first(689) };
   fn.__closure = obj;
   fn.__workletHash = 2911488630455;
   fn.__initData = closure_17;
@@ -125,8 +125,8 @@ function SelectedServersRow(selectedGuilds) {
   obj1.horizontal = true;
   obj1.listId = "selected-servers-list";
   obj1.showsHorizontalScrollIndicator = false;
-  obj.children = tmp9(first(9173), obj1);
-  return tmp8(first(3992).View, obj);
+  obj.children = tmp9(first(9217), obj1);
+  return tmp8(first(4026).View, obj);
 }
 function CutoutGuildBanner(guild) {
   guild = guild.guild;
@@ -149,12 +149,12 @@ function CutoutGuildBanner(guild) {
   }
   obj = { style: tmp.bannerImage };
   obj = {};
-  obj1 = { shape: guild(7909).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  obj1 = { shape: guild(7945).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   const items1 = [obj1];
   obj.cutouts = items1;
   if (null != guild.banner) {
     const obj2 = { style: tmp.bannerImage, source: animatableSourceWithFallback, resizeMode: "cover" };
-    let tmp14 = callback2(importDefault(5085), obj2);
+    let tmp14 = callback2(importDefault(5119), obj2);
   } else {
     const obj3 = {};
     const items2 = [, ];
@@ -163,17 +163,17 @@ function CutoutGuildBanner(guild) {
     tmp14 = callback2(closure_6, obj3);
   }
   obj.children = tmp14;
-  const items3 = [callback2(importDefault(7909), obj), ];
+  const items3 = [callback2(importDefault(7945), obj), ];
   const obj4 = { style: items4, guild };
   items4 = [, ];
   ({ guildIcon: arr5[0], guildIconBorder: arr5[1] } = tmp);
   const tmp10 = callback2;
-  const tmp11 = importDefault(7909);
+  const tmp11 = importDefault(7945);
   const tmp8 = closure_13;
   const tmp9 = closure_6;
-  obj4.size = guild(5513).GuildIconSizes.LARGE;
+  obj4.size = guild(5548).GuildIconSizes.LARGE;
   obj4.animate = !stateFromStores;
-  items3[1] = callback2(importDefault(5513), obj4);
+  items3[1] = callback2(importDefault(5548), obj4);
   obj.children = items3;
   return tmp8(tmp9, obj);
 }
@@ -194,15 +194,15 @@ function FeaturedServer(guild) {
   const items2 = [callback2(CutoutGuildBanner, { guild }), ];
   obj = { style: tmp.featuredServerInnerContainer };
   const obj1 = { maxFontSizeMultiplier: 1, style: tmp.featuredServerTitle, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guild.name };
-  const items3 = [callback2(guild(4127).Text, obj1), , ];
+  const items3 = [callback2(guild(4161).Text, obj1), , ];
   const obj2 = { maxFontSizeMultiplier: 1, lineClamp: 2, variant: "text-xs/normal", color: "text-default", children: guild.description };
-  items3[1] = callback2(guild(4127).Text, obj2);
+  items3[1] = callback2(guild(4161).Text, obj2);
   const obj3 = { style: tmp.buttonContainer };
   const obj4 = { accessibilityHint: "checkbox", accessibilityState: { checked: selected }, disabled: stateFromStores };
   let tmp10;
   if (selected) {
     const obj5 = { size: "sm", color: handlePress(689).colors.CONTROL_CONNECTED_TEXT_DEFAULT };
-    tmp10 = callback2(guild(4092).CircleCheckIcon, obj5);
+    tmp10 = callback2(guild(4126).CircleCheckIcon, obj5);
   }
   obj4.icon = tmp10;
   if (stateFromStores) {
@@ -218,12 +218,12 @@ function FeaturedServer(guild) {
       }
       obj4.variant = str3;
       obj4.grow = true;
-      obj3.children = callback2(guild(4544).Button, obj4);
+      obj3.children = callback2(guild(4578).Button, obj4);
       items3[2] = callback2(closure_6, obj3);
       obj.children = items3;
       items2[1] = closure_13(closure_6, obj);
       obj.children = items2;
-      return closure_13(guild(4661).PressableHighlight, obj);
+      return closure_13(guild(4695).PressableHighlight, obj);
     }
   }
   const intl2 = guild(1212).intl;

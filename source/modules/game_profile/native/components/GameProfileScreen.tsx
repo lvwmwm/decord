@@ -1,10 +1,10 @@
-// Module ID: 8413
-// Function ID: 67174
+// Module ID: 8457
+// Function ID: 67321
 // Name: GetButton
-// Dependencies: [57, 31, 27, 8414, 33, 4131, 689, 4544, 1212, 7892, 8415, 3828, 8418, 5639, 8419, 3992, 8420, 4132, 8421, 8426, 4099, 8443, 8444, 5187, 5189, 8445, 8447, 11879, 5446, 2]
+// Dependencies: [57, 31, 27, 8458, 33, 4165, 689, 4578, 1212, 7928, 8459, 3862, 8462, 5888, 8463, 4026, 8464, 4166, 8465, 8470, 4133, 8487, 8488, 5221, 5223, 8489, 8491, 11922, 5481, 2]
 // Exports: default
 
-// Module 8413 (GetButton)
+// Module 8457 (GetButton)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "StyleSheet";
@@ -24,7 +24,7 @@ function GetButton(onPress) {
   obj.onPress = onPress.onPress;
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.Vsxqmz);
-  return callback(require(4544) /* Button */.Button, obj);
+  return callback(require(4578) /* Button */.Button, obj);
 }
 ({ View: closure_5, ActivityIndicator: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

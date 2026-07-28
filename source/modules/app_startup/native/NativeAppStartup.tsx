@@ -1,13 +1,13 @@
-// Module ID: 15973
-// Function ID: 123413
+// Module ID: 16012
+// Function ID: 123569
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 15974, 16024, 27, 16044, 1923, 1907, 6271, 5692, 16045, 653, 14, 3, 16654, 5720, 16655, 10920, 566, 682, 1186, 16657, 13182, 477, 20, 16658, 10548, 686, 16659, 3995, 5703, 1184, 16660, 16661, 10632, 587, 675, 479, 1899, 5672, 1934, 1250, 16662, 1935, 8105, 16664, 13388, 5905, 16682, 16683, 16684, 16685, 9837, 5716, 5704, 3984, 1278, 4123, 1324, 13436, 15709, 15710, 684, 13177, 5691, 13441, 13454, 5868, 16687, 5217, 5693, 5704, 2]
+// Dependencies: [57, 5, 16013, 16063, 27, 16083, 1923, 1907, 6307, 5702, 16084, 653, 14, 3, 16694, 5730, 16695, 10958, 566, 682, 1186, 16697, 13226, 477, 20, 16698, 10586, 686, 16699, 4029, 5713, 1184, 16700, 16701, 10670, 587, 675, 479, 1899, 5682, 1934, 1250, 16702, 1935, 8143, 16704, 13432, 5939, 16722, 16723, 16724, 16725, 9877, 5726, 5714, 4018, 1278, 4157, 1324, 13480, 15748, 15749, 684, 13221, 5701, 13485, 13498, 5902, 16727, 5251, 5703, 5714, 2]
 // Exports: init, initHeadlessTask
 
-// Module 15973 (_createForOfIteratorHelperLoose)
+// Module 16012 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "timestamp";
-import module_15974 from "module_15974";
+import module_16013 from "module_16013";
 import isAnalyticsEndpoint from "isAnalyticsEndpoint";
 import get_ActivityIndicator from "dispatcher";
 import timestamp from "timestamp";
@@ -126,7 +126,7 @@ function _getInitialURLs() {
   return obj(...arguments);
 }
 function handleURL(defaultResult1, defaultResult2) {
-  importDefault(5720)("handleURL", () => outer1_0(outer1_3[16])).default(defaultResult1, defaultResult2);
+  importDefault(5730)("handleURL", () => outer1_0(outer1_3[16])).default(defaultResult1, defaultResult2);
 }
 function sharedInit() {
   function handleNotification(defaultResult1) {
@@ -367,7 +367,7 @@ const promise = new Promise((arg0) => {
   let closure_23 = arg0;
 });
 loadIndex.recordEnd();
-result = require("module_15974").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
+result = require("module_16013").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
 export const init = function init() {

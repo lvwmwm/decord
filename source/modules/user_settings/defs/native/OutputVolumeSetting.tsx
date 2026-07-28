@@ -1,9 +1,9 @@
-// Module ID: 14202
-// Function ID: 109274
+// Module ID: 14246
+// Function ID: 109447
 // Name: volumeSlider
-// Dependencies: [4178, 7697, 566, 10059, 1212, 8770, 10706, 2]
+// Dependencies: [4212, 7733, 566, 10099, 1212, 8814, 10744, 2]
 
-// Module 14202 (volumeSlider)
+// Module 14246 (volumeSlider)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -28,7 +28,7 @@ createToggle = {
     return items;
   },
   usePredicate() {
-    return importDefault(10706).useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
+    return importDefault(10744).useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
   }
 };
 createToggle = createToggle.createVolumeSlider(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 5150
-// Function ID: 44932
+// Module ID: 5184
+// Function ID: 45047
 // Name: Emoji
-// Dependencies: [31, 27, 1278, 33, 477, 3776, 1273, 5085, 3977, 5151, 5152, 2]
+// Dependencies: [31, 27, 1278, 33, 477, 3810, 1273, 5119, 4011, 5185, 5186, 2]
 // Exports: default
 
-// Module 5150 (Emoji)
+// Module 5184 (Emoji)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -28,7 +28,7 @@ export default function Emoji(arg0) {
   if (obj.isAndroid()) {
     uRL = src;
     if (null == src) {
-      let obj1 = importDefault(3776);
+      let obj1 = importDefault(3810);
       uRL = obj1.getURL(name);
     }
   }
@@ -38,17 +38,17 @@ export default function Emoji(arg0) {
       if ("" !== uRL) {
         obj = { resizeMode: "contain", style: fastImageStyle };
         const tmp10 = jsx;
-        const tmp13 = importDefault(5085);
+        const tmp13 = importDefault(5119);
         if (obj6.isThemeDark(theme.theme)) {
-          let tmp16Result = tmp16(5151);
+          let tmp16Result = tmp16(5185);
         } else {
-          tmp16Result = tmp16(5152);
+          tmp16Result = tmp16(5186);
         }
         obj.placeholder = tmp16Result;
         obj1 = { uri: uRL };
         obj.source = obj1;
         let tmp10Result = tmp10(tmp13, obj);
-        obj6 = require(3977) /* AccessibilityAnnouncer */;
+        obj6 = require(4011) /* AccessibilityAnnouncer */;
       }
       obj.children = tmp10Result;
       return tmp5(tmp6, obj);

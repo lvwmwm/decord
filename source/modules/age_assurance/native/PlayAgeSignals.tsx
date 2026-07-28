@@ -1,10 +1,10 @@
-// Module ID: 16214
-// Function ID: 125705
+// Module ID: 16253
+// Function ID: 125861
 // Name: _getAgeSignals
-// Dependencies: [5, 16215, 2]
+// Dependencies: [5, 16254, 2]
 // Exports: getAgeSignals, isConsideredOlderThan
 
-// Module 16214 (_getAgeSignals)
+// Module 16253 (_getAgeSignals)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _getAgeSignals() {

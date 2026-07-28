@@ -1,16 +1,16 @@
-// Module ID: 14356
-// Function ID: 109970
+// Module ID: 14400
+// Function ID: 110143
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1280, 7697, 3804, 14357, 10059, 1212, 2]
+// Dependencies: [1280, 7733, 3838, 14401, 10099, 1212, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14356 (onImageDescriptionSettingValueChange)
+// Module 14400 (onImageDescriptionSettingValueChange)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
 const require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = require(14357) /* trackSettingsUpdated */;
+  let obj = require(14401) /* trackSettingsUpdated */;
   obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: _isNativeReflectConstruct.lowQualityImageMode, dataSavingMode: _isNativeReflectConstruct.dataSavingMode };
   obj.setImageDescriptions(obj);
 }
@@ -21,7 +21,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useImageDescriptionSettingValue() {
-    const ViewImageDescriptions = require(3804) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = require(3838) /* explicitContentFromProto */.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },
   onValueChange: onImageDescriptionSettingValueChange

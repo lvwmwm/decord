@@ -1,10 +1,10 @@
-// Module ID: 6602
-// Function ID: 58436
+// Module ID: 6638
+// Function ID: 58525
 // Name: BuyNitroPlanPriceDetails
-// Dependencies: [31, 27, 5619, 1852, 482, 33, 4131, 689, 566, 5616, 4127, 1212, 2]
+// Dependencies: [31, 27, 5654, 1852, 482, 33, 4165, 689, 566, 5651, 4161, 1212, 2]
 // Exports: default
 
-// Module 6602 (BuyNitroPlanPriceDetails)
+// Module 6638 (BuyNitroPlanPriceDetails)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -60,13 +60,13 @@ export default function BuyNitroPlanPriceDetails(centered) {
   const value = priceStringByProductId.get(item.productId);
   if (null != trialTier) {
     if (item.premiumTier === trialTier) {
-      let obj8 = item(5616);
+      let obj8 = item(5651);
       obj = { style: tmp.container };
       obj = { variant: "text-xs/semibold", color: "text-default", style: centeredText };
       const intl3 = item(1212).intl;
       let obj1 = { price: obj8.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
       obj.children = intl3.formatToPlainString(item(1212).t.hXcaLT, obj1);
-      const items1 = [callback(item(4127).Text, obj), ];
+      const items1 = [callback(item(4161).Text, obj), ];
       if (null == value) {
         items1[1] = tmp27;
         obj.children = items1;
@@ -81,7 +81,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
         }
         const obj3 = { price: value };
         obj2.children = intl4.formatToPlainString(v9QeON, obj3);
-        callback(item(4127).Text, obj2);
+        callback(item(4161).Text, obj2);
         const tmp28 = callback;
       }
       const formatPriceResult = obj8.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -99,10 +99,10 @@ export default function BuyNitroPlanPriceDetails(centered) {
       if (null != intervalCount) {
         num = intervalCount;
       }
-      obj1 = item(5616);
+      obj1 = item(5651);
       let formatRateResult1 = null;
       if (null != value) {
-        obj2 = item(5616);
+        obj2 = item(5651);
         formatRateResult1 = obj2.formatRate(value, item.interval, num);
       }
       const obj4 = { style: tmp.container };
@@ -110,14 +110,14 @@ export default function BuyNitroPlanPriceDetails(centered) {
       const intl = item(1212).intl;
       const obj6 = { discountedPrice: obj1.formatRate(discounted.priceString, item.interval, num), numMonths: discounted.numMonths };
       obj5.children = intl.formatToPlainString(item(1212).t["02Gmgm"], obj6);
-      const items2 = [callback(item(4127).Text, obj5), ];
+      const items2 = [callback(item(4161).Text, obj5), ];
       let tmp17 = null != formatRateResult1;
       if (tmp17) {
         const obj7 = { variant: "text-xs/medium", color: "text-subtle", style: centeredText };
         const intl2 = item(1212).intl;
         obj8 = { regularPrice: formatRateResult1, numMonths: discounted.numMonths };
         obj7.children = intl2.formatToPlainString(item(1212).t["vZk+c/"], obj8);
-        tmp17 = callback(item(4127).Text, obj7);
+        tmp17 = callback(item(4161).Text, obj7);
       }
       items2[1] = tmp17;
       obj4.children = items2;

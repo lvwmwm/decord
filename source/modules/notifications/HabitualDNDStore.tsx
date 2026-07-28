@@ -1,9 +1,9 @@
-// Module ID: 12708
-// Function ID: 98835
+// Module ID: 12751
+// Function ID: 99005
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4811, 653, 664, 3804, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4845, 653, 664, 3838, 686, 566, 2]
 
-// Module 12708 (_isNativeReflectConstruct)
+// Module 12751 (_isNativeReflectConstruct)
 import ME from "ME";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -101,7 +101,7 @@ tmp2.persistKey = "habitualDND";
 tmp2 = new tmp2(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handleConnect() {
     if (status.getStatus() === StatusTypes.DND) {
-      const StatusExpiresAtSetting = require(3804) /* explicitContentFromProto */.StatusExpiresAtSetting;
+      const StatusExpiresAtSetting = require(3838) /* explicitContentFromProto */.StatusExpiresAtSetting;
       if ("0" === StatusExpiresAtSetting.getSetting()) {
         const _Date = Date;
         arr = arr.push(Date.now());

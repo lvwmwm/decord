@@ -1,9 +1,9 @@
-// Module ID: 14259
-// Function ID: 109536
+// Module ID: 14303
+// Function ID: 109709
 // Name: toggle
-// Dependencies: [3943, 1279, 1278, 1316, 7697, 653, 1324, 566, 1212, 14260, 6152, 10059, 2]
+// Dependencies: [3977, 1279, 1278, 1316, 7733, 653, 1324, 566, 1212, 14304, 6186, 10099, 2]
 
-// Module 14259 (toggle)
+// Module 14303 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -48,10 +48,10 @@ createToggle = {
         prop = clientThemeSettings.customUserThemeSettings;
       }
     }
-    let obj = require(14260) /* track */;
+    let obj = require(14304) /* track */;
     obj = { is_sync_enabled, base_theme: theme.theme, client_theme: tmp2, has_custom_theme: null != prop };
     obj.track(AnalyticEvents.SYNC_ACROSS_CLIENTS_TOGGLED, obj);
-    const result = importDefault(6152).setShouldSyncAppearanceSettings(is_sync_enabled);
+    const result = importDefault(6186).setShouldSyncAppearanceSettings(is_sync_enabled);
   },
   useDescription: function useSyncThemeAcrossClientsDescription() {
     const intl = require(1212) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 13757
-// Function ID: 105553
+// Module ID: 13801
+// Function ID: 105726
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 57, 31, 27, 33, 4131, 689, 5592, 1212, 13747, 9129, 13748, 13758, 4127, 1273, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 33, 4165, 689, 5627, 1212, 13791, 9173, 13792, 13802, 4161, 1273, 4578, 2]
 // Exports: default
 
-// Module 13757 (TwoFASetupSuccess)
+// Module 13801 (TwoFASetupSuccess)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -62,11 +62,11 @@ export default function TwoFASetupSuccess() {
   obj = { style: tmp.flex };
   const items = [callback2(closure_6, obj), , , , , , , ];
   const tmp4 = callback(React.useState(""), 2);
-  items[1] = callback2(closure_7, { source: _require(13758), style: tmp.image });
+  items[1] = callback2(closure_7, { source: _require(13802), style: tmp.image });
   const obj2 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary" };
   const intl = _require(1212).intl;
   obj2.children = intl.string(_require(1212).t.Awk3Gw);
-  items[2] = callback2(_require(4127).Text, obj2);
+  items[2] = callback2(_require(4161).Text, obj2);
   const obj3 = { style: tmp.successBody };
   const intl2 = _require(1212).intl;
   obj3.children = intl2.string(_require(1212).t["0d1bXM"]);
@@ -91,7 +91,7 @@ export default function TwoFASetupSuccess() {
   obj7.disabled = first;
   obj7.loading = first;
   obj7.grow = true;
-  const items1 = [callback2(_require(4544).Button, obj7), ];
+  const items1 = [callback2(_require(4578).Button, obj7), ];
   let tmp11 = "" !== tmp5;
   if (tmp11) {
     const obj8 = { style: tmp.errorText, children: tmp5 };
@@ -103,5 +103,5 @@ export default function TwoFASetupSuccess() {
   items[7] = callback2(closure_6, { style: tmp.flex });
   obj.children = items;
   obj.children = closure_9(closure_6, obj);
-  return callback2(_require(13748).TwoFASetupModalScreen, obj);
+  return callback2(_require(13792).TwoFASetupModalScreen, obj);
 };

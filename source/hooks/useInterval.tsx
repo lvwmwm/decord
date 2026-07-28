@@ -1,10 +1,10 @@
-// Module ID: 6186
-// Function ID: 55524
+// Module ID: 6220
+// Function ID: 55643
 // Name: useInterval
 // Dependencies: [31, 44, 2]
 // Exports: default
 
-// Module 6186 (useInterval)
+// Module 6220 (useInterval)
 import result from "result";
 
 let closure_2;

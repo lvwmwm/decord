@@ -1,10 +1,10 @@
-// Module ID: 4999
-// Function ID: 43263
+// Module ID: 5033
+// Function ID: 43378
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [3772, 2]
+// Dependencies: [3806, 2]
 // Exports: default
 
-// Module 4999 (_createForOfIteratorHelperLoose)
+// Module 5033 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -98,7 +98,7 @@ export default function dedupeEmojisByNameOrId(arg0) {
       if (null == value.id) {
         let tmp3 = importDefault;
         let tmp4 = dependencyMap;
-        let obj2 = importDefault(3772);
+        let obj2 = importDefault(3806);
         let result = obj2.convertSurrogateToBase(value.surrogates);
         let tmp6 = value;
         if (null != result) {

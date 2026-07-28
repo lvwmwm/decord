@@ -1,10 +1,10 @@
-// Module ID: 10684
-// Function ID: 83189
+// Module ID: 10722
+// Function ID: 83310
 // Name: ApplicationStreamPresets
-// Dependencies: [57, 31, 4221, 4150, 1348, 1838, 1907, 1850, 4186, 653, 4192, 33, 4131, 689, 478, 4099, 10684, 1935, 480, 566, 10685, 10690, 5462, 5482, 3992, 4310, 8770, 9140, 1212, 2069, 10691, 10693, 5515, 4127, 3834, 9338, 5187, 5189, 5121, 5501, 7596, 6137, 668, 7595, 9336, 6147, 8365, 5502, 4544, 10683, 2]
+// Dependencies: [57, 31, 4255, 4184, 1348, 1838, 1907, 1850, 4220, 653, 4226, 33, 4165, 689, 478, 4133, 10722, 1935, 480, 566, 10723, 10728, 5497, 5517, 4026, 4344, 8814, 9184, 1212, 2069, 10729, 10731, 5550, 4161, 3868, 9382, 5221, 5223, 5155, 5536, 7632, 6171, 668, 7631, 9380, 6181, 8403, 5537, 4578, 10721, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 10684 (ApplicationStreamPresets)
+// Module 10722 (ApplicationStreamPresets)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ImageSparkleIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -313,9 +313,9 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default memoResult;
 export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(analyticsLocations) {
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = { impressionName: require(480) /* isThrottled */.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET };
   obj = { location_stack: analyticsLocations };
   obj.impressionProperties = obj;
-  obj.openLazy(require(1935) /* maybeLoadBundle */(10684, dependencyMap.paths), "MobileGoLiveActionSheet", obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(10722, dependencyMap.paths), "MobileGoLiveActionSheet", obj);
 };

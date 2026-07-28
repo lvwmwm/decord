@@ -1,11 +1,11 @@
 // Module ID: 6302
-// Function ID: 56716
+// Function ID: 56397
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 6302 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/billing/native/images", width: 223, height: 128.5, scales: [2, 3], hash: "f5aa8d22ffc464d3c9704d96fbbd1afa", name: "blocked-purchases-dark", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 277, height: 44, scales: [2, 3], hash: "80b2b0d70a370a3545b5c6b85cfa62d7", name: "img_boost_activated_border", type: "png" };
 
 export default registerAsset.registerAsset(obj);

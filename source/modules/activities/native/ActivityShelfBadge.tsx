@@ -1,10 +1,10 @@
-// Module ID: 11197
-// Function ID: 87197
+// Module ID: 11235
+// Function ID: 87316
 // Name: ActivityShelfBadge
-// Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 1882, 4127, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 1273, 1882, 4161, 1212, 2]
 // Exports: default
 
-// Module 11197 (ActivityShelfBadge)
+// Module 11235 (ActivityShelfBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -41,7 +41,7 @@ export default function ActivityShelfBadge(arg0) {
     obj = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
+    obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
     let tmp6 = <View variant="text-xs/semibold" style={tmp.badgeText} color="text-overlay-light" />;
   } else {
     tmp6 = null;
@@ -53,7 +53,7 @@ export default function ActivityShelfBadge(arg0) {
       const obj1 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["/qdhkk"]);
-      obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
+      obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
       tmp6 = <View />;
     }
   }

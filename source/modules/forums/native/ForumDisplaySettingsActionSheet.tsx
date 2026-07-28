@@ -1,10 +1,10 @@
-// Module ID: 11802
-// Function ID: 91618
+// Module ID: 11841
+// Function ID: 91769
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [57, 31, 1348, 11116, 33, 1212, 1357, 1358, 1359, 566, 4560, 6026, 5498, 5186, 8192, 5189, 4542, 689, 7596, 7595, 2]
+// Dependencies: [57, 31, 1348, 11154, 33, 1212, 1357, 1358, 1359, 566, 4594, 6060, 5533, 5220, 8230, 5223, 4576, 689, 7632, 7631, 2]
 // Exports: default
 
-// Module 11802 (ForumDisplaySettingsActionSheet)
+// Module 11841 (ForumDisplaySettingsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

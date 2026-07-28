@@ -1,10 +1,10 @@
-// Module ID: 11600
-// Function ID: 90147
+// Module ID: 11639
+// Function ID: 90298
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [31, 4123, 33, 11577, 566, 11601, 11574, 11599, 2]
+// Dependencies: [31, 4157, 33, 11616, 566, 11640, 11613, 11638, 2]
 // Exports: default
 
-// Module 11600 (GuildPowerupsMultiPerkCard)
+// Module 11639 (GuildPowerupsMultiPerkCard)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -16,12 +16,12 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
   let costDecorator;
   guildId = guildId.guildId;
   const listing = guildId.listing;
-  let badge = listing(11577)(guildId, listing);
+  let badge = listing(11616)(guildId, listing);
   let obj = guildId(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
   obj = { guildId, powerups: listing.powerups };
-  costDecorator = listing(11601)(obj);
+  costDecorator = listing(11640)(obj);
   const items1 = [guildId, listing];
   let tmp3 = null;
   if (null != costDecorator) {
@@ -37,7 +37,7 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
       obj.onPress = tmp2;
       badge = badge.badge;
       obj.badge = badge;
-      jsx(listing(11599), {});
+      jsx(listing(11638), {});
       const tmp4 = jsx;
     }
   }

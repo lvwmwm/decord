@@ -1,5 +1,5 @@
 // Module ID: 1744
-// Function ID: 19535
+// Function ID: 19539
 // Name: useReducedMotion
 // Dependencies: [1623]
 // Exports: useReducedMotion

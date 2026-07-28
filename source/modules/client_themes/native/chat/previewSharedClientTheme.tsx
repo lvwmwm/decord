@@ -1,12 +1,12 @@
-// Module ID: 11078
-// Function ID: 86059
+// Module ID: 11116
+// Function ID: 86182
 // Name: handleTapPreviewSharedClientTheme
-// Dependencies: [4099, 11079, 1935, 2]
+// Dependencies: [4133, 11117, 1935, 2]
 // Exports: handleTapPreviewSharedClientTheme
 
-// Module 11078 (handleTapPreviewSharedClientTheme)
+// Module 11116 (handleTapPreviewSharedClientTheme)
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/client_themes/native/chat/previewSharedClientTheme.tsx");
 
 export const handleTapPreviewSharedClientTheme = function handleTapPreviewSharedClientTheme(message) {
-  importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(11079, dependencyMap.paths), "custom-theme-preview", { message: message.message, backdropKind: "none" });
+  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(11117, dependencyMap.paths), "custom-theme-preview", { message: message.message, backdropKind: "none" });
 };

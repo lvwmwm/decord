@@ -1,9 +1,9 @@
-// Module ID: 12801
-// Function ID: 99695
+// Module ID: 12844
+// Function ID: 99865
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12801 (apexExperiment)
+// Module 12844 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-browser-transceiver-padding-removal", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

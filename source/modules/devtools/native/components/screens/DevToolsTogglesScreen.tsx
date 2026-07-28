@@ -1,10 +1,10 @@
-// Module ID: 14737
-// Function ID: 112353
+// Module ID: 14781
+// Function ID: 112526
 // Name: fuzzySearchToggle
-// Dependencies: [57, 31, 27, 5090, 4130, 33, 5046, 4131, 689, 5164, 3832, 5503, 566, 5501, 14721, 5159, 14738, 4542, 14739, 9171, 2]
+// Dependencies: [57, 31, 27, 5124, 4164, 33, 5080, 4165, 689, 5198, 3866, 5538, 566, 5536, 14765, 5193, 14782, 4576, 14783, 9215, 2]
 // Exports: default
 
-// Module 14737 (fuzzySearchToggle)
+// Module 14781 (fuzzySearchToggle)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -21,14 +21,14 @@ function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
     const formatted = str.toLowerCase();
-    let tmp9Result = importDefault(5046)(formatted, str2.toLowerCase());
+    let tmp9Result = importDefault(5080)(formatted, str2.toLowerCase());
     if (!tmp9Result) {
       const formatted1 = str.toLowerCase();
-      tmp9Result = importDefault(5046)(formatted1, str3.toLowerCase());
-      const tmp9 = importDefault(5046);
+      tmp9Result = importDefault(5080)(formatted1, str3.toLowerCase());
+      const tmp9 = importDefault(5080);
     }
     tmp = tmp9Result;
-    const tmp4 = importDefault(5046);
+    const tmp4 = importDefault(5080);
   }
   return tmp;
 }
@@ -48,9 +48,9 @@ function ToggleTableRow(toggleName) {
       obj = { content: description, key: toggleName };
       obj.open(obj);
     },
-    trailing: callback2(toggleName(5503).FormSwitch, { value, onValueChange })
+    trailing: callback2(toggleName(5538).FormSwitch, { value, onValueChange })
   };
-  return callback2(toggleName(5164).TableRow, obj, toggleName);
+  return callback2(toggleName(5198).TableRow, obj, toggleName);
 }
 function DevTogglesForCategory(category) {
   const arr = (function useFilteredDevTogglesForCategory(category, query) {
@@ -83,7 +83,7 @@ function DevTogglesForCategory(category) {
           }, tmp);
         })
     };
-    tmp = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp;
 }
@@ -100,7 +100,7 @@ export default function DevToolsTogglesScreen() {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
-  let obj = first(14738);
+  let obj = first(14782);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj1 = first(566);
   const items = [_isNativeReflectConstruct];
@@ -113,7 +113,7 @@ export default function DevToolsTogglesScreen() {
   }), items1, first(566).statesWillNeverBeEqual);
   obj = { style: tmp.wrap };
   const items2 = [tmp.container, ];
-  obj = { paddingBottom: importDefault(689).space.PX_16 + importDefault(5159)({ includeKeyboardHeight: true }).insets.bottom };
+  obj = { paddingBottom: importDefault(689).space.PX_16 + importDefault(5193)({ includeKeyboardHeight: true }).insets.bottom };
   items2[1] = obj;
   obj.contentContainerStyle = items2;
   obj1 = { spacing: 16 };
@@ -128,13 +128,13 @@ export default function DevToolsTogglesScreen() {
     },
     arrow: true
   };
-  const items3 = [callback2(first(5164).TableRow, obj3), ];
+  const items3 = [callback2(first(5198).TableRow, obj3), ];
   const obj4 = {};
   const obj5 = { size: "md", placeholder: "Search design toggles", onChange: tmp2[1] };
-  obj4.label = callback2(first(9171).SearchField, obj5);
-  items3[1] = callback2(first(5164).TableRow, obj4);
+  obj4.label = callback2(first(9215).SearchField, obj5);
+  items3[1] = callback2(first(5198).TableRow, obj4);
   obj2.children = items3;
-  const items4 = [callback3(first(5501).TableRowGroup, obj2), , ];
+  const items4 = [callback3(first(5536).TableRowGroup, obj2), , ];
   let tmp8 = null;
   if (stateFromStores.length > 0) {
     const obj6 = {
@@ -155,7 +155,7 @@ export default function DevToolsTogglesScreen() {
           }, tmp);
         })
     };
-    tmp8 = callback2(first(5501).TableRowGroup, obj6);
+    tmp8 = callback2(first(5536).TableRowGroup, obj6);
   }
   items4[1] = tmp8;
   const entries = Object.entries(CATEGORY_LABELS);
@@ -166,6 +166,6 @@ export default function DevToolsTogglesScreen() {
     return outer1_9(outer1_14, { category: parseInt(tmp), title: tmp2, query: first }, tmp);
   });
   obj1.children = items4;
-  obj.children = callback3(first(4542).Stack, obj1);
+  obj.children = callback3(first(4576).Stack, obj1);
   return callback2(ScrollView, obj);
 };

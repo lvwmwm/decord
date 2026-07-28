@@ -1,10 +1,10 @@
-// Module ID: 8861
-// Function ID: 70145
+// Module ID: 8905
+// Function ID: 70296
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [1194, 4147, 4145, 566, 2]
+// Dependencies: [1194, 4181, 4179, 566, 2]
 // Exports: default
 
-// Module 8861 (useVoiceStateForRemoteSession)
+// Module 8905 (useVoiceStateForRemoteSession)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

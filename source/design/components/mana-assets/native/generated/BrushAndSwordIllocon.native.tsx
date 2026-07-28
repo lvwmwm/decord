@@ -1,10 +1,10 @@
-// Module ID: 6834
-// Function ID: 59487
+// Module ID: 6870
+// Function ID: 59576
 // Name: BrushAndSwordIllocon
-// Dependencies: [33, 5085, 6835, 2]
+// Dependencies: [33, 5119, 6871, 2]
 // Exports: BrushAndSwordIllocon
 
-// Module 6834 (BrushAndSwordIllocon)
+// Module 6870 (BrushAndSwordIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BrushAndSwordIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const BrushAndSwordIllocon = function BrushAndSwordIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6835) };
+  obj = { uri: importDefault(6871) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const BrushAndSwordIllocon = function BrushAndSwordIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num, height: num });
+  return jsx(importDefault(5119), { width: num, height: num });
 };

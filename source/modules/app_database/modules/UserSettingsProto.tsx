@@ -1,9 +1,9 @@
-// Module ID: 5717
-// Function ID: 49573
+// Module ID: 5727
+// Function ID: 49429
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 6, 7, 1316, 1194, 3, 1899, 1883, 22, 2]
 
-// Module 5717 (_createForOfIteratorHelperLoose)
+// Module 5727 (_createForOfIteratorHelperLoose)
 import timestamp from "timestamp";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -142,7 +142,7 @@ let tmp4 = (() => {
           }, "handleUserSettingsProtoChange");
         }
       };
-      obj = f49585(UserSettingsProto[8]);
+      obj = f49441(UserSettingsProto[8]);
       this.throttledOnChange = obj.debounce(this.handleUserSettingsProtoChange, 0);
       return;
     }

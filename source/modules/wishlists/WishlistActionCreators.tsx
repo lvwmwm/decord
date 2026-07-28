@@ -1,9 +1,9 @@
-// Module ID: 8612
-// Function ID: 68445
+// Module ID: 8656
+// Function ID: 68592
 // Name: extraWishlistParams
-// Dependencies: [5, 5630, 1850, 3779, 5610, 8607, 653, 478, 1327, 686, 5613, 507, 8605, 1184, 4030, 675, 5656, 2]
+// Dependencies: [5, 5878, 1850, 3813, 5645, 8651, 653, 478, 1327, 686, 5648, 507, 8649, 1184, 4064, 675, 7960, 2]
 
-// Module 8612 (extraWishlistParams)
+// Module 8656 (extraWishlistParams)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -50,9 +50,9 @@ function maybeDispatchStorefrontPricesFetchSuccessFromWishlistResponse(storefron
     obj = { type: "SKUS_PRICING_FETCH_SUCCESS" };
     obj = { type: "skus", skuIds: found.map((id) => id.id) };
     obj.priceId = obj;
-    obj.data = require(5613) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(storefront_pricing);
+    obj.data = require(5648) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(storefront_pricing);
     obj.dispatch(obj);
-    const obj4 = require(5613) /* transformStorefrontSKUPricesServer */;
+    const obj4 = require(5648) /* transformStorefrontSKUPricesServer */;
   }
 }
 ({ AnalyticEvents: closure_10, Endpoints: closure_11, PaymentGateways: closure_12 } = ME);

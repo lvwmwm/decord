@@ -1,11 +1,11 @@
 // Module ID: 12278
-// Function ID: 95801
+// Function ID: 95726
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12278 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/seasonal", width: 144, height: 150, scales: [1], hash: "fb690a4c8c2a3f037f38e87a73eb44db", name: "chest_idle", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/media_viewer/native/images", width: 24, height: 24, scales: [2, 3], hash: "05e33949de588de2bb105d38c549ac02", name: "ic_eye_hidden", type: "png" };
 
 export default registerAsset.registerAsset(obj);

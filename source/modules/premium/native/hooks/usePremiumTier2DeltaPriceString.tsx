@@ -1,10 +1,10 @@
-// Module ID: 12515
-// Function ID: 96915
+// Module ID: 12558
+// Function ID: 97085
 // Name: getViewerProductId
-// Dependencies: [31, 6164, 5619, 1852, 6195, 5622, 477, 5616, 3792, 566, 2]
+// Dependencies: [31, 6198, 5654, 1852, 6230, 5657, 477, 5651, 3826, 566, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12515 (getViewerProductId)
+// Module 12558 (getViewerProductId)
 import result from "result";
 import { useNativeCheckoutStore } from "context";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ function getViewerProductId(subscription) {
   if (null == subscription) {
     return null;
   } else {
-    return require(6195) /* _createForOfIteratorHelperLoose */.getProductIdFromSubscription(tmp, false);
+    return require(6230) /* _createForOfIteratorHelperLoose */.getProductIdFromSubscription(tmp, false);
   }
 }
 ({ PremiumTypes: closure_5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
@@ -49,7 +49,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           let tmp6 = getViewerProductId(subscription);
           let tmp8 = null;
           if (null != tmp6) {
-            tmp8 = _require(5622).AppStorePremiumProductIdsToPremiumBundledItems[tmp6];
+            tmp8 = _require(5657).AppStorePremiumProductIdsToPremiumBundledItems[tmp6];
           }
           let tmp11 = null != tmp8 && tmp8.basePlanId === plan.basePlanId;
           if (tmp11) {
@@ -80,7 +80,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
                   result = diff / 100;
                 }
                 obj1 = {};
-                let obj6 = _require(5616);
+                let obj6 = _require(5651);
                 const obj2 = { convertToMajorUnits: false };
                 obj1.priceString = obj6.formatPrice(result, first.currencyCode, obj2);
                 obj1.failure = null;
@@ -99,22 +99,22 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
     if (null == checkoutContext) {
       let tmp20 = closure_7;
     } else {
-      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(_require(6195).getSubscriptionItemsForProduct(plan.productId));
+      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(_require(6230).getSubscriptionItemsForProduct(plan.productId));
       if (null != availablePlanForItems) {
         const addOnPrice = availablePlanForItems.getAddOnPrice();
         if (null != addOnPrice) {
           if (addOnPrice.majorUnits > 0) {
             const obj5 = {};
             obj6 = { convertToMajorUnits: false };
-            obj5.priceString = _require(5616).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, obj6);
+            obj5.priceString = _require(5651).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, obj6);
             obj5.failure = null;
             tmp20 = obj5;
-            const obj12 = _require(5616);
+            const obj12 = _require(5651);
           }
         }
         tmp20 = closure_7;
       }
-      const obj15 = _require(6195);
+      const obj15 = _require(6230);
     }
     tmp20 = closure_7;
   } else {

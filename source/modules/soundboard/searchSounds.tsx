@@ -1,10 +1,10 @@
-// Module ID: 12568
-// Function ID: 97316
+// Module ID: 12611
+// Function ID: 97486
 // Name: trackSearchStart
-// Dependencies: [4992, 653, 574, 675, 3772, 5046, 10714, 2]
+// Dependencies: [5026, 653, 574, 675, 3806, 5080, 10752, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 12568 (trackSearchStart)
+// Module 12611 (trackSearchStart)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -49,13 +49,13 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
       }
       let result = null;
       if (null != name.emojiName) {
-        result = callback2(3772).convertSurrogateToName(name.emojiName, false);
-        const obj2 = callback2(3772);
+        result = callback2(3806).convertSurrogateToName(name.emojiName, false);
+        const obj2 = callback2(3806);
       }
       let byName = null;
       if (null != result) {
-        byName = callback2(3772).getByName(result);
-        const obj3 = callback2(3772);
+        byName = callback2(3806).getByName(result);
+        const obj3 = callback2(3806);
       }
       if (null != customEmojiById) {
         const items = [customEmojiById.name];
@@ -104,8 +104,8 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
       }
       let result1 = sum6 > 0;
       if (result1) {
-        result1 = callback(10714).canUseSoundboardSound(closure_1, name, closure_2);
-        const obj4 = callback(10714);
+        result1 = callback(10752).canUseSoundboardSound(closure_1, name, closure_2);
+        const obj4 = callback(10752);
       }
       let sum7 = sum6;
       if (result1) {

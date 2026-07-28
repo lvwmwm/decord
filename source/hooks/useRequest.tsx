@@ -1,10 +1,10 @@
-// Module ID: 11315
-// Function ID: 87997
+// Module ID: 11353
+// Function ID: 88116
 // Name: useRequest
-// Dependencies: [5, 57, 31, 1212, 4031, 2]
+// Dependencies: [5, 57, 31, 1212, 4065, 2]
 // Exports: default
 
-// Module 11315 (useRequest)
+// Module 11353 (useRequest)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

@@ -1,19 +1,19 @@
-// Module ID: 3812
-// Function ID: 31447
+// Module ID: 3846
+// Function ID: 31549
 // Name: getCountryCodeByCountryName
-// Dependencies: [3813, 44, 1212, 3814, 3815, 2]
+// Dependencies: [3847, 44, 1212, 3848, 3849, 2]
 // Exports: convertToAlpha2, getCountryCodeByAlpha2, getDefaultCountryCode, getI18NCountryName, getI18NCountryNameSafe
 
-// Module 3812 (getCountryCodeByCountryName)
+// Module 3846 (getCountryCodeByCountryName)
 function getCountryCodeByCountryName(arg0) {
   let closure_0 = arg0;
-  const found = importDefault(3813).find((name) => name.name === closure_0);
+  const found = importDefault(3847).find((name) => name.name === closure_0);
   if (null != found) {
     const obj = {};
     ({ name: obj.name, phoneCountryCode: obj.code, alpha2: obj.alpha2 } = found);
     return obj;
   }
-  const arr = importDefault(3813);
+  const arr = importDefault(3847);
 }
 let closure_3 = {
   AF() {
@@ -1043,13 +1043,13 @@ export const DEFAULT_COUNTRY_CODE_NAME = "United States";
 export { getCountryCodeByCountryName };
 export const getCountryCodeByAlpha2 = function getCountryCodeByAlpha2(countryCode) {
   let closure_0 = countryCode;
-  const found = importDefault(3813).find((alpha2) => alpha2.alpha2 === closure_0);
+  const found = importDefault(3847).find((alpha2) => alpha2.alpha2 === closure_0);
   if (null != found) {
     const obj = {};
     ({ name: obj.name, phoneCountryCode: obj.code, alpha2: obj.alpha2 } = found);
     return obj;
   }
-  const arr = importDefault(3813);
+  const arr = importDefault(3847);
 };
 export const getDefaultCountryCode = function getDefaultCountryCode() {
   const tmp = getCountryCodeByCountryName("United States");
@@ -1068,7 +1068,7 @@ export const getI18NCountryNameSafe = function getI18NCountryNameSafe(arg0) {
 };
 export const convertToAlpha2 = function convertToAlpha2(countryCode) {
   if (2 === countryCode.length) {
-    const tmp17 = require(3814) /* set */.CountryCodes[countryCode];
+    const tmp17 = require(3848) /* set */.CountryCodes[countryCode];
     if (null == tmp17) {
       const _Error3 = Error;
       const _HermesInternal3 = HermesInternal;
@@ -1083,7 +1083,7 @@ export const convertToAlpha2 = function convertToAlpha2(countryCode) {
     const error1 = new Error("Bad country code passed: " + countryCode + " with length " + countryCode.length);
     throw error1;
   } else {
-    const tmp3 = require(3815) /* CountryCodesISO3to2 */.CountryCodesISO3to2[countryCode];
+    const tmp3 = require(3849) /* CountryCodesISO3to2 */.CountryCodesISO3to2[countryCode];
     if (null == tmp3) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;

@@ -1,10 +1,10 @@
-// Module ID: 8999
-// Function ID: 70885
+// Module ID: 9043
+// Function ID: 71036
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [31, 33, 1212, 9000, 9001, 9003, 2]
+// Dependencies: [31, 33, 1212, 9044, 9045, 9047, 2]
 // Exports: default
 
-// Module 8999 (ApplicationStreamActivityStatus)
+// Module 9043 (ApplicationStreamActivityStatus)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -58,15 +58,15 @@ export default function ApplicationStreamActivityStatus(hideText) {
   obj = {};
   let tmp11 = !hideIcon;
   if (tmp11) {
-    obj = { icon: require(9001) /* TvIcon */.TvIcon, style: iconStyle };
-    tmp11 = callback(importDefault(9000), obj);
-    const tmp15 = importDefault(9000);
+    obj = { icon: require(9045) /* TvIcon */.TvIcon, style: iconStyle };
+    tmp11 = callback(importDefault(9044), obj);
+    const tmp15 = importDefault(9044);
   }
   const items = [tmp11, ];
   let tmp17 = !flag;
   if (tmp17) {
     const obj1 = { style: textStyle, maxFontSizeMultiplier, children: formatResult };
-    tmp17 = callback(importDefault(9003), obj1);
+    tmp17 = callback(importDefault(9047), obj1);
   }
   items[1] = tmp17;
   obj.children = items;

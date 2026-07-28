@@ -1,10 +1,10 @@
-// Module ID: 15104
-// Function ID: 115018
+// Module ID: 15144
+// Function ID: 115176
 // Name: ProgressBar
-// Dependencies: [31, 27, 1918, 4334, 4335, 1355, 3747, 33, 4131, 689, 4555, 624, 1360, 4661, 1198, 4127, 1212, 1273, 10675, 2]
+// Dependencies: [31, 27, 1918, 4368, 4369, 1355, 3781, 33, 4165, 689, 4589, 624, 1360, 4695, 1198, 4161, 1212, 1273, 10713, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15104 (ProgressBar)
+// Module 15144 (ProgressBar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ function ProgressBar(percent) {
   obj.colors = ["rgba(103, 203, 134, 1)", "rgba(59, 165, 92, 1)"];
   obj.useAngle = true;
   obj.angle = -90;
-  obj.children = callback(importDefault(4555), obj);
+  obj.children = callback(importDefault(4589), obj);
   return callback(View, obj);
 }
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);

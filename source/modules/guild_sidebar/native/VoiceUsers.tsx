@@ -1,10 +1,10 @@
-// Module ID: 15032
-// Function ID: 114580
+// Module ID: 15076
+// Function ID: 114755
 // Name: AudienceItem
-// Dependencies: [31, 27, 1918, 33, 4131, 689, 10224, 8757, 566, 15033, 9849, 1212, 11557, 4127, 15037, 2]
+// Dependencies: [31, 27, 1918, 33, 4165, 689, 10264, 8801, 566, 15077, 9889, 1212, 11596, 4161, 15081, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15032 (AudienceItem)
+// Module 15076 (AudienceItem)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -18,7 +18,7 @@ function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
   ({ audienceCount, collapsed } = arg0);
-  const tmp = callback2(importDefault(8757)());
+  const tmp = callback2(importDefault(8801)());
   let formatToPlainStringResult = audienceCount;
   if (!collapsed) {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -26,11 +26,11 @@ function AudienceItem(arg0) {
     formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["+v2pN2"], obj);
   }
   obj = { style: collapsed ? tmp.listenersCollapsed : tmp.listeners };
-  obj = { style: tmp.listenersIconWrapper, children: callback(require(11557) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
+  obj = { style: tmp.listenersIconWrapper, children: callback(require(11596) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
   obj1 = { color: "redesign-channel-name-muted-text", size: "custom", style: tmp.headphonesIcon };
   const items = [callback(View, obj), ];
   const obj2 = { style: tmp.listenersText, variant: c7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
-  items[1] = callback(require(4127) /* Text */.Text, obj2);
+  items[1] = callback(require(4161) /* Text */.Text, obj2);
   obj.children = items;
   return closure_6(View, obj);
 }
@@ -43,12 +43,12 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: obj };
   obj = { flexDirection: "row", alignItems: "center", backgroundColor: tmp, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 };
   obj = { alignItems: "center", justifyContent: "center", backgroundColor: tmp, marginRight: 8, marginLeft: 4, borderRadius: round };
-  const merged = Object.assign(require(10224) /* getLayoutStyles */.makeSizeStyle(20));
+  const merged = Object.assign(require(10264) /* getLayoutStyles */.makeSizeStyle(20));
   obj.listenersIconWrapper = obj;
   obj.listenersText = { marginRight: 4 };
   obj.userCollapsedOverlap = { marginLeft: -20 };
-  const obj4 = require(10224) /* getLayoutStyles */;
-  obj.headphonesIcon = require(10224) /* getLayoutStyles */.makeSizeStyle(14);
+  const obj4 = require(10264) /* getLayoutStyles */;
+  obj.headphonesIcon = require(10264) /* getLayoutStyles */.makeSizeStyle(14);
   return obj;
 });
 let closure_9 = require("result").memo((voiceState) => {
@@ -74,7 +74,7 @@ let closure_9 = require("result").memo((voiceState) => {
   }
   obj.style = userCollapsedOverlap;
   obj = { user };
-  tmp = callback2(channel(8757)());
+  tmp = callback2(channel(8801)());
   const tmp3 = closure_5;
   const tmp4 = View;
   const tmp6 = closure_5;
@@ -87,7 +87,7 @@ let closure_9 = require("result").memo((voiceState) => {
   obj.sessionId = voiceState2.sessionId;
   obj.channel = channel;
   obj.isGuest = stateFromStoresObject.isGuest;
-  obj.children = tmp6(channel(15033), obj, user.id);
+  obj.children = tmp6(channel(15077), obj, user.id);
   return tmp3(tmp4, obj);
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
@@ -109,12 +109,12 @@ export default function VoiceUsers(collapsed) {
     }
     items[1] = tmp6;
     obj.children = items;
-    tmp = closure_6(importDefault(15037), obj);
+    tmp = closure_6(importDefault(15081), obj);
     const tmp2 = closure_6;
-    const tmp5 = importDefault(15037);
+    const tmp5 = importDefault(15081);
   }
   return tmp;
 };
 export const getAudienceItemHeight = function getAudienceItemHeight(fontScale) {
-  return 8 + Math.max(20, require(9849) /* scaleLineHeight */.scaleTextLineHeight(c7, fontScale));
+  return 8 + Math.max(20, require(9889) /* scaleLineHeight */.scaleTextLineHeight(c7, fontScale));
 };

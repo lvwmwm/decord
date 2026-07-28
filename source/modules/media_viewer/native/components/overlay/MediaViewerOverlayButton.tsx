@@ -1,8 +1,8 @@
-// Module ID: 12240
-// Function ID: 95585
-// Dependencies: [31, 33, 6625, 2]
+// Module ID: 12283
+// Function ID: 95755
+// Dependencies: [31, 33, 6661, 2]
 
-// Module 12240
+// Module 12283
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -10,7 +10,7 @@ const require = arg1;
 const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   const obj = { ref, size: "md", variant: "secondary-overlay" };
   const merged = Object.assign(arg0);
-  return jsx(require(6625) /* IconButton */.IconButton, { ref, size: "md", variant: "secondary-overlay" });
+  return jsx(require(6661) /* IconButton */.IconButton, { ref, size: "md", variant: "secondary-overlay" });
 });
 const result = require("IconButton").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx");
 

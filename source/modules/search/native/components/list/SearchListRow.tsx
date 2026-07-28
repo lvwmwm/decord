@@ -1,9 +1,9 @@
-// Module ID: 15416
-// Function ID: 117658
+// Module ID: 15456
+// Function ID: 117817
 // Name: SearchListRow
-// Dependencies: [31, 27, 9033, 33, 4131, 689, 4661, 4127, 2]
+// Dependencies: [31, 27, 9077, 33, 4165, 689, 4695, 4161, 2]
 
-// Module 15416 (SearchListRow)
+// Module 15456 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 import jsxProd from "jsxProd";
@@ -71,7 +71,7 @@ const memoResult = require("result").memo((accessibilityRole) => {
   let tmp5 = label;
   if ("string" === typeof label) {
     const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmpResult.text, children: label };
-    tmp5 = callback(require(4127) /* Text */.Text, obj1);
+    tmp5 = callback(require(4161) /* Text */.Text, obj1);
   }
   const items5 = [tmp5, subLabel];
   obj.children = items5;
@@ -89,7 +89,7 @@ const memoResult = require("result").memo((accessibilityRole) => {
   }
   items1[2] = tmp9;
   obj.children = items1;
-  return closure_6(require(4661) /* PressableBase */.PressableHighlight, obj);
+  return closure_6(require(4695) /* PressableBase */.PressableHighlight, obj);
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/SearchListRow.tsx");
 

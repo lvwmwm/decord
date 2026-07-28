@@ -1,10 +1,10 @@
-// Module ID: 14189
-// Function ID: 109198
+// Module ID: 14233
+// Function ID: 109371
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 1212, 566, 4320, 1392, 5487, 5085, 4127, 665, 1273, 5488, 2]
+// Dependencies: [31, 27, 1850, 33, 4165, 689, 1212, 566, 4354, 1392, 5522, 5119, 4161, 665, 1273, 5523, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14189 (GuildRoleSubscriptionMemberPreview)
+// Module 14233 (GuildRoleSubscriptionMemberPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  importDefault(4320);
+  importDefault(4354);
   if (null == role) {
     return null;
   } else {
@@ -54,13 +54,13 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       avatarURL = obj2.getDefaultAvatarURL(undefined, undefined);
     }
     const source = importDefault(1392).makeSource(avatarURL);
-    let obj3 = require(5487) /* getRoleIconSource */;
+    let obj3 = require(5522) /* getRoleIconSource */;
     const roleIconData = obj3.getRoleIconData(role, 16);
     obj = {};
     const items1 = [tmp3.container, style];
     obj.style = items1;
     obj = { style: tmp3.avatar, source };
-    const items2 = [callback(importDefault(5085), obj), ];
+    const items2 = [callback(importDefault(5119), obj), ];
     const obj1 = { style: tmp3.content };
     obj2 = { style: tmp3.contextRow };
     obj3 = { variant: "text-md/semibold", color: "interactive-text-active" };
@@ -69,7 +69,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     obj4.color = obj10.int2hex(role.color);
     obj3.style = obj4;
     obj3.children = tmp5;
-    const items3 = [callback(require(4127) /* Text */.Text, obj3), , , ];
+    const items3 = [callback(require(4161) /* Text */.Text, obj3), , , ];
     let tmp19Result = null;
     if (null != roleIconData) {
       const obj5 = {};
@@ -84,22 +84,22 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       obj7.source = tmp26;
       obj7.unicodeEmoji = roleIconData.unicodeEmoji;
       obj7.size = 16;
-      items4[1] = callback(importDefault(5488), obj7);
+      items4[1] = callback(importDefault(5523), obj7);
       obj5.children = items4;
       tmp19Result = closure_8(closure_7, obj5);
       const tmp19 = closure_8;
       const tmp20 = closure_7;
       const tmp21 = callback;
-      const tmp25 = importDefault(5488);
+      const tmp25 = importDefault(5523);
     }
     items3[1] = tmp19Result;
     const obj9 = { size: 8 };
     items3[2] = callback(require(1273) /* Button */.Spacer, obj9);
-    items3[3] = callback(require(4127) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    items3[3] = callback(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
     obj2.children = items3;
     const items5 = [closure_8(View, obj2), ];
     obj10 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
-    items5[1] = callback(require(4127) /* Text */.Text, obj10);
+    items5[1] = callback(require(4161) /* Text */.Text, obj10);
     obj1.children = items5;
     items2[1] = closure_8(View, obj1);
     obj.children = items2;

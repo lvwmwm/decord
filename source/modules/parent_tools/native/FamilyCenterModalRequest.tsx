@@ -1,10 +1,10 @@
-// Module ID: 11046
-// Function ID: 85868
+// Module ID: 11084
+// Function ID: 85991
 // Name: FamilyCenterModalRequestConfirm
-// Dependencies: [5, 31, 27, 1850, 5766, 33, 4131, 689, 1456, 624, 5767, 11047, 5827, 11048, 6725, 6726, 1273, 1392, 1212, 2199, 4127, 11049, 11050, 11058, 4966, 4544, 4338, 6727, 6201, 44, 9946, 7640, 5584, 8063, 1882, 6690, 6692, 4348, 5087, 11059, 11060, 2]
+// Dependencies: [5, 31, 27, 1850, 5776, 33, 4165, 689, 1456, 624, 5777, 11085, 5837, 11086, 6761, 6762, 1273, 1392, 1212, 2199, 4161, 11087, 11088, 11096, 5000, 4578, 4372, 6763, 6236, 44, 9986, 7676, 5619, 8101, 1882, 6726, 6728, 4382, 5121, 11097, 11098, 2]
 // Exports: default
 
-// Module 11046 (FamilyCenterModalRequestConfirm)
+// Module 11084 (FamilyCenterModalRequestConfirm)
 import closure_3 from "jsxProd";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "AccountAgeTier10LargeBadge";
@@ -250,7 +250,7 @@ class FamilyCenterModalRequestConfirm {
     obj23 = { variant: "secondary", size: "lg" };
     intl6 = require("getSystemLocale").intl;
     obj23.text = intl6.string(require("getSystemLocale").t["ETE/oC"]);
-    obj23.onPress = require("module_4338").pop;
+    obj23.onPress = require("module_4372").pop;
     items10[1] = jsx(require("Button").Button, obj23);
     obj21.children = items10;
     obj20.children = jsxs(require("ButtonGroup").ButtonGroup, obj21);
@@ -274,7 +274,7 @@ class FamilyCenterModalRequestSuccess {
       tmp4 = closure_1;
       tmp5 = closure_2;
       num = 26;
-      arr2 = require("module_4338");
+      arr2 = require("module_4372");
       arr = arr2.pop();
     }
     tmp7 = jsxs;
@@ -441,9 +441,9 @@ function FamilyCenterPrereqLoading(arg0) {
     };
   }, []);
   obj = {};
-  obj = { style: callback5().container, children: callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {}) };
+  obj = { style: callback5().container, children: callback(require(5619) /* ActivityIndicator */.ActivityIndicator, {}) };
   obj.children = callback(closure_6, obj);
-  return callback(require(6725) /* ModalScreen */.ModalScreen, obj);
+  return callback(require(6761) /* ModalScreen */.ModalScreen, obj);
 }
 function FamilyCenterPrereqScreen(primaryButton) {
   let description;
@@ -454,15 +454,15 @@ function FamilyCenterPrereqScreen(primaryButton) {
   let obj = {};
   obj = { style: tmp.content };
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: title };
-  const items = [callback(require(4127) /* Text */.Text, obj), ];
+  const items = [callback(require(4161) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: description };
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [callback2(closure_6, obj), ];
-  const obj2 = { children: callback(require(4544) /* Button */.Button, { text: primaryButton.text, onPress: primaryButton.onPress }) };
-  items1[1] = callback(require(11058) /* ModalFooter */.ModalFooter, obj2);
+  const obj2 = { children: callback(require(4578) /* Button */.Button, { text: primaryButton.text, onPress: primaryButton.onPress }) };
+  items1[1] = callback(require(11096) /* ModalFooter */.ModalFooter, obj2);
   obj.children = items1;
-  return callback2(require(6725) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(6761) /* ModalScreen */.ModalScreen, obj);
 }
 function useNavigateToVerifyingOnPending() {
   navigation = navigation(1456).useNavigation();
@@ -476,7 +476,7 @@ function useNavigateToVerifyingOnPending() {
     }
     return prop;
   });
-  const tmp3 = stateFromStores(8063)(stateFromStores);
+  const tmp3 = stateFromStores(8101)(stateFromStores);
   const dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
   const effect = React.useEffect(() => {
@@ -506,7 +506,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   }, []);
   let obj = {};
   obj = { style: tmp.content };
-  obj = { style: tmp.art, children: callback(require(6727) /* AccountAgeTier10LargeBadge */.FamilyShieldSpotIllustration, {}) };
+  obj = { style: tmp.art, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.FamilyShieldSpotIllustration, {}) };
   const items = [callback(closure_6, obj), , ];
   const obj1 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -528,11 +528,11 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   }
   obj2.username = str;
   obj1.children = intl.formatToPlainString(importDefault(2199).pQQMJ7, obj2);
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl2.format(importDefault(2199)["0o3yg8"], { link: "https://support.discord.com/hc/articles/14155060633623" });
-  items[2] = callback(require(4127) /* Text */.Text, obj3);
+  items[2] = callback(require(4161) /* Text */.Text, obj3);
   obj.children = items;
   const items1 = [callback2(closure_6, obj), ];
   const obj4 = {};
@@ -541,19 +541,19 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.text = intl3.string(importDefault(2199)["3oUE4o"]);
   obj6.onPress = callback;
-  const items2 = [callback(require(4544) /* Button */.Button, obj6), ];
+  const items2 = [callback(require(4578) /* Button */.Button, obj6), ];
   const obj7 = { variant: "tertiary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj7.text = intl4.string(require(1212) /* getSystemLocale */.t.oEAioF);
   obj7.onPress = function onPress() {
     return outer1_1(outer1_2[26]).pop();
   };
-  items2[1] = callback(require(4544) /* Button */.Button, obj7);
+  items2[1] = callback(require(4578) /* Button */.Button, obj7);
   obj5.children = items2;
-  obj4.children = callback2(require(4966) /* ButtonGroup */.ButtonGroup, obj5);
-  items1[1] = callback(require(11058) /* ModalFooter */.ModalFooter, obj4);
+  obj4.children = callback2(require(5000) /* ButtonGroup */.ButtonGroup, obj5);
+  items1[1] = callback(require(11096) /* ModalFooter */.ModalFooter, obj4);
   obj.children = items1;
-  return callback2(require(6725) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(6761) /* ModalScreen */.ModalScreen, obj);
 }
 function FamilyCenterVerifyingScreen() {
   let obj = navigation(stateFromStores[8]);
@@ -604,7 +604,7 @@ function FamilyCenterPrereqInvalidCodeScreen() {
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.WAI6xu);
-  obj.onPress = importDefault(4338).pop;
+  obj.onPress = importDefault(4372).pop;
   obj.primaryButton = obj;
   return callback(FamilyCenterPrereqScreen, obj);
 }
@@ -623,7 +623,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
-  obj.onPress = importDefault(4338).pop;
+  obj.onPress = importDefault(4372).pop;
   obj.primaryButton = obj;
   return callback(FamilyCenterPrereqScreen, obj);
 }
@@ -681,7 +681,7 @@ obj18.title = _createForOfIteratorHelperLoose;
 obj18.description = { textAlign: "center" };
 let closure_20 = _createForOfIteratorHelperLoose.createStyles(obj18);
 _createForOfIteratorHelperLoose = { headerShown: true };
-_createForOfIteratorHelperLoose.headerLeft = HeaderBackImage.getHeaderCloseButton(require("module_4338").pop);
+_createForOfIteratorHelperLoose.headerLeft = HeaderBackImage.getHeaderCloseButton(require("module_4372").pop);
 _createForOfIteratorHelperLoose.headerTitle = function headerTitle() {
   return null;
 };
@@ -691,7 +691,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/par
 export default function FamilyCenterRequestModal(userId) {
   userId = userId.userId;
   const linkCode = userId.linkCode;
-  const FamilyCenterConnectionPrereqExperiment = userId(11059).FamilyCenterConnectionPrereqExperiment;
+  const FamilyCenterConnectionPrereqExperiment = userId(11097).FamilyCenterConnectionPrereqExperiment;
   const items = [linkCode, userId];
   const memo = React.useMemo(() => (function getScreens(userId, linkCode) {
     let closure_0 = userId;
@@ -780,7 +780,7 @@ export default function FamilyCenterRequestModal(userId) {
     obj[userId(outer2_2[11]).FamilyCenterModalRequestSections.TEEN_SCAN] = obj7;
     return obj;
   })(userId, linkCode), items);
-  const FamilyCenterModalRequestSections = userId(11047).FamilyCenterModalRequestSections;
+  const FamilyCenterModalRequestSections = userId(11085).FamilyCenterModalRequestSections;
   if (FamilyCenterConnectionPrereqExperiment.useConfig({ location: "FamilyCenterRequestModal" }).enabled) {
     let PREREQ_LOADING = FamilyCenterModalRequestSections.PREREQ_LOADING;
   } else {
@@ -789,7 +789,7 @@ export default function FamilyCenterRequestModal(userId) {
   let obj = { initialRouteName: PREREQ_LOADING, screens: memo };
   const intl = userId(1212).intl;
   obj.headerBackTitle = intl.string(userId(1212).t["13/7kX"]);
-  return callback(userId(11060).Modal, obj);
+  return callback(userId(11098).Modal, obj);
 };
 export { FamilyCenterModalRequestConfirm };
 export { FamilyCenterModalRequestSuccess };

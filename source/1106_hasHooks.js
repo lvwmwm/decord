@@ -1,5 +1,5 @@
 // Module ID: 1106
-// Function ID: 12645
+// Function ID: 12649
 // Name: hasHooks
 // Dependencies: []
 

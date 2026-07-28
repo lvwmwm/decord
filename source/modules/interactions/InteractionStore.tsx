@@ -1,9 +1,9 @@
-// Module ID: 7662
-// Function ID: 61340
+// Module ID: 7698
+// Function ID: 61430
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1348, 664, 4358, 1882, 5685, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1348, 664, 4392, 1882, 5695, 566, 686, 2]
 
-// Module 7662 (_isNativeReflectConstruct)
+// Module 7698 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -208,7 +208,7 @@ tmp4 = new tmp4(require("dispatcher"), {
       closure_14[messageId] = nonce;
       closure_15[nonce] = messageId;
     }
-    closure_13[nonce] = { state: require(4358) /* InteractionState */.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure };
+    closure_13[nonce] = { state: require(4392) /* InteractionState */.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure };
   },
   INTERACTION_CREATE: function handleInteractionCreate(nonce) {
     nonce = nonce.nonce;
@@ -216,8 +216,8 @@ tmp4 = new tmp4(require("dispatcher"), {
       return false;
     } else {
       if (null != dependencyMap[nonce]) {
-        if (obj.state === require(4358) /* InteractionState */.InteractionState.QUEUED) {
-          obj.state = require(4358) /* InteractionState */.InteractionState.CREATED;
+        if (obj.state === require(4392) /* InteractionState */.InteractionState.QUEUED) {
+          obj.state = require(4392) /* InteractionState */.InteractionState.CREATED;
           if (null != obj.onCreate) {
             obj.onCreate(tmp);
           }
@@ -249,7 +249,7 @@ tmp4 = new tmp4(require("dispatcher"), {
       } else {
         const obj = {};
         const merged = Object.assign(obj2);
-        obj["state"] = require(4358) /* InteractionState */.InteractionState.FAILED;
+        obj["state"] = require(4392) /* InteractionState */.InteractionState.FAILED;
         obj["errorCode"] = errorCode;
         obj["errorMessage"] = errorMessage;
         obj["reasonCode"] = reasonCode;
@@ -281,7 +281,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         let tmp2 = callback3(entries[num], 2);
         let tmp3 = require;
         let tmp4 = dependencyMap;
-        if (tmp2[1].state === require(4358) /* InteractionState */.InteractionState.FAILED) {
+        if (tmp2[1].state === require(4392) /* InteractionState */.InteractionState.FAILED) {
           let tmp5 = deleteNonce;
           let tmp6 = deleteNonce(tmp2[0]);
         }
@@ -330,8 +330,8 @@ tmp4 = new tmp4(require("dispatcher"), {
             tmp7 = "channelId" in interaction.data;
           }
           if (tmp7) {
-            importDefault(5685).deleteMessage(interaction.data.channelId, messageId, true);
-            const obj = importDefault(5685);
+            importDefault(5695).deleteMessage(interaction.data.channelId, messageId, true);
+            const obj = importDefault(5695);
           }
         }
         tmp4 = null != interaction && null != messageId;

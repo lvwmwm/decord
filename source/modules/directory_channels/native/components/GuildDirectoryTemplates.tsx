@@ -1,10 +1,10 @@
-// Module ID: 10014
-// Function ID: 77500
+// Module ID: 10054
+// Function ID: 77629
 // Name: GuildTemplatesItem
-// Dependencies: [31, 27, 9996, 10001, 33, 4131, 10015, 1273, 10016, 1456, 1557, 10000, 4127, 1212, 5501, 8928, 2]
+// Dependencies: [31, 27, 10036, 10041, 33, 4165, 10055, 1273, 10056, 1456, 1557, 10040, 4161, 1212, 5536, 8972, 2]
 // Exports: default
 
-// Module 10014 (GuildTemplatesItem)
+// Module 10054 (GuildTemplatesItem)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import DirectoryEntryTypes from "DirectoryEntryTypes";

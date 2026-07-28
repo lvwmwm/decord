@@ -1,17 +1,17 @@
-// Module ID: 14370
-// Function ID: 110036
+// Module ID: 14414
+// Function ID: 110209
 // Name: useWebBrowserSettingOptions
-// Dependencies: [7697, 4097, 1212, 668, 477, 10059, 2]
+// Dependencies: [7733, 4131, 1212, 668, 477, 10099, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 14370 (useWebBrowserSettingOptions)
+// Module 14414 (useWebBrowserSettingOptions)
 import createToggle from "createToggle";
 
 function useWebBrowserSettingOptions() {
-  let obj = require(4097) /* removeInAppBrowserCloseSubscription */;
+  let obj = require(4131) /* removeInAppBrowserCloseSubscription */;
   const items = [];
   const browserManagerIsChromeInstalled = obj.useBrowserManagerIsChromeInstalled();
-  let obj1 = require(4097) /* removeInAppBrowserCloseSubscription */;
+  let obj1 = require(4131) /* removeInAppBrowserCloseSubscription */;
   if (obj1.useBrowserManagerSupportsInAppBrowser()) {
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -53,10 +53,10 @@ const radio = createToggle.createRadio({
   },
   parent: require("MobileSetting").MobileSetting.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4097) /* removeInAppBrowserCloseSubscription */.useBrowserManagerSelectedBrowser();
+    return require(4131) /* removeInAppBrowserCloseSubscription */.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4097) /* removeInAppBrowserCloseSubscription */.browserManagerSelectBrowser(Number(arg0));
+    const result = require(4131) /* removeInAppBrowserCloseSubscription */.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 });
@@ -67,10 +67,10 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4097) /* removeInAppBrowserCloseSubscription */.useBrowserManagerSelectedBrowser();
+    return require(4131) /* removeInAppBrowserCloseSubscription */.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4097) /* removeInAppBrowserCloseSubscription */.browserManagerSelectBrowser(Number(arg0));
+    const result = require(4131) /* removeInAppBrowserCloseSubscription */.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 };

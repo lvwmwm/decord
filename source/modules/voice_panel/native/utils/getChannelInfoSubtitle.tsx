@@ -1,10 +1,10 @@
-// Module ID: 15864
-// Function ID: 122488
+// Module ID: 15903
+// Function ID: 122644
 // Name: getChannelInfoSubtitle
-// Dependencies: [4320, 1212, 2]
+// Dependencies: [4354, 1212, 2]
 // Exports: default
 
-// Module 15864 (getChannelInfoSubtitle)
+// Module 15903 (getChannelInfoSubtitle)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");
 
 export default function getChannelInfoSubtitle(arg0, arg1, arg2) {
@@ -15,18 +15,18 @@ export default function getChannelInfoSubtitle(arg0, arg1, arg2) {
   if (0 === arg2.length) {
     return null;
   } else if (1 === length) {
-    return importDefault(4320).getName(arg0, arg1, arg2[0]);
+    return importDefault(4354).getName(arg0, arg1, arg2[0]);
   } else if (2 === length) {
     const intl = require(1212) /* getSystemLocale */.intl;
-    let obj = { user1: importDefault(4320).getName(arg0, arg1, arg2[0]) };
-    const obj2 = importDefault(4320);
-    obj.user2 = importDefault(4320).getName(arg0, arg1, arg2[1]);
+    let obj = { user1: importDefault(4354).getName(arg0, arg1, arg2[0]) };
+    const obj2 = importDefault(4354);
+    obj.user2 = importDefault(4354).getName(arg0, arg1, arg2[1]);
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["lRD/ru"], obj);
   } else {
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { user1: importDefault(4320).getName(arg0, arg1, arg2[0]) };
-    const obj6 = importDefault(4320);
-    obj.user2 = importDefault(4320).getName(arg0, arg1, arg2[1]);
+    obj = { user1: importDefault(4354).getName(arg0, arg1, arg2[0]) };
+    const obj6 = importDefault(4354);
+    obj.user2 = importDefault(4354).getName(arg0, arg1, arg2[1]);
     obj.numPeople = arg2.length - 2 + num;
     return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.RFCI3S, obj);
   }

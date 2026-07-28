@@ -1,10 +1,10 @@
-// Module ID: 4354
-// Function ID: 38631
+// Module ID: 4388
+// Function ID: 38745
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4355, 3, 1392, 1212, 4356, 1882, 4358, 4359, 491, 1327, 4360, 665, 21, 2]
+// Dependencies: [4389, 3, 1392, 1212, 4390, 1882, 4392, 4393, 491, 1327, 4394, 665, 21, 2]
 // Exports: canSelectBeEmpty, deserializeComponentUploadId, getAllTextDisplayContent, getFileUploadComponentSubtitle, getFirstInteractionComponentMedia, getLayoutComponentErrorText, getParents, getSelectPlaceholder, makeComponentUploadId, transformComponents
 
-// Module 4354 (_createForOfIteratorHelperLoose)
+// Module 4388 (_createForOfIteratorHelperLoose)
 import { CheckpointVersions } from "CheckpointPersonas";
 import importDefaultResult from "getSystemLocale";
 
@@ -652,7 +652,7 @@ function transformComponent(type, join) {
   }
 }
 function indicesToId(join) {
-  return require(4360) /* ActionComponentState */.asComponentId(join.join(","));
+  return require(4394) /* ActionComponentState */.asComponentId(join.join(","));
 }
 importDefaultResult = new importDefaultResult("InteractionComponentUtils");
 function getEmoji(id) {
@@ -689,7 +689,7 @@ export const getLayoutComponentErrorText = function getLayoutComponentErrorText(
       state = interaction.state;
     }
     componentId = null;
-    if (state === require(4358) /* InteractionState */.InteractionState.FAILED) {
+    if (state === require(4392) /* InteractionState */.InteractionState.FAILED) {
       componentId = interaction.data.componentId;
     }
   }
@@ -721,8 +721,8 @@ export const getLayoutComponentErrorText = function getLayoutComponentErrorText(
           const intl = require(1212) /* getSystemLocale */.intl;
           stringResult = intl.string(require(1212) /* getSystemLocale */.t.VCsUJu);
         } else {
-          stringResult = require(4356) /* interactionCallbackErrorReason */.interactionCallbackErrorReason(interaction.reasonCode, interaction.data.applicationId);
-          const obj = require(4356) /* interactionCallbackErrorReason */;
+          stringResult = require(4390) /* interactionCallbackErrorReason */.interactionCallbackErrorReason(interaction.reasonCode, interaction.data.applicationId);
+          const obj = require(4390) /* interactionCallbackErrorReason */;
         }
       }
     }
@@ -777,7 +777,7 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
         if (null != first) {
           let tmp11 = require;
           let tmp12 = dependencyMap;
-          let obj2 = require(4359) /* toContentScanMetadata */;
+          let obj2 = require(4393) /* toContentScanMetadata */;
           unfurledMediaItemType = obj2.getUnfurledMediaItemType(first.media);
           tmp10 = first;
           tmp9 = tmp4;
@@ -795,7 +795,7 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
         if (value.type === require(1882) /* PermissionOverwriteType */.ComponentType.THUMBNAIL) {
           let tmp18 = require;
           let tmp19 = dependencyMap;
-          let obj4 = require(4359) /* toContentScanMetadata */;
+          let obj4 = require(4393) /* toContentScanMetadata */;
           let unfurledMediaItemType1 = obj4.getUnfurledMediaItemType(value.media);
           tmp10 = tmp2;
           tmp8 = tmp3;

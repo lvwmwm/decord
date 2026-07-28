@@ -1,10 +1,10 @@
-// Module ID: 7927
-// Function ID: 63112
+// Module ID: 7964
+// Function ID: 63221
 // Name: getProfileTheme
-// Dependencies: [57, 653, 665, 3976, 22, 3977, 666, 2]
+// Dependencies: [57, 653, 665, 4010, 22, 4011, 666, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getUserProfileGradientContainerColors
 
-// Module 7927 (getProfileTheme)
+// Module 7964 (getProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import { ThemeTypes } from "ME";
 import apply from "apply";
@@ -34,8 +34,8 @@ function getGradientPercentageColorInRgb(int2rgbArrayResult, int2rgbArrayResult1
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", 1)";
 }
 const memoizeResult = apply.memoize((primaryColor) => {
-  let obj = require(3977) /* AccessibilityAnnouncer */;
-  obj = { base: "#ffffff", contrastRatio: require(3977) /* AccessibilityAnnouncer */.WCAGContrastRatios.HighContrastText };
+  let obj = require(4011) /* AccessibilityAnnouncer */;
+  obj = { base: "#ffffff", contrastRatio: require(4011) /* AccessibilityAnnouncer */.WCAGContrastRatios.HighContrastText };
   const contrastingColor = obj.getContrastingColor(primaryColor, obj);
   return require(665) /* pad2 */.hex2int(contrastingColor);
 }, (arg0) => arg0);
@@ -67,7 +67,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
   if (null == overlay) {
     return 0;
   } else {
-    const parseStringResult = alpha(3976).parseString(overlay);
+    const parseStringResult = alpha(4010).parseString(overlay);
     if (null == parseStringResult) {
       return 0;
     } else {
@@ -80,7 +80,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
       const _HermesInternal = HermesInternal;
       return items1(665).rgb2int("rgba(" + first + ", " + tmp6[1] + ", " + tmp6[2] + ")");
     }
-    const obj2 = alpha(3976);
+    const obj2 = alpha(4010);
   }
   const obj = items1(665);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10132
-// Function ID: 78445
+// Module ID: 10172
+// Function ID: 78574
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 31, 7627, 4472, 1212, 4562, 2]
+// Dependencies: [5, 31, 7663, 4506, 1212, 4596, 2]
 // Exports: default
 
-// Module 10132 (useShowUnlinkChannelAlert)
+// Module 10172 (useShowUnlinkChannelAlert)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
 
@@ -20,7 +20,7 @@ export default function useShowUnlinkChannelAlert(arg0, arg1, arg2) {
   callback = React.useCallback(callback(tmp), items);
   const items1 = [arg1, callback];
   return React.useCallback(() => {
-    let obj = callback2(4472);
+    let obj = callback2(4506);
     obj = {};
     const intl = callback(1212).intl;
     obj.title = intl.string(callback(1212).t.JmUENg);
@@ -32,7 +32,7 @@ export default function useShowUnlinkChannelAlert(arg0, arg1, arg2) {
     const intl4 = callback(1212).intl;
     obj.confirmText = intl4.string(callback(1212).t["cY+Oob"]);
     obj.onConfirm = callback;
-    obj.confirmColor = callback2(4562).Colors.RED;
+    obj.confirmColor = callback2(4596).Colors.RED;
     obj.show(obj);
   }, items1);
 };

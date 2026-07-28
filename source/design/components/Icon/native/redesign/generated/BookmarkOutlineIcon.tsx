@@ -1,10 +1,10 @@
-// Module ID: 9923
-// Function ID: 76785
+// Module ID: 9963
+// Function ID: 76914
 // Name: BookmarkOutlineIcon
-// Dependencies: [31, 33, 689, 3834, 9924, 2]
+// Dependencies: [31, 33, 689, 3868, 9964, 2]
 // Exports: BookmarkOutlineIcon
 
-// Module 9923 (BookmarkOutlineIcon)
+// Module 9963 (BookmarkOutlineIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const BookmarkOutlineIcon = function BookmarkOutlineIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9924) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9964) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9924) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(9964) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

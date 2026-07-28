@@ -1,9 +1,9 @@
-// Module ID: 11348
-// Function ID: 88176
+// Module ID: 11386
+// Function ID: 88295
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [31, 27, 4123, 33, 4131, 4548, 1324, 3835, 689, 566, 1832, 477, 6153, 5085, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 4582, 1324, 3869, 689, 566, 1832, 477, 6187, 5119, 2]
 
-// Module 11348 (GiftIconTrinketsAnimation)
+// Module 11386 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import importAllResult from "result";
 
 const require = arg1;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles((width) => {
-  const sum = require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + require(4548) /* getButtonPadding */.SMALL_BUTTON_PADDING + 2;
+  const sum = require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + require(4582) /* getButtonPadding */.SMALL_BUTTON_PADDING + 2;
   const container = { position: "absolute", top: 0, left: 0, width: sum, height: sum, overflow: "visible", marginLeft: 4, zIndex: 0 };
   const containerRefresh = { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 0, zIndex: 0 };
   return { container, containerRefresh, trinkets: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "100%", height: "100%", top: 0, left: 0 }, trinketsRefresh: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-37.5%", left: "-37.5%" } };
@@ -21,7 +21,7 @@ const memoResult = require("result").memo((trinketsAnimationUrl) => {
   trinketsAnimationUrl = trinketsAnimationUrl.trinketsAnimationUrl;
   let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const enabled = obj.useMobileVisualRefreshConfig({ location: "GiftIconTrinketsAnimation" }).enabled;
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   const tmp = callback(obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
   let obj2 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
@@ -36,7 +36,7 @@ const memoResult = require("result").memo((trinketsAnimationUrl) => {
       stateFromStores = !stateFromStores;
       obj.autoplay = stateFromStores;
       obj.style = tmp3;
-      let tmp8Result = tmp8(require(6153) /* useAPNGPlayerControls */.APNGPlayer, obj);
+      let tmp8Result = tmp8(require(6187) /* useAPNGPlayerControls */.APNGPlayer, obj);
     } else {
       obj1 = {};
       obj2 = { uri: trinketsAnimationUrl };
@@ -44,7 +44,7 @@ const memoResult = require("result").memo((trinketsAnimationUrl) => {
       obj1.style = tmp3;
       obj1.resizeMode = "contain";
       obj1.enableAnimation = !stateFromStores;
-      tmp8Result = tmp8(importDefault(5085), obj1);
+      tmp8Result = tmp8(importDefault(5119), obj1);
     }
     obj.children = tmp8Result;
     <View style={enabled ? tmp.containerRefresh : tmp.container} pointerEvents="none" />;

@@ -1,10 +1,10 @@
-// Module ID: 9498
-// Function ID: 74086
+// Module ID: 9538
+// Function ID: 74215
 // Name: useIsReportToModEnabled
-// Dependencies: [31, 1838, 4350, 566, 5763, 5762, 6000, 5685, 5656, 2]
+// Dependencies: [31, 1838, 4384, 566, 5773, 5772, 6034, 5695, 7960, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9498 (useIsReportToModEnabled)
+// Module 9538 (useIsReportToModEnabled)
 import { useEffect } from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -52,10 +52,10 @@ export const useReportToModChannelId = function useReportToModChannelId(arg0) {
   });
 };
 export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(channel) {
-  return require(6000) /* isModeratorReportOrPostChannelId */.isModeratorReportOrPostChannel(channel);
+  return require(6034) /* isModeratorReportOrPostChannelId */.isModeratorReportOrPostChannel(channel);
 };
 export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(channel) {
-  return require(6000) /* isModeratorReportOrPostChannelId */.isModeratorReportPostChannel(channel);
+  return require(6034) /* isModeratorReportOrPostChannelId */.isModeratorReportPostChannel(channel);
 };
 export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
@@ -95,7 +95,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = require(5656) /* _fetchProfile */.getUser(reported_user_id);
-    const obj = require(5656) /* _fetchProfile */;
+    const user = require(7960) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(7960) /* _fetchProfile */;
   }
 };

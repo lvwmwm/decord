@@ -1,10 +1,10 @@
-// Module ID: 12606
-// Function ID: 97536
+// Module ID: 12649
+// Function ID: 97706
 // Name: getThemedImageSource
-// Dependencies: [31, 27, 1278, 653, 33, 4131, 689, 4974, 3977, 12607, 12608, 12609, 12610, 12611, 12612, 12613, 12614, 1273, 4023, 566, 5513, 2]
+// Dependencies: [31, 27, 1278, 653, 33, 4165, 689, 5008, 4011, 12650, 12651, 12652, 12653, 12654, 12655, 12656, 12657, 1273, 4057, 566, 5548, 2]
 // Exports: default
 
-// Module 12606 (getThemedImageSource)
+// Module 12649 (getThemedImageSource)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,13 +26,13 @@ function getThemedImageSource(arg0, arg1, arg2) {
 }
 function getTierIcon(arg0, arg1) {
   if (BoostedGuildTiers.NONE === arg1) {
-    return getThemedImageSource(arg0, importDefault(12607), importDefault(12608));
+    return getThemedImageSource(arg0, importDefault(12650), importDefault(12651));
   } else if (BoostedGuildTiers.TIER_1 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12609), importDefault(12610));
+    return getThemedImageSource(arg0, importDefault(12652), importDefault(12653));
   } else if (BoostedGuildTiers.TIER_2 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12611), importDefault(12612));
+    return getThemedImageSource(arg0, importDefault(12654), importDefault(12655));
   } else if (BoostedGuildTiers.TIER_3 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12613), importDefault(12614));
+    return getThemedImageSource(arg0, importDefault(12656), importDefault(12657));
   }
 }
 function PremiumGuildTierPill(tier) {
@@ -41,7 +41,7 @@ function PremiumGuildTierPill(tier) {
   let obj = { style: tmp.tierPill };
   obj = { style: tmp.tierPillImage, source: getTierIcon(tier.theme, tier) };
   const items = [callback(closure_4, obj), ];
-  obj = { style: tmp.tierPillText, children: require(4023) /* _createForOfIteratorHelperLoose */.getTierName(tier) };
+  obj = { style: tmp.tierPillText, children: require(4057) /* _createForOfIteratorHelperLoose */.getTierName(tier) };
   items[1] = callback(require(1273) /* Button */.LegacyText, obj);
   obj.children = items;
   return callback2(closure_3, obj);
@@ -70,8 +70,8 @@ export default function PremiumGuildPreview(guild) {
   obj = { style: items1 };
   items1 = [tmp.guild, guild.style];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.theme);
-  obj = { guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE, selected: false };
-  const items2 = [callback(importDefault(5513), obj), ];
+  obj = { guild, size: require(5548) /* makeSizeStyle */.GuildIconSizes.LARGE, selected: false };
+  const items2 = [callback(importDefault(5548), obj), ];
   const obj1 = { style: tmp.guildInfo };
   const items3 = [callback(require(1273) /* Button */.LegacyText, { style: tmp.guildName, children: guild.name }), callback(PremiumGuildTierPill, { tier: guild.premiumTier, theme: stateFromStores })];
   obj1.children = items3;

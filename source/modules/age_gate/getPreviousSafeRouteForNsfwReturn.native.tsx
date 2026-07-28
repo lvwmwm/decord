@@ -1,10 +1,10 @@
-// Module ID: 12563
-// Function ID: 97285
+// Module ID: 12606
+// Function ID: 97455
 // Name: getPreviousSafeRouteForNsfwReturn
-// Dependencies: [10193, 1348, 1908, 653, 4346, 7668, 2]
+// Dependencies: [10233, 1348, 1908, 653, 4380, 7704, 2]
 // Exports: default
 
-// Module 12563 (getPreviousSafeRouteForNsfwReturn)
+// Module 12606 (getPreviousSafeRouteForNsfwReturn)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
         if (null != channel) {
           let tmp20 = require;
           let tmp21 = dependencyMap;
-          let obj4 = require(4346) /* shouldAgeVerifyForAgeGate */;
+          let obj4 = require(4380) /* shouldAgeVerifyForAgeGate */;
           tmp10 = tmp7;
           tmp11 = channel;
           tmp12 = tmp4;
@@ -46,7 +46,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
           if (!obj4.isChannelContentGated(channel)) {
             let tmp22 = require;
             let tmp23 = dependencyMap;
-            let obj5 = require(7668) /* getSpoilerGatingChannelId */;
+            let obj5 = require(7704) /* getSpoilerGatingChannelId */;
             tmp10 = tmp7;
             tmp11 = channel;
             tmp12 = tmp4;
@@ -79,7 +79,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
           if (null != defaultChannel) {
             let tmp24 = require;
             let tmp25 = dependencyMap;
-            let obj7 = require(4346) /* shouldAgeVerifyForAgeGate */;
+            let obj7 = require(4380) /* shouldAgeVerifyForAgeGate */;
             tmp10 = tmp2;
             tmp11 = tmp3;
             tmp12 = tmp7;
@@ -87,7 +87,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
             if (!obj7.isChannelContentGated(defaultChannel)) {
               let tmp16 = require;
               let tmp17 = dependencyMap;
-              let obj2 = require(7668) /* getSpoilerGatingChannelId */;
+              let obj2 = require(7704) /* getSpoilerGatingChannelId */;
               tmp10 = tmp2;
               tmp11 = tmp3;
               tmp12 = tmp7;

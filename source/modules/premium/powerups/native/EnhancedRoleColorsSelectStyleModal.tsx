@@ -1,10 +1,10 @@
-// Module ID: 16393
-// Function ID: 127925
+// Module ID: 16432
+// Function ID: 128081
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [27, 16375, 16377, 16374, 482, 33, 4131, 689, 4067, 4572, 16394, 1212, 7654, 5187, 5186, 4099, 9222, 1914, 7685, 16395, 4127, 2231, 3995, 2]
+// Dependencies: [27, 16414, 16416, 16413, 482, 33, 4165, 689, 4101, 4606, 16433, 1212, 7690, 5221, 5220, 4133, 9266, 1914, 7721, 16434, 4161, 2231, 4029, 2]
 // Exports: default
 
-// Module 16393 (EnhancedRoleColorsSelectStyleModal)
+// Module 16432 (EnhancedRoleColorsSelectStyleModal)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { RoleColorsStyle } from "_isNativeReflectConstruct";
 import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS";
@@ -63,21 +63,21 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   let role;
   ({ roleStyle: require, onStyleChanged: importDefault } = arg0);
   ({ guildId, role } = arg0);
-  let tmp = callback3(importDefault(4067)());
+  let tmp = callback3(importDefault(4101)());
   const dependencyMap = tmp;
-  let obj = require(4572) /* useHasEnhancedRoleColors */;
+  let obj = require(4606) /* useHasEnhancedRoleColors */;
   const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
-  let obj1 = require(16394) /* useGuildSettingsRoleExampleMessage */;
+  let obj1 = require(16433) /* useGuildSettingsRoleExampleMessage */;
   let intl = require(1212) /* getSystemLocale */.intl;
   let closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1212) /* getSystemLocale */.t.Mi9Kbe));
-  let tmp3 = importDefault(7654);
+  let tmp3 = importDefault(7690);
   tmp3 = new tmp3();
   const RoleColorsStyle = tmp3;
   obj = {};
   obj = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.title = intl2.string(require(1212) /* getSystemLocale */.t["9wVJRB"]);
-  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj1 = { style: tmp.container };
   let items = [
     callback(closure_4, {
@@ -104,7 +104,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
         obj.disabled = tmp;
         obj.onPress = function onPress() {
           outer1_1(id.id);
-          outer2_1(4099).hideActionSheet();
+          outer2_1(4133).hideActionSheet();
         };
         obj = {
           style: tmp.message,
@@ -115,9 +115,9 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
             message.message.roleColor = undefined;
             const result = outer2_0(1914).extractColorStringsFromServerColors(id.colors);
             const obj = outer2_0(1914);
-            message.message.roleColors = outer2_0(7685).processColorStrings(result);
+            message.message.roleColors = outer2_0(7721).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = outer2_1(16395);
+            message.message.avatarURL = outer2_1(16434);
           }
         };
         const items1 = [outer1_9(outer1_1(tmp[16]), obj), ];
@@ -142,22 +142,22 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
     ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
     obj6.gradientColors = items1;
     obj6.variant = "text-sm/semibold";
-    obj6.experimental_useNativeText = !require(3995) /* isFabric */.isFabric();
+    obj6.experimental_useNativeText = !require(4029) /* isFabric */.isFabric();
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj6.children = intl4.string(importDefault(2231)["+/IHLl"]);
-    obj5.magical = callback(require(4127) /* Text */.Text, obj6);
+    obj5.magical = callback(require(4161) /* Text */.Text, obj6);
     obj4.children = intl3.format(importDefault(2231).VpEDJc, obj5);
-    const items2 = [callback(require(4127) /* Text */.Text, obj4), ];
+    const items2 = [callback(require(4161) /* Text */.Text, obj4), ];
     const obj7 = { style: tmp.upsellText, variant: "text-sm/normal" };
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj7.children = intl5.string(importDefault(2231).FJZeZF);
-    items2[1] = callback(require(4127) /* Text */.Text, obj7);
+    items2[1] = callback(require(4161) /* Text */.Text, obj7);
     obj3.children = items2;
     tmp8 = callback2(closure_4, obj3);
-    const obj11 = require(3995) /* isFabric */;
+    const obj11 = require(4029) /* isFabric */;
   }
   items[1] = tmp8;
   obj1.children = items;
   obj.children = callback2(closure_4, obj1);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

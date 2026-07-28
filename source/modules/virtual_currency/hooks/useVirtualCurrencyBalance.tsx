@@ -1,10 +1,10 @@
-// Module ID: 11838
-// Function ID: 91782
+// Module ID: 11881
+// Function ID: 91952
 // Name: useVirtualCurrencyBalance
-// Dependencies: [8653, 566, 2]
+// Dependencies: [8697, 566, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 11838 (useVirtualCurrencyBalance)
+// Module 11881 (useVirtualCurrencyBalance)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

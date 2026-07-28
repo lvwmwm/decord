@@ -1,10 +1,10 @@
-// Module ID: 13476
-// Function ID: 103586
+// Module ID: 13520
+// Function ID: 103759
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 57, 31, 27, 1348, 1850, 1347, 8745, 4124, 33, 4131, 689, 566, 6106, 11244, 13475, 5468, 1327, 13477, 5685, 5914, 3832, 1212, 5490, 3831, 1450, 477, 5094, 9050, 5087, 6695, 4075, 4663, 9843, 9864, 2]
+// Dependencies: [5, 57, 31, 27, 1348, 1850, 1347, 8789, 4158, 33, 4165, 689, 566, 6140, 11282, 13519, 5503, 1327, 13521, 5695, 5948, 3866, 1212, 5525, 3865, 1450, 477, 5128, 9094, 5121, 6731, 4109, 4697, 9883, 9904, 2]
 // Exports: default
 
-// Module 13476 (ActivityShareLinkModal)
+// Module 13520 (ActivityShareLinkModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import LinkIcon from "LinkIcon";

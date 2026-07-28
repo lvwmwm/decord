@@ -1,5 +1,5 @@
 // Module ID: 1552
-// Function ID: 17598
+// Function ID: 17602
 // Name: DRAG_HANDLE
 // Dependencies: [1553, 689, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 9452
-// Function ID: 73770
+// Module ID: 9492
+// Function ID: 73898
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 1348, 1911, 1838, 4350, 3768, 1850, 5669, 4567, 653, 1455, 4568, 33, 4131, 689, 1882, 1273, 4099, 8297, 3970, 4127, 4321, 1212, 5462, 566, 5085, 1395, 5166, 477, 9453, 3831, 5164, 1555, 5676, 4542, 5501, 5482, 7837, 5187, 2]
+// Dependencies: [31, 27, 1348, 1911, 1838, 4384, 3802, 1850, 5679, 4601, 653, 1455, 4602, 33, 4165, 689, 1882, 1273, 4133, 8335, 4004, 4161, 4355, 1212, 5497, 566, 5119, 1395, 5200, 477, 9493, 3865, 5198, 1555, 5686, 4576, 5536, 5517, 7873, 5221, 2]
 // Exports: default
 
-// Module 9452 (_createForOfIteratorHelperLoose)
+// Module 9492 (_createForOfIteratorHelperLoose)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import get_ActivityIndicator from "ensureAvatarSource";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -183,7 +183,7 @@ function getCommandOptionComponents(option) {
           if (null != channel) {
             let obj = { style: styles.commandOptionMentionText };
             const items1 = [closure_18, ];
-            let obj1 = iter(4321);
+            let obj1 = iter(4355);
             items1[1] = obj1.computeChannelName(channel, authStore, closure_11);
             obj.children = items1;
             const _HermesInternal3 = HermesInternal;
@@ -329,16 +329,16 @@ function getCommandCopyText(value, arg1, id, name_localized) {
           sum = null;
           if (null != user) {
             let obj = { decoration: "never" };
-            sum = closure_20 + importDefault(3970).getUserTag(user, obj);
-            const obj4 = importDefault(3970);
+            sum = closure_20 + importDefault(4004).getUserTag(user, obj);
+            const obj4 = importDefault(4004);
           }
           const str6 = value.value;
         } else if (_require(1882).ApplicationCommandOptionType.CHANNEL === type) {
           const channel = store.getChannel(value.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + _require(4321).computeChannelName(channel, authStore, closure_11);
-            const obj3 = _require(4321);
+            sum = closure_18 + _require(4355).computeChannelName(channel, authStore, closure_11);
+            const obj3 = _require(4355);
           }
           const str5 = value.value;
         } else if (_require(1882).ApplicationCommandOptionType.ROLE === type) {
@@ -365,7 +365,7 @@ function getCommandCopyText(value, arg1, id, name_localized) {
               const user1 = authStore.getUser(str);
               sum = null;
               if (null != user1) {
-                obj = importDefault(3970);
+                obj = importDefault(4004);
                 obj = { decoration: "never" };
                 sum = closure_20 + obj.getUserTag(user1, obj);
               }
@@ -804,7 +804,7 @@ export default function ExecutedCommandPopout(channelId) {
       const obj = stateFromStores(outer1_3[38]);
     }
   }, items1);
-  obj = { value: messageId(5462)(messageId(5482).EXECUTED_COMMAND).analyticsLocations };
+  obj = { value: messageId(5497)(messageId(5517).EXECUTED_COMMAND).analyticsLocations };
   obj = { startExpanded: true, bodyStyles: tmp.container };
   let interactionData1;
   if (null != stateFromStores) {
@@ -840,6 +840,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp13Result = callback(closure_5, obj4);
   }
   obj.children = tmp13Result;
-  obj.children = callback(channelId(5187).BottomSheet, obj);
-  return callback(channelId(5462).AnalyticsLocationProvider, obj);
+  obj.children = callback(channelId(5221).BottomSheet, obj);
+  return callback(channelId(5497).AnalyticsLocationProvider, obj);
 };

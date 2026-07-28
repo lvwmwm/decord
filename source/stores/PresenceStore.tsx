@@ -1,9 +1,9 @@
-// Module ID: 4218
-// Function ID: 36721
+// Module ID: 4252
+// Function ID: 36831
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1850, 653, 4219, 22, 636, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1850, 653, 4253, 22, 636, 21, 566, 686, 2]
 
-// Module 4218 (_isNativeReflectConstruct)
+// Module 4252 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -129,7 +129,7 @@ function typeScore(type) {
 }
 function richnessScore(created_at2) {
   let num = 0;
-  if (importDefault(4219)(created_at2)) {
+  if (importDefault(4253)(created_at2)) {
     num = 1;
   }
   return num;

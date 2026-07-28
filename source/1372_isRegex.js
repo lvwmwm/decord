@@ -1,5 +1,5 @@
 // Module ID: 1372
-// Function ID: 16506
+// Function ID: 16510
 // Name: isRegex
 // Dependencies: [1369, 551, 519, 550]
 

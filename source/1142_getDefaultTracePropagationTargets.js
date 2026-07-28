@@ -1,5 +1,5 @@
 // Module ID: 1142
-// Function ID: 13020
+// Function ID: 13024
 // Name: getDefaultTracePropagationTargets
 // Dependencies: [978, 1136, 791, 1000, 794]
 // Exports: getCurrentReactNativeTracingIntegration, reactNativeTracingIntegration

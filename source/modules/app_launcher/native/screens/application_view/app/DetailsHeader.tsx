@@ -1,8 +1,8 @@
-// Module ID: 8938
-// Function ID: 70608
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 7953, 8939, 4664, 8063, 5122, 4127, 1212, 4132, 4135, 5109, 4555, 668, 2]
+// Module ID: 8982
+// Function ID: 70759
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4026, 7990, 8983, 4698, 8101, 5156, 4161, 1212, 4166, 4169, 5143, 4589, 668, 2]
 
-// Module 8938
+// Module 8982
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let isScreenLandscape;
   let c18;
   let tmp = callback2();
-  let obj = ref(7953);
+  let obj = ref(7990);
   ref = importAllResult.useRef(null);
   const tmp4 = first1(importAllResult.useState(false), 2);
   const first = tmp4[0];
@@ -59,7 +59,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let closure_5 = importAllResult.useRef(true);
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ({ containerHeight: closure_6, containerStyle } = (function useContainerAnimation() {
-    let obj = ref(3992);
+    let obj = ref(4026);
     const sharedValue = obj.useSharedValue(null);
     obj = {};
     const fn = function t() {
@@ -68,13 +68,13 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     fn.__closure = { height: sharedValue };
     fn.__workletHash = 23826674246;
     fn.__initData = closure_13;
-    obj.containerStyle = ref(3992).useAnimatedStyle(fn);
+    obj.containerStyle = ref(4026).useAnimatedStyle(fn);
     obj.containerHeight = sharedValue;
     return obj;
   })());
-  let obj1 = ref(7953);
+  let obj1 = ref(7990);
   const sectionName = obj1.getSectionName(application);
-  let obj2 = ref(7953);
+  let obj2 = ref(7990);
   const str = obj2.getSectionDescription(application);
   let tmp80Result = null != str && str.trim().length > 0;
   const tmp11 = first1(tmp6[1].useState(null), 2);
@@ -86,7 +86,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   callback2 = importAllResult.useRef(0);
   closure_13 = importAllResult.useRef(0);
   const tmp8 = (function useContainerAnimation() {
-    let obj = ref(3992);
+    let obj = ref(4026);
     const sharedValue = obj.useSharedValue(null);
     obj = {};
     const fn = function t() {
@@ -95,7 +95,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     fn.__closure = { height: sharedValue };
     fn.__workletHash = 23826674246;
     fn.__initData = closure_13;
-    obj.containerStyle = ref(3992).useAnimatedStyle(fn);
+    obj.containerStyle = ref(4026).useAnimatedStyle(fn);
     obj.containerHeight = sharedValue;
     return obj;
   })();
@@ -107,14 +107,14 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   const memo = importAllResult.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = ref(8939).parseBioReactWithCachedAST(str);
-      const obj = ref(8939);
+      result = ref(8983).parseBioReactWithCachedAST(str);
+      const obj = ref(8983);
     }
     return result;
   }, items);
-  let obj3 = ref(4664);
+  let obj3 = ref(4698);
   isScreenLandscape = obj3.useIsScreenLandscape();
-  const tmp21 = first(8063)(isScreenLandscape);
+  const tmp21 = first(8101)(isScreenLandscape);
   c18 = tmp21;
   const items1 = [isScreenLandscape, tmp21];
   const effect = importAllResult.useEffect(() => {
@@ -153,7 +153,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let tmp29 = !hideName;
   if (tmp29) {
     obj3 = { style: tmp.nameText, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: sectionName };
-    tmp29 = first2(ref(4127).Heading, obj3);
+    tmp29 = first2(ref(4161).Heading, obj3);
   }
   const items4 = [tmp29, ];
   let tmp33 = null;
@@ -162,7 +162,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     const obj5 = { variant: "text-xs/medium", color: "text-default" };
     const intl = ref(1212).intl;
     obj5.children = intl.string(ref(1212).t.LO4f0P);
-    obj4.children = first2(ref(4127).Text, obj5);
+    obj4.children = first2(ref(4161).Text, obj5);
     tmp33 = first2(closure_5, obj4);
   }
   items4[1] = tmp33;
@@ -180,20 +180,20 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       if (first) {
         closure_5.current = false;
         if (first1) {
-          const obj2 = ref(4132);
+          const obj2 = ref(4166);
           const current = closure_12.current;
           const fn = function t() {
             ref(table[6]).runOnJS(outer1_14)(true);
           };
-          let obj = { runOnJS: ref(3992).runOnJS, setShouldLineClamp: _undefined };
+          let obj = { runOnJS: ref(4026).runOnJS, setShouldLineClamp: _undefined };
           fn.__closure = obj;
           fn.__workletHash = 6050776164847;
           fn.__initData = _undefined;
-          const result = store.set(obj2.withTiming(current, ref(4135).timingStandard, "respect-motion-settings", fn));
+          const result = store.set(obj2.withTiming(current, ref(4169).timingStandard, "respect-motion-settings", fn));
         } else {
           _undefined(false);
-          obj = ref(4132);
-          const result1 = store.set(obj.withTiming(ref.current, ref(4135).timingStandard));
+          obj = ref(4166);
+          const result1 = store.set(obj.withTiming(ref.current, ref(4169).timingStandard));
         }
         callback(!first1);
       }
@@ -217,7 +217,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       const obj12 = { style: tmp.maskFill };
       const items8 = [first2(closure_5, obj12), , ];
       const obj13 = { start: ref(668).HorizontalGradient.START, end: ref(668).HorizontalGradient.END, colors: closure_11, style: tmp.maskFade };
-      items8[1] = first2(first(4555), obj13);
+      items8[1] = first2(first(4589), obj13);
       const obj14 = {};
       const obj15 = {};
       let num8 = 0;
@@ -233,7 +233,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       let tmp49Result = tmp49(tmp50, obj8);
       const tmp53 = first2;
       const tmp54 = closure_5;
-      const tmp57 = first(4555);
+      const tmp57 = first(4589);
     } else {
       const obj16 = {};
       const items9 = [str.absoluteFill, tmp.maskFill];
@@ -242,8 +242,8 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     }
     obj7.maskElement = tmp49Result;
     const obj17 = { variant: "text-sm/medium", color: "text-default", lineClamp: num10, children: memo };
-    obj7.children = first2(ref(4127).Text, obj17);
-    const items10 = [first2(first(5109), obj7), , ];
+    obj7.children = first2(ref(4161).Text, obj17);
+    const items10 = [first2(first(5143), obj7), , ];
     let tmp63 = null;
     if (tmp24) {
       const obj18 = { style: tmp.viewMoreCTA };
@@ -259,7 +259,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       const intl2 = ref(1212).intl;
       const items11 = ["\u2026 ", intl2.string(ref(1212).t["OBCR+p"])];
       obj19.children = items11;
-      obj18.children = callback(ref(4127).Text, obj19);
+      obj18.children = callback(ref(4161).Text, obj19);
       tmp63 = first2(closure_5, obj18);
     }
     items10[1] = tmp63;
@@ -270,7 +270,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
         const obj20 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA };
         const intl3 = ref(1212).intl;
         obj20.children = intl3.string(ref(1212).t.D5xGUK);
-        tmp69 = first2(ref(4127).Text, obj20);
+        tmp69 = first2(ref(4161).Text, obj20);
       }
     }
     items10[2] = tmp69;
@@ -279,13 +279,13 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     const tmp39 = callback;
     const tmp40 = closure_6;
     const tmp41 = first2;
-    const tmp44 = first(5109);
+    const tmp44 = first(5143);
     const tmp60 = first2;
   }
   items5[1] = tmp39Result;
   obj1.children = items5;
   obj.children = callback(closure_5, obj1);
-  const items12 = [first2(first(3992).View, obj), ];
+  const items12 = [first2(first(4026).View, obj), ];
   let tmp74Result = !first4;
   if (tmp74Result) {
     const obj21 = {};
@@ -304,7 +304,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     let tmp76 = !hideName;
     if (tmp76) {
       const obj22 = { variant: "heading-lg/bold", color: "text-default", children: sectionName };
-      tmp76 = first2(ref(4127).Heading, obj22);
+      tmp76 = first2(ref(4161).Heading, obj22);
     }
     const items14 = [tmp76, ];
     if (tmp80Result) {
@@ -336,11 +336,11 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
             },
         children: memo
       };
-      const items15 = [first2(ref(4127).Text, obj24), ];
+      const items15 = [first2(ref(4161).Text, obj24), ];
       const obj25 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA };
       const intl4 = ref(1212).intl;
       obj25.children = intl4.string(ref(1212).t.D5xGUK);
-      items15[1] = first2(ref(4127).Text, obj25);
+      items15[1] = first2(ref(4161).Text, obj25);
       obj23.children = items15;
       tmp80Result = callback(closure_5, obj23);
       const tmp80 = callback;

@@ -1,10 +1,10 @@
-// Module ID: 15865
-// Function ID: 122490
+// Module ID: 15904
+// Function ID: 122646
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [31, 4203, 653, 33, 566, 8834, 8134, 8840, 1212, 8824, 2]
+// Dependencies: [31, 4237, 653, 33, 566, 8878, 8172, 8884, 1212, 8868, 2]
 // Exports: default
 
-// Module 15865 (SecureFramesCallVerificationBottomSheet)
+// Module 15904 (SecureFramesCallVerificationBottomSheet)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticsSections } from "ME";
@@ -40,8 +40,8 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
   obj.subtitle = intl2.string(channelId(1212).t["MPp7+C"]);
   const intl3 = channelId(1212).intl;
   obj = {};
-  const tmp3 = importDefault(8840);
-  obj.helpArticle = channelId(8824).getSecureFramesHelpdeskArticle();
+  const tmp3 = importDefault(8884);
+  obj.helpArticle = channelId(8868).getSecureFramesHelpdeskArticle();
   obj.footer = intl3.format(channelId(1212).t.wKxADe, obj);
   obj.epochAuthenticator = stateFromStores;
   obj.onShareClick = callback;

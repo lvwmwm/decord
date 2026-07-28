@@ -1,13 +1,13 @@
-// Module ID: 14295
-// Function ID: 109807
+// Module ID: 14339
+// Function ID: 109980
 // Name: showGummyCustomColorSheet
-// Dependencies: [4099, 14296, 1935, 2]
+// Dependencies: [4133, 14340, 1935, 2]
 // Exports: default
 
-// Module 14295 (showGummyCustomColorSheet)
+// Module 14339 (showGummyCustomColorSheet)
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/display_name_styles/native/showGummyCustomColorSheet.tsx");
 
 export default function showGummyCustomColorSheet(arg0) {
-  importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(14296, dependencyMap.paths), "DisplayNameStylesGummyCustomColorSheet", arg0, "stack");
+  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(14340, dependencyMap.paths), "DisplayNameStylesGummyCustomColorSheet", arg0, "stack");
 };
 export const DISPLAY_NAME_STYLES_GUMMY_CUSTOM_COLOR_SHEET_KEY = "DisplayNameStylesGummyCustomColorSheet";

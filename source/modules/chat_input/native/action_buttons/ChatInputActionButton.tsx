@@ -1,8 +1,8 @@
-// Module ID: 11337
-// Function ID: 88115
-// Dependencies: [31, 27, 33, 4131, 689, 1324, 3835, 4661, 2]
+// Module ID: 11375
+// Function ID: 88234
+// Dependencies: [31, 27, 33, 4165, 689, 1324, 3869, 4695, 2]
 
-// Module 11337
+// Module 11375
 import importAllResult from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -58,11 +58,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "ChatInputActionButton" });
   ({ enabled, chatInputFloating } = mobileVisualRefreshConfig);
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   let token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const token1 = require(3835) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const obj3 = require(3835) /* map */;
-  const token2 = require(3835) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token1 = require(3869) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const obj3 = require(3869) /* map */;
+  const token2 = require(3869) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp5 = callback(enabled, token, token1);
   let tmp6;
   if (chatInputFloating) {
@@ -121,7 +121,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   items1[3] = disabled;
   obj1.style = items1;
   obj.children = <IconComponent size="custom" />;
-  return jsx(require(4661) /* PressableBase */.PressableOpacity, { disabled });
+  return jsx(require(4695) /* PressableBase */.PressableOpacity, { disabled });
 }));
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 

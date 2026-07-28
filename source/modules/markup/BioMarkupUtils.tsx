@@ -1,10 +1,10 @@
-// Module ID: 8939
-// Function ID: 70620
+// Module ID: 8983
+// Function ID: 70771
 // Name: getOrParseBioAST
-// Dependencies: [4565, 4566, 4122, 1362, 7709, 4121, 3830, 22, 2]
+// Dependencies: [4599, 4600, 4156, 1362, 7745, 4155, 3864, 22, 2]
 // Exports: parseBioReactWithCachedAST
 
-// Module 8939 (getOrParseBioAST)
+// Module 8983 (getOrParseBioAST)
 import importDefaultResult1 from "priv";
 import importDefaultResult from "_createForOfIteratorHelperLoose";
 import importAllResult from "reactParserFor";
@@ -45,8 +45,8 @@ export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(de
     return null;
   } else {
     const tmp2 = getOrParseBioAST(description);
-    const obj = importDefault(3830);
-    return obj.reactFor(importDefault(3830).ruleOutput(closure_2, "react"))(tmp2);
+    const obj = importDefault(3864);
+    return obj.reactFor(importDefault(3864).ruleOutput(closure_2, "react"))(tmp2);
   }
 };
 export const parseBioReactWithoutScrolling = reactParserForResult1;

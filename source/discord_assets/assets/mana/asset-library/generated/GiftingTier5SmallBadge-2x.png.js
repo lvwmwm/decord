@@ -1,9 +1,9 @@
-// Module ID: 7155
-// Function ID: 59969
+// Module ID: 7191
+// Function ID: 60058
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 7155 (vanityUrl)
+// Module 7191 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftingTier5SmallBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/f8daa5cf212ad9bc956c61973bc4300f563a68a471c72d235891978ceaf26367.png";

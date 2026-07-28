@@ -1,9 +1,9 @@
-// Module ID: 4694
-// Function ID: 40868
+// Module ID: 4728
+// Function ID: 40983
 // Name: DiscordMd5
-// Dependencies: [5, 6, 7, 4695, 2]
+// Dependencies: [5, 6, 7, 4729, 2]
 
-// Module 4694 (DiscordMd5)
+// Module 4728 (DiscordMd5)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";

@@ -1,9 +1,9 @@
-// Module ID: 8764
-// Function ID: 69385
+// Module ID: 8808
+// Function ID: 69536
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 4203, 8765, 477, 8766, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 4237, 8809, 477, 8810, 566, 686, 2]
 
-// Module 8764 (_isNativeReflectConstruct)
+// Module 8808 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import RouteTypes from "RouteTypes";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -30,21 +30,21 @@ function handleAudioRouteChanged(arr) {
   if (null != arr) {
     if ("" !== arr) {
       if (arr.includes("Bluetooth")) {
-        let UNKNOWN = require(8765) /* RouteTypes */.RouteTypes.BLUETOOTH;
+        let UNKNOWN = require(8809) /* RouteTypes */.RouteTypes.BLUETOOTH;
       } else if (arr.includes("Speaker")) {
-        UNKNOWN = require(8765) /* RouteTypes */.RouteTypes.SPEAKER;
+        UNKNOWN = require(8809) /* RouteTypes */.RouteTypes.SPEAKER;
       } else {
         const hasItem = arr.includes("Receiver");
-        const RouteTypes = require(8765) /* RouteTypes */.RouteTypes;
+        const RouteTypes = require(8809) /* RouteTypes */.RouteTypes;
         UNKNOWN = hasItem ? RouteTypes.RECEIVER : RouteTypes.UNKNOWN;
       }
     }
     c11 = tmp;
   }
-  UNKNOWN = require(8765) /* RouteTypes */.RouteTypes.UNKNOWN;
+  UNKNOWN = require(8809) /* RouteTypes */.RouteTypes.UNKNOWN;
 }
 function resetState() {
-  const UNKNOWN = require(8765) /* RouteTypes */.RouteTypes.UNKNOWN;
+  const UNKNOWN = require(8809) /* RouteTypes */.RouteTypes.UNKNOWN;
 }
 const NativeModules = get_ActivityIndicator.NativeModules;
 let UNKNOWN = require("RouteTypes").RouteTypes.UNKNOWN;
@@ -113,10 +113,10 @@ tmp4 = new tmp4(require("dispatcher"), {
         }
         _null = addListenerResult;
         if (obj.isAndroid()) {
-          tmp2 = tmp2 == importDefault(8766);
+          tmp2 = tmp2 == importDefault(8810);
           let currentRoute;
           if (!tmp2) {
-            tmp2 = importDefault(8766);
+            tmp2 = importDefault(8810);
             currentRoute = tmp2.getCurrentRoute();
           }
           let currentRoute1 = currentRoute;

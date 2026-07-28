@@ -1,10 +1,10 @@
-// Module ID: 6153
-// Function ID: 55118
+// Module ID: 6187
+// Function ID: 55237
 // Name: useAPNGPlayerControls
-// Dependencies: [31, 33, 6154, 2]
+// Dependencies: [31, 33, 6188, 2]
 // Exports: useAPNGPlayerControls
 
-// Module 6153 (useAPNGPlayerControls)
+// Module 6187 (useAPNGPlayerControls)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 
@@ -51,7 +51,7 @@ const forwardRefResult = importAllResult.forwardRef((onLoad) => {
   }));
   obj = { ref, onLoad: callback };
   const merged1 = Object.assign(merged);
-  return jsx(ref(6154), { ref, onLoad: callback });
+  return jsx(ref(6188), { ref, onLoad: callback });
 });
 const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/image/native/APNGPlayer.android.tsx");
 

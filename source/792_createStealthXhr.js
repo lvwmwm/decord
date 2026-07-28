@@ -1,5 +1,5 @@
 // Module ID: 792
-// Function ID: 8962
+// Function ID: 8966
 // Name: createStealthXhr
 // Dependencies: [793]
 

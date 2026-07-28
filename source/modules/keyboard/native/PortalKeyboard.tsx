@@ -1,10 +1,10 @@
-// Module ID: 4001
-// Function ID: 33254
+// Module ID: 4035
+// Function ID: 33356
 // Name: PortalKeyboardState
-// Dependencies: [31, 33, 3982, 477, 4002, 2]
+// Dependencies: [31, 33, 4016, 477, 4036, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 4001 (PortalKeyboardState)
+// Module 4035 (PortalKeyboardState)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ export const PortalKeyboardState = { EMPTY: "empty", REQUEST_OPEN: "request_open
 export const PORTAL_HOST_NAME_DEFAULT = "default";
 export const PORTAL_HOST_NAME_MODAL = "modal";
 export const PortalKeyboard = function PortalKeyboard(children) {
-  let obj = require(3982) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4016) /* _createForOfIteratorHelperLoose */;
   let str = "default";
   if (obj.useIsModalOpen()) {
     str = "default";
@@ -25,7 +25,7 @@ export const PortalKeyboard = function PortalKeyboard(children) {
     obj2 = require(477) /* set */;
   }
   obj = { hostName: str, children: children.children };
-  return jsx(require(4002) /* Portal */.Portal, { hostName: str, children: children.children });
+  return jsx(require(4036) /* Portal */.Portal, { hostName: str, children: children.children });
 };
 export const PortalKeyboardHost = function PortalKeyboardHost(name) {
   let str = name.name;
@@ -33,5 +33,5 @@ export const PortalKeyboardHost = function PortalKeyboardHost(name) {
     str = "default";
   }
   const obj = { name: str };
-  return jsx(require(4002) /* Portal */.PortalHost, { name: str });
+  return jsx(require(4036) /* Portal */.PortalHost, { name: str });
 };

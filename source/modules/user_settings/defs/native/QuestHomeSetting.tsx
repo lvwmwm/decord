@@ -1,9 +1,9 @@
-// Module ID: 13959
-// Function ID: 106738
+// Module ID: 14003
+// Function ID: 106911
 // Name: route
-// Dependencies: [653, 10059, 1212, 10429, 13960, 13962, 5953, 4982, 2]
+// Dependencies: [653, 10099, 1212, 10469, 14004, 14006, 5987, 5016, 2]
 
-// Module 13959 (route)
+// Module 14003 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -12,7 +12,7 @@ obj = {
     return intl.string(require(1212) /* getSystemLocale */.t.JALI2K);
   },
   usePredicate() {
-    return require(10429) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+    return require(10469) /* getIsEligibleForQuests */.getIsEligibleForQuests();
   },
   parent: null,
   IconComponent: require("QuestsIcon").QuestsIcon,
@@ -29,7 +29,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.QUESTS,
   getComponent() {
-    return require(13962) /* parseSortMethod */.default;
+    return require(14006) /* parseSortMethod */.default;
   }
 };
 const route = createToggle.createRoute(obj);

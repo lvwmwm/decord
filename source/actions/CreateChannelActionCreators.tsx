@@ -1,8 +1,8 @@
-// Module ID: 8213
-// Function ID: 65825
-// Dependencies: [4326, 653, 662, 686, 4943, 480, 1361, 507, 5079, 5074, 7629, 2]
+// Module ID: 8251
+// Function ID: 65935
+// Dependencies: [4360, 653, 662, 686, 4977, 480, 1361, 507, 5113, 5108, 7665, 2]
 
-// Module 8213
+// Module 8251
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES";
@@ -71,7 +71,7 @@ export default {
       }
     }
     obj = { url: closure_6.GUILD_CHANNELS(guildId), body: obj, oldFormErrors: true };
-    const obj3 = permissionOverwrites(4943);
+    const obj3 = permissionOverwrites(4977);
     obj.trackedActionData = {
       event: guildId(480).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
@@ -138,7 +138,7 @@ export default {
     });
   },
   createRoleSubscriptionTemplateChannel(closure_0, name, type, topic) {
-    let obj = importDefault(4943);
+    let obj = importDefault(4977);
     obj = { url: closure_6.GUILD_CHANNELS(closure_0), body: obj, oldFormErrors: true };
     obj = {
       name,

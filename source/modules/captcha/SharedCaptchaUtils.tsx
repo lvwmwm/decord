@@ -1,10 +1,10 @@
-// Module ID: 9403
-// Function ID: 73416
+// Module ID: 9446
+// Function ID: 73561
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 162, 9404, 9405, 2]
+// Dependencies: [7, 6, 15, 17, 18, 162, 9447, 9448, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 9403 (_isNativeReflectConstruct)
+// Module 9446 (_isNativeReflectConstruct)
 import CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 import closure_1 from "useCaptchaStore";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

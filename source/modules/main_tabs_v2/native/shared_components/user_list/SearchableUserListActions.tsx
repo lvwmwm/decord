@@ -1,10 +1,10 @@
-// Module ID: 8750
-// Function ID: 69267
+// Module ID: 8794
+// Function ID: 69418
 // Name: UserFlashListActions
-// Dependencies: [31, 27, 33, 8751, 5501, 5164, 2]
+// Dependencies: [31, 27, 33, 8795, 5536, 5198, 2]
 // Exports: useUserListActionsProps
 
-// Module 8750 (UserFlashListActions)
+// Module 8794 (UserFlashListActions)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -48,7 +48,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 export const useUserListActionsProps = function useUserListActionsProps(actions) {
   actions = actions.actions;
   const style = actions.style;
-  const tmp = style(8751)();
+  const tmp = style(8795)();
   const dependencyMap = tmp;
   const items = [actions, tmp, style];
   return React.useMemo(() => {

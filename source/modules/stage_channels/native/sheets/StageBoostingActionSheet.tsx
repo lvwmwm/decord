@@ -1,10 +1,10 @@
-// Module ID: 4963
-// Function ID: 42670
+// Module ID: 4997
+// Function ID: 42785
 // Name: StageBoostingActionSheet
-// Dependencies: [31, 4123, 1838, 3759, 4948, 653, 1852, 33, 566, 1356, 1212, 4099, 675, 4964, 4958, 4560, 4966, 4544, 4967, 6599, 6727, 5085, 7574, 2]
+// Dependencies: [31, 4157, 1838, 3793, 4982, 653, 1852, 33, 566, 1356, 1212, 4133, 675, 4998, 4992, 4594, 5000, 4578, 5001, 6635, 6763, 5119, 7610, 2]
 // Exports: default
 
-// Module 4963 (StageBoostingActionSheet)
+// Module 4997 (StageBoostingActionSheet)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -35,7 +35,7 @@ export default function StageBoostingActionSheet(channel) {
   let dependencyMap;
   let _isNativeReflectConstruct;
   function handleClose() {
-    let obj = stateFromStores2(4099);
+    let obj = stateFromStores2(4133);
     obj.hideActionSheet(outer1_6);
     obj = { guild_id: channel.guild_id, type: outer1_13.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: outer1_12.DISMISS };
     stateFromStores2(675).track(outer1_7.BOOSTING_UPSELL_CLICKED, obj);
@@ -112,11 +112,11 @@ export default function StageBoostingActionSheet(channel) {
       string3Result = string3(T_zF9M.XVL8LJ);
     }
   } else {
-    let obj3 = channel(4964);
+    let obj3 = channel(4998);
     dependencyMap = obj3.useActualStageSpeakerCount(channel.id);
-    let obj4 = channel(4964);
-    _isNativeReflectConstruct = obj4.useStageParticipantsCount(channel.id, channel(4958).StageChannelParticipantNamedIndex.AUDIENCE);
-    stateFromStores2(4560)(() => {
+    let obj4 = channel(4998);
+    _isNativeReflectConstruct = obj4.useStageParticipantsCount(channel.id, channel(4992).StageChannelParticipantNamedIndex.AUDIENCE);
+    stateFromStores2(4594)(() => {
       let obj = stateFromStores2(675);
       obj = { guild_id: channel.guild_id, type: outer1_13.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, listener_count: dependencyMap + _isNativeReflectConstruct };
       obj.track(outer1_7.BOOSTING_UPSELL_VIEWED, obj);
@@ -128,19 +128,19 @@ export default function StageBoostingActionSheet(channel) {
       obj.text = intl6.string(channel(1212).t.Uj0md3);
       obj.onPress = function onPress() {
         handleClose();
-        let obj = channel(4967);
+        let obj = channel(5001);
         obj.openApplyBoostModal(channel.guild_id);
         obj = { guild_id: channel.guild_id, type: outer1_13.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: outer1_12.BOOST };
         stateFromStores2(675).track(outer1_7.BOOSTING_UPSELL_CLICKED, obj);
       };
-      const items5 = [callback(channel(4544).Button, obj), ];
+      const items5 = [callback(channel(4578).Button, obj), ];
       obj1 = { variant: "secondary", size: "lg" };
       const intl7 = channel(1212).intl;
       obj1.text = intl7.string(channel(1212).t.f3Pet9);
       obj1.onPress = handleClose;
-      items5[1] = callback(channel(4544).Button, obj1);
+      items5[1] = callback(channel(4578).Button, obj1);
       obj.children = items5;
-      let tmp26Result = callback2(channel(4966).ButtonGroup, obj);
+      let tmp26Result = callback2(channel(5000).ButtonGroup, obj);
     } else {
       if (stateFromStores2) {
         obj2 = { variant: "secondary", size: "lg" };
@@ -154,20 +154,20 @@ export default function StageBoostingActionSheet(channel) {
         obj3.text = intl4.string(channel(1212).t["NX+WJN"]);
         obj3.onPress = handleClose;
       }
-      tmp26Result = callback(channel(4544).Button, obj3);
+      tmp26Result = callback(channel(4578).Button, obj3);
       const tmp26 = callback;
     }
     obj4 = { title: string3(T_zF9M.pqPQL0), description: stringResult };
     if (tmp8) {
       const obj5 = { accessible: false };
-      let tmp41Result = tmp41(channel(6727).HoldingGemSpotIllustration, obj5);
+      let tmp41Result = tmp41(channel(6763).HoldingGemSpotIllustration, obj5);
     } else {
-      const obj6 = { source: stateFromStores2(7574) };
-      tmp41Result = tmp41(stateFromStores2(5085), obj6);
-      const tmp44 = stateFromStores2(5085);
+      const obj6 = { source: stateFromStores2(7610) };
+      tmp41Result = tmp41(stateFromStores2(5119), obj6);
+      const tmp44 = stateFromStores2(5119);
     }
     obj4.illustration = tmp41Result;
     obj4.actions = tmp26Result;
-    return callback(channel(6599).PromoSheet, obj4);
+    return callback(channel(6635).PromoSheet, obj4);
   }
 };

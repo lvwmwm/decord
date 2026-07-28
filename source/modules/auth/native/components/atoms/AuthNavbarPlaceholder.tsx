@@ -1,10 +1,10 @@
-// Module ID: 9153
-// Function ID: 71839
+// Module ID: 9197
+// Function ID: 71990
 // Name: AuthNavbarPlaceholder
-// Dependencies: [31, 33, 4131, 689, 5087, 2]
+// Dependencies: [31, 33, 4165, 689, 5121, 2]
 // Exports: default
 
-// Module 9153 (AuthNavbarPlaceholder)
+// Module 9197 (AuthNavbarPlaceholder)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,5 +18,5 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export default function AuthNavbarPlaceholder() {
   const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(5087) /* HeaderBackImage */.FauxHeader, { style: _createForOfIteratorHelperLoose().navBar, children: null });
+  return jsx(require(5121) /* HeaderBackImage */.FauxHeader, { style: _createForOfIteratorHelperLoose().navBar, children: null });
 };

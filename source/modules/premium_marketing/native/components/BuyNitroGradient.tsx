@@ -1,15 +1,15 @@
-// Module ID: 6618
-// Function ID: 58553
+// Module ID: 6654
+// Function ID: 58642
 // Name: BuyNitroGradient
-// Dependencies: [31, 1852, 33, 3992, 4555, 4132, 4135, 2]
+// Dependencies: [31, 1852, 33, 4026, 4589, 4166, 4169, 2]
 // Exports: default
 
-// Module 6618 (BuyNitroGradient)
+// Module 6654 (BuyNitroGradient)
 import "result";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 
 let closure_4;
 let closure_5;
@@ -28,7 +28,7 @@ export default function BuyNitroGradient(selectedTier) {
   selectedTier = selectedTier.selectedTier;
   ({ start, end, style } = selectedTier);
   ({ nitroColors, basicColors } = selectedTier);
-  let obj = selectedTier(3992);
+  let obj = selectedTier(4026);
   const fn = function f() {
     const obj = {};
     let num = 0;
@@ -38,13 +38,13 @@ export default function BuyNitroGradient(selectedTier) {
     obj.opacity = selectedTier(outer1_2[5]).withTiming(num, selectedTier(outer1_2[6]).timingStandard);
     return obj;
   };
-  obj = { withTiming: selectedTier(4132).withTiming, selectedTier, PremiumTypes, timingStandard: selectedTier(4135).timingStandard };
+  obj = { withTiming: selectedTier(4166).withTiming, selectedTier, PremiumTypes, timingStandard: selectedTier(4169).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 14014615431537;
   fn.__initData = closure_8;
   obj = {};
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items = [callback(importDefault(4555), { style, colors: nitroColors, start, end }), ];
+  const items = [callback(importDefault(4589), { style, colors: nitroColors, start, end }), ];
   const items1 = [style, animatedStyle];
   items[1] = callback(LinearGradient, { style: items1, colors: basicColors, start, end });
   obj.children = items;

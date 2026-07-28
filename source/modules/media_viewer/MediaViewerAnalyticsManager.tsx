@@ -1,9 +1,9 @@
-// Module ID: 8057
-// Function ID: 64122
+// Module ID: 8095
+// Function ID: 64232
 // Name: IncrementableMediaViewerActions
 // Dependencies: [1348, 653, 621, 675, 2]
 
-// Module 8057 (IncrementableMediaViewerActions)
+// Module 8095 (IncrementableMediaViewerActions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import keys from "keys";

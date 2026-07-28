@@ -1,9 +1,9 @@
-// Module ID: 3838
-// Function ID: 32014
+// Module ID: 3872
+// Function ID: 32116
 // Name: getNodeText
 // Dependencies: [31, 2]
 
-// Module 3838 (getNodeText)
+// Module 3872 (getNodeText)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("design/utils/shared/getNodeText.tsx");

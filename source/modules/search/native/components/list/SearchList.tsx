@@ -1,11 +1,11 @@
-// Module ID: 15414
-// Function ID: 117638
+// Module ID: 15454
+// Function ID: 117797
 // Name: getItemKey
-// Dependencies: [31, 27, 9033, 33, 4131, 15415, 15417, 15418, 15428, 15411, 15430, 15432, 15427, 15419, 15433, 15437, 15438, 15441, 15442, 15443, 15444, 15445, 1557, 15446, 15403, 1212, 6619, 2]
+// Dependencies: [31, 27, 9077, 33, 4165, 15455, 15457, 15458, 15468, 15451, 15470, 15472, 15467, 15459, 15473, 15477, 15478, 15481, 15482, 15483, 15484, 15485, 1557, 15443, 1212, 6655, 2]
 
-// Module 15414 (getItemKey)
+// Module 15454 (getItemKey)
 import importAllResult from "result";
-import get_ActivityIndicator from "set";
+import get_ActivityIndicator from "get ActivityIndicator";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -110,67 +110,67 @@ function renderItem(item) {
   if (constants.DM === type) {
     let obj = {};
     const merged = Object.assign(item.props);
-    return callback(importDefault(15415), obj);
+    return callback(importDefault(15455), obj);
   } else if (constants.GROUP_DM === type) {
     obj = {};
     const merged1 = Object.assign(item.props);
-    return callback(importDefault(15417), obj);
+    return callback(importDefault(15457), obj);
   } else if (constants.SEARCH_HISTORY_ITEM === type) {
     const obj1 = {};
     const merged2 = Object.assign(item.props);
-    return callback(importDefault(15418), obj1);
+    return callback(importDefault(15458), obj1);
   } else if (constants.MEDIA === type) {
     const obj2 = {};
     const merged3 = Object.assign(item.props);
-    return callback(importDefault(15428), obj2);
+    return callback(importDefault(15468), obj2);
   } else if (constants.MEDIA_PLACEHOLDER === type) {
     const obj3 = {};
     const merged4 = Object.assign(item.props);
-    return callback(importDefault(15411), obj3);
+    return callback(importDefault(15451), obj3);
   } else if (constants.FILE_OR_LINK_PLACEHOLDER === type) {
     const obj4 = {};
     const merged5 = Object.assign(item.props);
-    return callback(importDefault(15430), obj4);
+    return callback(importDefault(15470), obj4);
   } else if (constants.MEDIA_GRID === type) {
     const obj5 = {};
     const merged6 = Object.assign(item.props);
-    return callback(importDefault(15432), obj5);
+    return callback(importDefault(15472), obj5);
   } else if (constants.GUILD_TEXT_CHANNEL === type) {
     const obj6 = {};
     const merged7 = Object.assign(item.props);
-    return callback(importDefault(15427), obj6);
+    return callback(importDefault(15467), obj6);
   } else if (constants.GUILD_VOICE_CHANNEL === type) {
     const obj7 = {};
     const merged8 = Object.assign(item.props);
-    return callback(importDefault(15419), obj7);
+    return callback(importDefault(15459), obj7);
   } else if (constants.MESSAGE === type) {
     const obj8 = {};
     const merged9 = Object.assign(item.props);
-    return callback(importDefault(15433), obj8);
+    return callback(importDefault(15473), obj8);
   } else if (constants.MESSAGE_PLACEHOLDER === type) {
-    return callback(importDefault(15437), {});
+    return callback(importDefault(15477), {});
   } else if (constants.LINK === type) {
     const obj9 = {};
     const merged10 = Object.assign(item.props);
-    return callback(importDefault(15438), obj9);
+    return callback(importDefault(15478), obj9);
   } else if (constants.FILE === type) {
     const obj10 = {};
     const merged11 = Object.assign(item.props);
-    return callback(importDefault(15441), obj10);
+    return callback(importDefault(15481), obj10);
   } else if (constants.GUILD_CHANNEL_MEMBER === type) {
     const obj11 = {};
     const merged12 = Object.assign(item.props);
-    return callback(importDefault(15442), obj11);
+    return callback(importDefault(15482), obj11);
   } else if (constants.GUILD_CHANNEL_MEMBER_PLACEHOLDER === type) {
-    return callback(importDefault(15443), {});
+    return callback(importDefault(15483), {});
   } else if (constants.GENERIC === type) {
     const obj12 = {};
     const merged13 = Object.assign(item.props);
-    return callback(importDefault(15444), obj12);
+    return callback(importDefault(15484), obj12);
   } else if (constants.SECTION === type) {
     obj = {};
     const merged14 = Object.assign(item.props);
-    return callback(importDefault(15445), obj);
+    return callback(importDefault(15485), obj);
   } else {
     return null;
   }
@@ -190,9 +190,7 @@ const memoResult = importAllResult.memo(function SearchList(arg0) {
   ({ contentContainerStyle, data, ListHeaderComponent, ListFooterComponent, numColumns } = arg0);
   ({ onEndReached, ItemSeparatorComponent } = arg0);
   const ref = importAllResult.useRef(null);
-  let obj = require(15446) /* useRenderScrollComponent */;
   let num = 0.5;
-  const renderScrollComponent = obj.useRenderScrollComponent();
   if (null != numColumns) {
     num = 0.5;
     if (1 !== numColumns) {
@@ -204,46 +202,46 @@ const memoResult = importAllResult.memo(function SearchList(arg0) {
       }
     }
   }
-  obj = { style: callback2().container };
-  let tmp7 = tmp4;
+  let obj = { style: callback2().container };
+  let tmp6 = tmp3;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
     obj = { style: absoluteFill.absoluteFill };
-    const obj1 = {};
+    obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.text = intl.string(require(1212) /* getSystemLocale */.t.V6nAfF);
-    obj.children = callback(importDefault(15403), obj1);
-    tmp7 = callback(closure_4, obj);
-    const tmp14 = importDefault(15403);
+    obj.text = intl.string(require(1212) /* getSystemLocale */.t.V6nAfF);
+    obj.children = callback(importDefault(15443), obj);
+    tmp6 = callback(closure_4, obj);
+    const tmp13 = importDefault(15443);
   }
-  const items = [tmp7, ];
-  const obj2 = { ref, renderScrollComponent };
-  let obj3;
+  const items = [tmp6, ];
+  const obj1 = { ref };
+  let obj2;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
-    obj3 = { importantForAccessibility: "no", scrollEnabled: false };
+    obj2 = { importantForAccessibility: "no", scrollEnabled: false };
   }
-  obj2.overrideProps = obj3;
-  obj2.keyboardDismissMode = "on-drag";
-  obj2.keyboardShouldPersistTaps = "handled";
-  obj2.data = data;
-  obj2.renderItem = renderItem;
-  obj2.onEndReachedThreshold = num;
-  obj2.onEndReached = onEndReached;
-  obj2.scrollsToTop = true;
-  const tmp16 = callback;
+  obj1.overrideProps = obj2;
+  obj1.keyboardDismissMode = "on-drag";
+  obj1.keyboardShouldPersistTaps = "handled";
+  obj1.data = data;
+  obj1.renderItem = renderItem;
+  obj1.onEndReachedThreshold = num;
+  obj1.onEndReached = onEndReached;
+  obj1.scrollsToTop = true;
+  const tmp15 = callback;
   const tmp2 = callback2();
-  const tmp5 = closure_9;
-  const tmp6 = closure_4;
+  const tmp4 = closure_9;
+  const tmp5 = closure_4;
   const merged = Object.assign(contentContainerStyle);
-  obj2.contentContainerStyle = { paddingBottom: 16 + importDefault(1557)().bottom };
-  obj2.keyExtractor = keyExtractor;
-  obj2.getItemType = getItemType;
-  obj2.ListHeaderComponent = ListHeaderComponent;
-  obj2.ListFooterComponent = ListFooterComponent;
-  obj2.ItemSeparatorComponent = ItemSeparatorComponent;
-  obj2.numColumns = numColumns;
-  items[1] = tmp16(require(6619) /* useModalDismissGuardRefreshControl */.AnimatedFlashList, obj2);
+  obj1.contentContainerStyle = { paddingBottom: 16 + importDefault(1557)().bottom };
+  obj1.keyExtractor = keyExtractor;
+  obj1.getItemType = getItemType;
+  obj1.ListHeaderComponent = ListHeaderComponent;
+  obj1.ListFooterComponent = ListFooterComponent;
+  obj1.ItemSeparatorComponent = ItemSeparatorComponent;
+  obj1.numColumns = numColumns;
+  items[1] = tmp15(require(6655) /* useModalDismissGuardRefreshControl */.AnimatedFlashList, obj1);
   obj.children = items;
-  return tmp5(tmp6, obj);
+  return tmp4(tmp5, obj);
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
 

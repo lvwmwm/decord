@@ -1,10 +1,10 @@
-// Module ID: 12602
-// Function ID: 97482
+// Module ID: 12645
+// Function ID: 97652
 // Name: items1
-// Dependencies: [57, 31, 27, 653, 33, 4131, 12572, 689, 1212, 1921, 4127, 4661, 1273, 12603, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 12615, 689, 1212, 1921, 4161, 4695, 1273, 12646, 2]
 // Exports: default
 
-// Module 12602 (items1)
+// Module 12645 (items1)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.HPJ6Nj);
   let items = [
-    callback2(require(4127) /* Text */.Text, obj),
+    callback2(require(4161) /* Text */.Text, obj),
     callback2(View, {
       style: tmp.list,
       children: items1.map((getQuestion) => {
@@ -188,8 +188,8 @@ export default function GuildBoostingMarketingFaq() {
         obj1.style = tmp.question;
         obj1.variant = "text-md/normal";
         obj1.children = getQuestion.getQuestion();
-        const items1 = [outer1_7(tmp(4127).Text, obj1), ];
-        const obj2 = { source: callback(12603) };
+        const items1 = [outer1_7(tmp(4161).Text, obj1), ];
+        const obj2 = { source: callback(12646) };
         const items2 = [tmp.questionIcon, ];
         let questionIconExpanded = tmp;
         if (tmp) {
@@ -199,10 +199,10 @@ export default function GuildBoostingMarketingFaq() {
         obj2.style = items2;
         items1[1] = outer1_7(tmp(1273).Icon, obj2);
         obj.children = items1;
-        const items3 = [outer1_8(tmp(4661).PressableOpacity, obj), ];
+        const items3 = [outer1_8(tmp(4695).PressableOpacity, obj), ];
         if (tmp) {
           const obj3 = { style: tmp.answer, color: "interactive-text-active", variant: "text-sm/normal", children: getQuestion.getAnswer() };
-          tmp = outer1_7(tmp(4127).Text, obj3);
+          tmp = outer1_7(tmp(4161).Text, obj3);
         }
         items3[1] = tmp;
         obj.children = items3;

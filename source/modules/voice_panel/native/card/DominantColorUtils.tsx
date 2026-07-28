@@ -1,10 +1,10 @@
-// Module ID: 7992
-// Function ID: 63712
+// Module ID: 8030
+// Function ID: 63822
 // Name: getCachedSourceFromURI
-// Dependencies: [57, 31, 27, 1362, 3975, 689, 620, 2]
+// Dependencies: [57, 31, 27, 1362, 4009, 689, 620, 2]
 // Exports: useDominantColorFromImage
 
-// Module 7992 (getCachedSourceFromURI)
+// Module 8030 (getCachedSourceFromURI)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -45,8 +45,8 @@ function useDominantRGBFromImage(arg0) {
     hexToRgbResult = importDefaultResult.get(arg0);
   }
   if (null == hexToRgbResult) {
-    hexToRgbResult = _require(3975).hexToRgb(importDefault(689).unsafe_rawColors.PRIMARY_800);
-    let obj = _require(3975);
+    hexToRgbResult = _require(4009).hexToRgb(importDefault(689).unsafe_rawColors.PRIMARY_800);
+    let obj = _require(4009);
   }
   let tmp8 = callback(React.useState(hexToRgbResult), 2);
   const dependencyMap = tmp8[1];

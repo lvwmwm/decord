@@ -1,10 +1,10 @@
-// Module ID: 5776
-// Function ID: 50691
+// Module ID: 5786
+// Function ID: 50547
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 102, 18, 1876, 1877, 2]
 // Exports: isProfileEffectRecord
 
-// Module 5776 (_isNativeReflectConstruct)
+// Module 5786 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import CollectiblesItemType from "CollectiblesItemType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 6958
-// Function ID: 59673
+// Module ID: 6994
+// Function ID: 59762
 // Name: EnvelopeSpotIllustration
-// Dependencies: [33, 5085, 6959, 2]
+// Dependencies: [33, 5119, 6995, 2]
 // Exports: EnvelopeSpotIllustration
 
-// Module 6958 (EnvelopeSpotIllustration)
+// Module 6994 (EnvelopeSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/EnvelopeSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const EnvelopeSpotIllustration = function EnvelopeSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6959) };
+  obj = { uri: importDefault(6995) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const EnvelopeSpotIllustration = function EnvelopeSpotIllustration(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

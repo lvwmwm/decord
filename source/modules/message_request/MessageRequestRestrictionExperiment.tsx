@@ -1,9 +1,9 @@
-// Module ID: 11471
-// Function ID: 89334
+// Module ID: 11509
+// Function ID: 89458
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 11471 (apexExperiment)
+// Module 11509 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-non-friend-messages-requests-in-uk", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

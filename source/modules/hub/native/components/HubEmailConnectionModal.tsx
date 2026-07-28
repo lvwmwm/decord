@@ -1,10 +1,10 @@
-// Module ID: 11765
-// Function ID: 91348
+// Module ID: 11804
+// Function ID: 91499
 // Name: getScreens
-// Dependencies: [31, 11757, 33, 4131, 5084, 5087, 11766, 480, 11769, 11772, 11774, 11775, 11776, 11780, 5121, 1456, 5450, 11782, 5517, 1212, 2]
+// Dependencies: [31, 11796, 33, 4165, 5118, 5121, 11805, 480, 11808, 11811, 11813, 11814, 11815, 11819, 5155, 1456, 5485, 11821, 5552, 1212, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 11765 (getScreens)
+// Module 11804 (getScreens)
 import "result";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function getScreens(pop) {
-  let obj = require(5087) /* HeaderBackImage */;
+  let obj = require(5121) /* HeaderBackImage */;
   if (arg1) {
     let headerBackButton = obj.getHeaderBackButton(pop);
   } else {
@@ -113,7 +113,7 @@ export default function HubEmailConnectionModal(arg0) {
   ({ isNestedNavigator: require, onCloseExtra: importDefault, invite: dependencyMap, displayStudentPrompt: HubEmailConnectionSteps } = arg0);
   let obj = require(1456) /* useNavigation */;
   const jsx = obj.useNavigation();
-  ({ screens, initialRouteStack } = importDefault(5450)(() => {
+  ({ screens, initialRouteStack } = importDefault(5485)(() => {
     function handleClose() {
       let flag = arg0;
       if (arg0 === undefined) {
@@ -148,9 +148,9 @@ export default function HubEmailConnectionModal(arg0) {
   obj = { screens, initialRouteStack };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteStack });
+  return jsx(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteStack });
 };
 export const HubEmailConnectionScreen = function HubEmailConnectionScreen(children) {
   const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: _createForOfIteratorHelperLoose().safeArea, children: children.children });
+  return jsx(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: _createForOfIteratorHelperLoose().safeArea, children: children.children });
 };

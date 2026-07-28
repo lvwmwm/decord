@@ -1,9 +1,9 @@
-// Module ID: 15831
-// Function ID: 122148
+// Module ID: 15870
+// Function ID: 122304
 // Name: SoundCategoryItem
-// Dependencies: [31, 27, 15816, 1850, 653, 33, 4131, 689, 4586, 5513, 1212, 9562, 4095, 15829, 4661, 1273, 4653, 4100, 4101, 566, 3777, 6155, 1557, 4002, 8316, 2]
+// Dependencies: [31, 27, 15855, 1850, 653, 33, 4165, 689, 4620, 5548, 1212, 9602, 4129, 15868, 4695, 1273, 4687, 4134, 4135, 566, 3811, 6189, 1557, 4036, 8354, 2]
 
-// Module 15831 (SoundCategoryItem)
+// Module 15870 (SoundCategoryItem)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setSearchQuery } from "openExpressionPicker";
@@ -31,30 +31,30 @@ function SoundCategoryItem(style) {
   }
   const tmp = callback3();
   const type = category.categoryInfo.type;
-  if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
+  if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
     const guild = category.categoryInfo.guild;
     let name = guild.name;
     let obj = { guild, style: tmp.guildItem };
-    let tmp7 = callback(importDefault(5513), obj);
+    let tmp7 = callback(importDefault(5548), obj);
     let tmp8 = null;
     let tmp6 = null;
-  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     name = intl3.string(require(1212) /* getSystemLocale */.t.y3LQCG);
-    tmp6 = importDefault(9562);
+    tmp6 = importDefault(9602);
     tmp7 = null;
     tmp8 = null;
-  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     name = intl2.string(require(1212) /* getSystemLocale */.t["+cGVV6"]);
     obj = { style: tmp.keyboardItem };
-    tmp8 = callback(require(4095) /* ClockIcon */.ClockIcon, obj);
+    tmp8 = callback(require(4129) /* ClockIcon */.ClockIcon, obj);
     tmp7 = null;
     tmp6 = null;
-  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl = require(1212) /* getSystemLocale */.intl;
     name = intl.string(require(1212) /* getSystemLocale */.t.Rtvk9X);
-    tmp6 = importDefault(15829);
+    tmp6 = importDefault(15868);
     tmp7 = null;
     tmp8 = null;
   } else {
@@ -62,10 +62,10 @@ function SoundCategoryItem(style) {
     tmp7 = null;
     tmp8 = null;
     tmp6 = null;
-    if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
+    if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       name = intl4.string(require(1212) /* getSystemLocale */.t.sKt3xS);
-      tmp6 = importDefault(15829);
+      tmp6 = importDefault(15868);
       tmp7 = null;
       tmp8 = null;
     }
@@ -90,13 +90,13 @@ function SoundCategoryItem(style) {
   if (locked) {
     const obj3 = { style: tmp.lockContainer };
     const obj4 = { style: tmp.lock };
-    obj3.children = callback(require(4653) /* LockIcon */.LockIcon, obj4);
+    obj3.children = callback(require(4687) /* LockIcon */.LockIcon, obj4);
     locked = callback(closure_5, obj3);
   }
   items1[1] = locked;
   obj1.children = items1;
   obj.children = closure_11(closure_5, obj1);
-  return callback(require(4661) /* PressableBase */.PressableOpacity, obj, name);
+  return callback(require(4695) /* PressableBase */.PressableOpacity, obj, name);
 }
 function getItemLayout(arg0, index) {
   return { length: closure_9, offset: closure_9 * index, index };

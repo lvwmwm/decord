@@ -1,10 +1,10 @@
-// Module ID: 9150
-// Function ID: 71834
+// Module ID: 9194
+// Function ID: 71985
 // Name: BackgroundImage
-// Dependencies: [31, 27, 33, 4067, 3977, 9151, 9152, 2]
+// Dependencies: [31, 27, 33, 4101, 4011, 9195, 9196, 2]
 // Exports: default
 
-// Module 9150 (BackgroundImage)
+// Module 9194 (BackgroundImage)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export default function BackgroundImage(backgroundImageSource) {
     flag = false;
   }
   let dependencyMap;
-  const tmp = flag(4067)();
+  const tmp = flag(4101)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   let obj = { style: absoluteFill.absoluteFill };

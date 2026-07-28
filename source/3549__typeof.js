@@ -1,7 +1,7 @@
 // Module ID: 3549
-// Function ID: 27598
+// Function ID: 27127
 // Name: _typeof
-// Dependencies: [3518, 3519, 3516]
+// Dependencies: [3550]
 
 // Module 3549 (_typeof)
 function _typeof(arg0) {
@@ -78,19 +78,19 @@ function _createSuper(arg0) {
   })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = outer1_7(closure_0);
+    const obj = outer1_5(callback);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      outer1_6(self);
+      outer1_4(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== outer1_2(constructResult)) {
+      if ("object" !== callback(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const ISOTimezoneWithZParser = ((Parser) => {
-  class ISOTimezoneWithZParser {
+export const EraParser = ((Parser) => {
+  class EraParser {
     constructor() {
-      if (this instanceof ISOTimezoneWithZParser) {
+      if (this instanceof EraParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +148,21 @@ export const ISOTimezoneWithZParser = ((Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = outer1_8;
-        tmp12 = outer1_6;
+        tmp11 = outer1_6;
+        tmp12 = outer1_4;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = outer1_6(applyResult);
+        tmp16 = outer1_4(applyResult);
         str2 = "priority";
-        num2 = 10;
-        tmp17 = outer1_8(applyResult, "priority", 10);
-        tmp18 = outer1_6(applyResult);
+        num2 = 140;
+        tmp17 = outer1_6(applyResult, "priority", 140);
+        tmp18 = outer1_4(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
+        tmp19 = outer1_6(applyResult, "incompatibleTokens", ["R", "u", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const ISOTimezoneWithZParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class ISOTimezoneWithZParser {
+    class EraParser {
       constructor() {
-        if (this instanceof ISOTimezoneWithZParser) {
+        if (this instanceof EraParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -191,21 +191,21 @@ export const ISOTimezoneWithZParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
+          tmp11 = outer1_6;
+          tmp12 = outer1_4;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
+          tmp16 = outer1_4(applyResult);
           str2 = "priority";
-          num2 = 10;
-          tmp17 = outer1_8(applyResult, "priority", 10);
-          tmp18 = outer1_6(applyResult);
+          num2 = 140;
+          tmp17 = outer1_6(applyResult, "priority", 140);
+          tmp18 = outer1_4(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
+          tmp19 = outer1_6(applyResult, "incompatibleTokens", ["R", "u", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const ISOTimezoneWithZParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ISOTimezoneWithZParser, writable: true, configurable: true };
-  ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: EraParser, writable: true, configurable: true };
+  EraParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISOTimezoneWithZParser {
+    class EraParser {
       constructor() {
-        if (this instanceof ISOTimezoneWithZParser) {
+        if (this instanceof EraParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -241,21 +241,21 @@ export const ISOTimezoneWithZParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
+          tmp11 = outer1_6;
+          tmp12 = outer1_4;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
+          tmp16 = outer1_4(applyResult);
           str2 = "priority";
-          num2 = 10;
-          tmp17 = outer1_8(applyResult, "priority", 10);
-          tmp18 = outer1_6(applyResult);
+          num2 = 140;
+          tmp17 = outer1_6(applyResult, "priority", 140);
+          tmp18 = outer1_4(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
+          tmp19 = outer1_6(applyResult, "incompatibleTokens", ["R", "u", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,38 +269,53 @@ export const ISOTimezoneWithZParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISOTimezoneWithZParser, Parser);
+    _setPrototypeOf(EraParser, Parser);
   }
-  let closure_0 = _createSuper(ISOTimezoneWithZParser);
+  let closure_0 = _createSuper(EraParser);
   obj = {
     key: "parse",
-    value: function parse(arg0, arg1) {
-      if ("X" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basicOptionalMinutes, arg0);
-      } else if ("XX" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basic, arg0);
-      } else if ("XXXX" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basicOptionalSeconds, arg0);
-      } else if ("XXXXX" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.extendedOptionalSeconds, arg0);
-      } else {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.extended, arg0);
+    value: function parse(arg0, arg1, era) {
+      if ("G" !== arg1) {
+        if ("GG" !== arg1) {
+          if ("GGG" !== arg1) {
+            if ("GGGGG" === arg1) {
+              let obj = { width: "narrow" };
+              return era.era(arg0, obj);
+            } else {
+              obj = { width: "wide" };
+              let eraResult = era.era(arg0, obj);
+              if (!eraResult) {
+                obj = { width: "abbreviated" };
+                eraResult = era.era(arg0, obj);
+              }
+              if (!eraResult) {
+                const obj1 = { width: "narrow" };
+                eraResult = era.era(arg0, obj1);
+              }
+              return eraResult;
+            }
+          }
+        }
       }
+      let eraResult1 = era.era(arg0, { width: "abbreviated" });
+      if (!eraResult1) {
+        const obj2 = { width: "narrow" };
+        eraResult1 = era.era(arg0, obj2);
+      }
+      return eraResult1;
     }
   };
   let items = [obj, ];
   obj = {
     key: "set",
-    value: function set(getTime, timestampIsSet) {
-      let date = getTime;
-      if (!timestampIsSet.timestampIsSet) {
-        const _Date = Date;
-        date = new Date(getTime.getTime() - arg2);
-      }
-      return date;
+    value: function set(setUTCFullYear, arg1, era) {
+      arg1.era = era;
+      setUTCFullYear.setUTCFullYear(era, 0, 1);
+      setUTCFullYear.setUTCHours(0, 0, 0, 0);
+      return setUTCFullYear;
     }
   };
   items[1] = obj;
-  _defineProperties(ISOTimezoneWithZParser.prototype, items);
-  return ISOTimezoneWithZParser;
+  EraParser(EraParser.prototype, items);
+  return EraParser;
 })(require("_defineProperties").Parser);

@@ -1,9 +1,9 @@
-// Module ID: 8929
-// Function ID: 70572
+// Module ID: 8973
+// Function ID: 70723
 // Name: ClearButton
-// Dependencies: [31, 27, 33, 4131, 689, 4661, 1212, 1273, 8930, 44, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4695, 1212, 1273, 8974, 44, 2]
 
-// Module 8929 (ClearButton)
+// Module 8973 (ClearButton)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,9 +21,9 @@ function ClearButton(onPress) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.VkKicb);
   obj.onPress = onPress.onPress;
   obj.hitSlop = { top: 8, bottom: 8, right: 8 };
-  obj = { source: importDefault(8930), style: callback2().closeIcon, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj = { source: importDefault(8974), style: callback2().closeIcon, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
-  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
 }
 ({ TouchableWithoutFeedback: closure_4, View: closure_5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

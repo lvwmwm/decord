@@ -1,10 +1,10 @@
-// Module ID: 11121
-// Function ID: 86530
+// Module ID: 11159
+// Function ID: 86649
 // Name: GIFIcon
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1273, 11122, 11123, 9810, 4127, 1450, 1327, 11124, 5999, 8130, 11128, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 1273, 11160, 11161, 9850, 4161, 1450, 1327, 11162, 6033, 8168, 11166, 2]
 // Exports: default
 
-// Module 11121 (GIFIcon)
+// Module 11159 (GIFIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -15,20 +15,20 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function GIFIcon() {
-  const obj = { size: require(1273) /* Button */.Icon.Sizes.CUSTOM, source: importDefault(11122), disableColor: true, style: _createForOfIteratorHelperLoose().gifIcon };
+  const obj = { size: require(1273) /* Button */.Icon.Sizes.CUSTOM, source: importDefault(11160), disableColor: true, style: _createForOfIteratorHelperLoose().gifIcon };
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function PlayIcon() {
-  const obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL_20, source: importDefault(11123), disableColor: true };
+  const obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL_20, source: importDefault(11161), disableColor: true };
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function ExtraMediaIcon(extraMediaCount) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.extraMediaCountContainer };
-  obj = { source: importDefault(9810), color: tmp.icon.color, size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16 };
+  obj = { source: importDefault(9850), color: tmp.icon.color, size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16 };
   const items = [callback2(require(1273) /* Button */.Icon, obj), ];
   obj = { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: "+" + extraMediaCount.extraMediaCount };
-  items[1] = callback2(require(4127) /* Text */.Text, obj);
+  items[1] = callback2(require(4161) /* Text */.Text, obj);
   obj.children = items;
   return callback3(View, obj);
 }
@@ -89,7 +89,7 @@ export default function ForumPostGridBody(thread) {
   const media = thread.media;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = thread(5999);
+  let obj = thread(6033);
   let tmp2 = callback(obj.useSomeAppliedTags(thread, 2), 2);
   const first = tmp2[0];
   let tmp3 = first.length > 0;
@@ -167,7 +167,7 @@ export default function ForumPostGridBody(thread) {
   if (tmp3) {
     const obj1 = { style: tmp.footerLeftContainer };
     const obj2 = { appliedTags: first, additionalTagsCount: tmp2[1], hasUnreads: thread.hasUnreads };
-    obj1.children = callback2(thread(11128).ForumPostAppliedTagPills, obj2);
+    obj1.children = callback2(thread(11166).ForumPostAppliedTagPills, obj2);
     tmp3 = callback2(View, obj1);
   }
   items4[1] = tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 8142
-// Function ID: 64966
+// Module ID: 8180
+// Function ID: 65076
 // Name: isChangelogChannel
 // Dependencies: [1348, 1906, 2]
 // Exports: default
 
-// Module 8142 (isChangelogChannel)
+// Module 8180 (isChangelogChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SYSTEM_UPDATES_USER_ID } from "CHANGELOG_MODAL_KEY";
 

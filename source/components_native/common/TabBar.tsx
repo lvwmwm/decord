@@ -1,10 +1,10 @@
-// Module ID: 9391
-// Function ID: 73224
+// Module ID: 9435
+// Function ID: 73375
 // Name: Tab
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 5217, 1212, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 5251, 1212, 2]
 // Exports: default
 
-// Module 9391 (Tab)
+// Module 9435 (Tab)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

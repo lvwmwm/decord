@@ -1,16 +1,16 @@
-// Module ID: 5939
-// Function ID: 52850
+// Module ID: 5973
+// Function ID: 52969
 // Name: questConfigFromServer
-// Dependencies: [57, 4330, 5940, 5937, 2]
+// Dependencies: [57, 4364, 5974, 5971, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questWithUserStatusFromServer, questsEntitlementsFromServer
 
-// Module 5939 (questConfigFromServer)
+// Module 5973 (questConfigFromServer)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
 function questConfigFromServer(body) {
-  const match = require(4330) /* n */.match(body);
-  const str = require(4330) /* n */;
+  const match = require(4364) /* n */.match(body);
+  const str = require(4364) /* n */;
   return match.with({ config_version: 2 }, (id) => outer1_0(outer1_1[2]).questFromServerV2(id)).exhaustive();
 }
 function progressFromServer(progress) {
@@ -52,7 +52,7 @@ function questUserStatusFromServer(body) {
   return obj;
 }
 function getSimpleRewardFromServer(type) {
-  if (type.type === require(5937) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+  if (type.type === require(5971) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
     let obj = {};
     ({ sku_id: obj2.skuId, type: obj2.type, name: obj2.name, name_with_article: obj2.nameWithArticle, collectible_product: obj2.collectibleProduct, orb_quantity: obj2.orbQuantity } = type);
   } else {
@@ -66,7 +66,7 @@ function getClaimedQuestFromServer(config) {
   obj = { questName: config.messages.quest_name, gamePublisher: config.messages.game_publisher, gameTitle: config.messages.game_title };
   obj = { hero: config.assets.hero, heroVideo: config.assets.hero_video, questBarHero: config.assets.quest_bar_hero, questBarHeroVideo: config.assets.quest_bar_hero_video, gameTile: config.assets.game_tile, logotype: config.assets.logotype, logotypeLight: config.assets.logotype_light, logotypeDark: config.assets.logotype_dark, gameTileLight: config.assets.game_tile_light, gameTileDark: config.assets.game_tile_dark };
   rewards = config.rewards;
-  obj.cosponsorMetadata = require(5940) /* questCosponsorMetadataFromServer */.questCosponsorMetadataFromServer(config.cosponsor_metadata);
+  obj.cosponsorMetadata = require(5974) /* questCosponsorMetadataFromServer */.questCosponsorMetadataFromServer(config.cosponsor_metadata);
   return obj;
 }
 function questsRewardCodeFromServer(body) {
@@ -89,14 +89,14 @@ function _questsTenantMetadataFromServer(tenant_metadata) {
   } else {
     quest_rewards = tenant_metadata.quest_rewards;
     const tag = quest_rewards.reward.tag;
-    if (require(5937) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === tag) {
+    if (require(5971) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === tag) {
       let obj = {};
       obj = {};
       const obj1 = { tag: quest_rewards.reward.tag };
       obj.reward = obj1;
       obj.questRewards = obj;
       return obj;
-    } else if (require(5937) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE === tag) {
+    } else if (require(5971) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE === tag) {
       obj = {};
       const obj2 = {};
       const obj3 = { tag: quest_rewards.reward.tag, rewardCode: questsRewardCodeFromServer(quest_rewards.reward.reward_code) };
@@ -112,8 +112,8 @@ function _questsEntitlementFromServer(skuId) {
 const result = require("questCosponsorMetadataFromServer").fileFinishedImporting("modules/quests/utils/QuestServerUtils.tsx");
 
 export const isQuestWithKnownConfigVersion = function isQuestWithKnownConfigVersion(config) {
-  const match = require(4330) /* n */.match(config.config);
-  const str = require(4330) /* n */;
+  const match = require(4364) /* n */.match(config.config);
+  const str = require(4364) /* n */;
   return match.with({ config_version: 2 }, () => true).exhaustive();
 };
 export { questConfigFromServer };

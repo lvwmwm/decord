@@ -1,10 +1,10 @@
-// Module ID: 11097
-// Function ID: 86250
+// Module ID: 11135
+// Function ID: 86373
 // Name: getChatInputMaxHeight
-// Dependencies: [57, 31, 1452, 11093, 1823, 5162, 3997, 1555, 1450, 11098, 4132, 4135, 3992, 2]
+// Dependencies: [57, 31, 1452, 11131, 1823, 5196, 4031, 1555, 1450, 11136, 4166, 4169, 4026, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputMinHeight
 
-// Module 11097 (getChatInputMaxHeight)
+// Module 11135 (getChatInputMaxHeight)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
@@ -14,13 +14,13 @@ const require = arg1;
 function getChatInputMaxHeight() {
   let systemKeyboardHeight = require(1823) /* useSystemKeyboardHeight */.getSystemKeyboardHeight();
   const obj = require(1823) /* useSystemKeyboardHeight */;
-  const customKeyboardHeight = require(5162) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-  const obj2 = require(5162) /* useCustomKeyboardHeight */;
-  const keyboardType = require(3997) /* getKeyboardContextForType */.getKeyboardType();
+  const customKeyboardHeight = require(5196) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+  const obj2 = require(5196) /* useCustomKeyboardHeight */;
+  const keyboardType = require(4031) /* getKeyboardContextForType */.getKeyboardType();
   if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     systemKeyboardHeight = customKeyboardHeight;
   }
-  const obj3 = require(3997) /* getKeyboardContextForType */;
+  const obj3 = require(4031) /* getKeyboardContextForType */;
   return Math.min(200, Math.max(2 * closure_6, require(1450) /* useWindowDimensions */.getWindowDimensions({ ignoreKeyboard: true }).height - systemKeyboardHeight - 200));
 }
 const result = require("subscribeToKeyboardUIStore").fileFinishedImporting("modules/chat_input/native/useChatInputMaxHeight.tsx");
@@ -60,7 +60,7 @@ export function getChatInputMinHeight() {
 export { getChatInputMaxHeight };
 export const getChatInputHeightAnimationTiming = function getChatInputHeightAnimationTiming(height) {
   const bound = Math.min(height, getChatInputMaxHeight());
-  let obj = require(4132) /* withTiming */;
-  obj = { duration: require(4135) /* timingNone */.timingFastDuration, easing: require(3992).Easing.linear };
+  let obj = require(4166) /* withTiming */;
+  obj = { duration: require(4169) /* timingNone */.timingFastDuration, easing: require(4026).Easing.linear };
   return obj.withTiming(bound, obj);
 };

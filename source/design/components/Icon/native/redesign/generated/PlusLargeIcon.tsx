@@ -1,10 +1,10 @@
-// Module ID: 10161
-// Function ID: 78601
+// Module ID: 10190
+// Function ID: 78625
 // Name: PlusLargeIcon
-// Dependencies: [31, 33, 689, 3834, 10162, 2]
+// Dependencies: [31, 33, 689, 3868, 10191, 2]
 // Exports: PlusLargeIcon
 
-// Module 10161 (PlusLargeIcon)
+// Module 10190 (PlusLargeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PlusLargeIcon = function PlusLargeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10162) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10191) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10162) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(10191) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

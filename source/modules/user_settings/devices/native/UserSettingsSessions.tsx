@@ -1,10 +1,10 @@
-// Module ID: 13914
-// Function ID: 106513
+// Module ID: 13958
+// Function ID: 106686
 // Name: UserSettingsSessions
-// Dependencies: [57, 31, 27, 1850, 653, 33, 4131, 5053, 689, 13701, 566, 13915, 4542, 5501, 1212, 5164, 5121, 4127, 1327, 4661, 1273, 7640, 1456, 11362, 6448, 13916, 11859, 10793, 9140, 13917, 2]
+// Dependencies: [57, 31, 27, 1850, 653, 33, 4165, 5087, 689, 13745, 566, 13959, 4576, 5536, 1212, 5198, 5155, 4161, 1327, 4695, 1273, 7676, 1456, 11400, 6484, 13960, 11902, 10831, 9184, 13961, 2]
 // Exports: default
 
-// Module 13914 (UserSettingsSessions)
+// Module 13958 (UserSettingsSessions)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "registerAsset";
@@ -25,7 +25,7 @@ function UserSettingsSessions() {
   let currentSession;
   let otherSessions;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = otherSessions(13701);
+  let obj = otherSessions(13745);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   let obj1 = otherSessions(566);
@@ -60,7 +60,7 @@ function UserSettingsSessions() {
       tmp8 = callback2(SessionInfo, obj2);
     }
     obj1.children = tmp8;
-    const items1 = [callback2(otherSessions(5501).TableRowGroup, obj1), , ];
+    const items1 = [callback2(otherSessions(5536).TableRowGroup, obj1), , ];
     if (otherSessions.length <= 0) {
       if (null != stateFromStores) {
         let tmp9 = null;
@@ -76,11 +76,11 @@ function UserSettingsSessions() {
         obj3.onPress = function onPress() {
           return otherSessions(outer1_2[11]).logOutSessions(otherSessions.map((id_hash) => id_hash.id_hash));
         };
-        tmp15 = callback2(otherSessions(5164).TableRow, obj3);
+        tmp15 = callback2(otherSessions(5198).TableRow, obj3);
       }
       items1[2] = tmp15;
       obj.children = items1;
-      tmp25Result = tmp25(otherSessions(4542).Stack, obj);
+      tmp25Result = tmp25(otherSessions(4576).Stack, obj);
     }
     const obj4 = {};
     const intl = otherSessions(1212).intl;
@@ -88,7 +88,7 @@ function UserSettingsSessions() {
     obj4.hasIcons = true;
     const items2 = [otherSessions.map((id_hash) => outer1_10(outer1_15, { session: id_hash }, id_hash.id_hash)), callback2(UnknownLegacySessionsInfo, {})];
     obj4.children = items2;
-    tmp9 = callback3(otherSessions(5501).TableRowGroup, obj4);
+    tmp9 = callback3(otherSessions(5536).TableRowGroup, obj4);
     tmp25 = callback3;
     const tmp28 = callback2;
   }
@@ -97,9 +97,9 @@ function UserSettingsSessions() {
   const obj7 = { variant: "text-sm/medium", style: tmp.description };
   const intl4 = otherSessions(1212).intl;
   obj7.children = intl4.string(otherSessions(1212).t.zZp618);
-  const items3 = [callback2(otherSessions(4127).Text, obj7), tmp25Result];
+  const items3 = [callback2(otherSessions(4161).Text, obj7), tmp25Result];
   obj6.children = items3;
-  obj5.children = callback3(otherSessions(5121).SafeAreaPaddingView, obj6);
+  obj5.children = callback3(otherSessions(5155).SafeAreaPaddingView, obj6);
   return callback2(closure_7, obj5);
 }
 function SessionInfo(session) {
@@ -142,18 +142,18 @@ function SessionInfo(session) {
         if ("ios" !== trimmed) {
           if ("android" !== trimmed) {
             if ("horizon os" === trimmed) {
-              let obj = { text: os, iconSource: importDefault(10793), IconComponent: session(13917).VrHeadsetIcon };
+              let obj = { text: os, iconSource: importDefault(10831), IconComponent: session(13961).VrHeadsetIcon };
             } else {
-              obj = { text: os, iconSource: importDefault(13916), IconComponent: session(11859).ScreenIcon };
+              obj = { text: os, iconSource: importDefault(13960), IconComponent: session(11902).ScreenIcon };
             }
           }
         }
-        obj = { text: os, iconSource: importDefault(10793), IconComponent: session(9140).MobilePhoneIcon };
+        obj = { text: os, iconSource: importDefault(10831), IconComponent: session(9184).MobilePhoneIcon };
       }
       let formatDateResult = null;
       ({ text, iconSource, IconComponent } = obj);
       if (!current) {
-        let obj4 = session(13701);
+        let obj4 = session(13745);
         formatDateResult = obj4.formatDate(session.approx_last_used_time);
       }
       const items = [text, platform];
@@ -167,21 +167,21 @@ function SessionInfo(session) {
           return session(outer1_2[11]).logOutSessions(session.id_hash);
         };
         obj1.hitSlop = { top: 5, left: 5, bottom: 5, right: 5 };
-        const obj2 = { style: tmp.logoutButton, source: importDefault(7640) };
+        const obj2 = { style: tmp.logoutButton, source: importDefault(7676) };
         obj1.children = callback2(session(1273).Icon, obj2);
-        tmp20 = callback2(session(4661).PressableOpacity, obj1);
+        tmp20 = callback2(session(4695).PressableOpacity, obj1);
       }
       const obj3 = { style: tmp.sessionInfo, accessible: true };
       obj4 = { style: tmp.sessionInfoRow };
       const obj5 = { variant: "text-md/semibold", children: found[0] };
-      const items1 = [callback2(session(4127).Text, obj5), ];
+      const items1 = [callback2(session(4161).Text, obj5), ];
       let tmp33 = found.length > 1;
       if (tmp33) {
         const obj6 = {};
         const obj7 = { variant: "text-md/semibold", accessibilityLabel: ",", style: tmp.sessionInfoRowSpacing, children: "\u00B7" };
-        const items2 = [callback2(session(4127).Text, obj7), ];
+        const items2 = [callback2(session(4161).Text, obj7), ];
         const obj8 = { variant: "text-md/semibold", children: found[1] };
-        items2[1] = callback2(session(4127).Text, obj8);
+        items2[1] = callback2(session(4161).Text, obj8);
         obj6.children = items2;
         tmp33 = callback3(closure_12, obj6);
       }
@@ -190,14 +190,14 @@ function SessionInfo(session) {
       obj3.children = callback3(closure_6, obj4);
       const obj9 = {};
       const obj10 = { source: iconSource, IconComponent };
-      obj9.icon = callback2(session(5164).TableRow.Icon, obj10);
+      obj9.icon = callback2(session(5198).TableRow.Icon, obj10);
       obj9.label = callback2(closure_6, obj3);
       const obj11 = { accessible: true };
       let tmp47 = null != _location;
       if (tmp47) {
         const obj12 = { style: tmp.sessionInfoRow };
         const obj13 = { variant: "text-xs/medium", color: "text-subtle", style: tmp.detailsText, children: _location };
-        obj12.children = callback2(session(4127).Text, obj13);
+        obj12.children = callback2(session(4161).Text, obj13);
         tmp47 = callback2(closure_6, obj12);
       }
       const items3 = [tmp47, ];
@@ -205,29 +205,29 @@ function SessionInfo(session) {
       if (tmp53) {
         const obj14 = { style: tmp.sessionInfoRow };
         const obj15 = { variant: "text-xs/medium", color: "text-subtle", style: tmp.detailsText, children: formatDateResult };
-        obj14.children = callback2(session(4127).Text, obj15);
+        obj14.children = callback2(session(4161).Text, obj15);
         tmp53 = callback2(closure_6, obj14);
       }
       items3[1] = tmp53;
       obj11.children = items3;
       obj9.subLabel = callback3(closure_6, obj11);
       obj9.trailing = tmp20;
-      return callback2(session(5164).TableRow, obj9);
+      return callback2(session(5198).TableRow, obj9);
     }
   }
   const obj16 = {};
   const intl = session(1212).intl;
   obj16.text = intl.string(session(1212).t.cDHCNY);
-  obj16.iconSource = importDefault(13916);
-  obj16.IconComponent = session(11859).ScreenIcon;
+  obj16.iconSource = importDefault(13960);
+  obj16.IconComponent = session(11902).ScreenIcon;
   obj = obj16;
 }
 function UnknownLegacySessionsInfo() {
   let obj = _require(1456);
   _require = obj.useNavigation();
   obj = {};
-  obj = { variant: "translucent", source: importDefault(11362) };
-  obj.icon = callback2(_require(5164).TableRow.Icon, obj);
+  obj = { variant: "translucent", source: importDefault(11400) };
+  obj.icon = callback2(_require(5198).TableRow.Icon, obj);
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.iUa0sn);
   const intl2 = _require(1212).intl;
@@ -237,7 +237,7 @@ function UnknownLegacySessionsInfo() {
       const obj = outer1_1(outer1_2[24]);
     }
   });
-  return callback2(_require(5164).TableRow, obj);
+  return callback2(_require(5198).TableRow, obj);
 }
 ({ ActivityIndicator: closure_5, View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
 const UserSettingsSections = ME.UserSettingsSections;

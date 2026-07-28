@@ -1,5 +1,5 @@
 // Module ID: 1447
-// Function ID: 16860
+// Function ID: 16864
 // Name: fit
 // Dependencies: [5, 1448, 1449, 22, 44, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale

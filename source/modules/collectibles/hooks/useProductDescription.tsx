@@ -1,10 +1,10 @@
-// Module ID: 8690
-// Function ID: 68979
+// Module ID: 8734
+// Function ID: 69130
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [31, 1212, 1877, 2]
 // Exports: useProductDescription
 
-// Module 8690 (_createForOfIteratorHelperLoose)
+// Module 8734 (_createForOfIteratorHelperLoose)
 import { useMemo } from "result";
 
 function _createForOfIteratorHelperLoose(iterable) {

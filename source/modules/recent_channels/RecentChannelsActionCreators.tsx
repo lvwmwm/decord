@@ -1,10 +1,10 @@
-// Module ID: 9942
-// Function ID: 76947
+// Module ID: 9982
+// Function ID: 77076
 // Name: _bulkClearRecents
 // Dependencies: [5, 653, 1331, 1312, 686, 675, 2]
 // Exports: bulkClearRecents
 
-// Module 9942 (_bulkClearRecents)
+// Module 9982 (_bulkClearRecents)
 import expandLocation from "expandLocation";
 import { AnalyticEvents } from "ME";
 

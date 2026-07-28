@@ -1,10 +1,10 @@
-// Module ID: 11762
-// Function ID: 91343
+// Module ID: 11801
+// Function ID: 91494
 // Name: getDescriptiveInviteError
-// Dependencies: [1850, 653, 3777, 1212, 1921, 2]
+// Dependencies: [1850, 653, 3811, 1212, 1921, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 11762 (getDescriptiveInviteError)
+// Module 11801 (getDescriptiveInviteError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -36,7 +36,7 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
       return obj;
     }
     tmp13 = closure_7;
-    obj5 = importDefault(3777);
+    obj5 = importDefault(3811);
   } else if (constants.GUILD_AT_CAPACITY === code) {
     const obj1 = {};
     const intl5 = require(1212) /* getSystemLocale */.intl;

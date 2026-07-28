@@ -1,5 +1,5 @@
 // Module ID: 688
-// Function ID: 8474
+// Function ID: 8478
 // Name: unsafe_getRawColor
 // Dependencies: [689, 2]
 // Exports: getRadii, getThemes, unsafe_getRawColor, unsafe_getResolvedRawColor

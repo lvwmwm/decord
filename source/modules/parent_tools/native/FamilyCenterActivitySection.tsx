@@ -1,10 +1,10 @@
-// Module ID: 13865
-// Function ID: 106214
+// Module ID: 13909
+// Function ID: 106387
 // Name: FamilyCenterActivitySectionHeader
-// Dependencies: [57, 31, 27, 5766, 33, 4131, 689, 6201, 5827, 13860, 4127, 11048, 1212, 2199, 13866, 4661, 2]
+// Dependencies: [57, 31, 27, 5776, 33, 4165, 689, 6236, 5837, 13904, 4161, 11086, 1212, 2199, 13910, 4695, 2]
 // Exports: default
 
-// Module 13865 (FamilyCenterActivitySectionHeader)
+// Module 13909 (FamilyCenterActivitySectionHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,13 +23,13 @@ const require = arg1;
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(6201)();
-  let obj = require(5827) /* getActivityTypeTextConfigs */;
+  const tmp2 = importDefault(6236)();
+  let obj = require(5837) /* getActivityTypeTextConfigs */;
   const activityTypeTextConfigs = obj.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
-  const actionsForDisplayType = require(13860) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
-  const obj4 = require(13860) /* useActionTotalsForDisplayType */;
-  let length = require(13860) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  const actionsForDisplayType = require(13904) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
+  const obj4 = require(13904) /* useActionTotalsForDisplayType */;
+  let length = require(13904) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   if (displayType === constants.PURCHASES) {
     let sectionHeaderResult;
     if (null != value) {
@@ -53,11 +53,11 @@ function FamilyCenterActivitySectionHeader(displayType) {
     }
     obj = {};
     obj = { variant: "text-sm/semibold", style: tmp.header, children: sectionHeaderResult };
-    const items = [callback2(require(4127) /* Text */.Text, obj), ];
+    const items = [callback2(require(4161) /* Text */.Text, obj), ];
     let tmp16 = null;
     if (null !== tmp8) {
       const obj1 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp8 };
-      tmp16 = callback2(require(4127) /* Text */.Text, obj1);
+      tmp16 = callback2(require(4161) /* Text */.Text, obj1);
     }
     items[1] = tmp16;
     obj.children = items;
@@ -84,11 +84,11 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/p
 export default function FamilyCenterActivitySection(displayType) {
   displayType = displayType.displayType;
   let loadMoreButton = callback3();
-  let obj = displayType(13860);
+  let obj = displayType(13904);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  let obj1 = displayType(13860);
+  let obj1 = displayType(13904);
   const actionTotalsForDisplayType = obj1.useActionTotalsForDisplayType(displayType);
-  let obj2 = displayType(11048);
+  let obj2 = displayType(11086);
   const familyCenterActions = obj2.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const tmp3 = callback(React.useState(closure_7), 2);
@@ -105,7 +105,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const formatToPlainStringResult = intl.formatToPlainString(loadMore(2199)["7dMmJY"], obj);
     obj = { style: loadMoreButton.container };
     obj1 = { displayType };
-    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13866), { action }, action.event_id)), ];
+    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13910), { action }, action.event_id)), ];
     if (substr.length >= actionTotalsForDisplayType) {
       items1[2] = null;
       obj.children = items1;
@@ -122,8 +122,8 @@ export default function FamilyCenterActivitySection(displayType) {
       } else {
         const obj5 = { style: loadMoreButton.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp4 };
         const obj6 = { style: loadMoreButton.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-        obj5.children = callback2(displayType(4127).Text, obj6);
-        tmp7Result = tmp7(displayType(4661).PressableOpacity, obj5);
+        obj5.children = callback2(displayType(4161).Text, obj6);
+        tmp7Result = tmp7(displayType(4695).PressableOpacity, obj5);
       }
       obj2.children = tmp7Result;
       callback2(closure_6, obj2);

@@ -1,10 +1,10 @@
-// Module ID: 13845
-// Function ID: 106121
+// Module ID: 13889
+// Function ID: 106294
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [31, 27, 5765, 5766, 33, 4131, 689, 624, 4099, 13846, 5187, 4127, 1212, 2199, 13847, 4544, 2]
+// Dependencies: [31, 27, 5775, 5776, 33, 4165, 689, 624, 4133, 13890, 5221, 4161, 1212, 2199, 13891, 4578, 2]
 // Exports: default
 
-// Module 13845 (ConnectGuardianBottomSheet)
+// Module 13889 (ConnectGuardianBottomSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,7 +48,7 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[8]).hideActionSheet(outer1_6);
   }, []);
-  importDefault(13846)(callback);
+  importDefault(13890)(callback);
   obj = { startExpanded: true };
   obj = { style: tmp.container };
   obj1 = { style: tmp.info };
@@ -58,7 +58,7 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
     title = intl.string(importDefault(2199).aCUVfL);
   }
   obj2.children = title;
-  const items2 = [callback(require(4127) /* Text */.Text, obj2), ];
+  const items2 = [callback(require(4161) /* Text */.Text, obj2), ];
   const obj3 = { style: tmp.centered, variant: "text-md/medium", color: "text-default" };
   if (null == body) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -66,17 +66,17 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
     body = intl2.format(importDefault(2199)["2O6ltn"], obj4);
   }
   obj3.children = body;
-  items2[1] = callback(require(4127) /* Text */.Text, obj3);
+  items2[1] = callback(require(4161) /* Text */.Text, obj3);
   obj1.children = items2;
   const items3 = [closure_8(View, obj1), , ];
   const obj6 = { linkCode, expiresAt, onRefresh: onRefresh.onRefresh };
-  items3[1] = callback(View, { style: tmp.cardContainer, children: callback(require(13847) /* ConnectGuardianCard */.ConnectGuardianCard, obj6) });
+  items3[1] = callback(View, { style: tmp.cardContainer, children: callback(require(13891) /* ConnectGuardianCard */.ConnectGuardianCard, obj6) });
   const obj7 = { variant: "secondary", size: "md" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj7.text = intl3.string(importDefault(2199).Hsm5IF);
   obj7.onPress = callback;
-  items3[2] = callback(require(4544) /* Button */.Button, obj7);
+  items3[2] = callback(require(4578) /* Button */.Button, obj7);
   obj.children = items3;
   obj.children = closure_8(View, obj);
-  return callback(require(5187) /* Background */.BottomSheet, obj);
+  return callback(require(5221) /* Background */.BottomSheet, obj);
 };

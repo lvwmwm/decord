@@ -1,19 +1,20 @@
 // Module ID: 8556
-// Function ID: 68004
+// Function ID: 67906
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8557, 8478, 8487]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8557, 8559, 8561, 8550, 8563, 8565, 8546]
 
 // Module 8556 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import closure_2 from "jsxProd";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
+import result from "result";
+import jsxProd from "jsxProd";
 import tmp3 from "_isNativeReflectConstruct";
 
-const require = arg1;
+let closure_8;
+let closure_9;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,7 +24,8 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Rect";
-tmp3.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+tmp3.displayName = "FeDropShadow";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps);
 
 export default tmp3;

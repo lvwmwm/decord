@@ -1,10 +1,10 @@
-// Module ID: 13670
-// Function ID: 105003
+// Module ID: 13714
+// Function ID: 105176
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [1918, 1838, 566, 7881, 2]
+// Dependencies: [1918, 1838, 566, 7917, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 13670 (useUserAvailableGuildsWithTags)
+// Module 13714 (useUserAvailableGuildsWithTags)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -16,14 +16,17 @@ export const useUserAvailableGuildsWithTags = function useUserAvailableGuildsWit
   return require(566) /* initialize */.useStateFromStoresArray(items, () => {
     const guildsArray = outer1_3.getGuildsArray();
     return guildsArray.filter((id) => {
+      const selfMember = outer2_2.getSelfMember(id.id);
       let guildSupportsTagsResult = outer2_0(outer2_1[3]).guildSupportsTags(id);
       if (guildSupportsTagsResult) {
-        const selfMember = outer2_2.getSelfMember(id.id);
         let joinedAt;
         if (null != selfMember) {
           joinedAt = selfMember.joinedAt;
         }
         guildSupportsTagsResult = null != joinedAt;
+      }
+      if (guildSupportsTagsResult) {
+        guildSupportsTagsResult = true !== selfMember.isPending;
       }
       if (guildSupportsTagsResult) {
         const profile = id.profile;

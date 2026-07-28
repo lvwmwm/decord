@@ -1,10 +1,10 @@
-// Module ID: 11041
-// Function ID: 85848
+// Module ID: 11079
+// Function ID: 85971
 // Name: shouldRenderReportFalsePositiveButton
-// Dependencies: [5835, 624, 2]
+// Dependencies: [5845, 624, 2]
 // Exports: shouldRenderReportFalsePositiveButton, useShouldRenderReportFalsePositiveButton
 
-// Module 11041 (shouldRenderReportFalsePositiveButton)
+// Module 11079 (shouldRenderReportFalsePositiveButton)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

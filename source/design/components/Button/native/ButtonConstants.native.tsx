@@ -1,16 +1,16 @@
-// Module ID: 4548
-// Function ID: 39885
+// Module ID: 4582
+// Function ID: 39999
 // Name: getButtonPadding
-// Dependencies: [4546, 689, 2]
+// Dependencies: [4580, 689, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 4548 (getButtonPadding)
+// Module 4582 (getButtonPadding)
 import buttonPadding from "module_32";
 import buttonPadding1 from "module_40";
 import buttonPadding2 from "module_48";
 
 function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
-  return (FAB_BUTTON_SIZE - require(4546) /* getIconSize */.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
+  return (FAB_BUTTON_SIZE - require(4580) /* getIconSize */.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
 }
 const SMALL = require("getIconSize").IconSizes.SMALL;
 const SMALL_20 = require("getIconSize").IconSizes.SMALL_20;

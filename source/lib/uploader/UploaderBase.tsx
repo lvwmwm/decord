@@ -1,9 +1,9 @@
-// Module ID: 6101
-// Function ID: 54534
+// Module ID: 6135
+// Function ID: 54653
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 15, 17, 18, 653, 4124, 3, 4673, 22, 4707, 4712, 4674, 631, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 653, 4158, 3, 4707, 22, 4741, 4746, 4708, 631, 2]
 
-// Module 6101 (_createForOfIteratorHelperLoose)
+// Module 6135 (_createForOfIteratorHelperLoose)
 import _inherits from "_inherits";
 import ME from "ME";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
@@ -186,7 +186,7 @@ const tmp4 = ((EventEmitter) => {
         tmp2Result.emit("complete", tmp2Result._file, arg0);
         tmp2Result.removeAllListeners();
       };
-      obj2 = f54552(UploaderBase[10]);
+      obj2 = f54671(UploaderBase[10]);
       tmp2Result.id = obj2.uniqueId("Uploader");
       obj = { id: null, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0 };
       obj.id = tmp2Result.id;

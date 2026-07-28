@@ -1,10 +1,10 @@
-// Module ID: 9550
-// Function ID: 74515
+// Module ID: 9590
+// Function ID: 74644
 // Name: GIFPickerItemActionSheet
-// Dependencies: [31, 27, 33, 4131, 689, 477, 9540, 9533, 1450, 4099, 3832, 1212, 9551, 4544, 5187, 5085, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 477, 9580, 9573, 1450, 4133, 3866, 1212, 9591, 4578, 5221, 5119, 2]
 // Exports: default
 
-// Module 9550 (GIFPickerItemActionSheet)
+// Module 9590 (GIFPickerItemActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

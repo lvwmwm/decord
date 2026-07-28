@@ -1,9 +1,9 @@
-// Module ID: 16203
-// Function ID: 125593
+// Module ID: 16242
+// Function ID: 125749
 // Name: DiscoverabilityLandingScene
-// Dependencies: [31, 27, 11704, 1850, 653, 33, 4131, 689, 5084, 1456, 566, 11711, 668, 16204, 11731, 11724, 480, 11723, 5517, 1212, 2]
+// Dependencies: [31, 27, 11743, 1850, 653, 33, 4165, 689, 5118, 1456, 566, 11750, 668, 16243, 11770, 11763, 480, 11762, 5552, 1212, 2]
 
-// Module 16203 (DiscoverabilityLandingScene)
+// Module 16242 (DiscoverabilityLandingScene)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { useContactSyncModalStore } from "initialValues";
@@ -81,7 +81,7 @@ function DiscoverabilityNameScene(onComplete) {
     str = name;
   }
   obj.initialName = str;
-  obj.children = tmp7(allowPhone(11724), obj);
+  obj.children = tmp7(allowPhone(11763), obj);
   return tmp5(tmp6, obj);
 }
 class RedesignDiscoverabilityModal {

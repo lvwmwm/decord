@@ -1,9 +1,9 @@
-// Module ID: 8183
-// Function ID: 65638
+// Module ID: 8221
+// Function ID: 65748
 // Name: ActionSheetDragHandle
-// Dependencies: [31, 27, 8175, 33, 4131, 689, 1212, 3992, 2]
+// Dependencies: [31, 27, 8213, 33, 4165, 689, 1212, 4026, 2]
 
-// Module 8183 (ActionSheetDragHandle)
+// Module 8221 (ActionSheetDragHandle)
 import get_ActivityIndicator from "get ActivityIndicator";
 import PX_4 from "PX_4";
 import { jsx } from "jsxProd";
@@ -50,7 +50,7 @@ const memoResult = require("result").memo((accessibilityLabel) => {
     obj = {};
     const items1 = [tmp3.bar, animatedBarStyles];
     obj.style = items1;
-    let tmp11 = jsx(importDefault(3992).View, {});
+    let tmp11 = jsx(importDefault(4026).View, {});
   } else {
     const obj1 = { style: tmp3.bar };
     tmp11 = <closure_4 style={tmp3.bar} />;

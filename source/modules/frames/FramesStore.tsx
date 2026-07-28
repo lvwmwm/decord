@@ -1,9 +1,9 @@
-// Module ID: 5658
-// Function ID: 48387
+// Module ID: 5668
+// Function ID: 48243
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5659, 5660, 5661, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5669, 5670, 5671, 566, 686, 2]
 
-// Module 5658 (_isNativeReflectConstruct)
+// Module 5668 (_isNativeReflectConstruct)
 import ActivityPanelModes from "ActivityPanelModes";
 import getNonTestModeUrlForApplication from "getNonTestModeUrlForApplication";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -134,7 +134,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     let proxyTicket;
     applicationId = applicationId.applicationId;
     ({ proxyTicket, channelId } = applicationId);
-    const tmp = importDefault(5661)(applicationId);
+    const tmp = importDefault(5671)(applicationId);
     if (null != tmp) {
       map.delete(applicationId);
       const obj = { applicationId, url: tmp };

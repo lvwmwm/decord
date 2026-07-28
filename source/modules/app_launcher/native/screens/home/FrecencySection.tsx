@@ -1,10 +1,10 @@
-// Module ID: 11164
-// Function ID: 86770
+// Module ID: 11202
+// Function ID: 86889
 // Name: Placeholder
-// Dependencies: [57, 31, 27, 1347, 11165, 653, 33, 4131, 689, 7953, 1327, 5468, 1324, 11166, 10862, 566, 7955, 4325, 3992, 4132, 1212, 8329, 11167, 11163, 1882, 8174, 11168, 4127, 9231, 8330, 4661, 11169, 5676, 5085, 11172, 2]
+// Dependencies: [57, 31, 27, 1347, 11203, 653, 33, 4165, 689, 7990, 1327, 5503, 1324, 11204, 10900, 566, 7992, 4359, 4026, 4166, 1212, 8367, 11205, 11201, 1882, 8212, 11206, 4161, 9275, 8368, 4695, 11207, 5686, 5119, 11210, 2]
 // Exports: default
 
-// Module 11164 (Placeholder)
+// Module 11202 (Placeholder)
 import _slicedToArray from "_slicedToArray";
 import getStaffReleasePhase from "getStaffReleasePhase";
 import get_ActivityIndicator from "Text";
@@ -22,9 +22,9 @@ let closure_6;
 const require = arg1;
 function Placeholder() {
   const tmp2 = _createForOfIteratorHelperLoose();
-  let obj = require(11166) /* usePlaceholderWidth */;
+  let obj = require(11204) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(20, 90);
-  let obj1 = require(11166) /* usePlaceholderWidth */;
+  let obj1 = require(11204) /* usePlaceholderWidth */;
   obj = {};
   const items = [tmp2.commandContainer, ];
   let rowShadow = !importDefault(1324)("AppLauncherRecents-native");
@@ -106,7 +106,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const appLauncherIconSource = app(11163).getAppLauncherIconSource(app.section.application);
+    const appLauncherIconSource = app(11201).getAppLauncherIconSource(app.section.application);
     let obj = { style: disabled ? tmp.appContainerDisabled : tmp.appContainer, disabled, accessible: true };
     const application = app.section.application;
     let name;
@@ -128,13 +128,13 @@ function FrecentApp(app) {
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       obj = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = callback2(onAppSelected(5085), obj);
+      tmp3 = callback2(onAppSelected(5119), obj);
     }
     const items = [tmp3, ];
     obj = { submitting, style: tmp.submittingOverlay };
-    items[1] = callback2(app(11172).SubmittingOverlay, obj);
+    items[1] = callback2(app(11210).SubmittingOverlay, obj);
     obj.children = items;
-    return closure_12(app(4661).PressableOpacity, obj, app.applicationId);
+    return closure_12(app(4695).PressableOpacity, obj, app.applicationId);
   }
 }
 ({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);

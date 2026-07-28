@@ -1,10 +1,10 @@
-// Module ID: 15866
-// Function ID: 122494
+// Module ID: 15905
+// Function ID: 122650
 // Name: _canSetVoiceChannelStatus
-// Dependencies: [3759, 482, 3764, 566, 2]
+// Dependencies: [3793, 482, 3798, 566, 2]
 // Exports: canSetVoiceChannelStatus, default
 
-// Module 15866 (_canSetVoiceChannelStatus)
+// Module 15905 (_canSetVoiceChannelStatus)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "sum";
 

@@ -1,9 +1,9 @@
-// Module ID: 5839
-// Function ID: 51400
+// Module ID: 5849
+// Function ID: 51256
 // Name: set
-// Dependencies: [6, 7, 653, 477, 5840, 5841, 27, 5842, 5843, 507, 2]
+// Dependencies: [6, 7, 653, 477, 5850, 5851, 27, 5852, 5853, 507, 2]
 
-// Module 5839 (set)
+// Module 5849 (set)
 import getActivityIndicator from "get ActivityIndicator";
 import enforcing from "enforcing";
 import { Endpoints } from "ME";
@@ -134,7 +134,7 @@ let tmp3 = (() => {
         HermesBuiltin.arraySpread(self._metrics, 0);
         const HTTP = MonitoringAgent(outer1_1[9]).HTTP;
         let obj = { url: outer1_4.METRICS_V2 };
-        obj = { metrics: items, client_info: { built_at: "1785129562852", build_number: "6081" } };
+        obj = { metrics: items, client_info: { built_at: "1785215988818", build_number: "6089" } };
         obj.body = obj;
         obj.retries = 1;
         obj.rejectWithError = true;

@@ -1,10 +1,10 @@
-// Module ID: 5161
-// Function ID: 44967
+// Module ID: 5195
+// Function ID: 45082
 // Name: DeprecatedLayoutAnimation
-// Dependencies: [27, 4123, 477, 2]
+// Dependencies: [27, 4157, 477, 2]
 // Exports: DeprecatedLayoutAnimationKeyboard
 
-// Module 5161 (DeprecatedLayoutAnimation)
+// Module 5195 (DeprecatedLayoutAnimation)
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import obj from "module_150";

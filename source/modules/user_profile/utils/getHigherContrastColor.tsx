@@ -1,10 +1,10 @@
-// Module ID: 5507
-// Function ID: 46947
+// Module ID: 5542
+// Function ID: 47074
 // Name: getHigherContrastColor
 // Dependencies: [57, 665, 2]
 // Exports: getHigherContrastColor
 
-// Module 5507 (getHigherContrastColor)
+// Module 5542 (getHigherContrastColor)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;

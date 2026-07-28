@@ -1,5 +1,5 @@
 // Module ID: 987
-// Function ID: 10643
+// Function ID: 10647
 // Name: base64StringFromByteArray
 // Dependencies: [988]
 

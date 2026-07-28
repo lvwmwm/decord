@@ -1,10 +1,10 @@
-// Module ID: 10440
-// Function ID: 80958
+// Module ID: 10478
+// Function ID: 81079
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4168, 4977, 653, 4156, 5955, 5930, 5953, 2]
+// Dependencies: [57, 4202, 5011, 653, 4190, 5989, 5964, 5987, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 10440 (_createForOfIteratorHelperLoose)
+// Module 10478 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import QuestsExperimentLocations from "QuestsExperimentLocations";
@@ -128,7 +128,7 @@ function questMatchesActivity(value, applicationId) {
       }
     }
     const formatted = flag.name.toLowerCase();
-    consoleApplicationId = require(5955) /* _createForOfIteratorHelperLoose */.getConsoleApplicationId(consoleApplicationId);
+    consoleApplicationId = require(5989) /* _createForOfIteratorHelperLoose */.getConsoleApplicationId(consoleApplicationId);
     flag = false;
     if (tmp2 != consoleApplicationId) {
       application = application.getApplication(consoleApplicationId);
@@ -140,7 +140,7 @@ function questMatchesActivity(value, applicationId) {
       flag = tmp2;
     }
     tmp10 = flag;
-    const obj = require(5955) /* _createForOfIteratorHelperLoose */;
+    const obj = require(5989) /* _createForOfIteratorHelperLoose */;
     const str = flag.name;
   }
 }
@@ -157,7 +157,7 @@ function getQuestByActivity(result, value) {
       if (questMatchesActivity(value, tmp4)) {
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj = require(5930) /* _createForOfIteratorHelperLoose */;
+        let obj = require(5964) /* _createForOfIteratorHelperLoose */;
         if (!obj.isQuestExpired(tmp4)) {
           break;
         }
@@ -170,8 +170,8 @@ function getQuestByActivity(result, value) {
 }
 function questMatchesApplicationId(application_id, consoleApplicationId) {
   const _require = application_id;
-  const allApplicationIds = _require(5955).getAllApplicationIds(consoleApplicationId);
-  const obj = _require(5955);
+  const allApplicationIds = _require(5989).getAllApplicationIds(consoleApplicationId);
+  const obj = _require(5989);
   return null != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
 }
 ({ DISCORD_APPLICATION_ID: closure_4, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: closure_5, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_6 } = QuestsExperimentLocations);
@@ -200,7 +200,7 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ap
       } else {
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        let obj = require(5930) /* _createForOfIteratorHelperLoose */;
+        let obj = require(5964) /* _createForOfIteratorHelperLoose */;
         tmp2 = tmp5;
         if (!obj.isQuestExpired(tmp5)) {
           break;

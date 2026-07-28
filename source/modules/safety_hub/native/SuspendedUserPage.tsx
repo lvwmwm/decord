@@ -1,10 +1,10 @@
-// Module ID: 15660
-// Function ID: 120699
+// Module ID: 15699
+// Function ID: 120855
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [31, 27, 6699, 33, 4131, 689, 5121, 6625, 1212, 5588, 7640, 4127, 3828, 13715, 2]
+// Dependencies: [31, 27, 6735, 33, 4165, 689, 5155, 6661, 1212, 5623, 7676, 4161, 3862, 13759, 2]
 // Exports: default
 
-// Module 15660 (SuspendedUserSafetyHubPage)
+// Module 15699 (SuspendedUserSafetyHubPage)
 import "result";
 import { View } from "get ActivityIndicator";
 import { SafetyHubLinks } from "SafetyHubLinks";
@@ -37,8 +37,8 @@ export default function SuspendedUserSafetyHubPage() {
   obj1.onPress = function onPress() {
     outer1_1(outer1_2[9]).closeSuspendedUser();
   };
-  obj1.icon = importDefault(7640);
-  const items = [callback(require(6625) /* IconButton */.IconButton, obj1), ];
+  obj1.icon = importDefault(7676);
+  const items = [callback(require(6661) /* IconButton */.IconButton, obj1), ];
   const obj2 = {
     style: tmp.text,
     onPress() {
@@ -52,12 +52,12 @@ export default function SuspendedUserSafetyHubPage() {
   const obj3 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl3.string(require(1212) /* getSystemLocale */.t["9JceHN"]);
-  items1[2] = callback(require(4127) /* Text */.Text, obj3);
+  items1[2] = callback(require(4161) /* Text */.Text, obj3);
   obj2.children = items1;
-  items[1] = callback2(require(4127) /* Text */.Text, obj2);
+  items[1] = callback2(require(4161) /* Text */.Text, obj2);
   obj.children = items;
-  const items2 = [callback2(View, obj), callback(importDefault(13715), { visible: true })];
+  const items2 = [callback2(View, obj), callback(importDefault(13759), { visible: true })];
   obj.children = items2;
   obj.children = callback2(View, obj);
-  return callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

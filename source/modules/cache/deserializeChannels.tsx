@@ -1,5 +1,5 @@
 // Module ID: 1904
-// Function ID: 21378
+// Function ID: 21382
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 483, 2]
 // Exports: deserializeChannel, deserializeChannelEntries

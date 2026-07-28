@@ -1,10 +1,10 @@
-// Module ID: 15911
-// Function ID: 122885
+// Module ID: 15950
+// Function ID: 123041
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [620, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 15911 (_createForOfIteratorHelperLoose)
+// Module 15950 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;

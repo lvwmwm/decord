@@ -1,9 +1,9 @@
-// Module ID: 16220
-// Function ID: 125742
+// Module ID: 16259
+// Function ID: 125898
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3824, 5765, 13833, 5766, 653, 13834, 4099, 16221, 1935, 16223, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 3858, 5775, 13877, 5776, 653, 13878, 4133, 16260, 1935, 16262, 5112, 2]
 
-// Module 16220 (_isNativeReflectConstruct)
+// Module 16259 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -46,7 +46,7 @@ function maybePresentModal(warning) {
   if (null != warning) {
     const surfaces = warning.surfaces;
     if (null != surfaces) {
-      hasItem = surfaces.includes(require(13834) /* frozen */.ParentalConsentWarningSurface.MODAL);
+      hasItem = surfaces.includes(require(13878) /* frozen */.ParentalConsentWarningSurface.MODAL);
     }
   }
   let tmp5 = true === hasItem && null != daysRemaining;
@@ -64,9 +64,9 @@ function maybePresentModal(warning) {
     tmp5 = !open.isOpen();
   }
   if (tmp5) {
-    let obj = importDefault(4099);
+    let obj = importDefault(4133);
     obj = { daysRemaining };
-    obj.openLazy(require(1935) /* maybeLoadBundle */(16221, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    obj.openLazy(require(1935) /* maybeLoadBundle */(16260, dependencyMap.paths), "ParentalConsentWarningModal", obj);
   }
 }
 function maybePresentFromCache() {

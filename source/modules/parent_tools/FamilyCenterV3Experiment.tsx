@@ -1,10 +1,10 @@
-// Module ID: 5828
-// Function ID: 51199
+// Module ID: 5838
+// Function ID: 51055
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getIsFamilyCenterV3Enabled, useIsFamilyCenterV3Enabled
 
-// Module 5828 (apexExperiment)
+// Module 5838 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-01-family-center-v3", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

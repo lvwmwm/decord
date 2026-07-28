@@ -1,9 +1,9 @@
-// Module ID: 4538
-// Function ID: 39840
+// Module ID: 4572
+// Function ID: 39954
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 4538 (__INTERNAL_VIEW_CONFIG)
+// Module 4572 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDVisualEffectView", validAttributes: { blurAmount: true, blurEffectName: true, blurTintIOSParityCompensationRgba: true, blurTintRgba: true, blurTargetViewNativeId: true } };

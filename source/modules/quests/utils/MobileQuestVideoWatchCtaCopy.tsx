@@ -1,12 +1,12 @@
-// Module ID: 10439
-// Function ID: 80954
+// Module ID: 10477
+// Function ID: 81075
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [5955, 1212, 2]
+// Dependencies: [5989, 1212, 2]
 // Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10439 (formatWatchRemainingDurationShort)
+// Module 10477 (formatWatchRemainingDurationShort)
 function formatWatchRemainingDurationShort(closure_7) {
-  let obj = require(5955) /* _createForOfIteratorHelperLoose */;
+  let obj = require(5989) /* _createForOfIteratorHelperLoose */;
   const remainingTaskTime = obj.getRemainingTaskTime(closure_7);
   const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
   if (sum >= 60) {
@@ -42,7 +42,7 @@ export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(clos
 export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(closure_7) {
   let minutes;
   let seconds;
-  let obj = require(5955) /* _createForOfIteratorHelperLoose */;
+  let obj = require(5989) /* _createForOfIteratorHelperLoose */;
   const remainingTaskTime = obj.getRemainingTaskTime(closure_7);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {

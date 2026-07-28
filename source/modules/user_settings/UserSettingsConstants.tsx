@@ -1,5 +1,5 @@
 // Module ID: 662
-// Function ID: 8030
+// Function ID: 8034
 // Name: MAX_FAVORITES
 // Dependencies: [2]
 // Exports: createEmptyEditInfo

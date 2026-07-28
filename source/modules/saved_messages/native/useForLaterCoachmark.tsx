@@ -1,10 +1,10 @@
-// Module ID: 15199
-// Function ID: 115707
+// Module ID: 15239
+// Function ID: 115866
 // Name: CoachmarkImg
-// Dependencies: [57, 31, 27, 1345, 33, 1334, 4131, 6150, 9492, 8379, 1212, 8368, 2]
+// Dependencies: [57, 31, 27, 1345, 33, 1334, 4165, 6184, 9532, 8417, 1212, 8406, 2]
 // Exports: default
 
-// Module 15199 (CoachmarkImg)
+// Module 15239 (CoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { Image } from "get ActivityIndicator";
@@ -14,8 +14,8 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function CoachmarkImg() {
-  const obj = { source: importDefault(6150), style: callback2().imageContainer };
-  return <Image source={importDefault(6150)} style={callback2().imageContainer} />;
+  const obj = { source: importDefault(6184), style: callback2().imageContainer };
+  return <Image source={importDefault(6184)} style={callback2().imageContainer} />;
 }
 let closure_8 = require("DismissibleContent").DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
 let closure_9 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { width: 100, height: 80 } });
@@ -28,8 +28,8 @@ export default function useForLaterCoachmark(targetRef) {
   } else {
     items1 = [];
   }
-  obj = importDefault(9492);
-  const tmp2 = callback(first(8379).useSelectedDismissibleContent(items1, undefined, true), 2);
+  obj = importDefault(9532);
+  const tmp2 = callback(first(8417).useSelectedDismissibleContent(items1, undefined, true), 2);
   first = tmp2[0];
   importDefault = tmp4;
   const items2 = [tmp2[1], first];
@@ -49,7 +49,7 @@ export default function useForLaterCoachmark(targetRef) {
     };
     return obj;
   }, items2);
-  const obj2 = first(8379);
-  const coachmark = first(8368).useCoachmark(targetRef, memo);
+  const obj2 = first(8417);
+  const coachmark = first(8406).useCoachmark(targetRef, memo);
   return tmp2[1];
 };

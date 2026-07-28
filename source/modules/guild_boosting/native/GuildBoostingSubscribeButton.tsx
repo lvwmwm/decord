@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 90217
+// Module ID: 11656
+// Function ID: 90368
 // Name: _handleBoostPress
-// Dependencies: [5, 31, 27, 4024, 653, 4969, 1852, 33, 11566, 4338, 4967, 11618, 1456, 5462, 624, 1868, 11565, 4544, 1212, 4653, 2]
+// Dependencies: [5, 31, 27, 4058, 653, 5003, 1852, 33, 11605, 4372, 5001, 11657, 1456, 5497, 624, 1868, 11604, 4578, 1212, 4687, 2]
 // Exports: default
 
-// Module 11617 (_handleBoostPress)
+// Module 11656 (_handleBoostPress)
 import PremiumGuildSubscribeModalScenes from "PremiumGuildSubscribeModalScenes";
 import result from "result";
 import { View } from "get ActivityIndicator";

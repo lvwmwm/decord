@@ -1,10 +1,10 @@
-// Module ID: 7840
-// Function ID: 62576
+// Module ID: 7876
+// Function ID: 62666
 // Name: getSnowflakeSelectDefaultValues
-// Dependencies: [1348, 1918, 1911, 1838, 3768, 1850, 7833, 1882, 4975, 4320, 4360, 4321, 7841, 1327, 2]
+// Dependencies: [1348, 1918, 1911, 1838, 3802, 1850, 7869, 1882, 5009, 4354, 4394, 4355, 7877, 1327, 2]
 // Exports: getInitialSnowflakeSelectOptions, queryChannels, queryMentionables
 
-// Module 7840 (getSnowflakeSelectDefaultValues)
+// Module 7876 (getSnowflakeSelectDefaultValues)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -100,7 +100,7 @@ export const queryMentionables = function queryMentionables(type, query, channel
     if (!tmp7) {
       tmp7 = type === _require(1882).ComponentType.MENTIONABLE_SELECT;
     }
-    let obj = channel(4975);
+    let obj = channel(5009);
     obj = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp4, canMentionRoles: tmp7, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     ({ users, roles } = obj.queryMentionResults(obj));
     const items = [];
@@ -126,7 +126,7 @@ export const queryChannels = function queryChannels(query, channelId, channelTyp
   if (null == channel) {
     let items = [];
   } else {
-    let obj = importDefault(4975);
+    let obj = importDefault(5009);
     obj = { query, channel, channelTypes, limit: 15 };
     const channels = obj.queryApplicationCommandChannelResults(obj).channels;
     items = channels.map((id) => {

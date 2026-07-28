@@ -1,10 +1,10 @@
-// Module ID: 13824
-// Function ID: 105995
+// Module ID: 13868
+// Function ID: 106168
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [27, 1850, 7697, 653, 33, 677, 9158, 682, 566, 3744, 13825, 1212, 3713, 10059, 13827, 2]
+// Dependencies: [27, 1850, 7733, 653, 33, 677, 9202, 682, 566, 3778, 13869, 1212, 3747, 10099, 13871, 2]
 // Exports: fetchHarvestStatus
 
-// Module 13824 (useIsHarvestRequestDisabled)
+// Module 13868 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -16,12 +16,12 @@ function useIsHarvestRequestDisabled() {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getCurrentUser());
   const obj = require(566) /* initialize */;
-  let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3744) /* isIterable */.shallow);
+  let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3778) /* isIterable */.shallow);
   let tmp4 = null == stateFromStores;
   if (!tmp4) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = require(13825) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
-      const obj2 = require(13825) /* harvestDisabled */;
+      harvestDisabledResult = require(13869) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
+      const obj2 = require(13869) /* harvestDisabled */;
     }
     tmp4 = harvestDisabledResult;
   }
@@ -57,9 +57,9 @@ obj = {
     } else if (null == tmp) {
       return null;
     } else {
-      const addResult = importDefault(3713)(tmp.created_at).add(REQUEST_DATA_LIMIT_DAYS, "days");
+      const addResult = importDefault(3747)(tmp.created_at).add(REQUEST_DATA_LIMIT_DAYS, "days");
       let formatToPlainStringResult = null;
-      if (!addResult.isBefore(importDefault(3713)())) {
+      if (!addResult.isBefore(importDefault(3747)())) {
         const intl = require(1212) /* getSystemLocale */.intl;
         const obj = { date: addResult.format("MMMM Do YYYY") };
         formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.RNDlV9, obj);
@@ -84,7 +84,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(13827).default;
+    return require(13871).default;
   }
 };
 const route = createToggle.createRoute(obj);
@@ -92,7 +92,7 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default route;
 export const fetchHarvestStatus = function fetchHarvestStatus() {
-  const harvestStatus = require(9158) /* saveProfileAndAccountRequest */.getHarvestStatus();
+  const harvestStatus = require(9202) /* saveProfileAndAccountRequest */.getHarvestStatus();
   harvestStatus.then((arg0) => {
     let closure_0 = arg0;
     outer1_0(outer1_2[7]).batchUpdates(() => {

@@ -1,17 +1,17 @@
-// Module ID: 14399
-// Function ID: 110156
+// Module ID: 14443
+// Function ID: 110329
 // Name: onFriendGamingActivityNotificationSettingsChanged
-// Dependencies: [3771, 653, 3804, 675, 2]
+// Dependencies: [3805, 653, 3838, 675, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 14399 (onFriendGamingActivityNotificationSettingsChanged)
+// Module 14443 (onFriendGamingActivityNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/friend_gaming_activity/FriendGamingActivityNotificationUtils.tsx");
 
 export const onFriendGamingActivityNotificationSettingsChanged = function onFriendGamingActivityNotificationSettingsChanged(friend_gaming_activity_notifications) {
-  const EnableFriendGamingActivityNotifications = require(3804) /* explicitContentFromProto */.EnableFriendGamingActivityNotifications;
+  const EnableFriendGamingActivityNotifications = require(3838) /* explicitContentFromProto */.EnableFriendGamingActivityNotifications;
   EnableFriendGamingActivityNotifications.updateSetting(friend_gaming_activity_notifications);
   let obj = importDefault(675);
   obj = { update_type: constants.ACCOUNT, friend_gaming_activity_notifications };

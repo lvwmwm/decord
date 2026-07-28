@@ -1,9 +1,9 @@
-// Module ID: 4687
-// Function ID: 40838
+// Module ID: 4721
+// Function ID: 40953
 // Name: launchImageLibrary
-// Dependencies: [1278, 482, 477, 4688, 4689, 689, 4691, 1212, 2]
+// Dependencies: [1278, 482, 477, 4722, 4723, 689, 4725, 1212, 2]
 
-// Module 4687 (launchImageLibrary)
+// Module 4721 (launchImageLibrary)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ThemeTypes } from "sum";
 
@@ -25,8 +25,8 @@ function launchImageLibrary(mediaType) {
   }
   obj2 = require(477) /* set */;
   const tmp3 = !mediaType.disableNewIOSPicker;
-  const obj3 = require(4688) /* isActionPickSupported */;
-  const tmp4 = !require(4688) /* isActionPickSupported */.isActionPickSupported();
+  const obj3 = require(4722) /* isActionPickSupported */;
+  const tmp4 = !require(4722) /* isActionPickSupported */.isActionPickSupported();
   obj = {};
   const merged = Object.assign(mediaType);
   obj["mediaType"] = str;
@@ -34,10 +34,10 @@ function launchImageLibrary(mediaType) {
   obj["selection"] = selections;
   obj["useNewIOSPicker"] = tmp3;
   obj["forceGetContent"] = tmp4;
-  require(4689) /* launchCamera */.launchImageLibrary(obj, arg1);
+  require(4723) /* launchCamera */.launchImageLibrary(obj, arg1);
 }
 function launchCamera(arg0, arg1) {
-  require(4689) /* launchCamera */.launchCamera(arg0, arg1);
+  require(4723) /* launchCamera */.launchCamera(arg0, arg1);
 }
 const result = require("set").fileFinishedImporting("modules/image/native/ImagePicker.tsx");
 
@@ -83,7 +83,7 @@ export default {
     const semanticColor4 = internal5.resolveSemanticColor(theme, importDefault(689).colors.TEXT_BRAND);
     const internal6 = importDefault(689).internal;
     const semanticColor5 = internal6.resolveSemanticColor(theme, importDefault(689).colors.TEXT_DEFAULT);
-    let obj = importDefault(4691);
+    let obj = importDefault(4725);
     obj = { mediaType: "photo", path: uri, width, height, includeBase64, mimeType, freeStyleCropEnabled, cropperStatusBarLight: theme === ThemeTypes.LIGHT, cropperNavigationBarLight: theme === ThemeTypes.LIGHT, cropperActiveWidgetColor: semanticColor2, cropperInactiveWidgetColor: semanticColor3, cropperControlsColor: semanticColor1, cropperControlsBarColor: semanticColor, cropperChooseColor: semanticColor4 };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.cropperChooseText = intl.string(require(1212) /* getSystemLocale */.t["1Qm822"]);

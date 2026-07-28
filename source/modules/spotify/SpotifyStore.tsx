@@ -1,9 +1,9 @@
-// Module ID: 4812
-// Function ID: 42007
+// Module ID: 4846
+// Function ID: 42122
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 4151, 1194, 4813, 4944, 4218, 4953, 4147, 8113, 653, 4815, 664, 3, 4016, 686, 22, 10881, 561, 675, 620, 12625, 10451, 1327, 7856, 566, 2]
+// Dependencies: [15, 17, 18, 6, 7, 4185, 1194, 4847, 4978, 4252, 4987, 4181, 8151, 653, 4849, 664, 3, 4050, 686, 22, 10919, 561, 675, 620, 12668, 10489, 1327, 7892, 566, 2]
 
-// Module 4812 (_isNativeReflectConstruct)
+// Module 4846 (_isNativeReflectConstruct)
 import closure_3 from "set";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import dispatcher from "dispatcher";
@@ -259,7 +259,7 @@ function activitySync(userId, activity, arg2) {
               }
               const tmp9Result = closure_15(type);
               if (null != tmp9Result) {
-                const obj3 = require(10881) /* apiRequest */;
+                const obj3 = require(10919) /* apiRequest */;
                 let obj = { position: +bound, deviceId: device.id, repeat: tmp8 };
                 obj3.play(socket.accountId, socket.accessToken, sync_id, tmp9Result, obj);
                 obj = { userId, partyId: party.id, trackId: sync_id, startTime: start };
@@ -307,8 +307,8 @@ function handleUserActivitySyncStop() {
   if (null != tmp9) {
     const socket = tmp9.socket;
     if (tmp12) {
-      require(10881) /* apiRequest */.pause(socket.accountId, socket.accessToken);
-      const obj3 = require(10881) /* apiRequest */;
+      require(10919) /* apiRequest */.pause(socket.accountId, socket.accessToken);
+      const obj3 = require(10919) /* apiRequest */;
     }
     tmp12 = null != dependencyMap3[socket.accountId] && dependencyMap3[socket.accountId].track.id === trackId;
   }
@@ -353,7 +353,7 @@ function handleUserConnectionsUpdate() {
           if (null == value.accessToken) {
             let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj = require(10881) /* apiRequest */;
+            let obj = require(10919) /* apiRequest */;
             let accessToken = obj.getAccessToken(value.id);
           } else {
             let tmp11 = upsertAccount;
@@ -374,8 +374,8 @@ function autoPause() {
     if (null != tmp10) {
       const socket = tmp10.socket;
       let c47 = true;
-      require(10881) /* apiRequest */.pause(socket.accountId, socket.accessToken);
-      const obj = require(10881) /* apiRequest */;
+      require(10919) /* apiRequest */.pause(socket.accountId, socket.accessToken);
+      const obj = require(10919) /* apiRequest */;
       importDefault(675).track(constants3.SPOTIFY_AUTO_PAUSED);
       importDefaultResult1.info("Playback auto paused");
       const obj2 = importDefault(675);
@@ -385,7 +385,7 @@ function autoPause() {
 function setSpeaking(id, arg1) {
   if (id === store.getId()) {
     const result = currentClientInVoiceChannel.isCurrentClientInVoiceChannel();
-    let obj = require(10451) /* _checkIsSpeaking */;
+    let obj = require(10489) /* _checkIsSpeaking */;
     obj = { userId: id, checkSoundSharing: true, checkSoundboardSounds: false };
     if (result) {
       if (obj.getIsSpeaking(obj)) {
@@ -495,7 +495,7 @@ function updatePlayerState(arg0, arg1) {
         if (context.type === constants2.ALBUM) {
           resolved = Promise.resolve(context);
         } else {
-          const SpotifyAPI = _require(10881).SpotifyAPI;
+          const SpotifyAPI = _require(10919).SpotifyAPI;
           const obj1 = { url: context.href };
           const value = SpotifyAPI.get(arg0, arg1, obj1);
           resolved = value.then((body) => body.body).catch((status) => {
@@ -588,7 +588,7 @@ function updatePlayerState(arg0, arg1) {
 function getPlayerState(arg0) {
   const _require = arg0;
   let closure_1 = arg1;
-  const SpotifyAPI = _require(10881).SpotifyAPI;
+  const SpotifyAPI = _require(10919).SpotifyAPI;
   let obj = { url: constants.PLAYER };
   obj = { additional_types: "" + constants2.TRACK + "," + constants2.EPISODE };
   obj.query = obj;
@@ -1310,7 +1310,7 @@ tmp13 = new tmp13(require("dispatcher"), {
           handleUserActivitySyncStop();
         }
         if (null != metadata) {
-          let obj = require(10881) /* apiRequest */;
+          let obj = require(10919) /* apiRequest */;
           ({ accountId, accessToken } = socket);
           let TRACK = metadata.type;
           if (null == TRACK) {
@@ -1369,7 +1369,7 @@ tmp13 = new tmp13(require("dispatcher"), {
       if (null != sourceId) {
         if (observedAppNameForWindow.getObservedAppNameForWindow(sourceId) === name.name) {
           if (tmp5) {
-            const Interval = require(4016) /* _createForOfIteratorHelperLoose */.Interval;
+            const Interval = require(4050) /* _createForOfIteratorHelperLoose */.Interval;
             const prototype = Interval.prototype;
             const interval = new Interval();
             c48 = interval;

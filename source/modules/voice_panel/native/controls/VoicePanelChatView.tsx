@@ -1,11 +1,11 @@
-// Module ID: 11370
-// Function ID: 88342
+// Module ID: 11408
+// Function ID: 88461
 // Name: updateChatOpen
-// Dependencies: [31, 27, 9974, 653, 33, 4131, 4324, 1324, 1207, 11368, 1212, 4086, 6625, 9975, 3992, 7620, 4663, 8756, 1450, 1557, 11371, 4141, 3978, 10829, 3843, 4526, 11372, 10349, 2]
+// Dependencies: [31, 27, 10014, 653, 33, 4165, 4358, 1324, 1207, 11406, 1212, 4120, 6661, 10015, 4026, 7656, 4697, 8800, 1450, 1557, 11409, 4175, 4012, 10867, 3877, 4560, 11410, 10389, 2]
 
-// Module 11370 (updateChatOpen)
+// Module 11408 (updateChatOpen)
 import importAllResult from "result";
-import { Platform } from "module_10349";
+import { Platform } from "module_10389";
 import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes";
 import ME from "ME";
 import jsxProd from "jsxProd";
@@ -17,7 +17,7 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function updateChatOpen(arg0, arg1) {
-  importDefault(4324).updateChatOpen(arg0, arg1);
+  importDefault(4358).updateChatOpen(arg0, arg1);
 }
 ({ ComponentActions: closure_4, ME: closure_5 } = ME);
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -26,8 +26,8 @@ obj = { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 };
 let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: obj, gradientWrapper: obj, titleBlur: { opacity: 0 } });
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
-  const windowDimensions = importAllResult.useContext(importDefault(9975)).windowDimensions;
-  let obj = windowDimensions(3992);
+  const windowDimensions = importAllResult.useContext(importDefault(10015)).windowDimensions;
+  let obj = windowDimensions(4026);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };
@@ -38,8 +38,8 @@ let closure_10 = importAllResult.memo(() => {
   obj = { style: items };
   items = [callback2().gradientWrapper, animatedStyle];
   const tmp = callback2();
-  obj.children = callback(importDefault(4663), { absolute: true });
-  return callback(importDefault(7620), obj);
+  obj.children = callback(importDefault(4697), { absolute: true });
+  return callback(importDefault(7656), obj);
 });
 const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
   const callback = importAllResult.useCallback(() => {
@@ -50,18 +50,18 @@ const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
     let obj = {};
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t["5MstTl"]);
-    obj.icon = importDefault(4086);
+    obj.icon = importDefault(4120);
     obj.onPress = callback;
-    let tmp3Result = tmp3(importDefault(11368), obj);
-    const tmp10 = importDefault(11368);
+    let tmp3Result = tmp3(importDefault(11406), obj);
+    const tmp10 = importDefault(11406);
   } else {
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5MstTl"]);
-    obj.icon = importDefault(4086);
+    obj.icon = importDefault(4120);
     obj.onPress = callback;
     obj.variant = "primary-overlay";
-    tmp3Result = tmp3(require(6625) /* IconButton */.IconButton, obj);
+    tmp3Result = tmp3(require(6661) /* IconButton */.IconButton, obj);
   }
   return tmp3Result;
 });

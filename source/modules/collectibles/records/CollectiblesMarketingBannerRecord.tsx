@@ -1,9 +1,9 @@
-// Module ID: 5795
-// Function ID: 50978
+// Module ID: 5805
+// Function ID: 50834
 // Name: CollectiblesMarketingBannerRecord
-// Dependencies: [6, 7, 5794, 2]
+// Dependencies: [6, 7, 5804, 2]
 
-// Module 5795 (CollectiblesMarketingBannerRecord)
+// Module 5805 (CollectiblesMarketingBannerRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

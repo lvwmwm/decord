@@ -1,10 +1,10 @@
-// Module ID: 9898
-// Function ID: 76706
+// Module ID: 9938
+// Function ID: 76835
 // Name: useVoteReactors
-// Dependencies: [6021, 653, 566, 6023, 636, 2]
+// Dependencies: [6055, 653, 566, 6057, 636, 2]
 // Exports: default
 
-// Module 9898 (useVoteReactors)
+// Module 9938 (useVoteReactors)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEFAULT_NUM_REACTION_USERS as closure_4 } from "ME";
 

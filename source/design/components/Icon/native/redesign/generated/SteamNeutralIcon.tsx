@@ -1,10 +1,10 @@
-// Module ID: 8427
-// Function ID: 67288
+// Module ID: 8471
+// Function ID: 67435
 // Name: SteamNeutralIcon
-// Dependencies: [31, 33, 689, 3834, 8428, 2]
+// Dependencies: [31, 33, 689, 3868, 8472, 2]
 // Exports: SteamNeutralIcon
 
-// Module 8427 (SteamNeutralIcon)
+// Module 8471 (SteamNeutralIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const SteamNeutralIcon = function SteamNeutralIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8428) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8472) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8428) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8472) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 14732
-// Function ID: 112289
+// Module ID: 14776
+// Function ID: 112462
 // Name: setWarningBoosts
-// Dependencies: [5, 31, 27, 1316, 11590, 1838, 3948, 14733, 653, 33, 4131, 689, 507, 3713, 4027, 11517, 14647, 5502, 11523, 1331, 1334, 1557, 566, 4127, 5501, 5164, 2]
+// Dependencies: [5, 31, 27, 1316, 11629, 1838, 3982, 14777, 653, 33, 4165, 689, 507, 3747, 4061, 11556, 14691, 5537, 11562, 1331, 1334, 1557, 566, 4161, 5536, 5198, 2]
 // Exports: default
 
-// Module 14732 (setWarningBoosts)
+// Module 14776 (setWarningBoosts)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -45,9 +45,9 @@ function UserDCSwitchRow(dc) {
   let handleToggleDismissState;
   let isDismissed;
   dc = dc.dc;
-  ({ isDismissed, handleToggleDismissState } = importDefault(14647)(dc));
+  ({ isDismissed, handleToggleDismissState } = importDefault(14691)(dc));
   const obj = { label: callback3(dc), value: isDismissed, onValueChange: handleToggleDismissState };
-  return callback4(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback4(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 function GuildDCSwitchRow(dc) {
   dc = dc.dc;
@@ -65,7 +65,7 @@ function GuildDCSwitchRow(dc) {
     }
   }, items);
   const obj = { label: callback2(dc), value: dc.isDismissed, onValueChange: callback };
-  return callback4(dc(5502).TableSwitchRow, obj);
+  return callback4(dc(5537).TableSwitchRow, obj);
 }
 ({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
 ({ GUILD_DCS: closure_11, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: closure_13, VANITY_URL_POWERUP_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = items);
@@ -127,7 +127,7 @@ export default function DevToolsGuildPowerupsScreen() {
     const items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
     obj.style = items4;
-    obj.children = callback4(stateFromStores(4127).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" });
+    obj.children = callback4(stateFromStores(4161).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" });
     let tmp28Result = callback4(closure_6, obj);
   } else {
     obj = { style: tmp.container };
@@ -149,8 +149,8 @@ export default function DevToolsGuildPowerupsScreen() {
           return stateFromStores(arr[15]).guildPowerupsResetNotifications();
         }
     };
-    obj2.children = callback4(stateFromStores(5164).TableRow, obj3);
-    const items6 = [callback4(stateFromStores(5501).TableRowGroup, obj2), , , , , , ];
+    obj2.children = callback4(stateFromStores(5198).TableRow, obj3);
+    const items6 = [callback4(stateFromStores(5536).TableRowGroup, obj2), , , , , , ];
     const obj4 = { title: "Warning State", hasIcons: false };
     const obj5 = {
       label: "Set Half Boosts expiring in 1 day",
@@ -158,24 +158,24 @@ export default function DevToolsGuildPowerupsScreen() {
           return outer1_21(stateFromStores, arr.slice(Math.floor(arr.length / 2)), false);
         }
     };
-    const items7 = [callback4(stateFromStores(5164).TableRow, obj5), ];
+    const items7 = [callback4(stateFromStores(5198).TableRow, obj5), ];
     const obj6 = {
       label: "Reset End Date",
       onPress() {
           return outer1_21(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = callback4(stateFromStores(5164).TableRow, obj6);
+    items7[1] = callback4(stateFromStores(5198).TableRow, obj6);
     obj4.children = items7;
-    items6[1] = callback5(stateFromStores(5501).TableRowGroup, obj4);
+    items6[1] = callback5(stateFromStores(5536).TableRowGroup, obj4);
     const obj7 = { title: "User Level DCs", hasIcons: false, children: closure_13.map((dc) => outer1_18(outer1_24, { dc }, dc)) };
-    items6[2] = callback4(stateFromStores(5501).TableRowGroup, obj7);
+    items6[2] = callback4(stateFromStores(5536).TableRowGroup, obj7);
     const obj8 = { title: "Guild Level DCs", hasIcons: false, children: closure_11.map((dc) => outer1_18(outer1_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[3] = callback4(stateFromStores(5501).TableRowGroup, obj8);
+    items6[3] = callback4(stateFromStores(5536).TableRowGroup, obj8);
     const obj9 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: closure_12.map((dc) => outer1_18(outer1_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[4] = callback4(stateFromStores(5501).TableRowGroup, obj9);
+    items6[4] = callback4(stateFromStores(5536).TableRowGroup, obj9);
     const obj10 = { title: "Powerup Rollback DCs", hasIcons: false, children: closure_14.map((dc) => outer1_18(outer1_24, { dc }, dc)) };
-    items6[5] = callback4(stateFromStores(5501).TableRowGroup, obj10);
+    items6[5] = callback4(stateFromStores(5536).TableRowGroup, obj10);
     const obj11 = { title: "System Messages", hasIcons: false };
     const obj12 = {
       label: "Send Powerups System Message",
@@ -185,8 +185,8 @@ export default function DevToolsGuildPowerupsScreen() {
           })(stateFromStores);
         }
     };
-    obj11.children = callback4(stateFromStores(5164).TableRow, obj12);
-    items6[6] = callback4(stateFromStores(5501).TableRowGroup, obj11);
+    obj11.children = callback4(stateFromStores(5198).TableRow, obj12);
+    items6[6] = callback4(stateFromStores(5536).TableRowGroup, obj11);
     obj.children = items6;
     tmp28Result = callback5(closure_5, obj);
     const tmp28 = callback5;

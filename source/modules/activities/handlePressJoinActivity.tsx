@@ -1,10 +1,10 @@
-// Module ID: 10579
-// Function ID: 82462
+// Module ID: 10617
+// Function ID: 82583
 // Name: handlePressJoinActivity
-// Dependencies: [5, 4154, 1348, 1838, 3759, 1850, 4147, 1347, 10542, 10580, 4471, 1212, 5463, 10471, 10544, 2]
+// Dependencies: [5, 4188, 1348, 1838, 3793, 1850, 4181, 1347, 10580, 10618, 4505, 1212, 5498, 10509, 10582, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10579 (handlePressJoinActivity)
+// Module 10617 (handlePressJoinActivity)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_5 from "_isNativeReflectConstruct";
@@ -19,33 +19,33 @@ function handlePressJoinActivity(arg0) {
   let embeddedActivityJoinability;
   let handleCanJoin;
   ({ embeddedActivityJoinability, handleCanJoin } = arg0);
-  if (require(10542) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
+  if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
     if (null != handleCanJoin) {
       handleCanJoin();
     }
-  } else if (require(10542) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
-    const result = require(10580) /* showActivitiesInvalidPermissionsAlert */.showActivitiesInvalidPermissionsAlert();
-    const obj9 = require(10580) /* showActivitiesInvalidPermissionsAlert */;
-  } else if (require(10542) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
+  } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
+    const result = require(10618) /* showActivitiesInvalidPermissionsAlert */.showActivitiesInvalidPermissionsAlert();
+    const obj9 = require(10618) /* showActivitiesInvalidPermissionsAlert */;
+  } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
     let obj = {};
     const intl7 = require(1212) /* getSystemLocale */.intl;
     obj.title = intl7.string(require(1212) /* getSystemLocale */.t.PtobXW);
     const intl8 = require(1212) /* getSystemLocale */.intl;
     obj.body = intl8.string(require(1212) /* getSystemLocale */.t.UXoQTp);
     obj.hideActionSheet = false;
-    importDefault(4471).show(obj);
-    const obj7 = importDefault(4471);
-  } else if (require(10542) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
+    importDefault(4505).show(obj);
+    const obj7 = importDefault(4505);
+  } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     obj = {};
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj.title = intl5.string(require(1212) /* getSystemLocale */.t.PtobXW);
     const intl6 = require(1212) /* getSystemLocale */.intl;
     obj.body = intl6.string(require(1212) /* getSystemLocale */.t.uGDCcw);
     obj.hideActionSheet = false;
-    importDefault(4471).show(obj);
-    const obj5 = importDefault(4471);
-  } else if (require(10542) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
-    let obj2 = importDefault(4471);
+    importDefault(4505).show(obj);
+    const obj5 = importDefault(4505);
+  } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
+    let obj2 = importDefault(4505);
     const obj1 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj1.title = intl3.string(require(1212) /* getSystemLocale */.t.PtobXW);
@@ -54,7 +54,7 @@ function handlePressJoinActivity(arg0) {
     obj1.hideActionSheet = false;
     obj2.show(obj1);
   } else {
-    obj = importDefault(4471);
+    obj = importDefault(4505);
     obj2 = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj2.title = intl.string(require(1212) /* getSystemLocale */.t.PtobXW);

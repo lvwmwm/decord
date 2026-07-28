@@ -1,9 +1,9 @@
-// Module ID: 13537
-// Function ID: 104162
+// Module ID: 13581
+// Function ID: 104335
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 57, 3769, 1194, 1348, 4350, 653, 13538, 3, 664, 587, 3713, 3801, 5986, 5685, 686, 10877, 9822, 1935, 9837, 4804, 4531, 2]
+// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 57, 3803, 1194, 1348, 4384, 653, 13582, 3, 664, 587, 3747, 3835, 6020, 5695, 686, 10915, 9862, 1935, 9877, 4838, 4565, 2]
 
-// Module 13537 (_createForOfIteratorHelperLoose)
+// Module 13581 (_createForOfIteratorHelperLoose)
 import _classPrivateFieldKey from "_classPrivateFieldKey";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import timestamp from "timestamp";
@@ -233,9 +233,9 @@ function getAllCachedMessages() {
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp3 = importDefault(3713)();
-    const tmp4 = importDefault(3713)(arg0);
-    return require(3801) /* resetCache */.isWithinInterval(tmp3, tmp4, arg1);
+    const tmp3 = importDefault(3747)();
+    const tmp4 = importDefault(3747)(arg0);
+    return require(3835) /* resetCache */.isWithinInterval(tmp3, tmp4, arg1);
   } else {
     return false;
   }
@@ -248,11 +248,11 @@ function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp = file(5986)(obj);
+  const tmp = file(6020)(obj);
   const require = tmp;
   ({ timestamp: tmp.timestamp, file } = channel_id);
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  file(5685).receiveMessage(channel_id, tmp, true, obj);
+  file(5695).receiveMessage(channel_id, tmp, true, obj);
   if (null != file) {
     file(686).wait(() => file(outer1_2[23]).restoreFailedUpload(tmp.id, file));
     const obj4 = file(686);

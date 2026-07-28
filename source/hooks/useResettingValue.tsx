@@ -1,10 +1,10 @@
-// Module ID: 12525
-// Function ID: 96977
+// Module ID: 12568
+// Function ID: 97147
 // Name: useResettingValue
-// Dependencies: [57, 31, 5450, 4016, 2]
+// Dependencies: [57, 31, 5485, 4050, 2]
 // Exports: default
 
-// Module 12525 (useResettingValue)
+// Module 12568 (useResettingValue)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -20,8 +20,8 @@ export default function useResettingValue(arg0, arg1) {
   const importDefault = arg1;
   const tmp = callback(callback2(arg0), 2);
   const dependencyMap = tmp[1];
-  const tmp2 = importDefault(5450)(() => {
-    const timeout = new callback(4016).Timeout();
+  const tmp2 = importDefault(5485)(() => {
+    const timeout = new callback(4050).Timeout();
     return timeout;
   });
   callback = tmp2;

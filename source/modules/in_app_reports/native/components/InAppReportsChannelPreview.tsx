@@ -1,10 +1,10 @@
-// Module ID: 12332
-// Function ID: 95996
+// Module ID: 12375
+// Function ID: 96166
 // Name: ChannelPreview
-// Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 3975, 4127, 1212, 5513, 2]
+// Dependencies: [31, 27, 1838, 33, 4165, 689, 566, 4009, 4161, 1212, 5548, 2]
 // Exports: default
 
-// Module 12332 (ChannelPreview)
+// Module 12375 (ChannelPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -35,12 +35,12 @@ export default function ChannelPreview(stageInstance) {
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(stageInstance.guild_id));
   if (null != stateFromStores) {
     if (null != stageInstance) {
-      let obj1 = stageInstance(3975);
+      let obj1 = stageInstance(4009);
       obj = { style: tmp.container };
       obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
       const intl = stageInstance(1212).intl;
       obj.children = intl.string(stageInstance(1212).t.InbJ8x);
-      const items1 = [callback(stageInstance(4127).Text, obj), ];
+      const items1 = [callback(stageInstance(4161).Text, obj), ];
       obj1 = {};
       const items2 = [tmp.itemContainer, ];
       const obj2 = { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) };
@@ -49,15 +49,15 @@ export default function ChannelPreview(stageInstance) {
       const obj3 = { style: tmp.guildInfo };
       const obj4 = { guild: stateFromStores };
       const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-      obj4.size = stageInstance(5513).GuildIconSizes.XXSMALL;
+      obj4.size = stageInstance(5548).GuildIconSizes.XXSMALL;
       obj4.selected = false;
-      const items3 = [callback(importDefault(5513), obj4), ];
+      const items3 = [callback(importDefault(5548), obj4), ];
       const obj5 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-      items3[1] = callback(stageInstance(4127).Text, obj5);
+      items3[1] = callback(stageInstance(4161).Text, obj5);
       obj3.children = items3;
       const items4 = [callback2(View, obj3), ];
       const obj6 = { style: tmp.topic, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-      items4[1] = callback(stageInstance(4127).Text, obj6);
+      items4[1] = callback(stageInstance(4161).Text, obj6);
       obj1.children = items4;
       items1[1] = callback2(View, obj1);
       obj.children = items1;

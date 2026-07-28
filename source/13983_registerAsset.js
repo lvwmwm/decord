@@ -1,11 +1,11 @@
 // Module ID: 13983
-// Function ID: 107053
+// Function ID: 106835
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 13983 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6abfee45e74bcd203f98d0b7a2a2c9af", name: "TranscriptOutlineIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e5597814a0893b2321f6b666c9cfcb40", name: "ClipsIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

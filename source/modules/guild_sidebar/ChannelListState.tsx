@@ -1,9 +1,9 @@
-// Module ID: 5753
-// Function ID: 50050
+// Module ID: 5763
+// Function ID: 49906
 // Name: _superPropGet
-// Dependencies: [102, 15, 17, 18, 6, 7, 1347, 4168, 5754, 1909, 5751, 1910, 5755, 5756, 5757, 5040, 3761, 1352, 5077, 1348, 5752, 1838, 3759, 4143, 1907, 4326, 4147, 4204, 5759, 5760, 653, 1355, 482, 22, 5761, 5605, 5762, 5763, 5764, 44, 1327, 21, 4314, 2]
+// Dependencies: [102, 15, 17, 18, 6, 7, 1347, 4202, 5764, 1909, 5761, 1910, 5765, 5766, 5767, 5074, 3795, 1352, 5111, 1348, 5762, 1838, 3793, 4177, 1907, 4360, 4181, 4238, 5769, 5770, 653, 1355, 482, 22, 5771, 5640, 5772, 5773, 5774, 44, 1327, 21, 4348, 2]
 
-// Module 5753 (_superPropGet)
+// Module 5763 (_superPropGet)
 import _get from "_get";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_callSuper";
@@ -174,7 +174,7 @@ function _computeSubtitle(type) {
     } else {
       if (arg2) {
         if (arg1) {
-          let obj1 = require(4314) /* hasStream */;
+          let obj1 = require(4348) /* hasStream */;
           if (obj1.hasStream(tmp18)) {
             obj = { type: "go-live" };
             return obj;

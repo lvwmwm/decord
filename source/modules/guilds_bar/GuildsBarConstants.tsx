@@ -1,9 +1,9 @@
-// Module ID: 14877
-// Function ID: 113516
+// Module ID: 14921
+// Function ID: 113689
 // Name: DEFAULT_FOLDER_COLOR
 // Dependencies: [665, 688, 2]
 
-// Module 14877 (DEFAULT_FOLDER_COLOR)
+// Module 14921 (DEFAULT_FOLDER_COLOR)
 import pad2 from "pad2";
 import unsafe_getRawColor from "unsafe_getRawColor";
 

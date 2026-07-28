@@ -1,5 +1,5 @@
 // Module ID: 1822
-// Function ID: 20009
+// Function ID: 20013
 // Name: readWindowSizeForAppEntry
 // Dependencies: [648, 2]
 // Exports: readScreenSizeForAppEntry, readWindowSizeForAppEntry

@@ -1,10 +1,10 @@
-// Module ID: 8658
-// Function ID: 68781
+// Module ID: 8702
+// Function ID: 68932
 // Name: getProductName
-// Dependencies: [1212, 5781, 1877, 2]
+// Dependencies: [1212, 5791, 1877, 2]
 // Exports: getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 8658 (getProductName)
+// Module 8702 (getProductName)
 function getProductName(product) {
   if (null == product) {
     return "";
@@ -46,7 +46,7 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
 };
 export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(closure_0) {
   const tmp = getProductName(closure_0);
-  let obj = require(5781) /* getProductOrbPrice */;
+  let obj = require(5791) /* getProductOrbPrice */;
   const productType = obj.getProductType(closure_0);
   if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
     const intl4 = require(1212) /* getSystemLocale */.intl;

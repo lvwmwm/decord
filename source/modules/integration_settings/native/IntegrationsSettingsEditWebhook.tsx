@@ -1,15 +1,15 @@
-// Module ID: 15603
-// Function ID: 120274
+// Module ID: 15642
+// Function ID: 120430
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1908, 3759, 3768, 1850, 653, 33, 4131, 689, 15596, 10337, 507, 5490, 4472, 1212, 4562, 477, 9057, 5087, 9050, 4127, 7575, 4542, 15604, 1392, 6670, 5501, 5164, 4321, 1273, 4594, 3843, 1456, 5448, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1908, 3793, 3802, 1850, 653, 33, 4165, 689, 15635, 10377, 507, 5525, 4506, 1212, 4596, 477, 9101, 5121, 9094, 4161, 7611, 4576, 15643, 1392, 6706, 5536, 5198, 4355, 1273, 4628, 3877, 1456, 5483, 2]
 // Exports: default
 
-// Module 15603 (_isNativeReflectConstruct)
+// Module 15642 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import openChannelPicker from "openChannelPicker";
 import _copy from "_copy";
-import module_4472 from "module_4472";
+import module_4506 from "module_4506";
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
@@ -376,7 +376,7 @@ export default function ConnectedEditWebhook(arg0) {
   obj = {};
   obj = { navigation: obj.useNavigation() };
   const merged = Object.assign(arg0);
-  const items = [callback3(closure_20, obj), callback3(require(5448) /* NavScrim */.NavScrim, {})];
+  const items = [callback3(closure_20, obj), callback3(require(5483) /* NavScrim */.NavScrim, {})];
   obj.children = items;
   return callback4(closure_18, obj);
 };

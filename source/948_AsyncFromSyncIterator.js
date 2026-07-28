@@ -1,5 +1,5 @@
 // Module ID: 948
-// Function ID: 10272
+// Function ID: 10276
 // Name: AsyncFromSyncIterator
 // Dependencies: [77, 942, 944, 817, 845, 934, 936]
 // Exports: instrumentAsyncIterableStream, instrumentMessageStream

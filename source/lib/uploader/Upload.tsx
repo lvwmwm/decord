@@ -1,10 +1,10 @@
-// Module ID: 4666
-// Function ID: 40508
+// Module ID: 4700
+// Function ID: 40623
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4667, 22, 4671, 491, 631, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4701, 22, 4705, 491, 631, 2]
 // Exports: isResolvedUpload
 
-// Module 4666 (_isNativeReflectConstruct)
+// Module 4700 (_isNativeReflectConstruct)
 import apply from "apply";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

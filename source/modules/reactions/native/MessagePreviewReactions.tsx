@@ -1,10 +1,10 @@
-// Module ID: 9393
-// Function ID: 73262
+// Module ID: 9437
+// Function ID: 73413
 // Name: MessagePreviewReactions
-// Dependencies: [31, 5830, 8133, 33, 566, 5462, 5482, 9384, 2]
+// Dependencies: [31, 5840, 8171, 33, 566, 5497, 5517, 9428, 2]
 // Exports: default
 
-// Module 9393 (MessagePreviewReactions)
+// Module 9437 (MessagePreviewReactions)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -31,13 +31,13 @@ export default function MessagePreviewReactions(emoji) {
       return null != message ? message.reactions : outer2_6;
     }, items1);
   })(channelId, messageId);
-  let obj = { value: importDefault(5462)(importDefault(5482).MESSAGE_PREVIEW_REACTIONS).analyticsLocations };
+  let obj = { value: importDefault(5497)(importDefault(5517).MESSAGE_PREVIEW_REACTIONS).analyticsLocations };
   if (arr.length > 0) {
     obj = { channelId, messageId, emoji: emoji.emoji, reactions: arr };
-    let tmp6 = jsx(require(9384) /* useReactors */.MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: arr });
+    let tmp6 = jsx(require(9428) /* useReactors */.MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: arr });
   } else {
-    tmp6 = jsx(require(9384) /* useReactors */.MessageReactionsEmpty, {});
+    tmp6 = jsx(require(9428) /* useReactors */.MessageReactionsEmpty, {});
   }
   obj.children = tmp6;
-  return jsx(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { value: importDefault(5462)(importDefault(5482).MESSAGE_PREVIEW_REACTIONS).analyticsLocations });
+  return jsx(require(5497) /* mergeLocations */.AnalyticsLocationProvider, { value: importDefault(5497)(importDefault(5517).MESSAGE_PREVIEW_REACTIONS).analyticsLocations });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10939
-// Function ID: 85005
+// Module ID: 10977
+// Function ID: 85128
 // Name: authorizeCallback
-// Dependencies: [10615, 4338, 8892, 1935, 1443, 10940, 4097, 668, 3828, 2]
+// Dependencies: [10653, 4372, 8936, 1935, 1443, 10978, 4131, 668, 3862, 2]
 // Exports: default
 
-// Module 10939 (authorizeCallback)
+// Module 10977 (authorizeCallback)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 let closure_3;
@@ -33,12 +33,12 @@ export default function authorizeCallback(arg0) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
             let obj = { application: tmp, guild: tmp2 };
-            importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(10940, dependencyMap.paths), obj, closure_3);
+            importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(10978, dependencyMap.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               obj = {};
               let str;
-              const obj7 = importDefault(4338);
+              const obj7 = importDefault(4372);
               if (null != searchParams) {
                 str = "error_description";
                 const str2 = searchParams.get("error_description");
@@ -57,8 +57,8 @@ export default function authorizeCallback(arg0) {
                 str = str1;
               }
               obj.error = str;
-              obj7.pushLazy(require(1935) /* maybeLoadBundle */(8892, dependencyMap.paths), obj, closure_4);
-              const tmp25 = require(1935) /* maybeLoadBundle */(8892, dependencyMap.paths);
+              obj7.pushLazy(require(1935) /* maybeLoadBundle */(8936, dependencyMap.paths), obj, closure_4);
+              const tmp25 = require(1935) /* maybeLoadBundle */(8936, dependencyMap.paths);
             }
           }
         }
@@ -66,19 +66,19 @@ export default function authorizeCallback(arg0) {
       obj4 = importDefault(1443);
     }
     if (wasDeepLink) {
-      const browserManagerSelectedBrowser = require(4097) /* removeInAppBrowserCloseSubscription */.getBrowserManagerSelectedBrowser();
+      const browserManagerSelectedBrowser = require(4131) /* removeInAppBrowserCloseSubscription */.getBrowserManagerSelectedBrowser();
       wasDeepLink = browserManagerSelectedBrowser === require(668) /* keys */.WebBrowserType.IN_APP;
-      const obj5 = require(4097) /* removeInAppBrowserCloseSubscription */;
+      const obj5 = require(4131) /* removeInAppBrowserCloseSubscription */;
     }
     const obj2 = importDefault(1443);
     let SAFARI;
     if (wasDeepLink) {
       SAFARI = require(668) /* keys */.WebBrowserType.SAFARI;
     }
-    importDefault(3828).openURL(_location, SAFARI);
-    const obj6 = importDefault(3828);
+    importDefault(3862).openURL(_location, SAFARI);
+    const obj6 = importDefault(3862);
   } else if (!canceled) {
-    obj = importDefault(4338);
-    obj.pushLazy(require(1935) /* maybeLoadBundle */(8892, dependencyMap.paths), undefined, closure_4);
+    obj = importDefault(4372);
+    obj.pushLazy(require(1935) /* maybeLoadBundle */(8936, dependencyMap.paths), undefined, closure_4);
   }
 };

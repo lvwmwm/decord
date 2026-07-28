@@ -1,10 +1,10 @@
-// Module ID: 12120
-// Function ID: 94947
+// Module ID: 12163
+// Function ID: 95117
 // Name: VerifiedIcon
-// Dependencies: [31, 27, 1922, 3971, 5510, 653, 4941, 33, 1273, 4131, 689, 9962, 3835, 3977, 9967, 9968, 8045, 1324, 4940, 4815, 1392, 8138, 4325, 3828, 4100, 5490, 3831, 1212, 4127, 5164, 3834, 7562, 4661, 3843, 566, 12121, 5509, 5501, 12124, 2]
+// Dependencies: [31, 27, 1922, 4005, 5545, 653, 4975, 33, 1273, 4165, 689, 10002, 3869, 4011, 10007, 10008, 8083, 1324, 4974, 4849, 1392, 8176, 4359, 3862, 4134, 5525, 3865, 1212, 4161, 5198, 3868, 7598, 4695, 3877, 566, 12164, 5544, 5536, 12167, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 12120 (VerifiedIcon)
+// Module 12163 (VerifiedIcon)
 import importAllResult from "LinkExternalSmallIcon";
 import get_ActivityIndicator from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ function VerifiedIcon(arg0) {
   }
   const tmp = callback3();
   let obj = { size: REFRESH_SMALL_16, style: tmp.verifiedIcon };
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   let PLATFORM_TWITTER = obj1.useToken(importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY, theme);
   if (isTwitterVerifiedAccount) {
     PLATFORM_TWITTER = importDefault(689).unsafe_rawColors.PLATFORM_TWITTER;
@@ -48,10 +48,10 @@ function VerifiedIcon(arg0) {
       let WHITE = importDefault(689).unsafe_rawColors.BLACK;
     }
     obj = { style: tmp.verifiedIconContainer };
-    obj = { source: importDefault(9967), color: PLATFORM_TWITTER };
+    obj = { source: importDefault(10007), color: PLATFORM_TWITTER };
     const merged = Object.assign(obj);
     const items = [callback(require(1273) /* Button */.Icon, obj), ];
-    obj1 = { source: importDefault(9968), color: WHITE };
+    obj1 = { source: importDefault(10008), color: WHITE };
     const merged1 = Object.assign(obj);
     items[1] = callback(require(1273) /* Button */.Icon, obj1);
     obj.children = items;
@@ -437,7 +437,7 @@ let closure_19 = importAllResult.memo((application) => {
 const memoResult = importAllResult.memo((applicationRoleConnection) => {
   applicationRoleConnection = applicationRoleConnection.applicationRoleConnection;
   const tmp = callback3();
-  let obj = applicationRoleConnection(9962);
+  let obj = applicationRoleConnection(10002);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   let obj1 = importDefault(1392);
   obj = { id: applicationRoleConnection.application.id, icon: applicationRoleConnection.application.icon };
@@ -449,7 +449,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
       tmp30 = null;
       if (null != applicationRoleConnection.platform_username) {
         obj1 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-        tmp30 = callback(applicationRoleConnection(4127).Text, obj1);
+        tmp30 = callback(applicationRoleConnection(4161).Text, obj1);
       }
     }
     const items = [tmp30, , ];
@@ -471,7 +471,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
         }
     };
     obj4.children = intl2.format(applicationRoleConnection(1212).t.zIT9YA, obj5);
-    obj3.children = callback(applicationRoleConnection(4127).Text, obj4);
+    obj3.children = callback(applicationRoleConnection(4161).Text, obj4);
     items[2] = callback(closure_5, obj3);
     obj.children = items;
     const obj6 = {};
@@ -486,7 +486,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     obj6.subLabel = tmp4(closure_15, obj);
     const obj7 = { size: applicationRoleConnection(1273).Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true };
     obj6.icon = callback(applicationRoleConnection(1273).Icon, obj7);
-    return callback(applicationRoleConnection(5164).TableRow, obj6);
+    return callback(applicationRoleConnection(5198).TableRow, obj6);
   } else {
     const obj8 = { style: tmp.connectionRow };
     const obj9 = { size: applicationRoleConnection(1273).Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true };
@@ -495,13 +495,13 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     let tmp12 = null;
     if (null != applicationRoleConnection.platform_name) {
       const obj11 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: applicationRoleConnection.platform_name };
-      tmp12 = callback(applicationRoleConnection(4127).Text, obj11);
+      tmp12 = callback(applicationRoleConnection(4161).Text, obj11);
     }
     const items2 = [tmp12, , , ];
     let tmp16 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj12 = { variant: "text-md/normal", color: "text-default", children: applicationRoleConnection.platform_username };
-      tmp16 = callback(applicationRoleConnection(4127).Text, obj12);
+      tmp16 = callback(applicationRoleConnection(4161).Text, obj12);
     }
     items2[1] = tmp16;
     let tmp20 = null;
@@ -522,7 +522,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
         }
     };
     obj15.children = intl.format(applicationRoleConnection(1212).t.zIT9YA, obj16);
-    obj14.children = callback(applicationRoleConnection(4127).Text, obj15);
+    obj14.children = callback(applicationRoleConnection(4161).Text, obj15);
     items2[3] = callback(closure_5, obj14);
     obj10.children = items2;
     items1[1] = closure_14(closure_5, obj10);
@@ -540,7 +540,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   userId = userId.userId;
   const tmp = callback3();
   const tmp2 = theme(1324)("UserProfileConnections");
-  let obj = userId(3843);
+  let obj = userId(3877);
   theme = obj.useThemeContext().theme;
   let obj1 = userId(566);
   const items = [_isNativeReflectConstruct];
@@ -548,7 +548,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const items1 = [closure_7];
   const stateFromStores = userId(566).useStateFromStores(items1, () => outer1_7.hidePersonalInformation);
   const obj3 = userId(566);
-  ({ connections, appIdentities } = theme(12121)(userId));
+  ({ connections, appIdentities } = theme(12164)(userId));
   if (!stateFromStores) {
     const items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(connections.map((account) => outer1_13(outer1_18, { account, theme, locale: closure_2, userId }, account.id)), 0);
@@ -571,13 +571,13 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
       const intl2 = tmp17(1212).intl;
       obj.title = intl2.string(tmp17(1212).t["3fe7U5"]);
       obj.children = items2;
-      let tmp16Result = tmp16(tmp17(5501).TableRowGroup, obj);
+      let tmp16Result = tmp16(tmp17(5536).TableRowGroup, obj);
     } else {
       obj1 = { children: items2 };
-      tmp16Result = tmp16(tmp17(5509).UserProfileCardRows, obj1);
+      tmp16Result = tmp16(tmp17(5544).UserProfileCardRows, obj1);
     }
     obj.children = tmp16Result;
-    return closure_13(theme(5509), obj);
+    return closure_13(theme(5544), obj);
   }
   return null;
 };
@@ -587,7 +587,7 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
   ({ userId, style } = arg0);
   const tmp = callback3();
   const tmp2 = importDefault(1324)("UserProfileConnections");
-  const arr = importDefault(12124)(userId);
+  const arr = importDefault(12167)(userId);
   let obj = require(566) /* initialize */;
   const items = [closure_7];
   if (!obj.useStateFromStores(items, () => outer1_7.hidePersonalInformation)) {
@@ -608,13 +608,13 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
         const intl2 = tmp7(1212).intl;
         obj.title = intl2.string(tmp7(1212).t.PHjkRE);
         obj.children = mapped;
-        let tmp6Result = tmp6(tmp7(5501).TableRowGroup, obj);
+        let tmp6Result = tmp6(tmp7(5536).TableRowGroup, obj);
       } else {
         const obj1 = { children: mapped };
-        tmp6Result = tmp6(tmp7(5509).UserProfileCardRows, obj1);
+        tmp6Result = tmp6(tmp7(5544).UserProfileCardRows, obj1);
       }
       obj.children = tmp6Result;
-      return closure_13(importDefault(5509), obj);
+      return closure_13(importDefault(5544), obj);
     }
   }
   return null;

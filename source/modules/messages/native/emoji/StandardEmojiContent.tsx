@@ -1,10 +1,10 @@
-// Module ID: 9342
-// Function ID: 72984
+// Module ID: 9386
+// Function ID: 73135
 // Name: Emoji
-// Dependencies: [31, 27, 3948, 33, 4131, 689, 9343, 3776, 5085, 4127, 9344, 3772, 9272, 9345, 1212, 7575, 4544, 9347, 2]
+// Dependencies: [31, 27, 3982, 33, 4165, 689, 9387, 3810, 5119, 4161, 9388, 3806, 9316, 9389, 1212, 7611, 4578, 9391, 2]
 // Exports: default
 
-// Module 9342 (Emoji)
+// Module 9386 (Emoji)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,9 +19,9 @@ function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
   const merged = Object.assign(_createForOfIteratorHelperLoose());
-  let obj1 = require(9343) /* styles */;
+  let obj1 = require(9387) /* styles */;
   const merged1 = Object.assign(obj1.useSharedMessageEmojiStyles());
-  let obj2 = importDefault(3776);
+  let obj2 = importDefault(3810);
   const uRL = obj2.getURL(surrogate);
   obj = { style: obj.emojiWrapper };
   if ("" !== uRL) {
@@ -30,10 +30,10 @@ function Emoji(surrogate) {
     obj.resizeMode = "contain";
     obj1 = { uri: uRL };
     obj.source = obj1;
-    let tmp9 = callback(importDefault(5085), obj);
+    let tmp9 = callback(importDefault(5119), obj);
   } else {
     obj2 = { style: obj.emojiSurrogate, variant: "text-md/medium", children: surrogate };
-    tmp9 = callback(require(4127) /* Text */.Text, obj2);
+    tmp9 = callback(require(4161) /* Text */.Text, obj2);
   }
   obj.children = tmp9;
   return callback(View, obj);

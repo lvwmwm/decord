@@ -1,15 +1,6 @@
 // Module ID: 13322
-// Function ID: 102166
-// Dependencies: [13313, 13323, 13321, 13324]
+// Function ID: 102255
+// Dependencies: []
 
 // Module 13322
-
-export default require("module_13313") ? ((arg0) => "symbol" === typeof arg0) : ((arg0) => {
-  const tmp = require(13323) /* all */("Symbol");
-  let tmp5Result = require(13321) /* all */(tmp);
-  if (tmp5Result) {
-    tmp5Result = require(13324) /* call */(tmp.prototype, Object(arg0));
-    const tmp5 = require(13324) /* call */;
-  }
-  return tmp5Result;
-});
+arg5.calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

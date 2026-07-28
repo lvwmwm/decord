@@ -1,10 +1,10 @@
-// Module ID: 11965
-// Function ID: 92485
+// Module ID: 12008
+// Function ID: 92655
 // Name: AnimatedContainer
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 4974, 1324, 3977, 5122, 624, 3992, 4132, 4543, 4127, 5085, 2]
+// Dependencies: [31, 27, 4157, 33, 4165, 689, 5008, 1324, 4011, 5156, 624, 4026, 4166, 4577, 4161, 5119, 2]
 // Exports: default
 
-// Module 11965 (AnimatedContainer)
+// Module 12008 (AnimatedContainer)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -136,7 +136,7 @@ function AnimatedContainer(scale) {
 function GroupMemberCount(count) {
   const tmp = callback3(importDefault(1324)("GroupAvatar"));
   let obj = { style: tmp.avatarWrapper };
-  obj = { style: tmp.overflowCount, children: callback2(require(4127) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
+  obj = { style: tmp.overflowCount, children: callback2(require(4161) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
   items = ["+", count.count];
   obj.children = callback(View, obj);
   return callback(View, obj);
@@ -157,7 +157,7 @@ function GroupMemberAvatar(guildId) {
   if (null != memo) {
     let obj = { style: tmp.avatarWrapper };
     obj = { style: tmp.avatar, source: memo };
-    obj.children = callback(user(5085), obj);
+    obj.children = callback(user(5119), obj);
     tmp3 = callback(View, obj);
   }
   return tmp3;
@@ -236,7 +236,7 @@ let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   obj7.shadowColor = BLACK1;
   let DARK_03_LIGHT_02;
   if (!arg0) {
-    DARK_03_LIGHT_02 = require(4974) /* result */.DARK_03_LIGHT_02;
+    DARK_03_LIGHT_02 = require(5008) /* result */.DARK_03_LIGHT_02;
   }
   obj7.shadowOpacity = DARK_03_LIGHT_02;
   let obj8;

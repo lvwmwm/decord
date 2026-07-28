@@ -1,10 +1,10 @@
-// Module ID: 12421
-// Function ID: 96378
+// Module ID: 12464
+// Function ID: 96548
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [57, 31, 12422, 3780, 1345, 482, 12423, 566, 1334, 8379, 4452, 686, 12424, 1935, 4099, 2]
+// Dependencies: [57, 31, 12465, 3814, 1345, 482, 12466, 566, 1334, 8417, 4486, 686, 12467, 1935, 4133, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 12421 (useGiftCardMobileConsumptionHalfsheet)
+// Module 12464 (useGiftCardMobileConsumptionHalfsheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,8 +18,8 @@ const Idle = obj.Idle;
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
-  enabled = enabled(12423).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
-  let obj = enabled(12423);
+  enabled = enabled(12466).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
+  let obj = enabled(12466);
   let items = [callback];
   let items1 = [enabled];
   const stateFromStores = enabled(566).useStateFromStores(items, () => {
@@ -83,7 +83,7 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
     return items1;
   }, items6);
   const obj4 = enabled(566);
-  const tmp8 = first(enabled(8379).useSelectedDismissibleContent(memo, undefined, true), 2);
+  const tmp8 = first(enabled(8417).useSelectedDismissibleContent(memo, undefined, true), 2);
   first = tmp8[0];
   React = tmp10;
   _isNativeReflectConstruct = React.useRef(tmp10);

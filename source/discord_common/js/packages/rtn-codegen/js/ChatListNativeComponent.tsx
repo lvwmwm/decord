@@ -1,9 +1,9 @@
-// Module ID: 9985
-// Function ID: 77277
+// Module ID: 10025
+// Function ID: 77406
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 9985 (__INTERNAL_VIEW_CONFIG)
+// Module 10025 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDChatList", validAttributes: { floatingChatInputEnabled: true } };

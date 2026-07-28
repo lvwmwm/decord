@@ -1,10 +1,10 @@
-// Module ID: 8232
-// Function ID: 66051
+// Module ID: 8270
+// Function ID: 66161
 // Name: MagnifyingGlassIcon
-// Dependencies: [31, 33, 689, 3834, 8233, 2]
+// Dependencies: [31, 33, 689, 3868, 8271, 2]
 // Exports: MagnifyingGlassIcon
 
-// Module 8232 (MagnifyingGlassIcon)
+// Module 8270 (MagnifyingGlassIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MagnifyingGlassIcon = function MagnifyingGlassIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8233) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8271) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(8233) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8271) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

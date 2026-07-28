@@ -1,10 +1,10 @@
-// Module ID: 14113
-// Function ID: 108526
+// Module ID: 14157
+// Function ID: 108699
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [31, 27, 5934, 33, 4131, 689, 1557, 9415, 9401, 5498, 5186, 1212, 5189, 4542, 4127, 2]
+// Dependencies: [31, 27, 5968, 33, 4165, 689, 1557, 9455, 9445, 5533, 5220, 1212, 5223, 4576, 4161, 2]
 // Exports: default
 
-// Module 14113 (VideoQuestTranscriptActionSheet)
+// Module 14157 (VideoQuestTranscriptActionSheet)
 import result from "result";
 import { ActivityIndicator } from "get ActivityIndicator";
 import _toPropertyKey from "_toPropertyKey";
@@ -80,7 +80,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   obj = {};
   const intl = quest(1212).intl;
   obj.title = intl.string(quest(1212).t["1YS80z"]);
-  obj.header = callback2(quest(5186).BottomSheetTitleHeader, obj);
+  obj.header = callback2(quest(5220).BottomSheetTitleHeader, obj);
   obj = { contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
   const obj1 = { spacing: 16, style: tmp.content };
   let fetchStatus;
@@ -100,7 +100,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     })
   ];
   obj1.children = items2;
-  obj.children = closure_8(quest(4542).Stack, obj1);
-  obj.children = callback2(quest(5189).BottomSheetScrollView, obj);
-  return callback2(quest(5498).ActionSheet, obj);
+  obj.children = closure_8(quest(4576).Stack, obj1);
+  obj.children = callback2(quest(5223).BottomSheetScrollView, obj);
+  return callback2(quest(5533).ActionSheet, obj);
 };

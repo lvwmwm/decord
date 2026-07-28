@@ -1,10 +1,10 @@
-// Module ID: 13581
-// Function ID: 104477
+// Module ID: 13625
+// Function ID: 104650
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [27, 683, 33, 4131, 689, 566, 5501, 5502, 685, 2]
+// Dependencies: [27, 683, 33, 4165, 689, 566, 5536, 5537, 685, 2]
 // Exports: default
 
-// Module 13581 (DevToolsLoggingFlagsScreen)
+// Module 13625 (DevToolsLoggingFlagsScreen)
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -42,7 +42,7 @@ export default function DevToolsLoggingFlagsScreen() {
       return obj.setDeveloperOptionSettings(obj);
     }
   };
-  const items1 = [callback(require(5502) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
+  const items1 = [callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
   const obj2 = {
     label: "Analytics Events",
     subLabel: "Logs all analytics events to the developer console.",
@@ -53,7 +53,7 @@ export default function DevToolsLoggingFlagsScreen() {
       return obj.setDeveloperOptionSettings(obj);
     }
   };
-  items1[1] = callback(require(5502) /* TableSwitchRow */.TableSwitchRow, obj2);
+  items1[1] = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj2);
   const obj3 = {
     label: "Tracing Requests",
     subLabel: "Force trace all client requests with APM.",
@@ -64,8 +64,8 @@ export default function DevToolsLoggingFlagsScreen() {
       return obj.setDeveloperOptionSettings(obj);
     }
   };
-  items1[2] = callback(require(5502) /* TableSwitchRow */.TableSwitchRow, obj3);
+  items1[2] = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj3);
   obj.children = items1;
-  obj.children = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj.children = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
   return callback(ScrollView, obj);
 };

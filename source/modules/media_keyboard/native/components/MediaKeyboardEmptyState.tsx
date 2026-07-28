@@ -1,10 +1,10 @@
-// Module ID: 9634
-// Function ID: 75138
+// Module ID: 9674
+// Function ID: 75267
 // Name: MediaKeyboardEmptyState
-// Dependencies: [31, 27, 4345, 33, 4131, 689, 4127, 4544, 8943, 1212, 9635, 9629, 9636, 2]
+// Dependencies: [31, 27, 4379, 33, 4165, 689, 4161, 4578, 8987, 1212, 9675, 9669, 9676, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 9634 (MediaKeyboardEmptyState)
+// Module 9674 (MediaKeyboardEmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NativePermissionStatus } from "NativePermissionStatus";
@@ -54,20 +54,20 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
     if (photoPermissionStatus !== NativePermissionStatus.RESTRICTED) {
       if (photosEmpty.photosEmpty) {
         if (photoPermissionStatus === NativePermissionStatus.LIMITED) {
-          let obj = { actionIcon: callback(require(8943) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }) };
+          let obj = { actionIcon: callback(require(8987) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }) };
           const intl3 = require(1212) /* getSystemLocale */.intl;
           obj.actionLabel = intl3.string(require(1212) /* getSystemLocale */.t.JuXTi6);
           obj.actionPress = tmp2;
-          obj.imageSource = importDefault(9635);
+          obj.imageSource = importDefault(9675);
           const intl4 = require(1212) /* getSystemLocale */.intl;
           obj.label = intl4.string(require(1212) /* getSystemLocale */.t["5g7NcN"]);
           return callback(MediaKeyboardEmptyState, obj);
         } else if (showCameraButton) {
-          obj = { actionIcon: callback(require(9629) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" }) };
+          obj = { actionIcon: callback(require(9669) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" }) };
           const intl = require(1212) /* getSystemLocale */.intl;
           obj.actionLabel = intl.string(require(1212) /* getSystemLocale */.t.tpoWUd);
           obj.actionPress = tmp;
-          obj.imageSource = importDefault(9636);
+          obj.imageSource = importDefault(9676);
           const intl2 = require(1212) /* getSystemLocale */.intl;
           obj.label = intl2.string(require(1212) /* getSystemLocale */.t.YOvRBZ);
           return callback(MediaKeyboardEmptyState, obj);
@@ -75,11 +75,11 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
       }
     }
   }
-  obj = { actionIcon: callback(require(8943) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }) };
+  obj = { actionIcon: callback(require(8987) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }) };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj.actionLabel = intl5.string(require(1212) /* getSystemLocale */.t["457oeG"]);
   obj.actionPress = photosEmpty.onPressPrivacySettings;
-  obj.imageSource = importDefault(9635);
+  obj.imageSource = importDefault(9675);
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl6.string(require(1212) /* getSystemLocale */.t["8p9jGu"]);
   return callback(MediaKeyboardEmptyState, obj);

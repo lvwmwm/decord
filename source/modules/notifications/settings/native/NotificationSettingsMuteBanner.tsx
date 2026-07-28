@@ -1,10 +1,10 @@
-// Module ID: 10253
-// Function ID: 79329
+// Module ID: 10293
+// Function ID: 79458
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 4544, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 4578, 1212, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 10253 (NotificationSettingsMuteBanner)
+// Module 10293 (NotificationSettingsMuteBanner)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,9 +26,9 @@ export const NotificationSettingsMuteBanner = function NotificationSettingsMuteB
   obj.style = items;
   obj = { style: { flex: 1, marginRight: 8 } };
   obj = { variant: "text-md/semibold", color: "text-overlay-light", children: style.title };
-  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-xs/medium", color: "text-overlay-light", children: style.subtitle };
-  items1[1] = callback(require(4127) /* Text */.Text, obj1);
+  items1[1] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items1;
   const items2 = [callback2(View, obj), ];
   const obj2 = {};
@@ -36,7 +36,7 @@ export const NotificationSettingsMuteBanner = function NotificationSettingsMuteB
   obj2.text = intl.string(require(1212) /* getSystemLocale */.t.YqAjXy);
   obj2.onPress = style.onPressUnmute;
   obj2.variant = "primary-overlay";
-  items2[1] = callback(require(4544) /* Button */.Button, obj2);
+  items2[1] = callback(require(4578) /* Button */.Button, obj2);
   obj.children = items2;
   return callback2(View, obj);
 };

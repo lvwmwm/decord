@@ -1,10 +1,10 @@
-// Module ID: 9998
-// Function ID: 77343
+// Module ID: 10038
+// Function ID: 77472
 // Name: useCanManageGuildDirectoryEntry
-// Dependencies: [1348, 1838, 3759, 653, 566, 2]
+// Dependencies: [1348, 1838, 3793, 653, 566, 2]
 // Exports: default, useCanCreateOrAddGuildInDirectory
 
-// Module 9998 (useCanManageGuildDirectoryEntry)
+// Module 10038 (useCanManageGuildDirectoryEntry)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";

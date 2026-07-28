@@ -1,10 +1,10 @@
-// Module ID: 4348
-// Function ID: 38429
+// Module ID: 4382
+// Function ID: 38543
 // Name: isReactiveCheckEnabled
-// Dependencies: [5, 57, 31, 4349, 3811, 1194, 4350, 1850, 7567, 6691, 653, 1197, 6659, 6692, 4957, 3810, 1882, 566, 11059, 686, 6697, 6690, 6664, 8063, 1212, 2717, 12756, 2]
+// Dependencies: [5, 57, 31, 4383, 3845, 1194, 4384, 1850, 7603, 6727, 653, 1197, 6695, 6728, 4991, 3844, 1882, 566, 11097, 686, 6733, 6726, 6700, 8101, 1212, 2717, 12799, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
-// Module 4348 (isReactiveCheckEnabled)
+// Module 4382 (isReactiveCheckEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "result";
@@ -24,10 +24,10 @@ let AgeGateSource;
 let closure_14;
 let require = arg1;
 function isReactiveCheckEnabled() {
-  return featureAgeGated.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+  return featureAgeGated.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
 }
 function useIsReactiveCheckEnabled() {
-  return require(3810) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+  return require(3844) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
 }
 function useIsAssignedByDiscord() {
   const items = [closure_10];
@@ -76,8 +76,8 @@ function useIsAgeVerified() {
 function useShouldCallReactiveCheck() {
   let tmp = useIsAgeVerified();
   const require = tmp;
-  const isFeatureAgeGated = require(3810) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
-  const obj = require(3810) /* isFeatureAgeGated */;
+  const isFeatureAgeGated = require(3844) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+  const obj = require(3844) /* isFeatureAgeGated */;
   const items = [closure_11];
   const items1 = [tmp, isFeatureAgeGated];
   return require(566) /* initialize */.useStateFromStores(items, () => {
@@ -230,8 +230,8 @@ export const isAssignedByDiscord = function isAssignedByDiscord() {
 export { useIsAssignedByDiscord };
 export const useShowAssignedAgeGroupSettings = function useShowAssignedAgeGroupSettings() {
   const tmp = useIsAssignedByDiscord();
-  const obj = require(3810) /* isFeatureAgeGated */;
-  return require(3810) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK) && tmp;
+  const obj = require(3844) /* isFeatureAgeGated */;
+  return require(3844) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK) && tmp;
 };
 export const AgeVerificationSystemNotificationEmbedKeys = obj;
 export const AgeVerificationSystemNotificationCtaTypes = obj;
@@ -279,7 +279,7 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
               }
               let enabled = !tmp3;
               if (true === hasItem) {
-                const FamilyCenterConnectionPrereqExperiment = require(11059) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
+                const FamilyCenterConnectionPrereqExperiment = require(11097) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
                 obj = { location: "isAgeVerificationMessageWithConnectToTeenCta" };
                 enabled = FamilyCenterConnectionPrereqExperiment.getConfig(obj).enabled;
               }
@@ -367,7 +367,7 @@ export const useWatchAgeVerificationStatusChange = function useWatchAgeVerificat
     }
     return prop;
   });
-  const tmp2 = importDefault(8063)(stateFromStores);
+  const tmp2 = importDefault(8101)(stateFromStores);
   const obj = _require(566);
   const items1 = [closure_8];
   const stateFromStores1 = _require(566).useStateFromStores(items1, () => null != outer1_8.getSuspendedUserToken());

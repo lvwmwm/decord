@@ -1,10 +1,10 @@
-// Module ID: 7908
-// Function ID: 62996
+// Module ID: 7944
+// Function ID: 63087
 // Name: CutoutableAvatarDecoration
-// Dependencies: [31, 27, 4123, 33, 624, 1392, 477, 7909, 6154, 5085, 2]
+// Dependencies: [31, 27, 4157, 33, 624, 1392, 477, 7945, 6188, 5119, 2]
 // Exports: default
 
-// Module 7908 (CutoutableAvatarDecoration)
+// Module 7944 (CutoutableAvatarDecoration)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

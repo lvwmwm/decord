@@ -1,9 +1,9 @@
-// Module ID: 7079
-// Function ID: 59855
+// Module ID: 7115
+// Function ID: 59944
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7079 (metadata)
+// Module 7115 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameplayAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/8aa8afdf7d5391528e730e04a670b9250f55c79e71b3fb94f72403d13cee0905.png";

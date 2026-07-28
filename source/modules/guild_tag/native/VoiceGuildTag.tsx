@@ -1,10 +1,10 @@
-// Module ID: 15036
-// Function ID: 114608
+// Module ID: 15080
+// Function ID: 114783
 // Name: num2
-// Dependencies: [31, 27, 1850, 7665, 33, 477, 4131, 689, 566, 7881, 8384, 4127, 2]
+// Dependencies: [31, 27, 1850, 7701, 33, 477, 4165, 689, 566, 7917, 8428, 4161, 2]
 // Exports: default
 
-// Module 15036 (num2)
+// Module 15080 (num2)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -47,7 +47,7 @@ export default function VoiceGuildTagChiplet(userId) {
   const items = [_isNativeReflectConstruct];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getUser(userId), items1);
-  let obj1 = userId(7881);
+  let obj1 = userId(7917);
   let primaryGuild;
   if (null != stateFromStores) {
     primaryGuild = stateFromStores.primaryGuild;
@@ -56,7 +56,7 @@ export default function VoiceGuildTagChiplet(userId) {
   ({ tag, guildId } = userPrimaryGuild);
   if (null != guildId) {
     if (null != tag) {
-      let obj2 = userId(7881);
+      let obj2 = userId(7917);
       obj = { style: tmp.gapContainer };
       obj = { style: tmp.tagContainer };
       const guildTagBadgeUrl = obj2.getGuildTagBadgeUrl(guildId, tmp5, GuildTagBadgeSize.SIZE_12);
@@ -64,9 +64,9 @@ export default function VoiceGuildTagChiplet(userId) {
       obj2 = { uri: guildTagBadgeUrl };
       obj1.source = obj2;
       obj1.size = GuildTagBadgeSize.SIZE_12;
-      const items2 = [callback(userId(8384).GuildTagBadge, obj1), ];
+      const items2 = [callback(userId(8428).GuildTagBadge, obj1), ];
       const obj3 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = callback(userId(4127).Text, obj3);
+      items2[1] = callback(userId(4161).Text, obj3);
       obj.children = items2;
       obj.children = callback2(View, obj);
       return callback(View, obj);

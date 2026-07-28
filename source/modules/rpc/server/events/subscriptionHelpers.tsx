@@ -1,10 +1,10 @@
-// Module ID: 13493
-// Function ID: 103770
+// Module ID: 13537
+// Function ID: 103943
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1347, 5658, 5932, 653, 4156, 10567, 4664, 13456, 5955, 2]
+// Dependencies: [1347, 5668, 5966, 653, 4190, 10605, 4698, 13500, 5989, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13493 (getInitialSubscriptionPayload)
+// Module 13537 (getInitialSubscriptionPayload)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -72,26 +72,26 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     return tmp30;
   } else if (RPCEvents.THERMAL_STATE_UPDATE === outer1_2) {
-    const thermalState = require(10567) /* _getThermalState */.getThermalState();
+    const thermalState = require(10605) /* _getThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== require(10567) /* _getThermalState */.ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10605) /* _getThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: thermalState };
       tmp23 = obj2;
     }
     return tmp23;
   } else if (RPCEvents.ORIENTATION_UPDATE === outer1_2) {
     const obj3 = {};
-    let obj4 = require(4664) /* getIsScreenLandscape */;
+    let obj4 = require(4698) /* getIsScreenLandscape */;
     obj3.screen_orientation = obj4.getIsScreenLandscape() ? closure_7.LANDSCAPE : closure_7.PORTRAIT;
     return obj3;
   } else if (RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === outer1_2) {
-    obj2 = require(13456) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13500) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (RPCEvents.QUEST_ENROLLMENT_STATUS_UPDATE === outer1_2) {
     const quest_id = outer1_3.quest_id;
     if (quest_id) {
       quest = quest.getQuest(quest_id);
-      obj = require(5955) /* _createForOfIteratorHelperLoose */;
+      obj = require(5989) /* _createForOfIteratorHelperLoose */;
       const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp10 = null;
       if (null != quest) {

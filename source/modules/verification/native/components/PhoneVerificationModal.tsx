@@ -1,10 +1,10 @@
-// Module ID: 9164
-// Function ID: 71912
+// Module ID: 9208
+// Function ID: 72063
 // Name: PhoneVerificationModal
-// Dependencies: [5, 31, 653, 9165, 33, 5087, 9166, 9167, 4338, 480, 9191, 9161, 5517, 1212, 2]
+// Dependencies: [5, 31, 653, 9209, 33, 5121, 9210, 9211, 4372, 480, 9235, 9205, 5552, 1212, 2]
 // Exports: default
 
-// Module 9164 (PhoneVerificationModal)
+// Module 9208 (PhoneVerificationModal)
 import HeaderBackImage from "HeaderBackImage";
 import "result";
 import { VerificationModalScenes } from "ME";
@@ -18,9 +18,9 @@ export default function PhoneVerificationModal(onClose) {
   let obj = {};
   const _require = onClose;
   obj = {};
-  obj = { headerTitle: _require(5087).getHeaderNoTitle() };
-  const obj4 = _require(5087);
-  obj.headerLeft = _require(5087).getHeaderCloseButton(onClose.onClose);
+  obj = { headerTitle: _require(5121).getHeaderNoTitle() };
+  const obj4 = _require(5121);
+  obj.headerLeft = _require(5121).getHeaderCloseButton(onClose.onClose);
   obj.render = function render(reason) {
     const onClose = reason;
     let closure_1 = arg1;
@@ -69,8 +69,8 @@ export default function PhoneVerificationModal(onClose) {
   };
   obj[VerificationModalScenes.ADD_PHONE] = obj;
   const obj1 = {};
-  const obj5 = _require(5087);
-  obj1.headerTitle = _require(5087).getHeaderNoTitle();
+  const obj5 = _require(5121);
+  obj1.headerTitle = _require(5121).getHeaderNoTitle();
   obj1.impressionName = _require(480).ImpressionNames.USER_VERIFY_PHONE;
   obj1.render = function render(arg0, arg1) {
     let closure_0 = arg1;
@@ -94,8 +94,8 @@ export default function PhoneVerificationModal(onClose) {
   };
   obj[VerificationModalScenes.VERIFY_PHONE] = obj1;
   const obj2 = {};
-  const obj7 = _require(5087);
-  obj2.headerTitle = _require(5087).getHeaderNoTitle();
+  const obj7 = _require(5121);
+  obj2.headerTitle = _require(5121).getHeaderNoTitle();
   obj2.render = function render(arg0) {
     const merged = Object.assign(arg0);
     return outer1_6(outer1_1(outer1_2[11]), {});
@@ -105,5 +105,5 @@ export default function PhoneVerificationModal(onClose) {
   obj.initialRouteName = VerificationModalScenes.ADD_PHONE;
   const intl = _require(1212).intl;
   obj.headerBackTitle = intl.string(_require(1212).t["13/7kX"]);
-  return jsx(_require(5517).Navigator, { headerTitle: _require(5087).getHeaderNoTitle() });
+  return jsx(_require(5552).Navigator, { headerTitle: _require(5121).getHeaderNoTitle() });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15369
-// Function ID: 117169
+// Module ID: 15409
+// Function ID: 117328
 // Name: showMembersManagementActionSheet
-// Dependencies: [1850, 1212, 4099, 15370, 1935, 6010, 15371, 5495, 2]
+// Dependencies: [1850, 1212, 4133, 15410, 1935, 6044, 15411, 5530, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15369 (showMembersManagementActionSheet)
+// Module 15409 (showMembersManagementActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -26,8 +26,8 @@ export default function showMembersManagementActionSheet(guild) {
   };
   const items = [obj];
   if (null == canPrune) {
-    canPrune = guild(6010).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const obj2 = guild(6010);
+    canPrune = guild(6044).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const obj2 = guild(6044);
   }
   if (canPrune) {
     obj = {};
@@ -42,7 +42,7 @@ export default function showMembersManagementActionSheet(guild) {
     items.push(obj);
   }
   obj = { key: "GuildSettingsMembersMore", options: items, hasIcons: false };
-  const result = guild(5495).showSimpleActionSheet(obj);
+  const result = guild(5530).showSimpleActionSheet(obj);
 };
 export const getMembersManagementActions = function getMembersManagementActions(guild) {
   let canPrune;
@@ -60,8 +60,8 @@ export const getMembersManagementActions = function getMembersManagementActions(
   };
   const items = [obj];
   if (null == canPrune) {
-    canPrune = guild(6010).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const obj2 = guild(6010);
+    canPrune = guild(6044).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const obj2 = guild(6044);
   }
   if (canPrune) {
     obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 7593
-// Function ID: 60768
+// Module ID: 7629
+// Function ID: 60857
 // Name: FormSwitchRow
-// Dependencies: [57, 31, 27, 33, 4131, 477, 5157, 5177, 7591, 5163, 5502, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 477, 5191, 5211, 7627, 5197, 5537, 2]
 // Exports: default
 
-// Module 7593 (FormSwitchRow)
+// Module 7629 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -106,12 +106,12 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles({ trailing: { flex:
 const result = require("get ActivityIndicator").fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default function FormSwitchRowContainer(DEPRECATED_style) {
-  if (React.useContext(require(5163) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
     let obj = { style: DEPRECATED_style.DEPRECATED_style };
     obj = {};
     ({ value: obj3.value, onValueChange: obj3.onValueChange } = DEPRECATED_style);
     const merged = Object.assign(DEPRECATED_style);
-    obj.children = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
+    obj.children = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
     let tmpResult = tmp(View, obj);
   } else {
     obj = {};

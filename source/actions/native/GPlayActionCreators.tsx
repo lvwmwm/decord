@@ -1,10 +1,10 @@
-// Module ID: 6243
-// Function ID: 56228
+// Module ID: 6279
+// Function ID: 56317
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 27, 6197, 1194, 5619, 653, 5620, 1852, 482, 3, 5622, 6244, 3814, 686, 3790, 3792, 4471, 1212, 675, 507, 2]
+// Dependencies: [29, 5, 27, 6232, 1194, 5654, 653, 5655, 1852, 482, 3, 5657, 6280, 3848, 686, 3824, 3826, 4505, 1212, 675, 507, 2]
 // Exports: downgradeSubscription, loadUserCountry, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 6243 (_createForOfIteratorHelperLoose)
+// Module 6279 (_createForOfIteratorHelperLoose)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importDefaultResult from "_isNativeReflectConstruct";
 import setGPlayAnalytics from "setGPlayAnalytics";
@@ -107,10 +107,10 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getPlanIdForProduct(arg0, arg1) {
   if (arg1) {
-    return require(5622) /* SubscriptionPlans */.getPlanIdForGift(arg0);
+    return require(5657) /* SubscriptionPlans */.getPlanIdForGift(arg0);
   } else {
     let basePlanId;
-    const tmp5 = require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[arg0];
+    const tmp5 = require(5657) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[arg0];
     if (null != tmp5) {
       basePlanId = tmp5.basePlanId;
     }
@@ -624,7 +624,7 @@ export const updatePendingDowngrade = function updatePendingDowngrade(productId,
         if (null != first) {
           if (null != tmp2.billingPeriod) {
             if (null != first.billingPeriod) {
-              let obj = require(3792) /* _createGatewayCheckoutContext */;
+              let obj = require(3826) /* _createGatewayCheckoutContext */;
             }
           }
         }

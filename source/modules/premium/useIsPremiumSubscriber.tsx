@@ -1,10 +1,10 @@
-// Module ID: 8334
-// Function ID: 66857
+// Module ID: 8372
+// Function ID: 66967
 // Name: useIsPremiumSubscriber
 // Dependencies: [1850, 1852, 566, 1873, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 8334 (useIsPremiumSubscriber)
+// Module 8372 (useIsPremiumSubscriber)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 

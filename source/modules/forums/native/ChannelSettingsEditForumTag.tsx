@@ -1,10 +1,10 @@
-// Module ID: 15608
-// Function ID: 120368
+// Module ID: 15647
+// Function ID: 120524
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [57, 31, 27, 4992, 1348, 1853, 33, 4131, 689, 1456, 566, 4127, 1212, 9067, 6695, 4542, 5501, 5164, 4661, 9268, 5150, 1392, 6519, 1273, 6679, 5502, 4472, 2]
+// Dependencies: [57, 31, 27, 5026, 1348, 1853, 33, 4165, 689, 1456, 566, 4161, 1212, 9111, 6731, 4576, 5536, 5198, 4695, 9312, 5184, 1392, 6555, 1273, 6715, 5537, 4506, 2]
 // Exports: default
 
-// Module 15608 (ChannelSettingsEditForumTag)
+// Module 15647 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -163,7 +163,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
           stringResult = string(t.zeVg5d);
         }
         obj.children = stringResult;
-        return closure_10(channelId(4127).Text, obj);
+        return closure_10(channelId(4161).Text, obj);
       }
     });
   }, items3);
@@ -229,7 +229,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
         const obj = { style: outer1_2.saveButton, onPress: outer1_14 };
         const intl = channelId(1212).intl;
         obj.text = intl.string(channelId(1212).t["R3BPH+"]);
-        return callback(channelId(6695).HeaderActionButton, obj);
+        return callback(channelId(6731).HeaderActionButton, obj);
       };
       setOptions(obj);
     } else {
@@ -278,19 +278,19 @@ export default function ChannelSettingsEditForumTag(channelId) {
                 }
         };
         const obj8 = { size: "xs" };
-        obj7.children = callback2(channelId(6679).CircleXIcon, obj8);
-        let tmp47 = callback2(channelId(4661).PressableOpacity, obj7);
+        obj7.children = callback2(channelId(6715).CircleXIcon, obj8);
+        let tmp47 = callback2(channelId(4695).PressableOpacity, obj7);
       } else {
         tmp47 = null;
       }
       obj4.trailing = tmp47;
-      obj3.children = tmp30(channelId(5164).TableRow, obj4);
-      const items6 = [tmp30(channelId(5501).TableRowGroup, obj3), ];
+      obj3.children = tmp30(channelId(5198).TableRow, obj4);
+      const items6 = [tmp30(channelId(5536).TableRowGroup, obj3), ];
       const obj9 = { style: tmp.hint };
       const obj10 = { variant: "text-sm/medium", color: "text-muted" };
       let intl2 = channelId(1212).intl;
       obj10.children = intl2.string(channelId(1212).t["3v8kZH"]);
-      obj9.children = callback2(channelId(4127).Text, obj10);
+      obj9.children = callback2(channelId(4161).Text, obj10);
       items6[1] = callback2(first, obj9);
       obj2.children = items6;
       const items7 = [tmp32(tmp31, obj2), , ];
@@ -314,8 +314,8 @@ export default function ChannelSettingsEditForumTag(channelId) {
           callback2(true);
         }
       };
-      obj11.children = callback2(channelId(5502).TableSwitchRow, obj12);
-      items7[1] = callback2(channelId(5501).TableRowGroup, obj11);
+      obj11.children = callback2(channelId(5537).TableSwitchRow, obj12);
+      items7[1] = callback2(channelId(5536).TableRowGroup, obj11);
       let tmp55 = null;
       if (!tmp2) {
         const obj13 = { hasIcons: false };
@@ -342,12 +342,12 @@ export default function ChannelSettingsEditForumTag(channelId) {
           };
           obj.show(obj);
         };
-        obj13.children = callback2(channelId(5164).TableRow, obj14);
-        tmp55 = callback2(channelId(5501).TableRowGroup, obj13);
+        obj13.children = callback2(channelId(5198).TableRow, obj14);
+        tmp55 = callback2(channelId(5536).TableRowGroup, obj13);
       }
       items7[2] = tmp55;
       obj1.children = items7;
-      obj.children = tmp32(channelId(4542).Stack, obj1);
+      obj.children = tmp32(channelId(4576).Stack, obj1);
       return tmp30(tmp31, obj);
     }
     const obj15 = {};
@@ -370,9 +370,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
       str2 = name2;
     }
     obj15.name = str2;
-    tmp34Result = callback2(tag(5150), obj15);
+    tmp34Result = callback2(tag(5184), obj15);
     const tmp34 = callback2;
-    const tmp37 = tag(5150);
+    const tmp37 = tag(5184);
   }
-  tmp34Result = callback2(channelId(6519).ReactionIcon, {});
+  tmp34Result = callback2(channelId(6555).ReactionIcon, {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 13591
-// Function ID: 104530
+// Module ID: 13635
+// Function ID: 104703
 // Name: CarIcon
-// Dependencies: [31, 33, 689, 3834, 13592, 2]
+// Dependencies: [31, 33, 689, 3868, 13636, 2]
 // Exports: CarIcon
 
-// Module 13591 (CarIcon)
+// Module 13635 (CarIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const CarIcon = function CarIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13592) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13636) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13592) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(13636) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15561
-// Function ID: 119748
+// Module ID: 15600
+// Function ID: 119904
 // Name: getNoticeCTAColor
-// Dependencies: [31, 27, 12709, 653, 6173, 1852, 33, 664, 4131, 689, 15562, 675, 1212, 3713, 624, 6188, 6180, 15560, 1921, 4127, 3777, 4661, 1273, 6570, 4555, 5509, 2]
+// Dependencies: [31, 27, 12752, 653, 6207, 1852, 33, 664, 4165, 689, 15601, 675, 1212, 3747, 624, 6222, 6214, 15599, 1921, 4161, 3811, 4695, 1273, 6606, 4589, 5544, 2]
 // Exports: default
 
-// Module 15561 (getNoticeCTAColor)
+// Module 15600 (getNoticeCTAColor)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -69,14 +69,14 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function YouExpiringTrialOfferCard(navigateToPremium) {
   navigateToPremium = navigateToPremium.navigateToPremium;
   let shouldShowExpiringTrialOfferCard;
-  let obj = importDefault(3713)();
+  let obj = importDefault(3747)();
   importDefault = obj.add(5, "days");
   let tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
   let obj1 = navigateToPremium(624);
   let items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj2 = navigateToPremium(6188);
+  let obj2 = navigateToPremium(6222);
   const premiumTrialOffer = obj2.usePremiumTrialOffer();
   let num = 0;
   if (null != premiumTrialOffer) {
@@ -86,8 +86,8 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       num = Date.parse(premiumTrialOffer.expires_at);
     }
   }
-  const tmp4 = importDefault(6180);
-  let obj3 = navigateToPremium(15560);
+  const tmp4 = importDefault(6214);
+  let obj3 = navigateToPremium(15599);
   shouldShowExpiringTrialOfferCard = obj3.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -134,8 +134,8 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
           interval_count = subscription_trial2.interval_count;
         }
         obj2.intervalCount = interval_count;
-        obj1.children = tmp18(tmp4Result, navigateToPremium(3777).formatIntervalDuration(obj2), articleURL);
-        obj.children = callback(navigateToPremium(4127).Text, obj1);
+        obj1.children = tmp18(tmp4Result, navigateToPremium(3811).formatIntervalDuration(obj2), articleURL);
+        obj.children = callback(navigateToPremium(4161).Text, obj1);
         const items2 = [callback(tmp15, obj), , ];
         obj3 = { style: tmp.closeButton, accessibilityRole: "button" };
         const intl = navigateToPremium(1212).intl;
@@ -152,7 +152,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         };
         const obj4 = { width: 16, height: 16, color: tmp.closeIcon.color };
         obj3.children = callback(navigateToPremium(1273).CloseIcon, obj4);
-        items2[1] = callback(navigateToPremium(4661).PressableOpacity, obj3);
+        items2[1] = callback(navigateToPremium(4695).PressableOpacity, obj3);
         const obj5 = { style: tmp.primaryCTA };
         const intl2 = navigateToPremium(1212).intl;
         obj5.text = intl2.string(navigateToPremium(1212).t.J61px0);
@@ -176,14 +176,14 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         };
         items2[2] = callback(navigateToPremium(1273).ShinyButton, obj5);
         obj.children = items2;
-        const obj8 = navigateToPremium(3777);
+        const obj8 = navigateToPremium(3811);
         const obj6 = { style: navigateToPremium.style, children: tmp12(tmp13, obj) };
-        return callback(importDefault(5509), obj6);
+        return callback(importDefault(5544), obj6);
       }
     }
     return null;
   } else {
     return null;
   }
-  tmp4Result = importDefault(6180)(num, closure_15);
+  tmp4Result = importDefault(6214)(num, closure_15);
 };

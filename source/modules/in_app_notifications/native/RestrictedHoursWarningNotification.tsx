@@ -1,8 +1,8 @@
-// Module ID: 10318
-// Function ID: 79757
-// Dependencies: [31, 27, 10201, 653, 33, 4131, 689, 10319, 4338, 10199, 6554, 10273, 4127, 2]
+// Module ID: 10358
+// Function ID: 79886
+// Dependencies: [31, 27, 10241, 653, 33, 4165, 689, 10359, 4372, 10239, 6590, 10313, 4161, 2]
 
-// Module 10318
+// Module 10358
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_5 } from "set";
@@ -23,7 +23,7 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
   const type = notification.type;
   let obj = { style: callback().iconContainer };
   obj = { size: "sm", color: type(689).colors.WHITE };
-  obj.children = jsx(notification(10319).ThemeDarkIcon, { size: "sm", color: type(689).colors.WHITE });
+  obj.children = jsx(notification(10359).ThemeDarkIcon, { size: "sm", color: type(689).colors.WHITE });
   const items = [notification.title];
   const items1 = [type];
   const memo = importAllResult.useMemo(() => ({ type: "simple", text: notification.title }), items);
@@ -39,10 +39,10 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
   }, items1);
   obj = { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo };
   const obj1 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle };
-  obj.children = jsx(notification(4127).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
+  obj.children = jsx(notification(4161).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
   obj.onPress = callback;
   obj.notification = notification;
-  return jsx(notification(10273).NotificationPressable, { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo });
+  return jsx(notification(10313).NotificationPressable, { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo });
 });
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
 

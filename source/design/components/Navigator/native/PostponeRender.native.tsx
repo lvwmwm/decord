@@ -1,10 +1,10 @@
-// Module ID: 5581
-// Function ID: 47407
+// Module ID: 5616
+// Function ID: 47534
 // Name: PostponeRender
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4560, 5582, 5583, 5585, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4594, 5617, 5618, 5620, 2]
 // Exports: PostponeRender
 
-// Module 5581 (PostponeRender)
+// Module 5616 (PostponeRender)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -31,7 +31,7 @@ export const PostponeRender = function PostponeRender(children) {
   const first = tmp2[0];
   const importDefault = tmp2[1];
   const dependencyMap = React.useRef(undefined);
-  importDefault(4560)(() => {
+  importDefault(4594)(() => {
     if (first) {
       table.current = first(table[7]).runAfterInteractions(() => {
         outer1_1(false);
@@ -45,12 +45,12 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(5583).SceneLoadingIndicator, {});
+    children = jsx(first(5618).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp10 = View;
   } else {
-    tmp10 = importDefault(5585);
+    tmp10 = importDefault(5620);
   }
   const obj = { style: items };
   items = [_createForOfIteratorHelperLoose().view, viewStyle];

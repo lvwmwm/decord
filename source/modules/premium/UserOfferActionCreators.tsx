@@ -1,10 +1,10 @@
-// Module ID: 6447
-// Function ID: 57886
+// Module ID: 6483
+// Function ID: 57975
 // Name: _fetchUserOffer
-// Dependencies: [5, 6160, 1852, 653, 477, 686, 675, 507, 6190, 1184, 3947, 1334, 1331, 2]
+// Dependencies: [5, 6194, 1852, 653, 477, 686, 675, 507, 6225, 1184, 3981, 1334, 1331, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 6447 (_fetchUserOffer)
+// Module 6483 (_fetchUserOffer)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_5 } from "GuildFeatures";

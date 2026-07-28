@@ -1,10 +1,10 @@
-// Module ID: 11140
-// Function ID: 86615
+// Module ID: 11178
+// Function ID: 86734
 // Name: useNativeForumPostContent
-// Dependencies: [653, 4131, 1212, 5870, 4467, 2]
+// Dependencies: [653, 4165, 1212, 5904, 4501, 2]
 // Exports: default
 
-// Module 11140 (useNativeForumPostContent)
+// Module 11178 (useNativeForumPostContent)
 import { MessageFlags } from "ME";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -29,7 +29,7 @@ export default function useNativeForumPostContent(arg0) {
     return obj;
   } else {
     if (null != message) {
-      if (importDefault(5870)(message)) {
+      if (importDefault(5904)(message)) {
         obj = { content: messageContent, style: tmp.italics, variant: "text-sm/normal" };
         return obj;
       }
@@ -101,7 +101,7 @@ export default function useNativeForumPostContent(arg0) {
                   tmp16 = message.embeds.length > 0 || message.attachments.length > 0;
                 }
               }
-              obj5 = require(4467) /* getStickerPackPreviewSticker */;
+              obj5 = require(4501) /* getStickerPackPreviewSticker */;
             }
           }
         }

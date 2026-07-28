@@ -1,10 +1,10 @@
-// Module ID: 14171
-// Function ID: 108993
+// Module ID: 14215
+// Function ID: 109166
 // Name: LabeledDataBlock
-// Dependencies: [31, 27, 653, 33, 4131, 689, 5053, 4127, 4661, 1273, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 5087, 4161, 4695, 1273, 2]
 // Exports: default
 
-// Module 14171 (LabeledDataBlock)
+// Module 14215 (LabeledDataBlock)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,13 +39,13 @@ export default function LabeledDataBlock(arg0) {
   items = [tmp.container, style];
   obj = { style: tmp.titleSection };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", color: "interactive-text-default", children: title };
-  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
   let tmp4 = null != icon;
   if (tmp4) {
     const obj1 = { accessibilityRole: "button", onPress: onPressIcon };
     const obj2 = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: icon };
     obj1.children = callback(require(1273) /* Button */.Icon, obj2);
-    tmp4 = callback(require(4661) /* PressableBase */.PressableOpacity, obj1);
+    tmp4 = callback(require(4695) /* PressableBase */.PressableOpacity, obj1);
   }
   items1[1] = tmp4;
   obj.children = items1;

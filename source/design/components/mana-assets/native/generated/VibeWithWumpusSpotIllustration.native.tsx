@@ -1,10 +1,10 @@
-// Module ID: 7526
-// Function ID: 60525
+// Module ID: 7562
+// Function ID: 60614
 // Name: VibeWithWumpusSpotIllustration
-// Dependencies: [33, 5085, 7527, 2]
+// Dependencies: [33, 5119, 7563, 2]
 // Exports: VibeWithWumpusSpotIllustration
 
-// Module 7526 (VibeWithWumpusSpotIllustration)
+// Module 7562 (VibeWithWumpusSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VibeWithWumpusSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const VibeWithWumpusSpotIllustration = function VibeWithWumpusSpotIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7527) };
+  obj = { uri: importDefault(7563) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const VibeWithWumpusSpotIllustration = function VibeWithWumpusSpotIllustr
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 13585
-// Function ID: 104521
+// Module ID: 13629
+// Function ID: 104694
 // Name: AchievementsIcon
-// Dependencies: [31, 33, 689, 3834, 13586, 2]
+// Dependencies: [31, 33, 689, 3868, 13630, 2]
 // Exports: AchievementsIcon
 
-// Module 13585 (AchievementsIcon)
+// Module 13629 (AchievementsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const AchievementsIcon = function AchievementsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13586) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13630) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13586) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(13630) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,7 +1,7 @@
 // Module ID: 1276
-// Function ID: 14398
+// Function ID: 14402
 // Name: getButtonColorsToTextStyles
-// Dependencies: [31, 27, 653, 1277, 33, 4131, 689, 3975, 4974, 477, 11690, 7610, 3977, 5163, 4544, 2]
+// Dependencies: [31, 27, 653, 1277, 33, 4165, 689, 4009, 5008, 477, 11729, 7646, 4011, 5197, 4578, 2]
 
 // Module 1276 (getButtonColorsToTextStyles)
 import result from "result";
@@ -85,12 +85,12 @@ function getButtonStyles(shrink, button) {
     buttonShrink = button.buttonShrink;
   }
   items[1] = buttonShrink;
-  items[2] = require(11690) /* getClass */.getClass(button, "button", combined, disabled ? closure_14.DISABLED : closure_14.DEFAULT);
-  const obj2 = require(11690) /* getClass */;
+  items[2] = require(11729) /* getClass */.getClass(button, "button", combined, disabled ? closure_14.DISABLED : closure_14.DEFAULT);
+  const obj2 = require(11729) /* getClass */;
   const tmp2 = disabled ? closure_14.DISABLED : closure_14.DEFAULT;
-  items[3] = require(11690) /* getClass */.getClass(button, "button", size);
-  const obj3 = require(11690) /* getClass */;
-  items[4] = require(11690) /* getClass */.getClass(button, "button", look);
+  items[3] = require(11729) /* getClass */.getClass(button, "button", size);
+  const obj3 = require(11729) /* getClass */;
+  items[4] = require(11729) /* getClass */.getClass(button, "button", look);
   let faded;
   if (!flag3) {
     if (!obj5.isAndroid()) {
@@ -120,7 +120,7 @@ class ButtonText {
       obj1.look = look;
       obj1.size = size;
       obj1.disabled = disabled;
-      tmp9 = require("module_7610");
+      tmp9 = require("module_7646");
       items = [, ];
       items[0] = getTextStyles(obj1, tmp);
       items[1] = style;

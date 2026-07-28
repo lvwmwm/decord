@@ -1,10 +1,10 @@
-// Module ID: 4313
-// Function ID: 37793
+// Module ID: 4347
+// Function ID: 37907
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1348, 1908, 3759, 1907, 4204, 653, 1852, 3764, 483, 1882, 4314, 4315, 1212, 3970, 4316, 21, 2, 4323]
+// Dependencies: [1352, 1348, 1908, 3793, 1907, 4238, 653, 1852, 3798, 483, 1882, 4348, 4349, 1212, 4004, 4350, 21, 2, 4357]
 // Exports: channelTypeString, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4313 (_createForOfIteratorHelperLoose)
+// Module 4347 (_createForOfIteratorHelperLoose)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
@@ -114,7 +114,7 @@ function isTypeOrCategory(channelType, closure_21) {
   return tmp;
 }
 function allowChannelAccess(id, channelType, MEMBER) {
-  const NONE = importAll(3764).NONE;
+  const NONE = importAll(3798).NONE;
   let tmp = callback(channelType);
   if (!tmp) {
     tmp = channelType === closure_22;
@@ -135,7 +135,7 @@ function allowChannelAccess(id, channelType, MEMBER) {
     addResult2 = importAll(483).add(addResult1, constants.CONNECT);
     const obj3 = importAll(483);
   }
-  obj = { id, type: MEMBER, deny: importAll(3764).NONE, allow: addResult2 };
+  obj = { id, type: MEMBER, deny: importAll(3798).NONE, allow: addResult2 };
   return obj;
 }
 function computeSummarizedVoiceStates(arg0) {
@@ -197,8 +197,8 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/C
 export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNonPaidUsers(id) {
   if (arg1 === ChannelTypes.GUILD_STAGE_VOICE) {
     let obj = importAll(483);
-    obj = { id, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: importAll(3764).NONE };
-    obj.deny = obj.add(importAll(3764).NONE, constants.CONNECT);
+    obj = { id, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: importAll(3798).NONE };
+    obj.deny = obj.add(importAll(3798).NONE, constants.CONNECT);
     return obj;
   } else {
     const _Error = Error;
@@ -216,7 +216,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
   }
   const items = [];
   if (tmp) {
-    const NONE = importAll(3764).NONE;
+    const NONE = importAll(3798).NONE;
     let tmp6 = callback(channelType);
     if (!tmp6) {
       tmp6 = channelType === closure_22;
@@ -233,7 +233,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
       addResult2 = importAll(483).add(addResult1, constants.CONNECT);
       const obj3 = importAll(483);
     }
-    obj = { id: guildId, type: _require(1882).PermissionOverwriteType.ROLE, allow: importAll(3764).NONE, deny: addResult2 };
+    obj = { id: guildId, type: _require(1882).PermissionOverwriteType.ROLE, allow: importAll(3798).NONE, deny: addResult2 };
     items.push(obj);
   }
   const item = arr.forEach((arg0) => {
@@ -248,7 +248,7 @@ export const permissionOverwriteForRole = function permissionOverwriteForRole(id
   return allowChannelAccess(id, channelType, require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE);
 };
 export const permissionOverwritesForAnnouncement = function permissionOverwritesForAnnouncement(id) {
-  const items = [{ id, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3764).NONE }];
+  const items = [{ id, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3798).NONE }];
   return items;
 };
 export const isChannelFull = function isChannelFull(channel, stateFromStores3, stateFromStores1) {
@@ -281,8 +281,8 @@ export const isChannelFull = function isChannelFull(channel, stateFromStores3, s
     if (tmp11) {
       let hasVideoResult = stateFromStores3.hasVideo(channel.id);
       if (!hasVideoResult) {
-        hasVideoResult = require(4314) /* hasStream */.hasStream(voiceStatesForChannel);
-        const obj = require(4314) /* hasStream */;
+        hasVideoResult = require(4348) /* hasStream */.hasStream(voiceStatesForChannel);
+        const obj = require(4348) /* hasStream */;
       }
       tmp11 = hasVideoResult;
     }
@@ -336,7 +336,7 @@ export { computeSummarizedVoiceStates };
 export const computeSummarizedVoiceUsers = function computeSummarizedVoiceUsers(channels) {
   return computeSummarizedVoiceStates({ channels: channels.channels, selectedChannelId: channels.selectedChannelId, selectedVoiceChannelId: channels.selectedVoiceChannelId, voiceStates: channels.voiceStates }).map((user) => user.user);
 };
-export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stateFromStores, closure_1) {
+export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores) {
   const tmp = _createForOfIteratorHelperLoose(channels);
   const iter = tmp();
   let iter2 = iter;
@@ -345,8 +345,8 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
       let value = iter2.value;
       let tmp4 = tmp2;
       let tmp5 = tmp3;
-      if (value.id !== stateFromStores) {
-        let tmp13 = closure_1[value.id];
+      if (value.id !== stateFromStores1) {
+        let tmp13 = stateFromStores[value.id];
         let tmp14 = tmp13;
         tmp4 = tmp2;
         tmp5 = tmp3;
@@ -365,9 +365,9 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
             if (!iter3.done) {
               let tmp9 = require;
               let tmp10 = dependencyMap;
-              let obj = require(4315) /* getAudienceRequestToSpeakState */;
+              let obj = require(4349) /* getAudienceRequestToSpeakState */;
               let audienceRequestToSpeakState = obj.getAudienceRequestToSpeakState(iter4.value.voiceState);
-              while (audienceRequestToSpeakState !== require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
+              while (audienceRequestToSpeakState !== require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
                 let iter5 = tmp7();
                 iter4 = iter5;
                 let tmp12 = tmp13;

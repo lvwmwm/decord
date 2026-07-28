@@ -1,10 +1,10 @@
-// Module ID: 13811
-// Function ID: 105895
+// Module ID: 13855
+// Function ID: 106068
 // Name: onClose
-// Dependencies: [5, 57, 31, 27, 11705, 33, 4338, 4131, 689, 5084, 11707, 11711, 3832, 1212, 9104, 11724, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 11744, 33, 4372, 4165, 689, 5118, 11746, 11750, 3866, 1212, 9148, 11763, 5121, 5552, 2]
 // Exports: default
 
-// Module 13811 (onClose)
+// Module 13855 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -16,7 +16,7 @@ import HeaderBackImage from "HeaderBackImage";
 
 const require = arg1;
 function onClose() {
-  let arr = importDefault(4338);
+  let arr = importDefault(4372);
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
@@ -75,5 +75,5 @@ obj1[ContactSyncScenes.NAME_INPUT] = obj2;
 const result = require("result").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
 export default function ContactSyncNameUpdateModal() {
-  return jsx(require(5517) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
+  return jsx(require(5552) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
 };

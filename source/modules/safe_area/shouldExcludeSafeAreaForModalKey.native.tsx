@@ -1,10 +1,10 @@
-// Module ID: 15625
-// Function ID: 120486
+// Module ID: 15664
+// Function ID: 120642
 // Name: set
-// Dependencies: [653, 10615, 4342, 2]
+// Dependencies: [653, 10653, 4376, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 15625 (set)
+// Module 15664 (set)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 import set from "getVoiceChannelKeyByChannelId";
 
@@ -16,13 +16,13 @@ const result = set.fileFinishedImporting("modules/safe_area/shouldExcludeSafeAre
 export const shouldExcludeSafeAreaForModalKey = function shouldExcludeSafeAreaForModalKey(key) {
   let tmp = null != key;
   if (tmp) {
-    const tmp4 = !require(4342) /* getVoiceChannelKeyByChannelId */.isVoiceChannelModalKey(key);
+    const tmp4 = !require(4376) /* getVoiceChannelKeyByChannelId */.isVoiceChannelModalKey(key);
     let hasItem = !tmp4;
     if (tmp4) {
       hasItem = set.has(key);
     }
     tmp = hasItem;
-    const obj = require(4342) /* getVoiceChannelKeyByChannelId */;
+    const obj = require(4376) /* getVoiceChannelKeyByChannelId */;
   }
   return tmp;
 };

@@ -1,10 +1,10 @@
-// Module ID: 6682
-// Function ID: 58999
+// Module ID: 6718
+// Function ID: 59088
 // Name: estimateAttachmentWidth
-// Dependencies: [57, 31, 27, 33, 5511, 4127, 1324, 6683, 2]
+// Dependencies: [57, 31, 27, 33, 5546, 4161, 1324, 6719, 2]
 // Exports: useInputAttachments
 
-// Module 6682 (estimateAttachmentWidth)
+// Module 6718 (estimateAttachmentWidth)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -17,7 +17,7 @@ const require = arg1;
 function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;
   if (null != arg0) {
-    num = require(5511) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
+    num = require(5546) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
   }
   return num;
 }
@@ -28,7 +28,7 @@ function renderInputAttachment(leadingIcon, leadingText, text) {
     tmp = null;
     if (null != leadingText) {
       const obj = { variant: "text-md/normal", style: text, children: leadingText };
-      tmp = jsx(require(4127) /* Text */.Text, { variant: "text-md/normal", style: text, children: leadingText });
+      tmp = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal", style: text, children: leadingText });
     }
   }
   return tmp;

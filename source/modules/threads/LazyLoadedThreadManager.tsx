@@ -1,9 +1,9 @@
-// Module ID: 10353
-// Function ID: 79956
+// Module ID: 10393
+// Function ID: 80085
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4809, 1352, 1348, 1907, 653, 1355, 686, 5604, 3953, 3966, 507, 2]
+// Dependencies: [4843, 1352, 1348, 1907, 653, 1355, 686, 5639, 3987, 4000, 507, 2]
 
-// Module 10353 (_createForOfIteratorHelperLoose)
+// Module 10393 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_6 from "_isNativeReflectConstruct";
@@ -117,7 +117,7 @@ function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -134,11 +134,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let obj = _require(3953);
+        let obj = _require(3987);
         const _location = location;
         obj = {};
-        const RouteParam = _require(3966).RouteParam;
-        const RouteParam2 = _require(3966).RouteParam;
+        const RouteParam = _require(4000).RouteParam;
+        const RouteParam2 = _require(4000).RouteParam;
         obj.path = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         obj.exact = true;
         let closure_1 = obj.matchPath(location.pathname, obj);
@@ -219,7 +219,7 @@ export default {
           let tmp8 = items1;
           let tmp9 = dependencyMap;
           let tmp10 = tmp7;
-          if (value !== items1(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+          if (value !== items1(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
             let tmp11 = isStaticChannelRoute;
             tmp10 = tmp7;
             if (!isStaticChannelRoute(value)) {

@@ -1,9 +1,9 @@
-// Module ID: 8229
-// Function ID: 66039
+// Module ID: 8267
+// Function ID: 66149
 // Name: VoidTextInput
-// Dependencies: [31, 27, 653, 33, 4131, 689, 3977, 477, 3975, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 4011, 477, 4009, 2]
 
-// Module 8229 (VoidTextInput)
+// Module 8267 (VoidTextInput)
 import { TextInput } from "get ActivityIndicator";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -23,23 +23,23 @@ const forwardRefResult = require("result").forwardRef((style, ref) => {
   obj.style = 0;
   const merged = Object.assign(style, obj);
   const tmp3 = callback();
-  obj = require(3977) /* AccessibilityAnnouncer */;
+  obj = require(4011) /* AccessibilityAnnouncer */;
   const theme = obj.useThemeContext().theme;
-  const obj2 = require(3977) /* AccessibilityAnnouncer */;
+  const obj2 = require(4011) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  const tmp5 = require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
+  const tmp5 = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
   obj = { ref, style: items };
   items = [tmp3.input, style.style];
-  const isThemeDarkResult = require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme);
+  const isThemeDarkResult = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme);
   const tmp6 = jsx;
   const tmp7 = TextInput;
-  obj.keyboardAppearance = require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
+  obj.keyboardAppearance = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   obj.placeholderTextColor = tmp3.placeholderTextColor.color;
-  const obj4 = require(3977) /* AccessibilityAnnouncer */;
+  const obj4 = require(4011) /* AccessibilityAnnouncer */;
   let hexWithOpacityResult = tmp5;
   if (obj5.isAndroid()) {
-    hexWithOpacityResult = require(3975) /* hexToRgb */.hexWithOpacity(tmp5, 0.5);
-    const obj6 = require(3975) /* hexToRgb */;
+    hexWithOpacityResult = require(4009) /* hexToRgb */.hexWithOpacity(tmp5, 0.5);
+    const obj6 = require(4009) /* hexToRgb */;
   }
   obj.selectionColor = hexWithOpacityResult;
   const merged1 = Object.assign(merged);

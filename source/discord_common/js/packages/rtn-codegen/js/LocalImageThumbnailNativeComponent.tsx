@@ -1,9 +1,9 @@
-// Module ID: 13076
-// Function ID: 101071
+// Module ID: 13120
+// Function ID: 101244
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 13076 (__INTERNAL_VIEW_CONFIG)
+// Module 13120 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDLocalImageThumbnail", validAttributes: { localImageSource: true } };

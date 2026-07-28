@@ -1,9 +1,9 @@
-// Module ID: 3971
-// Function ID: 32874
+// Module ID: 4005
+// Function ID: 32976
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 675, 3972, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 675, 4006, 566, 686, 2]
 
-// Module 3971 (_isNativeReflectConstruct)
+// Module 4005 (_isNativeReflectConstruct)
 import ME from "ME";
 import expandLocation from "expandLocation";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

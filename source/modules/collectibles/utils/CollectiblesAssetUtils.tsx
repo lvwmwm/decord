@@ -1,5 +1,5 @@
 // Module ID: 1830
-// Function ID: 20040
+// Function ID: 20044
 // Name: parseSkuIdFromServerData
 // Dependencies: [1327, 2, 1829]
 // Exports: getCollectiblesItemAssetUrl

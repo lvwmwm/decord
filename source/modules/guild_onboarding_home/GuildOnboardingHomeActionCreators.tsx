@@ -1,10 +1,10 @@
-// Module ID: 11376
-// Function ID: 88376
+// Module ID: 11414
+// Function ID: 88495
 // Name: _fetchGuildHomeSettings
-// Dependencies: [5, 1910, 1348, 4334, 4335, 653, 686, 507, 11377, 675, 4139, 21, 2]
+// Dependencies: [5, 1910, 1348, 4368, 4369, 653, 686, 507, 11415, 675, 4173, 21, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11376 (_fetchGuildHomeSettings)
+// Module 11414 (_fetchGuildHomeSettings)
 import closure_3 from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -67,8 +67,8 @@ export const selectHomeResourceChannel = function selectHomeResourceChannel(clos
     }
     if (flag) {
       obj = { navigationReplace: false };
-      require(4139) /* transitionToChannel */.transitionToChannel(channelId, obj);
-      const obj3 = require(4139) /* transitionToChannel */;
+      require(4173) /* transitionToChannel */.transitionToChannel(channelId, obj);
+      const obj3 = require(4173) /* transitionToChannel */;
     }
   }
 };
@@ -90,7 +90,7 @@ export const selectNewMemberActionChannel = function selectNewMemberActionChanne
     obj = { guild_id, channel_id: channel.id, server_guide_channel_type: "member action", channel_action_type: actionForChannel.actionType };
     obj.track(constants.SERVER_GUIDE_CHANNEL_SELECTED, obj);
   }
-  require(4139) /* transitionToChannel */.transitionToChannel(id);
+  require(4173) /* transitionToChannel */.transitionToChannel(id);
 };
 export const completeNewMemberAction = function completeNewMemberAction(guildId, channelId) {
   let obj = importDefault(686);

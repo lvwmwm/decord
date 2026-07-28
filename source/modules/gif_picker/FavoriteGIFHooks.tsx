@@ -1,16 +1,16 @@
-// Module ID: 9540
-// Function ID: 74469
+// Module ID: 9580
+// Function ID: 74598
 // Name: useFavoriteGIFs
-// Dependencies: [31, 9541, 22, 2]
+// Dependencies: [31, 9581, 22, 2]
 // Exports: useIsFavoriteGIF, useShouldShowTooltipOnFavorite, useSortedFavoriteGIFs
 
-// Module 9540 (useFavoriteGIFs)
+// Module 9580 (useFavoriteGIFs)
 import result from "result";
 
 const require = arg1;
 function useFavoriteGIFs() {
   let gifs;
-  const favoriteGifs = require(9541) /* useFrecencySettings */.useFrecencySettings().favoriteGifs;
+  const favoriteGifs = require(9581) /* useFrecencySettings */.useFrecencySettings().favoriteGifs;
   if (null != favoriteGifs) {
     gifs = favoriteGifs.gifs;
   }
@@ -50,7 +50,7 @@ export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFav
 };
 export const useShouldShowTooltipOnFavorite = function useShouldShowTooltipOnFavorite() {
   let hideTooltip;
-  const favoriteGifs = require(9541) /* useFrecencySettings */.useFrecencySettings().favoriteGifs;
+  const favoriteGifs = require(9581) /* useFrecencySettings */.useFrecencySettings().favoriteGifs;
   if (null != favoriteGifs) {
     hideTooltip = favoriteGifs.hideTooltip;
   }

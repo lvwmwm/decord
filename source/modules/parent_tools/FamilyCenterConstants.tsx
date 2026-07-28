@@ -1,10 +1,10 @@
-// Module ID: 5766
-// Function ID: 50397
+// Module ID: 5776
+// Function ID: 50253
 // Name: items
 // Dependencies: [664, 484, 1212, 2199, 2]
 // Exports: ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER, FAMILY_CENTER_REQUEST_QR_CODE_URL, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER
 
-// Module 5766 (items)
+// Module 5776 (items)
 import getAuthenticationPath from "getAuthenticationPath";
 
 const require = arg1;

@@ -1,8 +1,8 @@
-// Module ID: 10086
-// Function ID: 78157
-// Dependencies: [31, 27, 9051, 33, 4131, 10087, 10065, 10088, 2]
+// Module ID: 10126
+// Function ID: 78286
+// Dependencies: [31, 27, 9095, 33, 4165, 10127, 10105, 10128, 2]
 
-// Module 10086
+// Module 10126
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -21,15 +21,15 @@ const memoResult = require("result").memo((arg0) => {
   let searchPlaceholder;
   ({ channelId, guildId } = arg0);
   ({ screenIndex, pressable, isGuildMemberCountVisible, isNavigationScreen, searchPlaceholder } = arg0);
-  let obj = require(10087) /* useIsForumChannelSearchActive */;
+  let obj = require(10127) /* useIsForumChannelSearchActive */;
   if (obj.useIsForumChannelSearchActive(channelId)) {
     obj = { style: tmp.search };
     obj = { channelId, guildId, placeholder: searchPlaceholder };
-    obj.children = tmp2(require(10065) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
+    obj.children = tmp2(require(10105) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
     let tmp2Result = tmp2(View, obj);
   } else {
     const obj1 = { channelId, guildId, pressable, isGuildMemberCountVisible, isNavigationScreen, screenIndex };
-    tmp2Result = tmp2(importDefault(10088), obj1);
+    tmp2Result = tmp2(importDefault(10128), obj1);
   }
   return tmp2Result;
 });

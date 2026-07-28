@@ -1,19 +1,19 @@
-// Module ID: 14702
-// Function ID: 112020
-// Dependencies: [4131, 5084, 689, 2]
+// Module ID: 14746
+// Function ID: 112193
+// Dependencies: [4165, 5118, 689, 2]
 
-// Module 14702
+// Module 14746
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let obj = {};
 obj.useScreenStyles = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
   obj = {};
-  const NAV_BAR_HEIGHT = require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
+  const NAV_BAR_HEIGHT = require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
   if (arg0) {
     let diff = NAV_BAR_HEIGHT;
   } else {
-    diff = NAV_BAR_HEIGHT - tmp(5084).STATUS_BAR_HEIGHT;
+    diff = NAV_BAR_HEIGHT - tmp(5118).STATUS_BAR_HEIGHT;
   }
   obj.marginTop = diff;
   const space = importDefault(689).space;

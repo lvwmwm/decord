@@ -1,10 +1,10 @@
-// Module ID: 5628
-// Function ID: 48042
+// Module ID: 5663
+// Function ID: 48169
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1909, 5055, 1348, 1911, 1838, 653, 1355, 5629, 12549, 12556, 5609, 12559, 12561, 5605, 6010, 5763, 4042, 5994, 5607, 1327, 10353, 4141, 4322, 2]
+// Dependencies: [5, 1909, 5089, 1348, 1911, 1838, 653, 1355, 5664, 12592, 12599, 5644, 12602, 12604, 5640, 6044, 5773, 4076, 6028, 5642, 1327, 10393, 4175, 4356, 2]
 // Exports: default
 
-// Module 5628 (_isAccessibleChannelOrThreadPath)
+// Module 5663 (_isAccessibleChannelOrThreadPath)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

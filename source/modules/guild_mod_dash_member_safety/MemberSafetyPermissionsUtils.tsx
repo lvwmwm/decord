@@ -1,10 +1,10 @@
-// Module ID: 6010
-// Function ID: 53603
+// Module ID: 6044
+// Function ID: 53722
 // Name: getContextForPermission
-// Dependencies: [57, 1391, 1838, 3759, 1850, 3763, 653, 483, 3764, 566, 2]
+// Dependencies: [57, 1391, 1838, 3793, 1850, 3797, 653, 483, 3798, 566, 2]
 // Exports: canBulkBanUser, canPruneGuildMembers, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanBulkBanUser
 
-// Module 6010 (getContextForPermission)
+// Module 6044 (getContextForPermission)
 import _slicedToArray from "_slicedToArray";
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

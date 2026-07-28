@@ -1,8 +1,8 @@
-// Module ID: 11677
-// Function ID: 90594
-// Dependencies: [31, 33, 4131, 689, 4661, 1273, 2]
+// Module ID: 11716
+// Function ID: 90745
+// Dependencies: [31, 33, 4165, 689, 4695, 1273, 2]
 
-// Module 11677
+// Module 11716
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
@@ -34,7 +34,7 @@ const forwardRefResult = require("result").forwardRef((boxSize, ref) => {
   const items = [tmp.icon, { tintColor }];
   obj.style = items;
   obj.children = jsx(require(1273) /* Button */.Icon, { source: icon, size: require(1273) /* Button */.Icon.Sizes.CUSTOM });
-  return jsx(require(4661) /* PressableBase */.PressableOpacity, { source: icon, size: require(1273) /* Button */.Icon.Sizes.CUSTOM });
+  return jsx(require(4695) /* PressableBase */.PressableOpacity, { source: icon, size: require(1273) /* Button */.Icon.Sizes.CUSTOM });
 });
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessagePillButton.tsx");
 

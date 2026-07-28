@@ -1,9 +1,9 @@
-// Module ID: 3936
-// Function ID: 32461
+// Module ID: 3970
+// Function ID: 32563
 // Name: TeenScreenTimeRive
-// Dependencies: [29, 31, 33, 3860, 3937, 3911, 2]
+// Dependencies: [29, 31, 33, 3894, 3971, 3945, 2]
 
-// Module 3936 (TeenScreenTimeRive)
+// Module 3970 (TeenScreenTimeRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -25,16 +25,16 @@ let closure_8 = importAllResult.forwardRef(function TeenScreenTimeRiveInner(defa
   if (undefined !== defaultViewModelInstance) {
     tmp = defaultViewModelInstance;
   }
-  const obj = { ref, src: importDefault(3937), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine };
+  const obj = { ref, src: importDefault(3971), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine };
   const merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(require(3860) /* useObservedValue */.BaseRive, { ref, src: importDefault(3937), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
+  return jsx(require(3894) /* useObservedValue */.BaseRive, { ref, src: importDefault(3971), artboard: str, artboardProperties: closure_6, artboardViewModelInstances: closure_7, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
 });
 const forwardRefResult = importAllResult.forwardRef(function TeenScreenTimeRiveWithBoundary(fallback, ref) {
   let obj = { fallback: fallback.fallback };
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_8 ref={arg1} />;
-  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/TeenScreenTimeRive.tsx");
 

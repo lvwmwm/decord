@@ -1,10 +1,10 @@
-// Module ID: 8994
-// Function ID: 70858
+// Module ID: 9038
+// Function ID: 71009
 // Name: ActivityStatus
-// Dependencies: [31, 27, 4218, 3768, 1850, 8995, 653, 33, 4131, 566, 8996, 8997, 8998, 8999, 9004, 9005, 9013, 9017, 9003, 2]
+// Dependencies: [31, 27, 4252, 3802, 1850, 9039, 653, 33, 4165, 566, 9040, 9041, 9042, 9043, 9048, 9049, 9057, 9061, 9047, 2]
 // Exports: default
 
-// Module 8994 (ActivityStatus)
+// Module 9038 (ActivityStatus)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

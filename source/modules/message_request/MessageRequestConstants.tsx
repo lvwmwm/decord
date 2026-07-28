@@ -1,9 +1,9 @@
-// Module ID: 11473
-// Function ID: 89366
+// Module ID: 11511
+// Function ID: 89490
 // Name: MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL
 // Dependencies: [2]
 
-// Module 11473 (MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL)
+// Module 11511 (MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL)
 const result = require("set").fileFinishedImporting("modules/message_request/MessageRequestConstants.tsx");
 
 export const MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL = "Message Request Accept Confirmation";

@@ -1,17 +1,17 @@
-// Module ID: 16268
-// Function ID: 126279
+// Module ID: 16307
+// Function ID: 126435
 // Name: getVerifyPhoneSource
-// Dependencies: [31, 27, 33, 6481, 16269, 16270, 16271, 3977, 2]
+// Dependencies: [31, 27, 33, 6517, 16308, 16309, 16310, 4011, 2]
 // Exports: VerifyPhone
 
-// Module 16268 (getVerifyPhoneSource)
+// Module 16307 (getVerifyPhoneSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getVerifyPhoneSource(theme) {
-  let obj = require(6481) /* getIllustrationSource */;
+  let obj = require(6517) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getVerifyPhoneSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useVerifyPhoneSource() {
-  return getVerifyPhoneSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getVerifyPhoneSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/VerifyPhone.tsx");
 

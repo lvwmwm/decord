@@ -1,10 +1,10 @@
-// Module ID: 7953
-// Function ID: 63258
+// Module ID: 7990
+// Function ID: 63367
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 5669, 4154, 7954, 653, 4567, 4124, 1212, 5664, 7956, 477, 1882, 5676, 7957, 5914, 5685, 4471, 1392, 7955, 7967, 5674, 7968, 2]
+// Dependencies: [29, 5, 5679, 4188, 7991, 653, 4601, 4158, 1212, 5674, 7993, 477, 1882, 5686, 7994, 5948, 5695, 4505, 1392, 7992, 8005, 5684, 8006, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication
 
-// Module 7953 (_createForOfIteratorHelperLoose)
+// Module 7990 (_createForOfIteratorHelperLoose)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,8 +100,8 @@ function isRealApplication(application) {
 function isEmbeddedApp(application) {
   let hasApplicationFlagResult = isRealApplication(application);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-    const obj = require(5664) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5674) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    const obj = require(5674) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 }
@@ -110,8 +110,8 @@ function getShelfBadgeTypeIfActive(application) {
   let tmp2;
   if (null != tmp) {
     const obj = require(477) /* set */;
-    tmp2 = tmp.client_platform_config[importDefault(7956)(undefined, obj.getOS(obj))];
-    const tmp5 = importDefault(7956);
+    tmp2 = tmp.client_platform_config[importDefault(7993)(undefined, obj.getOS(obj))];
+    const tmp5 = importDefault(7993);
   }
   const timestamp = Date.now();
   let label_until;
@@ -173,16 +173,16 @@ export { isEmbeddedApp };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = isRealApplication(application);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
-    const obj = require(5664) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5674) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
+    const obj = require(5674) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = isRealApplication(FAKE_BUILT_IN_APP2);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
-    const obj = require(5664) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5674) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
+    const obj = require(5674) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
@@ -286,7 +286,7 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   return null != tmp && tmp.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === require(7955) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  return entrypoint === require(7992) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -349,9 +349,9 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   }
   let result = null != guildState;
   if (result) {
-    result = require(5674) /* _createForOfIteratorHelperLoose */.hasCommandIndexForApp(id.id, guildState);
-    const obj = require(5674) /* _createForOfIteratorHelperLoose */;
+    result = require(5684) /* _createForOfIteratorHelperLoose */.hasCommandIndexForApp(id.id, guildState);
+    const obj = require(5684) /* _createForOfIteratorHelperLoose */;
   }
-  const obj2 = require(7968) /* canInstallApplication */;
-  return require(7968) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = require(8006) /* canInstallApplication */;
+  return require(8006) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

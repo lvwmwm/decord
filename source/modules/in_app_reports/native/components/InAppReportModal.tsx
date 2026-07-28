@@ -1,10 +1,10 @@
-// Module ID: 7638
-// Function ID: 61184
+// Module ID: 7674
+// Function ID: 61274
 // Name: getScreens
-// Dependencies: [5, 57, 31, 7639, 33, 6695, 7640, 1212, 7641, 4560, 5827, 7637, 7635, 5517, 2]
+// Dependencies: [5, 57, 31, 7675, 33, 6731, 7676, 1212, 7677, 4594, 5837, 7673, 7671, 5552, 2]
 // Exports: default
 
-// Module 7638 (getScreens)
+// Module 7674 (getScreens)
 import HeaderActionButton from "HeaderActionButton";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -111,7 +111,7 @@ export default function InAppReportModal(arg0) {
   [c12, closure_13] = callback(React.useState([]), 2);
   const tmp4 = callback(React.useState([]), 2);
   [c14, c15] = callback(React.useState([]), 2);
-  menu(4560)(() => {
+  menu(4594)(() => {
     const orFetchLinkedUsers = outer1_0(outer1_2[10]).getOrFetchLinkedUsers();
   });
   let items = [closeModal, first];
@@ -172,7 +172,7 @@ export default function InAppReportModal(arg0) {
       let obj = { screens, initialRouteStack: initialStack };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-      tmp8 = jsx(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteStack: initialStack });
+      tmp8 = jsx(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteStack: initialStack });
     }
   }
   return tmp8;

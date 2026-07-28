@@ -1,10 +1,10 @@
-// Module ID: 7894
-// Function ID: 62932
+// Module ID: 7930
+// Function ID: 63023
 // Name: useCollectiblesData
-// Dependencies: [57, 5770, 5786, 624, 2]
+// Dependencies: [57, 5780, 5796, 624, 2]
 // Exports: default
 
-// Module 7894 (useCollectiblesData)
+// Module 7930 (useCollectiblesData)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 14783
-// Function ID: 112712
+// Module ID: 14827
+// Function ID: 112885
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useRiveRendererExperiment
 
-// Module 14783 (apexExperiment)
+// Module 14827 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-12-rive-mobile-renderer", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

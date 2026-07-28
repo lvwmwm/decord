@@ -1,9 +1,9 @@
-// Module ID: 9821
-// Function ID: 76145
+// Module ID: 9861
+// Function ID: 76274
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1922, 1348, 1918, 1838, 4350, 3768, 1850, 4352, 22, 5834, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1922, 1348, 1918, 1838, 4384, 3802, 1850, 4386, 22, 5844, 566, 686, 2]
 
-// Module 9821 (_isNativeReflectConstruct)
+// Module 9861 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import initialize from "initialize";
@@ -178,15 +178,15 @@ obj = {
         const findIndexResult = importDefault(22).findIndex(tmp23.items, (message) => message.message.id === id);
         if (-1 === findIndexResult) {
           const items1 = tmp23.items;
-          let obj = { message: id(4352).createMessageRecord(message.message) };
+          let obj = { message: id(4386).createMessageRecord(message.message) };
           const _Date = Date;
           const date = new Date();
           obj.pinnedAt = date;
           items1.unshift(obj);
-          const obj6 = id(4352);
+          const obj6 = id(4386);
         } else {
-          tmp23.items[findIndexResult].message = id(4352).updateMessageRecord(tmp23.items[findIndexResult].message, message.message);
-          const obj4 = id(4352);
+          tmp23.items[findIndexResult].message = id(4386).updateMessageRecord(tmp23.items[findIndexResult].message, message.message);
+          const obj4 = id(4386);
         }
         const obj3 = importDefault(22);
       } else {
@@ -205,7 +205,7 @@ obj = {
       const findIndexResult2 = importDefault(22).findIndex(tmp23.items, (message) => message.message.id === id);
       if (-1 !== findIndexResult2) {
         message = tmp.message;
-        obj = id(4352);
+        obj = id(4386);
         const updateMessageRecordResult = obj.updateMessageRecord(message, message.message);
         if (updateMessageRecordResult !== message) {
           const items4 = tmp23.items;
@@ -232,7 +232,7 @@ obj = {
       } else {
         const items = tmp.items;
         tmp.items = items.slice();
-        tmp.items[findIndexResult].message = messageId(5834).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
+        tmp.items[findIndexResult].message = messageId(5844).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
       }
       const obj2 = importDefault(22);
     }

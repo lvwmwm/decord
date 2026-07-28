@@ -1,9 +1,9 @@
-// Module ID: 13446
-// Function ID: 103279
+// Module ID: 13490
+// Function ID: 103452
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [13442, 1212, 13447, 13448, 1184, 2]
+// Dependencies: [13486, 1212, 13491, 13492, 1184, 2]
 
-// Module 13446 (_createForOfIteratorHelperLoose)
+// Module 13490 (_createForOfIteratorHelperLoose)
 import items2 from "items2";
 
 let closure_3;
@@ -130,13 +130,13 @@ function buildChannelsAndMapping() {
   let done2;
   let done3;
   let iter9;
-  let obj = map3(13448);
+  let obj = map3(13492);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   const mappings = assignedNotifSettingsAndMappings.mappings;
   const map = new Map();
   let prop;
-  if (null != importDefault(13447)) {
-    prop = importDefault(13447).getAndroidNotifChannelStates;
+  if (null != importDefault(13491)) {
+    prop = importDefault(13491).getAndroidNotifChannelStates;
   }
   if (null != prop) {
     const _Map2 = Map;
@@ -276,8 +276,8 @@ export default {
   clear() {
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    if (null != importDefault(13447)) {
-      let obj = importDefault(13447);
+    if (null != importDefault(13491)) {
+      let obj = importDefault(13491);
     } else {
       obj = {};
     }
@@ -294,8 +294,8 @@ export default {
     let inheritedImportances;
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    if (null != importDefault(13447)) {
-      let obj = importDefault(13447);
+    if (null != importDefault(13491)) {
+      let obj = importDefault(13491);
     } else {
       obj = {};
     }

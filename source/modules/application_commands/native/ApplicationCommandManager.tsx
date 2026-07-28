@@ -1,9 +1,9 @@
-// Module ID: 11455
-// Function ID: 89124
+// Module ID: 11493
+// Function ID: 89245
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 4469, 6039, 653, 4568, 1552, 11108, 6037, 5674, 7962, 5676, 7958, 11107, 1882, 11144, 4119, 22, 11272, 11109, 4100, 4325, 9514, 6134, 3997, 1555, 11270, 2]
+// Dependencies: [57, 6, 7, 4503, 6073, 653, 4602, 1552, 11146, 6071, 5684, 7999, 5686, 7995, 11145, 1882, 11182, 4153, 22, 11310, 11147, 4134, 4359, 9554, 6168, 4031, 1555, 11308, 2]
 
-// Module 11455 (_createForOfIteratorHelperLoose)
+// Module 11493 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "regExp";
 import DRAG_HANDLE from "DRAG_HANDLE";
@@ -343,6 +343,99 @@ const tmp4 = (() => {
         obj["location"] = _location;
         self.mergePropsAndUpdate(obj);
       };
+      this.updateStyles = (styles) => {
+        self.styles = styles;
+        const chatInputNodes = self.chatInputNodes;
+        self.chatInputNodes = chatInputNodes.map((style) => {
+          if (null == style.style) {
+            return style;
+          } else {
+            const type = style.type;
+            if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.COMMAND_OPTION !== type) {
+              if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.COMMAND_OPTION_WITH_VALUE !== type) {
+                if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.GAME_HIGHLIGHT === type) {
+                  let obj = {};
+                  const merged = Object.assign(style);
+                  const styles4 = outer1_0.styles;
+                  obj["style"] = styles4.gameMention();
+                  return obj;
+                } else if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.GAME_MENTION_INPUT === type) {
+                  obj = {};
+                  const merged1 = Object.assign(style);
+                  const styles3 = outer1_0.styles;
+                  obj["style"] = styles3.commandOption();
+                  return obj;
+                } else if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.ROLE_HIGHLIGHT === type) {
+                  const data = style.data;
+                  let color;
+                  if (null != data) {
+                    color = data.color;
+                  }
+                  const obj1 = {};
+                  const merged2 = Object.assign(style);
+                  const styles2 = outer1_0.styles;
+                  let tmp16;
+                  if (null != color) {
+                    tmp16 = color;
+                  }
+                  obj1["style"] = styles2.autocomplete(tmp16);
+                  return obj1;
+                } else {
+                  if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.EMOJI_HIGHLIGHT !== type) {
+                    if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.USER_HIGHLIGHT !== type) {
+                      if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.CHANNEL_HIGHLIGHT !== type) {
+                        if (ApplicationCommandManager(outer3_3[8]).ChatInputNodeType.SILENT_HIGHLIGHT !== type) {
+                          return style;
+                        }
+                      }
+                    }
+                  }
+                  obj = {};
+                  const merged3 = Object.assign(style);
+                  const styles = outer1_0.styles;
+                  obj["style"] = styles.autocomplete();
+                  return obj;
+                }
+              }
+            }
+            const data2 = style.data;
+            let option;
+            if (null != data2) {
+              option = data2.option;
+            }
+            let tmp26 = null != option;
+            if (tmp26) {
+              const activeOption = outer1_0.activeOption;
+              let name;
+              if (null != activeOption) {
+                name = activeOption.name;
+              }
+              tmp26 = option.name !== name;
+            }
+            if (tmp26) {
+              let success;
+              if (null != outer1_0.optionValidationResults[option.name]) {
+                success = tmp30.success;
+              }
+              tmp26 = false === success;
+            }
+            const obj2 = {};
+            const merged4 = Object.assign(style);
+            const styles5 = outer1_0.styles;
+            if (tmp26) {
+              let commandErrorOptionResult = styles5.commandErrorOption();
+            } else {
+              commandErrorOptionResult = styles5.commandOption();
+            }
+            obj2["style"] = commandErrorOptionResult;
+            return obj2;
+          }
+        });
+        if (self.chatInputNodes.length > 0) {
+          const current = self.ref.current;
+          const result = current.updateNativeTextBlocksThrottled(self.chatInputNodes, self.props.editId);
+        }
+      };
       this.addCommandOptionParserRules = () => {
         const parser = self.parser;
         let obj = {
@@ -534,8 +627,8 @@ const tmp4 = (() => {
         parser8.addRule({
           ruleId: "gameHighlightRuleId",
           type: ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.GAME_HIGHLIGHT,
-          matchFunction(arg0) {
-            return ApplicationCommandManager(outer3_3[14]).getGameHighlightNodes(outer1_0.mentionGames, arg0);
+          matchFunction(text) {
+            return ApplicationCommandManager(outer3_3[14]).getGameHighlightNodes(outer1_0.mentionGames, text);
           },
           style() {
             const styles = outer1_0.styles;
@@ -550,8 +643,8 @@ const tmp4 = (() => {
         const obj5 = {
           ruleId: "gameHighlightRuleId",
           type: ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.GAME_HIGHLIGHT,
-          matchFunction(arg0) {
-            return ApplicationCommandManager(outer3_3[14]).getGameHighlightNodes(outer1_0.mentionGames, arg0);
+          matchFunction(text) {
+            return ApplicationCommandManager(outer3_3[14]).getGameHighlightNodes(outer1_0.mentionGames, text);
           },
           style() {
             const styles = outer1_0.styles;
@@ -1085,7 +1178,7 @@ const tmp4 = (() => {
       const result = mentionGames.set(game.id, game);
     }
   };
-  let items = [obj, , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "getMentionGames",
     value: function getMentionGames() {
@@ -1094,6 +1187,16 @@ const tmp4 = (() => {
   };
   items[1] = obj;
   obj = {
+    key: "buildGameMentionNode",
+    value: function buildGameMentionNode(game) {
+      const styles = this.styles;
+      const obj = { type: ApplicationCommandManager(outer1_3[8]).ChatInputNodeType.GAME_HIGHLIGHT, style: styles.gameMention(), deleteNodeOnBackspace: true, editDisabled: true };
+      const merged = Object.assign(ApplicationCommandManager(outer1_3[14]).buildGameMentionResult(game));
+      return obj;
+    }
+  };
+  items[2] = obj;
+  items[3] = {
     key: "setPreferredOptionValue",
     value: function setPreferredOptionValue(id, name, displayText) {
       const self = this;
@@ -1103,8 +1206,7 @@ const tmp4 = (() => {
       self.preferredOptionValues[id][name] = displayText;
     }
   };
-  items[2] = obj;
-  items[3] = {
+  items[4] = {
     key: "mergePropsAndUpdate",
     value: function mergePropsAndUpdate(editId) {
       let activeCommand;
@@ -1728,7 +1830,7 @@ const tmp4 = (() => {
       }
     }
   };
-  items[4] = {
+  items[5] = {
     key: "updateValidationResults",
     value: function updateValidationResults() {
       let self = this;

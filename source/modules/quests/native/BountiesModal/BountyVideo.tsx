@@ -1,10 +1,10 @@
-// Module ID: 13995
-// Function ID: 107116
+// Module ID: 14039
+// Function ID: 107289
 // Name: BountyVideo
-// Dependencies: [57, 31, 27, 4977, 33, 478, 9415, 689, 4131, 13996, 10819, 10820, 3992, 3835, 4132, 4135, 13976, 13979, 13997, 5085, 13998, 14000, 14002, 9743, 2]
+// Dependencies: [57, 31, 27, 5011, 33, 478, 9455, 689, 4165, 14040, 10857, 10858, 4026, 3869, 4166, 4169, 14020, 14023, 14041, 5119, 14042, 14044, 14046, 9783, 2]
 // Exports: BountyVideo
 
-// Module 13995 (BountyVideo)
+// Module 14039 (BountyVideo)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -37,7 +37,7 @@ let closure_15 = _createForOfIteratorHelperLoose.createStyles(() => {
   obj.videoContainer = obj;
   obj = { position: "absolute", top: importDefault(689).space.PX_8, left: importDefault(689).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
   obj.leftRow = obj;
-  const obj1 = { position: "absolute", bottom: 0, height: require(13996) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  const obj1 = { position: "absolute", bottom: 0, height: require(14040) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
   obj.progress = obj1;
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);

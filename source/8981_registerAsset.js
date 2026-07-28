@@ -1,11 +1,11 @@
 // Module ID: 8981
-// Function ID: 70786
+// Function ID: 70758
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 8981 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/game_console/images", width: 126, height: 118, scales: [2, 3], hash: "02b1067b85b45dd047c8c944ed8c1d6e", name: "devices_not_found", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5bfdb70bf70b33af737927fefb52cdba", name: "ServerIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

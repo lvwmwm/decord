@@ -1,10 +1,10 @@
-// Module ID: 11381
-// Function ID: 88444
+// Module ID: 11419
+// Function ID: 88563
 // Name: DoubleTapToReactChatInputBannerInner
-// Dependencies: [57, 31, 27, 4123, 1345, 1853, 33, 4131, 689, 477, 624, 5150, 1392, 4127, 1212, 11382, 4661, 5119, 8364, 480, 3992, 4132, 1273, 4099, 11418, 1935, 8063, 4561, 8174, 3804, 9926, 7691, 9602, 1334, 2]
+// Dependencies: [57, 31, 27, 4157, 1345, 1853, 33, 4165, 689, 477, 624, 5184, 1392, 4161, 1212, 11420, 4695, 5153, 8402, 480, 4026, 4166, 1273, 4133, 11456, 1935, 8101, 4595, 8212, 3838, 9966, 7727, 9642, 1334, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 11381 (DoubleTapToReactChatInputBannerInner)
+// Module 11419 (DoubleTapToReactChatInputBannerInner)
 import _slicedToArray from "_slicedToArray";
 import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji";
 import { View } from "useMountEffect";
@@ -49,7 +49,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
     url = emoji.url;
   }
   obj1.src = url;
-  const items1 = [callback(importDefault(5150), obj1), callback(require(4127) /* Text */.Text, { variant: "heading-xl/semibold", color: "interactive-text-default", children: "1" })];
+  const items1 = [callback(importDefault(5184), obj1), callback(require(4161) /* Text */.Text, { variant: "heading-xl/semibold", color: "interactive-text-default", children: "1" })];
   obj.children = items1;
   const items2 = [callback2(View, obj), , ];
   const obj3 = { style: tmp.text };
@@ -57,7 +57,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl.string(require(1212) /* getSystemLocale */.t["6RUX7d"]);
-  const items3 = [callback(require(4127) /* Text */.Text, obj5), callback(require(11382) /* renderChannelBadge */.NewBadge, {})];
+  const items3 = [callback(require(4161) /* Text */.Text, obj5), callback(require(11420) /* renderChannelBadge */.NewBadge, {})];
   obj4.children = items3;
   const items4 = [callback2(View, obj4), ];
   const obj6 = { variant: "text-xs/medium", color: "text-default" };
@@ -73,7 +73,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
       return outer1_9(outer1_0(outer1_2[13]).Text, obj, arg1);
     }
   });
-  items4[1] = callback(require(4127) /* Text */.Text, obj6);
+  items4[1] = callback(require(4161) /* Text */.Text, obj6);
   obj3.children = items4;
   items2[1] = callback2(View, obj3);
   const obj8 = { hitSlop: 8, accessibilityRole: "button" };
@@ -81,8 +81,8 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   obj8.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj8.onPress = emoji.handleDismissBanner;
   obj8.style = tmp.closeButton;
-  obj8.children = callback(require(5119) /* XSmallIcon */.XSmallIcon, { size: "sm", color: "icon-subtle" });
-  items2[2] = callback(require(4661) /* PressableBase */.PressableOpacity, obj8);
+  obj8.children = callback(require(5153) /* XSmallIcon */.XSmallIcon, { size: "sm", color: "icon-subtle" });
+  items2[2] = callback(require(4695) /* PressableBase */.PressableOpacity, obj8);
   obj.children = items2;
   return callback2(View, obj);
 }

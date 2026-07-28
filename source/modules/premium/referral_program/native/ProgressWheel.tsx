@@ -1,10 +1,10 @@
-// Module ID: 12417
-// Function ID: 96370
+// Module ID: 12460
+// Function ID: 96540
 // Name: ProgressWheel
-// Dependencies: [27, 33, 4131, 3835, 689, 12409, 5085, 12418, 8463, 12419, 2]
+// Dependencies: [27, 33, 4165, 3869, 689, 12452, 5119, 12461, 8507, 12462, 2]
 // Exports: default
 
-// Module 12417 (ProgressWheel)
+// Module 12460 (ProgressWheel)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -19,34 +19,34 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 export default function ProgressWheel(nReferralsSent) {
   nReferralsSent = nReferralsSent.nReferralsSent;
   const tmp = callback3();
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const token = obj.useToken(importDefault(689).colors.BACKGROUND_MOD_STRONG);
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   obj = { style: tmp.progressCircleContainer };
   const token1 = obj1.useToken(importDefault(689).colors.BACKGROUND_SURFACE_HIGH);
-  let tmp6 = nReferralsSent === require(12409) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
+  let tmp6 = nReferralsSent === require(12452) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
   if (tmp6) {
-    obj = { source: importDefault(12418), style: tmp.glowImage };
-    tmp6 = callback(importDefault(5085), obj);
-    const tmp10 = importDefault(5085);
+    obj = { source: importDefault(12461), style: tmp.glowImage };
+    tmp6 = callback(importDefault(5119), obj);
+    const tmp10 = importDefault(5119);
   }
   const items = [tmp6, , ];
   obj1 = { width: 160, height: 160 };
   const obj2 = { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 };
-  const items1 = [callback(require(8463) /* inlineStyles */.Circle, obj2), ];
+  const items1 = [callback(require(8507) /* inlineStyles */.Circle, obj2), ];
   const obj3 = { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" };
-  items1[1] = callback(require(8463) /* inlineStyles */.Circle, obj3);
+  items1[1] = callback(require(8507) /* inlineStyles */.Circle, obj3);
   obj1.children = items1;
-  items[1] = callback2(importDefault(8463), obj1);
+  items[1] = callback2(importDefault(8507), obj1);
   const obj4 = {};
   const obj5 = {};
-  const tmp11 = importDefault(8463);
+  const tmp11 = importDefault(8507);
   const tmp4 = callback2;
   const tmp5 = View;
-  obj5.uri = importDefault(12419);
+  obj5.uri = importDefault(12462);
   obj4.source = obj5;
   obj4.style = tmp.progressCircleImage;
-  items[2] = callback(importDefault(5085), obj4);
+  items[2] = callback(importDefault(5119), obj4);
   obj.children = items;
   return tmp4(tmp5, obj);
 };

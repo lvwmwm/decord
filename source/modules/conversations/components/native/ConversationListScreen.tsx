@@ -1,10 +1,10 @@
-// Module ID: 9218
-// Function ID: 72262
+// Module ID: 9262
+// Function ID: 72413
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 5830, 5832, 33, 4131, 689, 9219, 4127, 1212, 1459, 1557, 9201, 566, 21, 9202, 9204, 6619, 2]
+// Dependencies: [5, 57, 31, 27, 5840, 5842, 33, 4165, 689, 9263, 4161, 1212, 1459, 1557, 9245, 566, 21, 9246, 9248, 6655, 2]
 // Exports: default
 
-// Module 9218 (_createForOfIteratorHelperLoose)
+// Module 9262 (_createForOfIteratorHelperLoose)
 import closure_3 from "CONVERSATION_COLORS";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -102,7 +102,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function renderItem(item) {
   item = item.item;
-  return jsx(importDefault(9219), { channelId: item.channelId, conversationId: item.conversationId });
+  return jsx(importDefault(9263), { channelId: item.channelId, conversationId: item.conversationId });
 }
 function keyExtractor(conversationId) {
   return conversationId.conversationId;
@@ -126,7 +126,7 @@ let closure_16 = importAllResult.memo(() => {
   obj = { variant: "text-md/normal", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.LJuFRG);
-  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-md/normal", color: "text-muted" });
+  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal", color: "text-muted" });
   return <closure_7 variant="text-md/normal" color="text-muted" />;
 });
 let obj4 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };

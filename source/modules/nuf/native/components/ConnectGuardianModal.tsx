@@ -1,10 +1,10 @@
-// Module ID: 16205
-// Function ID: 125614
+// Module ID: 16244
+// Function ID: 125770
 // Name: ConnectGuardianModal
-// Dependencies: [31, 27, 653, 5766, 33, 4131, 689, 1557, 16206, 675, 5584, 4127, 1212, 2199, 13847, 4544, 2]
+// Dependencies: [31, 27, 653, 5776, 33, 4165, 689, 1557, 16245, 675, 5619, 4161, 1212, 2199, 13891, 4578, 2]
 // Exports: default
 
-// Module 16205 (ConnectGuardianModal)
+// Module 16244 (ConnectGuardianModal)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -39,7 +39,7 @@ const result = require("ME").fileFinishedImporting("modules/nuf/native/component
 export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = onComplete(16206);
+  let obj = onComplete(16245);
   const connectGuardianGate = obj.useConnectGuardianGate();
   const dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -63,7 +63,7 @@ export default function ConnectGuardianModal(route) {
     const items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     obj.style = items1;
-    obj.children = callback(onComplete(5584).ActivityIndicator, {});
+    obj.children = callback(onComplete(5619).ActivityIndicator, {});
     let tmp8 = callback(View, obj);
   } else {
     obj = { style: tmp.container };
@@ -71,22 +71,22 @@ export default function ConnectGuardianModal(route) {
     const obj2 = { style: tmp.title, variant: "heading-xl/bold", color: "text-default" };
     const intl = onComplete(1212).intl;
     obj2.children = intl.string(connectGuardianGate(2199).ITlV6p);
-    const items2 = [callback(onComplete(4127).Text, obj2), ];
+    const items2 = [callback(onComplete(4161).Text, obj2), ];
     const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted" };
     const intl2 = onComplete(1212).intl;
     const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
     obj3.children = intl2.format(connectGuardianGate(2199).F4GT2S, obj4);
-    items2[1] = callback(onComplete(4127).Text, obj3);
+    items2[1] = callback(onComplete(4161).Text, obj3);
     obj1.children = items2;
     const items3 = [callback2(View, obj1), , , ];
     const obj5 = { style: tmp.cardSection };
     const obj6 = { style: tmp.scanPrompt, variant: "text-md/semibold", color: "text-default" };
     const intl3 = onComplete(1212).intl;
     obj6.children = intl3.string(connectGuardianGate(2199).Mi60fm);
-    const items4 = [callback(onComplete(4127).Text, obj6), ];
+    const items4 = [callback(onComplete(4161).Text, obj6), ];
     const obj7 = { shareActions: "compact" };
     ({ linkCode: obj10.linkCode, expiresAt: obj10.expiresAt, refresh: obj10.onRefresh } = connectGuardianGate);
-    items4[1] = callback(onComplete(13847).ConnectGuardianCard, obj7);
+    items4[1] = callback(onComplete(13891).ConnectGuardianCard, obj7);
     obj5.children = items4;
     items3[1] = callback2(View, obj5);
     const obj8 = { style: tmp.grow };
@@ -106,7 +106,7 @@ export default function ConnectGuardianModal(route) {
       }
       return tmp;
     };
-    obj9.children = callback(onComplete(4544).Button, obj11);
+    obj9.children = callback(onComplete(4578).Button, obj11);
     items3[3] = callback(View, obj9);
     obj.children = items3;
     tmp8 = callback2(View, obj);

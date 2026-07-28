@@ -1,9 +1,9 @@
-// Module ID: 6008
-// Function ID: 53597
+// Module ID: 6042
+// Function ID: 53716
 // Name: ReportToModPermissions
 // Dependencies: [653, 483, 2]
 
-// Module 6008 (ReportToModPermissions)
+// Module 6042 (ReportToModPermissions)
 import { Permissions } from "ME";
 import importAllResult from "fromHexReverseArray";
 

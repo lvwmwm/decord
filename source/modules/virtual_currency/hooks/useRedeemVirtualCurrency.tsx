@@ -1,10 +1,10 @@
-// Module ID: 8655
-// Function ID: 68759
+// Module ID: 8699
+// Function ID: 68910
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 57, 31, 4114, 8656, 3799, 5625, 3792, 8654, 1212, 2]
+// Dependencies: [5, 57, 31, 4148, 8700, 3833, 5660, 3826, 8698, 1212, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 8655 (useRedeemVirtualCurrency)
+// Module 8699 (useRedeemVirtualCurrency)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -30,7 +30,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   const isSubmitting = callback(callback2(false), 2);
   callback2 = isSubmitting[1];
   const tmp = callback(callback2(""), 2);
-  const enabled = entitlements(8656).useConfig({ location: "orb_checkout_modal" }).enabled;
+  const enabled = entitlements(8700).useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (null != order) {
     order = order.order;
@@ -55,7 +55,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   let closure_9 = tmp11;
   const tmp12 = callback3((skuId, loadId) => {
     let closure_0 = arg2;
-    let obj = outer1_0(8654);
+    let obj = outer1_0(8698);
     obj = {
       skuId,
       loadId,

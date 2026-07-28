@@ -1,10 +1,10 @@
-// Module ID: 16320
-// Function ID: 127059
+// Module ID: 16359
+// Function ID: 127215
 // Name: PlatformTypes
-// Dependencies: [31, 27, 3759, 8243, 653, 33, 4131, 689, 3835, 1456, 566, 4067, 16284, 7575, 4542, 5501, 5164, 1212, 15488, 15592, 13574, 4815, 1392, 3977, 5448, 2]
+// Dependencies: [31, 27, 3793, 8281, 653, 33, 4165, 689, 3869, 1456, 566, 4101, 16323, 7611, 4576, 5536, 5198, 1212, 15527, 15631, 13618, 4849, 1392, 4011, 5483, 2]
 // Exports: default
 
-// Module 16320 (PlatformTypes)
+// Module 16359 (PlatformTypes)
 import "result";
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

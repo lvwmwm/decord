@@ -1,10 +1,10 @@
-// Module ID: 9443
-// Function ID: 73737
+// Module ID: 9483
+// Function ID: 73865
 // Name: canSeeChannelSummaries
 // Dependencies: [1391, 1838, 653, 1355, 1841, 624, 2]
 // Exports: channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 9443 (canSeeChannelSummaries)
+// Module 9483 (canSeeChannelSummaries)
 import { isGuildNSFW } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";

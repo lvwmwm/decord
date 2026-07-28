@@ -1,10 +1,10 @@
-// Module ID: 16142
-// Function ID: 125066
+// Module ID: 16181
+// Function ID: 125222
 // Name: onClose
-// Dependencies: [31, 27, 13395, 33, 4131, 689, 4338, 16143, 5159, 1273, 1392, 4127, 4661, 1212, 5119, 7832, 16144, 4544, 2]
+// Dependencies: [31, 27, 13439, 33, 4165, 689, 4372, 16182, 5193, 1273, 1392, 4161, 4695, 1212, 5153, 7868, 16183, 4578, 2]
 // Exports: openInteractionModal
 
-// Module 16142 (onClose)
+// Module 16181 (onClose)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { InteractionModalState } from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function onClose() {
-  return importDefault(4338).popWithKey(interaction_modal);
+  return importDefault(4372).popWithKey(interaction_modal);
 }
 class InteractionModal {
   constructor(arg0) {
@@ -135,6 +135,6 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default InteractionModal;
 export const openInteractionModal = function openInteractionModal(application) {
-  let arr = importDefault(4338);
+  let arr = importDefault(4372);
   arr = arr.push(InteractionModal, application, interaction_modal);
 };

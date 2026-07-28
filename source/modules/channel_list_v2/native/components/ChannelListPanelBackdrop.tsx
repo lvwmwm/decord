@@ -1,10 +1,10 @@
-// Module ID: 15133
-// Function ID: 115198
+// Module ID: 15173
+// Function ID: 115357
 // Name: ChannelListPanelBackdrop
-// Dependencies: [31, 27, 653, 33, 4131, 689, 14861, 1557, 14052, 15134, 2]
+// Dependencies: [31, 27, 653, 33, 4165, 689, 14905, 1557, 14096, 15174, 2]
 // Exports: default
 
-// Module 15133 (ChannelListPanelBackdrop)
+// Module 15173 (ChannelListPanelBackdrop)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { DM_WIDTH } from "ME";
@@ -30,7 +30,7 @@ export default function ChannelListPanelBackdrop(children) {
   const contentInset = children.contentInset;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = style(14052);
+  let obj = style(14096);
   const mobileQuestDockHeight = obj.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {
@@ -78,8 +78,8 @@ export default function ChannelListPanelBackdrop(children) {
       return items;
     }, items)
   };
-  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1557)().top, parentSpringTranslateX: mobileQuestDockHeight.useContext(style(14861).HomeDrawerStateContext).panelSpringTranslateX };
-  const items1 = [callback(contentInset(15134), obj), callback(View, { pointerEvents: "none", style: tmp.panelTint }), callback(View, { style: tmp.listWrapper, children: children.children })];
+  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1557)().top, parentSpringTranslateX: mobileQuestDockHeight.useContext(style(14905).HomeDrawerStateContext).panelSpringTranslateX };
+  const items1 = [callback(contentInset(15174), obj), callback(View, { pointerEvents: "none", style: tmp.panelTint }), callback(View, { style: tmp.listWrapper, children: children.children })];
   obj.children = items1;
   return callback2(View, obj);
 };

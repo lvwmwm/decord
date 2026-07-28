@@ -1,9 +1,9 @@
-// Module ID: 4043
-// Function ID: 33664
+// Module ID: 4077
+// Function ID: 33766
 // Name: createExperiment
-// Dependencies: [4044, 2]
+// Dependencies: [4078, 2]
 
-// Module 4043 (createExperiment)
+// Module 4077 (createExperiment)
 import importDefaultResult from "getExperimentDescriptor";
 
 const result = require("set").fileFinishedImporting("modules/experiments/index.tsx");

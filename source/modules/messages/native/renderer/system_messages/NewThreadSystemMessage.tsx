@@ -1,10 +1,10 @@
-// Module ID: 7734
-// Function ID: 61672
+// Module ID: 7770
+// Function ID: 61762
 // Name: createNewThreadSystemMessage
-// Dependencies: [1348, 3768, 1850, 7684, 1212, 7686, 4321, 7687, 2]
+// Dependencies: [1348, 3802, 1850, 7720, 1212, 7722, 4355, 7723, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 7734 (createNewThreadSystemMessage)
+// Module 7770 (createNewThreadSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export const createNewThreadSystemMessage = function createNewThreadSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const messageReference = message.messageReference;
   let channel_id;
@@ -24,10 +24,10 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   channel = channel.getChannel(channel_id);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   if (null != channel) {
-    let content = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
-    const obj4 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+    let content = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
+    const obj4 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
   } else {
     content = message.content;
   }
@@ -41,6 +41,6 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   obj1.threadId = channel_id1;
   obj.threadOnClick = obj1;
   obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.veX9jq, obj);
-  const merged = Object.assign(importDefault(7687)(roleStyle));
+  const merged = Object.assign(importDefault(7723)(roleStyle));
   return obj;
 };

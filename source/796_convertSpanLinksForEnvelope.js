@@ -1,5 +1,5 @@
 // Module ID: 796
-// Function ID: 8969
+// Function ID: 8973
 // Name: convertSpanLinksForEnvelope
 // Dependencies: [77, 29, 797, 806, 811, 815, 816, 817, 799, 802, 818, 821, 825, 801]
 // Exports: addChildSpanToSpan, getActiveSpan, getRootSpan, getSpanDescendants, removeChildSpanFromSpan, showSpanDropWarning, spanToTraceContext, spanToTraceHeader, spanToTraceparentHeader, spanToTransactionTraceContext, updateSpanName

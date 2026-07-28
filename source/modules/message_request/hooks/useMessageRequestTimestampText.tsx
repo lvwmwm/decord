@@ -1,10 +1,10 @@
-// Module ID: 15630
-// Function ID: 120514
+// Module ID: 15669
+// Function ID: 120670
 // Name: getMessageTimestampForChannel
-// Dependencies: [4143, 21, 11625, 566, 3713, 6040, 2]
+// Dependencies: [4177, 21, 11664, 566, 3747, 6074, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 15630 (getMessageTimestampForChannel)
+// Module 15669 (getMessageTimestampForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -29,7 +29,7 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
   const _require = channel;
-  let obj = _require(11625);
+  let obj = _require(11664);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = {};
   const items = [_isNativeReflectConstruct];
@@ -38,14 +38,14 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
   const tmp3 = getMessageTimestampForChannel(obj);
   let str = "";
   if (null != tmp3) {
-    str = importDefault(3713)(tmp3).calendar();
-    const obj4 = importDefault(3713)(tmp3);
+    str = importDefault(3747)(tmp3).calendar();
+    const obj4 = importDefault(3747)(tmp3);
   }
   return str;
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
   const _require = channel;
-  let obj = _require(11625);
+  let obj = _require(11664);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = {};
   const items = [_isNativeReflectConstruct];
@@ -54,8 +54,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
   const tmp3 = getMessageTimestampForChannel(obj);
   let str = "";
   if (null != tmp3) {
-    str = _require(6040).getTimestampString(tmp3);
-    const obj4 = _require(6040);
+    str = _require(6074).getTimestampString(tmp3);
+    const obj4 = _require(6074);
   }
   return str;
 };

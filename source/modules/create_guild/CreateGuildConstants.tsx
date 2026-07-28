@@ -1,10 +1,10 @@
-// Module ID: 11734
-// Function ID: 91120
+// Module ID: 11773
+// Function ID: 91271
 // Name: GuildTemplateId
-// Dependencies: [653, 1212, 3764, 483, 2]
+// Dependencies: [653, 1212, 3798, 483, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 11734 (GuildTemplateId)
+// Module 11773 (GuildTemplateId)
 import ME from "ME";
 
 let closure_3;
@@ -402,9 +402,9 @@ export const getGuildTemplatesMap = function getGuildTemplatesMap() {
   obj74.type = constants.GUILD_VOICE;
   items6[11] = obj74;
   obj62.channels = items6;
-  const obj75 = { id: "00", name: "@everyone", permissions: importAll(3764).DEFAULT };
+  const obj75 = { id: "00", name: "@everyone", permissions: importAll(3798).DEFAULT };
   const items7 = [obj75, ];
-  const obj76 = { id: "01", name: "officers (example)", mentionable: true, hoist: true, permissions: importAll(483).combine(importAll(3764).DEFAULT, constants2.MANAGE_ROLES, constants2.MANAGE_CHANNELS, constants2.KICK_MEMBERS, constants2.BAN_MEMBERS, constants2.MANAGE_NICKNAMES, constants2.MANAGE_GUILD_EXPRESSIONS, constants2.MANAGE_MESSAGES, constants2.SEND_TTS_MESSAGES), color: 3066993 };
+  const obj76 = { id: "01", name: "officers (example)", mentionable: true, hoist: true, permissions: importAll(483).combine(importAll(3798).DEFAULT, constants2.MANAGE_ROLES, constants2.MANAGE_CHANNELS, constants2.KICK_MEMBERS, constants2.BAN_MEMBERS, constants2.MANAGE_NICKNAMES, constants2.MANAGE_GUILD_EXPRESSIONS, constants2.MANAGE_MESSAGES, constants2.SEND_TTS_MESSAGES), color: 3066993 };
   items7[1] = obj76;
   obj62.roles = items7;
   obj62.system_channel_id = "11";

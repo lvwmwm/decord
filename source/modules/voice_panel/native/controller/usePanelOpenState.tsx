@@ -1,10 +1,10 @@
-// Module ID: 15843
-// Function ID: 122264
+// Module ID: 15882
+// Function ID: 122420
 // Name: usePanelOpenState
-// Dependencies: [57, 31, 4343, 9976, 653, 3992, 1207, 10813, 3953, 3966, 10806, 5666, 2]
+// Dependencies: [57, 31, 4377, 10016, 653, 4026, 1207, 10851, 3987, 4000, 10844, 5676, 2]
 // Exports: default
 
-// Module 15843 (usePanelOpenState)
+// Module 15882 (usePanelOpenState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import withEqualityFn from "withEqualityFn";
@@ -28,7 +28,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
     state = state.getState();
     return state.closeChannel(closure_0);
   }
-  let obj = _require(3992);
+  let obj = _require(4026);
   const fn = function f() {
     return { connected: connected.get() };
   };
@@ -53,7 +53,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       return;
     }
   }
-  obj = { runOnJS: _require(3992).runOnJS, doCloseChannel };
+  obj = { runOnJS: _require(4026).runOnJS, doCloseChannel };
   O.__closure = obj;
   O.__workletHash = 9166012598595;
   O.__initData = closure_10;
@@ -90,18 +90,18 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       ComponentDispatch2.unsubscribe(outer2_7.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = callback(first.useState(() => callback2(10813).getHistory().location.pathname), 2);
+  const tmp3 = callback(first.useState(() => callback2(10851).getHistory().location.pathname), 2);
   first = tmp3[0];
   let withEqualityFn = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = first.useEffect(() => {
-    let closure_0 = callback2(10813).addRouteChangeListener((pathname) => {
+    let closure_0 = callback2(10851).addRouteChangeListener((pathname) => {
       if (outer1_4 !== pathname.pathname) {
         outer1_5(outer1_4);
-        let obj = callback(3953);
+        let obj = callback(3987);
         obj = {};
-        const RouteParam = callback(3966).RouteParam;
-        const RouteParam2 = callback(3966).RouteParam;
+        const RouteParam = callback(4000).RouteParam;
+        const RouteParam2 = callback(4000).RouteParam;
         obj.path = outer2_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
         const matchPathResult = obj.matchPath(pathname.pathname, obj);
         const guildIdResult = RouteParam.guildId();
@@ -111,10 +111,10 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
             tmp = matchPathResult.params.channelId === callback;
           }
           if (!tmp) {
-            callback2(5666)();
+            callback2(5676)();
           }
         }
-        obj3 = callback(10806);
+        obj3 = callback(10844);
       }
     });
     return () => {

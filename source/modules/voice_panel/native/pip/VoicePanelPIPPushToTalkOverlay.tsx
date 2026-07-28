@@ -1,25 +1,25 @@
-// Module ID: 15914
-// Function ID: 122992
+// Module ID: 15953
+// Function ID: 123148
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [57, 31, 27, 9976, 33, 3992, 5515, 1273, 4131, 689, 10348, 15844, 4543, 15839, 5217, 15915, 2]
+// Dependencies: [57, 31, 27, 10016, 33, 4026, 5550, 1273, 4165, 689, 10388, 15883, 4577, 15878, 5251, 15954, 2]
 // Exports: default
 
-// Module 15914 (VoicePanelPIPPushToTalkOverlay)
+// Module 15953 (VoicePanelPIPPushToTalkOverlay)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { PUSH_TO_TALK_PIP_PHYSICS } from "VoicePanelModes";
 import jsxProd from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_3992";
+import importDefaultResult from "module_4026";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult1 from "module_3992";
+import importDefaultResult1 from "module_4026";
 
 let closure_6;
 let closure_7;
 let closure_8;
 const require = arg1;
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_10 = require("module_3992").createAnimatedComponent(require("Button").Icon);
+let closure_10 = require("module_4026").createAnimatedComponent(require("Button").Icon);
 let closure_11 = { top: 6, bottom: 6, left: 6, right: 6 };
 let obj = {};
 obj = { position: "absolute", width: 32, height: 32, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
@@ -38,7 +38,7 @@ let closure_18 = { code: "function VoicePanelPIPPushToTalkOverlayTsx6(){const{ru
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPPushToTalkOverlay.tsx");
 
 export default function VoicePanelPIPPushToTalkOverlay() {
-  let obj = pIPState(15844);
+  let obj = pIPState(15883);
   pIPState = obj.usePIPState();
   const tmp2 = callback3();
   const tmp3 = WHITE((function usePushToTalk() {
@@ -62,7 +62,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   const dependencyMap = tmp5;
   WHITE = first(689).unsafe_rawColors.WHITE;
   const BLACK = first(689).unsafe_rawColors.BLACK;
-  let obj1 = pIPState(3992);
+  let obj1 = pIPState(4026);
   let fn = function o() {
     let num = 8;
     if (first.get()) {
@@ -88,12 +88,12 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     obj.backgroundColor = pIPState(tmp5[12]).withSpring(str, outer1_5);
     return obj;
   };
-  obj = { isPushingToTalk: first, EXPANDED_ICON_SIZE: 48, BASE_ICON_SIZE: 32, withSpring: pIPState(4543).withSpring, PUSH_TO_TALK_PIP_PHYSICS, white: WHITE };
+  obj = { isPushingToTalk: first, EXPANDED_ICON_SIZE: 48, BASE_ICON_SIZE: 32, withSpring: pIPState(4577).withSpring, PUSH_TO_TALK_PIP_PHYSICS, white: WHITE };
   fn.__closure = obj;
   fn.__workletHash = 3936373516983;
   fn.__initData = closure_13;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  let obj3 = pIPState(3992);
+  let obj3 = pIPState(4026);
   class P {
     constructor() {
       obj = {};
@@ -102,12 +102,12 @@ export default function VoicePanelPIPPushToTalkOverlay() {
       return obj;
     }
   }
-  obj = { withSpring: pIPState(4543).withSpring, isPushingToTalk: first, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS };
+  obj = { withSpring: pIPState(4577).withSpring, isPushingToTalk: first, black: BLACK, white: WHITE, PUSH_TO_TALK_PIP_PHYSICS };
   P.__closure = obj;
   P.__workletHash = 11469896791985;
   P.__initData = closure_14;
   const animatedStyle1 = obj3.useAnimatedStyle(P);
-  let obj5 = pIPState(3992);
+  let obj5 = pIPState(4026);
   class H {
     constructor() {
       obj = {};
@@ -122,7 +122,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
       return obj;
     }
   }
-  obj1 = { withSpring: pIPState(4543).withSpring, isPushingToTalk: first, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(15839).getVoicePanelPIPBorderRadius, pipState: pIPState };
+  obj1 = { withSpring: pIPState(4577).withSpring, isPushingToTalk: first, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(15878).getVoicePanelPIPBorderRadius, pipState: pIPState };
   H.__closure = obj1;
   H.__workletHash = 450590017248;
   H.__initData = closure_15;
@@ -136,8 +136,8 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     const TapResult = Gesture2.Tap();
     const fn = function o(arg0, arg1) {
       if (arg1) {
-        pIPState(3992).runOnJS(outer1_2)(false);
-        const obj = pIPState(3992);
+        pIPState(4026).runOnJS(outer1_2)(false);
+        const obj = pIPState(4026);
       }
     };
     let obj = { runOnJS: pIPState(tmp5[5]).runOnJS, handlePushToTalk: tmp5 };
@@ -150,7 +150,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     const PanResult = Gesture3.Pan();
     const result = Gesture3.Pan().maxPointers(1).shouldCancelWhenOutside(false);
     const fn2 = function t() {
-      pIPState(3992).runOnJS(outer1_2)(true);
+      pIPState(4026).runOnJS(outer1_2)(true);
     };
     obj = { runOnJS: pIPState(tmp5[5]).runOnJS, handlePushToTalk: tmp5 };
     fn2.__closure = obj;
@@ -158,7 +158,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     fn2.__initData = outer1_18;
     const maxPointersResult = Gesture3.Pan().maxPointers(1);
     const fn3 = function n() {
-      pIPState(3992).runOnJS(outer1_2)(false);
+      pIPState(4026).runOnJS(outer1_2)(false);
     };
     const onBeginResult = result.onBegin(fn2);
     fn3.__closure = { runOnJS: pIPState(tmp5[5]).runOnJS, handlePushToTalk: tmp5 };
@@ -170,10 +170,10 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   obj3 = { gesture: memo };
   const obj4 = { style: items3, hitSlop: closure_11 };
   items3 = [tmp2.iconContainer, animatedStyle];
-  obj5 = { style: animatedStyle1, size: pIPState(1273).Icon.Sizes.SMALL_20, source: first(15915), disableColor: true };
+  obj5 = { style: animatedStyle1, size: pIPState(1273).Icon.Sizes.SMALL_20, source: first(15954), disableColor: true };
   obj4.children = callback(closure_10, obj5);
   obj3.children = callback(set, obj4);
-  items2[1] = callback(pIPState(5217).GestureDetector, obj3);
+  items2[1] = callback(pIPState(5251).GestureDetector, obj3);
   obj2.children = items2;
   return callback2(closure_7, obj2);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10296
-// Function ID: 79599
+// Module ID: 10336
+// Function ID: 79728
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 10286, 5164, 4099, 7597, 5159, 22, 5046, 8759, 8760, 5187, 5186, 1212, 9171, 9173, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 10326, 5198, 4133, 7633, 5193, 22, 5080, 8803, 8804, 5221, 5220, 1212, 9215, 9217, 2]
 // Exports: default
 
-// Module 10296 (BugReporterFeatureActionSheet)
+// Module 10336 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -30,7 +30,7 @@ let closure_9 = importAllResult.memo((arg0) => {
   const items = [callback3().sectionHeader, { height }];
   obj.style = items;
   obj = { variant: "text-sm/bold", color: "text-muted", children: title };
-  obj.children = callback(require(4127) /* Text */.Text, obj);
+  obj.children = callback(require(4161) /* Text */.Text, obj);
   return callback(View, obj);
 });
 let closure_10 = importAllResult.memo((item) => {
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10286);
+  let obj = item(10326);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10286).getFeatureId(feature);
+  const featureId1 = item(10326).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -53,8 +53,8 @@ let closure_10 = importAllResult.memo((item) => {
     }
   };
   obj = { selected: featureId === featureId1 };
-  obj.trailing = callback(item(7597).FormRadio, obj);
-  return callback(item(5164).TableRow, obj);
+  obj.trailing = callback(item(7633).FormRadio, obj);
+  return callback(item(5198).TableRow, obj);
 });
 const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

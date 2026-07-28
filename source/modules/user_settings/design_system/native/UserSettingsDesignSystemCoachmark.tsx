@@ -1,10 +1,10 @@
-// Module ID: 14515
-// Function ID: 110868
+// Module ID: 14559
+// Function ID: 111041
 // Name: Content
-// Dependencies: [57, 31, 27, 33, 4131, 14513, 6785, 8368, 4544, 1324, 4555, 5501, 5502, 7596, 7595, 5121, 5449, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 14557, 6821, 8406, 4578, 1324, 4589, 5536, 5537, 7632, 7631, 5155, 5484, 2]
 // Exports: default
 
-// Module 14515 (Content)
+// Module 14559 (Content)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -169,7 +169,7 @@ export default function UserSettingsDesignSystemCoachmark() {
   let obj = { style: callback3().flex, bottom: true };
   obj = {};
   obj = { children: callback(Content, {}) };
-  obj.children = callback(require(5449) /* Layer */.LayerScope, obj);
+  obj.children = callback(require(5484) /* Layer */.LayerScope, obj);
   obj.children = callback(closure_6, obj);
-  return callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

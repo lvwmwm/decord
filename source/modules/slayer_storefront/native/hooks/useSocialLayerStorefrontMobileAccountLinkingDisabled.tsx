@@ -1,10 +1,10 @@
-// Module ID: 7985
-// Function ID: 63648
+// Module ID: 8023
+// Function ID: 63758
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [5611, 566, 2]
+// Dependencies: [5646, 566, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
-// Module 7985 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+// Module 8023 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

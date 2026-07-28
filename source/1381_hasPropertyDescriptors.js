@@ -1,5 +1,5 @@
 // Module ID: 1381
-// Function ID: 16539
+// Function ID: 16543
 // Name: hasPropertyDescriptors
 // Dependencies: [541]
 

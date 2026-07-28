@@ -1,9 +1,9 @@
-// Module ID: 15415
-// Function ID: 117647
+// Module ID: 15455
+// Function ID: 117806
 // Name: FriendPresence
-// Dependencies: [5, 57, 31, 27, 4123, 4218, 3768, 653, 33, 4131, 689, 4127, 3970, 8994, 566, 8328, 1273, 8225, 12467, 15416, 2]
+// Dependencies: [5, 57, 31, 27, 4157, 4252, 3802, 653, 33, 4165, 689, 4161, 4004, 9038, 566, 8366, 1273, 8263, 12510, 15456, 2]
 
-// Module 15415 (FriendPresence)
+// Module 15455 (FriendPresence)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -29,15 +29,15 @@ function FriendPresence(user) {
   user = user.user;
   ({ type, animate, guildId } = user);
   if (type === constants.PENDING_INCOMING) {
-    let obj = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: require(3970) /* conceal */.getUserTag(user) };
-    let tmp5 = callback(require(4127) /* Text */.Text, obj);
-    const obj3 = require(3970) /* conceal */;
+    let obj = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: require(4004) /* conceal */.getUserTag(user) };
+    let tmp5 = callback(require(4161) /* Text */.Text, obj);
+    const obj3 = require(4004) /* conceal */;
   } else {
     obj = { userId: user.id, guildId };
     ({ activityStatusIcon: obj.iconStyle, activityStatusText: obj.textStyle } = tmp);
     obj.emojiSize = 16;
     obj.animate = animate;
-    tmp5 = callback(importDefault(8994), obj);
+    tmp5 = callback(importDefault(9038), obj);
   }
   return tmp5;
 }

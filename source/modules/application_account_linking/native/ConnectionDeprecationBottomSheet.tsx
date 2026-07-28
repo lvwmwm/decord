@@ -1,10 +1,10 @@
-// Module ID: 15693
-// Function ID: 121017
+// Module ID: 15732
+// Function ID: 121173
 // Name: ConnectionIcon
-// Dependencies: [31, 27, 4168, 4813, 1345, 33, 4131, 689, 3843, 1557, 566, 4815, 5465, 5462, 5482, 15694, 4099, 15696, 1935, 5186, 5187, 4542, 15682, 4127, 1212, 2749, 8637, 4544, 10121, 3841, 1392, 4546, 5472, 5468, 2]
+// Dependencies: [31, 27, 4202, 4847, 1345, 33, 4165, 689, 3877, 1557, 566, 4849, 5500, 5497, 5517, 15733, 4133, 15735, 1935, 5220, 5221, 4576, 15721, 4161, 1212, 2749, 8681, 4578, 10161, 3875, 1392, 4580, 5507, 5503, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 15693 (ConnectionIcon)
+// Module 15732 (ConnectionIcon)
 import getIconSize from "getIconSize";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,18 +21,18 @@ function ConnectionIcon(arg0) {
   let theme;
   ({ platform, theme } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3841) /* isThemeLight */;
+  let obj = require(3875) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(theme);
   const icon = platform.icon;
   obj = { style: tmp.iconContainer };
   const source = require(1392) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = {};
   const obj2 = require(1392) /* getAvatarURL */;
-  obj.size = require(4546) /* getIconSize */.IconSizes.CUSTOM;
+  obj.size = require(4580) /* getIconSize */.IconSizes.CUSTOM;
   obj.source = source;
   obj.disableColor = true;
   obj.style = tmp.connectionIcon;
-  obj.children = callback(importDefault(4546), obj);
+  obj.children = callback(importDefault(4580), obj);
   return callback(View, obj);
 }
 function ApplicationIcon(application) {
@@ -40,9 +40,9 @@ function ApplicationIcon(application) {
   let obj = { style: _createForOfIteratorHelperLoose().iconContainer };
   let tmp3 = null;
   if (null != application) {
-    obj = { game: application, size: require(5472) /* GameIcon */.GameIconSizes.NORMAL };
-    tmp3 = callback(importDefault(5472), obj);
-    const tmp7 = importDefault(5472);
+    obj = { game: application, size: require(5507) /* GameIcon */.GameIconSizes.NORMAL };
+    tmp3 = callback(importDefault(5507), obj);
+    const tmp7 = importDefault(5507);
   }
   obj.children = tmp3;
   return callback(View, obj);
@@ -213,8 +213,8 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(5468).useGetOrFetchApplication(replacedBy);
-  const tmp4 = importDefault(5465)(getOrFetchApplication);
+  const getOrFetchApplication = deprecatedPlatformTypes(5503).useGetOrFetchApplication(replacedBy);
+  const tmp4 = importDefault(5500)(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp4);
   if (!fetchingConnections) {
     fetchingConnections = !tmp4.fetched;

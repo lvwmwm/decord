@@ -1,8 +1,8 @@
-// Module ID: 4141
-// Function ID: 34416
-// Dependencies: [57, 5, 4142, 1352, 1348, 4143, 653, 8849, 507, 5051, 3983, 4139, 4945, 686, 8142, 675, 1198, 3977, 1212, 7629, 4370, 2]
+// Module ID: 4175
+// Function ID: 34518
+// Dependencies: [57, 5, 4176, 1352, 1348, 4177, 653, 8893, 507, 5085, 4017, 4173, 4979, 686, 8180, 675, 1198, 4011, 1212, 7665, 4404, 2]
 
-// Module 4141
+// Module 4175
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -117,16 +117,16 @@ export default {
         if (null != outer1_4) {
           outer1_4();
         }
-        let obj = require(3983) /* getRootNavigationRef */;
+        let obj = require(4017) /* getRootNavigationRef */;
         if (null != obj.getRootNavigationRef()) {
           obj = { navigationReplace: true };
-          require(4139) /* transitionToChannel */.transitionToChannel(channel.id, obj);
+          require(4173) /* transitionToChannel */.transitionToChannel(channel.id, obj);
           tmp4 = channel;
-          const obj3 = require(4139) /* transitionToChannel */;
+          const obj3 = require(4173) /* transitionToChannel */;
         } else {
-          const privateChannel = importDefault(4945).selectPrivateChannel(channel.id);
+          const privateChannel = importDefault(4979).selectPrivateChannel(channel.id);
           tmp4 = channel;
-          const obj2 = importDefault(4945);
+          const obj2 = importDefault(4979);
         }
       }
     }
@@ -189,11 +189,11 @@ export default {
     obj.dispatch({ type: "CHANNEL_CREATE", channel: tmp });
     if (null != obj2.getRootNavigationRef()) {
       obj = { navigationReplace: true };
-      require(4139) /* transitionToChannel */.transitionToChannel(tmp.id, obj);
-      const obj4 = require(4139) /* transitionToChannel */;
+      require(4173) /* transitionToChannel */.transitionToChannel(tmp.id, obj);
+      const obj4 = require(4173) /* transitionToChannel */;
     } else {
-      const privateChannel = importDefault(4945).selectPrivateChannel(tmp.id);
-      const obj3 = importDefault(4945);
+      const privateChannel = importDefault(4979).selectPrivateChannel(tmp.id);
+      const obj3 = importDefault(4979);
     }
     return tmp;
   },
@@ -206,7 +206,7 @@ export default {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8142)(id)) {
+    if (importDefault(8180)(id)) {
       let obj = importDefault(675);
       obj = { last_changelog_id: closure_5.latestChangelogId(), unread_count: unreadCount.getUnreadCount(id) };
       obj.track(constants.CHANGE_LOG_DM_REMOVED, obj);
@@ -379,8 +379,8 @@ export default {
         tmp14 = isThreadResult;
       }
       if (!tmp14) {
-        const result = callback2(7629).checkGuildTemplateDirty(guildId);
-        const obj9 = callback2(7629);
+        const result = callback2(7665).checkGuildTemplateDirty(guildId);
+        const obj9 = callback2(7665);
       }
       return tmp8;
     })();
@@ -428,8 +428,8 @@ export default {
         tmp19 = isThreadResult;
       }
       if (!tmp19) {
-        const result = callback2(7629).checkGuildTemplateDirty(guildId);
-        const obj7 = callback2(7629);
+        const result = callback2(7665).checkGuildTemplateDirty(guildId);
+        const obj7 = callback2(7665);
       }
       if ("icon" in outer1_1) {
         const obj3 = {};
@@ -465,7 +465,7 @@ export default {
     } else {
       result = closure_11.CHANNEL_STORE_LISTING(arg0);
     }
-    const result1 = _require(4370).httpGetWithCountryCodeQuery(result);
+    const result1 = _require(4404).httpGetWithCountryCodeQuery(result);
     return result1.then((body) => {
       let obj = outer1_1(outer1_2[13]);
       obj = { type: "STORE_LISTING_FETCH_SUCCESS", channelId: closure_0, storeListing: body.body };
@@ -489,7 +489,7 @@ export default {
       obj = { url: outer2_11.GUILD_CHANNELS(outer1_0), body: obj, oldFormErrors: true, rejectWithError: callback(507).rejectWithMigratedError() };
       const obj3 = callback(507);
       const tmp3 = yield HTTP.post(obj);
-      const result = callback2(7629).checkGuildTemplateDirty(outer1_0);
+      const result = callback2(7665).checkGuildTemplateDirty(outer1_0);
       return tmp3;
     })();
   },

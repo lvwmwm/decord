@@ -1,9 +1,9 @@
-// Module ID: 9204
-// Function ID: 72155
+// Module ID: 9248
+// Function ID: 72306
 // Name: channelProps
 // Dependencies: [1348, 653, 675, 2]
 
-// Module 9204 (channelProps)
+// Module 9248 (channelProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

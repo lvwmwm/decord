@@ -1,9 +1,9 @@
-// Module ID: 13456
-// Function ID: 103465
+// Module ID: 13500
+// Function ID: 103638
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [1347, 1850, 4034, 3749, 4320, 10560, 1327, 22, 2]
+// Dependencies: [1347, 1850, 4068, 3783, 4354, 10598, 1327, 22, 2]
 
-// Module 13456 (activityInstanceConnectedParticipants)
+// Module 13500 (activityInstanceConnectedParticipants)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
@@ -15,12 +15,12 @@ function activityInstanceConnectedParticipants() {
     let obj = { participants: [] };
     return obj;
   } else {
-    _require = _require(3749).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-    const obj2 = _require(3749);
-    const embeddedActivityLocationChannelId = _require(3749).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+    _require = _require(3783).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+    const obj2 = _require(3783);
+    const embeddedActivityLocationChannelId = _require(3783).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
     obj = {};
     const _Array = Array;
-    const obj3 = _require(3749);
+    const obj3 = _require(3783);
     obj.participants = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
       const user = outer1_4.getUser(arg0);
       if (null != user) {

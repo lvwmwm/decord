@@ -1,10 +1,10 @@
-// Module ID: 13651
-// Function ID: 104884
+// Module ID: 13695
+// Function ID: 105057
 // Name: GummyStripes
-// Dependencies: [31, 27, 33, 4131, 665, 2]
+// Dependencies: [31, 27, 33, 4165, 665, 2]
 // Exports: default
 
-// Module 13651 (GummyStripes)
+// Module 13695 (GummyStripes)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

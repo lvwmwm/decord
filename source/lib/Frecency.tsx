@@ -1,9 +1,9 @@
-// Module ID: 4215
-// Function ID: 36627
+// Module ID: 4249
+// Function ID: 36737
 // Name: DEFAULT_FRECENCY
-// Dependencies: [6, 7, 22, 3713, 2]
+// Dependencies: [6, 7, 22, 3747, 2]
 
-// Module 4215 (DEFAULT_FRECENCY)
+// Module 4249 (DEFAULT_FRECENCY)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

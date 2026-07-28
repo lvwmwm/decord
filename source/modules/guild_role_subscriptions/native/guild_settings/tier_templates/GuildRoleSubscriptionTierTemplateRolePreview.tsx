@@ -1,10 +1,10 @@
-// Module ID: 16551
-// Function ID: 128949
+// Module ID: 16591
+// Function ID: 129110
 // Name: GuildRoleSubscriptionRolePreview
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 1212, 624, 4320, 5085, 4127, 665, 1273, 5488, 2]
+// Dependencies: [31, 27, 1850, 33, 4165, 689, 1212, 624, 4354, 5119, 4161, 665, 1273, 5523, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 16551 (GuildRoleSubscriptionRolePreview)
+// Module 16591 (GuildRoleSubscriptionRolePreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,23 +41,23 @@ export const GuildRoleSubscriptionRolePreview = function GuildRoleSubscriptionRo
   let obj = require(624) /* defaultAreStatesEqual */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  let obj1 = importDefault(4320);
+  let obj1 = importDefault(4354);
   obj = { style: items1 };
   items1 = [tmp3.container, style];
   const name = obj1.useName(guildId, null, stateFromStores);
   obj = { style: tmp3.avatar, source: { uri: roleImage } };
-  const items2 = [callback(importDefault(5085), obj), ];
+  const items2 = [callback(importDefault(5119), obj), ];
   obj1 = { style: tmp3.content };
   const obj2 = { style: tmp3.contextRow };
   const obj3 = { variant: "text-md/semibold", color: "interactive-text-active" };
   const obj4 = { color: importAll(665).int2hex(roleColor) };
   obj3.style = obj4;
   obj3.children = name;
-  const items3 = [callback(require(4127) /* Text */.Text, obj3), callback(require(1273) /* Button */.Spacer, { size: 4 }), callback(importDefault(5488), { name: roleName, source: { uri: roleImage }, size: 16 }), callback(require(1273) /* Button */.Spacer, { size: 8 }), callback(require(4127) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" })];
+  const items3 = [callback(require(4161) /* Text */.Text, obj3), callback(require(1273) /* Button */.Spacer, { size: 4 }), callback(importDefault(5523), { name: roleName, source: { uri: roleImage }, size: 16 }), callback(require(1273) /* Button */.Spacer, { size: 8 }), callback(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" })];
   obj2.children = items3;
   const items4 = [callback2(View, obj2), ];
   const obj5 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
-  items4[1] = callback(require(4127) /* Text */.Text, obj5);
+  items4[1] = callback(require(4161) /* Text */.Text, obj5);
   obj1.children = items4;
   items2[1] = callback2(View, obj1);
   obj.children = items2;

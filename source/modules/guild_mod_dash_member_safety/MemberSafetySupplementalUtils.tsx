@@ -1,10 +1,10 @@
-// Module ID: 5730
-// Function ID: 49782
+// Module ID: 5740
+// Function ID: 49638
 // Name: pendingMemberRequestKey
-// Dependencies: [5, 653, 1212, 4815, 5731, 4067, 3977, 507, 2]
+// Dependencies: [5, 653, 1212, 4849, 5741, 4101, 4011, 507, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 5730 (pendingMemberRequestKey)
+// Module 5740 (pendingMemberRequestKey)
 import useTheme from "useTheme";
 import { Endpoints } from "ME";
 
@@ -135,8 +135,8 @@ export const getIntegrationLabel = function getIntegrationLabel(arg0) {
   }
 };
 export const useGetIntegrationIconString = function useGetIntegrationIconString(arg0) {
-  const obj = importDefault(4815);
-  const value = obj.get(require(5731) /* usePlatformAllowed */.useLegacyPlatformType(arg0));
+  const obj = importDefault(4849);
+  const value = obj.get(require(5741) /* usePlatformAllowed */.useLegacyPlatformType(arg0));
   let tmp3 = null;
   if (null != value) {
     const items = [, ];
@@ -145,10 +145,10 @@ export const useGetIntegrationIconString = function useGetIntegrationIconString(
     if (items.includes(arg0)) {
       let str = value.icon;
       const _HermesInternal = HermesInternal;
-      const obj3 = require(3977) /* AccessibilityAnnouncer */;
+      const obj3 = require(4011) /* AccessibilityAnnouncer */;
       str = "')";
-      const combined = "url('" + require(3977) /* AccessibilityAnnouncer */.isThemeDark(tmp2) ? str.darkSVG : str.lightSVG + "')";
-      const tmp7 = require(3977) /* AccessibilityAnnouncer */.isThemeDark(tmp2) ? str.darkSVG : str.lightSVG;
+      const combined = "url('" + require(4011) /* AccessibilityAnnouncer */.isThemeDark(tmp2) ? str.darkSVG : str.lightSVG + "')";
+      const tmp7 = require(4011) /* AccessibilityAnnouncer */.isThemeDark(tmp2) ? str.darkSVG : str.lightSVG;
     }
   }
   return tmp3;

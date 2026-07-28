@@ -1,8 +1,8 @@
-// Module ID: 11782
-// Function ID: 91464
-// Dependencies: [5, 4338, 11765, 1935, 2]
+// Module ID: 11821
+// Function ID: 91615
+// Dependencies: [5, 4372, 11804, 1935, 2]
 
-// Module 11782
+// Module 11821
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -12,9 +12,9 @@ export default {
   open(merged) {
     let closure_0 = arg1;
     // CreateGeneratorClosureLongIndex (0x67)
-    importDefault(4338).pushLazy(callback(tmp), merged, "HUB_EMAIL_CONNECTION_MODAL_KEY");
+    importDefault(4372).pushLazy(callback(tmp), merged, "HUB_EMAIL_CONNECTION_MODAL_KEY");
   },
   close() {
-    importDefault(4338).popWithKey("HUB_EMAIL_CONNECTION_MODAL_KEY");
+    importDefault(4372).popWithKey("HUB_EMAIL_CONNECTION_MODAL_KEY");
   }
 };

@@ -1,5 +1,5 @@
 // Module ID: 1491
-// Function ID: 17210
+// Function ID: 17214
 // Name: useRouteCache
 // Dependencies: [29, 31]
 // Exports: default

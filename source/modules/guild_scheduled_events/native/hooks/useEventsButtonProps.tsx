@@ -1,10 +1,10 @@
-// Module ID: 11411
-// Function ID: 88701
+// Module ID: 11449
+// Function ID: 88820
 // Name: useEventsButtonProps
-// Dependencies: [31, 4143, 4326, 4327, 566, 8259, 4620, 9073, 8167, 4099, 11412, 1935, 1212, 11416, 2]
+// Dependencies: [31, 4177, 4360, 4361, 566, 8297, 4654, 9117, 8205, 4133, 11450, 1935, 1212, 11454, 2]
 // Exports: default
 
-// Module 11411 (useEventsButtonProps)
+// Module 11449 (useEventsButtonProps)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ export default function useEventsButtonProps(id) {
   ({ hasUnread, mentionCount } = stateFromStoresObject);
   const items2 = [closure_5];
   const stateFromStores = _require(566).useStateFromStores(items2, () => outer1_5.isMuteScheduledEventsEnabled(id.id));
-  const arr4 = importDefault(8259)(id.id);
+  const arr4 = importDefault(8297)(id.id);
   const items3 = [id];
   const items4 = [id.id];
   const callback = React.useCallback(() => {
@@ -50,13 +50,13 @@ export default function useEventsButtonProps(id) {
     const intl = _require(1212).intl;
     formatToPlainStringResult = intl.string(_require(1212).t.tlopTM);
   }
-  let UNREAD_IMPORTANT = _require(11416).ChannelModes.DEFAULT;
+  let UNREAD_IMPORTANT = _require(11454).ChannelModes.DEFAULT;
   let tmp10 = hasUnread;
   if (hasUnread) {
     tmp10 = !stateFromStores;
   }
   if (tmp10) {
-    UNREAD_IMPORTANT = _require(11416).ChannelModes.UNREAD_IMPORTANT;
+    UNREAD_IMPORTANT = _require(11454).ChannelModes.UNREAD_IMPORTANT;
   }
   obj = { hasUnread, mentionCount, mode: UNREAD_IMPORTANT, name: formatToPlainStringResult, eventsMuted: stateFromStores, handlePress: callback, handleLongPress: callback1 };
   return obj;

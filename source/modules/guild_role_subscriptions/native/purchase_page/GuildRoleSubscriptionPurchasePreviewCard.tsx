@@ -1,10 +1,10 @@
-// Module ID: 15342
-// Function ID: 116997
+// Module ID: 15382
+// Function ID: 117156
 // Name: ContentHeader
-// Dependencies: [57, 31, 27, 1348, 33, 4131, 689, 4127, 4099, 15343, 1935, 9361, 14191, 1273, 566, 4321, 1212, 4594, 14178, 15338, 5085, 15344, 2]
+// Dependencies: [57, 31, 27, 1348, 33, 4165, 689, 4161, 4133, 15383, 1935, 9405, 14235, 1273, 566, 4355, 1212, 4628, 14222, 15378, 5119, 15384, 2]
 // Exports: default
 
-// Module 15342 (ContentHeader)
+// Module 15382 (ContentHeader)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -25,9 +25,9 @@ function ContentHeader(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { variant: "text-xs/bold", color: "text-muted", style: tmp.contentHeader };
   obj = { variant: "text-xs/bold", color: "text-default", style: tmp.contentHeader, children: count };
-  const items = [callback2(require(4127) /* Text */.Text, obj), " ", title];
+  const items = [callback2(require(4161) /* Text */.Text, obj), " ", title];
   obj.children = items;
-  return callback3(require(4127) /* Text */.Text, obj);
+  return callback3(require(4161) /* Text */.Text, obj);
 }
 function Separator() {
   return callback2(closure_6, { style: _createForOfIteratorHelperLoose().separator });
@@ -54,12 +54,12 @@ function EmojiGallery(arg0) {
     const obj1 = { variant: "text-sm/bold", color: "text-default" };
     const items1 = ["+", diff];
     obj1.children = items1;
-    obj.children = callback3(require(4127) /* Text */.Text, obj1);
+    obj.children = callback3(require(4161) /* Text */.Text, obj1);
     tmp7 = callback2(closure_6, obj, "andMore");
   }
   items[tmp6] = tmp7;
   obj.children = items;
-  obj.children = callback2(require(9361) /* GappedList */.GappedList, obj);
+  obj.children = callback2(require(9405) /* GappedList */.GappedList, obj);
   return callback2(closure_6, obj);
 }
 function BenefitShowCase(arg0) {
@@ -70,7 +70,7 @@ function BenefitShowCase(arg0) {
   let tmp3 = title;
   if ("string" === typeof title) {
     obj = { variant: "text-md/semibold", color: "text-default", children: title };
-    tmp3 = callback2(require(4127) /* Text */.Text, obj);
+    tmp3 = callback2(require(4161) /* Text */.Text, obj);
   }
   const items = [tmp3, ];
   let tmp7 = null != description;
@@ -79,7 +79,7 @@ function BenefitShowCase(arg0) {
     const obj1 = { size: 2 };
     const items1 = [callback2(require(1273) /* Button */.Spacer, obj1), ];
     const obj2 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-    items1[1] = callback2(require(4127) /* Text */.Text, obj2);
+    items1[1] = callback2(require(4161) /* Text */.Text, obj2);
     obj.children = items1;
     tmp7 = callback3(closure_10, obj);
   }
@@ -97,15 +97,15 @@ function ChannelBenefitShowCase(channelId) {
   let stringResult = intl.string(channelId(1212).t.bz1PZX);
   if (null != stateFromStores) {
     obj = { style: { flexDirection: "row", alignItems: "center" } };
-    obj = { size: channelId(1273).Icon.Sizes.REFRESH_SMALL_16, source: channelId(4594).getChannelIcon(stateFromStores) };
+    obj = { size: channelId(1273).Icon.Sizes.REFRESH_SMALL_16, source: channelId(4628).getChannelIcon(stateFromStores) };
     const items2 = [callback2(channelId(1273).Icon, obj), , ];
     const obj1 = { size: 4 };
     items2[1] = callback2(channelId(1273).Spacer, obj1);
     const obj2 = { variant: "text-md/semibold", color: "text-default", children: tmp2 };
-    items2[2] = callback2(channelId(4127).Text, obj2);
+    items2[2] = callback2(channelId(4161).Text, obj2);
     obj.children = items2;
     stringResult = callback3(closure_6, obj);
-    const obj5 = channelId(4594);
+    const obj5 = channelId(4628);
   }
   const obj3 = { title: stringResult, description: channelId.description };
   return callback2(BenefitShowCase, obj3);
@@ -117,7 +117,7 @@ function ShowAllButton(onPress) {
   obj = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 } };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["hub6t/"]);
-  const items = [callback2(require(4127) /* Text */.Text, obj), callback2(require(1273) /* Button */.Spacer, { size: 3 }), callback2(closure_6, { style: tmp.showAllButtonUnderline })];
+  const items = [callback2(require(4161) /* Text */.Text, obj), callback2(require(1273) /* Button */.Spacer, { size: 3 }), callback2(closure_6, { style: tmp.showAllButtonUnderline })];
   obj.children = items;
   obj.children = callback3(closure_6, obj);
   return callback2(closure_5, obj);
@@ -149,16 +149,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14178);
+  let obj = importAll(14222);
   const first = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14178);
-  let obj2 = importAll(14178);
+  let obj1 = importAll(14222);
+  let obj2 = importAll(14222);
   const first1 = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14178);
+  let obj3 = importAll(14222);
   const first2 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14178);
+  let obj4 = importAll(14222);
   const first3 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15338);
+  let obj5 = listingId(15378);
   const first4 = first2[0];
   const first5 = first3[0];
   const size = first1.size;
@@ -174,16 +174,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   obj2.uri = str;
   obj1.source = obj2;
   obj1.style = tmp.image;
-  const items = [callback2(guildId(5085), obj1), callback2(listingId(1273).Spacer, { size: 16 }), ];
+  const items = [callback2(guildId(5119), obj1), callback2(listingId(1273).Spacer, { size: 16 }), ];
   obj3 = {};
   obj4 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] };
-  const items1 = [callback2(listingId(4127).Text, obj4), callback2(listingId(1273).Spacer, { size: 4 }), ];
+  const items1 = [callback2(listingId(4161).Text, obj4), callback2(listingId(1273).Spacer, { size: 4 }), ];
   obj5 = { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan };
-  items1[2] = callback2(listingId(4127).Text, obj5);
+  items1[2] = callback2(listingId(4161).Text, obj5);
   obj3.children = items1;
   items[2] = callback3(closure_6, obj3);
   obj.children = items;
-  const items2 = [callback3(closure_6, obj), callback2(listingId(1273).Spacer, { size: 16 }), callback2(guildId(15344), { listingId }), ];
+  const items2 = [callback3(closure_6, obj), callback2(listingId(1273).Spacer, { size: 16 }), callback2(guildId(15384), { listingId }), ];
   let tmp14Result = length > 0 || size > 0 || length2 > 0;
   if (tmp14Result) {
     const obj6 = {};
@@ -259,7 +259,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     }
     items6[2] = tmp47;
     obj9.children = items6;
-    obj8.children = callback3(listingId(9361).GappedList, obj9);
+    obj8.children = callback3(listingId(9405).GappedList, obj9);
     items3[1] = callback2(closure_6, obj8);
     const obj27 = {
       onPress() {

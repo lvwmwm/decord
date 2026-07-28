@@ -1,10 +1,10 @@
-// Module ID: 7130
-// Function ID: 59931
+// Module ID: 7166
+// Function ID: 60020
 // Name: GiftCardTwoRight3dIllustration
-// Dependencies: [33, 5085, 7131, 2]
+// Dependencies: [33, 5119, 7167, 2]
 // Exports: GiftCardTwoRight3dIllustration
 
-// Module 7130 (GiftCardTwoRight3dIllustration)
+// Module 7166 (GiftCardTwoRight3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardTwoRight3dIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const GiftCardTwoRight3dIllustration = function GiftCardTwoRight3dIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7131) };
+  obj = { uri: importDefault(7167) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const GiftCardTwoRight3dIllustration = function GiftCardTwoRight3dIllustr
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

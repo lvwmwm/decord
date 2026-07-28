@@ -1,10 +1,10 @@
-// Module ID: 10235
-// Function ID: 79207
+// Module ID: 10275
+// Function ID: 79336
 // Name: WaveformIcon
-// Dependencies: [31, 33, 689, 3834, 10236, 2]
+// Dependencies: [31, 33, 689, 3868, 10276, 2]
 // Exports: WaveformIcon
 
-// Module 10235 (WaveformIcon)
+// Module 10275 (WaveformIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const WaveformIcon = function WaveformIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10236) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10276) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10236) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(10276) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

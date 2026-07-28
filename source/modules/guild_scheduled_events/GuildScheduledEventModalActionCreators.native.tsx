@@ -1,10 +1,10 @@
-// Module ID: 8155
-// Function ID: 65396
+// Module ID: 8193
+// Function ID: 65506
 // Name: openGuildEventDetails
-// Dependencies: [5, 1354, 8156, 4099, 8157, 1935, 8148, 12212, 2]
+// Dependencies: [5, 1354, 8194, 4133, 8195, 1935, 8186, 12255, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8155 (openGuildEventDetails)
+// Module 8193 (openGuildEventDetails)
 import maybeLoadBundle from "maybeLoadBundle";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY";
@@ -17,18 +17,18 @@ function openGuildEventDetails(arg0) {
   let recurrenceId;
   ({ event, recurrenceId } = arg0);
   ({ eventId, onClose } = arg0);
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = { eventId, event, onCloseActionSheet: onClose };
   if (null == recurrenceId) {
-    recurrenceId = require(8148) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(event);
-    const obj3 = require(8148) /* getNextBucketedTime */;
+    recurrenceId = require(8186) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(event);
+    const obj3 = require(8186) /* getNextBucketedTime */;
   }
   let tmp5;
   if (null != recurrenceId) {
     tmp5 = recurrenceId;
   }
   obj.recurrenceId = tmp5;
-  obj.openLazy(require(1935) /* maybeLoadBundle */(8157, dependencyMap.paths), closure_5, obj, "stack");
+  obj.openLazy(require(1935) /* maybeLoadBundle */(8195, dependencyMap.paths), closure_5, obj, "stack");
 }
 async function _transitionToEventDetailsFromInvite(arg0, arg1, arg2) {
   yield Promise.resolve();
@@ -47,7 +47,7 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
   return _transitionToEventDetailsFromInvite(...arguments);
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  let obj = importDefault(4099);
+  let obj = importDefault(4133);
   obj = { channel };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12212, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12255, dependencyMap.paths), closure_4, obj);
 };

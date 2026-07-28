@@ -1,9 +1,9 @@
-// Module ID: 15171
-// Function ID: 115464
+// Module ID: 15211
+// Function ID: 115623
 // Name: YOU_SCREEN_ID
 // Dependencies: [1273, 689, 2]
 
-// Module 15171 (YOU_SCREEN_ID)
+// Module 15211 (YOU_SCREEN_ID)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouConstants.tsx");
 
 export const YOU_SCREEN_ID = "you-screen-native-id";

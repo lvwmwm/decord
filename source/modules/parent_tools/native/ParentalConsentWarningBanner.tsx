@@ -1,10 +1,10 @@
-// Module ID: 15749
-// Function ID: 121442
+// Module ID: 15788
+// Function ID: 121598
 // Name: StyleSheet
-// Dependencies: [31, 27, 5766, 653, 33, 689, 4131, 1557, 13832, 13831, 15750, 10625, 3835, 5780, 675, 5767, 6554, 4127, 4555, 1212, 2199, 2]
+// Dependencies: [31, 27, 5776, 653, 33, 689, 4165, 1557, 13876, 13875, 15789, 10663, 3869, 5790, 675, 5777, 6590, 4161, 4589, 1212, 2199, 2]
 // Exports: default
 
-// Module 15749 (StyleSheet)
+// Module 15788 (StyleSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { FamilyCenterSubPages } from "items";
@@ -49,14 +49,14 @@ export default function ParentalConsentWarningBanner(children) {
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
   const tmp2 = token(1557)();
-  let obj = require(13832) /* useParentalConsentWarning */;
+  let obj = require(13876) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj.useParentalConsentWarning();
-  let obj1 = require(13831) /* useIsParentalConsentBannerActive */;
+  let obj1 = require(13875) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj1.useIsParentalConsentBannerActive();
-  let obj2 = require(15750) /* getActiveRoute */;
+  let obj2 = require(15789) /* getActiveRoute */;
   const isOnMainSurface = obj2.useIsOnMainSurface();
-  let obj3 = require(10625) /* useGlobalStatusIndicatorState */;
-  let obj4 = require(3835) /* map */;
+  let obj3 = require(10663) /* useGlobalStatusIndicatorState */;
+  let obj4 = require(3869) /* map */;
   token = obj4.useToken(token(689).colors.BACKGROUND_FEEDBACK_WARNING);
   let items = [token];
   let daysRemaining;
@@ -128,7 +128,7 @@ export default function ParentalConsentWarningBanner(children) {
       obj2.pointerEvents = "box-none";
       obj4 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: memo, locations: closure_15 };
       ({ START: obj11.start, END: obj11.end } = closure_10);
-      const items6 = [callback(token(4555), obj4), ];
+      const items6 = [callback(token(4589), obj4), ];
       let obj5 = { accessibilityRole: "button" };
       let num4 = 19;
       const intl = require(1212) /* getSystemLocale */.intl;
@@ -150,7 +150,7 @@ export default function ParentalConsentWarningBanner(children) {
         num4Result = intl2.format(token(2199).ZBK5mM, obj9);
       }
       obj7.children = num4Result;
-      obj7 = tmp21(require(4127) /* Text */.Text, obj7);
+      obj7 = tmp21(require(4161) /* Text */.Text, obj7);
       obj5.children = obj7;
       obj5 = tmp21(closure_4, obj5);
       items6[1] = obj5;

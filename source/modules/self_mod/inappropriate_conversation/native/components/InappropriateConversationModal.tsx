@@ -1,10 +1,10 @@
-// Module ID: 14752
-// Function ID: 112460
+// Module ID: 14796
+// Function ID: 112633
 // Name: IntroScreen
-// Dependencies: [57, 31, 27, 1850, 10098, 33, 4131, 689, 566, 3970, 1456, 6727, 4127, 1212, 4544, 10095, 14753, 10118, 5087, 10092, 4338, 10096, 5517, 2]
+// Dependencies: [57, 31, 27, 1850, 10138, 33, 4165, 689, 566, 4004, 1456, 6763, 4161, 1212, 4578, 10135, 14797, 10158, 5121, 10132, 4372, 10136, 5552, 2]
 // Exports: default
 
-// Module 14752 (IntroScreen)
+// Module 14796 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useState } from "result";
@@ -32,21 +32,21 @@ function IntroScreen(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getUser(closure_1));
-  let obj1 = importDefault(3970);
+  let obj1 = importDefault(4004);
   const name = obj1.getName(stateFromStores);
   let obj2 = require(1456) /* useNavigation */;
   let _slicedToArray = obj2.useNavigation();
   obj = { style: tmp.container };
-  const items1 = [callback2(require(6727) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const items1 = [callback2(require(6763) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
   obj = { style: tmp.warningText };
   obj1 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.sSMgC6);
-  const items2 = [callback2(require(4127) /* Text */.Text, obj1), ];
+  const items2 = [callback2(require(4161) /* Text */.Text, obj1), ];
   obj2 = { variant: "text-md/medium", style: tmp.takeoverDescription };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.q2QrTY, { username: name });
-  items2[1] = callback2(require(4127) /* Text */.Text, obj2);
+  items2[1] = callback2(require(4161) /* Text */.Text, obj2);
   obj.children = items2;
   items1[1] = callback3(closure_7, obj);
   const obj3 = { style: tmp.ctaContainer };
@@ -56,14 +56,14 @@ function IntroScreen(arg0) {
   obj4.onPress = function onPress() {
     callback(outer1_0(outer1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_TAKE_ACTION);
   };
-  const items3 = [callback2(require(4544) /* Button */.Button, obj4), ];
+  const items3 = [callback2(require(4578) /* Button */.Button, obj4), ];
   const obj5 = { variant: "secondary", size: "lg", text: null, grow: true };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj5.text = intl4.string(require(1212) /* getSystemLocale */.t.xLkGzP);
   obj5.onPress = function onPress() {
     callback(outer1_0(outer1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_SAFETY_TIPS);
   };
-  items3[1] = callback2(require(4544) /* Button */.Button, obj5);
+  items3[1] = callback2(require(4578) /* Button */.Button, obj5);
   obj3.children = items3;
   items1[2] = callback3(closure_7, obj3);
   obj.children = items1;
@@ -82,13 +82,13 @@ function TakeActionScreen(arg0) {
   obj = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["mWO+ys"]);
-  const items = [callback2(require(4127) /* Text */.Text, obj), ];
+  const items = [callback2(require(4161) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-md/medium", style: tmp.takeoverDescription };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.S0XtKF);
-  items[1] = callback2(require(4127) /* Text */.Text, obj1);
+  items[1] = callback2(require(4161) /* Text */.Text, obj1);
   obj.children = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(14753), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(14797), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj.children = items1;
   return callback3(closure_7, obj);
 }
@@ -99,7 +99,7 @@ function SafetyTipsScreen() {
   obj = { showHeader: true };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.description = intl.string(require(1212) /* getSystemLocale */.t.DJMZX6);
-  const tmp2 = importDefault(10118);
+  const tmp2 = importDefault(10158);
   obj.safetyTips = callback().map((children) => outer1_13(outer1_0(outer1_2[12]).Text, { variant: "text-sm/medium", children }, arg1));
   obj.children = callback2(tmp2, obj);
   obj.children = callback2(closure_7, obj);
@@ -109,16 +109,16 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  const items = [callback2(trackAnalyticsEvent(6727).SafetyChatSpotIllustration, {}), , ];
+  const items = [callback2(trackAnalyticsEvent(6763).SafetyChatSpotIllustration, {}), , ];
   obj = { style: tmp.warningText };
   obj = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header" };
   const intl = trackAnalyticsEvent(1212).intl;
   obj.children = intl.string(trackAnalyticsEvent(1212).t.NUMAsF);
-  const items1 = [callback2(trackAnalyticsEvent(4127).Text, obj), ];
+  const items1 = [callback2(trackAnalyticsEvent(4161).Text, obj), ];
   const obj1 = { variant: "text-md/medium", style: tmp.takeoverDescription };
   const intl2 = trackAnalyticsEvent(1212).intl;
   obj1.children = intl2.string(trackAnalyticsEvent(1212).t.uicS5l);
-  items1[1] = callback2(trackAnalyticsEvent(4127).Text, obj1);
+  items1[1] = callback2(trackAnalyticsEvent(4161).Text, obj1);
   obj.children = items1;
   items[1] = callback3(closure_7, obj);
   const obj2 = { style: tmp.ctaContainer };
@@ -129,7 +129,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     outer1_6.openURL(outer1_9);
     trackAnalyticsEvent(trackAnalyticsEvent(outer1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
   };
-  const items2 = [callback2(trackAnalyticsEvent(4544).Button, obj3), ];
+  const items2 = [callback2(trackAnalyticsEvent(4578).Button, obj3), ];
   const obj4 = { variant: "secondary", size: "lg", text: null, grow: true };
   const intl4 = trackAnalyticsEvent(1212).intl;
   obj4.text = intl4.string(trackAnalyticsEvent(1212).t.ogLlvy);
@@ -137,7 +137,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     outer1_6.openURL(outer1_10);
     trackAnalyticsEvent(trackAnalyticsEvent(outer1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_WEB);
   };
-  items2[1] = callback2(trackAnalyticsEvent(4544).Button, obj4);
+  items2[1] = callback2(trackAnalyticsEvent(4578).Button, obj4);
   obj2.children = items2;
   items[2] = callback3(closure_7, obj2);
   obj.children = items;
@@ -153,9 +153,9 @@ function getScreens(arg0) {
   let useState;
   ({ warningId: require, senderId: importDefault, channelId: dependencyMap, isReported: _slicedToArray, setReported: result, handleDismiss: useState, trackAnalyticsEvent: closure_6 } = arg0);
   let obj = { title: "", fullscreen: true };
-  let obj1 = require(5087) /* HeaderBackImage */;
+  let obj1 = require(5121) /* HeaderBackImage */;
   obj.headerRight = obj1.getHeaderCloseButton(() => callback());
-  let obj2 = require(5087) /* HeaderBackImage */;
+  let obj2 = require(5121) /* HeaderBackImage */;
   obj.headerLeft = obj2.getHeaderBackButton();
   obj = {};
   obj = {};

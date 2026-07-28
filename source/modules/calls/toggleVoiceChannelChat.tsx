@@ -1,10 +1,10 @@
-// Module ID: 13501
-// Function ID: 103802
+// Module ID: 13545
+// Function ID: 103975
 // Name: toggleVoiceChannelChat
-// Dependencies: [1348, 4203, 4144, 4324, 2]
+// Dependencies: [1348, 4237, 4178, 4358, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 13501 (toggleVoiceChannelChat)
+// Module 13545 (toggleVoiceChannelChat)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
           if (null == tmp) {
             tmp = !chatOpen.getChatOpen(channelId);
           }
-          importDefault(4324).updateChatOpen(channelId, tmp);
+          importDefault(4358).updateChatOpen(channelId, tmp);
           const obj = { channelId, chatOpen: tmp };
           return obj;
         }

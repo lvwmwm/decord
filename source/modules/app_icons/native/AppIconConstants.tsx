@@ -1,10 +1,10 @@
-// Module ID: 6526
-// Function ID: 58306
+// Module ID: 6562
+// Function ID: 58395
 // Name: getDefaultIcon
-// Dependencies: [6527, 6528, 1212, 6529, 6530, 6531, 6532, 6533, 6534, 6535, 6536, 6537, 6538, 6539, 6540, 6541, 6542, 6543, 6544, 6545, 6546, 6547, 6548, 6549, 6550, 6551, 6552, 2]
+// Dependencies: [6563, 6564, 1212, 6565, 6566, 6567, 6568, 6569, 6570, 6571, 6572, 6573, 6574, 6575, 6576, 6577, 6578, 6579, 6580, 6581, 6582, 6583, 6584, 6585, 6586, 6587, 6588, 2]
 // Exports: getIconById
 
-// Module 6526 (getDefaultIcon)
+// Module 6562 (getDefaultIcon)
 import { intl } from "getSystemLocale";
 import { intl as intl2 } from "getSystemLocale";
 import { intl as intl3 } from "getSystemLocale";
@@ -31,7 +31,7 @@ import { intl as intl23 } from "getSystemLocale";
 import { intl as intl24 } from "getSystemLocale";
 
 function getDefaultIcon() {
-  const obj = { id: require(6527) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6528) };
+  const obj = { id: require(6563) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6564) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.name = intl.string(require(1212) /* getSystemLocale */.t.ANxkLy);
   obj.isPremium = false;

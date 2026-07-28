@@ -1,10 +1,10 @@
-// Module ID: 9961
-// Function ID: 77125
+// Module ID: 10001
+// Function ID: 77254
 // Name: useAppplicationRoleConnectionItems
-// Dependencies: [31, 27, 1922, 1858, 3971, 5630, 653, 1277, 4941, 33, 4131, 689, 4940, 9962, 4815, 1392, 3977, 1273, 9965, 9966, 3835, 9967, 9968, 4100, 5490, 3831, 1212, 8138, 4325, 3828, 4661, 4127, 3843, 566, 5731, 9969, 2]
+// Dependencies: [31, 27, 1922, 1858, 4005, 5878, 653, 1277, 4975, 33, 4165, 689, 4974, 10002, 4849, 1392, 4011, 1273, 10005, 10006, 3869, 10007, 10008, 4134, 5525, 3865, 1212, 8176, 4359, 3862, 4695, 4161, 3877, 566, 5741, 10009, 2]
 // Exports: default
 
-// Module 9961 (useAppplicationRoleConnectionItems)
+// Module 10001 (useAppplicationRoleConnectionItems)
 import importAllResult from "Text";
 import get_ActivityIndicator from "isLinkTrusted";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -259,10 +259,10 @@ class ConnectedUserAccount {
             href: platformUserUrl,
             trusted: account.type !== outer1_11.DOMAIN,
             onConfirm() {
-                let obj = account(4325);
+                let obj = account(4359);
                 obj = { platform_type: outer1_0.type, other_user_id: outer1_1 };
                 obj.trackWithMetadata(outer2_10.CONNECTED_ACCOUNT_VIEWED, obj);
-                userId(3828).openURL(outer1_3);
+                userId(3862).openURL(outer1_3);
               }
           };
           obj.handleClick(obj);
@@ -476,8 +476,8 @@ class ConnectedApplicationUserRoleAccount {
 }
 function useAppplicationRoleConnectionItems(memo) {
   const _require = arg1;
-  const theme = _require(3843).useThemeContext().theme;
-  let obj = _require(3843);
+  const theme = _require(3877).useThemeContext().theme;
+  let obj = _require(3877);
   const items = [_isNativeReflectConstruct];
   const dependencyMap = _require(566).useStateFromStores(items, () => outer1_6.locale);
   return memo.map((applicationRoleConnection) => {
@@ -596,8 +596,8 @@ export default function LegacyUserProfileConnections(user) {
         obj.title = intl.string(user(1212).t.PHjkRE);
         obj.showContainer = true;
         obj.children = arr6;
-        tmp10 = callback(stateFromStores(9969), obj);
-        const tmp14 = stateFromStores(9969);
+        tmp10 = callback(stateFromStores(10009), obj);
+        const tmp14 = stateFromStores(10009);
       }
       const items4 = [tmp10, ];
       obj1 = {};
@@ -605,10 +605,10 @@ export default function LegacyUserProfileConnections(user) {
       obj1.title = intl2.string(user(1212).t["3fe7U5"]);
       obj1.showContainer = true;
       obj1.children = tmp8;
-      items4[1] = callback(stateFromStores(9969), obj1);
+      items4[1] = callback(stateFromStores(10009), obj1);
       obj.children = items4;
       tmp21Result = closure_15(closure_16, obj);
-      const tmp19 = stateFromStores(9969);
+      const tmp19 = stateFromStores(10009);
       const tmp21 = closure_15;
       const tmp22 = closure_16;
     }

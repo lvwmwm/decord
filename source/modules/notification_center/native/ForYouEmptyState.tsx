@@ -1,10 +1,10 @@
-// Module ID: 15245
-// Function ID: 116023
+// Module ID: 15285
+// Function ID: 116182
 // Name: ForYouEmptyState
-// Dependencies: [31, 27, 33, 4131, 6727, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 6763, 4161, 1212, 2]
 // Exports: ForYouEmptyState
 
-// Module 15245 (ForYouEmptyState)
+// Module 15285 (ForYouEmptyState)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ export const ForYouEmptyState = function ForYouEmptyState(height) {
   const tmp = callback3();
   let obj = { style: items };
   items = [tmp.container, { height: height.height }];
-  obj = { style: tmp.image, children: callback(require(6727) /* AccountAgeTier10LargeBadge */.MailboxSpotIllustration, { scale: 0.75 }) };
+  obj = { style: tmp.image, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.MailboxSpotIllustration, { scale: 0.75 }) };
   const items1 = [callback(View, obj), , ];
   obj = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold" };
   const items2 = [, ];
@@ -29,11 +29,11 @@ export const ForYouEmptyState = function ForYouEmptyState(height) {
   obj.style = items2;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.MwjTvn);
-  items1[1] = callback(require(4127) /* Text */.Text, obj);
+  items1[1] = callback(require(4161) /* Text */.Text, obj);
   const obj1 = { color: "text-default", variant: "text-md/medium", style: tmp.text };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.AKBgPy);
-  items1[2] = callback(require(4127) /* Text */.Text, obj1);
+  items1[2] = callback(require(4161) /* Text */.Text, obj1);
   obj.children = items1;
   return callback2(View, obj);
 };

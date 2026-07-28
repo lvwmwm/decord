@@ -1,19 +1,19 @@
-// Module ID: 11072
-// Function ID: 86031
+// Module ID: 11110
+// Function ID: 86154
 // Name: getContentClassificationVisibility
-// Dependencies: [1850, 5641, 5643, 566, 2]
+// Dependencies: [1850, 5890, 5892, 566, 2]
 // Exports: useContentClassificationVisibility
 
-// Module 11072 (getContentClassificationVisibility)
+// Module 11110 (getContentClassificationVisibility)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function getContentClassificationVisibility(contentClassification, channel, nsfwAllowed) {
   if (null != contentClassification) {
-    let obj = require(5641) /* _createForOfIteratorHelperLoose */;
-    obj = { type: require(5641) /* _createForOfIteratorHelperLoose */.ContentClassificationVariant.MINIMAL, data: contentClassification };
+    let obj = require(5890) /* _createForOfIteratorHelperLoose */;
+    obj = { type: require(5890) /* _createForOfIteratorHelperLoose */.ContentClassificationVariant.MINIMAL, data: contentClassification };
     const result = obj.contentClassificationToAgeRestriction(obj);
-    if (result === require(5643) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT) {
+    if (result === require(5892) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT) {
       if (true !== nsfwAllowed) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {

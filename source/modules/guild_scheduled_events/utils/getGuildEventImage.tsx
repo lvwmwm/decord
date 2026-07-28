@@ -1,10 +1,10 @@
-// Module ID: 12203
-// Function ID: 95420
+// Module ID: 12246
+// Function ID: 95590
 // Name: getGuildEventImageURL
 // Dependencies: [653, 1426, 2]
 // Exports: default
 
-// Module 12203 (getGuildEventImageURL)
+// Module 12246 (getGuildEventImageURL)
 import { Endpoints } from "ME";
 
 let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/getGuildEventImage.tsx");

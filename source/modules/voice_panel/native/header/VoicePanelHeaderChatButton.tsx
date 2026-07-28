@@ -1,10 +1,10 @@
-// Module ID: 15881
-// Function ID: 122579
+// Module ID: 15920
+// Function ID: 122735
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [31, 653, 33, 4131, 689, 1207, 15882, 5515, 15787, 4630, 1212, 2]
+// Dependencies: [31, 653, 33, 4165, 689, 1207, 15921, 5550, 15826, 4664, 1212, 2]
 // Exports: default
 
-// Module 15881 (VoicePanelHeaderChatButton)
+// Module 15920 (VoicePanelHeaderChatButton)
 import result from "result";
 import { ComponentActions } from "ME";
 import jsxProd from "jsxProd";
@@ -30,27 +30,27 @@ export default function VoicePanelHeaderChatButton(channelId) {
     const ComponentDispatch = outer1_0(outer1_2[5]).ComponentDispatch;
     ComponentDispatch.dispatch(outer1_4.VOICE_PANEL_OPEN_CHAT_TAB);
   }, []);
-  const tmp3 = importDefault(15882)(channelId.channelId);
+  const tmp3 = importDefault(15921)(channelId.channelId);
   let obj = {};
   obj = {};
   const tmp4 = "mention" === tmp3 ? tmp.mentionBadge : tmp.unreadBadge;
   const tmp5 = closure_6;
-  const tmp6 = importDefault(5515);
+  const tmp6 = importDefault(5550);
   obj = { color: importDefault(689).colors.WHITE, size: "sm" };
-  obj.icon = callback(require(4630) /* ChatIcon */.ChatIcon, obj);
+  obj.icon = callback(require(4664) /* ChatIcon */.ChatIcon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5KxXrK"]);
   obj.onPress = callback;
-  const items = [callback(importDefault(15787), obj), ];
+  const items = [callback(importDefault(15826), obj), ];
   let tmp8 = null != tmp3;
   if (tmp8) {
     const obj1 = { style: tmp.badgeContainer };
     const obj2 = {};
     const items1 = [tmp.badge, tmp4];
     obj2.style = items1;
-    obj1.children = callback(importDefault(5515), obj2);
-    tmp8 = callback(importDefault(5515), obj1);
-    const tmp12 = importDefault(5515);
+    obj1.children = callback(importDefault(5550), obj2);
+    tmp8 = callback(importDefault(5550), obj1);
+    const tmp12 = importDefault(5550);
   }
   items[1] = tmp8;
   obj.children = items;

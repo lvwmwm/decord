@@ -1,10 +1,10 @@
-// Module ID: 12543
-// Function ID: 97062
+// Module ID: 12586
+// Function ID: 97232
 // Name: getAttachmentUploadAbortAlertContent
-// Dependencies: [653, 1212, 4667, 2]
+// Dependencies: [653, 1212, 4701, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 12543 (getAttachmentUploadAbortAlertContent)
+// Module 12586 (getAttachmentUploadAbortAlertContent)
 import { AbortCodes } from "ME";
 
 const result = require("items").fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");
@@ -15,7 +15,7 @@ export const getAttachmentUploadAbortAlertContent = function getAttachmentUpload
   if (AbortCodes.TOTAL_ATTACHMENT_SIZE_TOO_LARGE === code) {
     let obj = { title: stringResult };
     const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj = { maxSizeMb: require(4667) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB };
+    obj = { maxSizeMb: require(4701) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB };
     obj.body = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.DYFPg2, obj);
     return obj;
   } else if (AbortCodes.CLOUD_UPLOAD_NOT_FOUND === code) {

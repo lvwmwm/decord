@@ -1,10 +1,10 @@
-// Module ID: 4645
-// Function ID: 40351
+// Module ID: 4679
+// Function ID: 40466
 // Name: ImageIcon
-// Dependencies: [31, 33, 689, 3834, 4617, 2]
+// Dependencies: [31, 33, 689, 3868, 4651, 2]
 // Exports: ImageIcon
 
-// Module 4645 (ImageIcon)
+// Module 4679 (ImageIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ImageIcon = function ImageIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4617) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4651) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4617) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4651) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

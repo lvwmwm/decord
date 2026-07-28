@@ -1,9 +1,9 @@
-// Module ID: 9362
-// Function ID: 73078
+// Module ID: 9406
+// Function ID: 73229
 // Name: EXPRESSION_FOOTER_HEIGHT
-// Dependencies: [31, 4996, 653, 1314, 33, 4131, 689, 3992, 675, 4100, 4101, 9363, 9375, 5217, 9376, 9173, 9378, 9380, 2]
+// Dependencies: [31, 5030, 653, 1314, 33, 4165, 689, 4026, 675, 4134, 4135, 9407, 9419, 5251, 9420, 9217, 9422, 9424, 2]
 
-// Module 9362 (EXPRESSION_FOOTER_HEIGHT)
+// Module 9406 (EXPRESSION_FOOTER_HEIGHT)
 import importAllResult from "result";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
 import ME from "ME";
@@ -35,8 +35,10 @@ let closure_17 = { code: "function EmojiPickerCategoriesTsx5(open){const{runOnJS
 const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomSheetRef) {
   let firstUnicodeCategory;
   let firstUnicodeCategoryIndex;
+  let isSearching;
   let onBackspace;
   let portalHostName;
+  let renderAhead;
   let sections;
   bottomSheetRef = bottomSheetRef.bottomSheetRef;
   const bottomSheetIndex = bottomSheetRef.bottomSheetIndex;
@@ -51,9 +53,9 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = bottomSheetRef.isSearching;
-  if (flag2 === undefined) {
-    flag2 = false;
+  ({ isSearching, renderAhead } = bottomSheetRef);
+  if (isSearching === undefined) {
+    isSearching = false;
   }
   const onClearSearch = bottomSheetRef.onClearSearch;
   let ExpressionPickerViewType;
@@ -135,7 +137,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
     }
   }, items1);
   let obj3 = bottomSheetRef(categories[7]);
-  class K {
+  class X {
     constructor() {
       value = bottomSheetIndex.get();
       if (c5) {
@@ -149,13 +151,13 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
     }
   }
   obj = { inPortalKeyboard: flag, bottomSheetIndex };
-  K.__closure = obj;
-  K.__workletHash = 15413192314561;
-  K.__initData = closure_15;
-  derivedValue = obj3.useDerivedValue(K);
+  X.__closure = obj;
+  X.__workletHash = 15413192314561;
+  X.__initData = closure_15;
+  derivedValue = obj3.useDerivedValue(X);
   closure_14 = categoryIndexActive.useRef(undefined);
   closure_15 = categoryIndexActive.useRef(false);
-  const items2 = [derivedValue, bottomSheetRef, emojiPickerListRef, flag, flag2, onClearSearch];
+  const items2 = [derivedValue, bottomSheetRef, emojiPickerListRef, flag, isSearching, onClearSearch];
   callback2 = categoryIndexActive.useCallback(() => {
     let current = arg0;
     if (arg0 === undefined) {
@@ -177,7 +179,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
           closure_15.current = false;
         }
       }
-      if (flag2) {
+      if (isSearching) {
         if (null != onClearSearch) {
           ref.current = current;
           closure_15.current = true;
@@ -194,33 +196,28 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
     }
   }, items2);
   let obj5 = bottomSheetRef(categories[7]);
-  const fn3 = function z() {
-    return derivedValue.get();
-  };
-  fn3.__closure = { bottomSheetOpen: derivedValue };
-  fn3.__workletHash = 13172461706889;
-  fn3.__initData = callback2;
-  class X {
-    constructor(arg0) {
-      if (bottomSheetRef) {
-        tmp = bottomSheetRef;
-        tmp2 = categories;
-        num = 7;
-        obj = bottomSheetRef(categories[7]);
-        tmp3 = f73086;
-        tmp4 = obj.runOnJS(f73086)();
-      }
-      return;
+  class B {
+    constructor() {
+      return c13.get();
     }
   }
+  B.__closure = { bottomSheetOpen: derivedValue };
+  B.__workletHash = 13172461706889;
+  B.__initData = callback2;
+  const fn3 = function z(arg0) {
+    if (arg0) {
+      bottomSheetRef(categories[7]).runOnJS(callback2)();
+      const obj = bottomSheetRef(categories[7]);
+    }
+  };
   obj1 = { runOnJS: bottomSheetRef(categories[7]).runOnJS, handleScrollToCategoryIndex: callback2 };
-  X.__closure = obj1;
-  X.__workletHash = 13670816929775;
-  X.__initData = callback3;
-  const animatedReaction1 = obj5.useAnimatedReaction(fn3, X);
-  const items3 = [flag2, categoryIndexActive, emojiPickerListRef];
+  fn3.__closure = obj1;
+  fn3.__workletHash = 13670816929775;
+  fn3.__initData = callback3;
+  const animatedReaction1 = obj5.useAnimatedReaction(B, fn3);
+  const items3 = [isSearching, categoryIndexActive, emojiPickerListRef];
   const effect = categoryIndexActive.useEffect(() => {
-    if (!flag2) {
+    if (!isSearching) {
       if (ref2.current) {
         if (null != ref.current) {
           const current = ref.current;
@@ -243,7 +240,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
       if (null != guild) {
         let obj = bottomSheetIndex(categories[8]);
         obj = {};
-        obj = { page: flag2.EXPRESSION_PICKER };
+        obj = { page: isSearching.EXPRESSION_PICKER };
         obj.location = obj;
         obj.tab = _undefined.EMOJI;
         obj.guild_id = guild.id;
@@ -294,7 +291,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   const tmp16 = bottomSheetIndex(categories[12])();
   const tmp18 = sharedValue;
   const obj4 = { gesture: memo1 };
-  obj5 = { estimatedListSize: "windowSize", horizontal: true, itemSize: onClearSearch, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
+  obj5 = { estimatedListSize: "windowSize", horizontal: true, itemSize: onClearSearch, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderAhead, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
   obj4.children = sharedValue(bottomSheetIndex(categories[15]), obj5);
   const items8 = [sharedValue(bottomSheetRef(categories[13]).GestureDetector, obj4), , ];
   let tmp22 = null;

@@ -1,10 +1,10 @@
-// Module ID: 15629
-// Function ID: 120511
+// Module ID: 15668
+// Function ID: 120667
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [31, 27, 3768, 33, 4131, 1273, 689, 566, 3970, 15630, 1395, 4127, 1212, 15631, 15632, 2]
+// Dependencies: [31, 27, 3802, 33, 4165, 1273, 689, 566, 4004, 15669, 1395, 4161, 1212, 15670, 15671, 2]
 // Exports: default
 
-// Module 15629 (MessageRequestRowSenderDetails)
+// Module 15668 (MessageRequestRowSenderDetails)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -53,7 +53,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
       return nickname;
     }
   });
-  let obj1 = otherUser(15630);
+  let obj1 = otherUser(15669);
   const messageRequestRelativeTimestampText = obj1.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const rounded = Math.floor(random * importDefault(1395).DEFAULT_AVATARS.length);
@@ -89,28 +89,28 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     stringResult = intl.string(otherUser(1212).t["30mdIx"]);
   }
   obj6.children = stringResult;
-  const items2 = [callback(otherUser(4127).Text, obj6), ];
+  const items2 = [callback(otherUser(4161).Text, obj6), ];
   let tmp18 = null != stateFromStores;
   if (tmp18) {
     const obj7 = { variant: "text-md/medium", color: "text-muted" };
-    let obj11 = otherUser(3970);
+    let obj11 = otherUser(4004);
     const items3 = [" ", obj11.getUserTag(otherUser)];
     obj7.children = items3;
-    tmp18 = callback2(otherUser(4127).Text, obj7);
+    tmp18 = callback2(otherUser(4161).Text, obj7);
   }
   items2[1] = tmp18;
   obj5.children = items2;
-  const items4 = [callback2(otherUser(4127).Text, obj5), , ];
+  const items4 = [callback2(otherUser(4161).Text, obj5), , ];
   const obj8 = { style: tmp.timestampSeparator, variant: "text-xs/medium", color: "text-muted", children: "\u00B7" };
-  items4[1] = callback(otherUser(4127).Text, obj8);
+  items4[1] = callback(otherUser(4161).Text, obj8);
   const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText };
-  items4[2] = callback(otherUser(4127).Text, obj9);
+  items4[2] = callback(otherUser(4161).Text, obj9);
   obj4.children = items4;
   const items5 = [callback2(View, obj4), , ];
   let tmp22 = !flag;
   if (tmp22) {
     const obj10 = { style: tmp.messagePreview, channel };
-    tmp22 = callback(importDefault(15631), obj10);
+    tmp22 = callback(importDefault(15670), obj10);
   }
   items5[1] = tmp22;
   if (flag) {
@@ -120,8 +120,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     obj11 = { style: tmp.messagePreview, userId: otherUser.id };
     const intl2 = otherUser(1212).intl;
     obj11.suffix = intl2.string(otherUser(1212).t.hTltPn);
-    flag = callback(importDefault(15632), obj11);
-    const tmp29 = importDefault(15632);
+    flag = callback(importDefault(15671), obj11);
+    const tmp29 = importDefault(15671);
   }
   items5[2] = flag;
   obj3.children = items5;

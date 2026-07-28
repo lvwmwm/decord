@@ -1,8 +1,8 @@
-// Module ID: 15469
-// Function ID: 118041
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 11336, 4127, 1212, 4544, 2]
+// Module ID: 15508
+// Function ID: 118197
+// Dependencies: [31, 27, 33, 4165, 689, 1273, 11374, 4161, 1212, 4578, 2]
 
-// Module 15469
+// Module 15508
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,23 +23,23 @@ const memoResult = require("result").memo((onCreateThreadPress) => {
   const tmp = callback2();
   let obj = { style: tmp.container };
   obj = { style: tmp.iconWrapper };
-  obj = { source: importDefault(11336), size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj = { source: importDefault(11374), size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
   const items = [callback(View, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.HgTQ8p);
-  items[1] = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4161) /* Text */.Text, obj1);
   const obj2 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.jmq9GC);
-  items[2] = callback(require(4127) /* Text */.Text, obj2);
+  items[2] = callback(require(4161) /* Text */.Text, obj2);
   let tmp4 = null != onCreateThreadPress;
   if (tmp4) {
     const obj3 = { onPress: onCreateThreadPress };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.rBIGBL);
-    tmp4 = callback(require(4544) /* Button */.Button, obj3);
+    tmp4 = callback(require(4578) /* Button */.Button, obj3);
   }
   items[3] = tmp4;
   obj.children = items;

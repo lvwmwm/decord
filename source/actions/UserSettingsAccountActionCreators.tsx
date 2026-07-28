@@ -1,10 +1,10 @@
-// Module ID: 9158
-// Function ID: 71864
+// Module ID: 9202
+// Function ID: 72015
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 653, 5591, 686, 507, 5588, 1198, 587, 7888, 7885, 9159, 6448, 2]
+// Dependencies: [5, 653, 5626, 686, 507, 5623, 1198, 587, 7924, 7921, 9203, 6484, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 9158 (saveProfileAndAccountRequest)
+// Module 9202 (saveProfileAndAccountRequest)
 import dispatchLogout from "dispatchLogout";
 import ME from "ME";
 import str2 from "str2";
@@ -114,8 +114,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.push_voip_provider = closure_8;
     obj.push_voip_token = value;
   }
-  obj = { headers: avatarId(7888).buildHeadersForMd5({ [closure_0(closure_2[9]).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  const obj4 = avatarId(7888);
+  obj = { headers: avatarId(7924).buildHeadersForMd5({ [closure_0(closure_2[9]).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  const obj4 = avatarId(7924);
   tmp10 = null != tmp9 && null != value;
   tmp12 = null != closure_8 && null != value;
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {

@@ -1,9 +1,9 @@
-// Module ID: 3826
-// Function ID: 31816
+// Module ID: 3860
+// Function ID: 31918
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 3826 (enforcing)
+// Module 3860 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeLinkingModule");

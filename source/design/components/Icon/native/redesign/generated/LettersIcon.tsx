@@ -1,10 +1,10 @@
-// Module ID: 6590
-// Function ID: 58409
+// Module ID: 6626
+// Function ID: 58498
 // Name: LettersIcon
-// Dependencies: [31, 33, 689, 3834, 6591, 2]
+// Dependencies: [31, 33, 689, 3868, 6627, 2]
 // Exports: LettersIcon
 
-// Module 6590 (LettersIcon)
+// Module 6626 (LettersIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LettersIcon = function LettersIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(6591) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6627) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6591) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6627) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

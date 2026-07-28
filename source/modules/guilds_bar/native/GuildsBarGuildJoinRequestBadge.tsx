@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 113630
+// Module ID: 14931
+// Function ID: 113803
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [31, 27, 33, 4131, 689, 4974, 3951, 14888, 14889, 14890, 11380, 5085, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 5008, 3985, 14932, 14933, 14934, 11418, 5119, 2]
 // Exports: default
 
-// Module 14887 (GuildsBarGuildJoinRequestBadge)
+// Module 14931 (GuildsBarGuildJoinRequestBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,16 +22,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/nati
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = _createForOfIteratorHelperLoose();
-  if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp6 = importDefault(14888);
-  } else if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp6 = importDefault(14889);
-  } else if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp6 = importDefault(14890);
+  if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+    let tmp6 = importDefault(14932);
+  } else if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp6 = importDefault(14933);
+  } else if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp6 = importDefault(14934);
   } else {
     tmp6 = null;
-    if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp6 = importDefault(11380);
+    if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp6 = importDefault(11418);
     }
   }
   let tmp15 = null;
@@ -40,7 +40,7 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
     const items = [tmp.badgeImageContainer, joinRequestState.style];
     obj.style = items;
     obj = { source: tmp6, style: tmp.badgeImage };
-    obj.children = jsx(importDefault(5085), { source: tmp6, style: tmp.badgeImage });
+    obj.children = jsx(importDefault(5119), { source: tmp6, style: tmp.badgeImage });
     tmp15 = <View source={tmp6} style={tmp.badgeImage} />;
   }
   return tmp15;

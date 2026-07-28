@@ -1,10 +1,10 @@
-// Module ID: 16403
-// Function ID: 128035
+// Module ID: 16443
+// Function ID: 128196
 // Name: IdentityApplicationRow
-// Dependencies: [57, 31, 27, 33, 9945, 5164, 1273, 4067, 5186, 1212, 5731, 1392, 3977, 4099, 8162, 5498, 8687, 5189, 5121, 5501, 2]
+// Dependencies: [57, 31, 27, 33, 9985, 5198, 1273, 4101, 5220, 1212, 5741, 1392, 4011, 4133, 8200, 5533, 8731, 5223, 5155, 5536, 2]
 // Exports: default
 
-// Module 16403 (IdentityApplicationRow)
+// Module 16443 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(9945) /* useRequestApplication */;
+  let obj = require(9985) /* useRequestApplication */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -37,7 +37,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj.subLabel = description;
     obj.onPress = onPress;
-    return callback2(require(5164) /* TableRowInner */.TableRow, obj);
+    return callback2(require(5198) /* TableRowInner */.TableRow, obj);
   }
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -52,7 +52,7 @@ export default function SelectConnectionActionSheet(arg0) {
   let onCompleteIdentityApplication;
   let require;
   ({ addConnection: require, excludedConnections: importDefault, excludedApplications: dependencyMap, integrations, onCompleteApplication: _slicedToArray, gameApplicationIds, onCompleteIdentityApplication } = arg0);
-  let closure_5 = importDefault(4067)();
+  let closure_5 = importDefault(4101)();
   let obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.Sm0YG7);
@@ -78,7 +78,7 @@ export default function SelectConnectionActionSheet(arg0) {
       return tmp2;
     });
   }
-  let obj1 = require(5731) /* usePlatformAllowed */;
+  let obj1 = require(5741) /* usePlatformAllowed */;
   const platforms = obj1.usePlatforms();
   const found1 = platforms.filter((type) => !set.has(type.type));
   let mapped1;
@@ -158,7 +158,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     items.push(intl4.string(require(1212) /* getSystemLocale */.t.y3ZnnU));
   }
-  let obj2 = require(8162) /* useSegmentedControlState */;
+  let obj2 = require(8200) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp2[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = obj2.useSegmentedControlState(obj);
   if (1 === first) {
@@ -173,11 +173,11 @@ export default function SelectConnectionActionSheet(arg0) {
     }
   }
   obj = { scrollable: true, header: null, startExpanded: true };
-  obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.header = callback2(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   if (num > 0) {
     obj1 = {};
     obj2 = { state: segmentedControlState };
-    obj1.children = callback2(require(8687) /* SegmentedControl */.SegmentedControl, obj2);
+    obj1.children = callback2(require(8731) /* SegmentedControl */.SegmentedControl, obj2);
     let tmp19 = callback2(closure_5, obj1);
   } else {
     tmp19 = null;
@@ -186,9 +186,9 @@ export default function SelectConnectionActionSheet(arg0) {
   const obj3 = {};
   const obj4 = { bottom: true };
   const obj5 = { hasIcons: true, children: tmp17 };
-  obj4.children = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj5);
-  obj3.children = callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
-  items1[1] = callback2(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj3);
+  obj4.children = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj5);
+  obj3.children = callback2(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback2(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj3);
   obj.children = items1;
-  return closure_7(require(5498) /* ActionSheet */.ActionSheet, obj);
+  return closure_7(require(5533) /* ActionSheet */.ActionSheet, obj);
 };

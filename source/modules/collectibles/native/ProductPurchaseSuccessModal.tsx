@@ -1,10 +1,10 @@
-// Module ID: 9729
-// Function ID: 75786
+// Module ID: 9769
+// Function ID: 75915
 // Name: CancelButton
-// Dependencies: [57, 830, 31, 27, 4123, 7977, 653, 33, 4131, 689, 1877, 9728, 5094, 5119, 1212, 3992, 4543, 4132, 4100, 5780, 9730, 3835, 4555, 8596, 9732, 566, 9733, 9734, 8652, 8105, 8669, 7984, 5121, 9742, 7994, 8005, 8013, 8677, 9761, 4127, 5782, 4544, 2]
+// Dependencies: [57, 830, 31, 27, 4157, 8015, 653, 33, 4165, 689, 1877, 9768, 5128, 5153, 1212, 4026, 4577, 4166, 4134, 5790, 9770, 3869, 4589, 8640, 9772, 566, 9773, 9774, 8696, 8143, 8713, 8022, 5155, 9782, 8032, 8043, 8051, 8721, 9801, 4161, 5792, 4578, 2]
 // Exports: default
 
-// Module 9729 (CancelButton)
+// Module 9769 (CancelButton)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ItemsSortingHat from "ItemsSortingHat";
@@ -47,7 +47,7 @@ function CancelButton(arg0) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.labelVisible = false;
-  return callback2(require(5094) /* Background */.HeaderBackButton, obj);
+  return callback2(require(5128) /* Background */.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;
@@ -198,15 +198,15 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   }
   let _require;
   let callback;
-  let obj = _require(8596);
+  let obj = _require(8640);
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(9730)(product.styles).backgroundColors;
+  const backgroundColors = callback(9770)(product.styles).backgroundColors;
   let tertiary;
   if (null != backgroundColors) {
     tertiary = backgroundColors.tertiary;
   }
   const tmp3 = callback3(product.type, null != tertiary);
-  let obj2 = _require(3835);
+  let obj2 = _require(3869);
   let token = obj2.useToken(callback(689).colors.INTERACTIVE_TEXT_ACTIVE);
   _require = React.useRef(closure_21);
   callback = React.useCallback(() => {
@@ -239,7 +239,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       outer1_0.current = [];
     };
   }, items);
-  let obj3 = _require(9732);
+  let obj3 = _require(9772);
   const avatarDecorationPreviewSizes = obj3.useAvatarDecorationPreviewSizes();
   ({ avatarSize, avatarDecorationSize } = avatarDecorationPreviewSizes);
   let obj4 = _require(566);
@@ -321,26 +321,26 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     obj.curtainViewStyle = obj8.useAnimatedStyle(fn3);
     return obj;
   })(stateFromStores, tmp9));
-  let obj5 = _require(9733);
+  let obj5 = _require(9773);
   const category = obj5.useFetchCollectiblesProductCategory(product.skuId).category;
   if (null != category) {
     const mobileBgUrl = category.mobileBgUrl;
   }
-  let obj6 = _require(9734);
+  let obj6 = _require(9774);
   handleUseNow = obj6.useHandleUseNow({ product, onSuccess });
   const isApplying = handleUseNow.isApplying;
   ({ handleUseNow, canUseNow, handleEditProfile } = handleUseNow);
   const avatarSource = currentUser.getAvatarSource(undefined, false, avatarSize);
-  let obj7 = _require(8652);
+  let obj7 = _require(8696);
   const effect1 = React.useEffect(() => {
     ref(outer1_2[29]).lockOrientation(outer1_10.PORTRAIT);
     return () => {
       const result = callback(outer2_2[29]).restoreDefaultOrientation();
     };
   }, []);
-  let obj8 = _require(8669);
+  let obj8 = _require(8713);
   const previewCollectibleProduct = obj8.usePreviewCollectibleProduct(product, true);
-  let obj9 = _require(7984);
+  let obj9 = _require(8022);
   const shopProductItems = obj9.useShopProductItems(product);
   obj = { style: tmp3.root, id: product.skuId };
   if (useCategoryImage) {
@@ -366,7 +366,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     obj5 = { style: tmp3.headerLeading };
     if (showOrbBalancePill) {
       obj6 = { initialRenderedBalance: prop, balance: obj7.useFetchVirtualCurrencyBalance().balance };
-      showOrbBalancePill = callback2(_require(9742).BalanceWidgetPill, obj6);
+      showOrbBalancePill = callback2(_require(9782).BalanceWidgetPill, obj6);
     }
     obj5.children = showOrbBalancePill;
     const items4 = [callback2(closure_8, obj5), ];
@@ -402,26 +402,26 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       obj12.size = "large";
       obj12.targetSize = closure_15;
       obj12.exposureLocation = "ProductPurchaseSuccessModal";
-      obj11.children = callback2(callback(7994), obj12);
+      obj11.children = callback2(callback(8032), obj12);
       let tmp43 = callback2(closure_8, obj11);
     } else if (_require(1877).CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj13 = { item: callback(product.items, 1)[0], size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43 = callback2(callback(8005), obj13);
+      tmp43 = callback2(callback(8043), obj13);
     } else if (_require(1877).CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj14 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43 = callback2(callback(8013), obj14);
+      tmp43 = callback2(callback(8051), obj14);
     } else if (_require(1877).CollectiblesItemType.PROFILE_FRAME === type) {
       const obj15 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43 = callback2(callback(8677), obj15);
+      tmp43 = callback2(callback(8721), obj15);
     } else {
       tmp43 = null;
       if (_require(1877).CollectiblesItemType.NAMEPLATE === type) {
         const obj16 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43 = callback2(_require(9761).NameplatePreview, obj16);
+        tmp43 = callback2(_require(9801).NameplatePreview, obj16);
       }
     }
     obj10.children = tmp43;
-    const items7 = [callback2(callback(3992).View, obj10), ];
+    const items7 = [callback2(callback(4026).View, obj10), ];
     const obj17 = {};
     const items8 = [tmp3.messages, textViewStyle];
     obj17.style = items8;
@@ -433,9 +433,9 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       const intl3 = _require(1212).intl;
       const obj20 = { itemName: product.name };
       obj19.children = intl3.format(_require(1212).t.YNaxMp, obj20);
-      const items9 = [callback2(_require(4127).Text, obj19), ];
+      const items9 = [callback2(_require(4161).Text, obj19), ];
       const obj21 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp3.title };
-      let result = _require(5782).isPremiumCollectiblesProduct(product);
+      let result = _require(5792).isPremiumCollectiblesProduct(product);
       const intl4 = _require(1212).intl;
       const format = intl4.format;
       const t = _require(1212).t;
@@ -447,16 +447,16 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
         formatResult = format(t["4kp0AB"], obj23);
       }
       obj21.children = formatResult;
-      items9[1] = callback2(_require(4127).Text, obj21);
+      items9[1] = callback2(_require(4161).Text, obj21);
       obj18.children = items9;
       renderMessagesResult = closure_13(closure_14, obj18);
-      const obj41 = _require(5782);
+      const obj41 = _require(5792);
       const tmp84 = closure_13;
       const tmp85 = closure_14;
       const tmp89 = callback2;
     }
     obj17.children = renderMessagesResult;
-    items7[1] = callback2(callback(3992).View, obj17);
+    items7[1] = callback2(callback(4026).View, obj17);
     obj8.children = items7;
     items5[1] = closure_13(closure_7, obj8);
     const obj24 = { style: tmp3.footer };
@@ -475,16 +475,16 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       obj27.size = "lg";
       obj27.grow = true;
     }
-    obj25.children = callback2(_require(4544).Button, obj27);
+    obj25.children = callback2(_require(4578).Button, obj27);
     obj24.children = callback2(closure_8, obj25);
     items5[2] = callback2(closure_8, obj24);
     obj2.children = items5;
-    items2[1] = closure_13(_require(5121).SafeAreaPaddingView, obj2);
+    items2[1] = closure_13(_require(5155).SafeAreaPaddingView, obj2);
     const obj28 = {};
     const items10 = [tmp3.curtain, curtainViewStyle];
     obj28.style = items10;
     obj28.pointerEvents = "none";
-    items2[2] = callback2(callback(3992).View, obj28);
+    items2[2] = callback2(callback(4026).View, obj28);
     obj.children = items2;
     return tmp18(tmp19, obj);
   }

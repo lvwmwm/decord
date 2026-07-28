@@ -1,10 +1,10 @@
-// Module ID: 10043
-// Function ID: 77717
+// Module ID: 10083
+// Function ID: 77846
 // Name: getMonths
-// Dependencies: [57, 1348, 1908, 3768, 1907, 3971, 1850, 10044, 10045, 653, 3713, 22, 1212, 4321, 3970, 10042, 10046, 5046, 4975, 6111, 10047, 10048, 2]
+// Dependencies: [57, 1348, 1908, 3802, 1907, 4005, 1850, 10084, 10085, 653, 3747, 22, 1212, 4355, 4004, 10082, 10086, 5080, 5009, 6145, 10087, 10088, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 10043 (getMonths)
+// Module 10083 (getMonths)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,14 +27,14 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function getMonths() {
-  const obj = importDefault(3713);
-  const monthsResult = importDefault(3713).months();
-  return new Set(importDefault(3713).months().map((str) => str.toLowerCase()));
+  const obj = importDefault(3747);
+  const monthsResult = importDefault(3747).months();
+  return new Set(importDefault(3747).months().map((str) => str.toLowerCase()));
 }
 function getWeekdays() {
-  const obj = importDefault(3713);
-  const weekdaysResult = importDefault(3713).weekdays();
-  return new Set(importDefault(3713).weekdays().map((str) => str.toLowerCase()));
+  const obj = importDefault(3747);
+  const weekdaysResult = importDefault(3747).weekdays();
+  return new Set(importDefault(3747).weekdays().map((str) => str.toLowerCase()));
 }
 function getYears() {
   const fullYear = new Date().getFullYear();
@@ -52,11 +52,11 @@ function makeDate(day) {
   if (arg1 === undefined) {
     num = 0;
   }
-  const obj = importDefault(3713)();
-  return makeDateRange(importDefault(3713)().startOf(day).add(num, day), day);
+  const obj = importDefault(3747)();
+  return makeDateRange(importDefault(3747)().startOf(day).add(num, day), day);
 }
 function parseDate(arg0, arg1, day) {
-  return makeDateRange(importDefault(3713)(arg0, arg1).local(), day);
+  return makeDateRange(importDefault(3747)(arg0, arg1).local(), day);
 }
 function getShortcuts() {
   const obj = {};
@@ -254,7 +254,7 @@ function isValidChannelAutocomplete(token, items) {
         })(token, replaced);
       }
     }
-    obj2 = require(10042) /* _createForOfIteratorHelperLoose */;
+    obj2 = require(10082) /* _createForOfIteratorHelperLoose */;
   }
   return flag;
 }
@@ -317,10 +317,10 @@ function getLocalizedAnswer(str, authorTypeMap) {
   return combined;
 }
 function isValidHasAutocomplete(token) {
-  return require(10046) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
+  return require(10086) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
 }
 function isValidAuthorTypeAutocomplete(token) {
-  return require(10046) /* ANSWER_IN_REGEX */.validateForMapWithNegation("author_type", getAuthorTypeMap(), token);
+  return require(10086) /* ANSWER_IN_REGEX */.validateForMapWithNegation("author_type", getAuthorTypeMap(), token);
 }
 function isValidPinnedAutocomplete(token) {
   const match = token.getMatch(1);
@@ -988,7 +988,7 @@ export const isValidFilterAnswerForSubmit = function isValidFilterAnswerForSubmi
   if (null == table[searchTokenType]) {
     return true;
   } else {
-    const Token = require(10048) /* getMatch */.Token;
+    const Token = require(10088) /* getMatch */.Token;
     const _HermesInternal = HermesInternal;
     const items = ["filter:" + trimmed, trimmed];
     const prototype = Token.prototype;

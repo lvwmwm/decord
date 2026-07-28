@@ -1,9 +1,9 @@
-// Module ID: 4198
-// Function ID: 36093
+// Module ID: 4232
+// Function ID: 36197
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 4198 (apexExperiment)
+// Module 4232 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-05-distributed-clips", defaultConfig: { enableDistributedClips: false }, variations: { [1]: { enableDistributedClips: true } } };

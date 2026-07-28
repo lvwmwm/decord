@@ -1,10 +1,10 @@
-// Module ID: 8626
-// Function ID: 68597
+// Module ID: 8670
+// Function ID: 68748
 // Name: filterLayer
-// Dependencies: [31, 27, 7977, 5510, 33, 4131, 689, 8034, 3835, 8035, 8026, 5109, 5085, 8627, 2]
+// Dependencies: [31, 27, 8015, 5545, 33, 4165, 689, 8072, 3869, 8073, 8064, 5143, 5119, 8671, 2]
 // Exports: default
 
-// Module 8626 (filterLayer)
+// Module 8670 (filterLayer)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
@@ -39,21 +39,21 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   const tmp = _createForOfIteratorHelperLoose();
   const innerWidth = profileFrame.innerWidth;
   const result = previewWidth.previewWidth * innerWidth / (innerWidth + 2 * profileFrame.overflowHorizontal);
-  ({ overflowTop, overflowBottom, overflowHorizontal } = importDefault(8034)(profileFrame, result));
-  let obj = require(3835) /* map */;
+  ({ overflowTop, overflowBottom, overflowHorizontal } = importDefault(8072)(profileFrame, result));
+  let obj = require(3869) /* map */;
   const token = obj.useToken(profileBackgroundColor);
   obj = { frame: profileFrame, filterLayer, profileThemeType: UserProfileThemeTypes.PREVIEW };
-  const tmp3 = importDefault(8034)(profileFrame, result);
-  obj.frameOrder = require(8026) /* ProfileFrameLayerOrder */.ProfileFrameLayerOrder.BACK;
+  const tmp3 = importDefault(8072)(profileFrame, result);
+  obj.frameOrder = require(8064) /* ProfileFrameLayerOrder */.ProfileFrameLayerOrder.BACK;
   obj.containerWidth = result;
   obj.containerHeight = previewHeight;
-  let tmp6 = callback(importDefault(8035), obj);
+  let tmp6 = callback(importDefault(8073), obj);
   const xs = importDefault(689).radii.xs;
   obj = { style: obj1 };
   const obj2 = { style: absoluteFill.absoluteFill };
   const obj3 = { position: "absolute", top: 0, left: 0, right: 0, height: overflowTop, backgroundColor: "black" };
   obj1 = { position: "absolute", top: -overflowTop, bottom: -overflowBottom, left: -overflowHorizontal, right: -overflowHorizontal };
-  const tmp5 = importDefault(8035);
+  const tmp5 = importDefault(8073);
   const items = [callback(closure_4, { style: obj3 }), , , , , , , ];
   const obj4 = { position: "absolute", bottom: 0, left: 0, right: 0, height: overflowBottom, backgroundColor: "black" };
   items[1] = callback(closure_4, { style: obj4 });
@@ -92,21 +92,21 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   const obj9 = { position: "absolute", bottom: overflowBottom - xs, left: overflowHorizontal - xs, width: 2 * xs, height: 2 * xs, borderRadius: xs, backgroundColor: "black" };
   const tmp10 = callback;
   const tmp11 = closure_4;
-  tmp7 = importDefault(5109);
+  tmp7 = importDefault(5143);
   const tmp8 = callback2;
   const tmp9 = closure_4;
-  obj16.uri = importDefault(8627);
+  obj16.uri = importDefault(8671);
   obj15.source = obj16;
   obj15.style = tmp.sampleProfile;
   obj15.resizeMode = "cover";
-  obj13.children = callback(importDefault(5085), obj15);
+  obj13.children = callback(importDefault(5119), obj15);
   items2[1] = tmp10(tmp11, obj13);
   const obj17 = { frame: profileFrame, filterLayer, profileThemeType: UserProfileThemeTypes.PREVIEW };
-  const tmp13 = importDefault(5085);
-  obj17.frameOrder = require(8026) /* ProfileFrameLayerOrder */.ProfileFrameLayerOrder.FRONT;
+  const tmp13 = importDefault(5119);
+  obj17.frameOrder = require(8064) /* ProfileFrameLayerOrder */.ProfileFrameLayerOrder.FRONT;
   obj17.containerWidth = result;
   obj17.containerHeight = previewHeight - overflowTop - overflowBottom;
-  items2[2] = callback(importDefault(8035), obj17);
+  items2[2] = callback(importDefault(8073), obj17);
   obj12.children = items2;
   return tmp8(tmp9, obj12);
 };

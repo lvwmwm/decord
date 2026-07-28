@@ -1,10 +1,10 @@
-// Module ID: 11703
-// Function ID: 90777
+// Module ID: 11742
+// Function ID: 90928
 // Name: handleNameInputScreenOrSuggestions
-// Dependencies: [5, 4813, 1850, 11704, 11706, 11705, 653, 4345, 11707, 11709, 675, 11711, 1212, 4472, 3832, 10295, 9167, 4030, 4338, 11712, 1935, 8286, 668, 11731, 2]
+// Dependencies: [5, 4847, 1850, 11743, 11745, 11744, 653, 4379, 11746, 11748, 675, 11750, 1212, 4506, 3866, 10335, 9211, 4064, 4372, 11751, 1935, 8324, 668, 11770, 2]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModalDeeplink, openContactSyncModalOnboarding, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 11703 (handleNameInputScreenOrSuggestions)
+// Module 11742 (handleNameInputScreenOrSuggestions)
 import closure_3 from "ContactSyncLandingPage";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -68,16 +68,16 @@ function openContactSyncModal(initialRoutes, FRIENDS_ADD_FRIENDS_MODAL) {
     callback4(constants.NORMAL);
   }
   if (FRIENDS_ADD_FRIENDS_MODAL) {
-    let obj = require(11709) /* Steps */;
+    let obj = require(11748) /* Steps */;
     obj = { location: FRIENDS_ADD_FRIENDS_MODAL };
     obj.trackFlowStart(obj);
   }
   obj = { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage };
-  const obj3 = importDefault(4338);
-  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(11712, dependencyMap.paths), obj, closure_20).then(arg2);
+  const obj3 = importDefault(4372);
+  importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(11751, dependencyMap.paths), obj, closure_20).then(arg2);
 }
 function refreshContactSyncPermissionStatus() {
-  const result = require(11707) /* isContactSyncAvailable */.checkContactPermissions();
+  const result = require(11746) /* isContactSyncAvailable */.checkContactPermissions();
   result.then((arg0) => {
     outer1_7(arg0);
   });
@@ -178,24 +178,24 @@ export const bulkAddFriendSuggestions = function bulkAddFriendSuggestions(arg0, 
   return _bulkAddFriendSuggestions(...arguments);
 };
 export const goBackToLanding = function goBackToLanding(closure_1) {
-  require(11709) /* Steps */.trackFlowStep(require(11709) /* Steps */.Steps.LANDING, false, true);
+  require(11748) /* Steps */.trackFlowStep(require(11748) /* Steps */.Steps.LANDING, false, true);
   closure_1.pop(closure_1.getState().routes.length - 1);
 };
 export const submitPhone = function submitPhone(arg0, closure_0) {
   callback2(arg0);
-  require(11709) /* Steps */.trackFlowStep(require(11709) /* Steps */.Steps.VERIFY_PHONE_NUMBER, false, false);
+  require(11748) /* Steps */.trackFlowStep(require(11748) /* Steps */.Steps.VERIFY_PHONE_NUMBER, false, false);
   closure_0.navigate(constants2.VERIFY_PHONE);
 };
 export const verifyPhone = function verifyPhone() {
   return _verifyPhone(...arguments);
 };
 export const verifyPhoneWithPassword = function verifyPhoneWithPassword(arg0, navigation) {
-  require(11709) /* Steps */.trackFlowStep(require(11709) /* Steps */.Steps.PASSWORD_CONFIRM, false, false);
+  require(11748) /* Steps */.trackFlowStep(require(11748) /* Steps */.Steps.PASSWORD_CONFIRM, false, false);
   callback3(arg0);
   navigation.navigate(constants2.VERIFY_PASSWORD);
 };
 export const upsellDismissed = function upsellDismissed() {
-  require(11709) /* Steps */.trackFlowEnd(true);
+  require(11748) /* Steps */.trackFlowEnd(true);
 };
 export { openContactSyncModal };
 export const openContactSyncModalOnboarding = function openContactSyncModalOnboarding() {
@@ -205,14 +205,14 @@ export const openContactSyncModalOnboarding = function openContactSyncModalOnboa
   }
   if (!flag) {
     let obj = {};
-    obj = { page: require(11709) /* Steps */.CONTACT_SYNC_ONBOARDING_LOCATION };
+    obj = { page: require(11748) /* Steps */.CONTACT_SYNC_ONBOARDING_LOCATION };
     obj.location = obj;
-    require(11709) /* Steps */.trackFlowStart(obj);
-    const obj2 = require(11709) /* Steps */;
+    require(11748) /* Steps */.trackFlowStart(obj);
+    const obj2 = require(11748) /* Steps */;
     // CreateGeneratorClosureLongIndex (0x67)
-    importDefault(4338).pushLazy(callback(4338), {}, closure_20);
+    importDefault(4372).pushLazy(callback(4372), {}, closure_20);
   } else {
-    obj = require(8286) /* showInstantInviteActionSheet */;
+    obj = require(8324) /* showInstantInviteActionSheet */;
     closure_14(obj.hasDeferredInvite() ? closure_13.ONBOARDING_INVITE : closure_13.ONBOARDING);
     const tmp = closure_14;
   }

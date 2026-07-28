@@ -1,10 +1,10 @@
-// Module ID: 13786
-// Function ID: 105716
+// Module ID: 13830
+// Function ID: 105889
 // Name: useExplicitContentSettingOrDefault
-// Dependencies: [1316, 624, 5853, 5855, 2]
+// Dependencies: [1316, 624, 5863, 5865, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 13786 (useExplicitContentSettingOrDefault)
+// Module 13830 (useExplicitContentSettingOrDefault)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -26,7 +26,7 @@ export const useExplicitContentSettingOrDefault = function useExplicitContentSet
     return prop;
   });
   obj = {};
-  let obj2 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+  let obj2 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
   obj = {};
   let prop;
   if (null != stateFromStoresObject) {
@@ -41,15 +41,15 @@ export const useExplicitContentSettingOrDefault = function useExplicitContentSet
   }
   obj1.setting = prop1;
   obj1.isDm = true;
-  obj.explicitContentNonFriendDm = require(5853) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
-  const obj5 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+  obj.explicitContentNonFriendDm = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
+  const obj5 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
   obj2 = { setting: null, isDm: true, isFriend: true };
   let prop2;
   if (null != stateFromStoresObject) {
     prop2 = stateFromStoresObject.explicitContentFriendDm;
   }
   obj2.setting = prop2;
-  obj.explicitContentFriendDm = require(5853) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
+  obj.explicitContentFriendDm = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
   return obj;
 };
 export const useGoreContentSettingOrDefault = function useGoreContentSettingOrDefault() {
@@ -68,7 +68,7 @@ export const useGoreContentSettingOrDefault = function useGoreContentSettingOrDe
     return goreContentSettings;
   });
   obj = {};
-  let obj2 = require(5855) /* resolveGoreSettingWithDefaults */;
+  let obj2 = require(5865) /* resolveGoreSettingWithDefaults */;
   obj = {};
   let goreContentGuilds;
   if (null != stateFromStoresObject) {
@@ -83,14 +83,14 @@ export const useGoreContentSettingOrDefault = function useGoreContentSettingOrDe
   }
   obj1.setting = prop;
   obj1.isDm = true;
-  obj.goreContentNonFriendDm = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
-  const obj5 = require(5855) /* resolveGoreSettingWithDefaults */;
+  obj.goreContentNonFriendDm = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
+  const obj5 = require(5865) /* resolveGoreSettingWithDefaults */;
   obj2 = { setting: null, isDm: true, isFriend: true };
   let goreContentFriendDm;
   if (null != stateFromStoresObject) {
     goreContentFriendDm = stateFromStoresObject.goreContentFriendDm;
   }
   obj2.setting = goreContentFriendDm;
-  obj.goreContentFriendDm = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
+  obj.goreContentFriendDm = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
   return obj;
 };

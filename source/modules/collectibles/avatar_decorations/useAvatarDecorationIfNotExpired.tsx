@@ -1,10 +1,10 @@
-// Module ID: 7916
-// Function ID: 63033
+// Module ID: 7952
+// Function ID: 63124
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [57, 31, 653, 1828, 4016, 2]
+// Dependencies: [57, 31, 653, 1828, 4050, 2]
 // Exports: default
 
-// Module 7916 (useAvatarDecorationIfNotExpired)
+// Module 7952 (useAvatarDecorationIfNotExpired)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { MAX_TIMEOUT_MS } from "ME";

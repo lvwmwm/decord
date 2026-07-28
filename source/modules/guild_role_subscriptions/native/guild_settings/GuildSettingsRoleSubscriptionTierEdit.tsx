@@ -1,10 +1,10 @@
-// Module ID: 16539
-// Function ID: 128862
+// Module ID: 16579
+// Function ID: 129023
 // Name: ArchiveOrDeleteTierSection
-// Dependencies: [57, 31, 27, 3753, 16494, 14156, 653, 1345, 33, 4131, 689, 1456, 16506, 16502, 12551, 8281, 4127, 4544, 1273, 16540, 5121, 16534, 16532, 16509, 14163, 16489, 11321, 16541, 1212, 14178, 3831, 5087, 6695, 8162, 1334, 16542, 1935, 9602, 9603, 8687, 2]
+// Dependencies: [57, 31, 27, 3787, 16534, 14200, 653, 1345, 33, 4165, 689, 1456, 16546, 16542, 12594, 8319, 4161, 4578, 1273, 16580, 5155, 16574, 16572, 16549, 14207, 16529, 11359, 16581, 1212, 14222, 3865, 5121, 6731, 8200, 1334, 16582, 1935, 9642, 9643, 8731, 2]
 // Exports: default
 
-// Module 16539 (ArchiveOrDeleteTierSection)
+// Module 16579 (ArchiveOrDeleteTierSection)
 import _slicedToArray from "_slicedToArray";
 import HeaderBackImage from "HeaderBackImage";
 import get_ActivityIndicator from "ActionableNotice";
@@ -33,27 +33,27 @@ function ArchiveOrDeleteTierSection() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = require(1456) /* useNavigation */;
   const navigation = obj.useNavigation();
-  let obj1 = require(16506) /* useEditStateContext */;
+  let obj1 = require(16546) /* useEditStateContext */;
   const editStateContext = obj1.useEditStateContext();
   const guildId = editStateContext.guildId;
   ({ groupListingId, editStateId } = editStateContext);
-  const tmp4 = importDefault(16502)(guildId, groupListingId, editStateId, navigation);
+  const tmp4 = importDefault(16542)(guildId, groupListingId, editStateId, navigation);
   const buttonText = tmp4.buttonText;
   ({ descriptionText, handleArchiveOrDelete, deleting, archiving } = tmp4);
-  let obj2 = require(12551) /* useCreatorMonetizationRestrictions */;
+  let obj2 = require(12594) /* useCreatorMonetizationRestrictions */;
   obj = {};
   obj = { style: tmp.actionHeader, children: buttonText };
-  const items = [callback2(importDefault(8281), obj), , ];
+  const items = [callback2(importDefault(8319), obj), , ];
   obj1 = { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-  items[1] = callback2(require(4127) /* Text */.Text, obj1);
+  items[1] = callback2(require(4161) /* Text */.Text, obj1);
   obj2 = { style: tmp.actionButton };
   const obj3 = { variant: "destructive", grow: true };
-  const obj4 = { size: require(1273) /* Button */.Icon.Sizes.SMALL, disableColor: true, source: importDefault(16540) };
+  const obj4 = { size: require(1273) /* Button */.Icon.Sizes.SMALL, disableColor: true, source: importDefault(16580) };
   obj3.icon = callback2(require(1273) /* Button */.Icon, obj4);
   obj3.onPress = handleArchiveOrDelete;
   obj3.disabled = !obj2.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization || deleting || archiving;
   obj3.text = buttonText;
-  obj2.children = callback2(require(4544) /* Button */.Button, obj3);
+  obj2.children = callback2(require(4578) /* Button */.Button, obj3);
   items[2] = callback2(closure_6, obj2);
   obj.children = items;
   return closure_16(closure_15, obj);
@@ -64,17 +64,17 @@ function TabContent(selectedTab) {
   if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
     let obj = { style: tmp.tabContent };
     obj = { bottom: true };
-    const items = [callback2(require(16534) /* Content */.GuildRoleSubscriptionTierDetailsTab, {}), callback2(ArchiveOrDeleteTierSection, {})];
+    const items = [callback2(require(16574) /* Content */.GuildRoleSubscriptionTierDetailsTab, {}), callback2(ArchiveOrDeleteTierSection, {})];
     obj.children = items;
-    obj.children = callback3(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+    obj.children = callback3(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
     return callback2(closure_7, obj);
   } else if (GuildRoleSubscriptionsTierScenes.DESIGN === selectedTab) {
     obj = { style: tmp.tabContent };
-    const obj1 = { bottom: true, children: callback2(require(16532) /* MemberPreviews */.GuildRoleSubscriptionTierDesignTab, {}) };
-    obj.children = callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
+    const obj1 = { bottom: true, children: callback2(require(16572) /* MemberPreviews */.GuildRoleSubscriptionTierDesignTab, {}) };
+    obj.children = callback2(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
     return callback2(closure_7, obj);
   } else if (GuildRoleSubscriptionsTierScenes.BENEFITS === selectedTab) {
-    return callback2(require(16509) /* AddBenefitButton */.GuildRoleSubscriptionTierBenefitsTab, {});
+    return callback2(require(16549) /* AddBenefitButton */.GuildRoleSubscriptionTierBenefitsTab, {});
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -106,15 +106,15 @@ let closure_20 = require("HeaderBackImage").forwardRef((arg0, arg1) => {
   let importAll;
   let require;
   let submitting;
-  let obj = require(16506) /* useEditStateContext */;
+  let obj = require(16546) /* useEditStateContext */;
   const editStateContext = obj.useEditStateContext();
   ({ guildId: require, groupListingId } = editStateContext);
-  let obj1 = require(14163) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(14207) /* _createForOfIteratorHelperLoose */;
   const publishSubscriptionListing = obj1.usePublishSubscriptionListing();
   ({ error, publishSubscriptionListing: importAll, clearError: dependencyMap, submitting } = publishSubscriptionListing);
-  let obj2 = require(14163) /* _createForOfIteratorHelperLoose */;
+  let obj2 = require(14207) /* _createForOfIteratorHelperLoose */;
   const subscriptionListing = obj2.useSubscriptionListing(editStateContext.editStateId);
-  let obj3 = require(16489) /* useRoleSubscriptionSettingsDisabled */;
+  let obj3 = require(16529) /* useRoleSubscriptionSettingsDisabled */;
   const roleSubscriptionSettingsDisabled = obj3.useRoleSubscriptionSettingsDisabled();
   const imperativeHandle = React.useImperativeHandle(arg1, () => ({ dismissError: closure_3 }));
   let tmp6 = null;
@@ -128,12 +128,12 @@ let closure_20 = require("HeaderBackImage").forwardRef((arg0, arg1) => {
           obj = { size: 16 };
           const items = [callback2(require(1273) /* Button */.Spacer, obj), , ];
           obj1 = { children: error.getAnyErrorMessage() };
-          items[1] = callback2(groupListingId(11321), obj1);
+          items[1] = callback2(groupListingId(11359), obj1);
           obj2 = { size: 16 };
           items[2] = callback2(require(1273) /* Button */.Spacer, obj2);
           obj.children = items;
           let tmp16 = callback3(closure_15, obj);
-          const tmp14 = groupListingId(11321);
+          const tmp14 = groupListingId(11359);
         } else {
           obj3 = {};
           const intl = require(1212) /* getSystemLocale */.intl;
@@ -150,8 +150,8 @@ let closure_20 = require("HeaderBackImage").forwardRef((arg0, arg1) => {
           };
           obj3.submitting = submitting;
           obj3.disabled = roleSubscriptionSettingsDisabled;
-          tmp16 = callback2(groupListingId(16541), obj3);
-          const tmp21 = groupListingId(16541);
+          tmp16 = callback2(groupListingId(16581), obj3);
+          const tmp21 = groupListingId(16581);
         }
       }
     }

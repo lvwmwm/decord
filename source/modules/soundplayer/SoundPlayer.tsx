@@ -1,10 +1,10 @@
-// Module ID: 15676
-// Function ID: 120818
+// Module ID: 15715
+// Function ID: 120974
 // Name: useSound
-// Dependencies: [31, 1347, 5658, 4145, 15677, 1352, 4150, 1194, 1348, 1838, 4178, 10184, 4203, 1907, 4953, 4147, 4204, 653, 1355, 33, 566, 10210, 4315, 4195, 3749, 1327, 5629, 2]
+// Dependencies: [31, 1347, 5668, 4179, 15716, 1352, 4184, 1194, 1348, 1838, 4212, 10224, 4237, 1907, 4987, 4181, 4238, 653, 1355, 33, 566, 10250, 4349, 4229, 3783, 1327, 5664, 2]
 // Exports: default
 
-// Module 15676 (useSound)
+// Module 15715 (useSound)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { NO_ACTIVITIES } from "_createForOfIteratorHelperLoose";

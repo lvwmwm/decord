@@ -1,10 +1,10 @@
-// Module ID: 10755
-// Function ID: 83479
+// Module ID: 10793
+// Function ID: 83600
 // Name: SingleScreenshare
-// Dependencies: [31, 10174, 33, 4131, 689, 4560, 10756, 4324, 2]
+// Dependencies: [31, 10214, 33, 4165, 689, 4594, 10794, 4358, 2]
 // Exports: default
 
-// Module 10755 (SingleScreenshare)
+// Module 10793 (SingleScreenshare)
 import "result";
 import resetFocusTimer from "resetFocusTimer";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/video_calls/nat
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(4560)(() => {
+  channel(4594)(() => {
     outer1_2();
   });
   const obj = {
@@ -41,5 +41,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj.containerStyle = stageStreamContainer;
-  return tmp3(channel(10756), obj);
+  return tmp3(channel(10794), obj);
 };

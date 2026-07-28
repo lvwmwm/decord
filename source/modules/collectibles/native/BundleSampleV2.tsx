@@ -1,10 +1,10 @@
-// Module ID: 7994
-// Function ID: 63724
+// Module ID: 8032
+// Function ID: 63834
 // Name: getSizedAssetUri
-// Dependencies: [31, 27, 7977, 33, 5085, 4131, 689, 44, 1877, 1874, 7995, 8005, 8007, 1273, 8012, 2]
+// Dependencies: [31, 27, 8015, 33, 5119, 4165, 689, 44, 1877, 1874, 8033, 8043, 8045, 1273, 8050, 2]
 // Exports: default
 
-// Module 7994 (getSizedAssetUri)
+// Module 8032 (getSizedAssetUri)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
@@ -52,8 +52,8 @@ function BundleStaticPreviewContent(arg0) {
     obj = { uri: getSizedAssetUri(bgStatic, targetSize) };
     obj.source = obj;
     obj.style = closure_8.bgImage;
-    tmp = callback(importDefault(5085), obj);
-    const tmp5 = importDefault(5085);
+    tmp = callback(importDefault(5119), obj);
+    const tmp5 = importDefault(5119);
   }
   obj = { style: closure_8.container };
   let tmp11Result = !disableBackground;
@@ -80,9 +80,9 @@ function BundleStaticPreviewContent(arg0) {
     const obj5 = { uri: getSizedAssetUri(fgStatic, targetSize) };
     obj4.source = obj5;
     obj4.style = closure_8.fgImage;
-    obj3.children = callback(importDefault(5085), obj4);
+    obj3.children = callback(importDefault(5119), obj4);
     tmp18 = callback(closure_4, obj3);
-    const tmp25 = importDefault(5085);
+    const tmp25 = importDefault(5119);
   }
   items[1] = tmp18;
   obj.children = items;
@@ -111,7 +111,7 @@ function BundleSampleV2Composed(arg0) {
   if (tmp12) {
     obj = { style: tmp.pfx };
     const obj1 = { item: pfx };
-    obj.children = callback(importDefault(7995), obj1);
+    obj.children = callback(importDefault(8033), obj1);
     tmp12 = callback(closure_4, obj);
   }
   const items = [tmp12, , ];
@@ -131,7 +131,7 @@ function BundleSampleV2Composed(arg0) {
       }
       obj3.avatarSize = XSMALL_20;
       obj3.nameplate = nameplateData;
-      obj3 = callback(require(8007) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
+      obj3 = callback(require(8045) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
       obj2.children = obj3;
       callback(closure_4, obj2);
       const tmp26 = callback;
@@ -145,7 +145,7 @@ function BundleSampleV2Composed(arg0) {
     const obj5 = { item: deco, size: tmp9 };
     tmp9 = null != nameplateData;
     obj5.threeTierBundle = tmp9;
-    obj4.children = callback(importDefault(8005), obj5);
+    obj4.children = callback(importDefault(8043), obj5);
     callback(closure_4, obj4);
     const tmp19 = callback;
     const tmp20 = closure_4;
@@ -159,7 +159,7 @@ function BundleSampleV2StaticPreview(composedFallbackProps) {
   let targetSize;
   composedFallbackProps = composedFallbackProps.composedFallbackProps;
   ({ previewAssets, disableStaticBackground, mutedStaticBackground, targetSize, exposureLocation } = composedFallbackProps);
-  let obj = require(8012) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8050) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment(exposureLocation).enabled) {
     obj = { previewAssets, disableBackground: disableStaticBackground, mutedBackground: mutedStaticBackground, targetSize };
     let tmpResult = tmp(BundleStaticPreviewContent, obj);

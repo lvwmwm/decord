@@ -1,10 +1,10 @@
-// Module ID: 14242
-// Function ID: 109449
+// Module ID: 14286
+// Function ID: 109622
 // Name: MessagesHeaderItem
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
 // Exports: default
 
-// Module 14242 (MessagesHeaderItem)
+// Module 14286 (MessagesHeaderItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,6 +22,6 @@ export default function MessagesHeaderItem(animatedStyles) {
   obj = { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.OIgYlQ);
-  obj.children = jsx(require(4127) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" });
+  obj.children = jsx(require(4161) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" });
   return <View animated style={arg0.animatedStyles.textNormal} variant="text-lg/bold" />;
 };

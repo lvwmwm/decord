@@ -1,5 +1,5 @@
 // Module ID: 657
-// Function ID: 8025
+// Function ID: 8029
 // Name: CollectibleSearchItemType
 // Dependencies: [2]
 

@@ -1,10 +1,10 @@
-// Module ID: 10857
-// Function ID: 84381
+// Module ID: 10895
+// Function ID: 84502
 // Name: ChannelMembersActionSheet
-// Dependencies: [31, 27, 1348, 1918, 1911, 1838, 3759, 653, 33, 4131, 689, 1557, 566, 1456, 4321, 8215, 1212, 5187, 5186, 4661, 4099, 7627, 10858, 8943, 7578, 10856, 10159, 1273, 5189, 8223, 4127, 2]
+// Dependencies: [31, 27, 1348, 1918, 1911, 1838, 3793, 653, 33, 4165, 689, 1557, 566, 1456, 4355, 8253, 1212, 5221, 5220, 4695, 4133, 7663, 10896, 8987, 7614, 10894, 10201, 1273, 5223, 8261, 4161, 2]
 // Exports: default
 
-// Module 10857 (ChannelMembersActionSheet)
+// Module 10895 (ChannelMembersActionSheet)
 import "set";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -77,9 +77,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = closure_8.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        const obj12 = require(8215) /* isAdmin */;
+        const obj12 = require(8253) /* isAdmin */;
         const existingRolesRows = obj12.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const obj13 = require(8215) /* isAdmin */;
+        const obj13 = require(8253) /* isAdmin */;
         const items5 = [];
         obj = {};
         const existingMembersRows = obj13.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
@@ -112,11 +112,11 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = require(1212) /* getSystemLocale */.intl;
           obj3.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.XPDhcc);
-          obj3.children = callback(require(8943) /* SettingsIcon */.SettingsIcon, {});
-          tmp10 = callback(require(4661) /* PressableBase */.PressableOpacity, obj3);
+          obj3.children = callback(require(8987) /* SettingsIcon */.SettingsIcon, {});
+          tmp10 = callback(require(4695) /* PressableBase */.PressableOpacity, obj3);
         }
         obj2.trailing = tmp10;
-        obj1.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj2);
+        obj1.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj2);
         const obj4 = { style: tmp.container };
         if (canResult) {
           const obj5 = {};
@@ -125,8 +125,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5.onPress = function onPress() {
             return outer1_0(tmp[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5.icon = tmp13(require(10159) /* GroupPlusIcon */.GroupPlusIcon, {});
-          let tmp13Result = tmp13(require(7578) /* RowButtonWrapper */.RowButton, obj5);
+          obj5.icon = tmp13(require(10201) /* GroupPlusIcon */.GroupPlusIcon, {});
+          let tmp13Result = tmp13(require(7614) /* RowButtonWrapper */.RowButton, obj5);
         } else {
           const obj6 = { style: tmp.warning };
           const obj7 = { messageType: require(1273) /* Button */.HelpMessageTypes.INFO };
@@ -158,10 +158,10 @@ export default function ChannelMembersActionSheet(arg0) {
         };
         obj8.sections = items5;
         obj8.stickySectionHeadersEnabled = false;
-        items6[1] = callback(require(5189) /* BottomSheetModal */.BottomSheetSectionList, obj8);
+        items6[1] = callback(require(5223) /* BottomSheetModal */.BottomSheetSectionList, obj8);
         obj4.children = items6;
         obj1.children = closure_12(stateFromStores, obj4);
-        return callback(require(5187) /* Background */.BottomSheet, obj1);
+        return callback(require(5221) /* Background */.BottomSheet, obj1);
       }
     }
   }

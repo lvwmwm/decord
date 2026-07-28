@@ -1,9 +1,9 @@
-// Module ID: 9206
-// Function ID: 72180
+// Module ID: 9250
+// Function ID: 72331
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4052, 1838, 3759, 3948, 1850, 653, 664, 9207, 483, 587, 3713, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4086, 1838, 3793, 3982, 1850, 653, 664, 9251, 483, 587, 3747, 566, 686, 2]
 
-// Module 9206 (_isNativeReflectConstruct)
+// Module 9250 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "t";
@@ -129,7 +129,7 @@ function fetchSurveyIfNeeded() {
   }
   if (!tmp) {
     c23 = true;
-    obj = require(9207) /* overrideSurvey */;
+    obj = require(9251) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
@@ -397,7 +397,7 @@ function setSurvey(survey) {
   const value = Storage.get(closure_16);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = importDefault(3713)();
+    obj = importDefault(3747)();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp12 = null;
@@ -583,7 +583,7 @@ obj = {
       const hiddenSurveys = obj.hiddenSurveys;
       delete tmp[tmp2];
     }
-    obj = require(9207) /* overrideSurvey */;
+    obj = require(9251) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {

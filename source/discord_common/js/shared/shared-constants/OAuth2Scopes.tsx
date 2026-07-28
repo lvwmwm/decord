@@ -1,9 +1,9 @@
-// Module ID: 8112
-// Function ID: 64667
+// Module ID: 8150
+// Function ID: 64777
 // Name: set
 // Dependencies: [2]
 
-// Module 8112 (set)
+// Module 8150 (set)
 import set from "set";
 
 let obj = {};

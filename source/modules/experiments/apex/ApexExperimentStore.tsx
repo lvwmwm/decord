@@ -1,7 +1,7 @@
 // Module ID: 1188
-// Function ID: 13553
+// Function ID: 13557
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1189, 1194, 653, 686, 675, 4047, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1189, 1194, 653, 686, 675, 4081, 2]
 
 // Module 1188 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";

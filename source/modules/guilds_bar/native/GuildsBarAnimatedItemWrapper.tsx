@@ -1,10 +1,10 @@
-// Module ID: 14882
-// Function ID: 113593
+// Module ID: 14926
+// Function ID: 113766
 // Name: UnreadIndicator
-// Dependencies: [31, 4552, 14872, 33, 4131, 689, 3835, 4477, 4543, 3992, 7620, 14883, 14861, 3988, 1212, 3844, 5515, 7909, 2]
+// Dependencies: [31, 4586, 14916, 33, 4165, 689, 3869, 4511, 4577, 4026, 7656, 14927, 14905, 4022, 1212, 3878, 5550, 7945, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 14882 (UnreadIndicator)
+// Module 14926 (UnreadIndicator)
 import result from "result";
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
@@ -36,7 +36,7 @@ class UnreadIndicator {
     obj = require("map");
     token = obj.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE);
     c4 = token;
-    tmp4 = f113600(c6());
+    tmp4 = f113773(c6());
     GUILD_BAR_ITEM_SIZE = tmp4;
     tmp5 = MOUNTED === require("_createForOfIteratorHelperLoose").TransitionStates.MOUNTED;
     c6 = tmp5;
@@ -88,7 +88,7 @@ class UnreadIndicator {
     obj.guildItemSize = token;
     fn.__closure = obj;
     fn.__workletHash = 404454683979;
-    fn.__initData = f113601;
+    fn.__initData = f113774;
     items1 = [, , , ];
     items1[0] = tmp5;
     items1[1] = sharedId;
@@ -122,15 +122,15 @@ class UnreadIndicator {
     obj1.transitionState = MOUNTED;
     obj1.TransitionStates = require("_createForOfIteratorHelperLoose").TransitionStates;
     obj1.cleanUp = cleanUp;
-    obj1.runOnJS = require("module_3992").runOnJS;
+    obj1.runOnJS = require("module_4026").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
-    fn2.__initData = f113601;
+    fn2.__initData = f113774;
     items2 = [, ];
     items2[0] = MOUNTED;
     items2[1] = cleanUp;
     callback1 = cleanUp.useCallback(fn2, items2);
-    return c7(require("module_7620"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
+    return c7(require("module_7656"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
   }
 }
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
@@ -484,7 +484,7 @@ export const useGuildsBarAnimatedWrapperStyles = function useGuildsBarAnimatedWr
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const token = require(3835) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const token = require(3869) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
   return callback4(flag, flag2, token, callback());
 };
 export { UnreadIndicator };

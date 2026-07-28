@@ -1,9 +1,9 @@
-// Module ID: 14056
-// Function ID: 107627
+// Module ID: 14100
+// Function ID: 107800
 // Name: QUEST_DOCK_COLLAPSED_HEIGHT
 // Dependencies: [689, 2]
 
-// Module 14056 (QUEST_DOCK_COLLAPSED_HEIGHT)
+// Module 14100 (QUEST_DOCK_COLLAPSED_HEIGHT)
 let obj = { mass: 0.5, damping: 80, stiffness: 320 };
 obj = {};
 const merged = Object.assign(obj);

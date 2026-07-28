@@ -1,10 +1,10 @@
-// Module ID: 10174
-// Function ID: 78628
+// Module ID: 10214
+// Function ID: 78757
 // Name: resetFocusTimer
-// Dependencies: [31, 1347, 10175, 4156, 4149, 4016, 8105, 621, 682, 686, 4324, 22, 10176, 10177, 10178, 566, 4111, 2]
+// Dependencies: [31, 1347, 10215, 4190, 4183, 4050, 8143, 621, 682, 686, 4358, 22, 10216, 10217, 10218, 566, 4145, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers
 
-// Module 10174 (resetFocusTimer)
+// Module 10214 (resetFocusTimer)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
@@ -84,9 +84,9 @@ export const setVoiceChatDrawerState = function setVoiceChatDrawerState(embedded
 export const togglePipFocus = throttleResult;
 export { useIsVoiceChatFocused };
 export const useChannelCallOrientationHandlers = function useChannelCallOrientationHandlers(isGuildStageVoice) {
-  const tmp = importDefault(10176)(isGuildStageVoice);
+  const tmp = importDefault(10216)(isGuildStageVoice);
   const require = tmp;
-  const tmp2 = importDefault(10177)(isGuildStageVoice);
+  const tmp2 = importDefault(10217)(isGuildStageVoice);
   importDefault = tmp2;
   let isGuildStageVoiceResult = isGuildStageVoice.isGuildStageVoice();
   if (isGuildStageVoiceResult) {
@@ -104,7 +104,7 @@ export const useChannelCallOrientationHandlers = function useChannelCallOrientat
   if (null != currentEmbeddedActivity) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  obj = require(10178) /* useIsConnectedToVoiceChannelForId */;
+  obj = require(10218) /* useIsConnectedToVoiceChannelForId */;
   const items = [applicationId];
   const items1 = [applicationId];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {

@@ -1,10 +1,10 @@
-// Module ID: 7218
-// Function ID: 60063
+// Module ID: 7254
+// Function ID: 60152
 // Name: MiniaturesSpotIllustration
-// Dependencies: [33, 5085, 7219, 2]
+// Dependencies: [33, 5119, 7255, 2]
 // Exports: MiniaturesSpotIllustration
 
-// Module 7218 (MiniaturesSpotIllustration)
+// Module 7254 (MiniaturesSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MiniaturesSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const MiniaturesSpotIllustration = function MiniaturesSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7219) };
+  obj = { uri: importDefault(7255) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const MiniaturesSpotIllustration = function MiniaturesSpotIllustration(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
 };

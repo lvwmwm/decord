@@ -1,10 +1,10 @@
-// Module ID: 15153
-// Function ID: 115272
+// Module ID: 15193
+// Function ID: 115431
 // Name: useChannelNoticeRows
-// Dependencies: [57, 31, 11505, 1908, 1838, 1850, 5760, 653, 1345, 15092, 624, 5463, 5465, 15154, 8379, 1334, 3947, 15081, 15155, 2]
+// Dependencies: [57, 31, 11543, 1908, 1838, 1850, 5770, 653, 1345, 15132, 624, 5498, 5500, 15194, 8417, 1334, 3981, 15121, 15195, 2]
 // Exports: default
 
-// Module 15153 (useChannelNoticeRows)
+// Module 15193 (useChannelNoticeRows)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 5600
-// Function ID: 47597
+// Module ID: 5635
+// Function ID: 47724
 // Name: getChannelIdForGuildTransition
-// Dependencies: [5055, 1348, 1908, 1838, 1907, 5601, 653, 1355, 5605, 5607, 5609, 2]
+// Dependencies: [5089, 1348, 1908, 1838, 1907, 5636, 653, 1355, 5640, 5642, 5644, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 5600 (getChannelIdForGuildTransition)
+// Module 5635 (getChannelIdForGuildTransition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
     if (!obj.canSeeOnboardingHome(guildId)) {
       return id;
     }
-    obj = require(5605) /* canSeeOnboardingHomeInPreview */;
+    obj = require(5640) /* canSeeOnboardingHomeInPreview */;
   }
   if (channelId === StaticChannelRoute.GUILD_SPACE) {
     if (obj4.canUseGuildSpace(guild.getGuild(guildId), "getChannelIdForGuildTransition")) {
@@ -57,7 +57,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
       if (obj2.canSeeGameShop(guildId)) {
         return channelId;
       }
-      obj2 = require(5609) /* _createForOfIteratorHelperLoose */;
+      obj2 = require(5644) /* _createForOfIteratorHelperLoose */;
     }
     channel = channel.getChannel(channelId);
     if (null == channel) {

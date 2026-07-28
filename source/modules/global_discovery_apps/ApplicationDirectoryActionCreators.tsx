@@ -1,10 +1,10 @@
-// Module ID: 11183
-// Function ID: 86974
+// Module ID: 11221
+// Function ID: 87093
 // Name: _getEmbedApplication
-// Dependencies: [5, 4130, 1922, 683, 5464, 11184, 11185, 11180, 11186, 11187, 653, 686, 561, 507, 11181, 477, 11188, 11189, 11190, 2]
+// Dependencies: [5, 4164, 1922, 683, 5499, 11222, 11223, 11218, 11224, 11225, 653, 686, 561, 507, 11219, 477, 11226, 11227, 11228, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11183 (_getEmbedApplication)
+// Module 11221 (_getEmbedApplication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 14835
-// Function ID: 113180
+// Module ID: 14879
+// Function ID: 113353
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 14835 (enforcing)
+// Module 14879 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeRemoteAuthCryptoModule");

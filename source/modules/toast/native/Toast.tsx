@@ -1,10 +1,10 @@
-// Module ID: 15707
-// Function ID: 121131
+// Module ID: 15746
+// Function ID: 121287
 // Name: ToastIcon
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3835, 1273, 4127, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 689, 3869, 1273, 4161, 2]
 // Exports: default
 
-// Module 15707 (ToastIcon)
+// Module 15746 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -20,7 +20,7 @@ function ToastIcon(recolorLegacyIcon) {
   let icon;
   let iconColor;
   ({ icon, IconComponent, iconColor } = recolorLegacyIcon);
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   let str = "mobile-text-heading-primary";
   if (null != iconColor) {
     str = iconColor;
@@ -58,7 +58,7 @@ function ToastContent(content) {
     let tmp5 = callback2(View, obj);
   } else {
     obj = { onTextLayout: content.onTextLayout, style: tmp.contentContainer, lineClamp: 3, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: content };
-    tmp5 = callback2(require(4127) /* Text */.Text, obj);
+    tmp5 = callback2(require(4161) /* Text */.Text, obj);
   }
   return tmp5;
 }

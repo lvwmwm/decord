@@ -1,10 +1,10 @@
-// Module ID: 4151
-// Function ID: 35027
+// Module ID: 4185
+// Function ID: 35129
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4152, 4163, 4166, 4177, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4186, 4197, 4200, 4211, 566, 686, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 4151 (_isNativeReflectConstruct)
+// Module 4185 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -273,7 +273,7 @@ export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
     const items = [closure_8, closure_9, closure_7];
   }
-  const obj = { source: require(4177) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4177) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
+  const obj = { source: require(4211) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4211) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
   return obj;
 };
 export function isDetectionEnabled(value) {

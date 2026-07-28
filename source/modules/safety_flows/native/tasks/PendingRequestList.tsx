@@ -1,10 +1,10 @@
-// Module ID: 16645
-// Function ID: 129832
+// Module ID: 16685
+// Function ID: 129993
 // Name: PendingRequestRow
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 1273, 566, 16643, 16646, 1392, 4127, 1212, 2461, 4661, 2199, 8623, 13889, 13843, 3832, 4542, 6727, 12231, 13848, 2]
+// Dependencies: [31, 27, 1850, 33, 4165, 689, 1273, 566, 16683, 16686, 1392, 4161, 1212, 2461, 4695, 2199, 8667, 13933, 13887, 3866, 4576, 6763, 12274, 13892, 2]
 // Exports: default
 
-// Module 16645 (PendingRequestRow)
+// Module 16685 (PendingRequestRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -265,8 +265,8 @@ export default function PendingRequestList(arg0) {
   ({ pendingRequests, linkedUsersProcessed, expiresAt, onRefreshLinkCode, onInviteAnotherGuardian, onShare } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
-  importDefault(13843)(expiresAt, onRefreshLinkCode);
-  let obj = require(16643) /* _createForOfIteratorHelperLoose */;
+  importDefault(13887)(expiresAt, onRefreshLinkCode);
+  let obj = require(16683) /* _createForOfIteratorHelperLoose */;
   obj = {
     pendingRequests,
     linkedUsersProcessed,
@@ -320,23 +320,23 @@ export default function PendingRequestList(arg0) {
   const obj4 = { style: tmp.dividerLabel, variant: "text-sm/medium", color: "text-muted" };
   let intl = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl.string(importDefault(2461)["/SbB94"]);
-  items1[1] = callback(require(4127) /* Text */.Text, obj4);
+  items1[1] = callback(require(4161) /* Text */.Text, obj4);
   items1[2] = callback(closure_5, { style: tmp.dividerLine });
   obj2.children = items1;
   items[1] = callback2(closure_5, obj2);
   const obj6 = { style: items2 };
   items2 = [, ];
   ({ card: arr3[0], row: arr3[1] } = tmp);
-  const items3 = [callback(closure_5, { style: tmp.inviteIconContainer, children: callback(require(6727) /* AccountAgeTier10LargeBadge */.PlaneIllocon, { size: 32 }) }), , ];
+  const items3 = [callback(closure_5, { style: tmp.inviteIconContainer, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.PlaneIllocon, { size: 32 }) }), , ];
   const obj8 = { style: tmp.details };
   const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj9.children = intl2.string(importDefault(2461).z9gkwZ);
-  const items4 = [callback(require(4127) /* Text */.Text, obj9), ];
+  const items4 = [callback(require(4161) /* Text */.Text, obj9), ];
   const obj10 = { variant: "text-xs/medium", color: "text-default" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj10.children = intl3.string(importDefault(2461)["9t4+vC"]);
-  items4[1] = callback(require(4127) /* Text */.Text, obj10);
+  items4[1] = callback(require(4161) /* Text */.Text, obj10);
   obj8.children = items4;
   items3[1] = callback2(closure_5, obj8);
   const obj11 = { style: tmp.actions };
@@ -347,8 +347,8 @@ export default function PendingRequestList(arg0) {
   const items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj12.style = items5;
-  obj12.children = callback(require(12231) /* ShareIcon */.ShareIcon, { size: "sm", color: tmp.declineIcon.color });
-  const items6 = [callback(require(4661) /* PressableBase */.PressableOpacity, obj12), ];
+  obj12.children = callback(require(12274) /* ShareIcon */.ShareIcon, { size: "sm", color: tmp.declineIcon.color });
+  const items6 = [callback(require(4695) /* PressableBase */.PressableOpacity, obj12), ];
   const obj14 = { accessibilityRole: "button" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj14.accessibilityLabel = intl5.string(importDefault(2461).z9gkwZ);
@@ -356,13 +356,13 @@ export default function PendingRequestList(arg0) {
   const items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);
   obj14.style = items7;
-  obj14.children = callback(require(13848) /* QrCodeIcon */.QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
-  items6[1] = callback(require(4661) /* PressableBase */.PressableOpacity, obj14);
+  obj14.children = callback(require(13892) /* QrCodeIcon */.QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
+  items6[1] = callback(require(4695) /* PressableBase */.PressableOpacity, obj14);
   obj11.children = items6;
   items3[2] = callback2(closure_5, obj11);
   obj6.children = items3;
   items[2] = callback2(closure_5, obj6);
   obj.children = items;
-  return callback2(require(4542) /* Stack */.Stack, obj);
+  return callback2(require(4576) /* Stack */.Stack, obj);
 };
 export { PendingRequestRow };

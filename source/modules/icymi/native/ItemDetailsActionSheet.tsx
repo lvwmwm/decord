@@ -1,10 +1,10 @@
-// Module ID: 15255
-// Function ID: 116119
+// Module ID: 15295
+// Function ID: 116278
 // Name: ItemDetailsActionSheet
-// Dependencies: [31, 27, 1348, 1838, 8108, 33, 4131, 689, 566, 4321, 5089, 5513, 1273, 8122, 5498, 10312, 15256, 5501, 5164, 2]
+// Dependencies: [31, 27, 1348, 1838, 8146, 33, 4165, 689, 566, 4355, 5123, 5548, 1273, 8160, 5533, 10352, 15296, 5536, 5198, 2]
 // Exports: default
 
-// Module 15255 (ItemDetailsActionSheet)
+// Module 15295 (ItemDetailsActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,22 +44,22 @@ export default function ItemDetailsActionSheet(arg0) {
     }
     return dehydratedItem;
   });
-  const tmp3 = importDefault(4321)(stateFromStores, true);
+  const tmp3 = importDefault(4355)(stateFromStores, true);
   if (null != stateFromStores1) {
-    obj = { guild: stateFromStores1, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE };
-    let tmp6 = callback(importDefault(5513), obj);
-    const tmp13 = importDefault(5513);
+    obj = { guild: stateFromStores1, size: require(5548) /* makeSizeStyle */.GuildIconSizes.LARGE };
+    let tmp6 = callback(importDefault(5548), obj);
+    const tmp13 = importDefault(5548);
   } else if (null != stateFromStores) {
     obj = { size: require(1273) /* Button */.AvatarSizes.LARGE, channel: stateFromStores };
     tmp6 = callback(require(1273) /* Button */.Avatar, obj);
   }
   let result = null != stateFromStores;
-  const tmp5 = importDefault(5089)("show_icymi_debug_scores");
+  const tmp5 = importDefault(5123)("show_icymi_debug_scores");
   if (result) {
     result = null != stateFromStores1;
   }
   if (result) {
-    let obj5 = require(8122) /* generateHydrationId */;
+    let obj5 = require(8160) /* generateHydrationId */;
     result = obj5.isChannelCustomScoreEligible(stateFromStores);
   }
   obj1 = { showGradient: true, startExpanded: true };
@@ -73,11 +73,11 @@ export default function ItemDetailsActionSheet(arg0) {
     str = name;
   }
   obj2.subtitle = str;
-  obj1.header = callback(require(10312) /* ActionSheetIconHeader */.ActionSheetIconHeader, obj2);
+  obj1.header = callback(require(10352) /* ActionSheetIconHeader */.ActionSheetIconHeader, obj2);
   let tmp22 = result;
   if (result) {
     const obj3 = { channel: stateFromStores, guild: stateFromStores1 };
-    tmp22 = callback(require(15256) /* customScoreToIndex */.ChannelScoreSettings, obj3);
+    tmp22 = callback(require(15296) /* customScoreToIndex */.ChannelScoreSettings, obj3);
   }
   const items3 = [tmp22, , ];
   let tmp27Result = null != stateFromStores2 && null != stateFromStores1;
@@ -89,7 +89,7 @@ export default function ItemDetailsActionSheet(arg0) {
     }
     const items4 = [result, ];
     const obj6 = { guild: stateFromStores1 };
-    items4[1] = callback(require(15256) /* customScoreToIndex */.GuildScoreSettings, obj6);
+    items4[1] = callback(require(15296) /* customScoreToIndex */.GuildScoreSettings, obj6);
     obj4.children = items4;
     tmp27Result = closure_9(closure_8, obj4);
     const tmp27 = closure_9;
@@ -104,11 +104,11 @@ export default function ItemDetailsActionSheet(arg0) {
       const obj8 = { label: `Total Score: ${tmp4.score}` };
       const _JSON = JSON;
       obj8.subLabel = JSON.stringify(stateFromStores2.score_components);
-      obj7.children = callback(require(5164) /* TableRowInner */.TableRow, obj8);
-      tmp34 = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj7);
+      obj7.children = callback(require(5198) /* TableRowInner */.TableRow, obj8);
+      tmp34 = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj7);
     }
   }
   items3[2] = tmp34;
   obj1.children = items3;
-  return closure_9(require(5498) /* ActionSheet */.ActionSheet, obj1);
+  return closure_9(require(5533) /* ActionSheet */.ActionSheet, obj1);
 };

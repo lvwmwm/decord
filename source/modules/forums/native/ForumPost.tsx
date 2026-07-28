@@ -1,10 +1,10 @@
-// Module ID: 11115
-// Function ID: 86495
+// Module ID: 11153
+// Function ID: 86614
 // Name: ForumPostGrid
-// Dependencies: [31, 1348, 3768, 11116, 33, 11117, 11121, 11132, 566, 44, 6012, 9065, 11136, 11137, 8130, 11142, 1358, 2]
+// Dependencies: [31, 1348, 3802, 11154, 33, 11155, 11159, 11170, 566, 44, 6046, 9109, 11174, 11175, 8168, 11180, 1358, 2]
 // Exports: ForumPostListDisabled
 
-// Module 11115 (ForumPostGrid)
+// Module 11153 (ForumPostGrid)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { useForumChannelStore } from "set";
@@ -25,7 +25,7 @@ function ForumPostGrid(arg0) {
   ({ hasUnreads, thread } = arg0);
   const obj = {};
   ({ firstMessage, isNew, media, parentChannel } = arg0);
-  const items = [callback(importDefault(11117), { thread, hasUnreads, isNew }), callback(importDefault(11121), { thread, hasUnreads, media }), callback(importDefault(11132), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items = [callback(importDefault(11155), { thread, hasUnreads, isNew }), callback(importDefault(11159), { thread, hasUnreads, media }), callback(importDefault(11170), { thread, firstMessage, hasUnreads, parentChannel })];
   obj.children = items;
   return callback2(closure_7, obj);
 }
@@ -137,14 +137,14 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = threadId(566).useStateFromStores(items1, () => outer1_3.getChannel(stateFromStores.parent_id));
   const obj2 = threadId(566);
-  const firstForumPostMessage = threadId(6012).useFirstForumPostMessage(stateFromStores);
+  const firstForumPostMessage = threadId(6046).useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(9065);
+  threadId(9109);
   if (loaded) {
     obj = { style };
     obj = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp7, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
-    obj.children = callback(stateFromStores(11137), obj);
-    tmp2 = callback(threadId(11136).ForumPostDisabledContainer, obj);
+    obj.children = callback(stateFromStores(11175), obj);
+    tmp2 = callback(threadId(11174).ForumPostDisabledContainer, obj);
   }
   return tmp2;
 };

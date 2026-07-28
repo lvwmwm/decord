@@ -1,9 +1,9 @@
-// Module ID: 5663
-// Function ID: 48445
+// Module ID: 5673
+// Function ID: 48301
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 5664, 3804, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 5674, 3838, 566, 686, 2]
 
-// Module 5663 (_isNativeReflectConstruct)
+// Module 5673 (_isNativeReflectConstruct)
 import getApplicationFlags from "getApplicationFlags";
 import explicitContentFromProto from "explicitContentFromProto";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

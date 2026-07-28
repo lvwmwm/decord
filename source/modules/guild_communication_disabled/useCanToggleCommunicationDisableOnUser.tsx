@@ -1,10 +1,10 @@
-// Module ID: 10964
-// Function ID: 85221
+// Module ID: 11002
+// Function ID: 85344
 // Name: canToggleCommunicationDisableOnUser
-// Dependencies: [1391, 1838, 3759, 1850, 653, 3764, 566, 2]
+// Dependencies: [1391, 1838, 3793, 1850, 653, 3798, 566, 2]
 // Exports: default
 
-// Module 10964 (canToggleCommunicationDisableOnUser)
+// Module 11002 (canToggleCommunicationDisableOnUser)
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,8 +30,8 @@ function canToggleCommunicationDisableOnUser(id, id2, items) {
       let canResult = isGuildOwner(guild, user);
       if (!canResult) {
         obj = { permission: Permissions.ADMINISTRATOR, user, context: guild };
-        canResult = importAll(3764).can(obj);
-        const obj5 = importAll(3764);
+        canResult = importAll(3798).can(obj);
+        const obj5 = importAll(3798);
       }
       let canManageUserResult = !canResult;
       if (canManageUserResult) {

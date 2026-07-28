@@ -1,10 +1,10 @@
-// Module ID: 10898
-// Function ID: 84611
+// Module ID: 10936
+// Function ID: 84732
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 10899, 4977, 653, 33, 4099, 10900, 1935, 10902, 9420, 10909, 10915, 5938, 9401, 4980, 3832, 1212, 9104, 9109, 10429, 5953, 5666, 3983, 6554, 477, 3828, 689, 10916, 8867, 4473, 4476, 1457, 2]
+// Dependencies: [5, 31, 10937, 5011, 653, 33, 4133, 10938, 1935, 10940, 9460, 10947, 10953, 5972, 9445, 5014, 3866, 1212, 9148, 9153, 10469, 5987, 5676, 4017, 6590, 477, 3862, 689, 10954, 8911, 4507, 4510, 1457, 2]
 // Exports: dismissOverlayScreens, getPrimaryCtaIcon, handleRewardClaimThenView, isHeroVideoSupported, openDiscordQuestsFAQ, openQuestHome, openRewardDetailsBottomSheet, showQuestUnavailableAlert
 
-// Module 10898 (_createForOfIteratorHelperLoose)
+// Module 10936 (_createForOfIteratorHelperLoose)
 import closure_3 from "jsxProd";
 import "getAlertModalItemKey";
 import zustandStore from "zustandStore";
@@ -105,7 +105,7 @@ function openRewardClaimBottomSheet(arg0) {
   let questId;
   let sourceQuestContent;
   ({ questId, questContent, questContentPosition, sourceQuestContent } = arg0);
-  return importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(10902, dependencyMap.paths), closure_6, { questId, questContent, questContentPosition, sourceQuestContent });
+  return importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(10940, dependencyMap.paths), closure_6, { questId, questContent, questContentPosition, sourceQuestContent });
 }
 function viewReward(quest) {
   let onSuccess;
@@ -115,18 +115,18 @@ function viewReward(quest) {
   let sourceQuestContent;
   quest = quest.quest;
   ({ product, questContent, questContentPosition, onSuccess, sourceQuestContent } = quest);
-  let obj = require(9420) /* getCollectiblesQuestReward */;
+  let obj = require(9460) /* getCollectiblesQuestReward */;
   if (obj.hasQuestRewardCode(quest.config)) {
     obj = { questId: quest.id, questContent, questContentPosition, sourceQuestContent };
     openRewardClaimBottomSheet(obj);
   } else {
-    let obj1 = require(9420) /* getCollectiblesQuestReward */;
+    let obj1 = require(9460) /* getCollectiblesQuestReward */;
     if (obj1.hasVirtualCurrencyReward(quest.config)) {
-      let tmp3Result = tmp3(10909);
+      let tmp3Result = tmp3(10947);
       obj = { quest };
       const result = tmp3Result.openQuestOrbsRewardModal(obj);
     } else {
-      tmp3Result = tmp3(10915);
+      tmp3Result = tmp3(10953);
       obj1 = { quest, product, onSuccess };
       const result1 = tmp3Result.openQuestCollectibleRewardModal(obj1);
     }
@@ -147,7 +147,7 @@ function _handleRewardClaimThenView() {
 let result = require("zustandStore").fileFinishedImporting("modules/quests/native/QuestUtils.native.tsx");
 
 export const openRewardDetailsBottomSheet = function openRewardDetailsBottomSheet(questId) {
-  return importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(10900, dependencyMap.paths), closure_7, { questId: questId.questId });
+  return importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(10938, dependencyMap.paths), closure_7, { questId: questId.questId });
 };
 export { viewReward };
 export const handleRewardClaimThenView = function handleRewardClaimThenView(arg0) {
@@ -270,14 +270,14 @@ export const isHeroVideoSupported = function isHeroVideoSupported(memo) {
   return tmp2;
 };
 export const openDiscordQuestsFAQ = function openDiscordQuestsFAQ() {
-  importDefault(3828).openURL("https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ#h_01HVPBZR5FBM7QBFR9KDBASXP5");
+  importDefault(3862).openURL("https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ#h_01HVPBZR5FBM7QBFR9KDBASXP5");
 };
 export const getPrimaryCtaIcon = function getPrimaryCtaIcon(quest, arg1) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = require(5953) /* _createForOfIteratorHelperLoose */;
+  let obj = require(5987) /* _createForOfIteratorHelperLoose */;
   if (obj.canLaunchActivity(quest)) {
     const features = quest.config.features;
     if (features.includes(constants.MOBILE_ACTIVITY_QUEST)) {
@@ -292,17 +292,17 @@ export const getPrimaryCtaIcon = function getPrimaryCtaIcon(quest, arg1) {
         obj = { size: "sm" };
         obj.style = obj;
         obj.color = importDefault(689).colors.WHITE;
-        let tmp5Result = tmp5(tmp6(10916).CloudIcon, obj);
+        let tmp5Result = tmp5(tmp6(10954).CloudIcon, obj);
       } else {
         const obj1 = { size: "sm", style: obj, color: importDefault(689).colors.WHITE };
-        tmp5Result = tmp5(tmp6(8867).GameControllerIcon, obj1);
+        tmp5Result = tmp5(tmp6(8911).GameControllerIcon, obj1);
       }
       return tmp5Result;
     }
   }
 };
 export const showQuestUnavailableAlert = function showQuestUnavailableAlert() {
-  let obj = require(4473) /* useAlertStore */;
+  let obj = require(4507) /* useAlertStore */;
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.Lhpq2P);
@@ -312,19 +312,19 @@ export const showQuestUnavailableAlert = function showQuestUnavailableAlert() {
   const obj1 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl3.string(require(1212) /* getSystemLocale */.t.H0vjGc);
-  obj1.onPress = require(9401) /* _manuallyStartConsoleQuest */.fetchCurrentQuests;
-  const items = [callback2(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj1), ];
+  obj1.onPress = require(9445) /* _manuallyStartConsoleQuest */.fetchCurrentQuests;
+  const items = [callback2(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1), ];
   const obj2 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl4.string(require(1212) /* getSystemLocale */.t["6XS10x"]);
   obj2.variant = "secondary";
-  items[1] = callback2(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj2);
+  items[1] = callback2(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj2);
   obj.children = items;
   obj.actions = callback3(closure_11, obj);
-  obj.openAlert("quest-unavailable", callback2(require(4476) /* getAlertModalItemKey */.AlertModal, obj));
+  obj.openAlert("quest-unavailable", callback2(require(4510) /* getAlertModalItemKey */.AlertModal, obj));
 };
 export const dismissOverlayScreens = function dismissOverlayScreens() {
-  let obj = require(3983) /* getRootNavigationRef */;
+  let obj = require(4017) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {

@@ -1,10 +1,10 @@
-// Module ID: 13150
-// Function ID: 101291
+// Module ID: 13194
+// Function ID: 101464
 // Name: StepModal
-// Dependencies: [57, 31, 27, 33, 4131, 5084, 1557, 11060, 13151, 2]
+// Dependencies: [57, 31, 27, 33, 4165, 5118, 1557, 11098, 13195, 2]
 // Exports: StepModal
 
-// Module 13150 (StepModal)
+// Module 13194 (StepModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -51,9 +51,9 @@ export const StepModal = function StepModal(steps) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj["onWillFocus"] = callback;
-  obj["headerStyle"] = { height: steps(5084).NAV_BAR_HEIGHT + tmp4.top };
+  obj["headerStyle"] = { height: steps(5118).NAV_BAR_HEIGHT + tmp4.top };
   obj["hideTitle"] = true;
-  const items1 = [callback2(steps(11060).Modal, obj), ];
+  const items1 = [callback2(steps(11098).Modal, obj), ];
   const obj2 = { style: items2, pointerEvents: "box-none" };
   items2 = [tmp3.stepContainer, { marginTop: tmp4.top }];
   const obj3 = { currentStep: tmp5[0] };
@@ -66,7 +66,7 @@ export const StepModal = function StepModal(steps) {
     num = length;
   }
   obj3.totalSteps = num;
-  obj2.children = callback2(steps(13151).ModalStepIndicator, obj3);
+  obj2.children = callback2(steps(13195).ModalStepIndicator, obj3);
   items1[1] = callback2(View, obj2);
   obj.children = items1;
   return closure_7(View, obj);

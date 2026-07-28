@@ -1,10 +1,10 @@
-// Module ID: 8758
-// Function ID: 69306
+// Module ID: 8802
+// Function ID: 69457
 // Name: useActiveThemeType
-// Dependencies: [1280, 3943, 1322, 1281, 566, 3981, 2]
+// Dependencies: [1280, 3977, 1322, 1281, 566, 4015, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8758 (useActiveThemeType)
+// Module 8802 (useActiveThemeType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function useActiveThemeType() {
   const obj = require(566) /* initialize */;
   const items1 = [closure_4];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => null != outer1_4.gradientPreset);
-  const tmp3 = importDefault(3981)();
+  const tmp3 = importDefault(4015)();
   const obj2 = require(566) /* initialize */;
   const items2 = [_isNativeReflectConstruct];
   let type;

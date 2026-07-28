@@ -1,10 +1,10 @@
-// Module ID: 9003
-// Function ID: 70892
+// Module ID: 9047
+// Function ID: 71043
 // Name: ActivityStatusText
-// Dependencies: [31, 33, 4131, 4127, 2]
+// Dependencies: [31, 33, 4165, 4161, 2]
 // Exports: default
 
-// Module 9003 (ActivityStatusText)
+// Module 9047 (ActivityStatusText)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -30,5 +30,5 @@ export default function ActivityStatusText(variant) {
   obj.lineClamp = 1;
   const merged1 = Object.assign(merged);
   obj["children"] = children;
-  return jsx(require(4127) /* Text */.Text, { variant: str, color: "text-muted" });
+  return jsx(require(4161) /* Text */.Text, { variant: str, color: "text-muted" });
 };

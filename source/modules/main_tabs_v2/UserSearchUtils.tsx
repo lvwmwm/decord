@@ -1,10 +1,10 @@
-// Module ID: 5894
-// Function ID: 52336
+// Module ID: 5928
+// Function ID: 52455
 // Name: cleanString
-// Dependencies: [5895, 1918, 3768, 653, 1832, 3970, 2]
+// Dependencies: [5929, 1918, 3802, 653, 1832, 4004, 2]
 // Exports: getNames, getRelationshipType
 
-// Module 5894 (cleanString)
+// Module 5928 (cleanString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -36,12 +36,12 @@ export const getNames = function getNames(user) {
     names[nick] = cleanString(nick).split(" ");
     let str = cleanString(nick);
   }
-  const globalName = importDefault(3970).getGlobalName(user);
+  const globalName = importDefault(4004).getGlobalName(user);
   if (tmp4) {
     names[globalName] = cleanString(globalName).split(" ");
     const str3 = cleanString(globalName);
   }
-  const obj2 = importDefault(3970);
+  const obj2 = importDefault(4004);
   tmp4 = null != globalName && null == names[globalName];
   names[user.username] = cleanString(user.username).split(" ");
   nicknames = nicknames.getNicknames(user.id);

@@ -1,10 +1,10 @@
-// Module ID: 8672
-// Function ID: 68850
+// Module ID: 8716
+// Function ID: 69001
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: [31, 1850, 566, 8648, 2]
+// Dependencies: [31, 1850, 566, 8692, 2]
 // Exports: default
 
-// Module 8672 (useCollectiblesExternalGatewayFacet)
+// Module 8716 (useCollectiblesExternalGatewayFacet)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

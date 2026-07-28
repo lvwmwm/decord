@@ -1,10 +1,10 @@
-// Module ID: 10155
-// Function ID: 78579
+// Module ID: 10197
+// Function ID: 78711
 // Name: useFavoritesGuildConfig
 // Dependencies: [1428, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 10155 (useFavoritesGuildConfig)
+// Module 10197 (useFavoritesGuildConfig)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-01-favorites-server", kind: "user", defaultConfig: { enabled: false, hasHigherPrivileges: false }, variations: { [1]: { enabled: true, hasHigherPrivileges: true }, [2]: { enabled: true, hasHigherPrivileges: false }, [3]: { enabled: true, hasHigherPrivileges: true, isFreemium: true } } };

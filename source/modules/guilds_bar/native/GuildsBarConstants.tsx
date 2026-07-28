@@ -1,10 +1,10 @@
-// Module ID: 14872
-// Function ID: 113479
+// Module ID: 14916
+// Function ID: 113652
 // Name: GUILD_ITEM_SIZE
-// Dependencies: [3835, 689, 2]
+// Dependencies: [3869, 689, 2]
 // Exports: useGuildWrapperSize
 
-// Module 14872 (GUILD_ITEM_SIZE)
+// Module 14916 (GUILD_ITEM_SIZE)
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 
 export const GUILD_ITEM_SIZE = 48;
@@ -13,9 +13,9 @@ export const GUILD_ITEM_EMPTY_SRC = { uri: "invalid" };
 export const GUILD_ITEM_HIT_SLOP = { top: 4, left: 12, bottom: 4, right: 12 };
 export const GUILD_ITEM_BADGE_SIZE = 16;
 export const useGuildWrapperSize = function useGuildWrapperSize() {
-  const token = require(3835) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const obj = require(3835) /* map */;
-  return token + 2 * require(3835) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_MARGIN);
+  const token = require(3869) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const obj = require(3869) /* map */;
+  return token + 2 * require(3869) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_MARGIN);
 };
 export const FastListRenderSections = { MESSAGES: 0, [0]: "MESSAGES", FAVORITES: 1, [1]: "FAVORITES", PENDING_JOIN_REQUESTS: 2, [2]: "PENDING_JOIN_REQUESTS", LURKING_GUILDS: 3, [3]: "LURKING_GUILDS", GUEST_GUILDS: 4, [4]: "GUEST_GUILDS", UNREAD_PRIVATE_CHANNELS: 5, [5]: "UNREAD_PRIVATE_CHANNELS", SEPARATOR: 6, [6]: "SEPARATOR", GUILDS: 7, [7]: "GUILDS" };
 export const FOLDER_SPRING_PHYSICS = { mass: 0.5, damping: 30, stiffness: 300 };

@@ -1,9 +1,9 @@
-// Module ID: 3816
-// Function ID: 31714
+// Module ID: 3850
+// Function ID: 31816
 // Name: SettingsConfig
 // Dependencies: [6, 7, 2]
 
-// Module 3816 (SettingsConfig)
+// Module 3850 (SettingsConfig)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,5 +1,5 @@
 // Module ID: 1640
-// Function ID: 18341
+// Function ID: 18345
 // Name: convertAnimationObjectToKeyframes
 // Dependencies: [57, 1641]
 // Exports: convertAnimationObjectToKeyframes

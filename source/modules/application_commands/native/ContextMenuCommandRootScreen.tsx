@@ -1,10 +1,10 @@
-// Module ID: 15621
-// Function ID: 120444
+// Module ID: 15660
+// Function ID: 120600
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [57, 31, 27, 1838, 4567, 33, 4131, 689, 566, 7962, 5680, 7957, 5159, 8759, 9849, 1212, 4127, 15622, 9171, 9173, 2]
+// Dependencies: [57, 31, 27, 1838, 4601, 33, 4165, 689, 566, 7999, 5690, 7994, 5193, 8803, 9889, 1212, 4161, 15661, 9215, 9217, 2]
 // Exports: default
 
-// Module 15621 (ContextMenuCommandRootScreen)
+// Module 15660 (ContextMenuCommandRootScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -15,17 +15,18 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_10;
 let closure_11;
+let closure_12;
 let closure_8;
 let closure_9;
 const require = arg1;
 ({ CONTEXT_MENU_COMMANDS_QUERY_LIMIT: closure_8, BuiltInSectionId: closure_9 } = TRUE_OPTION_NAME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sectionHeader = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.sectionHeader = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandRootScreen.tsx");
 
 export default function ContextMenuCommandRootScreen(navigation) {
@@ -178,7 +179,7 @@ export default function ContextMenuCommandRootScreen(navigation) {
   }, items7);
   const items8 = [memo1];
   const memo2 = stateFromStores.useMemo(() => memo1.map((arg0) => arg0.length), items8);
-  const tmp17 = sections();
+  const tmp17 = callback();
   c18 = tmp17;
   c19 = "text-sm/semibold";
   let obj5 = navigation(onPressAppCommand[14]);
@@ -237,7 +238,7 @@ export default function ContextMenuCommandRootScreen(navigation) {
       return sectionDescriptors(navigation(onPressAppCommand[17]).ContextMenuCommandAppItem, obj, tmp.section.id);
     }
   }, items10);
-  const obj2 = { style: tmp17.container };
+  const obj2 = {};
   let tmp26Result = tmp4;
   const memo3 = stateFromStores.useMemo(() => {
     let num = 0;
@@ -258,13 +259,15 @@ export default function ContextMenuCommandRootScreen(navigation) {
   }
   if (tmp26Result) {
     const obj3 = {};
+    const items12 = [tmp17.content, ];
     const obj4 = {};
     let num2 = 0;
     if (tmp4) {
       num2 = channel(onPressAppCommand[7]).space.PX_16;
     }
     obj4.marginBottom = num2;
-    obj3.style = obj4;
+    items12[1] = obj4;
+    obj3.style = items12;
     obj5 = { size: "md", onChange: tmp2[1] };
     let intl = navigation(onPressAppCommand[15]).intl;
     obj5.placeholder = intl.string(navigation(onPressAppCommand[15]).t.m1UwbP);
@@ -273,11 +276,11 @@ export default function ContextMenuCommandRootScreen(navigation) {
     const tmp26 = sectionDescriptors;
     const tmp27 = closure_6;
   }
-  const items12 = [tmp26Result, ];
+  const items13 = [tmp26Result, ];
   const tmp15 = channel(onPressAppCommand[13])();
-  const tmp22 = loading;
-  const tmp23 = closure_6;
-  items12[1] = sectionDescriptors(channel(onPressAppCommand[19]), { sections: memo2, estimatedListSize: "windowSize", itemSize: channel(onPressAppCommand[13])(), insetEnd: channel(onPressAppCommand[12])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback3, renderSectionHeader: callback2, sectionHeaderSize: memo3 });
-  obj2.children = items12;
+  const tmp22 = sections;
+  const tmp23 = loading;
+  items13[1] = sectionDescriptors(channel(onPressAppCommand[19]), { sections: memo2, estimatedListSize: "windowSize", itemSize: channel(onPressAppCommand[13])(), insetEnd: channel(onPressAppCommand[12])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback3, renderSectionHeader: callback2, sectionHeaderSize: memo3, style: tmp17.content });
+  obj2.children = items13;
   return tmp22(tmp23, obj2);
 };

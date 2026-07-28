@@ -1,36 +1,36 @@
-// Module ID: 4189
-// Function ID: 36057
+// Module ID: 4223
+// Function ID: 36161
 // Name: isClipsEnabled
-// Dependencies: [4184, 4190, 4194, 566, 477, 2]
+// Dependencies: [4218, 4224, 4228, 566, 477, 2]
 // Exports: isDecoupledClipsEnabled, useIsDecoupledClipsEnabled
 
-// Module 4189 (isClipsEnabled)
+// Module 4223 (isClipsEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function isClipsEnabled() {
-  let clipsEnabled = require(4190) /* isUserPremiumTypeForClipsEarlyAccess */.areClipsAvailable();
+  let clipsEnabled = require(4224) /* isUserPremiumTypeForClipsEarlyAccess */.areClipsAvailable();
   if (clipsEnabled) {
     clipsEnabled = store.getState().clipsSettings.clipsEnabled;
   }
   if (clipsEnabled) {
-    let decoupledClipsEnabled = !require(4194) /* useIsClipsSettingsRedesignEnabled */.isClipsSettingsRedesignEnabled();
+    let decoupledClipsEnabled = !require(4228) /* useIsClipsSettingsRedesignEnabled */.isClipsSettingsRedesignEnabled();
     if (!decoupledClipsEnabled) {
       decoupledClipsEnabled = store.getState().clipsSettings.decoupledClipsEnabled;
     }
     clipsEnabled = decoupledClipsEnabled;
-    const obj2 = require(4194) /* useIsClipsSettingsRedesignEnabled */;
+    const obj2 = require(4228) /* useIsClipsSettingsRedesignEnabled */;
   }
   return clipsEnabled;
 }
 function useIsClipsEnabled() {
-  let isClipsAvailable = require(4190) /* isUserPremiumTypeForClipsEarlyAccess */.useIsClipsAvailable();
-  const obj = require(4190) /* isUserPremiumTypeForClipsEarlyAccess */;
+  let isClipsAvailable = require(4224) /* isUserPremiumTypeForClipsEarlyAccess */.useIsClipsAvailable();
+  const obj = require(4224) /* isUserPremiumTypeForClipsEarlyAccess */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getState().clipsSettings.clipsEnabled);
   const obj2 = require(566) /* initialize */;
-  const isClipsSettingsRedesignEnabled = require(4194) /* useIsClipsSettingsRedesignEnabled */.useIsClipsSettingsRedesignEnabled();
-  const obj3 = require(4194) /* useIsClipsSettingsRedesignEnabled */;
+  const isClipsSettingsRedesignEnabled = require(4228) /* useIsClipsSettingsRedesignEnabled */.useIsClipsSettingsRedesignEnabled();
+  const obj3 = require(4228) /* useIsClipsSettingsRedesignEnabled */;
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_2.getState().clipsSettings.decoupledClipsEnabled);
   if (isClipsAvailable) {
@@ -65,7 +65,7 @@ export const isDecoupledClipsEnabled = function isDecoupledClipsEnabled() {
     }
     return decoupledClipsEnabled;
   }
-  obj2 = require(4194) /* useIsClipsSettingsRedesignEnabled */;
+  obj2 = require(4228) /* useIsClipsSettingsRedesignEnabled */;
 };
 export const useIsDecoupledClipsEnabled = function useIsDecoupledClipsEnabled() {
   let tmp = useIsClipsEnabled();

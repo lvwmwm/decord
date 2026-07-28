@@ -1,9 +1,9 @@
-// Module ID: 7806
-// Function ID: 61958
+// Module ID: 7842
+// Function ID: 62048
 // Name: LHeading
-// Dependencies: [31, 27, 1922, 653, 33, 689, 4131, 1273, 624, 7807, 675, 3828, 3830, 7809, 4121, 5121, 6625, 7811, 1212, 3743, 7813, 7815, 2]
+// Dependencies: [31, 27, 1922, 653, 33, 689, 4165, 1273, 624, 7843, 675, 3862, 3864, 7845, 4155, 5155, 6661, 7847, 1212, 3777, 7849, 7851, 2]
 
-// Module 7806 (LHeading)
+// Module 7842 (LHeading)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -62,7 +62,7 @@ function LinkInner(target) {
   let obj = target(624);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.locale);
-  const changelog = target(7807).useChangelog(changelogId, stateFromStores).changelog;
+  const changelog = target(7843).useChangelog(changelogId, stateFromStores).changelog;
   obj = {
     accessibilityRole: "link",
     style: className,
@@ -111,7 +111,7 @@ function changelogRules(changelogId, arg1) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(7809);
+  let obj = importDefault(7845);
   if (flag) {
     obj = {};
     obj = { Link: getLinkComponent(changelogId), ListItem: closure_14, LHeading, Heading: LHeading };
@@ -126,7 +126,7 @@ function changelogRules(changelogId, arg1) {
   return messageRules;
 }
 function getRenderChangelog(changeLog) {
-  return importDefault(4121).reactParserFor(changelogRules(changeLog.id));
+  return importDefault(4155).reactParserFor(changelogRules(changeLog.id));
 }
 ({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
 ({ LocalizedLinks: closure_7, SOCIAL_LINKS: closure_8, AnalyticEvents: closure_9 } = ME);
@@ -183,29 +183,29 @@ const memoResult1 = importAllResult.memo((video) => {
   obj.children = items1;
   const items2 = [callback2(closure_5, obj), ];
   obj = { bottom: true, style: tmp.footer };
-  const obj1 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7811).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const obj1 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7847).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
   const intl = onScroll(1212).intl;
   obj1.accessibilityLabel = intl.string(onScroll(1212).t["/lXfom"]);
   obj1.onPress = function onPress() {
     outer1_1(outer1_2[11]).openURL(outer1_1(outer1_2[19])(outer1_7.TWITTER));
   };
-  const items3 = [callback(onScroll(6625).IconButton, obj1), , ];
-  const obj2 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7813).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const items3 = [callback(onScroll(6661).IconButton, obj1), , ];
+  const obj2 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7849).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
   const intl2 = onScroll(1212).intl;
   obj2.accessibilityLabel = intl2.string(onScroll(1212).t["h0or/l"]);
   obj2.onPress = function onPress() {
     outer1_1(outer1_2[11]).openURL(outer1_8.FACEBOOK_URL);
   };
-  items3[1] = callback(onScroll(6625).IconButton, obj2);
-  const obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7815).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  items3[1] = callback(onScroll(6661).IconButton, obj2);
+  const obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7851).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
   const intl3 = onScroll(1212).intl;
   obj3.accessibilityLabel = intl3.string(onScroll(1212).t["5uVPyf"]);
   obj3.onPress = function onPress() {
     outer1_1(outer1_2[11]).openURL(outer1_8.INSTAGRAM_URL);
   };
-  items3[2] = callback(onScroll(6625).IconButton, obj3);
+  items3[2] = callback(onScroll(6661).IconButton, obj3);
   obj.children = items3;
-  items2[1] = callback2(onScroll(5121).SafeAreaPaddingView, obj);
+  items2[1] = callback2(onScroll(5155).SafeAreaPaddingView, obj);
   obj.children = items2;
   return callback2(closure_4, obj);
 });

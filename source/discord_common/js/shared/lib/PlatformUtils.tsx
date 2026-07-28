@@ -1,9 +1,9 @@
-// Module ID: 4369
-// Function ID: 38781
+// Module ID: 4403
+// Function ID: 38895
 // Name: isTablet
 // Dependencies: [646, 2]
 
-// Module 4369 (isTablet)
+// Module 4403 (isTablet)
 import { product } from "capitalize";
 import set from "set";
 

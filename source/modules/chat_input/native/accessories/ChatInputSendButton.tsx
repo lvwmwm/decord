@@ -1,9 +1,9 @@
-// Module ID: 11352
-// Function ID: 88193
+// Module ID: 11390
+// Function ID: 88312
 // Name: renderChatInputSendButton
-// Dependencies: [57, 31, 27, 4123, 5918, 11093, 33, 4131, 689, 3835, 11344, 11353, 11337, 4077, 1212, 1324, 566, 4477, 11357, 3992, 2]
+// Dependencies: [57, 31, 27, 4157, 5952, 11131, 33, 4165, 689, 3869, 11382, 11391, 11375, 4111, 1212, 1324, 566, 4511, 11395, 4026, 2]
 
-// Module 11352 (renderChatInputSendButton)
+// Module 11390 (renderChatInputSendButton)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -31,8 +31,8 @@ function FloatingSlot(arg0) {
   let sendVoiceMessageEnabled;
   ({ buttonHeight, buttonMargin } = arg0);
   ({ buttonWidth, sendVoiceMessageEnabled, children } = arg0);
-  const style = [{ height: buttonHeight }, importDefault(11357)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
-  return jsx(importDefault(3992).View, { style, children });
+  const style = [{ height: buttonHeight }, importDefault(11395)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
+  return jsx(importDefault(4026).View, { style, children });
 }
 let closure_10 = { BUTTON_SEND: "send-button", BUTTON_SEND_DISABLED: "send-button-disabled", BUTTON_SEND_VOICE_MESSAGE: "voice-message-button", BUTTON_SEND_VOICE_MESSAGE_DISABLED: "voice-message-button-disabled" };
 let closure_11 = _createForOfIteratorHelperLoose.createStyles((width, height) => {
@@ -53,9 +53,9 @@ let closure_12 = importAllResult.memo((type) => {
   let withBounce;
   type = type.type;
   ({ onSendMessage, sendEnabled, isOnCooldown, channelId, state, cleanup, withBounce } = type);
-  let obj = require(3835) /* map */;
+  let obj = require(3869) /* map */;
   const token = obj.useToken(importDefault(689).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-  let obj1 = require(3835) /* map */;
+  let obj1 = require(3869) /* map */;
   let tmp3 = type === constants.BUTTON_SEND_VOICE_MESSAGE;
   if (!tmp3) {
     tmp3 = type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED;
@@ -69,20 +69,20 @@ let closure_12 = importAllResult.memo((type) => {
   const tmp5 = jsx;
   if (tmp3) {
     obj = { disabled: isOnCooldown, channelId };
-    let tmp7Result = tmp7(tmp8(11353), obj);
+    let tmp7Result = tmp7(tmp8(11391), obj);
   } else {
     obj1 = { active: true };
     ({ button: obj4.style, buttonActive: obj4.activeStyle, iconActive: obj4.activeIconStyle } = tmp2);
-    obj1.IconComponent = require(4077) /* SendMessageIcon */.SendMessageIcon;
+    obj1.IconComponent = require(4111) /* SendMessageIcon */.SendMessageIcon;
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.TXNS7S);
     obj1.onPress = onSendMessage;
     obj1.disabled = !sendEnabled;
-    tmp7Result = tmp7(tmp8(11337), obj1);
-    const tmp8Result = tmp8(11337);
+    tmp7Result = tmp7(tmp8(11375), obj1);
+    const tmp8Result = tmp8(11375);
   }
   obj.children = tmp7Result;
-  return tmp5(importDefault(11344), obj);
+  return tmp5(importDefault(11382), obj);
 });
 const forwardRefResult = importAllResult.forwardRef((channel) => {
   let canSendVoiceMessage;

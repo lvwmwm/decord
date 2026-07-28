@@ -1,9 +1,9 @@
-// Module ID: 14262
-// Function ID: 109552
+// Module ID: 14306
+// Function ID: 109725
 // Name: slider
-// Dependencies: [31, 14214, 662, 7697, 33, 682, 14263, 11246, 1212, 10059, 477, 2]
+// Dependencies: [31, 14258, 662, 7733, 33, 682, 14307, 11284, 1212, 10099, 477, 2]
 
-// Module 14262 (slider)
+// Module 14306 (slider)
 import result from "result";
 import { useFontScaleStore } from "customFontScale";
 import { FontScales } from "MAX_FAVORITES";

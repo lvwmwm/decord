@@ -1,10 +1,10 @@
-// Module ID: 11143
-// Function ID: 86624
+// Module ID: 11181
+// Function ID: 86743
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4154, 4168, 653, 7968, 5463, 5655, 4325, 3990, 10938, 2]
+// Dependencies: [5, 4188, 4202, 653, 8006, 5498, 8004, 4359, 4024, 10976, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 11143 (_installApplicationOnDemandIfNeeded)
+// Module 11181 (_installApplicationOnDemandIfNeeded)
 import fetchApplication from "fetchApplication";
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

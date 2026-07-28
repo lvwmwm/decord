@@ -1,10 +1,10 @@
-// Module ID: 13781
-// Function ID: 105686
+// Module ID: 13825
+// Function ID: 105859
 // Name: items
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 5827, 13782, 13783, 3810, 4957, 4348, 13784, 2]
+// Dependencies: [31, 27, 1850, 33, 4165, 689, 5837, 13826, 13827, 3844, 4991, 4382, 13828, 2]
 // Exports: default
 
-// Module 13781 (items)
+// Module 13825 (items)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,10 +46,10 @@ const obj3 = {
 items[2] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3810) /* isFeatureAgeGated */.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4348) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4348) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4382) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
@@ -59,10 +59,10 @@ obj1.SENSITIVE_CONTENT_FILTERS = items;
 const obj4 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3810) /* isFeatureAgeGated */.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4348) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4348) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4382) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
@@ -73,10 +73,10 @@ const obj5 = { order: 100, predicate: require("getActivityTypeTextConfigs").isPa
 items1[1] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3810) /* isFeatureAgeGated */.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4348) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4348) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4382) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
@@ -86,10 +86,10 @@ obj1.CONTENT_AND_SOCIAL = items1;
 const obj6 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3810) /* isFeatureAgeGated */.isFeatureAgeGated(require(4957) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4348) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4348) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4382) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },

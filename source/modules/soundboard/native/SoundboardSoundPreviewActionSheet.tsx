@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 122138
+// Module ID: 15867
+// Function ID: 122294
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [29, 31, 27, 1850, 4579, 653, 33, 4131, 689, 477, 566, 5462, 7986, 10714, 4586, 4549, 5498, 5150, 11066, 4127, 4544, 9351, 9353, 1212, 7625, 3992, 2]
+// Dependencies: [29, 31, 27, 1850, 4613, 653, 33, 4165, 689, 477, 566, 5497, 8024, 10752, 4620, 4583, 5533, 5184, 11104, 4161, 4578, 9395, 9397, 1212, 7661, 4026, 2]
 // Exports: default
 
-// Module 15828 (SoundboardSoundPreviewActionSheet)
+// Module 15867 (SoundboardSoundPreviewActionSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -63,7 +63,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
     }
     return id;
   });
-  const analyticsLocations = sound(5462)().analyticsLocations;
+  const analyticsLocations = sound(5497)().analyticsLocations;
   let obj1 = channelId(566);
   const items1 = [closure_9];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
@@ -98,11 +98,11 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   }, items2);
   const callback1 = isFavorite.useCallback(() => {
     if (!borderPlaying) {
-      channelId(7986).playSoundLocally(channelId, sound, channelId(4586).LocalSoundTrigger.SOUNDBOARD);
-      const obj = channelId(7986);
+      channelId(8024).playSoundLocally(channelId, sound, channelId(4620).LocalSoundTrigger.SOUNDBOARD);
+      const obj = channelId(8024);
     }
   }, items3);
-  let obj2 = channelId(4549);
+  let obj2 = channelId(4583);
   const buttonPressAnimationProps = obj2.useButtonPressAnimationProps();
   obj = { startExpanded: true };
   obj = {};
@@ -114,22 +114,22 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const tmp6 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
   const tmp8 = closure_12;
   const tmp9 = closure_6;
-  obj1.src = sound(11066)(sound, 64);
+  obj1.src = sound(11104)(sound, 64);
   const emojiName = sound.emojiName;
   let str = "";
   if (null != emojiName) {
     str = emojiName;
   }
   obj1.name = str;
-  const items6 = [callback(sound(5150), obj1), , ];
+  const items6 = [callback(sound(5184), obj1), , ];
   obj2 = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
-  items6[1] = callback(channelId(4127).Text, obj2);
+  items6[1] = callback(channelId(4161).Text, obj2);
   const obj3 = { style: tmp.buttonContainer };
   const obj4 = { variant: "primary" };
   if (isFavorite) {
-    let StarOutlineIcon = tmp14(9351).StarIcon;
+    let StarOutlineIcon = tmp14(9395).StarIcon;
   } else {
-    StarOutlineIcon = tmp14(9353).StarOutlineIcon;
+    StarOutlineIcon = tmp14(9397).StarOutlineIcon;
   }
   obj4.icon = callback(StarOutlineIcon, { style: tmp.star });
   const intl = channelId(1212).intl;
@@ -142,23 +142,23 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   }
   obj4.text = stringResult;
   obj4.onPress = callback;
-  const items7 = [callback(channelId(4544).Button, obj4), ];
+  const items7 = [callback(channelId(4578).Button, obj4), ];
   const obj6 = {};
   const obj7 = {};
   let merged = Object.assign(tmp6);
   obj7["variant"] = "secondary";
   const obj5 = { style: tmp.star };
-  const tmp10 = sound(5150);
+  const tmp10 = sound(5184);
   const tmp12 = closure_12;
   const tmp13 = closure_6;
   const tmp17 = closure_12;
   const tmp18 = closure_6;
   const tmp19 = callback;
-  obj7["icon"] = callback(closure_7, { style: tmp.star, source: sound(7625) });
+  obj7["icon"] = callback(closure_7, { style: tmp.star, source: sound(7661) });
   const intl2 = channelId(1212).intl;
   obj7["text"] = intl2.string(channelId(1212).t.Kd4uxG);
   obj7["onPress"] = callback1;
-  const items8 = [callback(channelId(4544).Button, obj7), ];
+  const items8 = [callback(channelId(4578).Button, obj7), ];
   const obj9 = {};
   const items9 = [tmp.border, , ];
   if (borderPlaying) {
@@ -167,12 +167,12 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   items9[1] = borderPlaying;
   items9[2] = buttonPressAnimationProps.style;
   obj9.style = items9;
-  items8[1] = tmp19(sound(3992).View, obj9);
+  items8[1] = tmp19(sound(4026).View, obj9);
   obj6.children = items8;
   items7[1] = tmp17(tmp18, obj6);
   obj3.children = items7;
   items6[2] = tmp12(tmp13, obj3);
   obj.children = items6;
   obj.children = tmp8(tmp9, obj);
-  return callback(channelId(5498).ActionSheet, obj);
+  return callback(channelId(5533).ActionSheet, obj);
 };

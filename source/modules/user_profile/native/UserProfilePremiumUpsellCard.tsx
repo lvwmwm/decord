@@ -1,10 +1,10 @@
-// Module ID: 13673
-// Function ID: 105019
+// Module ID: 13717
+// Function ID: 105192
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [31, 653, 33, 4131, 1557, 1456, 6187, 5462, 5482, 6448, 9253, 9254, 13674, 1212, 4127, 2]
+// Dependencies: [31, 653, 33, 4165, 1557, 1456, 6221, 5497, 5517, 6484, 9297, 9298, 13718, 1212, 4161, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13673 (UserProfilePremiumUpsellCard)
+// Module 13717 (UserProfilePremiumUpsellCard)
 import result from "result";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -28,11 +28,11 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   let obj = navigation(1456);
   navigation = obj.useNavigation();
   const tmp = callback(analyticsLocations(1557)().bottom);
-  let nitroTrialCtaOverride = navigation(6187).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
-  const obj2 = navigation(6187);
-  const tmp5 = analyticsLocations(5482);
+  let nitroTrialCtaOverride = navigation(6221).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  const obj2 = navigation(6221);
+  const tmp5 = analyticsLocations(5517);
   const items = [isTryItOut ? tmp5.USER_SETTINGS_TRY_OUT_PREMIUM : tmp5.USER_SETTINGS_USER_PROFILE];
-  analyticsLocations = analyticsLocations(5462)(items).analyticsLocations;
+  analyticsLocations = analyticsLocations(5497)(items).analyticsLocations;
   const items1 = [navigation];
   callback = React.useCallback(() => {
     analyticsLocations(outer1_2[9]).setSection(outer1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
@@ -45,7 +45,7 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     analyticsLocations(outer1_2[10])(obj);
   }, items2);
   obj = { style: tmp.container };
-  const tmp4 = analyticsLocations(5462);
+  const tmp4 = analyticsLocations(5497);
   const tmp8 = jsx;
   if (isTryItOut) {
     if (null == nitroTrialCtaOverride) {
@@ -73,6 +73,6 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     stringResult1 = string(t.Tii53U);
   }
   obj.children = stringResult1;
-  obj.children = jsx(navigation(4127).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5 });
-  return tmp8(analyticsLocations(13674), obj);
+  obj.children = jsx(navigation(4161).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5 });
+  return tmp8(analyticsLocations(13718), obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 7710
-// Function ID: 61577
+// Module ID: 7746
+// Function ID: 61667
 // Name: saferParse
-// Dependencies: [7711, 3830, 2]
+// Dependencies: [7747, 3864, 2]
 
-// Module 7710 (saferParse)
+// Module 7746 (saferParse)
 function saferParse(arg0, arg1, inline) {
   let tmp = arg3;
   let flag = arg4;
@@ -20,10 +20,10 @@ function saferParse(arg0, arg1, inline) {
   `;
   }
   const tmp5 = arg0(text, inline);
-  const obj = require(7711) /* _isNativeReflectConstruct */;
-  const flattenAstResult = require(7711) /* _isNativeReflectConstruct */.flattenAst(inline, tmp5);
-  const obj2 = require(7711) /* _isNativeReflectConstruct */;
-  let ast = require(7711) /* _isNativeReflectConstruct */.constrainAst(flattenAstResult).ast;
+  const obj = require(7747) /* _isNativeReflectConstruct */;
+  const flattenAstResult = require(7747) /* _isNativeReflectConstruct */.flattenAst(inline, tmp5);
+  const obj2 = require(7747) /* _isNativeReflectConstruct */;
+  let ast = require(7747) /* _isNativeReflectConstruct */.constrainAst(flattenAstResult).ast;
   while (true) {
     let tmp9 = tmp;
     if (!tmp3) {
@@ -41,7 +41,7 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 
 export default {
   astParserFor(importDefaultResultResult) {
-    let closure_0 = importDefault(3830).parserFor(importDefaultResultResult);
+    let closure_0 = importDefault(3864).parserFor(importDefaultResultResult);
     return (arg0, inline) => {
       let str = arg0;
       let obj = arg2;
@@ -61,10 +61,10 @@ export default {
     };
   },
   reactParserFor(importDefaultResultResult) {
-    let closure_0 = importDefault(3830).parserFor(importDefaultResultResult);
-    let obj = importDefault(3830);
-    const obj2 = importDefault(3830);
-    importDefault = obj2.reactFor(importDefault(3830).ruleOutput(importDefaultResultResult, "react"));
+    let closure_0 = importDefault(3864).parserFor(importDefaultResultResult);
+    let obj = importDefault(3864);
+    const obj2 = importDefault(3864);
+    importDefault = obj2.reactFor(importDefault(3864).ruleOutput(importDefaultResultResult, "react"));
     return () => {
       let str = arg0;
       let flag = arg1;

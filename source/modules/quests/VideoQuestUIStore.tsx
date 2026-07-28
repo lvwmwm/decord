@@ -1,9 +1,9 @@
-// Module ID: 5934
-// Function ID: 52819
+// Module ID: 5968
+// Function ID: 52938
 // Name: _toPropertyKey
-// Dependencies: [29, 677, 4000, 5935, 682, 5936, 2]
+// Dependencies: [29, 677, 4034, 5969, 682, 5970, 2]
 
-// Module 5934 (_toPropertyKey)
+// Module 5968 (_toPropertyKey)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 import createJSONStorage from "createJSONStorage";
@@ -39,7 +39,7 @@ function _toPropertyKey(arg0) {
 let obj = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
 useStoreWithEqualityFn = useStoreWithEqualityFn.createWithEqualityFn();
 obj = { name: "videoQuestUIState" };
-obj.storage = createJSONStorage.createJSONStorage(() => importDefault(5936));
+obj.storage = createJSONStorage.createJSONStorage(() => importDefault(5970));
 obj.partialize = function partialize(volume) {
   return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
 };
@@ -48,7 +48,7 @@ const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((a
   const _require = arg0;
   let closure_1 = arg1;
   let obj = {
-    volume: _require(5935).DEFAULT_VIDEO_VOLUME,
+    volume: _require(5969).DEFAULT_VIDEO_VOLUME,
     muted: false,
     transcriptEnabled: false,
     captionEnabled: false,

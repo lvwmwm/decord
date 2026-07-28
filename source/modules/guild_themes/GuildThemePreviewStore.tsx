@@ -1,9 +1,9 @@
-// Module ID: 4014
-// Function ID: 33318
+// Module ID: 4048
+// Function ID: 33420
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 4015, 4016, 686, 1837, 22, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 4049, 4050, 686, 1837, 22, 566, 2]
 
-// Module 4014 (_isNativeReflectConstruct)
+// Module 4048 (_isNativeReflectConstruct)
 import closure_3 from "GuildThemePreviewOrigin";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

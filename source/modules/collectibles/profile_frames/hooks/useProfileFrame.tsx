@@ -1,10 +1,10 @@
-// Module ID: 8032
-// Function ID: 63909
+// Module ID: 8070
+// Function ID: 64019
 // Name: useProfileFrame
-// Dependencies: [5770, 5786, 5777, 566, 2]
+// Dependencies: [5780, 5796, 5787, 566, 2]
 // Exports: default
 
-// Module 8032 (useProfileFrame)
+// Module 8070 (useProfileFrame)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { isProfileFrameRecord } from "_isNativeReflectConstruct";

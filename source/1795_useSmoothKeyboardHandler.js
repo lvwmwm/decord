@@ -1,5 +1,5 @@
 // Module ID: 1795
-// Function ID: 19894
+// Function ID: 19898
 // Name: useSmoothKeyboardHandler
 // Dependencies: [65, 27, 1582, 1776]
 // Exports: useSmoothKeyboardHandler
